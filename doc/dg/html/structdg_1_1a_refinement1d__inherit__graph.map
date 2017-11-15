@@ -1,0 +1,6 @@
+<map id="dg::aRefinement1d" name="dg::aRefinement1d">
+<area shape="rect" id="node2" href="$structdg_1_1_equidist_refinement.html" title="Equidistant cell refinement around a given node. " alt="" coords="195,5,354,32"/>
+<area shape="rect" id="node3" href="$structdg_1_1_exponential_refinement.html" title="The exponential refinement around a node. " alt="" coords="185,56,364,83"/>
+<area shape="rect" id="node4" href="$structdg_1_1_identity_refinement.html" title="No refinement. " alt="" coords="197,107,352,133"/>
+<area shape="rect" id="node5" href="$structdg_1_1_linear_refinement.html" title="Linear refinement consists of multiplying every cell in the grid by a factor. " alt="" coords="201,157,348,184"/>
+</map>

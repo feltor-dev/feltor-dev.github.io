@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: dg_introduction.aux
+The style file: abbrvnat.bst
+Database file #1: ../references.bib
+Warning--I didn't find a database entry for "Arnold2001"
+Warning--I didn't find a database entry for "Cockburn2001"
+Warning--I didn't find a database entry for "Yadav2013"
+Warning--empty school in WiesenbergerPhD
+You've used 4 entries,
+            2773 wiz_defined-function locations,
+            630 strings with 5326 characters,
+and the built_in function-call counts, 1664 in all, are:
+= -- 158
+> -- 73
+< -- 4
++ -- 25
+- -- 21
+* -- 131
+:= -- 267
+add.period$ -- 16
+call.type$ -- 4
+change.case$ -- 18
+chr.to.int$ -- 4
+cite$ -- 9
+duplicate$ -- 76
+empty$ -- 137
+format.name$ -- 31
+if$ -- 339
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 4
+newline$ -- 32
+num.names$ -- 16
+pop$ -- 31
+preamble$ -- 1
+purify$ -- 15
+quote$ -- 0
+skip$ -- 59
+stack$ -- 0
+substring$ -- 64
+swap$ -- 5
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 39
+warning$ -- 1
+while$ -- 16
+width$ -- 0
+write$ -- 66
+(There were 4 warnings)

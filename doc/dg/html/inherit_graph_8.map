@@ -1,0 +1,8 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$structdg_1_1_any_matrix_tag.html" title="dg::AnyMatrixTag" alt="" coords="5,81,131,108"/>
+<area shape="rect" id="node2" href="$structdg_1_1_cusp_matrix_tag.html" title="dg::CuspMatrixTag" alt="" coords="181,5,315,32"/>
+<area shape="rect" id="node3" href="$structdg_1_1_m_p_i_matrix_tag.html" title="dg::MPIMatrixTag" alt="" coords="185,56,311,83"/>
+<area shape="rect" id="node4" href="$structdg_1_1_m_p_i_precon_tag.html" title="dg::MPIPreconTag" alt="" coords="183,107,313,133"/>
+<area shape="rect" id="node5" href="$structdg_1_1_thrust_matrix_tag.html" title="dg::ThrustMatrixTag" alt="" coords="179,157,317,184"/>
+<area shape="rect" id="node6" href="$structdg_1_1_cusp_precon_tag.html" title="dg::CuspPreconTag" alt="" coords="365,157,504,184"/>
+</map>

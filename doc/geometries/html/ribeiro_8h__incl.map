@@ -1,0 +1,15 @@
+<map id="ribeiro.h" name="ribeiro.h">
+<area shape="rect" id="node2" href="/home/matthias/Projekte/feltor/doc/dg.tag$grid_8h.html" title="dg/backend/grid.h" alt="" coords="5,80,131,107"/>
+<area shape="rect" id="node3" href="/home/matthias/Projekte/feltor/doc/dg.tag$functions_8h.html" title="dg/backend/functions.h" alt="" coords="155,80,312,107"/>
+<area shape="rect" id="node4" href="/home/matthias/Projekte/feltor/doc/dg.tag$interpolation_8cuh.html" title="dg/backend/interpolation.cuh" alt="" coords="337,80,525,107"/>
+<area shape="rect" id="node5" href="/home/matthias/Projekte/feltor/doc/dg.tag$operator_8h.html" title="dg/backend/operator.h" alt="" coords="549,80,699,107"/>
+<area shape="rect" id="node6" href="/home/matthias/Projekte/feltor/doc/dg.tag$derivatives_8h.html" title="dg/backend/derivatives.h" alt="" coords="723,80,890,107"/>
+<area shape="rect" id="node7" href="/home/matthias/Projekte/feltor/doc/dg.tag$geometry_8h.html" title="dg/geometry/geometry.h" alt="" coords="915,80,1077,107"/>
+<area shape="rect" id="node8" href="/home/matthias/Projekte/feltor/doc/dg.tag$functors_8h.html" title="dg/functors.h" alt="" coords="1101,80,1200,107"/>
+<area shape="rect" id="node9" href="/home/matthias/Projekte/feltor/doc/dg.tag$runge__kutta_8h.html" title="dg/runge_kutta.h" alt="" coords="1225,80,1343,107"/>
+<area shape="rect" id="node10" href="/home/matthias/Projekte/feltor/doc/dg.tag$nullstelle_8h.html" title="dg/nullstelle.h" alt="" coords="1367,80,1470,107"/>
+<area shape="rect" id="node11" href="$generator_8h.html" title="generator.h" alt="" coords="1494,80,1581,107"/>
+<area shape="rect" id="node12" href="$utilities_8h.html" title="utilities.h" alt="" coords="1605,80,1680,107"/>
+<area shape="rect" id="node13" href="$fluxfunctions_8h.html" title="fluxfunctions.h" alt="" coords="1589,155,1696,181"/>
+<area shape="rect" id="node14" href="/home/matthias/Projekte/feltor/doc/dg.tag$memory_8h.html" title="dg/backend/memory.h" alt="" coords="1567,229,1718,256"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="dg::aRefinementX2d" name="dg::aRefinementX2d">
+<area shape="rect" id="node2" href="$structdg_1_1_equidist_x_refinement.html" title="Equidistant cell refinement around the X&#45;point. " alt="" coords="5,80,172,107"/>
+<area shape="rect" id="node3" href="$structdg_1_1_exponential_x_refinement.html" title="The exponential refinement around the X&#45;point. " alt="" coords="196,80,384,107"/>
+<area shape="rect" id="node4" href="$structdg_1_1_identity_x_refinement.html" title="No refinement. " alt="" coords="409,80,571,107"/>
+</map>

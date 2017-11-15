@@ -1,0 +1,50 @@
+\begin{thebibliography}{6}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[D'haeseleer et~al.(1991)D'haeseleer, Hitchon, Callen, and
+  Shohet]{haeseleer}
+W.~D'haeseleer, W.~Hitchon, J.~Callen, and J.~Shohet.
+\newblock \emph{{Flux Coordinates and Magnetic Field Structure}}.
+\newblock Springer Series in Computational Physics. Springer-Verlag, 1991.
+
+\bibitem[Frankel(2004)]{Frankel}
+T.~Frankel.
+\newblock \emph{{The geometry of physics: an introduction}}.
+\newblock Cambridge University Press, second edition, 2004.
+
+\bibitem[Glasser et~al.(2006)Glasser, Liseikin, Vaseva, and
+  Likhanova]{Glasser2006}
+A.~H. Glasser, V.~D. Liseikin, I.~A. Vaseva, and Y.~V. Likhanova.
+\newblock Some computational aspects on generating numerical grids.
+\newblock \emph{Russ. J. Numer. Anal. Math. Modelling}, 21\penalty0
+  (6):\penalty0 481--505, 2006.
+\newblock \doi{10.1515/rnam.2006.21.6.481}.
+
+\bibitem[Liseikin(2007)]{Liseikin}
+V.~D. Liseikin.
+\newblock \emph{A Computational Differential Geometry Approach to Grid
+  Generation}.
+\newblock Springer-Verlag, second edition, 2007.
+
+\bibitem[Vaseva et~al.(2009)Vaseva, Liseikin, Likhanova, and
+  Morokov]{Vaseva2009}
+I.~A. Vaseva, V.~D. Liseikin, Y.~V. Likhanova, and Y.~N. Morokov.
+\newblock An elliptic method for construction of adaptive spatial grids.
+\newblock \emph{Russ. J. Numer. Anal. Math. Modelling}, 24\penalty0
+  (1):\penalty0 65--78, 2009.
+\newblock \doi{10.1515/RJNAMM.2009.006}.
+
+\bibitem[Wiesenberger et~al.(2017)Wiesenberger, Held, and
+  Einkemmer]{Wiesenberger2017}
+M.~Wiesenberger, M.~Held, and L.~Einkemmer.
+\newblock Streamline integration as a method for two-dimensional elliptic grid
+  generation.
+\newblock \emph{Journal of Computational Physics}, 340:\penalty0 435--450, July
+  2017.
+\newblock \doi{10.1016/j.jcp.2017.03.056}.
+
+\end{thebibliography}

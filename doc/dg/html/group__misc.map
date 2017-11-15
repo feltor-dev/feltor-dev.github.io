@@ -1,0 +1,5 @@
+<map id="Level 00: Miscellaneous additions" name="Level 00: Miscellaneous additions">
+<area shape="rect" id="node1" href="$group__functions.html" title="Functions and Functors" alt="" coords="221,5,380,32"/>
+<area shape="rect" id="node3" href="$group__lowlevel.html" title="Lowlevel helper functions\l and classes" alt="" coords="216,57,385,98"/>
+<area shape="rect" id="node4" href="$group__timer.html" title="Timer class" alt="" coords="255,123,346,149"/>
+</map>

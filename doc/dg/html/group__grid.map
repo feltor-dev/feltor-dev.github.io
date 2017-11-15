@@ -1,0 +1,10 @@
+<map id="Topological grids and operations" name="Topological grids and operations">
+<area shape="rect" id="node1" href="$group__evaluation.html" title="evaluate" alt="" coords="451,5,522,32"/>
+<area shape="rect" id="node2" href="$group__scatter.html" title="Scatter and Gather" alt="" coords="421,56,553,83"/>
+<area shape="rect" id="node3" href="$group__interpolation.html" title="Interpolation and projection" alt="" coords="397,107,576,133"/>
+<area shape="rect" id="node4" href="$group__utilities.html" title="Averaging" alt="" coords="447,157,527,184"/>
+<area shape="rect" id="node5" href="$group__basictopology.html" title="Topology base classes" alt="" coords="409,208,565,235"/>
+<area shape="rect" id="node6" href="$group__highlevel.html" title="create weights" alt="" coords="433,259,540,285"/>
+<area shape="rect" id="node9" href="$group__creation.html" title="create derivatives" alt="" coords="424,309,549,336"/>
+<area shape="rect" id="node8" href="$group__geo.html" title="Level 3: Topology and\l Geometry" alt="" coords="5,150,156,191"/>
+</map>

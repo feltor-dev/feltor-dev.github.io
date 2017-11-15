@@ -1,0 +1,10 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$structdg_1_1geo_1_1a_generator2d.html" title="The abstract generator base class. " alt="" coords="5,173,156,200"/>
+<area shape="rect" id="node2" href="$structdg_1_1geo_1_1_flux_generator.html" title="A symmetry flux generator. " alt="" coords="225,5,379,32"/>
+<area shape="rect" id="node3" href="$structdg_1_1geo_1_1_hector.html" title="The High PrEcision Conformal grid generaTOR. " alt="" coords="218,57,386,98"/>
+<area shape="rect" id="node4" href="$structdg_1_1geo_1_1_log_polar_generator.html" title="Log Polar coordinates (conformal) " alt="" coords="211,123,393,149"/>
+<area shape="rect" id="node5" href="$structdg_1_1geo_1_1_polar_generator.html" title="Polar coordinates. " alt="" coords="222,173,382,200"/>
+<area shape="rect" id="node6" href="$structdg_1_1geo_1_1_ribeiro.html" title="A two&#45;dimensional grid based on &quot;almost&#45;conformal&quot; coordinates by Ribeiro and Scott 2010..." alt="" coords="245,224,359,251"/>
+<area shape="rect" id="node7" href="$structdg_1_1geo_1_1_ribeiro_flux_generator.html" title="Same as the Ribeiro class just but uses psi as a flux label directly. " alt="" coords="204,275,400,301"/>
+<area shape="rect" id="node8" href="$structdg_1_1geo_1_1_simple_orthogonal.html" title="Generate a simple orthogonal grid. " alt="" coords="214,325,390,352"/>
+</map>

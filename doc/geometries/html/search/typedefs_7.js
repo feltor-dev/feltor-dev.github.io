@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['parameters',['Parameters',['../group__taylor.html#gae9e235fc51b6b03228d8eb38673af549',1,'dg::geo::taylor']]],
+  ['perpendicular_5fgrid',['perpendicular_grid',['../../../dg/html/structdg_1_1_cartesian_grid3d.html#ad0091235c3a435d5098cda501c7b92f1',1,'dg::CartesianGrid3d::perpendicular_grid()'],['../../../dg/html/structdg_1_1_cartesian_m_p_i_grid3d.html#aef1eaae4a3e960a764f052cfe54b2130',1,'dg::CartesianMPIGrid3d::perpendicular_grid()'],['../../../dg/html/structdg_1_1_cylindrical_grid3d.html#a2f221498922ad30ee89f759c5ed4afff',1,'dg::CylindricalGrid3d::perpendicular_grid()'],['../../../dg/html/structdg_1_1_cylindrical_m_p_i_grid3d.html#ab5754d530ba40a71e7a11f0e2ace4538',1,'dg::CylindricalMPIGrid3d::perpendicular_grid()'],['../structdg_1_1geo_1_1_curvilinear_product_grid3d.html#ad34070a495f745e71fdd269713363068',1,'dg::geo::CurvilinearProductGrid3d::perpendicular_grid()'],['../structdg_1_1geo_1_1_curvilinear_product_m_p_i_grid3d.html#a4110562a50a8393fa94a1168014abf01',1,'dg::geo::CurvilinearProductMPIGrid3d::perpendicular_grid()']]]
+];

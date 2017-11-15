@@ -1,0 +1,5 @@
+<map id="file::define_dimensions" name="file::define_dimensions">
+<area shape="rect" id="node2" href="$namespacefile.html#a82e1c68e70e1c4b393d5223c19d1c853" title="Define a 1d time&#45;dependent dimension variable together with its data points. " alt="" coords="208,5,363,32"/>
+<area shape="rect" id="node4" href="$namespacefile.html#a6359fc68f28994afced36013b94fdc07" title="Define an unlimited time dimension and variable following CF&#45;conventions " alt="" coords="427,56,542,83"/>
+<area shape="rect" id="node3" href="$namespacefile.html#a846a2bb3ad75738bad0fe50c891b0bd7" title="Define a 1d dimension and create a coordinate variable together with its data points in a netcdf file..." alt="" coords="411,5,559,32"/>
+</map>

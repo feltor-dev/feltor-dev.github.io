@@ -1,0 +1,14 @@
+\BOOKMARK [1][-]{section.1}{Semi-Lagrangian schemes}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Discretization of parallel derivatives}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Change of coordinates}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Boundary conditions}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.4}{Avoiding boundary conditions}{section.1}% 5
+\BOOKMARK [2][-]{subsection.1.5}{Poloidal limiters}{section.1}% 6
+\BOOKMARK [1][-]{section.2}{The adjoint methods}{}% 7
+\BOOKMARK [2][-]{subsection.2.1}{A grid refinement approach}{section.2}% 8
+\BOOKMARK [1][-]{section.3}{Algorithm}{}% 9
+\BOOKMARK [2][-]{subsection.3.1}{Notes on the MPI implmentation}{section.3}% 10
+\BOOKMARK [1][-]{section.4}{Field aligned initialization}{}% 11
+\BOOKMARK [1][-]{section.5}{Numerical test programs}{}% 12
+\BOOKMARK [2][-]{subsection.5.1}{Cylindrical grid and circular flux surfaces}{section.5}% 13
+\BOOKMARK [2][-]{subsection.5.2}{Curvilinear grid}{section.5}% 14

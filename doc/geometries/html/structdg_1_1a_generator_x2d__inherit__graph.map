@@ -1,0 +1,5 @@
+<map id="dg::aGeneratorX2d" name="dg::aGeneratorX2d">
+<area shape="rect" id="node2" href="$structdg_1_1geo_1_1_ribeiro_x.html" title="A two&#45;dimensional grid based on &quot;almost&#45;conformal&quot; coordinates by Ribeiro and Scott 2010..." alt="" coords="5,80,128,107"/>
+<area shape="rect" id="node3" href="$structdg_1_1geo_1_1_separatrix_orthogonal.html" title="Choose points on separatrix. " alt="" coords="152,80,347,107"/>
+<area shape="rect" id="node4" href="$structdg_1_1geo_1_1_simple_orthogonal_x.html" title="Choose points on inside or outside line. " alt="" coords="371,80,557,107"/>
+</map>
