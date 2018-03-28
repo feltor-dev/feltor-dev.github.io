@@ -2,7 +2,15 @@ title: Feltor
 description: Numerical methods for SOL blob and turbulence simulations
 google_analytics: 
 show_downloads: true
-theme: jekyll-theme-cayman
+theme: minimal-mistakes-jekyll
+url: https://feltor-dev.github.io/
 
-gems:
+plugins:
   - jekyll-mentions
+include:
+  - _pages
+  - .htaccess
+teaser: /images/3dpic.jpg    
+minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
+
+github: [metadata]

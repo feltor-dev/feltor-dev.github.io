@@ -1,0 +1,10 @@
+main:
+  - title: "About"
+    url: /about/
+  - title: "Showroom"
+    url: /showroom/
+  - title: "Publications"
+    url: /publications/
+  - title: "Documentation"
+    url: /doc/dg/html/modules.html
+

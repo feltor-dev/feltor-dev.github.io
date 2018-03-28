@@ -1,17 +1,19 @@
-## Welcome to the FELTOR project!
+---
+title: "FELTOR"
+layout: splash
+permalink: /
+classes: wide
+<!-- toc: true -->
+author_profile: false
+comments: false
+excerpt: "Numerical methods for SOL blob and turbulence simulations"
+header:
+    overlay_image: /images/3dpic.jpg
+    caption: "Photo credit: [**Markus Held**](https://github.com/feltor-dev/feltor/blob/master/3dpic.jpg)"
+    cta_label: "Download"
+    cta_url: "https://github.com/feltor-dev/feltor.git"
+---
 
-Please find the documentation at [here](/doc/dg/html/modules.html)
 
-## Videos
 
-[![](http://img.youtube.com/vi/aUe6BatOpWs/0.jpg)](http://www.youtube.com/watch?v=aUe6BatOpWs "Tokamak turbulence")
-
-[![](http://img.youtube.com/vi/l9z5M4aq1ko/0.jpg)](http://www.youtube.com/watch?v=l9z5M4aq1ko "Tokamak Turbulence density")
-
-[![](http://img.youtube.com/vi/RXQFnDLSzJ0/0.jpg)](http://www.youtube.com/watch?v=RXQFnDLSzJ0 "Tokamak Turbulence poloidal cut")
-
-[![](http://img.youtube.com/vi/-aK9iA9UNXU/0.jpg)](http://www.youtube.com/watch?v=-aK9iA9UNXU "2D edge sol turbulence")
-
-[![](http://img.youtube.com/vi/CZPCRIKApjc/0.jpg)](http://www.youtube.com/watch?v=CZPCRIKApjc "Cold Blobs")
-
-[![](http://img.youtube.com/vi/qj-K0DlJnb0/0.jpg)](http://www.youtube.com/watch?v=qj-K0DlJnb0 "Hot Blobs")
+  
