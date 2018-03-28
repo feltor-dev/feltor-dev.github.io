@@ -9,6 +9,7 @@ plugins:
 include:
   - _pages
   - .htaccess
+  - _includes
 teaser: /images/3dpic.jpg    
 minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
 github: [metadata]
