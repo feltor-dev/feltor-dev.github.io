@@ -16,7 +16,6 @@ FELTOR (Full-F ELectromagnetic code in TORoidal geometry) is a modular
 scientific software package that can roughly be divided into six parts described as follows
 
 The structure of the FELTOR project:
-{% include figure image_path="https://github.com/feltor-dev/feltor/wiki/FELTOR_table.jpg " alt="The structure of the FELTOR project" %}
 
 ### User Zone:
 A collection of actual simulation projects and diagnostic
