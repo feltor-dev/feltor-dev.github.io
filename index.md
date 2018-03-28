@@ -10,7 +10,7 @@ excerpt: "Numerical methods for SOL blob and turbulence simulations"
 header:
     overlay_image: /images/3dpic_inv.jpg
     caption: "Photo credit: [**Markus Held**](https://github.com/feltor-dev/feltor/blob/master/3dpic.jpg)"
-    cta_label: "Download"
+    cta_label: "github"
     cta_url: "https://github.com/feltor-dev/feltor.git"
 ---
 
