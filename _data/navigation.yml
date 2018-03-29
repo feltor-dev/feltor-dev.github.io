@@ -1,6 +1,8 @@
 main:
   - title: "About"
-    url: /about/
+    url: /quickstart/
+  - title: "Wiki"
+    url: /wiki/
   - title: "Showroom"
     url: /showroom/
   - title: "Publications"
@@ -8,3 +10,30 @@ main:
   - title: "Documentation"
     url: /doc/dg/html/modules.html
 
+about:
+  - title: about
+    children:
+      - title: "Quick start guide"
+        url: /quickstart/
+      - title: "Further reading"
+        url: /furtherreading/
+      - title: "Acknowledgements"
+        url: /acknowledgements/
+      - title: "Terms of use"
+        url: /termsofuse/
+      - title: "Official Releases"
+        url: /releases/
+
+wiki:
+  - title: wiki
+    children:
+      - title: "What is FELTOR"
+        url: /wiki/
+      - title: "Contribute"
+        url: /contribute/
+      - title: "Design"
+        url: /design/
+      - title: "Error handling"
+        url: /errorhandling/
+      - title: "Troubleshooting"
+        url: /troubleshooting/

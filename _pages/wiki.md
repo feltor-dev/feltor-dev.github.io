@@ -1,16 +1,14 @@
 ---
-title: "About"
+title: "What is FELTOR?"
 layout: single
-permalink: /about/
+permalink: /wiki/
 classes: wide
-<!-- toc: true -->
 author_profile: false
 comments: false
+sidebar:
+  nav: "wiki"
 
 ---
-
-
-## What is FELTOR ?
 
 FELTOR (Full-F ELectromagnetic code in TORoidal geometry) is a modular
 scientific software package that can roughly be divided into six parts described as follows
@@ -48,5 +46,7 @@ Algorithms like conjugate gradient (CG) or Runge-Kutta schemes that can be imple
 <span>1.<span> Vector and Matrix operations:
 
 In this "hardware abstraction" level we define the interface for various vector and matrix operations like additions, multiplications, scalar products and so on. These functions are then implemented  and optimized on a variety of hardware architectures. 
+
+
 
 
