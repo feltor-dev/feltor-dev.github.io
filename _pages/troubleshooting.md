@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting"
 layout: single
-permalink: /troubleshooting
+permalink: /troubleshooting/
 classes: wide
 author_profile: false
 comments: false
