@@ -16,7 +16,7 @@ contribute. Currently we use the
 [fork and pull](https://help.github.com/articles/about-collaborative-development-models/) type of collaboration. Contributions are possible by making a
 [pull-request](https://help.github.com/articles/about-pull-requests/) to
 the official [feltor-dev/feltor](https://www.github.com/feltor-dev/feltor)
-develop branch. This means you have to fork the feltor-dev/feltor
+master branch. This means you have to fork the feltor-dev/feltor
 repository. When you make a pull-request we will review the code and may
 require changes before your code is merged into the official branch. If
 you don't feel comfortable, you can always create a pull-request to
@@ -25,8 +25,8 @@ you don't feel comfortable, you can always create a pull-request to
 or help on your code before going for the official branch. We only have
 one rule:
 
-* *The develop branch on feltor-dev/feltor must always be as stable and
-correct as possible* 
+* *The master branch on feltor-dev/feltor must always be as stable and
+correct as possible*
 
 You can do whatever you want in your own repository but a suggestion
 would be to use something similar to the
