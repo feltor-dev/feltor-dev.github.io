@@ -1,0 +1,7 @@
+var structdg_1_1_vector_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1device__memory_01_4_00_01type2fd9c7d236d45ede3961059cc822593c =
+[
+    [ "execution_policy", "structdg_1_1_vector_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1device__memory_01_4_00_01type2fd9c7d236d45ede3961059cc822593c.html#ab6503509cb7afa9e87f732c88742c4a7", null ],
+    [ "execution_policy", "structdg_1_1_vector_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1device__memory_01_4_00_01type2fd9c7d236d45ede3961059cc822593c.html#ac4e7ece81174862fc586d9f622d8deb2", null ],
+    [ "value_type", "structdg_1_1_vector_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1device__memory_01_4_00_01type2fd9c7d236d45ede3961059cc822593c.html#a8fb604598612f510c7bba481947310bd", null ],
+    [ "vector_category", "structdg_1_1_vector_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1device__memory_01_4_00_01type2fd9c7d236d45ede3961059cc822593c.html#a57ed052bd8e0ce1f275905f5e8fdb5c6", null ]
+];

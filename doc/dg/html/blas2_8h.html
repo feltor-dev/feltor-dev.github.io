@@ -38,8 +38,9 @@
   <ul class="tablist"> 
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
-    <li><a href="../../geometries/html/modules.html">geometry</a></li>
+    <li><a href="../../geometries/html/modules.html">geometries</a></li>
     <li><a href="../../file/html/namespacefile.html">file</a></li>
+    <li><a href="../../exblas/html/namespaceexblas.html">exblas</a></li>
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
@@ -146,16 +147,16 @@ Functions</h2></td></tr>
 <tr class="separator:gad55efc77b7320e376b7f00b61ce0dd6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafb2ae8931d3a1f6b27a908c35798defd"><td class="memTemplParams" colspan="2">template&lt;class DiagonalMatrix , class container &gt; </td></tr>
 <tr class="memitem:gafb2ae8931d3a1f6b27a908c35798defd"><td class="memTemplItemLeft" align="right" valign="top">MatrixTraits&lt; DiagonalMatrix &gt;::value_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas2.html#gafb2ae8931d3a1f6b27a908c35798defd">dg::blas2::dot</a> (const container &amp;x, const DiagonalMatrix &amp;m, const container &amp;y)</td></tr>
-<tr class="memdesc:gafb2ae8931d3a1f6b27a908c35798defd"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( x^T M y\); General dot produt  <a href="group__blas2.html#gafb2ae8931d3a1f6b27a908c35798defd">More...</a><br /></td></tr>
+<tr class="memdesc:gafb2ae8931d3a1f6b27a908c35798defd"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( x^T M y\); Binary reproducible general dot product  <a href="group__blas2.html#gafb2ae8931d3a1f6b27a908c35798defd">More...</a><br /></td></tr>
 <tr class="separator:gafb2ae8931d3a1f6b27a908c35798defd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafaf8973061ab59f59e49697a46d6716e"><td class="memTemplParams" colspan="2">template&lt;class DiagonalMatrix , class container &gt; </td></tr>
 <tr class="memitem:gafaf8973061ab59f59e49697a46d6716e"><td class="memTemplItemLeft" align="right" valign="top">MatrixTraits&lt; DiagonalMatrix &gt;::value_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas2.html#gafaf8973061ab59f59e49697a46d6716e">dg::blas2::dot</a> (const DiagonalMatrix &amp;m, const container &amp;x)</td></tr>
-<tr class="memdesc:gafaf8973061ab59f59e49697a46d6716e"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( x^T M x\); General dot produt  <a href="group__blas2.html#gafaf8973061ab59f59e49697a46d6716e">More...</a><br /></td></tr>
+<tr class="memdesc:gafaf8973061ab59f59e49697a46d6716e"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( x^T M x\); Binary reproducible general dot product  <a href="group__blas2.html#gafaf8973061ab59f59e49697a46d6716e">More...</a><br /></td></tr>
 <tr class="separator:gafaf8973061ab59f59e49697a46d6716e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab1885f3913f72b7ea380d58f40c04656"><td class="memTemplParams" colspan="2">template&lt;class Matrix , class container &gt; </td></tr>
-<tr class="memitem:gab1885f3913f72b7ea380d58f40c04656"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas2.html#gab1885f3913f72b7ea380d58f40c04656">dg::blas2::symv</a> (typename MatrixTraits&lt; Matrix &gt;::value_type alpha, const Matrix &amp;M, const container &amp;x, typename MatrixTraits&lt; Matrix &gt;::value_type beta, container &amp;y)</td></tr>
-<tr class="memdesc:gab1885f3913f72b7ea380d58f40c04656"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( y = \alpha M x + \beta y\)  <a href="group__blas2.html#gab1885f3913f72b7ea380d58f40c04656">More...</a><br /></td></tr>
-<tr class="separator:gab1885f3913f72b7ea380d58f40c04656"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa4386168cffcb35e549f44034ee80eb0"><td class="memTemplParams" colspan="2">template&lt;class Matrix , class container &gt; </td></tr>
+<tr class="memitem:gaa4386168cffcb35e549f44034ee80eb0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas2.html#gaa4386168cffcb35e549f44034ee80eb0">dg::blas2::symv</a> (get_value_type&lt; container &gt; alpha, const Matrix &amp;M, const container &amp;x, get_value_type&lt; container &gt; beta, container &amp;y)</td></tr>
+<tr class="memdesc:gaa4386168cffcb35e549f44034ee80eb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( y = \alpha M x + \beta y\)  <a href="group__blas2.html#gaa4386168cffcb35e549f44034ee80eb0">More...</a><br /></td></tr>
+<tr class="separator:gaa4386168cffcb35e549f44034ee80eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1e942b5970e73d1338c742eb57d1d389"><td class="memTemplParams" colspan="2">template&lt;class Matrix , class container , class same_or_another_container &gt; </td></tr>
 <tr class="memitem:ga1e942b5970e73d1338c742eb57d1d389"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas2.html#ga1e942b5970e73d1338c742eb57d1d389">dg::blas2::symv</a> (Matrix &amp;M, const container &amp;x, same_or_another_container &amp;y)</td></tr>
 <tr class="memdesc:ga1e942b5970e73d1338c742eb57d1d389"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( y = M x\)  <a href="group__blas2.html#ga1e942b5970e73d1338c742eb57d1d389">More...</a><br /></td></tr>
@@ -164,10 +165,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ga5c79e9a4d2eacd91c12ff1591b90cc3f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas2.html#ga5c79e9a4d2eacd91c12ff1591b90cc3f">dg::blas2::gemv</a> (Matrix &amp;M, const container &amp;x, same_or_another_container &amp;y)</td></tr>
 <tr class="memdesc:ga5c79e9a4d2eacd91c12ff1591b90cc3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( y = M x\); General Matrix-Vector product  <a href="group__blas2.html#ga5c79e9a4d2eacd91c12ff1591b90cc3f">More...</a><br /></td></tr>
 <tr class="separator:ga5c79e9a4d2eacd91c12ff1591b90cc3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8401c8d53d1779c6ebc3af74e39600c2"><td class="memTemplParams" colspan="2">template&lt;class Matrix , class container &gt; </td></tr>
-<tr class="memitem:ga8401c8d53d1779c6ebc3af74e39600c2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas2.html#ga8401c8d53d1779c6ebc3af74e39600c2">dg::blas2::gemv</a> (typename MatrixTraits&lt; Matrix &gt;::value_type alpha, const Matrix &amp;M, const container &amp;x, typename MatrixTraits&lt; Matrix &gt;::value_type beta, container &amp;y)</td></tr>
-<tr class="memdesc:ga8401c8d53d1779c6ebc3af74e39600c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( y = \alpha M x + \beta y \); General Matrix-Vector product  <a href="group__blas2.html#ga8401c8d53d1779c6ebc3af74e39600c2">More...</a><br /></td></tr>
-<tr class="separator:ga8401c8d53d1779c6ebc3af74e39600c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2efbe31db28ff2c292f5384c1d829393"><td class="memTemplParams" colspan="2">template&lt;class Matrix , class container &gt; </td></tr>
+<tr class="memitem:ga2efbe31db28ff2c292f5384c1d829393"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas2.html#ga2efbe31db28ff2c292f5384c1d829393">dg::blas2::gemv</a> (get_value_type&lt; container &gt; alpha, const Matrix &amp;M, const container &amp;x, get_value_type&lt; container &gt; beta, container &amp;y)</td></tr>
+<tr class="memdesc:ga2efbe31db28ff2c292f5384c1d829393"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( y = \alpha M x + \beta y \); General Matrix-Vector product  <a href="group__blas2.html#ga2efbe31db28ff2c292f5384c1d829393">More...</a><br /></td></tr>
+<tr class="separator:ga2efbe31db28ff2c292f5384c1d829393"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Basic linear algebra level 2 functions (functions that involve vectors and matrices) </p>
@@ -177,7 +178,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="blas2_8h.html">blas2.h</a></li>
-    <li class="footer">Generated on Wed Nov 15 2017 10:37:28 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Apr 26 2018 16:28:14 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

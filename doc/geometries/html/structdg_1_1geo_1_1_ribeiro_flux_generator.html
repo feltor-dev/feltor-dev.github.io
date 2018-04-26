@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Geometry: dg::geo::RibeiroFluxGenerator Struct Reference</title>
+<title>Geometries: dg::geo::RibeiroFluxGenerator Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -38,17 +38,18 @@
   <ul class="tablist"> 
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
-    <li><a href="../../geometries/html/modules.html">geometry</a></li>
+    <li><a href="../../geometries/html/modules.html">geometries</a></li>
     <li><a href="../../file/html/namespacefile.html">file</a></li>
+    <li><a href="../../exblas/html/namespaceexblas.html">exblas</a></li>
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Geometry
+   <div id="projectname">Geometries
    </div>
-   <div id="projectbrief">Library for magnetic flux functions, grids and grid generators</div>
+   <div id="projectbrief">Extension with magnetic flux functions, grids and grid generators</div>
   </td>
  </tr>
  </tbody>
@@ -145,9 +146,9 @@ Inheritance diagram for dg::geo::RibeiroFluxGenerator:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2c2b3f0d15c03032e8b8def0d9d6c558"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_ribeiro_flux_generator.html#a2c2b3f0d15c03032e8b8def0d9d6c558">RibeiroFluxGenerator</a> (const <a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl2.html">BinaryFunctorsLvl2</a> &amp;psi, double psi_0, double psi_1, double x0, double y0, int mode=0)</td></tr>
-<tr class="memdesc:a2c2b3f0d15c03032e8b8def0d9d6c558"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a flux aligned grid generator.  <a href="#a2c2b3f0d15c03032e8b8def0d9d6c558">More...</a><br /></td></tr>
-<tr class="separator:a2c2b3f0d15c03032e8b8def0d9d6c558"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0f8ec8635f28c5041fabf8f98972fe6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_ribeiro_flux_generator.html#ab0f8ec8635f28c5041fabf8f98972fe6">RibeiroFluxGenerator</a> (const <a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl2.html">BinaryFunctorsLvl2</a> &amp;psi, double psi_0, double psi_1, double x0, double y0, int mode=0, bool verbose=false)</td></tr>
+<tr class="memdesc:ab0f8ec8635f28c5041fabf8f98972fe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a flux aligned grid generator.  <a href="#ab0f8ec8635f28c5041fabf8f98972fe6">More...</a><br /></td></tr>
+<tr class="separator:ab0f8ec8635f28c5041fabf8f98972fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28835fd56a8ec5c4f6d97ce286fd165f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structdg_1_1geo_1_1_ribeiro_flux_generator.html">RibeiroFluxGenerator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_ribeiro_flux_generator.html#a28835fd56a8ec5c4f6d97ce286fd165f">clone</a> () const </td></tr>
 <tr class="memdesc:a28835fd56a8ec5c4f6d97ce286fd165f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract clone method that returns a copy on the heap.  <a href="#a28835fd56a8ec5c4f6d97ce286fd165f">More...</a><br /></td></tr>
 <tr class="separator:a28835fd56a8ec5c4f6d97ce286fd165f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,7 +184,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Same as the <a class="el" href="structdg_1_1geo_1_1_ribeiro.html" title="A two-dimensional grid based on &quot;almost-conformal&quot; coordinates by Ribeiro and Scott 2010...">Ribeiro</a> class just but uses psi as a flux label directly. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a2c2b3f0d15c03032e8b8def0d9d6c558"></a>
+<a class="anchor" id="ab0f8ec8635f28c5041fabf8f98972fe6"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -224,7 +225,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>mode</em> = <code>0</code>&#160;</td>
+          <td class="paramname"><em>mode</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>verbose</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -245,9 +252,10 @@ Additional Inherited Members</h2></td></tr>
     <tr><td class="paramname">psi</td><td>\( \psi(x,y)\) the flux function and its derivatives in Cartesian coordinates (x,y) </td></tr>
     <tr><td class="paramname">psi_0</td><td>first boundary </td></tr>
     <tr><td class="paramname">psi_1</td><td>second boundary </td></tr>
-    <tr><td class="paramname">x0</td><td>a point in the inside of the ring bounded by psi0 (shouldn't be the O-point) </td></tr>
-    <tr><td class="paramname">y0</td><td>a point in the inside of the ring bounded by psi0 (shouldn't be the O-point) </td></tr>
+    <tr><td class="paramname">x0</td><td>a point in the inside of the domain bounded by <code>psi_0</code> (shouldn't be the O-point) </td></tr>
+    <tr><td class="paramname">y0</td><td>a point in the inside of the domain bounded by <code>psi_0</code> (shouldn't be the O-point) </td></tr>
     <tr><td class="paramname">mode</td><td>This parameter indicates the adaption type used to create the grid: 0 is no adaption, 1 is an equalarc adaption </td></tr>
+    <tr><td class="paramname">verbose</td><td>if true the integrators will write additional information to <code>std::cout</code> </td></tr>
   </table>
   </dd>
 </dl>
@@ -292,7 +300,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="namespacedg_1_1geo.html">geo</a></li><li class="navelem"><a class="el" href="structdg_1_1geo_1_1_ribeiro_flux_generator.html">RibeiroFluxGenerator</a></li>
-    <li class="footer">Generated on Wed Nov 15 2017 10:37:33 for Geometry by
+    <li class="footer">Generated on Thu Apr 26 2018 16:28:25 for Geometries by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

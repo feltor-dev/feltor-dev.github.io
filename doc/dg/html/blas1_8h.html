@@ -38,8 +38,9 @@
   <ul class="tablist"> 
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
-    <li><a href="../../geometries/html/modules.html">geometry</a></li>
+    <li><a href="../../geometries/html/modules.html">geometries</a></li>
     <li><a href="../../file/html/namespacefile.html">file</a></li>
+    <li><a href="../../exblas/html/namespaceexblas.html">exblas</a></li>
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
@@ -140,62 +141,70 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gac47888be3a3f75994f40de9a70d28c9c"><td class="memTemplParams" colspan="2">template&lt;class container , class other_container &gt; </td></tr>
-<tr class="memitem:gac47888be3a3f75994f40de9a70d28c9c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#gac47888be3a3f75994f40de9a70d28c9c">dg::blas1::transfer</a> (const container &amp;x, other_container &amp;y)</td></tr>
-<tr class="memdesc:gac47888be3a3f75994f40de9a70d28c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">y=x; Generic way to copy and/or convert a container type to a different container type (e.g. from CPU to GPU, or double to float, etc.)  <a href="group__blas1.html#gac47888be3a3f75994f40de9a70d28c9c">More...</a><br /></td></tr>
-<tr class="separator:gac47888be3a3f75994f40de9a70d28c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad325c39d1994561ee38813a2dde7a46a"><td class="memTemplParams" colspan="2">template&lt;class container , class other_container &gt; </td></tr>
+<tr class="memitem:gad325c39d1994561ee38813a2dde7a46a"><td class="memTemplItemLeft" align="right" valign="top">container&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#gad325c39d1994561ee38813a2dde7a46a">dg::blas1::transfer</a> (const other_container &amp;x)</td></tr>
+<tr class="memdesc:gad325c39d1994561ee38813a2dde7a46a"><td class="mdescLeft">&#160;</td><td class="mdescRight">y=x; Generic way to copy/construct and/or convert a container type from a different container type (e.g. from CPU to GPU, or double to float, etc.)  <a href="group__blas1.html#gad325c39d1994561ee38813a2dde7a46a">More...</a><br /></td></tr>
+<tr class="separator:gad325c39d1994561ee38813a2dde7a46a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga794da3a01565570dcdc17bfb06594ce2"><td class="memTemplParams" colspan="2">template&lt;class container , class other_container &gt; </td></tr>
+<tr class="memitem:ga794da3a01565570dcdc17bfb06594ce2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#ga794da3a01565570dcdc17bfb06594ce2">dg::blas1::transfer</a> (const other_container &amp;x, container &amp;y)</td></tr>
+<tr class="memdesc:ga794da3a01565570dcdc17bfb06594ce2"><td class="mdescLeft">&#160;</td><td class="mdescRight">y=x; Generic way to copy/assign and/or convert a container type to a different container type (e.g. from CPU to GPU, or double to float, etc.)  <a href="group__blas1.html#ga794da3a01565570dcdc17bfb06594ce2">More...</a><br /></td></tr>
+<tr class="separator:ga794da3a01565570dcdc17bfb06594ce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad69cf7352ad8c173980801da73c9c6bc"><td class="memTemplParams" colspan="2">template&lt;class Assignable &gt; </td></tr>
 <tr class="memitem:gad69cf7352ad8c173980801da73c9c6bc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#gad69cf7352ad8c173980801da73c9c6bc">dg::blas1::copy</a> (const Assignable &amp;x, Assignable &amp;y)</td></tr>
 <tr class="memdesc:gad69cf7352ad8c173980801da73c9c6bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">y=x; Invoke assignment operator  <a href="group__blas1.html#gad69cf7352ad8c173980801da73c9c6bc">More...</a><br /></td></tr>
 <tr class="separator:gad69cf7352ad8c173980801da73c9c6bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab5a71c1ee08c86ec0627a335d28848f4"><td class="memTemplParams" colspan="2">template&lt;class container &gt; </td></tr>
-<tr class="memitem:gab5a71c1ee08c86ec0627a335d28848f4"><td class="memTemplItemLeft" align="right" valign="top">VectorTraits&lt; container &gt;::value_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#gab5a71c1ee08c86ec0627a335d28848f4">dg::blas1::dot</a> (const container &amp;x, const container &amp;y)</td></tr>
-<tr class="memdesc:gab5a71c1ee08c86ec0627a335d28848f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( x^T y\); Euclidean dot product between two containers  <a href="group__blas1.html#gab5a71c1ee08c86ec0627a335d28848f4">More...</a><br /></td></tr>
-<tr class="separator:gab5a71c1ee08c86ec0627a335d28848f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4a5c13616e26d655e4163443fcb79e2e"><td class="memTemplParams" colspan="2">template&lt;class container &gt; </td></tr>
-<tr class="memitem:ga4a5c13616e26d655e4163443fcb79e2e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#ga4a5c13616e26d655e4163443fcb79e2e">dg::blas1::axpby</a> (typename VectorTraits&lt; container &gt;::value_type alpha, const container &amp;x, typename VectorTraits&lt; container &gt;::value_type beta, container &amp;y)</td></tr>
-<tr class="memdesc:ga4a5c13616e26d655e4163443fcb79e2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( y = \alpha x + \beta y\)  <a href="group__blas1.html#ga4a5c13616e26d655e4163443fcb79e2e">More...</a><br /></td></tr>
-<tr class="separator:ga4a5c13616e26d655e4163443fcb79e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab4fd64e98c7456805efa0a8b7a636c0e"><td class="memTemplParams" colspan="2">template&lt;class container &gt; </td></tr>
-<tr class="memitem:gab4fd64e98c7456805efa0a8b7a636c0e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#gab4fd64e98c7456805efa0a8b7a636c0e">dg::blas1::axpby</a> (typename VectorTraits&lt; container &gt;::value_type alpha, const container &amp;x, typename VectorTraits&lt; container &gt;::value_type beta, const container &amp;y, container &amp;z)</td></tr>
-<tr class="memdesc:gab4fd64e98c7456805efa0a8b7a636c0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( z = \alpha x + \beta y\)  <a href="group__blas1.html#gab4fd64e98c7456805efa0a8b7a636c0e">More...</a><br /></td></tr>
-<tr class="separator:gab4fd64e98c7456805efa0a8b7a636c0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga88d6b42d0822afc3022f1b22f0f3ff6a"><td class="memTemplParams" colspan="2">template&lt;class container &gt; </td></tr>
-<tr class="memitem:ga88d6b42d0822afc3022f1b22f0f3ff6a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#ga88d6b42d0822afc3022f1b22f0f3ff6a">dg::blas1::axpbypgz</a> (typename VectorTraits&lt; container &gt;::value_type alpha, const container &amp;x, typename VectorTraits&lt; container &gt;::value_type beta, const container &amp;y, typename VectorTraits&lt; container &gt;::value_type gamma, container &amp;z)</td></tr>
-<tr class="memdesc:ga88d6b42d0822afc3022f1b22f0f3ff6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( z = \alpha x + \beta y + \gamma z\)  <a href="group__blas1.html#ga88d6b42d0822afc3022f1b22f0f3ff6a">More...</a><br /></td></tr>
-<tr class="separator:ga88d6b42d0822afc3022f1b22f0f3ff6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0031efa80aca7de577bdd8063e12e457"><td class="memTemplParams" colspan="2">template&lt;class container &gt; </td></tr>
+<tr class="memitem:ga0031efa80aca7de577bdd8063e12e457"><td class="memTemplItemLeft" align="right" valign="top">get_value_type&lt; container &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#ga0031efa80aca7de577bdd8063e12e457">dg::blas1::dot</a> (const container &amp;x, const container &amp;y)</td></tr>
+<tr class="memdesc:ga0031efa80aca7de577bdd8063e12e457"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( x^T y\); Binary reproducible Euclidean dot product between two containers  <a href="group__blas1.html#ga0031efa80aca7de577bdd8063e12e457">More...</a><br /></td></tr>
+<tr class="separator:ga0031efa80aca7de577bdd8063e12e457"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf35427a456cd09d5ec8e5ed97378933c"><td class="memTemplParams" colspan="2">template&lt;class container &gt; </td></tr>
+<tr class="memitem:gaf35427a456cd09d5ec8e5ed97378933c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#gaf35427a456cd09d5ec8e5ed97378933c">dg::blas1::axpby</a> (get_value_type&lt; container &gt; alpha, const container &amp;x, get_value_type&lt; container &gt; beta, container &amp;y)</td></tr>
+<tr class="memdesc:gaf35427a456cd09d5ec8e5ed97378933c"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( y = \alpha x + \beta y\)  <a href="group__blas1.html#gaf35427a456cd09d5ec8e5ed97378933c">More...</a><br /></td></tr>
+<tr class="separator:gaf35427a456cd09d5ec8e5ed97378933c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac55b0bddbf60013b756caa1a903aa8de"><td class="memTemplParams" colspan="2">template&lt;class container &gt; </td></tr>
+<tr class="memitem:gac55b0bddbf60013b756caa1a903aa8de"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#gac55b0bddbf60013b756caa1a903aa8de">dg::blas1::axpby</a> (get_value_type&lt; container &gt; alpha, const container &amp;x, get_value_type&lt; container &gt; beta, const container &amp;y, container &amp;z)</td></tr>
+<tr class="memdesc:gac55b0bddbf60013b756caa1a903aa8de"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( z = \alpha x + \beta y\)  <a href="group__blas1.html#gac55b0bddbf60013b756caa1a903aa8de">More...</a><br /></td></tr>
+<tr class="separator:gac55b0bddbf60013b756caa1a903aa8de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7746f633c737e575df834428a4c89731"><td class="memTemplParams" colspan="2">template&lt;class container &gt; </td></tr>
+<tr class="memitem:ga7746f633c737e575df834428a4c89731"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#ga7746f633c737e575df834428a4c89731">dg::blas1::axpbypgz</a> (get_value_type&lt; container &gt; alpha, const container &amp;x, get_value_type&lt; container &gt; beta, const container &amp;y, get_value_type&lt; container &gt; gamma, container &amp;z)</td></tr>
+<tr class="memdesc:ga7746f633c737e575df834428a4c89731"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( z = \alpha x + \beta y + \gamma z\)  <a href="group__blas1.html#ga7746f633c737e575df834428a4c89731">More...</a><br /></td></tr>
+<tr class="separator:ga7746f633c737e575df834428a4c89731"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf23bcda76d2363fa2e08d03fec28714a"><td class="memTemplParams" colspan="2">template&lt;class container , class UnaryOp &gt; </td></tr>
 <tr class="memitem:gaf23bcda76d2363fa2e08d03fec28714a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#gaf23bcda76d2363fa2e08d03fec28714a">dg::blas1::transform</a> (const container &amp;x, container &amp;y, UnaryOp op)</td></tr>
 <tr class="memdesc:gaf23bcda76d2363fa2e08d03fec28714a"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( y = op(x)\)  <a href="group__blas1.html#gaf23bcda76d2363fa2e08d03fec28714a">More...</a><br /></td></tr>
 <tr class="separator:gaf23bcda76d2363fa2e08d03fec28714a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga27b2c22d307370bc70c915a1f4ef041a"><td class="memTemplParams" colspan="2">template&lt;class container &gt; </td></tr>
-<tr class="memitem:ga27b2c22d307370bc70c915a1f4ef041a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#ga27b2c22d307370bc70c915a1f4ef041a">dg::blas1::scal</a> (container &amp;x, typename VectorTraits&lt; container &gt;::value_type alpha)</td></tr>
-<tr class="memdesc:ga27b2c22d307370bc70c915a1f4ef041a"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( x = \alpha x\)  <a href="group__blas1.html#ga27b2c22d307370bc70c915a1f4ef041a">More...</a><br /></td></tr>
-<tr class="separator:ga27b2c22d307370bc70c915a1f4ef041a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7a8ce0e1edd8fedd28875d27e7c69312"><td class="memTemplParams" colspan="2">template&lt;class container &gt; </td></tr>
-<tr class="memitem:ga7a8ce0e1edd8fedd28875d27e7c69312"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#ga7a8ce0e1edd8fedd28875d27e7c69312">dg::blas1::plus</a> (container &amp;x, typename VectorTraits&lt; container &gt;::value_type alpha)</td></tr>
-<tr class="memdesc:ga7a8ce0e1edd8fedd28875d27e7c69312"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( x = x + \alpha \)  <a href="group__blas1.html#ga7a8ce0e1edd8fedd28875d27e7c69312">More...</a><br /></td></tr>
-<tr class="separator:ga7a8ce0e1edd8fedd28875d27e7c69312"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga67242fc36cf08182cfaa10d358762362"><td class="memTemplParams" colspan="2">template&lt;class container &gt; </td></tr>
+<tr class="memitem:ga67242fc36cf08182cfaa10d358762362"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#ga67242fc36cf08182cfaa10d358762362">dg::blas1::scal</a> (container &amp;x, get_value_type&lt; container &gt; alpha)</td></tr>
+<tr class="memdesc:ga67242fc36cf08182cfaa10d358762362"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( x = \alpha x\)  <a href="group__blas1.html#ga67242fc36cf08182cfaa10d358762362">More...</a><br /></td></tr>
+<tr class="separator:ga67242fc36cf08182cfaa10d358762362"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaecd400c97f9d68ebf476f69722e05239"><td class="memTemplParams" colspan="2">template&lt;class container &gt; </td></tr>
+<tr class="memitem:gaecd400c97f9d68ebf476f69722e05239"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#gaecd400c97f9d68ebf476f69722e05239">dg::blas1::plus</a> (container &amp;x, get_value_type&lt; container &gt; alpha)</td></tr>
+<tr class="memdesc:gaecd400c97f9d68ebf476f69722e05239"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( x = x + \alpha \)  <a href="group__blas1.html#gaecd400c97f9d68ebf476f69722e05239">More...</a><br /></td></tr>
+<tr class="separator:gaecd400c97f9d68ebf476f69722e05239"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9cbf8263c526bdc4714eb525e35879ff"><td class="memTemplParams" colspan="2">template&lt;class container &gt; </td></tr>
 <tr class="memitem:ga9cbf8263c526bdc4714eb525e35879ff"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#ga9cbf8263c526bdc4714eb525e35879ff">dg::blas1::pointwiseDot</a> (const container &amp;x1, const container &amp;x2, container &amp;y)</td></tr>
 <tr class="memdesc:ga9cbf8263c526bdc4714eb525e35879ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( y = x_1 x_2 \)  <a href="group__blas1.html#ga9cbf8263c526bdc4714eb525e35879ff">More...</a><br /></td></tr>
 <tr class="separator:ga9cbf8263c526bdc4714eb525e35879ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1ba8bae346379f28e947d76f38f5dee5"><td class="memTemplParams" colspan="2">template&lt;class container &gt; </td></tr>
-<tr class="memitem:ga1ba8bae346379f28e947d76f38f5dee5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#ga1ba8bae346379f28e947d76f38f5dee5">dg::blas1::pointwiseDot</a> (typename VectorTraits&lt; container &gt;::value_type alpha, const container &amp;x1, const container &amp;x2, typename VectorTraits&lt; container &gt;::value_type beta, container &amp;y)</td></tr>
-<tr class="memdesc:ga1ba8bae346379f28e947d76f38f5dee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( y = \alpha x_1 x_2 + \beta y\)  <a href="group__blas1.html#ga1ba8bae346379f28e947d76f38f5dee5">More...</a><br /></td></tr>
-<tr class="separator:ga1ba8bae346379f28e947d76f38f5dee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaea2d695ad437a96b2c8e44e8a7487686"><td class="memTemplParams" colspan="2">template&lt;class container &gt; </td></tr>
-<tr class="memitem:gaea2d695ad437a96b2c8e44e8a7487686"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#gaea2d695ad437a96b2c8e44e8a7487686">dg::blas1::pointwiseDot</a> (typename VectorTraits&lt; container &gt;::value_type alpha, const container &amp;x1, const container &amp;x2, const container &amp;x3, typename VectorTraits&lt; container &gt;::value_type beta, container &amp;y)</td></tr>
-<tr class="memdesc:gaea2d695ad437a96b2c8e44e8a7487686"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( y = \alpha x_1 x_2 x_3 + \beta y\)  <a href="group__blas1.html#gaea2d695ad437a96b2c8e44e8a7487686">More...</a><br /></td></tr>
-<tr class="separator:gaea2d695ad437a96b2c8e44e8a7487686"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0de8ee9be7931dcb9d26660466a29230"><td class="memTemplParams" colspan="2">template&lt;class container &gt; </td></tr>
+<tr class="memitem:ga0de8ee9be7931dcb9d26660466a29230"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#ga0de8ee9be7931dcb9d26660466a29230">dg::blas1::pointwiseDot</a> (get_value_type&lt; container &gt; alpha, const container &amp;x1, const container &amp;x2, get_value_type&lt; container &gt; beta, container &amp;y)</td></tr>
+<tr class="memdesc:ga0de8ee9be7931dcb9d26660466a29230"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( y = \alpha x_1 x_2 + \beta y\)  <a href="group__blas1.html#ga0de8ee9be7931dcb9d26660466a29230">More...</a><br /></td></tr>
+<tr class="separator:ga0de8ee9be7931dcb9d26660466a29230"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga32ccf29d94948f83f0f3ee2b90665703"><td class="memTemplParams" colspan="2">template&lt;class container &gt; </td></tr>
+<tr class="memitem:ga32ccf29d94948f83f0f3ee2b90665703"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#ga32ccf29d94948f83f0f3ee2b90665703">dg::blas1::pointwiseDot</a> (get_value_type&lt; container &gt; alpha, const container &amp;x1, const container &amp;x2, const container &amp;x3, get_value_type&lt; container &gt; beta, container &amp;y)</td></tr>
+<tr class="memdesc:ga32ccf29d94948f83f0f3ee2b90665703"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( y = \alpha x_1 x_2 x_3 + \beta y\)  <a href="group__blas1.html#ga32ccf29d94948f83f0f3ee2b90665703">More...</a><br /></td></tr>
+<tr class="separator:ga32ccf29d94948f83f0f3ee2b90665703"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad2385e9a3b9f16ee75370cd475cc2025"><td class="memTemplParams" colspan="2">template&lt;class container &gt; </td></tr>
 <tr class="memitem:gad2385e9a3b9f16ee75370cd475cc2025"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#gad2385e9a3b9f16ee75370cd475cc2025">dg::blas1::pointwiseDivide</a> (const container &amp;x1, const container &amp;x2, container &amp;y)</td></tr>
 <tr class="memdesc:gad2385e9a3b9f16ee75370cd475cc2025"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( y = x_1/ x_2\)  <a href="group__blas1.html#gad2385e9a3b9f16ee75370cd475cc2025">More...</a><br /></td></tr>
 <tr class="separator:gad2385e9a3b9f16ee75370cd475cc2025"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1e90ceb30d542d6cd6ce6a18dfbef393"><td class="memTemplParams" colspan="2">template&lt;class container &gt; </td></tr>
-<tr class="memitem:ga1e90ceb30d542d6cd6ce6a18dfbef393"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#ga1e90ceb30d542d6cd6ce6a18dfbef393">dg::blas1::pointwiseDot</a> (typename VectorTraits&lt; container &gt;::value_type alpha, const container &amp;x1, const container &amp;y1, typename VectorTraits&lt; container &gt;::value_type beta, const container &amp;x2, const container &amp;y2, typename VectorTraits&lt; container &gt;::value_type gamma, container &amp;z)</td></tr>
-<tr class="memdesc:ga1e90ceb30d542d6cd6ce6a18dfbef393"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( z = \alpha x_1x_2 + \beta x_2y_2 + \gamma z\)  <a href="group__blas1.html#ga1e90ceb30d542d6cd6ce6a18dfbef393">More...</a><br /></td></tr>
-<tr class="separator:ga1e90ceb30d542d6cd6ce6a18dfbef393"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac787da1f14314db8601544127016f98c"><td class="memTemplParams" colspan="2">template&lt;class container &gt; </td></tr>
+<tr class="memitem:gac787da1f14314db8601544127016f98c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#gac787da1f14314db8601544127016f98c">dg::blas1::pointwiseDivide</a> (get_value_type&lt; container &gt; alpha, const container &amp;x1, const container &amp;x2, get_value_type&lt; container &gt; beta, container &amp;y)</td></tr>
+<tr class="memdesc:gac787da1f14314db8601544127016f98c"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( y = \alpha x_1/ x_2 + \beta y \)  <a href="group__blas1.html#gac787da1f14314db8601544127016f98c">More...</a><br /></td></tr>
+<tr class="separator:gac787da1f14314db8601544127016f98c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaca925b9c729d2af1a7ab96cdfa3c99d4"><td class="memTemplParams" colspan="2">template&lt;class container &gt; </td></tr>
+<tr class="memitem:gaca925b9c729d2af1a7ab96cdfa3c99d4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#gaca925b9c729d2af1a7ab96cdfa3c99d4">dg::blas1::pointwiseDot</a> (get_value_type&lt; container &gt; alpha, const container &amp;x1, const container &amp;y1, get_value_type&lt; container &gt; beta, const container &amp;x2, const container &amp;y2, get_value_type&lt; container &gt; gamma, container &amp;z)</td></tr>
+<tr class="memdesc:gaca925b9c729d2af1a7ab96cdfa3c99d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( z = \alpha x_1x_2 + \beta x_2y_2 + \gamma z\)  <a href="group__blas1.html#gaca925b9c729d2af1a7ab96cdfa3c99d4">More...</a><br /></td></tr>
+<tr class="separator:gaca925b9c729d2af1a7ab96cdfa3c99d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Basic linear algebra level 1 functions (functions that only involve vectors and not matrices) </p>
@@ -205,7 +214,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="blas1_8h.html">blas1.h</a></li>
-    <li class="footer">Generated on Wed Nov 15 2017 10:37:28 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Apr 26 2018 16:28:14 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -147,11 +147,11 @@
     <class kind="struct">dg::geo::aBinaryFunctor</class>
     <class kind="struct">dg::geo::aCloneableBinaryFunctor</class>
     <class kind="struct">dg::geo::BinaryFunctorAdapter</class>
+    <class kind="struct">dg::geo::Constant</class>
     <class kind="struct">dg::geo::BinaryFunctorsLvl1</class>
     <class kind="struct">dg::geo::BinaryFunctorsLvl2</class>
     <class kind="struct">dg::geo::BinarySymmTensorLvl1</class>
     <class kind="struct">dg::geo::BinaryVectorLvl0</class>
-    <class kind="struct">dg::geo::Constant</class>
     <namespace>dg</namespace>
     <namespace>dg::geo</namespace>
     <member kind="function">
@@ -401,6 +401,7 @@
     <filename>simple__orthogonal_8h</filename>
     <includes id="generator_8h" name="generator.h" local="yes" imported="no">generator.h</includes>
     <includes id="utilities_8h" name="utilities.h" local="yes" imported="no">utilities.h</includes>
+    <includes id="adaption_8h" name="adaption.h" local="yes" imported="no">adaption.h</includes>
     <class kind="struct">dg::geo::SimpleOrthogonal</class>
     <namespace>dg</namespace>
     <namespace>dg::geo</namespace>
@@ -603,6 +604,20 @@
       <name>findXpoint</name>
       <anchorfile>group__misc__geo.html</anchorfile>
       <anchor>gafcee60ecf901ef09ae3fbf87bd146fbd</anchor>
+      <arglist>(const BinaryFunctorsLvl2 &amp;psi, double &amp;R_X, double &amp;Z_X)</arglist>
+    </member>
+    <member kind="function">
+      <type>BinarySymmTensorLvl1</type>
+      <name>make_Xbump_monitor</name>
+      <anchorfile>namespacedg_1_1geo.html</anchorfile>
+      <anchor>a1ee422753ae1d392e40577c69a06001c</anchor>
+      <arglist>(const BinaryFunctorsLvl2 &amp;psi, double &amp;R_X, double &amp;Z_X, double radiusX, double radiusY)</arglist>
+    </member>
+    <member kind="function">
+      <type>BinarySymmTensorLvl1</type>
+      <name>make_Xconst_monitor</name>
+      <anchorfile>namespacedg_1_1geo.html</anchorfile>
+      <anchor>a766ef7c89b58748f1eb44a7e2e5fa89e</anchor>
       <arglist>(const BinaryFunctorsLvl2 &amp;psi, double &amp;R_X, double &amp;Z_X)</arglist>
     </member>
   </compound>
@@ -2042,8 +2057,8 @@
       <type></type>
       <name>CurvilinearRefinedGridX2d</name>
       <anchorfile>structdg_1_1geo_1_1_curvilinear_refined_grid_x2d.html</anchorfile>
-      <anchor>aee749599109992c4b22a4971609f9e0c</anchor>
-      <arglist>(const aRefinementX2d &amp;ref, const aGeneratorX2d &amp;generator, double fx, double fy, unsigned n, unsigned Nx, unsigned Ny, dg::bc bcx=dg::DIR, bc bcy=dg::PER)</arglist>
+      <anchor>a0c219dc42229e7da7bd2c21fd1f9fd64</anchor>
+      <arglist>(const aRefinementX2d &amp;ref, const aGeneratorX2d &amp;generator, double fx, double fy, unsigned n, unsigned Nx, unsigned Ny, dg::bc bcx=dg::DIR, bc bcy=dg::NEU)</arglist>
     </member>
     <member kind="function">
       <type>const aGeneratorX2d &amp;</type>
@@ -2067,8 +2082,8 @@
       <type></type>
       <name>CurvilinearRefinedProductGridX3d</name>
       <anchorfile>structdg_1_1geo_1_1_curvilinear_refined_product_grid_x3d.html</anchorfile>
-      <anchor>a10b490be19c7e6e9faff204021dc2f5c</anchor>
-      <arglist>(const aRefinementX2d &amp;ref, const aGeneratorX2d &amp;generator, double fx, double fy, unsigned n, unsigned Nx, unsigned Ny, unsigned Nz, bc bcx=dg::DIR, bc bcy=dg::PER, bc bcz=dg::PER)</arglist>
+      <anchor>af7501a441a29c84c698ab8aebac6d2fa</anchor>
+      <arglist>(const aRefinementX2d &amp;ref, const aGeneratorX2d &amp;generator, double fx, double fy, unsigned n, unsigned Nx, unsigned Ny, unsigned Nz, bc bcx=dg::DIR, bc bcy=dg::NEU, bc bcz=dg::PER)</arglist>
     </member>
     <member kind="function">
       <type>const aGeneratorX2d &amp;</type>
@@ -2197,15 +2212,15 @@
       <type></type>
       <name>DS</name>
       <anchorfile>structdg_1_1geo_1_1_d_s.html</anchorfile>
-      <anchor>a6a0daa0e8cbf7cf4226ef676f9d4fc24</anchor>
-      <arglist>(const dg::geo::TokamakMagneticField &amp;vec, const ProductGeometry &amp;grid, dg::bc bcx=dg::NEU, dg::bc bcy=dg::NEU, Limiter limit=FullLimiter(), dg::norm no=dg::normed, dg::direction dir=dg::centered, double eps=1e-5, unsigned multiplyX=10, unsigned multiplyY=10, bool dependsOnX=true, bool dependsOnY=true, bool integrateAll=true)</arglist>
+      <anchor>a1bc6775cb33544a79f1e8037f283e0a8</anchor>
+      <arglist>(const dg::geo::TokamakMagneticField &amp;vec, const ProductGeometry &amp;grid, dg::bc bcx=dg::NEU, dg::bc bcy=dg::NEU, Limiter limit=FullLimiter(), dg::norm no=dg::normed, dg::direction dir=dg::centered, double eps=1e-5, unsigned multiplyX=10, unsigned multiplyY=10, bool dependsOnX=true, bool dependsOnY=true, bool integrateAll=true, double deltaPhi=-1)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>DS</name>
       <anchorfile>structdg_1_1geo_1_1_d_s.html</anchorfile>
-      <anchor>a86dfe6c0a366d6338d9f771765d0c145</anchor>
-      <arglist>(const dg::geo::BinaryVectorLvl0 &amp;vec, const ProductGeometry &amp;grid, dg::bc bcx=dg::NEU, dg::bc bcy=dg::NEU, Limiter limit=FullLimiter(), dg::norm no=dg::normed, dg::direction dir=dg::centered, double eps=1e-5, unsigned multiplyX=10, unsigned multiplyY=10, bool dependsOnX=true, bool dependsOnY=true, bool integrateAll=true)</arglist>
+      <anchor>a5ebaed8638267fbaedc29968bfc3219b</anchor>
+      <arglist>(const dg::geo::BinaryVectorLvl0 &amp;vec, const ProductGeometry &amp;grid, dg::bc bcx=dg::NEU, dg::bc bcy=dg::NEU, Limiter limit=FullLimiter(), dg::norm no=dg::normed, dg::direction dir=dg::centered, double eps=1e-5, unsigned multiplyX=10, unsigned multiplyY=10, bool dependsOnX=true, bool dependsOnY=true, bool integrateAll=true, double deltaPhi=-1)</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -2572,8 +2587,8 @@
       <type></type>
       <name>FluxGenerator</name>
       <anchorfile>structdg_1_1geo_1_1_flux_generator.html</anchorfile>
-      <anchor>ab83afe3caef4094d8f0416139eb274fb</anchor>
-      <arglist>(const BinaryFunctorsLvl2 &amp;psi, const BinaryFunctorsLvl1 &amp;ipol, double psi_0, double psi_1, double x0, double y0, int mode=0)</arglist>
+      <anchor>a2a79a7f6af03e5735efa398e94ea05d0</anchor>
+      <arglist>(const BinaryFunctorsLvl2 &amp;psi, const BinaryFunctorsLvl1 &amp;ipol, double psi_0, double psi_1, double x0, double y0, int mode=0, bool verbose=false)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual FluxGenerator *</type>
@@ -3276,18 +3291,6 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>dg::geo::solovev::PsipR</name>
-    <filename>structdg_1_1geo_1_1solovev_1_1_psip_r.html</filename>
-    <base>aCloneableBinaryFunctor&lt; PsipR &gt;</base>
-    <member kind="function">
-      <type></type>
-      <name>PsipR</name>
-      <anchorfile>structdg_1_1geo_1_1solovev_1_1_psip_r.html</anchorfile>
-      <anchor>ae2bb58c1b1010e496e60ff577c1abd1b</anchor>
-      <arglist>(Parameters gp)</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
     <name>dg::geo::circular::PsipR</name>
     <filename>structdg_1_1geo_1_1circular_1_1_psip_r.html</filename>
     <base>aCloneableBinaryFunctor&lt; PsipR &gt;</base>
@@ -3297,6 +3300,18 @@
       <anchorfile>structdg_1_1geo_1_1circular_1_1_psip_r.html</anchorfile>
       <anchor>a1968053a1c6da4b94fe12fc5812e4d90</anchor>
       <arglist>(double R0)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::solovev::PsipR</name>
+    <filename>structdg_1_1geo_1_1solovev_1_1_psip_r.html</filename>
+    <base>aCloneableBinaryFunctor&lt; PsipR &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>PsipR</name>
+      <anchorfile>structdg_1_1geo_1_1solovev_1_1_psip_r.html</anchorfile>
+      <anchor>ae2bb58c1b1010e496e60ff577c1abd1b</anchor>
+      <arglist>(Parameters gp)</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -3348,18 +3363,6 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>dg::geo::taylor::PsipRZ</name>
-    <filename>structdg_1_1geo_1_1taylor_1_1_psip_r_z.html</filename>
-    <base>aCloneableBinaryFunctor&lt; PsipRZ &gt;</base>
-    <member kind="function">
-      <type></type>
-      <name>PsipRZ</name>
-      <anchorfile>structdg_1_1geo_1_1taylor_1_1_psip_r_z.html</anchorfile>
-      <anchor>a7d60529fe9b5027df36d396c806f782f</anchor>
-      <arglist>(solovev::Parameters gp)</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
     <name>dg::geo::solovev::PsipRZ</name>
     <filename>structdg_1_1geo_1_1solovev_1_1_psip_r_z.html</filename>
     <base>aCloneableBinaryFunctor&lt; PsipRZ &gt;</base>
@@ -3369,6 +3372,18 @@
       <anchorfile>structdg_1_1geo_1_1solovev_1_1_psip_r_z.html</anchorfile>
       <anchor>af063dcef72311f64d7647a16f2e5c6d9</anchor>
       <arglist>(Parameters gp)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::taylor::PsipRZ</name>
+    <filename>structdg_1_1geo_1_1taylor_1_1_psip_r_z.html</filename>
+    <base>aCloneableBinaryFunctor&lt; PsipRZ &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>PsipRZ</name>
+      <anchorfile>structdg_1_1geo_1_1taylor_1_1_psip_r_z.html</anchorfile>
+      <anchor>a7d60529fe9b5027df36d396c806f782f</anchor>
+      <arglist>(solovev::Parameters gp)</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -3425,18 +3440,6 @@
     <base>aCloneableBinaryFunctor&lt; PsipZ &gt;</base>
   </compound>
   <compound kind="struct">
-    <name>dg::geo::guenther::PsipZZ</name>
-    <filename>structdg_1_1geo_1_1guenther_1_1_psip_z_z.html</filename>
-    <base>aCloneableBinaryFunctor&lt; PsipZZ &gt;</base>
-    <member kind="function">
-      <type></type>
-      <name>PsipZZ</name>
-      <anchorfile>structdg_1_1geo_1_1guenther_1_1_psip_z_z.html</anchorfile>
-      <anchor>a4528a753ddd1eb64985c91d18576103e</anchor>
-      <arglist>(double R_0)</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
     <name>dg::geo::taylor::PsipZZ</name>
     <filename>structdg_1_1geo_1_1taylor_1_1_psip_z_z.html</filename>
     <base>aCloneableBinaryFunctor&lt; PsipZZ &gt;</base>
@@ -3446,6 +3449,18 @@
       <anchorfile>structdg_1_1geo_1_1taylor_1_1_psip_z_z.html</anchorfile>
       <anchor>a306fc1e77d632e3e25a126c3ac1791eb</anchor>
       <arglist>(solovev::Parameters gp)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::guenther::PsipZZ</name>
+    <filename>structdg_1_1geo_1_1guenther_1_1_psip_z_z.html</filename>
+    <base>aCloneableBinaryFunctor&lt; PsipZZ &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>PsipZZ</name>
+      <anchorfile>structdg_1_1geo_1_1guenther_1_1_psip_z_z.html</anchorfile>
+      <anchor>a4528a753ddd1eb64985c91d18576103e</anchor>
+      <arglist>(double R_0)</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -3480,8 +3495,8 @@
       <type></type>
       <name>Ribeiro</name>
       <anchorfile>structdg_1_1geo_1_1_ribeiro.html</anchorfile>
-      <anchor>ac05bfb4069779ac2d1169b9c1f6fa4e1</anchor>
-      <arglist>(const BinaryFunctorsLvl2 &amp;psi, double psi_0, double psi_1, double x0, double y0, int mode=0)</arglist>
+      <anchor>ac4d27e1c9d8820f16607014af587a941</anchor>
+      <arglist>(const BinaryFunctorsLvl2 &amp;psi, double psi_0, double psi_1, double x0, double y0, int mode=0, bool verbose=false)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual Ribeiro *</type>
@@ -3499,8 +3514,8 @@
       <type></type>
       <name>RibeiroFluxGenerator</name>
       <anchorfile>structdg_1_1geo_1_1_ribeiro_flux_generator.html</anchorfile>
-      <anchor>a2c2b3f0d15c03032e8b8def0d9d6c558</anchor>
-      <arglist>(const BinaryFunctorsLvl2 &amp;psi, double psi_0, double psi_1, double x0, double y0, int mode=0)</arglist>
+      <anchor>ab0f8ec8635f28c5041fabf8f98972fe6</anchor>
+      <arglist>(const BinaryFunctorsLvl2 &amp;psi, double psi_0, double psi_1, double x0, double y0, int mode=0, bool verbose=false)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual RibeiroFluxGenerator *</type>
@@ -3556,8 +3571,8 @@
       <type></type>
       <name>SeparatrixOrthogonal</name>
       <anchorfile>structdg_1_1geo_1_1_separatrix_orthogonal.html</anchorfile>
-      <anchor>a5af13ba499b2e819da437c6be37f3c4d</anchor>
-      <arglist>(const BinaryFunctorsLvl2 &amp;psi, double psi_0, double xX, double yX, double x0, double y0, int firstline)</arglist>
+      <anchor>a388622333d76b0e4b5fb98f488bb927e</anchor>
+      <arglist>(const BinaryFunctorsLvl2 &amp;psi, const BinarySymmTensorLvl1 &amp;chi, double psi_0, double xX, double yX, double x0, double y0, int firstline, bool verbose=false)</arglist>
     </member>
     <member kind="function">
       <type>SeparatrixOrthogonal *</type>
@@ -3577,6 +3592,13 @@
       <anchorfile>structdg_1_1geo_1_1_simple_orthogonal.html</anchorfile>
       <anchor>aee61c5e84a90f1b758ca4653f43245d7</anchor>
       <arglist>(const BinaryFunctorsLvl2 &amp;psi, double psi_0, double psi_1, double x0, double y0, int firstline=0)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>SimpleOrthogonal</name>
+      <anchorfile>structdg_1_1geo_1_1_simple_orthogonal.html</anchorfile>
+      <anchor>ac5fb6e5b5a1f95d9625f236e07c35e37</anchor>
+      <arglist>(const BinaryFunctorsLvl2 &amp;psi, const BinarySymmTensorLvl1 &amp;chi, double psi_0, double psi_1, double x0, double y0, int firstline=0)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
@@ -3945,6 +3967,20 @@
       <anchor>gafcee60ecf901ef09ae3fbf87bd146fbd</anchor>
       <arglist>(const BinaryFunctorsLvl2 &amp;psi, double &amp;R_X, double &amp;Z_X)</arglist>
     </member>
+    <member kind="function">
+      <type>BinarySymmTensorLvl1</type>
+      <name>make_Xbump_monitor</name>
+      <anchorfile>namespacedg_1_1geo.html</anchorfile>
+      <anchor>a1ee422753ae1d392e40577c69a06001c</anchor>
+      <arglist>(const BinaryFunctorsLvl2 &amp;psi, double &amp;R_X, double &amp;Z_X, double radiusX, double radiusY)</arglist>
+    </member>
+    <member kind="function">
+      <type>BinarySymmTensorLvl1</type>
+      <name>make_Xconst_monitor</name>
+      <anchorfile>namespacedg_1_1geo.html</anchorfile>
+      <anchor>a766ef7c89b58748f1eb44a7e2e5fa89e</anchor>
+      <arglist>(const BinaryFunctorsLvl2 &amp;psi, double &amp;R_X, double &amp;Z_X)</arglist>
+    </member>
   </compound>
   <compound kind="namespace">
     <name>dg::geo::circular</name>
@@ -4143,11 +4179,11 @@
     <class kind="struct">dg::geo::aBinaryFunctor</class>
     <class kind="struct">dg::geo::aCloneableBinaryFunctor</class>
     <class kind="struct">dg::geo::BinaryFunctorAdapter</class>
+    <class kind="struct">dg::geo::Constant</class>
     <class kind="struct">dg::geo::BinaryFunctorsLvl1</class>
     <class kind="struct">dg::geo::BinaryFunctorsLvl2</class>
     <class kind="struct">dg::geo::BinarySymmTensorLvl1</class>
     <class kind="struct">dg::geo::BinaryVectorLvl0</class>
-    <class kind="struct">dg::geo::Constant</class>
     <member kind="function">
       <type>aBinaryFunctor *</type>
       <name>make_aBinaryFunctor</name>

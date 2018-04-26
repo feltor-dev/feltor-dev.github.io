@@ -22,6 +22,6 @@ var searchData=
   ['bisection1d',['bisection1d',['../group__root.html#ga6331aa115bfceea681fa5ba85fa05a25',1,'dg']]],
   ['bmodule',['Bmodule',['../../../geometries/html/structdg_1_1geo_1_1_bmodule.html#a175e62a152a6a6326076d185eb853d40',1,'dg::geo::Bmodule']]],
   ['br',['BR',['../../../geometries/html/structdg_1_1geo_1_1_b_r.html#af513d6cfb6767b943b5e6222f675bf71',1,'dg::geo::BR']]],
-  ['buffer',['Buffer',['../structdg_1_1_buffer.html#a93b106d096d72f7f33f21d4bef98f6ab',1,'dg::Buffer::Buffer()'],['../structdg_1_1_buffer.html#a0cc9848bc155bebc044924b580e3010f',1,'dg::Buffer::Buffer(const T &amp;t)'],['../structdg_1_1_buffer.html#a79b6353e9e9bc00464e119f2bb1fe6ab',1,'dg::Buffer::Buffer(const Buffer &amp;src)']]],
+  ['buffer',['Buffer',['../structdg_1_1_buffer.html#a93b106d096d72f7f33f21d4bef98f6ab',1,'dg::Buffer::Buffer()'],['../structdg_1_1_buffer.html#a0cc9848bc155bebc044924b580e3010f',1,'dg::Buffer::Buffer(const T &amp;t)'],['../structdg_1_1_buffer.html#a79b6353e9e9bc00464e119f2bb1fe6ab',1,'dg::Buffer::Buffer(const Buffer &amp;src)'],['../structdg_1_1_buffer.html#af158ef3ec9ed17d633eb1f4de8991c21',1,'dg::Buffer::Buffer(Buffer &amp;&amp;t)']]],
   ['bz',['BZ',['../../../geometries/html/structdg_1_1geo_1_1_b_z.html#a28c98537a9eb29f881e6bc2653765b2e',1,'dg::geo::BZ']]]
 ];

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['z',['z',['../structdg_1_1geo_1_1_binary_vector_lvl0.html#a1ada816055dcc1d6adb9b95ab2c30826',1,'dg::geo::BinaryVectorLvl0']]],
+  ['z',['z',['../structdg_1_1geo_1_1_binary_vector_lvl0.html#a1ada816055dcc1d6adb9b95ab2c30826',1,'dg::geo::BinaryVectorLvl0::z()'],['../../../dg/html/group__creation.html#ga4de4a3d7cd219a55affa992871e8598fafbade9e36a3f36d3d676c1b808451dd7',1,'z()(Global Namespace)'],['../../../dg/html/group__creation.html#ga4de4a3d7cd219a55affa992871e8598fafbade9e36a3f36d3d676c1b808451dd7',1,'dg::z()'],['../../../dg/html/group__creation.html#ga4de4a3d7cd219a55affa992871e8598fafbade9e36a3f36d3d676c1b808451dd7',1,'z()(Global Namespace)']]],
   ['z0',['z0',['../../../dg/html/structdg_1_1a_m_p_i_topology3d.html#ade09cb61661db2a88e6c54645b204afc',1,'dg::aMPITopology3d::z0()'],['../../../dg/html/structdg_1_1a_topology3d.html#aa8df8289108861d9bd018844d49d9cf8',1,'dg::aTopology3d::z0()'],['../../../dg/html/structdg_1_1a_topology_x3d.html#a004199f148ebf3b7bb0e4c72809de83f',1,'dg::aTopologyX3d::z0()']]],
   ['z1',['z1',['../../../dg/html/structdg_1_1a_m_p_i_topology3d.html#a3cbe2e92a646139f4db30d3b0226c9b6',1,'dg::aMPITopology3d::z1()'],['../../../dg/html/structdg_1_1a_topology3d.html#a8e2b2a2318fbbb456f2fe39a28dbe51f',1,'dg::aTopology3d::z1()'],['../../../dg/html/structdg_1_1a_topology_x3d.html#a22b9c64832334b4d836d6a5739e53439',1,'dg::aTopologyX3d::z1()']]],
   ['zero',['ZERO',['../../../dg/html/structdg_1_1_z_e_r_o.html',1,'dg']]],

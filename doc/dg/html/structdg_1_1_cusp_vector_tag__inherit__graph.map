@@ -1,4 +1,5 @@
 <map id="dg::CuspVectorTag" name="dg::CuspVectorTag">
-<area shape="rect" id="node2" href="$structdg_1_1_thrust_vector_tag.html" title="dg::ThrustVectorTag" alt="" coords="5,80,147,107"/>
-<area shape="rect" id="node3" href="$structdg_1_1_any_vector_tag.html" title="dg::AnyVectorTag" alt="" coords="13,5,139,32"/>
+<area shape="rect" id="node2" href="$structdg_1_1_thrust_vector_tag.html" title="Indicate that thrust &#45; like members are available. " alt="" coords="7,155,149,181"/>
+<area shape="rect" id="node3" href="$structdg_1_1_shared_vector_tag.html" title="Indicate a contiguous chunk of shared memory. " alt="" coords="5,80,151,107"/>
+<area shape="rect" id="node4" href="$structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. " alt="" coords="15,5,141,32"/>
 </map>

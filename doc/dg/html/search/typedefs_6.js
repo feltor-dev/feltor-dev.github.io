@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['nncd',['NNCD',['../group__typedefs.html#gabc0c93579ed70fb606c739cee03364e4',1,'dg']]],
-  ['nnch',['NNCH',['../group__typedefs.html#ga3b2d0db184cb73256ac07b2d35fcefef',1,'dg']]],
-  ['nolimiter',['NoLimiter',['../../../geometries/html/group__fieldaligned.html#ga1a10e4fdd6338136e629d3e2292bc3da',1,'dg::geo::NoLimiter()'],['../../../geometries/html/group__fieldaligned.html#ga1a10e4fdd6338136e629d3e2292bc3da',1,'NoLimiter()(Global Namespace)']]]
+  ['idmatrix',['IDMatrix',['../group__typedefs.html#ga0d122f4172a3e60105754f9419c0831f',1,'dg']]],
+  ['idvec',['iDVec',['../group__typedefs.html#gad1bd45a3dcc145353a87af2fd253bc9b',1,'dg']]],
+  ['ihmatrix',['IHMatrix',['../group__typedefs.html#ga0af8204731ee6327dc4616a5980af2d5',1,'dg']]],
+  ['ihvec',['iHVec',['../group__typedefs.html#ga16422a5c2edb7bac90e9b1bfb047c1c8',1,'dg']]],
+  ['ivec',['IVec',['../structdg_1_1_ell_sparse_block_mat.html#a40e9077e44ec3d450eb1ee874fb7b638',1,'dg::EllSparseBlockMat::IVec()'],['../structdg_1_1_coo_sparse_block_mat.html#af1364d9c406951269b14c6c76ee95022',1,'dg::CooSparseBlockMat::IVec()']]]
 ];

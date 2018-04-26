@@ -38,8 +38,9 @@
   <ul class="tablist"> 
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
-    <li><a href="../../geometries/html/modules.html">geometry</a></li>
+    <li><a href="../../geometries/html/modules.html">geometries</a></li>
     <li><a href="../../file/html/namespacefile.html">file</a></li>
+    <li><a href="../../exblas/html/namespaceexblas.html">exblas</a></li>
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
@@ -145,16 +146,16 @@ Functions</h2></td></tr>
 <tr class="separator:gad55efc77b7320e376b7f00b61ce0dd6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafb2ae8931d3a1f6b27a908c35798defd"><td class="memTemplParams" colspan="2">template&lt;class DiagonalMatrix , class container &gt; </td></tr>
 <tr class="memitem:gafb2ae8931d3a1f6b27a908c35798defd"><td class="memTemplItemLeft" align="right" valign="top">MatrixTraits&lt; DiagonalMatrix &gt;::value_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas2.html#gafb2ae8931d3a1f6b27a908c35798defd">dg::blas2::dot</a> (const container &amp;x, const DiagonalMatrix &amp;m, const container &amp;y)</td></tr>
-<tr class="memdesc:gafb2ae8931d3a1f6b27a908c35798defd"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( x^T M y\); General dot produt  <a href="group__blas2.html#gafb2ae8931d3a1f6b27a908c35798defd">More...</a><br /></td></tr>
+<tr class="memdesc:gafb2ae8931d3a1f6b27a908c35798defd"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( x^T M y\); Binary reproducible general dot product  <a href="group__blas2.html#gafb2ae8931d3a1f6b27a908c35798defd">More...</a><br /></td></tr>
 <tr class="separator:gafb2ae8931d3a1f6b27a908c35798defd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafaf8973061ab59f59e49697a46d6716e"><td class="memTemplParams" colspan="2">template&lt;class DiagonalMatrix , class container &gt; </td></tr>
 <tr class="memitem:gafaf8973061ab59f59e49697a46d6716e"><td class="memTemplItemLeft" align="right" valign="top">MatrixTraits&lt; DiagonalMatrix &gt;::value_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas2.html#gafaf8973061ab59f59e49697a46d6716e">dg::blas2::dot</a> (const DiagonalMatrix &amp;m, const container &amp;x)</td></tr>
-<tr class="memdesc:gafaf8973061ab59f59e49697a46d6716e"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( x^T M x\); General dot produt  <a href="group__blas2.html#gafaf8973061ab59f59e49697a46d6716e">More...</a><br /></td></tr>
+<tr class="memdesc:gafaf8973061ab59f59e49697a46d6716e"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( x^T M x\); Binary reproducible general dot product  <a href="group__blas2.html#gafaf8973061ab59f59e49697a46d6716e">More...</a><br /></td></tr>
 <tr class="separator:gafaf8973061ab59f59e49697a46d6716e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab1885f3913f72b7ea380d58f40c04656"><td class="memTemplParams" colspan="2">template&lt;class Matrix , class container &gt; </td></tr>
-<tr class="memitem:gab1885f3913f72b7ea380d58f40c04656"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas2.html#gab1885f3913f72b7ea380d58f40c04656">dg::blas2::symv</a> (typename MatrixTraits&lt; Matrix &gt;::value_type alpha, const Matrix &amp;M, const container &amp;x, typename MatrixTraits&lt; Matrix &gt;::value_type beta, container &amp;y)</td></tr>
-<tr class="memdesc:gab1885f3913f72b7ea380d58f40c04656"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( y = \alpha M x + \beta y\)  <a href="group__blas2.html#gab1885f3913f72b7ea380d58f40c04656">More...</a><br /></td></tr>
-<tr class="separator:gab1885f3913f72b7ea380d58f40c04656"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa4386168cffcb35e549f44034ee80eb0"><td class="memTemplParams" colspan="2">template&lt;class Matrix , class container &gt; </td></tr>
+<tr class="memitem:gaa4386168cffcb35e549f44034ee80eb0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas2.html#gaa4386168cffcb35e549f44034ee80eb0">dg::blas2::symv</a> (get_value_type&lt; container &gt; alpha, const Matrix &amp;M, const container &amp;x, get_value_type&lt; container &gt; beta, container &amp;y)</td></tr>
+<tr class="memdesc:gaa4386168cffcb35e549f44034ee80eb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( y = \alpha M x + \beta y\)  <a href="group__blas2.html#gaa4386168cffcb35e549f44034ee80eb0">More...</a><br /></td></tr>
+<tr class="separator:gaa4386168cffcb35e549f44034ee80eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1e942b5970e73d1338c742eb57d1d389"><td class="memTemplParams" colspan="2">template&lt;class Matrix , class container , class same_or_another_container &gt; </td></tr>
 <tr class="memitem:ga1e942b5970e73d1338c742eb57d1d389"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas2.html#ga1e942b5970e73d1338c742eb57d1d389">dg::blas2::symv</a> (Matrix &amp;M, const container &amp;x, same_or_another_container &amp;y)</td></tr>
 <tr class="memdesc:ga1e942b5970e73d1338c742eb57d1d389"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( y = M x\)  <a href="group__blas2.html#ga1e942b5970e73d1338c742eb57d1d389">More...</a><br /></td></tr>
@@ -163,10 +164,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ga5c79e9a4d2eacd91c12ff1591b90cc3f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas2.html#ga5c79e9a4d2eacd91c12ff1591b90cc3f">dg::blas2::gemv</a> (Matrix &amp;M, const container &amp;x, same_or_another_container &amp;y)</td></tr>
 <tr class="memdesc:ga5c79e9a4d2eacd91c12ff1591b90cc3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( y = M x\); General Matrix-Vector product  <a href="group__blas2.html#ga5c79e9a4d2eacd91c12ff1591b90cc3f">More...</a><br /></td></tr>
 <tr class="separator:ga5c79e9a4d2eacd91c12ff1591b90cc3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8401c8d53d1779c6ebc3af74e39600c2"><td class="memTemplParams" colspan="2">template&lt;class Matrix , class container &gt; </td></tr>
-<tr class="memitem:ga8401c8d53d1779c6ebc3af74e39600c2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas2.html#ga8401c8d53d1779c6ebc3af74e39600c2">dg::blas2::gemv</a> (typename MatrixTraits&lt; Matrix &gt;::value_type alpha, const Matrix &amp;M, const container &amp;x, typename MatrixTraits&lt; Matrix &gt;::value_type beta, container &amp;y)</td></tr>
-<tr class="memdesc:ga8401c8d53d1779c6ebc3af74e39600c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( y = \alpha M x + \beta y \); General Matrix-Vector product  <a href="group__blas2.html#ga8401c8d53d1779c6ebc3af74e39600c2">More...</a><br /></td></tr>
-<tr class="separator:ga8401c8d53d1779c6ebc3af74e39600c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2efbe31db28ff2c292f5384c1d829393"><td class="memTemplParams" colspan="2">template&lt;class Matrix , class container &gt; </td></tr>
+<tr class="memitem:ga2efbe31db28ff2c292f5384c1d829393"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas2.html#ga2efbe31db28ff2c292f5384c1d829393">dg::blas2::gemv</a> (get_value_type&lt; container &gt; alpha, const Matrix &amp;M, const container &amp;x, get_value_type&lt; container &gt; beta, container &amp;y)</td></tr>
+<tr class="memdesc:ga2efbe31db28ff2c292f5384c1d829393"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( y = \alpha M x + \beta y \); General Matrix-Vector product  <a href="group__blas2.html#ga2efbe31db28ff2c292f5384c1d829393">More...</a><br /></td></tr>
+<tr class="separator:ga2efbe31db28ff2c292f5384c1d829393"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>This group contains Matrix-Vector operations. Successive calls to blas routines are executed sequentially. A manual synchronization of threads or devices is never needed in an application using these functions. All functions returning a value block until the value is ready. </p>
@@ -211,21 +212,22 @@ template&lt;class DiagonalMatrix , class container &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>\( x^T M y\); General dot produt </p>
+<p>\( x^T M y\); Binary reproducible general dot product </p>
 <p>This routine computes the scalar product defined by the symmetric positive definite matrix M </p><p class="formulaDsp">
 \[ x^T M y = \sum_{i,j=0}^{N-1} x_i M_{ij} y_j \]
 </p>
-<p> ( Note that if M is not diagonal it is generally more efficient to precalculate \( My\) and then call the <a class="el" href="group__blas1.html#gab5a71c1ee08c86ec0627a335d28848f4" title="; Euclidean dot product between two containers ">dg::blas1::dot()</a> routine! </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+<p> ( Note that if M is not diagonal it is generally more efficient to precalculate \( My\) and then call the <code><a class="el" href="group__blas1.html#ga0031efa80aca7de577bdd8063e12e457" title="; Binary reproducible Euclidean dot product between two containers ">dg::blas1::dot()</a></code> routine! Our implementation guarantees binary reproducible results up to and excluding the last mantissa bit of the result. Furthermore, the sum is computed with infinite precision and the result is then rounded to the nearest double precision number. Although the products are not computed with infinite precision, the order of multiplication is guaranteed. This is possible with the help of an adapted version of the <code><a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/namespaceexblas.html">exblas</a></code> library. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">DiagonalMatrix</td><td>Right now <code>DiagonalMatrix</code> has to be the same as <code>container</code>, except if <code>container</code> is a <code>std::vector&lt;container_type&gt;</code>, then the <code>DiagonalMatrix</code> has to be the <code>container_type</code>. In the latter case the Matrix is applied to all containers in the std::vector and the sum is returned.</td></tr>
-    <tr><td class="paramname">container</td><td>A data container class for which the <code><a class="el" href="namespacedg_1_1blas1.html" title="BLAS Level 1 routines. ">blas1</a></code> functionality is overloaded. We assume that <code>container</code> is copyable/assignable and has a swap member function. Currently this is one of<ul>
+    <tr><td class="paramname">container</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_vector_traits.html" title="The vector traits. ">VectorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> or <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. For example, this is one of<ul>
 <li><code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code>, <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code>, <code><a class="el" href="group__typedefs.html#ga3f854ffa533cafd10b9846258e40029f" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code><a class="el" href="group__typedefs.html#ga25cae493b710b17992387cce395ad7ae" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> </li>
-<li><code>std::vector&lt;dg::HVec&gt;</code>, <code>std::vector&lt;dg::DVec&gt;</code>, <code>std::vector&lt;dg::MHVec&gt;</code> or <code>std::vector&lt;dg::MDVec&gt;</code> . </li>
+<li><code>std::vector&lt;dg::DVec&gt;</code>, <code>std::array&lt;dg::MHVec, 3&gt;</code>, <code>std::array&lt;double, 4&gt;</code> ... </li>
 </ul>
 </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__vec__list.html">List of Vector Traits specializations</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>Left container </td></tr>
@@ -236,7 +238,7 @@ template&lt;class DiagonalMatrix , class container &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Generalized scalar product </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This routine is always executed synchronously due to the implicit memcpy of the result.</dd></dl>
-<p>This code snippet demonstrates how to discretize and integrate a function with dG </p><div class="fragment"><div class="line"><span class="keywordtype">double</span> <span class="keyword">function</span>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y){<span class="keywordflow">return</span> exp(x)*exp(y);}</div><div class="line"><span class="comment">//...</span></div><div class="line"><a class="code" href="structdg_1_1_grid2d.html">dg::Grid2d</a> g2d( 0, 2, 0, 2, 3, 20, 20);</div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a">dg::HVec</a> w2d = <a class="code" href="group__highlevel.html#ga4c1f33dbb53f54fd6407fa838c15b444">dg::create::weights</a>( g2d);</div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a">dg::HVec</a> h_x = <a class="code" href="group__evaluation.html#ga7521f4acb4edaf2d7896d99f97e1ed9d">dg::evaluate</a>( <span class="keyword">function</span>, g2d);</div><div class="line"><span class="keywordtype">double</span> <a class="code" href="group__creation.html#ga9945b71a335bc97f78dc7425911c7287">norm</a> = <a class="code" href="group__blas2.html#gafb2ae8931d3a1f6b27a908c35798defd">dg::blas2::dot</a>( h_x, w2d, h_x); <span class="comment">// norm is now: (exp(4)-exp(0))^2/4</span></div></div><!-- fragment --> 
+<p>This code snippet demonstrates how to discretize and integrate a function with dG </p><div class="fragment"><div class="line"><span class="keywordtype">double</span> <span class="keyword">function</span>(<span class="keywordtype">double</span> <a class="code" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>, <span class="keywordtype">double</span> <a class="code" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>){<span class="keywordflow">return</span> exp(x)*exp(y);}</div><div class="line"><span class="comment">//...</span></div><div class="line"><a class="code" href="structdg_1_1_grid2d.html">dg::Grid2d</a> g2d( 0, 2, 0, 2, 3, 20, 20);</div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a">dg::HVec</a> w2d = <a class="code" href="group__highlevel.html#ga4c1f33dbb53f54fd6407fa838c15b444">dg::create::weights</a>( g2d);</div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a">dg::HVec</a> h_x = <a class="code" href="group__evaluation.html#ga7521f4acb4edaf2d7896d99f97e1ed9d">dg::evaluate</a>( <span class="keyword">function</span>, g2d);</div><div class="line"><span class="keywordtype">double</span> <a class="code" href="group__creation.html#ga9945b71a335bc97f78dc7425911c7287">norm</a> = <a class="code" href="group__blas2.html#gafb2ae8931d3a1f6b27a908c35798defd">dg::blas2::dot</a>( h_x, w2d, h_x); <span class="comment">// norm is now: (exp(4)-exp(0))^2/4</span></div></div><!-- fragment --> 
 </div>
 </div>
 <a class="anchor" id="gafaf8973061ab59f59e49697a46d6716e"></a>
@@ -273,21 +275,22 @@ template&lt;class DiagonalMatrix , class container &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>\( x^T M x\); General dot produt </p>
+<p>\( x^T M x\); Binary reproducible general dot product </p>
 <p class="formulaDsp">
 \[ x^T M x = \sum_{i,j=0}^{N-1} x_i M_{ij} x_j \]
 </p>
  <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">DiagonalMatrix</td><td>Right now <code>DiagonalMatrix</code> has to be the same as <code>container</code>, except if <code>container</code> is a <code>std::vector&lt;container_type&gt;</code>, then the <code>DiagonalMatrix</code> has to be the <code>container_type</code>. In the latter case the Matrix is applied to all containers in the std::vector and the sum is returned.</td></tr>
-    <tr><td class="paramname">container</td><td>A data container class for which the <code><a class="el" href="namespacedg_1_1blas1.html" title="BLAS Level 1 routines. ">blas1</a></code> functionality is overloaded. We assume that <code>container</code> is copyable/assignable and has a swap member function. Currently this is one of<ul>
+    <tr><td class="paramname">container</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_vector_traits.html" title="The vector traits. ">VectorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> or <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. For example, this is one of<ul>
 <li><code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code>, <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code>, <code><a class="el" href="group__typedefs.html#ga3f854ffa533cafd10b9846258e40029f" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code><a class="el" href="group__typedefs.html#ga25cae493b710b17992387cce395ad7ae" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> </li>
-<li><code>std::vector&lt;dg::HVec&gt;</code>, <code>std::vector&lt;dg::DVec&gt;</code>, <code>std::vector&lt;dg::MHVec&gt;</code> or <code>std::vector&lt;dg::MDVec&gt;</code> . </li>
+<li><code>std::vector&lt;dg::DVec&gt;</code>, <code>std::array&lt;dg::MHVec, 3&gt;</code>, <code>std::array&lt;double, 4&gt;</code> ... </li>
 </ul>
 </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__vec__list.html">List of Vector Traits specializations</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">m</td><td>The diagonal Matrix </td></tr>
@@ -346,20 +349,32 @@ template&lt;class Matrix , class container , class same_or_another_container &gt
 <p>Does exactly the same as symv.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Matrix</td><td>A class for which the <a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a> functions are callable in connection with the container class. The <code>Matrix</code> type can be one of:<ul>
-<li>container: A container acts as a diagonal matrix.</li>
-<li><code><a class="el" href="group__typedefs.html#ga03ea77a5e974bed59c16fc1b50e32fad" title="Host Matrix for derivatives. ">dg::HMatrix</a></code> and <code><a class="el" href="group__typedefs.html#ga4780e2f8f426e5e691562dc00b34a9c2" title="CSR host Matrix. ">dg::IHMatrix</a></code> with <code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code> or <code>std::vector&lt;dg::HVec&gt;</code> </li>
-<li><code><a class="el" href="group__typedefs.html#gade8f2d2e22d78d961a4a83baad054922" title="Device Matrix for derivatives. ">dg::DMatrix</a></code> and <code><a class="el" href="group__typedefs.html#ga3f4eb35626ac9b7ec1a9e1ac44489c43" title="CSR device Matrix. ">dg::IDMatrix</a></code> with <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code> or <code>std::vector&lt;dg::DVec&gt;</code> </li>
+    <tr><td class="paramname">Matrix</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_matrix_traits.html" title="The matrix traits. ">MatrixTraits</a></code> exists and which fullfills the requirements of the there defined Matrix policy derived from <code><a class="el" href="structdg_1_1_any_matrix_tag.html">AnyMatrixTag</a></code> or <code><a class="el" href="structdg_1_1_self_made_matrix_tag.html" title="indicates that the Matrix type has the void symv( const Vector&amp;, Vector&amp; ) member function...">SelfMadeMatrixTag</a></code>. The <code>Matrix</code> type can for example be one of:<ul>
+<li><code>container:</code> A container acts as a diagonal matrix.</li>
+<li><code><a class="el" href="group__typedefs.html#ga03ea77a5e974bed59c16fc1b50e32fad" title="Host Matrix for derivatives. ">dg::HMatrix</a></code> and <code><a class="el" href="group__typedefs.html#ga0af8204731ee6327dc4616a5980af2d5" title="CSR host Matrix. ">dg::IHMatrix</a></code> with <code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code> or <code>std::vector&lt;dg::HVec&gt;</code> </li>
+<li><code><a class="el" href="group__typedefs.html#gade8f2d2e22d78d961a4a83baad054922" title="Device Matrix for derivatives. ">dg::DMatrix</a></code> and <code><a class="el" href="group__typedefs.html#ga0d122f4172a3e60105754f9419c0831f" title="CSR device Matrix. ">dg::IDMatrix</a></code> with <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code> or <code>std::vector&lt;dg::DVec&gt;</code> </li>
 <li><code><a class="el" href="group__typedefs.html#gaa6f6bf3d7e428a9e66630a1a0e135d3a" title="MPI Host Matrix for derivatives. ">dg::MHMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga3f854ffa533cafd10b9846258e40029f" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code>std::vector&lt;dg::MHVec&gt;</code> </li>
 <li><code><a class="el" href="group__typedefs.html#ga5d1f28d85330d29c74ea77f048d2978c" title="MPI Device Matrix for derivatives. ">dg::MDMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga25cae493b710b17992387cce395ad7ae" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> or <code>std::vector&lt;dg::MDVec&gt;</code> </li>
-<li>Any type that has the <code><a class="el" href="structdg_1_1_self_made_matrix_tag.html" title="indicates that the Matrix type has the void symv( const Vector&amp;, Vector&amp; ) member function...">SelfMadeMatrixTag</a></code> specified in a corresponding <code><a class="el" href="structdg_1_1_matrix_traits.html" title="The matrix traits. ">MatrixTraits</a></code> class (e.g. <code><a class="el" href="classdg_1_1_elliptic.html" title="Operator that acts as a 2d negative elliptic differential operator ">dg::Elliptic</a></code>). In this case only those <a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a> functions that have a corresponding member function in the Matrix class (e.g. <code>symv( const container&amp;, container&amp;)</code>; ) can be called.</li>
+<li>In case of <code><a class="el" href="structdg_1_1_self_made_matrix_tag.html" title="indicates that the Matrix type has the void symv( const Vector&amp;, Vector&amp; ) member function...">SelfMadeMatrixTag</a></code> only those <code><a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a></code> functions that have a corresponding member function in the Matrix class (e.g. <code>symv( const container&amp;, container&amp;)</code>; ) can be called.</li>
 </ul>
-If <code>container</code> is a <code>std::vector</code>, then the Matrix is applied to each of the elements.</td></tr>
-    <tr><td class="paramname">container</td><td>A data container class for which the <code><a class="el" href="namespacedg_1_1blas1.html" title="BLAS Level 1 routines. ">blas1</a></code> functionality is overloaded. We assume that <code>container</code> is copyable/assignable and has a swap member function. Currently this is one of<ul>
+If a <code>container</code> has the <code><a class="el" href="structdg_1_1_vector_vector_tag.html" title="This tag indicates composition/recursion. ">VectorVectorTag</a></code>, then the <code>Matrix</code> is applied to each of the elements. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__mat__list.html">List of Matrix Traits specializations</a></dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">container</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_vector_traits.html" title="The vector traits. ">VectorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> or <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. For example, this is one of<ul>
 <li><code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code>, <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code>, <code><a class="el" href="group__typedefs.html#ga3f854ffa533cafd10b9846258e40029f" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code><a class="el" href="group__typedefs.html#ga25cae493b710b17992387cce395ad7ae" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> </li>
-<li><code>std::vector&lt;dg::HVec&gt;</code>, <code>std::vector&lt;dg::DVec&gt;</code>, <code>std::vector&lt;dg::MHVec&gt;</code> or <code>std::vector&lt;dg::MDVec&gt;</code> . </li>
+<li><code>std::vector&lt;dg::DVec&gt;</code>, <code>std::array&lt;dg::MHVec, 3&gt;</code>, <code>std::array&lt;double, 4&gt;</code> ... </li>
 </ul>
 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__vec__list.html">List of Vector Traits specializations</a> </dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
     <tr><td class="paramname">same_or_another_container</td><td>Currently needs to be the same as <code>container</code>. </td></tr>
   </table>
   </dd>
@@ -376,7 +391,7 @@ If <code>container</code> is a <code>std::vector</code>, then the Matrix is appl
 
 </div>
 </div>
-<a class="anchor" id="ga8401c8d53d1779c6ebc3af74e39600c2"></a>
+<a class="anchor" id="ga2efbe31db28ff2c292f5384c1d829393"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -388,7 +403,7 @@ template&lt;class Matrix , class container &gt; </div>
         <tr>
           <td class="memname">void dg::blas2::gemv </td>
           <td>(</td>
-          <td class="paramtype">typename <a class="el" href="structdg_1_1_matrix_traits.html">MatrixTraits</a>&lt; Matrix &gt;::value_type&#160;</td>
+          <td class="paramtype"><a class="el" href="group__dispatch.html#gae80102017c720c7bd5e774b7cb5a4cb0">get_value_type</a>&lt; container &gt;&#160;</td>
           <td class="paramname"><em>alpha</em>, </td>
         </tr>
         <tr>
@@ -406,7 +421,7 @@ template&lt;class Matrix , class container &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">typename <a class="el" href="structdg_1_1_matrix_traits.html">MatrixTraits</a>&lt; Matrix &gt;::value_type&#160;</td>
+          <td class="paramtype"><a class="el" href="group__dispatch.html#gae80102017c720c7bd5e774b7cb5a4cb0">get_value_type</a>&lt; container &gt;&#160;</td>
           <td class="paramname"><em>beta</em>, </td>
         </tr>
         <tr>
@@ -432,23 +447,30 @@ template&lt;class Matrix , class container &gt; </div>
 <p>Does exactly the same as symv.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Matrix</td><td>A class for which the <a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a> functions are callable in connection with the container class. The <code>Matrix</code> type can be one of:<ul>
-<li>container: A container acts as a diagonal matrix.</li>
-<li><code><a class="el" href="group__typedefs.html#ga03ea77a5e974bed59c16fc1b50e32fad" title="Host Matrix for derivatives. ">dg::HMatrix</a></code> and <code><a class="el" href="group__typedefs.html#ga4780e2f8f426e5e691562dc00b34a9c2" title="CSR host Matrix. ">dg::IHMatrix</a></code> with <code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code> or <code>std::vector&lt;dg::HVec&gt;</code> </li>
-<li><code><a class="el" href="group__typedefs.html#gade8f2d2e22d78d961a4a83baad054922" title="Device Matrix for derivatives. ">dg::DMatrix</a></code> and <code><a class="el" href="group__typedefs.html#ga3f4eb35626ac9b7ec1a9e1ac44489c43" title="CSR device Matrix. ">dg::IDMatrix</a></code> with <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code> or <code>std::vector&lt;dg::DVec&gt;</code> </li>
+    <tr><td class="paramname">Matrix</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_matrix_traits.html" title="The matrix traits. ">MatrixTraits</a></code> exists and which fullfills the requirements of the there defined Matrix policy derived from <code><a class="el" href="structdg_1_1_any_matrix_tag.html">AnyMatrixTag</a></code> or <code><a class="el" href="structdg_1_1_self_made_matrix_tag.html" title="indicates that the Matrix type has the void symv( const Vector&amp;, Vector&amp; ) member function...">SelfMadeMatrixTag</a></code>. The <code>Matrix</code> type can for example be one of:<ul>
+<li><code>container:</code> A container acts as a diagonal matrix.</li>
+<li><code><a class="el" href="group__typedefs.html#ga03ea77a5e974bed59c16fc1b50e32fad" title="Host Matrix for derivatives. ">dg::HMatrix</a></code> and <code><a class="el" href="group__typedefs.html#ga0af8204731ee6327dc4616a5980af2d5" title="CSR host Matrix. ">dg::IHMatrix</a></code> with <code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code> or <code>std::vector&lt;dg::HVec&gt;</code> </li>
+<li><code><a class="el" href="group__typedefs.html#gade8f2d2e22d78d961a4a83baad054922" title="Device Matrix for derivatives. ">dg::DMatrix</a></code> and <code><a class="el" href="group__typedefs.html#ga0d122f4172a3e60105754f9419c0831f" title="CSR device Matrix. ">dg::IDMatrix</a></code> with <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code> or <code>std::vector&lt;dg::DVec&gt;</code> </li>
 <li><code><a class="el" href="group__typedefs.html#gaa6f6bf3d7e428a9e66630a1a0e135d3a" title="MPI Host Matrix for derivatives. ">dg::MHMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga3f854ffa533cafd10b9846258e40029f" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code>std::vector&lt;dg::MHVec&gt;</code> </li>
 <li><code><a class="el" href="group__typedefs.html#ga5d1f28d85330d29c74ea77f048d2978c" title="MPI Device Matrix for derivatives. ">dg::MDMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga25cae493b710b17992387cce395ad7ae" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> or <code>std::vector&lt;dg::MDVec&gt;</code> </li>
-<li>Any type that has the <code><a class="el" href="structdg_1_1_self_made_matrix_tag.html" title="indicates that the Matrix type has the void symv( const Vector&amp;, Vector&amp; ) member function...">SelfMadeMatrixTag</a></code> specified in a corresponding <code><a class="el" href="structdg_1_1_matrix_traits.html" title="The matrix traits. ">MatrixTraits</a></code> class (e.g. <code><a class="el" href="classdg_1_1_elliptic.html" title="Operator that acts as a 2d negative elliptic differential operator ">dg::Elliptic</a></code>). In this case only those <a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a> functions that have a corresponding member function in the Matrix class (e.g. <code>symv( const container&amp;, container&amp;)</code>; ) can be called.</li>
+<li>In case of <code><a class="el" href="structdg_1_1_self_made_matrix_tag.html" title="indicates that the Matrix type has the void symv( const Vector&amp;, Vector&amp; ) member function...">SelfMadeMatrixTag</a></code> only those <code><a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a></code> functions that have a corresponding member function in the Matrix class (e.g. <code>symv( const container&amp;, container&amp;)</code>; ) can be called.</li>
 </ul>
-If <code>container</code> is a <code>std::vector</code>, then the Matrix is applied to each of the elements.</td></tr>
-    <tr><td class="paramname">container</td><td>A data container class for which the <code><a class="el" href="namespacedg_1_1blas1.html" title="BLAS Level 1 routines. ">blas1</a></code> functionality is overloaded. We assume that <code>container</code> is copyable/assignable and has a swap member function. Currently this is one of<ul>
+If a <code>container</code> has the <code><a class="el" href="structdg_1_1_vector_vector_tag.html" title="This tag indicates composition/recursion. ">VectorVectorTag</a></code>, then the <code>Matrix</code> is applied to each of the elements. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__mat__list.html">List of Matrix Traits specializations</a></dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">container</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_vector_traits.html" title="The vector traits. ">VectorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> or <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. For example, this is one of<ul>
 <li><code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code>, <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code>, <code><a class="el" href="group__typedefs.html#ga3f854ffa533cafd10b9846258e40029f" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code><a class="el" href="group__typedefs.html#ga25cae493b710b17992387cce395ad7ae" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> </li>
-<li><code>std::vector&lt;dg::HVec&gt;</code>, <code>std::vector&lt;dg::DVec&gt;</code>, <code>std::vector&lt;dg::MHVec&gt;</code> or <code>std::vector&lt;dg::MDVec&gt;</code> . </li>
+<li><code>std::vector&lt;dg::DVec&gt;</code>, <code>std::array&lt;dg::MHVec, 3&gt;</code>, <code>std::array&lt;double, 4&gt;</code> ... </li>
 </ul>
 </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__vec__list.html">List of Vector Traits specializations</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">alpha</td><td>A Scalar </td></tr>
@@ -463,7 +485,7 @@ If <code>container</code> is a <code>std::vector</code>, then the Matrix is appl
 
 </div>
 </div>
-<a class="anchor" id="gab1885f3913f72b7ea380d58f40c04656"></a>
+<a class="anchor" id="gaa4386168cffcb35e549f44034ee80eb0"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -475,7 +497,7 @@ template&lt;class Matrix , class container &gt; </div>
         <tr>
           <td class="memname">void dg::blas2::symv </td>
           <td>(</td>
-          <td class="paramtype">typename <a class="el" href="structdg_1_1_matrix_traits.html">MatrixTraits</a>&lt; Matrix &gt;::value_type&#160;</td>
+          <td class="paramtype"><a class="el" href="group__dispatch.html#gae80102017c720c7bd5e774b7cb5a4cb0">get_value_type</a>&lt; container &gt;&#160;</td>
           <td class="paramname"><em>alpha</em>, </td>
         </tr>
         <tr>
@@ -493,7 +515,7 @@ template&lt;class Matrix , class container &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">typename <a class="el" href="structdg_1_1_matrix_traits.html">MatrixTraits</a>&lt; Matrix &gt;::value_type&#160;</td>
+          <td class="paramtype"><a class="el" href="group__dispatch.html#gae80102017c720c7bd5e774b7cb5a4cb0">get_value_type</a>&lt; container &gt;&#160;</td>
           <td class="paramname"><em>beta</em>, </td>
         </tr>
         <tr>
@@ -522,23 +544,30 @@ template&lt;class Matrix , class container &gt; </div>
 <p> where \( M\) is a matrix.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Matrix</td><td>A class for which the <a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a> functions are callable in connection with the container class. The <code>Matrix</code> type can be one of:<ul>
-<li>container: A container acts as a diagonal matrix.</li>
-<li><code><a class="el" href="group__typedefs.html#ga03ea77a5e974bed59c16fc1b50e32fad" title="Host Matrix for derivatives. ">dg::HMatrix</a></code> and <code><a class="el" href="group__typedefs.html#ga4780e2f8f426e5e691562dc00b34a9c2" title="CSR host Matrix. ">dg::IHMatrix</a></code> with <code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code> or <code>std::vector&lt;dg::HVec&gt;</code> </li>
-<li><code><a class="el" href="group__typedefs.html#gade8f2d2e22d78d961a4a83baad054922" title="Device Matrix for derivatives. ">dg::DMatrix</a></code> and <code><a class="el" href="group__typedefs.html#ga3f4eb35626ac9b7ec1a9e1ac44489c43" title="CSR device Matrix. ">dg::IDMatrix</a></code> with <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code> or <code>std::vector&lt;dg::DVec&gt;</code> </li>
+    <tr><td class="paramname">Matrix</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_matrix_traits.html" title="The matrix traits. ">MatrixTraits</a></code> exists and which fullfills the requirements of the there defined Matrix policy derived from <code><a class="el" href="structdg_1_1_any_matrix_tag.html">AnyMatrixTag</a></code> or <code><a class="el" href="structdg_1_1_self_made_matrix_tag.html" title="indicates that the Matrix type has the void symv( const Vector&amp;, Vector&amp; ) member function...">SelfMadeMatrixTag</a></code>. The <code>Matrix</code> type can for example be one of:<ul>
+<li><code>container:</code> A container acts as a diagonal matrix.</li>
+<li><code><a class="el" href="group__typedefs.html#ga03ea77a5e974bed59c16fc1b50e32fad" title="Host Matrix for derivatives. ">dg::HMatrix</a></code> and <code><a class="el" href="group__typedefs.html#ga0af8204731ee6327dc4616a5980af2d5" title="CSR host Matrix. ">dg::IHMatrix</a></code> with <code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code> or <code>std::vector&lt;dg::HVec&gt;</code> </li>
+<li><code><a class="el" href="group__typedefs.html#gade8f2d2e22d78d961a4a83baad054922" title="Device Matrix for derivatives. ">dg::DMatrix</a></code> and <code><a class="el" href="group__typedefs.html#ga0d122f4172a3e60105754f9419c0831f" title="CSR device Matrix. ">dg::IDMatrix</a></code> with <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code> or <code>std::vector&lt;dg::DVec&gt;</code> </li>
 <li><code><a class="el" href="group__typedefs.html#gaa6f6bf3d7e428a9e66630a1a0e135d3a" title="MPI Host Matrix for derivatives. ">dg::MHMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga3f854ffa533cafd10b9846258e40029f" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code>std::vector&lt;dg::MHVec&gt;</code> </li>
 <li><code><a class="el" href="group__typedefs.html#ga5d1f28d85330d29c74ea77f048d2978c" title="MPI Device Matrix for derivatives. ">dg::MDMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga25cae493b710b17992387cce395ad7ae" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> or <code>std::vector&lt;dg::MDVec&gt;</code> </li>
-<li>Any type that has the <code><a class="el" href="structdg_1_1_self_made_matrix_tag.html" title="indicates that the Matrix type has the void symv( const Vector&amp;, Vector&amp; ) member function...">SelfMadeMatrixTag</a></code> specified in a corresponding <code><a class="el" href="structdg_1_1_matrix_traits.html" title="The matrix traits. ">MatrixTraits</a></code> class (e.g. <code><a class="el" href="classdg_1_1_elliptic.html" title="Operator that acts as a 2d negative elliptic differential operator ">dg::Elliptic</a></code>). In this case only those <a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a> functions that have a corresponding member function in the Matrix class (e.g. <code>symv( const container&amp;, container&amp;)</code>; ) can be called.</li>
+<li>In case of <code><a class="el" href="structdg_1_1_self_made_matrix_tag.html" title="indicates that the Matrix type has the void symv( const Vector&amp;, Vector&amp; ) member function...">SelfMadeMatrixTag</a></code> only those <code><a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a></code> functions that have a corresponding member function in the Matrix class (e.g. <code>symv( const container&amp;, container&amp;)</code>; ) can be called.</li>
 </ul>
-If <code>container</code> is a <code>std::vector</code>, then the Matrix is applied to each of the elements.</td></tr>
-    <tr><td class="paramname">container</td><td>A data container class for which the <code><a class="el" href="namespacedg_1_1blas1.html" title="BLAS Level 1 routines. ">blas1</a></code> functionality is overloaded. We assume that <code>container</code> is copyable/assignable and has a swap member function. Currently this is one of<ul>
+If a <code>container</code> has the <code><a class="el" href="structdg_1_1_vector_vector_tag.html" title="This tag indicates composition/recursion. ">VectorVectorTag</a></code>, then the <code>Matrix</code> is applied to each of the elements. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__mat__list.html">List of Matrix Traits specializations</a></dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">container</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_vector_traits.html" title="The vector traits. ">VectorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> or <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. For example, this is one of<ul>
 <li><code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code>, <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code>, <code><a class="el" href="group__typedefs.html#ga3f854ffa533cafd10b9846258e40029f" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code><a class="el" href="group__typedefs.html#ga25cae493b710b17992387cce395ad7ae" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> </li>
-<li><code>std::vector&lt;dg::HVec&gt;</code>, <code>std::vector&lt;dg::DVec&gt;</code>, <code>std::vector&lt;dg::MHVec&gt;</code> or <code>std::vector&lt;dg::MDVec&gt;</code> . </li>
+<li><code>std::vector&lt;dg::DVec&gt;</code>, <code>std::array&lt;dg::MHVec, 3&gt;</code>, <code>std::array&lt;double, 4&gt;</code> ... </li>
 </ul>
 </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__vec__list.html">List of Vector Traits specializations</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">alpha</td><td>A Scalar </td></tr>
@@ -550,7 +579,7 @@ If <code>container</code> is a <code>std::vector</code>, then the Matrix is appl
   </dd>
 </dl>
 <dl class="section attention"><dt>Attention</dt><dd><code>y</code> may never alias <code>x</code> </dd></dl>
-<p>This code snippet demonstrates how to derive a function with dG on a device </p><div class="fragment"><div class="line"><span class="keywordtype">double</span> <span class="keyword">function</span>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y){<span class="keywordflow">return</span> exp(x)*exp(y);}</div><div class="line"><a class="code" href="structdg_1_1_grid2d.html">dg::Grid2d</a> g2d( 0, 2, 0, 2, 3, 20, 20);</div><div class="line"><a class="code" href="structdg_1_1_ell_sparse_block_mat_device.html">dg::DMatrix</a> <a class="code" href="group__creation.html#ga486a9f56008435d7403236bae8b511b7">dx</a>;</div><div class="line"><a class="code" href="group__blas2.html#gad55efc77b7320e376b7f00b61ce0dd6e">dg::blas2::transfer</a>( <a class="code" href="group__creation.html#ga486a9f56008435d7403236bae8b511b7">dg::create::dx</a>(g2d), dx);</div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6">dg::DVec</a>  x, y;</div><div class="line"><a class="code" href="group__blas1.html#gac47888be3a3f75994f40de9a70d28c9c">dg::blas1::transfer</a>( <a class="code" href="group__evaluation.html#ga7521f4acb4edaf2d7896d99f97e1ed9d">dg::evaluate</a>( <span class="keyword">function</span>, g2d), x);</div><div class="line">y=x;</div><div class="line"><a class="code" href="group__blas2.html#gab1885f3913f72b7ea380d58f40c04656">dg::blas2::symv</a>(dx, x,y); </div><div class="line"><span class="comment">//or </span></div><div class="line"><a class="code" href="group__blas2.html#gab1885f3913f72b7ea380d58f40c04656">dg::blas2::symv</a>(1., dx, x, 0., y); </div></div><!-- fragment --> 
+<p>This code snippet demonstrates how to derive a function with dG on a device </p><div class="fragment"><div class="line"><span class="keywordtype">double</span> <span class="keyword">function</span>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> <a class="code" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>){<span class="keywordflow">return</span> exp(x)*exp(y);}</div><div class="line"><a class="code" href="structdg_1_1_grid2d.html">dg::Grid2d</a> g2d( 0, 2, 0, 2, 3, 20, 20);</div><div class="line"><a class="code" href="structdg_1_1_ell_sparse_block_mat_device.html">dg::DMatrix</a> <a class="code" href="group__creation.html#ga486a9f56008435d7403236bae8b511b7">dx</a>;</div><div class="line"><a class="code" href="group__blas2.html#gad55efc77b7320e376b7f00b61ce0dd6e">dg::blas2::transfer</a>( <a class="code" href="group__creation.html#ga486a9f56008435d7403236bae8b511b7">dg::create::dx</a>(g2d), dx);</div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6">dg::DVec</a>  x, <a class="code" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>;</div><div class="line"><a class="code" href="group__blas1.html#gad325c39d1994561ee38813a2dde7a46a">dg::blas1::transfer</a>( <a class="code" href="group__evaluation.html#ga7521f4acb4edaf2d7896d99f97e1ed9d">dg::evaluate</a>( <span class="keyword">function</span>, g2d), x);</div><div class="line">y=x;</div><div class="line"><a class="code" href="group__blas2.html#gaa4386168cffcb35e549f44034ee80eb0">dg::blas2::symv</a>(dx, x,y);</div><div class="line"><span class="comment">//or</span></div><div class="line"><a class="code" href="group__blas2.html#gaa4386168cffcb35e549f44034ee80eb0">dg::blas2::symv</a>(1., dx, x, 0., y);</div></div><!-- fragment --> 
 </div>
 </div>
 <a class="anchor" id="ga1e942b5970e73d1338c742eb57d1d389"></a>
@@ -600,20 +629,32 @@ template&lt;class Matrix , class container , class same_or_another_container &gt
 <p> where \( M\) is a matrix.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Matrix</td><td>A class for which the <a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a> functions are callable in connection with the container class. The <code>Matrix</code> type can be one of:<ul>
-<li>container: A container acts as a diagonal matrix.</li>
-<li><code><a class="el" href="group__typedefs.html#ga03ea77a5e974bed59c16fc1b50e32fad" title="Host Matrix for derivatives. ">dg::HMatrix</a></code> and <code><a class="el" href="group__typedefs.html#ga4780e2f8f426e5e691562dc00b34a9c2" title="CSR host Matrix. ">dg::IHMatrix</a></code> with <code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code> or <code>std::vector&lt;dg::HVec&gt;</code> </li>
-<li><code><a class="el" href="group__typedefs.html#gade8f2d2e22d78d961a4a83baad054922" title="Device Matrix for derivatives. ">dg::DMatrix</a></code> and <code><a class="el" href="group__typedefs.html#ga3f4eb35626ac9b7ec1a9e1ac44489c43" title="CSR device Matrix. ">dg::IDMatrix</a></code> with <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code> or <code>std::vector&lt;dg::DVec&gt;</code> </li>
+    <tr><td class="paramname">Matrix</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_matrix_traits.html" title="The matrix traits. ">MatrixTraits</a></code> exists and which fullfills the requirements of the there defined Matrix policy derived from <code><a class="el" href="structdg_1_1_any_matrix_tag.html">AnyMatrixTag</a></code> or <code><a class="el" href="structdg_1_1_self_made_matrix_tag.html" title="indicates that the Matrix type has the void symv( const Vector&amp;, Vector&amp; ) member function...">SelfMadeMatrixTag</a></code>. The <code>Matrix</code> type can for example be one of:<ul>
+<li><code>container:</code> A container acts as a diagonal matrix.</li>
+<li><code><a class="el" href="group__typedefs.html#ga03ea77a5e974bed59c16fc1b50e32fad" title="Host Matrix for derivatives. ">dg::HMatrix</a></code> and <code><a class="el" href="group__typedefs.html#ga0af8204731ee6327dc4616a5980af2d5" title="CSR host Matrix. ">dg::IHMatrix</a></code> with <code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code> or <code>std::vector&lt;dg::HVec&gt;</code> </li>
+<li><code><a class="el" href="group__typedefs.html#gade8f2d2e22d78d961a4a83baad054922" title="Device Matrix for derivatives. ">dg::DMatrix</a></code> and <code><a class="el" href="group__typedefs.html#ga0d122f4172a3e60105754f9419c0831f" title="CSR device Matrix. ">dg::IDMatrix</a></code> with <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code> or <code>std::vector&lt;dg::DVec&gt;</code> </li>
 <li><code><a class="el" href="group__typedefs.html#gaa6f6bf3d7e428a9e66630a1a0e135d3a" title="MPI Host Matrix for derivatives. ">dg::MHMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga3f854ffa533cafd10b9846258e40029f" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code>std::vector&lt;dg::MHVec&gt;</code> </li>
 <li><code><a class="el" href="group__typedefs.html#ga5d1f28d85330d29c74ea77f048d2978c" title="MPI Device Matrix for derivatives. ">dg::MDMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga25cae493b710b17992387cce395ad7ae" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> or <code>std::vector&lt;dg::MDVec&gt;</code> </li>
-<li>Any type that has the <code><a class="el" href="structdg_1_1_self_made_matrix_tag.html" title="indicates that the Matrix type has the void symv( const Vector&amp;, Vector&amp; ) member function...">SelfMadeMatrixTag</a></code> specified in a corresponding <code><a class="el" href="structdg_1_1_matrix_traits.html" title="The matrix traits. ">MatrixTraits</a></code> class (e.g. <code><a class="el" href="classdg_1_1_elliptic.html" title="Operator that acts as a 2d negative elliptic differential operator ">dg::Elliptic</a></code>). In this case only those <a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a> functions that have a corresponding member function in the Matrix class (e.g. <code>symv( const container&amp;, container&amp;)</code>; ) can be called.</li>
+<li>In case of <code><a class="el" href="structdg_1_1_self_made_matrix_tag.html" title="indicates that the Matrix type has the void symv( const Vector&amp;, Vector&amp; ) member function...">SelfMadeMatrixTag</a></code> only those <code><a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a></code> functions that have a corresponding member function in the Matrix class (e.g. <code>symv( const container&amp;, container&amp;)</code>; ) can be called.</li>
 </ul>
-If <code>container</code> is a <code>std::vector</code>, then the Matrix is applied to each of the elements.</td></tr>
-    <tr><td class="paramname">container</td><td>A data container class for which the <code><a class="el" href="namespacedg_1_1blas1.html" title="BLAS Level 1 routines. ">blas1</a></code> functionality is overloaded. We assume that <code>container</code> is copyable/assignable and has a swap member function. Currently this is one of<ul>
+If a <code>container</code> has the <code><a class="el" href="structdg_1_1_vector_vector_tag.html" title="This tag indicates composition/recursion. ">VectorVectorTag</a></code>, then the <code>Matrix</code> is applied to each of the elements. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__mat__list.html">List of Matrix Traits specializations</a></dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">container</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_vector_traits.html" title="The vector traits. ">VectorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> or <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. For example, this is one of<ul>
 <li><code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code>, <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code>, <code><a class="el" href="group__typedefs.html#ga3f854ffa533cafd10b9846258e40029f" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code><a class="el" href="group__typedefs.html#ga25cae493b710b17992387cce395ad7ae" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> </li>
-<li><code>std::vector&lt;dg::HVec&gt;</code>, <code>std::vector&lt;dg::DVec&gt;</code>, <code>std::vector&lt;dg::MHVec&gt;</code> or <code>std::vector&lt;dg::MDVec&gt;</code> . </li>
+<li><code>std::vector&lt;dg::DVec&gt;</code>, <code>std::array&lt;dg::MHVec, 3&gt;</code>, <code>std::array&lt;double, 4&gt;</code> ... </li>
 </ul>
 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__vec__list.html">List of Vector Traits specializations</a> </dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
     <tr><td class="paramname">same_or_another_container</td><td>Currently needs to be the same as <code>container</code>. </td></tr>
   </table>
   </dd>
@@ -628,7 +669,7 @@ If <code>container</code> is a <code>std::vector</code>, then the Matrix is appl
 </dl>
 <dl class="section attention"><dt>Attention</dt><dd>y may never alias x </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Due to the <code><a class="el" href="structdg_1_1_self_made_matrix_tag.html" title="indicates that the Matrix type has the void symv( const Vector&amp;, Vector&amp; ) member function...">SelfMadeMatrixTag</a></code>, M cannot be declared const</dd></dl>
-<p>This code snippet demonstrates how to derive a function with dG on a device </p><div class="fragment"><div class="line"><span class="keywordtype">double</span> <span class="keyword">function</span>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y){<span class="keywordflow">return</span> exp(x)*exp(y);}</div><div class="line"><a class="code" href="structdg_1_1_grid2d.html">dg::Grid2d</a> g2d( 0, 2, 0, 2, 3, 20, 20);</div><div class="line"><a class="code" href="structdg_1_1_ell_sparse_block_mat_device.html">dg::DMatrix</a> <a class="code" href="group__creation.html#ga486a9f56008435d7403236bae8b511b7">dx</a>;</div><div class="line"><a class="code" href="group__blas2.html#gad55efc77b7320e376b7f00b61ce0dd6e">dg::blas2::transfer</a>( <a class="code" href="group__creation.html#ga486a9f56008435d7403236bae8b511b7">dg::create::dx</a>(g2d), dx);</div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6">dg::DVec</a>  x, y;</div><div class="line"><a class="code" href="group__blas1.html#gac47888be3a3f75994f40de9a70d28c9c">dg::blas1::transfer</a>( <a class="code" href="group__evaluation.html#ga7521f4acb4edaf2d7896d99f97e1ed9d">dg::evaluate</a>( <span class="keyword">function</span>, g2d), x);</div><div class="line">y=x;</div><div class="line"><a class="code" href="group__blas2.html#gab1885f3913f72b7ea380d58f40c04656">dg::blas2::symv</a>(dx, x,y); </div><div class="line"><span class="comment">//or </span></div><div class="line"><a class="code" href="group__blas2.html#gab1885f3913f72b7ea380d58f40c04656">dg::blas2::symv</a>(1., dx, x, 0., y); </div></div><!-- fragment --> 
+<p>This code snippet demonstrates how to derive a function with dG on a device </p><div class="fragment"><div class="line"><span class="keywordtype">double</span> <span class="keyword">function</span>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y){<span class="keywordflow">return</span> exp(x)*exp(y);}</div><div class="line"><a class="code" href="structdg_1_1_grid2d.html">dg::Grid2d</a> g2d( 0, 2, 0, 2, 3, 20, 20);</div><div class="line"><a class="code" href="structdg_1_1_ell_sparse_block_mat_device.html">dg::DMatrix</a> <a class="code" href="group__creation.html#ga486a9f56008435d7403236bae8b511b7">dx</a>;</div><div class="line"><a class="code" href="group__blas2.html#gad55efc77b7320e376b7f00b61ce0dd6e">dg::blas2::transfer</a>( <a class="code" href="group__creation.html#ga486a9f56008435d7403236bae8b511b7">dg::create::dx</a>(g2d), dx);</div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6">dg::DVec</a>  x, y;</div><div class="line"><a class="code" href="group__blas1.html#gad325c39d1994561ee38813a2dde7a46a">dg::blas1::transfer</a>( <a class="code" href="group__evaluation.html#ga7521f4acb4edaf2d7896d99f97e1ed9d">dg::evaluate</a>( <span class="keyword">function</span>, g2d), x);</div><div class="line">y=x;</div><div class="line"><a class="code" href="group__blas2.html#gaa4386168cffcb35e549f44034ee80eb0">dg::blas2::symv</a>(dx, x,y);</div><div class="line"><span class="comment">//or</span></div><div class="line"><a class="code" href="group__blas2.html#gaa4386168cffcb35e549f44034ee80eb0">dg::blas2::symv</a>(1., dx, x, 0., y);</div></div><!-- fragment --> 
 </div>
 </div>
 <a class="anchor" id="gad55efc77b7320e376b7f00b61ce0dd6e"></a>
@@ -668,15 +709,21 @@ template&lt;class Matrix , class AnotherMatrix &gt; </div>
 <p>\( y = x\); Generic way to copy and/or convert a Matrix type to a different Matrix type (e.g. from CPU to GPU, or double to float, etc.) </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Matrix</td><td>A class for which the <a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a> functions are callable in connection with the container class. The <code>Matrix</code> type can be one of:<ul>
-<li>container: A container acts as a diagonal matrix.</li>
-<li><code><a class="el" href="group__typedefs.html#ga03ea77a5e974bed59c16fc1b50e32fad" title="Host Matrix for derivatives. ">dg::HMatrix</a></code> and <code><a class="el" href="group__typedefs.html#ga4780e2f8f426e5e691562dc00b34a9c2" title="CSR host Matrix. ">dg::IHMatrix</a></code> with <code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code> or <code>std::vector&lt;dg::HVec&gt;</code> </li>
-<li><code><a class="el" href="group__typedefs.html#gade8f2d2e22d78d961a4a83baad054922" title="Device Matrix for derivatives. ">dg::DMatrix</a></code> and <code><a class="el" href="group__typedefs.html#ga3f4eb35626ac9b7ec1a9e1ac44489c43" title="CSR device Matrix. ">dg::IDMatrix</a></code> with <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code> or <code>std::vector&lt;dg::DVec&gt;</code> </li>
+    <tr><td class="paramname">Matrix</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_matrix_traits.html" title="The matrix traits. ">MatrixTraits</a></code> exists and which fullfills the requirements of the there defined Matrix policy derived from <code><a class="el" href="structdg_1_1_any_matrix_tag.html">AnyMatrixTag</a></code> or <code><a class="el" href="structdg_1_1_self_made_matrix_tag.html" title="indicates that the Matrix type has the void symv( const Vector&amp;, Vector&amp; ) member function...">SelfMadeMatrixTag</a></code>. The <code>Matrix</code> type can for example be one of:<ul>
+<li><code>container:</code> A container acts as a diagonal matrix.</li>
+<li><code><a class="el" href="group__typedefs.html#ga03ea77a5e974bed59c16fc1b50e32fad" title="Host Matrix for derivatives. ">dg::HMatrix</a></code> and <code><a class="el" href="group__typedefs.html#ga0af8204731ee6327dc4616a5980af2d5" title="CSR host Matrix. ">dg::IHMatrix</a></code> with <code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code> or <code>std::vector&lt;dg::HVec&gt;</code> </li>
+<li><code><a class="el" href="group__typedefs.html#gade8f2d2e22d78d961a4a83baad054922" title="Device Matrix for derivatives. ">dg::DMatrix</a></code> and <code><a class="el" href="group__typedefs.html#ga0d122f4172a3e60105754f9419c0831f" title="CSR device Matrix. ">dg::IDMatrix</a></code> with <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code> or <code>std::vector&lt;dg::DVec&gt;</code> </li>
 <li><code><a class="el" href="group__typedefs.html#gaa6f6bf3d7e428a9e66630a1a0e135d3a" title="MPI Host Matrix for derivatives. ">dg::MHMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga3f854ffa533cafd10b9846258e40029f" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code>std::vector&lt;dg::MHVec&gt;</code> </li>
 <li><code><a class="el" href="group__typedefs.html#ga5d1f28d85330d29c74ea77f048d2978c" title="MPI Device Matrix for derivatives. ">dg::MDMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga25cae493b710b17992387cce395ad7ae" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> or <code>std::vector&lt;dg::MDVec&gt;</code> </li>
-<li>Any type that has the <code><a class="el" href="structdg_1_1_self_made_matrix_tag.html" title="indicates that the Matrix type has the void symv( const Vector&amp;, Vector&amp; ) member function...">SelfMadeMatrixTag</a></code> specified in a corresponding <code><a class="el" href="structdg_1_1_matrix_traits.html" title="The matrix traits. ">MatrixTraits</a></code> class (e.g. <code><a class="el" href="classdg_1_1_elliptic.html" title="Operator that acts as a 2d negative elliptic differential operator ">dg::Elliptic</a></code>). In this case only those <a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a> functions that have a corresponding member function in the Matrix class (e.g. <code>symv( const container&amp;, container&amp;)</code>; ) can be called.</li>
+<li>In case of <code><a class="el" href="structdg_1_1_self_made_matrix_tag.html" title="indicates that the Matrix type has the void symv( const Vector&amp;, Vector&amp; ) member function...">SelfMadeMatrixTag</a></code> only those <code><a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a></code> functions that have a corresponding member function in the Matrix class (e.g. <code>symv( const container&amp;, container&amp;)</code>; ) can be called.</li>
 </ul>
-If <code>container</code> is a <code>std::vector</code>, then the Matrix is applied to each of the elements. </td></tr>
+If a <code>container</code> has the <code><a class="el" href="structdg_1_1_vector_vector_tag.html" title="This tag indicates composition/recursion. ">VectorVectorTag</a></code>, then the <code>Matrix</code> is applied to each of the elements. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__mat__list.html">List of Matrix Traits specializations</a> </dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
     <tr><td class="paramname">AnotherMatrix</td><td>Another Matrix type </td></tr>
   </table>
   </dd>
@@ -689,7 +736,7 @@ If <code>container</code> is a <code>std::vector</code>, then the Matrix is appl
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>y gets resized properly</dd></dl>
-<p>This code snippet demonstrates how to derive a function with dG on a device </p><div class="fragment"><div class="line"><span class="keywordtype">double</span> <span class="keyword">function</span>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y){<span class="keywordflow">return</span> exp(x)*exp(y);}</div><div class="line"><a class="code" href="structdg_1_1_grid2d.html">dg::Grid2d</a> g2d( 0, 2, 0, 2, 3, 20, 20);</div><div class="line"><a class="code" href="structdg_1_1_ell_sparse_block_mat_device.html">dg::DMatrix</a> <a class="code" href="group__creation.html#ga486a9f56008435d7403236bae8b511b7">dx</a>;</div><div class="line"><a class="code" href="group__blas2.html#gad55efc77b7320e376b7f00b61ce0dd6e">dg::blas2::transfer</a>( <a class="code" href="group__creation.html#ga486a9f56008435d7403236bae8b511b7">dg::create::dx</a>(g2d), dx);</div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6">dg::DVec</a>  x, y;</div><div class="line"><a class="code" href="group__blas1.html#gac47888be3a3f75994f40de9a70d28c9c">dg::blas1::transfer</a>( <a class="code" href="group__evaluation.html#ga7521f4acb4edaf2d7896d99f97e1ed9d">dg::evaluate</a>( <span class="keyword">function</span>, g2d), x);</div><div class="line">y=x;</div><div class="line"><a class="code" href="group__blas2.html#gab1885f3913f72b7ea380d58f40c04656">dg::blas2::symv</a>(dx, x,y); </div><div class="line"><span class="comment">//or </span></div><div class="line"><a class="code" href="group__blas2.html#gab1885f3913f72b7ea380d58f40c04656">dg::blas2::symv</a>(1., dx, x, 0., y); </div></div><!-- fragment --> 
+<p>This code snippet demonstrates how to derive a function with dG on a device </p><div class="fragment"><div class="line"><span class="keywordtype">double</span> <span class="keyword">function</span>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y){<span class="keywordflow">return</span> exp(x)*exp(y);}</div><div class="line"><a class="code" href="structdg_1_1_grid2d.html">dg::Grid2d</a> g2d( 0, 2, 0, 2, 3, 20, 20);</div><div class="line"><a class="code" href="structdg_1_1_ell_sparse_block_mat_device.html">dg::DMatrix</a> <a class="code" href="group__creation.html#ga486a9f56008435d7403236bae8b511b7">dx</a>;</div><div class="line"><a class="code" href="group__blas2.html#gad55efc77b7320e376b7f00b61ce0dd6e">dg::blas2::transfer</a>( <a class="code" href="group__creation.html#ga486a9f56008435d7403236bae8b511b7">dg::create::dx</a>(g2d), dx);</div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6">dg::DVec</a>  x, y;</div><div class="line"><a class="code" href="group__blas1.html#gad325c39d1994561ee38813a2dde7a46a">dg::blas1::transfer</a>( <a class="code" href="group__evaluation.html#ga7521f4acb4edaf2d7896d99f97e1ed9d">dg::evaluate</a>( <span class="keyword">function</span>, g2d), x);</div><div class="line">y=x;</div><div class="line"><a class="code" href="group__blas2.html#gaa4386168cffcb35e549f44034ee80eb0">dg::blas2::symv</a>(dx, x,y);</div><div class="line"><span class="comment">//or</span></div><div class="line"><a class="code" href="group__blas2.html#gaa4386168cffcb35e549f44034ee80eb0">dg::blas2::symv</a>(1., dx, x, 0., y);</div></div><!-- fragment --> 
 </div>
 </div>
 </div><!-- contents -->
@@ -697,7 +744,7 @@ If <code>container</code> is a <code>std::vector</code>, then the Matrix is appl
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 15 2017 10:37:28 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Apr 26 2018 16:28:14 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

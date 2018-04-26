@@ -38,8 +38,9 @@
   <ul class="tablist"> 
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
-    <li><a href="../../geometries/html/modules.html">geometry</a></li>
+    <li><a href="../../geometries/html/modules.html">geometries</a></li>
     <li><a href="../../file/html/namespacefile.html">file</a></li>
+    <li><a href="../../exblas/html/namespaceexblas.html">exblas</a></li>
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
@@ -506,7 +507,7 @@ template&lt;class Functor1 , class Functor2 , class Functor3 , class container ,
     <tr><td class="paramname">Functor1</td><td>Binary or Ternary functor </td></tr>
     <tr><td class="paramname">Functor2</td><td>Binary or Ternary functor </td></tr>
     <tr><td class="paramname">Functor3</td><td>Binary or Ternary functor</td></tr>
-    <tr><td class="paramname">container</td><td>A data container class for which the <code><a class="el" href="namespacedg_1_1blas1.html" title="BLAS Level 1 routines. ">blas1</a></code> functionality is overloaded and to which the return type of <code><a class="el" href="group__evaluation.html#ga7521f4acb4edaf2d7896d99f97e1ed9d" title="Evaluate a function on gaussian abscissas. ">blas1::evaluate()</a></code> can be converted. We assume that <code>container</code> is copyable/assignable and has a swap member function. In connection with <code>Geometry</code> this is one of<ul>
+    <tr><td class="paramname">container</td><td>A data container class for which the <code><a class="el" href="namespacedg_1_1blas1.html" title="BLAS Level 1 routines. ">blas1</a></code> functionality is overloaded and to which the return type of <code><a class="el" href="group__evaluation.html#ga7521f4acb4edaf2d7896d99f97e1ed9d" title="Evaluate a function on gaussian abscissas. ">blas1::evaluate()</a></code> can be converted using <code><a class="el" href="group__blas1.html#gad325c39d1994561ee38813a2dde7a46a" title="y=x; Generic way to copy/construct and/or convert a container type from a different container type (e...">dg::blas1::transfer</a></code>. We assume that <code>container</code> is copyable/assignable and has a swap member function. In connection with <code>Geometry</code> this is one of<ul>
 <li><code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code>, <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code> when <code>Geometry</code> is a shared memory geometry</li>
 <li><code><a class="el" href="group__typedefs.html#ga3f854ffa533cafd10b9846258e40029f" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code><a class="el" href="group__typedefs.html#ga25cae493b710b17992387cce395ad7ae" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> when <code>Geometry</code> is one of the MPI geometries </li>
 </ul>
@@ -582,7 +583,7 @@ template&lt;class Functor1 , class Functor2 , class container , class Geometry &
   <table class="tparams">
     <tr><td class="paramname">Functor1</td><td>Binary or Ternary functor </td></tr>
     <tr><td class="paramname">Functor2</td><td>Binary or Ternary functor</td></tr>
-    <tr><td class="paramname">container</td><td>A data container class for which the <code><a class="el" href="namespacedg_1_1blas1.html" title="BLAS Level 1 routines. ">blas1</a></code> functionality is overloaded and to which the return type of <code><a class="el" href="group__evaluation.html#ga7521f4acb4edaf2d7896d99f97e1ed9d" title="Evaluate a function on gaussian abscissas. ">blas1::evaluate()</a></code> can be converted. We assume that <code>container</code> is copyable/assignable and has a swap member function. In connection with <code>Geometry</code> this is one of<ul>
+    <tr><td class="paramname">container</td><td>A data container class for which the <code><a class="el" href="namespacedg_1_1blas1.html" title="BLAS Level 1 routines. ">blas1</a></code> functionality is overloaded and to which the return type of <code><a class="el" href="group__evaluation.html#ga7521f4acb4edaf2d7896d99f97e1ed9d" title="Evaluate a function on gaussian abscissas. ">blas1::evaluate()</a></code> can be converted using <code><a class="el" href="group__blas1.html#gad325c39d1994561ee38813a2dde7a46a" title="y=x; Generic way to copy/construct and/or convert a container type from a different container type (e...">dg::blas1::transfer</a></code>. We assume that <code>container</code> is copyable/assignable and has a swap member function. In connection with <code>Geometry</code> this is one of<ul>
 <li><code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code>, <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code> when <code>Geometry</code> is a shared memory geometry</li>
 <li><code><a class="el" href="group__typedefs.html#ga3f854ffa533cafd10b9846258e40029f" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code><a class="el" href="group__typedefs.html#ga25cae493b710b17992387cce395ad7ae" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> when <code>Geometry</code> is one of the MPI geometries </li>
 </ul>
@@ -669,7 +670,7 @@ template&lt;class FunctorRR , class FunctorRZ , class FunctorZZ , class containe
     <tr><td class="paramname">FunctorRR</td><td>Binary or Ternary functor </td></tr>
     <tr><td class="paramname">FunctorRZ</td><td>Binary or Ternary functor </td></tr>
     <tr><td class="paramname">FunctorZZ</td><td>Binary or Ternary functor</td></tr>
-    <tr><td class="paramname">container</td><td>A data container class for which the <code><a class="el" href="namespacedg_1_1blas1.html" title="BLAS Level 1 routines. ">blas1</a></code> functionality is overloaded and to which the return type of <code><a class="el" href="group__evaluation.html#ga7521f4acb4edaf2d7896d99f97e1ed9d" title="Evaluate a function on gaussian abscissas. ">blas1::evaluate()</a></code> can be converted. We assume that <code>container</code> is copyable/assignable and has a swap member function. In connection with <code>Geometry</code> this is one of<ul>
+    <tr><td class="paramname">container</td><td>A data container class for which the <code><a class="el" href="namespacedg_1_1blas1.html" title="BLAS Level 1 routines. ">blas1</a></code> functionality is overloaded and to which the return type of <code><a class="el" href="group__evaluation.html#ga7521f4acb4edaf2d7896d99f97e1ed9d" title="Evaluate a function on gaussian abscissas. ">blas1::evaluate()</a></code> can be converted using <code><a class="el" href="group__blas1.html#gad325c39d1994561ee38813a2dde7a46a" title="y=x; Generic way to copy/construct and/or convert a container type from a different container type (e...">dg::blas1::transfer</a></code>. We assume that <code>container</code> is copyable/assignable and has a swap member function. In connection with <code>Geometry</code> this is one of<ul>
 <li><code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code>, <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code> when <code>Geometry</code> is a shared memory geometry</li>
 <li><code><a class="el" href="group__typedefs.html#ga3f854ffa533cafd10b9846258e40029f" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code><a class="el" href="group__typedefs.html#ga25cae493b710b17992387cce395ad7ae" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> when <code>Geometry</code> is one of the MPI geometries </li>
 </ul>
@@ -698,7 +699,7 @@ template&lt;class FunctorRR , class FunctorRZ , class FunctorZZ , class containe
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 15 2017 10:37:29 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Apr 26 2018 16:28:14 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

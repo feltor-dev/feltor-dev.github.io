@@ -1,11 +1,11 @@
 var group__generators__geo =
 [
     [ "FluxGenerator", "structdg_1_1geo_1_1_flux_generator.html", [
-      [ "FluxGenerator", "structdg_1_1geo_1_1_flux_generator.html#ab83afe3caef4094d8f0416139eb274fb", null ],
+      [ "FluxGenerator", "structdg_1_1geo_1_1_flux_generator.html#a2a79a7f6af03e5735efa398e94ea05d0", null ],
       [ "clone", "structdg_1_1geo_1_1_flux_generator.html#ad6f19c9f893b4ddd9bd457d5268cc2a3", null ]
     ] ],
     [ "RibeiroFluxGenerator", "structdg_1_1geo_1_1_ribeiro_flux_generator.html", [
-      [ "RibeiroFluxGenerator", "structdg_1_1geo_1_1_ribeiro_flux_generator.html#a2c2b3f0d15c03032e8b8def0d9d6c558", null ],
+      [ "RibeiroFluxGenerator", "structdg_1_1geo_1_1_ribeiro_flux_generator.html#ab0f8ec8635f28c5041fabf8f98972fe6", null ],
       [ "clone", "structdg_1_1geo_1_1_ribeiro_flux_generator.html#a28835fd56a8ec5c4f6d97ce286fd165f", null ]
     ] ],
     [ "aGenerator2d", "structdg_1_1geo_1_1a_generator2d.html", [
@@ -49,7 +49,7 @@ var group__generators__geo =
       [ "clone", "structdg_1_1geo_1_1_log_polar_generator.html#a905cf6d3ea2244272188b8f7e920dca8", null ]
     ] ],
     [ "Ribeiro", "structdg_1_1geo_1_1_ribeiro.html", [
-      [ "Ribeiro", "structdg_1_1geo_1_1_ribeiro.html#ac05bfb4069779ac2d1169b9c1f6fa4e1", null ],
+      [ "Ribeiro", "structdg_1_1geo_1_1_ribeiro.html#ac4d27e1c9d8820f16607014af587a941", null ],
       [ "clone", "structdg_1_1geo_1_1_ribeiro.html#ac517ad1ffec839c69daa60675cf5afdc", null ]
     ] ],
     [ "RibeiroX", "structdg_1_1geo_1_1_ribeiro_x.html", [
@@ -62,11 +62,12 @@ var group__generators__geo =
       [ "clone", "structdg_1_1geo_1_1_simple_orthogonal_x.html#a394b7f4f95dac5eab969f79e01fa798e", null ]
     ] ],
     [ "SeparatrixOrthogonal", "structdg_1_1geo_1_1_separatrix_orthogonal.html", [
-      [ "SeparatrixOrthogonal", "structdg_1_1geo_1_1_separatrix_orthogonal.html#a5af13ba499b2e819da437c6be37f3c4d", null ],
+      [ "SeparatrixOrthogonal", "structdg_1_1geo_1_1_separatrix_orthogonal.html#a388622333d76b0e4b5fb98f488bb927e", null ],
       [ "clone", "structdg_1_1geo_1_1_separatrix_orthogonal.html#a2d1b5b5a3517664f518d354b3f7c1fce", null ]
     ] ],
     [ "SimpleOrthogonal", "structdg_1_1geo_1_1_simple_orthogonal.html", [
       [ "SimpleOrthogonal", "structdg_1_1geo_1_1_simple_orthogonal.html#aee61c5e84a90f1b758ca4653f43245d7", null ],
+      [ "SimpleOrthogonal", "structdg_1_1geo_1_1_simple_orthogonal.html#ac5fb6e5b5a1f95d9625f236e07c35e37", null ],
       [ "clone", "structdg_1_1geo_1_1_simple_orthogonal.html#af4e9e0fd7e7ab4bbb8f2872b63695916", null ],
       [ "f0", "structdg_1_1geo_1_1_simple_orthogonal.html#ad9b406994e4edf5b9b17f676fcd6f47f", null ]
     ] ]

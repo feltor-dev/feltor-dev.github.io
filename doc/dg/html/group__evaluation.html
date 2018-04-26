@@ -38,8 +38,9 @@
   <ul class="tablist"> 
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
-    <li><a href="../../geometries/html/modules.html">geometry</a></li>
+    <li><a href="../../geometries/html/modules.html">geometries</a></li>
     <li><a href="../../file/html/namespacefile.html">file</a></li>
+    <li><a href="../../exblas/html/namespaceexblas.html">exblas</a></li>
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
@@ -168,50 +169,6 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>The function discretisation routines compute the DG discretisation of analytic functions on a given grid. In 1D the discretisation simply consists of n function values per grid cell ( where n is the number of Legendre coefficients used; currently 1 &lt;= n &lt;= 20 ) evaluated at the <a class="el" href="structdg_1_1_gaussian.html" title="Functor returning a gaussian . ">Gaussian</a> abscissas in the respective cell. In 2D and 3D we simply use the product space. We choose x to be the contiguous direction. The first elements of the resulting vector lie in the cell at (x0,y0) and the last in (x1, y1). </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="gab8f19ad0d5339859c93b1374d58cb31a"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class UnaryOp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">thrust::host_vector&lt;double&gt; dg::evaluate </td>
-          <td>(</td>
-          <td class="paramtype">UnaryOp&#160;</td>
-          <td class="paramname"><em>f</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_grid_x1d.html">GridX1d</a> &amp;&#160;</td>
-          <td class="paramname"><em>g</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Evaluate a function on gaussian abscissas. </p>
-<p>Evaluates f(x) on the intervall (a,b) </p><dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">UnaryOp</td><td>Model of Unary Function </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">f</td><td>The function to evaluate </td></tr>
-    <tr><td class="paramname">g</td><td>The grid on which to evaluate f</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A DG Host Vector with values </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="ga315a96595fb93e20db600e93e465e5ff"></a>
 <div class="memitem">
 <div class="memproto">
@@ -259,6 +216,50 @@ template&lt;class BinaryOp &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>A MPI Vector with values </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a></dd></dl>
 <p>This code snippet demonstrates how to discretize and integrate a function with dG </p><div class="fragment"><div class="line"><span class="keywordtype">double</span> <span class="keyword">function</span>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y){<span class="keywordflow">return</span> exp(x)*exp(y);}</div><div class="line"><span class="comment">//... use MPI_Cart_create to create 2d Cartesian communicator</span></div><div class="line"><a class="code" href="structdg_1_1_m_p_i_grid2d.html">dg::MPIGrid2d</a> g2d( 0, 2, 0, 2, 3, 20, 20, comm2d );</div><div class="line"><span class="keyword">const</span> <a class="code" href="structdg_1_1_m_p_i___vector.html">dg::MHVec</a> w2d = <a class="code" href="group__highlevel.html#ga4c1f33dbb53f54fd6407fa838c15b444">dg::create::weights</a>( g2d);</div><div class="line"><span class="keyword">const</span> <a class="code" href="structdg_1_1_m_p_i___vector.html">dg::MHVec</a> h_x = <a class="code" href="group__evaluation.html#ga7521f4acb4edaf2d7896d99f97e1ed9d">dg::evaluate</a>( <span class="keyword">function</span>, g2d);</div><div class="line"><span class="keywordtype">double</span> norm = <a class="code" href="group__blas2.html#gafb2ae8931d3a1f6b27a908c35798defd">dg::blas2::dot</a>( h_x, w2d, h_x); <span class="comment">// norm is now: (exp(4)-exp(0))^2/4</span></div></div><!-- fragment --> <dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gab8f19ad0d5339859c93b1374d58cb31a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class UnaryOp &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">thrust::host_vector&lt;double&gt; dg::evaluate </td>
+          <td>(</td>
+          <td class="paramtype">UnaryOp&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_grid_x1d.html">GridX1d</a> &amp;&#160;</td>
+          <td class="paramname"><em>g</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Evaluate a function on gaussian abscissas. </p>
+<p>Evaluates f(x) on the intervall (a,b) </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">UnaryOp</td><td>Model of Unary Function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>The function to evaluate </td></tr>
+    <tr><td class="paramname">g</td><td>The grid on which to evaluate f</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A DG Host Vector with values </dd></dl>
 
 </div>
 </div>
@@ -356,14 +357,14 @@ template&lt;class BinaryOp &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga4c84bbdda36863af0dba5c29572190a6"></a>
+<a class="anchor" id="ga8a266ea843bc3283a388591f7eb5f263"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class TernaryOp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">MPI_Vector&lt;thrust::host_vector&lt;double&gt; &gt; dg::evaluate </td>
+          <td class="memname">thrust::host_vector&lt;double&gt; dg::evaluate </td>
           <td>(</td>
           <td class="paramtype">const TernaryOp &amp;&#160;</td>
           <td class="paramname"><em>f</em>, </td>
@@ -371,7 +372,7 @@ template&lt;class TernaryOp &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1a_m_p_i_topology3d.html">aMPITopology3d</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1a_topology_x3d.html">aTopologyX3d</a> &amp;&#160;</td>
           <td class="paramname"><em>g</em>&#160;</td>
         </tr>
         <tr>
@@ -400,9 +401,9 @@ template&lt;class TernaryOp &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A MPI Vector with values </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a></dd></dl>
-<p>This code snippet demonstrates how to discretize and integrate a function with dG </p><div class="fragment"><div class="line"><span class="keywordtype">double</span> <span class="keyword">function</span>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> z){<span class="keywordflow">return</span> exp(x)*exp(y)*exp(z);}</div><div class="line"><span class="comment">//... use MPI_Cart_create to create 3d Cartesian communicator</span></div><div class="line"><a class="code" href="structdg_1_1_grid3d.html">dg::Grid3d</a> g3d( 0, 2, 0, 2, 0, 2, 3, 20, 20, 20, comm3d);</div><div class="line"><span class="keyword">const</span> <a class="code" href="structdg_1_1_m_p_i___vector.html">dg::MHVec</a> w3d = <a class="code" href="group__highlevel.html#ga4c1f33dbb53f54fd6407fa838c15b444">dg::create::weights</a>( g3d);</div><div class="line"><span class="keyword">const</span> <a class="code" href="structdg_1_1_m_p_i___vector.html">dg::MHVec</a> h_x = <a class="code" href="group__evaluation.html#ga7521f4acb4edaf2d7896d99f97e1ed9d">dg::evaluate</a>( <span class="keyword">function</span>, g3d);</div><div class="line"><span class="keywordtype">double</span> norm = <a class="code" href="group__blas2.html#gafb2ae8931d3a1f6b27a908c35798defd">dg::blas2::dot</a>(h_x, w3d, h_x); <span class="comment">// norm is now: (exp(4)-exp(0))^3/8</span></div></div><!-- fragment --> 
+<dl class="section return"><dt>Returns</dt><dd>A dG Host Vector with values </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Copies the ternary <a class="el" href="classdg_1_1_operator.html" title="Helper class mainly for the assembly of Matrices. ">Operator</a>. This function is meant for small function objects, that may be constructed during function call. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="gacb53942feeda30c1354a62a6a602d192"></a>
@@ -454,14 +455,14 @@ template&lt;class BinaryOp &gt; </div>
 <p>This code snippet demonstrates how to discretize and integrate a function with dG </p><div class="fragment"><div class="line"><span class="keywordtype">double</span> <span class="keyword">function</span>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y){<span class="keywordflow">return</span> exp(x)*exp(y);}</div><div class="line"><span class="comment">//...</span></div><div class="line"><a class="code" href="structdg_1_1_grid2d.html">dg::Grid2d</a> g2d( 0, 2, 0, 2, 3, 20, 20);</div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a">dg::HVec</a> w2d = <a class="code" href="group__highlevel.html#ga4c1f33dbb53f54fd6407fa838c15b444">dg::create::weights</a>( g2d);</div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a">dg::HVec</a> h_x = <a class="code" href="group__evaluation.html#ga7521f4acb4edaf2d7896d99f97e1ed9d">dg::evaluate</a>( <span class="keyword">function</span>, g2d);</div><div class="line"><span class="keywordtype">double</span> norm = <a class="code" href="group__blas2.html#gafb2ae8931d3a1f6b27a908c35798defd">dg::blas2::dot</a>( h_x, w2d, h_x); <span class="comment">// norm is now: (exp(4)-exp(0))^2/4</span></div></div><!-- fragment --> 
 </div>
 </div>
-<a class="anchor" id="ga8a266ea843bc3283a388591f7eb5f263"></a>
+<a class="anchor" id="ga4c84bbdda36863af0dba5c29572190a6"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class TernaryOp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">thrust::host_vector&lt;double&gt; dg::evaluate </td>
+          <td class="memname">MPI_Vector&lt;thrust::host_vector&lt;double&gt; &gt; dg::evaluate </td>
           <td>(</td>
           <td class="paramtype">const TernaryOp &amp;&#160;</td>
           <td class="paramname"><em>f</em>, </td>
@@ -469,7 +470,7 @@ template&lt;class TernaryOp &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1a_topology_x3d.html">aTopologyX3d</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1a_m_p_i_topology3d.html">aMPITopology3d</a> &amp;&#160;</td>
           <td class="paramname"><em>g</em>&#160;</td>
         </tr>
         <tr>
@@ -498,9 +499,9 @@ template&lt;class TernaryOp &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A dG Host Vector with values </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Copies the ternary <a class="el" href="classdg_1_1_operator.html" title="Helper class mainly for the assembly of Matrices. ">Operator</a>. This function is meant for small function objects, that may be constructed during function call. </dd></dl>
-
+<dl class="section return"><dt>Returns</dt><dd>A MPI Vector with values </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a></dd></dl>
+<p>This code snippet demonstrates how to discretize and integrate a function with dG </p><div class="fragment"><div class="line"><span class="keywordtype">double</span> <span class="keyword">function</span>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> <a class="code" href="group__creation.html#gga4de4a3d7cd219a55affa992871e8598fafbade9e36a3f36d3d676c1b808451dd7">z</a>){<span class="keywordflow">return</span> exp(x)*exp(y)*exp(z);}</div><div class="line"><span class="comment">//... use MPI_Cart_create to create 3d Cartesian communicator</span></div><div class="line"><a class="code" href="structdg_1_1_grid3d.html">dg::Grid3d</a> g3d( 0, 2, 0, 2, 0, 2, 3, 20, 20, 20, comm3d);</div><div class="line"><span class="keyword">const</span> <a class="code" href="structdg_1_1_m_p_i___vector.html">dg::MHVec</a> w3d = <a class="code" href="group__highlevel.html#ga4c1f33dbb53f54fd6407fa838c15b444">dg::create::weights</a>( g3d);</div><div class="line"><span class="keyword">const</span> <a class="code" href="structdg_1_1_m_p_i___vector.html">dg::MHVec</a> h_x = <a class="code" href="group__evaluation.html#ga7521f4acb4edaf2d7896d99f97e1ed9d">dg::evaluate</a>( <span class="keyword">function</span>, g3d);</div><div class="line"><span class="keywordtype">double</span> norm = <a class="code" href="group__blas2.html#gafb2ae8931d3a1f6b27a908c35798defd">dg::blas2::dot</a>(h_x, w3d, h_x); <span class="comment">// norm is now: (exp(4)-exp(0))^3/8</span></div></div><!-- fragment --> 
 </div>
 </div>
 <a class="anchor" id="ga15f2465862d3cd8c663d4b6ab45e851d"></a>
@@ -549,7 +550,7 @@ template&lt;class TernaryOp &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A dG Host Vector with values </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a></dd></dl>
-<p>This code snippet demonstrates how to discretize and integrate a function with dG </p><div class="fragment"><div class="line"><span class="keywordtype">double</span> <span class="keyword">function</span>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> z){<span class="keywordflow">return</span> exp(x)*exp(y)*exp(z);}</div><div class="line"><span class="comment">//...</span></div><div class="line"><a class="code" href="structdg_1_1_grid3d.html">dg::Grid3d</a> g3d( 0, 2, 0, 2, 0, 2, 3, 20, 20, 20);</div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a">dg::HVec</a> w3d = <a class="code" href="group__highlevel.html#ga4c1f33dbb53f54fd6407fa838c15b444">dg::create::weights</a>( g3d);</div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a">dg::HVec</a> h_x = <a class="code" href="group__evaluation.html#ga7521f4acb4edaf2d7896d99f97e1ed9d">dg::evaluate</a>( <span class="keyword">function</span>, g3d);</div><div class="line"><span class="keywordtype">double</span> norm = <a class="code" href="group__blas2.html#gafb2ae8931d3a1f6b27a908c35798defd">dg::blas2::dot</a>(h_x, w3d, h_x); <span class="comment">// norm is now: (exp(4)-exp(0))^3/8</span></div></div><!-- fragment --> 
+<p>This code snippet demonstrates how to discretize and integrate a function with dG </p><div class="fragment"><div class="line"><span class="keywordtype">double</span> <span class="keyword">function</span>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> <a class="code" href="group__creation.html#gga4de4a3d7cd219a55affa992871e8598fafbade9e36a3f36d3d676c1b808451dd7">z</a>){<span class="keywordflow">return</span> exp(x)*exp(y)*exp(z);}</div><div class="line"><span class="comment">//...</span></div><div class="line"><a class="code" href="structdg_1_1_grid3d.html">dg::Grid3d</a> g3d( 0, 2, 0, 2, 0, 2, 3, 20, 20, 20);</div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a">dg::HVec</a> w3d = <a class="code" href="group__highlevel.html#ga4c1f33dbb53f54fd6407fa838c15b444">dg::create::weights</a>( g3d);</div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a">dg::HVec</a> h_x = <a class="code" href="group__evaluation.html#ga7521f4acb4edaf2d7896d99f97e1ed9d">dg::evaluate</a>( <span class="keyword">function</span>, g3d);</div><div class="line"><span class="keywordtype">double</span> norm = <a class="code" href="group__blas2.html#gafb2ae8931d3a1f6b27a908c35798defd">dg::blas2::dot</a>(h_x, w3d, h_x); <span class="comment">// norm is now: (exp(4)-exp(0))^3/8</span></div></div><!-- fragment --> 
 </div>
 </div>
 </div><!-- contents -->
@@ -557,7 +558,7 @@ template&lt;class TernaryOp &gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 15 2017 10:37:28 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Apr 26 2018 16:28:14 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

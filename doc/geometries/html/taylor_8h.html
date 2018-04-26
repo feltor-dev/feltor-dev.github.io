@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Geometry: taylor.h File Reference</title>
+<title>Geometries: taylor.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -38,17 +38,18 @@
   <ul class="tablist"> 
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
-    <li><a href="../../geometries/html/modules.html">geometry</a></li>
+    <li><a href="../../geometries/html/modules.html">geometries</a></li>
     <li><a href="../../file/html/namespacefile.html">file</a></li>
+    <li><a href="../../exblas/html/namespaceexblas.html">exblas</a></li>
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Geometry
+   <div id="projectname">Geometries
    </div>
-   <div id="projectbrief">Library for magnetic flux functions, grids and grid generators</div>
+   <div id="projectbrief">Extension with magnetic flux functions, grids and grid generators</div>
   </td>
  </tr>
  </tbody>
@@ -134,7 +135,7 @@ $(document).ready(function(){initNavTree('taylor_8h.html','');});
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;boost/math/special_functions.hpp&gt;</code><br />
 <code>#include &quot;<a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/blas_8h.html">dg/blas.h</a>&quot;</code><br />
-<code>#include &quot;<a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/functions_8h.html">dg/backend/functions.h</a>&quot;</code><br />
+<code>#include &quot;<a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/functions_8h.html">dg/geometry/functions.h</a>&quot;</code><br />
 <code>#include &quot;<a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/functors_8h.html">dg/functors.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="solovev__parameters_8h_source.html">solovev_parameters.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="magnetic__field_8h_source.html">magnetic_field.h</a>&quot;</code><br />
@@ -144,12 +145,12 @@ Include dependency graph for taylor.h:</div>
 <div class="center"><img src="taylor_8h__incl.png" border="0" usemap="#taylor_8h" alt=""/></div>
 <map name="taylor_8h" id="taylor_8h">
 <area shape="rect" id="node7" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/blas_8h.html" title="dg/blas.h" alt="" coords="483,87,557,114"/>
-<area shape="rect" id="node8" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/functions_8h.html" title="dg/backend/functions.h" alt="" coords="581,87,739,114"/>
-<area shape="rect" id="node9" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/functors_8h.html" title="dg/functors.h" alt="" coords="763,87,861,114"/>
-<area shape="rect" id="node10" href="solovev__parameters_8h.html" title="solovev_parameters.h" alt="" coords="886,87,1037,114"/>
-<area shape="rect" id="node13" href="magnetic__field_8h.html" title="magnetic_field.h" alt="" coords="1061,87,1179,114"/>
-<area shape="rect" id="node14" href="fluxfunctions_8h.html" title="fluxfunctions.h" alt="" coords="1067,169,1173,196"/>
-<area shape="rect" id="node15" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/memory_8h.html" title="dg/backend/memory.h" alt="" coords="1045,244,1195,271"/>
+<area shape="rect" id="node8" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/functions_8h.html" title="dg/geometry/functions.h" alt="" coords="581,87,744,114"/>
+<area shape="rect" id="node9" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/functors_8h.html" title="dg/functors.h" alt="" coords="768,87,867,114"/>
+<area shape="rect" id="node10" href="solovev__parameters_8h.html" title="solovev_parameters.h" alt="" coords="891,87,1042,114"/>
+<area shape="rect" id="node13" href="magnetic__field_8h.html" title="magnetic_field.h" alt="" coords="1067,87,1184,114"/>
+<area shape="rect" id="node14" href="fluxfunctions_8h.html" title="fluxfunctions.h" alt="" coords="1072,169,1179,196"/>
+<area shape="rect" id="node15" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/memory_8h.html" title="dg/backend/memory.h" alt="" coords="1050,244,1201,271"/>
 </map>
 </div>
 </div>
@@ -248,7 +249,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="taylor_8h.html">taylor.h</a></li>
-    <li class="footer">Generated on Wed Nov 15 2017 10:37:33 for Geometry by
+    <li class="footer">Generated on Thu Apr 26 2018 16:28:25 for Geometries by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

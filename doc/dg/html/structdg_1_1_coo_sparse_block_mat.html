@@ -38,8 +38,9 @@
   <ul class="tablist"> 
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
-    <li><a href="../../geometries/html/modules.html">geometry</a></li>
+    <li><a href="../../geometries/html/modules.html">geometries</a></li>
     <li><a href="../../file/html/namespacefile.html">file</a></li>
+    <li><a href="../../exblas/html/namespaceexblas.html">exblas</a></li>
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
@@ -154,12 +155,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa573b0725f3c77c5037c42f01ab18d8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#aa573b0725f3c77c5037c42f01ab18d8a">add_value</a> (int row, int col, const thrust::host_vector&lt; value_type &gt; &amp;element)</td></tr>
 <tr class="memdesc:aa573b0725f3c77c5037c42f01ab18d8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience function to assemble the matrix.  <a href="#aa573b0725f3c77c5037c42f01ab18d8a">More...</a><br /></td></tr>
 <tr class="separator:aa573b0725f3c77c5037c42f01ab18d8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5a686d1a81ad246efab987791956a14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#af5a686d1a81ad246efab987791956a14">symv</a> (value_type alpha, const thrust::host_vector&lt; value_type &gt; &amp;x, value_type beta, thrust::host_vector&lt; value_type &gt; &amp;y) const </td></tr>
-<tr class="memdesc:af5a686d1a81ad246efab987791956a14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply the matrix to a vector.  <a href="#af5a686d1a81ad246efab987791956a14">More...</a><br /></td></tr>
-<tr class="separator:af5a686d1a81ad246efab987791956a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add796192c6dbe9bb0b8fbc9c0d519e7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#add796192c6dbe9bb0b8fbc9c0d519e7c">display</a> (std::ostream &amp;os=std::cout) const </td></tr>
-<tr class="memdesc:add796192c6dbe9bb0b8fbc9c0d519e7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display internal data to a stream.  <a href="#add796192c6dbe9bb0b8fbc9c0d519e7c">More...</a><br /></td></tr>
-<tr class="separator:add796192c6dbe9bb0b8fbc9c0d519e7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a583bcc2aea492b747b3dd5db33e456fc"><td class="memTemplParams" colspan="2">template&lt;class Vector &gt; </td></tr>
+<tr class="memitem:a583bcc2aea492b747b3dd5db33e456fc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#a583bcc2aea492b747b3dd5db33e456fc">symv</a> (value_type alpha, const Vector &amp;<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>, value_type beta, Vector &amp;<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>) const </td></tr>
+<tr class="memdesc:a583bcc2aea492b747b3dd5db33e456fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply the matrix to a vector.  <a href="#a583bcc2aea492b747b3dd5db33e456fc">More...</a><br /></td></tr>
+<tr class="separator:a583bcc2aea492b747b3dd5db33e456fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac86477710f7aedb9e25509fd72f34809"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#ac86477710f7aedb9e25509fd72f34809">display</a> (std::ostream &amp;os=std::cout, bool show_data=false) const </td></tr>
+<tr class="memdesc:ac86477710f7aedb9e25509fd72f34809"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display internal data to a stream.  <a href="#ac86477710f7aedb9e25509fd72f34809">More...</a><br /></td></tr>
+<tr class="separator:ac86477710f7aedb9e25509fd72f34809"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -367,7 +369,7 @@ template&lt;class value_type &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="add796192c6dbe9bb0b8fbc9c0d519e7c"></a>
+<a class="anchor" id="ac86477710f7aedb9e25509fd72f34809"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -377,8 +379,18 @@ template&lt;class value_type &gt; </div>
           <td class="memname">void <a class="el" href="structdg_1_1_coo_sparse_block_mat.html">dg::CooSparseBlockMat</a>&lt; value_type &gt;::display </td>
           <td>(</td>
           <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>os</em> = <code>std::cout</code></td><td>)</td>
-          <td> const</td>
+          <td class="paramname"><em>os</em> = <code>std::cout</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>show_data</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -387,17 +399,23 @@ template&lt;class value_type &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">os</td><td>the output stream </td></tr>
+    <tr><td class="paramname">show_data</td><td>if true, displays the whole data vector </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="af5a686d1a81ad246efab987791956a14"></a>
+<a class="anchor" id="a583bcc2aea492b747b3dd5db33e456fc"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class value_type &gt; </div>
+<div class="memtemplate">
+template&lt;class Vector &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="structdg_1_1_coo_sparse_block_mat.html">dg::CooSparseBlockMat</a>&lt; value_type &gt;::symv </td>
@@ -408,7 +426,7 @@ template&lt;class value_type &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const thrust::host_vector&lt; value_type &gt; &amp;&#160;</td>
+          <td class="paramtype">const Vector &amp;&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
@@ -420,7 +438,7 @@ template&lt;class value_type &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">thrust::host_vector&lt; value_type &gt; &amp;&#160;</td>
+          <td class="paramtype">Vector &amp;&#160;</td>
           <td class="paramname"><em>y</em>&#160;</td>
         </tr>
         <tr>
@@ -429,6 +447,11 @@ template&lt;class value_type &gt; </div>
           <td></td><td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Apply the matrix to a vector. </p>
@@ -436,11 +459,12 @@ template&lt;class value_type &gt; </div>
   <table class="params">
     <tr><td class="paramname">alpha</td><td>multiplies input </td></tr>
     <tr><td class="paramname">x</td><td>input </td></tr>
-    <tr><td class="paramname">beta</td><td>premultiplies output </td></tr>
+    <tr><td class="paramname">beta</td><td>premultiplies output (cannot be anything other than 1, the given value is ignored) </td></tr>
     <tr><td class="paramname">y</td><td>output may not alias input </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section attention"><dt>Attention</dt><dd>beta == 1 (anything else is ignored) </dd></dl>
 
 </div>
 </div>
@@ -614,7 +638,7 @@ template&lt;class value_type &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html">CooSparseBlockMat</a></li>
-    <li class="footer">Generated on Wed Nov 15 2017 10:37:29 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Apr 26 2018 16:28:15 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -2,6 +2,7 @@ var searchData=
 [
   ['f',['f',['../../../geometries/html/structdg_1_1geo_1_1_binary_functors_lvl1.html#adb0731ed5f5bea103902af6f905e0c4f',1,'dg::geo::BinaryFunctorsLvl1::f()'],['../../../geometries/html/structdg_1_1geo_1_1_binary_functors_lvl2.html#a8c7b93a6926ebca4618f5bd898dc2f93',1,'dg::geo::BinaryFunctorsLvl2::f()'],['../structdg_1_1_grid_x1d.html#a40e79964ef1aec506ece574b201b57dc',1,'dg::GridX1d::f()']]],
   ['f0',['f0',['../../../geometries/html/structdg_1_1geo_1_1_simple_orthogonal.html#ad9b406994e4edf5b9b17f676fcd6f47f',1,'dg::geo::SimpleOrthogonal']]],
+  ['f_5fwords',['F_WORDS',['../../../exblas/html/namespaceexblas.html#aa8d2167b8bdbeec6e4209a4312c2afd4',1,'exblas']]],
   ['fa',['FA',['../../../geometries/html/structdg_1_1geo_1_1_d_s.html#ac83f7ebb7593a8739c9ea0585cd7d0de',1,'dg::geo::DS']]],
   ['fail',['Fail',['../structdg_1_1_fail.html#acbccb1ec26460accff6fe8ae47fb9cef',1,'dg::Fail']]],
   ['fail',['Fail',['../structdg_1_1_fail.html',1,'dg']]],
@@ -24,7 +25,7 @@ var searchData=
   ['findxpoint',['findXpoint',['../../../geometries/html/group__misc__geo.html#gafcee60ecf901ef09ae3fbf87bd146fbd',1,'dg::geo::findXpoint()'],['../../../geometries/html/group__misc__geo.html#gafcee60ecf901ef09ae3fbf87bd146fbd',1,'findXpoint()(Global Namespace)']]],
   ['flux_2eh',['flux.h',['../../../geometries/html/flux_8h.html',1,'']]],
   ['fluxfunctions_2eh',['fluxfunctions.h',['../../../geometries/html/fluxfunctions_8h.html',1,'']]],
-  ['fluxgenerator',['FluxGenerator',['../../../geometries/html/structdg_1_1geo_1_1_flux_generator.html#ab83afe3caef4094d8f0416139eb274fb',1,'dg::geo::FluxGenerator']]],
+  ['fluxgenerator',['FluxGenerator',['../../../geometries/html/structdg_1_1geo_1_1_flux_generator.html#a2a79a7f6af03e5735efa398e94ea05d0',1,'dg::geo::FluxGenerator']]],
   ['fluxgenerator',['FluxGenerator',['../../../geometries/html/structdg_1_1geo_1_1_flux_generator.html',1,'dg::geo']]],
   ['fluxsurfaceaverage',['FluxSurfaceAverage',['../../../geometries/html/structdg_1_1geo_1_1_flux_surface_average.html',1,'dg::geo']]],
   ['fluxsurfaceaverage',['FluxSurfaceAverage',['../../../geometries/html/structdg_1_1geo_1_1_flux_surface_average.html#a9c6f7fd4e2a5c013f2f0285af256794d',1,'dg::geo::FluxSurfaceAverage']]],

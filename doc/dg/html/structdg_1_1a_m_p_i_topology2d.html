@@ -38,8 +38,9 @@
   <ul class="tablist"> 
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
-    <li><a href="../../geometries/html/modules.html">geometry</a></li>
+    <li><a href="../../geometries/html/modules.html">geometries</a></li>
     <li><a href="../../file/html/namespacefile.html">file</a></li>
+    <li><a href="../../exblas/html/namespaceexblas.html">exblas</a></li>
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
@@ -198,6 +199,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acbdee1f83a4a29d6f5c1f9f5d3f36bf0"><td class="memItemLeft" align="right" valign="top">MPI_Comm&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_m_p_i_topology2d.html#acbdee1f83a4a29d6f5c1f9f5d3f36bf0">communicator</a> () const </td></tr>
 <tr class="memdesc:acbdee1f83a4a29d6f5c1f9f5d3f36bf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return mpi cartesian communicator that is used in this grid.  <a href="#acbdee1f83a4a29d6f5c1f9f5d3f36bf0">More...</a><br /></td></tr>
 <tr class="separator:acbdee1f83a4a29d6f5c1f9f5d3f36bf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b9ea06e70f188afdcf1ee065731df3d"><td class="memItemLeft" align="right" valign="top">MPI_Comm&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_m_p_i_topology2d.html#a8b9ea06e70f188afdcf1ee065731df3d">get_poloidal_comm</a> () const </td></tr>
+<tr class="separator:a8b9ea06e70f188afdcf1ee065731df3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78b58d3029b332b2be8fe8e7f152fd7a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdg_1_1_d_l_t.html">DLT</a>&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_m_p_i_topology2d.html#a78b58d3029b332b2be8fe8e7f152fd7a">dlt</a> () const </td></tr>
 <tr class="memdesc:a78b58d3029b332b2be8fe8e7f152fd7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Discrete Legendre Transformation.  <a href="#a78b58d3029b332b2be8fe8e7f152fd7a">More...</a><br /></td></tr>
 <tr class="separator:a78b58d3029b332b2be8fe8e7f152fd7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -210,7 +213,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1168c699cc3373b6ac5622af08786733"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_m_p_i_topology2d.html#a1168c699cc3373b6ac5622af08786733">display</a> (std::ostream &amp;os=std::cout) const </td></tr>
 <tr class="memdesc:a1168c699cc3373b6ac5622af08786733"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display global and local grid.  <a href="#a1168c699cc3373b6ac5622af08786733">More...</a><br /></td></tr>
 <tr class="separator:a1168c699cc3373b6ac5622af08786733"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ad794d304faf7e108a06876170d065d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_m_p_i_topology2d.html#a3ad794d304faf7e108a06876170d065d">pidOf</a> (double x, double y) const </td></tr>
+<tr class="memitem:a3ad794d304faf7e108a06876170d065d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_m_p_i_topology2d.html#a3ad794d304faf7e108a06876170d065d">pidOf</a> (double <a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>, double <a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>) const </td></tr>
 <tr class="memdesc:a3ad794d304faf7e108a06876170d065d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the pid of the process that holds the local grid surrounding the given point.  <a href="#a3ad794d304faf7e108a06876170d065d">More...</a><br /></td></tr>
 <tr class="separator:a3ad794d304faf7e108a06876170d065d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5089d0560581c0d5f1b87c6c615469a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_m_p_i_topology2d.html#a5089d0560581c0d5f1b87c6c615469a4">multiplyCellNumbers</a> (double fx, double fy)</td></tr>
@@ -609,6 +612,29 @@ although it is abstract objects, are not meant to be hold on the heap via a base
 </div><div class="memdoc">
 
 <p>This function has an implementation. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8b9ea06e70f188afdcf1ee065731df3d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MPI_Comm dg::aMPITopology2d::get_poloidal_comm </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1261,7 +1287,7 @@ although it is abstract objects, are not meant to be hold on the heap via a base
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>backend/<a class="el" href="mpi__grid_8h_source.html">mpi_grid.h</a></li>
+<li>geometry/<a class="el" href="mpi__grid_8h_source.html">mpi_grid.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -1269,7 +1295,7 @@ although it is abstract objects, are not meant to be hold on the heap via a base
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1a_m_p_i_topology2d.html">aMPITopology2d</a></li>
-    <li class="footer">Generated on Wed Nov 15 2017 10:37:29 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Apr 26 2018 16:28:14 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

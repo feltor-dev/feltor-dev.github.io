@@ -4,5 +4,6 @@ var searchData=
   ['base_5fgeometryx_2eh',['base_geometryX.h',['../../../dg/html/base__geometry_x_8h.html',1,'']]],
   ['blas_2eh',['blas.h',['../../../dg/html/blas_8h.html',1,'']]],
   ['blas1_2eh',['blas1.h',['../../../dg/html/blas1_8h.html',1,'']]],
+  ['blas1_5farray_2eh',['blas1_array.h',['../../../dg/html/blas1__array_8h.html',1,'']]],
   ['blas2_2eh',['blas2.h',['../../../dg/html/blas2_8h.html',1,'']]]
 ];

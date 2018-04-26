@@ -3,7 +3,9 @@ var searchData=
   ['safetyfactor',['SafetyFactor',['../structdg_1_1geo_1_1_safety_factor.html',1,'dg::geo']]],
   ['selfmadematrixtag',['SelfMadeMatrixTag',['../../../dg/html/structdg_1_1_self_made_matrix_tag.html',1,'dg']]],
   ['separatrixorthogonal',['SeparatrixOrthogonal',['../structdg_1_1geo_1_1_separatrix_orthogonal.html',1,'dg::geo']]],
+  ['serialtag',['SerialTag',['../../../dg/html/structdg_1_1_serial_tag.html',1,'dg']]],
   ['sharedtag',['SharedTag',['../../../dg/html/structdg_1_1_shared_tag.html',1,'dg']]],
+  ['sharedvectortag',['SharedVectorTag',['../../../dg/html/structdg_1_1_shared_vector_tag.html',1,'dg']]],
   ['simpleorthogonal',['SimpleOrthogonal',['../structdg_1_1geo_1_1_simple_orthogonal.html',1,'dg::geo']]],
   ['simpleorthogonalx',['SimpleOrthogonalX',['../structdg_1_1geo_1_1_simple_orthogonal_x.html',1,'dg::geo']]],
   ['sinprofx',['SinProfX',['../../../dg/html/structdg_1_1_sin_prof_x.html',1,'dg']]],
@@ -18,6 +20,6 @@ var searchData=
   ['sparsetensor_3c_20host_5fvector_20_3e',['SparseTensor&lt; host_vector &gt;',['../../../dg/html/structdg_1_1_sparse_tensor.html',1,'dg']]],
   ['sparsetensor_3c_20thrust_3a_3ahost_5fvector_3c_20double_20_3e_20_3e',['SparseTensor&lt; thrust::host_vector&lt; double &gt; &gt;',['../../../dg/html/structdg_1_1_sparse_tensor.html',1,'dg']]],
   ['sqrt',['SQRT',['../../../dg/html/structdg_1_1_s_q_r_t.html',1,'dg']]],
-  ['stdvectortag',['StdVectorTag',['../../../dg/html/structdg_1_1_std_vector_tag.html',1,'dg']]],
+  ['stdarraytag',['StdArrayTag',['../../../dg/html/structdg_1_1_std_array_tag.html',1,'dg']]],
   ['surjectivecomm',['SurjectiveComm',['../../../dg/html/structdg_1_1_surjective_comm.html',1,'dg']]]
 ];

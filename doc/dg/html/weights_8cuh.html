@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Discontinuous Galerkin Library: backend/weights.cuh File Reference</title>
+<title>Discontinuous Galerkin Library: geometry/weights.cuh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -38,8 +38,9 @@
   <ul class="tablist"> 
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
-    <li><a href="../../geometries/html/modules.html">geometry</a></li>
+    <li><a href="../../geometries/html/modules.html">geometries</a></li>
     <li><a href="../../file/html/namespacefile.html">file</a></li>
+    <li><a href="../../exblas/html/namespaceexblas.html">exblas</a></li>
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
@@ -142,23 +143,29 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga648eae054e3f4e562b6cc5236292c81c"><td class="memItemLeft" align="right" valign="top">thrust::host_vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga648eae054e3f4e562b6cc5236292c81c">dg::create::weights</a> (const Grid1d &amp;g)</td></tr>
-<tr class="memdesc:ga648eae054e3f4e562b6cc5236292c81c"><td class="mdescLeft">&#160;</td><td class="mdescRight">create host_vector containing X-space weight coefficients  <a href="group__highlevel.html#ga648eae054e3f4e562b6cc5236292c81c">More...</a><br /></td></tr>
+<tr class="memdesc:ga648eae054e3f4e562b6cc5236292c81c"><td class="mdescLeft">&#160;</td><td class="mdescRight">create host vector containing X-space weight coefficients  <a href="group__highlevel.html#ga648eae054e3f4e562b6cc5236292c81c">More...</a><br /></td></tr>
 <tr class="separator:ga648eae054e3f4e562b6cc5236292c81c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae23a7f52a99da81d8316f8e4851afdf6"><td class="memItemLeft" align="right" valign="top">thrust::host_vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gae23a7f52a99da81d8316f8e4851afdf6">dg::create::inv_weights</a> (const Grid1d &amp;g)</td></tr>
 <tr class="memdesc:gae23a7f52a99da81d8316f8e4851afdf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">create host_vector containing inverse X-space weight coefficients  <a href="group__highlevel.html#gae23a7f52a99da81d8316f8e4851afdf6">More...</a><br /></td></tr>
 <tr class="separator:gae23a7f52a99da81d8316f8e4851afdf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa6b56093488e71d2fe6cb566d5c21de7"><td class="memItemLeft" align="right" valign="top">thrust::host_vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gaa6b56093488e71d2fe6cb566d5c21de7">dg::create::weights</a> (const aTopology2d &amp;g)</td></tr>
-<tr class="memdesc:gaa6b56093488e71d2fe6cb566d5c21de7"><td class="mdescLeft">&#160;</td><td class="mdescRight">create host_vector containing X-space weight coefficients  <a href="group__highlevel.html#gaa6b56093488e71d2fe6cb566d5c21de7">More...</a><br /></td></tr>
+<tr class="memdesc:gaa6b56093488e71d2fe6cb566d5c21de7"><td class="mdescLeft">&#160;</td><td class="mdescRight">create host vector containing X-space weight coefficients  <a href="group__highlevel.html#gaa6b56093488e71d2fe6cb566d5c21de7">More...</a><br /></td></tr>
 <tr class="separator:gaa6b56093488e71d2fe6cb566d5c21de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaeea96d29400f4f7877d0f5eac782ba72"><td class="memItemLeft" align="right" valign="top">thrust::host_vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gaeea96d29400f4f7877d0f5eac782ba72">dg::create::inv_weights</a> (const aTopology2d &amp;g)</td></tr>
 <tr class="memdesc:gaeea96d29400f4f7877d0f5eac782ba72"><td class="mdescLeft">&#160;</td><td class="mdescRight">create host_vector containing inverse X-space weight coefficients  <a href="group__highlevel.html#gaeea96d29400f4f7877d0f5eac782ba72">More...</a><br /></td></tr>
 <tr class="separator:gaeea96d29400f4f7877d0f5eac782ba72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga75a0deefc3c423011a7cde5e1107d792"><td class="memItemLeft" align="right" valign="top">thrust::host_vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga75a0deefc3c423011a7cde5e1107d792">dg::create::weights</a> (const aTopology2d &amp;g, enum coo2d coo)</td></tr>
+<tr class="memdesc:ga75a0deefc3c423011a7cde5e1107d792"><td class="mdescLeft">&#160;</td><td class="mdescRight">create host vector containing X-space weight coefficients  <a href="group__highlevel.html#ga75a0deefc3c423011a7cde5e1107d792">More...</a><br /></td></tr>
+<tr class="separator:ga75a0deefc3c423011a7cde5e1107d792"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6d73f4dc1eef86240bf400f0f688c430"><td class="memItemLeft" align="right" valign="top">thrust::host_vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga6d73f4dc1eef86240bf400f0f688c430">dg::create::weights</a> (const aTopology3d &amp;g)</td></tr>
-<tr class="memdesc:ga6d73f4dc1eef86240bf400f0f688c430"><td class="mdescLeft">&#160;</td><td class="mdescRight">create host_vector containing X-space weight coefficients  <a href="group__highlevel.html#ga6d73f4dc1eef86240bf400f0f688c430">More...</a><br /></td></tr>
+<tr class="memdesc:ga6d73f4dc1eef86240bf400f0f688c430"><td class="mdescLeft">&#160;</td><td class="mdescRight">create host vector containing X-space weight coefficients  <a href="group__highlevel.html#ga6d73f4dc1eef86240bf400f0f688c430">More...</a><br /></td></tr>
 <tr class="separator:ga6d73f4dc1eef86240bf400f0f688c430"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaee8dcb2c3fce5a74311b2cfd70c6c0e1"><td class="memItemLeft" align="right" valign="top">thrust::host_vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gaee8dcb2c3fce5a74311b2cfd70c6c0e1">dg::create::inv_weights</a> (const aTopology3d &amp;g)</td></tr>
 <tr class="memdesc:gaee8dcb2c3fce5a74311b2cfd70c6c0e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">create host_vector containing inverse X-space weight coefficients  <a href="group__highlevel.html#gaee8dcb2c3fce5a74311b2cfd70c6c0e1">More...</a><br /></td></tr>
 <tr class="separator:gaee8dcb2c3fce5a74311b2cfd70c6c0e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga58724af3760f805824d5ab5405e22923"><td class="memItemLeft" align="right" valign="top">thrust::host_vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga58724af3760f805824d5ab5405e22923">dg::create::weights</a> (const aTopology3d &amp;g, enum coo3d coo)</td></tr>
+<tr class="memdesc:ga58724af3760f805824d5ab5405e22923"><td class="mdescLeft">&#160;</td><td class="mdescRight">create host vector containing X-space weight coefficients  <a href="group__highlevel.html#ga58724af3760f805824d5ab5405e22923">More...</a><br /></td></tr>
+<tr class="separator:ga58724af3760f805824d5ab5405e22923"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>contains creation functions for integration weights and their inverse </p>
@@ -167,8 +174,8 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_8c739bbef76d64b22d6b0911c526dd76.html">backend</a></li><li class="navelem"><a class="el" href="weights_8cuh.html">weights.cuh</a></li>
-    <li class="footer">Generated on Wed Nov 15 2017 10:37:28 for Discontinuous Galerkin Library by
+    <li class="navelem"><a class="el" href="dir_e3380d2178455503f266746fb14246a5.html">geometry</a></li><li class="navelem"><a class="el" href="weights_8cuh.html">weights.cuh</a></li>
+    <li class="footer">Generated on Thu Apr 26 2018 16:28:14 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

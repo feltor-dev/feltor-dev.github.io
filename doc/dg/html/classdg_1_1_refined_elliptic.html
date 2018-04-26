@@ -38,8 +38,9 @@
   <ul class="tablist"> 
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
-    <li><a href="../../geometries/html/modules.html">geometry</a></li>
+    <li><a href="../../geometries/html/modules.html">geometries</a></li>
     <li><a href="../../file/html/namespacefile.html">file</a></li>
+    <li><a href="../../exblas/html/namespaceexblas.html">exblas</a></li>
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
@@ -154,7 +155,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9d6f2343c851e582b19058506d7570b5"><td class="memItemLeft" align="right" valign="top">const container &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_refined_elliptic.html#a9d6f2343c851e582b19058506d7570b5">precond</a> () const </td></tr>
 <tr class="memdesc:a9d6f2343c851e582b19058506d7570b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the preconditioner to use in conjugate gradient.  <a href="#a9d6f2343c851e582b19058506d7570b5">More...</a><br /></td></tr>
 <tr class="separator:a9d6f2343c851e582b19058506d7570b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5daf05720e8ebacb417369bc9afb8652"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_refined_elliptic.html#a5daf05720e8ebacb417369bc9afb8652">symv</a> (const container &amp;x, container &amp;y)</td></tr>
+<tr class="memitem:a5daf05720e8ebacb417369bc9afb8652"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_refined_elliptic.html#a5daf05720e8ebacb417369bc9afb8652">symv</a> (const container &amp;<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>, container &amp;<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>)</td></tr>
 <tr class="memdesc:a5daf05720e8ebacb417369bc9afb8652"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the polarisation term.  <a href="#a5daf05720e8ebacb417369bc9afb8652">More...</a><br /></td></tr>
 <tr class="separator:a5daf05720e8ebacb417369bc9afb8652"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12f50a889b2e48d1afc01e77f6734abb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_refined_elliptic.html#a12f50a889b2e48d1afc01e77f6734abb">compute_rhs</a> (const container &amp;rhs, container &amp;rhs_mod)</td></tr>
@@ -170,14 +171,14 @@ class dg::RefinedElliptic&lt; Geometry, IMatrix, Matrix, container &gt;</h3>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">Geometry</td><td>A type that is or derives from one of the abstract geometry base classes ( <code><a class="el" href="structdg_1_1a_geometry2d.html" title="This is the abstract interface class for a two-dimensional Geometry. ">aGeometry2d</a></code>, <code><a class="el" href="structdg_1_1a_geometry3d.html" title="This is the abstract interface class for a three-dimensional Geometry. ">aGeometry3d</a></code>, <code><a class="el" href="structdg_1_1a_m_p_i_geometry2d.html" title="This is the abstract interface class for a two-dimensional Geometry. ">aMPIGeometry2d</a></code>, ...). <code>Geometry</code> determines which <code>Matrix</code> and <code>container</code> types can be used: </td></tr>
-    <tr><td class="paramname">Matrix</td><td>A class for which the <a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a> functions are callable in connection with the <code>container</code> class and to which the return type of <code><a class="el" href="group__creation.html#ga486a9f56008435d7403236bae8b511b7" title="Create 2d derivative in x-direction. ">create::dx()</a></code> can be converted. The <code>Matrix</code> type can be one of:<ul>
+    <tr><td class="paramname">Matrix</td><td>A class for which the <a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a> functions are callable in connection with the <code>container</code> class and to which the return type of <code><a class="el" href="group__creation.html#ga486a9f56008435d7403236bae8b511b7" title="Create 2d derivative in x-direction. ">create::dx()</a></code> can be converted using <code><a class="el" href="group__blas2.html#gad55efc77b7320e376b7f00b61ce0dd6e" title="; Generic way to copy and/or convert a Matrix type to a different Matrix type (e.g. from CPU to GPU, or double to float, etc.) ">dg::blas2::transfer</a></code>. The <code>Matrix</code> type can be one of:<ul>
 <li><code><a class="el" href="group__typedefs.html#ga03ea77a5e974bed59c16fc1b50e32fad" title="Host Matrix for derivatives. ">dg::HMatrix</a></code> with <code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code> and one of the shared memory geometries</li>
 <li><code><a class="el" href="group__typedefs.html#gade8f2d2e22d78d961a4a83baad054922" title="Device Matrix for derivatives. ">dg::DMatrix</a></code> with <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code> and one of the shared memory geometries</li>
 <li><code><a class="el" href="group__typedefs.html#gaa6f6bf3d7e428a9e66630a1a0e135d3a" title="MPI Host Matrix for derivatives. ">dg::MHMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga3f854ffa533cafd10b9846258e40029f" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> and one of the MPI geometries</li>
 <li><code><a class="el" href="group__typedefs.html#ga5d1f28d85330d29c74ea77f048d2978c" title="MPI Device Matrix for derivatives. ">dg::MDMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga25cae493b710b17992387cce395ad7ae" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> and one of the MPI geometries </li>
 </ul>
 </td></tr>
-    <tr><td class="paramname">container</td><td>A data container class for which the <code><a class="el" href="namespacedg_1_1blas1.html" title="BLAS Level 1 routines. ">blas1</a></code> functionality is overloaded and to which the return type of <code><a class="el" href="group__evaluation.html#ga7521f4acb4edaf2d7896d99f97e1ed9d" title="Evaluate a function on gaussian abscissas. ">blas1::evaluate()</a></code> can be converted. We assume that <code>container</code> is copyable/assignable and has a swap member function. In connection with <code>Geometry</code> this is one of<ul>
+    <tr><td class="paramname">container</td><td>A data container class for which the <code><a class="el" href="namespacedg_1_1blas1.html" title="BLAS Level 1 routines. ">blas1</a></code> functionality is overloaded and to which the return type of <code><a class="el" href="group__evaluation.html#ga7521f4acb4edaf2d7896d99f97e1ed9d" title="Evaluate a function on gaussian abscissas. ">blas1::evaluate()</a></code> can be converted using <code><a class="el" href="group__blas1.html#gad325c39d1994561ee38813a2dde7a46a" title="y=x; Generic way to copy/construct and/or convert a container type from a different container type (e...">dg::blas1::transfer</a></code>. We assume that <code>container</code> is copyable/assignable and has a swap member function. In connection with <code>Geometry</code> this is one of<ul>
 <li><code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code>, <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code> when <code>Geometry</code> is a shared memory geometry</li>
 <li><code><a class="el" href="group__typedefs.html#ga3f854ffa533cafd10b9846258e40029f" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code><a class="el" href="group__typedefs.html#ga25cae493b710b17992387cce395ad7ae" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> when <code>Geometry</code> is one of the MPI geometries</li>
 </ul>
@@ -537,7 +538,7 @@ template&lt;class Geometry , class IMatrix , class Matrix , class container &gt;
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="classdg_1_1_refined_elliptic.html">RefinedElliptic</a></li>
-    <li class="footer">Generated on Wed Nov 15 2017 10:37:29 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Apr 26 2018 16:28:15 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

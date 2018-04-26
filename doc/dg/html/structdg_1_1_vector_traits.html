@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Discontinuous Galerkin Library: dg::VectorTraits&lt; Vector &gt; Struct Template Reference</title>
+<title>Discontinuous Galerkin Library: dg::VectorTraits&lt; Vector, Enable &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -38,8 +38,9 @@
   <ul class="tablist"> 
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
-    <li><a href="../../geometries/html/modules.html">geometry</a></li>
+    <li><a href="../../geometries/html/modules.html">geometries</a></li>
     <li><a href="../../file/html/namespacefile.html">file</a></li>
+    <li><a href="../../exblas/html/namespaceexblas.html">exblas</a></li>
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
@@ -126,7 +127,7 @@ $(document).ready(function(){initNavTree('structdg_1_1_vector_traits.html','');}
 <a href="#pub-types">Public Types</a> &#124;
 <a href="structdg_1_1_vector_traits-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">dg::VectorTraits&lt; Vector &gt; Struct Template Reference</div>  </div>
+<div class="title">dg::VectorTraits&lt; Vector, Enable &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__backend.html">Level 1: Vectors, Matrices and basic operations</a> &raquo; <a class="el" href="group__blas.html">Basic Linear Algebra Subroutines</a> &raquo; <a class="el" href="group__dispatch.html">The tag dispatch system</a><a class="el" href="group__backend.html">Level 1: Vectors, Matrices and basic operations</a> &raquo; <a class="el" href="group__blas.html">Basic Linear Algebra Subroutines</a> &raquo; <a class="el" href="group__dispatch.html">The tag dispatch system</a> &raquo;  &#124; <a class="el" href="group__vec__list.html">List of Vector Traits specializations</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -137,43 +138,68 @@ $(document).ready(function(){initNavTree('structdg_1_1_vector_traits.html','');}
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aa4788e453b0bc2fd93fad653a928c8dd"><td class="memItemLeft" align="right" valign="top">typedef Vector::value_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_vector_traits.html#aa4788e453b0bc2fd93fad653a928c8dd">value_type</a></td></tr>
-<tr class="separator:aa4788e453b0bc2fd93fad653a928c8dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab36d8078b7e7e128ae7b10e4f4888b60"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structdg_1_1_thrust_vector_tag.html">ThrustVectorTag</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_vector_traits.html#ab36d8078b7e7e128ae7b10e4f4888b60">vector_category</a></td></tr>
-<tr class="separator:ab36d8078b7e7e128ae7b10e4f4888b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5759ada53da810dcad30e94a8406bbb7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_vector_traits.html#a5759ada53da810dcad30e94a8406bbb7">value_type</a> = double</td></tr>
+<tr class="memdesc:a5759ada53da810dcad30e94a8406bbb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The underlying data type.  <a href="#a5759ada53da810dcad30e94a8406bbb7">More...</a><br /></td></tr>
+<tr class="separator:a5759ada53da810dcad30e94a8406bbb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ca783c6b06640ed48db127b87dc050a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_vector_traits.html#a3ca783c6b06640ed48db127b87dc050a">vector_category</a> = <a class="el" href="structdg_1_1_thrust_vector_tag.html">ThrustVectorTag</a></td></tr>
+<tr class="memdesc:a3ca783c6b06640ed48db127b87dc050a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Policy how data has to be accessed (has to derive from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code>)  <a href="#a3ca783c6b06640ed48db127b87dc050a">More...</a><br /></td></tr>
+<tr class="separator:a3ca783c6b06640ed48db127b87dc050a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36640a1730f740801bea4268202417da"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_vector_traits.html#a36640a1730f740801bea4268202417da">execution_policy</a> = <a class="el" href="structdg_1_1_omp_tag.html">OmpTag</a></td></tr>
+<tr class="memdesc:a36640a1730f740801bea4268202417da"><td class="mdescLeft">&#160;</td><td class="mdescRight">The execution policy (has to derive from <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>)  <a href="#a36640a1730f740801bea4268202417da">More...</a><br /></td></tr>
+<tr class="separator:a36640a1730f740801bea4268202417da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class Vector&gt;<br />
-struct dg::VectorTraits&lt; Vector &gt;</h3>
+<div class="textblock"><h3>template&lt;class Vector, class Enable = void&gt;<br />
+struct dg::VectorTraits&lt; Vector, Enable &gt;</h3>
 
 <p>The vector traits. </p>
 <p>Specialize this struct if you want to enable your own vector/container class for the use in <a class="el" href="namespacedg_1_1blas1.html" title="BLAS Level 1 routines. ">blas1</a> functions </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="aa4788e453b0bc2fd93fad653a928c8dd"></a>
+<a class="anchor" id="a36640a1730f740801bea4268202417da"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Vector&gt; </div>
+template&lt;class Vector, class Enable = void&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef Vector::value_type <a class="el" href="structdg_1_1_vector_traits.html">dg::VectorTraits</a>&lt; Vector &gt;::<a class="el" href="structdg_1_1_vector_traits.html#aa4788e453b0bc2fd93fad653a928c8dd">value_type</a></td>
+          <td class="memname">using <a class="el" href="structdg_1_1_vector_traits.html">dg::VectorTraits</a>&lt; Vector, Enable &gt;::<a class="el" href="structdg_1_1_vector_traits.html#a36640a1730f740801bea4268202417da">execution_policy</a> =  <a class="el" href="structdg_1_1_omp_tag.html">OmpTag</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>The execution policy (has to derive from <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>) </p>
+
 </div>
 </div>
-<a class="anchor" id="ab36d8078b7e7e128ae7b10e4f4888b60"></a>
+<a class="anchor" id="a5759ada53da810dcad30e94a8406bbb7"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Vector&gt; </div>
+template&lt;class Vector, class Enable = void&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="structdg_1_1_thrust_vector_tag.html">ThrustVectorTag</a> <a class="el" href="structdg_1_1_vector_traits.html">dg::VectorTraits</a>&lt; Vector &gt;::<a class="el" href="structdg_1_1_vector_traits.html#ab36d8078b7e7e128ae7b10e4f4888b60">vector_category</a></td>
+          <td class="memname">using <a class="el" href="structdg_1_1_vector_traits.html">dg::VectorTraits</a>&lt; Vector, Enable &gt;::<a class="el" href="structdg_1_1_vector_traits.html#a5759ada53da810dcad30e94a8406bbb7">value_type</a> =  double</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>The underlying data type. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3ca783c6b06640ed48db127b87dc050a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Vector, class Enable = void&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structdg_1_1_vector_traits.html">dg::VectorTraits</a>&lt; Vector, Enable &gt;::<a class="el" href="structdg_1_1_vector_traits.html#a3ca783c6b06640ed48db127b87dc050a">vector_category</a> =  <a class="el" href="structdg_1_1_thrust_vector_tag.html">ThrustVectorTag</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Policy how data has to be accessed (has to derive from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code>) </p>
 
 </div>
 </div>
@@ -186,7 +212,7 @@ template&lt;class Vector&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_vector_traits.html">VectorTraits</a></li>
-    <li class="footer">Generated on Wed Nov 15 2017 10:37:29 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Apr 26 2018 16:28:15 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

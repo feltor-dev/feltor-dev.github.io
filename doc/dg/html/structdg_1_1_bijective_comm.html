@@ -38,8 +38,9 @@
   <ul class="tablist"> 
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
-    <li><a href="../../geometries/html/modules.html">geometry</a></li>
+    <li><a href="../../geometries/html/modules.html">geometries</a></li>
     <li><a href="../../file/html/namespacefile.html">file</a></li>
+    <li><a href="../../exblas/html/namespaceexblas.html">exblas</a></li>
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
@@ -163,7 +164,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af30234de0abe01185eb5e0d73396709b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structdg_1_1a_communicator"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structdg_1_1a_communicator')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structdg_1_1a_communicator.html">dg::aCommunicator&lt; Vector &gt;</a></td></tr>
 <tr class="memitem:a0965cd94be50771a5812ab439f2b8f2f inherit pub_methods_structdg_1_1a_communicator"><td class="memItemLeft" align="right" valign="top">Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_communicator.html#a0965cd94be50771a5812ab439f2b8f2f">allocate_buffer</a> () const</td></tr>
-<tr class="memdesc:a0965cd94be50771a5812ab439f2b8f2f inherit pub_methods_structdg_1_1a_communicator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a buffer object of size <a class="el" href="structdg_1_1a_communicator.html#a150f4e8ea586d3278fa178641a98e5d4" title="The size of the local buffer vector w = local map size. ">size()</a>  <a href="#a0965cd94be50771a5812ab439f2b8f2f">More...</a><br /></td></tr>
+<tr class="memdesc:a0965cd94be50771a5812ab439f2b8f2f inherit pub_methods_structdg_1_1a_communicator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a buffer object of size <code><a class="el" href="structdg_1_1a_communicator.html#a150f4e8ea586d3278fa178641a98e5d4" title="The size of the local buffer vector w = local map size. ">size()</a></code>  <a href="#a0965cd94be50771a5812ab439f2b8f2f">More...</a><br /></td></tr>
 <tr class="separator:a0965cd94be50771a5812ab439f2b8f2f inherit pub_methods_structdg_1_1a_communicator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa94021c958a97fca82dde1d224c59df1 inherit pub_methods_structdg_1_1a_communicator"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_communicator.html#aa94021c958a97fca82dde1d224c59df1">global_gather</a> (const Vector &amp;values, Vector &amp;buffer) const</td></tr>
 <tr class="memdesc:aa94021c958a97fca82dde1d224c59df1 inherit pub_methods_structdg_1_1a_communicator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Globally (across processes) gather data into a buffer.  <a href="#aa94021c958a97fca82dde1d224c59df1">More...</a><br /></td></tr>
@@ -209,7 +210,7 @@ Additional Inherited Members</h2></td></tr>
 struct dg::BijectiveComm&lt; Index, Vector &gt;</h3>
 
 <p>Struct that performs bijective collective scatter and gather operations across processes on distributed vectors using mpi. </p>
-<div class="fragment"><div class="line"><span class="keywordtype">int</span> i = myrank;</div><div class="line"><span class="keywordtype">double</span> values[8] = {i,i,i,i, 9,9,9,9};</div><div class="line">thrust::host_vector&lt;double&gt; hvalues( values, values+8);</div><div class="line"><span class="keywordtype">int</span> pids[8] =      {0,1,2,3, 0,1,2,3};</div><div class="line">thrust::host_vector&lt;int&gt; hpids( pids, pids+8);</div><div class="line"><a class="code" href="structdg_1_1_bijective_comm.html#a6ae489e5157a1aae7b07b4871d715ea4">BijectiveComm</a> coll( hpids, MPI_COMM_WORLD);</div><div class="line">thrust::host_vector&lt;double&gt; hrecv = coll.global_gather( hvalues); <span class="comment">//for e.g. process 0 hrecv is now {0,9,1,9,2,9,3,9} </span></div><div class="line">thrust::host_vector&lt;double&gt; hrecv2( hvalues.size());</div><div class="line">coll.global_scatter_reduce( hrecv, hrecv2); <span class="comment">//hrecv2 now equals hvalues independent of process rank</span></div></div><!-- fragment --> <dl class="tparams"><dt>Template Parameters</dt><dd>
+<div class="fragment"><div class="line"><span class="keywordtype">int</span> i = myrank;</div><div class="line"><span class="keywordtype">double</span> values[8] = {i,i,i,i, 9,9,9,9};</div><div class="line">thrust::host_vector&lt;double&gt; hvalues( values, values+8);</div><div class="line"><span class="keywordtype">int</span> pids[8] =      {0,1,2,3, 0,1,2,3};</div><div class="line">thrust::host_vector&lt;int&gt; hpids( pids, pids+8);</div><div class="line"><a class="code" href="structdg_1_1_bijective_comm.html#a6ae489e5157a1aae7b07b4871d715ea4">BijectiveComm</a> coll( hpids, MPI_COMM_WORLD);</div><div class="line">thrust::host_vector&lt;double&gt; hrecv = coll.global_gather( hvalues); <span class="comment">//for e.g. process 0 hrecv is now {0,9,1,9,2,9,3,9}</span></div><div class="line">thrust::host_vector&lt;double&gt; hrecv2( hvalues.size());</div><div class="line">coll.global_scatter_reduce( hrecv, hrecv2); <span class="comment">//hrecv2 now equals hvalues independent of process rank</span></div></div><!-- fragment --> <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">Index</td><td>an integer thrust Vector </td></tr>
     <tr><td class="paramname">Vector</td><td>a thrust Vector </td></tr>
@@ -391,7 +392,7 @@ template&lt;class Index, class Vector&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_bijective_comm.html">BijectiveComm</a></li>
-    <li class="footer">Generated on Wed Nov 15 2017 10:37:29 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Apr 26 2018 16:28:14 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

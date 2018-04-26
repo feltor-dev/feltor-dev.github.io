@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['direction',['direction',['../group__creation.html#gabf9ea3df33484cbb5886e257c3899e48',1,'dg']]],
-  ['dist_5ftype',['dist_type',['../group__mpi__structures.html#ga521b6d6524a6d391c746ddc9a1ad5571',1,'dg']]]
+  ['coo2d',['coo2d',['../group__creation.html#gace76090e6c95d39b59a1dee2db968d14',1,'dg']]],
+  ['coo3d',['coo3d',['../group__creation.html#ga4de4a3d7cd219a55affa992871e8598f',1,'dg']]]
 ];

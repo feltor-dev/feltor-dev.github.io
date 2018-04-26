@@ -38,8 +38,9 @@
   <ul class="tablist"> 
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
-    <li><a href="../../geometries/html/modules.html">geometry</a></li>
+    <li><a href="../../geometries/html/modules.html">geometries</a></li>
     <li><a href="../../file/html/namespacefile.html">file</a></li>
+    <li><a href="../../exblas/html/namespaceexblas.html">exblas</a></li>
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
@@ -140,12 +141,24 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga3b4222c05e1f6bc6ef9010120e3715bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__misc.html#ga3b4222c05e1f6bc6ef9010120e3715bd">dg::mpi_init2d</a> (<a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcx, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcy, unsigned &amp;n, unsigned &amp;Nx, unsigned &amp;Ny, MPI_Comm &amp;comm, std::istream &amp;is=std::cin)</td></tr>
-<tr class="memdesc:ga3b4222c05e1f6bc6ef9010120e3715bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read in number of processses and grid size and create Cartesian MPI communicator.  <a href="group__misc.html#ga3b4222c05e1f6bc6ef9010120e3715bd">More...</a><br /></td></tr>
-<tr class="separator:ga3b4222c05e1f6bc6ef9010120e3715bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaafadcf0ea32c258b59104578e8eadd83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__misc.html#gaafadcf0ea32c258b59104578e8eadd83">dg::mpi_init3d</a> (<a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcx, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcy, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcz, unsigned &amp;n, unsigned &amp;Nx, unsigned &amp;Ny, unsigned &amp;Nz, MPI_Comm &amp;comm, std::istream &amp;is=std::cin)</td></tr>
-<tr class="memdesc:gaafadcf0ea32c258b59104578e8eadd83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read in number of processses and grid size and create Cartesian MPI communicator.  <a href="group__misc.html#gaafadcf0ea32c258b59104578e8eadd83">More...</a><br /></td></tr>
-<tr class="separator:gaafadcf0ea32c258b59104578e8eadd83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaebc81232ad5df916cd7283eee57f5ec6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__misc.html#gaebc81232ad5df916cd7283eee57f5ec6">dg::mpi_init2d</a> (<a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcx, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcy, MPI_Comm &amp;comm, std::istream &amp;is=std::cin, bool verbose=true)</td></tr>
+<tr class="memdesc:gaebc81232ad5df916cd7283eee57f5ec6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read in number of processses and create Cartesian MPI communicator.  <a href="group__misc.html#gaebc81232ad5df916cd7283eee57f5ec6">More...</a><br /></td></tr>
+<tr class="separator:gaebc81232ad5df916cd7283eee57f5ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga44ed5eed4efb05bf5b8e7bcbb8690786"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__misc.html#ga44ed5eed4efb05bf5b8e7bcbb8690786">dg::mpi_init2d</a> (unsigned &amp;n, unsigned &amp;Nx, unsigned &amp;Ny, MPI_Comm comm, std::istream &amp;is=std::cin, bool verbose=true)</td></tr>
+<tr class="memdesc:ga44ed5eed4efb05bf5b8e7bcbb8690786"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read in number of processes and broadcast to process group.  <a href="group__misc.html#ga44ed5eed4efb05bf5b8e7bcbb8690786">More...</a><br /></td></tr>
+<tr class="separator:ga44ed5eed4efb05bf5b8e7bcbb8690786"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5ba9b11b49267b27aa3369494055fed4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__misc.html#ga5ba9b11b49267b27aa3369494055fed4">dg::mpi_init2d</a> (<a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcx, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcy, unsigned &amp;n, unsigned &amp;Nx, unsigned &amp;Ny, MPI_Comm &amp;comm, std::istream &amp;is=std::cin, bool verbose=true)</td></tr>
+<tr class="memdesc:ga5ba9b11b49267b27aa3369494055fed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read in number of processses and grid size and create Cartesian MPI communicator.  <a href="group__misc.html#ga5ba9b11b49267b27aa3369494055fed4">More...</a><br /></td></tr>
+<tr class="separator:ga5ba9b11b49267b27aa3369494055fed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1ecc3e6cb74c4cdcb41781bf33e74a03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__misc.html#ga1ecc3e6cb74c4cdcb41781bf33e74a03">dg::mpi_init3d</a> (<a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcx, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcy, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcz, MPI_Comm &amp;comm, std::istream &amp;is=std::cin, bool verbose=true)</td></tr>
+<tr class="memdesc:ga1ecc3e6cb74c4cdcb41781bf33e74a03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read in number of processses and create Cartesian MPI communicator.  <a href="group__misc.html#ga1ecc3e6cb74c4cdcb41781bf33e74a03">More...</a><br /></td></tr>
+<tr class="separator:ga1ecc3e6cb74c4cdcb41781bf33e74a03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga94a75bf1e54bcb77dd85a11fcd7cc997"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__misc.html#ga94a75bf1e54bcb77dd85a11fcd7cc997">dg::mpi_init3d</a> (unsigned &amp;n, unsigned &amp;Nx, unsigned &amp;Ny, unsigned &amp;Nz, MPI_Comm comm, std::istream &amp;is=std::cin, bool verbose=true)</td></tr>
+<tr class="memdesc:ga94a75bf1e54bcb77dd85a11fcd7cc997"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read in number of processes and broadcast to process group.  <a href="group__misc.html#ga94a75bf1e54bcb77dd85a11fcd7cc997">More...</a><br /></td></tr>
+<tr class="separator:ga94a75bf1e54bcb77dd85a11fcd7cc997"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf024eca5bc6f60a77543a429c1c87434"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__misc.html#gaf024eca5bc6f60a77543a429c1c87434">dg::mpi_init3d</a> (<a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcx, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcy, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcz, unsigned &amp;n, unsigned &amp;Nx, unsigned &amp;Ny, unsigned &amp;Nz, MPI_Comm &amp;comm, std::istream &amp;is=std::cin, bool verbose=true)</td></tr>
+<tr class="memdesc:gaf024eca5bc6f60a77543a429c1c87434"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read in number of processses and grid size and create Cartesian MPI communicator.  <a href="group__misc.html#gaf024eca5bc6f60a77543a429c1c87434">More...</a><br /></td></tr>
+<tr class="separator:gaf024eca5bc6f60a77543a429c1c87434"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>convenience mpi init functions </p>
@@ -156,7 +169,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_8c739bbef76d64b22d6b0911c526dd76.html">backend</a></li><li class="navelem"><a class="el" href="mpi__init_8h.html">mpi_init.h</a></li>
-    <li class="footer">Generated on Wed Nov 15 2017 10:37:28 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Apr 26 2018 16:28:14 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

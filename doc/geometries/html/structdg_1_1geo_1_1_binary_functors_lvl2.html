@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Geometry: dg::geo::BinaryFunctorsLvl2 Struct Reference</title>
+<title>Geometries: dg::geo::BinaryFunctorsLvl2 Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -38,17 +38,18 @@
   <ul class="tablist"> 
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
-    <li><a href="../../geometries/html/modules.html">geometry</a></li>
+    <li><a href="../../geometries/html/modules.html">geometries</a></li>
     <li><a href="../../file/html/namespacefile.html">file</a></li>
+    <li><a href="../../exblas/html/namespaceexblas.html">exblas</a></li>
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Geometry
+   <div id="projectname">Geometries
    </div>
-   <div id="projectbrief">Library for magnetic flux functions, grids and grid generators</div>
+   <div id="projectbrief">Extension with magnetic flux functions, grids and grid generators</div>
   </td>
  </tr>
  </tbody>
@@ -176,7 +177,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This struct bundles a function and its first and second derivatives. </p>
-<div class="fragment"><div class="line">    std::unique_ptr&lt; dg::geo::aGenerator2d &gt; hector;</div><div class="line">    <span class="keyword">const</span> <a class="code" href="structdg_1_1geo_1_1_binary_functors_lvl2.html">dg::geo::BinaryFunctorsLvl2</a> psip = <a class="code" href="group__solovev.html#gabf3dc35f257d294b5df5236e85a42fb2">dg::geo::solovev::createPsip</a>( gp); </div><div class="line">    <span class="comment">//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span></div><div class="line">    <span class="keywordflow">if</span>( construction == 0)</div><div class="line">    {</div><div class="line">        hector.reset( <span class="keyword">new</span> <a class="code" href="structdg_1_1geo_1_1_hector.html">dg::geo::Hector&lt;dg::IDMatrix, dg::DMatrix, dg::DVec&gt;</a>( </div><div class="line">                psip, psi_0, psi_1, gp.R_0, 0., nGrid, NxGrid, NyGrid, epsHector, <span class="keyword">true</span>));</div><div class="line">    }</div><div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span>( construction == 1)</div><div class="line">    {</div><div class="line">        <a class="code" href="structdg_1_1geo_1_1_binary_functors_lvl1.html">dg::geo::BinaryFunctorsLvl1</a> nc = <a class="code" href="group__profiles.html#gaf583c457b3907ec4e9a94d4c17427d55">dg::geo::make_NablaPsiInvCollective</a>( psip);</div><div class="line">        hector.reset( <span class="keyword">new</span> <a class="code" href="structdg_1_1geo_1_1_hector.html">dg::geo::Hector&lt;dg::IDMatrix, dg::DMatrix, dg::DVec&gt;</a>( </div><div class="line">                psip, nc, psi_0, psi_1, gp.R_0, 0., nGrid, NxGrid, NyGrid, epsHector, <span class="keyword">true</span>));</div><div class="line">    }</div><div class="line">    <span class="keywordflow">else</span></div><div class="line">    {</div><div class="line">        <a class="code" href="structdg_1_1geo_1_1_binary_symm_tensor_lvl1.html">dg::geo::BinarySymmTensorLvl1</a> lc = <a class="code" href="group__profiles.html#ga56d2d722a2734d1685263ee8a95e7555">dg::geo::make_LiseikinCollective</a>( </div><div class="line">                psip, 0.1, 0.001);</div><div class="line">        hector.reset( <span class="keyword">new</span> <a class="code" href="structdg_1_1geo_1_1_hector.html">dg::geo::Hector&lt;dg::IDMatrix, dg::DMatrix, dg::DVec&gt;</a>( </div><div class="line">                psip,lc, psi_0, psi_1, gp.R_0, 0., nGrid, NxGrid, NyGrid, epsHector, <span class="keyword">true</span>));</div><div class="line">    }</div><div class="line">    <span class="comment">//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span></div><div class="line">    <a class="code" href="structdg_1_1geo_1_1_curvilinear_product_grid3d.html">dg::geo::CurvilinearProductGrid3d</a> g3d(*hector, n, Nx, Ny,Nz, <a class="codeRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__creation.html#gga59440bdf436f2874b49aa52b670ed364adece0b7644d85f490823799a3b97f7e6">dg::DIR</a>);</div><div class="line">    std::unique_ptr&lt;const dg::aGeometry2d&gt; g2d_ptr( g3d.perp_grid());</div></div><!-- fragment --></div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<div class="fragment"><div class="line">    std::unique_ptr&lt; dg::geo::aGenerator2d &gt; hector;</div><div class="line">    <span class="keyword">const</span> <a class="code" href="structdg_1_1geo_1_1_binary_functors_lvl2.html">dg::geo::BinaryFunctorsLvl2</a> psip = <a class="code" href="group__solovev.html#gabf3dc35f257d294b5df5236e85a42fb2">dg::geo::solovev::createPsip</a>( gp);</div><div class="line">    <span class="comment">//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span></div><div class="line">    <span class="keywordflow">if</span>( construction == 0)</div><div class="line">    {</div><div class="line">        hector.reset( <span class="keyword">new</span> <a class="code" href="structdg_1_1geo_1_1_hector.html">dg::geo::Hector&lt;dg::IDMatrix, dg::DMatrix, dg::DVec&gt;</a>(</div><div class="line">                psip, psi_0, psi_1, gp.R_0, 0., nGrid, NxGrid, NyGrid, epsHector, <span class="keyword">true</span>));</div><div class="line">    }</div><div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span>( construction == 1)</div><div class="line">    {</div><div class="line">        <a class="code" href="structdg_1_1geo_1_1_binary_functors_lvl1.html">dg::geo::BinaryFunctorsLvl1</a> nc = <a class="code" href="group__profiles.html#gaf583c457b3907ec4e9a94d4c17427d55">dg::geo::make_NablaPsiInvCollective</a>( psip);</div><div class="line">        hector.reset( <span class="keyword">new</span> <a class="code" href="structdg_1_1geo_1_1_hector.html">dg::geo::Hector&lt;dg::IDMatrix, dg::DMatrix, dg::DVec&gt;</a>(</div><div class="line">                psip, nc, psi_0, psi_1, gp.R_0, 0., nGrid, NxGrid, NyGrid, epsHector, <span class="keyword">true</span>));</div><div class="line">    }</div><div class="line">    <span class="keywordflow">else</span></div><div class="line">    {</div><div class="line">        <a class="code" href="structdg_1_1geo_1_1_binary_symm_tensor_lvl1.html">dg::geo::BinarySymmTensorLvl1</a> lc = <a class="code" href="group__profiles.html#ga56d2d722a2734d1685263ee8a95e7555">dg::geo::make_LiseikinCollective</a>(</div><div class="line">                psip, 0.1, 0.001);</div><div class="line">        hector.reset( <span class="keyword">new</span> <a class="code" href="structdg_1_1geo_1_1_hector.html">dg::geo::Hector&lt;dg::IDMatrix, dg::DMatrix, dg::DVec&gt;</a>(</div><div class="line">                psip,lc, psi_0, psi_1, gp.R_0, 0., nGrid, NxGrid, NyGrid, epsHector, <span class="keyword">true</span>));</div><div class="line">    }</div><div class="line">    <span class="comment">//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span></div><div class="line">    <a class="code" href="structdg_1_1geo_1_1_curvilinear_product_grid3d.html">dg::geo::CurvilinearProductGrid3d</a> g3d(*hector, n, Nx, Ny,Nz, <a class="codeRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__creation.html#gga59440bdf436f2874b49aa52b670ed364adece0b7644d85f490823799a3b97f7e6">dg::DIR</a>);</div><div class="line">    std::unique_ptr&lt;const dg::aGeometry2d&gt; g2d_ptr( g3d.perp_grid());</div></div><!-- fragment --></div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a6005dbbc55ef5687ae54f1ecda461085"></a>
 <div class="memitem">
 <div class="memproto">
@@ -638,7 +639,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="namespacedg_1_1geo.html">geo</a></li><li class="navelem"><a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl2.html">BinaryFunctorsLvl2</a></li>
-    <li class="footer">Generated on Wed Nov 15 2017 10:37:33 for Geometry by
+    <li class="footer">Generated on Thu Apr 26 2018 16:28:25 for Geometries by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

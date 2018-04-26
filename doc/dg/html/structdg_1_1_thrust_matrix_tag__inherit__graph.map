@@ -1,4 +1,4 @@
 <map id="dg::ThrustMatrixTag" name="dg::ThrustMatrixTag">
-<area shape="rect" id="node3" href="$structdg_1_1_cusp_precon_tag.html" title="dg::CuspPreconTag" alt="" coords="5,155,144,181"/>
+<area shape="rect" id="node3" href="$structdg_1_1_cusp_precon_tag.html" title="Indicate that a cusp array should act as a diagonal matrix. " alt="" coords="5,155,144,181"/>
 <area shape="rect" id="node2" href="$structdg_1_1_any_matrix_tag.html" title="dg::AnyMatrixTag" alt="" coords="12,5,137,32"/>
 </map>

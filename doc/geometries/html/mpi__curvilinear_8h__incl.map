@@ -1,11 +1,10 @@
 <map id="mpi_curvilinear.h" name="mpi_curvilinear.h">
-<area shape="rect" id="node3" href="/home/matthias/Projekte/feltor/doc/dg.tag$mpi__evaluation_8h.html" title="dg/backend/mpi_evaluation.h" alt="" coords="84,80,275,107"/>
-<area shape="rect" id="node4" href="/home/matthias/Projekte/feltor/doc/dg.tag$mpi__grid_8h.html" title="dg/backend/mpi_grid.h" alt="" coords="299,80,452,107"/>
-<area shape="rect" id="node5" href="/home/matthias/Projekte/feltor/doc/dg.tag$mpi__vector_8h.html" title="dg/backend/mpi_vector.h" alt="" coords="477,80,645,107"/>
-<area shape="rect" id="node6" href="/home/matthias/Projekte/feltor/doc/dg.tag$mpi__base_8h.html" title="dg/geometry/mpi_base.h" alt="" coords="669,80,834,107"/>
-<area shape="rect" id="node7" href="$curvilinear_8h.html" title="curvilinear.h" alt="" coords="859,80,951,107"/>
-<area shape="rect" id="node11" href="$generator_8h.html" title="generator.h" alt="" coords="1028,155,1115,181"/>
-<area shape="rect" id="node8" href="/home/matthias/Projekte/feltor/doc/dg.tag$memory_8h.html" title="dg/backend/memory.h" alt="" coords="524,155,675,181"/>
-<area shape="rect" id="node9" href="/home/matthias/Projekte/feltor/doc/dg.tag$blas1_8h.html" title="dg/blas1.h" alt="" coords="699,155,782,181"/>
-<area shape="rect" id="node10" href="/home/matthias/Projekte/feltor/doc/dg.tag$base__geometry_8h.html" title="dg/geometry/base_geometry.h" alt="" coords="805,155,1004,181"/>
+<area shape="rect" id="node3" href="/home/matthias/Projekte/feltor/doc/dg.tag$mpi__evaluation_8h.html" title="dg/geometry/mpi_evaluation.h" alt="" coords="84,80,280,107"/>
+<area shape="rect" id="node4" href="/home/matthias/Projekte/feltor/doc/dg.tag$mpi__grid_8h.html" title="dg/geometry/mpi_grid.h" alt="" coords="304,80,463,107"/>
+<area shape="rect" id="node5" href="/home/matthias/Projekte/feltor/doc/dg.tag$mpi__base_8h.html" title="dg/geometry/mpi_base.h" alt="" coords="487,80,653,107"/>
+<area shape="rect" id="node6" href="$curvilinear_8h.html" title="curvilinear.h" alt="" coords="677,80,769,107"/>
+<area shape="rect" id="node10" href="$generator_8h.html" title="generator.h" alt="" coords="847,155,933,181"/>
+<area shape="rect" id="node7" href="/home/matthias/Projekte/feltor/doc/dg.tag$memory_8h.html" title="dg/backend/memory.h" alt="" coords="343,155,493,181"/>
+<area shape="rect" id="node8" href="/home/matthias/Projekte/feltor/doc/dg.tag$blas1_8h.html" title="dg/blas1.h" alt="" coords="518,155,601,181"/>
+<area shape="rect" id="node9" href="/home/matthias/Projekte/feltor/doc/dg.tag$base__geometry_8h.html" title="dg/geometry/base_geometry.h" alt="" coords="624,155,823,181"/>
 </map>

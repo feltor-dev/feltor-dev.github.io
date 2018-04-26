@@ -18,6 +18,9 @@ var group__fluxfunctions =
     [ "BinaryFunctorAdapter", "structdg_1_1geo_1_1_binary_functor_adapter.html", [
       [ "BinaryFunctorAdapter", "structdg_1_1geo_1_1_binary_functor_adapter.html#a7515c445b6b937d65f02c13be052ddb7", null ]
     ] ],
+    [ "Constant", "structdg_1_1geo_1_1_constant.html", [
+      [ "Constant", "structdg_1_1geo_1_1_constant.html#a1e71243ed68c71184b636137d56f9a73", null ]
+    ] ],
     [ "BinaryFunctorsLvl1", "structdg_1_1geo_1_1_binary_functors_lvl1.html", [
       [ "BinaryFunctorsLvl1", "structdg_1_1geo_1_1_binary_functors_lvl1.html#a70c11caac7cf1ef1a3078bd96813e1ea", null ],
       [ "BinaryFunctorsLvl1", "structdg_1_1geo_1_1_binary_functors_lvl1.html#a0f47be587e83a86a9ac9eefebddde88e", null ],
@@ -63,9 +66,6 @@ var group__fluxfunctions =
       [ "x", "structdg_1_1geo_1_1_binary_vector_lvl0.html#a78b8c489a775c8f5f3540c757e18c0ac", null ],
       [ "y", "structdg_1_1geo_1_1_binary_vector_lvl0.html#a14a24f909c71070f595126569afce7fa", null ],
       [ "z", "structdg_1_1geo_1_1_binary_vector_lvl0.html#a1ada816055dcc1d6adb9b95ab2c30826", null ]
-    ] ],
-    [ "Constant", "structdg_1_1geo_1_1_constant.html", [
-      [ "Constant", "structdg_1_1geo_1_1_constant.html#a1e71243ed68c71184b636137d56f9a73", null ]
     ] ],
     [ "make_aBinaryFunctor", "group__fluxfunctions.html#ga669b9f0f0ae437c262b2400930feef7d", null ]
 ];

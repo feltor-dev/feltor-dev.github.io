@@ -21,8 +21,8 @@ var searchData=
   ['_7eatopologyx2d',['~aTopologyX2d',['../structdg_1_1a_topology_x2d.html#aded6ff807dd4e834505b3d1dbd818b22',1,'dg::aTopologyX2d']]],
   ['_7eatopologyx3d',['~aTopologyX3d',['../structdg_1_1a_topology_x3d.html#aaf802b45f3dbcc09c4d183cdfddf44d3',1,'dg::aTopologyX3d']]],
   ['_7ebuffer',['~Buffer',['../structdg_1_1_buffer.html#a5331276000ae01418b1d2f8de29e5f3f',1,'dg::Buffer']]],
+  ['_7ecloneptr',['~ClonePtr',['../structdg_1_1_clone_ptr.html#a2c7b2642e761259b51c515daa48b14a0',1,'dg::ClonePtr']]],
   ['_7eerror',['~Error',['../classdg_1_1_error.html#aa128e2a9c314f3685b90968a7182e373',1,'dg::Error']]],
   ['_7efail',['~Fail',['../structdg_1_1_fail.html#ab661a6c4e4c56ac2136e787f797396dd',1,'dg::Fail']]],
-  ['_7ehandle',['~Handle',['../structdg_1_1_handle.html#ace8d33ef84013e958ad285c74d2d8973',1,'dg::Handle']]],
   ['_7emessage',['~Message',['../classdg_1_1_message.html#af882d452d44235589e47e1b5f769efc7',1,'dg::Message']]]
 ];

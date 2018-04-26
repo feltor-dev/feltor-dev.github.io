@@ -38,8 +38,9 @@
   <ul class="tablist"> 
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
-    <li><a href="../../geometries/html/modules.html">geometry</a></li>
+    <li><a href="../../geometries/html/modules.html">geometries</a></li>
     <li><a href="../../file/html/namespacefile.html">file</a></li>
+    <li><a href="../../exblas/html/namespaceexblas.html">exblas</a></li>
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
@@ -146,7 +147,7 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0965cd94be50771a5812ab439f2b8f2f"><td class="memItemLeft" align="right" valign="top">LocalContainer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_communicator.html#a0965cd94be50771a5812ab439f2b8f2f">allocate_buffer</a> () const </td></tr>
-<tr class="memdesc:a0965cd94be50771a5812ab439f2b8f2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a buffer object of size <a class="el" href="structdg_1_1a_communicator.html#a150f4e8ea586d3278fa178641a98e5d4" title="The size of the local buffer vector w = local map size. ">size()</a>  <a href="#a0965cd94be50771a5812ab439f2b8f2f">More...</a><br /></td></tr>
+<tr class="memdesc:a0965cd94be50771a5812ab439f2b8f2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a buffer object of size <code><a class="el" href="structdg_1_1a_communicator.html#a150f4e8ea586d3278fa178641a98e5d4" title="The size of the local buffer vector w = local map size. ">size()</a></code>  <a href="#a0965cd94be50771a5812ab439f2b8f2f">More...</a><br /></td></tr>
 <tr class="separator:a0965cd94be50771a5812ab439f2b8f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa94021c958a97fca82dde1d224c59df1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_communicator.html#aa94021c958a97fca82dde1d224c59df1">global_gather</a> (const LocalContainer &amp;values, LocalContainer &amp;buffer) const </td></tr>
 <tr class="memdesc:aa94021c958a97fca82dde1d224c59df1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Globally (across processes) gather data into a buffer.  <a href="#aa94021c958a97fca82dde1d224c59df1">More...</a><br /></td></tr>
@@ -338,9 +339,9 @@ template&lt;class LocalContainer&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Allocate a buffer object of size <a class="el" href="structdg_1_1a_communicator.html#a150f4e8ea586d3278fa178641a98e5d4" title="The size of the local buffer vector w = local map size. ">size()</a> </p>
+<p>Allocate a buffer object of size <code><a class="el" href="structdg_1_1a_communicator.html#a150f4e8ea586d3278fa178641a98e5d4" title="The size of the local buffer vector w = local map size. ">size()</a></code> </p>
 <dl class="section return"><dt>Returns</dt><dd>a buffer object on the stack </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>if <a class="el" href="structdg_1_1a_communicator.html#a150f4e8ea586d3278fa178641a98e5d4" title="The size of the local buffer vector w = local map size. ">size()</a>==0 the default constructor of LocalContainer is called </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>if <code><a class="el" href="structdg_1_1a_communicator.html#a150f4e8ea586d3278fa178641a98e5d4" title="The size of the local buffer vector w = local map size. ">size()</a>==0</code> the default constructor of <code>LocalContainer</code> is called </dd></dl>
 
 </div>
 </div>
@@ -370,7 +371,7 @@ template&lt;class LocalContainer&gt; </div>
 <p>Generic copy method. </p>
 <dl class="section return"><dt>Returns</dt><dd>pointer to allocated object </dd></dl>
 
-<p>Implemented in <a class="el" href="structdg_1_1_general_comm.html#a104b5d78926de5af8b0d108237728a61">dg::GeneralComm&lt; Index, Vector &gt;</a>, <a class="el" href="structdg_1_1_surjective_comm.html#a8363897c7e63649550734660ecd839db">dg::SurjectiveComm&lt; Index, Vector &gt;</a>, <a class="el" href="structdg_1_1_bijective_comm.html#af30234de0abe01185eb5e0d73396709b">dg::BijectiveComm&lt; Index, Vector &gt;</a>, and <a class="el" href="structdg_1_1_nearest_neighbor_comm.html#a4e8e3679f88ac7257d9abc9fbb7cfdc3">dg::NearestNeighborComm&lt; Index, Vector &gt;</a>.</p>
+<p>Implemented in <a class="el" href="structdg_1_1_general_comm.html#a104b5d78926de5af8b0d108237728a61">dg::GeneralComm&lt; Index, Vector &gt;</a>, <a class="el" href="structdg_1_1_surjective_comm.html#a8363897c7e63649550734660ecd839db">dg::SurjectiveComm&lt; Index, Vector &gt;</a>, and <a class="el" href="structdg_1_1_bijective_comm.html#af30234de0abe01185eb5e0d73396709b">dg::BijectiveComm&lt; Index, Vector &gt;</a>.</p>
 
 </div>
 </div>
@@ -440,11 +441,11 @@ template&lt;class LocalContainer&gt; </div>
 <p>This is the transpose operation of <a class="el" href="structdg_1_1a_communicator.html#aeb571e042270fece67c4f0edabb42ab0" title="Globally (across processes) scatter data accross processes and reduce on multiple indices...">global_scatter_reduce()</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">values</td><td>data; other processes collect data from this vector </td></tr>
-    <tr><td class="paramname">buffer</td><td>on output holds the gathered data ( must be of size <a class="el" href="structdg_1_1a_communicator.html#a150f4e8ea586d3278fa178641a98e5d4" title="The size of the local buffer vector w = local map size. ">size()</a>) </td></tr>
+    <tr><td class="paramname">buffer</td><td>on output holds the gathered data ( must be of size <code><a class="el" href="structdg_1_1a_communicator.html#a150f4e8ea586d3278fa178641a98e5d4" title="The size of the local buffer vector w = local map size. ">size()</a></code>) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>if <a class="el" href="structdg_1_1a_communicator.html#a150f4e8ea586d3278fa178641a98e5d4" title="The size of the local buffer vector w = local map size. ">size()</a>==0 nothing happens </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>if <code><a class="el" href="structdg_1_1a_communicator.html#a150f4e8ea586d3278fa178641a98e5d4" title="The size of the local buffer vector w = local map size. ">size()</a>==0</code> nothing happens </dd></dl>
 
 </div>
 </div>
@@ -480,7 +481,7 @@ template&lt;class LocalContainer&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>object that holds the gathered data </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>if <a class="el" href="structdg_1_1a_communicator.html#a150f4e8ea586d3278fa178641a98e5d4" title="The size of the local buffer vector w = local map size. ">size()</a>==0 the default constructor of LocalContainer is called </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>if <code><a class="el" href="structdg_1_1a_communicator.html#a150f4e8ea586d3278fa178641a98e5d4" title="The size of the local buffer vector w = local map size. ">size()</a>==0</code> the default constructor of <code>LocalContainer</code> is called </dd></dl>
 
 </div>
 </div>
@@ -526,7 +527,7 @@ template&lt;class LocalContainer&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>if <a class="el" href="structdg_1_1a_communicator.html#a150f4e8ea586d3278fa178641a98e5d4" title="The size of the local buffer vector w = local map size. ">size()</a>==0 nothing happens </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>if <code><a class="el" href="structdg_1_1a_communicator.html#a150f4e8ea586d3278fa178641a98e5d4" title="The size of the local buffer vector w = local map size. ">size()</a>==0</code> nothing happens </dd></dl>
 
 </div>
 </div>
@@ -620,7 +621,7 @@ template&lt;class LocalContainer&gt; </div>
 <p>Consider that both the source vector v and the buffer w are distributed across processes. In Feltor the vector v is distributed equally among processes and the local size of v is the same for all processes. However the buffer size might be different for each process. </p><dl class="section return"><dt>Returns</dt><dd>buffer size </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>may return 0 to indicate that no MPI communication is needed </dd>
 <dd>
-we assume that, contrary to <a class="el" href="structdg_1_1a_communicator.html#a150f4e8ea586d3278fa178641a98e5d4" title="The size of the local buffer vector w = local map size. ">size()</a>, the vector size is always the local size of a <a class="el" href="structdg_1_1_m_p_i___vector.html" title="mpi Vector class ">dg::MPI_Vector</a> </dd></dl>
+we assume that, contrary to <code><a class="el" href="structdg_1_1a_communicator.html#a150f4e8ea586d3278fa178641a98e5d4" title="The size of the local buffer vector w = local map size. ">size()</a></code>, the vector size is always the local size of a <code><a class="el" href="structdg_1_1_m_p_i___vector.html" title="mpi Vector class ">dg::MPI_Vector</a></code> </dd></dl>
 
 </div>
 </div>
@@ -633,7 +634,7 @@ we assume that, contrary to <a class="el" href="structdg_1_1a_communicator.html#
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1a_communicator.html">aCommunicator</a></li>
-    <li class="footer">Generated on Wed Nov 15 2017 10:37:29 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Apr 26 2018 16:28:14 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

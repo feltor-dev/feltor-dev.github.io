@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['value_5ftype',['value_type',['../../../dg/html/classdg_1_1_c_g.html#a803a94eae650d7215c9b82ce5537a6d3',1,'dg::CG::value_type()'],['../../../dg/html/structdg_1_1_invert.html#ac9b9b4f5149a5b63a797a75bf3ac74d7',1,'dg::Invert::value_type()'],['../../../dg/html/structdg_1_1_matrix_traits.html#ae6a3cd75b635bd54f1a0006bd232fb06',1,'dg::MatrixTraits::value_type()'],['../../../dg/html/classdg_1_1_operator.html#a322ecb3322b51f04d23178d05578cdd9',1,'dg::Operator::value_type()'],['../../../dg/html/classdg_1_1_operator.html#a322ecb3322b51f04d23178d05578cdd9',1,'Operator&lt; int &gt;::value_type()'],['../../../dg/html/structdg_1_1_vector_traits.html#aa4788e453b0bc2fd93fad653a928c8dd',1,'dg::VectorTraits::value_type()'],['../../../dg/html/structdg_1_1_vector_traits.html#aa4788e453b0bc2fd93fad653a928c8dd',1,'VectorTraits&lt; container &gt;::value_type()']]],
-  ['vector_5fcategory',['vector_category',['../../../dg/html/structdg_1_1_vector_traits.html#ab36d8078b7e7e128ae7b10e4f4888b60',1,'dg::VectorTraits::vector_category()'],['../../../dg/html/structdg_1_1_vector_traits.html#ab36d8078b7e7e128ae7b10e4f4888b60',1,'VectorTraits&lt; container &gt;::vector_category()']]]
+  ['nncd',['NNCD',['../../../dg/html/group__typedefs.html#gabc0c93579ed70fb606c739cee03364e4',1,'dg::NNCD()'],['../../../dg/html/group__typedefs.html#gabc0c93579ed70fb606c739cee03364e4',1,'NNCD()(Global Namespace)']]],
+  ['nnch',['NNCH',['../../../dg/html/group__typedefs.html#ga3b2d0db184cb73256ac07b2d35fcefef',1,'dg::NNCH()'],['../../../dg/html/group__typedefs.html#ga3b2d0db184cb73256ac07b2d35fcefef',1,'NNCH()(Global Namespace)']]],
+  ['nolimiter',['NoLimiter',['../group__fieldaligned.html#ga1a10e4fdd6338136e629d3e2292bc3da',1,'dg::geo']]]
 ];

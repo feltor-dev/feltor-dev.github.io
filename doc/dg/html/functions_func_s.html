@@ -38,8 +38,9 @@
   <ul class="tablist"> 
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
-    <li><a href="../../geometries/html/modules.html">geometry</a></li>
+    <li><a href="../../geometries/html/modules.html">geometries</a></li>
     <li><a href="../../file/html/namespacefile.html">file</a></li>
+    <li><a href="../../exblas/html/namespaceexblas.html">exblas</a></li>
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
@@ -171,7 +172,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 , <a class="el" href="structdg_1_1a_topology3d.html#ad1a2beca1800f1c799c83a3a19bca1f3">dg::aTopology3d</a>
 , <a class="el" href="structdg_1_1_general_elliptic.html#a1765440d710992cef3940077aa8d5639">dg::GeneralElliptic&lt; Geometry, Matrix, container &gt;</a>
 , <a class="el" href="structdg_1_1_general_elliptic_sym.html#ad5fd51cc9177270ac99c9696b7d4b8ec">dg::GeneralEllipticSym&lt; Geometry, Matrix, container &gt;</a>
-, <a class="el" href="structdg_1_1_grid1d.html#a13ae5ad2d5c87f3aa1027dddda8e2d02">dg::Grid1d</a>
+, <a class="el" href="structdg_1_1_grid1d.html#a5823e16d57e0fa26f263609f0c5abd33">dg::Grid1d</a>
 , <a class="el" href="structdg_1_1_tensor_elliptic.html#a32682ab99e8c2bcae85bb0764e9dd770">dg::TensorElliptic&lt; Geometry, Matrix, container &gt;</a>
 </li>
 <li>set_accuracy()
@@ -182,6 +183,9 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 , <a class="el" href="structdg_1_1_helmholtz2.html#a26060bbbc8458aa9ac61b1b99db17ca4">dg::Helmholtz2&lt; Geometry, Matrix, container &gt;</a>
 , <a class="el" href="structdg_1_1_helmholtz.html#a0194231767eb5c5b02f7bb9db111c6bc">dg::Helmholtz&lt; Geometry, Matrix, container &gt;</a>
 , <a class="el" href="classdg_1_1_refined_elliptic.html#a43ba6ad2e43d8ed11c4e4f3c328ec6d3">dg::RefinedElliptic&lt; Geometry, IMatrix, Matrix, container &gt;</a>
+</li>
+<li>set_communicator()
+: <a class="el" href="structdg_1_1_m_p_i___vector.html#aca96f102ec953e04b5fd0151bdf17b1b">dg::MPI_Vector&lt; container &gt;</a>
 </li>
 <li>set_default_range()
 : <a class="el" href="structdg_1_1_ell_sparse_block_mat.html#a3485d3aaa6724812ebd123cafc1fd91d">dg::EllSparseBlockMat&lt; value_type &gt;</a>
@@ -250,16 +254,17 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 , <a class="el" href="structdg_1_1_grid1d.html#afa23624d7278e66e3f60c055f5ac2d85">dg::Grid1d</a>
 , <a class="el" href="structdg_1_1_grid_x1d.html#a6d134f36ee64d9675e08a203bf1770a7">dg::GridX1d</a>
 , <a class="el" href="structdg_1_1_m_p_i___vector.html#aaf8b846a0196833afef45c0469d506d4">dg::MPI_Vector&lt; container &gt;</a>
+, <a class="el" href="structdg_1_1_nearest_neighbor_comm.html#a6898867636891d3a989f64871add05a1">dg::NearestNeighborComm&lt; Index, Vector &gt;</a>
 , <a class="el" href="classdg_1_1_operator.html#ab26b2c05623deea924ec19a05f4a6cbf">dg::Operator&lt; T &gt;</a>
 </li>
 <li>solve()
 : <a class="el" href="structdg_1_1_multigrid_c_g2d.html#ad56380e505d52a692103fc5d514d2707">dg::MultigridCG2d&lt; Geometry, Matrix, container &gt;</a>
 </li>
 <li>SparseElement()
-: <a class="el" href="structdg_1_1_sparse_element.html#a800ce77049b298533f690e33f62fb89b">dg::SparseElement&lt; T &gt;</a>
+: <a class="el" href="structdg_1_1_sparse_element.html#ac54bdba7674c8fd6ad90c5e7a3a1661c">dg::SparseElement&lt; T &gt;</a>
 </li>
 <li>SparseTensor()
-: <a class="el" href="structdg_1_1_sparse_tensor.html#a7081340b2c9d2962dd4850aeb6b40b65">dg::SparseTensor&lt; T &gt;</a>
+: <a class="el" href="structdg_1_1_sparse_tensor.html#ae581152b0ede8bb7340f2c860c7e67e2">dg::SparseTensor&lt; T &gt;</a>
 </li>
 <li>stages()
 : <a class="el" href="structdg_1_1_multigrid_c_g2d.html#a35cfd45d507a4c8f482435627bd50812">dg::MultigridCG2d&lt; Geometry, Matrix, container &gt;</a>
@@ -268,30 +273,29 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 : <a class="el" href="classdg_1_1_message.html#a005d881db30709122d85d1b7f61e5bfb">dg::Message</a>
 </li>
 <li>SurjectiveComm()
-: <a class="el" href="structdg_1_1_surjective_comm.html#af8cc6421308608d9df93dd630e76dd06">dg::SurjectiveComm&lt; Index, Vector &gt;</a>
+: <a class="el" href="structdg_1_1_surjective_comm.html#a2a5e7265796976d5fdc8678afdcd378b">dg::SurjectiveComm&lt; Index, Vector &gt;</a>
 </li>
 <li>swap()
-: <a class="el" href="structdg_1_1_handle.html#a4525fb8374f5d7c273b699c36da54fe2">dg::Handle&lt; cloneable &gt;</a>
-, <a class="el" href="structdg_1_1_m_p_i___vector.html#ae86c14f9d503831fbe96ced377a37013">dg::MPI_Vector&lt; container &gt;</a>
+: <a class="el" href="structdg_1_1_m_p_i___vector.html#ae86c14f9d503831fbe96ced377a37013">dg::MPI_Vector&lt; container &gt;</a>
 </li>
 <li>swap_lines()
 : <a class="el" href="classdg_1_1_operator.html#a83eadeace6ca788f8fd06a3210674baa">dg::Operator&lt; T &gt;</a>
 </li>
 <li>symv()
 : <a class="el" href="structdg_1_1_composite.html#a09aff853a1fada45b9f4a3dfe4759cc8">dg::Composite&lt; Matrix &gt;</a>
-, <a class="el" href="structdg_1_1_coo_sparse_block_mat.html#af5a686d1a81ad246efab987791956a14">dg::CooSparseBlockMat&lt; value_type &gt;</a>
-, <a class="el" href="structdg_1_1_coo_sparse_block_mat_device.html#a4f852b3ffb56b8eafd34638f7fcc3e92">dg::CooSparseBlockMatDevice&lt; value_type &gt;</a>
+, <a class="el" href="structdg_1_1_coo_sparse_block_mat.html#a583bcc2aea492b747b3dd5db33e456fc">dg::CooSparseBlockMat&lt; value_type &gt;</a>
+, <a class="el" href="structdg_1_1_coo_sparse_block_mat_device.html#a9d6219179002612048f66f0710015660">dg::CooSparseBlockMatDevice&lt; value_type &gt;</a>
 , <a class="el" href="classdg_1_1_elliptic.html#af13bbc317158c574d645320d41377ad5">dg::Elliptic&lt; Geometry, Matrix, container &gt;</a>
-, <a class="el" href="structdg_1_1_ell_sparse_block_mat.html#a1705fe786d714e63d325922eee509258">dg::EllSparseBlockMat&lt; value_type &gt;</a>
-, <a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html#a6d3e3279ef315ea699b3680d3b8b44ff">dg::EllSparseBlockMatDevice&lt; value_type &gt;</a>
+, <a class="el" href="structdg_1_1_ell_sparse_block_mat.html#a2e868ab104859751a340c7c51e8a6ecb">dg::EllSparseBlockMat&lt; value_type &gt;</a>
+, <a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html#a285d527b7711ef33da9078f76a856619">dg::EllSparseBlockMatDevice&lt; value_type &gt;</a>
 , <a class="el" href="structdg_1_1_general_elliptic.html#a7ec3537ec3707eb14afde88fca17eafc">dg::GeneralElliptic&lt; Geometry, Matrix, container &gt;</a>
 , <a class="el" href="structdg_1_1_general_elliptic_sym.html#ac9641bb38a47d9e26dc01ce725a0d750">dg::GeneralEllipticSym&lt; Geometry, Matrix, container &gt;</a>
 , <a class="el" href="structdg_1_1_helmholtz2.html#aa388825715f244f16fc1f17a5b03598b">dg::Helmholtz2&lt; Geometry, Matrix, container &gt;</a>
 , <a class="el" href="structdg_1_1_helmholtz.html#a54fabf552ad5355e1531387ea5f5fa8f">dg::Helmholtz&lt; Geometry, Matrix, container &gt;</a>
-, <a class="el" href="structdg_1_1_m_p_i_dist_mat.html#a4b5513c2fa22e06bda66f22931e8defd">dg::MPIDistMat&lt; LocalMatrix, Collective &gt;</a>
-, <a class="el" href="structdg_1_1_multi_matrix.html#aa25831a7664fc8d21b039c37837348fa">dg::MultiMatrix&lt; Matrix, container &gt;</a>
+, <a class="el" href="structdg_1_1_m_p_i_dist_mat.html#a5ed6f2a621cc1e63c80a54829e1bf753">dg::MPIDistMat&lt; LocalMatrix, Collective &gt;</a>
+, <a class="el" href="structdg_1_1_multi_matrix.html#a0afca886f15362297bb0c4666a938c21">dg::MultiMatrix&lt; Matrix, container &gt;</a>
 , <a class="el" href="classdg_1_1_refined_elliptic.html#a5daf05720e8ebacb417369bc9afb8652">dg::RefinedElliptic&lt; Geometry, IMatrix, Matrix, container &gt;</a>
-, <a class="el" href="structdg_1_1_row_col_dist_mat.html#a69be149644264515dd361b49e724e042">dg::RowColDistMat&lt; LocalMatrixInner, LocalMatrixOuter, Collective &gt;</a>
+, <a class="el" href="structdg_1_1_row_col_dist_mat.html#a368651a355d3c309f3c12b808c821675">dg::RowColDistMat&lt; LocalMatrixInner, LocalMatrixOuter, Collective &gt;</a>
 , <a class="el" href="structdg_1_1_tensor_elliptic.html#a0e037539dfedbd8051db7b0937958311">dg::TensorElliptic&lt; Geometry, Matrix, container &gt;</a>
 </li>
 </ul>
@@ -300,7 +304,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 15 2017 10:37:29 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Apr 26 2018 16:28:15 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

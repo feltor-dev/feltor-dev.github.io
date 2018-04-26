@@ -67,14 +67,18 @@ var searchData=
   ['ampitopology2d',['aMPITopology2d',['../../../dg/html/structdg_1_1a_m_p_i_topology2d.html',1,'dg']]],
   ['ampitopology3d',['aMPITopology3d',['../../../dg/html/structdg_1_1a_m_p_i_topology3d.html',1,'dg']]],
   ['anymatrixtag',['AnyMatrixTag',['../../../dg/html/structdg_1_1_any_matrix_tag.html',1,'dg']]],
+  ['anypolicytag',['AnyPolicyTag',['../../../dg/html/structdg_1_1_any_policy_tag.html',1,'dg']]],
   ['anyvectortag',['AnyVectorTag',['../../../dg/html/structdg_1_1_any_vector_tag.html',1,'dg']]],
   ['aproductgeometry3d',['aProductGeometry3d',['../../../dg/html/structdg_1_1a_product_geometry3d.html',1,'dg']]],
   ['aproductmpigeometry3d',['aProductMPIGeometry3d',['../../../dg/html/structdg_1_1a_product_m_p_i_geometry3d.html',1,'dg']]],
   ['arakawax',['ArakawaX',['../../../dg/html/structdg_1_1_arakawa_x.html',1,'dg']]],
   ['arefinement1d',['aRefinement1d',['../../../dg/html/structdg_1_1a_refinement1d.html',1,'dg']]],
   ['arefinementx2d',['aRefinementX2d',['../../../dg/html/structdg_1_1a_refinement_x2d.html',1,'dg']]],
+  ['arrayvectortag',['ArrayVectorTag',['../../../dg/html/structdg_1_1_array_vector_tag.html',1,'dg']]],
   ['atopology2d',['aTopology2d',['../../../dg/html/structdg_1_1a_topology2d.html',1,'dg']]],
   ['atopology3d',['aTopology3d',['../../../dg/html/structdg_1_1a_topology3d.html',1,'dg']]],
   ['atopologyx2d',['aTopologyX2d',['../../../dg/html/structdg_1_1a_topology_x2d.html',1,'dg']]],
-  ['atopologyx3d',['aTopologyX3d',['../../../dg/html/structdg_1_1a_topology_x3d.html',1,'dg']]]
+  ['atopologyx3d',['aTopologyX3d',['../../../dg/html/structdg_1_1a_topology_x3d.html',1,'dg']]],
+  ['average',['Average',['../../../dg/html/structdg_1_1_average.html',1,'dg']]],
+  ['average_3c_20mpi_5fvector_3c_20container_20_3e_20_3e',['Average&lt; MPI_Vector&lt; container &gt; &gt;',['../../../dg/html/structdg_1_1_average_3_01_m_p_i___vector_3_01container_01_4_01_4.html',1,'dg']]]
 ];

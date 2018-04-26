@@ -1,6 +1,6 @@
 var NAVTREE =
 [
-  [ "Geometry", "index.html", [
+  [ "Geometries", "index.html", [
     [ "Modules", "modules.html", "modules" ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ],
@@ -34,7 +34,7 @@ var NAVTREEINDEX =
 [
 "adaption_8h.html",
 "structdg_1_1geo_1_1_constant.html",
-"structdg_1_1geo_1_1circular_1_1_psip_r.html"
+"structdg_1_1geo_1_1circular_1_1_psip.html#ae959371d510a5f7358a6b0143da3e3e2"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

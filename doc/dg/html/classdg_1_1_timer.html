@@ -38,8 +38,9 @@
   <ul class="tablist"> 
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
-    <li><a href="../../geometries/html/modules.html">geometry</a></li>
+    <li><a href="../../geometries/html/modules.html">geometries</a></li>
     <li><a href="../../file/html/namespacefile.html">file</a></li>
+    <li><a href="../../exblas/html/namespaceexblas.html">exblas</a></li>
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
@@ -130,7 +131,7 @@ $(document).ready(function(){initNavTree('classdg_1_1_timer.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>Very simple tool for performance measuring.  
+<p>Simple tool for performance measuring.  
  <a href="classdg_1_1_timer.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -141,15 +142,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3c1a18f62626dcfaf728c2b490a64a43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_timer.html#a3c1a18f62626dcfaf728c2b490a64a43">toc</a> ()</td></tr>
 <tr class="memdesc:a3c1a18f62626dcfaf728c2b490a64a43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop timer.  <a href="#a3c1a18f62626dcfaf728c2b490a64a43">More...</a><br /></td></tr>
 <tr class="separator:a3c1a18f62626dcfaf728c2b490a64a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f4b829eee178035bbb5a343f550dcca"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_timer.html#a0f4b829eee178035bbb5a343f550dcca">diff</a> ()</td></tr>
-<tr class="memdesc:a0f4b829eee178035bbb5a343f550dcca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return time elapsed between tic and toc.  <a href="#a0f4b829eee178035bbb5a343f550dcca">More...</a><br /></td></tr>
-<tr class="separator:a0f4b829eee178035bbb5a343f550dcca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d2e6cc5d6df67b482ea0a652fae453b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_timer.html#a1d2e6cc5d6df67b482ea0a652fae453b">diff</a> () const </td></tr>
+<tr class="memdesc:a1d2e6cc5d6df67b482ea0a652fae453b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return time elapsed between tic and toc.  <a href="#a1d2e6cc5d6df67b482ea0a652fae453b">More...</a><br /></td></tr>
+<tr class="separator:a1d2e6cc5d6df67b482ea0a652fae453b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Very simple tool for performance measuring. </p>
-<div class="fragment"><div class="line"><a class="code" href="classdg_1_1_timer.html">dg::Timer</a> t;</div><div class="line">t.<a class="code" href="classdg_1_1_timer.html#ad158907d0e4a975b832fed780d7b4655">tic</a>();</div><div class="line">some_function_to_benchmark();</div><div class="line">t.<a class="code" href="classdg_1_1_timer.html#a3c1a18f62626dcfaf728c2b490a64a43">toc</a>();</div><div class="line">std::cout &lt;&lt; <span class="stringliteral">&quot;Function took &quot;</span>&lt;&lt;t.<a class="code" href="classdg_1_1_timer.html#a0f4b829eee178035bbb5a343f550dcca">diff</a>()&lt;&lt;<span class="stringliteral">&quot;s\n&quot;</span>;</div></div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>The <a class="el" href="classdg_1_1_timer.html" title="Very simple tool for performance measuring. ">Timer</a> knows what hardware you are on! </dd></dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a0f4b829eee178035bbb5a343f550dcca"></a>
+<div class="textblock"><p>Simple tool for performance measuring. </p>
+<p>The implementation of this class is chosen with compile-time MACROS <code>THRUST_DEVICE_SYSTEM</code> and <code>MPI_VERSION</code>. </p><div class="fragment"><div class="line"><a class="code" href="classdg_1_1_timer.html">dg::Timer</a> t;</div><div class="line">t.<a class="code" href="classdg_1_1_timer.html#ad158907d0e4a975b832fed780d7b4655">tic</a>();</div><div class="line">some_function_to_benchmark();</div><div class="line">t.<a class="code" href="classdg_1_1_timer.html#a3c1a18f62626dcfaf728c2b490a64a43">toc</a>();</div><div class="line">std::cout &lt;&lt; <span class="stringliteral">&quot;Function took &quot;</span>&lt;&lt;t.<a class="code" href="classdg_1_1_timer.html#a1d2e6cc5d6df67b482ea0a652fae453b">diff</a>()&lt;&lt;<span class="stringliteral">&quot;s\n&quot;</span>;</div></div><!-- fragment --> </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a1d2e6cc5d6df67b482ea0a652fae453b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -160,7 +160,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">double dg::Timer::diff </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -197,6 +197,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Start timer. </p>
+<p>uses <code>omp_get_wtime()</code> if available, else <code>gettimeofday</code>. If compiled with nvcc we place <code>cudaEvent_t</code> in the gpu stream. The mpi version places an <code>MPI_Barrier(MPI_COMM_WORLD)</code> and then uses <code>MPI_Wtime</code>. MPI + Cuda adds an additional <code>cudaDeviceSynchronize</code> </p>
 
 </div>
 </div>
@@ -222,6 +223,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Stop timer. </p>
+<p>uses <code>omp_get_wtime()</code> if available, else <code>gettimeofday</code>. If compiled with nvcc we place <code>cudaEvent_t</code> in the gpu stream. The mpi version places an <code>MPI_Barrier(MPI_COMM_WORLD)</code> and then uses <code>MPI_Wtime</code>. MPI + Cuda adds an additional <code>cudaDeviceSynchronize</code> </p>
 
 </div>
 </div>
@@ -234,7 +236,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="classdg_1_1_timer.html">Timer</a></li>
-    <li class="footer">Generated on Wed Nov 15 2017 10:37:29 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Apr 26 2018 16:28:15 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

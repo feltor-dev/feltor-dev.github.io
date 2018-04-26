@@ -8,7 +8,6 @@ var hierarchy =
     [ "dg::aCommunicator< Vector >", "structdg_1_1a_communicator.html", [
       [ "dg::BijectiveComm< Index, Vector >", "structdg_1_1_bijective_comm.html", null ],
       [ "dg::GeneralComm< Index, Vector >", "structdg_1_1_general_comm.html", null ],
-      [ "dg::NearestNeighborComm< Index, Vector >", "structdg_1_1_nearest_neighbor_comm.html", null ],
       [ "dg::SurjectiveComm< Index, Vector >", "structdg_1_1_surjective_comm.html", null ]
     ] ],
     [ "dg::aMPITopology2d", "structdg_1_1a_m_p_i_topology2d.html", [
@@ -34,11 +33,21 @@ var hierarchy =
         [ "dg::CuspPreconTag", "structdg_1_1_cusp_precon_tag.html", null ]
       ] ]
     ] ],
+    [ "dg::AnyPolicyTag", "structdg_1_1_any_policy_tag.html", [
+      [ "dg::CudaTag", "structdg_1_1_cuda_tag.html", null ],
+      [ "dg::OmpTag", "structdg_1_1_omp_tag.html", null ],
+      [ "dg::SerialTag", "structdg_1_1_serial_tag.html", null ]
+    ] ],
     [ "dg::AnyVectorTag", "structdg_1_1_any_vector_tag.html", [
       [ "dg::MPIVectorTag", "structdg_1_1_m_p_i_vector_tag.html", null ],
-      [ "dg::StdVectorTag", "structdg_1_1_std_vector_tag.html", null ],
-      [ "dg::ThrustVectorTag", "structdg_1_1_thrust_vector_tag.html", [
-        [ "dg::CuspVectorTag", "structdg_1_1_cusp_vector_tag.html", null ]
+      [ "dg::SharedVectorTag", "structdg_1_1_shared_vector_tag.html", [
+        [ "dg::ThrustVectorTag", "structdg_1_1_thrust_vector_tag.html", [
+          [ "dg::CuspVectorTag", "structdg_1_1_cusp_vector_tag.html", null ],
+          [ "dg::StdArrayTag", "structdg_1_1_std_array_tag.html", null ]
+        ] ]
+      ] ],
+      [ "dg::VectorVectorTag", "structdg_1_1_vector_vector_tag.html", [
+        [ "dg::ArrayVectorTag", "structdg_1_1_array_vector_tag.html", null ]
       ] ]
     ] ],
     [ "dg::ArakawaX< Geometry, Matrix, container >", "structdg_1_1_arakawa_x.html", null ],
@@ -84,6 +93,8 @@ var hierarchy =
       ] ],
       [ "dg::GridX3d", "structdg_1_1_grid_x3d.html", null ]
     ] ],
+    [ "dg::Average< container >", "structdg_1_1_average.html", null ],
+    [ "dg::Average< MPI_Vector< container > >", "structdg_1_1_average_3_01_m_p_i___vector_3_01container_01_4_01_4.html", null ],
     [ "dg::BathRZ", "structdg_1_1_bath_r_z.html", null ],
     [ "dg::Buffer< T >", "structdg_1_1_buffer.html", null ],
     [ "dg::Buffer< Index >", "structdg_1_1_buffer.html", null ],
@@ -92,6 +103,10 @@ var hierarchy =
     [ "dg::Cauchy", "structdg_1_1_cauchy.html", null ],
     [ "dg::CG< container >", "classdg_1_1_c_g.html", null ],
     [ "dg::CholeskyTensor< container >", "structdg_1_1_cholesky_tensor.html", null ],
+    [ "dg::ClonePtr< cloneable >", "structdg_1_1_clone_ptr.html", null ],
+    [ "dg::ClonePtr< Collective >", "structdg_1_1_clone_ptr.html", null ],
+    [ "dg::ClonePtr< dg::aRefinement1d >", "structdg_1_1_clone_ptr.html", null ],
+    [ "dg::ClonePtr< Geometry >", "structdg_1_1_clone_ptr.html", null ],
     [ "dg::Composite< Matrix >", "structdg_1_1_composite.html", null ],
     [ "dg::CONSTANT", "structdg_1_1_c_o_n_s_t_a_n_t.html", null ],
     [ "dg::CooSparseBlockMat< value_type >", "structdg_1_1_coo_sparse_block_mat.html", null ],
@@ -119,10 +134,6 @@ var hierarchy =
     [ "dg::GeneralEllipticSym< Geometry, Matrix, container >", "structdg_1_1_general_elliptic_sym.html", null ],
     [ "dg::Grid1d", "structdg_1_1_grid1d.html", null ],
     [ "dg::GridX1d", "structdg_1_1_grid_x1d.html", null ],
-    [ "dg::Handle< cloneable >", "structdg_1_1_handle.html", null ],
-    [ "dg::Handle< Collective >", "structdg_1_1_handle.html", null ],
-    [ "dg::Handle< dg::aRefinement1d >", "structdg_1_1_handle.html", null ],
-    [ "dg::Handle< Geometry >", "structdg_1_1_handle.html", null ],
     [ "dg::Helmholtz< Geometry, Matrix, container >", "structdg_1_1_helmholtz.html", null ],
     [ "dg::Helmholtz2< Geometry, Matrix, container >", "structdg_1_1_helmholtz2.html", null ],
     [ "dg::Histogram< container >", "structdg_1_1_histogram.html", null ],
@@ -136,6 +147,24 @@ var hierarchy =
     [ "dg::LinearZ", "structdg_1_1_linear_z.html", null ],
     [ "dg::LN< T >", "structdg_1_1_l_n.html", null ],
     [ "dg::MatrixTraits< Matrix >", "structdg_1_1_matrix_traits.html", null ],
+    [ "dg::MatrixTraits< const CooSparseBlockMatDevice< T > >", "structdg_1_1_matrix_traits_3_01const_01_coo_sparse_block_mat_device_3_01_t_01_4_01_4.html", null ],
+    [ "dg::MatrixTraits< const cusp::array1d< T, M > >", "structdg_1_1_matrix_traits_3_01const_01cusp_1_1array1d_3_01_t_00_01_m_01_4_01_4.html", null ],
+    [ "dg::MatrixTraits< const EllSparseBlockMatDevice< T > >", "structdg_1_1_matrix_traits_3_01const_01_ell_sparse_block_mat_device_3_01_t_01_4_01_4.html", null ],
+    [ "dg::MatrixTraits< const MPI_Vector< T > >", "structdg_1_1_matrix_traits_3_01const_01_m_p_i___vector_3_01_t_01_4_01_4.html", null ],
+    [ "dg::MatrixTraits< const MPIDistMat< L, C > >", "structdg_1_1_matrix_traits_3_01const_01_m_p_i_dist_mat_3_01_l_00_01_c_01_4_01_4.html", null ],
+    [ "dg::MatrixTraits< const RowColDistMat< LI, LO, C > >", "structdg_1_1_matrix_traits_3_01const_01_row_col_dist_mat_3_01_l_i_00_01_l_o_00_01_c_01_4_01_4.html", null ],
+    [ "dg::MatrixTraits< const std::vector< T > >", "structdg_1_1_matrix_traits_3_01const_01std_1_1vector_3_01_t_01_4_01_4.html", null ],
+    [ "dg::MatrixTraits< const thrust::device_vector< T > >", "structdg_1_1_matrix_traits_3_01const_01thrust_1_1device__vector_3_01_t_01_4_01_4.html", null ],
+    [ "dg::MatrixTraits< const thrust::host_vector< T > >", "structdg_1_1_matrix_traits_3_01const_01thrust_1_1host__vector_3_01_t_01_4_01_4.html", null ],
+    [ "dg::MatrixTraits< CooSparseBlockMatDevice< T > >", "structdg_1_1_matrix_traits_3_01_coo_sparse_block_mat_device_3_01_t_01_4_01_4.html", null ],
+    [ "dg::MatrixTraits< cusp::array1d< T, M > >", "structdg_1_1_matrix_traits_3_01cusp_1_1array1d_3_01_t_00_01_m_01_4_01_4.html", null ],
+    [ "dg::MatrixTraits< EllSparseBlockMatDevice< T > >", "structdg_1_1_matrix_traits_3_01_ell_sparse_block_mat_device_3_01_t_01_4_01_4.html", null ],
+    [ "dg::MatrixTraits< MPI_Vector< T > >", "structdg_1_1_matrix_traits_3_01_m_p_i___vector_3_01_t_01_4_01_4.html", null ],
+    [ "dg::MatrixTraits< MPIDistMat< L, C > >", "structdg_1_1_matrix_traits_3_01_m_p_i_dist_mat_3_01_l_00_01_c_01_4_01_4.html", null ],
+    [ "dg::MatrixTraits< RowColDistMat< LI, LO, C > >", "structdg_1_1_matrix_traits_3_01_row_col_dist_mat_3_01_l_i_00_01_l_o_00_01_c_01_4_01_4.html", null ],
+    [ "dg::MatrixTraits< std::vector< T > >", "structdg_1_1_matrix_traits_3_01std_1_1vector_3_01_t_01_4_01_4.html", null ],
+    [ "dg::MatrixTraits< thrust::device_vector< T > >", "structdg_1_1_matrix_traits_3_01thrust_1_1device__vector_3_01_t_01_4_01_4.html", null ],
+    [ "dg::MatrixTraits< thrust::host_vector< T > >", "structdg_1_1_matrix_traits_3_01thrust_1_1host__vector_3_01_t_01_4_01_4.html", null ],
     [ "dg::Message", "classdg_1_1_message.html", null ],
     [ "dg::MinMod< T >", "structdg_1_1_min_mod.html", null ],
     [ "dg::MOD< T >", "structdg_1_1_m_o_d.html", null ],
@@ -144,13 +173,13 @@ var hierarchy =
     [ "dg::MPITag", "structdg_1_1_m_p_i_tag.html", null ],
     [ "dg::MultigridCG2d< Geometry, Matrix, container >", "structdg_1_1_multigrid_c_g2d.html", null ],
     [ "dg::MultiMatrix< Matrix, container >", "structdg_1_1_multi_matrix.html", null ],
+    [ "dg::NearestNeighborComm< Index, Vector >", "structdg_1_1_nearest_neighbor_comm.html", null ],
     [ "dg::ONE", "structdg_1_1_o_n_e.html", null ],
     [ "dg::OneDimensionalTag", "structdg_1_1_one_dimensional_tag.html", null ],
     [ "dg::Operator< T >", "classdg_1_1_operator.html", null ],
     [ "dg::Operator< int >", "classdg_1_1_operator.html", null ],
     [ "dg::PLUS< T >", "structdg_1_1_p_l_u_s.html", null ],
     [ "dg::Poisson< Geometry, Matrix, container >", "structdg_1_1_poisson.html", null ],
-    [ "dg::PoloidalAverage< container, IndexContainer >", "structdg_1_1_poloidal_average.html", null ],
     [ "dg::POSVALUE< T >", "structdg_1_1_p_o_s_v_a_l_u_e.html", null ],
     [ "dg::RefinedElliptic< Geometry, IMatrix, Matrix, container >", "classdg_1_1_refined_elliptic.html", null ],
     [ "dg::RK< k, container >", "structdg_1_1_r_k.html", null ],
@@ -176,8 +205,19 @@ var hierarchy =
     [ "dg::Timer", "classdg_1_1_timer.html", null ],
     [ "dg::TopologyTraits< Topology >", "structdg_1_1_topology_traits.html", null ],
     [ "dg::TwoDimensionalTag", "structdg_1_1_two_dimensional_tag.html", null ],
-    [ "dg::VectorTraits< Vector >", "structdg_1_1_vector_traits.html", null ],
+    [ "dg::VectorTraits< Vector, Enable >", "structdg_1_1_vector_traits.html", null ],
+    [ "dg::VectorTraits< const MPI_Vector< container > >", "structdg_1_1_vector_traits_3_01const_01_m_p_i___vector_3_01container_01_4_01_4.html", null ],
     [ "dg::VectorTraits< container >", "structdg_1_1_vector_traits.html", null ],
+    [ "dg::VectorTraits< cusp::array1d< T, cusp::device_memory >, typename std::enable_if< std::is_arithmetic< T >::value >::type >", "structdg_1_1_vector_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1device__memory_01_4_00_01type2fd9c7d236d45ede3961059cc822593c.html", null ],
+    [ "dg::VectorTraits< cusp::array1d< T, cusp::host_memory >, typename std::enable_if< std::is_arithmetic< T >::value >::type >", "structdg_1_1_vector_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1host__memory_01_4_00_01typena4efc5a6fbdee46bba74adb11fff68aef.html", null ],
+    [ "dg::VectorTraits< MPI_Vector< container > >", "structdg_1_1_vector_traits_3_01_m_p_i___vector_3_01container_01_4_01_4.html", null ],
+    [ "dg::VectorTraits< std::array< T, N >, typename std::enable_if< !std::is_arithmetic< T >::value >::type >", "structdg_1_1_vector_traits_3_01std_1_1array_3_01_t_00_01_n_01_4_00_01typename_01std_1_1enable__i947085c9637afe518f8c17462c31e7cd.html", null ],
+    [ "dg::VectorTraits< std::array< T, N >, typename std::enable_if< std::is_arithmetic< T >::value >::type >", "structdg_1_1_vector_traits_3_01std_1_1array_3_01_t_00_01_n_01_4_00_01typename_01std_1_1enable__ibc0fb3900d788c3d588b8e977556fe1b.html", null ],
+    [ "dg::VectorTraits< std::vector< T >, typename std::enable_if< !std::is_arithmetic< T >::value >::type >", "structdg_1_1_vector_traits_3_01std_1_1vector_3_01_t_01_4_00_01typename_01std_1_1enable__if_3_01_18e011026ce6733c8d30f8e704de47f9.html", null ],
+    [ "dg::VectorTraits< std::vector< T >, typename std::enable_if< std::is_arithmetic< T >::value >::type >", "structdg_1_1_vector_traits_3_01std_1_1vector_3_01_t_01_4_00_01typename_01std_1_1enable__if_3_01s98893251fa88f88be031143633b3a291.html", null ],
+    [ "dg::VectorTraits< thrust::device_vector< T >, typename std::enable_if< std::is_arithmetic< T >::value >::type >", "structdg_1_1_vector_traits_3_01thrust_1_1device__vector_3_01_t_01_4_00_01typename_01std_1_1enabl819ae1a2b234262a5f9638d9b708e39a.html", null ],
+    [ "dg::VectorTraits< thrust::host_vector< T >, typename std::enable_if< !std::is_arithmetic< T >::value >::type >", "structdg_1_1_vector_traits_3_01thrust_1_1host__vector_3_01_t_01_4_00_01typename_01std_1_1enable_f3c30440d1972882f7a9b14f80e4b322.html", null ],
+    [ "dg::VectorTraits< thrust::host_vector< T >, typename std::enable_if< std::is_arithmetic< T >::value >::type >", "structdg_1_1_vector_traits_3_01thrust_1_1host__vector_3_01_t_01_4_00_01typename_01std_1_1enable_8b44c94b3f74989a2614e20b7bfd9ecb.html", null ],
     [ "dg::Vortex", "structdg_1_1_vortex.html", null ],
     [ "dg::ZERO", "structdg_1_1_z_e_r_o.html", null ]
 ];

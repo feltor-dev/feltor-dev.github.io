@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Geometry: Member List</title>
+<title>Geometries: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -38,17 +38,18 @@
   <ul class="tablist"> 
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
-    <li><a href="../../geometries/html/modules.html">geometry</a></li>
+    <li><a href="../../geometries/html/modules.html">geometries</a></li>
     <li><a href="../../file/html/namespacefile.html">file</a></li>
+    <li><a href="../../exblas/html/namespaceexblas.html">exblas</a></li>
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Geometry
+   <div id="projectname">Geometries
    </div>
-   <div id="projectbrief">Library for magnetic flux functions, grids and grid generators</div>
+   <div id="projectbrief">Extension with magnetic flux functions, grids and grid generators</div>
   </td>
  </tr>
  </tbody>
@@ -139,8 +140,8 @@ $(document).ready(function(){initNavTree('structdg_1_1geo_1_1_d_s.html','');});
   <tr><td class="entry"><a class="el" href="structdg_1_1geo_1_1_d_s.html#a2e58aca0efe20933f41e2f40175af310">centeredDiv</a>(const container &amp;f, container &amp;g)</td><td class="entry"><a class="el" href="structdg_1_1geo_1_1_d_s.html">dg::geo::DS&lt; ProductGeometry, IMatrix, Matrix, container &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="structdg_1_1geo_1_1_d_s.html#a64ae114ed661c3409cc53b209c3a48e8">construct</a>(const FA &amp;fieldaligned, dg::norm no=dg::normed, dg::direction dir=dg::centered)</td><td class="entry"><a class="el" href="structdg_1_1geo_1_1_d_s.html">dg::geo::DS&lt; ProductGeometry, IMatrix, Matrix, container &gt;</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="structdg_1_1geo_1_1_d_s.html#aea274cabb48d6b0b2808951fcd845e99">DS</a>()</td><td class="entry"><a class="el" href="structdg_1_1geo_1_1_d_s.html">dg::geo::DS&lt; ProductGeometry, IMatrix, Matrix, container &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structdg_1_1geo_1_1_d_s.html#a6a0daa0e8cbf7cf4226ef676f9d4fc24">DS</a>(const dg::geo::TokamakMagneticField &amp;vec, const ProductGeometry &amp;grid, dg::bc bcx=dg::NEU, dg::bc bcy=dg::NEU, Limiter limit=FullLimiter(), dg::norm no=dg::normed, dg::direction dir=dg::centered, double eps=1e-5, unsigned multiplyX=10, unsigned multiplyY=10, bool dependsOnX=true, bool dependsOnY=true, bool integrateAll=true)</td><td class="entry"><a class="el" href="structdg_1_1geo_1_1_d_s.html">dg::geo::DS&lt; ProductGeometry, IMatrix, Matrix, container &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structdg_1_1geo_1_1_d_s.html#a86dfe6c0a366d6338d9f771765d0c145">DS</a>(const dg::geo::BinaryVectorLvl0 &amp;vec, const ProductGeometry &amp;grid, dg::bc bcx=dg::NEU, dg::bc bcy=dg::NEU, Limiter limit=FullLimiter(), dg::norm no=dg::normed, dg::direction dir=dg::centered, double eps=1e-5, unsigned multiplyX=10, unsigned multiplyY=10, bool dependsOnX=true, bool dependsOnY=true, bool integrateAll=true)</td><td class="entry"><a class="el" href="structdg_1_1geo_1_1_d_s.html">dg::geo::DS&lt; ProductGeometry, IMatrix, Matrix, container &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structdg_1_1geo_1_1_d_s.html#a1bc6775cb33544a79f1e8037f283e0a8">DS</a>(const dg::geo::TokamakMagneticField &amp;vec, const ProductGeometry &amp;grid, dg::bc bcx=dg::NEU, dg::bc bcy=dg::NEU, Limiter limit=FullLimiter(), dg::norm no=dg::normed, dg::direction dir=dg::centered, double eps=1e-5, unsigned multiplyX=10, unsigned multiplyY=10, bool dependsOnX=true, bool dependsOnY=true, bool integrateAll=true, double deltaPhi=-1)</td><td class="entry"><a class="el" href="structdg_1_1geo_1_1_d_s.html">dg::geo::DS&lt; ProductGeometry, IMatrix, Matrix, container &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="structdg_1_1geo_1_1_d_s.html#a5ebaed8638267fbaedc29968bfc3219b">DS</a>(const dg::geo::BinaryVectorLvl0 &amp;vec, const ProductGeometry &amp;grid, dg::bc bcx=dg::NEU, dg::bc bcy=dg::NEU, Limiter limit=FullLimiter(), dg::norm no=dg::normed, dg::direction dir=dg::centered, double eps=1e-5, unsigned multiplyX=10, unsigned multiplyY=10, bool dependsOnX=true, bool dependsOnY=true, bool integrateAll=true, double deltaPhi=-1)</td><td class="entry"><a class="el" href="structdg_1_1geo_1_1_d_s.html">dg::geo::DS&lt; ProductGeometry, IMatrix, Matrix, container &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="structdg_1_1geo_1_1_d_s.html#a215b83e9c29b7ba8af530aeee91d895c">DS</a>(const FA &amp;fieldaligned, dg::norm no=dg::normed, dg::direction dir=dg::centered)</td><td class="entry"><a class="el" href="structdg_1_1geo_1_1_d_s.html">dg::geo::DS&lt; ProductGeometry, IMatrix, Matrix, container &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="structdg_1_1geo_1_1_d_s.html#ac2adaf51aa28f332bb738d7c7a5fa149">dss</a>(const container &amp;f, container &amp;g)</td><td class="entry"><a class="el" href="structdg_1_1geo_1_1_d_s.html">dg::geo::DS&lt; ProductGeometry, IMatrix, Matrix, container &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="structdg_1_1geo_1_1_d_s.html#a37a968a4d343037e248a2f7458e15e4c">dss</a>(double alpha, const container &amp;f, double beta, container &amp;g)</td><td class="entry"><a class="el" href="structdg_1_1geo_1_1_d_s.html">dg::geo::DS&lt; ProductGeometry, IMatrix, Matrix, container &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
@@ -165,7 +166,7 @@ $(document).ready(function(){initNavTree('structdg_1_1geo_1_1_d_s.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 15 2017 10:37:33 for Geometry by
+    <li class="footer">Generated on Thu Apr 26 2018 16:28:25 for Geometries by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

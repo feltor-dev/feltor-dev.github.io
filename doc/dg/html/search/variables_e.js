@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['projection_5f8cuh',['projection_8cuh',['../projection__8cuh_8js.html#a87122104170e0134e790f7d0f46032f2',1,'projection_8cuh.js']]],
-  ['psipmax',['psipmax',['../../../geometries/html/structdg_1_1geo_1_1guenther_1_1_parameters.html#af4662cf88733d884d8896ab10739501e',1,'dg::geo::guenther::Parameters::psipmax()'],['../../../geometries/html/structdg_1_1geo_1_1solovev_1_1_parameters.html#a3b736b4e0adf76dd178e3c3d15b2623b',1,'dg::geo::solovev::Parameters::psipmax()']]],
-  ['psipmaxcut',['psipmaxcut',['../../../geometries/html/structdg_1_1geo_1_1guenther_1_1_parameters.html#a88b8084817a56b02e67aff32eb56366c',1,'dg::geo::guenther::Parameters::psipmaxcut()'],['../../../geometries/html/structdg_1_1geo_1_1solovev_1_1_parameters.html#a618be8aa154476d822968f179fd52983',1,'dg::geo::solovev::Parameters::psipmaxcut()']]],
-  ['psipmaxlim',['psipmaxlim',['../../../geometries/html/structdg_1_1geo_1_1guenther_1_1_parameters.html#afcbf1738c0dfb6bf1b9a4573d0440468',1,'dg::geo::guenther::Parameters::psipmaxlim()'],['../../../geometries/html/structdg_1_1geo_1_1solovev_1_1_parameters.html#a6cd01dee63118f4d12aaf13d8e541c6f',1,'dg::geo::solovev::Parameters::psipmaxlim()']]],
-  ['psipmin',['psipmin',['../../../geometries/html/structdg_1_1geo_1_1guenther_1_1_parameters.html#aa1f03dc9076937119f19e7fe4974375d',1,'dg::geo::guenther::Parameters::psipmin()'],['../../../geometries/html/structdg_1_1geo_1_1solovev_1_1_parameters.html#a62a25e8097050d25ee6a631c35740ac7',1,'dg::geo::solovev::Parameters::psipmin()']]]
+  ['r_5f0',['R_0',['../../../geometries/html/structdg_1_1geo_1_1guenther_1_1_parameters.html#ab962a08a6be5b352961d14cb0dc2f289',1,'dg::geo::guenther::Parameters::R_0()'],['../../../geometries/html/structdg_1_1geo_1_1solovev_1_1_parameters.html#a19b2654b0febc17753d99d48325d371e',1,'dg::geo::solovev::Parameters::R_0()']]],
+  ['right_5frange',['right_range',['../structdg_1_1_ell_sparse_block_mat.html#ab609bd21cd26de2b7f0f360d4e8b2e07',1,'dg::EllSparseBlockMat']]],
+  ['right_5fsize',['right_size',['../structdg_1_1_ell_sparse_block_mat.html#abce816133c166271872359eb96a9b897',1,'dg::EllSparseBlockMat::right_size()'],['../structdg_1_1_coo_sparse_block_mat.html#af2e04cf5f744a5a2284b57d50c849545',1,'dg::CooSparseBlockMat::right_size()']]],
+  ['rk4eps',['rk4eps',['../../../geometries/html/structdg_1_1geo_1_1guenther_1_1_parameters.html#ad457d26dd09ac5773071f69c624826a2',1,'dg::geo::guenther::Parameters::rk4eps()'],['../../../geometries/html/structdg_1_1geo_1_1solovev_1_1_parameters.html#a48a2b3f947a46c6ed98c70f9384b93c6',1,'dg::geo::solovev::Parameters::rk4eps()']]],
+  ['rows_5fidx',['rows_idx',['../structdg_1_1_coo_sparse_block_mat.html#ae111264bca83f893a8be9d4b6f8a87fe',1,'dg::CooSparseBlockMat']]]
 ];

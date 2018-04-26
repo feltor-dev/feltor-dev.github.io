@@ -2,6 +2,7 @@ var searchData=
 [
   ['topology_20base_20classes',['Topology base classes',['../group__basictopology.html',1,'']]],
   ['the_20circular_20magnetic_20field',['The Circular magnetic field',['../../../geometries/html/group__circular.html',1,'']]],
+  ['the_20tag_20dispatch_20system',['The tag dispatch system',['../group__dispatch.html',1,'']]],
   ['topological_20grids_20and_20operations',['Topological grids and operations',['../group__grid.html',1,'']]],
   ['the_20guenther_20magnetic_20field',['The Guenther magnetic field',['../../../geometries/html/group__guenther.html',1,'']]],
   ['the_20solovev_20magnetic_20field',['The solovev magnetic field',['../../../geometries/html/group__solovev.html',1,'']]],

@@ -19,6 +19,6 @@ var structdg_1_1_sparse_tensor =
     [ "transpose", "structdg_1_1_sparse_tensor.html#a05ee7c8d9d532cdf52fecc0cb5ab30b4", null ],
     [ "unset", "structdg_1_1_sparse_tensor.html#ad929e1e39f1a925475475cdcea1542d9", null ],
     [ "value", "structdg_1_1_sparse_tensor.html#ab8f9b7f41aef0354ca3b60696c155db9", null ],
-    [ "value", "structdg_1_1_sparse_tensor.html#a9ecce9936af1d649b1400ca2e2aa9038", null ],
+    [ "values", "structdg_1_1_sparse_tensor.html#adf4df1180f333e6b9e0430f39f1e4e72", null ],
     [ "values", "structdg_1_1_sparse_tensor.html#abd75f00f689505a42a261507a221fb9c", null ]
 ];

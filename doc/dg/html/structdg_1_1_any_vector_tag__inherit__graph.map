@@ -1,6 +1,9 @@
 <map id="dg::AnyVectorTag" name="dg::AnyVectorTag">
-<area shape="rect" id="node2" href="$structdg_1_1_m_p_i_vector_tag.html" title="dg::MPIVectorTag" alt="" coords="5,80,133,107"/>
-<area shape="rect" id="node3" href="$structdg_1_1_std_vector_tag.html" title="dg::StdVectorTag" alt="" coords="158,80,282,107"/>
-<area shape="rect" id="node4" href="$structdg_1_1_thrust_vector_tag.html" title="dg::ThrustVectorTag" alt="" coords="305,80,447,107"/>
-<area shape="rect" id="node5" href="$structdg_1_1_cusp_vector_tag.html" title="dg::CuspVectorTag" alt="" coords="309,155,443,181"/>
+<area shape="rect" id="node2" href="$structdg_1_1_m_p_i_vector_tag.html" title="A distributed vector contains a data container and a MPI communicator. " alt="" coords="5,80,133,107"/>
+<area shape="rect" id="node3" href="$structdg_1_1_shared_vector_tag.html" title="Indicate a contiguous chunk of shared memory. " alt="" coords="158,80,303,107"/>
+<area shape="rect" id="node7" href="$structdg_1_1_vector_vector_tag.html" title="This tag indicates composition/recursion. " alt="" coords="327,80,470,107"/>
+<area shape="rect" id="node4" href="$structdg_1_1_thrust_vector_tag.html" title="Indicate that thrust &#45; like members are available. " alt="" coords="160,155,301,181"/>
+<area shape="rect" id="node5" href="$structdg_1_1_cusp_vector_tag.html" title="special tag for cusp arrays " alt="" coords="89,229,223,256"/>
+<area shape="rect" id="node6" href="$structdg_1_1_std_array_tag.html" title="std::array&lt; primitive_type&gt; " alt="" coords="248,229,365,256"/>
+<area shape="rect" id="node8" href="$structdg_1_1_array_vector_tag.html" title="std::array of containers " alt="" coords="331,155,466,181"/>
 </map>

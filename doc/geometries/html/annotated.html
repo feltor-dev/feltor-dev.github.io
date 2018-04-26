@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Geometry: Class List</title>
+<title>Geometries: Class List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -38,17 +38,18 @@
   <ul class="tablist"> 
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
-    <li><a href="../../geometries/html/modules.html">geometry</a></li>
+    <li><a href="../../geometries/html/modules.html">geometries</a></li>
     <li><a href="../../file/html/namespacefile.html">file</a></li>
+    <li><a href="../../exblas/html/namespaceexblas.html">exblas</a></li>
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Geometry
+   <div id="projectname">Geometries
    </div>
-   <div id="projectbrief">Library for magnetic flux functions, grids and grid generators</div>
+   <div id="projectbrief">Extension with magnetic flux functions, grids and grid generators</div>
   </td>
  </tr>
  </tbody>
@@ -293,7 +294,10 @@ $(document).ready(function(){initNavTree('annotated.html','');});
 \[ \frac{\partial \hat{B} }{ \partial \hat{Z}} \]
 </p>
  </td></tr>
-<tr id="row_0_0_20_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_constant.html" target="_self">Constant</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_20_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_constant.html" target="_self">Constant</a></td><td class="desc">The constant functor </p><p class="formulaDsp">
+\[ f(x,y) = c\]
+</p>
+ </td></tr>
 <tr id="row_0_0_21_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_curvature_kappa_r.html" target="_self">CurvatureKappaR</a></td><td class="desc"><p class="formulaDsp">
 \[ \mathcal{\hat{K}}^{\hat{R}}_{\vec{\kappa}}=0 \]
 </p>
@@ -439,7 +443,7 @@ $(document).ready(function(){initNavTree('annotated.html','');});
 \[ q(\psi_0) = \frac{1}{2\pi} \int dV |\nabla\psi_p| \delta(\psi_p-\psi_0) \alpha( R,Z) \]
 </p>
  </td></tr>
-<tr id="row_0_0_70_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_separatrix_orthogonal.html" target="_self">SeparatrixOrthogonal</a></td><td class="desc">Choose points on separatrix </td></tr>
+<tr id="row_0_0_70_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_separatrix_orthogonal.html" target="_self">SeparatrixOrthogonal</a></td><td class="desc">Choose points on separatrix and construct grid from there </td></tr>
 <tr id="row_0_0_71_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_simple_orthogonal.html" target="_self">SimpleOrthogonal</a></td><td class="desc">Generate a simple orthogonal grid </td></tr>
 <tr id="row_0_0_72_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_simple_orthogonal_x.html" target="_self">SimpleOrthogonalX</a></td><td class="desc">Choose points on inside or outside line </td></tr>
 <tr id="row_0_0_73_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_tanh_source.html" target="_self">TanhSource</a></td><td class="desc">Source for quantities N ... dtlnN = ...+ source/N Returns a tanh profile shifted to \( \psi_{p,min}-3\alpha\) </p><p class="formulaDsp">
@@ -458,7 +462,7 @@ $(document).ready(function(){initNavTree('annotated.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 15 2017 10:37:34 for Geometry by
+    <li class="footer">Generated on Thu Apr 26 2018 16:28:26 for Geometries by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

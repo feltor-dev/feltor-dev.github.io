@@ -1,9 +1,9 @@
 <map id="taylor.h" name="taylor.h">
 <area shape="rect" id="node7" href="/home/matthias/Projekte/feltor/doc/dg.tag$blas_8h.html" title="dg/blas.h" alt="" coords="483,87,557,114"/>
-<area shape="rect" id="node8" href="/home/matthias/Projekte/feltor/doc/dg.tag$functions_8h.html" title="dg/backend/functions.h" alt="" coords="581,87,739,114"/>
-<area shape="rect" id="node9" href="/home/matthias/Projekte/feltor/doc/dg.tag$functors_8h.html" title="dg/functors.h" alt="" coords="763,87,861,114"/>
-<area shape="rect" id="node10" href="$solovev__parameters_8h.html" title="solovev_parameters.h" alt="" coords="886,87,1037,114"/>
-<area shape="rect" id="node13" href="$magnetic__field_8h.html" title="magnetic_field.h" alt="" coords="1061,87,1179,114"/>
-<area shape="rect" id="node14" href="$fluxfunctions_8h.html" title="fluxfunctions.h" alt="" coords="1067,169,1173,196"/>
-<area shape="rect" id="node15" href="/home/matthias/Projekte/feltor/doc/dg.tag$memory_8h.html" title="dg/backend/memory.h" alt="" coords="1045,244,1195,271"/>
+<area shape="rect" id="node8" href="/home/matthias/Projekte/feltor/doc/dg.tag$functions_8h.html" title="dg/geometry/functions.h" alt="" coords="581,87,744,114"/>
+<area shape="rect" id="node9" href="/home/matthias/Projekte/feltor/doc/dg.tag$functors_8h.html" title="dg/functors.h" alt="" coords="768,87,867,114"/>
+<area shape="rect" id="node10" href="$solovev__parameters_8h.html" title="solovev_parameters.h" alt="" coords="891,87,1042,114"/>
+<area shape="rect" id="node13" href="$magnetic__field_8h.html" title="magnetic_field.h" alt="" coords="1067,87,1184,114"/>
+<area shape="rect" id="node14" href="$fluxfunctions_8h.html" title="fluxfunctions.h" alt="" coords="1072,169,1179,196"/>
+<area shape="rect" id="node15" href="/home/matthias/Projekte/feltor/doc/dg.tag$memory_8h.html" title="dg/backend/memory.h" alt="" coords="1050,244,1201,271"/>
 </map>

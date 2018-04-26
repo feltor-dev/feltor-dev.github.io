@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Geometry: dg::geo::FluxGenerator Struct Reference</title>
+<title>Geometries: dg::geo::FluxGenerator Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -38,17 +38,18 @@
   <ul class="tablist"> 
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
-    <li><a href="../../geometries/html/modules.html">geometry</a></li>
+    <li><a href="../../geometries/html/modules.html">geometries</a></li>
     <li><a href="../../file/html/namespacefile.html">file</a></li>
+    <li><a href="../../exblas/html/namespaceexblas.html">exblas</a></li>
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Geometry
+   <div id="projectname">Geometries
    </div>
-   <div id="projectbrief">Library for magnetic flux functions, grids and grid generators</div>
+   <div id="projectbrief">Extension with magnetic flux functions, grids and grid generators</div>
   </td>
  </tr>
  </tbody>
@@ -145,9 +146,9 @@ Inheritance diagram for dg::geo::FluxGenerator:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab83afe3caef4094d8f0416139eb274fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_flux_generator.html#ab83afe3caef4094d8f0416139eb274fb">FluxGenerator</a> (const <a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl2.html">BinaryFunctorsLvl2</a> &amp;psi, const <a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl1.html">BinaryFunctorsLvl1</a> &amp;ipol, double psi_0, double psi_1, double x0, double y0, int mode=0)</td></tr>
-<tr class="memdesc:ab83afe3caef4094d8f0416139eb274fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a symmetry flux grid generator.  <a href="#ab83afe3caef4094d8f0416139eb274fb">More...</a><br /></td></tr>
-<tr class="separator:ab83afe3caef4094d8f0416139eb274fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a79a7f6af03e5735efa398e94ea05d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_flux_generator.html#a2a79a7f6af03e5735efa398e94ea05d0">FluxGenerator</a> (const <a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl2.html">BinaryFunctorsLvl2</a> &amp;psi, const <a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl1.html">BinaryFunctorsLvl1</a> &amp;ipol, double psi_0, double psi_1, double x0, double y0, int mode=0, bool verbose=false)</td></tr>
+<tr class="memdesc:a2a79a7f6af03e5735efa398e94ea05d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a symmetry flux grid generator.  <a href="#a2a79a7f6af03e5735efa398e94ea05d0">More...</a><br /></td></tr>
+<tr class="separator:a2a79a7f6af03e5735efa398e94ea05d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6f19c9f893b4ddd9bd457d5268cc2a3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structdg_1_1geo_1_1_flux_generator.html">FluxGenerator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_flux_generator.html#ad6f19c9f893b4ddd9bd457d5268cc2a3">clone</a> () const </td></tr>
 <tr class="memdesc:ad6f19c9f893b4ddd9bd457d5268cc2a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract clone method that returns a copy on the heap.  <a href="#ad6f19c9f893b4ddd9bd457d5268cc2a3">More...</a><br /></td></tr>
 <tr class="separator:ad6f19c9f893b4ddd9bd457d5268cc2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,8 +183,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A symmetry flux generator. </p>
-<div class="fragment"><div class="line">    <span class="comment">//create the magnetic field</span></div><div class="line">    <a class="code" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a> c = <a class="code" href="group__geom.html#gae3f70e88fd15dd404643f4c5941401c7">dg::geo::createSolovevField</a>( gp);</div><div class="line">    <span class="comment">//create a grid generator</span></div><div class="line">    <a class="code" href="structdg_1_1geo_1_1_flux_generator.html">dg::geo::FluxGenerator</a> flux( c.<a class="code" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#a7a3ef90810326b03d9f2b64197f373ef">get_psip</a>(), c.<a class="code" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#a61f491c62864f2e09e0a703e15483a0d">get_ipol</a>(), psi_0, psi_1, gp.R_0, 0., 1);</div><div class="line">    <span class="comment">//create a grid </span></div><div class="line">    <a class="code" href="structdg_1_1geo_1_1_curvilinear_grid2d.html">dg::geo::CurvilinearGrid2d</a> g2d(flux, n, Nx,Ny, <a class="codeRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a>);</div></div><!-- fragment --></div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ab83afe3caef4094d8f0416139eb274fb"></a>
+<div class="fragment"><div class="line">    <span class="comment">//create the magnetic field</span></div><div class="line">    <a class="code" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a> c = <a class="code" href="group__geom.html#gae3f70e88fd15dd404643f4c5941401c7">dg::geo::createSolovevField</a>( gp);</div><div class="line">    <span class="comment">//create a grid generator</span></div><div class="line">    <a class="code" href="structdg_1_1geo_1_1_flux_generator.html">dg::geo::FluxGenerator</a> flux( c.<a class="code" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#a7a3ef90810326b03d9f2b64197f373ef">get_psip</a>(), c.<a class="code" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#a61f491c62864f2e09e0a703e15483a0d">get_ipol</a>(), psi_0, psi_1, gp.R_0, 0., 0, <span class="keyword">false</span>);</div><div class="line">    <span class="comment">//create a grid</span></div><div class="line">    <a class="code" href="structdg_1_1geo_1_1_curvilinear_grid2d.html">dg::geo::CurvilinearGrid2d</a> g2d(flux, n, Nx,Ny, <a class="codeRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a>);</div></div><!-- fragment --></div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a2a79a7f6af03e5735efa398e94ea05d0"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -230,7 +231,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>mode</em> = <code>0</code>&#160;</td>
+          <td class="paramname"><em>mode</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>verbose</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -252,13 +259,14 @@ Additional Inherited Members</h2></td></tr>
     <tr><td class="paramname">ipol</td><td>\( I(x,y)\) the current function and its derivatives in Cartesian coordinates (x,y) </td></tr>
     <tr><td class="paramname">psi_0</td><td>first boundary </td></tr>
     <tr><td class="paramname">psi_1</td><td>second boundary </td></tr>
-    <tr><td class="paramname">x0</td><td>a point in the inside of the ring bounded by psi0 (shouldn't be the O-point) </td></tr>
-    <tr><td class="paramname">y0</td><td>a point in the inside of the ring bounded by psi0 (shouldn't be the O-point) </td></tr>
+    <tr><td class="paramname">x0</td><td>a point in the inside of the domain bounded by <code>psi_0</code> (shouldn't be the O-point) </td></tr>
+    <tr><td class="paramname">y0</td><td>a point in the inside of the domain bounded by <code>psi_0</code> (shouldn't be the O-point) </td></tr>
     <tr><td class="paramname">mode</td><td>This parameter indicates the adaption type used to create the grid: 0 is no adaption, 1 is an equalarc adaption </td></tr>
+    <tr><td class="paramname">verbose</td><td>if true the integrators will write additional information to <code>std::cout</code> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>If mode == 1 then this class does the same as the <a class="el" href="structdg_1_1geo_1_1_ribeiro_flux_generator.html" title="Same as the Ribeiro class just but uses psi as a flux label directly. ">RibeiroFluxGenerator</a> </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If <code>mode==1</code> then this class does the same as the <code><a class="el" href="structdg_1_1geo_1_1_ribeiro_flux_generator.html" title="Same as the Ribeiro class just but uses psi as a flux label directly. ">RibeiroFluxGenerator</a></code> </dd></dl>
 
 </div>
 </div>
@@ -300,7 +308,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="namespacedg_1_1geo.html">geo</a></li><li class="navelem"><a class="el" href="structdg_1_1geo_1_1_flux_generator.html">FluxGenerator</a></li>
-    <li class="footer">Generated on Wed Nov 15 2017 10:37:33 for Geometry by
+    <li class="footer">Generated on Thu Apr 26 2018 16:28:25 for Geometries by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

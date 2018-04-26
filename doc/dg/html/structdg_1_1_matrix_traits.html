@@ -38,8 +38,9 @@
   <ul class="tablist"> 
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
-    <li><a href="../../geometries/html/modules.html">geometry</a></li>
+    <li><a href="../../geometries/html/modules.html">geometries</a></li>
     <li><a href="../../file/html/namespacefile.html">file</a></li>
+    <li><a href="../../exblas/html/namespaceexblas.html">exblas</a></li>
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
@@ -126,7 +127,7 @@ $(document).ready(function(){initNavTree('structdg_1_1_matrix_traits.html','');}
 <a href="#pub-types">Public Types</a> &#124;
 <a href="structdg_1_1_matrix_traits-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">dg::MatrixTraits&lt; Matrix &gt; Struct Template Reference</div>  </div>
+<div class="title">dg::MatrixTraits&lt; Matrix &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__backend.html">Level 1: Vectors, Matrices and basic operations</a> &raquo; <a class="el" href="group__blas.html">Basic Linear Algebra Subroutines</a> &raquo; <a class="el" href="group__dispatch.html">The tag dispatch system</a><a class="el" href="group__backend.html">Level 1: Vectors, Matrices and basic operations</a> &raquo; <a class="el" href="group__blas.html">Basic Linear Algebra Subroutines</a> &raquo; <a class="el" href="group__dispatch.html">The tag dispatch system</a> &raquo;  &#124; <a class="el" href="group__mat__list.html">List of Matrix Traits specializations</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -137,49 +138,50 @@ $(document).ready(function(){initNavTree('structdg_1_1_matrix_traits.html','');}
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ae6a3cd75b635bd54f1a0006bd232fb06"><td class="memItemLeft" align="right" valign="top">typedef Matrix::value_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_matrix_traits.html#ae6a3cd75b635bd54f1a0006bd232fb06">value_type</a></td></tr>
-<tr class="memdesc:ae6a3cd75b635bd54f1a0006bd232fb06"><td class="mdescLeft">&#160;</td><td class="mdescRight">default value type  <a href="#ae6a3cd75b635bd54f1a0006bd232fb06">More...</a><br /></td></tr>
-<tr class="separator:ae6a3cd75b635bd54f1a0006bd232fb06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d636cf20bc105765ca00a3015a869e6"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structdg_1_1_cusp_matrix_tag.html">CuspMatrixTag</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_matrix_traits.html#a7d636cf20bc105765ca00a3015a869e6">matrix_category</a></td></tr>
-<tr class="memdesc:a7d636cf20bc105765ca00a3015a869e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">default is a CuspMatrix  <a href="#a7d636cf20bc105765ca00a3015a869e6">More...</a><br /></td></tr>
-<tr class="separator:a7d636cf20bc105765ca00a3015a869e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace2d4db4beada73c4643ae295eec5546"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_matrix_traits.html#ace2d4db4beada73c4643ae295eec5546">value_type</a> = typename Matrix::value_type</td></tr>
+<tr class="memdesc:ace2d4db4beada73c4643ae295eec5546"><td class="mdescLeft">&#160;</td><td class="mdescRight">value type  <a href="#ace2d4db4beada73c4643ae295eec5546">More...</a><br /></td></tr>
+<tr class="separator:ace2d4db4beada73c4643ae295eec5546"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7baad5100b1fa3cd4cc61d4e961154a4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_matrix_traits.html#a7baad5100b1fa3cd4cc61d4e961154a4">matrix_category</a> = <a class="el" href="structdg_1_1_cusp_matrix_tag.html">CuspMatrixTag</a></td></tr>
+<tr class="memdesc:a7baad5100b1fa3cd4cc61d4e961154a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">default is a CuspMatrix (has to derive from <code><a class="el" href="structdg_1_1_any_matrix_tag.html">AnyMatrixTag</a></code> or <code><a class="el" href="structdg_1_1_self_made_matrix_tag.html" title="indicates that the Matrix type has the void symv( const Vector&amp;, Vector&amp; ) member function...">SelfMadeMatrixTag</a></code>)  <a href="#a7baad5100b1fa3cd4cc61d4e961154a4">More...</a><br /></td></tr>
+<tr class="separator:a7baad5100b1fa3cd4cc61d4e961154a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class Matrix&gt;<br />
 struct dg::MatrixTraits&lt; Matrix &gt;</h3>
 
 <p>The matrix traits. </p>
-<p>Specialize this struct with the <a class="el" href="structdg_1_1_self_made_matrix_tag.html" title="indicates that the Matrix type has the void symv( const Vector&amp;, Vector&amp; ) member function...">SelfMadeMatrixTag</a> as matrix_category if you want to enable your class for the use in <a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a> functions </p><dl class="section note"><dt>Note</dt><dd>if you have problems with the compiler choosing <a class="el" href="structdg_1_1_cusp_matrix_tag.html">CuspMatrixTag</a> even if you don't want it to and you specialized the <a class="el" href="structdg_1_1_matrix_traits.html" title="The matrix traits. ">MatrixTraits</a> for your matrix try to specialize for const Matrix as well </dd></dl>
+<p>Specialize this struct with the <a class="el" href="structdg_1_1_self_made_matrix_tag.html" title="indicates that the Matrix type has the void symv( const Vector&amp;, Vector&amp; ) member function...">SelfMadeMatrixTag</a> as matrix_category if you want to enable your class for the use in <a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a> functions</p>
+<dl class="section note"><dt>Note</dt><dd>if you have problems with the compiler choosing <a class="el" href="structdg_1_1_cusp_matrix_tag.html">CuspMatrixTag</a> even if you don't want it to and you specialized the <a class="el" href="structdg_1_1_matrix_traits.html" title="The matrix traits. ">MatrixTraits</a> for your matrix try to specialize for const Matrix as well </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a7d636cf20bc105765ca00a3015a869e6"></a>
+<a class="anchor" id="a7baad5100b1fa3cd4cc61d4e961154a4"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class Matrix&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="structdg_1_1_cusp_matrix_tag.html">CuspMatrixTag</a> <a class="el" href="structdg_1_1_matrix_traits.html">dg::MatrixTraits</a>&lt; Matrix &gt;::<a class="el" href="structdg_1_1_matrix_traits.html#a7d636cf20bc105765ca00a3015a869e6">matrix_category</a></td>
+          <td class="memname">using <a class="el" href="structdg_1_1_matrix_traits.html">dg::MatrixTraits</a>&lt; Matrix &gt;::<a class="el" href="structdg_1_1_matrix_traits.html#a7baad5100b1fa3cd4cc61d4e961154a4">matrix_category</a> =  <a class="el" href="structdg_1_1_cusp_matrix_tag.html">CuspMatrixTag</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>default is a CuspMatrix </p>
+<p>default is a CuspMatrix (has to derive from <code><a class="el" href="structdg_1_1_any_matrix_tag.html">AnyMatrixTag</a></code> or <code><a class="el" href="structdg_1_1_self_made_matrix_tag.html" title="indicates that the Matrix type has the void symv( const Vector&amp;, Vector&amp; ) member function...">SelfMadeMatrixTag</a></code>) </p>
 
 </div>
 </div>
-<a class="anchor" id="ae6a3cd75b635bd54f1a0006bd232fb06"></a>
+<a class="anchor" id="ace2d4db4beada73c4643ae295eec5546"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class Matrix&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef Matrix::value_type <a class="el" href="structdg_1_1_matrix_traits.html">dg::MatrixTraits</a>&lt; Matrix &gt;::<a class="el" href="structdg_1_1_matrix_traits.html#ae6a3cd75b635bd54f1a0006bd232fb06">value_type</a></td>
+          <td class="memname">using <a class="el" href="structdg_1_1_matrix_traits.html">dg::MatrixTraits</a>&lt; Matrix &gt;::<a class="el" href="structdg_1_1_matrix_traits.html#ace2d4db4beada73c4643ae295eec5546">value_type</a> =  typename Matrix::value_type</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>default value type </p>
+<p>value type </p>
 
 </div>
 </div>
@@ -192,7 +194,7 @@ template&lt;class Matrix&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_matrix_traits.html">MatrixTraits</a></li>
-    <li class="footer">Generated on Wed Nov 15 2017 10:37:29 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Apr 26 2018 16:28:15 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -38,8 +38,9 @@
   <ul class="tablist"> 
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
-    <li><a href="../../geometries/html/modules.html">geometry</a></li>
+    <li><a href="../../geometries/html/modules.html">geometries</a></li>
     <li><a href="../../file/html/namespacefile.html">file</a></li>
+    <li><a href="../../exblas/html/namespaceexblas.html">exblas</a></li>
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
@@ -163,7 +164,7 @@ class dg::DLT&lt; T &gt;</h3>
 <p>Struct holding coefficients for Discrete Legendre Transformation (<a class="el" href="classdg_1_1_d_l_t.html" title="Struct holding coefficients for Discrete Legendre Transformation (DLT) related operations. ">DLT</a>) related operations. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>value type </td></tr>
+    <tr><td class="paramname">T</td><td>value type (<code>double</code> or <code>float</code>) </td></tr>
   </table>
   </dd>
 </dl>
@@ -185,7 +186,7 @@ template&lt;class T&gt; </div>
 </div><div class="memdoc">
 
 <p>Initialize coefficients. </p>
-<p>The constructor reads the data corresponding to given n from the file dlt.dat. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The constructor initializes internal data with tabulated values for the given number of polynomial coefficients. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">n</td><td># of polynomial coefficients (0&lt;n&lt;21) </td></tr>
   </table>
@@ -219,7 +220,7 @@ template&lt;class T&gt; </div>
 </div><div class="memdoc">
 
 <p>Return Gauss-Legendre nodes on the interval [-1,1]. </p>
-<dl class="section return"><dt>Returns</dt><dd>nodes </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>n</code> nodes </dd></dl>
 
 </div>
 </div>
@@ -247,7 +248,7 @@ template&lt;class T&gt; </div>
 </div><div class="memdoc">
 
 <p>Return backward <a class="el" href="classdg_1_1_d_l_t.html" title="Struct holding coefficients for Discrete Legendre Transformation (DLT) related operations. ">DLT</a> trafo matrix. </p>
-<p>accesss elements in C-fashion: F_{ij} = <a class="el" href="classdg_1_1_d_l_t.html#a0ea2a6dafbba862fc0b5238d81432f2c" title="Return backward DLT trafo matrix. ">backward()</a>[i*n+j] </p><dl class="section return"><dt>Returns</dt><dd>backward transformation </dd></dl>
+<p>accesss elements in C-fashion: \( F_{ij} =\) <code><a class="el" href="classdg_1_1_d_l_t.html#a0ea2a6dafbba862fc0b5238d81432f2c" title="Return backward DLT trafo matrix. ">backward()</a></code>[<code>i*n+j</code>] </p><dl class="section return"><dt>Returns</dt><dd><code>n*n</code> backward transformation coefficients </dd></dl>
 
 </div>
 </div>
@@ -275,7 +276,7 @@ template&lt;class T&gt; </div>
 </div><div class="memdoc">
 
 <p>Return equidistant backward <a class="el" href="classdg_1_1_d_l_t.html" title="Struct holding coefficients for Discrete Legendre Transformation (DLT) related operations. ">DLT</a> trafo matrix. </p>
-<p>For vizualisation purposes it is useful to have the values of the <a class="el" href="classdg_1_1_d_l_t.html" title="Struct holding coefficients for Discrete Legendre Transformation (DLT) related operations. ">DLT</a> - expansion on an equidistant grid. accesss elements in C-fashion: F_{ij} = <a class="el" href="classdg_1_1_d_l_t.html#a82aae3c20a040800f96686caf467da22" title="Return equidistant backward DLT trafo matrix. ">backwardEQ()</a>[i*n+j] </p><dl class="section return"><dt>Returns</dt><dd>equidistant backward transformation </dd></dl>
+<p>For vizualisation purposes it is useful to have the values of the <a class="el" href="classdg_1_1_d_l_t.html" title="Struct holding coefficients for Discrete Legendre Transformation (DLT) related operations. ">DLT</a> - expansion on an equidistant grid. accesss elements in C-fashion: \( F_{ij} = \) <code><a class="el" href="classdg_1_1_d_l_t.html#a82aae3c20a040800f96686caf467da22" title="Return equidistant backward DLT trafo matrix. ">backwardEQ()</a></code>[<code>i*n+j</code>] </p><dl class="section return"><dt>Returns</dt><dd><code>n*n</code> equidistant backward transformation coefficients </dd></dl>
 
 </div>
 </div>
@@ -303,7 +304,7 @@ template&lt;class T&gt; </div>
 </div><div class="memdoc">
 
 <p>Return forward <a class="el" href="classdg_1_1_d_l_t.html" title="Struct holding coefficients for Discrete Legendre Transformation (DLT) related operations. ">DLT</a> trafo matrix. </p>
-<p>accesss elements in C-fashion: F_{ij} = <a class="el" href="classdg_1_1_d_l_t.html#afc3b01c52b7be79060e5481e83287263" title="Return forward DLT trafo matrix. ">forward()</a>[i*n+j] </p><dl class="section return"><dt>Returns</dt><dd>forward transformation </dd></dl>
+<p>accesss elements in C-fashion: \( F_{ij} = \) <code><a class="el" href="classdg_1_1_d_l_t.html#afc3b01c52b7be79060e5481e83287263" title="Return forward DLT trafo matrix. ">forward()</a></code>[<code>i*n+j</code>] </p><dl class="section return"><dt>Returns</dt><dd><code>n*n</code> forward transformation coefficients </dd></dl>
 
 </div>
 </div>
@@ -331,12 +332,12 @@ template&lt;class T&gt; </div>
 </div><div class="memdoc">
 
 <p>Return Gauss-Legendre weights. </p>
-<dl class="section return"><dt>Returns</dt><dd>weights </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>n</code> weights </dd></dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>backend/<a class="el" href="dlt_8h_source.html">dlt.h</a></li>
+<li>geometry/<a class="el" href="dlt_8h_source.html">dlt.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -344,7 +345,7 @@ template&lt;class T&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="classdg_1_1_d_l_t.html">DLT</a></li>
-    <li class="footer">Generated on Wed Nov 15 2017 10:37:29 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Apr 26 2018 16:28:15 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

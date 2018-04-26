@@ -38,8 +38,9 @@
   <ul class="tablist"> 
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
-    <li><a href="../../geometries/html/modules.html">geometry</a></li>
+    <li><a href="../../geometries/html/modules.html">geometries</a></li>
     <li><a href="../../file/html/namespacefile.html">file</a></li>
+    <li><a href="../../exblas/html/namespaceexblas.html">exblas</a></li>
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
@@ -155,9 +156,32 @@ Enumerations</h2></td></tr>
  }<tr class="memdesc:gabf9ea3df33484cbb5886e257c3899e48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direction of a discrete derivative.  <a href="group__creation.html#gabf9ea3df33484cbb5886e257c3899e48">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:gabf9ea3df33484cbb5886e257c3899e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gace76090e6c95d39b59a1dee2db968d14"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__creation.html#gace76090e6c95d39b59a1dee2db968d14">dg::coo2d</a> : char { <a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">dg::coo2d::x</a> = 'x', 
+<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">dg::coo2d::y</a> = 'y'
+ }<tr class="memdesc:gace76090e6c95d39b59a1dee2db968d14"><td class="mdescLeft">&#160;</td><td class="mdescRight">2d coordinates  <a href="group__creation.html#gace76090e6c95d39b59a1dee2db968d14">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:gace76090e6c95d39b59a1dee2db968d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4de4a3d7cd219a55affa992871e8598f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__creation.html#ga4de4a3d7cd219a55affa992871e8598f">dg::coo3d</a> : char { <br />
+&#160;&#160;<a class="el" href="group__creation.html#gga4de4a3d7cd219a55affa992871e8598fa9dd4e461268c8034f5c8564e155c67a6">dg::coo3d::x</a> = 'x', 
+<a class="el" href="group__creation.html#gga4de4a3d7cd219a55affa992871e8598fa415290769594460e2e485922904f345d">dg::coo3d::y</a> = 'y', 
+<a class="el" href="group__creation.html#gga4de4a3d7cd219a55affa992871e8598fafbade9e36a3f36d3d676c1b808451dd7">dg::coo3d::z</a> = 'z', 
+<a class="el" href="group__creation.html#gga4de4a3d7cd219a55affa992871e8598fa3e44107170a520582ade522fa73c1d15">dg::coo3d::xy</a> = 'a', 
+<br />
+&#160;&#160;<a class="el" href="group__creation.html#gga4de4a3d7cd219a55affa992871e8598fa2151a2bc77807b81113febbf50c4bc95">dg::coo3d::yz</a> = 'b', 
+<a class="el" href="group__creation.html#gga4de4a3d7cd219a55affa992871e8598fadbd69ee9ae289a85ea34dbef8435d7c1">dg::coo3d::xz</a> = 'c'
+<br />
+ }<tr class="memdesc:ga4de4a3d7cd219a55affa992871e8598f"><td class="mdescLeft">&#160;</td><td class="mdescRight">3d contra- and covariant coordinates  <a href="group__creation.html#ga4de4a3d7cd219a55affa992871e8598f">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:ga4de4a3d7cd219a55affa992871e8598f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga0b06066b6660d8d982ef6b1ae736317f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__creation.html#ga0b06066b6660d8d982ef6b1ae736317f">dg::bc2str</a> (bc bcx)</td></tr>
+<tr class="memdesc:ga0b06066b6660d8d982ef6b1ae736317f"><td class="mdescLeft">&#160;</td><td class="mdescRight">write a string describing boundary condition to an output stream  <a href="group__creation.html#ga0b06066b6660d8d982ef6b1ae736317f">More...</a><br /></td></tr>
+<tr class="separator:ga0b06066b6660d8d982ef6b1ae736317f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7b085d8c8fe7084a653bf69956cf200a"><td class="memItemLeft" align="right" valign="top">bc&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__creation.html#ga7b085d8c8fe7084a653bf69956cf200a">dg::str2bc</a> (std::string s)</td></tr>
+<tr class="memdesc:ga7b085d8c8fe7084a653bf69956cf200a"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert a string to a bc  <a href="group__creation.html#ga7b085d8c8fe7084a653bf69956cf200a">More...</a><br /></td></tr>
+<tr class="separator:ga7b085d8c8fe7084a653bf69956cf200a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga486a9f56008435d7403236bae8b511b7"><td class="memItemLeft" align="right" valign="top">EllSparseBlockMat&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__creation.html#ga486a9f56008435d7403236bae8b511b7">dg::create::dx</a> (const aTopology2d &amp;g, bc bcx, direction dir=centered)</td></tr>
 <tr class="memdesc:ga486a9f56008435d7403236bae8b511b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 2d derivative in x-direction.  <a href="group__creation.html#ga486a9f56008435d7403236bae8b511b7">More...</a><br /></td></tr>
 <tr class="separator:ga486a9f56008435d7403236bae8b511b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -350,12 +374,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga5e135bc9794d3b98e8d9a5fa1f3c0a51"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__creation.html#ga5e135bc9794d3b98e8d9a5fa1f3c0a51">dg::create::jumpZ</a> (const aMPITopology3d &amp;g)</td></tr>
 <tr class="memdesc:ga5e135bc9794d3b98e8d9a5fa1f3c0a51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 3d jump in z-direction.  <a href="group__creation.html#ga5e135bc9794d3b98e8d9a5fa1f3c0a51">More...</a><br /></td></tr>
 <tr class="separator:ga5e135bc9794d3b98e8d9a5fa1f3c0a51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0b06066b6660d8d982ef6b1ae736317f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__creation.html#ga0b06066b6660d8d982ef6b1ae736317f">dg::bc2str</a> (bc bcx)</td></tr>
-<tr class="memdesc:ga0b06066b6660d8d982ef6b1ae736317f"><td class="mdescLeft">&#160;</td><td class="mdescRight">write a string describing boundary condition to an output stream  <a href="group__creation.html#ga0b06066b6660d8d982ef6b1ae736317f">More...</a><br /></td></tr>
-<tr class="separator:ga0b06066b6660d8d982ef6b1ae736317f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7b085d8c8fe7084a653bf69956cf200a"><td class="memItemLeft" align="right" valign="top">bc&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__creation.html#ga7b085d8c8fe7084a653bf69956cf200a">dg::str2bc</a> (std::string s)</td></tr>
-<tr class="memdesc:ga7b085d8c8fe7084a653bf69956cf200a"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert a string to a bc  <a href="group__creation.html#ga7b085d8c8fe7084a653bf69956cf200a">More...</a><br /></td></tr>
-<tr class="separator:ga7b085d8c8fe7084a653bf69956cf200a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>High level matrix creation functions </p>
@@ -386,6 +404,78 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10"></a>NEU&#160;</td><td class="fielddoc">
 <p>Neumann on both boundaries. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="gace76090e6c95d39b59a1dee2db968d14"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__creation.html#gace76090e6c95d39b59a1dee2db968d14">dg::coo2d</a> : char</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>2d coordinates </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6"></a>x&#160;</td><td class="fielddoc">
+<p>x direction </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d"></a>y&#160;</td><td class="fielddoc">
+<p>y direction </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="ga4de4a3d7cd219a55affa992871e8598f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__creation.html#ga4de4a3d7cd219a55affa992871e8598f">dg::coo3d</a> : char</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>3d contra- and covariant coordinates </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga4de4a3d7cd219a55affa992871e8598fa9dd4e461268c8034f5c8564e155c67a6"></a>x&#160;</td><td class="fielddoc">
+<p>x direction </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga4de4a3d7cd219a55affa992871e8598fa415290769594460e2e485922904f345d"></a>y&#160;</td><td class="fielddoc">
+<p>y direction </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga4de4a3d7cd219a55affa992871e8598fafbade9e36a3f36d3d676c1b808451dd7"></a>z&#160;</td><td class="fielddoc">
+<p>z direction </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga4de4a3d7cd219a55affa992871e8598fa3e44107170a520582ade522fa73c1d15"></a>xy&#160;</td><td class="fielddoc">
+<p>xy plane </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga4de4a3d7cd219a55affa992871e8598fa2151a2bc77807b81113febbf50c4bc95"></a>yz&#160;</td><td class="fielddoc">
+<p>yz plane </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga4de4a3d7cd219a55affa992871e8598fadbd69ee9ae289a85ea34dbef8435d7c1"></a>xz&#160;</td><td class="fielddoc">
+<p>xz plane </p>
 </td></tr>
 </table>
 
@@ -548,7 +638,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A host matrix</dd></dl>
-<p>This code snippet demonstrates how to derive a function with dG on a device </p><div class="fragment"><div class="line"><span class="keywordtype">double</span> <span class="keyword">function</span>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y){<span class="keywordflow">return</span> exp(x)*exp(y);}</div><div class="line"><a class="code" href="structdg_1_1_grid2d.html">dg::Grid2d</a> g2d( 0, 2, 0, 2, 3, 20, 20);</div><div class="line"><a class="code" href="structdg_1_1_ell_sparse_block_mat_device.html">dg::DMatrix</a> <a class="code" href="group__creation.html#ga486a9f56008435d7403236bae8b511b7">dx</a>;</div><div class="line"><a class="code" href="group__blas2.html#gad55efc77b7320e376b7f00b61ce0dd6e">dg::blas2::transfer</a>( <a class="code" href="group__creation.html#ga486a9f56008435d7403236bae8b511b7">dg::create::dx</a>(g2d), dx);</div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6">dg::DVec</a>  x, y;</div><div class="line"><a class="code" href="group__blas1.html#gac47888be3a3f75994f40de9a70d28c9c">dg::blas1::transfer</a>( <a class="code" href="group__evaluation.html#ga7521f4acb4edaf2d7896d99f97e1ed9d">dg::evaluate</a>( <span class="keyword">function</span>, g2d), x);</div><div class="line">y=x;</div><div class="line"><a class="code" href="group__blas2.html#gab1885f3913f72b7ea380d58f40c04656">dg::blas2::symv</a>(dx, x,y); </div><div class="line"><span class="comment">//or </span></div><div class="line"><a class="code" href="group__blas2.html#gab1885f3913f72b7ea380d58f40c04656">dg::blas2::symv</a>(1., dx, x, 0., y); </div></div><!-- fragment --> 
+<p>This code snippet demonstrates how to derive a function with dG on a device </p><div class="fragment"><div class="line"><span class="keywordtype">double</span> <span class="keyword">function</span>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y){<span class="keywordflow">return</span> exp(x)*exp(y);}</div><div class="line"><a class="code" href="structdg_1_1_grid2d.html">dg::Grid2d</a> g2d( 0, 2, 0, 2, 3, 20, 20);</div><div class="line"><a class="code" href="structdg_1_1_ell_sparse_block_mat_device.html">dg::DMatrix</a> <a class="code" href="group__creation.html#ga486a9f56008435d7403236bae8b511b7">dx</a>;</div><div class="line"><a class="code" href="group__blas2.html#gad55efc77b7320e376b7f00b61ce0dd6e">dg::blas2::transfer</a>( <a class="code" href="group__creation.html#ga486a9f56008435d7403236bae8b511b7">dg::create::dx</a>(g2d), dx);</div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6">dg::DVec</a>  x, y;</div><div class="line"><a class="code" href="group__blas1.html#gad325c39d1994561ee38813a2dde7a46a">dg::blas1::transfer</a>( <a class="code" href="group__evaluation.html#ga7521f4acb4edaf2d7896d99f97e1ed9d">dg::evaluate</a>( <span class="keyword">function</span>, g2d), x);</div><div class="line">y=x;</div><div class="line"><a class="code" href="group__blas2.html#gaa4386168cffcb35e549f44034ee80eb0">dg::blas2::symv</a>(dx, x,y);</div><div class="line"><span class="comment">//or</span></div><div class="line"><a class="code" href="group__blas2.html#gaa4386168cffcb35e549f44034ee80eb0">dg::blas2::symv</a>(1., dx, x, 0., y);</div></div><!-- fragment --> 
 </div>
 </div>
 <a class="anchor" id="ga75b918ad696e7fa7b392ebbbb48b44ba"></a>
@@ -673,49 +763,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga9ef4b2163cd442342f3abffbe06cb9dc"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">RowColDistMat&lt; EllSparseBlockMat&lt;double&gt;, CooSparseBlockMat&lt;double&gt;, NNCH&gt; dg::create::dx </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1a_m_p_i_topology3d.html">aMPITopology3d</a> &amp;&#160;</td>
-          <td class="paramname"><em>g</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a>&#160;</td>
-          <td class="paramname"><em>bcx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__creation.html#gabf9ea3df33484cbb5886e257c3899e48">direction</a>&#160;</td>
-          <td class="paramname"><em>dir</em> = <code><a class="el" href="group__creation.html#ggabf9ea3df33484cbb5886e257c3899e48a6281b4fc609cb723a615662b5adac9df">centered</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create a 3d derivative in the x-direction for mpi. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">g</td><td>A 3D mpi grid </td></tr>
-    <tr><td class="paramname">bcx</td><td>boundary condition </td></tr>
-    <tr><td class="paramname">dir</td><td>centered, forward or backward</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A mpi matrix </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="ga27fbb4abccc5c8d2841b26d6c3f04cf8"></a>
 <div class="memitem">
 <div class="memproto">
@@ -756,6 +803,49 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A host matrix </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga9ef4b2163cd442342f3abffbe06cb9dc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RowColDistMat&lt; EllSparseBlockMat&lt;double&gt;, CooSparseBlockMat&lt;double&gt;, NNCH&gt; dg::create::dx </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1a_m_p_i_topology3d.html">aMPITopology3d</a> &amp;&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a>&#160;</td>
+          <td class="paramname"><em>bcx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__creation.html#gabf9ea3df33484cbb5886e257c3899e48">direction</a>&#160;</td>
+          <td class="paramname"><em>dir</em> = <code><a class="el" href="group__creation.html#ggabf9ea3df33484cbb5886e257c3899e48a6281b4fc609cb723a615662b5adac9df">centered</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a 3d derivative in the x-direction for mpi. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>A 3D mpi grid </td></tr>
+    <tr><td class="paramname">bcx</td><td>boundary condition </td></tr>
+    <tr><td class="paramname">dir</td><td>centered, forward or backward</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A mpi matrix </dd></dl>
 
 </div>
 </div>
@@ -1227,49 +1317,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gaa7f6613df8f5cbb6856f1aa785584b14"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">RowColDistMat&lt; EllSparseBlockMat&lt;double&gt;, CooSparseBlockMat&lt;double&gt;, NNCH&gt; dg::create::dy </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1a_m_p_i_topology3d.html">aMPITopology3d</a> &amp;&#160;</td>
-          <td class="paramname"><em>g</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a>&#160;</td>
-          <td class="paramname"><em>bcy</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__creation.html#gabf9ea3df33484cbb5886e257c3899e48">direction</a>&#160;</td>
-          <td class="paramname"><em>dir</em> = <code><a class="el" href="group__creation.html#ggabf9ea3df33484cbb5886e257c3899e48a6281b4fc609cb723a615662b5adac9df">centered</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create a 3d derivative in the y-direction for mpi. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">g</td><td>A 3D mpi grid </td></tr>
-    <tr><td class="paramname">bcy</td><td>boundary condition </td></tr>
-    <tr><td class="paramname">dir</td><td>centered, forward or backward</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A mpi matrix </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="gadeac84f166375a2490e74b666fae7fcc"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1310,6 +1357,49 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A host matrix </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaa7f6613df8f5cbb6856f1aa785584b14"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RowColDistMat&lt; EllSparseBlockMat&lt;double&gt;, CooSparseBlockMat&lt;double&gt;, NNCH&gt; dg::create::dy </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1a_m_p_i_topology3d.html">aMPITopology3d</a> &amp;&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a>&#160;</td>
+          <td class="paramname"><em>bcy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__creation.html#gabf9ea3df33484cbb5886e257c3899e48">direction</a>&#160;</td>
+          <td class="paramname"><em>dir</em> = <code><a class="el" href="group__creation.html#ggabf9ea3df33484cbb5886e257c3899e48a6281b4fc609cb723a615662b5adac9df">centered</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a 3d derivative in the y-direction for mpi. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>A 3D mpi grid </td></tr>
+    <tr><td class="paramname">bcy</td><td>boundary condition </td></tr>
+    <tr><td class="paramname">dir</td><td>centered, forward or backward</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A mpi matrix </dd></dl>
 
 </div>
 </div>
@@ -1500,49 +1590,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga840dd98c8ecef04193ff5c9043f26b96"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">RowColDistMat&lt; EllSparseBlockMat&lt;double&gt;, CooSparseBlockMat&lt;double&gt;, NNCH&gt; dg::create::dz </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1a_m_p_i_topology3d.html">aMPITopology3d</a> &amp;&#160;</td>
-          <td class="paramname"><em>g</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a>&#160;</td>
-          <td class="paramname"><em>bcz</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__creation.html#gabf9ea3df33484cbb5886e257c3899e48">direction</a>&#160;</td>
-          <td class="paramname"><em>dir</em> = <code><a class="el" href="group__creation.html#ggabf9ea3df33484cbb5886e257c3899e48a6281b4fc609cb723a615662b5adac9df">centered</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create a 3d derivative in the z-direction for mpi. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">g</td><td>A 3D mpi grid </td></tr>
-    <tr><td class="paramname">bcz</td><td>boundary condition </td></tr>
-    <tr><td class="paramname">dir</td><td>centered, forward or backward</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A mpi matrix </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="gaeeab40231c3bdf16a119c85a36c4b1c2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1583,6 +1630,49 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A host matrix </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga840dd98c8ecef04193ff5c9043f26b96"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RowColDistMat&lt; EllSparseBlockMat&lt;double&gt;, CooSparseBlockMat&lt;double&gt;, NNCH&gt; dg::create::dz </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1a_m_p_i_topology3d.html">aMPITopology3d</a> &amp;&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a>&#160;</td>
+          <td class="paramname"><em>bcz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__creation.html#gabf9ea3df33484cbb5886e257c3899e48">direction</a>&#160;</td>
+          <td class="paramname"><em>dir</em> = <code><a class="el" href="group__creation.html#ggabf9ea3df33484cbb5886e257c3899e48a6281b4fc609cb723a615662b5adac9df">centered</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a 3d derivative in the z-direction for mpi. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>A 3D mpi grid </td></tr>
+    <tr><td class="paramname">bcz</td><td>boundary condition </td></tr>
+    <tr><td class="paramname">dir</td><td>centered, forward or backward</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A mpi matrix </dd></dl>
 
 </div>
 </div>
@@ -2298,42 +2388,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gafb7a9937ad496977e89f3a3fc7e07c6e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">RowColDistMat&lt; EllSparseBlockMat&lt;double&gt;, CooSparseBlockMat&lt;double&gt;, NNCH&gt; dg::create::jumpY </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1a_m_p_i_topology2d.html">aMPITopology2d</a> &amp;&#160;</td>
-          <td class="paramname"><em>g</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a>&#160;</td>
-          <td class="paramname"><em>bcy</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create a 2d jump in the y-direction for mpi. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">g</td><td>A 2D mpi grid </td></tr>
-    <tr><td class="paramname">bcy</td><td>boundary condition</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A mpi matrix </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="gaa8821cc7fef08706c90e54f9cfe9888f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2381,6 +2435,42 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A host matrix </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gafb7a9937ad496977e89f3a3fc7e07c6e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RowColDistMat&lt; EllSparseBlockMat&lt;double&gt;, CooSparseBlockMat&lt;double&gt;, NNCH&gt; dg::create::jumpY </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1a_m_p_i_topology2d.html">aMPITopology2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a>&#160;</td>
+          <td class="paramname"><em>bcy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a 2d jump in the y-direction for mpi. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>A 2D mpi grid </td></tr>
+    <tr><td class="paramname">bcy</td><td>boundary condition</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A mpi matrix </dd></dl>
 
 </div>
 </div>
@@ -2757,7 +2847,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 15 2017 10:37:28 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Apr 26 2018 16:28:14 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

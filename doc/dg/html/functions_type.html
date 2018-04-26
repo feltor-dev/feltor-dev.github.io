@@ -38,8 +38,9 @@
   <ul class="tablist"> 
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
-    <li><a href="../../geometries/html/modules.html">geometry</a></li>
+    <li><a href="../../geometries/html/modules.html">geometries</a></li>
     <li><a href="../../file/html/namespacefile.html">file</a></li>
+    <li><a href="../../exblas/html/namespaceexblas.html">exblas</a></li>
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
@@ -105,6 +106,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="#index_c"><span>c</span></a></li>
       <li><a href="#index_d"><span>d</span></a></li>
+      <li><a href="#index_e"><span>e</span></a></li>
       <li><a href="#index_h"><span>h</span></a></li>
       <li><a href="#index_i"><span>i</span></a></li>
       <li><a href="#index_m"><span>m</span></a></li>
@@ -148,6 +150,7 @@ $(document).ready(function(){initNavTree('functions_type.html','');});
 <li>container_type
 : <a class="el" href="structdg_1_1a_communicator.html#acf1b0599056bd3f22b374dcde9b1f213">dg::aCommunicator&lt; LocalContainer &gt;</a>
 , <a class="el" href="structdg_1_1_m_p_i___vector.html#ad42ce5571b198915c6b5c2eb9033ceb3">dg::MPI_Vector&lt; container &gt;</a>
+, <a class="el" href="structdg_1_1_nearest_neighbor_comm.html#a4484a5c5c781ed356d2d38ecc800ddcf">dg::NearestNeighborComm&lt; Index, Vector &gt;</a>
 </li>
 </ul>
 
@@ -167,6 +170,23 @@ $(document).ready(function(){initNavTree('functions_type.html','');});
 </ul>
 
 
+<h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
+<li>execution_policy
+: <a class="el" href="structdg_1_1_vector_traits.html#a36640a1730f740801bea4268202417da">dg::VectorTraits&lt; Vector, Enable &gt;</a>
+, <a class="el" href="structdg_1_1_vector_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1device__memory_01_4_00_01type2fd9c7d236d45ede3961059cc822593c.html#ab6503509cb7afa9e87f732c88742c4a7">dg::VectorTraits&lt; cusp::array1d&lt; T, cusp::device_memory &gt;, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
+, <a class="el" href="structdg_1_1_vector_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1host__memory_01_4_00_01typena4efc5a6fbdee46bba74adb11fff68aef.html#a1bd0ecb15dd935a58bdffc926aafaf6c">dg::VectorTraits&lt; cusp::array1d&lt; T, cusp::host_memory &gt;, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
+, <a class="el" href="structdg_1_1_vector_traits_3_01_m_p_i___vector_3_01container_01_4_01_4.html#aa93dd203053ed6378afc1d54359d4409">dg::VectorTraits&lt; MPI_Vector&lt; container &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_vector_traits_3_01std_1_1array_3_01_t_00_01_n_01_4_00_01typename_01std_1_1enable__i947085c9637afe518f8c17462c31e7cd.html#aa6ba5619929d1bf9fdcfc62f7d4bfaa0">dg::VectorTraits&lt; std::array&lt; T, N &gt;, typename std::enable_if&lt; !std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
+, <a class="el" href="structdg_1_1_vector_traits_3_01std_1_1array_3_01_t_00_01_n_01_4_00_01typename_01std_1_1enable__ibc0fb3900d788c3d588b8e977556fe1b.html#ab70d6d3df51a7aa450dbba792efc49a4">dg::VectorTraits&lt; std::array&lt; T, N &gt;, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
+, <a class="el" href="structdg_1_1_vector_traits_3_01std_1_1vector_3_01_t_01_4_00_01typename_01std_1_1enable__if_3_01_18e011026ce6733c8d30f8e704de47f9.html#ad4e9ea9dd91bf3c87e983d793ddbd4a9">dg::VectorTraits&lt; std::vector&lt; T &gt;, typename std::enable_if&lt; !std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
+, <a class="el" href="structdg_1_1_vector_traits_3_01std_1_1vector_3_01_t_01_4_00_01typename_01std_1_1enable__if_3_01s98893251fa88f88be031143633b3a291.html#a4513ba23fba8531859234a2b462b7837">dg::VectorTraits&lt; std::vector&lt; T &gt;, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
+, <a class="el" href="structdg_1_1_vector_traits_3_01thrust_1_1device__vector_3_01_t_01_4_00_01typename_01std_1_1enabl819ae1a2b234262a5f9638d9b708e39a.html#a9d7f0be5da154777d8468820a25082c1">dg::VectorTraits&lt; thrust::device_vector&lt; T &gt;, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
+, <a class="el" href="structdg_1_1_vector_traits_3_01thrust_1_1host__vector_3_01_t_01_4_00_01typename_01std_1_1enable_f3c30440d1972882f7a9b14f80e4b322.html#a45bb4e695f05a42ab3a8895877f3d246">dg::VectorTraits&lt; thrust::host_vector&lt; T &gt;, typename std::enable_if&lt; !std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
+, <a class="el" href="structdg_1_1_vector_traits_3_01thrust_1_1host__vector_3_01_t_01_4_00_01typename_01std_1_1enable_8b44c94b3f74989a2614e20b7bfd9ecb.html#a62053edbd0cb9c1d6de21b008fc1f3cb">dg::VectorTraits&lt; thrust::host_vector&lt; T &gt;, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
+</li>
+</ul>
+
+
 <h3><a class="anchor" id="index_h"></a>- h -</h3><ul>
 <li>host_vector
 : <a class="el" href="structdg_1_1a_m_p_i_geometry2d.html#ab376c33a066f5f5fd523d53b7112be90">dg::aMPIGeometry2d</a>
@@ -178,14 +198,32 @@ $(document).ready(function(){initNavTree('functions_type.html','');});
 <h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
 <li>IVec
 : <a class="el" href="structdg_1_1_coo_sparse_block_mat.html#af1364d9c406951269b14c6c76ee95022">dg::CooSparseBlockMat&lt; value_type &gt;</a>
-, <a class="el" href="structdg_1_1_ell_sparse_block_mat.html#aba88c63a4f93fd8d50f059640c23a5c3">dg::EllSparseBlockMat&lt; value_type &gt;</a>
+, <a class="el" href="structdg_1_1_ell_sparse_block_mat.html#a40e9077e44ec3d450eb1ee874fb7b638">dg::EllSparseBlockMat&lt; value_type &gt;</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
 <li>matrix_category
-: <a class="el" href="structdg_1_1_matrix_traits.html#a7d636cf20bc105765ca00a3015a869e6">dg::MatrixTraits&lt; Matrix &gt;</a>
+: <a class="el" href="structdg_1_1_matrix_traits.html#a7baad5100b1fa3cd4cc61d4e961154a4">dg::MatrixTraits&lt; Matrix &gt;</a>
+, <a class="el" href="structdg_1_1_matrix_traits_3_01const_01_coo_sparse_block_mat_device_3_01_t_01_4_01_4.html#a3fa00182f4d45ac2ef3ba64972abc5d8">dg::MatrixTraits&lt; const CooSparseBlockMatDevice&lt; T &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_matrix_traits_3_01const_01cusp_1_1array1d_3_01_t_00_01_m_01_4_01_4.html#a55f7026a860c1e012c44e5d1162a0ef0">dg::MatrixTraits&lt; const cusp::array1d&lt; T, M &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_matrix_traits_3_01const_01_ell_sparse_block_mat_device_3_01_t_01_4_01_4.html#a14cb6a4d4592b3527484eec9aa7e4020">dg::MatrixTraits&lt; const EllSparseBlockMatDevice&lt; T &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_matrix_traits_3_01const_01_m_p_i___vector_3_01_t_01_4_01_4.html#a24b2681c8df6161400a4942eacd1fcd4">dg::MatrixTraits&lt; const MPI_Vector&lt; T &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_matrix_traits_3_01const_01_m_p_i_dist_mat_3_01_l_00_01_c_01_4_01_4.html#a6e0c96329623060454926a796c4b4ce4">dg::MatrixTraits&lt; const MPIDistMat&lt; L, C &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_matrix_traits_3_01const_01_row_col_dist_mat_3_01_l_i_00_01_l_o_00_01_c_01_4_01_4.html#a0e6015a46f25d720b1260ad4b4ab6525">dg::MatrixTraits&lt; const RowColDistMat&lt; LI, LO, C &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_matrix_traits_3_01const_01std_1_1vector_3_01_t_01_4_01_4.html#a70c78e95b79fc0250dee3559f6ecd3d8">dg::MatrixTraits&lt; const std::vector&lt; T &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_matrix_traits_3_01const_01thrust_1_1device__vector_3_01_t_01_4_01_4.html#abb724282f454e4b9af4d7c348127a4e9">dg::MatrixTraits&lt; const thrust::device_vector&lt; T &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_matrix_traits_3_01const_01thrust_1_1host__vector_3_01_t_01_4_01_4.html#af14f00e8e8feb7872ff864a199cfa444">dg::MatrixTraits&lt; const thrust::host_vector&lt; T &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_matrix_traits_3_01_coo_sparse_block_mat_device_3_01_t_01_4_01_4.html#ab3415c0233cccb1189dc56c915a2159a">dg::MatrixTraits&lt; CooSparseBlockMatDevice&lt; T &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_matrix_traits_3_01cusp_1_1array1d_3_01_t_00_01_m_01_4_01_4.html#aba171eb49124d4b91277bef3a1d71a8e">dg::MatrixTraits&lt; cusp::array1d&lt; T, M &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_matrix_traits_3_01_ell_sparse_block_mat_device_3_01_t_01_4_01_4.html#a7444904199758c6f07507210cc7dd7d3">dg::MatrixTraits&lt; EllSparseBlockMatDevice&lt; T &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_matrix_traits_3_01_m_p_i___vector_3_01_t_01_4_01_4.html#af02e37fe6d39b8a488005588d333a8e3">dg::MatrixTraits&lt; MPI_Vector&lt; T &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_matrix_traits_3_01_m_p_i_dist_mat_3_01_l_00_01_c_01_4_01_4.html#ad1e77a8b93d2ce83d87d983cb3000da0">dg::MatrixTraits&lt; MPIDistMat&lt; L, C &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_matrix_traits_3_01_row_col_dist_mat_3_01_l_i_00_01_l_o_00_01_c_01_4_01_4.html#a6b916ab2d43eedd92d966253f696777b">dg::MatrixTraits&lt; RowColDistMat&lt; LI, LO, C &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_matrix_traits_3_01std_1_1vector_3_01_t_01_4_01_4.html#a1800a2476ba03a78c165e7d34c5c6150">dg::MatrixTraits&lt; std::vector&lt; T &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_matrix_traits_3_01thrust_1_1device__vector_3_01_t_01_4_01_4.html#aecbfd075fa88c1c7845f19bb71cd9d4a">dg::MatrixTraits&lt; thrust::device_vector&lt; T &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_matrix_traits_3_01thrust_1_1host__vector_3_01_t_01_4_01_4.html#a5bc2fb6f8ee3de949f8c80cbbe9e70c6">dg::MatrixTraits&lt; thrust::host_vector&lt; T &gt; &gt;</a>
 </li>
 <li>memory_category
 : <a class="el" href="structdg_1_1a_m_p_i_topology2d.html#a5dc72392331fd90ed1ce9905bff862d3">dg::aMPITopology2d</a>
@@ -215,12 +253,52 @@ $(document).ready(function(){initNavTree('functions_type.html','');});
 <li>value_type
 : <a class="el" href="classdg_1_1_c_g.html#a803a94eae650d7215c9b82ce5537a6d3">dg::CG&lt; container &gt;</a>
 , <a class="el" href="structdg_1_1_invert.html#ac9b9b4f5149a5b63a797a75bf3ac74d7">dg::Invert&lt; container &gt;</a>
-, <a class="el" href="structdg_1_1_matrix_traits.html#ae6a3cd75b635bd54f1a0006bd232fb06">dg::MatrixTraits&lt; Matrix &gt;</a>
+, <a class="el" href="structdg_1_1_matrix_traits.html#ace2d4db4beada73c4643ae295eec5546">dg::MatrixTraits&lt; Matrix &gt;</a>
+, <a class="el" href="structdg_1_1_matrix_traits_3_01const_01_coo_sparse_block_mat_device_3_01_t_01_4_01_4.html#a757be34dd98c47f2f62ba42048810b92">dg::MatrixTraits&lt; const CooSparseBlockMatDevice&lt; T &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_matrix_traits_3_01const_01cusp_1_1array1d_3_01_t_00_01_m_01_4_01_4.html#a0aaf62330d2370a61b9162e01dd52c9f">dg::MatrixTraits&lt; const cusp::array1d&lt; T, M &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_matrix_traits_3_01const_01_ell_sparse_block_mat_device_3_01_t_01_4_01_4.html#a8c5a96ca61f77eb869b65bcdb2aa9e12">dg::MatrixTraits&lt; const EllSparseBlockMatDevice&lt; T &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_matrix_traits_3_01const_01_m_p_i___vector_3_01_t_01_4_01_4.html#ae84749f49f19b2889d70b4fb59fe3a62">dg::MatrixTraits&lt; const MPI_Vector&lt; T &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_matrix_traits_3_01const_01_m_p_i_dist_mat_3_01_l_00_01_c_01_4_01_4.html#aae5fe0f61bf7f61c72fb6b565ba7feda">dg::MatrixTraits&lt; const MPIDistMat&lt; L, C &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_matrix_traits_3_01const_01_row_col_dist_mat_3_01_l_i_00_01_l_o_00_01_c_01_4_01_4.html#ae84f3702e10c2658d873df8b3eb1945a">dg::MatrixTraits&lt; const RowColDistMat&lt; LI, LO, C &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_matrix_traits_3_01const_01std_1_1vector_3_01_t_01_4_01_4.html#ae6c7ab73c6effae1706f55c4c03269f3">dg::MatrixTraits&lt; const std::vector&lt; T &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_matrix_traits_3_01const_01thrust_1_1device__vector_3_01_t_01_4_01_4.html#a22a59f198e5f2f81c666d586ac964c9f">dg::MatrixTraits&lt; const thrust::device_vector&lt; T &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_matrix_traits_3_01const_01thrust_1_1host__vector_3_01_t_01_4_01_4.html#a37f00013c606e4bfa486d5609f02091a">dg::MatrixTraits&lt; const thrust::host_vector&lt; T &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_matrix_traits_3_01_coo_sparse_block_mat_device_3_01_t_01_4_01_4.html#a575bcd166210a007c2a10b8ebe5c2d06">dg::MatrixTraits&lt; CooSparseBlockMatDevice&lt; T &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_matrix_traits_3_01cusp_1_1array1d_3_01_t_00_01_m_01_4_01_4.html#ac988e3171115c24a2a50e2490263f53e">dg::MatrixTraits&lt; cusp::array1d&lt; T, M &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_matrix_traits_3_01_ell_sparse_block_mat_device_3_01_t_01_4_01_4.html#aabed65f2f2d9767fff2f162886434e81">dg::MatrixTraits&lt; EllSparseBlockMatDevice&lt; T &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_matrix_traits_3_01_m_p_i___vector_3_01_t_01_4_01_4.html#a44561c097a5d38d50f6b9e67b34bb1b4">dg::MatrixTraits&lt; MPI_Vector&lt; T &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_matrix_traits_3_01_m_p_i_dist_mat_3_01_l_00_01_c_01_4_01_4.html#ac60a7f827c2ddb484907b94cdfc3c91b">dg::MatrixTraits&lt; MPIDistMat&lt; L, C &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_matrix_traits_3_01_row_col_dist_mat_3_01_l_i_00_01_l_o_00_01_c_01_4_01_4.html#a354768af4ee9d4ff43c352d75526e044">dg::MatrixTraits&lt; RowColDistMat&lt; LI, LO, C &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_matrix_traits_3_01std_1_1vector_3_01_t_01_4_01_4.html#af851bd62342d0f18ecdc36b08d86e23d">dg::MatrixTraits&lt; std::vector&lt; T &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_matrix_traits_3_01thrust_1_1device__vector_3_01_t_01_4_01_4.html#af5b364ee1df0f59dda81c05eced12425">dg::MatrixTraits&lt; thrust::device_vector&lt; T &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_matrix_traits_3_01thrust_1_1host__vector_3_01_t_01_4_01_4.html#a7906cf2fd4c8057060f1868447a7234e">dg::MatrixTraits&lt; thrust::host_vector&lt; T &gt; &gt;</a>
 , <a class="el" href="classdg_1_1_operator.html#a322ecb3322b51f04d23178d05578cdd9">dg::Operator&lt; T &gt;</a>
-, <a class="el" href="structdg_1_1_vector_traits.html#aa4788e453b0bc2fd93fad653a928c8dd">dg::VectorTraits&lt; Vector &gt;</a>
+, <a class="el" href="structdg_1_1_vector_traits.html#a5759ada53da810dcad30e94a8406bbb7">dg::VectorTraits&lt; Vector, Enable &gt;</a>
+, <a class="el" href="structdg_1_1_vector_traits_3_01const_01_m_p_i___vector_3_01container_01_4_01_4.html#a213bfc6071f8d17b37afa48eab718aef">dg::VectorTraits&lt; const MPI_Vector&lt; container &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_vector_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1device__memory_01_4_00_01type2fd9c7d236d45ede3961059cc822593c.html#a8fb604598612f510c7bba481947310bd">dg::VectorTraits&lt; cusp::array1d&lt; T, cusp::device_memory &gt;, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
+, <a class="el" href="structdg_1_1_vector_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1host__memory_01_4_00_01typena4efc5a6fbdee46bba74adb11fff68aef.html#a92fa74c05a5472211fa5aefc6cd2e4c6">dg::VectorTraits&lt; cusp::array1d&lt; T, cusp::host_memory &gt;, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
+, <a class="el" href="structdg_1_1_vector_traits_3_01_m_p_i___vector_3_01container_01_4_01_4.html#a4aabd79b6965dd91b86553def4f5572a">dg::VectorTraits&lt; MPI_Vector&lt; container &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_vector_traits_3_01std_1_1array_3_01_t_00_01_n_01_4_00_01typename_01std_1_1enable__i947085c9637afe518f8c17462c31e7cd.html#ad558344e00051d5a13d1875c62ce710a">dg::VectorTraits&lt; std::array&lt; T, N &gt;, typename std::enable_if&lt; !std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
+, <a class="el" href="structdg_1_1_vector_traits_3_01std_1_1array_3_01_t_00_01_n_01_4_00_01typename_01std_1_1enable__ibc0fb3900d788c3d588b8e977556fe1b.html#accbb046f622ab6cd941f826718b007b1">dg::VectorTraits&lt; std::array&lt; T, N &gt;, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
+, <a class="el" href="structdg_1_1_vector_traits_3_01std_1_1vector_3_01_t_01_4_00_01typename_01std_1_1enable__if_3_01_18e011026ce6733c8d30f8e704de47f9.html#a6857f701e58c8adca7c270d4ea89f1dc">dg::VectorTraits&lt; std::vector&lt; T &gt;, typename std::enable_if&lt; !std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
+, <a class="el" href="structdg_1_1_vector_traits_3_01std_1_1vector_3_01_t_01_4_00_01typename_01std_1_1enable__if_3_01s98893251fa88f88be031143633b3a291.html#a261197369f006dcdbb0c283c11c4a6a2">dg::VectorTraits&lt; std::vector&lt; T &gt;, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
+, <a class="el" href="structdg_1_1_vector_traits_3_01thrust_1_1device__vector_3_01_t_01_4_00_01typename_01std_1_1enabl819ae1a2b234262a5f9638d9b708e39a.html#a5a4e596ce30b94c0a7ca0188a772be77">dg::VectorTraits&lt; thrust::device_vector&lt; T &gt;, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
+, <a class="el" href="structdg_1_1_vector_traits_3_01thrust_1_1host__vector_3_01_t_01_4_00_01typename_01std_1_1enable_f3c30440d1972882f7a9b14f80e4b322.html#a2627e3f535d7b73765c5c36998e82bda">dg::VectorTraits&lt; thrust::host_vector&lt; T &gt;, typename std::enable_if&lt; !std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
+, <a class="el" href="structdg_1_1_vector_traits_3_01thrust_1_1host__vector_3_01_t_01_4_00_01typename_01std_1_1enable_8b44c94b3f74989a2614e20b7bfd9ecb.html#a3675845226409bc4e0d7c228c93b76fa">dg::VectorTraits&lt; thrust::host_vector&lt; T &gt;, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
 </li>
 <li>vector_category
-: <a class="el" href="structdg_1_1_vector_traits.html#ab36d8078b7e7e128ae7b10e4f4888b60">dg::VectorTraits&lt; Vector &gt;</a>
+: <a class="el" href="structdg_1_1_vector_traits.html#a3ca783c6b06640ed48db127b87dc050a">dg::VectorTraits&lt; Vector, Enable &gt;</a>
+, <a class="el" href="structdg_1_1_vector_traits_3_01const_01_m_p_i___vector_3_01container_01_4_01_4.html#a7e3643cd1bf82d570b5e3ac59f7ac07f">dg::VectorTraits&lt; const MPI_Vector&lt; container &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_vector_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1device__memory_01_4_00_01type2fd9c7d236d45ede3961059cc822593c.html#a57ed052bd8e0ce1f275905f5e8fdb5c6">dg::VectorTraits&lt; cusp::array1d&lt; T, cusp::device_memory &gt;, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
+, <a class="el" href="structdg_1_1_vector_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1host__memory_01_4_00_01typena4efc5a6fbdee46bba74adb11fff68aef.html#a92025e660811bba660c0c195b4e44163">dg::VectorTraits&lt; cusp::array1d&lt; T, cusp::host_memory &gt;, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
+, <a class="el" href="structdg_1_1_vector_traits_3_01_m_p_i___vector_3_01container_01_4_01_4.html#a87b0429bd197027a82943f9f5e95ac7d">dg::VectorTraits&lt; MPI_Vector&lt; container &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_vector_traits_3_01std_1_1array_3_01_t_00_01_n_01_4_00_01typename_01std_1_1enable__i947085c9637afe518f8c17462c31e7cd.html#aca2b45a9029911907936ce94f1755cbd">dg::VectorTraits&lt; std::array&lt; T, N &gt;, typename std::enable_if&lt; !std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
+, <a class="el" href="structdg_1_1_vector_traits_3_01std_1_1array_3_01_t_00_01_n_01_4_00_01typename_01std_1_1enable__ibc0fb3900d788c3d588b8e977556fe1b.html#aa280a2f70bbc6ae6a0b4a191bdadf6e0">dg::VectorTraits&lt; std::array&lt; T, N &gt;, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
+, <a class="el" href="structdg_1_1_vector_traits_3_01std_1_1vector_3_01_t_01_4_00_01typename_01std_1_1enable__if_3_01_18e011026ce6733c8d30f8e704de47f9.html#ae72a4000cc2ba878c095f2368c2587c8">dg::VectorTraits&lt; std::vector&lt; T &gt;, typename std::enable_if&lt; !std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
+, <a class="el" href="structdg_1_1_vector_traits_3_01std_1_1vector_3_01_t_01_4_00_01typename_01std_1_1enable__if_3_01s98893251fa88f88be031143633b3a291.html#acd637cef61bad18fec4bfeaacd52ade4">dg::VectorTraits&lt; std::vector&lt; T &gt;, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
+, <a class="el" href="structdg_1_1_vector_traits_3_01thrust_1_1device__vector_3_01_t_01_4_00_01typename_01std_1_1enabl819ae1a2b234262a5f9638d9b708e39a.html#ab29870855fccd3f8a1f11308d4fb7044">dg::VectorTraits&lt; thrust::device_vector&lt; T &gt;, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
+, <a class="el" href="structdg_1_1_vector_traits_3_01thrust_1_1host__vector_3_01_t_01_4_00_01typename_01std_1_1enable_f3c30440d1972882f7a9b14f80e4b322.html#ac3ee1a65f0d33896199f9ec799817e24">dg::VectorTraits&lt; thrust::host_vector&lt; T &gt;, typename std::enable_if&lt; !std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
+, <a class="el" href="structdg_1_1_vector_traits_3_01thrust_1_1host__vector_3_01_t_01_4_00_01typename_01std_1_1enable_8b44c94b3f74989a2614e20b7bfd9ecb.html#a089a52c2084d054a52ede4564568ac5e">dg::VectorTraits&lt; thrust::host_vector&lt; T &gt;, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -228,7 +306,7 @@ $(document).ready(function(){initNavTree('functions_type.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 15 2017 10:37:29 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Apr 26 2018 16:28:15 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

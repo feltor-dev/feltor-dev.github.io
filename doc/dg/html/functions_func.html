@@ -38,8 +38,9 @@
   <ul class="tablist"> 
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
-    <li><a href="../../geometries/html/modules.html">geometry</a></li>
+    <li><a href="../../geometries/html/modules.html">geometries</a></li>
     <li><a href="../../file/html/namespacefile.html">file</a></li>
+    <li><a href="../../exblas/html/namespaceexblas.html">exblas</a></li>
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
@@ -193,6 +194,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 </li>
 <li>allocate_buffer()
 : <a class="el" href="structdg_1_1a_communicator.html#a0965cd94be50771a5812ab439f2b8f2f">dg::aCommunicator&lt; LocalContainer &gt;</a>
+, <a class="el" href="structdg_1_1_nearest_neighbor_comm.html#aae69e2a327d3122556ae9bd1a1303773">dg::NearestNeighborComm&lt; Index, Vector &gt;</a>
 </li>
 <li>alpha()
 : <a class="el" href="structdg_1_1_helmholtz2.html#a1d121f6cee8f4079c5f09a174a3af2aa">dg::Helmholtz2&lt; Geometry, Matrix, container &gt;</a>
@@ -208,34 +210,38 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 : <a class="el" href="structdg_1_1a_m_p_i_topology2d.html#a3cf33eca5e3d6ca607d1e49b3638974b">dg::aMPITopology2d</a>
 </li>
 <li>aMPITopology3d()
-: <a class="el" href="structdg_1_1a_m_p_i_topology3d.html#a76ca4d836a3f6bbca5b5112f4d4b58cc">dg::aMPITopology3d</a>
+: <a class="el" href="structdg_1_1a_m_p_i_topology3d.html#a569e10cbdc7a0b799cb5e4e08bd07287">dg::aMPITopology3d</a>
 </li>
 <li>aProductGeometry3d()
 : <a class="el" href="structdg_1_1a_product_geometry3d.html#aad17a3d8b1a51cb18cc6a9e4ac84e474">dg::aProductGeometry3d</a>
 </li>
 <li>aProductMPIGeometry3d()
-: <a class="el" href="structdg_1_1a_product_m_p_i_geometry3d.html#aa6fd1856a1ef9895f64573b652bfc55f">dg::aProductMPIGeometry3d</a>
+: <a class="el" href="structdg_1_1a_product_m_p_i_geometry3d.html#ac0d316f0780608a9fbbe4a717b2027e9">dg::aProductMPIGeometry3d</a>
 </li>
 <li>ArakawaX()
 : <a class="el" href="structdg_1_1_arakawa_x.html#a8479e75dfb66ebcdd67b2e6b48aed12b">dg::ArakawaX&lt; Geometry, Matrix, container &gt;</a>
 </li>
 <li>aRefinement1d()
-: <a class="el" href="structdg_1_1a_refinement1d.html#a03b408997049c08c5388b0dbece14dc6">dg::aRefinement1d</a>
+: <a class="el" href="structdg_1_1a_refinement1d.html#a742abd0c2d3c3ba706e779a9dbdc02c8">dg::aRefinement1d</a>
 </li>
 <li>aRefinementX2d()
-: <a class="el" href="structdg_1_1a_refinement_x2d.html#a85259422f1394eea392183b306bf46fc">dg::aRefinementX2d</a>
+: <a class="el" href="structdg_1_1a_refinement_x2d.html#a89e8ce33f4ac1f636135b21aee77fb02">dg::aRefinementX2d</a>
 </li>
 <li>aTopology2d()
-: <a class="el" href="structdg_1_1a_topology2d.html#a424bad3c154d081eb940ff136333f86c">dg::aTopology2d</a>
+: <a class="el" href="structdg_1_1a_topology2d.html#a52f57724785fa26b1f95ad3094643c20">dg::aTopology2d</a>
 </li>
 <li>aTopology3d()
-: <a class="el" href="structdg_1_1a_topology3d.html#a43c71d97d3bcdd46befc9f81a2f3d648">dg::aTopology3d</a>
+: <a class="el" href="structdg_1_1a_topology3d.html#ac8d2ea8c42306e67f5d0fc34f410c7fb">dg::aTopology3d</a>
 </li>
 <li>aTopologyX2d()
-: <a class="el" href="structdg_1_1a_topology_x2d.html#a2956148ec6b634afdf605453332e0716">dg::aTopologyX2d</a>
+: <a class="el" href="structdg_1_1a_topology_x2d.html#a8f5a16677ef7da8396b7978ebb0f12c2">dg::aTopologyX2d</a>
 </li>
 <li>aTopologyX3d()
 : <a class="el" href="structdg_1_1a_topology_x3d.html#af85128bade419d32a57c2daba0ff819d">dg::aTopologyX3d</a>
+</li>
+<li>Average()
+: <a class="el" href="structdg_1_1_average.html#a608b7f3a330debfab5329b8928af255d">dg::Average&lt; container &gt;</a>
+, <a class="el" href="structdg_1_1_average_3_01_m_p_i___vector_3_01container_01_4_01_4.html#a07c7154e79d3c5a232dc762b946f896c">dg::Average&lt; MPI_Vector&lt; container &gt; &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -243,7 +249,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 15 2017 10:37:29 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Apr 26 2018 16:28:15 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

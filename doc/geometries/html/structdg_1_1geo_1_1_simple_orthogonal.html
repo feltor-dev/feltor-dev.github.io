@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Geometry: dg::geo::SimpleOrthogonal Struct Reference</title>
+<title>Geometries: dg::geo::SimpleOrthogonal Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -38,17 +38,18 @@
   <ul class="tablist"> 
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
-    <li><a href="../../geometries/html/modules.html">geometry</a></li>
+    <li><a href="../../geometries/html/modules.html">geometries</a></li>
     <li><a href="../../file/html/namespacefile.html">file</a></li>
+    <li><a href="../../exblas/html/namespaceexblas.html">exblas</a></li>
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Geometry
+   <div id="projectname">Geometries
    </div>
-   <div id="projectbrief">Library for magnetic flux functions, grids and grid generators</div>
+   <div id="projectbrief">Extension with magnetic flux functions, grids and grid generators</div>
   </td>
  </tr>
  </tbody>
@@ -148,6 +149,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aee61c5e84a90f1b758ca4653f43245d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_simple_orthogonal.html#aee61c5e84a90f1b758ca4653f43245d7">SimpleOrthogonal</a> (const <a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl2.html">BinaryFunctorsLvl2</a> &amp;psi, double psi_0, double psi_1, double x0, double y0, int firstline=0)</td></tr>
 <tr class="memdesc:aee61c5e84a90f1b758ca4653f43245d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a simple orthogonal grid.  <a href="#aee61c5e84a90f1b758ca4653f43245d7">More...</a><br /></td></tr>
 <tr class="separator:aee61c5e84a90f1b758ca4653f43245d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5fb6e5b5a1f95d9625f236e07c35e37"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_simple_orthogonal.html#ac5fb6e5b5a1f95d9625f236e07c35e37">SimpleOrthogonal</a> (const <a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl2.html">BinaryFunctorsLvl2</a> &amp;psi, const <a class="el" href="structdg_1_1geo_1_1_binary_symm_tensor_lvl1.html">BinarySymmTensorLvl1</a> &amp;chi, double psi_0, double psi_1, double x0, double y0, int firstline=0)</td></tr>
+<tr class="memdesc:ac5fb6e5b5a1f95d9625f236e07c35e37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a simple orthogonal grid.  <a href="#ac5fb6e5b5a1f95d9625f236e07c35e37">More...</a><br /></td></tr>
+<tr class="separator:ac5fb6e5b5a1f95d9625f236e07c35e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9b406994e4edf5b9b17f676fcd6f47f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_simple_orthogonal.html#ad9b406994e4edf5b9b17f676fcd6f47f">f0</a> () const </td></tr>
 <tr class="memdesc:ad9b406994e4edf5b9b17f676fcd6f47f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The grid constant.  <a href="#ad9b406994e4edf5b9b17f676fcd6f47f">More...</a><br /></td></tr>
 <tr class="separator:ad9b406994e4edf5b9b17f676fcd6f47f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -258,6 +262,84 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ac5fb6e5b5a1f95d9625f236e07c35e37"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dg::geo::SimpleOrthogonal::SimpleOrthogonal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl2.html">BinaryFunctorsLvl2</a> &amp;&#160;</td>
+          <td class="paramname"><em>psi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1geo_1_1_binary_symm_tensor_lvl1.html">BinarySymmTensorLvl1</a> &amp;&#160;</td>
+          <td class="paramname"><em>chi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>psi_0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>psi_1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>firstline</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a simple orthogonal grid. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">psi</td><td>\(\psi(x,y)\) is the flux function and its derivatives in Cartesian coordinates (x,y) </td></tr>
+    <tr><td class="paramname">chi</td><td>is the monitor tensor and its divergenc in Cartesian coordinates (x,y) </td></tr>
+    <tr><td class="paramname">psi_0</td><td>first boundary </td></tr>
+    <tr><td class="paramname">psi_1</td><td>second boundary </td></tr>
+    <tr><td class="paramname">x0</td><td>a point in the inside of the ring bounded by psi0 (shouldn't be the O-point) </td></tr>
+    <tr><td class="paramname">y0</td><td>a point in the inside of the ring bounded by psi0 (shouldn't be the O-point) </td></tr>
+    <tr><td class="paramname">firstline</td><td>This parameter indicates the adaption type used to create the orthogonal grid: 0 is no adaption, 1 is an equalarc adaption </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="af4e9e0fd7e7ab4bbb8f2872b63695916"></a>
 <div class="memitem">
@@ -322,7 +404,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="namespacedg_1_1geo.html">geo</a></li><li class="navelem"><a class="el" href="structdg_1_1geo_1_1_simple_orthogonal.html">SimpleOrthogonal</a></li>
-    <li class="footer">Generated on Wed Nov 15 2017 10:37:33 for Geometry by
+    <li class="footer">Generated on Thu Apr 26 2018 16:28:25 for Geometries by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

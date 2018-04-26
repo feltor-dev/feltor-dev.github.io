@@ -38,8 +38,9 @@
   <ul class="tablist"> 
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
-    <li><a href="../../geometries/html/modules.html">geometry</a></li>
+    <li><a href="../../geometries/html/modules.html">geometries</a></li>
     <li><a href="../../file/html/namespacefile.html">file</a></li>
+    <li><a href="../../exblas/html/namespaceexblas.html">exblas</a></li>
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
@@ -212,7 +213,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2e95b9a668c284fa3262228ac4310904 inherit pub_methods_structdg_1_1a_topology2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_topology2d.html#a2e95b9a668c284fa3262228ac4310904">shift_topologic</a> (double <a class="el" href="structdg_1_1a_topology2d.html#a3b40c025394f50443d24b93035dfc51e">x0</a>, double <a class="el" href="structdg_1_1a_topology2d.html#a9013407c847ed51b70f9e73b5d42d77c">y0</a>, double &amp;<a class="el" href="structdg_1_1a_topology2d.html#a9a6354d37c67bce0c514dee708a9f7fd">x1</a>, double &amp;<a class="el" href="structdg_1_1a_topology2d.html#a2f5046ddad7754b4eafb0787b47373d9">y1</a>) const </td></tr>
 <tr class="memdesc:a2e95b9a668c284fa3262228ac4310904 inherit pub_methods_structdg_1_1a_topology2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shifts point coordinates if periodic.  <a href="#a2e95b9a668c284fa3262228ac4310904">More...</a><br /></td></tr>
 <tr class="separator:a2e95b9a668c284fa3262228ac4310904 inherit pub_methods_structdg_1_1a_topology2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2532c5ce771e987c2871c9b5196340b inherit pub_methods_structdg_1_1a_topology2d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_topology2d.html#ab2532c5ce771e987c2871c9b5196340b">contains</a> (double x, double y) const </td></tr>
+<tr class="memitem:ab2532c5ce771e987c2871c9b5196340b inherit pub_methods_structdg_1_1a_topology2d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_topology2d.html#ab2532c5ce771e987c2871c9b5196340b">contains</a> (double <a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>, double <a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>) const </td></tr>
 <tr class="memdesc:ab2532c5ce771e987c2871c9b5196340b inherit pub_methods_structdg_1_1a_topology2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the grid contains a point.  <a href="#ab2532c5ce771e987c2871c9b5196340b">More...</a><br /></td></tr>
 <tr class="separator:ab2532c5ce771e987c2871c9b5196340b inherit pub_methods_structdg_1_1a_topology2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -241,7 +242,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The simplest implementation of <a class="el" href="structdg_1_1a_topology2d.html" title="An abstract base class for two-dimensional grids. ">aTopology2d</a>. </p>
-<p>This code snippet demonstrates how to discretize and integrate a function with dG </p><div class="fragment"><div class="line"><span class="keywordtype">double</span> <span class="keyword">function</span>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y){<span class="keywordflow">return</span> exp(x)*exp(y);}</div><div class="line"><span class="comment">//...</span></div><div class="line"><a class="code" href="structdg_1_1_grid2d.html">dg::Grid2d</a> g2d( 0, 2, 0, 2, 3, 20, 20);</div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a">dg::HVec</a> w2d = <a class="code" href="group__highlevel.html#ga4c1f33dbb53f54fd6407fa838c15b444">dg::create::weights</a>( g2d);</div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a">dg::HVec</a> h_x = <a class="code" href="group__evaluation.html#ga7521f4acb4edaf2d7896d99f97e1ed9d">dg::evaluate</a>( <span class="keyword">function</span>, g2d);</div><div class="line"><span class="keywordtype">double</span> norm = <a class="code" href="group__blas2.html#gafb2ae8931d3a1f6b27a908c35798defd">dg::blas2::dot</a>( h_x, w2d, h_x); <span class="comment">// norm is now: (exp(4)-exp(0))^2/4</span></div></div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<p>This code snippet demonstrates how to discretize and integrate a function with dG </p><div class="fragment"><div class="line"><span class="keywordtype">double</span> <span class="keyword">function</span>(<span class="keywordtype">double</span> <a class="code" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>, <span class="keywordtype">double</span> <a class="code" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>){<span class="keywordflow">return</span> exp(x)*exp(y);}</div><div class="line"><span class="comment">//...</span></div><div class="line"><a class="code" href="structdg_1_1_grid2d.html">dg::Grid2d</a> g2d( 0, 2, 0, 2, 3, 20, 20);</div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a">dg::HVec</a> w2d = <a class="code" href="group__highlevel.html#ga4c1f33dbb53f54fd6407fa838c15b444">dg::create::weights</a>( g2d);</div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a">dg::HVec</a> h_x = <a class="code" href="group__evaluation.html#ga7521f4acb4edaf2d7896d99f97e1ed9d">dg::evaluate</a>( <span class="keyword">function</span>, g2d);</div><div class="line"><span class="keywordtype">double</span> norm = <a class="code" href="group__blas2.html#gafb2ae8931d3a1f6b27a908c35798defd">dg::blas2::dot</a>( h_x, w2d, h_x); <span class="comment">// norm is now: (exp(4)-exp(0))^2/4</span></div></div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aae333d585b691d23b864a0b65f41b372"></a>
 <div class="memitem">
 <div class="memproto">
@@ -405,7 +406,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>backend/<a class="el" href="grid_8h_source.html">grid.h</a></li>
+<li>geometry/<a class="el" href="grid_8h_source.html">grid.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -413,7 +414,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_grid2d.html">Grid2d</a></li>
-    <li class="footer">Generated on Wed Nov 15 2017 10:37:29 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Apr 26 2018 16:28:15 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

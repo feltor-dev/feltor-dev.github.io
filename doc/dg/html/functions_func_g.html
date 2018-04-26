@@ -38,8 +38,9 @@
   <ul class="tablist"> 
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
-    <li><a href="../../geometries/html/modules.html">geometry</a></li>
+    <li><a href="../../geometries/html/modules.html">geometries</a></li>
     <li><a href="../../file/html/namespacefile.html">file</a></li>
+    <li><a href="../../exblas/html/namespaceexblas.html">exblas</a></li>
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
@@ -193,7 +194,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 , <a class="el" href="structdg_1_1a_refinement_x2d.html#a8b886ba186220333f602d146c316492f">dg::aRefinementX2d</a>
 </li>
 <li>get()
-: <a class="el" href="structdg_1_1_handle.html#acfffc038adad1eb6dd0d3e5e6833c619">dg::Handle&lt; cloneable &gt;</a>
+: <a class="el" href="structdg_1_1_clone_ptr.html#accf0810dfd736c4043d0fc563592084c">dg::ClonePtr&lt; cloneable &gt;</a>
 </li>
 <li>get_dist()
 : <a class="el" href="structdg_1_1_m_p_i_dist_mat.html#a1b742fb7341d4aa6362d2b0eb8545a47">dg::MPIDistMat&lt; LocalMatrix, Collective &gt;</a>
@@ -220,6 +221,9 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 <li>get_pids()
 : <a class="el" href="structdg_1_1_bijective_comm.html#a0f55015d5d78c5e2e10f43ef7b5143b7">dg::BijectiveComm&lt; Index, Vector &gt;</a>
 </li>
+<li>get_poloidal_comm()
+: <a class="el" href="structdg_1_1a_m_p_i_topology2d.html#a8b9ea06e70f188afdcf1ee065731df3d">dg::aMPITopology2d</a>
+</li>
 <li>get_temp()
 : <a class="el" href="structdg_1_1_multi_matrix.html#af108022e382147cf64fdb48992ed4e2f">dg::MultiMatrix&lt; Matrix, container &gt;</a>
 </li>
@@ -243,7 +247,13 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 , <a class="el" href="structdg_1_1a_m_p_i_topology3d.html#a92be21ea57b8be612301124cf15aad2d">dg::aMPITopology3d</a>
 </li>
 <li>global_gather()
-: <a class="el" href="structdg_1_1a_communicator.html#a52871b1c7c450b255b12fe700a86f51e">dg::aCommunicator&lt; LocalContainer &gt;</a>
+: <a class="el" href="structdg_1_1a_communicator.html#aa94021c958a97fca82dde1d224c59df1">dg::aCommunicator&lt; LocalContainer &gt;</a>
+</li>
+<li>global_gather_init()
+: <a class="el" href="structdg_1_1_nearest_neighbor_comm.html#a43d126d48f5c0a82879cbee41207d625">dg::NearestNeighborComm&lt; Index, Vector &gt;</a>
+</li>
+<li>global_gather_wait()
+: <a class="el" href="structdg_1_1_nearest_neighbor_comm.html#ae16ef23a47310459714352db7752a785">dg::NearestNeighborComm&lt; Index, Vector &gt;</a>
 </li>
 <li>global_geometry()
 : <a class="el" href="structdg_1_1a_m_p_i_geometry2d.html#ace7d1651bf0b31c284f612b0af078851">dg::aMPIGeometry2d</a>
@@ -264,22 +274,22 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 : <a class="el" href="structdg_1_1_grid1d.html#a81aec4c46a4512af931fc9a29e0a6407">dg::Grid1d</a>
 </li>
 <li>Grid2d()
-: <a class="el" href="structdg_1_1_grid2d.html#a53cc13783d88a1a92cb51e494bb0703c">dg::Grid2d</a>
+: <a class="el" href="structdg_1_1_grid2d.html#aae333d585b691d23b864a0b65f41b372">dg::Grid2d</a>
 </li>
 <li>Grid3d()
-: <a class="el" href="structdg_1_1_grid3d.html#a40b15c620077c48dce6dac4d12ec3443">dg::Grid3d</a>
+: <a class="el" href="structdg_1_1_grid3d.html#abca04b8133eec135fe353af3bcef712b">dg::Grid3d</a>
 </li>
 <li>grids()
-: <a class="el" href="structdg_1_1_multigrid_c_g2d.html#ad98b50f8e25c7b8b7c4ba3215d191732">dg::MultigridCG2d&lt; Geometry, Matrix, container &gt;</a>
+: <a class="el" href="structdg_1_1_multigrid_c_g2d.html#ac9eb6ac57617d3822c9500806f74582b">dg::MultigridCG2d&lt; Geometry, Matrix, container &gt;</a>
 </li>
 <li>GridX1d()
 : <a class="el" href="structdg_1_1_grid_x1d.html#a89aa4ded1b6d7f1ebb572a6d34f78b4b">dg::GridX1d</a>
 </li>
 <li>GridX2d()
-: <a class="el" href="structdg_1_1_grid_x2d.html#a6d3a3baa034a6d6b7eba02b82dcf2245">dg::GridX2d</a>
+: <a class="el" href="structdg_1_1_grid_x2d.html#a36e8e97726da913a6f9658546eb3581f">dg::GridX2d</a>
 </li>
 <li>GridX3d()
-: <a class="el" href="structdg_1_1_grid_x3d.html#a3d0c1e8f76ec9f064a7881252dc9184e">dg::GridX3d</a>
+: <a class="el" href="structdg_1_1_grid_x3d.html#a41c5b126483561ea4c25b9a4ee9ea3c0">dg::GridX3d</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -287,7 +297,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 15 2017 10:37:29 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Apr 26 2018 16:28:15 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

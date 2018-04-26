@@ -38,8 +38,9 @@
   <ul class="tablist"> 
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
-    <li><a href="../../geometries/html/modules.html">geometry</a></li>
+    <li><a href="../../geometries/html/modules.html">geometries</a></li>
     <li><a href="../../file/html/namespacefile.html">file</a></li>
+    <li><a href="../../exblas/html/namespaceexblas.html">exblas</a></li>
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
@@ -143,7 +144,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae581152b0ede8bb7340f2c860c7e67e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_sparse_tensor.html#ae581152b0ede8bb7340f2c860c7e67e2">SparseTensor</a> (unsigned value_size)</td></tr>
 <tr class="memdesc:ae581152b0ede8bb7340f2c860c7e67e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">reserve space for value_size Ts in the values array  <a href="#ae581152b0ede8bb7340f2c860c7e67e2">More...</a><br /></td></tr>
 <tr class="separator:ae581152b0ede8bb7340f2c860c7e67e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5afd2b7689f1cd539fd1314e34b1d8bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_sparse_tensor.html#a5afd2b7689f1cd539fd1314e34b1d8bf">SparseTensor</a> (const std::vector&lt; T &gt; &amp;<a class="el" href="structdg_1_1_sparse_tensor.html#abd75f00f689505a42a261507a221fb9c">values</a>)</td></tr>
+<tr class="memitem:a5afd2b7689f1cd539fd1314e34b1d8bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_sparse_tensor.html#a5afd2b7689f1cd539fd1314e34b1d8bf">SparseTensor</a> (const std::vector&lt; T &gt; &amp;<a class="el" href="structdg_1_1_sparse_tensor.html#adf4df1180f333e6b9e0430f39f1e4e72">values</a>)</td></tr>
 <tr class="memdesc:a5afd2b7689f1cd539fd1314e34b1d8bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">pass array of Ts  <a href="#a5afd2b7689f1cd539fd1314e34b1d8bf">More...</a><br /></td></tr>
 <tr class="separator:a5afd2b7689f1cd539fd1314e34b1d8bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7081340b2c9d2962dd4850aeb6b40b65"><td class="memTemplParams" colspan="2">template&lt;class OtherT &gt; </td></tr>
@@ -168,9 +169,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab8f9b7f41aef0354ca3b60696c155db9"><td class="memItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_sparse_tensor.html#ab8f9b7f41aef0354ca3b60696c155db9">value</a> (size_t i, size_t j) const </td></tr>
 <tr class="memdesc:ab8f9b7f41aef0354ca3b60696c155db9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read access the underlying T.  <a href="#ab8f9b7f41aef0354ca3b60696c155db9">More...</a><br /></td></tr>
 <tr class="separator:ab8f9b7f41aef0354ca3b60696c155db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ecce9936af1d649b1400ca2e2aa9038"><td class="memItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_sparse_tensor.html#a9ecce9936af1d649b1400ca2e2aa9038">value</a> (size_t i)</td></tr>
-<tr class="memdesc:a9ecce9936af1d649b1400ca2e2aa9038"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the T at given position, default construct one if there isn't one already.  <a href="#a9ecce9936af1d649b1400ca2e2aa9038">More...</a><br /></td></tr>
-<tr class="separator:a9ecce9936af1d649b1400ca2e2aa9038"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf4df1180f333e6b9e0430f39f1e4e72"><td class="memItemLeft" align="right" valign="top">std::vector&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_sparse_tensor.html#adf4df1180f333e6b9e0430f39f1e4e72">values</a> ()</td></tr>
+<tr class="memdesc:adf4df1180f333e6b9e0430f39f1e4e72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return write access to the values array.  <a href="#adf4df1180f333e6b9e0430f39f1e4e72">More...</a><br /></td></tr>
+<tr class="separator:adf4df1180f333e6b9e0430f39f1e4e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd75f00f689505a42a261507a221fb9c"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_sparse_tensor.html#abd75f00f689505a42a261507a221fb9c">values</a> () const </td></tr>
 <tr class="memdesc:abd75f00f689505a42a261507a221fb9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return read access to the values array.  <a href="#abd75f00f689505a42a261507a221fb9c">More...</a><br /></td></tr>
 <tr class="separator:abd75f00f689505a42a261507a221fb9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -338,7 +339,7 @@ template&lt;class OtherT &gt; </div>
 <p>Type conversion from other value types. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">OtherT</td><td><a class="el" href="group__blas1.html#gac47888be3a3f75994f40de9a70d28c9c" title="y=x; Generic way to copy and/or convert a container type to a different container type (e...">dg::blas1::transfer</a> must be callable for T and OtherT </td></tr>
+    <tr><td class="paramname">OtherT</td><td><code><a class="el" href="group__blas1.html#gad325c39d1994561ee38813a2dde7a46a" title="y=x; Generic way to copy/construct and/or convert a container type from a different container type (e...">dg::blas1::transfer</a></code> must be callable for <code>T</code> and <code>OtherT</code> </td></tr>
   </table>
   </dd>
 </dl>
@@ -468,7 +469,7 @@ template&lt;class T&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>-1 if !isSet(i,j), index into values array else </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>-1 if <code>!isSet</code>(i,j), index into values array else </dd></dl>
 
 </div>
 </div>
@@ -507,7 +508,7 @@ template&lt;class T&gt; </div>
 </div><div class="memdoc">
 
 <p>write index into the values array at the given position </p>
-<p>use this and the <a class="el" href="structdg_1_1_sparse_tensor.html#ab8f9b7f41aef0354ca3b60696c155db9" title="Read access the underlying T. ">value()</a> member to assemble the tensor </p><dl class="params"><dt>Parameters</dt><dd>
+<p>use this and the <code><a class="el" href="structdg_1_1_sparse_tensor.html#adf4df1180f333e6b9e0430f39f1e4e72" title="Return write access to the values array. ">values()</a></code> member to assemble the tensor </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">i</td><td>row index 0&lt;=i&lt;3 </td></tr>
     <tr><td class="paramname">j</td><td>col index 0&lt;=j&lt;3 </td></tr>
@@ -672,7 +673,7 @@ template&lt;class T&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if T is non-empty, false if value is assumed implicitly </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if <code>T</code> is non-empty, false if value is assumed implicitly </dd></dl>
 
 </div>
 </div>
@@ -833,7 +834,7 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a9ecce9936af1d649b1400ca2e2aa9038"></a>
+<a class="anchor" id="adf4df1180f333e6b9e0430f39f1e4e72"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -843,10 +844,9 @@ template&lt;class T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">T&amp; <a class="el" href="structdg_1_1_sparse_tensor.html">dg::SparseTensor</a>&lt; T &gt;::value </td>
+          <td class="memname">std::vector&lt;T&gt;&amp; <a class="el" href="structdg_1_1_sparse_tensor.html">dg::SparseTensor</a>&lt; T &gt;::values </td>
           <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>i</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -857,14 +857,8 @@ template&lt;class T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Return the T at given position, default construct one if there isn't one already. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">i</td><td>index into the values array </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>always returns a T </dd></dl>
+<p>Return write access to the values array. </p>
+<dl class="section return"><dt>Returns</dt><dd>write access to values array </dd></dl>
 
 </div>
 </div>
@@ -905,7 +899,7 @@ template&lt;class T&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a></li>
-    <li class="footer">Generated on Wed Nov 15 2017 10:37:29 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Apr 26 2018 16:28:15 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

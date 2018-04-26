@@ -68,20 +68,28 @@ var group__mpi__structures =
       [ "MPI_Vector", "structdg_1_1_m_p_i___vector.html#ab79c8907a64d91971c63f1542df07f04", null ],
       [ "MPI_Vector", "structdg_1_1_m_p_i___vector.html#a896368bf40dca6d0e3c860c1875406ca", null ],
       [ "communicator", "structdg_1_1_m_p_i___vector.html#a77541670d6003db3dae5ea3c626870c4", null ],
-      [ "communicator", "structdg_1_1_m_p_i___vector.html#a7333d65d51c13784bc280b89db2b2ef8", null ],
+      [ "communicator_mod", "structdg_1_1_m_p_i___vector.html#a965a9757d99e9c869d2a2cf25fbc2256", null ],
+      [ "communicator_mod_reduce", "structdg_1_1_m_p_i___vector.html#a939754285035f8cd314ffc0e7459f349", null ],
       [ "data", "structdg_1_1_m_p_i___vector.html#ae537fd21bda75f32afcf3d0eb2e782ea", null ],
       [ "data", "structdg_1_1_m_p_i___vector.html#a2102f399a256c19e86f6d599d561e7fb", null ],
+      [ "set_communicator", "structdg_1_1_m_p_i___vector.html#aca96f102ec953e04b5fd0151bdf17b1b", null ],
       [ "size", "structdg_1_1_m_p_i___vector.html#aaf8b846a0196833afef45c0469d506d4", null ],
       [ "swap", "structdg_1_1_m_p_i___vector.html#ae86c14f9d503831fbe96ced377a37013", null ]
     ] ],
     [ "NearestNeighborComm", "structdg_1_1_nearest_neighbor_comm.html", [
+      [ "container_type", "structdg_1_1_nearest_neighbor_comm.html#a4484a5c5c781ed356d2d38ecc800ddcf", null ],
       [ "NearestNeighborComm", "structdg_1_1_nearest_neighbor_comm.html#a5ec314af366d32c870272005b8f38b3e", null ],
       [ "NearestNeighborComm", "structdg_1_1_nearest_neighbor_comm.html#a7f5be505eeed3a9cc72497c05e5cfc66", null ],
       [ "NearestNeighborComm", "structdg_1_1_nearest_neighbor_comm.html#a29afb9b75b076d8e3ac1d86bd5a460d4", null ],
-      [ "clone", "structdg_1_1_nearest_neighbor_comm.html#a4e8e3679f88ac7257d9abc9fbb7cfdc3", null ],
+      [ "allocate_buffer", "structdg_1_1_nearest_neighbor_comm.html#aae69e2a327d3122556ae9bd1a1303773", null ],
+      [ "communicator", "structdg_1_1_nearest_neighbor_comm.html#af66764f2258a99dc8362548dde0bd2b8", null ],
       [ "dims", "structdg_1_1_nearest_neighbor_comm.html#acd1cd432552d61acf86aa51cc9e546ad", null ],
       [ "direction", "structdg_1_1_nearest_neighbor_comm.html#a226ab76e492769018e66e33a2076848a", null ],
-      [ "n", "structdg_1_1_nearest_neighbor_comm.html#a316962ff56b6f953c834219c6b9930fb", null ]
+      [ "global_gather_init", "structdg_1_1_nearest_neighbor_comm.html#a43d126d48f5c0a82879cbee41207d625", null ],
+      [ "global_gather_wait", "structdg_1_1_nearest_neighbor_comm.html#ae16ef23a47310459714352db7752a785", null ],
+      [ "isCommunicating", "structdg_1_1_nearest_neighbor_comm.html#a2102fcfc69f5e35a0d4e0343b2fc51cc", null ],
+      [ "n", "structdg_1_1_nearest_neighbor_comm.html#a316962ff56b6f953c834219c6b9930fb", null ],
+      [ "size", "structdg_1_1_nearest_neighbor_comm.html#a6898867636891d3a989f64871add05a1", null ]
     ] ],
     [ "dist_type", "group__mpi__structures.html#ga521b6d6524a6d391c746ddc9a1ad5571", [
       [ "row_dist", "group__mpi__structures.html#gga521b6d6524a6d391c746ddc9a1ad5571a99ba8c51e9d19b4535a343c4b471a562", null ],

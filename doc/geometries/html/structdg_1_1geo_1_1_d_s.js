@@ -2,8 +2,8 @@ var structdg_1_1geo_1_1_d_s =
 [
     [ "FA", "structdg_1_1geo_1_1_d_s.html#ac83f7ebb7593a8739c9ea0585cd7d0de", null ],
     [ "DS", "structdg_1_1geo_1_1_d_s.html#aea274cabb48d6b0b2808951fcd845e99", null ],
-    [ "DS", "structdg_1_1geo_1_1_d_s.html#a6a0daa0e8cbf7cf4226ef676f9d4fc24", null ],
-    [ "DS", "structdg_1_1geo_1_1_d_s.html#a86dfe6c0a366d6338d9f771765d0c145", null ],
+    [ "DS", "structdg_1_1geo_1_1_d_s.html#a1bc6775cb33544a79f1e8037f283e0a8", null ],
+    [ "DS", "structdg_1_1geo_1_1_d_s.html#a5ebaed8638267fbaedc29968bfc3219b", null ],
     [ "DS", "structdg_1_1geo_1_1_d_s.html#a215b83e9c29b7ba8af530aeee91d895c", null ],
     [ "backward", "structdg_1_1geo_1_1_d_s.html#a515d0bfa7ff3e56ddd7073f94e00d821", null ],
     [ "backward", "structdg_1_1geo_1_1_d_s.html#a0ec3cea560d6cbbafd6a229deeef6036", null ],

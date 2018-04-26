@@ -4,7 +4,7 @@ var classdg_1_1_operator =
     [ "Operator", "classdg_1_1_operator.html#af341daeacc03a69bacaaf2335cd6f228", null ],
     [ "Operator", "classdg_1_1_operator.html#a55e6f171312dcb8c5ffb11dc2afc7b7b", null ],
     [ "Operator", "classdg_1_1_operator.html#aea27e076660f16ed925b3460aff2a43f", null ],
-    [ "Operator", "classdg_1_1_operator.html#afd7740c4acea7bfe7b89a24e9a0d02c6", null ],
+    [ "Operator", "classdg_1_1_operator.html#a74ad9246d163debc2ed5faa83c9a2eb8", null ],
     [ "Operator", "classdg_1_1_operator.html#a1eaf0ce3926e91737bf45681aa751618", null ],
     [ "data", "classdg_1_1_operator.html#aded4a0f505742b9b4afd2db0822c1e7d", null ],
     [ "operator!=", "classdg_1_1_operator.html#ab8fac175514f51f5a4102f5849e3ecbb", null ],

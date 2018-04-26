@@ -1,33 +1,11 @@
 var group__lowlevel =
 [
-    [ "Handle", "structdg_1_1_handle.html", [
-      [ "Handle", "structdg_1_1_handle.html#ab414fec7e503494559edfd4470403fee", null ],
-      [ "Handle", "structdg_1_1_handle.html#ab8f6e80ea5a6ca29a6bdce5c208dc8b5", null ],
-      [ "Handle", "structdg_1_1_handle.html#a19c0078db7173c58df1d1a37a2c6d979", null ],
-      [ "Handle", "structdg_1_1_handle.html#a78bc8971209914b7d2b0a9d35c7b0900", null ],
-      [ "~Handle", "structdg_1_1_handle.html#ace8d33ef84013e958ad285c74d2d8973", null ],
-      [ "clear", "structdg_1_1_handle.html#ab85d23fa56826a240d8feff8d079f39b", null ],
-      [ "get", "structdg_1_1_handle.html#acfffc038adad1eb6dd0d3e5e6833c619", null ],
-      [ "get", "structdg_1_1_handle.html#a2cb9150d550553cfe2529c9e2fb07089", null ],
-      [ "operator=", "structdg_1_1_handle.html#af95a5d88ad36c94940b7ac3bb25a885a", null ],
-      [ "reset", "structdg_1_1_handle.html#a2261c1849b6b98671160db5a32a684c6", null ],
-      [ "reset", "structdg_1_1_handle.html#af8fb58c6e4b9ddbb4f5e3fb236622407", null ],
-      [ "swap", "structdg_1_1_handle.html#a4525fb8374f5d7c273b699c36da54fe2", null ]
-    ] ],
-    [ "Buffer", "structdg_1_1_buffer.html", [
-      [ "Buffer", "structdg_1_1_buffer.html#a93b106d096d72f7f33f21d4bef98f6ab", null ],
-      [ "Buffer", "structdg_1_1_buffer.html#a0cc9848bc155bebc044924b580e3010f", null ],
-      [ "~Buffer", "structdg_1_1_buffer.html#a5331276000ae01418b1d2f8de29e5f3f", null ],
-      [ "Buffer", "structdg_1_1_buffer.html#a79b6353e9e9bc00464e119f2bb1fe6ab", null ],
-      [ "data", "structdg_1_1_buffer.html#a343d9abbc7a1940f3ea68bb395c6ab02", null ],
-      [ "operator=", "structdg_1_1_buffer.html#a35be9098873a72a3a51ea92cd113b30b", null ]
-    ] ],
     [ "Operator", "classdg_1_1_operator.html", [
       [ "value_type", "classdg_1_1_operator.html#a322ecb3322b51f04d23178d05578cdd9", null ],
       [ "Operator", "classdg_1_1_operator.html#af341daeacc03a69bacaaf2335cd6f228", null ],
       [ "Operator", "classdg_1_1_operator.html#a55e6f171312dcb8c5ffb11dc2afc7b7b", null ],
       [ "Operator", "classdg_1_1_operator.html#aea27e076660f16ed925b3460aff2a43f", null ],
-      [ "Operator", "classdg_1_1_operator.html#afd7740c4acea7bfe7b89a24e9a0d02c6", null ],
+      [ "Operator", "classdg_1_1_operator.html#a74ad9246d163debc2ed5faa83c9a2eb8", null ],
       [ "Operator", "classdg_1_1_operator.html#a1eaf0ce3926e91737bf45681aa751618", null ],
       [ "data", "classdg_1_1_operator.html#aded4a0f505742b9b4afd2db0822c1e7d", null ],
       [ "operator!=", "classdg_1_1_operator.html#ab8fac175514f51f5a4102f5849e3ecbb", null ],
@@ -50,6 +28,31 @@ var group__lowlevel =
       [ "operator-", "classdg_1_1_operator.html#a18222a08be1b4ab3ff9acc121cd428d3", null ],
       [ "operator<<", "classdg_1_1_operator.html#ab833a82581c61a865606131e274b11c7", null ],
       [ "operator>>", "classdg_1_1_operator.html#a48552daaed7c7274884efa19e3985e0a", null ]
+    ] ],
+    [ "ClonePtr", "structdg_1_1_clone_ptr.html", [
+      [ "ClonePtr", "structdg_1_1_clone_ptr.html#aedaac1678cd61e8d9c70cbdbf7aea559", null ],
+      [ "ClonePtr", "structdg_1_1_clone_ptr.html#ab8e1510a5566577ecfb89b33f0135770", null ],
+      [ "ClonePtr", "structdg_1_1_clone_ptr.html#ad70a310ec7a06b0674ac53ee75b53d43", null ],
+      [ "ClonePtr", "structdg_1_1_clone_ptr.html#a2259a67e980312184c58c2db7faeddf3", null ],
+      [ "ClonePtr", "structdg_1_1_clone_ptr.html#aa25b7a154336474ae659bb44455dca56", null ],
+      [ "~ClonePtr", "structdg_1_1_clone_ptr.html#a2c7b2642e761259b51c515daa48b14a0", null ],
+      [ "clear", "structdg_1_1_clone_ptr.html#a54641291df1c52ad84136398542dadb9", null ],
+      [ "get", "structdg_1_1_clone_ptr.html#accf0810dfd736c4043d0fc563592084c", null ],
+      [ "get", "structdg_1_1_clone_ptr.html#acf91907eeee7144442339d1900102135", null ],
+      [ "operator=", "structdg_1_1_clone_ptr.html#a079af556922b25988dbf17317adf6652", null ],
+      [ "reset", "structdg_1_1_clone_ptr.html#acd4052fe40cade6f97725e8a9f6b2151", null ],
+      [ "reset", "structdg_1_1_clone_ptr.html#a418b909ca7f63d01820f10bdf7512627", null ],
+      [ "swap", "structdg_1_1_clone_ptr.html#a3e0596ce856d7b34ded6edffc029160a", null ]
+    ] ],
+    [ "Buffer", "structdg_1_1_buffer.html", [
+      [ "Buffer", "structdg_1_1_buffer.html#a93b106d096d72f7f33f21d4bef98f6ab", null ],
+      [ "Buffer", "structdg_1_1_buffer.html#a0cc9848bc155bebc044924b580e3010f", null ],
+      [ "Buffer", "structdg_1_1_buffer.html#a79b6353e9e9bc00464e119f2bb1fe6ab", null ],
+      [ "Buffer", "structdg_1_1_buffer.html#af158ef3ec9ed17d633eb1f4de8991c21", null ],
+      [ "~Buffer", "structdg_1_1_buffer.html#a5331276000ae01418b1d2f8de29e5f3f", null ],
+      [ "data", "structdg_1_1_buffer.html#a343d9abbc7a1940f3ea68bb395c6ab02", null ],
+      [ "operator=", "structdg_1_1_buffer.html#a4f8c9eaf193ea924e0b0d5f00714d71f", null ],
+      [ "swap", "structdg_1_1_buffer.html#a77b37f821795a58fa87151292d05dc68", null ]
     ] ],
     [ "delta", "group__lowlevel.html#ga5240e4a7a0ed5e0185c05f8223de9466", null ],
     [ "dgtensor", "group__lowlevel.html#gaee60d8f4c31af0180d3a4aea0e301ea9", null ],

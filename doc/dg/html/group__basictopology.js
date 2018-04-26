@@ -149,6 +149,7 @@ var group__basictopology =
       [ "display", "structdg_1_1a_m_p_i_topology2d.html#a1168c699cc3373b6ac5622af08786733", null ],
       [ "dlt", "structdg_1_1a_m_p_i_topology2d.html#a78b58d3029b332b2be8fe8e7f152fd7a", null ],
       [ "do_set", "structdg_1_1a_m_p_i_topology2d.html#ae4616e1cd8c87598aec7d8d0d95a2597", null ],
+      [ "get_poloidal_comm", "structdg_1_1a_m_p_i_topology2d.html#a8b9ea06e70f188afdcf1ee065731df3d", null ],
       [ "global", "structdg_1_1a_m_p_i_topology2d.html#accc4614a7a9946d09221461979f5b8e0", null ],
       [ "global2localIdx", "structdg_1_1a_m_p_i_topology2d.html#a1581d96dca0aceefd24742056a0c982f", null ],
       [ "hx", "structdg_1_1a_m_p_i_topology2d.html#a6756255527d688928ac3355df1a92c94", null ],

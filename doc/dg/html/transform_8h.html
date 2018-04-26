@@ -38,8 +38,9 @@
   <ul class="tablist"> 
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
-    <li><a href="../../geometries/html/modules.html">geometry</a></li>
+    <li><a href="../../geometries/html/modules.html">geometries</a></li>
     <li><a href="../../file/html/namespacefile.html">file</a></li>
+    <li><a href="../../exblas/html/namespaceexblas.html">exblas</a></li>
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
@@ -168,14 +169,14 @@ Functions</h2></td></tr>
 <tr class="memitem:gae217bca44c066edc7bfb66a1786d7265"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__pullback.html#gae217bca44c066edc7bfb66a1786d7265">dg::pushForwardPerp</a> (const FunctorRR &amp;chiRR, const FunctorRZ &amp;chiRZ, const FunctorZZ &amp;chiZZ, container &amp;chixx, container &amp;chixy, container &amp;chiyy, const Geometry &amp;g)</td></tr>
 <tr class="memdesc:gae217bca44c066edc7bfb66a1786d7265"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push forward a symmetric 2d tensor from cylindrical or Cartesian to a new coordinate system.  <a href="group__pullback.html#gae217bca44c066edc7bfb66a1786d7265">More...</a><br /></td></tr>
 <tr class="separator:gae217bca44c066edc7bfb66a1786d7265"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3d9e4907396358c768142920a885c79e"><td class="memTemplParams" colspan="2">template&lt;class Geometry &gt; </td></tr>
-<tr class="memitem:ga3d9e4907396358c768142920a885c79e"><td class="memTemplItemLeft" align="right" valign="top">GeometryTraits&lt; Geometry &gt;::host_vector&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__metric.html#ga3d9e4907396358c768142920a885c79e">dg::create::inv_volume</a> (const Geometry &amp;g)</td></tr>
-<tr class="memdesc:ga3d9e4907396358c768142920a885c79e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the inverse volume element on the grid (including weights!!)  <a href="group__metric.html#ga3d9e4907396358c768142920a885c79e">More...</a><br /></td></tr>
-<tr class="separator:ga3d9e4907396358c768142920a885c79e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae72c79000e75c2672e234584bdd8239b"><td class="memTemplParams" colspan="2">template&lt;class Geometry &gt; </td></tr>
-<tr class="memitem:gae72c79000e75c2672e234584bdd8239b"><td class="memTemplItemLeft" align="right" valign="top">GeometryTraits&lt; Geometry &gt;::host_vector&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__metric.html#gae72c79000e75c2672e234584bdd8239b">dg::create::volume</a> (const Geometry &amp;g)</td></tr>
-<tr class="memdesc:gae72c79000e75c2672e234584bdd8239b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the volume element on the grid (including weights!!)  <a href="group__metric.html#gae72c79000e75c2672e234584bdd8239b">More...</a><br /></td></tr>
-<tr class="separator:gae72c79000e75c2672e234584bdd8239b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7d584bb41e0d20ee832296fd71d8cf3b"><td class="memTemplParams" colspan="2">template&lt;class Geometry &gt; </td></tr>
+<tr class="memitem:ga7d584bb41e0d20ee832296fd71d8cf3b"><td class="memTemplItemLeft" align="right" valign="top">get_host_vector&lt; Geometry &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__metric.html#ga7d584bb41e0d20ee832296fd71d8cf3b">dg::create::inv_volume</a> (const Geometry &amp;g)</td></tr>
+<tr class="memdesc:ga7d584bb41e0d20ee832296fd71d8cf3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the inverse volume element on the grid (including weights!!)  <a href="group__metric.html#ga7d584bb41e0d20ee832296fd71d8cf3b">More...</a><br /></td></tr>
+<tr class="separator:ga7d584bb41e0d20ee832296fd71d8cf3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3c86995e21edbffbde353246289b503a"><td class="memTemplParams" colspan="2">template&lt;class Geometry &gt; </td></tr>
+<tr class="memitem:ga3c86995e21edbffbde353246289b503a"><td class="memTemplItemLeft" align="right" valign="top">get_host_vector&lt; Geometry &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__metric.html#ga3c86995e21edbffbde353246289b503a">dg::create::volume</a> (const Geometry &amp;g)</td></tr>
+<tr class="memdesc:ga3c86995e21edbffbde353246289b503a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the volume element on the grid (including weights!!)  <a href="group__metric.html#ga3c86995e21edbffbde353246289b503a">More...</a><br /></td></tr>
+<tr class="separator:ga3c86995e21edbffbde353246289b503a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -183,7 +184,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e3380d2178455503f266746fb14246a5.html">geometry</a></li><li class="navelem"><a class="el" href="transform_8h.html">transform.h</a></li>
-    <li class="footer">Generated on Wed Nov 15 2017 10:37:28 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Apr 26 2018 16:28:14 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

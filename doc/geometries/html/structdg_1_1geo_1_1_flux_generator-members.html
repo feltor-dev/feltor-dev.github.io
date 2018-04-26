@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Geometry: Member List</title>
+<title>Geometries: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -38,17 +38,18 @@
   <ul class="tablist"> 
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
-    <li><a href="../../geometries/html/modules.html">geometry</a></li>
+    <li><a href="../../geometries/html/modules.html">geometries</a></li>
     <li><a href="../../file/html/namespacefile.html">file</a></li>
+    <li><a href="../../exblas/html/namespaceexblas.html">exblas</a></li>
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Geometry
+   <div id="projectname">Geometries
    </div>
-   <div id="projectbrief">Library for magnetic flux functions, grids and grid generators</div>
+   <div id="projectbrief">Extension with magnetic flux functions, grids and grid generators</div>
   </td>
  </tr>
  </tbody>
@@ -132,7 +133,7 @@ $(document).ready(function(){initNavTree('structdg_1_1geo_1_1_flux_generator.htm
   <tr class="even"><td class="entry"><a class="el" href="structdg_1_1geo_1_1a_generator2d.html#a1ba45e17451a791fe32bdf64a15d42b0">aGenerator2d</a>()</td><td class="entry"><a class="el" href="structdg_1_1geo_1_1a_generator2d.html">dg::geo::aGenerator2d</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="structdg_1_1geo_1_1a_generator2d.html#acbcab00c8b85625ac0a0ebd72b1ae3f3">aGenerator2d</a>(const aGenerator2d &amp;)</td><td class="entry"><a class="el" href="structdg_1_1geo_1_1a_generator2d.html">dg::geo::aGenerator2d</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="structdg_1_1geo_1_1_flux_generator.html#ad6f19c9f893b4ddd9bd457d5268cc2a3">clone</a>() const </td><td class="entry"><a class="el" href="structdg_1_1geo_1_1_flux_generator.html">dg::geo::FluxGenerator</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structdg_1_1geo_1_1_flux_generator.html#ab83afe3caef4094d8f0416139eb274fb">FluxGenerator</a>(const BinaryFunctorsLvl2 &amp;psi, const BinaryFunctorsLvl1 &amp;ipol, double psi_0, double psi_1, double x0, double y0, int mode=0)</td><td class="entry"><a class="el" href="structdg_1_1geo_1_1_flux_generator.html">dg::geo::FluxGenerator</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="structdg_1_1geo_1_1_flux_generator.html#a2a79a7f6af03e5735efa398e94ea05d0">FluxGenerator</a>(const BinaryFunctorsLvl2 &amp;psi, const BinaryFunctorsLvl1 &amp;ipol, double psi_0, double psi_1, double x0, double y0, int mode=0, bool verbose=false)</td><td class="entry"><a class="el" href="structdg_1_1geo_1_1_flux_generator.html">dg::geo::FluxGenerator</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="structdg_1_1geo_1_1a_generator2d.html#a0bc80d9c5eaf5cfad5542d51fd631fd7">generate</a>(const thrust::host_vector&lt; double &gt; &amp;zeta1d, const thrust::host_vector&lt; double &gt; &amp;eta1d, thrust::host_vector&lt; double &gt; &amp;x, thrust::host_vector&lt; double &gt; &amp;y, thrust::host_vector&lt; double &gt; &amp;zetaX, thrust::host_vector&lt; double &gt; &amp;zetaY, thrust::host_vector&lt; double &gt; &amp;etaX, thrust::host_vector&lt; double &gt; &amp;etaY) const </td><td class="entry"><a class="el" href="structdg_1_1geo_1_1a_generator2d.html">dg::geo::aGenerator2d</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="structdg_1_1geo_1_1a_generator2d.html#ae0ee95047448bdf9cb095c857c42b192">height</a>() const </td><td class="entry"><a class="el" href="structdg_1_1geo_1_1a_generator2d.html">dg::geo::aGenerator2d</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="structdg_1_1geo_1_1a_generator2d.html#a9a51fb8d2bd13a3a34581da641621404">isOrthogonal</a>() const </td><td class="entry"><a class="el" href="structdg_1_1geo_1_1a_generator2d.html">dg::geo::aGenerator2d</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
@@ -144,7 +145,7 @@ $(document).ready(function(){initNavTree('structdg_1_1geo_1_1_flux_generator.htm
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 15 2017 10:37:33 for Geometry by
+    <li class="footer">Generated on Thu Apr 26 2018 16:28:25 for Geometries by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

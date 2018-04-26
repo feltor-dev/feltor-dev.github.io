@@ -3,26 +3,6 @@ var group__misc =
     [ "Timer class", "group__timer.html", "group__timer" ],
     [ "Functions and Functors", "group__functions.html", "group__functions" ],
     [ "Lowlevel helper functions and classes", "group__lowlevel.html", "group__lowlevel" ],
-    [ "Message", "classdg_1_1_message.html", [
-      [ "Message", "classdg_1_1_message.html#a98f87ba7128a8fe526fd069c9f29e633", null ],
-      [ "Message", "classdg_1_1_message.html#a730b994556024a4136f6f686bd6ed416", null ],
-      [ "Message", "classdg_1_1_message.html#aed304046de640c58433eacba67fca85a", null ],
-      [ "~Message", "classdg_1_1_message.html#af882d452d44235589e47e1b5f769efc7", null ],
-      [ "operator<<", "classdg_1_1_message.html#a06601cca23e44b07fa3d799f806a8339", null ],
-      [ "str", "classdg_1_1_message.html#a005d881db30709122d85d1b7f61e5bfb", null ],
-      [ "operator<<", "classdg_1_1_message.html#a614c98fe65726d2e34adfb8fffc52f5f", null ]
-    ] ],
-    [ "Error", "classdg_1_1_error.html", [
-      [ "Error", "classdg_1_1_error.html#a3a53f1d422d8fe4d49b63e28028138cf", null ],
-      [ "~Error", "classdg_1_1_error.html#aa128e2a9c314f3685b90968a7182e373", null ],
-      [ "what", "classdg_1_1_error.html#a69024ebcc57c6aebf84715ccf1856841", null ]
-    ] ],
-    [ "Fail", "structdg_1_1_fail.html", [
-      [ "Fail", "structdg_1_1_fail.html#acbccb1ec26460accff6fe8ae47fb9cef", null ],
-      [ "~Fail", "structdg_1_1_fail.html#ab661a6c4e4c56ac2136e787f797396dd", null ],
-      [ "epsilon", "structdg_1_1_fail.html#a526158d66c83dbee6a33f72d5b780486", null ],
-      [ "what", "structdg_1_1_fail.html#ad3d7c1cd0eb04c8526c2c00cf9de6a77", null ]
-    ] ],
     [ "MultiMatrix", "structdg_1_1_multi_matrix.html", [
       [ "MultiMatrix", "structdg_1_1_multi_matrix.html#a10741f319537445e2c920fff59adc1cb", null ],
       [ "MultiMatrix", "structdg_1_1_multi_matrix.html#a4629c459fbc7956456e19e2da6b8fdcc", null ],
@@ -63,7 +43,7 @@ var group__misc =
       [ "transpose", "structdg_1_1_sparse_tensor.html#a05ee7c8d9d532cdf52fecc0cb5ab30b4", null ],
       [ "unset", "structdg_1_1_sparse_tensor.html#ad929e1e39f1a925475475cdcea1542d9", null ],
       [ "value", "structdg_1_1_sparse_tensor.html#ab8f9b7f41aef0354ca3b60696c155db9", null ],
-      [ "value", "structdg_1_1_sparse_tensor.html#a9ecce9936af1d649b1400ca2e2aa9038", null ],
+      [ "values", "structdg_1_1_sparse_tensor.html#adf4df1180f333e6b9e0430f39f1e4e72", null ],
       [ "values", "structdg_1_1_sparse_tensor.html#abd75f00f689505a42a261507a221fb9c", null ]
     ] ],
     [ "CholeskyTensor", "structdg_1_1_cholesky_tensor.html", [
@@ -74,9 +54,33 @@ var group__misc =
       [ "lower", "structdg_1_1_cholesky_tensor.html#ad079fcc42d189353f89f71a589e76f1f", null ],
       [ "upper", "structdg_1_1_cholesky_tensor.html#af224cde6984a36b812959201b9926bda", null ]
     ] ],
+    [ "Message", "classdg_1_1_message.html", [
+      [ "Message", "classdg_1_1_message.html#a98f87ba7128a8fe526fd069c9f29e633", null ],
+      [ "Message", "classdg_1_1_message.html#a730b994556024a4136f6f686bd6ed416", null ],
+      [ "Message", "classdg_1_1_message.html#aed304046de640c58433eacba67fca85a", null ],
+      [ "~Message", "classdg_1_1_message.html#af882d452d44235589e47e1b5f769efc7", null ],
+      [ "operator<<", "classdg_1_1_message.html#a06601cca23e44b07fa3d799f806a8339", null ],
+      [ "str", "classdg_1_1_message.html#a005d881db30709122d85d1b7f61e5bfb", null ],
+      [ "operator<<", "classdg_1_1_message.html#a614c98fe65726d2e34adfb8fffc52f5f", null ]
+    ] ],
+    [ "Error", "classdg_1_1_error.html", [
+      [ "Error", "classdg_1_1_error.html#a3a53f1d422d8fe4d49b63e28028138cf", null ],
+      [ "~Error", "classdg_1_1_error.html#aa128e2a9c314f3685b90968a7182e373", null ],
+      [ "what", "classdg_1_1_error.html#a69024ebcc57c6aebf84715ccf1856841", null ]
+    ] ],
+    [ "Fail", "structdg_1_1_fail.html", [
+      [ "Fail", "structdg_1_1_fail.html#acbccb1ec26460accff6fe8ae47fb9cef", null ],
+      [ "~Fail", "structdg_1_1_fail.html#ab661a6c4e4c56ac2136e787f797396dd", null ],
+      [ "epsilon", "structdg_1_1_fail.html#a526158d66c83dbee6a33f72d5b780486", null ],
+      [ "what", "structdg_1_1_fail.html#ad3d7c1cd0eb04c8526c2c00cf9de6a77", null ]
+    ] ],
     [ "forward_transform", "group__misc.html#ga54cdfb388de1fa32de687cc98cacc8e9", null ],
     [ "gcd", "group__misc.html#ga58d186cf9c7cd8137a991006c98e23ba", null ],
     [ "lcm", "group__misc.html#ga37074755dc63807f983425695d5a0665", null ],
-    [ "mpi_init2d", "group__misc.html#ga3b4222c05e1f6bc6ef9010120e3715bd", null ],
-    [ "mpi_init3d", "group__misc.html#gaafadcf0ea32c258b59104578e8eadd83", null ]
+    [ "mpi_init2d", "group__misc.html#gaebc81232ad5df916cd7283eee57f5ec6", null ],
+    [ "mpi_init2d", "group__misc.html#ga44ed5eed4efb05bf5b8e7bcbb8690786", null ],
+    [ "mpi_init2d", "group__misc.html#ga5ba9b11b49267b27aa3369494055fed4", null ],
+    [ "mpi_init3d", "group__misc.html#ga1ecc3e6cb74c4cdcb41781bf33e74a03", null ],
+    [ "mpi_init3d", "group__misc.html#ga94a75bf1e54bcb77dd85a11fcd7cc997", null ],
+    [ "mpi_init3d", "group__misc.html#gaf024eca5bc6f60a77543a429c1c87434", null ]
 ];

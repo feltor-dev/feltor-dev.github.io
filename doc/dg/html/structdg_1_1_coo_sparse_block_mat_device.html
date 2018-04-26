@@ -38,8 +38,9 @@
   <ul class="tablist"> 
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
-    <li><a href="../../geometries/html/modules.html">geometry</a></li>
+    <li><a href="../../geometries/html/modules.html">geometries</a></li>
     <li><a href="../../file/html/namespacefile.html">file</a></li>
+    <li><a href="../../exblas/html/namespaceexblas.html">exblas</a></li>
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
@@ -141,13 +142,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1eeaedee4a9051a4dfdcfa4725d00b77"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat_device.html#a1eeaedee4a9051a4dfdcfa4725d00b77">CooSparseBlockMatDevice</a> (const <a class="el" href="structdg_1_1_coo_sparse_block_mat.html">CooSparseBlockMat</a>&lt; OtherValueType &gt; &amp;src)</td></tr>
 <tr class="memdesc:a1eeaedee4a9051a4dfdcfa4725d00b77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate storage.  <a href="#a1eeaedee4a9051a4dfdcfa4725d00b77">More...</a><br /></td></tr>
 <tr class="separator:a1eeaedee4a9051a4dfdcfa4725d00b77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f852b3ffb56b8eafd34638f7fcc3e92"><td class="memTemplParams" colspan="2">template&lt;class Device &gt; </td></tr>
-<tr class="memitem:a4f852b3ffb56b8eafd34638f7fcc3e92"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat_device.html#a4f852b3ffb56b8eafd34638f7fcc3e92">symv</a> (value_type alpha, const Device &amp;x, value_type beta, Device &amp;y) const </td></tr>
-<tr class="memdesc:a4f852b3ffb56b8eafd34638f7fcc3e92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply the matrix to a vector.  <a href="#a4f852b3ffb56b8eafd34638f7fcc3e92">More...</a><br /></td></tr>
-<tr class="separator:a4f852b3ffb56b8eafd34638f7fcc3e92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7c23c1bfb96dcdef26422ad1edd1e20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat_device.html#ac7c23c1bfb96dcdef26422ad1edd1e20">display</a> (std::ostream &amp;os=std::cout) const </td></tr>
 <tr class="memdesc:ac7c23c1bfb96dcdef26422ad1edd1e20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display internal data to a stream.  <a href="#ac7c23c1bfb96dcdef26422ad1edd1e20">More...</a><br /></td></tr>
 <tr class="separator:ac7c23c1bfb96dcdef26422ad1edd1e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d6219179002612048f66f0710015660"><td class="memTemplParams" colspan="2">template&lt;class Vector &gt; </td></tr>
+<tr class="memitem:a9d6219179002612048f66f0710015660"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat_device.html#a9d6219179002612048f66f0710015660">symv</a> (value_type alpha, const Vector &amp;<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>, value_type beta, Vector &amp;<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>) const </td></tr>
+<tr class="memdesc:a9d6219179002612048f66f0710015660"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply the matrix to a vector.  <a href="#a9d6219179002612048f66f0710015660">More...</a><br /></td></tr>
+<tr class="separator:a9d6219179002612048f66f0710015660"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class value_type&gt;<br />
@@ -244,13 +245,16 @@ template&lt;class value_type &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a4f852b3ffb56b8eafd34638f7fcc3e92"></a>
+<a class="anchor" id="a9d6219179002612048f66f0710015660"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class value_type &gt; </div>
 <div class="memtemplate">
-template&lt;class Device &gt; </div>
+template&lt;class Vector &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="structdg_1_1_coo_sparse_block_mat_device.html">dg::CooSparseBlockMatDevice</a>&lt; value_type &gt;::symv </td>
@@ -261,7 +265,7 @@ template&lt;class Device &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Device &amp;&#160;</td>
+          <td class="paramtype">const Vector &amp;&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
@@ -273,7 +277,7 @@ template&lt;class Device &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Device &amp;&#160;</td>
+          <td class="paramtype">Vector &amp;&#160;</td>
           <td class="paramname"><em>y</em>&#160;</td>
         </tr>
         <tr>
@@ -282,6 +286,11 @@ template&lt;class Device &gt; </div>
           <td></td><td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Apply the matrix to a vector. </p>
@@ -306,7 +315,7 @@ template&lt;class Device &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_coo_sparse_block_mat_device.html">CooSparseBlockMatDevice</a></li>
-    <li class="footer">Generated on Wed Nov 15 2017 10:37:29 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Apr 26 2018 16:28:15 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

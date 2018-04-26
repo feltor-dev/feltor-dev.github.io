@@ -1,0 +1,6 @@
+var structdg_1_1_vector_traits_3_01std_1_1vector_3_01_t_01_4_00_01typename_01std_1_1enable__if_3_01s98893251fa88f88be031143633b3a291 =
+[
+    [ "execution_policy", "structdg_1_1_vector_traits_3_01std_1_1vector_3_01_t_01_4_00_01typename_01std_1_1enable__if_3_01s98893251fa88f88be031143633b3a291.html#a4513ba23fba8531859234a2b462b7837", null ],
+    [ "value_type", "structdg_1_1_vector_traits_3_01std_1_1vector_3_01_t_01_4_00_01typename_01std_1_1enable__if_3_01s98893251fa88f88be031143633b3a291.html#a261197369f006dcdbb0c283c11c4a6a2", null ],
+    [ "vector_category", "structdg_1_1_vector_traits_3_01std_1_1vector_3_01_t_01_4_00_01typename_01std_1_1enable__if_3_01s98893251fa88f88be031143633b3a291.html#acd637cef61bad18fec4bfeaacd52ade4", null ]
+];

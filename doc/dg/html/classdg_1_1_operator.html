@@ -38,8 +38,9 @@
   <ul class="tablist"> 
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
-    <li><a href="../../geometries/html/modules.html">geometry</a></li>
+    <li><a href="../../geometries/html/modules.html">geometries</a></li>
     <li><a href="../../file/html/namespacefile.html">file</a></li>
+    <li><a href="../../exblas/html/namespaceexblas.html">exblas</a></li>
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
@@ -154,10 +155,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aea27e076660f16ed925b3460aff2a43f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_operator.html#aea27e076660f16ed925b3460aff2a43f">Operator</a> (const unsigned n, const T &amp;value)</td></tr>
 <tr class="memdesc:aea27e076660f16ed925b3460aff2a43f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize elements.  <a href="#aea27e076660f16ed925b3460aff2a43f">More...</a><br /></td></tr>
 <tr class="separator:aea27e076660f16ed925b3460aff2a43f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd7740c4acea7bfe7b89a24e9a0d02c6"><td class="memTemplParams" colspan="2">template&lt;class InputIterator &gt; </td></tr>
-<tr class="memitem:afd7740c4acea7bfe7b89a24e9a0d02c6"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdg_1_1_operator.html#afd7740c4acea7bfe7b89a24e9a0d02c6">Operator</a> (InputIterator first, InputIterator last)</td></tr>
-<tr class="memdesc:afd7740c4acea7bfe7b89a24e9a0d02c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from iterators.  <a href="#afd7740c4acea7bfe7b89a24e9a0d02c6">More...</a><br /></td></tr>
-<tr class="separator:afd7740c4acea7bfe7b89a24e9a0d02c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74ad9246d163debc2ed5faa83c9a2eb8"><td class="memTemplParams" colspan="2">template&lt;class InputIterator &gt; </td></tr>
+<tr class="memitem:a74ad9246d163debc2ed5faa83c9a2eb8"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdg_1_1_operator.html#a74ad9246d163debc2ed5faa83c9a2eb8">Operator</a> (InputIterator first, InputIterator last, typename std::enable_if&lt;!std::is_integral&lt; InputIterator &gt;::value &gt;::type *=0)</td></tr>
+<tr class="memdesc:a74ad9246d163debc2ed5faa83c9a2eb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from iterators.  <a href="#a74ad9246d163debc2ed5faa83c9a2eb8">More...</a><br /></td></tr>
+<tr class="separator:a74ad9246d163debc2ed5faa83c9a2eb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1eaf0ce3926e91737bf45681aa751618"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_operator.html#a1eaf0ce3926e91737bf45681aa751618">Operator</a> (const std::vector&lt; T &gt; &amp;src)</td></tr>
 <tr class="memdesc:a1eaf0ce3926e91737bf45681aa751618"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy from existing data.  <a href="#a1eaf0ce3926e91737bf45681aa751618">More...</a><br /></td></tr>
 <tr class="separator:a1eaf0ce3926e91737bf45681aa751618"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -365,7 +366,7 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="afd7740c4acea7bfe7b89a24e9a0d02c6"></a>
+<a class="anchor" id="a74ad9246d163debc2ed5faa83c9a2eb8"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -386,7 +387,13 @@ template&lt;class InputIterator &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">InputIterator&#160;</td>
-          <td class="paramname"><em>last</em>&#160;</td>
+          <td class="paramname"><em>last</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename std::enable_if&lt;!std::is_integral&lt; InputIterator &gt;::value &gt;::type *&#160;</td>
+          <td class="paramname"> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1278,7 +1285,7 @@ template&lt;class Istream &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>backend/<a class="el" href="operator_8h_source.html">operator.h</a></li>
+<li>geometry/<a class="el" href="operator_8h_source.html">operator.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -1286,7 +1293,7 @@ template&lt;class Istream &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="classdg_1_1_operator.html">Operator</a></li>
-    <li class="footer">Generated on Wed Nov 15 2017 10:37:29 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Apr 26 2018 16:28:15 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

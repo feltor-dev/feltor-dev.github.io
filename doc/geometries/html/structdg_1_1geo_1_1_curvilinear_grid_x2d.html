@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Geometry: dg::geo::CurvilinearGridX2d Struct Reference</title>
+<title>Geometries: dg::geo::CurvilinearGridX2d Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -38,17 +38,18 @@
   <ul class="tablist"> 
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
-    <li><a href="../../geometries/html/modules.html">geometry</a></li>
+    <li><a href="../../geometries/html/modules.html">geometries</a></li>
     <li><a href="../../file/html/namespacefile.html">file</a></li>
+    <li><a href="../../exblas/html/namespaceexblas.html">exblas</a></li>
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Geometry
+   <div id="projectname">Geometries
    </div>
-   <div id="projectbrief">Library for magnetic flux functions, grids and grid generators</div>
+   <div id="projectbrief">Extension with magnetic flux functions, grids and grid generators</div>
   </td>
  </tr>
  </tbody>
@@ -211,7 +212,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5a22bda9e1584eee95979aaaf0182483 inherit pub_methods_structdg_1_1a_topology_x2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3c448ca44ed2a80071eacdc60a56934 inherit pub_methods_structdg_1_1a_topology_x2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1a_topology_x2d.html#aa3c448ca44ed2a80071eacdc60a56934">shift_topologic</a> (double <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1a_topology_x2d.html#ad5aec455479dc30144abf36ce143e22b">x0</a>, double <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1a_topology_x2d.html#a7e2bb0a1c4ebbc966c9ca74a5328dd57">y0</a>, double &amp;<a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1a_topology_x2d.html#a4b9bb52881c7b634f8f88bd84d5e88eb">x1</a>, double &amp;<a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1a_topology_x2d.html#ad017c42128db1a1d37fcf936df3619d1">y1</a>) const </td></tr>
 <tr class="separator:aa3c448ca44ed2a80071eacdc60a56934 inherit pub_methods_structdg_1_1a_topology_x2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6445f64321fc56a30d62ee6023438e0f inherit pub_methods_structdg_1_1a_topology_x2d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1a_topology_x2d.html#a6445f64321fc56a30d62ee6023438e0f">contains</a> (double x, double y) const </td></tr>
+<tr class="memitem:a6445f64321fc56a30d62ee6023438e0f inherit pub_methods_structdg_1_1a_topology_x2d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1a_topology_x2d.html#a6445f64321fc56a30d62ee6023438e0f">contains</a> (double <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__creation.html#gace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>, double <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__creation.html#gace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>) const </td></tr>
 <tr class="separator:a6445f64321fc56a30d62ee6023438e0f inherit pub_methods_structdg_1_1a_topology_x2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -313,8 +314,8 @@ Additional Inherited Members</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">generator</td><td>must generate an orthogonal grid (class takes ownership of the pointer) </td></tr>
-    <tr><td class="paramname">fx</td><td></td></tr>
-    <tr><td class="paramname">fy</td><td></td></tr>
+    <tr><td class="paramname">fx</td><td>a rational number indicating partition of the x - direction </td></tr>
+    <tr><td class="paramname">fy</td><td>a rational number indicating partition of the y - direction </td></tr>
     <tr><td class="paramname">n</td><td>number of polynomial coefficients </td></tr>
     <tr><td class="paramname">Nx</td><td>number of cells in first coordinate </td></tr>
     <tr><td class="paramname">Ny</td><td>number of cells in second coordinate </td></tr>
@@ -384,7 +385,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="namespacedg_1_1geo.html">geo</a></li><li class="navelem"><a class="el" href="structdg_1_1geo_1_1_curvilinear_grid_x2d.html">CurvilinearGridX2d</a></li>
-    <li class="footer">Generated on Wed Nov 15 2017 10:37:33 for Geometry by
+    <li class="footer">Generated on Thu Apr 26 2018 16:28:25 for Geometries by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

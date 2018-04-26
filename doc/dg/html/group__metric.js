@@ -1,5 +1,5 @@
 var group__metric =
 [
-    [ "inv_volume", "group__metric.html#ga3d9e4907396358c768142920a885c79e", null ],
-    [ "volume", "group__metric.html#gae72c79000e75c2672e234584bdd8239b", null ]
+    [ "inv_volume", "group__metric.html#ga7d584bb41e0d20ee832296fd71d8cf3b", null ],
+    [ "volume", "group__metric.html#ga3c86995e21edbffbde353246289b503a", null ]
 ];

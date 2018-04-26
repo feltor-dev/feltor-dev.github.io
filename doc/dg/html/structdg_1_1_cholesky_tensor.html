@@ -38,8 +38,9 @@
   <ul class="tablist"> 
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
-    <li><a href="../../geometries/html/modules.html">geometry</a></li>
+    <li><a href="../../geometries/html/modules.html">geometries</a></li>
     <li><a href="../../file/html/namespacefile.html">file</a></li>
+    <li><a href="../../exblas/html/namespaceexblas.html">exblas</a></li>
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
@@ -165,14 +166,15 @@ struct dg::CholeskyTensor&lt; container &gt;</h3>
 <p>LDL^T stands for a lower triangular matrix L, a diagonal matrix D and the transpose L^T</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">container</td><td>A data container class for which the <code><a class="el" href="namespacedg_1_1blas1.html" title="BLAS Level 1 routines. ">blas1</a></code> functionality is overloaded. We assume that <code>container</code> is copyable/assignable and has a swap member function. Currently this is one of<ul>
+    <tr><td class="paramname">container</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_vector_traits.html" title="The vector traits. ">VectorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> or <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. For example, this is one of<ul>
 <li><code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code>, <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code>, <code><a class="el" href="group__typedefs.html#ga3f854ffa533cafd10b9846258e40029f" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code><a class="el" href="group__typedefs.html#ga25cae493b710b17992387cce395ad7ae" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> </li>
-<li><code>std::vector&lt;dg::HVec&gt;</code>, <code>std::vector&lt;dg::DVec&gt;</code>, <code>std::vector&lt;dg::MHVec&gt;</code> or <code>std::vector&lt;dg::MDVec&gt;</code> . </li>
+<li><code>std::vector&lt;dg::DVec&gt;</code>, <code>std::array&lt;dg::MHVec, 3&gt;</code>, <code>std::array&lt;double, 4&gt;</code> ... </li>
 </ul>
 </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__vec__list.html">List of Vector Traits specializations</a> </dd></dl>
 <dl class="section attention"><dt>Attention</dt><dd>the tensor in the <a class="el" href="classdg_1_1_elliptic.html" title="Operator that acts as a 2d negative elliptic differential operator ">Elliptic</a> classes actually only need to be positive <b>semi-definite</b> and unfortunately the decomposition is unstable for semi-definite matrices. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a62c3f5381cae4e03aacdf3216c466928"></a>
@@ -238,7 +240,7 @@ template&lt;class OtherContainer &gt; </div>
 <p>Type conversion from other value types. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">OtherContainer</td><td><a class="el" href="group__blas1.html#gac47888be3a3f75994f40de9a70d28c9c" title="y=x; Generic way to copy and/or convert a container type to a different container type (e...">dg::blas1::transfer</a> must be callable for container and OtherContainer </td></tr>
+    <tr><td class="paramname">OtherContainer</td><td><a class="el" href="group__blas1.html#gad325c39d1994561ee38813a2dde7a46a" title="y=x; Generic way to copy/construct and/or convert a container type from a different container type (e...">dg::blas1::transfer</a> must be callable for container and OtherContainer </td></tr>
   </table>
   </dd>
 </dl>
@@ -379,7 +381,7 @@ template&lt;class container&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_cholesky_tensor.html">CholeskyTensor</a></li>
-    <li class="footer">Generated on Wed Nov 15 2017 10:37:29 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Apr 26 2018 16:28:15 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

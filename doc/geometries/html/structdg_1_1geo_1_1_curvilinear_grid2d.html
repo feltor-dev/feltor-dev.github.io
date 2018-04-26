@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Geometry: dg::geo::CurvilinearGrid2d Struct Reference</title>
+<title>Geometries: dg::geo::CurvilinearGrid2d Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -38,17 +38,18 @@
   <ul class="tablist"> 
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
-    <li><a href="../../geometries/html/modules.html">geometry</a></li>
+    <li><a href="../../geometries/html/modules.html">geometries</a></li>
     <li><a href="../../file/html/namespacefile.html">file</a></li>
+    <li><a href="../../exblas/html/namespaceexblas.html">exblas</a></li>
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Geometry
+   <div id="projectname">Geometries
    </div>
-   <div id="projectbrief">Library for magnetic flux functions, grids and grid generators</div>
+   <div id="projectbrief">Extension with magnetic flux functions, grids and grid generators</div>
   </td>
  </tr>
  </tbody>
@@ -205,7 +206,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad43f5d400ad3e2d4f3abdd0517576b84 inherit pub_methods_structdg_1_1a_topology2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e95b9a668c284fa3262228ac4310904 inherit pub_methods_structdg_1_1a_topology2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1a_topology2d.html#a2e95b9a668c284fa3262228ac4310904">shift_topologic</a> (double <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1a_topology2d.html#a3b40c025394f50443d24b93035dfc51e">x0</a>, double <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1a_topology2d.html#a9013407c847ed51b70f9e73b5d42d77c">y0</a>, double &amp;<a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1a_topology2d.html#a9a6354d37c67bce0c514dee708a9f7fd">x1</a>, double &amp;<a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1a_topology2d.html#a2f5046ddad7754b4eafb0787b47373d9">y1</a>) const </td></tr>
 <tr class="separator:a2e95b9a668c284fa3262228ac4310904 inherit pub_methods_structdg_1_1a_topology2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2532c5ce771e987c2871c9b5196340b inherit pub_methods_structdg_1_1a_topology2d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1a_topology2d.html#ab2532c5ce771e987c2871c9b5196340b">contains</a> (double x, double y) const </td></tr>
+<tr class="memitem:ab2532c5ce771e987c2871c9b5196340b inherit pub_methods_structdg_1_1a_topology2d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1a_topology2d.html#ab2532c5ce771e987c2871c9b5196340b">contains</a> (double <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__creation.html#gace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>, double <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__creation.html#gace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>) const </td></tr>
 <tr class="separator:ab2532c5ce771e987c2871c9b5196340b inherit pub_methods_structdg_1_1a_topology2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -236,7 +237,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A two-dimensional grid based on curvilinear coordinates. </p>
-<div class="fragment"><div class="line">    <span class="comment">//create the magnetic field</span></div><div class="line">    <a class="code" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a> c = <a class="code" href="group__geom.html#gae3f70e88fd15dd404643f4c5941401c7">dg::geo::createSolovevField</a>( gp);</div><div class="line">    <span class="comment">//create a grid generator</span></div><div class="line">    <a class="code" href="structdg_1_1geo_1_1_flux_generator.html">dg::geo::FluxGenerator</a> flux( c.<a class="code" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#a7a3ef90810326b03d9f2b64197f373ef">get_psip</a>(), c.<a class="code" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#a61f491c62864f2e09e0a703e15483a0d">get_ipol</a>(), psi_0, psi_1, gp.R_0, 0., 1);</div><div class="line">    <span class="comment">//create a grid </span></div><div class="line">    <a class="code" href="structdg_1_1geo_1_1_curvilinear_grid2d.html">dg::geo::CurvilinearGrid2d</a> g2d(flux, <a class="codeRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1a_topology2d.html#a8acfe8e4f9f53bbc17f8b85d4dc5df9b">n</a>, <a class="codeRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1a_topology2d.html#adb5dab9b977ab75682d745c8d932a3ac">Nx</a>,<a class="codeRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1a_topology2d.html#adc32942008d8c126ff323df4bd14fdbb">Ny</a>, <a class="codeRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a>);</div></div><!-- fragment --></div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<div class="fragment"><div class="line">    <span class="comment">//create the magnetic field</span></div><div class="line">    <a class="code" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a> c = <a class="code" href="group__geom.html#gae3f70e88fd15dd404643f4c5941401c7">dg::geo::createSolovevField</a>( gp);</div><div class="line">    <span class="comment">//create a grid generator</span></div><div class="line">    <a class="code" href="structdg_1_1geo_1_1_flux_generator.html">dg::geo::FluxGenerator</a> flux( c.<a class="code" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#a7a3ef90810326b03d9f2b64197f373ef">get_psip</a>(), c.<a class="code" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#a61f491c62864f2e09e0a703e15483a0d">get_ipol</a>(), psi_0, psi_1, gp.R_0, 0., 0, <span class="keyword">false</span>);</div><div class="line">    <span class="comment">//create a grid</span></div><div class="line">    <a class="code" href="structdg_1_1geo_1_1_curvilinear_grid2d.html">dg::geo::CurvilinearGrid2d</a> g2d(flux, <a class="codeRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1a_topology2d.html#a8acfe8e4f9f53bbc17f8b85d4dc5df9b">n</a>, <a class="codeRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1a_topology2d.html#adb5dab9b977ab75682d745c8d932a3ac">Nx</a>,<a class="codeRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1a_topology2d.html#adc32942008d8c126ff323df4bd14fdbb">Ny</a>, <a class="codeRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a>);</div></div><!-- fragment --></div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aac22c8881036811dc7658a608fbcfe63"></a>
 <div class="memitem">
 <div class="memproto">
@@ -400,7 +401,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="namespacedg_1_1geo.html">geo</a></li><li class="navelem"><a class="el" href="structdg_1_1geo_1_1_curvilinear_grid2d.html">CurvilinearGrid2d</a></li>
-    <li class="footer">Generated on Wed Nov 15 2017 10:37:33 for Geometry by
+    <li class="footer">Generated on Thu Apr 26 2018 16:28:25 for Geometries by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
