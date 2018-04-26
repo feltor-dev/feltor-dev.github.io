@@ -11,24 +11,23 @@ sidebar:
 
 ### How to install jsoncpp?
 
-Go to the place where you want to download the library and 
+Go to the place where you want to download the library and
 ```sh
-git clone https://github.com/open-source-parsers/jsoncpp 
-cd jsoncpp 
-git checkout 0.10.6 -b 0.10.6 #the -b is to avoid being in a detached head state 
-python amalgate.py # make a single header file 
-cmake . 
+git clone https://github.com/open-source-parsers/jsoncpp
+cd jsoncpp
+python amalgate.py # make a single header file
+cmake .
 make
-cd ~/include/ 
-ln -s path/to/jsoncpp/include/json # this last step is to make feltor work in the default configuration
+cd ~/include/
+ln -s path/to/jsoncpp/include/json # this last step makes feltor work in the default configuration
 ```
 
 #### I get an error:  'class Json::Value::CZString' is private?
-This happens when you compile with nvcc and use the 0.10.6 branch for Json. The error goes away by
-changing to the 0.y.z branch in json
+This was a bug when you compile with nvcc and use an old version of jsoncpp.
+The error goes away by updating the library.
 ```sh
 cd path/to/json
-git checkout 0.y.z
+git pull
 ```
 
 ### How to visualize structured (curvilinear) grids in paraview?
