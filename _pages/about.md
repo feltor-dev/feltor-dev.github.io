@@ -2,6 +2,7 @@
 title: "About"
 layout: single
 permalink: /about/
+classes: wide
 author_profile: false
 comments: false
 toc: true
