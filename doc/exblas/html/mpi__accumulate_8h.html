@@ -108,8 +108,8 @@ Include dependency graph for mpi_accumulate.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="mpi__accumulate_8h__incl.png" border="0" usemap="#mpi__accumulate_8h" alt=""/></div>
 <map name="mpi__accumulate_8h" id="mpi__accumulate_8h">
-<area shape="rect" id="node3" href="accumulate_8h.html" title="Primitives for accumulation into superaccumulator. " alt="" coords="243,80,343,107"/>
-<area shape="rect" id="node4" href="config_8h.html" title="Configuration of superaccumulators. " alt="" coords="5,155,73,181"/>
+<area shape="rect" id="node3" href="accumulate_8h.html" title="Primitives for accumulation into superaccumulator. " alt="" coords="163,80,263,107"/>
+<area shape="rect" id="node4" href="config_8h.html" title="Configuration of superaccumulators. " alt="" coords="129,155,197,181"/>
 </map>
 </div>
 </div>
@@ -123,12 +123,12 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8b66eb8c9a1af03aa85fc0ab073c3e2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#a8b66eb8c9a1af03aa85fc0ab073c3e2c">exblas::mpi_reduce_communicator</a> (MPI_Comm comm, MPI_Comm *comm_mod, MPI_Comm *comm_mod_reduce)</td></tr>
-<tr class="memdesc:a8b66eb8c9a1af03aa85fc0ab073c3e2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function can be used to partition communicators for the <code><a class="el" href="namespaceexblas.html#aaef8171408fa1de05dad4d923637b4ea" title="reduce a number of superaccumulators distributed among mpi processes ">exblas::reduce_mpi_cpu</a></code> function.  <a href="namespaceexblas.html#a8b66eb8c9a1af03aa85fc0ab073c3e2c">More...</a><br /></td></tr>
-<tr class="separator:a8b66eb8c9a1af03aa85fc0ab073c3e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaef8171408fa1de05dad4d923637b4ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#aaef8171408fa1de05dad4d923637b4ea">exblas::reduce_mpi_cpu</a> (unsigned num_superacc, int64_t *in, int64_t *out, MPI_Comm comm, MPI_Comm comm_mod, MPI_Comm comm_mod_reduce)</td></tr>
-<tr class="memdesc:aaef8171408fa1de05dad4d923637b4ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">reduce a number of superaccumulators distributed among mpi processes  <a href="namespaceexblas.html#aaef8171408fa1de05dad4d923637b4ea">More...</a><br /></td></tr>
-<tr class="separator:aaef8171408fa1de05dad4d923637b4ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b5cd15f02ce8ac7c0a18d7a0691c2e8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#a0b5cd15f02ce8ac7c0a18d7a0691c2e8">exblas::mpi_reduce_communicator</a> (MPI_Comm comm, MPI_Comm *comm_mod, MPI_Comm *comm_mod_reduce)</td></tr>
+<tr class="memdesc:a0b5cd15f02ce8ac7c0a18d7a0691c2e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function can be used to partition communicators for the <code><a class="el" href="namespaceexblas.html#ab4c1247c02e14edcae026d41b3f5c6fb" title="reduce a number of superaccumulators distributed among mpi processes ">exblas::reduce_mpi_cpu</a></code> function.  <a href="namespaceexblas.html#a0b5cd15f02ce8ac7c0a18d7a0691c2e8">More...</a><br /></td></tr>
+<tr class="separator:a0b5cd15f02ce8ac7c0a18d7a0691c2e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4c1247c02e14edcae026d41b3f5c6fb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#ab4c1247c02e14edcae026d41b3f5c6fb">exblas::reduce_mpi_cpu</a> (unsigned num_superacc, int64_t *in, int64_t *out, MPI_Comm comm, MPI_Comm comm_mod, MPI_Comm comm_mod_reduce)</td></tr>
+<tr class="memdesc:ab4c1247c02e14edcae026d41b3f5c6fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">reduce a number of superaccumulators distributed among mpi processes  <a href="namespaceexblas.html#ab4c1247c02e14edcae026d41b3f5c6fb">More...</a><br /></td></tr>
+<tr class="separator:ab4c1247c02e14edcae026d41b3f5c6fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Primitives for an MPI Reduction. </p>

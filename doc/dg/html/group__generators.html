@@ -116,7 +116,8 @@ $(document).ready(function(){initNavTree('group__generators.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">Grid Generator classes<div class="ingroups"><a class="el" href="group__geo.html">Level 3: Topology and Geometry</a> &raquo; <a class="el" href="group__geometry.html">Geometric grids and operations</a></div></div>  </div>
 </div><!--header-->
@@ -133,42 +134,172 @@ Collaboration diagram for Grid Generator classes:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_refinement1d.html">dg::aRefinement1d</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract base class for 1d grid refinement that increases the number of grid cells of a fixed basis grid.  <a href="structdg_1_1a_refinement1d.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_real_refinement1d.html">dg::aRealRefinement1d&lt; real_type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract base class for 1d grid refinement that increases the number of grid cells of a fixed basis grid.  <a href="structdg_1_1a_real_refinement1d.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_identity_refinement.html">dg::IdentityRefinement</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">No refinement.  <a href="structdg_1_1_identity_refinement.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_real_identity_refinement.html">dg::RealIdentityRefinement&lt; real_type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">No refinement.  <a href="structdg_1_1_real_identity_refinement.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_linear_refinement.html">dg::LinearRefinement</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Linear refinement consists of multiplying every cell in the grid by a factor.  <a href="structdg_1_1_linear_refinement.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_real_linear_refinement.html">dg::RealLinearRefinement&lt; real_type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RealLinear refinement consists of multiplying every cell in the grid by a factor.  <a href="structdg_1_1_real_linear_refinement.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_equidist_refinement.html">dg::EquidistRefinement</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equidistant cell refinement around a given node.  <a href="structdg_1_1_equidist_refinement.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_real_equidist_refinement.html">dg::RealEquidistRefinement&lt; real_type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RealEquidistant cell refinement around a given node.  <a href="structdg_1_1_real_equidist_refinement.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_exponential_refinement.html">dg::ExponentialRefinement</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The exponential refinement around a node.  <a href="structdg_1_1_exponential_refinement.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_real_exponential_refinement.html">dg::RealExponentialRefinement&lt; real_type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The exponential refinement around a node.  <a href="structdg_1_1_real_exponential_refinement.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_refinement_x2d.html">dg::aRefinementX2d</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract base class for 2d grid refinement that increases the number of grid cells of a fixed basis grid.  <a href="structdg_1_1a_refinement_x2d.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_real_refinement_x2d.html">dg::aRealRefinementX2d&lt; real_type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract base class for 2d grid refinement that increases the number of grid cells of a fixed basis grid.  <a href="structdg_1_1a_real_refinement_x2d.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_identity_x_refinement.html">dg::IdentityXRefinement</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">No refinement.  <a href="structdg_1_1_identity_x_refinement.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_real_identity_x_refinement.html">dg::RealIdentityXRefinement&lt; real_type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">No refinement.  <a href="structdg_1_1_real_identity_x_refinement.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_equidist_x_refinement.html">dg::EquidistXRefinement</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equidistant cell refinement around the X-point.  <a href="structdg_1_1_equidist_x_refinement.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_real_equidist_x_refinement.html">dg::RealEquidistXRefinement&lt; real_type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RealEquidistant cell refinement around the X-point.  <a href="structdg_1_1_real_equidist_x_refinement.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_exponential_x_refinement.html">dg::ExponentialXRefinement</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The exponential refinement around the X-point.  <a href="structdg_1_1_exponential_x_refinement.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_real_exponential_x_refinement.html">dg::RealExponentialXRefinement&lt; real_type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The exponential refinement around the X-point.  <a href="structdg_1_1_real_exponential_x_refinement.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga1cfe6f739503af0dfefa5b9d73cacd94"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__generators.html#ga1cfe6f739503af0dfefa5b9d73cacd94">dg::aRefinement1d</a> = <a class="el" href="structdg_1_1a_real_refinement1d.html">dg::aRealRefinement1d</a>&lt; double &gt;</td></tr>
+<tr class="separator:ga1cfe6f739503af0dfefa5b9d73cacd94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab93b3c971661bfaa425029fc3d56261f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__generators.html#gab93b3c971661bfaa425029fc3d56261f">dg::IdentityRefinement</a> = <a class="el" href="structdg_1_1_real_identity_refinement.html">dg::RealIdentityRefinement</a>&lt; double &gt;</td></tr>
+<tr class="separator:gab93b3c971661bfaa425029fc3d56261f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga00a2c4dee1c9df122dcb22d33773a70c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__generators.html#ga00a2c4dee1c9df122dcb22d33773a70c">dg::LinearRefinement</a> = <a class="el" href="structdg_1_1_real_linear_refinement.html">dg::RealLinearRefinement</a>&lt; double &gt;</td></tr>
+<tr class="separator:ga00a2c4dee1c9df122dcb22d33773a70c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1fc3ed9c0e84086363c957a8aaa60c54"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__generators.html#ga1fc3ed9c0e84086363c957a8aaa60c54">dg::EquidistRefinement</a> = <a class="el" href="structdg_1_1_real_equidist_refinement.html">dg::RealEquidistRefinement</a>&lt; double &gt;</td></tr>
+<tr class="separator:ga1fc3ed9c0e84086363c957a8aaa60c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac68dab098eb0c98222e98ad836e8f346"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__generators.html#gac68dab098eb0c98222e98ad836e8f346">dg::ExponentialRefinement</a> = <a class="el" href="structdg_1_1_real_exponential_refinement.html">dg::RealExponentialRefinement</a>&lt; double &gt;</td></tr>
+<tr class="separator:gac68dab098eb0c98222e98ad836e8f346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1f0f5348b03f19a4e51d6cfc155e65f2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__generators.html#ga1f0f5348b03f19a4e51d6cfc155e65f2">dg::aRefinementX2d</a> = <a class="el" href="structdg_1_1a_real_refinement_x2d.html">dg::aRealRefinementX2d</a>&lt; double &gt;</td></tr>
+<tr class="separator:ga1f0f5348b03f19a4e51d6cfc155e65f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa0a0bdd0f1b1312461690645efaca772"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__generators.html#gaa0a0bdd0f1b1312461690645efaca772">dg::IdentityXRefinement</a> = <a class="el" href="structdg_1_1_real_identity_x_refinement.html">dg::RealIdentityXRefinement</a>&lt; double &gt;</td></tr>
+<tr class="separator:gaa0a0bdd0f1b1312461690645efaca772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa62609aff1a674f8d677c75b034846d0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__generators.html#gaa62609aff1a674f8d677c75b034846d0">dg::EquidistXRefinement</a> = <a class="el" href="structdg_1_1_real_equidist_x_refinement.html">dg::RealEquidistXRefinement</a>&lt; double &gt;</td></tr>
+<tr class="separator:gaa62609aff1a674f8d677c75b034846d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6799c46023dafaa5e880a984f34305c2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__generators.html#ga6799c46023dafaa5e880a984f34305c2">dg::ExponentialXRefinement</a> = <a class="el" href="structdg_1_1_real_exponential_x_refinement.html">dg::RealExponentialXRefinement</a>&lt; double &gt;</td></tr>
+<tr class="separator:ga6799c46023dafaa5e880a984f34305c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>The classes to perform field line integration for DS and averaging classes </p>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="ga1cfe6f739503af0dfefa5b9d73cacd94"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__generators.html#ga1cfe6f739503af0dfefa5b9d73cacd94">dg::aRefinement1d</a> = typedef <a class="el" href="structdg_1_1a_real_refinement1d.html">dg::aRealRefinement1d</a>&lt;double&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga1f0f5348b03f19a4e51d6cfc155e65f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__generators.html#ga1f0f5348b03f19a4e51d6cfc155e65f2">dg::aRefinementX2d</a> = typedef <a class="el" href="structdg_1_1a_real_refinement_x2d.html">dg::aRealRefinementX2d</a>&lt;double&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga1fc3ed9c0e84086363c957a8aaa60c54"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__generators.html#ga1fc3ed9c0e84086363c957a8aaa60c54">dg::EquidistRefinement</a> = typedef <a class="el" href="structdg_1_1_real_equidist_refinement.html">dg::RealEquidistRefinement</a>&lt;double&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gaa62609aff1a674f8d677c75b034846d0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__generators.html#gaa62609aff1a674f8d677c75b034846d0">dg::EquidistXRefinement</a> = typedef <a class="el" href="structdg_1_1_real_equidist_x_refinement.html">dg::RealEquidistXRefinement</a>&lt;double&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gac68dab098eb0c98222e98ad836e8f346"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__generators.html#gac68dab098eb0c98222e98ad836e8f346">dg::ExponentialRefinement</a> = typedef <a class="el" href="structdg_1_1_real_exponential_refinement.html">dg::RealExponentialRefinement</a>&lt;double&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga6799c46023dafaa5e880a984f34305c2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__generators.html#ga6799c46023dafaa5e880a984f34305c2">dg::ExponentialXRefinement</a> = typedef <a class="el" href="structdg_1_1_real_exponential_x_refinement.html">dg::RealExponentialXRefinement</a>&lt;double&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gab93b3c971661bfaa425029fc3d56261f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__generators.html#gab93b3c971661bfaa425029fc3d56261f">dg::IdentityRefinement</a> = typedef <a class="el" href="structdg_1_1_real_identity_refinement.html">dg::RealIdentityRefinement</a>&lt;double&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gaa0a0bdd0f1b1312461690645efaca772"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__generators.html#gaa0a0bdd0f1b1312461690645efaca772">dg::IdentityXRefinement</a> = typedef <a class="el" href="structdg_1_1_real_identity_x_refinement.html">dg::RealIdentityXRefinement</a>&lt;double&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga00a2c4dee1c9df122dcb22d33773a70c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__generators.html#ga00a2c4dee1c9df122dcb22d33773a70c">dg::LinearRefinement</a> = typedef <a class="el" href="structdg_1_1_real_linear_refinement.html">dg::RealLinearRefinement</a>&lt;double&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Apr 26 2018 16:28:14 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Jul 5 2018 12:59:50 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

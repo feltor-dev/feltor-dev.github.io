@@ -88,6 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -131,7 +132,46 @@ $(document).ready(function(){initNavTree('mpi__projection_8h.html','');});
 
 <p>Useful MPI typedefs and overloads of interpolation and projection.  
 <a href="#details">More...</a></p>
-
+<div class="textblock"><code>#include &quot;<a class="el" href="typedefs_8h_source.html">dg/backend/typedefs.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mpi__matrix_8h_source.html">dg/backend/mpi_matrix.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mpi__collective_8h_source.html">dg/backend/mpi_collective.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mpi__grid_8h_source.html">mpi_grid.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="projection_8h_source.html">projection.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for mpi_projection.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="mpi__projection_8h__incl.png" border="0" usemap="#geometry_2mpi__projection_8h" alt=""/></div>
+<map name="geometry_2mpi__projection_8h" id="geometry_2mpi__projection_8h">
+<area shape="rect" id="node2" href="typedefs_8h.html" title="Useful typedefs of commonly used types. " alt="" coords="393,80,547,107"/>
+<area shape="rect" id="node20" href="mpi__matrix_8h.html" title="MPI matrix classes. " alt="" coords="912,169,1009,196"/>
+<area shape="rect" id="node22" href="mpi__collective_8h.html" title="dg/backend/mpi_collective.h" alt="" coords="2535,80,2722,107"/>
+<area shape="rect" id="node45" href="mpi__grid_8h.html" title="MPI Grid objects. " alt="" coords="51,169,134,196"/>
+<area shape="rect" id="node48" href="projection_8h.html" title="contains creation of projection matrices " alt="" coords="532,169,621,196"/>
+<area shape="rect" id="node5" href="sparseblockmat_8h.html" title="sparseblockmat.h" alt="" coords="323,273,449,300"/>
+<area shape="rect" id="node12" href="sparseblockmat_8cuh.html" title="sparseblockmat.cuh" alt="" coords="209,169,347,196"/>
+<area shape="rect" id="node13" href="mpi__vector_8h.html" title="mpi_vector.h" alt="" coords="1013,273,1111,300"/>
+<area shape="rect" id="node7" href="tensor__traits_8h.html" title="tensor_traits.h" alt="" coords="4104,363,4209,389"/>
+<area shape="rect" id="node9" href="scalar__categories_8h.html" title="scalar_categories.h" alt="" coords="4583,437,4717,464"/>
+<area shape="rect" id="node10" href="vector__categories_8h.html" title="vector_categories.h" alt="" coords="4582,512,4718,539"/>
+<area shape="rect" id="node11" href="execution__policy_8h.html" title="execution_policy.h" alt="" coords="4313,437,4443,464"/>
+<area shape="rect" id="node17" href="mpi__communicator_8h.html" title="mpi_communicator.h" alt="" coords="4424,363,4567,389"/>
+<area shape="rect" id="node19" href="memory_8h.html" title="memory.h" alt="" coords="1022,363,1102,389"/>
+<area shape="rect" id="node44" href="blas1_8h.html" title="dg/blas1.h" alt="" coords="4333,169,4415,196"/>
+<area shape="rect" id="node46" href="enums_8h.html" title="enums " alt="" coords="33,363,123,389"/>
+<area shape="rect" id="node47" href="grid_8h.html" title="base topology classes " alt="" coords="244,273,299,300"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="mpi__projection_8h__dep__incl.png" border="0" usemap="#geometry_2mpi__projection_8hdep" alt=""/></div>
+<map name="geometry_2mpi__projection_8hdep" id="geometry_2mpi__projection_8hdep">
+<area shape="rect" id="node2" href="multigrid_8h.html" title="multigrid.h" alt="" coords="5,80,88,107"/>
+<area shape="rect" id="node4" href="refined__elliptic_8h.html" title="contains an elliptic method on a refined grid " alt="" coords="113,80,229,107"/>
+<area shape="rect" id="node3" href="algorithm_8h.html" title="algorithm.h" alt="" coords="65,155,151,181"/>
+</map>
+</div>
+</div>
 <p><a href="mpi__projection_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -145,39 +185,51 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gabf22476aa30d9a5d7d52a81f97078590"><td class="memItemLeft" align="right" valign="top">typedef MPIDistMat&lt; <a class="el" href="group__typedefs.html#ga0af8204731ee6327dc4616a5980af2d5">dg::IHMatrix</a>, GeneralComm&lt; <a class="el" href="group__typedefs.html#ga16422a5c2edb7bac90e9b1bfb047c1c8">dg::iHVec</a>, <a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a">dg::HVec</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gabf22476aa30d9a5d7d52a81f97078590">dg::MIHMatrix</a></td></tr>
-<tr class="memdesc:gabf22476aa30d9a5d7d52a81f97078590"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI distributed CSR host Matrix.  <a href="group__typedefs.html#gabf22476aa30d9a5d7d52a81f97078590">More...</a><br /></td></tr>
-<tr class="separator:gabf22476aa30d9a5d7d52a81f97078590"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2fdf95d30a7a404b03e2e5ed4e88b603"><td class="memItemLeft" align="right" valign="top">typedef MPIDistMat&lt; <a class="el" href="group__typedefs.html#ga0d122f4172a3e60105754f9419c0831f">dg::IDMatrix</a>, GeneralComm&lt; <a class="el" href="group__typedefs.html#gad1bd45a3dcc145353a87af2fd253bc9b">dg::iDVec</a>, <a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6">dg::DVec</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga2fdf95d30a7a404b03e2e5ed4e88b603">dg::MIDMatrix</a></td></tr>
-<tr class="separator:ga2fdf95d30a7a404b03e2e5ed4e88b603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4e64d1275f25ef7ac7fcbb960620b64d"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga4e64d1275f25ef7ac7fcbb960620b64d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga4e64d1275f25ef7ac7fcbb960620b64d">dg::tMIHMatrix</a> = MPIDistMat&lt; tIHMatrix&lt; real_type &gt;, GeneralComm&lt; <a class="el" href="group__typedefs.html#ga6dcaf6113666c77a4bd46bf93a16ce4d">dg::iHVec</a>, thrust::host_vector&lt; real_type &gt;&gt; &gt;</td></tr>
+<tr class="separator:ga4e64d1275f25ef7ac7fcbb960620b64d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3e99b80d2cb81285eefe945f198d3745"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga3e99b80d2cb81285eefe945f198d3745"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga3e99b80d2cb81285eefe945f198d3745">dg::tMIDMatrix</a> = MPIDistMat&lt; tIDMatrix&lt; real_type &gt;, GeneralComm&lt; <a class="el" href="group__typedefs.html#ga47171b298736a17b3e4ff54ec561f028">dg::iDVec</a>, thrust::device_vector&lt; real_type &gt;&gt; &gt;</td></tr>
+<tr class="separator:ga3e99b80d2cb81285eefe945f198d3745"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaf14c451a536c94f30a0ac6b7150c2e2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gaaf14c451a536c94f30a0ac6b7150c2e2">dg::MIHMatrix</a> = tMIHMatrix&lt; double &gt;</td></tr>
+<tr class="separator:gaaf14c451a536c94f30a0ac6b7150c2e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga741f7ee9c9dd42c856046d37adc0f85c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga741f7ee9c9dd42c856046d37adc0f85c">dg::MIDMatrix</a> = tMIDMatrix&lt; double &gt;</td></tr>
+<tr class="separator:ga741f7ee9c9dd42c856046d37adc0f85c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga9d33d8a07051c4fe66ceca4a958ebc76"><td class="memTemplParams" colspan="2">template&lt;class ConversionPolicy &gt; </td></tr>
-<tr class="memitem:ga9d33d8a07051c4fe66ceca4a958ebc76"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__typedefs.html#gabf22476aa30d9a5d7d52a81f97078590">dg::MIHMatrix</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mpi__structures.html#ga9d33d8a07051c4fe66ceca4a958ebc76">dg::convert</a> (const <a class="el" href="group__typedefs.html#ga0af8204731ee6327dc4616a5980af2d5">dg::IHMatrix</a> &amp;global, const ConversionPolicy &amp;policy)</td></tr>
-<tr class="memdesc:ga9d33d8a07051c4fe66ceca4a958ebc76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a matrix with local row and global column indices to a row distributed MPI matrix.  <a href="group__mpi__structures.html#ga9d33d8a07051c4fe66ceca4a958ebc76">More...</a><br /></td></tr>
-<tr class="separator:ga9d33d8a07051c4fe66ceca4a958ebc76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga51c81a9d854a5904782dcf09c3bbd361"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__typedefs.html#gabf22476aa30d9a5d7d52a81f97078590">dg::MIHMatrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__interpolation.html#ga51c81a9d854a5904782dcf09c3bbd361">dg::create::interpolation</a> (const aMPITopology2d &amp;g_new, const aMPITopology2d &amp;g_old)</td></tr>
-<tr class="memdesc:ga51c81a9d854a5904782dcf09c3bbd361"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create interpolation between two grids.  <a href="group__interpolation.html#ga51c81a9d854a5904782dcf09c3bbd361">More...</a><br /></td></tr>
-<tr class="separator:ga51c81a9d854a5904782dcf09c3bbd361"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga35fce3278a36fab0802963bdc5967df1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__typedefs.html#gabf22476aa30d9a5d7d52a81f97078590">dg::MIHMatrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__interpolation.html#ga35fce3278a36fab0802963bdc5967df1">dg::create::interpolation</a> (const aMPITopology3d &amp;g_new, const aMPITopology3d &amp;g_old)</td></tr>
-<tr class="memdesc:ga35fce3278a36fab0802963bdc5967df1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create interpolation between two grids.  <a href="group__interpolation.html#ga35fce3278a36fab0802963bdc5967df1">More...</a><br /></td></tr>
-<tr class="separator:ga35fce3278a36fab0802963bdc5967df1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabd2bdf111af9570239b7803ec96bd7c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__typedefs.html#gabf22476aa30d9a5d7d52a81f97078590">dg::MIHMatrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__interpolation.html#gabd2bdf111af9570239b7803ec96bd7c8">dg::create::interpolationT</a> (const aMPITopology2d &amp;g_new, const aMPITopology2d &amp;g_old)</td></tr>
-<tr class="memdesc:gabd2bdf111af9570239b7803ec96bd7c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the transpose of the interpolation matrix from new to old.  <a href="group__interpolation.html#gabd2bdf111af9570239b7803ec96bd7c8">More...</a><br /></td></tr>
-<tr class="separator:gabd2bdf111af9570239b7803ec96bd7c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga70a66c8e73ce7f018d987a0bc8192d9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__typedefs.html#gabf22476aa30d9a5d7d52a81f97078590">dg::MIHMatrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__interpolation.html#ga70a66c8e73ce7f018d987a0bc8192d9b">dg::create::interpolationT</a> (const aMPITopology3d &amp;g_new, const aMPITopology3d &amp;g_old)</td></tr>
-<tr class="memdesc:ga70a66c8e73ce7f018d987a0bc8192d9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the transpose of the interpolation matrix from new to old.  <a href="group__interpolation.html#ga70a66c8e73ce7f018d987a0bc8192d9b">More...</a><br /></td></tr>
-<tr class="separator:ga70a66c8e73ce7f018d987a0bc8192d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga335de04041bed42673e0b00b18ebff73"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__typedefs.html#gabf22476aa30d9a5d7d52a81f97078590">dg::MIHMatrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__interpolation.html#ga335de04041bed42673e0b00b18ebff73">dg::create::projection</a> (const aMPITopology2d &amp;g_new, const aMPITopology2d &amp;g_old)</td></tr>
-<tr class="memdesc:ga335de04041bed42673e0b00b18ebff73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a projection between two grids.  <a href="group__interpolation.html#ga335de04041bed42673e0b00b18ebff73">More...</a><br /></td></tr>
-<tr class="separator:ga335de04041bed42673e0b00b18ebff73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabbcdbaa6ad92679aa4b43f6409788640"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__typedefs.html#gabf22476aa30d9a5d7d52a81f97078590">dg::MIHMatrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__interpolation.html#gabbcdbaa6ad92679aa4b43f6409788640">dg::create::projection</a> (const aMPITopology3d &amp;g_new, const aMPITopology3d &amp;g_old)</td></tr>
-<tr class="memdesc:gabbcdbaa6ad92679aa4b43f6409788640"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a projection between two grids.  <a href="group__interpolation.html#gabbcdbaa6ad92679aa4b43f6409788640">More...</a><br /></td></tr>
-<tr class="separator:gabbcdbaa6ad92679aa4b43f6409788640"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga798f01f262b3516bb653e35318a69df6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__typedefs.html#gabf22476aa30d9a5d7d52a81f97078590">dg::MIHMatrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__interpolation.html#ga798f01f262b3516bb653e35318a69df6">dg::create::interpolation</a> (const <a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a">dg::HVec</a> &amp;x, const <a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a">dg::HVec</a> &amp;y, const aMPITopology2d &amp;g, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcx=<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a>, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcy=<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a>)</td></tr>
-<tr class="memdesc:ga798f01f262b3516bb653e35318a69df6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an MPI row distributed interpolation matrix.  <a href="group__interpolation.html#ga798f01f262b3516bb653e35318a69df6">More...</a><br /></td></tr>
-<tr class="separator:ga798f01f262b3516bb653e35318a69df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf94a6a2fb51d6f795e0e9c81ae03fcdb"><td class="memTemplParams" colspan="2">template&lt;class ConversionPolicy , class real_type &gt; </td></tr>
+<tr class="memitem:gaf94a6a2fb51d6f795e0e9c81ae03fcdb"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__typedefs.html#ga4e64d1275f25ef7ac7fcbb960620b64d">dg::tMIHMatrix</a>&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mpi__structures.html#gaf94a6a2fb51d6f795e0e9c81ae03fcdb">dg::convert</a> (const <a class="el" href="group__typedefs.html#ga961227397d311ef3cb8153e95404d7f6">dg::tIHMatrix</a>&lt; real_type &gt; &amp;global, const ConversionPolicy &amp;policy)</td></tr>
+<tr class="memdesc:gaf94a6a2fb51d6f795e0e9c81ae03fcdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a matrix with local row and global column indices to a row distributed MPI matrix.  <a href="group__mpi__structures.html#gaf94a6a2fb51d6f795e0e9c81ae03fcdb">More...</a><br /></td></tr>
+<tr class="separator:gaf94a6a2fb51d6f795e0e9c81ae03fcdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf868a30b376e9fef78f58592d37d61ca"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:gaf868a30b376e9fef78f58592d37d61ca"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__typedefs.html#ga4e64d1275f25ef7ac7fcbb960620b64d">dg::tMIHMatrix</a>&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__interpolation.html#gaf868a30b376e9fef78f58592d37d61ca">dg::create::interpolation</a> (const aRealMPITopology2d&lt; real_type &gt; &amp;g_new, const aRealMPITopology2d&lt; real_type &gt; &amp;g_old)</td></tr>
+<tr class="memdesc:gaf868a30b376e9fef78f58592d37d61ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create interpolation between two grids.  <a href="group__interpolation.html#gaf868a30b376e9fef78f58592d37d61ca">More...</a><br /></td></tr>
+<tr class="separator:gaf868a30b376e9fef78f58592d37d61ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaad3681c543cdcd1fa4fdd0e784610afd"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:gaad3681c543cdcd1fa4fdd0e784610afd"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__typedefs.html#ga4e64d1275f25ef7ac7fcbb960620b64d">dg::tMIHMatrix</a>&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__interpolation.html#gaad3681c543cdcd1fa4fdd0e784610afd">dg::create::interpolation</a> (const aRealMPITopology3d&lt; real_type &gt; &amp;g_new, const aRealMPITopology3d&lt; real_type &gt; &amp;g_old)</td></tr>
+<tr class="memdesc:gaad3681c543cdcd1fa4fdd0e784610afd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create interpolation between two grids.  <a href="group__interpolation.html#gaad3681c543cdcd1fa4fdd0e784610afd">More...</a><br /></td></tr>
+<tr class="separator:gaad3681c543cdcd1fa4fdd0e784610afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga714c25738e9890edd270e74e3e1bc80f"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga714c25738e9890edd270e74e3e1bc80f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__typedefs.html#ga4e64d1275f25ef7ac7fcbb960620b64d">dg::tMIHMatrix</a>&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__interpolation.html#ga714c25738e9890edd270e74e3e1bc80f">dg::create::interpolationT</a> (const aRealMPITopology2d&lt; real_type &gt; &amp;g_new, const aRealMPITopology2d&lt; real_type &gt; &amp;g_old)</td></tr>
+<tr class="memdesc:ga714c25738e9890edd270e74e3e1bc80f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the transpose of the interpolation matrix from new to old.  <a href="group__interpolation.html#ga714c25738e9890edd270e74e3e1bc80f">More...</a><br /></td></tr>
+<tr class="separator:ga714c25738e9890edd270e74e3e1bc80f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad013f68ac363a5f90252e864d04814cb"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:gad013f68ac363a5f90252e864d04814cb"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__typedefs.html#ga4e64d1275f25ef7ac7fcbb960620b64d">dg::tMIHMatrix</a>&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__interpolation.html#gad013f68ac363a5f90252e864d04814cb">dg::create::interpolationT</a> (const aRealMPITopology3d&lt; real_type &gt; &amp;g_new, const aRealMPITopology3d&lt; real_type &gt; &amp;g_old)</td></tr>
+<tr class="memdesc:gad013f68ac363a5f90252e864d04814cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the transpose of the interpolation matrix from new to old.  <a href="group__interpolation.html#gad013f68ac363a5f90252e864d04814cb">More...</a><br /></td></tr>
+<tr class="separator:gad013f68ac363a5f90252e864d04814cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga85040fab4d55bc0d1f8f4b04632d06ce"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga85040fab4d55bc0d1f8f4b04632d06ce"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__typedefs.html#ga4e64d1275f25ef7ac7fcbb960620b64d">dg::tMIHMatrix</a>&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__interpolation.html#ga85040fab4d55bc0d1f8f4b04632d06ce">dg::create::projection</a> (const aRealMPITopology2d&lt; real_type &gt; &amp;g_new, const aRealMPITopology2d&lt; real_type &gt; &amp;g_old)</td></tr>
+<tr class="memdesc:ga85040fab4d55bc0d1f8f4b04632d06ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a projection between two grids.  <a href="group__interpolation.html#ga85040fab4d55bc0d1f8f4b04632d06ce">More...</a><br /></td></tr>
+<tr class="separator:ga85040fab4d55bc0d1f8f4b04632d06ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga37fcd75e352138c84a0fe43aa66c15dd"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga37fcd75e352138c84a0fe43aa66c15dd"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__typedefs.html#ga4e64d1275f25ef7ac7fcbb960620b64d">dg::tMIHMatrix</a>&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__interpolation.html#ga37fcd75e352138c84a0fe43aa66c15dd">dg::create::projection</a> (const aRealMPITopology3d&lt; real_type &gt; &amp;g_new, const aRealMPITopology3d&lt; real_type &gt; &amp;g_old)</td></tr>
+<tr class="memdesc:ga37fcd75e352138c84a0fe43aa66c15dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a projection between two grids.  <a href="group__interpolation.html#ga37fcd75e352138c84a0fe43aa66c15dd">More...</a><br /></td></tr>
+<tr class="separator:ga37fcd75e352138c84a0fe43aa66c15dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaedd441ee788e536ebf699bd7b28d132b"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:gaedd441ee788e536ebf699bd7b28d132b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__typedefs.html#ga4e64d1275f25ef7ac7fcbb960620b64d">dg::tMIHMatrix</a>&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__interpolation.html#gaedd441ee788e536ebf699bd7b28d132b">dg::create::interpolation</a> (const thrust::host_vector&lt; real_type &gt; &amp;x, const thrust::host_vector&lt; real_type &gt; &amp;y, const aRealMPITopology2d&lt; real_type &gt; &amp;g, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcx=<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a>, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcy=<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a>)</td></tr>
+<tr class="memdesc:gaedd441ee788e536ebf699bd7b28d132b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an MPI row distributed interpolation matrix.  <a href="group__interpolation.html#gaedd441ee788e536ebf699bd7b28d132b">More...</a><br /></td></tr>
+<tr class="separator:gaedd441ee788e536ebf699bd7b28d132b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Useful MPI typedefs and overloads of interpolation and projection. </p>
@@ -187,7 +239,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e3380d2178455503f266746fb14246a5.html">geometry</a></li><li class="navelem"><a class="el" href="mpi__projection_8h.html">mpi_projection.h</a></li>
-    <li class="footer">Generated on Thu Apr 26 2018 16:28:14 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Jul 5 2018 12:59:49 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

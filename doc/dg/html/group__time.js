@@ -1,39 +1,43 @@
 var group__time =
 [
     [ "AB", "structdg_1_1_a_b.html", [
-      [ "AB", "structdg_1_1_a_b.html#ad152084804dca455fb74a8607093d523", null ],
-      [ "init", "structdg_1_1_a_b.html#a49859cf86059c432ed71da44f3ca49dd", null ],
-      [ "operator()", "structdg_1_1_a_b.html#a7ae373529f632c8f9fd4ed65cbde72f6", null ]
+      [ "real_type", "structdg_1_1_a_b.html#ad78f0a050c18b1c1a66cfac2957713b2", null ],
+      [ "AB", "structdg_1_1_a_b.html#a7e987412f81e91199d4cb88770b5679f", null ],
+      [ "AB", "structdg_1_1_a_b.html#acccdea937b62ec4d13e2531a734f8c0c", null ],
+      [ "construct", "structdg_1_1_a_b.html#af8faf8cdfcd2bbf37346d44f81a4e134", null ],
+      [ "init", "structdg_1_1_a_b.html#aa1b08f9aa38b33ebb057262c1bc05f90", null ],
+      [ "step", "structdg_1_1_a_b.html#a19a5b9f76d827bf3af8e1b1c6456288a", null ]
     ] ],
     [ "Karniadakis", "structdg_1_1_karniadakis.html", [
-      [ "Karniadakis", "structdg_1_1_karniadakis.html#aa3f9f3073a7a2715e33e20a24f7bcd19", null ],
-      [ "head", "structdg_1_1_karniadakis.html#a14b8c514865bbc22134bf28fde9c4e92", null ],
-      [ "init", "structdg_1_1_karniadakis.html#a5a79782eaa85e0760ed70426cde37515", null ],
-      [ "last", "structdg_1_1_karniadakis.html#a8ce0c310f5859d5e59ef4f694cd65f10", null ],
-      [ "operator()", "structdg_1_1_karniadakis.html#a6ab74376e149036e02e93e7389b735ca", null ]
+      [ "real_type", "structdg_1_1_karniadakis.html#a1b7f645cc16714088580aea97907e42a", null ],
+      [ "Karniadakis", "structdg_1_1_karniadakis.html#a1834706a3dafc21b402fdce1d8caf724", null ],
+      [ "Karniadakis", "structdg_1_1_karniadakis.html#a4fb6bd86147994d0a18162b5a09fd732", null ],
+      [ "construct", "structdg_1_1_karniadakis.html#a245f3fce2285a61607078db1e1ee9549", null ],
+      [ "init", "structdg_1_1_karniadakis.html#a911cf99d1aa7c4b5ef74ea08d8df9822", null ],
+      [ "step", "structdg_1_1_karniadakis.html#a010b975a49928be44d56f805f0b82ef6", null ]
     ] ],
     [ "SIRK", "structdg_1_1_s_i_r_k.html", [
-      [ "SIRK", "structdg_1_1_s_i_r_k.html#a9e5b92f3e7ba9c6c9461dcafbda49482", null ],
-      [ "adaptive_step", "structdg_1_1_s_i_r_k.html#ad7d1ba2904e9e436d0d8041233fb1624", null ],
-      [ "operator()", "structdg_1_1_s_i_r_k.html#af4e852b97d2ad2c2449d04488cfbab2a", null ]
+      [ "real_type", "structdg_1_1_s_i_r_k.html#a33eb77e0cbafb3481706abecf9e7fac6", null ],
+      [ "SIRK", "structdg_1_1_s_i_r_k.html#a654ee7a37585d73f69c0d62f7e7da4b0", null ],
+      [ "SIRK", "structdg_1_1_s_i_r_k.html#a095e152c3db1261f5741d6fa233b1ca8", null ],
+      [ "adaptive_step", "structdg_1_1_s_i_r_k.html#aa683c9617de983f14e18a66167d6db7b", null ],
+      [ "construct", "structdg_1_1_s_i_r_k.html#a8ae2575fc6092264c11fab9d6d3f4e87", null ],
+      [ "step", "structdg_1_1_s_i_r_k.html#a290a566a43b8d1220007928155d7eeee", null ]
+    ] ],
+    [ "RK_opt", "structdg_1_1_r_k__opt.html", [
+      [ "real_type", "structdg_1_1_r_k__opt.html#af235053a0fc601eb1bb133ebc449789a", null ],
+      [ "RK_opt", "structdg_1_1_r_k__opt.html#a5f62f7f33eaf37422f2641034ce720ec", null ],
+      [ "RK_opt", "structdg_1_1_r_k__opt.html#a62f53583eb1051426fe6c6b38f0a0254", null ],
+      [ "construct", "structdg_1_1_r_k__opt.html#aaa6e071366b07d7fa7700ab05a2546fb", null ],
+      [ "step", "structdg_1_1_r_k__opt.html#ab028c29f69431766dddaf0a170d3fe2d", null ]
     ] ],
     [ "RK", "structdg_1_1_r_k.html", [
-      [ "RK", "structdg_1_1_r_k.html#a5c25c43af2d6a668a0f501d230d18f0c", null ],
-      [ "operator()", "structdg_1_1_r_k.html#ab338d003b765b52a570e517ce2ccd6d8", null ]
+      [ "real_type", "structdg_1_1_r_k.html#a78540b38078f021290c60e92b107689f", null ],
+      [ "RK", "structdg_1_1_r_k.html#a2389208cbbdd701db18155de6fe31975", null ],
+      [ "RK", "structdg_1_1_r_k.html#a25b7883ec7118f8adb85baee2b81d8e6", null ],
+      [ "construct", "structdg_1_1_r_k.html#aaf25ba6332995423600b55d3eb1f35bf", null ],
+      [ "step", "structdg_1_1_r_k.html#ae2eaa58bb368d12ca3029eab3e5ca2e2", null ]
     ] ],
-    [ "RK_classic", "structdg_1_1_r_k__classic.html", [
-      [ "RK_classic", "structdg_1_1_r_k__classic.html#a55cadf32f8586bf4325e05c4c1cd503c", null ],
-      [ "operator()", "structdg_1_1_r_k__classic.html#a84d7f3121c357e8f4f22055891cad878", null ]
-    ] ],
-    [ "integrateRK", "group__time.html#gaeabbf4523e87e5da2bde0ae0b267078f", null ],
-    [ "integrateRK17", "group__time.html#ga834092117aeb0127c0d6ab321d36b2b5", null ],
-    [ "integrateRK4", "group__time.html#ga3a57c85ae2215148895a733282ce1db4", null ],
-    [ "integrateRK6", "group__time.html#ga09ac43c81ef131abdb57a8145bc3a560", null ],
-    [ "stepperRK", "group__time.html#ga7e508d2a79b636217b4b752b61a68837", null ],
-    [ "stepperRK1", "group__time.html#ga46d8f3f3cd8f8194bf1a1e3ad0ccc2ca", null ],
-    [ "stepperRK17", "group__time.html#ga247e5861e0031da370a2bfca85f71683", null ],
-    [ "stepperRK2", "group__time.html#gaa2c8589e82ddaf5c53a16795097fe8bc", null ],
-    [ "stepperRK3", "group__time.html#ga6bc17438d2732affff3dbc1246869d3e", null ],
-    [ "stepperRK4", "group__time.html#ga75ec7ff40fc4127fc11777fc95801d1e", null ],
-    [ "stepperRK6", "group__time.html#ga5c9d1170213d8b65b8af79fa38619976", null ]
+    [ "integrateRK", "group__time.html#gad6229d5ae4b046d09c402cdab727d207", null ],
+    [ "stepperRK", "group__time.html#ga15213ce3b66c2d24d60d064a2871917d", null ]
 ];

@@ -1,50 +1,59 @@
 var group__generators =
 [
-    [ "aRefinement1d", "structdg_1_1a_refinement1d.html", [
-      [ "~aRefinement1d", "structdg_1_1a_refinement1d.html#ae3bd76b8613413a7f0cd2886f228bda4", null ],
-      [ "aRefinement1d", "structdg_1_1a_refinement1d.html#a742abd0c2d3c3ba706e779a9dbdc02c8", null ],
-      [ "aRefinement1d", "structdg_1_1a_refinement1d.html#a03b408997049c08c5388b0dbece14dc6", null ],
-      [ "clone", "structdg_1_1a_refinement1d.html#acf513e04ba84d2566850a129af059c31", null ],
-      [ "generate", "structdg_1_1a_refinement1d.html#a8d143ba310db976500ed8696dc6c4c8e", null ],
-      [ "N_new", "structdg_1_1a_refinement1d.html#a894ec10b3f17408e92d69eee4b6585df", null ],
-      [ "operator=", "structdg_1_1a_refinement1d.html#a8e01f69e675b9afd009cbcc91cbe4766", null ]
+    [ "aRealRefinement1d", "structdg_1_1a_real_refinement1d.html", [
+      [ "~aRealRefinement1d", "structdg_1_1a_real_refinement1d.html#adfb652ed1fd93e54516a663e4d437872", null ],
+      [ "aRealRefinement1d", "structdg_1_1a_real_refinement1d.html#aa30ed397b6917b027db918dc289b08a6", null ],
+      [ "aRealRefinement1d", "structdg_1_1a_real_refinement1d.html#a31c28314a759d92c19c7c6dc47f690ef", null ],
+      [ "clone", "structdg_1_1a_real_refinement1d.html#ab5d05aee92cc5a1a33f10174cd34de31", null ],
+      [ "generate", "structdg_1_1a_real_refinement1d.html#a79f9e9c17ff2f4704bf8d41fcc08cf45", null ],
+      [ "N_new", "structdg_1_1a_real_refinement1d.html#a2d9d3fb66f4f92da4ab60338d8aeebfe", null ],
+      [ "operator=", "structdg_1_1a_real_refinement1d.html#abfdf18ebd1fbd83224ab6cd6ba598453", null ]
     ] ],
-    [ "IdentityRefinement", "structdg_1_1_identity_refinement.html", [
-      [ "clone", "structdg_1_1_identity_refinement.html#af2758ae7c3a79bc583a09d0dcecb9afb", null ]
+    [ "RealIdentityRefinement", "structdg_1_1_real_identity_refinement.html", [
+      [ "clone", "structdg_1_1_real_identity_refinement.html#a74438286fb8442e7bdb19d4b05a40246", null ]
     ] ],
-    [ "LinearRefinement", "structdg_1_1_linear_refinement.html", [
-      [ "LinearRefinement", "structdg_1_1_linear_refinement.html#aba5e5b253fc1fd6ab8f58afa2a46a83f", null ],
-      [ "clone", "structdg_1_1_linear_refinement.html#ad235250d465fe7e7d2abda0d7911251e", null ]
+    [ "RealLinearRefinement", "structdg_1_1_real_linear_refinement.html", [
+      [ "RealLinearRefinement", "structdg_1_1_real_linear_refinement.html#a7dae8b890dc6766204ec5e31af09b7cb", null ],
+      [ "clone", "structdg_1_1_real_linear_refinement.html#a3f5936424db366a842ea279326be6e6d", null ]
     ] ],
-    [ "EquidistRefinement", "structdg_1_1_equidist_refinement.html", [
-      [ "EquidistRefinement", "structdg_1_1_equidist_refinement.html#afe8a6ad3b9193f50d25f0d20b4381eae", null ],
-      [ "clone", "structdg_1_1_equidist_refinement.html#a548adcf175d45b9a923f651f31db7409", null ]
+    [ "RealEquidistRefinement", "structdg_1_1_real_equidist_refinement.html", [
+      [ "RealEquidistRefinement", "structdg_1_1_real_equidist_refinement.html#af874b23d31c408bd9b53c3a8f713bd58", null ],
+      [ "clone", "structdg_1_1_real_equidist_refinement.html#a6dfcc915a9eee53d7efbca4b43a9e75e", null ]
     ] ],
-    [ "ExponentialRefinement", "structdg_1_1_exponential_refinement.html", [
-      [ "ExponentialRefinement", "structdg_1_1_exponential_refinement.html#ad2d30922f3bdf12089caf85edb32e889", null ],
-      [ "clone", "structdg_1_1_exponential_refinement.html#a5b534bd3aae7f95cd37cced54cba27af", null ]
+    [ "RealExponentialRefinement", "structdg_1_1_real_exponential_refinement.html", [
+      [ "RealExponentialRefinement", "structdg_1_1_real_exponential_refinement.html#ab0db54635a79c4512c9df9140ce95bf7", null ],
+      [ "clone", "structdg_1_1_real_exponential_refinement.html#a3268eb41ac704295b6bd50fa3c9df994", null ]
     ] ],
-    [ "aRefinementX2d", "structdg_1_1a_refinement_x2d.html", [
-      [ "~aRefinementX2d", "structdg_1_1a_refinement_x2d.html#a23834b29a3e9302da32b32d1548a684c", null ],
-      [ "aRefinementX2d", "structdg_1_1a_refinement_x2d.html#a85259422f1394eea392183b306bf46fc", null ],
-      [ "aRefinementX2d", "structdg_1_1a_refinement_x2d.html#a89e8ce33f4ac1f636135b21aee77fb02", null ],
-      [ "clone", "structdg_1_1a_refinement_x2d.html#aa13e70d376e2e84723ccdd42fa17a84f", null ],
-      [ "fx_new", "structdg_1_1a_refinement_x2d.html#a015de3ea0f3bd82f9f3c548b5552a372", null ],
-      [ "fy_new", "structdg_1_1a_refinement_x2d.html#ad01518ab2ad78f1f379ae0623d57057c", null ],
-      [ "generate", "structdg_1_1a_refinement_x2d.html#a8b886ba186220333f602d146c316492f", null ],
-      [ "nx_new", "structdg_1_1a_refinement_x2d.html#ac7253f803e19ead929ae7ccd31255aef", null ],
-      [ "ny_new", "structdg_1_1a_refinement_x2d.html#ad2cc54d5f407baa75a200a62397e5739", null ],
-      [ "operator=", "structdg_1_1a_refinement_x2d.html#abd56288c234528d1176c376769c5d4df", null ]
+    [ "aRealRefinementX2d", "structdg_1_1a_real_refinement_x2d.html", [
+      [ "~aRealRefinementX2d", "structdg_1_1a_real_refinement_x2d.html#ade706e8f711f1f483ffa7f40b68aa953", null ],
+      [ "aRealRefinementX2d", "structdg_1_1a_real_refinement_x2d.html#a1a003ce21fcc3858b6784a6a0f9090cd", null ],
+      [ "aRealRefinementX2d", "structdg_1_1a_real_refinement_x2d.html#a63dece62b1775a3797a5cba1c4ec9b9b", null ],
+      [ "clone", "structdg_1_1a_real_refinement_x2d.html#a35913d85441fcaa41296e1fa61e7c76d", null ],
+      [ "fx_new", "structdg_1_1a_real_refinement_x2d.html#a78a4cfd0a80fadde2f43a4f047fec8d0", null ],
+      [ "fy_new", "structdg_1_1a_real_refinement_x2d.html#a811148a005d391cf347a8abf0511921f", null ],
+      [ "generate", "structdg_1_1a_real_refinement_x2d.html#afd8d9cf0e4455f0c613275ce1a1e299a", null ],
+      [ "nx_new", "structdg_1_1a_real_refinement_x2d.html#abd6bb991746b9bbeb037ffcfa41d51b5", null ],
+      [ "ny_new", "structdg_1_1a_real_refinement_x2d.html#a5d3b2a0cee447676a357ec65b0f3474a", null ],
+      [ "operator=", "structdg_1_1a_real_refinement_x2d.html#a4d194b3ab9fad8583f4ba31daebc6e66", null ]
     ] ],
-    [ "IdentityXRefinement", "structdg_1_1_identity_x_refinement.html", [
-      [ "clone", "structdg_1_1_identity_x_refinement.html#a9a11badf94ab4a870a43097758ec0648", null ]
+    [ "RealIdentityXRefinement", "structdg_1_1_real_identity_x_refinement.html", [
+      [ "clone", "structdg_1_1_real_identity_x_refinement.html#adb5dccffeac923ee286c7ecd30c89e14", null ]
     ] ],
-    [ "EquidistXRefinement", "structdg_1_1_equidist_x_refinement.html", [
-      [ "EquidistXRefinement", "structdg_1_1_equidist_x_refinement.html#ae4f640169844d1fecff8362ccd5cbac7", null ],
-      [ "clone", "structdg_1_1_equidist_x_refinement.html#ac09ec91d2d2ff11fe55812f03eccff0c", null ]
+    [ "RealEquidistXRefinement", "structdg_1_1_real_equidist_x_refinement.html", [
+      [ "RealEquidistXRefinement", "structdg_1_1_real_equidist_x_refinement.html#ac270d4f7b1cd09eeed8f2e9d20d80dc4", null ],
+      [ "clone", "structdg_1_1_real_equidist_x_refinement.html#a8604bf81502160a6a71135e6509ea7e1", null ]
     ] ],
-    [ "ExponentialXRefinement", "structdg_1_1_exponential_x_refinement.html", [
-      [ "ExponentialXRefinement", "structdg_1_1_exponential_x_refinement.html#a887ed3aa744e4358a2b9c00113797685", null ],
-      [ "clone", "structdg_1_1_exponential_x_refinement.html#a772c692173d82ca84ebb383788eaa85b", null ]
-    ] ]
+    [ "RealExponentialXRefinement", "structdg_1_1_real_exponential_x_refinement.html", [
+      [ "RealExponentialXRefinement", "structdg_1_1_real_exponential_x_refinement.html#a5f679ab6d9f4129121736ca510455bc4", null ],
+      [ "clone", "structdg_1_1_real_exponential_x_refinement.html#aad5e4f986aba019fec75ad5fbab743a0", null ]
+    ] ],
+    [ "aRefinement1d", "group__generators.html#ga1cfe6f739503af0dfefa5b9d73cacd94", null ],
+    [ "aRefinementX2d", "group__generators.html#ga1f0f5348b03f19a4e51d6cfc155e65f2", null ],
+    [ "EquidistRefinement", "group__generators.html#ga1fc3ed9c0e84086363c957a8aaa60c54", null ],
+    [ "EquidistXRefinement", "group__generators.html#gaa62609aff1a674f8d677c75b034846d0", null ],
+    [ "ExponentialRefinement", "group__generators.html#gac68dab098eb0c98222e98ad836e8f346", null ],
+    [ "ExponentialXRefinement", "group__generators.html#ga6799c46023dafaa5e880a984f34305c2", null ],
+    [ "IdentityRefinement", "group__generators.html#gab93b3c971661bfaa425029fc3d56261f", null ],
+    [ "IdentityXRefinement", "group__generators.html#gaa0a0bdd0f1b1312461690645efaca772", null ],
+    [ "LinearRefinement", "group__generators.html#ga00a2c4dee1c9df122dcb22d33773a70c", null ]
 ];

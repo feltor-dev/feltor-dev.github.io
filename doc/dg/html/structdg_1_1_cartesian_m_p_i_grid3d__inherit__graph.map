@@ -1,5 +1,0 @@
-<map id="dg::CartesianMPIGrid3d" name="dg::CartesianMPIGrid3d">
-<area shape="rect" id="node2" href="$structdg_1_1a_product_m_p_i_geometry3d.html" title="a 3d product space MPI Geometry " alt="" coords="5,155,196,181"/>
-<area shape="rect" id="node3" href="$structdg_1_1a_m_p_i_geometry3d.html" title="This is the abstract interface class for a three&#45;dimensional MPIGeometry. " alt="" coords="27,80,174,107"/>
-<area shape="rect" id="node4" href="$structdg_1_1a_m_p_i_topology3d.html" title="3D MPI Grid class " alt="" coords="29,5,172,32"/>
-</map>

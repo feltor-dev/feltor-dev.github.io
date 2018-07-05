@@ -1,7 +1,6 @@
 var searchData=
 [
   ['lamb',['Lamb',['../../../dg/html/structdg_1_1_lamb.html',1,'dg']]],
-  ['linearrefinement',['LinearRefinement',['../../../dg/html/structdg_1_1_linear_refinement.html',1,'dg']]],
   ['linearx',['LinearX',['../../../dg/html/structdg_1_1_linear_x.html',1,'dg']]],
   ['lineary',['LinearY',['../../../dg/html/structdg_1_1_linear_y.html',1,'dg']]],
   ['linearz',['LinearZ',['../../../dg/html/structdg_1_1_linear_z.html',1,'dg']]],

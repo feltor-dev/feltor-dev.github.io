@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('structdg_1_1_m_p_i___vector.html','');
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="structdg_1_1_m_p_i___vector-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">dg::MPI_Vector&lt; container &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__backend.html">Level 1: Vectors, Matrices and basic operations</a> &raquo; <a class="el" href="group__mpi__structures.html">MPI backend functionality</a></div></div>  </div>
+<div class="title">dg::MPI_Vector&lt; container &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__backend.html">Level 1: Vectors, Matrices and basic operations</a> &raquo; <a class="el" href="group__mpi__structures.html">MPI backend</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -186,7 +186,7 @@ struct dg::MPI_Vector&lt; container &gt;</h3>
 <p>mpi Vector class </p>
 <p>This class is a simple wrapper around a container object and an MPI_Comm. The <a class="el" href="namespacedg_1_1blas1.html" title="BLAS Level 1 routines. ">blas1</a> and <a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a> functionality is available iff it is available for the container type. We use mpi to communicate (e.g. boundary points in matrix-vector multiplications) and use the existing blas functions for the local computations. (At the blas level 1 communication is needed only for scalar products) </p><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">container</td><td>local container type. Must have a <code><a class="el" href="structdg_1_1_m_p_i___vector.html#aaf8b846a0196833afef45c0469d506d4" title="Return the size of the data object. ">size()</a></code> and a <code><a class="el" href="structdg_1_1_m_p_i___vector.html#ae86c14f9d503831fbe96ced377a37013" title="Swap data and communicator. ">swap()</a></code> member function and a specialization of the <code><a class="el" href="structdg_1_1_vector_traits.html" title="The vector traits. ">VectorTraits</a></code> class. </td></tr>
+    <tr><td class="paramname">container</td><td>local container type. Must have a <code><a class="el" href="structdg_1_1_m_p_i___vector.html#aaf8b846a0196833afef45c0469d506d4" title="Return the size of the data object. ">size()</a></code> and a <code><a class="el" href="structdg_1_1_m_p_i___vector.html#ae86c14f9d503831fbe96ced377a37013" title="Swap data and communicator. ">swap()</a></code> member function and a specialization of the <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> class. </td></tr>
   </table>
   </dd>
 </dl>
@@ -560,7 +560,7 @@ template&lt;class container&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a></li>
-    <li class="footer">Generated on Thu Apr 26 2018 16:28:15 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Jul 5 2018 12:59:50 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

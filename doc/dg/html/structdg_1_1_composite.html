@@ -148,12 +148,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afac33c60ce48942be09a7d19c33343dd"><td class="memTemplParams" colspan="2">template&lt;class Matrix2 &gt; </td></tr>
 <tr class="memitem:afac33c60ce48942be09a7d19c33343dd"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1_composite.html">Composite</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_composite.html#afac33c60ce48942be09a7d19c33343dd">operator=</a> (const <a class="el" href="structdg_1_1_composite.html">Composite</a>&lt; Matrix2 &gt; &amp;src)</td></tr>
 <tr class="separator:afac33c60ce48942be09a7d19c33343dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4dfd85a2dc01abbc14fb767d3ed24ce3"><td class="memTemplParams" colspan="2">template&lt;class container &gt; </td></tr>
-<tr class="memitem:a4dfd85a2dc01abbc14fb767d3ed24ce3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_composite.html#a4dfd85a2dc01abbc14fb767d3ed24ce3">symv</a> (const container &amp;v1, container &amp;v2) const </td></tr>
-<tr class="separator:a4dfd85a2dc01abbc14fb767d3ed24ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09aff853a1fada45b9f4a3dfe4759cc8"><td class="memTemplParams" colspan="2">template&lt;class container &gt; </td></tr>
-<tr class="memitem:a09aff853a1fada45b9f4a3dfe4759cc8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_composite.html#a09aff853a1fada45b9f4a3dfe4759cc8">symv</a> (double alpha, const container &amp;v1, double beta, container &amp;v2) const </td></tr>
-<tr class="separator:a09aff853a1fada45b9f4a3dfe4759cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a985c8eb1fb6e23df52b7cee2cb4563a8"><td class="memTemplParams" colspan="2">template&lt;class ContainerType1 , class ContainerType2 &gt; </td></tr>
+<tr class="memitem:a985c8eb1fb6e23df52b7cee2cb4563a8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_composite.html#a985c8eb1fb6e23df52b7cee2cb4563a8">symv</a> (const ContainerType1 &amp;v1, ContainerType2 &amp;v2) const </td></tr>
+<tr class="separator:a985c8eb1fb6e23df52b7cee2cb4563a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4f4804e74cafe52faa9d01d6f58038f"><td class="memTemplParams" colspan="2">template&lt;class ContainerType &gt; </td></tr>
+<tr class="memitem:ad4f4804e74cafe52faa9d01d6f58038f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_composite.html#ad4f4804e74cafe52faa9d01d6f58038f">symv</a> (<a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt; alpha, const ContainerType &amp;v1, <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt; beta, ContainerType &amp;v2) const </td></tr>
+<tr class="separator:ad4f4804e74cafe52faa9d01d6f58038f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b567317eb1a7bd13cc0ffe2f73cff74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_composite.html#a6b567317eb1a7bd13cc0ffe2f73cff74">display</a> (std::ostream &amp;os=std::cout) const </td></tr>
 <tr class="separator:a6b567317eb1a7bd13cc0ffe2f73cff74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -337,13 +337,13 @@ template&lt;class Matrix2 &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a4dfd85a2dc01abbc14fb767d3ed24ce3"></a>
+<a class="anchor" id="a985c8eb1fb6e23df52b7cee2cb4563a8"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class Matrix&gt; </div>
 <div class="memtemplate">
-template&lt;class container &gt; </div>
+template&lt;class ContainerType1 , class ContainerType2 &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -351,13 +351,13 @@ template&lt;class container &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="structdg_1_1_composite.html">dg::Composite</a>&lt; Matrix &gt;::symv </td>
           <td>(</td>
-          <td class="paramtype">const container &amp;&#160;</td>
+          <td class="paramtype">const ContainerType1 &amp;&#160;</td>
           <td class="paramname"><em>v1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">container &amp;&#160;</td>
+          <td class="paramtype">ContainerType2 &amp;&#160;</td>
           <td class="paramname"><em>v2</em>&#160;</td>
         </tr>
         <tr>
@@ -375,13 +375,13 @@ template&lt;class container &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a09aff853a1fada45b9f4a3dfe4759cc8"></a>
+<a class="anchor" id="ad4f4804e74cafe52faa9d01d6f58038f"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class Matrix&gt; </div>
 <div class="memtemplate">
-template&lt;class container &gt; </div>
+template&lt;class ContainerType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -389,25 +389,25 @@ template&lt;class container &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="structdg_1_1_composite.html">dg::Composite</a>&lt; Matrix &gt;::symv </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype"><a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt;&#160;</td>
           <td class="paramname"><em>alpha</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const container &amp;&#160;</td>
+          <td class="paramtype">const ContainerType &amp;&#160;</td>
           <td class="paramname"><em>v1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype"><a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt;&#160;</td>
           <td class="paramname"><em>beta</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">container &amp;&#160;</td>
+          <td class="paramtype">ContainerType &amp;&#160;</td>
           <td class="paramname"><em>v2</em>&#160;</td>
         </tr>
         <tr>
@@ -477,7 +477,7 @@ template&lt;class Matrix&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_composite.html">Composite</a></li>
-    <li class="footer">Generated on Thu Apr 26 2018 16:28:15 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Jul 5 2018 12:59:50 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

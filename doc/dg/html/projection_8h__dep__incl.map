@@ -1,0 +1,8 @@
+<map id="geometry/projection.h" name="geometry/projection.h">
+<area shape="rect" id="node2" href="$fast__interpolation_8h.html" title="contains a matrix type for fast interpolations/projections " alt="" coords="5,80,196,107"/>
+<area shape="rect" id="node5" href="$mpi__projection_8h.html" title="Useful MPI typedefs and overloads of interpolation and projection. " alt="" coords="220,80,395,107"/>
+<area shape="rect" id="node6" href="$refined__elliptic_8h.html" title="contains an elliptic method on a refined grid " alt="" coords="265,155,381,181"/>
+<area shape="rect" id="node7" href="$projection_x_8h.html" title="contains creation of projection matrices for X point topology " alt="" coords="405,155,561,181"/>
+<area shape="rect" id="node3" href="$multigrid_8h.html" title="multigrid.h" alt="" coords="158,155,241,181"/>
+<area shape="rect" id="node4" href="$algorithm_8h.html" title="algorithm.h" alt="" coords="280,229,367,256"/>
+</map>

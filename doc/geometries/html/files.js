@@ -13,9 +13,7 @@ var files =
     [ "geometries.h", "geometries_8h.html", null ],
     [ "geometries_doc.h", "geometries__doc_8h.html", null ],
     [ "guenther.h", "guenther_8h.html", "guenther_8h" ],
-    [ "guenther_parameters.h", "guenther__parameters_8h.html", [
-      [ "Parameters", "structdg_1_1geo_1_1guenther_1_1_parameters.html", "structdg_1_1geo_1_1guenther_1_1_parameters" ]
-    ] ],
+    [ "guenther_parameters.h", "guenther__parameters_8h.html", null ],
     [ "hector.h", "hector_8h.html", null ],
     [ "init.h", "init_8h.html", null ],
     [ "magnetic_field.h", "magnetic__field_8h.html", null ],

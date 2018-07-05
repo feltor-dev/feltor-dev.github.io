@@ -1,0 +1,46 @@
+<map id="geometry/topological_traits.h" name="geometry/topological_traits.h">
+<area shape="rect" id="node2" href="$grid_8h.html" title="base topology classes " alt="" coords="1240,95,1352,121"/>
+<area shape="rect" id="node27" href="$transform_8h.html" title="geometry/transform.h" alt="" coords="2554,468,2701,495"/>
+<area shape="rect" id="node3" href="$average_8h.html" title="contains classes for poloidal and toroidal average computations. " alt="" coords="1120,468,1258,495"/>
+<area shape="rect" id="node6" href="$weights_8h.html" title="contains creation functions for integration weights and their inverse " alt="" coords="1228,393,1364,420"/>
+<area shape="rect" id="node14" href="$dx_8h.html" title="Simple 1d derivatives. " alt="" coords="991,468,1096,495"/>
+<area shape="rect" id="node15" href="$derivatives_8h.html" title="Convenience functions to create 2D derivatives. " alt="" coords="1576,550,1730,577"/>
+<area shape="rect" id="node21" href="$projection_8h.html" title="contains creation of projection matrices " alt="" coords="820,468,966,495"/>
+<area shape="rect" id="node22" href="$fast__interpolation_8h.html" title="contains a matrix type for fast interpolations/projections " alt="" coords="566,550,756,577"/>
+<area shape="rect" id="node26" href="$refined__grid_8h.html" title="geometry/refined_grid.h" alt="" coords="1334,468,1492,495"/>
+<area shape="rect" id="node28" href="$mpi__grid_8h.html" title="MPI Grid objects. " alt="" coords="1619,468,1759,495"/>
+<area shape="rect" id="node31" href="$split__and__join_8h.html" title="geometry/split_and\l_join.h" alt="" coords="2827,543,2959,584"/>
+<area shape="rect" id="node32" href="$base__geometry_8h.html" title="geometry/base_geometry.h" alt="" coords="2360,393,2540,420"/>
+<area shape="rect" id="node33" href="$grid_x_8h.html" title="base X&#45;point topology classes " alt="" coords="276,319,398,345"/>
+<area shape="rect" id="node37" href="$evaluation_8h.html" title="Function discretization routines. " alt="" coords="1963,169,2114,196"/>
+<area shape="rect" id="node38" href="$interpolation_8h.html" title="contains 1D, 2D and 3D interpolation matrix creation functions " alt="" coords="783,393,944,420"/>
+<area shape="rect" id="node39" href="$xspacelib_8h.html" title="provides some utility functions " alt="" coords="497,468,644,495"/>
+<area shape="rect" id="node40" href="$functors_8h.html" title="functors.h" alt="" coords="2824,244,2904,271"/>
+<area shape="rect" id="node45" href="$operator__tensor_8h.html" title="geometry/operator_tensor.h" alt="" coords="526,319,708,345"/>
+<area shape="rect" id="node4" href="$average__mpi_8h.html" title="contains classes for poloidal and toroidal average computations. " alt="" coords="1334,632,1500,659"/>
+<area shape="rect" id="node5" href="$algorithm_8h.html" title="algorithm.h" alt="" coords="1374,856,1460,883"/>
+<area shape="rect" id="node7" href="$mpi__weights_8h.html" title="contains MPI weights " alt="" coords="1387,550,1551,577"/>
+<area shape="rect" id="node8" href="$geometry_8h.html" title="geometry/geometry.h" alt="" coords="2166,632,2311,659"/>
+<area shape="rect" id="node19" href="$weights_x_8h.html" title="contains creation functions for integration weights and their inverse on X&#45;point topology ..." alt="" coords="31,468,176,495"/>
+<area shape="rect" id="node9" href="$elliptic_8h.html" title="General negative elliptic operators. " alt="" coords="1684,707,1755,733"/>
+<area shape="rect" id="node12" href="$arakawa_8h.html" title="object for computation of Poisson bracket " alt="" coords="1998,707,2081,733"/>
+<area shape="rect" id="node13" href="$poisson_8h.html" title="poisson.h" alt="" coords="1523,707,1602,733"/>
+<area shape="rect" id="node10" href="$helmholtz_8h.html" title="contains Helmholtz and Maxwell operators " alt="" coords="1660,781,1750,808"/>
+<area shape="rect" id="node11" href="$refined__elliptic_8h.html" title="contains an elliptic method on a refined grid " alt="" coords="975,781,1091,808"/>
+<area shape="rect" id="node17" href="$dx_x_8h.html" title="Simple 1d derivatives on X&#45;point topology. " alt="" coords="93,550,208,577"/>
+<area shape="rect" id="node16" href="$mpi__derivatives_8h.html" title="geometry/mpi_derivatives.h" alt="" coords="1676,632,1859,659"/>
+<area shape="rect" id="node18" href="$derivatives_x_8h.html" title="Convenience functions to create 2D derivatives on X&#45;point topology. " alt="" coords="93,632,256,659"/>
+<area shape="rect" id="node20" href="$refined__grid_x_8h.html" title="geometry/refined_gridX.h" alt="" coords="2008,550,2175,577"/>
+<area shape="rect" id="node24" href="$mpi__projection_8h.html" title="Useful MPI typedefs and overloads of interpolation and projection. " alt="" coords="883,550,1058,577"/>
+<area shape="rect" id="node25" href="$projection_x_8h.html" title="contains creation of projection matrices for X point topology " alt="" coords="232,550,388,577"/>
+<area shape="rect" id="node23" href="$multigrid_8h.html" title="multigrid.h" alt="" coords="674,632,757,659"/>
+<area shape="rect" id="node29" href="$mpi__evaluation_8h.html" title="Function discretization routines for mpi vectors. " alt="" coords="1805,550,1984,577"/>
+<area shape="rect" id="node30" href="$mpi__base_8h.html" title="geometry/mpi_base.h" alt="" coords="2402,550,2549,577"/>
+<area shape="rect" id="node34" href="$base__geometry_x_8h.html" title="geometry/base_geometryX.h" alt="" coords="2088,468,2277,495"/>
+<area shape="rect" id="node35" href="$evaluation_x_8h.html" title="Function discretization routines on X&#45;point topology. " alt="" coords="1959,393,2118,420"/>
+<area shape="rect" id="node36" href="$interpolation_x_8h.html" title="contains 1D, 2D and 3D interpolation matrix creation functions on X&#45;point topology ..." alt="" coords="252,468,422,495"/>
+<area shape="rect" id="node41" href="$tensor_8h.html" title="geometry/tensor.h" alt="" coords="2568,319,2695,345"/>
+<area shape="rect" id="node42" href="$multiply_8h.html" title="geometry/multiply.h" alt="" coords="2616,393,2752,420"/>
+<area shape="rect" id="node43" href="$cg_8h.html" title="cg.h" alt="" coords="2983,550,3030,577"/>
+<area shape="rect" id="node44" href="$multistep_8h.html" title="contains multistep explicit&amp; implicit time&#45;integrators " alt="" coords="2942,781,3028,808"/>
+</map>

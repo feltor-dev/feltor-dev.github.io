@@ -88,6 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -128,7 +129,60 @@ $(document).ready(function(){initNavTree('operator_8h.html','');});
 <div class="title">operator.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;iterator&gt;</code><br />
+<code>#include &lt;stdexcept&gt;</code><br />
+<code>#include &lt;cassert&gt;</code><br />
+<code>#include &quot;<a class="el" href="dlt_8h_source.html">dlt.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for operator.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="operator_8h__incl.png" border="0" usemap="#geometry_2operator_8h" alt=""/></div>
+<map name="geometry_2operator_8h" id="geometry_2operator_8h">
+<area shape="rect" id="node8" href="dlt_8h.html" title="contains the discrete legendre trafo class " alt="" coords="166,80,213,107"/>
+<area shape="rect" id="node11" href="exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="334,155,501,181"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="operator_8h__dep__incl.png" border="0" usemap="#geometry_2operator_8hdep" alt=""/></div>
+<map name="geometry_2operator_8hdep" id="geometry_2operator_8hdep">
+<area shape="rect" id="node2" href="tensor_8h.html" title="geometry/tensor.h" alt="" coords="325,80,451,107"/>
+<area shape="rect" id="node16" href="multiply_8h.html" title="geometry/multiply.h" alt="" coords="588,155,724,181"/>
+<area shape="rect" id="node17" href="creation_8h.html" title="geometry/creation.h" alt="" coords="1105,80,1242,107"/>
+<area shape="rect" id="node25" href="xspacelib_8h.html" title="provides some utility functions " alt="" coords="1559,229,1705,256"/>
+<area shape="rect" id="node26" href="dx_8h.html" title="Simple 1d derivatives. " alt="" coords="1014,229,1119,256"/>
+<area shape="rect" id="node31" href="operator__tensor_8h.html" title="geometry/operator_tensor.h" alt="" coords="1267,80,1448,107"/>
+<area shape="rect" id="node3" href="base__geometry_8h.html" title="geometry/base_geometry.h" alt="" coords="363,155,543,181"/>
+<area shape="rect" id="node4" href="geometry_8h.html" title="geometry/geometry.h" alt="" coords="417,379,562,405"/>
+<area shape="rect" id="node13" href="mpi__base_8h.html" title="geometry/mpi_base.h" alt="" coords="5,229,152,256"/>
+<area shape="rect" id="node15" href="base__geometry_x_8h.html" title="geometry/base_geometryX.h" alt="" coords="227,229,416,256"/>
+<area shape="rect" id="node11" href="refined__grid_8h.html" title="geometry/refined_grid.h" alt="" coords="819,229,978,256"/>
+<area shape="rect" id="node14" href="transform_8h.html" title="geometry/transform.h" alt="" coords="491,229,637,256"/>
+<area shape="rect" id="node5" href="algorithm_8h.html" title="algorithm.h" alt="" coords="867,603,954,629"/>
+<area shape="rect" id="node6" href="elliptic_8h.html" title="General negative elliptic operators. " alt="" coords="790,453,861,480"/>
+<area shape="rect" id="node9" href="arakawa_8h.html" title="object for computation of Poisson bracket " alt="" coords="677,453,760,480"/>
+<area shape="rect" id="node10" href="poisson_8h.html" title="poisson.h" alt="" coords="565,453,643,480"/>
+<area shape="rect" id="node7" href="helmholtz_8h.html" title="contains Helmholtz and Maxwell operators " alt="" coords="783,528,873,555"/>
+<area shape="rect" id="node8" href="refined__elliptic_8h.html" title="contains an elliptic method on a refined grid " alt="" coords="950,528,1066,555"/>
+<area shape="rect" id="node12" href="refined__grid_x_8h.html" title="geometry/refined_gridX.h" alt="" coords="593,304,759,331"/>
+<area shape="rect" id="node18" href="interpolation_8h.html" title="contains 1D, 2D and 3D interpolation matrix creation functions " alt="" coords="1257,155,1418,181"/>
+<area shape="rect" id="node19" href="fast__interpolation_8h.html" title="contains a matrix type for fast interpolations/projections " alt="" coords="1350,453,1541,480"/>
+<area shape="rect" id="node20" href="multigrid_8h.html" title="multigrid.h" alt="" coords="1337,528,1420,555"/>
+<area shape="rect" id="node21" href="projection_8h.html" title="contains creation of projection matrices " alt="" coords="1236,379,1383,405"/>
+<area shape="rect" id="node24" href="interpolation_x_8h.html" title="contains 1D, 2D and 3D interpolation matrix creation functions on X&#45;point topology ..." alt="" coords="1508,304,1679,331"/>
+<area shape="rect" id="node22" href="mpi__projection_8h.html" title="Useful MPI typedefs and overloads of interpolation and projection. " alt="" coords="1099,453,1274,480"/>
+<area shape="rect" id="node23" href="projection_x_8h.html" title="contains creation of projection matrices for X point topology " alt="" coords="1123,528,1279,555"/>
+<area shape="rect" id="node27" href="derivatives_8h.html" title="Convenience functions to create 2D derivatives. " alt="" coords="784,304,939,331"/>
+<area shape="rect" id="node29" href="dx_x_8h.html" title="Simple 1d derivatives on X&#45;point topology. " alt="" coords="1019,304,1133,331"/>
+<area shape="rect" id="node28" href="mpi__derivatives_8h.html" title="geometry/mpi_derivatives.h" alt="" coords="638,379,821,405"/>
+<area shape="rect" id="node30" href="derivatives_x_8h.html" title="Convenience functions to create 2D derivatives on X&#45;point topology. " alt="" coords="997,379,1160,405"/>
+</map>
+</div>
+</div>
 <p><a href="operator_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -152,36 +206,46 @@ Functions</h2></td></tr>
 <tr class="memitem:ga0d52ece57f7a0df168c2b83086414879"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classdg_1_1_operator.html">dg::Operator</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#ga0d52ece57f7a0df168c2b83086414879">dg::create::invert</a> (const <a class="el" href="classdg_1_1_operator.html">dg::Operator</a>&lt; T &gt; &amp;in)</td></tr>
 <tr class="memdesc:ga0d52ece57f7a0df168c2b83086414879"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the inverse of a square matrix.  <a href="group__lowlevel.html#ga0d52ece57f7a0df168c2b83086414879">More...</a><br /></td></tr>
 <tr class="separator:ga0d52ece57f7a0df168c2b83086414879"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5240e4a7a0ed5e0185c05f8223de9466"><td class="memItemLeft" align="right" valign="top">Operator&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#ga5240e4a7a0ed5e0185c05f8223de9466">dg::create::delta</a> (unsigned n)</td></tr>
-<tr class="memdesc:ga5240e4a7a0ed5e0185c05f8223de9466"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the unit matrix.  <a href="group__lowlevel.html#ga5240e4a7a0ed5e0185c05f8223de9466">More...</a><br /></td></tr>
-<tr class="separator:ga5240e4a7a0ed5e0185c05f8223de9466"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5742ac1cee8b8c09619bcd1da1730fa6"><td class="memItemLeft" align="right" valign="top">Operator&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#ga5742ac1cee8b8c09619bcd1da1730fa6">dg::create::pipj</a> (unsigned n)</td></tr>
-<tr class="memdesc:ga5742ac1cee8b8c09619bcd1da1730fa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the S-matrix.  <a href="group__lowlevel.html#ga5742ac1cee8b8c09619bcd1da1730fa6">More...</a><br /></td></tr>
-<tr class="separator:ga5742ac1cee8b8c09619bcd1da1730fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9270698ddf50a70aeeeccb0b8d4ea1e2"><td class="memItemLeft" align="right" valign="top">Operator&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#ga9270698ddf50a70aeeeccb0b8d4ea1e2">dg::create::pipj_inv</a> (unsigned n)</td></tr>
-<tr class="memdesc:ga9270698ddf50a70aeeeccb0b8d4ea1e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the T-matrix.  <a href="group__lowlevel.html#ga9270698ddf50a70aeeeccb0b8d4ea1e2">More...</a><br /></td></tr>
-<tr class="separator:ga9270698ddf50a70aeeeccb0b8d4ea1e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga47baf9139f33e72afb91a5bd168f2adf"><td class="memItemLeft" align="right" valign="top">Operator&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#ga47baf9139f33e72afb91a5bd168f2adf">dg::create::pidxpj</a> (unsigned n)</td></tr>
-<tr class="memdesc:ga47baf9139f33e72afb91a5bd168f2adf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the D-matrix.  <a href="group__lowlevel.html#ga47baf9139f33e72afb91a5bd168f2adf">More...</a><br /></td></tr>
-<tr class="separator:ga47baf9139f33e72afb91a5bd168f2adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga326a160653330e4cbdc794590a81db8f"><td class="memItemLeft" align="right" valign="top">Operator&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#ga326a160653330e4cbdc794590a81db8f">dg::create::rirj</a> (unsigned n)</td></tr>
-<tr class="memdesc:ga326a160653330e4cbdc794590a81db8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the R-matrix.  <a href="group__lowlevel.html#ga326a160653330e4cbdc794590a81db8f">More...</a><br /></td></tr>
-<tr class="separator:ga326a160653330e4cbdc794590a81db8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad4f5c0d21818f276dda23c904461e2cc"><td class="memItemLeft" align="right" valign="top">Operator&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#gad4f5c0d21818f276dda23c904461e2cc">dg::create::rilj</a> (unsigned n)</td></tr>
-<tr class="memdesc:gad4f5c0d21818f276dda23c904461e2cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the RL-matrix.  <a href="group__lowlevel.html#gad4f5c0d21818f276dda23c904461e2cc">More...</a><br /></td></tr>
-<tr class="separator:gad4f5c0d21818f276dda23c904461e2cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga46edb26b7a8c8544ea641aa03f6fd7fa"><td class="memItemLeft" align="right" valign="top">Operator&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#ga46edb26b7a8c8544ea641aa03f6fd7fa">dg::create::lirj</a> (unsigned n)</td></tr>
-<tr class="memdesc:ga46edb26b7a8c8544ea641aa03f6fd7fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the LR-matrix.  <a href="group__lowlevel.html#ga46edb26b7a8c8544ea641aa03f6fd7fa">More...</a><br /></td></tr>
-<tr class="separator:ga46edb26b7a8c8544ea641aa03f6fd7fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaaaa29e3675d675f7d04e946cd7f66ed5"><td class="memItemLeft" align="right" valign="top">Operator&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#gaaaa29e3675d675f7d04e946cd7f66ed5">dg::create::lilj</a> (unsigned n)</td></tr>
-<tr class="memdesc:gaaaa29e3675d675f7d04e946cd7f66ed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the L-matrix.  <a href="group__lowlevel.html#gaaaa29e3675d675f7d04e946cd7f66ed5">More...</a><br /></td></tr>
-<tr class="separator:gaaaa29e3675d675f7d04e946cd7f66ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac5552aee1d84311775cd55c373f97756"><td class="memItemLeft" align="right" valign="top">Operator&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#gac5552aee1d84311775cd55c373f97756">dg::create::weights</a> (const DLT&lt; double &gt; &amp;dlt)</td></tr>
-<tr class="memdesc:gac5552aee1d84311775cd55c373f97756"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a diagonal operator with weights.  <a href="group__lowlevel.html#gac5552aee1d84311775cd55c373f97756">More...</a><br /></td></tr>
-<tr class="separator:gac5552aee1d84311775cd55c373f97756"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa88e5198f069f6bda6d73df4a9d6b1b7"><td class="memItemLeft" align="right" valign="top">Operator&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#gaa88e5198f069f6bda6d73df4a9d6b1b7">dg::create::precond</a> (const DLT&lt; double &gt; &amp;dlt)</td></tr>
-<tr class="memdesc:gaa88e5198f069f6bda6d73df4a9d6b1b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a diagonal operator with inverse weights.  <a href="group__lowlevel.html#gaa88e5198f069f6bda6d73df4a9d6b1b7">More...</a><br /></td></tr>
-<tr class="separator:gaa88e5198f069f6bda6d73df4a9d6b1b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaab7e4cfda5119359e191382ae0865ffc"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:gaab7e4cfda5119359e191382ae0865ffc"><td class="memTemplItemLeft" align="right" valign="top">Operator&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#gaab7e4cfda5119359e191382ae0865ffc">dg::create::delta</a> (unsigned n)</td></tr>
+<tr class="memdesc:gaab7e4cfda5119359e191382ae0865ffc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the unit matrix.  <a href="group__lowlevel.html#gaab7e4cfda5119359e191382ae0865ffc">More...</a><br /></td></tr>
+<tr class="separator:gaab7e4cfda5119359e191382ae0865ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9db6166537975a7c6055563800df780a"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga9db6166537975a7c6055563800df780a"><td class="memTemplItemLeft" align="right" valign="top">Operator&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#ga9db6166537975a7c6055563800df780a">dg::create::pipj</a> (unsigned n)</td></tr>
+<tr class="memdesc:ga9db6166537975a7c6055563800df780a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the S-matrix.  <a href="group__lowlevel.html#ga9db6166537975a7c6055563800df780a">More...</a><br /></td></tr>
+<tr class="separator:ga9db6166537975a7c6055563800df780a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae2a0449474ef9fdba4e84ed5c440daf8"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:gae2a0449474ef9fdba4e84ed5c440daf8"><td class="memTemplItemLeft" align="right" valign="top">Operator&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#gae2a0449474ef9fdba4e84ed5c440daf8">dg::create::pipj_inv</a> (unsigned n)</td></tr>
+<tr class="memdesc:gae2a0449474ef9fdba4e84ed5c440daf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the T-matrix.  <a href="group__lowlevel.html#gae2a0449474ef9fdba4e84ed5c440daf8">More...</a><br /></td></tr>
+<tr class="separator:gae2a0449474ef9fdba4e84ed5c440daf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacc1da860b633bbff33bc05b327247b7c"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:gacc1da860b633bbff33bc05b327247b7c"><td class="memTemplItemLeft" align="right" valign="top">Operator&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#gacc1da860b633bbff33bc05b327247b7c">dg::create::pidxpj</a> (unsigned n)</td></tr>
+<tr class="memdesc:gacc1da860b633bbff33bc05b327247b7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the D-matrix.  <a href="group__lowlevel.html#gacc1da860b633bbff33bc05b327247b7c">More...</a><br /></td></tr>
+<tr class="separator:gacc1da860b633bbff33bc05b327247b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga82af6d95ceaf8f31f1737b17dccb89e9"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga82af6d95ceaf8f31f1737b17dccb89e9"><td class="memTemplItemLeft" align="right" valign="top">Operator&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#ga82af6d95ceaf8f31f1737b17dccb89e9">dg::create::rirj</a> (unsigned n)</td></tr>
+<tr class="memdesc:ga82af6d95ceaf8f31f1737b17dccb89e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the R-matrix.  <a href="group__lowlevel.html#ga82af6d95ceaf8f31f1737b17dccb89e9">More...</a><br /></td></tr>
+<tr class="separator:ga82af6d95ceaf8f31f1737b17dccb89e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad4205efc539aab9ea159e7e3a006bfd4"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:gad4205efc539aab9ea159e7e3a006bfd4"><td class="memTemplItemLeft" align="right" valign="top">Operator&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#gad4205efc539aab9ea159e7e3a006bfd4">dg::create::rilj</a> (unsigned n)</td></tr>
+<tr class="memdesc:gad4205efc539aab9ea159e7e3a006bfd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the RL-matrix.  <a href="group__lowlevel.html#gad4205efc539aab9ea159e7e3a006bfd4">More...</a><br /></td></tr>
+<tr class="separator:gad4205efc539aab9ea159e7e3a006bfd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gade9ed4034602c6bfb369542fca331df2"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:gade9ed4034602c6bfb369542fca331df2"><td class="memTemplItemLeft" align="right" valign="top">Operator&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#gade9ed4034602c6bfb369542fca331df2">dg::create::lirj</a> (unsigned n)</td></tr>
+<tr class="memdesc:gade9ed4034602c6bfb369542fca331df2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the LR-matrix.  <a href="group__lowlevel.html#gade9ed4034602c6bfb369542fca331df2">More...</a><br /></td></tr>
+<tr class="separator:gade9ed4034602c6bfb369542fca331df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8dd69a5fabd86ed5e81c31c13edb3e90"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga8dd69a5fabd86ed5e81c31c13edb3e90"><td class="memTemplItemLeft" align="right" valign="top">Operator&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#ga8dd69a5fabd86ed5e81c31c13edb3e90">dg::create::lilj</a> (unsigned n)</td></tr>
+<tr class="memdesc:ga8dd69a5fabd86ed5e81c31c13edb3e90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the L-matrix.  <a href="group__lowlevel.html#ga8dd69a5fabd86ed5e81c31c13edb3e90">More...</a><br /></td></tr>
+<tr class="separator:ga8dd69a5fabd86ed5e81c31c13edb3e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa18a25598ba1bf8e2dc735a6440e305"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:gafa18a25598ba1bf8e2dc735a6440e305"><td class="memTemplItemLeft" align="right" valign="top">Operator&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#gafa18a25598ba1bf8e2dc735a6440e305">dg::create::weights</a> (const DLT&lt; real_type &gt; &amp;dlt)</td></tr>
+<tr class="memdesc:gafa18a25598ba1bf8e2dc735a6440e305"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a diagonal operator with weights.  <a href="group__lowlevel.html#gafa18a25598ba1bf8e2dc735a6440e305">More...</a><br /></td></tr>
+<tr class="separator:gafa18a25598ba1bf8e2dc735a6440e305"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga06ce516b4837f5aafde50b7883c11b83"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga06ce516b4837f5aafde50b7883c11b83"><td class="memTemplItemLeft" align="right" valign="top">Operator&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#ga06ce516b4837f5aafde50b7883c11b83">dg::create::precond</a> (const DLT&lt; real_type &gt; &amp;dlt)</td></tr>
+<tr class="memdesc:ga06ce516b4837f5aafde50b7883c11b83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a diagonal operator with inverse weights.  <a href="group__lowlevel.html#ga06ce516b4837f5aafde50b7883c11b83">More...</a><br /></td></tr>
+<tr class="separator:ga06ce516b4837f5aafde50b7883c11b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -189,7 +253,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e3380d2178455503f266746fb14246a5.html">geometry</a></li><li class="navelem"><a class="el" href="operator_8h.html">operator.h</a></li>
-    <li class="footer">Generated on Thu Apr 26 2018 16:28:14 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Jul 5 2018 12:59:49 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

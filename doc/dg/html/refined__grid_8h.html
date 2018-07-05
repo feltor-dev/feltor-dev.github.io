@@ -88,6 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -122,36 +123,93 @@ $(document).ready(function(){initNavTree('refined__grid_8h.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">refined_grid.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &quot;cusp/transpose.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="memory_8h_source.html">dg/backend/memory.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="blas_8h_source.html">dg/blas.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="grid_8h_source.html">grid.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="weights_8h_source.html">weights.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="interpolation_8h_source.html">interpolation.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="base__geometry_8h_source.html">base_geometry.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for refined_grid.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="refined__grid_8h__incl.png" border="0" usemap="#geometry_2refined__grid_8h" alt=""/></div>
+<map name="geometry_2refined__grid_8h" id="geometry_2refined__grid_8h">
+<area shape="rect" id="node3" href="memory_8h.html" title="dg/backend/memory.h" alt="" coords="1495,393,1646,420"/>
+<area shape="rect" id="node4" href="blas_8h.html" title="dg/blas.h" alt="" coords="2428,80,2503,107"/>
+<area shape="rect" id="node37" href="grid_8h.html" title="base topology classes " alt="" coords="4219,311,4274,338"/>
+<area shape="rect" id="node44" href="weights_8h.html" title="contains creation functions for integration weights and their inverse " alt="" coords="4262,229,4341,256"/>
+<area shape="rect" id="node45" href="interpolation_8h.html" title="contains 1D, 2D and 3D interpolation matrix creation functions " alt="" coords="4083,155,4186,181"/>
+<area shape="rect" id="node49" href="base__geometry_8h.html" title="base_geometry.h" alt="" coords="3028,80,3151,107"/>
+<area shape="rect" id="node5" href="blas1_8h.html" title="blas1.h" alt="" coords="2840,229,2904,256"/>
+<area shape="rect" id="node24" href="blas2_8h.html" title="blas2.h" alt="" coords="1337,229,1401,256"/>
+<area shape="rect" id="node32" href="typedefs_8h.html" title="Useful typedefs of commonly used types. " alt="" coords="2227,155,2363,181"/>
+<area shape="rect" id="node7" href="tensor__traits_8h.html" title="backend/tensor_traits.h" alt="" coords="2165,393,2323,420"/>
+<area shape="rect" id="node8" href="tensor__traits__scalar_8h.html" title="backend/tensor_traits\l_scalar.h" alt="" coords="2539,304,2685,345"/>
+<area shape="rect" id="node9" href="tensor__traits__thrust_8h.html" title="backend/tensor_traits\l_thrust.h" alt="" coords="1941,304,2088,345"/>
+<area shape="rect" id="node12" href="tensor__traits__cusp_8h.html" title="backend/tensor_traits\l_cusp.h" alt="" coords="2709,304,2856,345"/>
+<area shape="rect" id="node16" href="tensor__traits__std_8h.html" title="backend/tensor_traits\l_std.h" alt="" coords="1771,304,1917,345"/>
+<area shape="rect" id="node19" href="mpi__vector_8h.html" title="backend/mpi_vector.h" alt="" coords="2113,311,2263,338"/>
+<area shape="rect" id="node22" href="subroutines_8h.html" title="subroutines.h" alt="" coords="3993,311,4093,338"/>
+<area shape="rect" id="node23" href="functions_8h.html" title="contains some utility functions for the evaluation() routines " alt="" coords="3883,393,4045,420"/>
+<area shape="rect" id="node33" href="sparseblockmat_8h.html" title="sparseblockmat.h" alt="" coords="2339,311,2464,338"/>
+<area shape="rect" id="node35" href="sparseblockmat_8cuh.html" title="sparseblockmat.cuh" alt="" coords="2225,229,2364,256"/>
+<area shape="rect" id="node36" href="mpi__matrix_8h.html" title="MPI matrix classes. " alt="" coords="1515,229,1613,256"/>
+<area shape="rect" id="node38" href="topological__traits_8h.html" title="topological_traits.h" alt="" coords="4224,393,4355,420"/>
+<area shape="rect" id="node39" href="dlt_8h.html" title="contains the discrete legendre trafo class " alt="" coords="4153,393,4199,420"/>
+<area shape="rect" id="node43" href="enums_8h.html" title="enums " alt="" coords="4379,393,4463,420"/>
+<area shape="rect" id="node46" href="evaluation_8h.html" title="Function discretization routines. " alt="" coords="3915,229,4007,256"/>
+<area shape="rect" id="node47" href="creation_8h.html" title="creation.h" alt="" coords="4513,229,4591,256"/>
+<area shape="rect" id="node48" href="operator__tensor_8h.html" title="operator_tensor.h" alt="" coords="4365,229,4488,256"/>
+<area shape="rect" id="node50" href="tensor_8h.html" title="tensor.h" alt="" coords="3029,155,3099,181"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="refined__grid_8h__dep__incl.png" border="0" usemap="#geometry_2refined__grid_8hdep" alt=""/></div>
+<map name="geometry_2refined__grid_8hdep" id="geometry_2refined__grid_8hdep">
+<area shape="rect" id="node2" href="refined__grid_x_8h.html" title="geometry/refined_gridX.h" alt="" coords="145,80,311,107"/>
+<area shape="rect" id="node7" href="refined__elliptic_8h.html" title="contains an elliptic method on a refined grid " alt="" coords="387,304,503,331"/>
+<area shape="rect" id="node3" href="geometry_8h.html" title="geometry/geometry.h" alt="" coords="117,155,262,181"/>
+<area shape="rect" id="node4" href="algorithm_8h.html" title="algorithm.h" alt="" coords="167,379,254,405"/>
+<area shape="rect" id="node5" href="elliptic_8h.html" title="General negative elliptic operators. " alt="" coords="245,229,315,256"/>
+<area shape="rect" id="node8" href="arakawa_8h.html" title="object for computation of Poisson bracket " alt="" coords="5,304,88,331"/>
+<area shape="rect" id="node9" href="poisson_8h.html" title="poisson.h" alt="" coords="73,229,151,256"/>
+<area shape="rect" id="node6" href="helmholtz_8h.html" title="contains Helmholtz and Maxwell operators " alt="" coords="274,304,363,331"/>
+</map>
+</div>
+</div>
 <p><a href="refined__grid_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_refinement1d.html">dg::aRefinement1d</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract base class for 1d grid refinement that increases the number of grid cells of a fixed basis grid.  <a href="structdg_1_1a_refinement1d.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_real_refinement1d.html">dg::aRealRefinement1d&lt; real_type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract base class for 1d grid refinement that increases the number of grid cells of a fixed basis grid.  <a href="structdg_1_1a_real_refinement1d.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_identity_refinement.html">dg::IdentityRefinement</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">No refinement.  <a href="structdg_1_1_identity_refinement.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_real_identity_refinement.html">dg::RealIdentityRefinement&lt; real_type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">No refinement.  <a href="structdg_1_1_real_identity_refinement.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_linear_refinement.html">dg::LinearRefinement</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Linear refinement consists of multiplying every cell in the grid by a factor.  <a href="structdg_1_1_linear_refinement.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_real_linear_refinement.html">dg::RealLinearRefinement&lt; real_type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RealLinear refinement consists of multiplying every cell in the grid by a factor.  <a href="structdg_1_1_real_linear_refinement.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_equidist_refinement.html">dg::EquidistRefinement</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equidistant cell refinement around a given node.  <a href="structdg_1_1_equidist_refinement.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_real_equidist_refinement.html">dg::RealEquidistRefinement&lt; real_type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RealEquidistant cell refinement around a given node.  <a href="structdg_1_1_real_equidist_refinement.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_exponential_refinement.html">dg::ExponentialRefinement</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The exponential refinement around a node.  <a href="structdg_1_1_exponential_refinement.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_real_exponential_refinement.html">dg::RealExponentialRefinement&lt; real_type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The exponential refinement around a node.  <a href="structdg_1_1_real_exponential_refinement.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_cartesian_refined_grid2d.html">dg::CartesianRefinedGrid2d</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refined Cartesian grid.  <a href="structdg_1_1_cartesian_refined_grid2d.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_real_cartesian_refined_grid2d.html">dg::RealCartesianRefinedGrid2d&lt; real_type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refined RealCartesian grid.  <a href="structdg_1_1_real_cartesian_refined_grid2d.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_cartesian_refined_grid3d.html">dg::CartesianRefinedGrid3d</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refined Cartesian grid.  <a href="structdg_1_1_cartesian_refined_grid3d.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_real_cartesian_refined_grid3d.html">dg::RealCartesianRefinedGrid3d&lt; real_type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refined RealCartesian grid.  <a href="structdg_1_1_real_cartesian_refined_grid3d.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -159,6 +217,23 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacedg"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg.html">dg</a></td></tr>
 <tr class="memdesc:namespacedg"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the namespace for all functions and classes defined and used by the discontinuous Galerkin solvers. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga1cfe6f739503af0dfefa5b9d73cacd94"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__generators.html#ga1cfe6f739503af0dfefa5b9d73cacd94">dg::aRefinement1d</a> = <a class="el" href="structdg_1_1a_real_refinement1d.html">dg::aRealRefinement1d</a>&lt; double &gt;</td></tr>
+<tr class="separator:ga1cfe6f739503af0dfefa5b9d73cacd94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab93b3c971661bfaa425029fc3d56261f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__generators.html#gab93b3c971661bfaa425029fc3d56261f">dg::IdentityRefinement</a> = <a class="el" href="structdg_1_1_real_identity_refinement.html">dg::RealIdentityRefinement</a>&lt; double &gt;</td></tr>
+<tr class="separator:gab93b3c971661bfaa425029fc3d56261f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga00a2c4dee1c9df122dcb22d33773a70c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__generators.html#ga00a2c4dee1c9df122dcb22d33773a70c">dg::LinearRefinement</a> = <a class="el" href="structdg_1_1_real_linear_refinement.html">dg::RealLinearRefinement</a>&lt; double &gt;</td></tr>
+<tr class="separator:ga00a2c4dee1c9df122dcb22d33773a70c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1fc3ed9c0e84086363c957a8aaa60c54"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__generators.html#ga1fc3ed9c0e84086363c957a8aaa60c54">dg::EquidistRefinement</a> = <a class="el" href="structdg_1_1_real_equidist_refinement.html">dg::RealEquidistRefinement</a>&lt; double &gt;</td></tr>
+<tr class="separator:ga1fc3ed9c0e84086363c957a8aaa60c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac68dab098eb0c98222e98ad836e8f346"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__generators.html#gac68dab098eb0c98222e98ad836e8f346">dg::ExponentialRefinement</a> = <a class="el" href="structdg_1_1_real_exponential_refinement.html">dg::RealExponentialRefinement</a>&lt; double &gt;</td></tr>
+<tr class="separator:gac68dab098eb0c98222e98ad836e8f346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae33f770d1c46285a962e8fb273740847"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gridtypes.html#gae33f770d1c46285a962e8fb273740847">dg::CartesianRefinedGrid2d</a> = <a class="el" href="structdg_1_1_real_cartesian_refined_grid2d.html">dg::RealCartesianRefinedGrid2d</a>&lt; double &gt;</td></tr>
+<tr class="separator:gae33f770d1c46285a962e8fb273740847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad86a5ae145abeee9327d23b8835f5624"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gridtypes.html#gad86a5ae145abeee9327d23b8835f5624">dg::CartesianRefinedGrid3d</a> = <a class="el" href="structdg_1_1_real_cartesian_refined_grid3d.html">dg::RealCartesianRefinedGrid3d</a>&lt; double &gt;</td></tr>
+<tr class="separator:gad86a5ae145abeee9327d23b8835f5624"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -166,7 +241,7 @@ Namespaces</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e3380d2178455503f266746fb14246a5.html">geometry</a></li><li class="navelem"><a class="el" href="refined__grid_8h.html">refined_grid.h</a></li>
-    <li class="footer">Generated on Thu Apr 26 2018 16:28:14 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Jul 5 2018 12:59:49 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

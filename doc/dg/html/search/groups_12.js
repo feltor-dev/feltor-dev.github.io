@@ -9,6 +9,5 @@ var searchData=
   ['the_20taylor_20state_20magnetic_20field',['The Taylor state magnetic field',['../../../geometries/html/group__taylor.html',1,'']]],
   ['time_20integrators',['Time integrators',['../group__time.html',1,'']]],
   ['timer_20class',['Timer class',['../group__timer.html',1,'']]],
-  ['the_20purely_20toroidal_20magnetic_20field',['The Purely Toroidal magnetic field',['../../../geometries/html/group__toroidal.html',1,'']]],
-  ['typedefs',['Typedefs',['../group__typedefs.html',1,'']]]
+  ['the_20purely_20toroidal_20magnetic_20field',['The Purely Toroidal magnetic field',['../../../geometries/html/group__toroidal.html',1,'']]]
 ];

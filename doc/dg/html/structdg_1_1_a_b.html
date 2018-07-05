@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Discontinuous Galerkin Library: dg::AB&lt; k, container &gt; Struct Template Reference</title>
+<title>Discontinuous Galerkin Library: dg::AB&lt; k, ContainerType &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -124,10 +124,11 @@ $(document).ready(function(){initNavTree('structdg_1_1_a_b.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="structdg_1_1_a_b-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">dg::AB&lt; k, container &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__numerical0.html">Level 2: Basic numerical algorithms</a> &raquo; <a class="el" href="group__time.html">Time integrators</a></div></div>  </div>
+<div class="title">dg::AB&lt; k, ContainerType &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__numerical0.html">Level 2: Basic numerical algorithms</a> &raquo; <a class="el" href="group__time.html">Time integrators</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -139,23 +140,34 @@ $(document).ready(function(){initNavTree('structdg_1_1_a_b.html','');});
 
 <p><code>#include &lt;<a class="el" href="multistep_8h_source.html">multistep.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ad78f0a050c18b1c1a66cfac2957713b2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_a_b.html#ad78f0a050c18b1c1a66cfac2957713b2">real_type</a> = <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt;</td></tr>
+<tr class="separator:ad78f0a050c18b1c1a66cfac2957713b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad152084804dca455fb74a8607093d523"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_a_b.html#ad152084804dca455fb74a8607093d523">AB</a> (const container &amp;copyable)</td></tr>
-<tr class="memdesc:ad152084804dca455fb74a8607093d523"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserve memory for the integration.  <a href="#ad152084804dca455fb74a8607093d523">More...</a><br /></td></tr>
-<tr class="separator:ad152084804dca455fb74a8607093d523"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49859cf86059c432ed71da44f3ca49dd"><td class="memTemplParams" colspan="2">template&lt;class Functor &gt; </td></tr>
-<tr class="memitem:a49859cf86059c432ed71da44f3ca49dd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_a_b.html#a49859cf86059c432ed71da44f3ca49dd">init</a> (Functor &amp;f, const container &amp;u0, double dt)</td></tr>
-<tr class="memdesc:a49859cf86059c432ed71da44f3ca49dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init with initial value.  <a href="#a49859cf86059c432ed71da44f3ca49dd">More...</a><br /></td></tr>
-<tr class="separator:a49859cf86059c432ed71da44f3ca49dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ae373529f632c8f9fd4ed65cbde72f6"><td class="memTemplParams" colspan="2">template&lt;class Functor &gt; </td></tr>
-<tr class="memitem:a7ae373529f632c8f9fd4ed65cbde72f6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_a_b.html#a7ae373529f632c8f9fd4ed65cbde72f6">operator()</a> (Functor &amp;f, container &amp;u)</td></tr>
-<tr class="memdesc:a7ae373529f632c8f9fd4ed65cbde72f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advance u0 one timestep.  <a href="#a7ae373529f632c8f9fd4ed65cbde72f6">More...</a><br /></td></tr>
-<tr class="separator:a7ae373529f632c8f9fd4ed65cbde72f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e987412f81e91199d4cb88770b5679f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_a_b.html#a7e987412f81e91199d4cb88770b5679f">AB</a> ()</td></tr>
+<tr class="memdesc:a7e987412f81e91199d4cb88770b5679f"><td class="mdescLeft">&#160;</td><td class="mdescRight">copydoc <a class="el" href="structdg_1_1_r_k__opt.html#a5f62f7f33eaf37422f2641034ce720ec" title="No memory allocation, Call construct before using the object. ">RK_opt::RK_opt()</a>  <a href="#a7e987412f81e91199d4cb88770b5679f">More...</a><br /></td></tr>
+<tr class="separator:a7e987412f81e91199d4cb88770b5679f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acccdea937b62ec4d13e2531a734f8c0c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_a_b.html#acccdea937b62ec4d13e2531a734f8c0c">AB</a> (const ContainerType &amp;copyable)</td></tr>
+<tr class="memdesc:acccdea937b62ec4d13e2531a734f8c0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserve internal workspace for the integration.  <a href="#acccdea937b62ec4d13e2531a734f8c0c">More...</a><br /></td></tr>
+<tr class="separator:acccdea937b62ec4d13e2531a734f8c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8faf8cdfcd2bbf37346d44f81a4e134"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_a_b.html#af8faf8cdfcd2bbf37346d44f81a4e134">construct</a> (const ContainerType &amp;copyable)</td></tr>
+<tr class="memdesc:af8faf8cdfcd2bbf37346d44f81a4e134"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserve internal workspace for the integration.  <a href="#af8faf8cdfcd2bbf37346d44f81a4e134">More...</a><br /></td></tr>
+<tr class="separator:af8faf8cdfcd2bbf37346d44f81a4e134"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1b08f9aa38b33ebb057262c1bc05f90"><td class="memTemplParams" colspan="2">template&lt;class RHS &gt; </td></tr>
+<tr class="memitem:aa1b08f9aa38b33ebb057262c1bc05f90"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_a_b.html#aa1b08f9aa38b33ebb057262c1bc05f90">init</a> (RHS &amp;rhs, <a class="el" href="structdg_1_1_a_b.html#ad78f0a050c18b1c1a66cfac2957713b2">real_type</a> t0, const ContainerType &amp;u0, <a class="el" href="structdg_1_1_a_b.html#ad78f0a050c18b1c1a66cfac2957713b2">real_type</a> dt)</td></tr>
+<tr class="memdesc:aa1b08f9aa38b33ebb057262c1bc05f90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize first step. Call before using the step function.  <a href="#aa1b08f9aa38b33ebb057262c1bc05f90">More...</a><br /></td></tr>
+<tr class="separator:aa1b08f9aa38b33ebb057262c1bc05f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19a5b9f76d827bf3af8e1b1c6456288a"><td class="memTemplParams" colspan="2">template&lt;class RHS &gt; </td></tr>
+<tr class="memitem:a19a5b9f76d827bf3af8e1b1c6456288a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_a_b.html#a19a5b9f76d827bf3af8e1b1c6456288a">step</a> (RHS &amp;f, <a class="el" href="structdg_1_1_a_b.html#ad78f0a050c18b1c1a66cfac2957713b2">real_type</a> &amp;t, ContainerType &amp;u)</td></tr>
+<tr class="memdesc:a19a5b9f76d827bf3af8e1b1c6456288a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advance u0 one timestep.  <a href="#a19a5b9f76d827bf3af8e1b1c6456288a">More...</a><br /></td></tr>
+<tr class="separator:a19a5b9f76d827bf3af8e1b1c6456288a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;size_t k, class container&gt;<br />
-struct dg::AB&lt; k, container &gt;</h3>
+<div class="textblock"><h3>template&lt;size_t k, class ContainerType&gt;<br />
+struct dg::AB&lt; k, ContainerType &gt;</h3>
 
 <p>Struct for Adams-Bashforth explicit multistep time-integration </p><p class="formulaDsp">
 \[ u^{n+1} = u^n + \Delta t\sum_{j=0}^k b_j f\left(u^{n-j}\right) \]
@@ -164,32 +176,75 @@ struct dg::AB&lt; k, container &gt;</h3>
 <p>Computes </p><p class="formulaDsp">
 \[ u_{n+1} = u_n + dt\sum_{j=0}^k b_j f(u_{n-j}) \]
 </p>
-<p> Uses only <a class="el" href="group__blas1.html#gaf35427a456cd09d5ec8e5ed97378933c" title=" ">blas1::axpby</a> routines to integrate one step and only one right-hand-side evaluation per step. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+<p> Uses only <code><a class="el" href="group__blas1.html#ga5c7ddbf70dd74867e45c9d4f40b36cf7" title=" ">blas1::axpby</a></code> routines to integrate one step and only one right-hand-side evaluation per step. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">k</td><td>Order of the method (Currently one of 1, 2, 3, 4 or 5)</td></tr>
-    <tr><td class="paramname">container</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_vector_traits.html" title="The vector traits. ">VectorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> or <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. For example, this is one of<ul>
-<li><code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code>, <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code>, <code><a class="el" href="group__typedefs.html#ga3f854ffa533cafd10b9846258e40029f" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code><a class="el" href="group__typedefs.html#ga25cae493b710b17992387cce395ad7ae" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> </li>
-<li><code>std::vector&lt;dg::DVec&gt;</code>, <code>std::array&lt;dg::MHVec, 3&gt;</code>, <code>std::array&lt;double, 4&gt;</code> ... </li>
+    <tr><td class="paramname">ContainerType</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> and <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. Among others<ul>
+<li><code> <a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193" title="Host Vector. ">dg::HVec</a> (serial), <a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a> (cuda / omp), <a class="el" href="group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a> (mpi + serial) or <a class="el" href="group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a> (mpi + cuda / omp) </code></li>
+<li><code> std::vector&lt;dg::DVec&gt; (vector of shared device vectors), std::array&lt;double, 4&gt; (array of 4 doubles)</code></li>
+<li><code> double (scalar)</code> and other primitive types ...</li>
 </ul>
-</td></tr>
+If there are several <code>ContainerTypes</code> in the argument list, then <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> must exist for all of them </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__vec__list.html">List of Vector Traits specializations</a> </dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ad152084804dca455fb74a8607093d523"></a>
+<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="index.html#dispatch">The Level 1 dispatch system</a> for a detailed explanation of our type dispatch system </dd></dl>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="ad78f0a050c18b1c1a66cfac2957713b2"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;size_t k, class container &gt; </div>
+template&lt;size_t k, class ContainerType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structdg_1_1_a_b.html">dg::AB</a>&lt; k, ContainerType &gt;::<a class="el" href="structdg_1_1_a_b.html#ad78f0a050c18b1c1a66cfac2957713b2">real_type</a> =  <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt;ContainerType&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a7e987412f81e91199d4cb88770b5679f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t k, class ContainerType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdg_1_1_a_b.html">dg::AB</a>&lt; k, container &gt;::<a class="el" href="structdg_1_1_a_b.html">AB</a> </td>
+          <td class="memname"><a class="el" href="structdg_1_1_a_b.html">dg::AB</a>&lt; k, ContainerType &gt;::<a class="el" href="structdg_1_1_a_b.html">AB</a> </td>
           <td>(</td>
-          <td class="paramtype">const container &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>copydoc <a class="el" href="structdg_1_1_r_k__opt.html#a5f62f7f33eaf37422f2641034ce720ec" title="No memory allocation, Call construct before using the object. ">RK_opt::RK_opt()</a> </p>
+
+</div>
+</div>
+<a class="anchor" id="acccdea937b62ec4d13e2531a734f8c0c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t k, class ContainerType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdg_1_1_a_b.html">dg::AB</a>&lt; k, ContainerType &gt;::<a class="el" href="structdg_1_1_a_b.html">AB</a> </td>
+          <td>(</td>
+          <td class="paramtype">const ContainerType &amp;&#160;</td>
           <td class="paramname"><em>copyable</em></td><td>)</td>
           <td></td>
         </tr>
@@ -201,41 +256,83 @@ template&lt;size_t k, class container &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Reserve memory for the integration. </p>
+<p>Reserve internal workspace for the integration. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">copyable</td><td>container of size which is used in integration. A container object must be copy-constructible from copyable. </td></tr>
+    <tr><td class="paramname">copyable</td><td>ContainerType of the size that is used in <code>step</code> </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section note"><dt>Note</dt><dd>it does not matter what values <code>copyable</code> contains, but its size is important </dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a49859cf86059c432ed71da44f3ca49dd"></a>
+<a class="anchor" id="af8faf8cdfcd2bbf37346d44f81a4e134"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;size_t k, class container &gt; </div>
-<div class="memtemplate">
-template&lt;class Functor &gt; </div>
+template&lt;size_t k, class ContainerType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="structdg_1_1_a_b.html">dg::AB</a>&lt; k, container &gt;::init </td>
+          <td class="memname">void <a class="el" href="structdg_1_1_a_b.html">dg::AB</a>&lt; k, ContainerType &gt;::construct </td>
           <td>(</td>
-          <td class="paramtype">Functor &amp;&#160;</td>
-          <td class="paramname"><em>f</em>, </td>
+          <td class="paramtype">const ContainerType &amp;&#160;</td>
+          <td class="paramname"><em>copyable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reserve internal workspace for the integration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">copyable</td><td>ContainerType of the size that is used in <code>step</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>it does not matter what values <code>copyable</code> contains, but its size is important </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa1b08f9aa38b33ebb057262c1bc05f90"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t k, class ContainerType &gt; </div>
+<div class="memtemplate">
+template&lt;class RHS &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structdg_1_1_a_b.html">dg::AB</a>&lt; k, ContainerType &gt;::init </td>
+          <td>(</td>
+          <td class="paramtype">RHS &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const container &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structdg_1_1_a_b.html#ad78f0a050c18b1c1a66cfac2957713b2">real_type</a>&#160;</td>
+          <td class="paramname"><em>t0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ContainerType &amp;&#160;</td>
           <td class="paramname"><em>u0</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype"><a class="el" href="structdg_1_1_a_b.html#ad78f0a050c18b1c1a66cfac2957713b2">real_type</a>&#160;</td>
           <td class="paramname"><em>dt</em>&#160;</td>
         </tr>
         <tr>
@@ -246,43 +343,51 @@ template&lt;class Functor &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Init with initial value. </p>
-<p>This routine initiates the first steps in the multistep method by integrating backwards with a Euler method. This routine has to be called before the first timestep is made and with the same initial value as the first timestep. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+<p>Initialize first step. Call before using the step function. </p>
+<p>This routine initiates the first steps in the multistep method by integrating backwards in time with Euler's method. This routine has to be called before the first timestep is made.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Functor</td><td>models BinaryFunction with no return type (subroutine). Its arguments both have to be of type container. The first argument is the actual argument, the second contains the return value, i.e. y' = f(y) translates to f( y, y'). </td></tr>
+    <tr><td class="paramname">RHS</td><td>The right hand side is a functor type with no return value (subroutine) of signature <code> void operator()(value_type, const ContainerType&amp;, ContainerType&amp;)</code> The first argument is the time, the second is the input vector, which the functor may <b>not</b> override, and the third is the output, i.e. y' = f(t, y) translates to f(t, y, y'). The two ContainerType arguments never alias each other in calls to the functor. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">f</td><td>The rhs functor </td></tr>
+    <tr><td class="paramname">rhs</td><td>The rhs functor </td></tr>
+    <tr><td class="paramname">t0</td><td>The intital time corresponding to u0 </td></tr>
     <tr><td class="paramname">u0</td><td>The initial value of the integration </td></tr>
     <tr><td class="paramname">dt</td><td>The timestep </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>The class allows Functor to change its first (input) argument, i.e. the first argument need not be const </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>the implementation is such that on output the last call to the rhs is at (t0,u0). This might be interesting if the call to the rhs changes its state. </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a7ae373529f632c8f9fd4ed65cbde72f6"></a>
+<a class="anchor" id="a19a5b9f76d827bf3af8e1b1c6456288a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;size_t k, class container &gt; </div>
+template&lt;size_t k, class ContainerType &gt; </div>
 <div class="memtemplate">
-template&lt;class Functor &gt; </div>
+template&lt;class RHS &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="structdg_1_1_a_b.html">dg::AB</a>&lt; k, container &gt;::operator() </td>
+          <td class="memname">void <a class="el" href="structdg_1_1_a_b.html">dg::AB</a>&lt; k, ContainerType &gt;::step </td>
           <td>(</td>
-          <td class="paramtype">Functor &amp;&#160;</td>
+          <td class="paramtype">RHS &amp;&#160;</td>
           <td class="paramname"><em>f</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">container &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structdg_1_1_a_b.html#ad78f0a050c18b1c1a66cfac2957713b2">real_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ContainerType &amp;&#160;</td>
           <td class="paramname"><em>u</em>&#160;</td>
         </tr>
         <tr>
@@ -296,18 +401,19 @@ template&lt;class Functor &gt; </div>
 <p>Advance u0 one timestep. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Functor</td><td>models BinaryFunction with no return type (subroutine) Its arguments both have to be of type container. The first argument is the actual argument, The second contains the return value, i.e. y' = f(y) translates to f( y, y'). </td></tr>
+    <tr><td class="paramname">RHS</td><td>The right hand side is a functor type with no return value (subroutine) of signature <code> void operator()(value_type, const ContainerType&amp;, ContainerType&amp;)</code> The first argument is the time, the second is the input vector, which the functor may <b>not</b> override, and the third is the output, i.e. y' = f(t, y) translates to f(t, y, y'). The two ContainerType arguments never alias each other in calls to the functor. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">f</td><td>right hand side function or functor </td></tr>
+    <tr><td class="paramname">t</td><td>(write-only) contains timestep corresponding to <code>u</code> on output </td></tr>
     <tr><td class="paramname">u</td><td>(write-only) contains next step of the integration on output </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>The class allows Functor to change its first (input) argument, i.e. the first argument need not be const </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>the implementation is such that on output the last call to the rhs is at the new (t,u). This might be interesting if the call to the rhs changes its state. </dd></dl>
 
 </div>
 </div>
@@ -320,7 +426,7 @@ template&lt;class Functor &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_a_b.html">AB</a></li>
-    <li class="footer">Generated on Thu Apr 26 2018 16:28:14 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Jul 5 2018 12:59:50 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

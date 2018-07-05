@@ -114,8 +114,8 @@ Include dependency graph for exdot_omp.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="exdot__omp_8h__incl.png" border="0" usemap="#exdot__omp_8h" alt=""/></div>
 <map name="exdot__omp_8h" id="exdot__omp_8h">
-<area shape="rect" id="node7" href="accumulate_8h.html" title="Primitives for accumulation into superaccumulator. " alt="" coords="163,80,263,107"/>
-<area shape="rect" id="node8" href="config_8h.html" title="Configuration of superaccumulators. " alt="" coords="667,155,735,181"/>
+<area shape="rect" id="node7" href="accumulate_8h.html" title="Primitives for accumulation into superaccumulator. " alt="" coords="197,80,297,107"/>
+<area shape="rect" id="node8" href="config_8h.html" title="Configuration of superaccumulators. " alt="" coords="113,155,181,181"/>
 </map>
 </div>
 </div>
@@ -129,12 +129,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1fce74f08defeb202a9aedaa91953957"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#a1fce74f08defeb202a9aedaa91953957">exblas::exdot_omp</a> (unsigned size, const double *x1_ptr, const double *x2_ptr, int64_t *h_superacc)</td></tr>
-<tr class="memdesc:a1fce74f08defeb202a9aedaa91953957"><td class="mdescLeft">&#160;</td><td class="mdescRight">OpenMP parallel version of exact dot product.  <a href="namespaceexblas.html#a1fce74f08defeb202a9aedaa91953957">More...</a><br /></td></tr>
-<tr class="separator:a1fce74f08defeb202a9aedaa91953957"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a743b74384d3d99e2d1d62e77516bd04d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#a743b74384d3d99e2d1d62e77516bd04d">exblas::exdot_omp</a> (unsigned size, const double *x1_ptr, const double *x2_ptr, const double *x3_ptr, int64_t *h_superacc)</td></tr>
-<tr class="memdesc:a743b74384d3d99e2d1d62e77516bd04d"><td class="mdescLeft">&#160;</td><td class="mdescRight">OpenMP parallel version of exact triple dot product.  <a href="namespaceexblas.html#a743b74384d3d99e2d1d62e77516bd04d">More...</a><br /></td></tr>
-<tr class="separator:a743b74384d3d99e2d1d62e77516bd04d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83939a86d028425bb1d38a22a331ec64"><td class="memTemplParams" colspan="2">template&lt;class PointerOrValue1 , class PointerOrValue2 , size_t NBFPE = 8&gt; </td></tr>
+<tr class="memitem:a83939a86d028425bb1d38a22a331ec64"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#a83939a86d028425bb1d38a22a331ec64">exblas::exdot_omp</a> (unsigned size, PointerOrValue1 x1_ptr, PointerOrValue2 x2_ptr, int64_t *h_superacc)</td></tr>
+<tr class="memdesc:a83939a86d028425bb1d38a22a331ec64"><td class="mdescLeft">&#160;</td><td class="mdescRight">OpenMP parallel version of exact dot product.  <a href="namespaceexblas.html#a83939a86d028425bb1d38a22a331ec64">More...</a><br /></td></tr>
+<tr class="separator:a83939a86d028425bb1d38a22a331ec64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f168ffff8cb2ac645caa4ecae004f99"><td class="memTemplParams" colspan="2">template&lt;class PointerOrValue1 , class PointerOrValue2 , class PointerOrValue3 , size_t NBFPE = 8&gt; </td></tr>
+<tr class="memitem:a5f168ffff8cb2ac645caa4ecae004f99"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#a5f168ffff8cb2ac645caa4ecae004f99">exblas::exdot_omp</a> (unsigned size, PointerOrValue1 x1_ptr, PointerOrValue2 x2_ptr, PointerOrValue3 x3_ptr, int64_t *h_superacc)</td></tr>
+<tr class="memdesc:a5f168ffff8cb2ac645caa4ecae004f99"><td class="mdescLeft">&#160;</td><td class="mdescRight">OpenMP parallel version of exact triple dot product.  <a href="namespaceexblas.html#a5f168ffff8cb2ac645caa4ecae004f99">More...</a><br /></td></tr>
+<tr class="separator:a5f168ffff8cb2ac645caa4ecae004f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>OpenMP version of exdot. </p>

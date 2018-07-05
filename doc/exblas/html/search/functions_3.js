@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['normalize',['Normalize',['../namespaceexblas_1_1gpu.html#a882e3a99c6359df21879466628f4a7ee',1,'exblas::gpu::Normalize()'],['../namespaceexblas_1_1cpu.html#a0d34dd91bca12d9dc85e26239f7fac5a',1,'exblas::cpu::Normalize()']]]
+  ['normalize',['Normalize',['../namespaceexblas_1_1gpu.html#aeb32ed446b906beac69d2d39fac0854e',1,'exblas::gpu::Normalize()'],['../namespaceexblas_1_1cpu.html#aa6fb1968e9f213e58316d4cc9357cebe',1,'exblas::cpu::Normalize()']]]
 ];

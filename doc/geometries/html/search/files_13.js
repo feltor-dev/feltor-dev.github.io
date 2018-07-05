@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['xspacelib_2ecuh',['xspacelib.cuh',['../../../dg/html/xspacelib_8cuh.html',1,'']]]
+  ['xspacelib_2eh',['xspacelib.h',['../../../dg/html/xspacelib_8h.html',1,'']]]
 ];

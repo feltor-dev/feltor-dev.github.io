@@ -1,13 +1,13 @@
 var structdg_1_1_extrapolation =
 [
-    [ "Extrapolation", "structdg_1_1_extrapolation.html#ae91125e3f6898d20d6dea29944f1e156", null ],
-    [ "Extrapolation", "structdg_1_1_extrapolation.html#a8eb252e8fe33ad657a5c778219a59fba", null ],
-    [ "extrapolate", "structdg_1_1_extrapolation.html#abd945eb304c41b971f982b2f3dc6e704", null ],
-    [ "get_number", "structdg_1_1_extrapolation.html#ac0e8f8b0bc1fba0478d013c74d01847e", null ],
-    [ "head", "structdg_1_1_extrapolation.html#a8f73b5718015c72a4deead5d28d5319b", null ],
-    [ "set_number", "structdg_1_1_extrapolation.html#a7c146afe8f883ca127d0c52ea637bb3f", null ],
-    [ "set_number", "structdg_1_1_extrapolation.html#a947f5d91098b079d2f2d41c67c2dfe71", null ],
-    [ "tail", "structdg_1_1_extrapolation.html#a5fbe0058c4dc354c5cd35ef5099a6197", null ],
-    [ "tail", "structdg_1_1_extrapolation.html#a628ef09ae3ef2a92e77f1a3b3e79fb11", null ],
-    [ "update", "structdg_1_1_extrapolation.html#a821d30e8353c8a06395bceb43168766a", null ]
+    [ "Extrapolation", "structdg_1_1_extrapolation.html#a8814b074223912d8c4acc29d0a73e7b7", null ],
+    [ "Extrapolation", "structdg_1_1_extrapolation.html#aacb255378c2a4c1f3d7bd1a07dc78ff9", null ],
+    [ "extrapolate", "structdg_1_1_extrapolation.html#ae3edc188113eea78fe431bc16c09caa7", null ],
+    [ "get_number", "structdg_1_1_extrapolation.html#af566cff015487f748c52a511cb3496bd", null ],
+    [ "head", "structdg_1_1_extrapolation.html#ae633991c85188fcd4d92199f90443f5e", null ],
+    [ "set_number", "structdg_1_1_extrapolation.html#a8d202f5c6cd9a44fa654f88e353c4c09", null ],
+    [ "set_number", "structdg_1_1_extrapolation.html#a4999c81aa4becbaa1f8c7dc561ae3ee9", null ],
+    [ "tail", "structdg_1_1_extrapolation.html#a74c24fc0a25791c49654c6e10587194f", null ],
+    [ "tail", "structdg_1_1_extrapolation.html#aeca0d68b4b21c92fb3182d2f51ba437f", null ],
+    [ "update", "structdg_1_1_extrapolation.html#a3d21ae55618484f9a7122149d4d683f4", null ]
 ];

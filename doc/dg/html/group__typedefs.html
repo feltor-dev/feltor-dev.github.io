@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Discontinuous Galerkin Library: Typedefs</title>
+<title>Discontinuous Galerkin Library: Useful Typedefs</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -118,11 +118,11 @@ $(document).ready(function(){initNavTree('group__typedefs.html','');});
   <div class="summary">
 <a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
-<div class="title">Typedefs<div class="ingroups"><a class="el" href="group__backend.html">Level 1: Vectors, Matrices and basic operations</a></div></div>  </div>
+<div class="title">Useful Typedefs<div class="ingroups"><a class="el" href="group__backend.html">Level 1: Vectors, Matrices and basic operations</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Collaboration diagram for Typedefs:</div>
+Collaboration diagram for Useful Typedefs:</div>
 <div class="dyncontent">
 <center><table><tr><td><img src="group__typedefs.png" border="0" alt="" usemap="#group____typedefs"/>
 <map name="group____typedefs" id="group____typedefs">
@@ -133,91 +133,141 @@ Collaboration diagram for Typedefs:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga0af8204731ee6327dc4616a5980af2d5"><td class="memItemLeft" align="right" valign="top">typedef cusp::csr_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga0af8204731ee6327dc4616a5980af2d5">dg::IHMatrix</a></td></tr>
-<tr class="memdesc:ga0af8204731ee6327dc4616a5980af2d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">CSR host Matrix.  <a href="group__typedefs.html#ga0af8204731ee6327dc4616a5980af2d5">More...</a><br /></td></tr>
-<tr class="separator:ga0af8204731ee6327dc4616a5980af2d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0d122f4172a3e60105754f9419c0831f"><td class="memItemLeft" align="right" valign="top">typedef cusp::csr_matrix&lt; int, double, cusp::device_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga0d122f4172a3e60105754f9419c0831f">dg::IDMatrix</a></td></tr>
-<tr class="memdesc:ga0d122f4172a3e60105754f9419c0831f"><td class="mdescLeft">&#160;</td><td class="mdescRight">CSR device Matrix.  <a href="group__typedefs.html#ga0d122f4172a3e60105754f9419c0831f">More...</a><br /></td></tr>
-<tr class="separator:ga0d122f4172a3e60105754f9419c0831f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabf22476aa30d9a5d7d52a81f97078590"><td class="memItemLeft" align="right" valign="top">typedef MPIDistMat&lt; <a class="el" href="group__typedefs.html#ga0af8204731ee6327dc4616a5980af2d5">dg::IHMatrix</a>, GeneralComm&lt; <a class="el" href="group__typedefs.html#ga16422a5c2edb7bac90e9b1bfb047c1c8">dg::iHVec</a>, <a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a">dg::HVec</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gabf22476aa30d9a5d7d52a81f97078590">dg::MIHMatrix</a></td></tr>
-<tr class="memdesc:gabf22476aa30d9a5d7d52a81f97078590"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI distributed CSR host Matrix.  <a href="group__typedefs.html#gabf22476aa30d9a5d7d52a81f97078590">More...</a><br /></td></tr>
-<tr class="separator:gabf22476aa30d9a5d7d52a81f97078590"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2fdf95d30a7a404b03e2e5ed4e88b603"><td class="memItemLeft" align="right" valign="top">typedef MPIDistMat&lt; <a class="el" href="group__typedefs.html#ga0d122f4172a3e60105754f9419c0831f">dg::IDMatrix</a>, GeneralComm&lt; <a class="el" href="group__typedefs.html#gad1bd45a3dcc145353a87af2fd253bc9b">dg::iDVec</a>, <a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6">dg::DVec</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga2fdf95d30a7a404b03e2e5ed4e88b603">dg::MIDMatrix</a></td></tr>
-<tr class="separator:ga2fdf95d30a7a404b03e2e5ed4e88b603"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac0ff05273efb141d62270f033c68bcb6"><td class="memItemLeft" align="right" valign="top">typedef thrust::device_vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6">dg::DVec</a></td></tr>
-<tr class="memdesc:gac0ff05273efb141d62270f033c68bcb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of the macro THRUST_DEVICE_SYSTEM, which can be either THRUST_DEVICE_SYSTEM_OMP for openMP or THRUST_DEVICE_SYSTEM_CUDA for a gpu.  <a href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6">More...</a><br /></td></tr>
-<tr class="separator:gac0ff05273efb141d62270f033c68bcb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab99e8227ed890885a7b9915806865a7a"><td class="memItemLeft" align="right" valign="top">typedef thrust::host_vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a">dg::HVec</a></td></tr>
-<tr class="memdesc:gab99e8227ed890885a7b9915806865a7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Host Vector.  <a href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a">More...</a><br /></td></tr>
-<tr class="separator:gab99e8227ed890885a7b9915806865a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad1bd45a3dcc145353a87af2fd253bc9b"><td class="memItemLeft" align="right" valign="top">typedef thrust::device_vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gad1bd45a3dcc145353a87af2fd253bc9b">dg::iDVec</a></td></tr>
-<tr class="memdesc:gad1bd45a3dcc145353a87af2fd253bc9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">integer Device Vector  <a href="group__typedefs.html#gad1bd45a3dcc145353a87af2fd253bc9b">More...</a><br /></td></tr>
-<tr class="separator:gad1bd45a3dcc145353a87af2fd253bc9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga16422a5c2edb7bac90e9b1bfb047c1c8"><td class="memItemLeft" align="right" valign="top">typedef thrust::host_vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga16422a5c2edb7bac90e9b1bfb047c1c8">dg::iHVec</a></td></tr>
-<tr class="memdesc:ga16422a5c2edb7bac90e9b1bfb047c1c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">integer Host Vector  <a href="group__typedefs.html#ga16422a5c2edb7bac90e9b1bfb047c1c8">More...</a><br /></td></tr>
-<tr class="separator:ga16422a5c2edb7bac90e9b1bfb047c1c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gade8f2d2e22d78d961a4a83baad054922"><td class="memItemLeft" align="right" valign="top">typedef EllSparseBlockMatDevice&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gade8f2d2e22d78d961a4a83baad054922">dg::DMatrix</a></td></tr>
-<tr class="memdesc:gade8f2d2e22d78d961a4a83baad054922"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device Matrix for derivatives.  <a href="group__typedefs.html#gade8f2d2e22d78d961a4a83baad054922">More...</a><br /></td></tr>
-<tr class="separator:gade8f2d2e22d78d961a4a83baad054922"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga03ea77a5e974bed59c16fc1b50e32fad"><td class="memItemLeft" align="right" valign="top">typedef EllSparseBlockMat&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga03ea77a5e974bed59c16fc1b50e32fad">dg::HMatrix</a></td></tr>
-<tr class="memdesc:ga03ea77a5e974bed59c16fc1b50e32fad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Host Matrix for derivatives.  <a href="group__typedefs.html#ga03ea77a5e974bed59c16fc1b50e32fad">More...</a><br /></td></tr>
-<tr class="separator:ga03ea77a5e974bed59c16fc1b50e32fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga89deab4489ccaca6812b016350c28bdb"><td class="memItemLeft" align="right" valign="top">typedef thrust::device_vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga89deab4489ccaca6812b016350c28bdb">dg::fDVec</a></td></tr>
-<tr class="memdesc:ga89deab4489ccaca6812b016350c28bdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of the macro THRUST_DEVICE_SYSTEM, which can be either THRUST_DEVICE_SYSTEM_OMP for openMP or THRUST_DEVICE_SYSTEM_CUDA for a gpu.  <a href="group__typedefs.html#ga89deab4489ccaca6812b016350c28bdb">More...</a><br /></td></tr>
-<tr class="separator:ga89deab4489ccaca6812b016350c28bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7db4ee2dcdf21eda52e0e0c80f2e8ff5"><td class="memItemLeft" align="right" valign="top">typedef thrust::host_vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga7db4ee2dcdf21eda52e0e0c80f2e8ff5">dg::fHVec</a></td></tr>
-<tr class="memdesc:ga7db4ee2dcdf21eda52e0e0c80f2e8ff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Host Vector.  <a href="group__typedefs.html#ga7db4ee2dcdf21eda52e0e0c80f2e8ff5">More...</a><br /></td></tr>
-<tr class="separator:ga7db4ee2dcdf21eda52e0e0c80f2e8ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3b7a035651341b633b96f0202bfa5f82"><td class="memItemLeft" align="right" valign="top">typedef EllSparseBlockMatDevice&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga3b7a035651341b633b96f0202bfa5f82">dg::fDMatrix</a></td></tr>
-<tr class="memdesc:ga3b7a035651341b633b96f0202bfa5f82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device Matrix for derivatives.  <a href="group__typedefs.html#ga3b7a035651341b633b96f0202bfa5f82">More...</a><br /></td></tr>
-<tr class="separator:ga3b7a035651341b633b96f0202bfa5f82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaeefc9c0a4dbc127719b2ee416dc90dce"><td class="memItemLeft" align="right" valign="top">typedef EllSparseBlockMat&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gaeefc9c0a4dbc127719b2ee416dc90dce">dg::fHMatrix</a></td></tr>
-<tr class="separator:gaeefc9c0a4dbc127719b2ee416dc90dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga25cae493b710b17992387cce395ad7ae"><td class="memItemLeft" align="right" valign="top">typedef MPI_Vector&lt; <a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6">dg::DVec</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga25cae493b710b17992387cce395ad7ae">dg::MDVec</a></td></tr>
-<tr class="memdesc:ga25cae493b710b17992387cce395ad7ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI Device Vector s.a. <a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a>.  <a href="group__typedefs.html#ga25cae493b710b17992387cce395ad7ae">More...</a><br /></td></tr>
-<tr class="separator:ga25cae493b710b17992387cce395ad7ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3f854ffa533cafd10b9846258e40029f"><td class="memItemLeft" align="right" valign="top">typedef MPI_Vector&lt; <a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a">dg::HVec</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga3f854ffa533cafd10b9846258e40029f">dg::MHVec</a></td></tr>
-<tr class="memdesc:ga3f854ffa533cafd10b9846258e40029f"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI Host Vector s.a. <a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a>.  <a href="group__typedefs.html#ga3f854ffa533cafd10b9846258e40029f">More...</a><br /></td></tr>
-<tr class="separator:ga3f854ffa533cafd10b9846258e40029f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3b2d0db184cb73256ac07b2d35fcefef"><td class="memItemLeft" align="right" valign="top">typedef NearestNeighborComm&lt; thrust::host_vector&lt; int &gt;, thrust::host_vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga3b2d0db184cb73256ac07b2d35fcefef">dg::NNCH</a></td></tr>
-<tr class="memdesc:ga3b2d0db184cb73256ac07b2d35fcefef"><td class="mdescLeft">&#160;</td><td class="mdescRight">host Communicator for the use in an mpi matrix for derivatives  <a href="group__typedefs.html#ga3b2d0db184cb73256ac07b2d35fcefef">More...</a><br /></td></tr>
-<tr class="separator:ga3b2d0db184cb73256ac07b2d35fcefef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabc0c93579ed70fb606c739cee03364e4"><td class="memItemLeft" align="right" valign="top">typedef NearestNeighborComm&lt; <a class="el" href="group__typedefs.html#gad1bd45a3dcc145353a87af2fd253bc9b">dg::iDVec</a>, <a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6">dg::DVec</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gabc0c93579ed70fb606c739cee03364e4">dg::NNCD</a></td></tr>
-<tr class="memdesc:gabc0c93579ed70fb606c739cee03364e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">device Communicator for the use in an mpi matrix for derivatives  <a href="group__typedefs.html#gabc0c93579ed70fb606c739cee03364e4">More...</a><br /></td></tr>
-<tr class="separator:gabc0c93579ed70fb606c739cee03364e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa6f6bf3d7e428a9e66630a1a0e135d3a"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structdg_1_1_row_col_dist_mat.html">dg::RowColDistMat</a>&lt; <a class="el" href="group__typedefs.html#ga03ea77a5e974bed59c16fc1b50e32fad">dg::HMatrix</a>, <a class="el" href="structdg_1_1_coo_sparse_block_mat.html">dg::CooSparseBlockMat</a>&lt; double &gt;, <a class="el" href="group__typedefs.html#ga3b2d0db184cb73256ac07b2d35fcefef">dg::NNCH</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gaa6f6bf3d7e428a9e66630a1a0e135d3a">dg::MHMatrix</a></td></tr>
-<tr class="memdesc:gaa6f6bf3d7e428a9e66630a1a0e135d3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI Host Matrix for derivatives.  <a href="group__typedefs.html#gaa6f6bf3d7e428a9e66630a1a0e135d3a">More...</a><br /></td></tr>
-<tr class="separator:gaa6f6bf3d7e428a9e66630a1a0e135d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5d1f28d85330d29c74ea77f048d2978c"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structdg_1_1_row_col_dist_mat.html">dg::RowColDistMat</a>&lt; <a class="el" href="group__typedefs.html#gade8f2d2e22d78d961a4a83baad054922">dg::DMatrix</a>, <a class="el" href="structdg_1_1_coo_sparse_block_mat_device.html">dg::CooSparseBlockMatDevice</a>&lt; double &gt;, <a class="el" href="group__typedefs.html#gabc0c93579ed70fb606c739cee03364e4">dg::NNCD</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga5d1f28d85330d29c74ea77f048d2978c">dg::MDMatrix</a></td></tr>
-<tr class="memdesc:ga5d1f28d85330d29c74ea77f048d2978c"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI Device Matrix for derivatives.  <a href="group__typedefs.html#ga5d1f28d85330d29c74ea77f048d2978c">More...</a><br /></td></tr>
-<tr class="separator:ga5d1f28d85330d29c74ea77f048d2978c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga56e706f3f64e2fdc2ddce41d02c15723"><td class="memItemLeft" align="right" valign="top">typedef MPI_Vector&lt; <a class="el" href="group__typedefs.html#ga89deab4489ccaca6812b016350c28bdb">dg::fDVec</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga56e706f3f64e2fdc2ddce41d02c15723">dg::fMDVec</a></td></tr>
-<tr class="memdesc:ga56e706f3f64e2fdc2ddce41d02c15723"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI Device Vector s.a. <a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a>.  <a href="group__typedefs.html#ga56e706f3f64e2fdc2ddce41d02c15723">More...</a><br /></td></tr>
-<tr class="separator:ga56e706f3f64e2fdc2ddce41d02c15723"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga68daa92242e8651ac2ebfa0668b1ec9a"><td class="memItemLeft" align="right" valign="top">typedef MPI_Vector&lt; <a class="el" href="group__typedefs.html#ga7db4ee2dcdf21eda52e0e0c80f2e8ff5">dg::fHVec</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga68daa92242e8651ac2ebfa0668b1ec9a">dg::fMHVec</a></td></tr>
-<tr class="memdesc:ga68daa92242e8651ac2ebfa0668b1ec9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI Host Vector.  <a href="group__typedefs.html#ga68daa92242e8651ac2ebfa0668b1ec9a">More...</a><br /></td></tr>
-<tr class="separator:ga68daa92242e8651ac2ebfa0668b1ec9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga64ed23cff33cfb898971bc55becd8326"><td class="memItemLeft" align="right" valign="top">typedef NearestNeighborComm&lt; <a class="el" href="group__typedefs.html#ga16422a5c2edb7bac90e9b1bfb047c1c8">dg::iHVec</a>, <a class="el" href="group__typedefs.html#ga7db4ee2dcdf21eda52e0e0c80f2e8ff5">dg::fHVec</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga64ed23cff33cfb898971bc55becd8326">dg::fNNCH</a></td></tr>
-<tr class="memdesc:ga64ed23cff33cfb898971bc55becd8326"><td class="mdescLeft">&#160;</td><td class="mdescRight">host Communicator for the use in an mpi matrix for derivatives  <a href="group__typedefs.html#ga64ed23cff33cfb898971bc55becd8326">More...</a><br /></td></tr>
-<tr class="separator:ga64ed23cff33cfb898971bc55becd8326"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaed750a13553c4d39ddd0990091728029"><td class="memItemLeft" align="right" valign="top">typedef NearestNeighborComm&lt; <a class="el" href="group__typedefs.html#gad1bd45a3dcc145353a87af2fd253bc9b">dg::iDVec</a>, <a class="el" href="group__typedefs.html#ga89deab4489ccaca6812b016350c28bdb">dg::fDVec</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gaed750a13553c4d39ddd0990091728029">dg::fNNCD</a></td></tr>
-<tr class="memdesc:gaed750a13553c4d39ddd0990091728029"><td class="mdescLeft">&#160;</td><td class="mdescRight">device Communicator for the use in an mpi matrix for derivatives  <a href="group__typedefs.html#gaed750a13553c4d39ddd0990091728029">More...</a><br /></td></tr>
-<tr class="separator:gaed750a13553c4d39ddd0990091728029"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8eaaedfa8f0feb90fecd61194f9507be"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structdg_1_1_row_col_dist_mat.html">dg::RowColDistMat</a>&lt; <a class="el" href="group__typedefs.html#gaeefc9c0a4dbc127719b2ee416dc90dce">dg::fHMatrix</a>, <a class="el" href="structdg_1_1_coo_sparse_block_mat.html">dg::CooSparseBlockMat</a>&lt; float &gt;, <a class="el" href="group__typedefs.html#ga64ed23cff33cfb898971bc55becd8326">dg::fNNCH</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga8eaaedfa8f0feb90fecd61194f9507be">dg::fMHMatrix</a></td></tr>
-<tr class="memdesc:ga8eaaedfa8f0feb90fecd61194f9507be"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI Host Matrix for derivatives.  <a href="group__typedefs.html#ga8eaaedfa8f0feb90fecd61194f9507be">More...</a><br /></td></tr>
-<tr class="separator:ga8eaaedfa8f0feb90fecd61194f9507be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae2007fc11cae371cd5aff5f964a0307a"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structdg_1_1_row_col_dist_mat.html">dg::RowColDistMat</a>&lt; <a class="el" href="group__typedefs.html#ga3b7a035651341b633b96f0202bfa5f82">dg::fDMatrix</a>, <a class="el" href="structdg_1_1_coo_sparse_block_mat_device.html">dg::CooSparseBlockMatDevice</a>&lt; float &gt;, <a class="el" href="group__typedefs.html#gaed750a13553c4d39ddd0990091728029">dg::fNNCD</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gae2007fc11cae371cd5aff5f964a0307a">dg::fMDMatrix</a></td></tr>
-<tr class="separator:gae2007fc11cae371cd5aff5f964a0307a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4fb8e78e7b043edfedb880523f0cd193"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193">dg::HVec</a> = thrust::host_vector&lt; double &gt;</td></tr>
+<tr class="memdesc:ga4fb8e78e7b043edfedb880523f0cd193"><td class="mdescLeft">&#160;</td><td class="mdescRight">Host Vector.  <a href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193">More...</a><br /></td></tr>
+<tr class="separator:ga4fb8e78e7b043edfedb880523f0cd193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6dcaf6113666c77a4bd46bf93a16ce4d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga6dcaf6113666c77a4bd46bf93a16ce4d">dg::iHVec</a> = thrust::host_vector&lt; int &gt;</td></tr>
+<tr class="memdesc:ga6dcaf6113666c77a4bd46bf93a16ce4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">integer Host Vector  <a href="group__typedefs.html#ga6dcaf6113666c77a4bd46bf93a16ce4d">More...</a><br /></td></tr>
+<tr class="separator:ga6dcaf6113666c77a4bd46bf93a16ce4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafb0778d5da5edc4c082822a84f78656e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gafb0778d5da5edc4c082822a84f78656e">dg::fHVec</a> = thrust::host_vector&lt; float &gt;</td></tr>
+<tr class="memdesc:gafb0778d5da5edc4c082822a84f78656e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Host Vector.  <a href="group__typedefs.html#gafb0778d5da5edc4c082822a84f78656e">More...</a><br /></td></tr>
+<tr class="separator:gafb0778d5da5edc4c082822a84f78656e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5bbe4ba51ef8ff8d506979d0beda25b8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8">dg::DVec</a> = thrust::device_vector&lt; double &gt;</td></tr>
+<tr class="memdesc:ga5bbe4ba51ef8ff8d506979d0beda25b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of the macro THRUST_DEVICE_SYSTEM, which can be either THRUST_DEVICE_SYSTEM_OMP for openMP or THRUST_DEVICE_SYSTEM_CUDA for a gpu.  <a href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8">More...</a><br /></td></tr>
+<tr class="separator:ga5bbe4ba51ef8ff8d506979d0beda25b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga47171b298736a17b3e4ff54ec561f028"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga47171b298736a17b3e4ff54ec561f028">dg::iDVec</a> = thrust::device_vector&lt; int &gt;</td></tr>
+<tr class="memdesc:ga47171b298736a17b3e4ff54ec561f028"><td class="mdescLeft">&#160;</td><td class="mdescRight">integer Device Vector  <a href="group__typedefs.html#ga47171b298736a17b3e4ff54ec561f028">More...</a><br /></td></tr>
+<tr class="separator:ga47171b298736a17b3e4ff54ec561f028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga78b0309b2b460fb21919b29701c8dbb4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga78b0309b2b460fb21919b29701c8dbb4">dg::fDVec</a> = thrust::device_vector&lt; float &gt;</td></tr>
+<tr class="memdesc:ga78b0309b2b460fb21919b29701c8dbb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of the macro THRUST_DEVICE_SYSTEM, which can be either THRUST_DEVICE_SYSTEM_OMP for openMP or THRUST_DEVICE_SYSTEM_CUDA for a gpu.  <a href="group__typedefs.html#ga78b0309b2b460fb21919b29701c8dbb4">More...</a><br /></td></tr>
+<tr class="separator:ga78b0309b2b460fb21919b29701c8dbb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac2134505608b45616787fdb2f6eedc87"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gac2134505608b45616787fdb2f6eedc87">dg::HMatrix</a> = EllSparseBlockMat&lt; double &gt;</td></tr>
+<tr class="memdesc:gac2134505608b45616787fdb2f6eedc87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Host Matrix for derivatives.  <a href="group__typedefs.html#gac2134505608b45616787fdb2f6eedc87">More...</a><br /></td></tr>
+<tr class="separator:gac2134505608b45616787fdb2f6eedc87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac24d337dc79871e60dfe2360a8a95577"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gac24d337dc79871e60dfe2360a8a95577">dg::fHMatrix</a> = EllSparseBlockMat&lt; float &gt;</td></tr>
+<tr class="memdesc:gac24d337dc79871e60dfe2360a8a95577"><td class="mdescLeft">&#160;</td><td class="mdescRight">Host Matrix for derivatives.  <a href="group__typedefs.html#gac24d337dc79871e60dfe2360a8a95577">More...</a><br /></td></tr>
+<tr class="separator:gac24d337dc79871e60dfe2360a8a95577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafdf2ecb95cbc87a1544136d28d535f16"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gafdf2ecb95cbc87a1544136d28d535f16">dg::DMatrix</a> = EllSparseBlockMatDevice&lt; double &gt;</td></tr>
+<tr class="memdesc:gafdf2ecb95cbc87a1544136d28d535f16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device Matrix for derivatives.  <a href="group__typedefs.html#gafdf2ecb95cbc87a1544136d28d535f16">More...</a><br /></td></tr>
+<tr class="separator:gafdf2ecb95cbc87a1544136d28d535f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacab47883a25bf01af58765f606f88a22"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gacab47883a25bf01af58765f606f88a22">dg::fDMatrix</a> = EllSparseBlockMatDevice&lt; float &gt;</td></tr>
+<tr class="separator:gacab47883a25bf01af58765f606f88a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac127f65b65c035ebe413aee5abffd6f0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0">dg::MHVec</a> = <a class="el" href="structdg_1_1_m_p_i___vector.html">dg::MPI_Vector</a>&lt; <a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193">dg::HVec</a> &gt;</td></tr>
+<tr class="memdesc:gac127f65b65c035ebe413aee5abffd6f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI Host Vector s.a. <a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193" title="Host Vector. ">dg::HVec</a>.  <a href="group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0">More...</a><br /></td></tr>
+<tr class="separator:gac127f65b65c035ebe413aee5abffd6f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaeaa5994e3b512003f682181640f8372"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gaaeaa5994e3b512003f682181640f8372">dg::fMHVec</a> = <a class="el" href="structdg_1_1_m_p_i___vector.html">dg::MPI_Vector</a>&lt; <a class="el" href="group__typedefs.html#gafb0778d5da5edc4c082822a84f78656e">dg::fHVec</a> &gt;</td></tr>
+<tr class="memdesc:gaaeaa5994e3b512003f682181640f8372"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI Host Vector s.a. <a class="el" href="group__typedefs.html#gafb0778d5da5edc4c082822a84f78656e" title="Host Vector. ">dg::fHVec</a>.  <a href="group__typedefs.html#gaaeaa5994e3b512003f682181640f8372">More...</a><br /></td></tr>
+<tr class="separator:gaaeaa5994e3b512003f682181640f8372"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e23fb8b50d38d43beb4bf3689c20a55"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55">dg::MDVec</a> = <a class="el" href="structdg_1_1_m_p_i___vector.html">dg::MPI_Vector</a>&lt; <a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8">dg::DVec</a> &gt;</td></tr>
+<tr class="memdesc:ga1e23fb8b50d38d43beb4bf3689c20a55"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI Device Vector s.a. <a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a>.  <a href="group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55">More...</a><br /></td></tr>
+<tr class="separator:ga1e23fb8b50d38d43beb4bf3689c20a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaf5a0cd11a882f188d77db14120433ad"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gaaf5a0cd11a882f188d77db14120433ad">dg::fMDVec</a> = <a class="el" href="structdg_1_1_m_p_i___vector.html">dg::MPI_Vector</a>&lt; <a class="el" href="group__typedefs.html#ga78b0309b2b460fb21919b29701c8dbb4">dg::fDVec</a> &gt;</td></tr>
+<tr class="memdesc:gaaf5a0cd11a882f188d77db14120433ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI Device Vector s.a. <a class="el" href="group__typedefs.html#ga78b0309b2b460fb21919b29701c8dbb4" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::fDVec</a>.  <a href="group__typedefs.html#gaaf5a0cd11a882f188d77db14120433ad">More...</a><br /></td></tr>
+<tr class="separator:gaaf5a0cd11a882f188d77db14120433ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga93e65948d51a0d9f05bf04c99272c118"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga93e65948d51a0d9f05bf04c99272c118"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga93e65948d51a0d9f05bf04c99272c118">dg::NNCH</a> = <a class="el" href="structdg_1_1_nearest_neighbor_comm.html">dg::NearestNeighborComm</a>&lt; <a class="el" href="group__typedefs.html#ga6dcaf6113666c77a4bd46bf93a16ce4d">dg::iHVec</a>, thrust::host_vector&lt; real_type &gt; &gt;</td></tr>
+<tr class="memdesc:ga93e65948d51a0d9f05bf04c99272c118"><td class="mdescLeft">&#160;</td><td class="mdescRight">host Communicator for the use in an mpi matrix for derivatives  <a href="group__typedefs.html#ga93e65948d51a0d9f05bf04c99272c118">More...</a><br /></td></tr>
+<tr class="separator:ga93e65948d51a0d9f05bf04c99272c118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5ad903c7e171878d6c402a20370ec5d4"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga5ad903c7e171878d6c402a20370ec5d4"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga5ad903c7e171878d6c402a20370ec5d4">dg::NNCD</a> = <a class="el" href="structdg_1_1_nearest_neighbor_comm.html">dg::NearestNeighborComm</a>&lt; <a class="el" href="group__typedefs.html#ga47171b298736a17b3e4ff54ec561f028">dg::iDVec</a>, thrust::device_vector&lt; real_type &gt; &gt;</td></tr>
+<tr class="memdesc:ga5ad903c7e171878d6c402a20370ec5d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">host Communicator for the use in an mpi matrix for derivatives  <a href="group__typedefs.html#ga5ad903c7e171878d6c402a20370ec5d4">More...</a><br /></td></tr>
+<tr class="separator:ga5ad903c7e171878d6c402a20370ec5d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8e6c8b7e3091e961b10fbf646065b670"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga8e6c8b7e3091e961b10fbf646065b670">dg::dNNCH</a> = <a class="el" href="group__typedefs.html#ga93e65948d51a0d9f05bf04c99272c118">dg::NNCH</a>&lt; double &gt;</td></tr>
+<tr class="memdesc:ga8e6c8b7e3091e961b10fbf646065b670"><td class="mdescLeft">&#160;</td><td class="mdescRight">host Communicator for the use in an mpi matrix for derivatives  <a href="group__typedefs.html#ga8e6c8b7e3091e961b10fbf646065b670">More...</a><br /></td></tr>
+<tr class="separator:ga8e6c8b7e3091e961b10fbf646065b670"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf58692e972aa256e5034c76cd8c676d0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gaf58692e972aa256e5034c76cd8c676d0">dg::fNNCH</a> = <a class="el" href="group__typedefs.html#ga93e65948d51a0d9f05bf04c99272c118">dg::NNCH</a>&lt; float &gt;</td></tr>
+<tr class="memdesc:gaf58692e972aa256e5034c76cd8c676d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">host Communicator for the use in an mpi matrix for derivatives  <a href="group__typedefs.html#gaf58692e972aa256e5034c76cd8c676d0">More...</a><br /></td></tr>
+<tr class="separator:gaf58692e972aa256e5034c76cd8c676d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga89a3930157f77be79532f3d51c7b3db0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga89a3930157f77be79532f3d51c7b3db0">dg::dNNCD</a> = <a class="el" href="group__typedefs.html#ga5ad903c7e171878d6c402a20370ec5d4">dg::NNCD</a>&lt; double &gt;</td></tr>
+<tr class="memdesc:ga89a3930157f77be79532f3d51c7b3db0"><td class="mdescLeft">&#160;</td><td class="mdescRight">device Communicator for the use in an mpi matrix for derivatives  <a href="group__typedefs.html#ga89a3930157f77be79532f3d51c7b3db0">More...</a><br /></td></tr>
+<tr class="separator:ga89a3930157f77be79532f3d51c7b3db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad6239a57d8e92a0a068dff591891dee1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gad6239a57d8e92a0a068dff591891dee1">dg::fNNCD</a> = <a class="el" href="group__typedefs.html#ga5ad903c7e171878d6c402a20370ec5d4">dg::NNCD</a>&lt; float &gt;</td></tr>
+<tr class="memdesc:gad6239a57d8e92a0a068dff591891dee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">device Communicator for the use in an mpi matrix for derivatives  <a href="group__typedefs.html#gad6239a57d8e92a0a068dff591891dee1">More...</a><br /></td></tr>
+<tr class="separator:gad6239a57d8e92a0a068dff591891dee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga00c1e29dbf19330c5e34986229f480a1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga00c1e29dbf19330c5e34986229f480a1">dg::CooMat</a> = <a class="el" href="structdg_1_1_coo_sparse_block_mat.html">dg::CooSparseBlockMat</a>&lt; double &gt;</td></tr>
+<tr class="separator:ga00c1e29dbf19330c5e34986229f480a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1aee695fc9310a94ac59294b7b60e8c0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga1aee695fc9310a94ac59294b7b60e8c0">dg::fCooMat</a> = <a class="el" href="structdg_1_1_coo_sparse_block_mat.html">dg::CooSparseBlockMat</a>&lt; float &gt;</td></tr>
+<tr class="separator:ga1aee695fc9310a94ac59294b7b60e8c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad7412ba17b1dc358ecc70361ced85f6b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gad7412ba17b1dc358ecc70361ced85f6b">dg::DCooMat</a> = <a class="el" href="structdg_1_1_coo_sparse_block_mat_device.html">dg::CooSparseBlockMatDevice</a>&lt; double &gt;</td></tr>
+<tr class="separator:gad7412ba17b1dc358ecc70361ced85f6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4e62541a4ca94e1eac9c067a781c13cf"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga4e62541a4ca94e1eac9c067a781c13cf">dg::fDCooMat</a> = <a class="el" href="structdg_1_1_coo_sparse_block_mat_device.html">dg::CooSparseBlockMatDevice</a>&lt; float &gt;</td></tr>
+<tr class="separator:ga4e62541a4ca94e1eac9c067a781c13cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaff79c734c7916054c7dc24e6bc437161"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gaff79c734c7916054c7dc24e6bc437161">dg::MHMatrix</a> = <a class="el" href="structdg_1_1_row_col_dist_mat.html">dg::RowColDistMat</a>&lt; <a class="el" href="group__typedefs.html#gac2134505608b45616787fdb2f6eedc87">dg::HMatrix</a>, <a class="el" href="group__typedefs.html#ga00c1e29dbf19330c5e34986229f480a1">dg::CooMat</a>, <a class="el" href="group__typedefs.html#ga8e6c8b7e3091e961b10fbf646065b670">dg::dNNCH</a> &gt;</td></tr>
+<tr class="memdesc:gaff79c734c7916054c7dc24e6bc437161"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI Host Matrix for derivatives.  <a href="group__typedefs.html#gaff79c734c7916054c7dc24e6bc437161">More...</a><br /></td></tr>
+<tr class="separator:gaff79c734c7916054c7dc24e6bc437161"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae7dd83d81a27396178672510700e73af"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gae7dd83d81a27396178672510700e73af">dg::fMHMatrix</a> = <a class="el" href="structdg_1_1_row_col_dist_mat.html">dg::RowColDistMat</a>&lt; <a class="el" href="group__typedefs.html#gac24d337dc79871e60dfe2360a8a95577">dg::fHMatrix</a>, <a class="el" href="group__typedefs.html#ga1aee695fc9310a94ac59294b7b60e8c0">dg::fCooMat</a>, <a class="el" href="group__typedefs.html#gaf58692e972aa256e5034c76cd8c676d0">dg::fNNCH</a> &gt;</td></tr>
+<tr class="memdesc:gae7dd83d81a27396178672510700e73af"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI Host Matrix for derivatives.  <a href="group__typedefs.html#gae7dd83d81a27396178672510700e73af">More...</a><br /></td></tr>
+<tr class="separator:gae7dd83d81a27396178672510700e73af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaad32454aa2aca3cbb93448d7b5daf005"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gaad32454aa2aca3cbb93448d7b5daf005">dg::MDMatrix</a> = <a class="el" href="structdg_1_1_row_col_dist_mat.html">dg::RowColDistMat</a>&lt; <a class="el" href="group__typedefs.html#gafdf2ecb95cbc87a1544136d28d535f16">dg::DMatrix</a>, <a class="el" href="group__typedefs.html#gad7412ba17b1dc358ecc70361ced85f6b">dg::DCooMat</a>, <a class="el" href="group__typedefs.html#ga89a3930157f77be79532f3d51c7b3db0">dg::dNNCD</a> &gt;</td></tr>
+<tr class="memdesc:gaad32454aa2aca3cbb93448d7b5daf005"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI Device Matrix for derivatives.  <a href="group__typedefs.html#gaad32454aa2aca3cbb93448d7b5daf005">More...</a><br /></td></tr>
+<tr class="separator:gaad32454aa2aca3cbb93448d7b5daf005"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga56efb28b1175fb5a065dcbe81d678e54"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga56efb28b1175fb5a065dcbe81d678e54">dg::fMDMatrix</a> = <a class="el" href="structdg_1_1_row_col_dist_mat.html">dg::RowColDistMat</a>&lt; <a class="el" href="group__typedefs.html#gacab47883a25bf01af58765f606f88a22">dg::fDMatrix</a>, <a class="el" href="group__typedefs.html#ga4e62541a4ca94e1eac9c067a781c13cf">dg::fDCooMat</a>, <a class="el" href="group__typedefs.html#gad6239a57d8e92a0a068dff591891dee1">dg::fNNCD</a> &gt;</td></tr>
+<tr class="memdesc:ga56efb28b1175fb5a065dcbe81d678e54"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI Device Matrix for derivatives.  <a href="group__typedefs.html#ga56efb28b1175fb5a065dcbe81d678e54">More...</a><br /></td></tr>
+<tr class="separator:ga56efb28b1175fb5a065dcbe81d678e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga961227397d311ef3cb8153e95404d7f6"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga961227397d311ef3cb8153e95404d7f6"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga961227397d311ef3cb8153e95404d7f6">dg::tIHMatrix</a> = cusp::csr_matrix&lt; int, real_type, cusp::host_memory &gt;</td></tr>
+<tr class="separator:ga961227397d311ef3cb8153e95404d7f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacf18ef99d7d838d6de70bb3769427832"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:gacf18ef99d7d838d6de70bb3769427832"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gacf18ef99d7d838d6de70bb3769427832">dg::tIDMatrix</a> = cusp::csr_matrix&lt; int, real_type, cusp::device_memory &gt;</td></tr>
+<tr class="separator:gacf18ef99d7d838d6de70bb3769427832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga188bea19979cfa0701387bfc5272be79"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga188bea19979cfa0701387bfc5272be79">dg::IHMatrix</a> = tIHMatrix&lt; double &gt;</td></tr>
+<tr class="separator:ga188bea19979cfa0701387bfc5272be79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaab6ed0cbb6bf7ea723c10da88cd4529f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gaab6ed0cbb6bf7ea723c10da88cd4529f">dg::IDMatrix</a> = tIDMatrix&lt; double &gt;</td></tr>
+<tr class="separator:gaab6ed0cbb6bf7ea723c10da88cd4529f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4e64d1275f25ef7ac7fcbb960620b64d"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga4e64d1275f25ef7ac7fcbb960620b64d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga4e64d1275f25ef7ac7fcbb960620b64d">dg::tMIHMatrix</a> = MPIDistMat&lt; tIHMatrix&lt; real_type &gt;, GeneralComm&lt; <a class="el" href="group__typedefs.html#ga6dcaf6113666c77a4bd46bf93a16ce4d">dg::iHVec</a>, thrust::host_vector&lt; real_type &gt;&gt; &gt;</td></tr>
+<tr class="separator:ga4e64d1275f25ef7ac7fcbb960620b64d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3e99b80d2cb81285eefe945f198d3745"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga3e99b80d2cb81285eefe945f198d3745"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga3e99b80d2cb81285eefe945f198d3745">dg::tMIDMatrix</a> = MPIDistMat&lt; tIDMatrix&lt; real_type &gt;, GeneralComm&lt; <a class="el" href="group__typedefs.html#ga47171b298736a17b3e4ff54ec561f028">dg::iDVec</a>, thrust::device_vector&lt; real_type &gt;&gt; &gt;</td></tr>
+<tr class="separator:ga3e99b80d2cb81285eefe945f198d3745"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaf14c451a536c94f30a0ac6b7150c2e2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gaaf14c451a536c94f30a0ac6b7150c2e2">dg::MIHMatrix</a> = tMIHMatrix&lt; double &gt;</td></tr>
+<tr class="separator:gaaf14c451a536c94f30a0ac6b7150c2e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga741f7ee9c9dd42c856046d37adc0f85c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga741f7ee9c9dd42c856046d37adc0f85c">dg::MIDMatrix</a> = tMIDMatrix&lt; double &gt;</td></tr>
+<tr class="separator:ga741f7ee9c9dd42c856046d37adc0f85c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Useful type definitions for easy programming </p>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a class="anchor" id="gade8f2d2e22d78d961a4a83baad054922"></a>
+<a class="anchor" id="ga00c1e29dbf19330c5e34986229f480a1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef EllSparseBlockMatDevice&lt;double&gt; <a class="el" href="group__typedefs.html#gade8f2d2e22d78d961a4a83baad054922">dg::DMatrix</a></td>
+          <td class="memname">using <a class="el" href="group__typedefs.html#ga00c1e29dbf19330c5e34986229f480a1">dg::CooMat</a> = typedef <a class="el" href="structdg_1_1_coo_sparse_block_mat.html">dg::CooSparseBlockMat</a>&lt;double&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gad7412ba17b1dc358ecc70361ced85f6b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__typedefs.html#gad7412ba17b1dc358ecc70361ced85f6b">dg::DCooMat</a> = typedef <a class="el" href="structdg_1_1_coo_sparse_block_mat_device.html">dg::CooSparseBlockMatDevice</a>&lt;double&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gafdf2ecb95cbc87a1544136d28d535f16"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__typedefs.html#gafdf2ecb95cbc87a1544136d28d535f16">dg::DMatrix</a> = typedef EllSparseBlockMatDevice&lt;double&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -226,136 +276,12 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gac0ff05273efb141d62270f033c68bcb6"></a>
+<a class="anchor" id="ga89a3930157f77be79532f3d51c7b3db0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef thrust::device_vector&lt;double&gt; <a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6">dg::DVec</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of the macro THRUST_DEVICE_SYSTEM, which can be either THRUST_DEVICE_SYSTEM_OMP for openMP or THRUST_DEVICE_SYSTEM_CUDA for a gpu. </p>
-
-</div>
-</div>
-<a class="anchor" id="ga3b7a035651341b633b96f0202bfa5f82"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef EllSparseBlockMatDevice&lt;float&gt; <a class="el" href="group__typedefs.html#ga3b7a035651341b633b96f0202bfa5f82">dg::fDMatrix</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Device Matrix for derivatives. </p>
-
-</div>
-</div>
-<a class="anchor" id="ga89deab4489ccaca6812b016350c28bdb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef thrust::device_vector&lt;float&gt; <a class="el" href="group__typedefs.html#ga89deab4489ccaca6812b016350c28bdb">dg::fDVec</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of the macro THRUST_DEVICE_SYSTEM, which can be either THRUST_DEVICE_SYSTEM_OMP for openMP or THRUST_DEVICE_SYSTEM_CUDA for a gpu. </p>
-
-</div>
-</div>
-<a class="anchor" id="gaeefc9c0a4dbc127719b2ee416dc90dce"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef EllSparseBlockMat&lt;float&gt; <a class="el" href="group__typedefs.html#gaeefc9c0a4dbc127719b2ee416dc90dce">dg::fHMatrix</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Host Matrix for derivatives </p>
-
-</div>
-</div>
-<a class="anchor" id="ga7db4ee2dcdf21eda52e0e0c80f2e8ff5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef thrust::host_vector&lt;float&gt; <a class="el" href="group__typedefs.html#ga7db4ee2dcdf21eda52e0e0c80f2e8ff5">dg::fHVec</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Host Vector. </p>
-
-</div>
-</div>
-<a class="anchor" id="gae2007fc11cae371cd5aff5f964a0307a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="structdg_1_1_row_col_dist_mat.html">dg::RowColDistMat</a>&lt;<a class="el" href="group__typedefs.html#ga3b7a035651341b633b96f0202bfa5f82">dg::fDMatrix</a>, <a class="el" href="structdg_1_1_coo_sparse_block_mat_device.html">dg::CooSparseBlockMatDevice</a>&lt;float&gt;, <a class="el" href="group__typedefs.html#gaed750a13553c4d39ddd0990091728029">dg::fNNCD</a>&gt; <a class="el" href="group__typedefs.html#gae2007fc11cae371cd5aff5f964a0307a">dg::fMDMatrix</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>MPI Device Matrix for derivatives </p>
-
-</div>
-</div>
-<a class="anchor" id="ga56e706f3f64e2fdc2ddce41d02c15723"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef MPI_Vector&lt;<a class="el" href="group__typedefs.html#ga89deab4489ccaca6812b016350c28bdb">dg::fDVec</a> &gt; <a class="el" href="group__typedefs.html#ga56e706f3f64e2fdc2ddce41d02c15723">dg::fMDVec</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>MPI Device Vector s.a. <a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a>. </p>
-
-</div>
-</div>
-<a class="anchor" id="ga8eaaedfa8f0feb90fecd61194f9507be"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="structdg_1_1_row_col_dist_mat.html">dg::RowColDistMat</a>&lt;<a class="el" href="group__typedefs.html#gaeefc9c0a4dbc127719b2ee416dc90dce">dg::fHMatrix</a>, <a class="el" href="structdg_1_1_coo_sparse_block_mat.html">dg::CooSparseBlockMat</a>&lt;float&gt;, <a class="el" href="group__typedefs.html#ga64ed23cff33cfb898971bc55becd8326">dg::fNNCH</a>&gt; <a class="el" href="group__typedefs.html#ga8eaaedfa8f0feb90fecd61194f9507be">dg::fMHMatrix</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>MPI Host Matrix for derivatives. </p>
-
-</div>
-</div>
-<a class="anchor" id="ga68daa92242e8651ac2ebfa0668b1ec9a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef MPI_Vector&lt;<a class="el" href="group__typedefs.html#ga7db4ee2dcdf21eda52e0e0c80f2e8ff5">dg::fHVec</a> &gt; <a class="el" href="group__typedefs.html#ga68daa92242e8651ac2ebfa0668b1ec9a">dg::fMHVec</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>MPI Host Vector. </p>
-
-</div>
-</div>
-<a class="anchor" id="gaed750a13553c4d39ddd0990091728029"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef NearestNeighborComm&lt;<a class="el" href="group__typedefs.html#gad1bd45a3dcc145353a87af2fd253bc9b">dg::iDVec</a>, <a class="el" href="group__typedefs.html#ga89deab4489ccaca6812b016350c28bdb">dg::fDVec</a> &gt; <a class="el" href="group__typedefs.html#gaed750a13553c4d39ddd0990091728029">dg::fNNCD</a></td>
+          <td class="memname">using <a class="el" href="group__typedefs.html#ga89a3930157f77be79532f3d51c7b3db0">dg::dNNCD</a> = typedef <a class="el" href="group__typedefs.html#ga5ad903c7e171878d6c402a20370ec5d4">dg::NNCD</a>&lt;double&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -364,12 +290,12 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga64ed23cff33cfb898971bc55becd8326"></a>
+<a class="anchor" id="ga8e6c8b7e3091e961b10fbf646065b670"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef NearestNeighborComm&lt;<a class="el" href="group__typedefs.html#ga16422a5c2edb7bac90e9b1bfb047c1c8">dg::iHVec</a>, <a class="el" href="group__typedefs.html#ga7db4ee2dcdf21eda52e0e0c80f2e8ff5">dg::fHVec</a> &gt; <a class="el" href="group__typedefs.html#ga64ed23cff33cfb898971bc55becd8326">dg::fNNCH</a></td>
+          <td class="memname">using <a class="el" href="group__typedefs.html#ga8e6c8b7e3091e961b10fbf646065b670">dg::dNNCH</a> = typedef <a class="el" href="group__typedefs.html#ga93e65948d51a0d9f05bf04c99272c118">dg::NNCH</a>&lt;double&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -378,12 +304,77 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga03ea77a5e974bed59c16fc1b50e32fad"></a>
+<a class="anchor" id="ga5bbe4ba51ef8ff8d506979d0beda25b8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef EllSparseBlockMat&lt;double&gt; <a class="el" href="group__typedefs.html#ga03ea77a5e974bed59c16fc1b50e32fad">dg::HMatrix</a></td>
+          <td class="memname">using <a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8">dg::DVec</a> = typedef thrust::device_vector&lt;double&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of the macro THRUST_DEVICE_SYSTEM, which can be either THRUST_DEVICE_SYSTEM_OMP for openMP or THRUST_DEVICE_SYSTEM_CUDA for a gpu. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga1aee695fc9310a94ac59294b7b60e8c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__typedefs.html#ga1aee695fc9310a94ac59294b7b60e8c0">dg::fCooMat</a> = typedef <a class="el" href="structdg_1_1_coo_sparse_block_mat.html">dg::CooSparseBlockMat</a>&lt;float&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga4e62541a4ca94e1eac9c067a781c13cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__typedefs.html#ga4e62541a4ca94e1eac9c067a781c13cf">dg::fDCooMat</a> = typedef <a class="el" href="structdg_1_1_coo_sparse_block_mat_device.html">dg::CooSparseBlockMatDevice</a>&lt;float&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gacab47883a25bf01af58765f606f88a22"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__typedefs.html#gacab47883a25bf01af58765f606f88a22">dg::fDMatrix</a> = typedef EllSparseBlockMatDevice&lt;float&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Device Matrix for derivatives </p>
+
+</div>
+</div>
+<a class="anchor" id="ga78b0309b2b460fb21919b29701c8dbb4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__typedefs.html#ga78b0309b2b460fb21919b29701c8dbb4">dg::fDVec</a> = typedef thrust::device_vector&lt;float&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of the macro THRUST_DEVICE_SYSTEM, which can be either THRUST_DEVICE_SYSTEM_OMP for openMP or THRUST_DEVICE_SYSTEM_CUDA for a gpu. </p>
+
+</div>
+</div>
+<a class="anchor" id="gac24d337dc79871e60dfe2360a8a95577"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__typedefs.html#gac24d337dc79871e60dfe2360a8a95577">dg::fHMatrix</a> = typedef EllSparseBlockMat&lt;float&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -392,12 +383,12 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gab99e8227ed890885a7b9915806865a7a"></a>
+<a class="anchor" id="gafb0778d5da5edc4c082822a84f78656e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef thrust::host_vector&lt;double&gt; <a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a">dg::HVec</a></td>
+          <td class="memname">using <a class="el" href="group__typedefs.html#gafb0778d5da5edc4c082822a84f78656e">dg::fHVec</a> = typedef thrust::host_vector&lt;float&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -406,69 +397,12 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga0d122f4172a3e60105754f9419c0831f"></a>
+<a class="anchor" id="ga56efb28b1175fb5a065dcbe81d678e54"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef cusp::csr_matrix&lt; int, double, cusp::device_memory &gt; <a class="el" href="group__typedefs.html#ga0d122f4172a3e60105754f9419c0831f">dg::IDMatrix</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>CSR device Matrix. </p>
-<p>CSR device Matrix </p>
-
-</div>
-</div>
-<a class="anchor" id="gad1bd45a3dcc145353a87af2fd253bc9b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef thrust::device_vector&lt;int&gt; <a class="el" href="group__typedefs.html#gad1bd45a3dcc145353a87af2fd253bc9b">dg::iDVec</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>integer Device Vector </p>
-
-</div>
-</div>
-<a class="anchor" id="ga0af8204731ee6327dc4616a5980af2d5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef cusp::csr_matrix&lt; int, double, cusp::host_memory &gt; <a class="el" href="group__typedefs.html#ga0af8204731ee6327dc4616a5980af2d5">dg::IHMatrix</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>CSR host Matrix. </p>
-
-</div>
-</div>
-<a class="anchor" id="ga16422a5c2edb7bac90e9b1bfb047c1c8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef thrust::host_vector&lt;int&gt; <a class="el" href="group__typedefs.html#ga16422a5c2edb7bac90e9b1bfb047c1c8">dg::iHVec</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>integer Host Vector </p>
-
-</div>
-</div>
-<a class="anchor" id="ga5d1f28d85330d29c74ea77f048d2978c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="structdg_1_1_row_col_dist_mat.html">dg::RowColDistMat</a>&lt;<a class="el" href="group__typedefs.html#gade8f2d2e22d78d961a4a83baad054922">dg::DMatrix</a>, <a class="el" href="structdg_1_1_coo_sparse_block_mat_device.html">dg::CooSparseBlockMatDevice</a>&lt;double&gt;, <a class="el" href="group__typedefs.html#gabc0c93579ed70fb606c739cee03364e4">dg::NNCD</a>&gt; <a class="el" href="group__typedefs.html#ga5d1f28d85330d29c74ea77f048d2978c">dg::MDMatrix</a></td>
+          <td class="memname">using <a class="el" href="group__typedefs.html#ga56efb28b1175fb5a065dcbe81d678e54">dg::fMDMatrix</a> = typedef <a class="el" href="structdg_1_1_row_col_dist_mat.html">dg::RowColDistMat</a>&lt;<a class="el" href="group__typedefs.html#gacab47883a25bf01af58765f606f88a22">dg::fDMatrix</a>, <a class="el" href="group__typedefs.html#ga4e62541a4ca94e1eac9c067a781c13cf">dg::fDCooMat</a>, <a class="el" href="group__typedefs.html#gad6239a57d8e92a0a068dff591891dee1">dg::fNNCD</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -477,26 +411,26 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga25cae493b710b17992387cce395ad7ae"></a>
+<a class="anchor" id="gaaf5a0cd11a882f188d77db14120433ad"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef MPI_Vector&lt;<a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6">dg::DVec</a> &gt; <a class="el" href="group__typedefs.html#ga25cae493b710b17992387cce395ad7ae">dg::MDVec</a></td>
+          <td class="memname">using <a class="el" href="group__typedefs.html#gaaf5a0cd11a882f188d77db14120433ad">dg::fMDVec</a> = typedef <a class="el" href="structdg_1_1_m_p_i___vector.html">dg::MPI_Vector</a>&lt;<a class="el" href="group__typedefs.html#ga78b0309b2b460fb21919b29701c8dbb4">dg::fDVec</a> &gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>MPI Device Vector s.a. <a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a>. </p>
+<p>MPI Device Vector s.a. <a class="el" href="group__typedefs.html#ga78b0309b2b460fb21919b29701c8dbb4" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::fDVec</a>. </p>
 
 </div>
 </div>
-<a class="anchor" id="gaa6f6bf3d7e428a9e66630a1a0e135d3a"></a>
+<a class="anchor" id="gae7dd83d81a27396178672510700e73af"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="structdg_1_1_row_col_dist_mat.html">dg::RowColDistMat</a>&lt;<a class="el" href="group__typedefs.html#ga03ea77a5e974bed59c16fc1b50e32fad">dg::HMatrix</a>, <a class="el" href="structdg_1_1_coo_sparse_block_mat.html">dg::CooSparseBlockMat</a>&lt;double&gt;, <a class="el" href="group__typedefs.html#ga3b2d0db184cb73256ac07b2d35fcefef">dg::NNCH</a>&gt; <a class="el" href="group__typedefs.html#gaa6f6bf3d7e428a9e66630a1a0e135d3a">dg::MHMatrix</a></td>
+          <td class="memname">using <a class="el" href="group__typedefs.html#gae7dd83d81a27396178672510700e73af">dg::fMHMatrix</a> = typedef <a class="el" href="structdg_1_1_row_col_dist_mat.html">dg::RowColDistMat</a>&lt;<a class="el" href="group__typedefs.html#gac24d337dc79871e60dfe2360a8a95577">dg::fHMatrix</a>, <a class="el" href="group__typedefs.html#ga1aee695fc9310a94ac59294b7b60e8c0">dg::fCooMat</a>, <a class="el" href="group__typedefs.html#gaf58692e972aa256e5034c76cd8c676d0">dg::fNNCH</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -505,53 +439,26 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga3f854ffa533cafd10b9846258e40029f"></a>
+<a class="anchor" id="gaaeaa5994e3b512003f682181640f8372"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef MPI_Vector&lt;<a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a">dg::HVec</a> &gt; <a class="el" href="group__typedefs.html#ga3f854ffa533cafd10b9846258e40029f">dg::MHVec</a></td>
+          <td class="memname">using <a class="el" href="group__typedefs.html#gaaeaa5994e3b512003f682181640f8372">dg::fMHVec</a> = typedef <a class="el" href="structdg_1_1_m_p_i___vector.html">dg::MPI_Vector</a>&lt;<a class="el" href="group__typedefs.html#gafb0778d5da5edc4c082822a84f78656e">dg::fHVec</a> &gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>MPI Host Vector s.a. <a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a>. </p>
+<p>MPI Host Vector s.a. <a class="el" href="group__typedefs.html#gafb0778d5da5edc4c082822a84f78656e" title="Host Vector. ">dg::fHVec</a>. </p>
 
 </div>
 </div>
-<a class="anchor" id="ga2fdf95d30a7a404b03e2e5ed4e88b603"></a>
+<a class="anchor" id="gad6239a57d8e92a0a068dff591891dee1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef MPIDistMat&lt; <a class="el" href="group__typedefs.html#ga0d122f4172a3e60105754f9419c0831f">dg::IDMatrix</a>, GeneralComm&lt; <a class="el" href="group__typedefs.html#gad1bd45a3dcc145353a87af2fd253bc9b">dg::iDVec</a>, <a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6">dg::DVec</a> &gt; &gt; <a class="el" href="group__typedefs.html#ga2fdf95d30a7a404b03e2e5ed4e88b603">dg::MIDMatrix</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>MPI distributed CSR device Matrix </p>
-
-</div>
-</div>
-<a class="anchor" id="gabf22476aa30d9a5d7d52a81f97078590"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef MPIDistMat&lt; <a class="el" href="group__typedefs.html#ga0af8204731ee6327dc4616a5980af2d5">dg::IHMatrix</a>, GeneralComm&lt; <a class="el" href="group__typedefs.html#ga16422a5c2edb7bac90e9b1bfb047c1c8">dg::iHVec</a>, <a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a">dg::HVec</a> &gt; &gt; <a class="el" href="group__typedefs.html#gabf22476aa30d9a5d7d52a81f97078590">dg::MIHMatrix</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>MPI distributed CSR host Matrix. </p>
-
-</div>
-</div>
-<a class="anchor" id="gabc0c93579ed70fb606c739cee03364e4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef NearestNeighborComm&lt;<a class="el" href="group__typedefs.html#gad1bd45a3dcc145353a87af2fd253bc9b">dg::iDVec</a>, <a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6">dg::DVec</a> &gt; <a class="el" href="group__typedefs.html#gabc0c93579ed70fb606c739cee03364e4">dg::NNCD</a></td>
+          <td class="memname">using <a class="el" href="group__typedefs.html#gad6239a57d8e92a0a068dff591891dee1">dg::fNNCD</a> = typedef <a class="el" href="group__typedefs.html#ga5ad903c7e171878d6c402a20370ec5d4">dg::NNCD</a>&lt;float&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -560,12 +467,12 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga3b2d0db184cb73256ac07b2d35fcefef"></a>
+<a class="anchor" id="gaf58692e972aa256e5034c76cd8c676d0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef NearestNeighborComm&lt; <a class="el" href="group__typedefs.html#ga16422a5c2edb7bac90e9b1bfb047c1c8">dg::iHVec</a>, <a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a">dg::HVec</a> &gt; <a class="el" href="group__typedefs.html#ga3b2d0db184cb73256ac07b2d35fcefef">dg::NNCH</a></td>
+          <td class="memname">using <a class="el" href="group__typedefs.html#gaf58692e972aa256e5034c76cd8c676d0">dg::fNNCH</a> = typedef <a class="el" href="group__typedefs.html#ga93e65948d51a0d9f05bf04c99272c118">dg::NNCH</a>&lt;float&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -574,12 +481,260 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="gac2134505608b45616787fdb2f6eedc87"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__typedefs.html#gac2134505608b45616787fdb2f6eedc87">dg::HMatrix</a> = typedef EllSparseBlockMat&lt;double&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Host Matrix for derivatives. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga4fb8e78e7b043edfedb880523f0cd193"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193">dg::HVec</a> = typedef thrust::host_vector&lt;double&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Host Vector. </p>
+
+</div>
+</div>
+<a class="anchor" id="gaab6ed0cbb6bf7ea723c10da88cd4529f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__typedefs.html#gaab6ed0cbb6bf7ea723c10da88cd4529f">dg::IDMatrix</a> = typedef tIDMatrix&lt;double&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga47171b298736a17b3e4ff54ec561f028"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__typedefs.html#ga47171b298736a17b3e4ff54ec561f028">dg::iDVec</a> = typedef thrust::device_vector&lt;int&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>integer Device Vector </p>
+
+</div>
+</div>
+<a class="anchor" id="ga188bea19979cfa0701387bfc5272be79"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__typedefs.html#ga188bea19979cfa0701387bfc5272be79">dg::IHMatrix</a> = typedef tIHMatrix&lt;double&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga6dcaf6113666c77a4bd46bf93a16ce4d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__typedefs.html#ga6dcaf6113666c77a4bd46bf93a16ce4d">dg::iHVec</a> = typedef thrust::host_vector&lt;int&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>integer Host Vector </p>
+
+</div>
+</div>
+<a class="anchor" id="gaad32454aa2aca3cbb93448d7b5daf005"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__typedefs.html#gaad32454aa2aca3cbb93448d7b5daf005">dg::MDMatrix</a> = typedef <a class="el" href="structdg_1_1_row_col_dist_mat.html">dg::RowColDistMat</a>&lt;<a class="el" href="group__typedefs.html#gafdf2ecb95cbc87a1544136d28d535f16">dg::DMatrix</a>, <a class="el" href="group__typedefs.html#gad7412ba17b1dc358ecc70361ced85f6b">dg::DCooMat</a>, <a class="el" href="group__typedefs.html#ga89a3930157f77be79532f3d51c7b3db0">dg::dNNCD</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MPI Device Matrix for derivatives. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga1e23fb8b50d38d43beb4bf3689c20a55"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55">dg::MDVec</a> = typedef <a class="el" href="structdg_1_1_m_p_i___vector.html">dg::MPI_Vector</a>&lt;<a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8">dg::DVec</a> &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MPI Device Vector s.a. <a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="gaff79c734c7916054c7dc24e6bc437161"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__typedefs.html#gaff79c734c7916054c7dc24e6bc437161">dg::MHMatrix</a> = typedef <a class="el" href="structdg_1_1_row_col_dist_mat.html">dg::RowColDistMat</a>&lt;<a class="el" href="group__typedefs.html#gac2134505608b45616787fdb2f6eedc87">dg::HMatrix</a>, <a class="el" href="group__typedefs.html#ga00c1e29dbf19330c5e34986229f480a1">dg::CooMat</a>, <a class="el" href="group__typedefs.html#ga8e6c8b7e3091e961b10fbf646065b670">dg::dNNCH</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MPI Host Matrix for derivatives. </p>
+
+</div>
+</div>
+<a class="anchor" id="gac127f65b65c035ebe413aee5abffd6f0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0">dg::MHVec</a> = typedef <a class="el" href="structdg_1_1_m_p_i___vector.html">dg::MPI_Vector</a>&lt;<a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193">dg::HVec</a> &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MPI Host Vector s.a. <a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193" title="Host Vector. ">dg::HVec</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga741f7ee9c9dd42c856046d37adc0f85c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__typedefs.html#ga741f7ee9c9dd42c856046d37adc0f85c">dg::MIDMatrix</a> = typedef tMIDMatrix&lt;double&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gaaf14c451a536c94f30a0ac6b7150c2e2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__typedefs.html#gaaf14c451a536c94f30a0ac6b7150c2e2">dg::MIHMatrix</a> = typedef tMIHMatrix&lt;double&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga5ad903c7e171878d6c402a20370ec5d4"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class real_type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__typedefs.html#ga5ad903c7e171878d6c402a20370ec5d4">dg::NNCD</a> = typedef <a class="el" href="structdg_1_1_nearest_neighbor_comm.html">dg::NearestNeighborComm</a>&lt;<a class="el" href="group__typedefs.html#ga47171b298736a17b3e4ff54ec561f028">dg::iDVec</a>, thrust::device_vector&lt;real_type&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>host Communicator for the use in an mpi matrix for derivatives </p>
+
+</div>
+</div>
+<a class="anchor" id="ga93e65948d51a0d9f05bf04c99272c118"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class real_type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__typedefs.html#ga93e65948d51a0d9f05bf04c99272c118">dg::NNCH</a> = typedef <a class="el" href="structdg_1_1_nearest_neighbor_comm.html">dg::NearestNeighborComm</a>&lt;<a class="el" href="group__typedefs.html#ga6dcaf6113666c77a4bd46bf93a16ce4d">dg::iHVec</a>, thrust::host_vector&lt;real_type&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>host Communicator for the use in an mpi matrix for derivatives </p>
+
+</div>
+</div>
+<a class="anchor" id="gacf18ef99d7d838d6de70bb3769427832"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class real_type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__typedefs.html#gacf18ef99d7d838d6de70bb3769427832">dg::tIDMatrix</a> = typedef cusp::csr_matrix&lt;int, real_type, cusp::device_memory&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga961227397d311ef3cb8153e95404d7f6"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class real_type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__typedefs.html#ga961227397d311ef3cb8153e95404d7f6">dg::tIHMatrix</a> = typedef cusp::csr_matrix&lt;int, real_type, cusp::host_memory&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga3e99b80d2cb81285eefe945f198d3745"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class real_type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__typedefs.html#ga3e99b80d2cb81285eefe945f198d3745">dg::tMIDMatrix</a> = typedef MPIDistMat&lt; tIDMatrix&lt;real_type&gt;, GeneralComm&lt; <a class="el" href="group__typedefs.html#ga47171b298736a17b3e4ff54ec561f028">dg::iDVec</a>, thrust::device_vector&lt;real_type&gt;&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga4e64d1275f25ef7ac7fcbb960620b64d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class real_type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__typedefs.html#ga4e64d1275f25ef7ac7fcbb960620b64d">dg::tMIHMatrix</a> = typedef MPIDistMat&lt; tIHMatrix&lt;real_type&gt;, GeneralComm&lt; <a class="el" href="group__typedefs.html#ga6dcaf6113666c77a4bd46bf93a16ce4d">dg::iHVec</a>, thrust::host_vector&lt;real_type&gt;&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Apr 26 2018 16:28:14 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Jul 5 2018 12:59:49 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

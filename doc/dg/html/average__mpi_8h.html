@@ -88,6 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -130,7 +131,50 @@ $(document).ready(function(){initNavTree('average__mpi_8h.html','');});
 
 <p>contains classes for poloidal and toroidal average computations.  
 <a href="#details">More...</a></p>
-
+<div class="textblock"><code>#include &quot;mpi.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="average_8h_source.html">average.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mpi__grid_8h_source.html">mpi_grid.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mpi__weights_8h_source.html">mpi_weights.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for average_mpi.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="average__mpi_8h__incl.png" border="0" usemap="#geometry_2average__mpi_8h" alt=""/></div>
+<map name="geometry_2average__mpi_8h" id="geometry_2average__mpi_8h">
+<area shape="rect" id="node3" href="average_8h.html" title="contains classes for poloidal and toroidal average computations. " alt="" coords="2781,80,2860,107"/>
+<area shape="rect" id="node49" href="mpi__grid_8h.html" title="MPI Grid objects. " alt="" coords="2998,162,3080,189"/>
+<area shape="rect" id="node50" href="mpi__weights_8h.html" title="contains MPI weights " alt="" coords="2884,80,2991,107"/>
+<area shape="rect" id="node4" href="grid_8h.html" title="base topology classes " alt="" coords="2960,251,3014,278"/>
+<area shape="rect" id="node17" href="weights_8h.html" title="contains creation functions for integration weights and their inverse " alt="" coords="2894,162,2973,189"/>
+<area shape="rect" id="node18" href="blas1_8h.html" title="dg/blas1.h" alt="" coords="1291,162,1374,189"/>
+<area shape="rect" id="node8" href="topological__traits_8h.html" title="topological_traits.h" alt="" coords="2922,333,3052,360"/>
+<area shape="rect" id="node9" href="dlt_8h.html" title="contains the discrete legendre trafo class " alt="" coords="3077,333,3124,360"/>
+<area shape="rect" id="node15" href="enums_8h.html" title="enums " alt="" coords="3148,333,3232,360"/>
+<area shape="rect" id="node14" href="exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="3122,408,3289,435"/>
+<area shape="rect" id="node20" href="tensor__traits_8h.html" title="backend/tensor_traits.h" alt="" coords="1128,333,1286,360"/>
+<area shape="rect" id="node27" href="tensor__traits__scalar_8h.html" title="backend/tensor_traits\l_scalar.h" alt="" coords="350,244,496,285"/>
+<area shape="rect" id="node28" href="tensor__traits__thrust_8h.html" title="backend/tensor_traits\l_thrust.h" alt="" coords="1776,244,1923,285"/>
+<area shape="rect" id="node30" href="tensor__traits__cusp_8h.html" title="backend/tensor_traits\l_cusp.h" alt="" coords="179,244,326,285"/>
+<area shape="rect" id="node36" href="tensor__traits__std_8h.html" title="backend/tensor_traits\l_std.h" alt="" coords="1080,244,1227,285"/>
+<area shape="rect" id="node39" href="mpi__vector_8h.html" title="backend/mpi_vector.h" alt="" coords="2198,251,2349,278"/>
+<area shape="rect" id="node47" href="subroutines_8h.html" title="subroutines.h" alt="" coords="1438,251,1538,278"/>
+<area shape="rect" id="node23" href="scalar__categories_8h.html" title="scalar_categories.h" alt="" coords="858,408,993,435"/>
+<area shape="rect" id="node24" href="vector__categories_8h.html" title="vector_categories.h" alt="" coords="858,483,994,509"/>
+<area shape="rect" id="node25" href="matrix__categories_8h.html" title="matrix_categories.h" alt="" coords="858,557,994,584"/>
+<area shape="rect" id="node26" href="execution__policy_8h.html" title="execution_policy.h" alt="" coords="1316,408,1447,435"/>
+<area shape="rect" id="node41" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/mpi__accumulate_8h.html" title="exblas/mpi_accumulate.h" alt="" coords="2270,333,2440,360"/>
+<area shape="rect" id="node43" href="mpi__communicator_8h.html" title="mpi_communicator.h" alt="" coords="1972,333,2114,360"/>
+<area shape="rect" id="node44" href="memory_8h.html" title="memory.h" alt="" coords="2655,333,2735,360"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="average__mpi_8h__dep__incl.png" border="0" usemap="#geometry_2average__mpi_8hdep" alt=""/></div>
+<map name="geometry_2average__mpi_8hdep" id="geometry_2average__mpi_8hdep">
+<area shape="rect" id="node2" href="algorithm_8h.html" title="algorithm.h" alt="" coords="45,80,131,107"/>
+</map>
+</div>
+</div>
 <p><a href="average__mpi_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -153,7 +197,7 @@ Namespaces</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e3380d2178455503f266746fb14246a5.html">geometry</a></li><li class="navelem"><a class="el" href="average__mpi_8h.html">average_mpi.h</a></li>
-    <li class="footer">Generated on Thu Apr 26 2018 16:28:14 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Jul 5 2018 12:59:49 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

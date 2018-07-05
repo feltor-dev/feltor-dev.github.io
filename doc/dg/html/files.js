@@ -11,12 +11,13 @@ var files =
     [ "dg_doc.h", "dg__doc_8h.html", null ],
     [ "elliptic.h", "elliptic_8h.html", null ],
     [ "enums.h", "enums_8h.html", "enums_8h" ],
-    [ "functors.h", "functors_8h.html", null ],
+    [ "functors.h", "functors_8h.html", "functors_8h" ],
     [ "helmholtz.h", "helmholtz_8h.html", null ],
     [ "multigrid.h", "multigrid_8h.html", null ],
     [ "multistep.h", "multistep_8h.html", null ],
     [ "nullstelle.h", "nullstelle_8h.html", "nullstelle_8h" ],
     [ "poisson.h", "poisson_8h.html", null ],
     [ "refined_elliptic.h", "refined__elliptic_8h.html", null ],
-    [ "runge_kutta.h", "runge__kutta_8h.html", "runge__kutta_8h" ]
+    [ "runge_kutta.h", "runge__kutta_8h.html", "runge__kutta_8h" ],
+    [ "subroutines.h", "subroutines_8h.html", null ]
 ];

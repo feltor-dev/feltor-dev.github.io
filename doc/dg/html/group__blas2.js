@@ -1,11 +1,11 @@
 var group__blas2 =
 [
     [ "blas2", "namespacedg_1_1blas2.html", null ],
-    [ "dot", "group__blas2.html#gafb2ae8931d3a1f6b27a908c35798defd", null ],
-    [ "dot", "group__blas2.html#gafaf8973061ab59f59e49697a46d6716e", null ],
-    [ "gemv", "group__blas2.html#ga5c79e9a4d2eacd91c12ff1591b90cc3f", null ],
-    [ "gemv", "group__blas2.html#ga2efbe31db28ff2c292f5384c1d829393", null ],
-    [ "symv", "group__blas2.html#gaa4386168cffcb35e549f44034ee80eb0", null ],
-    [ "symv", "group__blas2.html#ga1e942b5970e73d1338c742eb57d1d389", null ],
-    [ "transfer", "group__blas2.html#gad55efc77b7320e376b7f00b61ce0dd6e", null ]
+    [ "dot", "group__blas2.html#gaaafba91956e948b0ea53f30889a3c20d", null ],
+    [ "dot", "group__blas2.html#ga33daee0a61293b14d7bbe5cf901993d1", null ],
+    [ "gemv", "group__blas2.html#ga1b7e3b58697b6e93169eebbda63f3ed3", null ],
+    [ "gemv", "group__blas2.html#ga5f7f59acf79dc654da64ca7e8f212284", null ],
+    [ "symv", "group__blas2.html#ga9bd2015d31362b25d61110f91cf3b0b9", null ],
+    [ "symv", "group__blas2.html#gac3840941bd2bb1d64c6ca3fef1f1b960", null ],
+    [ "transfer", "group__blas2.html#ga53701ba3118a2256a93a4d92a7a8a597", null ]
 ];

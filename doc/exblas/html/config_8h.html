@@ -94,6 +94,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -103,7 +104,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>Configuration of superaccumulators.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;cassert&gt;</code><br />
+<code>#include &quot;vcl/vectorclass.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for config.h:</div>
 <div class="dyncontent">
@@ -139,6 +143,39 @@ Namespaces</h2></td></tr>
 <tr class="memdesc:namespaceexblas"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the namespace for all functions and classes defined and used in the exblas library. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ade5673c183372f1234ced745f890edf4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade5673c183372f1234ced745f890edf4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_VECTOR_SIZE</b>&#160;&#160;&#160;512</td></tr>
+<tr class="separator:ade5673c183372f1234ced745f890edf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7beb8c57a84a7fa03a96ed1892e0a2e8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7beb8c57a84a7fa03a96ed1892e0a2e8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>VCL_NAMESPACE</b>&#160;&#160;&#160;vcl</td></tr>
+<tr class="separator:a7beb8c57a84a7fa03a96ed1892e0a2e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0b40934341fdc9a8f0c723a5c67a1bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae0b40934341fdc9a8f0c723a5c67a1bc"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>_WITHOUT_VCL</b></td></tr>
+<tr class="separator:ae0b40934341fdc9a8f0c723a5c67a1bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7452301c44a0d82ad99797813e8b0eda"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7452301c44a0d82ad99797813e8b0eda"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>UNROLL_ATTRIBUTE</b></td></tr>
+<tr class="separator:a7452301c44a0d82ad99797813e8b0eda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95736028cefef8a0d4ca8933cc035d02"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a95736028cefef8a0d4ca8933cc035d02"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INLINE_ATTRIBUTE</b></td></tr>
+<tr class="separator:a95736028cefef8a0d4ca8933cc035d02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8dde0e7f98fdf3303a5de85155e5477"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8dde0e7f98fdf3303a5de85155e5477"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ASM_BEGIN</b></td></tr>
+<tr class="separator:ae8dde0e7f98fdf3303a5de85155e5477"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef88fdc3d218912871ef4042dcc45a05"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef88fdc3d218912871ef4042dcc45a05"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ASM_END</b></td></tr>
+<tr class="separator:aef88fdc3d218912871ef4042dcc45a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2e4d853af1fd2da23a1ab8814490572"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad2e4d853af1fd2da23a1ab8814490572"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>paranoid_assert</b>(x)&#160;&#160;&#160;assert(x)</td></tr>
+<tr class="separator:ad2e4d853af1fd2da23a1ab8814490572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a217a0bd562b98ae8c2ffce44935351e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a217a0bd562b98ae8c2ffce44935351e1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>likely</b>(x)&#160;&#160;&#160;(x)</td></tr>
+<tr class="separator:a217a0bd562b98ae8c2ffce44935351e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6c45889010c1bd68631771b64f18101"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6c45889010c1bd68631771b64f18101"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>unlikely</b>(x)&#160;&#160;&#160;(x)</td></tr>
+<tr class="separator:ac6c45889010c1bd68631771b64f18101"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a33a26be6853bc1125ea07a6311df4409"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#a33a26be6853bc1125ea07a6311df4409">exblas::Status</a> { <br />
@@ -157,8 +194,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a81808a49717819440744a3cc80c2f0a2"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#a81808a49717819440744a3cc80c2f0a2">exblas::KRX</a> = 8</td></tr>
-<tr class="memdesc:a81808a49717819440744a3cc80c2f0a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">High-radix carry-save bits.  <a href="namespaceexblas.html#a81808a49717819440744a3cc80c2f0a2">More...</a><br /></td></tr>
+<tr class="memitem:a81808a49717819440744a3cc80c2f0a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a81808a49717819440744a3cc80c2f0a2"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#a81808a49717819440744a3cc80c2f0a2">exblas::KRX</a> = 8</td></tr>
+<tr class="memdesc:a81808a49717819440744a3cc80c2f0a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">High-radix carry-save bits. <br /></td></tr>
 <tr class="separator:a81808a49717819440744a3cc80c2f0a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7155cf5cd239ccfc433456b86a0d1b3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7155cf5cd239ccfc433456b86a0d1b3"></a>
 static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#ab7155cf5cd239ccfc433456b86a0d1b3">exblas::DIGITS</a> = 64 - KRX</td></tr>

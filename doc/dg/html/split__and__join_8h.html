@@ -88,6 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -126,7 +127,45 @@ $(document).ready(function(){initNavTree('split__and__join_8h.html','');});
 <div class="title">split_and_join.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;thrust/host_vector.h&gt;</code><br />
+<code>#include &lt;thrust/device_vector.h&gt;</code><br />
+<code>#include &quot;dg/backend/blas1_dispatch_shared.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="grid_8h_source.html">grid.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mpi__vector_8h_source.html">dg/backend/mpi_vector.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mpi__grid_8h_source.html">mpi_grid.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for split_and_join.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="split__and__join_8h__incl.png" border="0" usemap="#geometry_2split__and__join_8h" alt=""/></div>
+<map name="geometry_2split__and__join_8h" id="geometry_2split__and__join_8h">
+<area shape="rect" id="node5" href="grid_8h.html" title="base topology classes " alt="" coords="1170,184,1225,211"/>
+<area shape="rect" id="node19" href="mpi__vector_8h.html" title="dg/backend/mpi_vector.h" alt="" coords="712,184,880,211"/>
+<area shape="rect" id="node35" href="mpi__grid_8h.html" title="MPI Grid objects. " alt="" coords="1156,102,1239,129"/>
+<area shape="rect" id="node8" href="topological__traits_8h.html" title="topological_traits.h" alt="" coords="1245,259,1376,285"/>
+<area shape="rect" id="node9" href="dlt_8h.html" title="contains the discrete legendre trafo class " alt="" coords="1174,259,1221,285"/>
+<area shape="rect" id="node17" href="enums_8h.html" title="enums " alt="" coords="1401,259,1485,285"/>
+<area shape="rect" id="node14" href="exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="1326,333,1493,360"/>
+<area shape="rect" id="node21" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/mpi__accumulate_8h.html" title="exblas/mpi_accumulate.h" alt="" coords="299,259,469,285"/>
+<area shape="rect" id="node24" href="tensor__traits_8h.html" title="tensor_traits.h" alt="" coords="494,259,599,285"/>
+<area shape="rect" id="node32" href="mpi__communicator_8h.html" title="mpi_communicator.h" alt="" coords="814,259,957,285"/>
+<area shape="rect" id="node34" href="memory_8h.html" title="memory.h" alt="" coords="980,259,1060,285"/>
+<area shape="rect" id="node22" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/accumulate_8h.html" title="accumulate.h" alt="" coords="67,333,167,360"/>
+<area shape="rect" id="node23" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/config_8h.html" title="config.h" alt="" coords="83,408,151,435"/>
+<area shape="rect" id="node27" href="scalar__categories_8h.html" title="scalar_categories.h" alt="" coords="191,333,326,360"/>
+<area shape="rect" id="node28" href="vector__categories_8h.html" title="vector_categories.h" alt="" coords="644,408,780,435"/>
+<area shape="rect" id="node29" href="matrix__categories_8h.html" title="matrix_categories.h" alt="" coords="696,483,832,509"/>
+<area shape="rect" id="node30" href="execution__policy_8h.html" title="execution_policy.h" alt="" coords="351,333,481,360"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="split__and__join_8h__dep__incl.png" border="0" usemap="#geometry_2split__and__join_8hdep" alt=""/></div>
+<map name="geometry_2split__and__join_8hdep" id="geometry_2split__and__join_8hdep">
+<area shape="rect" id="node2" href="algorithm_8h.html" title="algorithm.h" alt="" coords="28,95,115,121"/>
+</map>
+</div>
+</div>
 <p><a href="split__and__join_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -161,7 +200,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e3380d2178455503f266746fb14246a5.html">geometry</a></li><li class="navelem"><a class="el" href="split__and__join_8h.html">split_and_join.h</a></li>
-    <li class="footer">Generated on Thu Apr 26 2018 16:28:14 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Jul 5 2018 12:59:49 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

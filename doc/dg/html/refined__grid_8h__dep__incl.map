@@ -1,0 +1,10 @@
+<map id="geometry/refined_grid.h" name="geometry/refined_grid.h">
+<area shape="rect" id="node2" href="$refined__grid_x_8h.html" title="geometry/refined_gridX.h" alt="" coords="145,80,311,107"/>
+<area shape="rect" id="node7" href="$refined__elliptic_8h.html" title="contains an elliptic method on a refined grid " alt="" coords="387,304,503,331"/>
+<area shape="rect" id="node3" href="$geometry_8h.html" title="geometry/geometry.h" alt="" coords="117,155,262,181"/>
+<area shape="rect" id="node4" href="$algorithm_8h.html" title="algorithm.h" alt="" coords="167,379,254,405"/>
+<area shape="rect" id="node5" href="$elliptic_8h.html" title="General negative elliptic operators. " alt="" coords="245,229,315,256"/>
+<area shape="rect" id="node8" href="$arakawa_8h.html" title="object for computation of Poisson bracket " alt="" coords="5,304,88,331"/>
+<area shape="rect" id="node9" href="$poisson_8h.html" title="poisson.h" alt="" coords="73,229,151,256"/>
+<area shape="rect" id="node6" href="$helmholtz_8h.html" title="contains Helmholtz and Maxwell operators " alt="" coords="274,304,363,331"/>
+</map>

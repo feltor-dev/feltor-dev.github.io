@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Discontinuous Galerkin Library: dg::SIRK&lt; container &gt; Struct Template Reference</title>
+<title>Discontinuous Galerkin Library: dg::SIRK&lt; ContainerType &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -124,10 +124,11 @@ $(document).ready(function(){initNavTree('structdg_1_1_s_i_r_k.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="structdg_1_1_s_i_r_k-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">dg::SIRK&lt; container &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__numerical0.html">Level 2: Basic numerical algorithms</a> &raquo; <a class="el" href="group__time.html">Time integrators</a></div></div>  </div>
+<div class="title">dg::SIRK&lt; ContainerType &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__numerical0.html">Level 2: Basic numerical algorithms</a> &raquo; <a class="el" href="group__time.html">Time integrators</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -136,23 +137,34 @@ $(document).ready(function(){initNavTree('structdg_1_1_s_i_r_k.html','');});
 
 <p><code>#include &lt;<a class="el" href="multistep_8h_source.html">multistep.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a33eb77e0cbafb3481706abecf9e7fac6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_s_i_r_k.html#a33eb77e0cbafb3481706abecf9e7fac6">real_type</a> = <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt;</td></tr>
+<tr class="separator:a33eb77e0cbafb3481706abecf9e7fac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9e5b92f3e7ba9c6c9461dcafbda49482"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_s_i_r_k.html#a9e5b92f3e7ba9c6c9461dcafbda49482">SIRK</a> (const container &amp;copyable, unsigned max_iter, double eps)</td></tr>
-<tr class="memdesc:a9e5b92f3e7ba9c6c9461dcafbda49482"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from copyable container.  <a href="#a9e5b92f3e7ba9c6c9461dcafbda49482">More...</a><br /></td></tr>
-<tr class="separator:a9e5b92f3e7ba9c6c9461dcafbda49482"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4e852b97d2ad2c2449d04488cfbab2a"><td class="memTemplParams" colspan="2">template&lt;class Explicit , class Implicit &gt; </td></tr>
-<tr class="memitem:af4e852b97d2ad2c2449d04488cfbab2a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_s_i_r_k.html#af4e852b97d2ad2c2449d04488cfbab2a">operator()</a> (Explicit &amp;exp, Implicit &amp;imp, const container &amp;u0, container &amp;u1, double dt)</td></tr>
-<tr class="memdesc:af4e852b97d2ad2c2449d04488cfbab2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">integrate one step  <a href="#af4e852b97d2ad2c2449d04488cfbab2a">More...</a><br /></td></tr>
-<tr class="separator:af4e852b97d2ad2c2449d04488cfbab2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7d1ba2904e9e436d0d8041233fb1624"><td class="memTemplParams" colspan="2">template&lt;class Explicit , class Implicit &gt; </td></tr>
-<tr class="memitem:ad7d1ba2904e9e436d0d8041233fb1624"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_s_i_r_k.html#ad7d1ba2904e9e436d0d8041233fb1624">adaptive_step</a> (Explicit &amp;exp, Implicit &amp;imp, const container &amp;u0, container &amp;u1, double &amp;dt, double tolerance)</td></tr>
-<tr class="memdesc:ad7d1ba2904e9e436d0d8041233fb1624"><td class="mdescLeft">&#160;</td><td class="mdescRight">adapt timestep  <a href="#ad7d1ba2904e9e436d0d8041233fb1624">More...</a><br /></td></tr>
-<tr class="separator:ad7d1ba2904e9e436d0d8041233fb1624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a654ee7a37585d73f69c0d62f7e7da4b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_s_i_r_k.html#a654ee7a37585d73f69c0d62f7e7da4b0">SIRK</a> ()</td></tr>
+<tr class="memdesc:a654ee7a37585d73f69c0d62f7e7da4b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">No memory allocation, Call <code>construct</code> before using the object.  <a href="#a654ee7a37585d73f69c0d62f7e7da4b0">More...</a><br /></td></tr>
+<tr class="separator:a654ee7a37585d73f69c0d62f7e7da4b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a095e152c3db1261f5741d6fa233b1ca8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_s_i_r_k.html#a095e152c3db1261f5741d6fa233b1ca8">SIRK</a> (const ContainerType &amp;copyable, unsigned max_iter, <a class="el" href="structdg_1_1_s_i_r_k.html#a33eb77e0cbafb3481706abecf9e7fac6">real_type</a> eps)</td></tr>
+<tr class="memdesc:a095e152c3db1261f5741d6fa233b1ca8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserve memory for the integration.  <a href="#a095e152c3db1261f5741d6fa233b1ca8">More...</a><br /></td></tr>
+<tr class="separator:a095e152c3db1261f5741d6fa233b1ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ae2575fc6092264c11fab9d6d3f4e87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_s_i_r_k.html#a8ae2575fc6092264c11fab9d6d3f4e87">construct</a> (const ContainerType &amp;copyable, unsigned max_iter, <a class="el" href="structdg_1_1_s_i_r_k.html#a33eb77e0cbafb3481706abecf9e7fac6">real_type</a> eps)</td></tr>
+<tr class="memdesc:a8ae2575fc6092264c11fab9d6d3f4e87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserve memory for the integration.  <a href="#a8ae2575fc6092264c11fab9d6d3f4e87">More...</a><br /></td></tr>
+<tr class="separator:a8ae2575fc6092264c11fab9d6d3f4e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a290a566a43b8d1220007928155d7eeee"><td class="memTemplParams" colspan="2">template&lt;class Explicit , class Implicit &gt; </td></tr>
+<tr class="memitem:a290a566a43b8d1220007928155d7eeee"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_s_i_r_k.html#a290a566a43b8d1220007928155d7eeee">step</a> (Explicit &amp;exp, Implicit &amp;imp, <a class="el" href="structdg_1_1_s_i_r_k.html#a33eb77e0cbafb3481706abecf9e7fac6">real_type</a> t0, const ContainerType &amp;u0, <a class="el" href="structdg_1_1_s_i_r_k.html#a33eb77e0cbafb3481706abecf9e7fac6">real_type</a> &amp;t1, ContainerType &amp;u1, <a class="el" href="structdg_1_1_s_i_r_k.html#a33eb77e0cbafb3481706abecf9e7fac6">real_type</a> dt)</td></tr>
+<tr class="memdesc:a290a566a43b8d1220007928155d7eeee"><td class="mdescLeft">&#160;</td><td class="mdescRight">integrate one step  <a href="#a290a566a43b8d1220007928155d7eeee">More...</a><br /></td></tr>
+<tr class="separator:a290a566a43b8d1220007928155d7eeee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa683c9617de983f14e18a66167d6db7b"><td class="memTemplParams" colspan="2">template&lt;class Explicit , class Implicit &gt; </td></tr>
+<tr class="memitem:aa683c9617de983f14e18a66167d6db7b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_s_i_r_k.html#aa683c9617de983f14e18a66167d6db7b">adaptive_step</a> (Explicit &amp;exp, Implicit &amp;imp, <a class="el" href="structdg_1_1_s_i_r_k.html#a33eb77e0cbafb3481706abecf9e7fac6">real_type</a> t0, const ContainerType &amp;u0, <a class="el" href="structdg_1_1_s_i_r_k.html#a33eb77e0cbafb3481706abecf9e7fac6">real_type</a> &amp;t1, ContainerType &amp;u1, <a class="el" href="structdg_1_1_s_i_r_k.html#a33eb77e0cbafb3481706abecf9e7fac6">real_type</a> &amp;dt, <a class="el" href="structdg_1_1_s_i_r_k.html#a33eb77e0cbafb3481706abecf9e7fac6">real_type</a> tolerance, bool verbose=false)</td></tr>
+<tr class="memdesc:aa683c9617de983f14e18a66167d6db7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">adapt timestep (experimental)  <a href="#aa683c9617de983f14e18a66167d6db7b">More...</a><br /></td></tr>
+<tr class="separator:aa683c9617de983f14e18a66167d6db7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class container&gt;<br />
-struct dg::SIRK&lt; container &gt;</h3>
+<div class="textblock"><h3>template&lt;class ContainerType&gt;<br />
+struct dg::SIRK&lt; ContainerType &gt;</h3>
 
 <p>Semi implicit Runge Kutta method after Yoh and Zhong (AIAA 42, 2004) </p>
 <p>The <a class="el" href="structdg_1_1_s_i_r_k.html" title="Semi implicit Runge Kutta method after Yoh and Zhong (AIAA 42, 2004) ">SIRK</a> algorithm reads </p><p class="formulaDsp">
@@ -162,32 +174,75 @@ struct dg::SIRK&lt; container &gt;</h3>
 \[ w_0 = \frac{1}{8} \quad b_{10} = \frac{8}{7} \quad d_0 = \frac{3}{4} \quad c_{10} = \frac{5589}{6524} \\ w_1 = \frac{1}{8} \quad b_{20} = \frac{71}{252} \quad d_1 = \frac{75}{233} \quad c_{20} = \frac{7691}{26096} \\ w_2 = \frac{3}{4} \quad b_{21} = \frac{7}{36} \quad d_2 = \frac{65}{168} \quad c_{21} = -\frac{26335}{78288} \]
 </p>
 <p> We solve the implicit substeps by a conjugate gradient method, which works as long as the implicit part remains symmetric and linear.</p>
-<p>The following code example demonstrates how to integrate the 2d diffusion equation with the dg library: </p><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">class</span> Vector&gt;</div><div class="line"><span class="keywordtype">void</span> <a class="code" href="group__functions.html#ga4c5536b3b96ccc28668a59d142293b6d">zero</a>(<span class="keyword">const</span> std::vector&lt;Vector&gt;&amp; y, std::vector&lt;Vector&gt;&amp; yp){ <a class="code" href="group__blas1.html#ga67242fc36cf08182cfaa10d358762362">dg::blas1::scal</a>(yp,0.);}</div><div class="line"></div><div class="line"><span class="keyword">template</span>&lt; <span class="keyword">class</span> Matrix, <span class="keyword">class</span> container&gt;</div><div class="line"><span class="keyword">struct </span>Diffusion</div><div class="line">{</div><div class="line">    Diffusion( <span class="keyword">const</span> <a class="code" href="structdg_1_1_grid2d.html">dg::Grid2d</a>&amp; g, <span class="keywordtype">double</span> nu): m_nu(nu),</div><div class="line">        m_w2d( <a class="code" href="namespacedg.html">dg</a>::create::<a class="code" href="group__highlevel.html#ga4c1f33dbb53f54fd6407fa838c15b444">weights</a>(g)),</div><div class="line">        m_v2d( <a class="code" href="namespacedg.html">dg</a>::create::<a class="code" href="group__highlevel.html#ga473690f3abf64cff31ec167f6776bc1d">inv_weights</a>(g)),</div><div class="line">        m_LaplacianM( g, <a class="code" href="namespacedg.html">dg</a>::<a class="code" href="group__creation.html#gga9945b71a335bc97f78dc7425911c7287a3f222a3e51d054ebe21228c62569e123">normed</a>)</div><div class="line">        { }</div><div class="line"></div><div class="line">    <span class="keywordtype">void</span> <a class="code" href="structdg_1_1_s_i_r_k.html#af4e852b97d2ad2c2449d04488cfbab2a">operator()</a>( <span class="keyword">const</span> std::vector&lt;container&gt;&amp; x, std::vector&lt;container&gt;&amp; y)</div><div class="line">    {</div><div class="line">        <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> i=0; i&lt;x.size(); i++)</div><div class="line">        {</div><div class="line">            <a class="code" href="group__blas2.html#ga5c79e9a4d2eacd91c12ff1591b90cc3f">dg::blas2::gemv</a>( m_LaplacianM, x[i], y[i]);</div><div class="line">        }</div><div class="line">        <a class="code" href="group__blas1.html#ga67242fc36cf08182cfaa10d358762362">dg::blas1::scal</a>( y, -m_nu);</div><div class="line">    }</div><div class="line">    <span class="keyword">const</span> container&amp; <a class="code" href="group__highlevel.html#ga473690f3abf64cff31ec167f6776bc1d">inv_weights</a>(){<span class="keywordflow">return</span> m_v2d;}</div><div class="line">    <span class="keyword">const</span> container&amp; <a class="code" href="group__highlevel.html#ga4c1f33dbb53f54fd6407fa838c15b444">weights</a>(){<span class="keywordflow">return</span> m_w2d;}</div><div class="line">    <span class="keyword">const</span> container&amp; <a class="code" href="group__lowlevel.html#gaa88e5198f069f6bda6d73df4a9d6b1b7">precond</a>(){<span class="keywordflow">return</span> m_v2d;}</div><div class="line">  <span class="keyword">private</span>:</div><div class="line">    <span class="keywordtype">double</span> m_nu;</div><div class="line">    <span class="keyword">const</span> container m_w2d, m_v2d;</div><div class="line">    <a class="code" href="classdg_1_1_elliptic.html">dg::Elliptic&lt;dg::CartesianGrid2d, Matrix, container&gt;</a> m_LaplacianM;</div><div class="line">};</div><div class="line"><span class="keywordtype">double</span> sine( <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y) {<span class="keywordflow">return</span> sin(x)*sin(y);}</div><div class="line"><span class="keyword">const</span> <span class="keywordtype">double</span> T = 1.0;</div><div class="line"><span class="keyword">const</span> <span class="keywordtype">double</span> nu = 0.01;</div><div class="line"><span class="keywordtype">double</span> sol( <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y) {<span class="keywordflow">return</span> exp( -2.*nu*T)*sine(x, y);}</div></div><!-- fragment --><p>In the main function: </p><div class="fragment"><div class="line">    <a class="code" href="structdg_1_1_grid2d.html">dg::Grid2d</a> grid( 0, lx, 0, ly, n, Nx, Ny, <a class="code" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3">dg::PER</a>, <a class="code" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3">dg::PER</a>);</div><div class="line">    std::vector&lt;dg::DVec&gt; y0(2, <a class="code" href="group__evaluation.html#ga7521f4acb4edaf2d7896d99f97e1ed9d">dg::evaluate</a>( sine, grid)), y1(y0);</div><div class="line">    Diffusion&lt;dg::DMatrix, dg::DVec&gt; diffusion( grid, nu);</div><div class="line">    <a class="code" href="structdg_1_1_karniadakis.html">dg::Karniadakis&lt; std::vector&lt;dg::DVec&gt;</a> &gt; karniadakis( y0, y0[0].size(), eps);</div><div class="line">    karniadakis.init( zero&lt;dg::DVec&gt;, diffusion, y0, dt);</div><div class="line">    <a class="code" href="structdg_1_1_s_i_r_k.html">dg::SIRK&lt; std::vector&lt;dg::DVec&gt;</a> &gt; sirk( y0, y0[0].size(), eps);</div><div class="line">    <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> i=0; i&lt;NT; i++)</div><div class="line">    {</div><div class="line">        karniadakis( zero&lt;dg::DVec&gt;, diffusion, y0);</div><div class="line">        <span class="comment">//sirk( explicit, diffusion, y0, y1, dt); y0.swap(y1);</span></div><div class="line">    }</div></div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>To our experience the implicit treatment of diffusive or hyperdiffusive terms can significantly reduce the required number of time steps. This far outweighs the increased computational cost of the additional matrix inversions.</dd></dl>
+<p>The following code example demonstrates how to implement the method of manufactured solutions on a 2d partial differential equation with the dg library: </p><div class="fragment"><div class="line"><span class="comment">//method of manufactured solution</span></div><div class="line"><span class="keyword">struct </span>Solution{</div><div class="line">    Solution(<span class="keywordtype">double</span> t, <span class="keywordtype">double</span> nu):t(t), nu(nu){}</div><div class="line"><a class="code" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a></div><div class="line">    <span class="keywordtype">double</span> operator()(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y)<span class="keyword"> const</span>{</div><div class="line">        <span class="keywordflow">return</span> sin(t)*exp( -2.*nu*t)*sin(x)*sin(y);</div><div class="line">    }</div><div class="line">    <span class="keyword">private</span>:</div><div class="line">    <span class="keywordtype">double</span> t, nu;</div><div class="line">};</div><div class="line"></div><div class="line"><span class="keyword">struct </span>Source{</div><div class="line">    Source(<span class="keywordtype">double</span> t, <span class="keywordtype">double</span> nu):t(t), nu(nu){}</div><div class="line"><a class="code" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a></div><div class="line">    <span class="keywordtype">double</span> operator()(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y)<span class="keyword"> const</span>{</div><div class="line">        <span class="keywordflow">return</span> sin(x)*sin(y)*cos(t)*exp(-2*t*nu)*(1-sin(t));</div><div class="line">    }</div><div class="line">    <span class="keyword">private</span>:</div><div class="line">    <span class="keywordtype">double</span> t, nu;</div><div class="line">};</div><div class="line"></div><div class="line"><span class="comment">//the explicit part contains the source Tp = S(x,y,t)</span></div><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">class</span> container&gt;</div><div class="line"><span class="keyword">struct </span>Explicit</div><div class="line">{</div><div class="line">    Explicit( <span class="keyword">const</span> <a class="code" href="structdg_1_1_real_grid2d.html">dg::Grid2d</a>&amp; g, <span class="keywordtype">double</span> nu):</div><div class="line">        m_nu( nu),</div><div class="line">        m_x ( <a class="code" href="namespacedg.html">dg</a>::<a class="code" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">evaluate</a>(<a class="code" href="namespacedg.html">dg</a>::cooX2d, g)),<span class="comment">//x-coordinate</span></div><div class="line">        m_y ( <a class="code" href="namespacedg.html">dg</a>::<a class="code" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">evaluate</a>(<a class="code" href="namespacedg.html">dg</a>::cooY2d, g)) <span class="comment">//y-coordinate</span></div><div class="line">    {}</div><div class="line">    <span class="keywordtype">void</span> operator()( <span class="keywordtype">double</span> t, <span class="keyword">const</span> container&amp; T, container&amp; Tp) {</div><div class="line">        <a class="code" href="group__blas1.html#gaad7b58d466d813898b68189b44619210">dg::blas1::evaluate</a>( Tp, <a class="code" href="structdg_1_1equals.html">dg::equals</a>(), Source(t,m_nu), m_x, m_y);</div><div class="line">    }</div><div class="line">    <span class="keyword">private</span>:</div><div class="line">    <span class="keyword">const</span> <span class="keywordtype">double</span> m_nu;</div><div class="line">    <span class="keyword">const</span> container m_x, m_y;</div><div class="line"></div><div class="line">};</div><div class="line"></div><div class="line"><span class="comment">//the implicit part contains  Tp = nu Delta T(x,y,t) + cos(t) T(x,y,t)</span></div><div class="line"><span class="keyword">template</span>&lt; <span class="keyword">class</span> Matrix, <span class="keyword">class</span> container&gt;</div><div class="line"><span class="keyword">struct </span>Implicit</div><div class="line">{</div><div class="line">    Implicit( <span class="keyword">const</span> <a class="code" href="structdg_1_1_real_grid2d.html">dg::Grid2d</a>&amp; g, <span class="keywordtype">double</span> nu):</div><div class="line">        m_nu(nu),</div><div class="line">        m_w2d( <a class="code" href="namespacedg.html">dg</a>::create::<a class="code" href="group__highlevel.html#ga771996962c7762bc7ee00b522a17259f">weights</a>(g)),</div><div class="line">        m_v2d( <a class="code" href="namespacedg.html">dg</a>::create::<a class="code" href="group__highlevel.html#ga52d6f1b6b906db48a9eda97f627b0b0e">inv_weights</a>(g)),</div><div class="line">        m_LaplacianM( g, <a class="code" href="namespacedg.html">dg</a>::<a class="code" href="group__creation.html#gga9945b71a335bc97f78dc7425911c7287a3f222a3e51d054ebe21228c62569e123">normed</a>)</div><div class="line">        { }</div><div class="line"></div><div class="line">    <span class="keywordtype">void</span> operator()( <span class="keywordtype">double</span> t, <span class="keyword">const</span> container&amp; T, container&amp; Tp)</div><div class="line">    {</div><div class="line">        <a class="code" href="group__blas2.html#ga1b7e3b58697b6e93169eebbda63f3ed3">dg::blas2::gemv</a>( m_LaplacianM, T, Tp);</div><div class="line">        <a class="code" href="group__blas1.html#ga5c7ddbf70dd74867e45c9d4f40b36cf7">dg::blas1::axpby</a>( cos(t), T, -m_nu, Tp);</div><div class="line">    }</div><div class="line">    <span class="comment">//required by inversion in semi-implicit schemes</span></div><div class="line">    <span class="keyword">const</span> container&amp; <a class="code" href="group__highlevel.html#ga52d6f1b6b906db48a9eda97f627b0b0e">inv_weights</a>(){<span class="keywordflow">return</span> m_v2d;}</div><div class="line">    <span class="keyword">const</span> container&amp; <a class="code" href="group__highlevel.html#ga771996962c7762bc7ee00b522a17259f">weights</a>(){<span class="keywordflow">return</span> m_w2d;}</div><div class="line">    <span class="keyword">const</span> container&amp; <a class="code" href="group__lowlevel.html#ga06ce516b4837f5aafde50b7883c11b83">precond</a>(){<span class="keywordflow">return</span> m_v2d;}</div><div class="line">  <span class="keyword">private</span>:</div><div class="line">    <span class="keywordtype">double</span> m_nu;</div><div class="line">    <span class="keyword">const</span> container m_w2d, m_v2d, m_x, m_y;</div><div class="line">    <a class="code" href="classdg_1_1_elliptic.html">dg::Elliptic&lt;dg::CartesianGrid2d, Matrix, container&gt;</a> m_LaplacianM;</div><div class="line">};</div><div class="line"></div></div><!-- fragment --><p>In the main function: </p><div class="fragment"><div class="line">    <span class="comment">//construct time stepper (eps = 1e-8)</span></div><div class="line">    <a class="code" href="structdg_1_1_s_i_r_k.html">dg::SIRK&lt; dg::DVec &gt;</a> sirk( y0, y0.size(), eps);</div><div class="line">    time = 0., y0 = init; <span class="comment">//y0 and init are of type dg::DVec and contain the initial condition</span></div><div class="line">    <span class="comment">//main time loop (NT = 20, exp and imp are objects of type Explicit and Implicit defined above)</span></div><div class="line">    <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> i=0; i&lt;NT; i++)</div><div class="line">        sirk.<a class="code" href="structdg_1_1_karniadakis.html#a010b975a49928be44d56f805f0b82ef6">step</a>( exp, imp, time, y0, time, y0, dt); <span class="comment">//inplace step</span></div></div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>To our experience the implicit treatment of diffusive or hyperdiffusive terms can significantly reduce the required number of time steps. This far outweighs the increased computational cost of the additional matrix inversions.</dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">container</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_vector_traits.html" title="The vector traits. ">VectorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> or <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. For example, this is one of<ul>
-<li><code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code>, <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code>, <code><a class="el" href="group__typedefs.html#ga3f854ffa533cafd10b9846258e40029f" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code><a class="el" href="group__typedefs.html#ga25cae493b710b17992387cce395ad7ae" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> </li>
-<li><code>std::vector&lt;dg::DVec&gt;</code>, <code>std::array&lt;dg::MHVec, 3&gt;</code>, <code>std::array&lt;double, 4&gt;</code> ... </li>
+    <tr><td class="paramname">ContainerType</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> and <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. Among others<ul>
+<li><code> <a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193" title="Host Vector. ">dg::HVec</a> (serial), <a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a> (cuda / omp), <a class="el" href="group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a> (mpi + serial) or <a class="el" href="group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a> (mpi + cuda / omp) </code></li>
+<li><code> std::vector&lt;dg::DVec&gt; (vector of shared device vectors), std::array&lt;double, 4&gt; (array of 4 doubles)</code></li>
+<li><code> double (scalar)</code> and other primitive types ...</li>
 </ul>
-</td></tr>
+If there are several <code>ContainerTypes</code> in the argument list, then <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> must exist for all of them </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__vec__list.html">List of Vector Traits specializations</a> </dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a9e5b92f3e7ba9c6c9461dcafbda49482"></a>
+<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="index.html#dispatch">The Level 1 dispatch system</a> for a detailed explanation of our type dispatch system </dd></dl>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="a33eb77e0cbafb3481706abecf9e7fac6"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class container&gt; </div>
+template&lt;class ContainerType&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structdg_1_1_s_i_r_k.html">dg::SIRK</a>&lt; ContainerType &gt;::<a class="el" href="structdg_1_1_s_i_r_k.html#a33eb77e0cbafb3481706abecf9e7fac6">real_type</a> =  <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt;ContainerType&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a654ee7a37585d73f69c0d62f7e7da4b0"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ContainerType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdg_1_1_s_i_r_k.html">dg::SIRK</a>&lt; container &gt;::<a class="el" href="structdg_1_1_s_i_r_k.html">SIRK</a> </td>
+          <td class="memname"><a class="el" href="structdg_1_1_s_i_r_k.html">dg::SIRK</a>&lt; ContainerType &gt;::<a class="el" href="structdg_1_1_s_i_r_k.html">SIRK</a> </td>
           <td>(</td>
-          <td class="paramtype">const container &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>No memory allocation, Call <code>construct</code> before using the object. </p>
+
+</div>
+</div>
+<a class="anchor" id="a095e152c3db1261f5741d6fa233b1ca8"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ContainerType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdg_1_1_s_i_r_k.html">dg::SIRK</a>&lt; ContainerType &gt;::<a class="el" href="structdg_1_1_s_i_r_k.html">SIRK</a> </td>
+          <td>(</td>
+          <td class="paramtype">const ContainerType &amp;&#160;</td>
           <td class="paramname"><em>copyable</em>, </td>
         </tr>
         <tr>
@@ -199,7 +254,7 @@ template&lt;class container&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype"><a class="el" href="structdg_1_1_s_i_r_k.html#a33eb77e0cbafb3481706abecf9e7fac6">real_type</a>&#160;</td>
           <td class="paramname"><em>eps</em>&#160;</td>
         </tr>
         <tr>
@@ -215,12 +270,12 @@ template&lt;class container&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Construct from copyable container. </p>
+<p>Reserve memory for the integration. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">copyable</td><td>container of right size </td></tr>
-    <tr><td class="paramname">max_iter</td><td>maximum iterations for conjugate gradient </td></tr>
-    <tr><td class="paramname">eps</td><td>accuracy for conjugate gradient </td></tr>
+    <tr><td class="paramname">copyable</td><td>ContainerType of size which is used in integration (values do not matter, the size is important). </td></tr>
+    <tr><td class="paramname">max_iter</td><td>parameter for cg </td></tr>
+    <tr><td class="paramname">eps</td><td>accuracy parameter for cg </td></tr>
   </table>
   </dd>
 </dl>
@@ -228,11 +283,11 @@ template&lt;class container&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ad7d1ba2904e9e436d0d8041233fb1624"></a>
+<a class="anchor" id="aa683c9617de983f14e18a66167d6db7b"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class container&gt; </div>
+template&lt;class ContainerType&gt; </div>
 <div class="memtemplate">
 template&lt;class Explicit , class Implicit &gt; </div>
 <table class="mlabels">
@@ -240,7 +295,7 @@ template&lt;class Explicit , class Implicit &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="structdg_1_1_s_i_r_k.html">dg::SIRK</a>&lt; container &gt;::adaptive_step </td>
+          <td class="memname">void <a class="el" href="structdg_1_1_s_i_r_k.html">dg::SIRK</a>&lt; ContainerType &gt;::adaptive_step </td>
           <td>(</td>
           <td class="paramtype">Explicit &amp;&#160;</td>
           <td class="paramname"><em>exp</em>, </td>
@@ -254,26 +309,44 @@ template&lt;class Explicit , class Implicit &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const container &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structdg_1_1_s_i_r_k.html#a33eb77e0cbafb3481706abecf9e7fac6">real_type</a>&#160;</td>
+          <td class="paramname"><em>t0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ContainerType &amp;&#160;</td>
           <td class="paramname"><em>u0</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">container &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structdg_1_1_s_i_r_k.html#a33eb77e0cbafb3481706abecf9e7fac6">real_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>t1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ContainerType &amp;&#160;</td>
           <td class="paramname"><em>u1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structdg_1_1_s_i_r_k.html#a33eb77e0cbafb3481706abecf9e7fac6">real_type</a> &amp;&#160;</td>
           <td class="paramname"><em>dt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>tolerance</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structdg_1_1_s_i_r_k.html#a33eb77e0cbafb3481706abecf9e7fac6">real_type</a>&#160;</td>
+          <td class="paramname"><em>tolerance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>verbose</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -288,34 +361,89 @@ template&lt;class Explicit , class Implicit &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>adapt timestep </p>
+<p>adapt timestep (experimental) </p>
 <p>Make same timestep twice, once with half timestep. The resulting error should be smaller than some given tolerance</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Explicit</td><td>models BinaryFunction with no return type (subroutine): void operator()(const container&amp;, container&amp;); The first argument is the actual argument, The second contains the return value, i.e. y' = f(y) translates to f( y, y'). </td></tr>
-    <tr><td class="paramname">Implicit</td><td>models BinaryFunction with no return type (subroutine): void operator()(const container&amp;, container&amp;); The first argument is the actual argument, The second contains the return value, i.e. y' = I(y) translates to I( y, y'). Furthermore the routines weights(), inv_weights() and precond() must be callable and return diagonal weights, inverse weights and the preconditioner for the conjugate gradient. The return type of these member functions must be useable in <a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a> functions together with the container type. </td></tr>
+    <tr><td class="paramname">Explicit</td><td>The explicit part of the right hand side is a functor type with no return value (subroutine) of signature <code> void operator()(value_type, const ContainerType&amp;, ContainerType&amp;)</code> The first argument is the time, the second is the input vector, which the functor may <b>not</b> override, and the third is the output, i.e. y' = f(t, y) translates to f(t, y, y'). The two ContainerType arguments never alias each other in calls to the functor. </td></tr>
+    <tr><td class="paramname">Implicit</td><td>The implicit part of the right hand side is a functor type with no return value (subroutine) of signature <code> void operator()(value_type, const ContainerType&amp;, ContainerType&amp;)</code> The first argument is the time, the second is the input vector, which the functor may <b>not</b> override, and the third is the output, i.e. y' = f(t, y) translates to f(t, y, y'). The two ContainerType arguments never alias each other in calls to the functor. Furthermore, the routines weights(), inv_weights() and precond() must be callable and return diagonal weights, inverse weights and the preconditioner for the conjugate gradient. The return type of these member functions must be useable in <a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a> functions together with the ContainerType type. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">exp</td><td>explic part </td></tr>
-    <tr><td class="paramname">imp</td><td>implicit part ( must be linear and symmetric up to weights) </td></tr>
+    <tr><td class="paramname">imp</td><td>implicit part ( must be linear in its second argument and symmetric up to weights) </td></tr>
+    <tr><td class="paramname">t0</td><td>start time </td></tr>
     <tr><td class="paramname">u0</td><td>start point </td></tr>
-    <tr><td class="paramname">u1</td><td>end point (write only) </td></tr>
-    <tr><td class="paramname">dt</td><td>timestep ( read and write) contains new recommended timestep afterwards </td></tr>
+    <tr><td class="paramname">t1</td><td>(write only) end time (equals <code>t0+dt</code> on output, may alias t0) </td></tr>
+    <tr><td class="paramname">u1</td><td>(write only) contains result at <code>t1</code> on output (may alias u0) </td></tr>
+    <tr><td class="paramname">dt</td><td>(read and write) contains new recommended timestep on output </td></tr>
     <tr><td class="paramname">tolerance</td><td>tolerable error </td></tr>
+    <tr><td class="paramname">verbose</td><td>if true writes error to <code>std::cout</code> </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="af4e852b97d2ad2c2449d04488cfbab2a"></a>
+<a class="anchor" id="a8ae2575fc6092264c11fab9d6d3f4e87"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class container&gt; </div>
+template&lt;class ContainerType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structdg_1_1_s_i_r_k.html">dg::SIRK</a>&lt; ContainerType &gt;::construct </td>
+          <td>(</td>
+          <td class="paramtype">const ContainerType &amp;&#160;</td>
+          <td class="paramname"><em>copyable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>max_iter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structdg_1_1_s_i_r_k.html#a33eb77e0cbafb3481706abecf9e7fac6">real_type</a>&#160;</td>
+          <td class="paramname"><em>eps</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reserve memory for the integration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">copyable</td><td>ContainerType of size which is used in integration (values do not matter, the size is important). </td></tr>
+    <tr><td class="paramname">max_iter</td><td>parameter for cg </td></tr>
+    <tr><td class="paramname">eps</td><td>accuracy parameter for cg </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a290a566a43b8d1220007928155d7eeee"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ContainerType&gt; </div>
 <div class="memtemplate">
 template&lt;class Explicit , class Implicit &gt; </div>
 <table class="mlabels">
@@ -323,7 +451,7 @@ template&lt;class Explicit , class Implicit &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="structdg_1_1_s_i_r_k.html">dg::SIRK</a>&lt; container &gt;::operator() </td>
+          <td class="memname">void <a class="el" href="structdg_1_1_s_i_r_k.html">dg::SIRK</a>&lt; ContainerType &gt;::step </td>
           <td>(</td>
           <td class="paramtype">Explicit &amp;&#160;</td>
           <td class="paramname"><em>exp</em>, </td>
@@ -337,19 +465,31 @@ template&lt;class Explicit , class Implicit &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const container &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structdg_1_1_s_i_r_k.html#a33eb77e0cbafb3481706abecf9e7fac6">real_type</a>&#160;</td>
+          <td class="paramname"><em>t0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ContainerType &amp;&#160;</td>
           <td class="paramname"><em>u0</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">container &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structdg_1_1_s_i_r_k.html#a33eb77e0cbafb3481706abecf9e7fac6">real_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>t1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ContainerType &amp;&#160;</td>
           <td class="paramname"><em>u1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype"><a class="el" href="structdg_1_1_s_i_r_k.html#a33eb77e0cbafb3481706abecf9e7fac6">real_type</a>&#160;</td>
           <td class="paramname"><em>dt</em>&#160;</td>
         </tr>
         <tr>
@@ -368,17 +508,19 @@ template&lt;class Explicit , class Implicit &gt; </div>
 <p>integrate one step </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Explicit</td><td>models BinaryFunction with no return type (subroutine): void operator()(const container&amp;, container&amp;); The first argument is the actual argument, The second contains the return value, i.e. y' = f(y) translates to f( y, y'). </td></tr>
-    <tr><td class="paramname">Implicit</td><td>models BinaryFunction with no return type (subroutine): void operator()(const container&amp;, container&amp;); The first argument is the actual argument, The second contains the return value, i.e. y' = I(y) translates to I( y, y'). Furthermore the routines weights(), inv_weights() and precond() must be callable and return diagonal weights, inverse weights and the preconditioner for the conjugate gradient. The return type of these member functions must be useable in <a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a> functions together with the container type. </td></tr>
+    <tr><td class="paramname">Explicit</td><td>The explicit part of the right hand side is a functor type with no return value (subroutine) of signature <code> void operator()(value_type, const ContainerType&amp;, ContainerType&amp;)</code> The first argument is the time, the second is the input vector, which the functor may <b>not</b> override, and the third is the output, i.e. y' = f(t, y) translates to f(t, y, y'). The two ContainerType arguments never alias each other in calls to the functor. </td></tr>
+    <tr><td class="paramname">Implicit</td><td>The implicit part of the right hand side is a functor type with no return value (subroutine) of signature <code> void operator()(value_type, const ContainerType&amp;, ContainerType&amp;)</code> The first argument is the time, the second is the input vector, which the functor may <b>not</b> override, and the third is the output, i.e. y' = f(t, y) translates to f(t, y, y'). The two ContainerType arguments never alias each other in calls to the functor. Furthermore, the routines weights(), inv_weights() and precond() must be callable and return diagonal weights, inverse weights and the preconditioner for the conjugate gradient. The return type of these member functions must be useable in <a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a> functions together with the ContainerType type. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">exp</td><td>explic part </td></tr>
-    <tr><td class="paramname">imp</td><td>implicit part ( must be linear and symmetric up to weights) </td></tr>
-    <tr><td class="paramname">u0</td><td>start point </td></tr>
-    <tr><td class="paramname">u1</td><td>end point (write only) </td></tr>
+    <tr><td class="paramname">imp</td><td>implicit part ( must be linear in its second argument and symmetric up to weights) </td></tr>
+    <tr><td class="paramname">t0</td><td>start time </td></tr>
+    <tr><td class="paramname">u0</td><td>start point at <code>t0</code> </td></tr>
+    <tr><td class="paramname">t1</td><td>(write only) end time (equals <code>t0+dt</code> on output, may alias t0) </td></tr>
+    <tr><td class="paramname">u1</td><td>(write only) contains result at <code>t1</code> on output (may alias u0) </td></tr>
     <tr><td class="paramname">dt</td><td>timestep </td></tr>
   </table>
   </dd>
@@ -395,7 +537,7 @@ template&lt;class Explicit , class Implicit &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_s_i_r_k.html">SIRK</a></li>
-    <li class="footer">Generated on Thu Apr 26 2018 16:28:15 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Jul 5 2018 12:59:50 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

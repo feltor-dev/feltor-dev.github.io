@@ -1,6 +1,0 @@
-var structdg_1_1_vector_traits_3_01std_1_1array_3_01_t_00_01_n_01_4_00_01typename_01std_1_1enable__ibc0fb3900d788c3d588b8e977556fe1b =
-[
-    [ "execution_policy", "structdg_1_1_vector_traits_3_01std_1_1array_3_01_t_00_01_n_01_4_00_01typename_01std_1_1enable__ibc0fb3900d788c3d588b8e977556fe1b.html#ab70d6d3df51a7aa450dbba792efc49a4", null ],
-    [ "value_type", "structdg_1_1_vector_traits_3_01std_1_1array_3_01_t_00_01_n_01_4_00_01typename_01std_1_1enable__ibc0fb3900d788c3d588b8e977556fe1b.html#accbb046f622ab6cd941f826718b007b1", null ],
-    [ "vector_category", "structdg_1_1_vector_traits_3_01std_1_1array_3_01_t_00_01_n_01_4_00_01typename_01std_1_1enable__ibc0fb3900d788c3d588b8e977556fe1b.html#aa280a2f70bbc6ae6a0b4a191bdadf6e0", null ]
-];

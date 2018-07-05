@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('structdg_1_1_nearest_neighbor_comm.htm
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="structdg_1_1_nearest_neighbor_comm-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">dg::NearestNeighborComm&lt; Index, Vector &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__backend.html">Level 1: Vectors, Matrices and basic operations</a> &raquo; <a class="el" href="group__mpi__structures.html">MPI backend functionality</a></div></div>  </div>
+<div class="title">dg::NearestNeighborComm&lt; Index, Vector &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__backend.html">Level 1: Vectors, Matrices and basic operations</a> &raquo; <a class="el" href="group__mpi__structures.html">MPI backend</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -549,6 +549,7 @@ template&lt;class container &gt; </div>
 <p>Wait for asynchronous communication to finish and gather received data into buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">input</td><td>from which to gather data (it is safe to change values on return since values to communicate are copied into an internal buffer) </td></tr>
     <tr><td class="paramname">buffer</td><td>(write only) where received data resides on return (must be of size <code><a class="el" href="structdg_1_1_nearest_neighbor_comm.html#a6898867636891d3a989f64871add05a1" title="The size of the local buffer vector w = local map size. ">size()</a></code>) </td></tr>
     <tr><td class="paramname">rqst</td><td>the same four request variables that were used in global_gather_init </td></tr>
   </table>
@@ -653,7 +654,7 @@ we assume that, contrary to <code><a class="el" href="structdg_1_1_nearest_neigh
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_nearest_neighbor_comm.html">NearestNeighborComm</a></li>
-    <li class="footer">Generated on Thu Apr 26 2018 16:28:15 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Jul 5 2018 12:59:50 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

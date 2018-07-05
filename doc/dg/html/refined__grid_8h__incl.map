@@ -1,0 +1,29 @@
+<map id="geometry/refined_grid.h" name="geometry/refined_grid.h">
+<area shape="rect" id="node3" href="$memory_8h.html" title="dg/backend/memory.h" alt="" coords="1495,393,1646,420"/>
+<area shape="rect" id="node4" href="$blas_8h.html" title="dg/blas.h" alt="" coords="2428,80,2503,107"/>
+<area shape="rect" id="node37" href="$grid_8h.html" title="base topology classes " alt="" coords="4219,311,4274,338"/>
+<area shape="rect" id="node44" href="$weights_8h.html" title="contains creation functions for integration weights and their inverse " alt="" coords="4262,229,4341,256"/>
+<area shape="rect" id="node45" href="$interpolation_8h.html" title="contains 1D, 2D and 3D interpolation matrix creation functions " alt="" coords="4083,155,4186,181"/>
+<area shape="rect" id="node49" href="$base__geometry_8h.html" title="base_geometry.h" alt="" coords="3028,80,3151,107"/>
+<area shape="rect" id="node5" href="$blas1_8h.html" title="blas1.h" alt="" coords="2840,229,2904,256"/>
+<area shape="rect" id="node24" href="$blas2_8h.html" title="blas2.h" alt="" coords="1337,229,1401,256"/>
+<area shape="rect" id="node32" href="$typedefs_8h.html" title="Useful typedefs of commonly used types. " alt="" coords="2227,155,2363,181"/>
+<area shape="rect" id="node7" href="$tensor__traits_8h.html" title="backend/tensor_traits.h" alt="" coords="2165,393,2323,420"/>
+<area shape="rect" id="node8" href="$tensor__traits__scalar_8h.html" title="backend/tensor_traits\l_scalar.h" alt="" coords="2539,304,2685,345"/>
+<area shape="rect" id="node9" href="$tensor__traits__thrust_8h.html" title="backend/tensor_traits\l_thrust.h" alt="" coords="1941,304,2088,345"/>
+<area shape="rect" id="node12" href="$tensor__traits__cusp_8h.html" title="backend/tensor_traits\l_cusp.h" alt="" coords="2709,304,2856,345"/>
+<area shape="rect" id="node16" href="$tensor__traits__std_8h.html" title="backend/tensor_traits\l_std.h" alt="" coords="1771,304,1917,345"/>
+<area shape="rect" id="node19" href="$mpi__vector_8h.html" title="backend/mpi_vector.h" alt="" coords="2113,311,2263,338"/>
+<area shape="rect" id="node22" href="$subroutines_8h.html" title="subroutines.h" alt="" coords="3993,311,4093,338"/>
+<area shape="rect" id="node23" href="$functions_8h.html" title="contains some utility functions for the evaluation() routines " alt="" coords="3883,393,4045,420"/>
+<area shape="rect" id="node33" href="$sparseblockmat_8h.html" title="sparseblockmat.h" alt="" coords="2339,311,2464,338"/>
+<area shape="rect" id="node35" href="$sparseblockmat_8cuh.html" title="sparseblockmat.cuh" alt="" coords="2225,229,2364,256"/>
+<area shape="rect" id="node36" href="$mpi__matrix_8h.html" title="MPI matrix classes. " alt="" coords="1515,229,1613,256"/>
+<area shape="rect" id="node38" href="$topological__traits_8h.html" title="topological_traits.h" alt="" coords="4224,393,4355,420"/>
+<area shape="rect" id="node39" href="$dlt_8h.html" title="contains the discrete legendre trafo class " alt="" coords="4153,393,4199,420"/>
+<area shape="rect" id="node43" href="$enums_8h.html" title="enums " alt="" coords="4379,393,4463,420"/>
+<area shape="rect" id="node46" href="$evaluation_8h.html" title="Function discretization routines. " alt="" coords="3915,229,4007,256"/>
+<area shape="rect" id="node47" href="$creation_8h.html" title="creation.h" alt="" coords="4513,229,4591,256"/>
+<area shape="rect" id="node48" href="$operator__tensor_8h.html" title="operator_tensor.h" alt="" coords="4365,229,4488,256"/>
+<area shape="rect" id="node50" href="$tensor_8h.html" title="tensor.h" alt="" coords="3029,155,3099,181"/>
+</map>

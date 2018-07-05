@@ -113,8 +113,8 @@ Include dependency graph for exdot_serial.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="exdot__serial_8h__incl.png" border="0" usemap="#exdot__serial_8h" alt=""/></div>
 <map name="exdot__serial_8h" id="exdot__serial_8h">
-<area shape="rect" id="node7" href="accumulate_8h.html" title="Primitives for accumulation into superaccumulator. " alt="" coords="163,80,263,107"/>
-<area shape="rect" id="node8" href="config_8h.html" title="Configuration of superaccumulators. " alt="" coords="667,155,735,181"/>
+<area shape="rect" id="node7" href="accumulate_8h.html" title="Primitives for accumulation into superaccumulator. " alt="" coords="197,80,297,107"/>
+<area shape="rect" id="node8" href="config_8h.html" title="Configuration of superaccumulators. " alt="" coords="113,155,181,181"/>
 </map>
 </div>
 </div>
@@ -128,12 +128,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a90ba074b4796ecb439b234f66c0c39b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#a90ba074b4796ecb439b234f66c0c39b5">exblas::exdot_cpu</a> (unsigned size, const double *x1_ptr, const double *x2_ptr, int64_t *h_superacc)</td></tr>
-<tr class="memdesc:a90ba074b4796ecb439b234f66c0c39b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">serial version of exact dot product  <a href="namespaceexblas.html#a90ba074b4796ecb439b234f66c0c39b5">More...</a><br /></td></tr>
-<tr class="separator:a90ba074b4796ecb439b234f66c0c39b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93a0ce7073e454beb42af2473db7eb7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#a93a0ce7073e454beb42af2473db7eb7f">exblas::exdot_cpu</a> (unsigned size, const double *x1_ptr, const double *x2_ptr, const double *x3_ptr, int64_t *h_superacc)</td></tr>
-<tr class="memdesc:a93a0ce7073e454beb42af2473db7eb7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">gpu version of exact triple dot product  <a href="namespaceexblas.html#a93a0ce7073e454beb42af2473db7eb7f">More...</a><br /></td></tr>
-<tr class="separator:a93a0ce7073e454beb42af2473db7eb7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9ac3f6a557ba58156bb5d3d02b41758"><td class="memTemplParams" colspan="2">template&lt;class PointerOrValue1 , class PointerOrValue2 , size_t NBFPE = 8&gt; </td></tr>
+<tr class="memitem:af9ac3f6a557ba58156bb5d3d02b41758"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#af9ac3f6a557ba58156bb5d3d02b41758">exblas::exdot_cpu</a> (unsigned size, PointerOrValue1 x1_ptr, PointerOrValue2 x2_ptr, int64_t *h_superacc)</td></tr>
+<tr class="memdesc:af9ac3f6a557ba58156bb5d3d02b41758"><td class="mdescLeft">&#160;</td><td class="mdescRight">serial version of exact dot product  <a href="namespaceexblas.html#af9ac3f6a557ba58156bb5d3d02b41758">More...</a><br /></td></tr>
+<tr class="separator:af9ac3f6a557ba58156bb5d3d02b41758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dbdfda94daaec2915cbdf9a080a8dfc"><td class="memTemplParams" colspan="2">template&lt;class PointerOrValue1 , class PointerOrValue2 , class PointerOrValue3 , size_t NBFPE = 8&gt; </td></tr>
+<tr class="memitem:a3dbdfda94daaec2915cbdf9a080a8dfc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#a3dbdfda94daaec2915cbdf9a080a8dfc">exblas::exdot_cpu</a> (unsigned size, PointerOrValue1 x1_ptr, PointerOrValue2 x2_ptr, PointerOrValue3 x3_ptr, int64_t *h_superacc)</td></tr>
+<tr class="memdesc:a3dbdfda94daaec2915cbdf9a080a8dfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">gpu version of exact triple dot product  <a href="namespaceexblas.html#a3dbdfda94daaec2915cbdf9a080a8dfc">More...</a><br /></td></tr>
+<tr class="separator:a3dbdfda94daaec2915cbdf9a080a8dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Serial version of exdot. </p>

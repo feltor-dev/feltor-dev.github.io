@@ -88,6 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -122,13 +123,79 @@ $(document).ready(function(){initNavTree('mpi__vector_8h.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
 <div class="title">mpi_vector.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;thrust/host_vector.h&gt;</code><br />
+<code>#include &lt;thrust/gather.h&gt;</code><br />
+<code>#include &quot;<a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/mpi__accumulate_8h.html">exblas/mpi_accumulate.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="tensor__traits_8h_source.html">tensor_traits.h</a>&quot;</code><br />
+<code>#include &quot;blas1_dispatch_shared.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="mpi__communicator_8h_source.html">mpi_communicator.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="memory_8h_source.html">memory.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for mpi_vector.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="mpi__vector_8h__incl.png" border="0" usemap="#backend_2mpi__vector_8h" alt=""/></div>
+<map name="backend_2mpi__vector_8h" id="backend_2mpi__vector_8h">
+<area shape="rect" id="node5" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/mpi__accumulate_8h.html" title="exblas/mpi_accumulate.h" alt="" coords="389,80,559,107"/>
+<area shape="rect" id="node8" href="tensor__traits_8h.html" title="tensor_traits.h" alt="" coords="584,80,689,107"/>
+<area shape="rect" id="node16" href="mpi__communicator_8h.html" title="mpi_communicator.h" alt="" coords="904,80,1047,107"/>
+<area shape="rect" id="node18" href="memory_8h.html" title="memory.h" alt="" coords="1070,80,1150,107"/>
+<area shape="rect" id="node6" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/accumulate_8h.html" title="accumulate.h" alt="" coords="179,155,279,181"/>
+<area shape="rect" id="node7" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/config_8h.html" title="config.h" alt="" coords="195,229,263,256"/>
+<area shape="rect" id="node11" href="scalar__categories_8h.html" title="scalar_categories.h" alt="" coords="551,155,685,181"/>
+<area shape="rect" id="node12" href="vector__categories_8h.html" title="vector_categories.h" alt="" coords="601,229,737,256"/>
+<area shape="rect" id="node13" href="matrix__categories_8h.html" title="matrix_categories.h" alt="" coords="653,304,789,331"/>
+<area shape="rect" id="node14" href="execution__policy_8h.html" title="execution_policy.h" alt="" coords="811,155,942,181"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="mpi__vector_8h__dep__incl.png" border="0" usemap="#backend_2mpi__vector_8hdep" alt=""/></div>
+<map name="backend_2mpi__vector_8hdep" id="backend_2mpi__vector_8hdep">
+<area shape="rect" id="node2" href="mpi__matrix_8h.html" title="MPI matrix classes. " alt="" coords="1707,155,1857,181"/>
+<area shape="rect" id="node3" href="typedefs_8h.html" title="Useful typedefs of commonly used types. " alt="" coords="1859,229,1995,256"/>
+<area shape="rect" id="node11" href="geometry_8h.html" title="geometry/geometry.h" alt="" coords="1023,543,1168,569"/>
+<area shape="rect" id="node21" href="mpi__grid_8h.html" title="MPI Grid objects. " alt="" coords="1207,304,1347,331"/>
+<area shape="rect" id="node24" href="mpi__evaluation_8h.html" title="Function discretization routines for mpi vectors. " alt="" coords="1350,468,1529,495"/>
+<area shape="rect" id="node26" href="split__and__join_8h.html" title="geometry/split_and\l_join.h" alt="" coords="5,379,137,420"/>
+<area shape="rect" id="node27" href="blas1_8h.html" title="blas1.h" alt="" coords="1229,80,1293,107"/>
+<area shape="rect" id="node19" href="mpi__projection_8h.html" title="Useful MPI typedefs and overloads of interpolation and projection. " alt="" coords="2036,386,2211,413"/>
+<area shape="rect" id="node20" href="mpi__derivatives_8h.html" title="geometry/mpi_derivatives.h" alt="" coords="1500,543,1683,569"/>
+<area shape="rect" id="node4" href="blas_8h.html" title="blas.h" alt="" coords="1965,304,2023,331"/>
+<area shape="rect" id="node5" href="derivatives_x_8h.html" title="Convenience functions to create 2D derivatives on X&#45;point topology. " alt="" coords="2487,543,2650,569"/>
+<area shape="rect" id="node6" href="algorithm_8h.html" title="algorithm.h" alt="" coords="1731,767,1817,793"/>
+<area shape="rect" id="node7" href="fast__interpolation_8h.html" title="contains a matrix type for fast interpolations/projections " alt="" coords="2235,386,2425,413"/>
+<area shape="rect" id="node8" href="multigrid_8h.html" title="multigrid.h" alt="" coords="2330,468,2413,495"/>
+<area shape="rect" id="node9" href="refined__grid_8h.html" title="geometry/refined_grid.h" alt="" coords="1423,386,1581,413"/>
+<area shape="rect" id="node12" href="elliptic_8h.html" title="General negative elliptic operators. " alt="" coords="1608,617,1679,644"/>
+<area shape="rect" id="node13" href="helmholtz_8h.html" title="contains Helmholtz and Maxwell operators " alt="" coords="1860,692,1949,719"/>
+<area shape="rect" id="node15" href="arakawa_8h.html" title="object for computation of Poisson bracket " alt="" coords="1501,617,1583,644"/>
+<area shape="rect" id="node16" href="poisson_8h.html" title="poisson.h" alt="" coords="1372,617,1451,644"/>
+<area shape="rect" id="node17" href="cg_8h.html" title="cg.h" alt="" coords="2552,386,2599,413"/>
+<area shape="rect" id="node10" href="refined__grid_x_8h.html" title="geometry/refined_gridX.h" alt="" coords="1159,468,1325,495"/>
+<area shape="rect" id="node14" href="refined__elliptic_8h.html" title="contains an elliptic method on a refined grid " alt="" coords="1668,692,1784,719"/>
+<area shape="rect" id="node18" href="multistep_8h.html" title="contains multistep explicit&amp; implicit time&#45;integrators " alt="" coords="2219,468,2305,495"/>
+<area shape="rect" id="node22" href="average__mpi_8h.html" title="contains classes for poloidal and toroidal average computations. " alt="" coords="374,468,539,495"/>
+<area shape="rect" id="node23" href="mpi__weights_8h.html" title="contains MPI weights " alt="" coords="425,386,589,413"/>
+<area shape="rect" id="node25" href="mpi__base_8h.html" title="geometry/mpi_base.h" alt="" coords="835,386,982,413"/>
+<area shape="rect" id="node28" href="mpi__collective_8h.html" title="backend/mpi_collective.h" alt="" coords="1564,229,1733,256"/>
+<area shape="rect" id="node29" href="average_8h.html" title="contains classes for poloidal and toroidal average computations. " alt="" coords="161,386,299,413"/>
+<area shape="rect" id="node30" href="tensor_8h.html" title="geometry/tensor.h" alt="" coords="1040,229,1167,256"/>
+<area shape="rect" id="node34" href="multiply_8h.html" title="geometry/multiply.h" alt="" coords="674,304,810,331"/>
+<area shape="rect" id="node35" href="functors_8h.html" title="functors.h" alt="" coords="1217,155,1297,181"/>
+<area shape="rect" id="node36" href="runge__kutta_8h.html" title="contains runge&#45;kutta explicit time&#45;integrators " alt="" coords="1910,386,2011,413"/>
+<area shape="rect" id="node31" href="base__geometry_8h.html" title="geometry/base_geometry.h" alt="" coords="885,304,1065,331"/>
+<area shape="rect" id="node33" href="base__geometry_x_8h.html" title="geometry/base_geometryX.h" alt="" coords="1107,386,1297,413"/>
+<area shape="rect" id="node32" href="transform_8h.html" title="geometry/transform.h" alt="" coords="665,386,811,413"/>
+</map>
+</div>
+</div>
 <p><a href="mpi__vector_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -136,9 +203,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_m_p_i___vector.html">dg::MPI_Vector&lt; container &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">mpi Vector class  <a href="structdg_1_1_m_p_i___vector.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_vector_traits_3_01_m_p_i___vector_3_01container_01_4_01_4.html">dg::VectorTraits&lt; MPI_Vector&lt; container &gt; &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_vector_traits_3_01const_01_m_p_i___vector_3_01container_01_4_01_4.html">dg::VectorTraits&lt; const MPI_Vector&lt; container &gt; &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_tensor_traits_3_01_m_p_i___vector_3_01container_01_4_01_4.html">dg::TensorTraits&lt; MPI_Vector&lt; container &gt; &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">prototypical MPI vector  <a href="structdg_1_1_tensor_traits_3_01_m_p_i___vector_3_01container_01_4_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_nearest_neighbor_comm.html">dg::NearestNeighborComm&lt; Index, Vector &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Communicator for asynchronous nearest neighbor communication.  <a href="structdg_1_1_nearest_neighbor_comm.html#details">More...</a><br /></td></tr>
@@ -149,12 +215,6 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacedg"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg.html">dg</a></td></tr>
 <tr class="memdesc:namespacedg"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the namespace for all functions and classes defined and used by the discontinuous Galerkin solvers. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ga3b2d0db184cb73256ac07b2d35fcefef"><td class="memItemLeft" align="right" valign="top">typedef NearestNeighborComm&lt; thrust::host_vector&lt; int &gt;, thrust::host_vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga3b2d0db184cb73256ac07b2d35fcefef">dg::NNCH</a></td></tr>
-<tr class="memdesc:ga3b2d0db184cb73256ac07b2d35fcefef"><td class="mdescLeft">&#160;</td><td class="mdescRight">host Communicator for the use in an mpi matrix for derivatives  <a href="group__typedefs.html#ga3b2d0db184cb73256ac07b2d35fcefef">More...</a><br /></td></tr>
-<tr class="separator:ga3b2d0db184cb73256ac07b2d35fcefef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -162,7 +222,7 @@ Typedefs</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_8c739bbef76d64b22d6b0911c526dd76.html">backend</a></li><li class="navelem"><a class="el" href="mpi__vector_8h.html">mpi_vector.h</a></li>
-    <li class="footer">Generated on Thu Apr 26 2018 16:28:14 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Jul 5 2018 12:59:49 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

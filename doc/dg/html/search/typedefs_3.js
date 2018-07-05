@@ -1,15 +1,8 @@
 var searchData=
 [
-  ['fa',['FA',['../../../geometries/html/structdg_1_1geo_1_1_d_s.html#ac83f7ebb7593a8739c9ea0585cd7d0de',1,'dg::geo::DS']]],
-  ['fdmatrix',['fDMatrix',['../group__typedefs.html#ga3b7a035651341b633b96f0202bfa5f82',1,'dg']]],
-  ['fdvec',['fDVec',['../group__typedefs.html#ga89deab4489ccaca6812b016350c28bdb',1,'dg']]],
-  ['fhmatrix',['fHMatrix',['../group__typedefs.html#gaeefc9c0a4dbc127719b2ee416dc90dce',1,'dg']]],
-  ['fhvec',['fHVec',['../group__typedefs.html#ga7db4ee2dcdf21eda52e0e0c80f2e8ff5',1,'dg']]],
-  ['fmdmatrix',['fMDMatrix',['../group__typedefs.html#gae2007fc11cae371cd5aff5f964a0307a',1,'dg']]],
-  ['fmdvec',['fMDVec',['../group__typedefs.html#ga56e706f3f64e2fdc2ddce41d02c15723',1,'dg']]],
-  ['fmhmatrix',['fMHMatrix',['../group__typedefs.html#ga8eaaedfa8f0feb90fecd61194f9507be',1,'dg']]],
-  ['fmhvec',['fMHVec',['../group__typedefs.html#ga68daa92242e8651ac2ebfa0668b1ec9a',1,'dg']]],
-  ['fnncd',['fNNCD',['../group__typedefs.html#gaed750a13553c4d39ddd0990091728029',1,'dg']]],
-  ['fnnch',['fNNCH',['../group__typedefs.html#ga64ed23cff33cfb898971bc55becd8326',1,'dg']]],
-  ['fulllimiter',['FullLimiter',['../../../geometries/html/group__fieldaligned.html#gac31adf6f15d6a1b64d5a13d751a9f449',1,'dg::geo::FullLimiter()'],['../../../geometries/html/group__fieldaligned.html#gac31adf6f15d6a1b64d5a13d751a9f449',1,'FullLimiter()(Global Namespace)']]]
+  ['equidistrefinement',['EquidistRefinement',['../group__generators.html#ga1fc3ed9c0e84086363c957a8aaa60c54',1,'dg']]],
+  ['equidistxrefinement',['EquidistXRefinement',['../group__generators.html#gaa62609aff1a674f8d677c75b034846d0',1,'dg']]],
+  ['execution_5fpolicy',['execution_policy',['../structdg_1_1_tensor_traits_3_01_m_p_i___vector_3_01container_01_4_01_4.html#a775a58b0adca9de09a8d134c0a34e282',1,'dg::TensorTraits&lt; MPI_Vector&lt; container &gt; &gt;::execution_policy()'],['../structdg_1_1_tensor_traits_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__arithmetic_3_382e8af1d8cb4a11a63fc6b26ba4b4b9.html#aaf3351a23bd1673600f4ba2518cdb744',1,'dg::TensorTraits&lt; T, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;::execution_policy()'],['../structdg_1_1_tensor_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1host__memory_01_4_00_01typenaf725bd90d6a127276d664beda2adcced.html#a0fc26261a582f72c6fe790976b7a153f',1,'dg::TensorTraits&lt; cusp::array1d&lt; T, cusp::host_memory &gt;, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;::execution_policy()'],['../structdg_1_1_tensor_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1device__memory_01_4_00_01typef234173bb38c3d6e32284ba27107e7fb.html#a3807f54265d555011f0df73c9c1b5da2',1,'dg::TensorTraits&lt; cusp::array1d&lt; T, cusp::device_memory &gt;, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;::execution_policy()'],['../structdg_1_1_tensor_traits_3_01std_1_1vector_3_01_t_01_4_01_4.html#a27a7a704c81e960724333395525942bc',1,'dg::TensorTraits&lt; std::vector&lt; T &gt; &gt;::execution_policy()'],['../structdg_1_1_tensor_traits_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html#a03f5cdf1772c3fda34035a98cf3c0cd7',1,'dg::TensorTraits&lt; std::array&lt; T, N &gt; &gt;::execution_policy()'],['../structdg_1_1_tensor_traits_3_01thrust_1_1host__vector_3_01_t_01_4_01_4.html#afe9e19f9d39229bcd634f6ec44ef6dbb',1,'dg::TensorTraits&lt; thrust::host_vector&lt; T &gt; &gt;::execution_policy()'],['../structdg_1_1_tensor_traits_3_01thrust_1_1device__vector_3_01_t_01_4_01_4.html#a26d37dd790a7eec86373fbf2a215c974',1,'dg::TensorTraits&lt; thrust::device_vector&lt; T &gt; &gt;::execution_policy()']]],
+  ['exponentialrefinement',['ExponentialRefinement',['../group__generators.html#gac68dab098eb0c98222e98ad836e8f346',1,'dg']]],
+  ['exponentialxrefinement',['ExponentialXRefinement',['../group__generators.html#ga6799c46023dafaa5e880a984f34305c2',1,'dg']]]
 ];

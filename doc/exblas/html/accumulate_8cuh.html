@@ -108,7 +108,7 @@ Include dependency graph for accumulate.cuh:</div>
 <div class="dyncontent">
 <div class="center"><img src="accumulate_8cuh__incl.png" border="0" usemap="#accumulate_8cuh" alt=""/></div>
 <map name="accumulate_8cuh" id="accumulate_8cuh">
-<area shape="rect" id="node2" href="config_8h.html" title="Configuration of superaccumulators. " alt="" coords="5,80,73,107"/>
+<area shape="rect" id="node2" href="config_8h.html" title="Configuration of superaccumulators. " alt="" coords="86,80,154,107"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -131,15 +131,23 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1037b279ed23b0434e43d78c3740e172"><td class="memItemLeft" align="right" valign="top">__device__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas_1_1gpu.html#a1037b279ed23b0434e43d78c3740e172">exblas::gpu::Accumulate</a> (int64_t *accumulator, double x, int stride=1)</td></tr>
-<tr class="memdesc:a1037b279ed23b0434e43d78c3740e172"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accumulate a double to the superaccumulator (GPU version)  <a href="namespaceexblas_1_1gpu.html#a1037b279ed23b0434e43d78c3740e172">More...</a><br /></td></tr>
-<tr class="separator:a1037b279ed23b0434e43d78c3740e172"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a882e3a99c6359df21879466628f4a7ee"><td class="memItemLeft" align="right" valign="top">__device__ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas_1_1gpu.html#a882e3a99c6359df21879466628f4a7ee">exblas::gpu::Normalize</a> (int64_t *accumulator, int &amp;imin, int &amp;imax, int stride=1)</td></tr>
-<tr class="memdesc:a882e3a99c6359df21879466628f4a7ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalize a superaccumulator (GPU version)  <a href="namespaceexblas_1_1gpu.html#a882e3a99c6359df21879466628f4a7ee">More...</a><br /></td></tr>
-<tr class="separator:a882e3a99c6359df21879466628f4a7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e876150be03f6f2aeea469b0f05e96a"><td class="memItemLeft" align="right" valign="top">__device__ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas_1_1gpu.html#a9e876150be03f6f2aeea469b0f05e96a">exblas::gpu::Round</a> (int64_t *accumulator)</td></tr>
-<tr class="memdesc:a9e876150be03f6f2aeea469b0f05e96a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a superaccumulator to the nearest double precision number (GPU version)  <a href="namespaceexblas_1_1gpu.html#a9e876150be03f6f2aeea469b0f05e96a">More...</a><br /></td></tr>
-<tr class="separator:a9e876150be03f6f2aeea469b0f05e96a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a908987c09b7bce3b9d33bd905e21caf3"><td class="memTemplParams" colspan="2"><a class="anchor" id="a908987c09b7bce3b9d33bd905e21caf3"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:a908987c09b7bce3b9d33bd905e21caf3"><td class="memTemplItemLeft" align="right" valign="top">static __device__ double&#160;</td><td class="memTemplItemRight" valign="bottom"><b>exblas::gpu::get_element</b> (T x, int i)</td></tr>
+<tr class="separator:a908987c09b7bce3b9d33bd905e21caf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a302cefb4778209cf1b0acc8a5f35a1b3"><td class="memTemplParams" colspan="2"><a class="anchor" id="a302cefb4778209cf1b0acc8a5f35a1b3"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:a302cefb4778209cf1b0acc8a5f35a1b3"><td class="memTemplItemLeft" align="right" valign="top">static __device__ double&#160;</td><td class="memTemplItemRight" valign="bottom"><b>exblas::gpu::get_element</b> (T *x, int i)</td></tr>
+<tr class="separator:a302cefb4778209cf1b0acc8a5f35a1b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ce4483a8e61941fc3670e59f0a853aa"><td class="memItemLeft" align="right" valign="top">static __device__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas_1_1gpu.html#a0ce4483a8e61941fc3670e59f0a853aa">exblas::gpu::Accumulate</a> (int64_t *accumulator, double x, int stride=1)</td></tr>
+<tr class="memdesc:a0ce4483a8e61941fc3670e59f0a853aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accumulate a double to the superaccumulator (GPU version)  <a href="namespaceexblas_1_1gpu.html#a0ce4483a8e61941fc3670e59f0a853aa">More...</a><br /></td></tr>
+<tr class="separator:a0ce4483a8e61941fc3670e59f0a853aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb32ed446b906beac69d2d39fac0854e"><td class="memItemLeft" align="right" valign="top">static __device__ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas_1_1gpu.html#aeb32ed446b906beac69d2d39fac0854e">exblas::gpu::Normalize</a> (int64_t *accumulator, int &amp;imin, int &amp;imax, int stride=1)</td></tr>
+<tr class="memdesc:aeb32ed446b906beac69d2d39fac0854e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalize a superaccumulator (GPU version)  <a href="namespaceexblas_1_1gpu.html#aeb32ed446b906beac69d2d39fac0854e">More...</a><br /></td></tr>
+<tr class="separator:aeb32ed446b906beac69d2d39fac0854e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acac8b5b8de3efcbb2af28ea75c7aaaf4"><td class="memItemLeft" align="right" valign="top">static __device__ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas_1_1gpu.html#acac8b5b8de3efcbb2af28ea75c7aaaf4">exblas::gpu::Round</a> (int64_t *accumulator)</td></tr>
+<tr class="memdesc:acac8b5b8de3efcbb2af28ea75c7aaaf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a superaccumulator to the nearest double precision number (GPU version)  <a href="namespaceexblas_1_1gpu.html#acac8b5b8de3efcbb2af28ea75c7aaaf4">More...</a><br /></td></tr>
+<tr class="separator:acac8b5b8de3efcbb2af28ea75c7aaaf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The CUDA version of <a class="el" href="accumulate_8h.html" title="Primitives for accumulation into superaccumulator. ">accumulate.h</a>. </p>

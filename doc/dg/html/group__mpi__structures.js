@@ -48,8 +48,8 @@ var group__mpi__structures =
       [ "collective", "structdg_1_1_row_col_dist_mat.html#a40bc8d123ee3441ccb7405b890a84e8b", null ],
       [ "inner_matrix", "structdg_1_1_row_col_dist_mat.html#ac95cd9424ce4d3b32e22c865774c3334", null ],
       [ "outer_matrix", "structdg_1_1_row_col_dist_mat.html#a9f3734482145566d8eb994ba90b2189b", null ],
-      [ "symv", "structdg_1_1_row_col_dist_mat.html#a368651a355d3c309f3c12b808c821675", null ],
-      [ "symv", "structdg_1_1_row_col_dist_mat.html#a69be149644264515dd361b49e724e042", null ]
+      [ "symv", "structdg_1_1_row_col_dist_mat.html#ad273a29c2af82f04e60eaa63870d40df", null ],
+      [ "symv", "structdg_1_1_row_col_dist_mat.html#a5dcf2fb250124ea07a78f877c26d265f", null ]
     ] ],
     [ "MPIDistMat", "structdg_1_1_m_p_i_dist_mat.html", [
       [ "MPIDistMat", "structdg_1_1_m_p_i_dist_mat.html#accef1f6cc1037e206989eacfbf4d6be6", null ],
@@ -59,8 +59,8 @@ var group__mpi__structures =
       [ "get_dist", "structdg_1_1_m_p_i_dist_mat.html#a1b742fb7341d4aa6362d2b0eb8545a47", null ],
       [ "matrix", "structdg_1_1_m_p_i_dist_mat.html#aa9140eabbe922a4367f5682664c92f36", null ],
       [ "set_dist", "structdg_1_1_m_p_i_dist_mat.html#aa6693e91cfc73a2de97da0cd7a3b7f3d", null ],
-      [ "symv", "structdg_1_1_m_p_i_dist_mat.html#a5ed6f2a621cc1e63c80a54829e1bf753", null ],
-      [ "symv", "structdg_1_1_m_p_i_dist_mat.html#a4b5513c2fa22e06bda66f22931e8defd", null ]
+      [ "symv", "structdg_1_1_m_p_i_dist_mat.html#af9c0bf2f541570a68b65353d7e295d00", null ],
+      [ "symv", "structdg_1_1_m_p_i_dist_mat.html#a2aedcac1d5f0970b888b8d3a8414cef4", null ]
     ] ],
     [ "MPI_Vector", "structdg_1_1_m_p_i___vector.html", [
       [ "container_type", "structdg_1_1_m_p_i___vector.html#ad42ce5571b198915c6b5c2eb9033ceb3", null ],
@@ -95,5 +95,5 @@ var group__mpi__structures =
       [ "row_dist", "group__mpi__structures.html#gga521b6d6524a6d391c746ddc9a1ad5571a99ba8c51e9d19b4535a343c4b471a562", null ],
       [ "col_dist", "group__mpi__structures.html#gga521b6d6524a6d391c746ddc9a1ad5571a4bdc977f2b0fcd3ad828d30c7fd3fb90", null ]
     ] ],
-    [ "convert", "group__mpi__structures.html#ga9d33d8a07051c4fe66ceca4a958ebc76", null ]
+    [ "convert", "group__mpi__structures.html#gaf94a6a2fb51d6f795e0e9c81ae03fcdb", null ]
 ];

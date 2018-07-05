@@ -1,6 +1,0 @@
-var structdg_1_1_vector_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1host__memory_01_4_00_01typena4efc5a6fbdee46bba74adb11fff68aef =
-[
-    [ "execution_policy", "structdg_1_1_vector_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1host__memory_01_4_00_01typena4efc5a6fbdee46bba74adb11fff68aef.html#a1bd0ecb15dd935a58bdffc926aafaf6c", null ],
-    [ "value_type", "structdg_1_1_vector_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1host__memory_01_4_00_01typena4efc5a6fbdee46bba74adb11fff68aef.html#a92fa74c05a5472211fa5aefc6cd2e4c6", null ],
-    [ "vector_category", "structdg_1_1_vector_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1host__memory_01_4_00_01typena4efc5a6fbdee46bba74adb11fff68aef.html#a92025e660811bba660c0c195b4e44163", null ]
-];

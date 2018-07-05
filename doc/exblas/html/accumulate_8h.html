@@ -108,7 +108,7 @@ Include dependency graph for accumulate.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="accumulate_8h__incl.png" border="0" usemap="#accumulate_8h" alt=""/></div>
 <map name="accumulate_8h" id="accumulate_8h">
-<area shape="rect" id="node2" href="config_8h.html" title="Configuration of superaccumulators. " alt="" coords="5,80,73,107"/>
+<area shape="rect" id="node2" href="config_8h.html" title="Configuration of superaccumulators. " alt="" coords="129,80,197,107"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -135,15 +135,23 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa17c63d7de9cf3b1e665abc82776819f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas_1_1cpu.html#aa17c63d7de9cf3b1e665abc82776819f">exblas::cpu::Accumulate</a> (int64_t *accumulator, double x)</td></tr>
-<tr class="memdesc:aa17c63d7de9cf3b1e665abc82776819f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accumulate a double to the superaccumulator.  <a href="namespaceexblas_1_1cpu.html#aa17c63d7de9cf3b1e665abc82776819f">More...</a><br /></td></tr>
-<tr class="separator:aa17c63d7de9cf3b1e665abc82776819f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d34dd91bca12d9dc85e26239f7fac5a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas_1_1cpu.html#a0d34dd91bca12d9dc85e26239f7fac5a">exblas::cpu::Normalize</a> (int64_t *accumulator, int &amp;imin, int &amp;imax)</td></tr>
-<tr class="memdesc:a0d34dd91bca12d9dc85e26239f7fac5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalize a superaccumulator.  <a href="namespaceexblas_1_1cpu.html#a0d34dd91bca12d9dc85e26239f7fac5a">More...</a><br /></td></tr>
-<tr class="separator:a0d34dd91bca12d9dc85e26239f7fac5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ef061feac94e221be4d5cc89be855f0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas_1_1cpu.html#a4ef061feac94e221be4d5cc89be855f0">exblas::cpu::Round</a> (int64_t *accumulator)</td></tr>
-<tr class="memdesc:a4ef061feac94e221be4d5cc89be855f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a superaccumulator to the nearest double precision number (CPU version)  <a href="namespaceexblas_1_1cpu.html#a4ef061feac94e221be4d5cc89be855f0">More...</a><br /></td></tr>
-<tr class="separator:a4ef061feac94e221be4d5cc89be855f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f15eb57ce596b7556725b81b00f68ba"><td class="memTemplParams" colspan="2"><a class="anchor" id="a1f15eb57ce596b7556725b81b00f68ba"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:a1f15eb57ce596b7556725b81b00f68ba"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><b>exblas::cpu::get_element</b> (T x, int i)</td></tr>
+<tr class="separator:a1f15eb57ce596b7556725b81b00f68ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1d46eeb86b4699e01f703b19c80241c"><td class="memTemplParams" colspan="2"><a class="anchor" id="ae1d46eeb86b4699e01f703b19c80241c"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:ae1d46eeb86b4699e01f703b19c80241c"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><b>exblas::cpu::get_element</b> (const T *x, int i)</td></tr>
+<tr class="separator:ae1d46eeb86b4699e01f703b19c80241c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac925a99abc1f8095536d2661d5efe22f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas_1_1cpu.html#ac925a99abc1f8095536d2661d5efe22f">exblas::cpu::Accumulate</a> (int64_t *accumulator, double x)</td></tr>
+<tr class="memdesc:ac925a99abc1f8095536d2661d5efe22f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accumulate a double to the superaccumulator.  <a href="namespaceexblas_1_1cpu.html#ac925a99abc1f8095536d2661d5efe22f">More...</a><br /></td></tr>
+<tr class="separator:ac925a99abc1f8095536d2661d5efe22f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6fb1968e9f213e58316d4cc9357cebe"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas_1_1cpu.html#aa6fb1968e9f213e58316d4cc9357cebe">exblas::cpu::Normalize</a> (int64_t *accumulator, int &amp;imin, int &amp;imax)</td></tr>
+<tr class="memdesc:aa6fb1968e9f213e58316d4cc9357cebe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalize a superaccumulator.  <a href="namespaceexblas_1_1cpu.html#aa6fb1968e9f213e58316d4cc9357cebe">More...</a><br /></td></tr>
+<tr class="separator:aa6fb1968e9f213e58316d4cc9357cebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac16158f26c0ea9b96fea9cfacf870f53"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas_1_1cpu.html#ac16158f26c0ea9b96fea9cfacf870f53">exblas::cpu::Round</a> (int64_t *accumulator)</td></tr>
+<tr class="memdesc:ac16158f26c0ea9b96fea9cfacf870f53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a superaccumulator to the nearest double precision number (CPU version)  <a href="namespaceexblas_1_1cpu.html#ac16158f26c0ea9b96fea9cfacf870f53">More...</a><br /></td></tr>
+<tr class="separator:ac16158f26c0ea9b96fea9cfacf870f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Primitives for accumulation into superaccumulator. </p>

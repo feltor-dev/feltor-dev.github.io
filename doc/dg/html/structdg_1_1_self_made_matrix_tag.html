@@ -124,16 +124,25 @@ $(document).ready(function(){initNavTree('structdg_1_1_self_made_matrix_tag.html
 
 <div class="header">
   <div class="headertitle">
-<div class="title">dg::SelfMadeMatrixTag Struct Reference<div class="ingroups"><a class="el" href="group__backend.html">Level 1: Vectors, Matrices and basic operations</a> &raquo; <a class="el" href="group__blas.html">Basic Linear Algebra Subroutines</a> &raquo; <a class="el" href="group__dispatch.html">The tag dispatch system</a></div></div>  </div>
+<div class="title">dg::SelfMadeMatrixTag Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>indicates that the <code>Matrix</code> type has the <code>void</code> <code>symv( const Vector&amp;, Vector&amp; )</code> member function.  
+<p>Indicates that the type has a member function with the same name and interface (up to the matrix itself of course) as the corresponding <code><a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a></code> member function, for example <code> void symv( const ContainerType1&amp;, ContainerType2&amp; ); </code>  
  <a href="structdg_1_1_self_made_matrix_tag.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="matrix__categories_8h_source.html">matrix_categories.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for dg::SelfMadeMatrixTag:</div>
+<div class="dyncontent">
+<div class="center"><img src="structdg_1_1_self_made_matrix_tag__inherit__graph.png" border="0" usemap="#dg_1_1_self_made_matrix_tag_inherit__map" alt="Inheritance graph"/></div>
+<map name="dg_1_1_self_made_matrix_tag_inherit__map" id="dg_1_1_self_made_matrix_tag_inherit__map">
+<area shape="rect" id="node2" href="structdg_1_1_any_matrix_tag.html" title="dg::AnyMatrixTag" alt="" coords="21,5,147,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>indicates that the <code>Matrix</code> type has the <code>void</code> <code>symv( const Vector&amp;, Vector&amp; )</code> member function. </p>
+<div class="textblock"><p>Indicates that the type has a member function with the same name and interface (up to the matrix itself of course) as the corresponding <code><a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a></code> member function, for example <code> void symv( const ContainerType1&amp;, ContainerType2&amp; ); </code> </p>
+<p>These members are then implemented freely, in particular other <code><a class="el" href="namespacedg_1_1blas1.html" title="BLAS Level 1 routines. ">blas1</a></code> and <code><a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a></code> functions can be used </p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>backend/<a class="el" href="matrix__categories_8h_source.html">matrix_categories.h</a></li>
 </ul>
@@ -143,7 +152,7 @@ $(document).ready(function(){initNavTree('structdg_1_1_self_made_matrix_tag.html
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_self_made_matrix_tag.html">SelfMadeMatrixTag</a></li>
-    <li class="footer">Generated on Thu Apr 26 2018 16:28:15 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Jul 5 2018 12:59:50 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

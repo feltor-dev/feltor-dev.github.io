@@ -1,0 +1,14 @@
+<map id="geometry/xspacelib.h" name="geometry/xspacelib.h">
+<area shape="rect" id="node4" href="$grid_8h.html" title="base topology classes " alt="" coords="1537,237,1592,263"/>
+<area shape="rect" id="node8" href="$dlt_8h.html" title="contains the discrete legendre trafo class " alt="" coords="1105,319,1152,345"/>
+<area shape="rect" id="node18" href="$operator_8h.html" title="operator.h" alt="" coords="1116,237,1196,263"/>
+<area shape="rect" id="node21" href="$operator__tensor_8h.html" title="operator_tensor.h" alt="" coords="975,155,1098,181"/>
+<area shape="rect" id="node23" href="$dgtensor_8h.html" title="a tensor product function between two cusp matrices " alt="" coords="503,155,586,181"/>
+<area shape="rect" id="node29" href="$interpolation_8h.html" title="contains 1D, 2D and 3D interpolation matrix creation functions " alt="" coords="1178,80,1281,107"/>
+<area shape="rect" id="node7" href="$topological__traits_8h.html" title="topological_traits.h" alt="" coords="1400,319,1531,345"/>
+<area shape="rect" id="node16" href="$enums_8h.html" title="enums " alt="" coords="1556,319,1640,345"/>
+<area shape="rect" id="node13" href="$exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="1284,393,1450,420"/>
+<area shape="rect" id="node31" href="$evaluation_8h.html" title="Function discretization routines. " alt="" coords="1434,155,1526,181"/>
+<area shape="rect" id="node33" href="$functions_8h.html" title="contains some utility functions for the evaluation() routines " alt="" coords="1324,155,1410,181"/>
+<area shape="rect" id="node34" href="$creation_8h.html" title="creation.h" alt="" coords="872,155,950,181"/>
+</map>

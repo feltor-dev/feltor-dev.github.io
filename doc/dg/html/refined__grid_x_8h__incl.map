@@ -1,0 +1,30 @@
+<map id="geometry/refined_gridX.h" name="geometry/refined_gridX.h">
+<area shape="rect" id="node3" href="$interpolation_8h.html" title="contains 1D, 2D and 3D interpolation matrix creation functions " alt="" coords="392,304,495,331"/>
+<area shape="rect" id="node30" href="$evaluation_x_8h.html" title="Function discretization routines on X&#45;point topology. " alt="" coords="801,229,902,256"/>
+<area shape="rect" id="node31" href="$grid_x_8h.html" title="base X&#45;point topology classes " alt="" coords="820,386,883,413"/>
+<area shape="rect" id="node32" href="$weights_x_8h.html" title="contains creation functions for integration weights and their inverse on X&#45;point topology ..." alt="" coords="1104,304,1191,331"/>
+<area shape="rect" id="node34" href="$base__geometry_x_8h.html" title="base_geometryX.h" alt="" coords="874,155,1005,181"/>
+<area shape="rect" id="node45" href="$refined__grid_8h.html" title="refined_grid.h" alt="" coords="1440,80,1540,107"/>
+<area shape="rect" id="node6" href="$grid_8h.html" title="base topology classes " alt="" coords="1019,475,1073,502"/>
+<area shape="rect" id="node21" href="$evaluation_8h.html" title="Function discretization routines. " alt="" coords="489,386,581,413"/>
+<area shape="rect" id="node23" href="$functions_8h.html" title="contains some utility functions for the evaluation() routines " alt="" coords="657,386,744,413"/>
+<area shape="rect" id="node24" href="$creation_8h.html" title="creation.h" alt="" coords="36,386,115,413"/>
+<area shape="rect" id="node28" href="$operator__tensor_8h.html" title="operator_tensor.h" alt="" coords="139,386,262,413"/>
+<area shape="rect" id="node10" href="$topological__traits_8h.html" title="topological_traits.h" alt="" coords="954,557,1085,584"/>
+<area shape="rect" id="node11" href="$dlt_8h.html" title="contains the discrete legendre trafo class " alt="" coords="883,557,929,584"/>
+<area shape="rect" id="node19" href="$enums_8h.html" title="enums " alt="" coords="1109,557,1193,584"/>
+<area shape="rect" id="node16" href="$exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="964,632,1131,659"/>
+<area shape="rect" id="node25" href="$operator_8h.html" title="operator.h" alt="" coords="210,475,290,502"/>
+<area shape="rect" id="node33" href="$weights_8h.html" title="contains creation functions for integration weights and their inverse " alt="" coords="1633,386,1712,413"/>
+<area shape="rect" id="node35" href="$tensor_8h.html" title="tensor.h" alt="" coords="995,229,1065,256"/>
+<area shape="rect" id="node36" href="$functors_8h.html" title="dg/functors.h" alt="" coords="981,304,1079,331"/>
+<area shape="rect" id="node40" href="$blas1_8h.html" title="blas1.h" alt="" coords="1787,386,1851,413"/>
+<area shape="rect" id="node42" href="$tensor__traits_8h.html" title="backend/tensor_traits.h" alt="" coords="1799,557,1957,584"/>
+<area shape="rect" id="node43" href="$tensor__traits__scalar_8h.html" title="backend/tensor_traits\l_scalar.h" alt="" coords="1639,468,1786,509"/>
+<area shape="rect" id="node44" href="$tensor__traits__thrust_8h.html" title="backend/tensor_traits\l_thrust.h" alt="" coords="1861,468,2007,509"/>
+<area shape="rect" id="node46" href="$memory_8h.html" title="memory.h" alt="" coords="1577,155,1657,181"/>
+<area shape="rect" id="node47" href="$blas_8h.html" title="dg/blas.h" alt="" coords="1782,304,1857,331"/>
+<area shape="rect" id="node50" href="$base__geometry_8h.html" title="base_geometry.h" alt="" coords="1379,155,1502,181"/>
+<area shape="rect" id="node48" href="$blas2_8h.html" title="blas2.h" alt="" coords="1902,386,1966,413"/>
+<area shape="rect" id="node49" href="$typedefs_8h.html" title="Useful typedefs of commonly used types. " alt="" coords="1317,475,1453,502"/>
+</map>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mpi_5freduce_5fcommunicator',['mpi_reduce_communicator',['../namespaceexblas.html#a8b66eb8c9a1af03aa85fc0ab073c3e2c',1,'exblas']]]
+  ['mpi_5freduce_5fcommunicator',['mpi_reduce_communicator',['../namespaceexblas.html#a0b5cd15f02ce8ac7c0a18d7a0691c2e8',1,'exblas']]]
 ];

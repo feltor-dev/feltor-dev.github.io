@@ -137,15 +137,20 @@ Inheritance diagram for dg::SharedVectorTag:</div>
 <div class="dyncontent">
 <div class="center"><img src="structdg_1_1_shared_vector_tag__inherit__graph.png" border="0" usemap="#dg_1_1_shared_vector_tag_inherit__map" alt="Inheritance graph"/></div>
 <map name="dg_1_1_shared_vector_tag_inherit__map" id="dg_1_1_shared_vector_tag_inherit__map">
-<area shape="rect" id="node3" href="structdg_1_1_thrust_vector_tag.html" title="Indicate that thrust &#45; like members are available. " alt="" coords="77,155,218,181"/>
-<area shape="rect" id="node2" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. " alt="" coords="84,5,211,32"/>
-<area shape="rect" id="node4" href="structdg_1_1_cusp_vector_tag.html" title="special tag for cusp arrays " alt="" coords="5,229,140,256"/>
-<area shape="rect" id="node5" href="structdg_1_1_std_array_tag.html" title="std::array&lt; primitive_type&gt; " alt="" coords="165,229,282,256"/>
+<area shape="rect" id="node4" href="structdg_1_1_thrust_vector_tag.html" title="Indicate thrust/std &#45; like behaviour. " alt="" coords="77,229,218,256"/>
+<area shape="rect" id="node2" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. " alt="" coords="84,80,211,107"/>
+<area shape="rect" id="node3" href="structdg_1_1_any_matrix_tag.html" title="dg::AnyMatrixTag" alt="" coords="85,5,210,32"/>
+<area shape="rect" id="node5" href="structdg_1_1_cusp_vector_tag.html" title="special tag for cusp arrays " alt="" coords="5,304,140,331"/>
+<area shape="rect" id="node6" href="structdg_1_1_std_array_tag.html" title=" std::array&lt; primitive_type, N&gt; &#160;" alt="" coords="165,304,282,331"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Indicate a contiguous chunk of shared memory. </p>
-<p>With this tag a class promises that the data it holds lies in a contiguous chunk that can be traversed knowing the pointer to its first element. Sub-Tags specify how this pointer can be accessed by an algorithm, how it can be resized and how information like size can be retrieved. </p>
+<p>With this tag a class promises that the data it holds lies in a contiguous chunk that can be traversed knowing the pointer to its first element. Sub-Tags indicate addtional functionality like data resize. </p><dl class="section note"><dt>Note</dt><dd>We assume a class with this Tag has the following methods<ul>
+<li><code>size()</code> returns the size (in number of elements) of the contiguous data</li>
+<li><code>data()</code> returns a pointer (or something for which the <code>thrust::pointer_traits</code> are specialized) to the first element of the contiguous data. The return type must be convertible to <code> (const) value_type* </code> </li>
+</ul>
+</dd></dl>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>backend/<a class="el" href="vector__categories_8h_source.html">vector_categories.h</a></li>
 </ul>
@@ -155,7 +160,7 @@ Inheritance diagram for dg::SharedVectorTag:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_shared_vector_tag.html">SharedVectorTag</a></li>
-    <li class="footer">Generated on Thu Apr 26 2018 16:28:15 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Jul 5 2018 12:59:50 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

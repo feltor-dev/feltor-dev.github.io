@@ -1,4 +1,4 @@
 <map id="dg::geo::CurvilinearRefinedGridX2d" name="dg::geo::CurvilinearRefinedGridX2d">
-<area shape="rect" id="node2" href="/home/matthias/Projekte/feltor/doc/dg.tag$structdg_1_1a_geometry_x2d.html" title="dg::aGeometryX2d" alt="" coords="30,80,161,107"/>
-<area shape="rect" id="node3" href="/home/matthias/Projekte/feltor/doc/dg.tag$structdg_1_1a_topology_x2d.html" title="dg::aTopologyX2d" alt="" coords="32,5,159,32"/>
+<area shape="rect" id="node2" href="/home/matthias/Projekte/feltor/doc/dg.tag$structdg_1_1a_real_geometry_x2d.html" title="dg::aGeometryX2d" alt="" coords="30,95,161,121"/>
+<area shape="rect" id="node3" href="/home/matthias/Projekte/feltor/doc/dg.tag$structdg_1_1a_real_topology_x2d.html" title="dg::aRealTopologyX2d\l\&lt; real_type \&gt;" alt="" coords="18,5,173,47"/>
 </map>

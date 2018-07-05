@@ -88,6 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -127,7 +128,56 @@ $(document).ready(function(){initNavTree('mpi__derivatives_8h.html','');});
 <div class="title">mpi_derivatives.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &quot;<a class="el" href="sparseblockmat_8h_source.html">dg/backend/sparseblockmat.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mpi__matrix_8h_source.html">dg/backend/mpi_matrix.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="functions_8h_source.html">functions.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="derivatives_8h_source.html">derivatives.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mpi__grid_8h_source.html">mpi_grid.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for mpi_derivatives.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="mpi__derivatives_8h__incl.png" border="0" usemap="#geometry_2mpi__derivatives_8h" alt=""/></div>
+<map name="geometry_2mpi__derivatives_8h" id="geometry_2mpi__derivatives_8h">
+<area shape="rect" id="node2" href="sparseblockmat_8h.html" title="dg/backend/sparseblockmat.h" alt="" coords="962,319,1158,345"/>
+<area shape="rect" id="node18" href="mpi__matrix_8h.html" title="MPI matrix classes. " alt="" coords="256,229,424,256"/>
+<area shape="rect" id="node29" href="functions_8h.html" title="contains some utility functions for the evaluation() routines " alt="" coords="1074,229,1160,256"/>
+<area shape="rect" id="node30" href="derivatives_8h.html" title="Convenience functions to create 2D derivatives. " alt="" coords="1368,80,1464,107"/>
+<area shape="rect" id="node44" href="mpi__grid_8h.html" title="MPI Grid objects. " alt="" coords="1236,229,1318,256"/>
+<area shape="rect" id="node5" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/config_8h.html" title="exblas/config.h" alt="" coords="512,557,623,584"/>
+<area shape="rect" id="node7" href="exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="1346,483,1442,509"/>
+<area shape="rect" id="node11" href="tensor__traits_8h.html" title="tensor_traits.h" alt="" coords="860,408,966,435"/>
+<area shape="rect" id="node14" href="scalar__categories_8h.html" title="scalar_categories.h" alt="" coords="683,483,818,509"/>
+<area shape="rect" id="node15" href="vector__categories_8h.html" title="vector_categories.h" alt="" coords="788,557,924,584"/>
+<area shape="rect" id="node16" href="matrix__categories_8h.html" title="matrix_categories.h" alt="" coords="1014,632,1150,659"/>
+<area shape="rect" id="node17" href="execution__policy_8h.html" title="execution_policy.h" alt="" coords="893,483,1024,509"/>
+<area shape="rect" id="node19" href="mpi__vector_8h.html" title="mpi_vector.h" alt="" coords="572,319,670,345"/>
+<area shape="rect" id="node27" href="memory_8h.html" title="memory.h" alt="" coords="21,408,101,435"/>
+<area shape="rect" id="node22" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/mpi__accumulate_8h.html" title="exblas/mpi_accumulate.h" alt="" coords="292,408,462,435"/>
+<area shape="rect" id="node25" href="mpi__communicator_8h.html" title="mpi_communicator.h" alt="" coords="124,408,267,435"/>
+<area shape="rect" id="node23" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/accumulate_8h.html" title="accumulate.h" alt="" coords="440,483,540,509"/>
+<area shape="rect" id="node31" href="grid_8h.html" title="base topology classes " alt="" coords="1450,319,1504,345"/>
+<area shape="rect" id="node39" href="dx_8h.html" title="Simple 1d derivatives. " alt="" coords="1392,155,1439,181"/>
+<area shape="rect" id="node32" href="topological__traits_8h.html" title="topological_traits.h" alt="" coords="1488,408,1618,435"/>
+<area shape="rect" id="node33" href="dlt_8h.html" title="contains the discrete legendre trafo class " alt="" coords="1731,408,1778,435"/>
+<area shape="rect" id="node37" href="enums_8h.html" title="enums " alt="" coords="1296,408,1380,435"/>
+<area shape="rect" id="node40" href="operator_8h.html" title="operator.h" alt="" coords="1745,319,1825,345"/>
+<area shape="rect" id="node43" href="weights_8h.html" title="contains creation functions for integration weights and their inverse " alt="" coords="1343,229,1422,256"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="mpi__derivatives_8h__dep__incl.png" border="0" usemap="#geometry_2mpi__derivatives_8hdep" alt=""/></div>
+<map name="geometry_2mpi__derivatives_8hdep" id="geometry_2mpi__derivatives_8hdep">
+<area shape="rect" id="node2" href="elliptic_8h.html" title="General negative elliptic operators. " alt="" coords="145,80,216,107"/>
+<area shape="rect" id="node6" href="arakawa_8h.html" title="object for computation of Poisson bracket " alt="" coords="311,155,394,181"/>
+<area shape="rect" id="node7" href="poisson_8h.html" title="poisson.h" alt="" coords="391,80,469,107"/>
+<area shape="rect" id="node3" href="helmholtz_8h.html" title="contains Helmholtz and Maxwell operators " alt="" coords="5,155,95,181"/>
+<area shape="rect" id="node4" href="algorithm_8h.html" title="algorithm.h" alt="" coords="185,229,272,256"/>
+<area shape="rect" id="node5" href="refined__elliptic_8h.html" title="contains an elliptic method on a refined grid " alt="" coords="171,155,287,181"/>
+</map>
+</div>
+</div>
 <p><a href="mpi__derivatives_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -141,66 +191,86 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gab0ba3fd879ca791fd1ee95d27eb634af"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__creation.html#gab0ba3fd879ca791fd1ee95d27eb634af">dg::create::dx</a> (const aMPITopology2d &amp;g, bc bcx, direction dir=centered)</td></tr>
-<tr class="memdesc:gab0ba3fd879ca791fd1ee95d27eb634af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a 2d derivative in the x-direction for mpi.  <a href="group__creation.html#gab0ba3fd879ca791fd1ee95d27eb634af">More...</a><br /></td></tr>
-<tr class="separator:gab0ba3fd879ca791fd1ee95d27eb634af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaea614b12b28b47e2f1673f0bfc533a73"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__creation.html#gaea614b12b28b47e2f1673f0bfc533a73">dg::create::dy</a> (const aMPITopology2d &amp;g, bc bcy, direction dir=centered)</td></tr>
-<tr class="memdesc:gaea614b12b28b47e2f1673f0bfc533a73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a 2d derivative in the y-direction for mpi.  <a href="group__creation.html#gaea614b12b28b47e2f1673f0bfc533a73">More...</a><br /></td></tr>
-<tr class="separator:gaea614b12b28b47e2f1673f0bfc533a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8b04e243793cd24e95a7f25dfa48c200"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__creation.html#ga8b04e243793cd24e95a7f25dfa48c200">dg::create::jumpX</a> (const aMPITopology2d &amp;g, bc bcx)</td></tr>
-<tr class="memdesc:ga8b04e243793cd24e95a7f25dfa48c200"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a 2d jump in the x-direction for mpi.  <a href="group__creation.html#ga8b04e243793cd24e95a7f25dfa48c200">More...</a><br /></td></tr>
-<tr class="separator:ga8b04e243793cd24e95a7f25dfa48c200"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafb7a9937ad496977e89f3a3fc7e07c6e"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__creation.html#gafb7a9937ad496977e89f3a3fc7e07c6e">dg::create::jumpY</a> (const aMPITopology2d &amp;g, bc bcy)</td></tr>
-<tr class="memdesc:gafb7a9937ad496977e89f3a3fc7e07c6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a 2d jump in the y-direction for mpi.  <a href="group__creation.html#gafb7a9937ad496977e89f3a3fc7e07c6e">More...</a><br /></td></tr>
-<tr class="separator:gafb7a9937ad496977e89f3a3fc7e07c6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9ef4b2163cd442342f3abffbe06cb9dc"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__creation.html#ga9ef4b2163cd442342f3abffbe06cb9dc">dg::create::dx</a> (const aMPITopology3d &amp;g, bc bcx, direction dir=centered)</td></tr>
-<tr class="memdesc:ga9ef4b2163cd442342f3abffbe06cb9dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a 3d derivative in the x-direction for mpi.  <a href="group__creation.html#ga9ef4b2163cd442342f3abffbe06cb9dc">More...</a><br /></td></tr>
-<tr class="separator:ga9ef4b2163cd442342f3abffbe06cb9dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa7f6613df8f5cbb6856f1aa785584b14"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__creation.html#gaa7f6613df8f5cbb6856f1aa785584b14">dg::create::dy</a> (const aMPITopology3d &amp;g, bc bcy, direction dir=centered)</td></tr>
-<tr class="memdesc:gaa7f6613df8f5cbb6856f1aa785584b14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a 3d derivative in the y-direction for mpi.  <a href="group__creation.html#gaa7f6613df8f5cbb6856f1aa785584b14">More...</a><br /></td></tr>
-<tr class="separator:gaa7f6613df8f5cbb6856f1aa785584b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga840dd98c8ecef04193ff5c9043f26b96"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__creation.html#ga840dd98c8ecef04193ff5c9043f26b96">dg::create::dz</a> (const aMPITopology3d &amp;g, bc bcz, direction dir=centered)</td></tr>
-<tr class="memdesc:ga840dd98c8ecef04193ff5c9043f26b96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a 3d derivative in the z-direction for mpi.  <a href="group__creation.html#ga840dd98c8ecef04193ff5c9043f26b96">More...</a><br /></td></tr>
-<tr class="separator:ga840dd98c8ecef04193ff5c9043f26b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9d93671aae44344938bd08a029782b9e"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__creation.html#ga9d93671aae44344938bd08a029782b9e">dg::create::jumpX</a> (const aMPITopology3d &amp;g, bc bcx)</td></tr>
-<tr class="memdesc:ga9d93671aae44344938bd08a029782b9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a 3d jump in the x-direction for mpi.  <a href="group__creation.html#ga9d93671aae44344938bd08a029782b9e">More...</a><br /></td></tr>
-<tr class="separator:ga9d93671aae44344938bd08a029782b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac466f28111269dd8549d32254da66427"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__creation.html#gac466f28111269dd8549d32254da66427">dg::create::jumpY</a> (const aMPITopology3d &amp;g, bc bcy)</td></tr>
-<tr class="memdesc:gac466f28111269dd8549d32254da66427"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a 3d jump in the y-direction for mpi.  <a href="group__creation.html#gac466f28111269dd8549d32254da66427">More...</a><br /></td></tr>
-<tr class="separator:gac466f28111269dd8549d32254da66427"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8df5a5fb89c7d75664840124ed2f84d7"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__creation.html#ga8df5a5fb89c7d75664840124ed2f84d7">dg::create::jumpZ</a> (const aMPITopology3d &amp;g, bc bcz)</td></tr>
-<tr class="memdesc:ga8df5a5fb89c7d75664840124ed2f84d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a 3d jump in the z-direction for mpi.  <a href="group__creation.html#ga8df5a5fb89c7d75664840124ed2f84d7">More...</a><br /></td></tr>
-<tr class="separator:ga8df5a5fb89c7d75664840124ed2f84d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1d4dd7a5b096573c7c244fb98bc3074f"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__creation.html#ga1d4dd7a5b096573c7c244fb98bc3074f">dg::create::dx</a> (const aMPITopology2d &amp;g, direction dir=centered)</td></tr>
-<tr class="memdesc:ga1d4dd7a5b096573c7c244fb98bc3074f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 2d derivative in x-direction.  <a href="group__creation.html#ga1d4dd7a5b096573c7c244fb98bc3074f">More...</a><br /></td></tr>
-<tr class="separator:ga1d4dd7a5b096573c7c244fb98bc3074f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac474b6bd4899e70c06795baf4c3ff125"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__creation.html#gac474b6bd4899e70c06795baf4c3ff125">dg::create::dx</a> (const aMPITopology3d &amp;g, direction dir=centered)</td></tr>
-<tr class="memdesc:gac474b6bd4899e70c06795baf4c3ff125"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 3d derivative in x-direction.  <a href="group__creation.html#gac474b6bd4899e70c06795baf4c3ff125">More...</a><br /></td></tr>
-<tr class="separator:gac474b6bd4899e70c06795baf4c3ff125"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga943baff60f25161b2a300ed9c3dbcd6b"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__creation.html#ga943baff60f25161b2a300ed9c3dbcd6b">dg::create::jumpX</a> (const aMPITopology2d &amp;g)</td></tr>
-<tr class="memdesc:ga943baff60f25161b2a300ed9c3dbcd6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 2d jump in x-direction.  <a href="group__creation.html#ga943baff60f25161b2a300ed9c3dbcd6b">More...</a><br /></td></tr>
-<tr class="separator:ga943baff60f25161b2a300ed9c3dbcd6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1fd959d808e4694c36706137eab2a0d8"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__creation.html#ga1fd959d808e4694c36706137eab2a0d8">dg::create::jumpX</a> (const aMPITopology3d &amp;g)</td></tr>
-<tr class="memdesc:ga1fd959d808e4694c36706137eab2a0d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 3d jump in x-direction.  <a href="group__creation.html#ga1fd959d808e4694c36706137eab2a0d8">More...</a><br /></td></tr>
-<tr class="separator:ga1fd959d808e4694c36706137eab2a0d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga65eb52f7b097c60fa5772624573c91c8"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__creation.html#ga65eb52f7b097c60fa5772624573c91c8">dg::create::dy</a> (const aMPITopology2d &amp;g, direction dir=centered)</td></tr>
-<tr class="memdesc:ga65eb52f7b097c60fa5772624573c91c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 2d derivative in y-direction.  <a href="group__creation.html#ga65eb52f7b097c60fa5772624573c91c8">More...</a><br /></td></tr>
-<tr class="separator:ga65eb52f7b097c60fa5772624573c91c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab2b36e6f90f85225f5f6ced6729d28b2"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__creation.html#gab2b36e6f90f85225f5f6ced6729d28b2">dg::create::dy</a> (const aMPITopology3d &amp;g, direction dir=centered)</td></tr>
-<tr class="memdesc:gab2b36e6f90f85225f5f6ced6729d28b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 3d derivative in y-direction.  <a href="group__creation.html#gab2b36e6f90f85225f5f6ced6729d28b2">More...</a><br /></td></tr>
-<tr class="separator:gab2b36e6f90f85225f5f6ced6729d28b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0859a8dfecb6719fbb6e2f6d4f5652a2"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__creation.html#ga0859a8dfecb6719fbb6e2f6d4f5652a2">dg::create::jumpY</a> (const aMPITopology2d &amp;g)</td></tr>
-<tr class="memdesc:ga0859a8dfecb6719fbb6e2f6d4f5652a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 2d jump in y-direction.  <a href="group__creation.html#ga0859a8dfecb6719fbb6e2f6d4f5652a2">More...</a><br /></td></tr>
-<tr class="separator:ga0859a8dfecb6719fbb6e2f6d4f5652a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga73c160f5d492895d4c30078090dfd7c0"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__creation.html#ga73c160f5d492895d4c30078090dfd7c0">dg::create::jumpY</a> (const aMPITopology3d &amp;g)</td></tr>
-<tr class="memdesc:ga73c160f5d492895d4c30078090dfd7c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 3d jump in y-direction.  <a href="group__creation.html#ga73c160f5d492895d4c30078090dfd7c0">More...</a><br /></td></tr>
-<tr class="separator:ga73c160f5d492895d4c30078090dfd7c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7f59c6342bad2c40fe580126a3d3ede1"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__creation.html#ga7f59c6342bad2c40fe580126a3d3ede1">dg::create::dz</a> (const aMPITopology3d &amp;g, direction dir=centered)</td></tr>
-<tr class="memdesc:ga7f59c6342bad2c40fe580126a3d3ede1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 3d derivative in z-direction.  <a href="group__creation.html#ga7f59c6342bad2c40fe580126a3d3ede1">More...</a><br /></td></tr>
-<tr class="separator:ga7f59c6342bad2c40fe580126a3d3ede1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5e135bc9794d3b98e8d9a5fa1f3c0a51"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__creation.html#ga5e135bc9794d3b98e8d9a5fa1f3c0a51">dg::create::jumpZ</a> (const aMPITopology3d &amp;g)</td></tr>
-<tr class="memdesc:ga5e135bc9794d3b98e8d9a5fa1f3c0a51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 3d jump in z-direction.  <a href="group__creation.html#ga5e135bc9794d3b98e8d9a5fa1f3c0a51">More...</a><br /></td></tr>
-<tr class="separator:ga5e135bc9794d3b98e8d9a5fa1f3c0a51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5a562ee575e56d44596bd348b249658d"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga5a562ee575e56d44596bd348b249658d"><td class="memTemplItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; real_type &gt;, CooSparseBlockMat&lt; real_type &gt;, NNCH&lt; real_type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__creation.html#ga5a562ee575e56d44596bd348b249658d">dg::create::dx</a> (const aRealMPITopology2d&lt; real_type &gt; &amp;g, bc bcx, direction dir=centered)</td></tr>
+<tr class="memdesc:ga5a562ee575e56d44596bd348b249658d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a 2d derivative in the x-direction for mpi.  <a href="group__creation.html#ga5a562ee575e56d44596bd348b249658d">More...</a><br /></td></tr>
+<tr class="separator:ga5a562ee575e56d44596bd348b249658d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3707b1f34c926642e5a15012e283b984"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga3707b1f34c926642e5a15012e283b984"><td class="memTemplItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; real_type &gt;, CooSparseBlockMat&lt; real_type &gt;, NNCH&lt; real_type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__creation.html#ga3707b1f34c926642e5a15012e283b984">dg::create::dy</a> (const aRealMPITopology2d&lt; real_type &gt; &amp;g, bc bcy, direction dir=centered)</td></tr>
+<tr class="memdesc:ga3707b1f34c926642e5a15012e283b984"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a 2d derivative in the y-direction for mpi.  <a href="group__creation.html#ga3707b1f34c926642e5a15012e283b984">More...</a><br /></td></tr>
+<tr class="separator:ga3707b1f34c926642e5a15012e283b984"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga98b273e207638438f3f1edccf89dde00"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga98b273e207638438f3f1edccf89dde00"><td class="memTemplItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; real_type &gt;, CooSparseBlockMat&lt; real_type &gt;, NNCH&lt; real_type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__creation.html#ga98b273e207638438f3f1edccf89dde00">dg::create::jumpX</a> (const aRealMPITopology2d&lt; real_type &gt; &amp;g, bc bcx)</td></tr>
+<tr class="memdesc:ga98b273e207638438f3f1edccf89dde00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a 2d jump in the x-direction for mpi.  <a href="group__creation.html#ga98b273e207638438f3f1edccf89dde00">More...</a><br /></td></tr>
+<tr class="separator:ga98b273e207638438f3f1edccf89dde00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga48a88bda706a10243a31851c4ea5bc47"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga48a88bda706a10243a31851c4ea5bc47"><td class="memTemplItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; real_type &gt;, CooSparseBlockMat&lt; real_type &gt;, NNCH&lt; real_type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__creation.html#ga48a88bda706a10243a31851c4ea5bc47">dg::create::jumpY</a> (const aRealMPITopology2d&lt; real_type &gt; &amp;g, bc bcy)</td></tr>
+<tr class="memdesc:ga48a88bda706a10243a31851c4ea5bc47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a 2d jump in the y-direction for mpi.  <a href="group__creation.html#ga48a88bda706a10243a31851c4ea5bc47">More...</a><br /></td></tr>
+<tr class="separator:ga48a88bda706a10243a31851c4ea5bc47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7b596b84b22055b8fbebee227f205ec0"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga7b596b84b22055b8fbebee227f205ec0"><td class="memTemplItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; real_type &gt;, CooSparseBlockMat&lt; real_type &gt;, NNCH&lt; real_type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__creation.html#ga7b596b84b22055b8fbebee227f205ec0">dg::create::dx</a> (const aRealMPITopology3d&lt; real_type &gt; &amp;g, bc bcx, direction dir=centered)</td></tr>
+<tr class="memdesc:ga7b596b84b22055b8fbebee227f205ec0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a 3d derivative in the x-direction for mpi.  <a href="group__creation.html#ga7b596b84b22055b8fbebee227f205ec0">More...</a><br /></td></tr>
+<tr class="separator:ga7b596b84b22055b8fbebee227f205ec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga29efed6580bc4e28c24ae9c2be62aac4"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga29efed6580bc4e28c24ae9c2be62aac4"><td class="memTemplItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; real_type &gt;, CooSparseBlockMat&lt; real_type &gt;, NNCH&lt; real_type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__creation.html#ga29efed6580bc4e28c24ae9c2be62aac4">dg::create::dy</a> (const aRealMPITopology3d&lt; real_type &gt; &amp;g, bc bcy, direction dir=centered)</td></tr>
+<tr class="memdesc:ga29efed6580bc4e28c24ae9c2be62aac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a 3d derivative in the y-direction for mpi.  <a href="group__creation.html#ga29efed6580bc4e28c24ae9c2be62aac4">More...</a><br /></td></tr>
+<tr class="separator:ga29efed6580bc4e28c24ae9c2be62aac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac0f02900323532bdd6bf220b8e1b85a4"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:gac0f02900323532bdd6bf220b8e1b85a4"><td class="memTemplItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; real_type &gt;, CooSparseBlockMat&lt; real_type &gt;, NNCH&lt; real_type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__creation.html#gac0f02900323532bdd6bf220b8e1b85a4">dg::create::dz</a> (const aRealMPITopology3d&lt; real_type &gt; &amp;g, bc bcz, direction dir=centered)</td></tr>
+<tr class="memdesc:gac0f02900323532bdd6bf220b8e1b85a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a 3d derivative in the z-direction for mpi.  <a href="group__creation.html#gac0f02900323532bdd6bf220b8e1b85a4">More...</a><br /></td></tr>
+<tr class="separator:gac0f02900323532bdd6bf220b8e1b85a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad7f0776ed21819312d5cddec9106c3e7"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:gad7f0776ed21819312d5cddec9106c3e7"><td class="memTemplItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; real_type &gt;, CooSparseBlockMat&lt; real_type &gt;, NNCH&lt; real_type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__creation.html#gad7f0776ed21819312d5cddec9106c3e7">dg::create::jumpX</a> (const aRealMPITopology3d&lt; real_type &gt; &amp;g, bc bcx)</td></tr>
+<tr class="memdesc:gad7f0776ed21819312d5cddec9106c3e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a 3d jump in the x-direction for mpi.  <a href="group__creation.html#gad7f0776ed21819312d5cddec9106c3e7">More...</a><br /></td></tr>
+<tr class="separator:gad7f0776ed21819312d5cddec9106c3e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaf7a395cb50ae57c266b3662c3752087"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:gaaf7a395cb50ae57c266b3662c3752087"><td class="memTemplItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; real_type &gt;, CooSparseBlockMat&lt; real_type &gt;, NNCH&lt; real_type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__creation.html#gaaf7a395cb50ae57c266b3662c3752087">dg::create::jumpY</a> (const aRealMPITopology3d&lt; real_type &gt; &amp;g, bc bcy)</td></tr>
+<tr class="memdesc:gaaf7a395cb50ae57c266b3662c3752087"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a 3d jump in the y-direction for mpi.  <a href="group__creation.html#gaaf7a395cb50ae57c266b3662c3752087">More...</a><br /></td></tr>
+<tr class="separator:gaaf7a395cb50ae57c266b3662c3752087"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafc3ec386251b1583ee4ce460b6b98c67"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:gafc3ec386251b1583ee4ce460b6b98c67"><td class="memTemplItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; real_type &gt;, CooSparseBlockMat&lt; real_type &gt;, NNCH&lt; real_type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__creation.html#gafc3ec386251b1583ee4ce460b6b98c67">dg::create::jumpZ</a> (const aRealMPITopology3d&lt; real_type &gt; &amp;g, bc bcz)</td></tr>
+<tr class="memdesc:gafc3ec386251b1583ee4ce460b6b98c67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a 3d jump in the z-direction for mpi.  <a href="group__creation.html#gafc3ec386251b1583ee4ce460b6b98c67">More...</a><br /></td></tr>
+<tr class="separator:gafc3ec386251b1583ee4ce460b6b98c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4aeb390814cd29ee8b279d92d89a5b4b"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga4aeb390814cd29ee8b279d92d89a5b4b"><td class="memTemplItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; real_type &gt;, CooSparseBlockMat&lt; real_type &gt;, NNCH&lt; real_type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__creation.html#ga4aeb390814cd29ee8b279d92d89a5b4b">dg::create::dx</a> (const aRealMPITopology2d&lt; real_type &gt; &amp;g, direction dir=centered)</td></tr>
+<tr class="memdesc:ga4aeb390814cd29ee8b279d92d89a5b4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 2d derivative in x-direction.  <a href="group__creation.html#ga4aeb390814cd29ee8b279d92d89a5b4b">More...</a><br /></td></tr>
+<tr class="separator:ga4aeb390814cd29ee8b279d92d89a5b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaad12f7121acd21878e2b5251183a3f48"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:gaad12f7121acd21878e2b5251183a3f48"><td class="memTemplItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; real_type &gt;, CooSparseBlockMat&lt; real_type &gt;, NNCH&lt; real_type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__creation.html#gaad12f7121acd21878e2b5251183a3f48">dg::create::dx</a> (const aRealMPITopology3d&lt; real_type &gt; &amp;g, direction dir=centered)</td></tr>
+<tr class="memdesc:gaad12f7121acd21878e2b5251183a3f48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 3d derivative in x-direction.  <a href="group__creation.html#gaad12f7121acd21878e2b5251183a3f48">More...</a><br /></td></tr>
+<tr class="separator:gaad12f7121acd21878e2b5251183a3f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5df58f45c0028bf045a55896574df7ce"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga5df58f45c0028bf045a55896574df7ce"><td class="memTemplItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; real_type &gt;, CooSparseBlockMat&lt; real_type &gt;, NNCH&lt; real_type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__creation.html#ga5df58f45c0028bf045a55896574df7ce">dg::create::jumpX</a> (const aRealMPITopology2d&lt; real_type &gt; &amp;g)</td></tr>
+<tr class="memdesc:ga5df58f45c0028bf045a55896574df7ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 2d jump in x-direction.  <a href="group__creation.html#ga5df58f45c0028bf045a55896574df7ce">More...</a><br /></td></tr>
+<tr class="separator:ga5df58f45c0028bf045a55896574df7ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae35c40d0fd762fdec0a2ed7bd8d8fe07"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:gae35c40d0fd762fdec0a2ed7bd8d8fe07"><td class="memTemplItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; real_type &gt;, CooSparseBlockMat&lt; real_type &gt;, NNCH&lt; real_type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__creation.html#gae35c40d0fd762fdec0a2ed7bd8d8fe07">dg::create::jumpX</a> (const aRealMPITopology3d&lt; real_type &gt; &amp;g)</td></tr>
+<tr class="memdesc:gae35c40d0fd762fdec0a2ed7bd8d8fe07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 3d jump in x-direction.  <a href="group__creation.html#gae35c40d0fd762fdec0a2ed7bd8d8fe07">More...</a><br /></td></tr>
+<tr class="separator:gae35c40d0fd762fdec0a2ed7bd8d8fe07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga373a32bc0b7689160fad76dd80425c0e"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga373a32bc0b7689160fad76dd80425c0e"><td class="memTemplItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; real_type &gt;, CooSparseBlockMat&lt; real_type &gt;, NNCH&lt; real_type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__creation.html#ga373a32bc0b7689160fad76dd80425c0e">dg::create::dy</a> (const aRealMPITopology2d&lt; real_type &gt; &amp;g, direction dir=centered)</td></tr>
+<tr class="memdesc:ga373a32bc0b7689160fad76dd80425c0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 2d derivative in y-direction.  <a href="group__creation.html#ga373a32bc0b7689160fad76dd80425c0e">More...</a><br /></td></tr>
+<tr class="separator:ga373a32bc0b7689160fad76dd80425c0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadca7143f45fa0008341e465a0541745d"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:gadca7143f45fa0008341e465a0541745d"><td class="memTemplItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; real_type &gt;, CooSparseBlockMat&lt; real_type &gt;, NNCH&lt; real_type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__creation.html#gadca7143f45fa0008341e465a0541745d">dg::create::dy</a> (const aRealMPITopology3d&lt; real_type &gt; &amp;g, direction dir=centered)</td></tr>
+<tr class="memdesc:gadca7143f45fa0008341e465a0541745d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 3d derivative in y-direction.  <a href="group__creation.html#gadca7143f45fa0008341e465a0541745d">More...</a><br /></td></tr>
+<tr class="separator:gadca7143f45fa0008341e465a0541745d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac10649e22df933e1ce2b5e703e42f884"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:gac10649e22df933e1ce2b5e703e42f884"><td class="memTemplItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; real_type &gt;, CooSparseBlockMat&lt; real_type &gt;, NNCH&lt; real_type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__creation.html#gac10649e22df933e1ce2b5e703e42f884">dg::create::jumpY</a> (const aRealMPITopology2d&lt; real_type &gt; &amp;g)</td></tr>
+<tr class="memdesc:gac10649e22df933e1ce2b5e703e42f884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 2d jump in y-direction.  <a href="group__creation.html#gac10649e22df933e1ce2b5e703e42f884">More...</a><br /></td></tr>
+<tr class="separator:gac10649e22df933e1ce2b5e703e42f884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6b7141583879749b2e6a2860133fcdac"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga6b7141583879749b2e6a2860133fcdac"><td class="memTemplItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; real_type &gt;, CooSparseBlockMat&lt; real_type &gt;, NNCH&lt; real_type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__creation.html#ga6b7141583879749b2e6a2860133fcdac">dg::create::jumpY</a> (const aRealMPITopology3d&lt; real_type &gt; &amp;g)</td></tr>
+<tr class="memdesc:ga6b7141583879749b2e6a2860133fcdac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 3d jump in y-direction.  <a href="group__creation.html#ga6b7141583879749b2e6a2860133fcdac">More...</a><br /></td></tr>
+<tr class="separator:ga6b7141583879749b2e6a2860133fcdac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8f7ecb5b6c7167e68f0fd0668684865c"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga8f7ecb5b6c7167e68f0fd0668684865c"><td class="memTemplItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; real_type &gt;, CooSparseBlockMat&lt; real_type &gt;, NNCH&lt; real_type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__creation.html#ga8f7ecb5b6c7167e68f0fd0668684865c">dg::create::dz</a> (const aRealMPITopology3d&lt; real_type &gt; &amp;g, direction dir=centered)</td></tr>
+<tr class="memdesc:ga8f7ecb5b6c7167e68f0fd0668684865c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 3d derivative in z-direction.  <a href="group__creation.html#ga8f7ecb5b6c7167e68f0fd0668684865c">More...</a><br /></td></tr>
+<tr class="separator:ga8f7ecb5b6c7167e68f0fd0668684865c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafeaa6dd6db6299c6356807f6eaf29e1f"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:gafeaa6dd6db6299c6356807f6eaf29e1f"><td class="memTemplItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; real_type &gt;, CooSparseBlockMat&lt; real_type &gt;, NNCH&lt; real_type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__creation.html#gafeaa6dd6db6299c6356807f6eaf29e1f">dg::create::jumpZ</a> (const aRealMPITopology3d&lt; real_type &gt; &amp;g)</td></tr>
+<tr class="memdesc:gafeaa6dd6db6299c6356807f6eaf29e1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 3d jump in z-direction.  <a href="group__creation.html#gafeaa6dd6db6299c6356807f6eaf29e1f">More...</a><br /></td></tr>
+<tr class="separator:gafeaa6dd6db6299c6356807f6eaf29e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -208,7 +278,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e3380d2178455503f266746fb14246a5.html">geometry</a></li><li class="navelem"><a class="el" href="mpi__derivatives_8h.html">mpi_derivatives.h</a></li>
-    <li class="footer">Generated on Thu Apr 26 2018 16:28:14 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Jul 5 2018 12:59:49 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

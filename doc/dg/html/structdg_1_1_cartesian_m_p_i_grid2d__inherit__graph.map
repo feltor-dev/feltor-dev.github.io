@@ -1,4 +1,0 @@
-<map id="dg::CartesianMPIGrid2d" name="dg::CartesianMPIGrid2d">
-<area shape="rect" id="node2" href="$structdg_1_1a_m_p_i_geometry2d.html" title="This is the abstract interface class for a two&#45;dimensional Geometry. " alt="" coords="13,80,160,107"/>
-<area shape="rect" id="node3" href="$structdg_1_1a_m_p_i_topology2d.html" title="2D MPI abstract grid class " alt="" coords="15,5,158,32"/>
-</map>

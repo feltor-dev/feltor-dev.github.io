@@ -2966,13 +2966,6 @@
     <name>dg::geo::guenther::Parameters</name>
     <filename>structdg_1_1geo_1_1guenther_1_1_parameters.html</filename>
     <member kind="function">
-      <type></type>
-      <name>Parameters</name>
-      <anchorfile>structdg_1_1geo_1_1guenther_1_1_parameters.html</anchorfile>
-      <anchor>a28320ac9f140b8f4a0f84d2a05368d70</anchor>
-      <arglist>(const Json::Value &amp;js)</arglist>
-    </member>
-    <member kind="function">
       <type>void</type>
       <name>display</name>
       <anchorfile>structdg_1_1geo_1_1guenther_1_1_parameters.html</anchorfile>
@@ -3068,25 +3061,11 @@
     <name>dg::geo::solovev::Parameters</name>
     <filename>structdg_1_1geo_1_1solovev_1_1_parameters.html</filename>
     <member kind="function">
-      <type></type>
-      <name>Parameters</name>
-      <anchorfile>structdg_1_1geo_1_1solovev_1_1_parameters.html</anchorfile>
-      <anchor>aae96ad48c495117f6b359ce08efe3833</anchor>
-      <arglist>(const Json::Value &amp;js)</arglist>
-    </member>
-    <member kind="function">
       <type>void</type>
       <name>display</name>
       <anchorfile>structdg_1_1geo_1_1solovev_1_1_parameters.html</anchorfile>
       <anchor>ad9ebd66cb1e15d35201b4c98f4f81986</anchor>
       <arglist>(std::ostream &amp;os=std::cout) const </arglist>
-    </member>
-    <member kind="function">
-      <type>Json::Value</type>
-      <name>dump</name>
-      <anchorfile>structdg_1_1geo_1_1solovev_1_1_parameters.html</anchorfile>
-      <anchor>a7e85d567356fcd3ef984d533ed9d1e7f</anchor>
-      <arglist>() const </arglist>
     </member>
     <member kind="variable">
       <type>double</type>
@@ -4201,6 +4180,7 @@
     <subgroup>guenther</subgroup>
     <subgroup>toroidal</subgroup>
     <subgroup>circular</subgroup>
+    <class kind="struct">dg::geo::guenther::Parameters</class>
     <class kind="struct">dg::geo::solovev::Parameters</class>
     <member kind="function">
       <type>dg::geo::TokamakMagneticField</type>

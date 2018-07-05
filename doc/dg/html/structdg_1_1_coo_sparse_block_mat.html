@@ -155,10 +155,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa573b0725f3c77c5037c42f01ab18d8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#aa573b0725f3c77c5037c42f01ab18d8a">add_value</a> (int row, int col, const thrust::host_vector&lt; value_type &gt; &amp;element)</td></tr>
 <tr class="memdesc:aa573b0725f3c77c5037c42f01ab18d8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience function to assemble the matrix.  <a href="#aa573b0725f3c77c5037c42f01ab18d8a">More...</a><br /></td></tr>
 <tr class="separator:aa573b0725f3c77c5037c42f01ab18d8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a583bcc2aea492b747b3dd5db33e456fc"><td class="memTemplParams" colspan="2">template&lt;class Vector &gt; </td></tr>
-<tr class="memitem:a583bcc2aea492b747b3dd5db33e456fc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#a583bcc2aea492b747b3dd5db33e456fc">symv</a> (value_type alpha, const Vector &amp;<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>, value_type beta, Vector &amp;<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>) const </td></tr>
-<tr class="memdesc:a583bcc2aea492b747b3dd5db33e456fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply the matrix to a vector.  <a href="#a583bcc2aea492b747b3dd5db33e456fc">More...</a><br /></td></tr>
-<tr class="separator:a583bcc2aea492b747b3dd5db33e456fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7de90b6f70ad91821f7e07b3474d234b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#a7de90b6f70ad91821f7e07b3474d234b">total_num_rows</a> () const </td></tr>
+<tr class="separator:a7de90b6f70ad91821f7e07b3474d234b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d0ee7ccd320854b298e531e170068c2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#a9d0ee7ccd320854b298e531e170068c2">total_num_cols</a> () const </td></tr>
+<tr class="separator:a9d0ee7ccd320854b298e531e170068c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef26d2e350ad6ab25f1c761cb898e4bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#aef26d2e350ad6ab25f1c761cb898e4bf">symv</a> (<a class="el" href="structdg_1_1_shared_vector_tag.html">SharedVectorTag</a>, <a class="el" href="structdg_1_1_serial_tag.html">SerialTag</a>, value_type alpha, const value_type *RESTRICT <a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>, value_type beta, value_type *RESTRICT <a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>) const </td></tr>
+<tr class="memdesc:aef26d2e350ad6ab25f1c761cb898e4bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply the matrix to a vector.  <a href="#aef26d2e350ad6ab25f1c761cb898e4bf">More...</a><br /></td></tr>
+<tr class="separator:aef26d2e350ad6ab25f1c761cb898e4bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac86477710f7aedb9e25509fd72f34809"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#ac86477710f7aedb9e25509fd72f34809">display</a> (std::ostream &amp;os=std::cout, bool show_data=false) const </td></tr>
 <tr class="memdesc:ac86477710f7aedb9e25509fd72f34809"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display internal data to a stream.  <a href="#ac86477710f7aedb9e25509fd72f34809">More...</a><br /></td></tr>
 <tr class="separator:ac86477710f7aedb9e25509fd72f34809"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -210,7 +213,7 @@ struct dg::CooSparseBlockMat&lt; value_type &gt;</h3>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class value_type &gt; </div>
+template&lt;class value_type&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">typedef thrust::host_vector&lt;int&gt; <a class="el" href="structdg_1_1_coo_sparse_block_mat.html">dg::CooSparseBlockMat</a>&lt; value_type &gt;::<a class="el" href="structdg_1_1_coo_sparse_block_mat.html#af1364d9c406951269b14c6c76ee95022">IVec</a></td>
@@ -227,7 +230,7 @@ template&lt;class value_type &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class value_type &gt; </div>
+template&lt;class value_type&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -254,7 +257,7 @@ template&lt;class value_type &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class value_type &gt; </div>
+template&lt;class value_type&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -321,7 +324,7 @@ template&lt;class value_type &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class value_type &gt; </div>
+template&lt;class value_type&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -373,7 +376,7 @@ template&lt;class value_type &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class value_type &gt; </div>
+template&lt;class value_type&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="structdg_1_1_coo_sparse_block_mat.html">dg::CooSparseBlockMat</a>&lt; value_type &gt;::display </td>
@@ -406,27 +409,34 @@ template&lt;class value_type &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a583bcc2aea492b747b3dd5db33e456fc"></a>
+<a class="anchor" id="aef26d2e350ad6ab25f1c761cb898e4bf"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class value_type &gt; </div>
-<div class="memtemplate">
-template&lt;class Vector &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+template&lt;class value_type&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="structdg_1_1_coo_sparse_block_mat.html">dg::CooSparseBlockMat</a>&lt; value_type &gt;::symv </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="structdg_1_1_shared_vector_tag.html">SharedVectorTag</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structdg_1_1_serial_tag.html">SerialTag</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">value_type&#160;</td>
           <td class="paramname"><em>alpha</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Vector &amp;&#160;</td>
+          <td class="paramtype">const value_type *RESTRICT&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
@@ -438,7 +448,7 @@ template&lt;class Vector &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Vector &amp;&#160;</td>
+          <td class="paramtype">value_type *RESTRICT&#160;</td>
           <td class="paramname"><em>y</em>&#160;</td>
         </tr>
         <tr>
@@ -447,11 +457,6 @@ template&lt;class Vector &gt; </div>
           <td></td><td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Apply the matrix to a vector. </p>
@@ -468,12 +473,62 @@ template&lt;class Vector &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a9d0ee7ccd320854b298e531e170068c2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class value_type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="structdg_1_1_coo_sparse_block_mat.html">dg::CooSparseBlockMat</a>&lt; value_type &gt;::total_num_cols </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7de90b6f70ad91821f7e07b3474d234b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class value_type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="structdg_1_1_coo_sparse_block_mat.html">dg::CooSparseBlockMat</a>&lt; value_type &gt;::total_num_rows </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="afe6aef39315e35ed975eb7d1f4f1201e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class value_type &gt; </div>
+template&lt;class value_type&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#af1364d9c406951269b14c6c76ee95022">IVec</a> <a class="el" href="structdg_1_1_coo_sparse_block_mat.html">dg::CooSparseBlockMat</a>&lt; value_type &gt;::cols_idx</td>
@@ -489,7 +544,7 @@ template&lt;class value_type &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class value_type &gt; </div>
+template&lt;class value_type&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">thrust::host_vector&lt;value_type&gt; <a class="el" href="structdg_1_1_coo_sparse_block_mat.html">dg::CooSparseBlockMat</a>&lt; value_type &gt;::data</td>
@@ -505,7 +560,7 @@ template&lt;class value_type &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class value_type &gt; </div>
+template&lt;class value_type&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#af1364d9c406951269b14c6c76ee95022">IVec</a> <a class="el" href="structdg_1_1_coo_sparse_block_mat.html">dg::CooSparseBlockMat</a>&lt; value_type &gt;::data_idx</td>
@@ -521,7 +576,7 @@ template&lt;class value_type &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class value_type &gt; </div>
+template&lt;class value_type&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">int <a class="el" href="structdg_1_1_coo_sparse_block_mat.html">dg::CooSparseBlockMat</a>&lt; value_type &gt;::left_size</td>
@@ -537,7 +592,7 @@ template&lt;class value_type &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class value_type &gt; </div>
+template&lt;class value_type&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">int <a class="el" href="structdg_1_1_coo_sparse_block_mat.html">dg::CooSparseBlockMat</a>&lt; value_type &gt;::n</td>
@@ -553,7 +608,7 @@ template&lt;class value_type &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class value_type &gt; </div>
+template&lt;class value_type&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">int <a class="el" href="structdg_1_1_coo_sparse_block_mat.html">dg::CooSparseBlockMat</a>&lt; value_type &gt;::num_cols</td>
@@ -569,7 +624,7 @@ template&lt;class value_type &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class value_type &gt; </div>
+template&lt;class value_type&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">int <a class="el" href="structdg_1_1_coo_sparse_block_mat.html">dg::CooSparseBlockMat</a>&lt; value_type &gt;::num_entries</td>
@@ -585,7 +640,7 @@ template&lt;class value_type &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class value_type &gt; </div>
+template&lt;class value_type&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">int <a class="el" href="structdg_1_1_coo_sparse_block_mat.html">dg::CooSparseBlockMat</a>&lt; value_type &gt;::num_rows</td>
@@ -601,7 +656,7 @@ template&lt;class value_type &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class value_type &gt; </div>
+template&lt;class value_type&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">int <a class="el" href="structdg_1_1_coo_sparse_block_mat.html">dg::CooSparseBlockMat</a>&lt; value_type &gt;::right_size</td>
@@ -617,7 +672,7 @@ template&lt;class value_type &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class value_type &gt; </div>
+template&lt;class value_type&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#af1364d9c406951269b14c6c76ee95022">IVec</a> <a class="el" href="structdg_1_1_coo_sparse_block_mat.html">dg::CooSparseBlockMat</a>&lt; value_type &gt;::rows_idx</td>
@@ -638,7 +693,7 @@ template&lt;class value_type &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html">CooSparseBlockMat</a></li>
-    <li class="footer">Generated on Thu Apr 26 2018 16:28:15 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Jul 5 2018 12:59:50 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

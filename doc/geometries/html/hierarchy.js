@@ -181,38 +181,38 @@ var hierarchy =
       [ "dg::geo::SimpleOrthogonalX", "structdg_1_1geo_1_1_simple_orthogonal_x.html", null ]
     ] ],
     [ "dg::geo::Alpha", "structdg_1_1geo_1_1_alpha.html", null ],
-    [ "dg::aMPITopology2d", "../../dg/html/structdg_1_1a_m_p_i_topology2d.html", [
-      [ "dg::aMPIGeometry2d", "../../dg/html/structdg_1_1a_m_p_i_geometry2d.html", [
+    [ "dg::aRealMPITopology2d< real_type >", "../../dg/html/structdg_1_1a_real_m_p_i_topology2d.html", [
+      [ "dg::aRealMPIGeometry2d< real_type >", "../../dg/html/structdg_1_1a_real_m_p_i_geometry2d.html", [
         [ "dg::geo::CurvilinearMPIGrid2d", "structdg_1_1geo_1_1_curvilinear_m_p_i_grid2d.html", null ]
       ] ]
     ] ],
-    [ "dg::aMPITopology3d", "../../dg/html/structdg_1_1a_m_p_i_topology3d.html", [
-      [ "dg::aMPIGeometry3d", "../../dg/html/structdg_1_1a_m_p_i_geometry3d.html", [
-        [ "dg::aProductMPIGeometry3d", "../../dg/html/structdg_1_1a_product_m_p_i_geometry3d.html", [
+    [ "dg::aRealMPITopology3d< real_type >", "../../dg/html/structdg_1_1a_real_m_p_i_topology3d.html", [
+      [ "dg::aRealMPIGeometry3d< real_type >", "../../dg/html/structdg_1_1a_real_m_p_i_geometry3d.html", [
+        [ "dg::aRealProductMPIGeometry3d< class >", "../../dg/html/structdg_1_1a_real_product_m_p_i_geometry3d.html", [
           [ "dg::geo::CurvilinearProductMPIGrid3d", "structdg_1_1geo_1_1_curvilinear_product_m_p_i_grid3d.html", null ]
         ] ]
       ] ]
     ] ],
-    [ "dg::aTopology2d", "../../dg/html/structdg_1_1a_topology2d.html", [
-      [ "dg::aGeometry2d", "../../dg/html/structdg_1_1a_geometry2d.html", [
+    [ "dg::aRealTopology2d< real_type >", "../../dg/html/structdg_1_1a_real_topology2d.html", [
+      [ "dg::aRealGeometry2d< real_type >", "../../dg/html/structdg_1_1a_real_geometry2d.html", [
         [ "dg::geo::CurvilinearGrid2d", "structdg_1_1geo_1_1_curvilinear_grid2d.html", null ]
       ] ]
     ] ],
-    [ "dg::aTopology3d", "../../dg/html/structdg_1_1a_topology3d.html", [
-      [ "dg::aGeometry3d", "../../dg/html/structdg_1_1a_geometry3d.html", [
-        [ "dg::aProductGeometry3d", "../../dg/html/structdg_1_1a_product_geometry3d.html", [
+    [ "dg::aRealTopology3d< real_type >", "../../dg/html/structdg_1_1a_real_topology3d.html", [
+      [ "dg::aRealGeometry3d< real_type >", "../../dg/html/structdg_1_1a_real_geometry3d.html", [
+        [ "dg::aRealProductGeometry3d< class >", "../../dg/html/structdg_1_1a_real_product_geometry3d.html", [
           [ "dg::geo::CurvilinearProductGrid3d", "structdg_1_1geo_1_1_curvilinear_product_grid3d.html", null ]
         ] ]
       ] ]
     ] ],
-    [ "dg::aTopologyX2d", "../../dg/html/structdg_1_1a_topology_x2d.html", [
-      [ "dg::aGeometryX2d", "../../dg/html/structdg_1_1a_geometry_x2d.html", [
+    [ "dg::aRealTopologyX2d< real_type >", "../../dg/html/structdg_1_1a_real_topology_x2d.html", [
+      [ "dg::aRealGeometryX2d< real_type >", "../../dg/html/structdg_1_1a_real_geometry_x2d.html", [
         [ "dg::geo::CurvilinearGridX2d", "structdg_1_1geo_1_1_curvilinear_grid_x2d.html", null ],
         [ "dg::geo::CurvilinearRefinedGridX2d", "structdg_1_1geo_1_1_curvilinear_refined_grid_x2d.html", null ]
       ] ]
     ] ],
-    [ "dg::aTopologyX3d", "../../dg/html/structdg_1_1a_topology_x3d.html", [
-      [ "dg::aGeometryX3d", "../../dg/html/structdg_1_1a_geometry_x3d.html", [
+    [ "dg::aRealTopologyX3d< real_type >", "../../dg/html/structdg_1_1a_real_topology_x3d.html", [
+      [ "dg::aRealGeometryX3d< real_type >", "../../dg/html/structdg_1_1a_real_geometry_x3d.html", [
         [ "dg::geo::CurvilinearProductGridX3d", "structdg_1_1geo_1_1_curvilinear_product_grid_x3d.html", null ],
         [ "dg::geo::CurvilinearRefinedProductGridX3d", "structdg_1_1geo_1_1_curvilinear_refined_product_grid_x3d.html", null ]
       ] ]
@@ -225,8 +225,8 @@ var hierarchy =
     [ "dg::geo::DS< ProductGeometry, IMatrix, Matrix, container >", "structdg_1_1geo_1_1_d_s.html", null ],
     [ "dg::geo::Fieldaligned< ProductGeometry, IMatrix, container >", "structdg_1_1geo_1_1_fieldaligned.html", null ],
     [ "dg::geo::FluxSurfaceAverage< container >", "structdg_1_1geo_1_1_flux_surface_average.html", null ],
-    [ "dg::geo::solovev::Parameters", "structdg_1_1geo_1_1solovev_1_1_parameters.html", null ],
     [ "dg::geo::guenther::Parameters", "structdg_1_1geo_1_1guenther_1_1_parameters.html", null ],
+    [ "dg::geo::solovev::Parameters", "structdg_1_1geo_1_1solovev_1_1_parameters.html", null ],
     [ "dg::geo::SafetyFactor< container >", "structdg_1_1geo_1_1_safety_factor.html", null ],
     [ "dg::geo::TokamakMagneticField", "structdg_1_1geo_1_1_tokamak_magnetic_field.html", null ]
 ];

@@ -1,0 +1,26 @@
+<map id="geometry/base_geometryX.h" name="geometry/base_geometryX.h">
+<area shape="rect" id="node2" href="$grid_x_8h.html" title="base X&#45;point topology classes " alt="" coords="207,237,269,263"/>
+<area shape="rect" id="node18" href="$evaluation_x_8h.html" title="Function discretization routines on X&#45;point topology. " alt="" coords="322,155,423,181"/>
+<area shape="rect" id="node21" href="$tensor_8h.html" title="tensor.h" alt="" coords="521,80,590,107"/>
+<area shape="rect" id="node5" href="$dlt_8h.html" title="contains the discrete legendre trafo class " alt="" coords="269,408,316,435"/>
+<area shape="rect" id="node13" href="$grid_8h.html" title="base topology classes " alt="" coords="279,326,333,353"/>
+<area shape="rect" id="node16" href="$enums_8h.html" title="enums " alt="" coords="5,408,89,435"/>
+<area shape="rect" id="node10" href="$exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="88,483,255,509"/>
+<area shape="rect" id="node15" href="$topological__traits_8h.html" title="topological_traits.h" alt="" coords="114,408,245,435"/>
+<area shape="rect" id="node19" href="$evaluation_8h.html" title="Function discretization routines. " alt="" coords="345,237,437,263"/>
+<area shape="rect" id="node22" href="$operator_8h.html" title="operator.h" alt="" coords="561,326,641,353"/>
+<area shape="rect" id="node25" href="$functors_8h.html" title="dg/functors.h" alt="" coords="642,155,741,181"/>
+<area shape="rect" id="node29" href="$blas1_8h.html" title="blas1.h" alt="" coords="1667,237,1731,263"/>
+<area shape="rect" id="node50" href="$functions_8h.html" title="contains some utility functions for the evaluation() routines " alt="" coords="1178,408,1341,435"/>
+<area shape="rect" id="node31" href="$tensor__traits_8h.html" title="backend/tensor_traits.h" alt="" coords="2283,408,2441,435"/>
+<area shape="rect" id="node38" href="$tensor__traits__scalar_8h.html" title="backend/tensor_traits\l_scalar.h" alt="" coords="2639,319,2786,360"/>
+<area shape="rect" id="node39" href="$tensor__traits__thrust_8h.html" title="backend/tensor_traits\l_thrust.h" alt="" coords="2085,319,2231,360"/>
+<area shape="rect" id="node41" href="$tensor__traits__cusp_8h.html" title="backend/tensor_traits\l_cusp.h" alt="" coords="1354,319,1501,360"/>
+<area shape="rect" id="node43" href="$tensor__traits__std_8h.html" title="backend/tensor_traits\l_std.h" alt="" coords="2469,319,2615,360"/>
+<area shape="rect" id="node46" href="$mpi__vector_8h.html" title="backend/mpi_vector.h" alt="" coords="868,326,1019,353"/>
+<area shape="rect" id="node49" href="$subroutines_8h.html" title="subroutines.h" alt="" coords="1043,326,1143,353"/>
+<area shape="rect" id="node34" href="$scalar__categories_8h.html" title="scalar_categories.h" alt="" coords="2635,483,2769,509"/>
+<area shape="rect" id="node35" href="$vector__categories_8h.html" title="vector_categories.h" alt="" coords="2131,557,2267,584"/>
+<area shape="rect" id="node36" href="$matrix__categories_8h.html" title="matrix_categories.h" alt="" coords="2131,632,2267,659"/>
+<area shape="rect" id="node37" href="$execution__policy_8h.html" title="execution_policy.h" alt="" coords="2378,483,2509,509"/>
+</map>

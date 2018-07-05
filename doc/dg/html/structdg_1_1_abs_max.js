@@ -1,4 +1,4 @@
 var structdg_1_1_abs_max =
 [
-    [ "operator()", "structdg_1_1_abs_max.html#a18193edda0b265205079751d4af3cf3b", null ]
+    [ "operator()", "structdg_1_1_abs_max.html#aa73147fe7e820ec19bde04147bdec369", null ]
 ];

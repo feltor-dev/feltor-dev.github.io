@@ -127,26 +127,32 @@ $(document).ready(function(){initNavTree('structdg_1_1_min_mod.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="structdg_1_1_min_mod-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">dg::MinMod&lt; T &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__misc.html">Level 00: Miscellaneous additions</a> &raquo; <a class="el" href="group__functions.html">Functions and Functors</a></div></div>  </div>
+<div class="title">dg::MinMod&lt; T &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__misc.html">Level 0: Miscellaneous additions</a> &raquo; <a class="el" href="group__functions.html">Functions and Functors</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Minmod function.  
+<p>Minmod function </p><p class="formulaDsp">
+\[ f(x_1, x_2, x_3) = \begin{cases} \min(x_1, x_2, x_3) \text{ for } x_1, x_2, x_3 &gt;0 \\ \max(x_1, x_2, x_3) \text{ for } x_1, x_2, x_3 &lt;0 \\ 0 \text{ else} \end{cases} \]
+</p>
+<p>.  
  <a href="structdg_1_1_min_mod.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="functors_8h_source.html">functors.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7f183cf0043fefbe5a928c40dba94a5f"><td class="memItemLeft" align="right" valign="top">__host__ __device__ T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_min_mod.html#a7f183cf0043fefbe5a928c40dba94a5f">operator()</a> (T a1, T a2, T a3) const </td></tr>
-<tr class="memdesc:a7f183cf0043fefbe5a928c40dba94a5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minmod of three numbers.  <a href="#a7f183cf0043fefbe5a928c40dba94a5f">More...</a><br /></td></tr>
-<tr class="separator:a7f183cf0043fefbe5a928c40dba94a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a906a58599fae3154576d0c4972d852d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_min_mod.html#a906a58599fae3154576d0c4972d852d0">operator()</a> (T a1, T a2, T a3) const </td></tr>
+<tr class="memdesc:a906a58599fae3154576d0c4972d852d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minmod of three numbers.  <a href="#a906a58599fae3154576d0c4972d852d0">More...</a><br /></td></tr>
+<tr class="separator:a906a58599fae3154576d0c4972d852d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class T&gt;<br />
 struct dg::MinMod&lt; T &gt;</h3>
 
-<p>Minmod function. </p>
+<p>Minmod function </p><p class="formulaDsp">
+\[ f(x_1, x_2, x_3) = \begin{cases} \min(x_1, x_2, x_3) \text{ for } x_1, x_2, x_3 &gt;0 \\ \max(x_1, x_2, x_3) \text{ for } x_1, x_2, x_3 &lt;0 \\ 0 \text{ else} \end{cases} \]
+</p>
+<p>. </p>
 <p>might be useful for flux limiter schemes </p><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>value-type </td></tr>
@@ -154,7 +160,7 @@ struct dg::MinMod&lt; T &gt;</h3>
   </dd>
 </dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a7f183cf0043fefbe5a928c40dba94a5f"></a>
+<a class="anchor" id="a906a58599fae3154576d0c4972d852d0"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -164,7 +170,7 @@ template&lt;class T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">__host__ __device__ T <a class="el" href="structdg_1_1_min_mod.html">dg::MinMod</a>&lt; T &gt;::operator() </td>
+          <td class="memname"><a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> T <a class="el" href="structdg_1_1_min_mod.html">dg::MinMod</a>&lt; T &gt;::operator() </td>
           <td>(</td>
           <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>a1</em>, </td>
@@ -216,7 +222,7 @@ template&lt;class T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_min_mod.html">MinMod</a></li>
-    <li class="footer">Generated on Thu Apr 26 2018 16:28:15 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Jul 5 2018 12:59:50 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

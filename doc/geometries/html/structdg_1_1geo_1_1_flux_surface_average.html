@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('structdg_1_1geo_1_1_flux_surface_avera
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9c6f7fd4e2a5c013f2f0285af256794d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_flux_surface_average.html#a9c6f7fd4e2a5c013f2f0285af256794d">FluxSurfaceAverage</a> (const <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1_grid2d.html">dg::Grid2d</a> &amp;g2d, const <a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">TokamakMagneticField</a> &amp;c, const container &amp;f)</td></tr>
+<tr class="memitem:a9c6f7fd4e2a5c013f2f0285af256794d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_flux_surface_average.html#a9c6f7fd4e2a5c013f2f0285af256794d">FluxSurfaceAverage</a> (const <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__gridtypes.html#ga4d84634067b1b3362041e211eec4de84">dg::Grid2d</a> &amp;g2d, const <a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">TokamakMagneticField</a> &amp;c, const container &amp;f)</td></tr>
 <tr class="memdesc:a9c6f7fd4e2a5c013f2f0285af256794d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from a field and a grid.  <a href="#a9c6f7fd4e2a5c013f2f0285af256794d">More...</a><br /></td></tr>
 <tr class="separator:a9c6f7fd4e2a5c013f2f0285af256794d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5b310759a3be85b39ecc7d86518cb32"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_flux_surface_average.html#ad5b310759a3be85b39ecc7d86518cb32">operator()</a> (double psip0)</td></tr>
@@ -160,7 +160,7 @@ struct dg::geo::FluxSurfaceAverage&lt; container &gt;</h3>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">container</td><td>A data container class for which the <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/namespacedg_1_1blas1.html">blas1</a> functionality is overloaded. We assume that container is copyable/assignable and has a swap member function. Currently this is one of<ul>
-<li><a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__typedefs.html#gab99e8227ed890885a7b9915806865a7a">dg::HVec</a>, <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6">dg::DVec</a>, <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__typedefs.html#ga3f854ffa533cafd10b9846258e40029f">dg::MHVec</a> or <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__typedefs.html#ga25cae493b710b17992387cce395ad7ae">dg::MDVec</a></li>
+<li><a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193">dg::HVec</a>, <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8">dg::DVec</a>, <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0">dg::MHVec</a> or <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55">dg::MDVec</a></li>
 <li>std::vector&lt;dg::HVec&gt;, std::vector&lt;dg::DVec&gt;, std::vector&lt;dg::MHVec&gt; or std::vector&lt;dg::MDVec&gt; . </li>
 </ul>
 </td></tr>
@@ -180,7 +180,7 @@ template&lt;class container  = thrust::host_vector&lt;double&gt;&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="structdg_1_1geo_1_1_flux_surface_average.html">dg::geo::FluxSurfaceAverage</a>&lt; container &gt;::<a class="el" href="structdg_1_1geo_1_1_flux_surface_average.html">FluxSurfaceAverage</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1_grid2d.html">dg::Grid2d</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__gridtypes.html#ga4d84634067b1b3362041e211eec4de84">dg::Grid2d</a> &amp;&#160;</td>
           <td class="paramname"><em>g2d</em>, </td>
         </tr>
         <tr>
@@ -264,7 +264,7 @@ template&lt;class container  = thrust::host_vector&lt;double&gt;&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="namespacedg_1_1geo.html">geo</a></li><li class="navelem"><a class="el" href="structdg_1_1geo_1_1_flux_surface_average.html">FluxSurfaceAverage</a></li>
-    <li class="footer">Generated on Thu Apr 26 2018 16:28:25 for Geometries by
+    <li class="footer">Generated on Thu Jul 5 2018 13:00:16 for Geometries by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -7,25 +7,25 @@
     <includes id="config_8h" name="config.h" local="yes" imported="no">config.h</includes>
     <namespace>exblas</namespace>
     <namespace>exblas::gpu</namespace>
-    <member kind="function">
-      <type>__device__ void</type>
+    <member kind="function" static="yes">
+      <type>static __device__ void</type>
       <name>Accumulate</name>
       <anchorfile>namespaceexblas_1_1gpu.html</anchorfile>
-      <anchor>a1037b279ed23b0434e43d78c3740e172</anchor>
+      <anchor>a0ce4483a8e61941fc3670e59f0a853aa</anchor>
       <arglist>(int64_t *accumulator, double x, int stride=1)</arglist>
     </member>
-    <member kind="function">
-      <type>__device__ int</type>
+    <member kind="function" static="yes">
+      <type>static __device__ int</type>
       <name>Normalize</name>
       <anchorfile>namespaceexblas_1_1gpu.html</anchorfile>
-      <anchor>a882e3a99c6359df21879466628f4a7ee</anchor>
+      <anchor>aeb32ed446b906beac69d2d39fac0854e</anchor>
       <arglist>(int64_t *accumulator, int &amp;imin, int &amp;imax, int stride=1)</arglist>
     </member>
-    <member kind="function">
-      <type>__device__ double</type>
+    <member kind="function" static="yes">
+      <type>static __device__ double</type>
       <name>Round</name>
       <anchorfile>namespaceexblas_1_1gpu.html</anchorfile>
-      <anchor>a9e876150be03f6f2aeea469b0f05e96a</anchor>
+      <anchor>acac8b5b8de3efcbb2af28ea75c7aaaf4</anchor>
       <arglist>(int64_t *accumulator)</arglist>
     </member>
   </compound>
@@ -36,25 +36,25 @@
     <includes id="config_8h" name="config.h" local="yes" imported="no">config.h</includes>
     <namespace>exblas</namespace>
     <namespace>exblas::cpu</namespace>
-    <member kind="function">
-      <type>void</type>
+    <member kind="function" static="yes">
+      <type>static void</type>
       <name>Accumulate</name>
       <anchorfile>namespaceexblas_1_1cpu.html</anchorfile>
-      <anchor>aa17c63d7de9cf3b1e665abc82776819f</anchor>
+      <anchor>ac925a99abc1f8095536d2661d5efe22f</anchor>
       <arglist>(int64_t *accumulator, double x)</arglist>
     </member>
-    <member kind="function">
-      <type>bool</type>
+    <member kind="function" static="yes">
+      <type>static bool</type>
       <name>Normalize</name>
       <anchorfile>namespaceexblas_1_1cpu.html</anchorfile>
-      <anchor>a0d34dd91bca12d9dc85e26239f7fac5a</anchor>
+      <anchor>aa6fb1968e9f213e58316d4cc9357cebe</anchor>
       <arglist>(int64_t *accumulator, int &amp;imin, int &amp;imax)</arglist>
     </member>
-    <member kind="function">
-      <type>double</type>
+    <member kind="function" static="yes">
+      <type>static double</type>
       <name>Round</name>
       <anchorfile>namespaceexblas_1_1cpu.html</anchorfile>
-      <anchor>a4ef061feac94e221be4d5cc89be855f0</anchor>
+      <anchor>ac16158f26c0ea9b96fea9cfacf870f53</anchor>
       <arglist>(int64_t *accumulator)</arglist>
     </member>
   </compound>
@@ -180,15 +180,15 @@
       <type>__host__ void</type>
       <name>exdot_gpu</name>
       <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>af187e44b5fad8eca6b94d9d85a3d301f</anchor>
-      <arglist>(unsigned size, const double *x1_ptr, const double *x2_ptr, int64_t *d_superacc)</arglist>
+      <anchor>adfc965cd8f0a664f66fee1753e524b72</anchor>
+      <arglist>(unsigned size, PointerOrValue1 x1_ptr, PointerOrValue2 x2_ptr, int64_t *d_superacc)</arglist>
     </member>
     <member kind="function">
       <type>__host__ void</type>
       <name>exdot_gpu</name>
       <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>a5e36340e4b65b69825a0437814f1c238</anchor>
-      <arglist>(unsigned size, const double *x1_ptr, const double *x2_ptr, const double *x3_ptr, int64_t *d_superacc)</arglist>
+      <anchor>a0fdc2cf4450407b8159bc234fac52004</anchor>
+      <arglist>(unsigned size, PointerOrValue1 x1_ptr, PointerOrValue2 x2_ptr, PointerOrValue3 x3_ptr, int64_t *d_superacc)</arglist>
     </member>
   </compound>
   <compound kind="file">
@@ -201,15 +201,15 @@
       <type>void</type>
       <name>exdot_omp</name>
       <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>a1fce74f08defeb202a9aedaa91953957</anchor>
-      <arglist>(unsigned size, const double *x1_ptr, const double *x2_ptr, int64_t *h_superacc)</arglist>
+      <anchor>a83939a86d028425bb1d38a22a331ec64</anchor>
+      <arglist>(unsigned size, PointerOrValue1 x1_ptr, PointerOrValue2 x2_ptr, int64_t *h_superacc)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>exdot_omp</name>
       <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>a743b74384d3d99e2d1d62e77516bd04d</anchor>
-      <arglist>(unsigned size, const double *x1_ptr, const double *x2_ptr, const double *x3_ptr, int64_t *h_superacc)</arglist>
+      <anchor>a5f168ffff8cb2ac645caa4ecae004f99</anchor>
+      <arglist>(unsigned size, PointerOrValue1 x1_ptr, PointerOrValue2 x2_ptr, PointerOrValue3 x3_ptr, int64_t *h_superacc)</arglist>
     </member>
   </compound>
   <compound kind="file">
@@ -222,15 +222,15 @@
       <type>void</type>
       <name>exdot_cpu</name>
       <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>a90ba074b4796ecb439b234f66c0c39b5</anchor>
-      <arglist>(unsigned size, const double *x1_ptr, const double *x2_ptr, int64_t *h_superacc)</arglist>
+      <anchor>af9ac3f6a557ba58156bb5d3d02b41758</anchor>
+      <arglist>(unsigned size, PointerOrValue1 x1_ptr, PointerOrValue2 x2_ptr, int64_t *h_superacc)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>exdot_cpu</name>
       <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>a93a0ce7073e454beb42af2473db7eb7f</anchor>
-      <arglist>(unsigned size, const double *x1_ptr, const double *x2_ptr, const double *x3_ptr, int64_t *h_superacc)</arglist>
+      <anchor>a3dbdfda94daaec2915cbdf9a080a8dfc</anchor>
+      <arglist>(unsigned size, PointerOrValue1 x1_ptr, PointerOrValue2 x2_ptr, PointerOrValue3 x3_ptr, int64_t *h_superacc)</arglist>
     </member>
   </compound>
   <compound kind="file">
@@ -239,18 +239,18 @@
     <filename>mpi__accumulate_8h</filename>
     <includes id="accumulate_8h" name="accumulate.h" local="yes" imported="no">accumulate.h</includes>
     <namespace>exblas</namespace>
-    <member kind="function">
-      <type>void</type>
+    <member kind="function" static="yes">
+      <type>static void</type>
       <name>mpi_reduce_communicator</name>
       <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>a8b66eb8c9a1af03aa85fc0ab073c3e2c</anchor>
+      <anchor>a0b5cd15f02ce8ac7c0a18d7a0691c2e8</anchor>
       <arglist>(MPI_Comm comm, MPI_Comm *comm_mod, MPI_Comm *comm_mod_reduce)</arglist>
     </member>
-    <member kind="function">
-      <type>void</type>
+    <member kind="function" static="yes">
+      <type>static void</type>
       <name>reduce_mpi_cpu</name>
       <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>aaef8171408fa1de05dad4d923637b4ea</anchor>
+      <anchor>ab4c1247c02e14edcae026d41b3f5c6fb</anchor>
       <arglist>(unsigned num_superacc, int64_t *in, int64_t *out, MPI_Comm comm, MPI_Comm comm_mod, MPI_Comm comm_mod_reduce)</arglist>
     </member>
   </compound>
@@ -331,56 +331,56 @@
       <type>__host__ void</type>
       <name>exdot_gpu</name>
       <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>af187e44b5fad8eca6b94d9d85a3d301f</anchor>
-      <arglist>(unsigned size, const double *x1_ptr, const double *x2_ptr, int64_t *d_superacc)</arglist>
+      <anchor>adfc965cd8f0a664f66fee1753e524b72</anchor>
+      <arglist>(unsigned size, PointerOrValue1 x1_ptr, PointerOrValue2 x2_ptr, int64_t *d_superacc)</arglist>
     </member>
     <member kind="function">
       <type>__host__ void</type>
       <name>exdot_gpu</name>
       <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>a5e36340e4b65b69825a0437814f1c238</anchor>
-      <arglist>(unsigned size, const double *x1_ptr, const double *x2_ptr, const double *x3_ptr, int64_t *d_superacc)</arglist>
+      <anchor>a0fdc2cf4450407b8159bc234fac52004</anchor>
+      <arglist>(unsigned size, PointerOrValue1 x1_ptr, PointerOrValue2 x2_ptr, PointerOrValue3 x3_ptr, int64_t *d_superacc)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>exdot_omp</name>
       <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>a1fce74f08defeb202a9aedaa91953957</anchor>
-      <arglist>(unsigned size, const double *x1_ptr, const double *x2_ptr, int64_t *h_superacc)</arglist>
+      <anchor>a83939a86d028425bb1d38a22a331ec64</anchor>
+      <arglist>(unsigned size, PointerOrValue1 x1_ptr, PointerOrValue2 x2_ptr, int64_t *h_superacc)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>exdot_omp</name>
       <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>a743b74384d3d99e2d1d62e77516bd04d</anchor>
-      <arglist>(unsigned size, const double *x1_ptr, const double *x2_ptr, const double *x3_ptr, int64_t *h_superacc)</arglist>
+      <anchor>a5f168ffff8cb2ac645caa4ecae004f99</anchor>
+      <arglist>(unsigned size, PointerOrValue1 x1_ptr, PointerOrValue2 x2_ptr, PointerOrValue3 x3_ptr, int64_t *h_superacc)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>exdot_cpu</name>
       <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>a90ba074b4796ecb439b234f66c0c39b5</anchor>
-      <arglist>(unsigned size, const double *x1_ptr, const double *x2_ptr, int64_t *h_superacc)</arglist>
+      <anchor>af9ac3f6a557ba58156bb5d3d02b41758</anchor>
+      <arglist>(unsigned size, PointerOrValue1 x1_ptr, PointerOrValue2 x2_ptr, int64_t *h_superacc)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>exdot_cpu</name>
       <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>a93a0ce7073e454beb42af2473db7eb7f</anchor>
-      <arglist>(unsigned size, const double *x1_ptr, const double *x2_ptr, const double *x3_ptr, int64_t *h_superacc)</arglist>
+      <anchor>a3dbdfda94daaec2915cbdf9a080a8dfc</anchor>
+      <arglist>(unsigned size, PointerOrValue1 x1_ptr, PointerOrValue2 x2_ptr, PointerOrValue3 x3_ptr, int64_t *h_superacc)</arglist>
     </member>
-    <member kind="function">
-      <type>void</type>
+    <member kind="function" static="yes">
+      <type>static void</type>
       <name>mpi_reduce_communicator</name>
       <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>a8b66eb8c9a1af03aa85fc0ab073c3e2c</anchor>
+      <anchor>a0b5cd15f02ce8ac7c0a18d7a0691c2e8</anchor>
       <arglist>(MPI_Comm comm, MPI_Comm *comm_mod, MPI_Comm *comm_mod_reduce)</arglist>
     </member>
-    <member kind="function">
-      <type>void</type>
+    <member kind="function" static="yes">
+      <type>static void</type>
       <name>reduce_mpi_cpu</name>
       <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>aaef8171408fa1de05dad4d923637b4ea</anchor>
+      <anchor>ab4c1247c02e14edcae026d41b3f5c6fb</anchor>
       <arglist>(unsigned num_superacc, int64_t *in, int64_t *out, MPI_Comm comm, MPI_Comm comm_mod, MPI_Comm comm_mod_reduce)</arglist>
     </member>
     <member kind="variable" static="yes">
@@ -443,50 +443,50 @@
   <compound kind="namespace">
     <name>exblas::cpu</name>
     <filename>namespaceexblas_1_1cpu.html</filename>
-    <member kind="function">
-      <type>void</type>
+    <member kind="function" static="yes">
+      <type>static void</type>
       <name>Accumulate</name>
       <anchorfile>namespaceexblas_1_1cpu.html</anchorfile>
-      <anchor>aa17c63d7de9cf3b1e665abc82776819f</anchor>
+      <anchor>ac925a99abc1f8095536d2661d5efe22f</anchor>
       <arglist>(int64_t *accumulator, double x)</arglist>
     </member>
-    <member kind="function">
-      <type>bool</type>
+    <member kind="function" static="yes">
+      <type>static bool</type>
       <name>Normalize</name>
       <anchorfile>namespaceexblas_1_1cpu.html</anchorfile>
-      <anchor>a0d34dd91bca12d9dc85e26239f7fac5a</anchor>
+      <anchor>aa6fb1968e9f213e58316d4cc9357cebe</anchor>
       <arglist>(int64_t *accumulator, int &amp;imin, int &amp;imax)</arglist>
     </member>
-    <member kind="function">
-      <type>double</type>
+    <member kind="function" static="yes">
+      <type>static double</type>
       <name>Round</name>
       <anchorfile>namespaceexblas_1_1cpu.html</anchorfile>
-      <anchor>a4ef061feac94e221be4d5cc89be855f0</anchor>
+      <anchor>ac16158f26c0ea9b96fea9cfacf870f53</anchor>
       <arglist>(int64_t *accumulator)</arglist>
     </member>
   </compound>
   <compound kind="namespace">
     <name>exblas::gpu</name>
     <filename>namespaceexblas_1_1gpu.html</filename>
-    <member kind="function">
-      <type>__device__ void</type>
+    <member kind="function" static="yes">
+      <type>static __device__ void</type>
       <name>Accumulate</name>
       <anchorfile>namespaceexblas_1_1gpu.html</anchorfile>
-      <anchor>a1037b279ed23b0434e43d78c3740e172</anchor>
+      <anchor>a0ce4483a8e61941fc3670e59f0a853aa</anchor>
       <arglist>(int64_t *accumulator, double x, int stride=1)</arglist>
     </member>
-    <member kind="function">
-      <type>__device__ int</type>
+    <member kind="function" static="yes">
+      <type>static __device__ int</type>
       <name>Normalize</name>
       <anchorfile>namespaceexblas_1_1gpu.html</anchorfile>
-      <anchor>a882e3a99c6359df21879466628f4a7ee</anchor>
+      <anchor>aeb32ed446b906beac69d2d39fac0854e</anchor>
       <arglist>(int64_t *accumulator, int &amp;imin, int &amp;imax, int stride=1)</arglist>
     </member>
-    <member kind="function">
-      <type>__device__ double</type>
+    <member kind="function" static="yes">
+      <type>static __device__ double</type>
       <name>Round</name>
       <anchorfile>namespaceexblas_1_1gpu.html</anchorfile>
-      <anchor>a9e876150be03f6f2aeea469b0f05e96a</anchor>
+      <anchor>acac8b5b8de3efcbb2af28ea75c7aaaf4</anchor>
       <arglist>(int64_t *accumulator)</arglist>
     </member>
   </compound>

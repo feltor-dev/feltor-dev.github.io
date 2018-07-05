@@ -1,5 +1,3 @@
 <map id="The tag dispatch system" name="The tag dispatch system">
-<area shape="rect" id="node1" href="$group__vec__list.html" title="List of Vector Traits\l specializations" alt="" coords="505,5,643,47"/>
-<area shape="rect" id="node3" href="$group__mat__list.html" title="List of Matrix Traits\l specializations" alt="" coords="507,77,641,119"/>
-<area shape="rect" id="node4" href="$group__blas.html" title="Basic Linear Algebra\l Subroutines" alt="" coords="5,41,148,83"/>
+<area shape="rect" id="node2" href="$group__backend.html" title="Level 1: Vectors, Matrices\l and basic operations" alt="" coords="5,5,180,47"/>
 </map>

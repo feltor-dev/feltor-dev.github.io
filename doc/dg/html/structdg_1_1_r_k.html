@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Discontinuous Galerkin Library: dg::RK&lt; k, container &gt; Struct Template Reference</title>
+<title>Discontinuous Galerkin Library: dg::RK&lt; s, ContainerType &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -124,14 +124,15 @@ $(document).ready(function(){initNavTree('structdg_1_1_r_k.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="structdg_1_1_r_k-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">dg::RK&lt; k, container &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__numerical0.html">Level 2: Basic numerical algorithms</a> &raquo; <a class="el" href="group__time.html">Time integrators</a></div></div>  </div>
+<div class="title">dg::RK&lt; s, ContainerType &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__numerical0.html">Level 2: Basic numerical algorithms</a> &raquo; <a class="el" href="group__time.html">Time integrators</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Struct for Runge-Kutta explicit time-integration </p><p class="formulaDsp">
+<p>Struct for Runge-Kutta explicit time-integration, classic formulation </p><p class="formulaDsp">
 \[ \begin{align} u^{n+1} = u^{n} + \Delta t\sum_{j=1}^s b_j k_j \\ k_j = f\left( u^n + \Delta t \sum_{l=1}^j a_{jl} k_l\right) \end{align} \]
 </p>
 <p>.  
@@ -139,53 +140,104 @@ $(document).ready(function(){initNavTree('structdg_1_1_r_k.html','');});
 
 <p><code>#include &lt;<a class="el" href="runge__kutta_8h_source.html">runge_kutta.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a78540b38078f021290c60e92b107689f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_r_k.html#a78540b38078f021290c60e92b107689f">real_type</a> = <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt;</td></tr>
+<tr class="separator:a78540b38078f021290c60e92b107689f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5c25c43af2d6a668a0f501d230d18f0c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_r_k.html#a5c25c43af2d6a668a0f501d230d18f0c">RK</a> (const container &amp;copyable)</td></tr>
-<tr class="memdesc:a5c25c43af2d6a668a0f501d230d18f0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserve memory for the integration.  <a href="#a5c25c43af2d6a668a0f501d230d18f0c">More...</a><br /></td></tr>
-<tr class="separator:a5c25c43af2d6a668a0f501d230d18f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab338d003b765b52a570e517ce2ccd6d8"><td class="memTemplParams" colspan="2">template&lt;class Functor &gt; </td></tr>
-<tr class="memitem:ab338d003b765b52a570e517ce2ccd6d8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_r_k.html#ab338d003b765b52a570e517ce2ccd6d8">operator()</a> (Functor &amp;f, const container &amp;u0, container &amp;u1, double dt)</td></tr>
-<tr class="memdesc:ab338d003b765b52a570e517ce2ccd6d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advance u0 one timestep.  <a href="#ab338d003b765b52a570e517ce2ccd6d8">More...</a><br /></td></tr>
-<tr class="separator:ab338d003b765b52a570e517ce2ccd6d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2389208cbbdd701db18155de6fe31975"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_r_k.html#a2389208cbbdd701db18155de6fe31975">RK</a> ()</td></tr>
+<tr class="memdesc:a2389208cbbdd701db18155de6fe31975"><td class="mdescLeft">&#160;</td><td class="mdescRight">No memory allocation, Call <code>construct</code> before using the object.  <a href="#a2389208cbbdd701db18155de6fe31975">More...</a><br /></td></tr>
+<tr class="separator:a2389208cbbdd701db18155de6fe31975"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25b7883ec7118f8adb85baee2b81d8e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_r_k.html#a25b7883ec7118f8adb85baee2b81d8e6">RK</a> (const ContainerType &amp;copyable)</td></tr>
+<tr class="memdesc:a25b7883ec7118f8adb85baee2b81d8e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserve internal workspace for the integration.  <a href="#a25b7883ec7118f8adb85baee2b81d8e6">More...</a><br /></td></tr>
+<tr class="separator:a25b7883ec7118f8adb85baee2b81d8e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf25ba6332995423600b55d3eb1f35bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_r_k.html#aaf25ba6332995423600b55d3eb1f35bf">construct</a> (const ContainerType &amp;copyable)</td></tr>
+<tr class="memdesc:aaf25ba6332995423600b55d3eb1f35bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserve internal workspace for the integration.  <a href="#aaf25ba6332995423600b55d3eb1f35bf">More...</a><br /></td></tr>
+<tr class="separator:aaf25ba6332995423600b55d3eb1f35bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2eaa58bb368d12ca3029eab3e5ca2e2"><td class="memTemplParams" colspan="2">template&lt;class RHS &gt; </td></tr>
+<tr class="memitem:ae2eaa58bb368d12ca3029eab3e5ca2e2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_r_k.html#ae2eaa58bb368d12ca3029eab3e5ca2e2">step</a> (RHS &amp;rhs, <a class="el" href="structdg_1_1_r_k.html#a78540b38078f021290c60e92b107689f">real_type</a> t0, const ContainerType &amp;u0, <a class="el" href="structdg_1_1_r_k.html#a78540b38078f021290c60e92b107689f">real_type</a> &amp;t1, ContainerType &amp;u1, <a class="el" href="structdg_1_1_r_k.html#a78540b38078f021290c60e92b107689f">real_type</a> dt)</td></tr>
+<tr class="memdesc:ae2eaa58bb368d12ca3029eab3e5ca2e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advance one step.  <a href="#ae2eaa58bb368d12ca3029eab3e5ca2e2">More...</a><br /></td></tr>
+<tr class="separator:ae2eaa58bb368d12ca3029eab3e5ca2e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;size_t k, class container&gt;<br />
-struct dg::RK&lt; k, container &gt;</h3>
+<div class="textblock"><h3>template&lt;size_t s, class ContainerType&gt;<br />
+struct dg::RK&lt; s, ContainerType &gt;</h3>
 
-<p>Struct for Runge-Kutta explicit time-integration </p><p class="formulaDsp">
+<p>Struct for Runge-Kutta explicit time-integration, classic formulation </p><p class="formulaDsp">
 \[ \begin{align} u^{n+1} = u^{n} + \Delta t\sum_{j=1}^s b_j k_j \\ k_j = f\left( u^n + \Delta t \sum_{l=1}^j a_{jl} k_l\right) \end{align} \]
 </p>
 <p>. </p>
-<p>Uses only <a class="el" href="group__blas1.html#gaf35427a456cd09d5ec8e5ed97378933c" title=" ">dg::blas1::axpby()</a> routines to integrate one step. The coefficients are in the form Cockburn proposed in his paper. It's just a reformulation in that you don't store the sequence of k_j but rather the abscissas u_j with k_j = f(u_j) Note that if you knew all k_j you can compute this sequence u_j via u=Bk. To derive these coefficients from the butcher tableau consider. </p><p class="formulaDsp">
-\[ u = Bhk = (B-D)hk + Dhk = (B-D)B^{-1}y + Dhk = ( 1- DB^{-1})u + Dhk = \alpha u + \beta h k\]
-</p>
-<p> where \( B\) is the butcher tableau without the c's and extended by ones on the left and \( D\) its diagonal part. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> rhs(<span class="keywordtype">double</span> t, <span class="keyword">const</span> std::array&lt;double,2&gt;&amp; y, std::array&lt;double,2&gt;&amp; yp, <span class="keywordtype">double</span> damping, <span class="keywordtype">double</span> omega_0, <span class="keywordtype">double</span> omega_drive){</div><div class="line">    <span class="comment">//damped driven harmonic oscillator</span></div><div class="line">    <span class="comment">// x -&gt; y[0] , v -&gt; y[1]</span></div><div class="line">    yp[0] = y[1];</div><div class="line">    yp[1] = -2.*damping*omega_0*y[1] - omega_0*omega_0*y[0] + sin(omega_drive*t);</div><div class="line">}</div></div><!-- fragment --><div class="fragment"><div class="line">    <span class="comment">//... in main</span></div><div class="line">    <span class="comment">//set start and end time, number of steps and timestep</span></div><div class="line">    <span class="keyword">const</span> <span class="keywordtype">double</span> t_start = 0., t_end = 1.;</div><div class="line">    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> N = 40;</div><div class="line">    <span class="keyword">const</span> <span class="keywordtype">double</span> dt = (t_end - t_start)/(<span class="keywordtype">double</span>)N;</div><div class="line">    <span class="comment">//set physical parameters and initial condition</span></div><div class="line">    <span class="keyword">const</span> <span class="keywordtype">double</span> damping = 0.2, omega_0 = 1.0, omega_drive = 0.9;</div><div class="line">    std::array&lt;double,2&gt; u = solution(t_start, damping, omega_0, omega_drive);</div><div class="line">    <span class="comment">//construct Runge Kutta class</span></div><div class="line">    <a class="code" href="structdg_1_1_r_k.html">dg::RK&lt;2, std::array&lt;double,2&gt;</a> &gt;  rk( u);</div><div class="line">    <span class="comment">//construct a functor with the right interface</span></div><div class="line">    <span class="keyword">using namespace </span>std::placeholders; <span class="comment">//for _1, _2, _3</span></div><div class="line">    <span class="keyword">auto</span> functor = std::bind( rhs, _1, _2, _3, damping, omega_0, omega_drive);</div><div class="line">    <span class="comment">//integration loop</span></div><div class="line">    <span class="keywordtype">double</span> t=t_start;</div><div class="line">    <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> i=0; i&lt;N; i++)</div><div class="line">        rk.step( functor, t, u, t, u, dt); <span class="comment">//step inplace</span></div><div class="line">    <span class="comment">//now compute error</span></div><div class="line">    <a class="code" href="group__blas1.html#ga5c7ddbf70dd74867e45c9d4f40b36cf7">dg::blas1::axpby</a>( 1., solution(t_end, damping, omega_0, omega_drive), -1., u);</div><div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Norm of error is &quot;</span>&lt;&lt;<a class="code" href="group__geometry.html#gad6e077288a8dac522ac3d69e18ff4731">sqrt</a>(<a class="code" href="group__blas1.html#ga7b2aa636a0fe0c7d3298b9f869658919">dg::blas1::dot</a>( u, u))&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;</div></div><!-- fragment --><p>Uses only <code><a class="el" href="group__blas1.html#ga5c7ddbf70dd74867e45c9d4f40b36cf7" title=" ">dg::blas1::axpby()</a></code> routine to integrate one step. The coefficients are chosen in the classic form given by Runge and Kutta. Needs more vector additions than our <a class="el" href="structdg_1_1_r_k__opt.html" title="Struct for Runge-Kutta explicit time-integration optimized for few vector additions ...">RK_opt</a> class but we implemented higher orders </p><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">k</td><td>Order of the method (1, 2, 3 or 4)</td></tr>
-    <tr><td class="paramname">container</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_vector_traits.html" title="The vector traits. ">VectorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> or <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. For example, this is one of<ul>
-<li><code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code>, <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code>, <code><a class="el" href="group__typedefs.html#ga3f854ffa533cafd10b9846258e40029f" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code><a class="el" href="group__typedefs.html#ga25cae493b710b17992387cce395ad7ae" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> </li>
-<li><code>std::vector&lt;dg::DVec&gt;</code>, <code>std::array&lt;dg::MHVec, 3&gt;</code>, <code>std::array&lt;double, 4&gt;</code> ... </li>
+    <tr><td class="paramname">s</td><td>Order of the method (1, 2, 3, 4, 6, 17)</td></tr>
+    <tr><td class="paramname">ContainerType</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> and <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. Among others<ul>
+<li><code> <a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193" title="Host Vector. ">dg::HVec</a> (serial), <a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a> (cuda / omp), <a class="el" href="group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a> (mpi + serial) or <a class="el" href="group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a> (mpi + cuda / omp) </code></li>
+<li><code> std::vector&lt;dg::DVec&gt; (vector of shared device vectors), std::array&lt;double, 4&gt; (array of 4 doubles)</code></li>
+<li><code> double (scalar)</code> and other primitive types ...</li>
 </ul>
-</td></tr>
+If there are several <code>ContainerTypes</code> in the argument list, then <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> must exist for all of them </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__vec__list.html">List of Vector Traits specializations</a> </dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a5c25c43af2d6a668a0f501d230d18f0c"></a>
+<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="index.html#dispatch">The Level 1 dispatch system</a> for a detailed explanation of our type dispatch system </dd></dl>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="a78540b38078f021290c60e92b107689f"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;size_t k, class container &gt; </div>
+template&lt;size_t s, class ContainerType&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structdg_1_1_r_k.html">dg::RK</a>&lt; s, ContainerType &gt;::<a class="el" href="structdg_1_1_r_k.html#a78540b38078f021290c60e92b107689f">real_type</a> =  <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt;ContainerType&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a2389208cbbdd701db18155de6fe31975"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t s, class ContainerType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdg_1_1_r_k.html">dg::RK</a>&lt; k, container &gt;::<a class="el" href="structdg_1_1_r_k.html">RK</a> </td>
+          <td class="memname"><a class="el" href="structdg_1_1_r_k.html">dg::RK</a>&lt; s, ContainerType &gt;::<a class="el" href="structdg_1_1_r_k.html">RK</a> </td>
           <td>(</td>
-          <td class="paramtype">const container &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>No memory allocation, Call <code>construct</code> before using the object. </p>
+
+</div>
+</div>
+<a class="anchor" id="a25b7883ec7118f8adb85baee2b81d8e6"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t s, class ContainerType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdg_1_1_r_k.html">dg::RK</a>&lt; s, ContainerType &gt;::<a class="el" href="structdg_1_1_r_k.html">RK</a> </td>
+          <td>(</td>
+          <td class="paramtype">const ContainerType &amp;&#160;</td>
           <td class="paramname"><em>copyable</em></td><td>)</td>
           <td></td>
         </tr>
@@ -197,47 +249,95 @@ template&lt;size_t k, class container &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Reserve memory for the integration. </p>
+<p>Reserve internal workspace for the integration. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">copyable</td><td>container of size which is used in integration. A container object must be copy-constructible from copyable. </td></tr>
+    <tr><td class="paramname">copyable</td><td>ContainerType of the size that is used in <code>step</code> </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section note"><dt>Note</dt><dd>it does not matter what values <code>copyable</code> contains, but its size is important </dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ab338d003b765b52a570e517ce2ccd6d8"></a>
+<a class="anchor" id="aaf25ba6332995423600b55d3eb1f35bf"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;size_t k, class container &gt; </div>
-<div class="memtemplate">
-template&lt;class Functor &gt; </div>
+template&lt;size_t s, class ContainerType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="structdg_1_1_r_k.html">dg::RK</a>&lt; k, container &gt;::operator() </td>
+          <td class="memname">void <a class="el" href="structdg_1_1_r_k.html">dg::RK</a>&lt; s, ContainerType &gt;::construct </td>
           <td>(</td>
-          <td class="paramtype">Functor &amp;&#160;</td>
-          <td class="paramname"><em>f</em>, </td>
+          <td class="paramtype">const ContainerType &amp;&#160;</td>
+          <td class="paramname"><em>copyable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reserve internal workspace for the integration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">copyable</td><td>ContainerType of the size that is used in <code>step</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>it does not matter what values <code>copyable</code> contains, but its size is important </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae2eaa58bb368d12ca3029eab3e5ca2e2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t s, class ContainerType &gt; </div>
+<div class="memtemplate">
+template&lt;class RHS &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structdg_1_1_r_k.html">dg::RK</a>&lt; s, ContainerType &gt;::step </td>
+          <td>(</td>
+          <td class="paramtype">RHS &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const container &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structdg_1_1_r_k.html#a78540b38078f021290c60e92b107689f">real_type</a>&#160;</td>
+          <td class="paramname"><em>t0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ContainerType &amp;&#160;</td>
           <td class="paramname"><em>u0</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">container &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structdg_1_1_r_k.html#a78540b38078f021290c60e92b107689f">real_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>t1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ContainerType &amp;&#160;</td>
           <td class="paramname"><em>u1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype"><a class="el" href="structdg_1_1_r_k.html#a78540b38078f021290c60e92b107689f">real_type</a>&#160;</td>
           <td class="paramname"><em>dt</em>&#160;</td>
         </tr>
         <tr>
@@ -248,19 +348,21 @@ template&lt;class Functor &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Advance u0 one timestep. </p>
+<p>Advance one step. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Functor</td><td>models BinaryFunction with no return type (subroutine) Its arguments both have to be of type container. The first argument is the actual argument, The second contains the return value, i.e. y' = f(y) translates to f( y, y'). </td></tr>
+    <tr><td class="paramname">RHS</td><td>The right hand side is a functor type with no return value (subroutine) of signature <code> void operator()(value_type, const ContainerType&amp;, ContainerType&amp;)</code> The first argument is the time, the second is the input vector, which the functor may <b>not</b> override, and the third is the output, i.e. y' = f(t, y) translates to f(t, y, y'). The two ContainerType arguments never alias each other in calls to the functor. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">f</td><td>right hand side function </td></tr>
-    <tr><td class="paramname">u0</td><td>initial value </td></tr>
-    <tr><td class="paramname">u1</td><td>contains result on output. u0 and u1 may currently not be the same. </td></tr>
-    <tr><td class="paramname">dt</td><td>The timestep. </td></tr>
+    <tr><td class="paramname">rhs</td><td>right hand side subroutine </td></tr>
+    <tr><td class="paramname">t0</td><td>start time </td></tr>
+    <tr><td class="paramname">u0</td><td>value at <code>t0</code> </td></tr>
+    <tr><td class="paramname">t1</td><td>(write only) end time ( equals <code>t0+dt</code> on output, may alias <code>t0</code>) </td></tr>
+    <tr><td class="paramname">u1</td><td>(write only) contains result on output (may alias u0) </td></tr>
+    <tr><td class="paramname">dt</td><td>timestep </td></tr>
   </table>
   </dd>
 </dl>
@@ -276,7 +378,7 @@ template&lt;class Functor &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_r_k.html">RK</a></li>
-    <li class="footer">Generated on Thu Apr 26 2018 16:28:15 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Jul 5 2018 12:59:50 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

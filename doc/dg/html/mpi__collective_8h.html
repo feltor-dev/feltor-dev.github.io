@@ -88,6 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -127,7 +128,45 @@ $(document).ready(function(){initNavTree('mpi__collective_8h.html','');});
 <div class="title">mpi_collective.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;thrust/sequence.h&gt;</code><br />
+<code>#include &lt;thrust/sort.h&gt;</code><br />
+<code>#include &lt;thrust/gather.h&gt;</code><br />
+<code>#include &lt;thrust/scatter.h&gt;</code><br />
+<code>#include &lt;thrust/host_vector.h&gt;</code><br />
+<code>#include &lt;thrust/device_vector.h&gt;</code><br />
+<code>#include &quot;blas1_dispatch_shared.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="blas1_8h_source.html">dg/blas1.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="memory_8h_source.html">memory.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mpi__communicator_8h_source.html">mpi_communicator.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for mpi_collective.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="mpi__collective_8h__incl.png" border="0" usemap="#backend_2mpi__collective_8h" alt=""/></div>
+<map name="backend_2mpi__collective_8h" id="backend_2mpi__collective_8h">
+<area shape="rect" id="node35" href="blas1_8h.html" title="dg/blas1.h" alt="" coords="1448,95,1531,121"/>
+<area shape="rect" id="node45" href="mpi__communicator_8h.html" title="mpi_communicator.h" alt="" coords="1767,288,1910,315"/>
+<area shape="rect" id="node47" href="memory_8h.html" title="memory.h" alt="" coords="1995,288,2075,315"/>
+<area shape="rect" id="node37" href="tensor__traits__scalar_8h.html" title="backend/tensor_traits\l_scalar.h" alt="" coords="2173,184,2320,225"/>
+<area shape="rect" id="node38" href="tensor__traits__thrust_8h.html" title="backend/tensor_traits\l_thrust.h" alt="" coords="1416,184,1563,225"/>
+<area shape="rect" id="node39" href="tensor__traits__cusp_8h.html" title="backend/tensor_traits\l_cusp.h" alt="" coords="299,184,445,225"/>
+<area shape="rect" id="node41" href="tensor__traits__std_8h.html" title="backend/tensor_traits\l_std.h" alt="" coords="933,184,1080,225"/>
+<area shape="rect" id="node44" href="mpi__vector_8h.html" title="backend/mpi_vector.h" alt="" coords="758,191,909,218"/>
+<area shape="rect" id="node50" href="subroutines_8h.html" title="subroutines.h" alt="" coords="1291,191,1391,218"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="mpi__collective_8h__dep__incl.png" border="0" usemap="#backend_2mpi__collective_8hdep" alt=""/></div>
+<map name="backend_2mpi__collective_8hdep" id="backend_2mpi__collective_8hdep">
+<area shape="rect" id="node2" href="mpi__projection_8h.html" title="Useful MPI typedefs and overloads of interpolation and projection. " alt="" coords="21,80,195,107"/>
+<area shape="rect" id="node3" href="multigrid_8h.html" title="multigrid.h" alt="" coords="5,155,88,181"/>
+<area shape="rect" id="node5" href="refined__elliptic_8h.html" title="contains an elliptic method on a refined grid " alt="" coords="113,155,229,181"/>
+<area shape="rect" id="node4" href="algorithm_8h.html" title="algorithm.h" alt="" coords="65,229,151,256"/>
+</map>
+</div>
+</div>
 <p><a href="mpi__collective_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -154,7 +193,7 @@ Namespaces</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_8c739bbef76d64b22d6b0911c526dd76.html">backend</a></li><li class="navelem"><a class="el" href="mpi__collective_8h.html">mpi_collective.h</a></li>
-    <li class="footer">Generated on Thu Apr 26 2018 16:28:14 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Jul 5 2018 12:59:49 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

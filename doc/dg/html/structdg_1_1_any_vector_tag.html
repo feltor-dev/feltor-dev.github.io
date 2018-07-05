@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('structdg_1_1_any_vector_tag.html','');
 
 <div class="header">
   <div class="headertitle">
-<div class="title">dg::AnyVectorTag Struct Reference<div class="ingroups"><a class="el" href="group__backend.html">Level 1: Vectors, Matrices and basic operations</a> &raquo; <a class="el" href="group__blas.html">Basic Linear Algebra Subroutines</a> &raquo; <a class="el" href="group__dispatch.html">The tag dispatch system</a></div></div>  </div>
+<div class="title">dg::AnyVectorTag Struct Reference<div class="ingroups"><a class="el" href="group__backend.html">Level 1: Vectors, Matrices and basic operations</a> &raquo; <a class="el" href="group__dispatch.html">The tag dispatch system</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -137,20 +137,26 @@ Inheritance diagram for dg::AnyVectorTag:</div>
 <div class="dyncontent">
 <div class="center"><img src="structdg_1_1_any_vector_tag__inherit__graph.png" border="0" usemap="#dg_1_1_any_vector_tag_inherit__map" alt="Inheritance graph"/></div>
 <map name="dg_1_1_any_vector_tag_inherit__map" id="dg_1_1_any_vector_tag_inherit__map">
-<area shape="rect" id="node2" href="structdg_1_1_m_p_i_vector_tag.html" title="A distributed vector contains a data container and a MPI communicator. " alt="" coords="5,80,133,107"/>
-<area shape="rect" id="node3" href="structdg_1_1_shared_vector_tag.html" title="Indicate a contiguous chunk of shared memory. " alt="" coords="158,80,303,107"/>
-<area shape="rect" id="node7" href="structdg_1_1_vector_vector_tag.html" title="This tag indicates composition/recursion. " alt="" coords="327,80,470,107"/>
-<area shape="rect" id="node4" href="structdg_1_1_thrust_vector_tag.html" title="Indicate that thrust &#45; like members are available. " alt="" coords="160,155,301,181"/>
-<area shape="rect" id="node5" href="structdg_1_1_cusp_vector_tag.html" title="special tag for cusp arrays " alt="" coords="89,229,223,256"/>
-<area shape="rect" id="node6" href="structdg_1_1_std_array_tag.html" title="std::array&lt; primitive_type&gt; " alt="" coords="248,229,365,256"/>
-<area shape="rect" id="node8" href="structdg_1_1_array_vector_tag.html" title="std::array of containers " alt="" coords="331,155,466,181"/>
+<area shape="rect" id="node3" href="structdg_1_1_any_scalar_tag.html" title="Scalar Tag base class, indicates the basic Scalar Tensor concept. " alt="" coords="5,155,132,181"/>
+<area shape="rect" id="node5" href="structdg_1_1_m_p_i_vector_tag.html" title="A distributed vector contains a data container and a MPI communicator. " alt="" coords="157,155,285,181"/>
+<area shape="rect" id="node6" href="structdg_1_1_recursive_vector_tag.html" title="This tag indicates composition/recursion. " alt="" coords="309,155,471,181"/>
+<area shape="rect" id="node8" href="structdg_1_1_shared_vector_tag.html" title="Indicate a contiguous chunk of shared memory. " alt="" coords="496,155,641,181"/>
+<area shape="rect" id="node2" href="structdg_1_1_any_matrix_tag.html" title="dg::AnyMatrixTag" alt="" coords="242,5,367,32"/>
+<area shape="rect" id="node4" href="structdg_1_1_scalar_tag.html" title="dg::ScalarTag" alt="" coords="17,229,120,256"/>
+<area shape="rect" id="node7" href="structdg_1_1_array_vector_tag.html" title="std::array of containers " alt="" coords="323,229,457,256"/>
+<area shape="rect" id="node9" href="structdg_1_1_thrust_vector_tag.html" title="Indicate thrust/std &#45; like behaviour. " alt="" coords="498,229,639,256"/>
+<area shape="rect" id="node10" href="structdg_1_1_cusp_vector_tag.html" title="special tag for cusp arrays " alt="" coords="427,304,561,331"/>
+<area shape="rect" id="node11" href="structdg_1_1_std_array_tag.html" title=" std::array&lt; primitive_type, N&gt; &#160;" alt="" coords="586,304,703,331"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Vector Tag base class, indicates the basic Vector/container concept. </p>
-<p>The vector tag indicates how the data in the vector has to be accessed. For example how do we get the pointer to the first element? Is there a contiguous chunk of memory or is it a Vector of Vectors? </p><dl class="section note"><dt>Note</dt><dd>in any case we assume that the class is copyable/assignable and has a <code>size</code> and a <code>swap</code> member function </dd>
+<p>The vector tag has three functions. First, it indicates the fundamental datatype a vector class contains (typically a double). Second, it describes how the data in a Vector type is layed out in memory. We distinguish between a simple, contiguous chunk of data in a shared memory system (<a class="el" href="structdg_1_1_shared_vector_tag.html" title="Indicate a contiguous chunk of shared memory. ">dg::SharedVectorTag</a>), a dataset that is part of a larger dataset on a distributed memory system (<a class="el" href="structdg_1_1_m_p_i_vector_tag.html" title="A distributed vector contains a data container and a MPI communicator. ">dg::MPIVectorTag</a>), and a dataset that consists of a number of subsets (<a class="el" href="structdg_1_1_recursive_vector_tag.html" title="This tag indicates composition/recursion. ">dg::RecursiveVectorTag</a>). Both the <a class="el" href="structdg_1_1_m_p_i_vector_tag.html" title="A distributed vector contains a data container and a MPI communicator. ">MPIVectorTag</a> and the <a class="el" href="structdg_1_1_recursive_vector_tag.html" title="This tag indicates composition/recursion. ">RecursiveVectorTag</a> allow recursion, that is for example a RecursiveVector can consist itself of many shared vectors or of many RecursiveVector again. The innermost type must always be a shared vector however. The third function of the Vector tag is to describe how the data in the vector has to be accessed.For example how do we get the pointer to the first element, the size, or how to access the MPI communicator? This is described in Derived Tags from the fundamental Tags, e.g. the <code><a class="el" href="structdg_1_1_thrust_vector_tag.html" title="Indicate thrust/std - like behaviour. ">ThrustVectorTag</a></code>. </p><dl class="section note"><dt>Note</dt><dd>in any case we assume that the class has a default constructor, is copyable/assignable and has a <code>size</code> and a <code>swap</code> member function </dd>
 <dd>
-<code>dg::VectorTraits&lt;Vector&gt;</code> has member typedefs <code>value_type</code>, <code>execution_policy</code>, <code>vector_category</code> </dd></dl>
+<code> dg::TensorTraits&lt;Vector&gt; </code>has member typedefs <code>value_type</code>, <code>execution_policy</code>, <code>tensor_category</code> </dd>
+<dd>
+any vector can serve as a diagonal matrix </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="index.html#dispatch">The Level 1 dispatch system</a> </dd></dl>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>backend/<a class="el" href="vector__categories_8h_source.html">vector_categories.h</a></li>
 </ul>
@@ -160,7 +166,7 @@ Inheritance diagram for dg::AnyVectorTag:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_any_vector_tag.html">AnyVectorTag</a></li>
-    <li class="footer">Generated on Thu Apr 26 2018 16:28:14 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Jul 5 2018 12:59:50 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

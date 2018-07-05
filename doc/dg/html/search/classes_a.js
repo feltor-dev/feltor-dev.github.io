@@ -1,7 +1,6 @@
 var searchData=
 [
   ['lamb',['Lamb',['../structdg_1_1_lamb.html',1,'dg']]],
-  ['linearrefinement',['LinearRefinement',['../structdg_1_1_linear_refinement.html',1,'dg']]],
   ['linearx',['LinearX',['../structdg_1_1_linear_x.html',1,'dg']]],
   ['lineary',['LinearY',['../structdg_1_1_linear_y.html',1,'dg']]],
   ['linearz',['LinearZ',['../structdg_1_1_linear_z.html',1,'dg']]],

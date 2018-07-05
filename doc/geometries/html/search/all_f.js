@@ -1,5 +1,5 @@
 var searchData=
 [
   ['karniadakis',['Karniadakis',['../../../dg/html/structdg_1_1_karniadakis.html',1,'dg']]],
-  ['karniadakis',['Karniadakis',['../../../dg/html/structdg_1_1_karniadakis.html#aa3f9f3073a7a2715e33e20a24f7bcd19',1,'dg::Karniadakis']]]
+  ['karniadakis',['Karniadakis',['../../../dg/html/structdg_1_1_karniadakis.html#a1834706a3dafc21b402fdce1d8caf724',1,'dg::Karniadakis::Karniadakis()'],['../../../dg/html/structdg_1_1_karniadakis.html#a4fb6bd86147994d0a18162b5a09fd732',1,'dg::Karniadakis::Karniadakis(const ContainerType &amp;copyable, unsigned max_iter, real_type eps)']]]
 ];

@@ -1,0 +1,36 @@
+<map id="elliptic.h" name="elliptic.h">
+<area shape="rect" id="node2" href="$blas_8h.html" title="blas.h" alt="" coords="2253,229,2310,256"/>
+<area shape="rect" id="node15" href="$memory_8h.html" title="memory.h" alt="" coords="2685,543,2765,569"/>
+<area shape="rect" id="node32" href="$enums_8h.html" title="enums " alt="" coords="3777,543,3849,569"/>
+<area shape="rect" id="node34" href="$evaluation_8h.html" title="Function discretization routines. " alt="" coords="3181,379,3331,405"/>
+<area shape="rect" id="node36" href="$derivatives_8h.html" title="Convenience functions to create 2D derivatives. " alt="" coords="3639,229,3793,256"/>
+<area shape="rect" id="node39" href="$mpi__derivatives_8h.html" title="geometry/mpi_derivatives.h" alt="" coords="3574,155,3757,181"/>
+<area shape="rect" id="node41" href="$mpi__evaluation_8h.html" title="Function discretization routines for mpi vectors. " alt="" coords="3180,304,3359,331"/>
+<area shape="rect" id="node42" href="$geometry_8h.html" title="geometry/geometry.h" alt="" coords="2887,80,3033,107"/>
+<area shape="rect" id="node3" href="$blas1_8h.html" title="blas1.h" alt="" coords="2225,379,2289,405"/>
+<area shape="rect" id="node21" href="$blas2_8h.html" title="blas2.h" alt="" coords="784,379,848,405"/>
+<area shape="rect" id="node27" href="$typedefs_8h.html" title="Useful typedefs of commonly used types. " alt="" coords="2716,304,2852,331"/>
+<area shape="rect" id="node5" href="$tensor__traits_8h.html" title="backend/tensor_traits.h" alt="" coords="1410,543,1569,569"/>
+<area shape="rect" id="node6" href="$tensor__traits__scalar_8h.html" title="backend/tensor_traits\l_scalar.h" alt="" coords="1632,453,1779,495"/>
+<area shape="rect" id="node7" href="$tensor__traits__thrust_8h.html" title="backend/tensor_traits\l_thrust.h" alt="" coords="1189,453,1336,495"/>
+<area shape="rect" id="node9" href="$tensor__traits__cusp_8h.html" title="backend/tensor_traits\l_cusp.h" alt="" coords="1360,453,1507,495"/>
+<area shape="rect" id="node11" href="$tensor__traits__std_8h.html" title="backend/tensor_traits\l_std.h" alt="" coords="1019,453,1165,495"/>
+<area shape="rect" id="node14" href="$mpi__vector_8h.html" title="backend/mpi_vector.h" alt="" coords="2763,461,2914,487"/>
+<area shape="rect" id="node18" href="$subroutines_8h.html" title="subroutines.h" alt="" coords="3425,461,3525,487"/>
+<area shape="rect" id="node19" href="$functions_8h.html" title="contains some utility functions for the evaluation() routines " alt="" coords="3884,543,4047,569"/>
+<area shape="rect" id="node28" href="$sparseblockmat_8h.html" title="sparseblockmat.h" alt="" coords="3651,461,3776,487"/>
+<area shape="rect" id="node31" href="$mpi__matrix_8h.html" title="MPI matrix classes. " alt="" coords="2683,379,2781,405"/>
+<area shape="rect" id="node30" href="$exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="3665,617,3761,644"/>
+<area shape="rect" id="node35" href="$grid_8h.html" title="base topology classes " alt="" coords="3294,461,3349,487"/>
+<area shape="rect" id="node37" href="$dx_8h.html" title="Simple 1d derivatives. " alt="" coords="3767,304,3814,331"/>
+<area shape="rect" id="node38" href="$weights_8h.html" title="contains creation functions for integration weights and their inverse " alt="" coords="3522,379,3601,405"/>
+<area shape="rect" id="node40" href="$mpi__grid_8h.html" title="MPI Grid objects. " alt="" coords="3407,379,3489,405"/>
+<area shape="rect" id="node43" href="$mpi__weights_8h.html" title="contains MPI weights " alt="" coords="3484,304,3591,331"/>
+<area shape="rect" id="node44" href="$base__geometry_8h.html" title="base_geometry.h" alt="" coords="2831,229,2953,256"/>
+<area shape="rect" id="node45" href="$tensor_8h.html" title="tensor.h" alt="" coords="2563,304,2632,331"/>
+<area shape="rect" id="node46" href="$base__geometry_x_8h.html" title="base_geometryX.h" alt="" coords="2420,229,2551,256"/>
+<area shape="rect" id="node47" href="$refined__grid_x_8h.html" title="refined_gridX.h" alt="" coords="2391,155,2500,181"/>
+<area shape="rect" id="node48" href="$mpi__base_8h.html" title="mpi_base.h" alt="" coords="2915,155,3005,181"/>
+<area shape="rect" id="node49" href="$transform_8h.html" title="transform.h" alt="" coords="2752,155,2840,181"/>
+<area shape="rect" id="node50" href="$multiply_8h.html" title="multiply.h" alt="" coords="2626,229,2705,256"/>
+</map>

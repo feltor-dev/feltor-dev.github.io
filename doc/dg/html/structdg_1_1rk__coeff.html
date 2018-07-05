@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Discontinuous Galerkin Library: dg::rk_coeff&lt; k &gt; Struct Template Reference</title>
+<title>Discontinuous Galerkin Library: dg::rk_coeff&lt; k, real_type &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -123,33 +123,20 @@ $(document).ready(function(){initNavTree('structdg_1_1rk__coeff.html','');});
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="structdg_1_1rk__coeff-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">dg::rk_coeff&lt; k &gt; Struct Template Reference</div>  </div>
+<div class="title">dg::rk_coeff&lt; k, real_type &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>coefficients for explicit <a class="el" href="structdg_1_1_r_k.html" title="Struct for Runge-Kutta explicit time-integration . ">RK</a> methods  
+<p>coefficients for explicit <a class="el" href="structdg_1_1_r_k.html" title="Struct for Runge-Kutta explicit time-integration, classic formulation . ">RK</a> methods  
  <a href="structdg_1_1rk__coeff.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="runge__kutta_8h_source.html">runge_kutta.h</a>&gt;</code></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a23c2aa1eeb057a2cccd29d586d787afa"><td class="memItemLeft" align="right" valign="top">static const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1rk__coeff.html#a23c2aa1eeb057a2cccd29d586d787afa">alpha</a> [k][k]</td></tr>
-<tr class="memdesc:a23c2aa1eeb057a2cccd29d586d787afa"><td class="mdescLeft">&#160;</td><td class="mdescRight">alpha  <a href="#a23c2aa1eeb057a2cccd29d586d787afa">More...</a><br /></td></tr>
-<tr class="separator:a23c2aa1eeb057a2cccd29d586d787afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4f695515e6baecffd138cbe457f7fa0"><td class="memItemLeft" align="right" valign="top">static const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1rk__coeff.html#ab4f695515e6baecffd138cbe457f7fa0">beta</a> [k]</td></tr>
-<tr class="memdesc:ab4f695515e6baecffd138cbe457f7fa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">beta  <a href="#ab4f695515e6baecffd138cbe457f7fa0">More...</a><br /></td></tr>
-<tr class="separator:ab4f695515e6baecffd138cbe457f7fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;size_t k&gt;<br />
-struct dg::rk_coeff&lt; k &gt;</h3>
+<div class="textblock"><h3>template&lt;size_t k, class real_type&gt;<br />
+struct dg::rk_coeff&lt; k, real_type &gt;</h3>
 
-<p>coefficients for explicit <a class="el" href="structdg_1_1_r_k.html" title="Struct for Runge-Kutta explicit time-integration . ">RK</a> methods </p>
+<p>coefficients for explicit <a class="el" href="structdg_1_1_r_k.html" title="Struct for Runge-Kutta explicit time-integration, classic formulation . ">RK</a> methods </p>
 <p>The coefficients are in the form Cockburn proposed in his paper. It's just a reformulation in that you don't store the sequence of k_j but rather the abscissas u_j with k_j = f(u_j) Note that if you knew all k_j you can compute this sequence u_j via u=Bk. To derive these coefficients from the butcher tableau consider. </p><p class="formulaDsp">
 \[ u = Bhk = (B-D)hk + Dhk = (B-D)B^{-1}y + Dhk = ( 1- DB^{-1})u + Dhk = \alpha u + \beta h k\]
 </p>
@@ -159,56 +146,7 @@ struct dg::rk_coeff&lt; k &gt;</h3>
   </table>
   </dd>
 </dl>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a23c2aa1eeb057a2cccd29d586d787afa"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;size_t k&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const double <a class="el" href="structdg_1_1rk__coeff.html">dg::rk_coeff</a>&lt; k &gt;::alpha[k][k]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>alpha </p>
-
-</div>
-</div>
-<a class="anchor" id="ab4f695515e6baecffd138cbe457f7fa0"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;size_t k&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const double <a class="el" href="structdg_1_1rk__coeff.html">dg::rk_coeff</a>&lt; k &gt;::beta[k]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>beta </p>
-
-</div>
-</div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="runge__kutta_8h_source.html">runge_kutta.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -217,7 +155,7 @@ template&lt;size_t k&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1rk__coeff.html">rk_coeff</a></li>
-    <li class="footer">Generated on Thu Apr 26 2018 16:28:15 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Jul 5 2018 12:59:50 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

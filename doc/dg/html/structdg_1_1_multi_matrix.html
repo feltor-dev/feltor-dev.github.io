@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Discontinuous Galerkin Library: dg::MultiMatrix&lt; Matrix, container &gt; Struct Template Reference</title>
+<title>Discontinuous Galerkin Library: dg::MultiMatrix&lt; MatrixType, ContainerType &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -124,10 +124,11 @@ $(document).ready(function(){initNavTree('structdg_1_1_multi_matrix.html','');})
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="structdg_1_1_multi_matrix-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">dg::MultiMatrix&lt; Matrix, container &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__misc.html">Level 00: Miscellaneous additions</a></div></div>  </div>
+<div class="title">dg::MultiMatrix&lt; MatrixType, ContainerType &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__misc.html">Level 0: Miscellaneous additions</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -136,32 +137,37 @@ $(document).ready(function(){initNavTree('structdg_1_1_multi_matrix.html','');})
 
 <p><code>#include &lt;<a class="el" href="fast__interpolation_8h_source.html">fast_interpolation.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:acb8573038dfc39d692d368a0f8739593"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_multi_matrix.html#acb8573038dfc39d692d368a0f8739593">real_type</a> = <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt;</td></tr>
+<tr class="separator:acb8573038dfc39d692d368a0f8739593"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a10741f319537445e2c920fff59adc1cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_multi_matrix.html#a10741f319537445e2c920fff59adc1cb">MultiMatrix</a> ()</td></tr>
-<tr class="separator:a10741f319537445e2c920fff59adc1cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4629c459fbc7956456e19e2da6b8fdcc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_multi_matrix.html#a4629c459fbc7956456e19e2da6b8fdcc">MultiMatrix</a> (int dimension)</td></tr>
-<tr class="memdesc:a4629c459fbc7956456e19e2da6b8fdcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">reserve space for dimension matrices and dimension-1 containers  <a href="#a4629c459fbc7956456e19e2da6b8fdcc">More...</a><br /></td></tr>
-<tr class="separator:a4629c459fbc7956456e19e2da6b8fdcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad094817a8b817521ffb3e0c5bf6248d"><td class="memTemplParams" colspan="2">template&lt;class OtherMatrix , class OtherContainer &gt; </td></tr>
-<tr class="memitem:aad094817a8b817521ffb3e0c5bf6248d"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_multi_matrix.html#aad094817a8b817521ffb3e0c5bf6248d">MultiMatrix</a> (const <a class="el" href="structdg_1_1_multi_matrix.html">MultiMatrix</a>&lt; OtherMatrix, OtherContainer &gt; &amp;src)</td></tr>
-<tr class="separator:aad094817a8b817521ffb3e0c5bf6248d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0afca886f15362297bb0c4666a938c21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_multi_matrix.html#a0afca886f15362297bb0c4666a938c21">symv</a> (const container &amp;<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>, container &amp;<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>) const </td></tr>
-<tr class="separator:a0afca886f15362297bb0c4666a938c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa25831a7664fc8d21b039c37837348fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_multi_matrix.html#aa25831a7664fc8d21b039c37837348fa">symv</a> (double alpha, const container &amp;<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>, double beta, container &amp;<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>) const </td></tr>
-<tr class="separator:aa25831a7664fc8d21b039c37837348fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af108022e382147cf64fdb48992ed4e2f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structdg_1_1_buffer.html">Buffer</a>&lt; container &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_multi_matrix.html#af108022e382147cf64fdb48992ed4e2f">get_temp</a> ()</td></tr>
-<tr class="separator:af108022e382147cf64fdb48992ed4e2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fa927f9a825786d25e45bd1664bfe06"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="structdg_1_1_buffer.html">Buffer</a>&lt; container &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_multi_matrix.html#a0fa927f9a825786d25e45bd1664bfe06">get_temp</a> () const </td></tr>
-<tr class="separator:a0fa927f9a825786d25e45bd1664bfe06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9e68724f74b7508517d3c0cdfda8e9e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Matrix &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_multi_matrix.html#ac9e68724f74b7508517d3c0cdfda8e9e">get_matrices</a> ()</td></tr>
-<tr class="separator:ac9e68724f74b7508517d3c0cdfda8e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dcaffef6d456e7bced907bcea4b099b"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; Matrix &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_multi_matrix.html#a2dcaffef6d456e7bced907bcea4b099b">get_matrices</a> () const </td></tr>
-<tr class="separator:a2dcaffef6d456e7bced907bcea4b099b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae14e9c27d6e03614857b7086df402885"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_multi_matrix.html#ae14e9c27d6e03614857b7086df402885">MultiMatrix</a> ()</td></tr>
+<tr class="separator:ae14e9c27d6e03614857b7086df402885"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5e7dafd471e65824ceaa4dca79c292a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_multi_matrix.html#ae5e7dafd471e65824ceaa4dca79c292a">MultiMatrix</a> (int dimension)</td></tr>
+<tr class="memdesc:ae5e7dafd471e65824ceaa4dca79c292a"><td class="mdescLeft">&#160;</td><td class="mdescRight">reserve space for dimension matrices and dimension-1 ContainerTypes  <a href="#ae5e7dafd471e65824ceaa4dca79c292a">More...</a><br /></td></tr>
+<tr class="separator:ae5e7dafd471e65824ceaa4dca79c292a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72b0c74bb179a7e43774536587d477a9"><td class="memTemplParams" colspan="2">template&lt;class OtherMatrix , class OtherContainer &gt; </td></tr>
+<tr class="memitem:a72b0c74bb179a7e43774536587d477a9"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_multi_matrix.html#a72b0c74bb179a7e43774536587d477a9">MultiMatrix</a> (const <a class="el" href="structdg_1_1_multi_matrix.html">MultiMatrix</a>&lt; OtherMatrix, OtherContainer &gt; &amp;src)</td></tr>
+<tr class="separator:a72b0c74bb179a7e43774536587d477a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e44e1b39a7168f4964ffc16a5500b19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_multi_matrix.html#a3e44e1b39a7168f4964ffc16a5500b19">symv</a> (const ContainerType &amp;<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>, ContainerType &amp;<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>) const </td></tr>
+<tr class="separator:a3e44e1b39a7168f4964ffc16a5500b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab749f0b2feb68a2a9ea0a1364b497943"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_multi_matrix.html#ab749f0b2feb68a2a9ea0a1364b497943">symv</a> (<a class="el" href="structdg_1_1_multi_matrix.html#acb8573038dfc39d692d368a0f8739593">real_type</a> alpha, const ContainerType &amp;<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>, <a class="el" href="structdg_1_1_multi_matrix.html#acb8573038dfc39d692d368a0f8739593">real_type</a> beta, ContainerType &amp;<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>) const </td></tr>
+<tr class="separator:ab749f0b2feb68a2a9ea0a1364b497943"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dbca991fd3ff13e16f371c8b42b1067"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structdg_1_1_buffer.html">Buffer</a>&lt; ContainerType &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_multi_matrix.html#a8dbca991fd3ff13e16f371c8b42b1067">get_temp</a> ()</td></tr>
+<tr class="separator:a8dbca991fd3ff13e16f371c8b42b1067"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8607159bc46388f16267d1f0dca21f96"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="structdg_1_1_buffer.html">Buffer</a>&lt; ContainerType &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_multi_matrix.html#a8607159bc46388f16267d1f0dca21f96">get_temp</a> () const </td></tr>
+<tr class="separator:a8607159bc46388f16267d1f0dca21f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21b75035ab5e7f209e05eacd1b3c0d07"><td class="memItemLeft" align="right" valign="top">std::vector&lt; MatrixType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_multi_matrix.html#a21b75035ab5e7f209e05eacd1b3c0d07">get_matrices</a> ()</td></tr>
+<tr class="separator:a21b75035ab5e7f209e05eacd1b3c0d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa532b4a0df1835f5b4135f72b7db1921"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; MatrixType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_multi_matrix.html#aa532b4a0df1835f5b4135f72b7db1921">get_matrices</a> () const </td></tr>
+<tr class="separator:aa532b4a0df1835f5b4135f72b7db1921"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class Matrix, class container&gt;<br />
-struct dg::MultiMatrix&lt; Matrix, container &gt;</h3>
+<div class="textblock"><h3>template&lt;class MatrixType, class ContainerType&gt;<br />
+struct dg::MultiMatrix&lt; MatrixType, ContainerType &gt;</h3>
 
 <p>Struct that applies given matrices one after the other. </p>
 <p class="formulaDsp">
@@ -170,42 +176,52 @@ struct dg::MultiMatrix&lt; Matrix, container &gt;</h3>
 <p> where \( M_i\) is the i-th matrix</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Matrix</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_matrix_traits.html" title="The matrix traits. ">MatrixTraits</a></code> exists and which fullfills the requirements of the there defined Matrix policy derived from <code><a class="el" href="structdg_1_1_any_matrix_tag.html">AnyMatrixTag</a></code> or <code><a class="el" href="structdg_1_1_self_made_matrix_tag.html" title="indicates that the Matrix type has the void symv( const Vector&amp;, Vector&amp; ) member function...">SelfMadeMatrixTag</a></code>. The <code>Matrix</code> type can for example be one of:<ul>
-<li><code>container:</code> A container acts as a diagonal matrix.</li>
-<li><code><a class="el" href="group__typedefs.html#ga03ea77a5e974bed59c16fc1b50e32fad" title="Host Matrix for derivatives. ">dg::HMatrix</a></code> and <code><a class="el" href="group__typedefs.html#ga0af8204731ee6327dc4616a5980af2d5" title="CSR host Matrix. ">dg::IHMatrix</a></code> with <code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code> or <code>std::vector&lt;dg::HVec&gt;</code> </li>
-<li><code><a class="el" href="group__typedefs.html#gade8f2d2e22d78d961a4a83baad054922" title="Device Matrix for derivatives. ">dg::DMatrix</a></code> and <code><a class="el" href="group__typedefs.html#ga0d122f4172a3e60105754f9419c0831f" title="CSR device Matrix. ">dg::IDMatrix</a></code> with <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code> or <code>std::vector&lt;dg::DVec&gt;</code> </li>
-<li><code><a class="el" href="group__typedefs.html#gaa6f6bf3d7e428a9e66630a1a0e135d3a" title="MPI Host Matrix for derivatives. ">dg::MHMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga3f854ffa533cafd10b9846258e40029f" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code>std::vector&lt;dg::MHVec&gt;</code> </li>
-<li><code><a class="el" href="group__typedefs.html#ga5d1f28d85330d29c74ea77f048d2978c" title="MPI Device Matrix for derivatives. ">dg::MDMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga25cae493b710b17992387cce395ad7ae" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> or <code>std::vector&lt;dg::MDVec&gt;</code> </li>
-<li>In case of <code><a class="el" href="structdg_1_1_self_made_matrix_tag.html" title="indicates that the Matrix type has the void symv( const Vector&amp;, Vector&amp; ) member function...">SelfMadeMatrixTag</a></code> only those <code><a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a></code> functions that have a corresponding member function in the Matrix class (e.g. <code>symv( const container&amp;, container&amp;)</code>; ) can be called.</li>
+    <tr><td class="paramname">MatrixType</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> exists and which fullfills the requirements of the there defined Matrix tags derived from <code><a class="el" href="structdg_1_1_any_matrix_tag.html">AnyMatrixTag</a></code>. The <code>MatrixType</code> can for example be one of:<ul>
+<li><code>scalar</code> or <code>container:</code> Scalars and containers act as diagonal matrices.</li>
+<li><code><a class="el" href="group__typedefs.html#gac2134505608b45616787fdb2f6eedc87" title="Host Matrix for derivatives. ">dg::HMatrix</a></code> and <code><a class="el" href="group__typedefs.html#ga188bea19979cfa0701387bfc5272be79">dg::IHMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193" title="Host Vector. ">dg::HVec</a></code> or <code>std::vector&lt;dg::HVec&gt;</code> </li>
+<li><code><a class="el" href="group__typedefs.html#gafdf2ecb95cbc87a1544136d28d535f16" title="Device Matrix for derivatives. ">dg::DMatrix</a></code> and <code><a class="el" href="group__typedefs.html#gaab6ed0cbb6bf7ea723c10da88cd4529f">dg::IDMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code> or <code>std::vector&lt;dg::DVec&gt;</code> </li>
+<li><code><a class="el" href="group__typedefs.html#gaff79c734c7916054c7dc24e6bc437161" title="MPI Host Matrix for derivatives. ">dg::MHMatrix</a></code> with <code><a class="el" href="group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code>std::vector&lt;dg::MHVec&gt;</code> </li>
+<li><code><a class="el" href="group__typedefs.html#gaad32454aa2aca3cbb93448d7b5daf005" title="MPI Device Matrix for derivatives. ">dg::MDMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> or <code>std::vector&lt;dg::MDVec&gt;</code> </li>
+<li>In case of <code><a class="el" href="structdg_1_1_self_made_matrix_tag.html" title="Indicates that the type has a member function with the same name and interface (up to the matrix itse...">SelfMadeMatrixTag</a></code> only those <code><a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a></code> functions that have a corresponding member function in the Matrix class (e.g. <code>symv( const container&amp;, container&amp;)</code>; ) can be called.</li>
 </ul>
-If a <code>container</code> has the <code><a class="el" href="structdg_1_1_vector_vector_tag.html" title="This tag indicates composition/recursion. ">VectorVectorTag</a></code>, then the <code>Matrix</code> is applied to each of the elements. </td></tr>
+If a <code>container</code> has the <code><a class="el" href="structdg_1_1_recursive_vector_tag.html" title="This tag indicates composition/recursion. ">RecursiveVectorTag</a></code>, then the <code>Matrix</code> is applied to each of the elements.</td></tr>
+    <tr><td class="paramname">ContainerType</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> and <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. Among others<ul>
+<li><code> <a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193" title="Host Vector. ">dg::HVec</a> (serial), <a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a> (cuda / omp), <a class="el" href="group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a> (mpi + serial) or <a class="el" href="group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a> (mpi + cuda / omp) </code></li>
+<li><code> std::vector&lt;dg::DVec&gt; (vector of shared device vectors), std::array&lt;double, 4&gt; (array of 4 doubles)</code></li>
+<li><code> double (scalar)</code> and other primitive types ...</li>
+</ul>
+If there are several <code>ContainerTypes</code> in the argument list, then <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> must exist for all of them </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__mat__list.html">List of Matrix Traits specializations</a></dd></dl>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">container</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_vector_traits.html" title="The vector traits. ">VectorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> or <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. For example, this is one of<ul>
-<li><code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code>, <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code>, <code><a class="el" href="group__typedefs.html#ga3f854ffa533cafd10b9846258e40029f" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code><a class="el" href="group__typedefs.html#ga25cae493b710b17992387cce395ad7ae" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> </li>
-<li><code>std::vector&lt;dg::DVec&gt;</code>, <code>std::array&lt;dg::MHVec, 3&gt;</code>, <code>std::array&lt;double, 4&gt;</code> ... </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__vec__list.html">List of Vector Traits specializations</a> </dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a10741f319537445e2c920fff59adc1cb"></a>
+<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="index.html#dispatch">The Level 1 dispatch system</a> for a detailed explanation of our type dispatch system </dd></dl>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="acb8573038dfc39d692d368a0f8739593"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Matrix, class container&gt; </div>
+template&lt;class MatrixType, class ContainerType&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix</a>&lt; MatrixType, ContainerType &gt;::<a class="el" href="structdg_1_1_multi_matrix.html#acb8573038dfc39d692d368a0f8739593">real_type</a> =  <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt;ContainerType&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ae14e9c27d6e03614857b7086df402885"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MatrixType, class ContainerType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix</a>&lt; Matrix, container &gt;::<a class="el" href="structdg_1_1_multi_matrix.html">MultiMatrix</a> </td>
+          <td class="memname"><a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix</a>&lt; MatrixType, ContainerType &gt;::<a class="el" href="structdg_1_1_multi_matrix.html">MultiMatrix</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -220,17 +236,17 @@ template&lt;class Matrix, class container&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a4629c459fbc7956456e19e2da6b8fdcc"></a>
+<a class="anchor" id="ae5e7dafd471e65824ceaa4dca79c292a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Matrix, class container&gt; </div>
+template&lt;class MatrixType, class ContainerType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix</a>&lt; Matrix, container &gt;::<a class="el" href="structdg_1_1_multi_matrix.html">MultiMatrix</a> </td>
+          <td class="memname"><a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix</a>&lt; MatrixType, ContainerType &gt;::<a class="el" href="structdg_1_1_multi_matrix.html">MultiMatrix</a> </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>dimension</em></td><td>)</td>
@@ -244,7 +260,7 @@ template&lt;class Matrix, class container&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>reserve space for dimension matrices and dimension-1 containers </p>
+<p>reserve space for dimension matrices and dimension-1 ContainerTypes </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dimension</td><td># of matrices to store </td></tr>
@@ -255,11 +271,11 @@ template&lt;class Matrix, class container&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aad094817a8b817521ffb3e0c5bf6248d"></a>
+<a class="anchor" id="a72b0c74bb179a7e43774536587d477a9"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Matrix, class container&gt; </div>
+template&lt;class MatrixType, class ContainerType&gt; </div>
 <div class="memtemplate">
 template&lt;class OtherMatrix , class OtherContainer &gt; </div>
 <table class="mlabels">
@@ -267,7 +283,7 @@ template&lt;class OtherMatrix , class OtherContainer &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix</a>&lt; Matrix, container &gt;::<a class="el" href="structdg_1_1_multi_matrix.html">MultiMatrix</a> </td>
+          <td class="memname"><a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix</a>&lt; MatrixType, ContainerType &gt;::<a class="el" href="structdg_1_1_multi_matrix.html">MultiMatrix</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structdg_1_1_multi_matrix.html">MultiMatrix</a>&lt; OtherMatrix, OtherContainer &gt; &amp;&#160;</td>
           <td class="paramname"><em>src</em></td><td>)</td>
@@ -284,17 +300,17 @@ template&lt;class OtherMatrix , class OtherContainer &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ac9e68724f74b7508517d3c0cdfda8e9e"></a>
+<a class="anchor" id="a21b75035ab5e7f209e05eacd1b3c0d07"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Matrix, class container&gt; </div>
+template&lt;class MatrixType, class ContainerType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;Matrix&gt;&amp; <a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix</a>&lt; Matrix, container &gt;::get_matrices </td>
+          <td class="memname">std::vector&lt;MatrixType&gt;&amp; <a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix</a>&lt; MatrixType, ContainerType &gt;::get_matrices </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -309,17 +325,17 @@ template&lt;class Matrix, class container&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a2dcaffef6d456e7bced907bcea4b099b"></a>
+<a class="anchor" id="aa532b4a0df1835f5b4135f72b7db1921"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Matrix, class container&gt; </div>
+template&lt;class MatrixType, class ContainerType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt;Matrix&gt;&amp; <a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix</a>&lt; Matrix, container &gt;::get_matrices </td>
+          <td class="memname">const std::vector&lt;MatrixType&gt;&amp; <a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix</a>&lt; MatrixType, ContainerType &gt;::get_matrices </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -334,17 +350,17 @@ template&lt;class Matrix, class container&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="af108022e382147cf64fdb48992ed4e2f"></a>
+<a class="anchor" id="a8dbca991fd3ff13e16f371c8b42b1067"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Matrix, class container&gt; </div>
+template&lt;class MatrixType, class ContainerType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="structdg_1_1_buffer.html">Buffer</a>&lt;container&gt; &gt;&amp; <a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix</a>&lt; Matrix, container &gt;::get_temp </td>
+          <td class="memname">std::vector&lt;<a class="el" href="structdg_1_1_buffer.html">Buffer</a>&lt;ContainerType&gt; &gt;&amp; <a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix</a>&lt; MatrixType, ContainerType &gt;::get_temp </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -359,17 +375,17 @@ template&lt;class Matrix, class container&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a0fa927f9a825786d25e45bd1664bfe06"></a>
+<a class="anchor" id="a8607159bc46388f16267d1f0dca21f96"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Matrix, class container&gt; </div>
+template&lt;class MatrixType, class ContainerType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt;<a class="el" href="structdg_1_1_buffer.html">Buffer</a>&lt;container&gt; &gt;&amp; <a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix</a>&lt; Matrix, container &gt;::get_temp </td>
+          <td class="memname">const std::vector&lt;<a class="el" href="structdg_1_1_buffer.html">Buffer</a>&lt;ContainerType&gt; &gt;&amp; <a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix</a>&lt; MatrixType, ContainerType &gt;::get_temp </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -384,25 +400,25 @@ template&lt;class Matrix, class container&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a0afca886f15362297bb0c4666a938c21"></a>
+<a class="anchor" id="a3e44e1b39a7168f4964ffc16a5500b19"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Matrix, class container&gt; </div>
+template&lt;class MatrixType, class ContainerType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix</a>&lt; Matrix, container &gt;::symv </td>
+          <td class="memname">void <a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix</a>&lt; MatrixType, ContainerType &gt;::symv </td>
           <td>(</td>
-          <td class="paramtype">const container &amp;&#160;</td>
+          <td class="paramtype">const ContainerType &amp;&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">container &amp;&#160;</td>
+          <td class="paramtype">ContainerType &amp;&#160;</td>
           <td class="paramname"><em>y</em>&#160;</td>
         </tr>
         <tr>
@@ -420,37 +436,37 @@ template&lt;class Matrix, class container&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aa25831a7664fc8d21b039c37837348fa"></a>
+<a class="anchor" id="ab749f0b2feb68a2a9ea0a1364b497943"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Matrix, class container&gt; </div>
+template&lt;class MatrixType, class ContainerType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix</a>&lt; Matrix, container &gt;::symv </td>
+          <td class="memname">void <a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix</a>&lt; MatrixType, ContainerType &gt;::symv </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype"><a class="el" href="structdg_1_1_multi_matrix.html#acb8573038dfc39d692d368a0f8739593">real_type</a>&#160;</td>
           <td class="paramname"><em>alpha</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const container &amp;&#160;</td>
+          <td class="paramtype">const ContainerType &amp;&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype"><a class="el" href="structdg_1_1_multi_matrix.html#acb8573038dfc39d692d368a0f8739593">real_type</a>&#160;</td>
           <td class="paramname"><em>beta</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">container &amp;&#160;</td>
+          <td class="paramtype">ContainerType &amp;&#160;</td>
           <td class="paramname"><em>y</em>&#160;</td>
         </tr>
         <tr>
@@ -477,7 +493,7 @@ template&lt;class Matrix, class container&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_multi_matrix.html">MultiMatrix</a></li>
-    <li class="footer">Generated on Thu Apr 26 2018 16:28:15 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Jul 5 2018 12:59:50 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

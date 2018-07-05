@@ -1,6 +1,7 @@
 <map id="Level 1: Vectors, Matrices and basic operations" name="Level 1: Vectors, Matrices and basic operations">
-<area shape="rect" id="node1" href="$group__mpi__structures.html" title="MPI backend functionality" alt="" coords="228,5,401,32"/>
-<area shape="rect" id="node2" href="$group__typedefs.html" title="Typedefs" alt="" coords="277,56,353,83"/>
-<area shape="rect" id="node3" href="$group__sparsematrix.html" title="Sparse matrix formats" alt="" coords="239,107,390,133"/>
-<area shape="rect" id="node5" href="$group__blas.html" title="Basic Linear Algebra\l Subroutines" alt="" coords="243,158,386,199"/>
+<area shape="rect" id="node1" href="$group__mpi__structures.html" title="MPI backend" alt="" coords="262,5,361,32"/>
+<area shape="rect" id="node2" href="$group__typedefs.html" title="Useful Typedefs" alt="" coords="252,56,371,83"/>
+<area shape="rect" id="node3" href="$group__dispatch.html" title="The tag dispatch system" alt="" coords="228,107,395,133"/>
+<area shape="rect" id="node4" href="$group__sparsematrix.html" title="Sparse matrix formats" alt="" coords="236,157,387,184"/>
+<area shape="rect" id="node6" href="$group__blas.html" title="Basic Linear Algebra\l Subroutines" alt="" coords="240,209,383,250"/>
 </map>

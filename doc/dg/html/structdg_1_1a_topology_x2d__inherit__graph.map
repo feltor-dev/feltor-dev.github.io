@@ -1,6 +1,0 @@
-<map id="dg::aTopologyX2d" name="dg::aTopologyX2d">
-<area shape="rect" id="node2" href="$structdg_1_1a_geometry_x2d.html" title="This is the abstract interface class for a two&#45;dimensional GeometryX. " alt="" coords="109,80,240,107"/>
-<area shape="rect" id="node5" href="$structdg_1_1_grid_x2d.html" title="The simplest implementation of aTopologyX2d. " alt="" coords="264,80,355,107"/>
-<area shape="rect" id="node3" href="$structdg_1_1_cartesian_grid_x2d.html" title="two&#45;dimensional GridX with Cartesian metric " alt="" coords="5,155,152,181"/>
-<area shape="rect" id="node4" href="$structdg_1_1_cartesian_refined_grid_x2d.html" title="Refined X&#45;point grid. " alt="" coords="176,155,368,181"/>
-</map>

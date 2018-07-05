@@ -1,12 +1,13 @@
 var structdg_1_1_multi_matrix =
 [
-    [ "MultiMatrix", "structdg_1_1_multi_matrix.html#a10741f319537445e2c920fff59adc1cb", null ],
-    [ "MultiMatrix", "structdg_1_1_multi_matrix.html#a4629c459fbc7956456e19e2da6b8fdcc", null ],
-    [ "MultiMatrix", "structdg_1_1_multi_matrix.html#aad094817a8b817521ffb3e0c5bf6248d", null ],
-    [ "get_matrices", "structdg_1_1_multi_matrix.html#ac9e68724f74b7508517d3c0cdfda8e9e", null ],
-    [ "get_matrices", "structdg_1_1_multi_matrix.html#a2dcaffef6d456e7bced907bcea4b099b", null ],
-    [ "get_temp", "structdg_1_1_multi_matrix.html#af108022e382147cf64fdb48992ed4e2f", null ],
-    [ "get_temp", "structdg_1_1_multi_matrix.html#a0fa927f9a825786d25e45bd1664bfe06", null ],
-    [ "symv", "structdg_1_1_multi_matrix.html#a0afca886f15362297bb0c4666a938c21", null ],
-    [ "symv", "structdg_1_1_multi_matrix.html#aa25831a7664fc8d21b039c37837348fa", null ]
+    [ "real_type", "structdg_1_1_multi_matrix.html#acb8573038dfc39d692d368a0f8739593", null ],
+    [ "MultiMatrix", "structdg_1_1_multi_matrix.html#ae14e9c27d6e03614857b7086df402885", null ],
+    [ "MultiMatrix", "structdg_1_1_multi_matrix.html#ae5e7dafd471e65824ceaa4dca79c292a", null ],
+    [ "MultiMatrix", "structdg_1_1_multi_matrix.html#a72b0c74bb179a7e43774536587d477a9", null ],
+    [ "get_matrices", "structdg_1_1_multi_matrix.html#a21b75035ab5e7f209e05eacd1b3c0d07", null ],
+    [ "get_matrices", "structdg_1_1_multi_matrix.html#aa532b4a0df1835f5b4135f72b7db1921", null ],
+    [ "get_temp", "structdg_1_1_multi_matrix.html#a8dbca991fd3ff13e16f371c8b42b1067", null ],
+    [ "get_temp", "structdg_1_1_multi_matrix.html#a8607159bc46388f16267d1f0dca21f96", null ],
+    [ "symv", "structdg_1_1_multi_matrix.html#a3e44e1b39a7168f4964ffc16a5500b19", null ],
+    [ "symv", "structdg_1_1_multi_matrix.html#ab749f0b2feb68a2a9ea0a1364b497943", null ]
 ];

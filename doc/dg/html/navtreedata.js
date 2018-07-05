@@ -1,7 +1,22 @@
 var NAVTREE =
 [
   [ "Discontinuous Galerkin Library", "index.html", [
-    [ "PDF writeups", "index.html#pdf", null ],
+    [ "Introduction", "index.html", [
+      [ "Introduction to discontinuous Galerkin methods", "index.html#pdf", null ],
+      [ "The Level 1 dispatch system", "index.html#dispatch", [
+        [ "The subroutine function", "index.html#dispatch_subroutine", null ],
+        [ "The dot function", "index.html#dispatch_dot", null ],
+        [ "The symv function", "index.html#dispatch_symv", null ],
+        [ "Examples", "index.html#dispatch_examples", null ]
+      ] ],
+      [ "The MPI interface", "index.html#mpi_backend", [
+        [ "MPI Vectors and the blas1 functions", "index.html#mpi_vector", null ],
+        [ "Row and column distributed matrices", "index.html#mpi_matrix", [
+          [ "Row distributed", "index.html#row", null ],
+          [ "Column distributed", "index.html#column", null ]
+        ] ]
+      ] ]
+    ] ],
     [ "Modules", "modules.html", "modules" ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ],
@@ -26,7 +41,11 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Files", null, [
-      [ "File List", "files.html", "files" ]
+      [ "File List", "files.html", "files" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Macros", "globals_defs.html", null ]
+      ] ]
     ] ]
   ] ]
 ];
@@ -34,14 +53,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "algorithm_8h.html",
-"evaluation_x_8cuh.html",
-"group__geometry.html#gabc9311dda93e05464d73facb3688fb4e",
-"mpi__init_8h_source.html",
-"structdg_1_1_cartesian_m_p_i_grid3d.html#ace88140cef7426b02309f20164c37e10",
-"structdg_1_1_grid_x1d.html#ad7c37da422911808ed8e43afec799948",
-"structdg_1_1_r_k__classic.html#a55cadf32f8586bf4325e05c4c1cd503c",
-"structdg_1_1a_m_p_i_topology2d.html#acbdee1f83a4a29d6f5c1f9f5d3f36bf0",
-"typedefs_8cuh.html#ga89deab4489ccaca6812b016350c28bdb"
+"evaluation_8h.html#ga619eb1504db9c29b1a7f2ebf1a13e93f",
+"group__geometry.html#gad6e077288a8dac522ac3d69e18ff4731",
+"mpi__base_8h.html#ga7a76afa6dd6d1bc5a1f8c115ab776269",
+"structdg_1_1_bath_r_z.html",
+"structdg_1_1_invert.html#a60703c940d54cd6da959829ce4187d80",
+"structdg_1_1_real_grid_x3d.html",
+"structdg_1_1a_real_m_p_i_geometry3d.html#a5f881b304d414b8c94432c38c3220098",
+"structdg_1_1equals.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

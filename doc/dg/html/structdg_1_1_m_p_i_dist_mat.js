@@ -7,6 +7,6 @@ var structdg_1_1_m_p_i_dist_mat =
     [ "get_dist", "structdg_1_1_m_p_i_dist_mat.html#a1b742fb7341d4aa6362d2b0eb8545a47", null ],
     [ "matrix", "structdg_1_1_m_p_i_dist_mat.html#aa9140eabbe922a4367f5682664c92f36", null ],
     [ "set_dist", "structdg_1_1_m_p_i_dist_mat.html#aa6693e91cfc73a2de97da0cd7a3b7f3d", null ],
-    [ "symv", "structdg_1_1_m_p_i_dist_mat.html#a5ed6f2a621cc1e63c80a54829e1bf753", null ],
-    [ "symv", "structdg_1_1_m_p_i_dist_mat.html#a4b5513c2fa22e06bda66f22931e8defd", null ]
+    [ "symv", "structdg_1_1_m_p_i_dist_mat.html#af9c0bf2f541570a68b65353d7e295d00", null ],
+    [ "symv", "structdg_1_1_m_p_i_dist_mat.html#a2aedcac1d5f0970b888b8d3a8414cef4", null ]
 ];

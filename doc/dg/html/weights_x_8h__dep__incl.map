@@ -1,0 +1,12 @@
+<map id="geometry/weightsX.h" name="geometry/weightsX.h">
+<area shape="rect" id="node2" href="$dx_x_8h.html" title="Simple 1d derivatives on X&#45;point topology. " alt="" coords="41,80,156,107"/>
+<area shape="rect" id="node4" href="$algorithm_8h.html" title="algorithm.h" alt="" coords="305,379,391,405"/>
+<area shape="rect" id="node5" href="$refined__grid_x_8h.html" title="geometry/refined_gridX.h" alt="" coords="275,80,442,107"/>
+<area shape="rect" id="node3" href="$derivatives_x_8h.html" title="Convenience functions to create 2D derivatives on X&#45;point topology. " alt="" coords="5,155,168,181"/>
+<area shape="rect" id="node6" href="$geometry_8h.html" title="geometry/geometry.h" alt="" coords="317,155,462,181"/>
+<area shape="rect" id="node7" href="$elliptic_8h.html" title="General negative elliptic operators. " alt="" coords="354,229,425,256"/>
+<area shape="rect" id="node10" href="$arakawa_8h.html" title="object for computation of Poisson bracket " alt="" coords="599,304,681,331"/>
+<area shape="rect" id="node11" href="$poisson_8h.html" title="poisson.h" alt="" coords="634,229,713,256"/>
+<area shape="rect" id="node8" href="$helmholtz_8h.html" title="contains Helmholtz and Maxwell operators " alt="" coords="345,304,434,331"/>
+<area shape="rect" id="node9" href="$refined__elliptic_8h.html" title="contains an elliptic method on a refined grid " alt="" coords="458,304,574,331"/>
+</map>

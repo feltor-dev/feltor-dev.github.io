@@ -1,4 +1,19 @@
 var searchData=
 [
-  ['container_5ftype',['container_type',['../structdg_1_1a_communicator.html#acf1b0599056bd3f22b374dcde9b1f213',1,'dg::aCommunicator::container_type()'],['../structdg_1_1_m_p_i___vector.html#ad42ce5571b198915c6b5c2eb9033ceb3',1,'dg::MPI_Vector::container_type()'],['../structdg_1_1_nearest_neighbor_comm.html#a4484a5c5c781ed356d2d38ecc800ddcf',1,'dg::NearestNeighborComm::container_type()']]]
+  ['ageometry2d',['aGeometry2d',['../group__gridtypes.html#ga0194a345f358474eacd0d8fd668ddeb5',1,'dg']]],
+  ['ageometry3d',['aGeometry3d',['../group__gridtypes.html#ga98e551dd078cf173433853670e84d61a',1,'dg']]],
+  ['ageometryx2d',['aGeometryX2d',['../group__gridtypes.html#ga1614909b8085b3521f6eb6a8a7ee2185',1,'dg']]],
+  ['ageometryx3d',['aGeometryX3d',['../group__gridtypes.html#ga669637061097e77d4bfede9e74182b06',1,'dg']]],
+  ['ampigeometry2d',['aMPIGeometry2d',['../group__gridtypes.html#gaa3154d7bab772d2d51f7010838dc36a1',1,'dg']]],
+  ['ampigeometry3d',['aMPIGeometry3d',['../group__gridtypes.html#gad92589a12524a79d7bf8feb9c1caccf6',1,'dg']]],
+  ['ampitopology2d',['aMPITopology2d',['../group__gridtypes.html#ga19c78bb35e3a4a7192c5e484b7dbf8ee',1,'dg']]],
+  ['ampitopology3d',['aMPITopology3d',['../group__gridtypes.html#gab52aaf1578631594a9423e604b2e1232',1,'dg']]],
+  ['aproductgeometry3d',['aProductGeometry3d',['../group__gridtypes.html#gad3d6bea9081a22d2133ce8c42bd5ca46',1,'dg']]],
+  ['aproductmpigeometry3d',['aProductMPIGeometry3d',['../group__gridtypes.html#ga4f8e4aa131946e62c3a8b0325956c73e',1,'dg']]],
+  ['arefinement1d',['aRefinement1d',['../group__generators.html#ga1cfe6f739503af0dfefa5b9d73cacd94',1,'dg']]],
+  ['arefinementx2d',['aRefinementX2d',['../group__generators.html#ga1f0f5348b03f19a4e51d6cfc155e65f2',1,'dg']]],
+  ['atopology2d',['aTopology2d',['../group__gridtypes.html#gae3d12cf3fe25ad7c9ce423df0b5cd5bd',1,'dg']]],
+  ['atopology3d',['aTopology3d',['../group__gridtypes.html#ga534001144a75391bd6311a94f1dc6320',1,'dg']]],
+  ['atopologyx2d',['aTopologyX2d',['../group__gridtypes.html#ga1d1e9c917d1991849546462956339642',1,'dg']]],
+  ['atopologyx3d',['aTopologyX3d',['../group__gridtypes.html#ga203d6aafc7b2b6fc35a1659272e5a4a2',1,'dg']]]
 ];

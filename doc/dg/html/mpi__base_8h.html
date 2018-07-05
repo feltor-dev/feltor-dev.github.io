@@ -88,6 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -122,33 +123,86 @@ $(document).ready(function(){initNavTree('mpi__base_8h.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">mpi_base.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &quot;<a class="el" href="mpi__grid_8h_source.html">mpi_grid.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="base__geometry_8h_source.html">base_geometry.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="tensor_8h_source.html">tensor.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for mpi_base.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="mpi__base_8h__incl.png" border="0" usemap="#geometry_2mpi__base_8h" alt=""/></div>
+<map name="geometry_2mpi__base_8h" id="geometry_2mpi__base_8h">
+<area shape="rect" id="node2" href="mpi__grid_8h.html" title="MPI Grid objects. " alt="" coords="587,311,669,338"/>
+<area shape="rect" id="node29" href="base__geometry_8h.html" title="base_geometry.h" alt="" coords="869,80,992,107"/>
+<area shape="rect" id="node30" href="tensor_8h.html" title="tensor.h" alt="" coords="1185,155,1255,181"/>
+<area shape="rect" id="node4" href="mpi__vector_8h.html" title="dg/backend/mpi_vector.h" alt="" coords="797,401,965,427"/>
+<area shape="rect" id="node21" href="enums_8h.html" title="enums " alt="" coords="88,483,179,509"/>
+<area shape="rect" id="node24" href="grid_8h.html" title="base topology classes " alt="" coords="707,401,762,427"/>
+<area shape="rect" id="node8" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/mpi__accumulate_8h.html" title="exblas/mpi_accumulate.h" alt="" coords="357,483,528,509"/>
+<area shape="rect" id="node10" href="tensor__traits_8h.html" title="tensor_traits.h" alt="" coords="2242,483,2347,509"/>
+<area shape="rect" id="node18" href="mpi__communicator_8h.html" title="mpi_communicator.h" alt="" coords="787,483,930,509"/>
+<area shape="rect" id="node20" href="memory_8h.html" title="memory.h" alt="" coords="552,483,632,509"/>
+<area shape="rect" id="node9" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/accumulate_8h.html" title="accumulate.h" alt="" coords="393,557,493,584"/>
+<area shape="rect" id="node13" href="scalar__categories_8h.html" title="scalar_categories.h" alt="" coords="2587,557,2722,584"/>
+<area shape="rect" id="node14" href="vector__categories_8h.html" title="vector_categories.h" alt="" coords="2481,632,2617,659"/>
+<area shape="rect" id="node15" href="matrix__categories_8h.html" title="matrix_categories.h" alt="" coords="2481,707,2617,733"/>
+<area shape="rect" id="node16" href="execution__policy_8h.html" title="execution_policy.h" alt="" coords="2275,557,2405,584"/>
+<area shape="rect" id="node23" href="exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="903,557,1052,584"/>
+<area shape="rect" id="node25" href="topological__traits_8h.html" title="topological_traits.h" alt="" coords="203,483,333,509"/>
+<area shape="rect" id="node26" href="dlt_8h.html" title="contains the discrete legendre trafo class " alt="" coords="954,483,1001,509"/>
+<area shape="rect" id="node31" href="operator_8h.html" title="operator.h" alt="" coords="1448,401,1528,427"/>
+<area shape="rect" id="node34" href="functors_8h.html" title="dg/functors.h" alt="" coords="1171,229,1269,256"/>
+<area shape="rect" id="node38" href="blas1_8h.html" title="blas1.h" alt="" coords="2327,311,2391,338"/>
+<area shape="rect" id="node49" href="functions_8h.html" title="contains some utility functions for the evaluation() routines " alt="" coords="1808,483,1971,509"/>
+<area shape="rect" id="node50" href="evaluation_8h.html" title="Function discretization routines. " alt="" coords="1317,311,1467,338"/>
+<area shape="rect" id="node40" href="tensor__traits__scalar_8h.html" title="backend/tensor_traits\l_scalar.h" alt="" coords="2341,393,2488,435"/>
+<area shape="rect" id="node41" href="tensor__traits__thrust_8h.html" title="backend/tensor_traits\l_thrust.h" alt="" coords="1949,393,2096,435"/>
+<area shape="rect" id="node42" href="tensor__traits__cusp_8h.html" title="backend/tensor_traits\l_cusp.h" alt="" coords="2675,393,2821,435"/>
+<area shape="rect" id="node43" href="tensor__traits__std_8h.html" title="backend/tensor_traits\l_std.h" alt="" coords="2120,393,2267,435"/>
+<area shape="rect" id="node48" href="subroutines_8h.html" title="subroutines.h" alt="" coords="1825,401,1925,427"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="mpi__base_8h__dep__incl.png" border="0" usemap="#geometry_2mpi__base_8hdep" alt=""/></div>
+<map name="geometry_2mpi__base_8hdep" id="geometry_2mpi__base_8hdep">
+<area shape="rect" id="node2" href="geometry_8h.html" title="geometry/geometry.h" alt="" coords="85,80,230,107"/>
+<area shape="rect" id="node3" href="algorithm_8h.html" title="algorithm.h" alt="" coords="95,304,182,331"/>
+<area shape="rect" id="node4" href="elliptic_8h.html" title="General negative elliptic operators. " alt="" coords="63,155,134,181"/>
+<area shape="rect" id="node7" href="arakawa_8h.html" title="object for computation of Poisson bracket " alt="" coords="285,229,368,256"/>
+<area shape="rect" id="node8" href="poisson_8h.html" title="poisson.h" alt="" coords="343,155,422,181"/>
+<area shape="rect" id="node5" href="helmholtz_8h.html" title="contains Helmholtz and Maxwell operators " alt="" coords="31,229,121,256"/>
+<area shape="rect" id="node6" href="refined__elliptic_8h.html" title="contains an elliptic method on a refined grid " alt="" coords="145,229,261,256"/>
+</map>
+</div>
+</div>
 <p><a href="mpi__base_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_m_p_i_geometry2d.html">dg::aMPIGeometry2d</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the abstract interface class for a two-dimensional Geometry.  <a href="structdg_1_1a_m_p_i_geometry2d.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_real_m_p_i_geometry2d.html">dg::aRealMPIGeometry2d&lt; real_type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the abstract interface class for a two-dimensional Geometry.  <a href="structdg_1_1a_real_m_p_i_geometry2d.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_m_p_i_geometry3d.html">dg::aMPIGeometry3d</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the abstract interface class for a three-dimensional MPIGeometry.  <a href="structdg_1_1a_m_p_i_geometry3d.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_real_m_p_i_geometry3d.html">dg::aRealMPIGeometry3d&lt; real_type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the abstract interface class for a three-dimensional MPIGeometry.  <a href="structdg_1_1a_real_m_p_i_geometry3d.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_product_m_p_i_geometry3d.html">dg::aProductMPIGeometry3d</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">a 3d product space MPI Geometry  <a href="structdg_1_1a_product_m_p_i_geometry3d.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_real_product_m_p_i_geometry3d.html">dg::aRealProductMPIGeometry3d&lt; real_type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">a 3d product space MPI Geometry  <a href="structdg_1_1a_real_product_m_p_i_geometry3d.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_cartesian_m_p_i_grid2d.html">dg::CartesianMPIGrid2d</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mpi version of <a class="el" href="structdg_1_1_cartesian_grid2d.html" title="two-dimensional Grid with Cartesian metric ">CartesianGrid2d</a>.  <a href="structdg_1_1_cartesian_m_p_i_grid2d.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_real_cartesian_m_p_i_grid2d.html">dg::RealCartesianMPIGrid2d&lt; real_type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mpi version of <a class="el" href="structdg_1_1_real_cartesian_grid2d.html" title="two-dimensional Grid with Cartesian metric ">RealCartesianGrid2d</a>.  <a href="structdg_1_1_real_cartesian_m_p_i_grid2d.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_cartesian_m_p_i_grid3d.html">dg::CartesianMPIGrid3d</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mpi version of <a class="el" href="structdg_1_1_cartesian_grid3d.html" title="three-dimensional Grid with Cartesian metric ">CartesianGrid3d</a>.  <a href="structdg_1_1_cartesian_m_p_i_grid3d.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_real_cartesian_m_p_i_grid3d.html">dg::RealCartesianMPIGrid3d&lt; real_type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mpi version of <a class="el" href="structdg_1_1_real_cartesian_grid3d.html" title="three-dimensional Grid with Cartesian metric ">RealCartesianGrid3d</a>.  <a href="structdg_1_1_real_cartesian_m_p_i_grid3d.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_cylindrical_m_p_i_grid3d.html">dg::CylindricalMPIGrid3d</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">the mpi version of <a class="el" href="structdg_1_1_cylindrical_grid3d.html" title="three-dimensional Grid with Cylindrical metric ">CylindricalGrid3d</a>  <a href="structdg_1_1_cylindrical_m_p_i_grid3d.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_real_cylindrical_m_p_i_grid3d.html">dg::RealCylindricalMPIGrid3d&lt; real_type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">the mpi version of <a class="el" href="structdg_1_1_real_cylindrical_grid3d.html" title="three-dimensional Grid with Cylindrical metric ">RealCylindricalGrid3d</a>  <a href="structdg_1_1_real_cylindrical_m_p_i_grid3d.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -156,6 +210,21 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacedg"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg.html">dg</a></td></tr>
 <tr class="memdesc:namespacedg"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the namespace for all functions and classes defined and used by the discontinuous Galerkin solvers. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gaa3154d7bab772d2d51f7010838dc36a1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gridtypes.html#gaa3154d7bab772d2d51f7010838dc36a1">dg::aMPIGeometry2d</a> = <a class="el" href="structdg_1_1a_real_m_p_i_geometry2d.html">dg::aRealMPIGeometry2d</a>&lt; double &gt;</td></tr>
+<tr class="separator:gaa3154d7bab772d2d51f7010838dc36a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad92589a12524a79d7bf8feb9c1caccf6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gridtypes.html#gad92589a12524a79d7bf8feb9c1caccf6">dg::aMPIGeometry3d</a> = <a class="el" href="structdg_1_1a_real_m_p_i_geometry3d.html">dg::aRealMPIGeometry3d</a>&lt; double &gt;</td></tr>
+<tr class="separator:gad92589a12524a79d7bf8feb9c1caccf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4f8e4aa131946e62c3a8b0325956c73e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gridtypes.html#ga4f8e4aa131946e62c3a8b0325956c73e">dg::aProductMPIGeometry3d</a> = <a class="el" href="structdg_1_1a_real_product_m_p_i_geometry3d.html">dg::aRealProductMPIGeometry3d</a>&lt; double &gt;</td></tr>
+<tr class="separator:ga4f8e4aa131946e62c3a8b0325956c73e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7d8cf3138d84796c7a013f37dda88503"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gridtypes.html#ga7d8cf3138d84796c7a013f37dda88503">dg::CartesianMPIGrid2d</a> = <a class="el" href="structdg_1_1_real_cartesian_m_p_i_grid2d.html">dg::RealCartesianMPIGrid2d</a>&lt; double &gt;</td></tr>
+<tr class="separator:ga7d8cf3138d84796c7a013f37dda88503"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7a76afa6dd6d1bc5a1f8c115ab776269"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gridtypes.html#ga7a76afa6dd6d1bc5a1f8c115ab776269">dg::CartesianMPIGrid3d</a> = <a class="el" href="structdg_1_1_real_cartesian_m_p_i_grid3d.html">dg::RealCartesianMPIGrid3d</a>&lt; double &gt;</td></tr>
+<tr class="separator:ga7a76afa6dd6d1bc5a1f8c115ab776269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab33670c0099181705eda87bf1429b81c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gridtypes.html#gab33670c0099181705eda87bf1429b81c">dg::CylindricalMPIGrid3d</a> = <a class="el" href="structdg_1_1_real_cylindrical_m_p_i_grid3d.html">dg::RealCylindricalMPIGrid3d</a>&lt; double &gt;</td></tr>
+<tr class="separator:gab33670c0099181705eda87bf1429b81c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -163,7 +232,7 @@ Namespaces</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e3380d2178455503f266746fb14246a5.html">geometry</a></li><li class="navelem"><a class="el" href="mpi__base_8h.html">mpi_base.h</a></li>
-    <li class="footer">Generated on Thu Apr 26 2018 16:28:14 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Jul 5 2018 12:59:49 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

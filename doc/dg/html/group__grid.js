@@ -7,74 +7,76 @@ var group__grid =
     [ "Interpolation and projection", "group__interpolation.html", "group__interpolation" ],
     [ "Averaging", "group__utilities.html", "group__utilities" ],
     [ "Scatter and Gather", "group__scatter.html", "group__scatter" ],
-    [ "Grid1d", "structdg_1_1_grid1d.html", [
-      [ "dimensionality", "structdg_1_1_grid1d.html#a46181b4964e5410d93d3337609a6c834", null ],
-      [ "memory_category", "structdg_1_1_grid1d.html#afe96b245a62f8fa5f15340124513345c", null ],
-      [ "Grid1d", "structdg_1_1_grid1d.html#a81aec4c46a4512af931fc9a29e0a6407", null ],
-      [ "Grid1d", "structdg_1_1_grid1d.html#ab60a9d60be779436b92a579aa8f4ca3e", null ],
-      [ "bcx", "structdg_1_1_grid1d.html#ae14b654763d1104ab70dbf51ed01bf5b", null ],
-      [ "contains", "structdg_1_1_grid1d.html#a6fc902fae7001426005c968ae472f127", null ],
-      [ "display", "structdg_1_1_grid1d.html#a4e9cac230c42d8c378b030c3773f7f04", null ],
-      [ "dlt", "structdg_1_1_grid1d.html#a4a3b90d4876d646631715603dc0d8351", null ],
-      [ "h", "structdg_1_1_grid1d.html#a5edf3e7bbfbfa620a2ad7b7bdc9614f9", null ],
-      [ "lx", "structdg_1_1_grid1d.html#a2c287b73546860a964157ca9d0e9dea2", null ],
-      [ "N", "structdg_1_1_grid1d.html#af0f7a3ad9692d81f7832be500c499e0c", null ],
-      [ "n", "structdg_1_1_grid1d.html#a60941b7ae6037e5e799c07ad05f93bf6", null ],
-      [ "set", "structdg_1_1_grid1d.html#a5823e16d57e0fa26f263609f0c5abd33", null ],
-      [ "set", "structdg_1_1_grid1d.html#a13ae5ad2d5c87f3aa1027dddda8e2d02", null ],
-      [ "set", "structdg_1_1_grid1d.html#a5b3b6b3d4a2e0f9729830ebef91242a9", null ],
-      [ "shift_topologic", "structdg_1_1_grid1d.html#a9880b779865af5989dabb5a74c928344", null ],
-      [ "size", "structdg_1_1_grid1d.html#afa23624d7278e66e3f60c055f5ac2d85", null ],
-      [ "x0", "structdg_1_1_grid1d.html#ae8e71db029d6cba65f66e0e8334b976f", null ],
-      [ "x1", "structdg_1_1_grid1d.html#a78ccc629f4c2cda439698bcf3ab559e8", null ]
+    [ "RealGrid1d", "structdg_1_1_real_grid1d.html", [
+      [ "dimensionality", "structdg_1_1_real_grid1d.html#a51ecbd98e5bca4942b16b96967354681", null ],
+      [ "memory_category", "structdg_1_1_real_grid1d.html#acc357eed0968ddfe052a69494e346e9e", null ],
+      [ "value_type", "structdg_1_1_real_grid1d.html#afe8cb7fa6c2d5b459d12036219abe150", null ],
+      [ "RealGrid1d", "structdg_1_1_real_grid1d.html#a7ceb9c6d90f15a14ea47cf0c0754fbe6", null ],
+      [ "RealGrid1d", "structdg_1_1_real_grid1d.html#adfdbea868da5cf99188cb69318df8f1e", null ],
+      [ "bcx", "structdg_1_1_real_grid1d.html#acb738305b0e6f9a3e1b0da2d1470d51a", null ],
+      [ "contains", "structdg_1_1_real_grid1d.html#a3b8960a1ec858ab9a6bfddd543e2325e", null ],
+      [ "display", "structdg_1_1_real_grid1d.html#ab475b3186c766c68a701757dd1d8c313", null ],
+      [ "dlt", "structdg_1_1_real_grid1d.html#a98051312e86ae5fd42462a349681aa53", null ],
+      [ "h", "structdg_1_1_real_grid1d.html#a12df28953f8ebe72f4b6a917534a7753", null ],
+      [ "lx", "structdg_1_1_real_grid1d.html#a061aef4579e7bb5631606d26a4caa95b", null ],
+      [ "N", "structdg_1_1_real_grid1d.html#a6128eabb00f6e3d4b90d44ba898e622e", null ],
+      [ "n", "structdg_1_1_real_grid1d.html#a93e460983c02636c8d5ae56eaccd2aea", null ],
+      [ "set", "structdg_1_1_real_grid1d.html#af672bbef35a1cbb3ac06d9b93b20eecc", null ],
+      [ "set", "structdg_1_1_real_grid1d.html#a3c5c7d6cc366a4561a1405526a3ba25a", null ],
+      [ "set", "structdg_1_1_real_grid1d.html#a5b73685504772096fe8ae9902eaf7ca9", null ],
+      [ "shift_topologic", "structdg_1_1_real_grid1d.html#aeeff0db9550d7df8bb9618a0cb6b18e5", null ],
+      [ "size", "structdg_1_1_real_grid1d.html#ac14b07d448e8805a601014818b40b5a7", null ],
+      [ "x0", "structdg_1_1_real_grid1d.html#a0908f2757247f120a32abb2dcb48d53b", null ],
+      [ "x1", "structdg_1_1_real_grid1d.html#a515dbf88c5040583507140376f79a011", null ]
     ] ],
-    [ "Grid2d", "structdg_1_1_grid2d.html", [
-      [ "Grid2d", "structdg_1_1_grid2d.html#aae333d585b691d23b864a0b65f41b372", null ],
-      [ "Grid2d", "structdg_1_1_grid2d.html#acd52e0ba30c6b27d5e410d6f95c6d6f0", null ],
-      [ "Grid2d", "structdg_1_1_grid2d.html#a53cc13783d88a1a92cb51e494bb0703c", null ]
+    [ "RealGrid2d", "structdg_1_1_real_grid2d.html", [
+      [ "RealGrid2d", "structdg_1_1_real_grid2d.html#ad0d8de5efa9757845b63dfd86de1334e", null ],
+      [ "RealGrid2d", "structdg_1_1_real_grid2d.html#a051177b0c936b5297748e3595702b59b", null ],
+      [ "RealGrid2d", "structdg_1_1_real_grid2d.html#a44b57fe6446caf0709e073f61fa3dc5a", null ]
     ] ],
-    [ "Grid3d", "structdg_1_1_grid3d.html", [
-      [ "Grid3d", "structdg_1_1_grid3d.html#abdcef82718772650ed3f238c43a868dd", null ],
-      [ "Grid3d", "structdg_1_1_grid3d.html#a40b15c620077c48dce6dac4d12ec3443", null ],
-      [ "Grid3d", "structdg_1_1_grid3d.html#abca04b8133eec135fe353af3bcef712b", null ]
+    [ "RealGrid3d", "structdg_1_1_real_grid3d.html", [
+      [ "RealGrid3d", "structdg_1_1_real_grid3d.html#a6c05091cda47b2b7fdf2f6e301d00f34", null ],
+      [ "RealGrid3d", "structdg_1_1_real_grid3d.html#a435f583e0209ddf6db2d659faf552d34", null ],
+      [ "RealGrid3d", "structdg_1_1_real_grid3d.html#a6abdc509e81103fe35933fc9aca4eccc", null ]
     ] ],
-    [ "GridX1d", "structdg_1_1_grid_x1d.html", [
-      [ "dimensionality", "structdg_1_1_grid_x1d.html#ad7721702e2488b7f6acea81687fb39f2", null ],
-      [ "memory_category", "structdg_1_1_grid_x1d.html#ad095bcf302f2fdce324bc5ab20064ae4", null ],
-      [ "GridX1d", "structdg_1_1_grid_x1d.html#a89aa4ded1b6d7f1ebb572a6d34f78b4b", null ],
-      [ "bcx", "structdg_1_1_grid_x1d.html#ad022f11dac47e099f451da8cd470f868", null ],
-      [ "contains", "structdg_1_1_grid_x1d.html#a4bb96d64b8275985ebdd6c2ef3785026", null ],
-      [ "display", "structdg_1_1_grid_x1d.html#ab23cab026bca24bd9de013a933098f4b", null ],
-      [ "dlt", "structdg_1_1_grid_x1d.html#afb0354c5d757018b1b257d066c30431e", null ],
-      [ "f", "structdg_1_1_grid_x1d.html#a40e79964ef1aec506ece574b201b57dc", null ],
-      [ "grid", "structdg_1_1_grid_x1d.html#a874d2f02a9b13ea213fa1a93dd6a97ce", null ],
-      [ "h", "structdg_1_1_grid_x1d.html#a3e9dbf53b91ae355cc8d4c4ce659f3d8", null ],
-      [ "inner_N", "structdg_1_1_grid_x1d.html#aafebb69ff110d242bcb34ef1acf22601", null ],
-      [ "lx", "structdg_1_1_grid_x1d.html#a0dc73f182169638bea559c5c992a6ae6", null ],
-      [ "N", "structdg_1_1_grid_x1d.html#ad7c37da422911808ed8e43afec799948", null ],
-      [ "n", "structdg_1_1_grid_x1d.html#a487960379067718cbac3ba22ac682c74", null ],
-      [ "outer_N", "structdg_1_1_grid_x1d.html#a001bb95ad491c3671ca18494d06a6c8c", null ],
-      [ "shift_topologic", "structdg_1_1_grid_x1d.html#aca03c4cd99293d6e7d9922b7a5ddf809", null ],
-      [ "size", "structdg_1_1_grid_x1d.html#a6d134f36ee64d9675e08a203bf1770a7", null ],
-      [ "x0", "structdg_1_1_grid_x1d.html#a63341171e83cae1b6ee344535aa924e8", null ],
-      [ "x1", "structdg_1_1_grid_x1d.html#ad4f6db373324be4c0b5176e2b367dffd", null ]
+    [ "RealGridX1d", "structdg_1_1_real_grid_x1d.html", [
+      [ "dimensionality", "structdg_1_1_real_grid_x1d.html#aa535542165c06678f95013e79d28c719", null ],
+      [ "memory_category", "structdg_1_1_real_grid_x1d.html#a785dfc413eced0eff09d1e6932b4c3f2", null ],
+      [ "value_type", "structdg_1_1_real_grid_x1d.html#a25dc0e737c59bbb26d14b5bdd94131b8", null ],
+      [ "RealGridX1d", "structdg_1_1_real_grid_x1d.html#a0e7f34fe6c88dda18f6cc1c71c1392db", null ],
+      [ "bcx", "structdg_1_1_real_grid_x1d.html#a36c1bd804e8d171ada2d89302f6e9ab1", null ],
+      [ "contains", "structdg_1_1_real_grid_x1d.html#a8fbb280f3d826c0c95b982c686664a4f", null ],
+      [ "display", "structdg_1_1_real_grid_x1d.html#ab6803560663a0bc151437efce9b1d192", null ],
+      [ "dlt", "structdg_1_1_real_grid_x1d.html#a13cee4a35ea26a65308a4b1d0d24c0c5", null ],
+      [ "f", "structdg_1_1_real_grid_x1d.html#ab190280e6dd0f3937251974412b6078c", null ],
+      [ "grid", "structdg_1_1_real_grid_x1d.html#a1d48319dec5191d9f92b5107e099f4c0", null ],
+      [ "h", "structdg_1_1_real_grid_x1d.html#a4f7d49ac7e9a0b2c38134b06d671a3cc", null ],
+      [ "inner_N", "structdg_1_1_real_grid_x1d.html#abd5ba520d5512d85469bb215711ac9cc", null ],
+      [ "lx", "structdg_1_1_real_grid_x1d.html#aa4e717316806484e2336f7db1cbf97ea", null ],
+      [ "N", "structdg_1_1_real_grid_x1d.html#acd99766e6482e759aed2f7fc49f2ae58", null ],
+      [ "n", "structdg_1_1_real_grid_x1d.html#ab84fe9698572f13b1efe14f809a15dab", null ],
+      [ "outer_N", "structdg_1_1_real_grid_x1d.html#a39fdf12f68d81e5dd4fb6f8ef321efda", null ],
+      [ "shift_topologic", "structdg_1_1_real_grid_x1d.html#a296f0cc28a8813cc14ac76e56f9b5b17", null ],
+      [ "size", "structdg_1_1_real_grid_x1d.html#a04caa0b7c21d22106d2a5ba865854086", null ],
+      [ "x0", "structdg_1_1_real_grid_x1d.html#a532ff0aaf8a76f85bd87ed9bc69100f7", null ],
+      [ "x1", "structdg_1_1_real_grid_x1d.html#ae4e5f797938f43e59e40a378e2618590", null ]
     ] ],
-    [ "GridX2d", "structdg_1_1_grid_x2d.html", [
-      [ "GridX2d", "structdg_1_1_grid_x2d.html#a6d3a3baa034a6d6b7eba02b82dcf2245", null ],
-      [ "GridX2d", "structdg_1_1_grid_x2d.html#a36e8e97726da913a6f9658546eb3581f", null ]
+    [ "RealGridX2d", "structdg_1_1_real_grid_x2d.html", [
+      [ "RealGridX2d", "structdg_1_1_real_grid_x2d.html#ac2099b422ffd9b3ab6460ebaebf56f9b", null ],
+      [ "RealGridX2d", "structdg_1_1_real_grid_x2d.html#a2872605b6e9c30d4baef184de4765674", null ]
     ] ],
-    [ "GridX3d", "structdg_1_1_grid_x3d.html", [
-      [ "GridX3d", "structdg_1_1_grid_x3d.html#a3d0c1e8f76ec9f064a7881252dc9184e", null ],
-      [ "GridX3d", "structdg_1_1_grid_x3d.html#a41c5b126483561ea4c25b9a4ee9ea3c0", null ]
+    [ "RealGridX3d", "structdg_1_1_real_grid_x3d.html", [
+      [ "RealGridX3d", "structdg_1_1_real_grid_x3d.html#a799e70292f837615f169be40a1925212", null ],
+      [ "RealGridX3d", "structdg_1_1_real_grid_x3d.html#add6b6452d4475cbf46582253220061b7", null ]
     ] ],
-    [ "MPIGrid2d", "structdg_1_1_m_p_i_grid2d.html", [
-      [ "MPIGrid2d", "structdg_1_1_m_p_i_grid2d.html#a06c3e7ecff7e994a2f36760f4da639e8", null ],
-      [ "MPIGrid2d", "structdg_1_1_m_p_i_grid2d.html#aad98366a4beb3efea77e16588ee19b96", null ],
-      [ "MPIGrid2d", "structdg_1_1_m_p_i_grid2d.html#ae706e90f5cbfb53280956895404c2ff4", null ]
+    [ "RealMPIGrid2d", "structdg_1_1_real_m_p_i_grid2d.html", [
+      [ "RealMPIGrid2d", "structdg_1_1_real_m_p_i_grid2d.html#a6e1e1fb5597312e40859ca477dff2c02", null ],
+      [ "RealMPIGrid2d", "structdg_1_1_real_m_p_i_grid2d.html#a95d23008f7d96289ec8eb864ac95ef24", null ],
+      [ "RealMPIGrid2d", "structdg_1_1_real_m_p_i_grid2d.html#a72578b795d7a102ca7cb80d59a2a675f", null ]
     ] ],
-    [ "MPIGrid3d", "structdg_1_1_m_p_i_grid3d.html", [
-      [ "MPIGrid3d", "structdg_1_1_m_p_i_grid3d.html#a1749962024d65294017150f5232a3d58", null ],
-      [ "MPIGrid3d", "structdg_1_1_m_p_i_grid3d.html#a637bacf2654c5d7000951cb1ab3c0990", null ],
-      [ "MPIGrid3d", "structdg_1_1_m_p_i_grid3d.html#a3d1dc54396cc88df1427286345ac586f", null ]
+    [ "RealMPIGrid3d", "structdg_1_1_real_m_p_i_grid3d.html", [
+      [ "RealMPIGrid3d", "structdg_1_1_real_m_p_i_grid3d.html#a36a2b586dca0be98c72d0cbb3ba99cf4", null ],
+      [ "RealMPIGrid3d", "structdg_1_1_real_m_p_i_grid3d.html#a235f729aaa2970298f1879a42910ff0e", null ],
+      [ "RealMPIGrid3d", "structdg_1_1_real_m_p_i_grid3d.html#ae7b7f5321b58c46b4e698ac2d5a995f0", null ]
     ] ]
 ];

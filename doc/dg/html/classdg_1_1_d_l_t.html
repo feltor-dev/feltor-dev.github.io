@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Discontinuous Galerkin Library: dg::DLT&lt; T &gt; Class Template Reference</title>
+<title>Discontinuous Galerkin Library: dg::DLT&lt; real_type &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('classdg_1_1_d_l_t.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classdg_1_1_d_l_t-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">dg::DLT&lt; T &gt; Class Template Reference</div>  </div>
+<div class="title">dg::DLT&lt; real_type &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -138,45 +138,45 @@ $(document).ready(function(){initNavTree('classdg_1_1_d_l_t.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a72790f3d30a504bbace9198b26b34721"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_d_l_t.html#a72790f3d30a504bbace9198b26b34721">DLT</a> (unsigned n=3)</td></tr>
-<tr class="memdesc:a72790f3d30a504bbace9198b26b34721"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize coefficients.  <a href="#a72790f3d30a504bbace9198b26b34721">More...</a><br /></td></tr>
-<tr class="separator:a72790f3d30a504bbace9198b26b34721"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3029c6f214ed85f400ed1d70035a198d"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_d_l_t.html#a3029c6f214ed85f400ed1d70035a198d">weights</a> () const </td></tr>
-<tr class="memdesc:a3029c6f214ed85f400ed1d70035a198d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return Gauss-Legendre weights.  <a href="#a3029c6f214ed85f400ed1d70035a198d">More...</a><br /></td></tr>
-<tr class="separator:a3029c6f214ed85f400ed1d70035a198d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4828cac01d378d2e9ebb7cc90d54546d"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_d_l_t.html#a4828cac01d378d2e9ebb7cc90d54546d">abscissas</a> () const </td></tr>
-<tr class="memdesc:a4828cac01d378d2e9ebb7cc90d54546d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return Gauss-Legendre nodes on the interval [-1,1].  <a href="#a4828cac01d378d2e9ebb7cc90d54546d">More...</a><br /></td></tr>
-<tr class="separator:a4828cac01d378d2e9ebb7cc90d54546d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc3b01c52b7be79060e5481e83287263"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_d_l_t.html#afc3b01c52b7be79060e5481e83287263">forward</a> () const </td></tr>
-<tr class="memdesc:afc3b01c52b7be79060e5481e83287263"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return forward <a class="el" href="classdg_1_1_d_l_t.html" title="Struct holding coefficients for Discrete Legendre Transformation (DLT) related operations. ">DLT</a> trafo matrix.  <a href="#afc3b01c52b7be79060e5481e83287263">More...</a><br /></td></tr>
-<tr class="separator:afc3b01c52b7be79060e5481e83287263"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ea2a6dafbba862fc0b5238d81432f2c"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_d_l_t.html#a0ea2a6dafbba862fc0b5238d81432f2c">backward</a> () const </td></tr>
-<tr class="memdesc:a0ea2a6dafbba862fc0b5238d81432f2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return backward <a class="el" href="classdg_1_1_d_l_t.html" title="Struct holding coefficients for Discrete Legendre Transformation (DLT) related operations. ">DLT</a> trafo matrix.  <a href="#a0ea2a6dafbba862fc0b5238d81432f2c">More...</a><br /></td></tr>
-<tr class="separator:a0ea2a6dafbba862fc0b5238d81432f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82aae3c20a040800f96686caf467da22"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_d_l_t.html#a82aae3c20a040800f96686caf467da22">backwardEQ</a> () const </td></tr>
-<tr class="memdesc:a82aae3c20a040800f96686caf467da22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return equidistant backward <a class="el" href="classdg_1_1_d_l_t.html" title="Struct holding coefficients for Discrete Legendre Transformation (DLT) related operations. ">DLT</a> trafo matrix.  <a href="#a82aae3c20a040800f96686caf467da22">More...</a><br /></td></tr>
-<tr class="separator:a82aae3c20a040800f96686caf467da22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74be649cb8956964b423c954b6b6da18"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_d_l_t.html#a74be649cb8956964b423c954b6b6da18">DLT</a> (unsigned n=3)</td></tr>
+<tr class="memdesc:a74be649cb8956964b423c954b6b6da18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize coefficients.  <a href="#a74be649cb8956964b423c954b6b6da18">More...</a><br /></td></tr>
+<tr class="separator:a74be649cb8956964b423c954b6b6da18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fc9171a06ff08271c44e5c667a6c942"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; real_type &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_d_l_t.html#a0fc9171a06ff08271c44e5c667a6c942">weights</a> () const </td></tr>
+<tr class="memdesc:a0fc9171a06ff08271c44e5c667a6c942"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return Gauss-Legendre weights.  <a href="#a0fc9171a06ff08271c44e5c667a6c942">More...</a><br /></td></tr>
+<tr class="separator:a0fc9171a06ff08271c44e5c667a6c942"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a703346b0fd1e69b580c26925c56b366b"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; real_type &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_d_l_t.html#a703346b0fd1e69b580c26925c56b366b">abscissas</a> () const </td></tr>
+<tr class="memdesc:a703346b0fd1e69b580c26925c56b366b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return Gauss-Legendre nodes on the interval [-1,1].  <a href="#a703346b0fd1e69b580c26925c56b366b">More...</a><br /></td></tr>
+<tr class="separator:a703346b0fd1e69b580c26925c56b366b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ca21afa2d0e2880f18bc435ed5080be"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; real_type &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_d_l_t.html#a3ca21afa2d0e2880f18bc435ed5080be">forward</a> () const </td></tr>
+<tr class="memdesc:a3ca21afa2d0e2880f18bc435ed5080be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return forward <a class="el" href="classdg_1_1_d_l_t.html" title="Struct holding coefficients for Discrete Legendre Transformation (DLT) related operations. ">DLT</a> trafo matrix.  <a href="#a3ca21afa2d0e2880f18bc435ed5080be">More...</a><br /></td></tr>
+<tr class="separator:a3ca21afa2d0e2880f18bc435ed5080be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1bb1585d87e2023880eb2811aca5d06"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; real_type &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_d_l_t.html#ab1bb1585d87e2023880eb2811aca5d06">backward</a> () const </td></tr>
+<tr class="memdesc:ab1bb1585d87e2023880eb2811aca5d06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return backward <a class="el" href="classdg_1_1_d_l_t.html" title="Struct holding coefficients for Discrete Legendre Transformation (DLT) related operations. ">DLT</a> trafo matrix.  <a href="#ab1bb1585d87e2023880eb2811aca5d06">More...</a><br /></td></tr>
+<tr class="separator:ab1bb1585d87e2023880eb2811aca5d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60f36c25a6bd4a1d54a233c4dc730a09"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; real_type &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_d_l_t.html#a60f36c25a6bd4a1d54a233c4dc730a09">backwardEQ</a> () const </td></tr>
+<tr class="memdesc:a60f36c25a6bd4a1d54a233c4dc730a09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return equidistant backward <a class="el" href="classdg_1_1_d_l_t.html" title="Struct holding coefficients for Discrete Legendre Transformation (DLT) related operations. ">DLT</a> trafo matrix.  <a href="#a60f36c25a6bd4a1d54a233c4dc730a09">More...</a><br /></td></tr>
+<tr class="separator:a60f36c25a6bd4a1d54a233c4dc730a09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class T&gt;<br />
-class dg::DLT&lt; T &gt;</h3>
+<div class="textblock"><h3>template&lt;class real_type&gt;<br />
+class dg::DLT&lt; real_type &gt;</h3>
 
 <p>Struct holding coefficients for Discrete Legendre Transformation (<a class="el" href="classdg_1_1_d_l_t.html" title="Struct holding coefficients for Discrete Legendre Transformation (DLT) related operations. ">DLT</a>) related operations. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>value type (<code>double</code> or <code>float</code>) </td></tr>
+    <tr><td class="paramname">real_type</td><td>value type (<code>double</code> or <code>float</code>) </td></tr>
   </table>
   </dd>
 </dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a72790f3d30a504bbace9198b26b34721"></a>
+<a class="anchor" id="a74be649cb8956964b423c954b6b6da18"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T&gt; </div>
+template&lt;class real_type&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdg_1_1_d_l_t.html">dg::DLT</a>&lt; T &gt;::<a class="el" href="classdg_1_1_d_l_t.html">DLT</a> </td>
+          <td class="memname"><a class="el" href="classdg_1_1_d_l_t.html">dg::DLT</a>&lt; real_type &gt;::<a class="el" href="classdg_1_1_d_l_t.html">DLT</a> </td>
           <td>(</td>
           <td class="paramtype">unsigned&#160;</td>
           <td class="paramname"><em>n</em> = <code>3</code></td><td>)</td>
@@ -196,17 +196,17 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a4828cac01d378d2e9ebb7cc90d54546d"></a>
+<a class="anchor" id="a703346b0fd1e69b580c26925c56b366b"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T&gt; </div>
+template&lt;class real_type&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt;T&gt;&amp; <a class="el" href="classdg_1_1_d_l_t.html">dg::DLT</a>&lt; T &gt;::abscissas </td>
+          <td class="memname">const std::vector&lt;real_type&gt;&amp; <a class="el" href="classdg_1_1_d_l_t.html">dg::DLT</a>&lt; real_type &gt;::abscissas </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -224,17 +224,17 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a0ea2a6dafbba862fc0b5238d81432f2c"></a>
+<a class="anchor" id="ab1bb1585d87e2023880eb2811aca5d06"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T&gt; </div>
+template&lt;class real_type&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt;T&gt;&amp; <a class="el" href="classdg_1_1_d_l_t.html">dg::DLT</a>&lt; T &gt;::backward </td>
+          <td class="memname">const std::vector&lt;real_type&gt;&amp; <a class="el" href="classdg_1_1_d_l_t.html">dg::DLT</a>&lt; real_type &gt;::backward </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -248,21 +248,21 @@ template&lt;class T&gt; </div>
 </div><div class="memdoc">
 
 <p>Return backward <a class="el" href="classdg_1_1_d_l_t.html" title="Struct holding coefficients for Discrete Legendre Transformation (DLT) related operations. ">DLT</a> trafo matrix. </p>
-<p>accesss elements in C-fashion: \( F_{ij} =\) <code><a class="el" href="classdg_1_1_d_l_t.html#a0ea2a6dafbba862fc0b5238d81432f2c" title="Return backward DLT trafo matrix. ">backward()</a></code>[<code>i*n+j</code>] </p><dl class="section return"><dt>Returns</dt><dd><code>n*n</code> backward transformation coefficients </dd></dl>
+<p>accesss elements in C-fashion: \( F_{ij} =\) <code><a class="el" href="classdg_1_1_d_l_t.html#ab1bb1585d87e2023880eb2811aca5d06" title="Return backward DLT trafo matrix. ">backward()</a></code>[<code>i*n+j</code>] </p><dl class="section return"><dt>Returns</dt><dd><code>n*n</code> backward transformation coefficients </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a82aae3c20a040800f96686caf467da22"></a>
+<a class="anchor" id="a60f36c25a6bd4a1d54a233c4dc730a09"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T&gt; </div>
+template&lt;class real_type&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt;T&gt;&amp; <a class="el" href="classdg_1_1_d_l_t.html">dg::DLT</a>&lt; T &gt;::backwardEQ </td>
+          <td class="memname">const std::vector&lt;real_type&gt;&amp; <a class="el" href="classdg_1_1_d_l_t.html">dg::DLT</a>&lt; real_type &gt;::backwardEQ </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -276,21 +276,21 @@ template&lt;class T&gt; </div>
 </div><div class="memdoc">
 
 <p>Return equidistant backward <a class="el" href="classdg_1_1_d_l_t.html" title="Struct holding coefficients for Discrete Legendre Transformation (DLT) related operations. ">DLT</a> trafo matrix. </p>
-<p>For vizualisation purposes it is useful to have the values of the <a class="el" href="classdg_1_1_d_l_t.html" title="Struct holding coefficients for Discrete Legendre Transformation (DLT) related operations. ">DLT</a> - expansion on an equidistant grid. accesss elements in C-fashion: \( F_{ij} = \) <code><a class="el" href="classdg_1_1_d_l_t.html#a82aae3c20a040800f96686caf467da22" title="Return equidistant backward DLT trafo matrix. ">backwardEQ()</a></code>[<code>i*n+j</code>] </p><dl class="section return"><dt>Returns</dt><dd><code>n*n</code> equidistant backward transformation coefficients </dd></dl>
+<p>For vizualisation purposes it is useful to have the values of the <a class="el" href="classdg_1_1_d_l_t.html" title="Struct holding coefficients for Discrete Legendre Transformation (DLT) related operations. ">DLT</a> - expansion on an equidistant grid. accesss elements in C-fashion: \( F_{ij} = \) <code><a class="el" href="classdg_1_1_d_l_t.html#a60f36c25a6bd4a1d54a233c4dc730a09" title="Return equidistant backward DLT trafo matrix. ">backwardEQ()</a></code>[<code>i*n+j</code>] </p><dl class="section return"><dt>Returns</dt><dd><code>n*n</code> equidistant backward transformation coefficients </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="afc3b01c52b7be79060e5481e83287263"></a>
+<a class="anchor" id="a3ca21afa2d0e2880f18bc435ed5080be"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T&gt; </div>
+template&lt;class real_type&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt;T&gt;&amp; <a class="el" href="classdg_1_1_d_l_t.html">dg::DLT</a>&lt; T &gt;::forward </td>
+          <td class="memname">const std::vector&lt;real_type&gt;&amp; <a class="el" href="classdg_1_1_d_l_t.html">dg::DLT</a>&lt; real_type &gt;::forward </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -304,21 +304,21 @@ template&lt;class T&gt; </div>
 </div><div class="memdoc">
 
 <p>Return forward <a class="el" href="classdg_1_1_d_l_t.html" title="Struct holding coefficients for Discrete Legendre Transformation (DLT) related operations. ">DLT</a> trafo matrix. </p>
-<p>accesss elements in C-fashion: \( F_{ij} = \) <code><a class="el" href="classdg_1_1_d_l_t.html#afc3b01c52b7be79060e5481e83287263" title="Return forward DLT trafo matrix. ">forward()</a></code>[<code>i*n+j</code>] </p><dl class="section return"><dt>Returns</dt><dd><code>n*n</code> forward transformation coefficients </dd></dl>
+<p>accesss elements in C-fashion: \( F_{ij} = \) <code><a class="el" href="classdg_1_1_d_l_t.html#a3ca21afa2d0e2880f18bc435ed5080be" title="Return forward DLT trafo matrix. ">forward()</a></code>[<code>i*n+j</code>] </p><dl class="section return"><dt>Returns</dt><dd><code>n*n</code> forward transformation coefficients </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a3029c6f214ed85f400ed1d70035a198d"></a>
+<a class="anchor" id="a0fc9171a06ff08271c44e5c667a6c942"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T&gt; </div>
+template&lt;class real_type&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt;T&gt;&amp; <a class="el" href="classdg_1_1_d_l_t.html">dg::DLT</a>&lt; T &gt;::weights </td>
+          <td class="memname">const std::vector&lt;real_type&gt;&amp; <a class="el" href="classdg_1_1_d_l_t.html">dg::DLT</a>&lt; real_type &gt;::weights </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -345,7 +345,7 @@ template&lt;class T&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="classdg_1_1_d_l_t.html">DLT</a></li>
-    <li class="footer">Generated on Thu Apr 26 2018 16:28:15 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Jul 5 2018 12:59:50 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

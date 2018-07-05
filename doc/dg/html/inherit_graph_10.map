@@ -1,10 +1,8 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. " alt="" coords="5,56,132,83"/>
-<area shape="rect" id="node2" href="$structdg_1_1_m_p_i_vector_tag.html" title="A distributed vector contains a data container and a MPI communicator. " alt="" coords="189,5,317,32"/>
-<area shape="rect" id="node3" href="$structdg_1_1_shared_vector_tag.html" title="Indicate a contiguous chunk of shared memory. " alt="" coords="180,56,325,83"/>
-<area shape="rect" id="node7" href="$structdg_1_1_vector_vector_tag.html" title="This tag indicates composition/recursion. " alt="" coords="181,107,324,133"/>
-<area shape="rect" id="node4" href="$structdg_1_1_thrust_vector_tag.html" title="Indicate that thrust &#45; like members are available. " alt="" coords="373,56,515,83"/>
-<area shape="rect" id="node5" href="$structdg_1_1_cusp_vector_tag.html" title="special tag for cusp arrays " alt="" coords="563,31,697,57"/>
-<area shape="rect" id="node6" href="$structdg_1_1_std_array_tag.html" title="std::array&lt; primitive_type&gt; " alt="" coords="571,81,689,108"/>
-<area shape="rect" id="node8" href="$structdg_1_1_array_vector_tag.html" title="std::array of containers " alt="" coords="377,107,511,133"/>
+<area shape="rect" id="node1" href="$structdg_1_1a_real_m_p_i_topology3d.html" title="3D MPI Grid class " alt="" coords="5,72,175,113"/>
+<area shape="rect" id="node2" href="$structdg_1_1a_real_m_p_i_geometry3d.html" title="This is the abstract interface class for a three&#45;dimensional MPIGeometry. " alt="" coords="223,39,396,80"/>
+<area shape="rect" id="node6" href="$structdg_1_1_real_m_p_i_grid3d.html" title="The simplest implementation of aRealMPITopology3d. " alt="" coords="239,104,380,145"/>
+<area shape="rect" id="node3" href="$structdg_1_1a_real_product_m_p_i_geometry3d.html" title="a 3d product space MPI Geometry " alt="" coords="444,39,663,80"/>
+<area shape="rect" id="node4" href="$structdg_1_1_real_cartesian_m_p_i_grid3d.html" title="The mpi version of RealCartesianGrid3d. " alt="" coords="713,5,903,47"/>
+<area shape="rect" id="node5" href="$structdg_1_1_real_cylindrical_m_p_i_grid3d.html" title="the mpi version of RealCylindricalGrid3d " alt="" coords="711,71,905,112"/>
 </map>

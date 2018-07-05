@@ -169,22 +169,22 @@ $(document).ready(function(){initNavTree('functions_i.html','');});
 : <a class="el" href="structdg_1_1_sparse_tensor.html#a9dea8b6409b22b6c51e7e9370d0e80fa">dg::SparseTensor&lt; T &gt;</a>
 </li>
 <li>init()
-: <a class="el" href="structdg_1_1_a_b.html#a49859cf86059c432ed71da44f3ca49dd">dg::AB&lt; k, container &gt;</a>
-, <a class="el" href="structdg_1_1_karniadakis.html#a5a79782eaa85e0760ed70426cde37515">dg::Karniadakis&lt; container &gt;</a>
+: <a class="el" href="structdg_1_1_a_b.html#aa1b08f9aa38b33ebb057262c1bc05f90">dg::AB&lt; k, ContainerType &gt;</a>
+, <a class="el" href="structdg_1_1_karniadakis.html#a911cf99d1aa7c4b5ef74ea08d8df9822">dg::Karniadakis&lt; ContainerType &gt;</a>
 </li>
 <li>inner_matrix()
 : <a class="el" href="structdg_1_1_row_col_dist_mat.html#ac95cd9424ce4d3b32e22c865774c3334">dg::RowColDistMat&lt; LocalMatrixInner, LocalMatrixOuter, Collective &gt;</a>
 </li>
 <li>inner_N()
-: <a class="el" href="structdg_1_1_grid_x1d.html#aafebb69ff110d242bcb34ef1acf22601">dg::GridX1d</a>
+: <a class="el" href="structdg_1_1_real_grid_x1d.html#abd5ba520d5512d85469bb215711ac9cc">dg::RealGridX1d&lt; real_type &gt;</a>
 </li>
 <li>inner_Nx()
-: <a class="el" href="structdg_1_1a_topology_x2d.html#ab99f40846b0689a5fee1589247ca3611">dg::aTopologyX2d</a>
-, <a class="el" href="structdg_1_1a_topology_x3d.html#aeb3e70ad019dcf360a315d4a829e0c20">dg::aTopologyX3d</a>
+: <a class="el" href="structdg_1_1a_real_topology_x2d.html#a6027d15611fb25cc0b0e8863a7896290">dg::aRealTopologyX2d&lt; real_type &gt;</a>
+, <a class="el" href="structdg_1_1a_real_topology_x3d.html#a981dcf98a0e824880fb9ad57bef6a052">dg::aRealTopologyX3d&lt; real_type &gt;</a>
 </li>
 <li>inner_Ny()
-: <a class="el" href="structdg_1_1a_topology_x2d.html#a8a97ef174c9544dbf40852ee23675b51">dg::aTopologyX2d</a>
-, <a class="el" href="structdg_1_1a_topology_x3d.html#aa5cbb4a650d52789ae87d80cef0d204f">dg::aTopologyX3d</a>
+: <a class="el" href="structdg_1_1a_real_topology_x2d.html#a0ae475bfb354ae3201ee84ebbf8e313a">dg::aRealTopologyX2d&lt; real_type &gt;</a>
+, <a class="el" href="structdg_1_1a_real_topology_x3d.html#a0340d6febe10018d9a169e325a9f3eec">dg::aRealTopologyX3d&lt; real_type &gt;</a>
 </li>
 <li>inside()
 : <a class="el" href="structdg_1_1_cauchy.html#a811035f6afe477f0a921289f489a9068">dg::Cauchy</a>
@@ -199,7 +199,7 @@ $(document).ready(function(){initNavTree('functions_i.html','');});
 , <a class="el" href="structdg_1_1_tensor_elliptic.html#a2afd3bcd3fb62d2df6e12ad4ed0f7de3">dg::TensorElliptic&lt; Geometry, Matrix, container &gt;</a>
 </li>
 <li>Invert()
-: <a class="el" href="structdg_1_1_invert.html#a2602f6e265142a91b7e7ecad2f60fad9">dg::Invert&lt; container &gt;</a>
+: <a class="el" href="structdg_1_1_invert.html#a4678dabff963cafcbcd683d3cb5f8116">dg::Invert&lt; ContainerType &gt;</a>
 </li>
 <li>isCommunicating()
 : <a class="el" href="structdg_1_1a_communicator.html#a686946aff2fac59c4dafedd100465cb3">dg::aCommunicator&lt; LocalContainer &gt;</a>
@@ -223,6 +223,7 @@ $(document).ready(function(){initNavTree('functions_i.html','');});
 </li>
 <li>IVec
 : <a class="el" href="structdg_1_1_coo_sparse_block_mat.html#af1364d9c406951269b14c6c76ee95022">dg::CooSparseBlockMat&lt; value_type &gt;</a>
+, <a class="el" href="structdg_1_1_coo_sparse_block_mat_device.html#a6851b4bcf64dd79e775209804b51d65d">dg::CooSparseBlockMatDevice&lt; value_type &gt;</a>
 , <a class="el" href="structdg_1_1_ell_sparse_block_mat.html#a40e9077e44ec3d450eb1ee874fb7b638">dg::EllSparseBlockMat&lt; value_type &gt;</a>
 </li>
 </ul>
@@ -231,7 +232,7 @@ $(document).ready(function(){initNavTree('functions_i.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Apr 26 2018 16:28:15 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Jul 5 2018 12:59:50 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

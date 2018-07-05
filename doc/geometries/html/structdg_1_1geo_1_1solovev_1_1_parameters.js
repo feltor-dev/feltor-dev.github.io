@@ -1,8 +1,6 @@
 var structdg_1_1geo_1_1solovev_1_1_parameters =
 [
-    [ "Parameters", "structdg_1_1geo_1_1solovev_1_1_parameters.html#aae96ad48c495117f6b359ce08efe3833", null ],
     [ "display", "structdg_1_1geo_1_1solovev_1_1_parameters.html#ad9ebd66cb1e15d35201b4c98f4f81986", null ],
-    [ "dump", "structdg_1_1geo_1_1solovev_1_1_parameters.html#a7e85d567356fcd3ef984d533ed9d1e7f", null ],
     [ "A", "structdg_1_1geo_1_1solovev_1_1_parameters.html#a36af63065c1d6b6e54571d655c7e07da", null ],
     [ "a", "structdg_1_1geo_1_1solovev_1_1_parameters.html#a245bcf30102133b8faa508dcf4a88481", null ],
     [ "alpha", "structdg_1_1geo_1_1solovev_1_1_parameters.html#a88671d55077cc955eea851bc5187d567", null ],

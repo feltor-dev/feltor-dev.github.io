@@ -1,5 +1,0 @@
-<map id="dg::aMPITopology2d" name="dg::aMPITopology2d">
-<area shape="rect" id="node2" href="$structdg_1_1a_m_p_i_geometry2d.html" title="This is the abstract interface class for a two&#45;dimensional Geometry. " alt="" coords="13,80,160,107"/>
-<area shape="rect" id="node4" href="$structdg_1_1_m_p_i_grid2d.html" title="The simplest implementation of aMPITopology2d. " alt="" coords="184,80,291,107"/>
-<area shape="rect" id="node3" href="$structdg_1_1_cartesian_m_p_i_grid2d.html" title="The mpi version of CartesianGrid2d. " alt="" coords="5,155,168,181"/>
-</map>

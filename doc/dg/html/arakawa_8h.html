@@ -88,6 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -130,7 +131,62 @@ $(document).ready(function(){initNavTree('arakawa_8h.html','');});
 
 <p>object for computation of Poisson bracket  
 <a href="#details">More...</a></p>
-
+<div class="textblock"><code>#include &quot;<a class="el" href="blas_8h_source.html">blas.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="geometry_8h_source.html">geometry/geometry.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="enums_8h_source.html">enums.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="evaluation_8h_source.html">geometry/evaluation.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="derivatives_8h_source.html">geometry/derivatives.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mpi__derivatives_8h_source.html">geometry/mpi_derivatives.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mpi__evaluation_8h_source.html">geometry/mpi_evaluation.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for arakawa.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="arakawa_8h__incl.png" border="0" usemap="#arakawa_8h" alt=""/></div>
+<map name="arakawa_8h" id="arakawa_8h">
+<area shape="rect" id="node2" href="blas_8h.html" title="blas.h" alt="" coords="2479,229,2537,256"/>
+<area shape="rect" id="node32" href="geometry_8h.html" title="geometry/geometry.h" alt="" coords="3241,80,3386,107"/>
+<area shape="rect" id="node33" href="evaluation_8h.html" title="Function discretization routines. " alt="" coords="3354,379,3446,405"/>
+<area shape="rect" id="node35" href="enums_8h.html" title="enums " alt="" coords="3834,543,3918,569"/>
+<area shape="rect" id="node38" href="mpi__evaluation_8h.html" title="Function discretization routines for mpi vectors. " alt="" coords="3479,304,3599,331"/>
+<area shape="rect" id="node48" href="derivatives_8h.html" title="Convenience functions to create 2D derivatives. " alt="" coords="3968,229,4123,256"/>
+<area shape="rect" id="node50" href="mpi__derivatives_8h.html" title="geometry/mpi_derivatives.h" alt="" coords="3831,155,4014,181"/>
+<area shape="rect" id="node3" href="blas1_8h.html" title="blas1.h" alt="" coords="2417,379,2481,405"/>
+<area shape="rect" id="node20" href="blas2_8h.html" title="blas2.h" alt="" coords="1047,379,1111,405"/>
+<area shape="rect" id="node27" href="typedefs_8h.html" title="Useful typedefs of commonly used types. " alt="" coords="2580,304,2716,331"/>
+<area shape="rect" id="node5" href="tensor__traits_8h.html" title="backend/tensor_traits.h" alt="" coords="1655,543,1814,569"/>
+<area shape="rect" id="node6" href="tensor__traits__scalar_8h.html" title="backend/tensor_traits\l_scalar.h" alt="" coords="1747,453,1893,495"/>
+<area shape="rect" id="node7" href="tensor__traits__thrust_8h.html" title="backend/tensor_traits\l_thrust.h" alt="" coords="1405,453,1552,495"/>
+<area shape="rect" id="node9" href="tensor__traits__cusp_8h.html" title="backend/tensor_traits\l_cusp.h" alt="" coords="1576,453,1723,495"/>
+<area shape="rect" id="node11" href="tensor__traits__std_8h.html" title="backend/tensor_traits\l_std.h" alt="" coords="1235,453,1381,495"/>
+<area shape="rect" id="node14" href="mpi__vector_8h.html" title="backend/mpi_vector.h" alt="" coords="3053,461,3203,487"/>
+<area shape="rect" id="node17" href="subroutines_8h.html" title="subroutines.h" alt="" coords="2929,461,3029,487"/>
+<area shape="rect" id="node18" href="functions_8h.html" title="contains some utility functions for the evaluation() routines " alt="" coords="4017,543,4180,569"/>
+<area shape="rect" id="node28" href="sparseblockmat_8h.html" title="sparseblockmat.h" alt="" coords="3532,461,3657,487"/>
+<area shape="rect" id="node31" href="mpi__matrix_8h.html" title="MPI matrix classes. " alt="" coords="3029,379,3126,405"/>
+<area shape="rect" id="node30" href="exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="3648,617,3744,644"/>
+<area shape="rect" id="node37" href="weights_8h.html" title="contains creation functions for integration weights and their inverse " alt="" coords="3739,379,3818,405"/>
+<area shape="rect" id="node40" href="mpi__weights_8h.html" title="contains MPI weights " alt="" coords="3724,304,3831,331"/>
+<area shape="rect" id="node41" href="base__geometry_8h.html" title="base_geometry.h" alt="" coords="3252,229,3375,256"/>
+<area shape="rect" id="node42" href="tensor_8h.html" title="tensor.h" alt="" coords="2936,304,3005,331"/>
+<area shape="rect" id="node43" href="base__geometry_x_8h.html" title="base_geometryX.h" alt="" coords="2841,229,2972,256"/>
+<area shape="rect" id="node44" href="refined__grid_x_8h.html" title="refined_gridX.h" alt="" coords="2856,155,2965,181"/>
+<area shape="rect" id="node45" href="mpi__base_8h.html" title="mpi_base.h" alt="" coords="3269,155,3358,181"/>
+<area shape="rect" id="node46" href="transform_8h.html" title="transform.h" alt="" coords="3383,155,3471,181"/>
+<area shape="rect" id="node47" href="multiply_8h.html" title="multiply.h" alt="" coords="2997,229,3075,256"/>
+<area shape="rect" id="node34" href="grid_8h.html" title="base topology classes " alt="" coords="3783,461,3838,487"/>
+<area shape="rect" id="node39" href="mpi__grid_8h.html" title="MPI Grid objects. " alt="" coords="3632,379,3715,405"/>
+<area shape="rect" id="node49" href="dx_8h.html" title="Simple 1d derivatives. " alt="" coords="4007,304,4054,331"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="arakawa_8h__dep__incl.png" border="0" usemap="#arakawa_8hdep" alt=""/></div>
+<map name="arakawa_8hdep" id="arakawa_8hdep">
+<area shape="rect" id="node2" href="algorithm_8h.html" title="algorithm.h" alt="" coords="5,80,92,107"/>
+</map>
+</div>
+</div>
 <p><a href="arakawa_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -153,7 +209,7 @@ Namespaces</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="arakawa_8h.html">arakawa.h</a></li>
-    <li class="footer">Generated on Thu Apr 26 2018 16:28:14 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Jul 5 2018 12:59:49 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

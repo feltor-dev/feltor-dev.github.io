@@ -88,6 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -130,7 +131,49 @@ $(document).ready(function(){initNavTree('mpi__weights_8h.html','');});
 
 <p>contains MPI weights  
 <a href="#details">More...</a></p>
-
+<div class="textblock"><code>#include &quot;<a class="el" href="weights_8h_source.html">weights.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mpi__grid_8h_source.html">mpi_grid.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for mpi_weights.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="mpi__weights_8h__incl.png" border="0" usemap="#geometry_2mpi__weights_8h" alt=""/></div>
+<map name="geometry_2mpi__weights_8h" id="geometry_2mpi__weights_8h">
+<area shape="rect" id="node2" href="weights_8h.html" title="contains creation functions for integration weights and their inverse " alt="" coords="368,80,447,107"/>
+<area shape="rect" id="node18" href="mpi__grid_8h.html" title="MPI Grid objects. " alt="" coords="471,80,554,107"/>
+<area shape="rect" id="node4" href="grid_8h.html" title="base topology classes " alt="" coords="380,155,435,181"/>
+<area shape="rect" id="node16" href="enums_8h.html" title="enums " alt="" coords="120,229,204,256"/>
+<area shape="rect" id="node7" href="topological__traits_8h.html" title="topological_traits.h" alt="" coords="229,229,359,256"/>
+<area shape="rect" id="node8" href="dlt_8h.html" title="contains the discrete legendre trafo class " alt="" coords="384,229,431,256"/>
+<area shape="rect" id="node13" href="exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="84,304,251,331"/>
+<area shape="rect" id="node19" href="mpi__vector_8h.html" title="dg/backend/mpi_vector.h" alt="" coords="923,155,1091,181"/>
+<area shape="rect" id="node21" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/mpi__accumulate_8h.html" title="exblas/mpi_accumulate.h" alt="" coords="922,229,1093,256"/>
+<area shape="rect" id="node24" href="tensor__traits_8h.html" title="tensor_traits.h" alt="" coords="1117,229,1223,256"/>
+<area shape="rect" id="node32" href="mpi__communicator_8h.html" title="mpi_communicator.h" alt="" coords="1437,229,1580,256"/>
+<area shape="rect" id="node34" href="memory_8h.html" title="memory.h" alt="" coords="1603,229,1683,256"/>
+<area shape="rect" id="node22" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/accumulate_8h.html" title="accumulate.h" alt="" coords="771,304,871,331"/>
+<area shape="rect" id="node23" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/config_8h.html" title="config.h" alt="" coords="787,379,855,405"/>
+<area shape="rect" id="node27" href="scalar__categories_8h.html" title="scalar_categories.h" alt="" coords="895,304,1029,331"/>
+<area shape="rect" id="node28" href="vector__categories_8h.html" title="vector_categories.h" alt="" coords="945,379,1081,405"/>
+<area shape="rect" id="node29" href="matrix__categories_8h.html" title="matrix_categories.h" alt="" coords="997,453,1133,480"/>
+<area shape="rect" id="node30" href="execution__policy_8h.html" title="execution_policy.h" alt="" coords="1155,304,1286,331"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="mpi__weights_8h__dep__incl.png" border="0" usemap="#geometry_2mpi__weights_8hdep" alt=""/></div>
+<map name="geometry_2mpi__weights_8hdep" id="geometry_2mpi__weights_8hdep">
+<area shape="rect" id="node2" href="average__mpi_8h.html" title="contains classes for poloidal and toroidal average computations. " alt="" coords="5,80,171,107"/>
+<area shape="rect" id="node4" href="geometry_8h.html" title="geometry/geometry.h" alt="" coords="197,80,342,107"/>
+<area shape="rect" id="node3" href="algorithm_8h.html" title="algorithm.h" alt="" coords="226,304,313,331"/>
+<area shape="rect" id="node5" href="elliptic_8h.html" title="General negative elliptic operators. " alt="" coords="234,155,305,181"/>
+<area shape="rect" id="node8" href="arakawa_8h.html" title="object for computation of Poisson bracket " alt="" coords="479,229,561,256"/>
+<area shape="rect" id="node9" href="poisson_8h.html" title="poisson.h" alt="" coords="514,155,593,181"/>
+<area shape="rect" id="node6" href="helmholtz_8h.html" title="contains Helmholtz and Maxwell operators " alt="" coords="225,229,314,256"/>
+<area shape="rect" id="node7" href="refined__elliptic_8h.html" title="contains an elliptic method on a refined grid " alt="" coords="338,229,454,256"/>
+</map>
+</div>
+</div>
 <p><a href="mpi__weights_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -144,24 +187,30 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga4c1f33dbb53f54fd6407fa838c15b444"><td class="memItemLeft" align="right" valign="top">MPI_Vector&lt; thrust::host_vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga4c1f33dbb53f54fd6407fa838c15b444">dg::create::weights</a> (const aMPITopology2d &amp;g)</td></tr>
-<tr class="memdesc:ga4c1f33dbb53f54fd6407fa838c15b444"><td class="mdescLeft">&#160;</td><td class="mdescRight">create host vector containing X-space weight coefficients  <a href="group__highlevel.html#ga4c1f33dbb53f54fd6407fa838c15b444">More...</a><br /></td></tr>
-<tr class="separator:ga4c1f33dbb53f54fd6407fa838c15b444"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga473690f3abf64cff31ec167f6776bc1d"><td class="memItemLeft" align="right" valign="top">MPI_Vector&lt; thrust::host_vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga473690f3abf64cff31ec167f6776bc1d">dg::create::inv_weights</a> (const aMPITopology2d &amp;g)</td></tr>
-<tr class="memdesc:ga473690f3abf64cff31ec167f6776bc1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">create host_vector containing inverse X-space weight coefficients  <a href="group__highlevel.html#ga473690f3abf64cff31ec167f6776bc1d">More...</a><br /></td></tr>
-<tr class="separator:ga473690f3abf64cff31ec167f6776bc1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6c35cfb2677369301b47584edde296ec"><td class="memItemLeft" align="right" valign="top">MPI_Vector&lt; thrust::host_vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga6c35cfb2677369301b47584edde296ec">dg::create::weights</a> (const aMPITopology2d &amp;g, enum coo2d coo)</td></tr>
-<tr class="memdesc:ga6c35cfb2677369301b47584edde296ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">create host vector containing X-space weight coefficients  <a href="group__highlevel.html#ga6c35cfb2677369301b47584edde296ec">More...</a><br /></td></tr>
-<tr class="separator:ga6c35cfb2677369301b47584edde296ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga73d02b9d36d33fb3c66ef904997af6a5"><td class="memItemLeft" align="right" valign="top">MPI_Vector&lt; thrust::host_vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga73d02b9d36d33fb3c66ef904997af6a5">dg::create::weights</a> (const aMPITopology3d &amp;g)</td></tr>
-<tr class="memdesc:ga73d02b9d36d33fb3c66ef904997af6a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">create host vector containing X-space weight coefficients  <a href="group__highlevel.html#ga73d02b9d36d33fb3c66ef904997af6a5">More...</a><br /></td></tr>
-<tr class="separator:ga73d02b9d36d33fb3c66ef904997af6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7f8f658595f3b2797b9220c7b3061561"><td class="memItemLeft" align="right" valign="top">MPI_Vector&lt; thrust::host_vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga7f8f658595f3b2797b9220c7b3061561">dg::create::inv_weights</a> (const aMPITopology3d &amp;g)</td></tr>
-<tr class="memdesc:ga7f8f658595f3b2797b9220c7b3061561"><td class="mdescLeft">&#160;</td><td class="mdescRight">create host_vector containing inverse X-space weight coefficients  <a href="group__highlevel.html#ga7f8f658595f3b2797b9220c7b3061561">More...</a><br /></td></tr>
-<tr class="separator:ga7f8f658595f3b2797b9220c7b3061561"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa2b7fd82155a3a9d2f9f24de689ce2a6"><td class="memItemLeft" align="right" valign="top">MPI_Vector&lt; thrust::host_vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gaa2b7fd82155a3a9d2f9f24de689ce2a6">dg::create::weights</a> (const aMPITopology3d &amp;g, enum coo3d coo)</td></tr>
-<tr class="memdesc:gaa2b7fd82155a3a9d2f9f24de689ce2a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">create host vector containing X-space weight coefficients  <a href="group__highlevel.html#gaa2b7fd82155a3a9d2f9f24de689ce2a6">More...</a><br /></td></tr>
-<tr class="separator:gaa2b7fd82155a3a9d2f9f24de689ce2a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga771996962c7762bc7ee00b522a17259f"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga771996962c7762bc7ee00b522a17259f"><td class="memTemplItemLeft" align="right" valign="top">MPI_Vector&lt; thrust::host_vector&lt; real_type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga771996962c7762bc7ee00b522a17259f">dg::create::weights</a> (const aRealMPITopology2d&lt; real_type &gt; &amp;g)</td></tr>
+<tr class="memdesc:ga771996962c7762bc7ee00b522a17259f"><td class="mdescLeft">&#160;</td><td class="mdescRight">create host vector containing X-space weight coefficients  <a href="group__highlevel.html#ga771996962c7762bc7ee00b522a17259f">More...</a><br /></td></tr>
+<tr class="separator:ga771996962c7762bc7ee00b522a17259f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga52d6f1b6b906db48a9eda97f627b0b0e"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga52d6f1b6b906db48a9eda97f627b0b0e"><td class="memTemplItemLeft" align="right" valign="top">MPI_Vector&lt; thrust::host_vector&lt; real_type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga52d6f1b6b906db48a9eda97f627b0b0e">dg::create::inv_weights</a> (const aRealMPITopology2d&lt; real_type &gt; &amp;g)</td></tr>
+<tr class="memdesc:ga52d6f1b6b906db48a9eda97f627b0b0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">create host_vector containing inverse X-space weight coefficients  <a href="group__highlevel.html#ga52d6f1b6b906db48a9eda97f627b0b0e">More...</a><br /></td></tr>
+<tr class="separator:ga52d6f1b6b906db48a9eda97f627b0b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab194a38ffb031d3a97a64c4ff53e65d0"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:gab194a38ffb031d3a97a64c4ff53e65d0"><td class="memTemplItemLeft" align="right" valign="top">MPI_Vector&lt; thrust::host_vector&lt; real_type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gab194a38ffb031d3a97a64c4ff53e65d0">dg::create::weights</a> (const aRealMPITopology2d&lt; real_type &gt; &amp;g, enum coo2d coo)</td></tr>
+<tr class="memdesc:gab194a38ffb031d3a97a64c4ff53e65d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">create host vector containing X-space weight coefficients  <a href="group__highlevel.html#gab194a38ffb031d3a97a64c4ff53e65d0">More...</a><br /></td></tr>
+<tr class="separator:gab194a38ffb031d3a97a64c4ff53e65d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9cd616fb93237339752470a4eb7a680f"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga9cd616fb93237339752470a4eb7a680f"><td class="memTemplItemLeft" align="right" valign="top">MPI_Vector&lt; thrust::host_vector&lt; real_type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga9cd616fb93237339752470a4eb7a680f">dg::create::weights</a> (const aRealMPITopology3d&lt; real_type &gt; &amp;g)</td></tr>
+<tr class="memdesc:ga9cd616fb93237339752470a4eb7a680f"><td class="mdescLeft">&#160;</td><td class="mdescRight">create host vector containing X-space weight coefficients  <a href="group__highlevel.html#ga9cd616fb93237339752470a4eb7a680f">More...</a><br /></td></tr>
+<tr class="separator:ga9cd616fb93237339752470a4eb7a680f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae18690f090c73fa5eeccb460259edd3c"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:gae18690f090c73fa5eeccb460259edd3c"><td class="memTemplItemLeft" align="right" valign="top">MPI_Vector&lt; thrust::host_vector&lt; real_type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gae18690f090c73fa5eeccb460259edd3c">dg::create::inv_weights</a> (const aRealMPITopology3d&lt; real_type &gt; &amp;g)</td></tr>
+<tr class="memdesc:gae18690f090c73fa5eeccb460259edd3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">create host_vector containing inverse X-space weight coefficients  <a href="group__highlevel.html#gae18690f090c73fa5eeccb460259edd3c">More...</a><br /></td></tr>
+<tr class="separator:gae18690f090c73fa5eeccb460259edd3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4492c68c4ff6fde4ddcef6222faa7878"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga4492c68c4ff6fde4ddcef6222faa7878"><td class="memTemplItemLeft" align="right" valign="top">MPI_Vector&lt; thrust::host_vector&lt; real_type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga4492c68c4ff6fde4ddcef6222faa7878">dg::create::weights</a> (const aRealMPITopology3d&lt; real_type &gt; &amp;g, enum coo3d coo)</td></tr>
+<tr class="memdesc:ga4492c68c4ff6fde4ddcef6222faa7878"><td class="mdescLeft">&#160;</td><td class="mdescRight">create host vector containing X-space weight coefficients  <a href="group__highlevel.html#ga4492c68c4ff6fde4ddcef6222faa7878">More...</a><br /></td></tr>
+<tr class="separator:ga4492c68c4ff6fde4ddcef6222faa7878"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>contains MPI weights </p>
@@ -171,7 +220,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e3380d2178455503f266746fb14246a5.html">geometry</a></li><li class="navelem"><a class="el" href="mpi__weights_8h.html">mpi_weights.h</a></li>
-    <li class="footer">Generated on Thu Apr 26 2018 16:28:14 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Jul 5 2018 12:59:49 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

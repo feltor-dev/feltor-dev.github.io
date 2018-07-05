@@ -134,88 +134,52 @@ Collaboration diagram for Time integrators:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_a_b.html">dg::AB&lt; k, container &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_a_b.html">dg::AB&lt; k, ContainerType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for Adams-Bashforth explicit multistep time-integration </p><p class="formulaDsp">
 \[ u^{n+1} = u^n + \Delta t\sum_{j=0}^k b_j f\left(u^{n-j}\right) \]
 </p>
 <p>.  <a href="structdg_1_1_a_b.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_karniadakis.html">dg::Karniadakis&lt; container &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_karniadakis.html">dg::Karniadakis&lt; ContainerType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for <a class="el" href="structdg_1_1_karniadakis.html" title="Struct for Karniadakis semi-implicit multistep time-integration . ">Karniadakis</a> semi-implicit multistep time-integration </p><p class="formulaDsp">
-\[ \begin{align} {\bar v}^n &amp;= \sum_{q=0}^2 \alpha_q v^{n-q} + \Delta t\sum_{q=0}^2\beta_q \hat E( v^{n-q}) \\ \left( 1 - \frac{\Delta t}{\gamma_0} \hat I\right) v^{n+1} &amp;= {\bar v}^n \end{align} \]
+\[ \begin{align} v^{n+1} = \sum_{q=0}^2 \alpha_q v^{n-q} + \Delta t\left[\left(\sum_{q=0}^2\beta_q \hat E(t^{n}-q\Delta t, v^{n-q})\right) + \gamma_0\hat I(t^{n}+\Delta t, v^{n+1})\right] \end{align} \]
 </p>
 <p>.  <a href="structdg_1_1_karniadakis.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_s_i_r_k.html">dg::SIRK&lt; container &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_s_i_r_k.html">dg::SIRK&lt; ContainerType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Semi implicit Runge Kutta method after Yoh and Zhong (AIAA 42, 2004)  <a href="structdg_1_1_s_i_r_k.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_r_k.html">dg::RK&lt; k, container &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for Runge-Kutta explicit time-integration </p><p class="formulaDsp">
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_r_k__opt.html">dg::RK_opt&lt; s, ContainerType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for Runge-Kutta explicit time-integration optimized for few vector additions </p><p class="formulaDsp">
+\[ \begin{align} u^{n+1} = u^{n} + \Delta t\sum_{j=1}^s b_j k_j \\ k_j = f\left( u^n + \Delta t \sum_{l=1}^j a_{jl} k_l\right) \end{align} \]
+</p>
+<p>.  <a href="structdg_1_1_r_k__opt.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_r_k.html">dg::RK&lt; s, ContainerType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for Runge-Kutta explicit time-integration, classic formulation </p><p class="formulaDsp">
 \[ \begin{align} u^{n+1} = u^{n} + \Delta t\sum_{j=1}^s b_j k_j \\ k_j = f\left( u^n + \Delta t \sum_{l=1}^j a_{jl} k_l\right) \end{align} \]
 </p>
 <p>.  <a href="structdg_1_1_r_k.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_r_k__classic.html">dg::RK_classic&lt; s, container &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for Runge-Kutta explicit time-integration </p><p class="formulaDsp">
-\[ \begin{align} u^{n+1} = u^{n} + \Delta t\sum_{j=1}^s b_j k_j \\ k_j = f\left( u^n + \Delta t \sum_{l=1}^j a_{jl} k_l\right) \end{align} \]
-</p>
- <div class="fragment"><div class="line"><span class="keyword">const</span> <span class="keywordtype">unsigned</span> NT = 20;</div><div class="line"><span class="keyword">const</span> <span class="keywordtype">unsigned</span> s = 17;</div><div class="line"><span class="keyword">const</span> <span class="keywordtype">double</span> T = 1.;</div><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">class</span> Vector&gt;</div><div class="line"><span class="keywordtype">void</span> <span class="keyword">function</span>(<span class="keyword">const</span> std::vector&lt;Vector&gt;&amp; <a class="code" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>, std::vector&lt;Vector&gt;&amp; yp){ yp = <a class="code" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>;}</div><div class="line"><span class="keywordtype">double</span> initial( <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y) { <span class="keywordflow">return</span> sin(x)*sin(y); }</div></div><!-- fragment --><div class="fragment"><div class="line">    <a class="code" href="structdg_1_1_grid2d.html">dg::Grid2d</a> grid( 0, lx, 0, ly, n, Nx, Ny, <a class="code" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3">dg::PER</a>, <a class="code" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3">dg::PER</a>);</div><div class="line">    <a class="code" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6">dg::DVec</a> init = <a class="code" href="group__evaluation.html#ga7521f4acb4edaf2d7896d99f97e1ed9d">dg::evaluate</a> ( initial, grid );</div><div class="line">    std::vector&lt;dg::DVec&gt; y0( 2, init), y1(y0);</div><div class="line">    <span class="keyword">const</span> <span class="keywordtype">double</span> dt = T/(double)NT;</div><div class="line"></div><div class="line">    <a class="code" href="structdg_1_1_r_k__classic.html">dg::RK_classic&lt;s, std::vector&lt;dg::DVec&gt;</a> &gt;  rk( y0);</div><div class="line">    <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> i=0; i&lt;NT; i++)</div><div class="line">    {</div><div class="line">        rk( function&lt;dg::DVec&gt;, y0, y1, dt);</div><div class="line">        y0.swap( y1);</div><div class="line">    }</div></div><!-- fragment -->Uses only <a class="el" href="group__blas1.html#gaf35427a456cd09d5ec8e5ed97378933c" title=" ">dg::blas1::axpby()</a> routines to integrate one step. The coefficients are chosen in the classic form given by Runge and Kutta. Needs more calls for axpby than our <a class="el" href="structdg_1_1_r_k.html" title="Struct for Runge-Kutta explicit time-integration . ">RK</a> class but we implemented higher orders.  <a href="structdg_1_1_r_k__classic.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga7e508d2a79b636217b4b752b61a68837"><td class="memTemplParams" colspan="2">template&lt;class RHS , class container , unsigned s&gt; </td></tr>
-<tr class="memitem:ga7e508d2a79b636217b4b752b61a68837"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__time.html#ga7e508d2a79b636217b4b752b61a68837">dg::stepperRK</a> (RHS &amp;rhs, const container &amp;begin, container &amp;end, double T_min, double T_max, unsigned N)</td></tr>
-<tr class="memdesc:ga7e508d2a79b636217b4b752b61a68837"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrate differential equation with a stage s Runge-Kutta scheme and a fixed number of steps.  <a href="group__time.html#ga7e508d2a79b636217b4b752b61a68837">More...</a><br /></td></tr>
-<tr class="separator:ga7e508d2a79b636217b4b752b61a68837"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga46d8f3f3cd8f8194bf1a1e3ad0ccc2ca"><td class="memTemplParams" colspan="2">template&lt;class RHS , class container &gt; </td></tr>
-<tr class="memitem:ga46d8f3f3cd8f8194bf1a1e3ad0ccc2ca"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__time.html#ga46d8f3f3cd8f8194bf1a1e3ad0ccc2ca">dg::stepperRK1</a> (RHS &amp;rhs, const container &amp;begin, container &amp;end, double T_min, double T_max, unsigned N)</td></tr>
-<tr class="memdesc:ga46d8f3f3cd8f8194bf1a1e3ad0ccc2ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrate differential equation with a stage 1 Runge-Kutta scheme and a fixed number of steps.  <a href="group__time.html#ga46d8f3f3cd8f8194bf1a1e3ad0ccc2ca">More...</a><br /></td></tr>
-<tr class="separator:ga46d8f3f3cd8f8194bf1a1e3ad0ccc2ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa2c8589e82ddaf5c53a16795097fe8bc"><td class="memTemplParams" colspan="2">template&lt;class RHS , class container &gt; </td></tr>
-<tr class="memitem:gaa2c8589e82ddaf5c53a16795097fe8bc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__time.html#gaa2c8589e82ddaf5c53a16795097fe8bc">dg::stepperRK2</a> (RHS &amp;rhs, const container &amp;begin, container &amp;end, double T_min, double T_max, unsigned N)</td></tr>
-<tr class="memdesc:gaa2c8589e82ddaf5c53a16795097fe8bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrate differential equation with a stage 2 Runge-Kutta scheme and a fixed number of steps.  <a href="group__time.html#gaa2c8589e82ddaf5c53a16795097fe8bc">More...</a><br /></td></tr>
-<tr class="separator:gaa2c8589e82ddaf5c53a16795097fe8bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6bc17438d2732affff3dbc1246869d3e"><td class="memTemplParams" colspan="2">template&lt;class RHS , class container &gt; </td></tr>
-<tr class="memitem:ga6bc17438d2732affff3dbc1246869d3e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__time.html#ga6bc17438d2732affff3dbc1246869d3e">dg::stepperRK3</a> (RHS &amp;rhs, const container &amp;begin, container &amp;end, double T_min, double T_max, unsigned N)</td></tr>
-<tr class="memdesc:ga6bc17438d2732affff3dbc1246869d3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrate differential equation with a stage 3 Runge-Kutta scheme and a fixed number of steps.  <a href="group__time.html#ga6bc17438d2732affff3dbc1246869d3e">More...</a><br /></td></tr>
-<tr class="separator:ga6bc17438d2732affff3dbc1246869d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga75ec7ff40fc4127fc11777fc95801d1e"><td class="memTemplParams" colspan="2">template&lt;class RHS , class container &gt; </td></tr>
-<tr class="memitem:ga75ec7ff40fc4127fc11777fc95801d1e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__time.html#ga75ec7ff40fc4127fc11777fc95801d1e">dg::stepperRK4</a> (RHS &amp;rhs, const container &amp;begin, container &amp;end, double T_min, double T_max, unsigned N)</td></tr>
-<tr class="memdesc:ga75ec7ff40fc4127fc11777fc95801d1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrate differential equation with a stage 4 Runge-Kutta scheme and a fixed number of steps.  <a href="group__time.html#ga75ec7ff40fc4127fc11777fc95801d1e">More...</a><br /></td></tr>
-<tr class="separator:ga75ec7ff40fc4127fc11777fc95801d1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5c9d1170213d8b65b8af79fa38619976"><td class="memTemplParams" colspan="2">template&lt;class RHS , class container &gt; </td></tr>
-<tr class="memitem:ga5c9d1170213d8b65b8af79fa38619976"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__time.html#ga5c9d1170213d8b65b8af79fa38619976">dg::stepperRK6</a> (RHS &amp;rhs, const container &amp;begin, container &amp;end, double T_min, double T_max, unsigned N)</td></tr>
-<tr class="memdesc:ga5c9d1170213d8b65b8af79fa38619976"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrate differential equation with a stage 6 Runge-Kutta scheme and a fixed number of steps.  <a href="group__time.html#ga5c9d1170213d8b65b8af79fa38619976">More...</a><br /></td></tr>
-<tr class="separator:ga5c9d1170213d8b65b8af79fa38619976"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga247e5861e0031da370a2bfca85f71683"><td class="memTemplParams" colspan="2">template&lt;class RHS , class container &gt; </td></tr>
-<tr class="memitem:ga247e5861e0031da370a2bfca85f71683"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__time.html#ga247e5861e0031da370a2bfca85f71683">dg::stepperRK17</a> (RHS &amp;rhs, const container &amp;begin, container &amp;end, double T_min, double T_max, unsigned N)</td></tr>
-<tr class="memdesc:ga247e5861e0031da370a2bfca85f71683"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrate differential equation with a stage 17 Runge-Kutta scheme and a fixed number of steps.  <a href="group__time.html#ga247e5861e0031da370a2bfca85f71683">More...</a><br /></td></tr>
-<tr class="separator:ga247e5861e0031da370a2bfca85f71683"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaeabbf4523e87e5da2bde0ae0b267078f"><td class="memTemplParams" colspan="2">template&lt;class RHS , class container , unsigned s&gt; </td></tr>
-<tr class="memitem:gaeabbf4523e87e5da2bde0ae0b267078f"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__time.html#gaeabbf4523e87e5da2bde0ae0b267078f">dg::integrateRK</a> (RHS &amp;rhs, const container &amp;begin, container &amp;end, double T_max, double eps_abs, unsigned NT_init=2)</td></tr>
-<tr class="memdesc:gaeabbf4523e87e5da2bde0ae0b267078f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrates the differential equation using a stage s Runge-Kutta scheme, a rudimentary stepsize-control and monitoring the sanity of integration.  <a href="group__time.html#gaeabbf4523e87e5da2bde0ae0b267078f">More...</a><br /></td></tr>
-<tr class="separator:gaeabbf4523e87e5da2bde0ae0b267078f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3a57c85ae2215148895a733282ce1db4"><td class="memTemplParams" colspan="2">template&lt;class RHS , class container &gt; </td></tr>
-<tr class="memitem:ga3a57c85ae2215148895a733282ce1db4"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__time.html#ga3a57c85ae2215148895a733282ce1db4">dg::integrateRK4</a> (RHS &amp;rhs, const container &amp;begin, container &amp;end, double T_max, double eps_abs, unsigned NT_init=2)</td></tr>
-<tr class="memdesc:ga3a57c85ae2215148895a733282ce1db4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrates the differential equation using a stage 4 Runge-Kutta scheme, a rudimentary stepsize-control and monitoring the sanity of integration.  <a href="group__time.html#ga3a57c85ae2215148895a733282ce1db4">More...</a><br /></td></tr>
-<tr class="separator:ga3a57c85ae2215148895a733282ce1db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga09ac43c81ef131abdb57a8145bc3a560"><td class="memTemplParams" colspan="2">template&lt;class RHS , class container &gt; </td></tr>
-<tr class="memitem:ga09ac43c81ef131abdb57a8145bc3a560"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__time.html#ga09ac43c81ef131abdb57a8145bc3a560">dg::integrateRK6</a> (RHS &amp;rhs, const container &amp;begin, container &amp;end, double T_max, double eps_abs, unsigned NT_init=2)</td></tr>
-<tr class="memdesc:ga09ac43c81ef131abdb57a8145bc3a560"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrates the differential equation using a stage 6 Runge-Kutta scheme, a rudimentary stepsize-control and monitoring the sanity of integration.  <a href="group__time.html#ga09ac43c81ef131abdb57a8145bc3a560">More...</a><br /></td></tr>
-<tr class="separator:ga09ac43c81ef131abdb57a8145bc3a560"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga834092117aeb0127c0d6ab321d36b2b5"><td class="memTemplParams" colspan="2">template&lt;class RHS , class container &gt; </td></tr>
-<tr class="memitem:ga834092117aeb0127c0d6ab321d36b2b5"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__time.html#ga834092117aeb0127c0d6ab321d36b2b5">dg::integrateRK17</a> (RHS &amp;rhs, const container &amp;begin, container &amp;end, double T_max, double eps_abs, unsigned NT_init=2)</td></tr>
-<tr class="memdesc:ga834092117aeb0127c0d6ab321d36b2b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrates the differential equation using a stage 17 Runge-Kutta scheme, a rudimentary stepsize-control and monitoring the sanity of integration.  <a href="group__time.html#ga834092117aeb0127c0d6ab321d36b2b5">More...</a><br /></td></tr>
-<tr class="separator:ga834092117aeb0127c0d6ab321d36b2b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga15213ce3b66c2d24d60d064a2871917d"><td class="memTemplParams" colspan="2">template&lt;unsigned s, class RHS , class ContainerType &gt; </td></tr>
+<tr class="memitem:ga15213ce3b66c2d24d60d064a2871917d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__time.html#ga15213ce3b66c2d24d60d064a2871917d">dg::stepperRK</a> (RHS &amp;rhs, get_value_type&lt; ContainerType &gt; t_begin, const ContainerType &amp;begin, get_value_type&lt; ContainerType &gt; t_end, ContainerType &amp;end, unsigned N)</td></tr>
+<tr class="memdesc:ga15213ce3b66c2d24d60d064a2871917d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrate differential equation with a stage s Runge-Kutta scheme and a fixed number of steps.  <a href="group__time.html#ga15213ce3b66c2d24d60d064a2871917d">More...</a><br /></td></tr>
+<tr class="separator:ga15213ce3b66c2d24d60d064a2871917d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad6229d5ae4b046d09c402cdab727d207"><td class="memTemplParams" colspan="2">template&lt;unsigned s, class RHS , class ContainerType &gt; </td></tr>
+<tr class="memitem:gad6229d5ae4b046d09c402cdab727d207"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__time.html#gad6229d5ae4b046d09c402cdab727d207">dg::integrateRK</a> (RHS &amp;rhs, get_value_type&lt; ContainerType &gt; t_begin, const ContainerType &amp;begin, get_value_type&lt; ContainerType &gt; t_end, ContainerType &amp;end, get_value_type&lt; ContainerType &gt; eps_abs, unsigned NT_init=2)</td></tr>
+<tr class="memdesc:gad6229d5ae4b046d09c402cdab727d207"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrates the differential equation using a stage s Runge-Kutta scheme, a rudimentary stepsize-control and monitoring the sanity of integration.  <a href="group__time.html#gad6229d5ae4b046d09c402cdab727d207">More...</a><br /></td></tr>
+<tr class="separator:gad6229d5ae4b046d09c402cdab727d207"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="gaeabbf4523e87e5da2bde0ae0b267078f"></a>
+<a class="anchor" id="gad6229d5ae4b046d09c402cdab727d207"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class RHS , class container , unsigned s&gt; </div>
+template&lt;unsigned s, class RHS , class ContainerType &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">int dg::integrateRK </td>
@@ -226,25 +190,31 @@ template&lt;class RHS , class container , unsigned s&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const container &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt;&#160;</td>
+          <td class="paramname"><em>t_begin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ContainerType &amp;&#160;</td>
           <td class="paramname"><em>begin</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">container &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt;&#160;</td>
+          <td class="paramname"><em>t_end</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ContainerType &amp;&#160;</td>
           <td class="paramname"><em>end</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>T_max</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype"><a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt;&#160;</td>
           <td class="paramname"><em>eps_abs</em>, </td>
         </tr>
         <tr>
@@ -265,273 +235,40 @@ template&lt;class RHS , class container , unsigned s&gt; </div>
 <p>Doubles the number of timesteps until the desired accuracy is reached</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">RHS</td><td>The right-hand side class. There must be the function bool monitor( const container&amp; end); available which is called after every step. Return true if everything is ok and false if the integrator certainly fails. The other function is the double error( const container&amp; end0, const container&amp; end1); which computes the error norm in which the integrator should converge.</td></tr>
-    <tr><td class="paramname">container</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_vector_traits.html" title="The vector traits. ">VectorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> or <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. For example, this is one of<ul>
-<li><code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code>, <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code>, <code><a class="el" href="group__typedefs.html#ga3f854ffa533cafd10b9846258e40029f" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code><a class="el" href="group__typedefs.html#ga25cae493b710b17992387cce395ad7ae" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> </li>
-<li><code>std::vector&lt;dg::DVec&gt;</code>, <code>std::array&lt;dg::MHVec, 3&gt;</code>, <code>std::array&lt;double, 4&gt;</code> ... </li>
+    <tr><td class="paramname">s</td><td>Order of the method (1, 2, 3, 4, 6, 17)</td></tr>
+    <tr><td class="paramname">RHS</td><td>The right hand side is a functor type with no return value (subroutine) of signature <code> void operator()(value_type, const ContainerType&amp;, ContainerType&amp;)</code> The first argument is the time, the second is the input vector, which the functor may <b>not</b> override, and the third is the output, i.e. y' = f(t, y) translates to f(t, y, y'). The two ContainerType arguments never alias each other in calls to the functor. </td></tr>
+    <tr><td class="paramname">RHS</td><td>In addition, there must be the function <code>bool</code> <code>monitor( const ContainerType&amp; end)</code>; available, which is called after every step. Return <code>true</code> if everything is ok and <code>false</code> if the integrator certainly fails. The other function is the <code>real_type</code> <code>error( const ContainerType&amp; end0, const ContainerType&amp; end1)</code>; which computes the error norm in which the integrator should converge.</td></tr>
+    <tr><td class="paramname">ContainerType</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> and <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. Among others<ul>
+<li><code> <a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193" title="Host Vector. ">dg::HVec</a> (serial), <a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a> (cuda / omp), <a class="el" href="group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a> (mpi + serial) or <a class="el" href="group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a> (mpi + cuda / omp) </code></li>
+<li><code> std::vector&lt;dg::DVec&gt; (vector of shared device vectors), std::array&lt;double, 4&gt; (array of 4 doubles)</code></li>
+<li><code> double (scalar)</code> and other primitive types ...</li>
 </ul>
-</td></tr>
+If there are several <code>ContainerTypes</code> in the argument list, then <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> must exist for all of them </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__vec__list.html">List of Vector Traits specializations</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="index.html#dispatch">The Level 1 dispatch system</a> for a detailed explanation of our type dispatch system </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rhs</td><td>The right-hand-side </td></tr>
-    <tr><td class="paramname">begin</td><td>initial condition (size 3) </td></tr>
+    <tr><td class="paramname">t_begin</td><td>initial time </td></tr>
+    <tr><td class="paramname">begin</td><td>initial condition </td></tr>
+    <tr><td class="paramname">t_end</td><td>final time </td></tr>
     <tr><td class="paramname">end</td><td>(write-only) contains solution on output </td></tr>
-    <tr><td class="paramname">T_max</td><td>time difference </td></tr>
-    <tr><td class="paramname">eps_abs</td><td>desired accuracy in the error function between end and end_old </td></tr>
+    <tr><td class="paramname">eps_abs</td><td>desired accuracy in the error function between <code>end</code> and <code>end_old</code> </td></tr>
     <tr><td class="paramname">NT_init</td><td>initial number of steps </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>number of iterations if converged, -1 and a warning to std::cerr when isnan appears, -2 if failed to reach eps_abs </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>number of iterations if converged, -1 and a warning to <code>std::cerr</code> when <code>isnan</code> appears, -2 if failed to reach <code>eps_abs</code> </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="ga834092117aeb0127c0d6ab321d36b2b5"></a>
+<a class="anchor" id="ga15213ce3b66c2d24d60d064a2871917d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class RHS , class container &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">int dg::integrateRK17 </td>
-          <td>(</td>
-          <td class="paramtype">RHS &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const container &amp;&#160;</td>
-          <td class="paramname"><em>begin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">container &amp;&#160;</td>
-          <td class="paramname"><em>end</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>T_max</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>eps_abs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>NT_init</em> = <code>2</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Integrates the differential equation using a stage 17 Runge-Kutta scheme, a rudimentary stepsize-control and monitoring the sanity of integration. </p>
-<p>Doubles the number of timesteps until the desired accuracy is reached</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">RHS</td><td>The right-hand side class. There must be the function bool monitor( const container&amp; end); available which is called after every step. Return true if everything is ok and false if the integrator certainly fails. The other function is the double error( const container&amp; end0, const container&amp; end1); which computes the error norm in which the integrator should converge.</td></tr>
-    <tr><td class="paramname">container</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_vector_traits.html" title="The vector traits. ">VectorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> or <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. For example, this is one of<ul>
-<li><code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code>, <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code>, <code><a class="el" href="group__typedefs.html#ga3f854ffa533cafd10b9846258e40029f" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code><a class="el" href="group__typedefs.html#ga25cae493b710b17992387cce395ad7ae" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> </li>
-<li><code>std::vector&lt;dg::DVec&gt;</code>, <code>std::array&lt;dg::MHVec, 3&gt;</code>, <code>std::array&lt;double, 4&gt;</code> ... </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__vec__list.html">List of Vector Traits specializations</a> </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rhs</td><td>The right-hand-side </td></tr>
-    <tr><td class="paramname">begin</td><td>initial condition (size 3) </td></tr>
-    <tr><td class="paramname">end</td><td>(write-only) contains solution on output </td></tr>
-    <tr><td class="paramname">T_max</td><td>time difference </td></tr>
-    <tr><td class="paramname">eps_abs</td><td>desired accuracy in the error function between end and end_old </td></tr>
-    <tr><td class="paramname">NT_init</td><td>initial number of steps </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>number of iterations if converged, -1 and a warning to std::cerr when isnan appears, -2 if failed to reach eps_abs </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga3a57c85ae2215148895a733282ce1db4"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class RHS , class container &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">int dg::integrateRK4 </td>
-          <td>(</td>
-          <td class="paramtype">RHS &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const container &amp;&#160;</td>
-          <td class="paramname"><em>begin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">container &amp;&#160;</td>
-          <td class="paramname"><em>end</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>T_max</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>eps_abs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>NT_init</em> = <code>2</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Integrates the differential equation using a stage 4 Runge-Kutta scheme, a rudimentary stepsize-control and monitoring the sanity of integration. </p>
-<p>Doubles the number of timesteps until the desired accuracy is reached</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">RHS</td><td>The right-hand side class. There must be the function bool monitor( const container&amp; end); available which is called after every step. Return true if everything is ok and false if the integrator certainly fails. The other function is the double error( const container&amp; end0, const container&amp; end1); which computes the error norm in which the integrator should converge.</td></tr>
-    <tr><td class="paramname">container</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_vector_traits.html" title="The vector traits. ">VectorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> or <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. For example, this is one of<ul>
-<li><code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code>, <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code>, <code><a class="el" href="group__typedefs.html#ga3f854ffa533cafd10b9846258e40029f" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code><a class="el" href="group__typedefs.html#ga25cae493b710b17992387cce395ad7ae" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> </li>
-<li><code>std::vector&lt;dg::DVec&gt;</code>, <code>std::array&lt;dg::MHVec, 3&gt;</code>, <code>std::array&lt;double, 4&gt;</code> ... </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__vec__list.html">List of Vector Traits specializations</a> </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rhs</td><td>The right-hand-side </td></tr>
-    <tr><td class="paramname">begin</td><td>initial condition (size 3) </td></tr>
-    <tr><td class="paramname">end</td><td>(write-only) contains solution on output </td></tr>
-    <tr><td class="paramname">T_max</td><td>time difference </td></tr>
-    <tr><td class="paramname">eps_abs</td><td>desired accuracy in the error function between end and end_old </td></tr>
-    <tr><td class="paramname">NT_init</td><td>initial number of steps </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>number of iterations if converged, -1 and a warning to std::cerr when isnan appears, -2 if failed to reach eps_abs </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga09ac43c81ef131abdb57a8145bc3a560"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class RHS , class container &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">int dg::integrateRK6 </td>
-          <td>(</td>
-          <td class="paramtype">RHS &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const container &amp;&#160;</td>
-          <td class="paramname"><em>begin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">container &amp;&#160;</td>
-          <td class="paramname"><em>end</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>T_max</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>eps_abs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>NT_init</em> = <code>2</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Integrates the differential equation using a stage 6 Runge-Kutta scheme, a rudimentary stepsize-control and monitoring the sanity of integration. </p>
-<p>Doubles the number of timesteps until the desired accuracy is reached</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">RHS</td><td>The right-hand side class. There must be the function bool monitor( const container&amp; end); available which is called after every step. Return true if everything is ok and false if the integrator certainly fails. The other function is the double error( const container&amp; end0, const container&amp; end1); which computes the error norm in which the integrator should converge.</td></tr>
-    <tr><td class="paramname">container</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_vector_traits.html" title="The vector traits. ">VectorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> or <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. For example, this is one of<ul>
-<li><code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code>, <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code>, <code><a class="el" href="group__typedefs.html#ga3f854ffa533cafd10b9846258e40029f" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code><a class="el" href="group__typedefs.html#ga25cae493b710b17992387cce395ad7ae" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> </li>
-<li><code>std::vector&lt;dg::DVec&gt;</code>, <code>std::array&lt;dg::MHVec, 3&gt;</code>, <code>std::array&lt;double, 4&gt;</code> ... </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__vec__list.html">List of Vector Traits specializations</a> </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rhs</td><td>The right-hand-side </td></tr>
-    <tr><td class="paramname">begin</td><td>initial condition (size 3) </td></tr>
-    <tr><td class="paramname">end</td><td>(write-only) contains solution on output </td></tr>
-    <tr><td class="paramname">T_max</td><td>time difference </td></tr>
-    <tr><td class="paramname">eps_abs</td><td>desired accuracy in the error function between end and end_old </td></tr>
-    <tr><td class="paramname">NT_init</td><td>initial number of steps </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>number of iterations if converged, -1 and a warning to std::cerr when isnan appears, -2 if failed to reach eps_abs </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga7e508d2a79b636217b4b752b61a68837"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class RHS , class container , unsigned s&gt; </div>
+template&lt;unsigned s, class RHS , class ContainerType &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void dg::stepperRK </td>
@@ -542,26 +279,26 @@ template&lt;class RHS , class container , unsigned s&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const container &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt;&#160;</td>
+          <td class="paramname"><em>t_begin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ContainerType &amp;&#160;</td>
           <td class="paramname"><em>begin</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">container &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt;&#160;</td>
+          <td class="paramname"><em>t_end</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ContainerType &amp;&#160;</td>
           <td class="paramname"><em>end</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>T_min</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>T_max</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -580,486 +317,25 @@ template&lt;class RHS , class container , unsigned s&gt; </div>
 <p>Integrate differential equation with a stage s Runge-Kutta scheme and a fixed number of steps. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">s</td><td># of stages (1, 2, 3, 4, 6, 17) </td></tr>
-    <tr><td class="paramname">RHS</td><td>The right-hand side class</td></tr>
-    <tr><td class="paramname">container</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_vector_traits.html" title="The vector traits. ">VectorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> or <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. For example, this is one of<ul>
-<li><code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code>, <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code>, <code><a class="el" href="group__typedefs.html#ga3f854ffa533cafd10b9846258e40029f" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code><a class="el" href="group__typedefs.html#ga25cae493b710b17992387cce395ad7ae" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> </li>
-<li><code>std::vector&lt;dg::DVec&gt;</code>, <code>std::array&lt;dg::MHVec, 3&gt;</code>, <code>std::array&lt;double, 4&gt;</code> ... </li>
+    <tr><td class="paramname">s</td><td># of stages (1, 2, 3, 4, 6, 17)</td></tr>
+    <tr><td class="paramname">RHS</td><td>The right hand side is a functor type with no return value (subroutine) of signature <code> void operator()(value_type, const ContainerType&amp;, ContainerType&amp;)</code> The first argument is the time, the second is the input vector, which the functor may <b>not</b> override, and the third is the output, i.e. y' = f(t, y) translates to f(t, y, y'). The two ContainerType arguments never alias each other in calls to the functor.</td></tr>
+    <tr><td class="paramname">ContainerType</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> and <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. Among others<ul>
+<li><code> <a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193" title="Host Vector. ">dg::HVec</a> (serial), <a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a> (cuda / omp), <a class="el" href="group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a> (mpi + serial) or <a class="el" href="group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a> (mpi + cuda / omp) </code></li>
+<li><code> std::vector&lt;dg::DVec&gt; (vector of shared device vectors), std::array&lt;double, 4&gt; (array of 4 doubles)</code></li>
+<li><code> double (scalar)</code> and other primitive types ...</li>
 </ul>
-</td></tr>
+If there are several <code>ContainerTypes</code> in the argument list, then <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> must exist for all of them </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__vec__list.html">List of Vector Traits specializations</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="index.html#dispatch">The Level 1 dispatch system</a> for a detailed explanation of our type dispatch system </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rhs</td><td>The right-hand-side </td></tr>
+    <tr><td class="paramname">t_begin</td><td>initial time </td></tr>
     <tr><td class="paramname">begin</td><td>initial condition </td></tr>
-    <tr><td class="paramname">end</td><td>(write-only) contains solution on output </td></tr>
-    <tr><td class="paramname">T_min</td><td>initial time </td></tr>
-    <tr><td class="paramname">T_max</td><td>final time </td></tr>
-    <tr><td class="paramname">N</td><td>number of steps </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ga46d8f3f3cd8f8194bf1a1e3ad0ccc2ca"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class RHS , class container &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void dg::stepperRK1 </td>
-          <td>(</td>
-          <td class="paramtype">RHS &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const container &amp;&#160;</td>
-          <td class="paramname"><em>begin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">container &amp;&#160;</td>
-          <td class="paramname"><em>end</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>T_min</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>T_max</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>N</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Integrate differential equation with a stage 1 Runge-Kutta scheme and a fixed number of steps. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">RHS</td><td>The right-hand side class</td></tr>
-    <tr><td class="paramname">container</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_vector_traits.html" title="The vector traits. ">VectorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> or <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. For example, this is one of<ul>
-<li><code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code>, <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code>, <code><a class="el" href="group__typedefs.html#ga3f854ffa533cafd10b9846258e40029f" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code><a class="el" href="group__typedefs.html#ga25cae493b710b17992387cce395ad7ae" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> </li>
-<li><code>std::vector&lt;dg::DVec&gt;</code>, <code>std::array&lt;dg::MHVec, 3&gt;</code>, <code>std::array&lt;double, 4&gt;</code> ... </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__vec__list.html">List of Vector Traits specializations</a> </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rhs</td><td>The right-hand-side </td></tr>
-    <tr><td class="paramname">begin</td><td>initial condition </td></tr>
-    <tr><td class="paramname">end</td><td>(write-only) contains solution on output </td></tr>
-    <tr><td class="paramname">T_min</td><td>initial time </td></tr>
-    <tr><td class="paramname">T_max</td><td>final time </td></tr>
-    <tr><td class="paramname">N</td><td>number of steps </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ga247e5861e0031da370a2bfca85f71683"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class RHS , class container &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void dg::stepperRK17 </td>
-          <td>(</td>
-          <td class="paramtype">RHS &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const container &amp;&#160;</td>
-          <td class="paramname"><em>begin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">container &amp;&#160;</td>
-          <td class="paramname"><em>end</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>T_min</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>T_max</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>N</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Integrate differential equation with a stage 17 Runge-Kutta scheme and a fixed number of steps. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">RHS</td><td>The right-hand side class</td></tr>
-    <tr><td class="paramname">container</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_vector_traits.html" title="The vector traits. ">VectorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> or <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. For example, this is one of<ul>
-<li><code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code>, <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code>, <code><a class="el" href="group__typedefs.html#ga3f854ffa533cafd10b9846258e40029f" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code><a class="el" href="group__typedefs.html#ga25cae493b710b17992387cce395ad7ae" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> </li>
-<li><code>std::vector&lt;dg::DVec&gt;</code>, <code>std::array&lt;dg::MHVec, 3&gt;</code>, <code>std::array&lt;double, 4&gt;</code> ... </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__vec__list.html">List of Vector Traits specializations</a> </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rhs</td><td>The right-hand-side </td></tr>
-    <tr><td class="paramname">begin</td><td>initial condition </td></tr>
-    <tr><td class="paramname">end</td><td>(write-only) contains solution on output </td></tr>
-    <tr><td class="paramname">T_min</td><td>initial time </td></tr>
-    <tr><td class="paramname">T_max</td><td>final time </td></tr>
-    <tr><td class="paramname">N</td><td>number of steps </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="gaa2c8589e82ddaf5c53a16795097fe8bc"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class RHS , class container &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void dg::stepperRK2 </td>
-          <td>(</td>
-          <td class="paramtype">RHS &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const container &amp;&#160;</td>
-          <td class="paramname"><em>begin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">container &amp;&#160;</td>
-          <td class="paramname"><em>end</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>T_min</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>T_max</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>N</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Integrate differential equation with a stage 2 Runge-Kutta scheme and a fixed number of steps. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">RHS</td><td>The right-hand side class</td></tr>
-    <tr><td class="paramname">container</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_vector_traits.html" title="The vector traits. ">VectorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> or <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. For example, this is one of<ul>
-<li><code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code>, <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code>, <code><a class="el" href="group__typedefs.html#ga3f854ffa533cafd10b9846258e40029f" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code><a class="el" href="group__typedefs.html#ga25cae493b710b17992387cce395ad7ae" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> </li>
-<li><code>std::vector&lt;dg::DVec&gt;</code>, <code>std::array&lt;dg::MHVec, 3&gt;</code>, <code>std::array&lt;double, 4&gt;</code> ... </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__vec__list.html">List of Vector Traits specializations</a> </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rhs</td><td>The right-hand-side </td></tr>
-    <tr><td class="paramname">begin</td><td>initial condition </td></tr>
-    <tr><td class="paramname">end</td><td>(write-only) contains solution on output </td></tr>
-    <tr><td class="paramname">T_min</td><td>initial time </td></tr>
-    <tr><td class="paramname">T_max</td><td>final time </td></tr>
-    <tr><td class="paramname">N</td><td>number of steps </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ga6bc17438d2732affff3dbc1246869d3e"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class RHS , class container &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void dg::stepperRK3 </td>
-          <td>(</td>
-          <td class="paramtype">RHS &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const container &amp;&#160;</td>
-          <td class="paramname"><em>begin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">container &amp;&#160;</td>
-          <td class="paramname"><em>end</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>T_min</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>T_max</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>N</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Integrate differential equation with a stage 3 Runge-Kutta scheme and a fixed number of steps. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">RHS</td><td>The right-hand side class</td></tr>
-    <tr><td class="paramname">container</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_vector_traits.html" title="The vector traits. ">VectorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> or <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. For example, this is one of<ul>
-<li><code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code>, <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code>, <code><a class="el" href="group__typedefs.html#ga3f854ffa533cafd10b9846258e40029f" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code><a class="el" href="group__typedefs.html#ga25cae493b710b17992387cce395ad7ae" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> </li>
-<li><code>std::vector&lt;dg::DVec&gt;</code>, <code>std::array&lt;dg::MHVec, 3&gt;</code>, <code>std::array&lt;double, 4&gt;</code> ... </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__vec__list.html">List of Vector Traits specializations</a> </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rhs</td><td>The right-hand-side </td></tr>
-    <tr><td class="paramname">begin</td><td>initial condition </td></tr>
-    <tr><td class="paramname">end</td><td>(write-only) contains solution on output </td></tr>
-    <tr><td class="paramname">T_min</td><td>initial time </td></tr>
-    <tr><td class="paramname">T_max</td><td>final time </td></tr>
-    <tr><td class="paramname">N</td><td>number of steps </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ga75ec7ff40fc4127fc11777fc95801d1e"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class RHS , class container &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void dg::stepperRK4 </td>
-          <td>(</td>
-          <td class="paramtype">RHS &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const container &amp;&#160;</td>
-          <td class="paramname"><em>begin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">container &amp;&#160;</td>
-          <td class="paramname"><em>end</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>T_min</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>T_max</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>N</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Integrate differential equation with a stage 4 Runge-Kutta scheme and a fixed number of steps. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">RHS</td><td>The right-hand side class</td></tr>
-    <tr><td class="paramname">container</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_vector_traits.html" title="The vector traits. ">VectorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> or <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. For example, this is one of<ul>
-<li><code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code>, <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code>, <code><a class="el" href="group__typedefs.html#ga3f854ffa533cafd10b9846258e40029f" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code><a class="el" href="group__typedefs.html#ga25cae493b710b17992387cce395ad7ae" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> </li>
-<li><code>std::vector&lt;dg::DVec&gt;</code>, <code>std::array&lt;dg::MHVec, 3&gt;</code>, <code>std::array&lt;double, 4&gt;</code> ... </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__vec__list.html">List of Vector Traits specializations</a> </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rhs</td><td>The right-hand-side </td></tr>
-    <tr><td class="paramname">begin</td><td>initial condition </td></tr>
-    <tr><td class="paramname">end</td><td>(write-only) contains solution on output </td></tr>
-    <tr><td class="paramname">T_min</td><td>initial time </td></tr>
-    <tr><td class="paramname">T_max</td><td>final time </td></tr>
-    <tr><td class="paramname">N</td><td>number of steps </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ga5c9d1170213d8b65b8af79fa38619976"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class RHS , class container &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void dg::stepperRK6 </td>
-          <td>(</td>
-          <td class="paramtype">RHS &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const container &amp;&#160;</td>
-          <td class="paramname"><em>begin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">container &amp;&#160;</td>
-          <td class="paramname"><em>end</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>T_min</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>T_max</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>N</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Integrate differential equation with a stage 6 Runge-Kutta scheme and a fixed number of steps. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">RHS</td><td>The right-hand side class</td></tr>
-    <tr><td class="paramname">container</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_vector_traits.html" title="The vector traits. ">VectorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> or <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. For example, this is one of<ul>
-<li><code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code>, <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code>, <code><a class="el" href="group__typedefs.html#ga3f854ffa533cafd10b9846258e40029f" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code><a class="el" href="group__typedefs.html#ga25cae493b710b17992387cce395ad7ae" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> </li>
-<li><code>std::vector&lt;dg::DVec&gt;</code>, <code>std::array&lt;dg::MHVec, 3&gt;</code>, <code>std::array&lt;double, 4&gt;</code> ... </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__vec__list.html">List of Vector Traits specializations</a> </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rhs</td><td>The right-hand-side </td></tr>
-    <tr><td class="paramname">begin</td><td>initial condition </td></tr>
-    <tr><td class="paramname">end</td><td>(write-only) contains solution on output </td></tr>
-    <tr><td class="paramname">T_min</td><td>initial time </td></tr>
-    <tr><td class="paramname">T_max</td><td>final time </td></tr>
+    <tr><td class="paramname">t_end</td><td>final time </td></tr>
+    <tr><td class="paramname">end</td><td>(write-only) contains solution at <code>t_end</code> on output (may alias begin) </td></tr>
     <tr><td class="paramname">N</td><td>number of steps </td></tr>
   </table>
   </dd>
@@ -1072,7 +348,7 @@ template&lt;class RHS , class container &gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Apr 26 2018 16:28:14 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Jul 5 2018 12:59:49 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

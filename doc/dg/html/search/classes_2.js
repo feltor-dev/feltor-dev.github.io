@@ -1,21 +1,11 @@
 var searchData=
 [
-  ['cartesiangrid2d',['CartesianGrid2d',['../structdg_1_1_cartesian_grid2d.html',1,'dg']]],
-  ['cartesiangrid3d',['CartesianGrid3d',['../structdg_1_1_cartesian_grid3d.html',1,'dg']]],
-  ['cartesiangridx2d',['CartesianGridX2d',['../structdg_1_1_cartesian_grid_x2d.html',1,'dg']]],
-  ['cartesiangridx3d',['CartesianGridX3d',['../structdg_1_1_cartesian_grid_x3d.html',1,'dg']]],
-  ['cartesianmpigrid2d',['CartesianMPIGrid2d',['../structdg_1_1_cartesian_m_p_i_grid2d.html',1,'dg']]],
-  ['cartesianmpigrid3d',['CartesianMPIGrid3d',['../structdg_1_1_cartesian_m_p_i_grid3d.html',1,'dg']]],
-  ['cartesianrefinedgrid2d',['CartesianRefinedGrid2d',['../structdg_1_1_cartesian_refined_grid2d.html',1,'dg']]],
-  ['cartesianrefinedgrid3d',['CartesianRefinedGrid3d',['../structdg_1_1_cartesian_refined_grid3d.html',1,'dg']]],
-  ['cartesianrefinedgridx2d',['CartesianRefinedGridX2d',['../structdg_1_1_cartesian_refined_grid_x2d.html',1,'dg']]],
-  ['cartesianrefinedgridx3d',['CartesianRefinedGridX3d',['../structdg_1_1_cartesian_refined_grid_x3d.html',1,'dg']]],
   ['cauchy',['Cauchy',['../structdg_1_1_cauchy.html',1,'dg']]],
   ['cg',['CG',['../classdg_1_1_c_g.html',1,'dg']]],
   ['choleskytensor',['CholeskyTensor',['../structdg_1_1_cholesky_tensor.html',1,'dg']]],
   ['cloneptr',['ClonePtr',['../structdg_1_1_clone_ptr.html',1,'dg']]],
   ['cloneptr_3c_20collective_20_3e',['ClonePtr&lt; Collective &gt;',['../structdg_1_1_clone_ptr.html',1,'dg']]],
-  ['cloneptr_3c_20dg_3a_3aarefinement1d_20_3e',['ClonePtr&lt; dg::aRefinement1d &gt;',['../structdg_1_1_clone_ptr.html',1,'dg']]],
+  ['cloneptr_3c_20dg_3a_3aarealrefinement1d_3c_20real_5ftype_20_3e_20_3e',['ClonePtr&lt; dg::aRealRefinement1d&lt; real_type &gt; &gt;',['../structdg_1_1_clone_ptr.html',1,'dg']]],
   ['cloneptr_3c_20geometry_20_3e',['ClonePtr&lt; Geometry &gt;',['../structdg_1_1_clone_ptr.html',1,'dg']]],
   ['composite',['Composite',['../structdg_1_1_composite.html',1,'dg']]],
   ['constant',['Constant',['../../../geometries/html/structdg_1_1geo_1_1_constant.html',1,'dg::geo']]],
@@ -37,8 +27,5 @@ var searchData=
   ['curvilinearrefinedgridx2d',['CurvilinearRefinedGridX2d',['../../../geometries/html/structdg_1_1geo_1_1_curvilinear_refined_grid_x2d.html',1,'dg::geo']]],
   ['curvilinearrefinedproductgridx3d',['CurvilinearRefinedProductGridX3d',['../../../geometries/html/structdg_1_1geo_1_1_curvilinear_refined_product_grid_x3d.html',1,'dg::geo']]],
   ['cuspmatrixtag',['CuspMatrixTag',['../structdg_1_1_cusp_matrix_tag.html',1,'dg']]],
-  ['cuspprecontag',['CuspPreconTag',['../structdg_1_1_cusp_precon_tag.html',1,'dg']]],
-  ['cuspvectortag',['CuspVectorTag',['../structdg_1_1_cusp_vector_tag.html',1,'dg']]],
-  ['cylindricalgrid3d',['CylindricalGrid3d',['../structdg_1_1_cylindrical_grid3d.html',1,'dg']]],
-  ['cylindricalmpigrid3d',['CylindricalMPIGrid3d',['../structdg_1_1_cylindrical_m_p_i_grid3d.html',1,'dg']]]
+  ['cuspvectortag',['CuspVectorTag',['../structdg_1_1_cusp_vector_tag.html',1,'dg']]]
 ];

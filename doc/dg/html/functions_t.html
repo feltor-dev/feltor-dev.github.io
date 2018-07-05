@@ -166,19 +166,55 @@ $(document).ready(function(){initNavTree('functions_t.html','');});
 
 <h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
 <li>tail()
-: <a class="el" href="structdg_1_1_extrapolation.html#a5fbe0058c4dc354c5cd35ef5099a6197">dg::Extrapolation&lt; container &gt;</a>
+: <a class="el" href="structdg_1_1_extrapolation.html#a74c24fc0a25791c49654c6e10587194f">dg::Extrapolation&lt; ContainerType &gt;</a>
 </li>
 <li>TanhProfX()
 : <a class="el" href="structdg_1_1_tanh_prof_x.html#a38043606afa505f7f9a70511119ac74b">dg::TanhProfX</a>
+</li>
+<li>tensor_category
+: <a class="el" href="structdg_1_1_tensor_traits_3_01_coo_sparse_block_mat_3_01_t_01_4_01_4.html#a01a701e4ef722f90dbee17a82960cfee">dg::TensorTraits&lt; CooSparseBlockMat&lt; T &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_tensor_traits_3_01_coo_sparse_block_mat_device_3_01_t_01_4_01_4.html#af2a45ceb030ac10c20051c1ea892e32c">dg::TensorTraits&lt; CooSparseBlockMatDevice&lt; T &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_tensor_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1device__memory_01_4_00_01typef234173bb38c3d6e32284ba27107e7fb.html#a86f270a6e439ab9428664e39409bdfd6">dg::TensorTraits&lt; cusp::array1d&lt; T, cusp::device_memory &gt;, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
+, <a class="el" href="structdg_1_1_tensor_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1host__memory_01_4_00_01typenaf725bd90d6a127276d664beda2adcced.html#a50594239b921d753818d3216cc3cabd9">dg::TensorTraits&lt; cusp::array1d&lt; T, cusp::host_memory &gt;, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
+, <a class="el" href="structdg_1_1_tensor_traits_3_01cusp_1_1coo__matrix_3_01_i_00_01_v_00_01_m_01_4_01_4.html#a0542bf3e4489be37a6db44a22d5cd4f5">dg::TensorTraits&lt; cusp::coo_matrix&lt; I, V, M &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_tensor_traits_3_01cusp_1_1csr__matrix_3_01_i_00_01_v_00_01_m_01_4_01_4.html#a9d589d777ce7ea25e58c3d2411f8b59c">dg::TensorTraits&lt; cusp::csr_matrix&lt; I, V, M &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_tensor_traits_3_01cusp_1_1dia__matrix_3_01_i_00_01_v_00_01_m_01_4_01_4.html#a092259ed31f5a12f62cbf49883d48e20">dg::TensorTraits&lt; cusp::dia_matrix&lt; I, V, M &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_tensor_traits_3_01cusp_1_1ell__matrix_3_01_i_00_01_v_00_01_m_01_4_01_4.html#a742b8ae2dce12404f59e221fd7839e45">dg::TensorTraits&lt; cusp::ell_matrix&lt; I, V, M &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_tensor_traits_3_01cusp_1_1hyb__matrix_3_01_i_00_01_v_00_01_m_01_4_01_4.html#ab9899994cfd3bc2d7ef9efa964a603bc">dg::TensorTraits&lt; cusp::hyb_matrix&lt; I, V, M &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_tensor_traits_3_01_ell_sparse_block_mat_3_01_t_01_4_01_4.html#aa4d6aadd3521aab56ee8e636d2b127ab">dg::TensorTraits&lt; EllSparseBlockMat&lt; T &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_tensor_traits_3_01_ell_sparse_block_mat_device_3_01_t_01_4_01_4.html#a4c743eec861e97242ddf4e2177c0f601">dg::TensorTraits&lt; EllSparseBlockMatDevice&lt; T &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_tensor_traits_3_01_m_p_i___vector_3_01container_01_4_01_4.html#ad3f52bfba44c771721c2cb8622060461">dg::TensorTraits&lt; MPI_Vector&lt; container &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_tensor_traits_3_01_m_p_i_dist_mat_3_01_l_00_01_c_01_4_01_4.html#acc1d89a9ffaf5d6d48bdd299c6c64350">dg::TensorTraits&lt; MPIDistMat&lt; L, C &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_tensor_traits_3_01_row_col_dist_mat_3_01_l_i_00_01_l_o_00_01_c_01_4_01_4.html#aca27f13b20d633c4891e99f413a5aff1">dg::TensorTraits&lt; RowColDistMat&lt; LI, LO, C &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_tensor_traits_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html#aa000b5a68c55798c1efcadb030a7128f">dg::TensorTraits&lt; std::array&lt; T, N &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_tensor_traits_3_01std_1_1vector_3_01_t_01_4_01_4.html#a9bcbf010d517137a2c05e56357dd57ef">dg::TensorTraits&lt; std::vector&lt; T &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_tensor_traits_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__arithmetic_3_382e8af1d8cb4a11a63fc6b26ba4b4b9.html#a05cb07242a6b2ce41f3a30d3fd1a59be">dg::TensorTraits&lt; T, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
+, <a class="el" href="structdg_1_1_tensor_traits_3_01thrust_1_1device__vector_3_01_t_01_4_01_4.html#ad46373ec8e9fd9f3c056d73a3ccc1313">dg::TensorTraits&lt; thrust::device_vector&lt; T &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_tensor_traits_3_01thrust_1_1host__vector_3_01_t_01_4_01_4.html#aa0391f106ccbf7c8037c280d29bdd89f">dg::TensorTraits&lt; thrust::host_vector&lt; T &gt; &gt;</a>
 </li>
 <li>TensorElliptic()
 : <a class="el" href="structdg_1_1_tensor_elliptic.html#aa833f11a24ccdc023ada05a4b46fd833">dg::TensorElliptic&lt; Geometry, Matrix, container &gt;</a>
 </li>
 <li>tic()
-: <a class="el" href="classdg_1_1_timer.html#ad158907d0e4a975b832fed780d7b4655">dg::Timer</a>
+: <a class="el" href="classdg_1_1_timer.html#ab3ff0dbe977c6151118227cfbd0aefb2">dg::Timer</a>
+</li>
+<li>Timer()
+: <a class="el" href="classdg_1_1_timer.html#a4c2c3536e714cea2d47a14c3cb4ff23d">dg::Timer</a>
 </li>
 <li>toc()
-: <a class="el" href="classdg_1_1_timer.html#a3c1a18f62626dcfaf728c2b490a64a43">dg::Timer</a>
+: <a class="el" href="classdg_1_1_timer.html#afbe78fc3702a5c3d4263c2941745b8a7">dg::Timer</a>
+</li>
+<li>total_num_cols()
+: <a class="el" href="structdg_1_1_coo_sparse_block_mat.html#a9d0ee7ccd320854b298e531e170068c2">dg::CooSparseBlockMat&lt; value_type &gt;</a>
+, <a class="el" href="structdg_1_1_coo_sparse_block_mat_device.html#a835a2a45f1ec5ad3cedb046bfe34399b">dg::CooSparseBlockMatDevice&lt; value_type &gt;</a>
+, <a class="el" href="structdg_1_1_ell_sparse_block_mat.html#a240af93100787f24f56bfc6282e5f159">dg::EllSparseBlockMat&lt; value_type &gt;</a>
+, <a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html#aa52155a9c8d01bf740f67b2386f3b55a">dg::EllSparseBlockMatDevice&lt; value_type &gt;</a>
+</li>
+<li>total_num_rows()
+: <a class="el" href="structdg_1_1_coo_sparse_block_mat.html#a7de90b6f70ad91821f7e07b3474d234b">dg::CooSparseBlockMat&lt; value_type &gt;</a>
+, <a class="el" href="structdg_1_1_coo_sparse_block_mat_device.html#a31b1bf252b88c6175952fa75f2901f09">dg::CooSparseBlockMatDevice&lt; value_type &gt;</a>
+, <a class="el" href="structdg_1_1_ell_sparse_block_mat.html#a59483c576a2066ac9093d28f21482906">dg::EllSparseBlockMat&lt; value_type &gt;</a>
+, <a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html#a2758c205034cc5aa7e142eea556f9087">dg::EllSparseBlockMatDevice&lt; value_type &gt;</a>
 </li>
 <li>transform_and_set()
 : <a class="el" href="structdg_1_1_tensor_elliptic.html#a7e794cff278a92bc2287fc85ee0fcf5d">dg::TensorElliptic&lt; Geometry, Matrix, container &gt;</a>
@@ -193,7 +229,7 @@ $(document).ready(function(){initNavTree('functions_t.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Apr 26 2018 16:28:15 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Jul 5 2018 12:59:50 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

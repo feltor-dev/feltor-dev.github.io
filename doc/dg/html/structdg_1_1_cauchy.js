@@ -7,5 +7,5 @@ var structdg_1_1_cauchy =
     [ "dy", "structdg_1_1_cauchy.html#aea3f1ed6e3defc6c169a4a7fd56d8e80", null ],
     [ "dyy", "structdg_1_1_cauchy.html#ad6e6e7f4945ea2854adc4aca14d94536", null ],
     [ "inside", "structdg_1_1_cauchy.html#a811035f6afe477f0a921289f489a9068", null ],
-    [ "operator()", "structdg_1_1_cauchy.html#a9ddafc1de04fa354892f5aa57a04e8f5", null ]
+    [ "operator()", "structdg_1_1_cauchy.html#a2d14323bc8eeca7dda1ab5d0df9e55b3", null ]
 ];

@@ -1,7 +1,0 @@
-var structdg_1_1_vector_traits_3_01thrust_1_1device__vector_3_01_t_01_4_00_01typename_01std_1_1enabl819ae1a2b234262a5f9638d9b708e39a =
-[
-    [ "execution_policy", "structdg_1_1_vector_traits_3_01thrust_1_1device__vector_3_01_t_01_4_00_01typename_01std_1_1enabl819ae1a2b234262a5f9638d9b708e39a.html#a914e8e4fe30e3264692eba76d13c674a", null ],
-    [ "execution_policy", "structdg_1_1_vector_traits_3_01thrust_1_1device__vector_3_01_t_01_4_00_01typename_01std_1_1enabl819ae1a2b234262a5f9638d9b708e39a.html#a9d7f0be5da154777d8468820a25082c1", null ],
-    [ "value_type", "structdg_1_1_vector_traits_3_01thrust_1_1device__vector_3_01_t_01_4_00_01typename_01std_1_1enabl819ae1a2b234262a5f9638d9b708e39a.html#a5a4e596ce30b94c0a7ca0188a772be77", null ],
-    [ "vector_category", "structdg_1_1_vector_traits_3_01thrust_1_1device__vector_3_01_t_01_4_00_01typename_01std_1_1enabl819ae1a2b234262a5f9638d9b708e39a.html#ab29870855fccd3f8a1f11308d4fb7044", null ]
-];

@@ -88,6 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -130,7 +131,38 @@ $(document).ready(function(){initNavTree('projection_x_8h.html','');});
 
 <p>contains creation of projection matrices for X point topology  
 <a href="#details">More...</a></p>
-
+<div class="textblock"><code>#include &quot;<a class="el" href="projection_8h_source.html">projection.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="grid_x_8h_source.html">gridX.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for projectionX.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="projection_x_8h__incl.png" border="0" usemap="#geometry_2projection_x_8h" alt=""/></div>
+<map name="geometry_2projection_x_8h" id="geometry_2projection_x_8h">
+<area shape="rect" id="node2" href="projection_8h.html" title="contains creation of projection matrices " alt="" coords="794,80,883,107"/>
+<area shape="rect" id="node32" href="grid_x_8h.html" title="base X&#45;point topology classes " alt="" coords="915,229,978,256"/>
+<area shape="rect" id="node6" href="grid_8h.html" title="base topology classes " alt="" coords="853,304,907,331"/>
+<area shape="rect" id="node20" href="interpolation_8h.html" title="contains 1D, 2D and 3D interpolation matrix creation functions " alt="" coords="455,155,558,181"/>
+<area shape="rect" id="node31" href="weights_8h.html" title="contains creation functions for integration weights and their inverse " alt="" coords="1005,229,1083,256"/>
+<area shape="rect" id="node10" href="topological__traits_8h.html" title="topological_traits.h" alt="" coords="969,379,1100,405"/>
+<area shape="rect" id="node11" href="dlt_8h.html" title="contains the discrete legendre trafo class " alt="" coords="735,379,782,405"/>
+<area shape="rect" id="node18" href="enums_8h.html" title="enums " alt="" coords="1125,379,1209,405"/>
+<area shape="rect" id="node15" href="exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="831,453,998,480"/>
+<area shape="rect" id="node22" href="evaluation_8h.html" title="Function discretization routines. " alt="" coords="658,229,750,256"/>
+<area shape="rect" id="node24" href="functions_8h.html" title="contains some utility functions for the evaluation() routines " alt="" coords="399,229,486,256"/>
+<area shape="rect" id="node25" href="creation_8h.html" title="creation.h" alt="" coords="146,229,225,256"/>
+<area shape="rect" id="node29" href="operator__tensor_8h.html" title="operator_tensor.h" alt="" coords="511,229,633,256"/>
+<area shape="rect" id="node26" href="operator_8h.html" title="operator.h" alt="" coords="196,304,276,331"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="projection_x_8h__dep__incl.png" border="0" usemap="#geometry_2projection_x_8hdep" alt=""/></div>
+<map name="geometry_2projection_x_8hdep" id="geometry_2projection_x_8hdep">
+<area shape="rect" id="node2" href="algorithm_8h.html" title="algorithm.h" alt="" coords="40,80,127,107"/>
+</map>
+</div>
+</div>
 <p><a href="projection_x_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -144,24 +176,30 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gac758f716648b670dba9d3120b18eae09"><td class="memItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__interpolation.html#gac758f716648b670dba9d3120b18eae09">dg::create::interpolationT</a> (const GridX1d &amp;g_new, const GridX1d &amp;g_old)</td></tr>
-<tr class="memdesc:gac758f716648b670dba9d3120b18eae09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the transpose of the interpolation matrix from new to old.  <a href="group__interpolation.html#gac758f716648b670dba9d3120b18eae09">More...</a><br /></td></tr>
-<tr class="separator:gac758f716648b670dba9d3120b18eae09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa9d5e83476e162f0a4ffaa0cafc10888"><td class="memItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__interpolation.html#gaa9d5e83476e162f0a4ffaa0cafc10888">dg::create::interpolationT</a> (const aTopologyX2d &amp;g_new, const aTopologyX2d &amp;g_old)</td></tr>
-<tr class="memdesc:gaa9d5e83476e162f0a4ffaa0cafc10888"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the transpose of the interpolation matrix from new to old.  <a href="group__interpolation.html#gaa9d5e83476e162f0a4ffaa0cafc10888">More...</a><br /></td></tr>
-<tr class="separator:gaa9d5e83476e162f0a4ffaa0cafc10888"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa38b730c61dd118823dfd3a6b803287f"><td class="memItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__interpolation.html#gaa38b730c61dd118823dfd3a6b803287f">dg::create::interpolationT</a> (const aTopologyX3d &amp;g_new, const aTopologyX3d &amp;g_old)</td></tr>
-<tr class="memdesc:gaa38b730c61dd118823dfd3a6b803287f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the transpose of the interpolation matrix from new to old.  <a href="group__interpolation.html#gaa38b730c61dd118823dfd3a6b803287f">More...</a><br /></td></tr>
-<tr class="separator:gaa38b730c61dd118823dfd3a6b803287f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga17548d4a00606d68272b3ccc7e1ce34d"><td class="memItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__interpolation.html#ga17548d4a00606d68272b3ccc7e1ce34d">dg::create::projection</a> (const GridX1d &amp;g_new, const GridX1d &amp;g_old)</td></tr>
-<tr class="memdesc:ga17548d4a00606d68272b3ccc7e1ce34d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a projection between two grids.  <a href="group__interpolation.html#ga17548d4a00606d68272b3ccc7e1ce34d">More...</a><br /></td></tr>
-<tr class="separator:ga17548d4a00606d68272b3ccc7e1ce34d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6f0bfe9526a6b7005b286ccd4cb0ba3b"><td class="memItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__interpolation.html#ga6f0bfe9526a6b7005b286ccd4cb0ba3b">dg::create::projection</a> (const aTopologyX2d &amp;g_new, const aTopologyX2d &amp;g_old)</td></tr>
-<tr class="memdesc:ga6f0bfe9526a6b7005b286ccd4cb0ba3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a projection between two grids.  <a href="group__interpolation.html#ga6f0bfe9526a6b7005b286ccd4cb0ba3b">More...</a><br /></td></tr>
-<tr class="separator:ga6f0bfe9526a6b7005b286ccd4cb0ba3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab93e540e256ef0c4f8f6fdf8343be773"><td class="memItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__interpolation.html#gab93e540e256ef0c4f8f6fdf8343be773">dg::create::projection</a> (const aTopologyX3d &amp;g_new, const aTopologyX3d &amp;g_old)</td></tr>
-<tr class="memdesc:gab93e540e256ef0c4f8f6fdf8343be773"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a projection between two grids.  <a href="group__interpolation.html#gab93e540e256ef0c4f8f6fdf8343be773">More...</a><br /></td></tr>
-<tr class="separator:gab93e540e256ef0c4f8f6fdf8343be773"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga85bb8ca428ec2ff85376c5a211f9c66d"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga85bb8ca428ec2ff85376c5a211f9c66d"><td class="memTemplItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, real_type, cusp::host_memory &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__interpolation.html#ga85bb8ca428ec2ff85376c5a211f9c66d">dg::create::interpolationT</a> (const RealGridX1d&lt; real_type &gt; &amp;g_new, const RealGridX1d&lt; real_type &gt; &amp;g_old)</td></tr>
+<tr class="memdesc:ga85bb8ca428ec2ff85376c5a211f9c66d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the transpose of the interpolation matrix from new to old.  <a href="group__interpolation.html#ga85bb8ca428ec2ff85376c5a211f9c66d">More...</a><br /></td></tr>
+<tr class="separator:ga85bb8ca428ec2ff85376c5a211f9c66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad5568088cd5434971e71c6b748c067d1"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:gad5568088cd5434971e71c6b748c067d1"><td class="memTemplItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, real_type, cusp::host_memory &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__interpolation.html#gad5568088cd5434971e71c6b748c067d1">dg::create::interpolationT</a> (const aRealTopologyX2d&lt; real_type &gt; &amp;g_new, const aRealTopologyX2d&lt; real_type &gt; &amp;g_old)</td></tr>
+<tr class="memdesc:gad5568088cd5434971e71c6b748c067d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the transpose of the interpolation matrix from new to old.  <a href="group__interpolation.html#gad5568088cd5434971e71c6b748c067d1">More...</a><br /></td></tr>
+<tr class="separator:gad5568088cd5434971e71c6b748c067d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga12c6214991f472f57f9dc782006f2130"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga12c6214991f472f57f9dc782006f2130"><td class="memTemplItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, real_type, cusp::host_memory &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__interpolation.html#ga12c6214991f472f57f9dc782006f2130">dg::create::interpolationT</a> (const aRealTopologyX3d&lt; real_type &gt; &amp;g_new, const aRealTopologyX3d&lt; real_type &gt; &amp;g_old)</td></tr>
+<tr class="memdesc:ga12c6214991f472f57f9dc782006f2130"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the transpose of the interpolation matrix from new to old.  <a href="group__interpolation.html#ga12c6214991f472f57f9dc782006f2130">More...</a><br /></td></tr>
+<tr class="separator:ga12c6214991f472f57f9dc782006f2130"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6e8c5ffd2fab9cd4e1b9b513c4a37492"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga6e8c5ffd2fab9cd4e1b9b513c4a37492"><td class="memTemplItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, real_type, cusp::host_memory &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__interpolation.html#ga6e8c5ffd2fab9cd4e1b9b513c4a37492">dg::create::projection</a> (const RealGridX1d&lt; real_type &gt; &amp;g_new, const RealGridX1d&lt; real_type &gt; &amp;g_old)</td></tr>
+<tr class="memdesc:ga6e8c5ffd2fab9cd4e1b9b513c4a37492"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a projection between two grids.  <a href="group__interpolation.html#ga6e8c5ffd2fab9cd4e1b9b513c4a37492">More...</a><br /></td></tr>
+<tr class="separator:ga6e8c5ffd2fab9cd4e1b9b513c4a37492"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad1c84ab3bbfb575eb3dd871ae22d32a7"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:gad1c84ab3bbfb575eb3dd871ae22d32a7"><td class="memTemplItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, real_type, cusp::host_memory &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__interpolation.html#gad1c84ab3bbfb575eb3dd871ae22d32a7">dg::create::projection</a> (const aRealTopologyX2d&lt; real_type &gt; &amp;g_new, const aRealTopologyX2d&lt; real_type &gt; &amp;g_old)</td></tr>
+<tr class="memdesc:gad1c84ab3bbfb575eb3dd871ae22d32a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a projection between two grids.  <a href="group__interpolation.html#gad1c84ab3bbfb575eb3dd871ae22d32a7">More...</a><br /></td></tr>
+<tr class="separator:gad1c84ab3bbfb575eb3dd871ae22d32a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7688622f75b7ad9a4f8d8ce914338fbf"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga7688622f75b7ad9a4f8d8ce914338fbf"><td class="memTemplItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, real_type, cusp::host_memory &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__interpolation.html#ga7688622f75b7ad9a4f8d8ce914338fbf">dg::create::projection</a> (const aRealTopologyX3d&lt; real_type &gt; &amp;g_new, const aRealTopologyX3d&lt; real_type &gt; &amp;g_old)</td></tr>
+<tr class="memdesc:ga7688622f75b7ad9a4f8d8ce914338fbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a projection between two grids.  <a href="group__interpolation.html#ga7688622f75b7ad9a4f8d8ce914338fbf">More...</a><br /></td></tr>
+<tr class="separator:ga7688622f75b7ad9a4f8d8ce914338fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>contains creation of projection matrices for X point topology </p>
@@ -171,7 +209,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e3380d2178455503f266746fb14246a5.html">geometry</a></li><li class="navelem"><a class="el" href="projection_x_8h.html">projectionX.h</a></li>
-    <li class="footer">Generated on Thu Apr 26 2018 16:28:14 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Jul 5 2018 12:59:49 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

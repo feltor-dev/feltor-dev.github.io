@@ -139,35 +139,42 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af187e44b5fad8eca6b94d9d85a3d301f"><td class="memItemLeft" align="right" valign="top">__host__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#af187e44b5fad8eca6b94d9d85a3d301f">exdot_gpu</a> (unsigned size, const double *x1_ptr, const double *x2_ptr, int64_t *d_superacc)</td></tr>
-<tr class="memdesc:af187e44b5fad8eca6b94d9d85a3d301f"><td class="mdescLeft">&#160;</td><td class="mdescRight">gpu version of exact dot product  <a href="#af187e44b5fad8eca6b94d9d85a3d301f">More...</a><br /></td></tr>
-<tr class="separator:af187e44b5fad8eca6b94d9d85a3d301f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e36340e4b65b69825a0437814f1c238"><td class="memItemLeft" align="right" valign="top">__host__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#a5e36340e4b65b69825a0437814f1c238">exdot_gpu</a> (unsigned size, const double *x1_ptr, const double *x2_ptr, const double *x3_ptr, int64_t *d_superacc)</td></tr>
-<tr class="memdesc:a5e36340e4b65b69825a0437814f1c238"><td class="mdescLeft">&#160;</td><td class="mdescRight">gpu version of exact triple dot product  <a href="#a5e36340e4b65b69825a0437814f1c238">More...</a><br /></td></tr>
-<tr class="separator:a5e36340e4b65b69825a0437814f1c238"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fce74f08defeb202a9aedaa91953957"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#a1fce74f08defeb202a9aedaa91953957">exdot_omp</a> (unsigned size, const double *x1_ptr, const double *x2_ptr, int64_t *h_superacc)</td></tr>
-<tr class="memdesc:a1fce74f08defeb202a9aedaa91953957"><td class="mdescLeft">&#160;</td><td class="mdescRight">OpenMP parallel version of exact dot product.  <a href="#a1fce74f08defeb202a9aedaa91953957">More...</a><br /></td></tr>
-<tr class="separator:a1fce74f08defeb202a9aedaa91953957"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a743b74384d3d99e2d1d62e77516bd04d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#a743b74384d3d99e2d1d62e77516bd04d">exdot_omp</a> (unsigned size, const double *x1_ptr, const double *x2_ptr, const double *x3_ptr, int64_t *h_superacc)</td></tr>
-<tr class="memdesc:a743b74384d3d99e2d1d62e77516bd04d"><td class="mdescLeft">&#160;</td><td class="mdescRight">OpenMP parallel version of exact triple dot product.  <a href="#a743b74384d3d99e2d1d62e77516bd04d">More...</a><br /></td></tr>
-<tr class="separator:a743b74384d3d99e2d1d62e77516bd04d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90ba074b4796ecb439b234f66c0c39b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#a90ba074b4796ecb439b234f66c0c39b5">exdot_cpu</a> (unsigned size, const double *x1_ptr, const double *x2_ptr, int64_t *h_superacc)</td></tr>
-<tr class="memdesc:a90ba074b4796ecb439b234f66c0c39b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">serial version of exact dot product  <a href="#a90ba074b4796ecb439b234f66c0c39b5">More...</a><br /></td></tr>
-<tr class="separator:a90ba074b4796ecb439b234f66c0c39b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93a0ce7073e454beb42af2473db7eb7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#a93a0ce7073e454beb42af2473db7eb7f">exdot_cpu</a> (unsigned size, const double *x1_ptr, const double *x2_ptr, const double *x3_ptr, int64_t *h_superacc)</td></tr>
-<tr class="memdesc:a93a0ce7073e454beb42af2473db7eb7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">gpu version of exact triple dot product  <a href="#a93a0ce7073e454beb42af2473db7eb7f">More...</a><br /></td></tr>
-<tr class="separator:a93a0ce7073e454beb42af2473db7eb7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b66eb8c9a1af03aa85fc0ab073c3e2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#a8b66eb8c9a1af03aa85fc0ab073c3e2c">mpi_reduce_communicator</a> (MPI_Comm comm, MPI_Comm *comm_mod, MPI_Comm *comm_mod_reduce)</td></tr>
-<tr class="memdesc:a8b66eb8c9a1af03aa85fc0ab073c3e2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function can be used to partition communicators for the <code><a class="el" href="namespaceexblas.html#aaef8171408fa1de05dad4d923637b4ea" title="reduce a number of superaccumulators distributed among mpi processes ">exblas::reduce_mpi_cpu</a></code> function.  <a href="#a8b66eb8c9a1af03aa85fc0ab073c3e2c">More...</a><br /></td></tr>
-<tr class="separator:a8b66eb8c9a1af03aa85fc0ab073c3e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaef8171408fa1de05dad4d923637b4ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#aaef8171408fa1de05dad4d923637b4ea">reduce_mpi_cpu</a> (unsigned num_superacc, int64_t *in, int64_t *out, MPI_Comm comm, MPI_Comm comm_mod, MPI_Comm comm_mod_reduce)</td></tr>
-<tr class="memdesc:aaef8171408fa1de05dad4d923637b4ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">reduce a number of superaccumulators distributed among mpi processes  <a href="#aaef8171408fa1de05dad4d923637b4ea">More...</a><br /></td></tr>
-<tr class="separator:aaef8171408fa1de05dad4d923637b4ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfc965cd8f0a664f66fee1753e524b72"><td class="memTemplParams" colspan="2">template&lt;class PointerOrValue1 , class PointerOrValue2 , size_t NBFPE = 3&gt; </td></tr>
+<tr class="memitem:adfc965cd8f0a664f66fee1753e524b72"><td class="memTemplItemLeft" align="right" valign="top">__host__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#adfc965cd8f0a664f66fee1753e524b72">exdot_gpu</a> (unsigned size, PointerOrValue1 x1_ptr, PointerOrValue2 x2_ptr, int64_t *d_superacc)</td></tr>
+<tr class="memdesc:adfc965cd8f0a664f66fee1753e524b72"><td class="mdescLeft">&#160;</td><td class="mdescRight">gpu version of exact dot product  <a href="#adfc965cd8f0a664f66fee1753e524b72">More...</a><br /></td></tr>
+<tr class="separator:adfc965cd8f0a664f66fee1753e524b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fdc2cf4450407b8159bc234fac52004"><td class="memTemplParams" colspan="2">template&lt;class PointerOrValue1 , class PointerOrValue2 , class PointerOrValue3 , size_t NBFPE = 3&gt; </td></tr>
+<tr class="memitem:a0fdc2cf4450407b8159bc234fac52004"><td class="memTemplItemLeft" align="right" valign="top">__host__ void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#a0fdc2cf4450407b8159bc234fac52004">exdot_gpu</a> (unsigned size, PointerOrValue1 x1_ptr, PointerOrValue2 x2_ptr, PointerOrValue3 x3_ptr, int64_t *d_superacc)</td></tr>
+<tr class="memdesc:a0fdc2cf4450407b8159bc234fac52004"><td class="mdescLeft">&#160;</td><td class="mdescRight">gpu version of exact triple dot product  <a href="#a0fdc2cf4450407b8159bc234fac52004">More...</a><br /></td></tr>
+<tr class="separator:a0fdc2cf4450407b8159bc234fac52004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83939a86d028425bb1d38a22a331ec64"><td class="memTemplParams" colspan="2">template&lt;class PointerOrValue1 , class PointerOrValue2 , size_t NBFPE = 8&gt; </td></tr>
+<tr class="memitem:a83939a86d028425bb1d38a22a331ec64"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#a83939a86d028425bb1d38a22a331ec64">exdot_omp</a> (unsigned size, PointerOrValue1 x1_ptr, PointerOrValue2 x2_ptr, int64_t *h_superacc)</td></tr>
+<tr class="memdesc:a83939a86d028425bb1d38a22a331ec64"><td class="mdescLeft">&#160;</td><td class="mdescRight">OpenMP parallel version of exact dot product.  <a href="#a83939a86d028425bb1d38a22a331ec64">More...</a><br /></td></tr>
+<tr class="separator:a83939a86d028425bb1d38a22a331ec64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f168ffff8cb2ac645caa4ecae004f99"><td class="memTemplParams" colspan="2">template&lt;class PointerOrValue1 , class PointerOrValue2 , class PointerOrValue3 , size_t NBFPE = 8&gt; </td></tr>
+<tr class="memitem:a5f168ffff8cb2ac645caa4ecae004f99"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#a5f168ffff8cb2ac645caa4ecae004f99">exdot_omp</a> (unsigned size, PointerOrValue1 x1_ptr, PointerOrValue2 x2_ptr, PointerOrValue3 x3_ptr, int64_t *h_superacc)</td></tr>
+<tr class="memdesc:a5f168ffff8cb2ac645caa4ecae004f99"><td class="mdescLeft">&#160;</td><td class="mdescRight">OpenMP parallel version of exact triple dot product.  <a href="#a5f168ffff8cb2ac645caa4ecae004f99">More...</a><br /></td></tr>
+<tr class="separator:a5f168ffff8cb2ac645caa4ecae004f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9ac3f6a557ba58156bb5d3d02b41758"><td class="memTemplParams" colspan="2">template&lt;class PointerOrValue1 , class PointerOrValue2 , size_t NBFPE = 8&gt; </td></tr>
+<tr class="memitem:af9ac3f6a557ba58156bb5d3d02b41758"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#af9ac3f6a557ba58156bb5d3d02b41758">exdot_cpu</a> (unsigned size, PointerOrValue1 x1_ptr, PointerOrValue2 x2_ptr, int64_t *h_superacc)</td></tr>
+<tr class="memdesc:af9ac3f6a557ba58156bb5d3d02b41758"><td class="mdescLeft">&#160;</td><td class="mdescRight">serial version of exact dot product  <a href="#af9ac3f6a557ba58156bb5d3d02b41758">More...</a><br /></td></tr>
+<tr class="separator:af9ac3f6a557ba58156bb5d3d02b41758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dbdfda94daaec2915cbdf9a080a8dfc"><td class="memTemplParams" colspan="2">template&lt;class PointerOrValue1 , class PointerOrValue2 , class PointerOrValue3 , size_t NBFPE = 8&gt; </td></tr>
+<tr class="memitem:a3dbdfda94daaec2915cbdf9a080a8dfc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#a3dbdfda94daaec2915cbdf9a080a8dfc">exdot_cpu</a> (unsigned size, PointerOrValue1 x1_ptr, PointerOrValue2 x2_ptr, PointerOrValue3 x3_ptr, int64_t *h_superacc)</td></tr>
+<tr class="memdesc:a3dbdfda94daaec2915cbdf9a080a8dfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">gpu version of exact triple dot product  <a href="#a3dbdfda94daaec2915cbdf9a080a8dfc">More...</a><br /></td></tr>
+<tr class="separator:a3dbdfda94daaec2915cbdf9a080a8dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b5cd15f02ce8ac7c0a18d7a0691c2e8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#a0b5cd15f02ce8ac7c0a18d7a0691c2e8">mpi_reduce_communicator</a> (MPI_Comm comm, MPI_Comm *comm_mod, MPI_Comm *comm_mod_reduce)</td></tr>
+<tr class="memdesc:a0b5cd15f02ce8ac7c0a18d7a0691c2e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function can be used to partition communicators for the <code><a class="el" href="namespaceexblas.html#ab4c1247c02e14edcae026d41b3f5c6fb" title="reduce a number of superaccumulators distributed among mpi processes ">exblas::reduce_mpi_cpu</a></code> function.  <a href="#a0b5cd15f02ce8ac7c0a18d7a0691c2e8">More...</a><br /></td></tr>
+<tr class="separator:a0b5cd15f02ce8ac7c0a18d7a0691c2e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4c1247c02e14edcae026d41b3f5c6fb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#ab4c1247c02e14edcae026d41b3f5c6fb">reduce_mpi_cpu</a> (unsigned num_superacc, int64_t *in, int64_t *out, MPI_Comm comm, MPI_Comm comm_mod, MPI_Comm comm_mod_reduce)</td></tr>
+<tr class="memdesc:ab4c1247c02e14edcae026d41b3f5c6fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">reduce a number of superaccumulators distributed among mpi processes  <a href="#ab4c1247c02e14edcae026d41b3f5c6fb">More...</a><br /></td></tr>
+<tr class="separator:ab4c1247c02e14edcae026d41b3f5c6fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a81808a49717819440744a3cc80c2f0a2"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#a81808a49717819440744a3cc80c2f0a2">KRX</a> = 8</td></tr>
-<tr class="memdesc:a81808a49717819440744a3cc80c2f0a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">High-radix carry-save bits.  <a href="#a81808a49717819440744a3cc80c2f0a2">More...</a><br /></td></tr>
+<tr class="memitem:a81808a49717819440744a3cc80c2f0a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a81808a49717819440744a3cc80c2f0a2"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#a81808a49717819440744a3cc80c2f0a2">KRX</a> = 8</td></tr>
+<tr class="memdesc:a81808a49717819440744a3cc80c2f0a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">High-radix carry-save bits. <br /></td></tr>
 <tr class="separator:a81808a49717819440744a3cc80c2f0a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7155cf5cd239ccfc433456b86a0d1b3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7155cf5cd239ccfc433456b86a0d1b3"></a>
 static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#ab7155cf5cd239ccfc433456b86a0d1b3">DIGITS</a> = 64 - <a class="el" href="namespaceexblas.html#a81808a49717819440744a3cc80c2f0a2">KRX</a></td></tr>
@@ -239,9 +246,11 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a90ba074b4796ecb439b234f66c0c39b5"></a>
+<a class="anchor" id="af9ac3f6a557ba58156bb5d3d02b41758"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class PointerOrValue1 , class PointerOrValue2 , size_t NBFPE = 8&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void exblas::exdot_cpu </td>
@@ -252,13 +261,13 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const double *&#160;</td>
+          <td class="paramtype">PointerOrValue1&#160;</td>
           <td class="paramname"><em>x1_ptr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const double *&#160;</td>
+          <td class="paramtype">PointerOrValue2&#160;</td>
           <td class="paramname"><em>x2_ptr</em>, </td>
         </tr>
         <tr>
@@ -279,6 +288,13 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
 <p>Computes the exact sum </p><p class="formulaDsp">
 <img class="formulaDsp" alt="\[ \sum_{i=0}^{N-1} x_i y_i \]" src="form_0.png"/>
 </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">NBFPE</td><td>size of the floating point expansion (should be between 3 and 8) </td></tr>
+    <tr><td class="paramname">PointerOrValue</td><td>must be one of <code> T, T&amp;&amp;, T&amp;, const T&amp;, T* or const T* </code>, where <code>T</code> is either <code>float</code> or <code>double</code>. If it is a pointer type, then we iterate through the pointed data from 0 to <code>size</code>, else we consider the value constant in every iteration. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td>size N of the arrays to sum </td></tr>
@@ -288,13 +304,15 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="namespaceexblas_1_1cpu.html#a4ef061feac94e221be4d5cc89be855f0" title="Convert a superaccumulator to the nearest double precision number (CPU version) ">exblas::cpu::Round</a></code> to convert the superaccumulator into a double precision number </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="namespaceexblas_1_1cpu.html#ac16158f26c0ea9b96fea9cfacf870f53" title="Convert a superaccumulator to the nearest double precision number (CPU version) ">exblas::cpu::Round</a></code> to convert the superaccumulator into a double precision number </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a93a0ce7073e454beb42af2473db7eb7f"></a>
+<a class="anchor" id="a3dbdfda94daaec2915cbdf9a080a8dfc"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class PointerOrValue1 , class PointerOrValue2 , class PointerOrValue3 , size_t NBFPE = 8&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void exblas::exdot_cpu </td>
@@ -305,19 +323,19 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const double *&#160;</td>
+          <td class="paramtype">PointerOrValue1&#160;</td>
           <td class="paramname"><em>x1_ptr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const double *&#160;</td>
+          <td class="paramtype">PointerOrValue2&#160;</td>
           <td class="paramname"><em>x2_ptr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const double *&#160;</td>
+          <td class="paramtype">PointerOrValue3&#160;</td>
           <td class="paramname"><em>x3_ptr</em>, </td>
         </tr>
         <tr>
@@ -338,6 +356,13 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
 <p>Computes the exact sum </p><p class="formulaDsp">
 <img class="formulaDsp" alt="\[ \sum_{i=0}^{N-1} x_i w_i y_i \]" src="form_1.png"/>
 </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">NBFPE</td><td>size of the floating point expansion (should be between 3 and 8) </td></tr>
+    <tr><td class="paramname">PointerOrValue</td><td>must be one of <code> T, T&amp;&amp;, T&amp;, const T&amp;, T* or const T* </code>, where <code>T</code> is either <code>float</code> or <code>double</code>. If it is a pointer type, then we iterate through the pointed data from 0 to <code>size</code>, else we consider the value constant in every iteration. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td>size N of the arrays to sum </td></tr>
@@ -348,13 +373,15 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="namespaceexblas_1_1cpu.html#a4ef061feac94e221be4d5cc89be855f0" title="Convert a superaccumulator to the nearest double precision number (CPU version) ">exblas::cpu::Round</a></code> to convert the superaccumulator into a double precision number </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="namespaceexblas_1_1cpu.html#ac16158f26c0ea9b96fea9cfacf870f53" title="Convert a superaccumulator to the nearest double precision number (CPU version) ">exblas::cpu::Round</a></code> to convert the superaccumulator into a double precision number </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="af187e44b5fad8eca6b94d9d85a3d301f"></a>
+<a class="anchor" id="adfc965cd8f0a664f66fee1753e524b72"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class PointerOrValue1 , class PointerOrValue2 , size_t NBFPE = 3&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">__host__ void exblas::exdot_gpu </td>
@@ -365,13 +392,13 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const double *&#160;</td>
+          <td class="paramtype">PointerOrValue1&#160;</td>
           <td class="paramname"><em>x1_ptr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const double *&#160;</td>
+          <td class="paramtype">PointerOrValue2&#160;</td>
           <td class="paramname"><em>x2_ptr</em>, </td>
         </tr>
         <tr>
@@ -392,6 +419,13 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
 <p>Computes the exact sum </p><p class="formulaDsp">
 <img class="formulaDsp" alt="\[ \sum_{i=0}^{N-1} x_i y_i \]" src="form_0.png"/>
 </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">NBFPE</td><td>size of the floating point expansion (should be between 3 and 8) </td></tr>
+    <tr><td class="paramname">PointerOrValue</td><td>must be one of <code> T, T&amp;&amp;, T&amp;, const T&amp;, T* or const T* </code>, where <code>T</code> is either <code>float</code> or <code>double</code>. If it is a pointer type, then we iterate through the pointed data from 0 to <code>size</code>, else we consider the value constant in every iteration. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td>size N of the arrays to sum </td></tr>
@@ -401,13 +435,15 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="namespaceexblas_1_1gpu.html#a9e876150be03f6f2aeea469b0f05e96a" title="Convert a superaccumulator to the nearest double precision number (GPU version) ">exblas::gpu::Round</a></code> to convert the superaccumulator into a double precision number </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="namespaceexblas_1_1gpu.html#acac8b5b8de3efcbb2af28ea75c7aaaf4" title="Convert a superaccumulator to the nearest double precision number (GPU version) ">exblas::gpu::Round</a></code> to convert the superaccumulator into a double precision number </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a5e36340e4b65b69825a0437814f1c238"></a>
+<a class="anchor" id="a0fdc2cf4450407b8159bc234fac52004"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class PointerOrValue1 , class PointerOrValue2 , class PointerOrValue3 , size_t NBFPE = 3&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">__host__ void exblas::exdot_gpu </td>
@@ -418,19 +454,19 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const double *&#160;</td>
+          <td class="paramtype">PointerOrValue1&#160;</td>
           <td class="paramname"><em>x1_ptr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const double *&#160;</td>
+          <td class="paramtype">PointerOrValue2&#160;</td>
           <td class="paramname"><em>x2_ptr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const double *&#160;</td>
+          <td class="paramtype">PointerOrValue3&#160;</td>
           <td class="paramname"><em>x3_ptr</em>, </td>
         </tr>
         <tr>
@@ -451,6 +487,13 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
 <p>Computes the exact sum </p><p class="formulaDsp">
 <img class="formulaDsp" alt="\[ \sum_{i=0}^{N-1} x_i w_i y_i \]" src="form_1.png"/>
 </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">NBFPE</td><td>size of the floating point expansion (should be between 3 and 8) </td></tr>
+    <tr><td class="paramname">PointerOrValue</td><td>must be one of <code> T, T&amp;&amp;, T&amp;, const T&amp;, T* or const T* </code>, where <code>T</code> is either <code>float</code> or <code>double</code>. If it is a pointer type, then we iterate through the pointed data from 0 to <code>size</code>, else we consider the value constant in every iteration. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td>size N of the arrays to sum </td></tr>
@@ -461,13 +504,15 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="namespaceexblas_1_1gpu.html#a9e876150be03f6f2aeea469b0f05e96a" title="Convert a superaccumulator to the nearest double precision number (GPU version) ">exblas::gpu::Round</a></code> to convert the superaccumulator into a double precision number </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="namespaceexblas_1_1gpu.html#acac8b5b8de3efcbb2af28ea75c7aaaf4" title="Convert a superaccumulator to the nearest double precision number (GPU version) ">exblas::gpu::Round</a></code> to convert the superaccumulator into a double precision number </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a1fce74f08defeb202a9aedaa91953957"></a>
+<a class="anchor" id="a83939a86d028425bb1d38a22a331ec64"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class PointerOrValue1 , class PointerOrValue2 , size_t NBFPE = 8&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void exblas::exdot_omp </td>
@@ -478,13 +523,13 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const double *&#160;</td>
+          <td class="paramtype">PointerOrValue1&#160;</td>
           <td class="paramname"><em>x1_ptr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const double *&#160;</td>
+          <td class="paramtype">PointerOrValue2&#160;</td>
           <td class="paramname"><em>x2_ptr</em>, </td>
         </tr>
         <tr>
@@ -505,6 +550,13 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
 <p>Computes the exact sum </p><p class="formulaDsp">
 <img class="formulaDsp" alt="\[ \sum_{i=0}^{N-1} x_i y_i \]" src="form_0.png"/>
 </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">NBFPE</td><td>size of the floating point expansion (should be between 3 and 8) </td></tr>
+    <tr><td class="paramname">PointerOrValue</td><td>must be one of <code> T, T&amp;&amp;, T&amp;, const T&amp;, T* or const T* </code>, where <code>T</code> is either <code>float</code> or <code>double</code>. If it is a pointer type, then we iterate through the pointed data from 0 to <code>size</code>, else we consider the value constant in every iteration. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td>size N of the arrays to sum </td></tr>
@@ -514,13 +566,15 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="namespaceexblas_1_1cpu.html#a4ef061feac94e221be4d5cc89be855f0" title="Convert a superaccumulator to the nearest double precision number (CPU version) ">exblas::cpu::Round</a></code> to convert the superaccumulator into a double precision number </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="namespaceexblas_1_1cpu.html#ac16158f26c0ea9b96fea9cfacf870f53" title="Convert a superaccumulator to the nearest double precision number (CPU version) ">exblas::cpu::Round</a></code> to convert the superaccumulator into a double precision number </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a743b74384d3d99e2d1d62e77516bd04d"></a>
+<a class="anchor" id="a5f168ffff8cb2ac645caa4ecae004f99"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class PointerOrValue1 , class PointerOrValue2 , class PointerOrValue3 , size_t NBFPE = 8&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void exblas::exdot_omp </td>
@@ -531,19 +585,19 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const double *&#160;</td>
+          <td class="paramtype">PointerOrValue1&#160;</td>
           <td class="paramname"><em>x1_ptr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const double *&#160;</td>
+          <td class="paramtype">PointerOrValue2&#160;</td>
           <td class="paramname"><em>x2_ptr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const double *&#160;</td>
+          <td class="paramtype">PointerOrValue3&#160;</td>
           <td class="paramname"><em>x3_ptr</em>, </td>
         </tr>
         <tr>
@@ -564,6 +618,13 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
 <p>Computes the exact sum </p><p class="formulaDsp">
 <img class="formulaDsp" alt="\[ \sum_{i=0}^{N-1} x_i w_i y_i \]" src="form_1.png"/>
 </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">NBFPE</td><td>size of the floating point expansion (should be between 3 and 8) </td></tr>
+    <tr><td class="paramname">PointerOrValue</td><td>must be one of <code> T, T&amp;&amp;, T&amp;, const T&amp;, T* or const T* </code>, where <code>T</code> is either <code>float</code> or <code>double</code>. If it is a pointer type, then we iterate through the pointed data from 0 to <code>size</code>, else we consider the value constant in every iteration. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td>size N of the arrays to sum </td></tr>
@@ -574,16 +635,19 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="namespaceexblas_1_1cpu.html#a4ef061feac94e221be4d5cc89be855f0" title="Convert a superaccumulator to the nearest double precision number (CPU version) ">exblas::cpu::Round</a></code> to convert the superaccumulator into a double precision number </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="namespaceexblas_1_1cpu.html#ac16158f26c0ea9b96fea9cfacf870f53" title="Convert a superaccumulator to the nearest double precision number (CPU version) ">exblas::cpu::Round</a></code> to convert the superaccumulator into a double precision number </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a8b66eb8c9a1af03aa85fc0ab073c3e2c"></a>
+<a class="anchor" id="a0b5cd15f02ce8ac7c0a18d7a0691c2e8"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void exblas::mpi_reduce_communicator </td>
+          <td class="memname">static void exblas::mpi_reduce_communicator </td>
           <td>(</td>
           <td class="paramtype">MPI_Comm&#160;</td>
           <td class="paramname"><em>comm</em>, </td>
@@ -606,9 +670,14 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>This function can be used to partition communicators for the <code><a class="el" href="namespaceexblas.html#aaef8171408fa1de05dad4d923637b4ea" title="reduce a number of superaccumulators distributed among mpi processes ">exblas::reduce_mpi_cpu</a></code> function. </p>
+<p>This function can be used to partition communicators for the <code><a class="el" href="namespaceexblas.html#ab4c1247c02e14edcae026d41b3f5c6fb" title="reduce a number of superaccumulators distributed among mpi processes ">exblas::reduce_mpi_cpu</a></code> function. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">comm</td><td>the input communicator (unmodified) </td></tr>
@@ -621,12 +690,15 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
 
 </div>
 </div>
-<a class="anchor" id="aaef8171408fa1de05dad4d923637b4ea"></a>
+<a class="anchor" id="ab4c1247c02e14edcae026d41b3f5c6fb"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void exblas::reduce_mpi_cpu </td>
+          <td class="memname">static void exblas::reduce_mpi_cpu </td>
           <td>(</td>
           <td class="paramtype">unsigned&#160;</td>
           <td class="paramname"><em>num_superacc</em>, </td>
@@ -667,6 +739,11 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>reduce a number of superaccumulators distributed among mpi processes </p>
@@ -682,31 +759,7 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a cl
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="namespaceexblas.html#a8b66eb8c9a1af03aa85fc0ab073c3e2c" title="This function can be used to partition communicators for the exblas::reduce_mpi_cpu function...">exblas::mpi_reduce_communicator</a></code> to generate the required communicators </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="a81808a49717819440744a3cc80c2f0a2"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr int exblas::KRX = 8</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>High-radix carry-save bits. </p>
-<p>parameters for superaccumulator operations ////////////////////// High radix carray-save bits </p>
+<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="namespaceexblas.html#a0b5cd15f02ce8ac7c0a18d7a0691c2e8" title="This function can be used to partition communicators for the exblas::reduce_mpi_cpu function...">exblas::mpi_reduce_communicator</a></code> to generate the required communicators </dd></dl>
 
 </div>
 </div>

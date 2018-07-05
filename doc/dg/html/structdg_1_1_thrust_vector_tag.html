@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('structdg_1_1_thrust_vector_tag.html','
 </div><!--header-->
 <div class="contents">
 
-<p>Indicate that thrust - like members are available.  
+<p>Indicate thrust/std - like behaviour.  
  <a href="structdg_1_1_thrust_vector_tag.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="vector__categories_8h_source.html">vector_categories.h</a>&gt;</code></p>
@@ -137,20 +137,29 @@ Inheritance diagram for dg::ThrustVectorTag:</div>
 <div class="dyncontent">
 <div class="center"><img src="structdg_1_1_thrust_vector_tag__inherit__graph.png" border="0" usemap="#dg_1_1_thrust_vector_tag_inherit__map" alt="Inheritance graph"/></div>
 <map name="dg_1_1_thrust_vector_tag_inherit__map" id="dg_1_1_thrust_vector_tag_inherit__map">
-<area shape="rect" id="node4" href="structdg_1_1_cusp_vector_tag.html" title="special tag for cusp arrays " alt="" coords="5,229,140,256"/>
-<area shape="rect" id="node5" href="structdg_1_1_std_array_tag.html" title="std::array&lt; primitive_type&gt; " alt="" coords="165,229,282,256"/>
-<area shape="rect" id="node2" href="structdg_1_1_shared_vector_tag.html" title="Indicate a contiguous chunk of shared memory. " alt="" coords="75,80,220,107"/>
-<area shape="rect" id="node3" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. " alt="" coords="84,5,211,32"/>
+<area shape="rect" id="node5" href="structdg_1_1_cusp_vector_tag.html" title="special tag for cusp arrays " alt="" coords="5,304,140,331"/>
+<area shape="rect" id="node6" href="structdg_1_1_std_array_tag.html" title=" std::array&lt; primitive_type, N&gt; &#160;" alt="" coords="165,304,282,331"/>
+<area shape="rect" id="node2" href="structdg_1_1_shared_vector_tag.html" title="Indicate a contiguous chunk of shared memory. " alt="" coords="75,155,220,181"/>
+<area shape="rect" id="node3" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. " alt="" coords="84,80,211,107"/>
+<area shape="rect" id="node4" href="structdg_1_1_any_matrix_tag.html" title="dg::AnyMatrixTag" alt="" coords="85,5,210,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Indicate that thrust - like members are available. </p>
-<p>In detail these must be</p><ul>
-<li>resize()</li>
-<li>size()</li>
-<li>data()</li>
-<li>begin()</li>
-<li>end() </li>
+<div class="textblock"><p>Indicate thrust/std - like behaviour. </p>
+<p>There must be the typedefs</p><ul>
+<li><code>iterator</code> </li>
+<li><code>const_iterator</code> An instance can be constructed by<ul>
+<li>iterators <code></code>(begin, end) The member functions contan at least</li>
+<li><code>resize()</code> resize the vector</li>
+<li><code>size()</code> returns the number of elements</li>
+<li><code>data()</code> pointer to the underlying array</li>
+<li><code>begin()</code> returns an iterator to the beginning</li>
+<li><code>cbegin()</code> returns a const_iterator to the beginning</li>
+<li><code>end()</code> return an iterator to the end</li>
+<li><code>cend()</code> returns a const_iterator to the end <dl class="section note"><dt>Note</dt><dd><code>thrust::host_vector</code> and <code>thrust::device_vector</code> meet these requirements </dd></dl>
+</li>
+</ul>
+</li>
 </ul>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>backend/<a class="el" href="vector__categories_8h_source.html">vector_categories.h</a></li>
@@ -161,7 +170,7 @@ Inheritance diagram for dg::ThrustVectorTag:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_thrust_vector_tag.html">ThrustVectorTag</a></li>
-    <li class="footer">Generated on Thu Apr 26 2018 16:28:15 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Jul 5 2018 12:59:50 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

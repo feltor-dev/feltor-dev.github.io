@@ -1,5 +1,0 @@
-<map id="dg::aGeometryX2d" name="dg::aGeometryX2d">
-<area shape="rect" id="node3" href="$structdg_1_1_cartesian_grid_x2d.html" title="two&#45;dimensional GridX with Cartesian metric " alt="" coords="5,155,152,181"/>
-<area shape="rect" id="node4" href="$structdg_1_1_cartesian_refined_grid_x2d.html" title="Refined X&#45;point grid. " alt="" coords="176,155,368,181"/>
-<area shape="rect" id="node2" href="$structdg_1_1a_topology_x2d.html" title="A 2D grid class with X&#45;point topology. " alt="" coords="111,5,238,32"/>
-</map>

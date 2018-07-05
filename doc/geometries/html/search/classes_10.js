@@ -1,6 +1,7 @@
 var searchData=
 [
   ['safetyfactor',['SafetyFactor',['../structdg_1_1geo_1_1_safety_factor.html',1,'dg::geo']]],
+  ['scalartag',['ScalarTag',['../../../dg/html/structdg_1_1_scalar_tag.html',1,'dg']]],
   ['selfmadematrixtag',['SelfMadeMatrixTag',['../../../dg/html/structdg_1_1_self_made_matrix_tag.html',1,'dg']]],
   ['separatrixorthogonal',['SeparatrixOrthogonal',['../structdg_1_1geo_1_1_separatrix_orthogonal.html',1,'dg::geo']]],
   ['serialtag',['SerialTag',['../../../dg/html/structdg_1_1_serial_tag.html',1,'dg']]],
@@ -13,10 +14,12 @@ var searchData=
   ['sinxcosy',['SinXCosY',['../../../dg/html/structdg_1_1_sin_x_cos_y.html',1,'dg']]],
   ['sinxsiny',['SinXSinY',['../../../dg/html/structdg_1_1_sin_x_sin_y.html',1,'dg']]],
   ['sirk',['SIRK',['../../../dg/html/structdg_1_1_s_i_r_k.html',1,'dg']]],
+  ['sparseblockmatrixtag',['SparseBlockMatrixTag',['../../../dg/html/structdg_1_1_sparse_block_matrix_tag.html',1,'dg']]],
   ['sparseelement',['SparseElement',['../../../dg/html/structdg_1_1_sparse_element.html',1,'dg']]],
   ['sparseelement_3c_20container_20_3e',['SparseElement&lt; container &gt;',['../../../dg/html/structdg_1_1_sparse_element.html',1,'']]],
   ['sparsetensor',['SparseTensor',['../../../dg/html/structdg_1_1_sparse_tensor.html',1,'dg']]],
   ['sparsetensor_3c_20container_20_3e',['SparseTensor&lt; container &gt;',['../../../dg/html/structdg_1_1_sparse_tensor.html',1,'']]],
+  ['sparsetensor_3c_20containertype_20_3e',['SparseTensor&lt; ContainerType &gt;',['../../../dg/html/structdg_1_1_sparse_tensor.html',1,'']]],
   ['sparsetensor_3c_20host_5fvector_20_3e',['SparseTensor&lt; host_vector &gt;',['../../../dg/html/structdg_1_1_sparse_tensor.html',1,'dg']]],
   ['sparsetensor_3c_20thrust_3a_3ahost_5fvector_3c_20double_20_3e_20_3e',['SparseTensor&lt; thrust::host_vector&lt; double &gt; &gt;',['../../../dg/html/structdg_1_1_sparse_tensor.html',1,'dg']]],
   ['sqrt',['SQRT',['../../../dg/html/structdg_1_1_s_q_r_t.html',1,'dg']]],

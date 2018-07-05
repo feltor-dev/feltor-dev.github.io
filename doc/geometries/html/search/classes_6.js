@@ -11,11 +11,5 @@ var searchData=
   ['generalcomm',['GeneralComm',['../../../dg/html/structdg_1_1_general_comm.html',1,'dg']]],
   ['generalelliptic',['GeneralElliptic',['../../../dg/html/structdg_1_1_general_elliptic.html',1,'dg']]],
   ['generalellipticsym',['GeneralEllipticSym',['../../../dg/html/structdg_1_1_general_elliptic_sym.html',1,'dg']]],
-  ['gradlnb',['GradLnB',['../structdg_1_1geo_1_1_grad_ln_b.html',1,'dg::geo']]],
-  ['grid1d',['Grid1d',['../../../dg/html/structdg_1_1_grid1d.html',1,'dg']]],
-  ['grid2d',['Grid2d',['../../../dg/html/structdg_1_1_grid2d.html',1,'dg']]],
-  ['grid3d',['Grid3d',['../../../dg/html/structdg_1_1_grid3d.html',1,'dg']]],
-  ['gridx1d',['GridX1d',['../../../dg/html/structdg_1_1_grid_x1d.html',1,'dg']]],
-  ['gridx2d',['GridX2d',['../../../dg/html/structdg_1_1_grid_x2d.html',1,'dg']]],
-  ['gridx3d',['GridX3d',['../../../dg/html/structdg_1_1_grid_x3d.html',1,'dg']]]
+  ['gradlnb',['GradLnB',['../structdg_1_1geo_1_1_grad_ln_b.html',1,'dg::geo']]]
 ];

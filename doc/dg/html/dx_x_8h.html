@@ -88,6 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -130,7 +131,46 @@ $(document).ready(function(){initNavTree('dx_x_8h.html','');});
 
 <p>Simple 1d derivatives on X-point topology.  
 <a href="#details">More...</a></p>
-
+<div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<code>#include &quot;<a class="el" href="grid_x_8h_source.html">gridX.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="dx_8h_source.html">dx.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="weights_x_8h_source.html">weightsX.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sparseblockmat_8h_source.html">dg/backend/sparseblockmat.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for dxX.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="dx_x_8h__incl.png" border="0" usemap="#geometry_2dx_x_8h" alt=""/></div>
+<map name="geometry_2dx_x_8h" id="geometry_2dx_x_8h">
+<area shape="rect" id="node3" href="grid_x_8h.html" title="base X&#45;point topology classes " alt="" coords="212,155,275,181"/>
+<area shape="rect" id="node18" href="dx_8h.html" title="Simple 1d derivatives. " alt="" coords="483,80,529,107"/>
+<area shape="rect" id="node19" href="sparseblockmat_8h.html" title="dg/backend/sparseblockmat.h" alt="" coords="777,229,973,256"/>
+<area shape="rect" id="node34" href="weights_x_8h.html" title="contains creation functions for integration weights and their inverse on X&#45;point topology ..." alt="" coords="295,80,381,107"/>
+<area shape="rect" id="node5" href="dlt_8h.html" title="contains the discrete legendre trafo class " alt="" coords="269,304,316,331"/>
+<area shape="rect" id="node13" href="grid_8h.html" title="base topology classes " alt="" coords="277,229,332,256"/>
+<area shape="rect" id="node16" href="enums_8h.html" title="enums " alt="" coords="5,304,89,331"/>
+<area shape="rect" id="node10" href="exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="331,379,497,405"/>
+<area shape="rect" id="node15" href="topological__traits_8h.html" title="topological_traits.h" alt="" coords="114,304,245,331"/>
+<area shape="rect" id="node29" href="functions_8h.html" title="contains some utility functions for the evaluation() routines " alt="" coords="504,155,591,181"/>
+<area shape="rect" id="node30" href="operator_8h.html" title="operator.h" alt="" coords="673,229,753,256"/>
+<area shape="rect" id="node33" href="weights_8h.html" title="contains creation functions for integration weights and their inverse " alt="" coords="299,155,377,181"/>
+<area shape="rect" id="node20" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/config_8h.html" title="exblas/config.h" alt="" coords="1015,304,1125,331"/>
+<area shape="rect" id="node22" href="tensor__traits_8h.html" title="tensor_traits.h" alt="" coords="1241,304,1347,331"/>
+<area shape="rect" id="node25" href="scalar__categories_8h.html" title="scalar_categories.h" alt="" coords="1489,379,1624,405"/>
+<area shape="rect" id="node26" href="vector__categories_8h.html" title="vector_categories.h" alt="" coords="1383,453,1519,480"/>
+<area shape="rect" id="node27" href="matrix__categories_8h.html" title="matrix_categories.h" alt="" coords="1157,528,1293,555"/>
+<area shape="rect" id="node28" href="execution__policy_8h.html" title="execution_policy.h" alt="" coords="1035,379,1166,405"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="dx_x_8h__dep__incl.png" border="0" usemap="#geometry_2dx_x_8hdep" alt=""/></div>
+<map name="geometry_2dx_x_8hdep" id="geometry_2dx_x_8hdep">
+<area shape="rect" id="node2" href="derivatives_x_8h.html" title="Convenience functions to create 2D derivatives on X&#45;point topology. " alt="" coords="5,80,168,107"/>
+<area shape="rect" id="node3" href="algorithm_8h.html" title="algorithm.h" alt="" coords="43,155,130,181"/>
+</map>
+</div>
+</div>
 <p><a href="dx_x_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -144,18 +184,22 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaae4f25f66d3f0c1f54c9d3b67dd7d409"><td class="memItemLeft" align="right" valign="top">EllSparseBlockMat&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#gaae4f25f66d3f0c1f54c9d3b67dd7d409">dg::create::dx</a> (const GridX1d &amp;g, bc bcx, direction dir=centered)</td></tr>
-<tr class="memdesc:gaae4f25f66d3f0c1f54c9d3b67dd7d409"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and assemble a host Matrix for the derivative in 1d.  <a href="group__lowlevel.html#gaae4f25f66d3f0c1f54c9d3b67dd7d409">More...</a><br /></td></tr>
-<tr class="separator:gaae4f25f66d3f0c1f54c9d3b67dd7d409"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8ee8d31da01927d99ff78a444c4bdd4d"><td class="memItemLeft" align="right" valign="top">EllSparseBlockMat&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#ga8ee8d31da01927d99ff78a444c4bdd4d">dg::create::dx</a> (const GridX1d &amp;g, direction dir=centered)</td></tr>
-<tr class="memdesc:ga8ee8d31da01927d99ff78a444c4bdd4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and assemble a host Matrix for the derivative in 1d.  <a href="group__lowlevel.html#ga8ee8d31da01927d99ff78a444c4bdd4d">More...</a><br /></td></tr>
-<tr class="separator:ga8ee8d31da01927d99ff78a444c4bdd4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga70995dee5369371d71390ac44b5c8c14"><td class="memItemLeft" align="right" valign="top">EllSparseBlockMat&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#ga70995dee5369371d71390ac44b5c8c14">dg::create::jump</a> (const GridX1d &amp;g, bc bcx)</td></tr>
-<tr class="memdesc:ga70995dee5369371d71390ac44b5c8c14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and assemble a host Matrix for the jump in 1d.  <a href="group__lowlevel.html#ga70995dee5369371d71390ac44b5c8c14">More...</a><br /></td></tr>
-<tr class="separator:ga70995dee5369371d71390ac44b5c8c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5741ad524d2443462fe4f7c5141fddc1"><td class="memItemLeft" align="right" valign="top">EllSparseBlockMat&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#ga5741ad524d2443462fe4f7c5141fddc1">dg::create::jump</a> (const GridX1d &amp;g)</td></tr>
-<tr class="memdesc:ga5741ad524d2443462fe4f7c5141fddc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and assemble a host Matrix for the jump in 1d.  <a href="group__lowlevel.html#ga5741ad524d2443462fe4f7c5141fddc1">More...</a><br /></td></tr>
-<tr class="separator:ga5741ad524d2443462fe4f7c5141fddc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga21e351a774bbad8c439f70d08222488c"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga21e351a774bbad8c439f70d08222488c"><td class="memTemplItemLeft" align="right" valign="top">EllSparseBlockMat&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#ga21e351a774bbad8c439f70d08222488c">dg::create::dx</a> (const RealGridX1d&lt; real_type &gt; &amp;g, bc bcx, direction dir=centered)</td></tr>
+<tr class="memdesc:ga21e351a774bbad8c439f70d08222488c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and assemble a host Matrix for the derivative in 1d.  <a href="group__lowlevel.html#ga21e351a774bbad8c439f70d08222488c">More...</a><br /></td></tr>
+<tr class="separator:ga21e351a774bbad8c439f70d08222488c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3062ca38a26610a482103b1b015d28c3"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga3062ca38a26610a482103b1b015d28c3"><td class="memTemplItemLeft" align="right" valign="top">EllSparseBlockMat&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#ga3062ca38a26610a482103b1b015d28c3">dg::create::dx</a> (const RealGridX1d&lt; real_type &gt; &amp;g, direction dir=centered)</td></tr>
+<tr class="memdesc:ga3062ca38a26610a482103b1b015d28c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and assemble a host Matrix for the derivative in 1d.  <a href="group__lowlevel.html#ga3062ca38a26610a482103b1b015d28c3">More...</a><br /></td></tr>
+<tr class="separator:ga3062ca38a26610a482103b1b015d28c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaca04ea11c349eaac3b5ba3d132a675ca"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:gaca04ea11c349eaac3b5ba3d132a675ca"><td class="memTemplItemLeft" align="right" valign="top">EllSparseBlockMat&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#gaca04ea11c349eaac3b5ba3d132a675ca">dg::create::jump</a> (const RealGridX1d&lt; real_type &gt; &amp;g, bc bcx)</td></tr>
+<tr class="memdesc:gaca04ea11c349eaac3b5ba3d132a675ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and assemble a host Matrix for the jump in 1d.  <a href="group__lowlevel.html#gaca04ea11c349eaac3b5ba3d132a675ca">More...</a><br /></td></tr>
+<tr class="separator:gaca04ea11c349eaac3b5ba3d132a675ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabc1b5aab4761be1aba39755d74f0c150"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:gabc1b5aab4761be1aba39755d74f0c150"><td class="memTemplItemLeft" align="right" valign="top">EllSparseBlockMat&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#gabc1b5aab4761be1aba39755d74f0c150">dg::create::jump</a> (const RealGridX1d&lt; real_type &gt; &amp;g)</td></tr>
+<tr class="memdesc:gabc1b5aab4761be1aba39755d74f0c150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and assemble a host Matrix for the jump in 1d.  <a href="group__lowlevel.html#gabc1b5aab4761be1aba39755d74f0c150">More...</a><br /></td></tr>
+<tr class="separator:gabc1b5aab4761be1aba39755d74f0c150"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Simple 1d derivatives on X-point topology. </p>
@@ -165,7 +209,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e3380d2178455503f266746fb14246a5.html">geometry</a></li><li class="navelem"><a class="el" href="dx_x_8h.html">dxX.h</a></li>
-    <li class="footer">Generated on Thu Apr 26 2018 16:28:14 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Jul 5 2018 12:59:49 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -2,8 +2,6 @@ var searchData=
 [
   ['magnetic_5ffield_2eh',['magnetic_field.h',['../magnetic__field_8h.html',1,'']]],
   ['matrix_5fcategories_2eh',['matrix_categories.h',['../../../dg/html/matrix__categories_8h.html',1,'']]],
-  ['matrix_5ftraits_2eh',['matrix_traits.h',['../../../dg/html/matrix__traits_8h.html',1,'']]],
-  ['matrix_5ftraits_5fthrust_2eh',['matrix_traits_thrust.h',['../../../dg/html/matrix__traits__thrust_8h.html',1,'']]],
   ['memory_2eh',['memory.h',['../../../dg/html/memory_8h.html',1,'']]],
   ['mpi_5fbase_2eh',['mpi_base.h',['../../../dg/html/mpi__base_8h.html',1,'']]],
   ['mpi_5fcollective_2eh',['mpi_collective.h',['../../../dg/html/mpi__collective_8h.html',1,'']]],
@@ -15,7 +13,6 @@ var searchData=
   ['mpi_5fgrid_2eh',['mpi_grid.h',['../../../dg/html/mpi__grid_8h.html',1,'']]],
   ['mpi_5finit_2eh',['mpi_init.h',['../../../dg/html/mpi__init_8h.html',1,'']]],
   ['mpi_5fmatrix_2eh',['mpi_matrix.h',['../../../dg/html/mpi__matrix_8h.html',1,'']]],
-  ['mpi_5fprecon_5fblas_2eh',['mpi_precon_blas.h',['../../../dg/html/mpi__precon__blas_8h.html',1,'']]],
   ['mpi_5fprojection_2eh',['mpi_projection.h',['../../../dg/html/mpi__projection_8h.html',1,'']]],
   ['mpi_5fvector_2eh',['mpi_vector.h',['../../../dg/html/mpi__vector_8h.html',1,'']]],
   ['mpi_5fweights_2eh',['mpi_weights.h',['../../../dg/html/mpi__weights_8h.html',1,'']]],

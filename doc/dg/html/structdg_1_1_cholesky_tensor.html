@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Discontinuous Galerkin Library: dg::CholeskyTensor&lt; container &gt; Struct Template Reference</title>
+<title>Discontinuous Galerkin Library: dg::CholeskyTensor&lt; ContainerType &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('structdg_1_1_cholesky_tensor.html','')
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="structdg_1_1_cholesky_tensor-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">dg::CholeskyTensor&lt; container &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__misc.html">Level 00: Miscellaneous additions</a></div></div>  </div>
+<div class="title">dg::CholeskyTensor&lt; ContainerType &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__misc.html">Level 0: Miscellaneous additions</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -138,58 +138,59 @@ $(document).ready(function(){initNavTree('structdg_1_1_cholesky_tensor.html','')
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a62c3f5381cae4e03aacdf3216c466928"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_cholesky_tensor.html#a62c3f5381cae4e03aacdf3216c466928">CholeskyTensor</a> (const <a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; container &gt; &amp;in)</td></tr>
-<tr class="memdesc:a62c3f5381cae4e03aacdf3216c466928"><td class="mdescLeft">&#160;</td><td class="mdescRight">decompose given tensor  <a href="#a62c3f5381cae4e03aacdf3216c466928">More...</a><br /></td></tr>
-<tr class="separator:a62c3f5381cae4e03aacdf3216c466928"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59e4949987f9cff85cffa01781913cfe"><td class="memTemplParams" colspan="2">template&lt;class OtherContainer &gt; </td></tr>
-<tr class="memitem:a59e4949987f9cff85cffa01781913cfe"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_cholesky_tensor.html#a59e4949987f9cff85cffa01781913cfe">CholeskyTensor</a> (const <a class="el" href="structdg_1_1_cholesky_tensor.html">CholeskyTensor</a>&lt; OtherContainer &gt; &amp;in)</td></tr>
-<tr class="memdesc:a59e4949987f9cff85cffa01781913cfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type conversion from other value types.  <a href="#a59e4949987f9cff85cffa01781913cfe">More...</a><br /></td></tr>
-<tr class="separator:a59e4949987f9cff85cffa01781913cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac93ba13ad6d234724bd61f5a5268423b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_cholesky_tensor.html#ac93ba13ad6d234724bd61f5a5268423b">decompose</a> (const <a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; container &gt; &amp;in)</td></tr>
-<tr class="memdesc:ac93ba13ad6d234724bd61f5a5268423b"><td class="mdescLeft">&#160;</td><td class="mdescRight">decompose given tensor  <a href="#ac93ba13ad6d234724bd61f5a5268423b">More...</a><br /></td></tr>
-<tr class="separator:ac93ba13ad6d234724bd61f5a5268423b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad079fcc42d189353f89f71a589e76f1f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; container &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_cholesky_tensor.html#ad079fcc42d189353f89f71a589e76f1f">lower</a> () const </td></tr>
-<tr class="memdesc:ad079fcc42d189353f89f71a589e76f1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns L.  <a href="#ad079fcc42d189353f89f71a589e76f1f">More...</a><br /></td></tr>
-<tr class="separator:ad079fcc42d189353f89f71a589e76f1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af224cde6984a36b812959201b9926bda"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; container &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_cholesky_tensor.html#af224cde6984a36b812959201b9926bda">upper</a> () const </td></tr>
-<tr class="memdesc:af224cde6984a36b812959201b9926bda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns L^T.  <a href="#af224cde6984a36b812959201b9926bda">More...</a><br /></td></tr>
-<tr class="separator:af224cde6984a36b812959201b9926bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9994f61e23b728898602a06dabe9f1c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; container &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_cholesky_tensor.html#ac9994f61e23b728898602a06dabe9f1c">diagonal</a> () const </td></tr>
-<tr class="memdesc:ac9994f61e23b728898602a06dabe9f1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns D.  <a href="#ac9994f61e23b728898602a06dabe9f1c">More...</a><br /></td></tr>
-<tr class="separator:ac9994f61e23b728898602a06dabe9f1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1491f97ae8281d7018a093f3e928e098"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_cholesky_tensor.html#a1491f97ae8281d7018a093f3e928e098">CholeskyTensor</a> (const <a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; ContainerType &gt; &amp;in)</td></tr>
+<tr class="memdesc:a1491f97ae8281d7018a093f3e928e098"><td class="mdescLeft">&#160;</td><td class="mdescRight">decompose given tensor  <a href="#a1491f97ae8281d7018a093f3e928e098">More...</a><br /></td></tr>
+<tr class="separator:a1491f97ae8281d7018a093f3e928e098"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a135a11d0b44783cff0ed216aad86c98f"><td class="memTemplParams" colspan="2">template&lt;class OtherContainer &gt; </td></tr>
+<tr class="memitem:a135a11d0b44783cff0ed216aad86c98f"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_cholesky_tensor.html#a135a11d0b44783cff0ed216aad86c98f">CholeskyTensor</a> (const <a class="el" href="structdg_1_1_cholesky_tensor.html">CholeskyTensor</a>&lt; OtherContainer &gt; &amp;in)</td></tr>
+<tr class="memdesc:a135a11d0b44783cff0ed216aad86c98f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type conversion from other value types.  <a href="#a135a11d0b44783cff0ed216aad86c98f">More...</a><br /></td></tr>
+<tr class="separator:a135a11d0b44783cff0ed216aad86c98f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bbdc7c813063a45886c00df24a0c798"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_cholesky_tensor.html#a9bbdc7c813063a45886c00df24a0c798">decompose</a> (const <a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; ContainerType &gt; &amp;in)</td></tr>
+<tr class="memdesc:a9bbdc7c813063a45886c00df24a0c798"><td class="mdescLeft">&#160;</td><td class="mdescRight">decompose given tensor  <a href="#a9bbdc7c813063a45886c00df24a0c798">More...</a><br /></td></tr>
+<tr class="separator:a9bbdc7c813063a45886c00df24a0c798"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef53baa71b3d9f6248d3bdfb40c2b827"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; ContainerType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_cholesky_tensor.html#aef53baa71b3d9f6248d3bdfb40c2b827">lower</a> () const </td></tr>
+<tr class="memdesc:aef53baa71b3d9f6248d3bdfb40c2b827"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns L.  <a href="#aef53baa71b3d9f6248d3bdfb40c2b827">More...</a><br /></td></tr>
+<tr class="separator:aef53baa71b3d9f6248d3bdfb40c2b827"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcb070aac3ac36a750ed9c636e5f0f11"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; ContainerType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_cholesky_tensor.html#afcb070aac3ac36a750ed9c636e5f0f11">upper</a> () const </td></tr>
+<tr class="memdesc:afcb070aac3ac36a750ed9c636e5f0f11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns L^T.  <a href="#afcb070aac3ac36a750ed9c636e5f0f11">More...</a><br /></td></tr>
+<tr class="separator:afcb070aac3ac36a750ed9c636e5f0f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a741d3fb667a23999965519e146e8f616"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; ContainerType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_cholesky_tensor.html#a741d3fb667a23999965519e146e8f616">diagonal</a> () const </td></tr>
+<tr class="memdesc:a741d3fb667a23999965519e146e8f616"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns D.  <a href="#a741d3fb667a23999965519e146e8f616">More...</a><br /></td></tr>
+<tr class="separator:a741d3fb667a23999965519e146e8f616"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class container&gt;<br />
-struct dg::CholeskyTensor&lt; container &gt;</h3>
+<div class="textblock"><h3>template&lt;class ContainerType&gt;<br />
+struct dg::CholeskyTensor&lt; ContainerType &gt;</h3>
 
 <p>data structure to hold the LDL^T decomposition of a symmetric positive definite matrix </p>
 <p>LDL^T stands for a lower triangular matrix L, a diagonal matrix D and the transpose L^T</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">container</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_vector_traits.html" title="The vector traits. ">VectorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> or <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. For example, this is one of<ul>
-<li><code><a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a></code>, <code><a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code>, <code><a class="el" href="group__typedefs.html#ga3f854ffa533cafd10b9846258e40029f" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code><a class="el" href="group__typedefs.html#ga25cae493b710b17992387cce395ad7ae" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> </li>
-<li><code>std::vector&lt;dg::DVec&gt;</code>, <code>std::array&lt;dg::MHVec, 3&gt;</code>, <code>std::array&lt;double, 4&gt;</code> ... </li>
+    <tr><td class="paramname">ContainerType</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> and <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. Among others<ul>
+<li><code> <a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193" title="Host Vector. ">dg::HVec</a> (serial), <a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a> (cuda / omp), <a class="el" href="group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a> (mpi + serial) or <a class="el" href="group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a> (mpi + cuda / omp) </code></li>
+<li><code> std::vector&lt;dg::DVec&gt; (vector of shared device vectors), std::array&lt;double, 4&gt; (array of 4 doubles)</code></li>
+<li><code> double (scalar)</code> and other primitive types ...</li>
 </ul>
-</td></tr>
+If there are several <code>ContainerTypes</code> in the argument list, then <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> must exist for all of them </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__vec__list.html">List of Vector Traits specializations</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="index.html#dispatch">The Level 1 dispatch system</a> for a detailed explanation of our type dispatch system </dd></dl>
 <dl class="section attention"><dt>Attention</dt><dd>the tensor in the <a class="el" href="classdg_1_1_elliptic.html" title="Operator that acts as a 2d negative elliptic differential operator ">Elliptic</a> classes actually only need to be positive <b>semi-definite</b> and unfortunately the decomposition is unstable for semi-definite matrices. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a62c3f5381cae4e03aacdf3216c466928"></a>
+<a class="anchor" id="a1491f97ae8281d7018a093f3e928e098"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class container&gt; </div>
+template&lt;class ContainerType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdg_1_1_cholesky_tensor.html">dg::CholeskyTensor</a>&lt; container &gt;::<a class="el" href="structdg_1_1_cholesky_tensor.html">CholeskyTensor</a> </td>
+          <td class="memname"><a class="el" href="structdg_1_1_cholesky_tensor.html">dg::CholeskyTensor</a>&lt; ContainerType &gt;::<a class="el" href="structdg_1_1_cholesky_tensor.html">CholeskyTensor</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; container &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; ContainerType &gt; &amp;&#160;</td>
           <td class="paramname"><em>in</em></td><td>)</td>
           <td></td>
         </tr>
@@ -211,11 +212,11 @@ template&lt;class container&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a59e4949987f9cff85cffa01781913cfe"></a>
+<a class="anchor" id="a135a11d0b44783cff0ed216aad86c98f"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class container&gt; </div>
+template&lt;class ContainerType&gt; </div>
 <div class="memtemplate">
 template&lt;class OtherContainer &gt; </div>
 <table class="mlabels">
@@ -223,7 +224,7 @@ template&lt;class OtherContainer &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdg_1_1_cholesky_tensor.html">dg::CholeskyTensor</a>&lt; container &gt;::<a class="el" href="structdg_1_1_cholesky_tensor.html">CholeskyTensor</a> </td>
+          <td class="memname"><a class="el" href="structdg_1_1_cholesky_tensor.html">dg::CholeskyTensor</a>&lt; ContainerType &gt;::<a class="el" href="structdg_1_1_cholesky_tensor.html">CholeskyTensor</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structdg_1_1_cholesky_tensor.html">CholeskyTensor</a>&lt; OtherContainer &gt; &amp;&#160;</td>
           <td class="paramname"><em>in</em></td><td>)</td>
@@ -240,7 +241,7 @@ template&lt;class OtherContainer &gt; </div>
 <p>Type conversion from other value types. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">OtherContainer</td><td><a class="el" href="group__blas1.html#gad325c39d1994561ee38813a2dde7a46a" title="y=x; Generic way to copy/construct and/or convert a container type from a different container type (e...">dg::blas1::transfer</a> must be callable for container and OtherContainer </td></tr>
+    <tr><td class="paramname">OtherContainer</td><td><a class="el" href="group__blas1.html#gae0aacd4fe731c16a9483140026c4dcc6" title="y=x; Generic way to copy-construct/assign-to an object of to_ContainerType type from a different from...">dg::blas1::transfer</a> must be callable for ContainerType and OtherContainer </td></tr>
   </table>
   </dd>
 </dl>
@@ -254,19 +255,19 @@ template&lt;class OtherContainer &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ac93ba13ad6d234724bd61f5a5268423b"></a>
+<a class="anchor" id="a9bbdc7c813063a45886c00df24a0c798"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class container&gt; </div>
+template&lt;class ContainerType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="structdg_1_1_cholesky_tensor.html">dg::CholeskyTensor</a>&lt; container &gt;::decompose </td>
+          <td class="memname">void <a class="el" href="structdg_1_1_cholesky_tensor.html">dg::CholeskyTensor</a>&lt; ContainerType &gt;::decompose </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; container &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; ContainerType &gt; &amp;&#160;</td>
           <td class="paramname"><em>in</em></td><td>)</td>
           <td></td>
         </tr>
@@ -288,17 +289,17 @@ template&lt;class container&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ac9994f61e23b728898602a06dabe9f1c"></a>
+<a class="anchor" id="a741d3fb667a23999965519e146e8f616"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class container&gt; </div>
+template&lt;class ContainerType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt;container&gt;&amp; <a class="el" href="structdg_1_1_cholesky_tensor.html">dg::CholeskyTensor</a>&lt; container &gt;::diagonal </td>
+          <td class="memname">const <a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt;ContainerType&gt;&amp; <a class="el" href="structdg_1_1_cholesky_tensor.html">dg::CholeskyTensor</a>&lt; ContainerType &gt;::diagonal </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -316,17 +317,17 @@ template&lt;class container&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ad079fcc42d189353f89f71a589e76f1f"></a>
+<a class="anchor" id="aef53baa71b3d9f6248d3bdfb40c2b827"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class container&gt; </div>
+template&lt;class ContainerType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt;container&gt;&amp; <a class="el" href="structdg_1_1_cholesky_tensor.html">dg::CholeskyTensor</a>&lt; container &gt;::lower </td>
+          <td class="memname">const <a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt;ContainerType&gt;&amp; <a class="el" href="structdg_1_1_cholesky_tensor.html">dg::CholeskyTensor</a>&lt; ContainerType &gt;::lower </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -344,17 +345,17 @@ template&lt;class container&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="af224cde6984a36b812959201b9926bda"></a>
+<a class="anchor" id="afcb070aac3ac36a750ed9c636e5f0f11"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class container&gt; </div>
+template&lt;class ContainerType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt;container&gt;&amp; <a class="el" href="structdg_1_1_cholesky_tensor.html">dg::CholeskyTensor</a>&lt; container &gt;::upper </td>
+          <td class="memname">const <a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt;ContainerType&gt;&amp; <a class="el" href="structdg_1_1_cholesky_tensor.html">dg::CholeskyTensor</a>&lt; ContainerType &gt;::upper </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -381,7 +382,7 @@ template&lt;class container&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_cholesky_tensor.html">CholeskyTensor</a></li>
-    <li class="footer">Generated on Thu Apr 26 2018 16:28:15 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Jul 5 2018 12:59:50 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

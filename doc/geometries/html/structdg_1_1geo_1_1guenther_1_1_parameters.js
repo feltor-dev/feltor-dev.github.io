@@ -1,6 +1,5 @@
 var structdg_1_1geo_1_1guenther_1_1_parameters =
 [
-    [ "Parameters", "structdg_1_1geo_1_1guenther_1_1_parameters.html#a28320ac9f140b8f4a0f84d2a05368d70", null ],
     [ "display", "structdg_1_1geo_1_1guenther_1_1_parameters.html#a37cc4b33a5682d8e4d9e1895c08e9798", null ],
     [ "a", "structdg_1_1geo_1_1guenther_1_1_parameters.html#a664699a44e8c1eb8198987a84e5711ed", null ],
     [ "alpha", "structdg_1_1geo_1_1guenther_1_1_parameters.html#a884f948aa5339811bfaf2bb36f61c038", null ],

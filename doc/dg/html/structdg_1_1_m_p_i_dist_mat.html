@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('structdg_1_1_m_p_i_dist_mat.html','');
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="structdg_1_1_m_p_i_dist_mat-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">dg::MPIDistMat&lt; LocalMatrix, Collective &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__backend.html">Level 1: Vectors, Matrices and basic operations</a> &raquo; <a class="el" href="group__mpi__structures.html">MPI backend functionality</a></div></div>  </div>
+<div class="title">dg::MPIDistMat&lt; LocalMatrix, Collective &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__backend.html">Level 1: Vectors, Matrices and basic operations</a> &raquo; <a class="el" href="group__mpi__structures.html">MPI backend</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -158,12 +158,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1b742fb7341d4aa6362d2b0eb8545a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6693e91cfc73a2de97da0cd7a3b7f3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_m_p_i_dist_mat.html#aa6693e91cfc73a2de97da0cd7a3b7f3d">set_dist</a> (enum <a class="el" href="group__mpi__structures.html#ga521b6d6524a6d391c746ddc9a1ad5571">dist_type</a> dist)</td></tr>
 <tr class="separator:aa6693e91cfc73a2de97da0cd7a3b7f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ed6f2a621cc1e63c80a54829e1bf753"><td class="memTemplParams" colspan="2">template&lt;class container &gt; </td></tr>
-<tr class="memitem:a5ed6f2a621cc1e63c80a54829e1bf753"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_m_p_i_dist_mat.html#a5ed6f2a621cc1e63c80a54829e1bf753">symv</a> (double alpha, const <a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt; container &gt; &amp;<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>, double beta, <a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt; container &gt; &amp;<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>) const </td></tr>
-<tr class="separator:a5ed6f2a621cc1e63c80a54829e1bf753"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b5513c2fa22e06bda66f22931e8defd"><td class="memTemplParams" colspan="2">template&lt;class container &gt; </td></tr>
-<tr class="memitem:a4b5513c2fa22e06bda66f22931e8defd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_m_p_i_dist_mat.html#a4b5513c2fa22e06bda66f22931e8defd">symv</a> (const <a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt; container &gt; &amp;<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>, <a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt; container &gt; &amp;<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>) const </td></tr>
-<tr class="separator:a4b5513c2fa22e06bda66f22931e8defd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9c0bf2f541570a68b65353d7e295d00"><td class="memTemplParams" colspan="2">template&lt;class ContainerType1 , class ContainerType2 &gt; </td></tr>
+<tr class="memitem:af9c0bf2f541570a68b65353d7e295d00"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_m_p_i_dist_mat.html#af9c0bf2f541570a68b65353d7e295d00">symv</a> (double alpha, const ContainerType1 &amp;<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>, double beta, ContainerType2 &amp;<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>) const </td></tr>
+<tr class="separator:af9c0bf2f541570a68b65353d7e295d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2aedcac1d5f0970b888b8d3a8414cef4"><td class="memTemplParams" colspan="2">template&lt;class ContainerType1 , class ContainerType2 &gt; </td></tr>
+<tr class="memitem:a2aedcac1d5f0970b888b8d3a8414cef4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_m_p_i_dist_mat.html#a2aedcac1d5f0970b888b8d3a8414cef4">symv</a> (const ContainerType1 &amp;<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>, ContainerType2 &amp;<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>) const </td></tr>
+<tr class="separator:a2aedcac1d5f0970b888b8d3a8414cef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class LocalMatrix, class Collective&gt;<br />
@@ -408,13 +408,13 @@ template&lt;class LocalMatrix, class Collective&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a5ed6f2a621cc1e63c80a54829e1bf753"></a>
+<a class="anchor" id="af9c0bf2f541570a68b65353d7e295d00"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class LocalMatrix, class Collective&gt; </div>
 <div class="memtemplate">
-template&lt;class container &gt; </div>
+template&lt;class ContainerType1 , class ContainerType2 &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -428,7 +428,7 @@ template&lt;class container &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt; container &gt; &amp;&#160;</td>
+          <td class="paramtype">const ContainerType1 &amp;&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
@@ -440,7 +440,7 @@ template&lt;class container &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt; container &gt; &amp;&#160;</td>
+          <td class="paramtype">ContainerType2 &amp;&#160;</td>
           <td class="paramname"><em>y</em>&#160;</td>
         </tr>
         <tr>
@@ -458,13 +458,13 @@ template&lt;class container &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a4b5513c2fa22e06bda66f22931e8defd"></a>
+<a class="anchor" id="a2aedcac1d5f0970b888b8d3a8414cef4"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class LocalMatrix, class Collective&gt; </div>
 <div class="memtemplate">
-template&lt;class container &gt; </div>
+template&lt;class ContainerType1 , class ContainerType2 &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -472,13 +472,13 @@ template&lt;class container &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="structdg_1_1_m_p_i_dist_mat.html">dg::MPIDistMat</a>&lt; LocalMatrix, Collective &gt;::symv </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt; container &gt; &amp;&#160;</td>
+          <td class="paramtype">const ContainerType1 &amp;&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt; container &gt; &amp;&#160;</td>
+          <td class="paramtype">ContainerType2 &amp;&#160;</td>
           <td class="paramname"><em>y</em>&#160;</td>
         </tr>
         <tr>
@@ -505,7 +505,7 @@ template&lt;class container &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_m_p_i_dist_mat.html">MPIDistMat</a></li>
-    <li class="footer">Generated on Thu Apr 26 2018 16:28:15 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Jul 5 2018 12:59:50 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

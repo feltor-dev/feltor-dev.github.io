@@ -1,0 +1,6 @@
+<map id="dg::aRealRefinement1d&lt; real_type &gt;" name="dg::aRealRefinement1d&lt; real_type &gt;">
+<area shape="rect" id="node2" href="$structdg_1_1_real_equidist_refinement.html" title="RealEquidistant cell refinement around a given node. " alt="" coords="223,5,408,47"/>
+<area shape="rect" id="node3" href="$structdg_1_1_real_exponential_refinement.html" title="The exponential refinement around a node. " alt="" coords="212,71,419,112"/>
+<area shape="rect" id="node4" href="$structdg_1_1_real_identity_refinement.html" title="No refinement. " alt="" coords="225,136,406,177"/>
+<area shape="rect" id="node5" href="$structdg_1_1_real_linear_refinement.html" title="RealLinear refinement consists of multiplying every cell in the grid by a factor. ..." alt="" coords="229,201,402,243"/>
+</map>
