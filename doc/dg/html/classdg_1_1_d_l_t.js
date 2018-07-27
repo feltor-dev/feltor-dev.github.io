@@ -1,9 +1,9 @@
 var classdg_1_1_d_l_t =
 [
     [ "DLT", "classdg_1_1_d_l_t.html#a74be649cb8956964b423c954b6b6da18", null ],
-    [ "abscissas", "classdg_1_1_d_l_t.html#a703346b0fd1e69b580c26925c56b366b", null ],
-    [ "backward", "classdg_1_1_d_l_t.html#ab1bb1585d87e2023880eb2811aca5d06", null ],
-    [ "backwardEQ", "classdg_1_1_d_l_t.html#a60f36c25a6bd4a1d54a233c4dc730a09", null ],
-    [ "forward", "classdg_1_1_d_l_t.html#a3ca21afa2d0e2880f18bc435ed5080be", null ],
-    [ "weights", "classdg_1_1_d_l_t.html#a0fc9171a06ff08271c44e5c667a6c942", null ]
+    [ "abscissas", "classdg_1_1_d_l_t.html#a8054945946ffebfd5454893e3b81e51d", null ],
+    [ "backward", "classdg_1_1_d_l_t.html#adc8c0d2db069652cf10fc95f2d74cd74", null ],
+    [ "backwardEQ", "classdg_1_1_d_l_t.html#ad8caf935fd264a45445a10b9a320e33e", null ],
+    [ "forward", "classdg_1_1_d_l_t.html#a60c9a02ceefd98d91032bdfd04fe9209", null ],
+    [ "weights", "classdg_1_1_d_l_t.html#a48ac177dc428c7334ab96de785b34e4c", null ]
 ];

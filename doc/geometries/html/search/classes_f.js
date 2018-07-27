@@ -19,7 +19,7 @@ var searchData=
   ['realgrid1d',['RealGrid1d',['../../../dg/html/structdg_1_1_real_grid1d.html',1,'dg']]],
   ['realgrid1d_3c_20double_20_3e',['RealGrid1d&lt; double &gt;',['../../../dg/html/structdg_1_1_real_grid1d.html',1,'']]],
   ['realgrid2d',['RealGrid2d',['../../../dg/html/structdg_1_1_real_grid2d.html',1,'dg']]],
-  ['realgrid2d_3c_20double_20_3e',['RealGrid2d&lt; double &gt;',['../../../dg/html/structdg_1_1_real_grid2d.html',1,'RealGrid2d&lt; double &gt;'],['../../../dg/html/structdg_1_1_real_grid2d.html',1,'dg::RealGrid2d&lt; double &gt;']]],
+  ['realgrid2d_3c_20double_20_3e',['RealGrid2d&lt; double &gt;',['../../../dg/html/structdg_1_1_real_grid2d.html',1,'dg::RealGrid2d&lt; double &gt;'],['../../../dg/html/structdg_1_1_real_grid2d.html',1,'RealGrid2d&lt; double &gt;']]],
   ['realgrid3d',['RealGrid3d',['../../../dg/html/structdg_1_1_real_grid3d.html',1,'dg']]],
   ['realgridx1d',['RealGridX1d',['../../../dg/html/structdg_1_1_real_grid_x1d.html',1,'dg']]],
   ['realgridx2d',['RealGridX2d',['../../../dg/html/structdg_1_1_real_grid_x2d.html',1,'dg']]],

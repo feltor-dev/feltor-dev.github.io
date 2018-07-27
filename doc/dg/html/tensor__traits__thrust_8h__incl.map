@@ -1,7 +1,7 @@
 <map id="backend/tensor_traits_thrust.h" name="backend/tensor_traits_thrust.h">
 <area shape="rect" id="node4" href="$vector__categories_8h.html" title="vector_categories.h" alt="" coords="247,244,383,271"/>
 <area shape="rect" id="node6" href="$tensor__traits_8h.html" title="tensor_traits.h" alt="" coords="343,95,449,121"/>
-<area shape="rect" id="node5" href="$matrix__categories_8h.html" title="matrix_categories.h" alt="" coords="105,319,241,345"/>
+<area shape="rect" id="node5" href="$matrix__categories_8h.html" title="matrix_categories.h" alt="" coords="17,319,153,345"/>
 <area shape="rect" id="node9" href="$scalar__categories_8h.html" title="scalar_categories.h" alt="" coords="71,169,206,196"/>
 <area shape="rect" id="node10" href="$execution__policy_8h.html" title="execution_policy.h" alt="" coords="529,169,660,196"/>
 </map>

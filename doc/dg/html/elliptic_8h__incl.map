@@ -10,7 +10,7 @@
 <area shape="rect" id="node3" href="$blas1_8h.html" title="blas1.h" alt="" coords="2225,379,2289,405"/>
 <area shape="rect" id="node21" href="$blas2_8h.html" title="blas2.h" alt="" coords="784,379,848,405"/>
 <area shape="rect" id="node27" href="$typedefs_8h.html" title="Useful typedefs of commonly used types. " alt="" coords="2716,304,2852,331"/>
-<area shape="rect" id="node5" href="$tensor__traits_8h.html" title="backend/tensor_traits.h" alt="" coords="1410,543,1569,569"/>
+<area shape="rect" id="node5" href="$tensor__traits_8h.html" title="backend/tensor_traits.h" alt="" coords="1409,543,1567,569"/>
 <area shape="rect" id="node6" href="$tensor__traits__scalar_8h.html" title="backend/tensor_traits\l_scalar.h" alt="" coords="1632,453,1779,495"/>
 <area shape="rect" id="node7" href="$tensor__traits__thrust_8h.html" title="backend/tensor_traits\l_thrust.h" alt="" coords="1189,453,1336,495"/>
 <area shape="rect" id="node9" href="$tensor__traits__cusp_8h.html" title="backend/tensor_traits\l_cusp.h" alt="" coords="1360,453,1507,495"/>

@@ -1,6 +1,6 @@
 var structdg_1_1_vortex =
 [
     [ "Vortex", "structdg_1_1_vortex.html#a3cb30fdf2c8da900f2b6f3366dbaf237", null ],
-    [ "operator()", "structdg_1_1_vortex.html#a2416a1ea84e85b314eabaa6063a42c6f", null ],
-    [ "operator()", "structdg_1_1_vortex.html#a407a9c7a7d8cdd08cb687c3a7d3b67dc", null ]
+    [ "operator()", "structdg_1_1_vortex.html#a2ff6d88733a783fad4331490093652e8", null ],
+    [ "operator()", "structdg_1_1_vortex.html#a702f35dac640eb5af31e8aa10b0e3f01", null ]
 ];

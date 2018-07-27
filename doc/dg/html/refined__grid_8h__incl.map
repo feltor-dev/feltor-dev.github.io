@@ -1,12 +1,12 @@
 <map id="geometry/refined_grid.h" name="geometry/refined_grid.h">
-<area shape="rect" id="node3" href="$memory_8h.html" title="dg/backend/memory.h" alt="" coords="1495,393,1646,420"/>
-<area shape="rect" id="node4" href="$blas_8h.html" title="dg/blas.h" alt="" coords="2428,80,2503,107"/>
+<area shape="rect" id="node3" href="$memory_8h.html" title="dg/backend/memory.h" alt="" coords="1494,393,1645,420"/>
+<area shape="rect" id="node4" href="$blas_8h.html" title="dg/blas.h" alt="" coords="2432,80,2507,107"/>
 <area shape="rect" id="node37" href="$grid_8h.html" title="base topology classes " alt="" coords="4219,311,4274,338"/>
 <area shape="rect" id="node44" href="$weights_8h.html" title="contains creation functions for integration weights and their inverse " alt="" coords="4262,229,4341,256"/>
 <area shape="rect" id="node45" href="$interpolation_8h.html" title="contains 1D, 2D and 3D interpolation matrix creation functions " alt="" coords="4083,155,4186,181"/>
-<area shape="rect" id="node49" href="$base__geometry_8h.html" title="base_geometry.h" alt="" coords="3028,80,3151,107"/>
+<area shape="rect" id="node49" href="$base__geometry_8h.html" title="base_geometry.h" alt="" coords="3195,80,3317,107"/>
 <area shape="rect" id="node5" href="$blas1_8h.html" title="blas1.h" alt="" coords="2840,229,2904,256"/>
-<area shape="rect" id="node24" href="$blas2_8h.html" title="blas2.h" alt="" coords="1337,229,1401,256"/>
+<area shape="rect" id="node24" href="$blas2_8h.html" title="blas2.h" alt="" coords="1335,229,1399,256"/>
 <area shape="rect" id="node32" href="$typedefs_8h.html" title="Useful typedefs of commonly used types. " alt="" coords="2227,155,2363,181"/>
 <area shape="rect" id="node7" href="$tensor__traits_8h.html" title="backend/tensor_traits.h" alt="" coords="2165,393,2323,420"/>
 <area shape="rect" id="node8" href="$tensor__traits__scalar_8h.html" title="backend/tensor_traits\l_scalar.h" alt="" coords="2539,304,2685,345"/>
@@ -25,5 +25,5 @@
 <area shape="rect" id="node46" href="$evaluation_8h.html" title="Function discretization routines. " alt="" coords="3915,229,4007,256"/>
 <area shape="rect" id="node47" href="$creation_8h.html" title="creation.h" alt="" coords="4513,229,4591,256"/>
 <area shape="rect" id="node48" href="$operator__tensor_8h.html" title="operator_tensor.h" alt="" coords="4365,229,4488,256"/>
-<area shape="rect" id="node50" href="$tensor_8h.html" title="tensor.h" alt="" coords="3029,155,3099,181"/>
+<area shape="rect" id="node50" href="$tensor_8h.html" title="tensor.h" alt="" coords="2951,155,3020,181"/>
 </map>

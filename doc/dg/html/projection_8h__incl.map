@@ -1,7 +1,7 @@
 <map id="geometry/projection.h" name="geometry/projection.h">
 <area shape="rect" id="node5" href="$grid_8h.html" title="base topology classes " alt="" coords="602,229,657,256"/>
 <area shape="rect" id="node19" href="$interpolation_8h.html" title="contains 1D, 2D and 3D interpolation matrix creation functions " alt="" coords="369,80,471,107"/>
-<area shape="rect" id="node30" href="$weights_8h.html" title="contains creation functions for integration weights and their inverse " alt="" coords="899,155,978,181"/>
+<area shape="rect" id="node30" href="$weights_8h.html" title="contains creation functions for integration weights and their inverse " alt="" coords="898,155,977,181"/>
 <area shape="rect" id="node9" href="$topological__traits_8h.html" title="topological_traits.h" alt="" coords="676,304,807,331"/>
 <area shape="rect" id="node10" href="$dlt_8h.html" title="contains the discrete legendre trafo class " alt="" coords="522,304,569,331"/>
 <area shape="rect" id="node17" href="$enums_8h.html" title="enums " alt="" coords="831,304,915,331"/>

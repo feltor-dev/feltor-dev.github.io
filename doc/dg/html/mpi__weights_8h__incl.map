@@ -7,12 +7,12 @@
 <area shape="rect" id="node8" href="$dlt_8h.html" title="contains the discrete legendre trafo class " alt="" coords="384,229,431,256"/>
 <area shape="rect" id="node13" href="$exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="84,304,251,331"/>
 <area shape="rect" id="node19" href="$mpi__vector_8h.html" title="dg/backend/mpi_vector.h" alt="" coords="923,155,1091,181"/>
-<area shape="rect" id="node21" href="/home/matthias/Projekte/feltor/doc/exblas.tag$mpi__accumulate_8h.html" title="exblas/mpi_accumulate.h" alt="" coords="922,229,1093,256"/>
+<area shape="rect" id="node21" href="/home/markus/Documents/Phd/MyFeltor/doc/exblas.tag$mpi__accumulate_8h.html" title="exblas/mpi_accumulate.h" alt="" coords="922,229,1093,256"/>
 <area shape="rect" id="node24" href="$tensor__traits_8h.html" title="tensor_traits.h" alt="" coords="1117,229,1223,256"/>
 <area shape="rect" id="node32" href="$mpi__communicator_8h.html" title="mpi_communicator.h" alt="" coords="1437,229,1580,256"/>
-<area shape="rect" id="node34" href="$memory_8h.html" title="memory.h" alt="" coords="1603,229,1683,256"/>
-<area shape="rect" id="node22" href="/home/matthias/Projekte/feltor/doc/exblas.tag$accumulate_8h.html" title="accumulate.h" alt="" coords="771,304,871,331"/>
-<area shape="rect" id="node23" href="/home/matthias/Projekte/feltor/doc/exblas.tag$config_8h.html" title="config.h" alt="" coords="787,379,855,405"/>
+<area shape="rect" id="node34" href="$memory_8h.html" title="memory.h" alt="" coords="1605,229,1685,256"/>
+<area shape="rect" id="node22" href="/home/markus/Documents/Phd/MyFeltor/doc/exblas.tag$accumulate_8h.html" title="accumulate.h" alt="" coords="771,304,871,331"/>
+<area shape="rect" id="node23" href="/home/markus/Documents/Phd/MyFeltor/doc/exblas.tag$config_8h.html" title="config.h" alt="" coords="787,379,855,405"/>
 <area shape="rect" id="node27" href="$scalar__categories_8h.html" title="scalar_categories.h" alt="" coords="895,304,1029,331"/>
 <area shape="rect" id="node28" href="$vector__categories_8h.html" title="vector_categories.h" alt="" coords="945,379,1081,405"/>
 <area shape="rect" id="node29" href="$matrix__categories_8h.html" title="matrix_categories.h" alt="" coords="997,453,1133,480"/>

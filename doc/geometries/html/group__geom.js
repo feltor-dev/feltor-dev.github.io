@@ -6,7 +6,7 @@ var group__geom =
     [ "The Purely Toroidal magnetic field", "group__toroidal.html", "group__toroidal" ],
     [ "The Circular magnetic field", "group__circular.html", "group__circular" ],
     [ "Parameters", "structdg_1_1geo_1_1guenther_1_1_parameters.html", [
-      [ "display", "structdg_1_1geo_1_1guenther_1_1_parameters.html#a37cc4b33a5682d8e4d9e1895c08e9798", null ],
+      [ "display", "structdg_1_1geo_1_1guenther_1_1_parameters.html#afe26a01fda1653e194ebc7cb017139f5", null ],
       [ "a", "structdg_1_1geo_1_1guenther_1_1_parameters.html#a664699a44e8c1eb8198987a84e5711ed", null ],
       [ "alpha", "structdg_1_1geo_1_1guenther_1_1_parameters.html#a884f948aa5339811bfaf2bb36f61c038", null ],
       [ "c", "structdg_1_1geo_1_1guenther_1_1_parameters.html#a9b4679b57e66f26c134f1b6bb3eddd54", null ],
@@ -21,7 +21,7 @@ var group__geom =
       [ "triangularity", "structdg_1_1geo_1_1guenther_1_1_parameters.html#a11a546030144b036405db8a00b392630", null ]
     ] ],
     [ "Parameters", "structdg_1_1geo_1_1solovev_1_1_parameters.html", [
-      [ "display", "structdg_1_1geo_1_1solovev_1_1_parameters.html#ad9ebd66cb1e15d35201b4c98f4f81986", null ],
+      [ "display", "structdg_1_1geo_1_1solovev_1_1_parameters.html#afe2b2a26ae9434ab6909789d813b7cd4", null ],
       [ "A", "structdg_1_1geo_1_1solovev_1_1_parameters.html#a36af63065c1d6b6e54571d655c7e07da", null ],
       [ "a", "structdg_1_1geo_1_1solovev_1_1_parameters.html#a245bcf30102133b8faa508dcf4a88481", null ],
       [ "alpha", "structdg_1_1geo_1_1solovev_1_1_parameters.html#a88671d55077cc955eea851bc5187d567", null ],

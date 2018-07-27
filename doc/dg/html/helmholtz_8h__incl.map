@@ -4,7 +4,7 @@
 <area shape="rect" id="node4" href="$blas1_8h.html" title="blas1.h" alt="" coords="2463,379,2527,405"/>
 <area shape="rect" id="node22" href="$blas2_8h.html" title="blas2.h" alt="" coords="971,379,1035,405"/>
 <area shape="rect" id="node30" href="$typedefs_8h.html" title="Useful typedefs of commonly used types. " alt="" coords="3258,304,3394,331"/>
-<area shape="rect" id="node6" href="$tensor__traits_8h.html" title="backend/tensor_traits.h" alt="" coords="1658,543,1817,569"/>
+<area shape="rect" id="node6" href="$tensor__traits_8h.html" title="backend/tensor_traits.h" alt="" coords="1660,543,1818,569"/>
 <area shape="rect" id="node7" href="$tensor__traits__scalar_8h.html" title="backend/tensor_traits\l_scalar.h" alt="" coords="1614,453,1760,495"/>
 <area shape="rect" id="node8" href="$tensor__traits__thrust_8h.html" title="backend/tensor_traits\l_thrust.h" alt="" coords="1784,453,1931,495"/>
 <area shape="rect" id="node11" href="$tensor__traits__cusp_8h.html" title="backend/tensor_traits\l_cusp.h" alt="" coords="2006,453,2152,495"/>
@@ -16,7 +16,7 @@
 <area shape="rect" id="node31" href="$sparseblockmat_8h.html" title="sparseblockmat.h" alt="" coords="3414,461,3539,487"/>
 <area shape="rect" id="node34" href="$sparseblockmat_8cuh.html" title="sparseblockmat.cuh" alt="" coords="3150,379,3288,405"/>
 <area shape="rect" id="node35" href="$mpi__matrix_8h.html" title="MPI matrix classes. " alt="" coords="3364,379,3461,405"/>
-<area shape="rect" id="node33" href="$exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="3799,617,3895,644"/>
+<area shape="rect" id="node33" href="$exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="3812,617,3908,644"/>
 <area shape="rect" id="node37" href="$enums_8h.html" title="enums " alt="" coords="4266,543,4338,569"/>
 <area shape="rect" id="node39" href="$evaluation_8h.html" title="Function discretization routines. " alt="" coords="3892,379,4042,405"/>
 <area shape="rect" id="node41" href="$derivatives_8h.html" title="Convenience functions to create 2D derivatives. " alt="" coords="4247,229,4402,256"/>

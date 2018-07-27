@@ -1,18 +1,18 @@
 <map id="geometry/mpi_grid.h" name="geometry/mpi_grid.h">
 <area shape="rect" id="node3" href="$mpi__vector_8h.html" title="dg/backend/mpi_vector.h" alt="" coords="739,80,907,107"/>
-<area shape="rect" id="node21" href="$enums_8h.html" title="enums " alt="" coords="1519,155,1610,181"/>
-<area shape="rect" id="node27" href="$grid_8h.html" title="base topology classes " alt="" coords="1155,80,1209,107"/>
-<area shape="rect" id="node7" href="/home/matthias/Projekte/feltor/doc/exblas.tag$mpi__accumulate_8h.html" title="exblas/mpi_accumulate.h" alt="" coords="237,155,407,181"/>
+<area shape="rect" id="node21" href="$enums_8h.html" title="enums " alt="" coords="1521,155,1611,181"/>
+<area shape="rect" id="node27" href="$grid_8h.html" title="base topology classes " alt="" coords="1156,80,1211,107"/>
+<area shape="rect" id="node7" href="/home/markus/Documents/Phd/MyFeltor/doc/exblas.tag$mpi__accumulate_8h.html" title="exblas/mpi_accumulate.h" alt="" coords="237,155,407,181"/>
 <area shape="rect" id="node10" href="$tensor__traits_8h.html" title="tensor_traits.h" alt="" coords="432,155,537,181"/>
 <area shape="rect" id="node18" href="$mpi__communicator_8h.html" title="mpi_communicator.h" alt="" coords="752,155,895,181"/>
-<area shape="rect" id="node20" href="$memory_8h.html" title="memory.h" alt="" coords="918,155,998,181"/>
-<area shape="rect" id="node8" href="/home/matthias/Projekte/feltor/doc/exblas.tag$accumulate_8h.html" title="accumulate.h" alt="" coords="5,229,105,256"/>
-<area shape="rect" id="node9" href="/home/matthias/Projekte/feltor/doc/exblas.tag$config_8h.html" title="config.h" alt="" coords="21,304,89,331"/>
+<area shape="rect" id="node20" href="$memory_8h.html" title="memory.h" alt="" coords="919,155,999,181"/>
+<area shape="rect" id="node8" href="/home/markus/Documents/Phd/MyFeltor/doc/exblas.tag$accumulate_8h.html" title="accumulate.h" alt="" coords="5,229,105,256"/>
+<area shape="rect" id="node9" href="/home/markus/Documents/Phd/MyFeltor/doc/exblas.tag$config_8h.html" title="config.h" alt="" coords="21,304,89,331"/>
 <area shape="rect" id="node13" href="$scalar__categories_8h.html" title="scalar_categories.h" alt="" coords="129,229,264,256"/>
 <area shape="rect" id="node14" href="$vector__categories_8h.html" title="vector_categories.h" alt="" coords="582,304,718,331"/>
 <area shape="rect" id="node15" href="$matrix__categories_8h.html" title="matrix_categories.h" alt="" coords="634,379,770,405"/>
 <area shape="rect" id="node16" href="$execution__policy_8h.html" title="execution_policy.h" alt="" coords="289,229,419,256"/>
-<area shape="rect" id="node23" href="$exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="1507,229,1657,256"/>
-<area shape="rect" id="node28" href="$topological__traits_8h.html" title="topological_traits.h" alt="" coords="1275,155,1406,181"/>
-<area shape="rect" id="node29" href="$dlt_8h.html" title="contains the discrete legendre trafo class " alt="" coords="1431,155,1477,181"/>
+<area shape="rect" id="node23" href="$exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="1509,229,1658,256"/>
+<area shape="rect" id="node28" href="$topological__traits_8h.html" title="topological_traits.h" alt="" coords="1277,155,1407,181"/>
+<area shape="rect" id="node29" href="$dlt_8h.html" title="contains the discrete legendre trafo class " alt="" coords="1432,155,1479,181"/>
 </map>

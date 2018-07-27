@@ -34,6 +34,6 @@ var group__typedefs =
     [ "NNCH", "group__typedefs.html#ga93e65948d51a0d9f05bf04c99272c118", null ],
     [ "tIDMatrix", "group__typedefs.html#gacf18ef99d7d838d6de70bb3769427832", null ],
     [ "tIHMatrix", "group__typedefs.html#ga961227397d311ef3cb8153e95404d7f6", null ],
-    [ "tMIDMatrix", "group__typedefs.html#ga3e99b80d2cb81285eefe945f198d3745", null ],
-    [ "tMIHMatrix", "group__typedefs.html#ga4e64d1275f25ef7ac7fcbb960620b64d", null ]
+    [ "tMIDMatrix", "group__typedefs.html#gaad329dd7002fc14c75c853fbb5c6f8e9", null ],
+    [ "tMIHMatrix", "group__typedefs.html#gac256ed27ac25d8bc36b9f59c5a447c2a", null ]
 ];

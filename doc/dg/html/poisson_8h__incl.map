@@ -1,14 +1,14 @@
 <map id="poisson.h" name="poisson.h">
-<area shape="rect" id="node2" href="$blas_8h.html" title="blas.h" alt="" coords="2479,229,2537,256"/>
-<area shape="rect" id="node32" href="$geometry_8h.html" title="geometry/geometry.h" alt="" coords="3241,80,3386,107"/>
-<area shape="rect" id="node33" href="$evaluation_8h.html" title="Function discretization routines. " alt="" coords="3354,379,3446,405"/>
+<area shape="rect" id="node2" href="$blas_8h.html" title="blas.h" alt="" coords="2525,229,2582,256"/>
+<area shape="rect" id="node32" href="$geometry_8h.html" title="geometry/geometry.h" alt="" coords="3231,80,3377,107"/>
+<area shape="rect" id="node33" href="$evaluation_8h.html" title="Function discretization routines. " alt="" coords="3345,379,3437,405"/>
 <area shape="rect" id="node35" href="$enums_8h.html" title="enums " alt="" coords="3834,543,3918,569"/>
-<area shape="rect" id="node38" href="$mpi__evaluation_8h.html" title="Function discretization routines for mpi vectors. " alt="" coords="3479,304,3599,331"/>
-<area shape="rect" id="node48" href="$derivatives_8h.html" title="Convenience functions to create 2D derivatives. " alt="" coords="3968,229,4123,256"/>
-<area shape="rect" id="node50" href="$mpi__derivatives_8h.html" title="geometry/mpi_derivatives.h" alt="" coords="3831,155,4014,181"/>
+<area shape="rect" id="node38" href="$mpi__evaluation_8h.html" title="Function discretization routines for mpi vectors. " alt="" coords="3469,304,3589,331"/>
+<area shape="rect" id="node48" href="$derivatives_8h.html" title="Convenience functions to create 2D derivatives. " alt="" coords="3967,229,4121,256"/>
+<area shape="rect" id="node50" href="$mpi__derivatives_8h.html" title="geometry/mpi_derivatives.h" alt="" coords="3830,155,4013,181"/>
 <area shape="rect" id="node3" href="$blas1_8h.html" title="blas1.h" alt="" coords="2417,379,2481,405"/>
 <area shape="rect" id="node20" href="$blas2_8h.html" title="blas2.h" alt="" coords="1047,379,1111,405"/>
-<area shape="rect" id="node27" href="$typedefs_8h.html" title="Useful typedefs of commonly used types. " alt="" coords="2580,304,2716,331"/>
+<area shape="rect" id="node27" href="$typedefs_8h.html" title="Useful typedefs of commonly used types. " alt="" coords="2571,304,2707,331"/>
 <area shape="rect" id="node5" href="$tensor__traits_8h.html" title="backend/tensor_traits.h" alt="" coords="1655,543,1814,569"/>
 <area shape="rect" id="node6" href="$tensor__traits__scalar_8h.html" title="backend/tensor_traits\l_scalar.h" alt="" coords="1747,453,1893,495"/>
 <area shape="rect" id="node7" href="$tensor__traits__thrust_8h.html" title="backend/tensor_traits\l_thrust.h" alt="" coords="1405,453,1552,495"/>
@@ -18,18 +18,18 @@
 <area shape="rect" id="node17" href="$subroutines_8h.html" title="subroutines.h" alt="" coords="2929,461,3029,487"/>
 <area shape="rect" id="node18" href="$functions_8h.html" title="contains some utility functions for the evaluation() routines " alt="" coords="4017,543,4180,569"/>
 <area shape="rect" id="node28" href="$sparseblockmat_8h.html" title="sparseblockmat.h" alt="" coords="3532,461,3657,487"/>
-<area shape="rect" id="node31" href="$mpi__matrix_8h.html" title="MPI matrix classes. " alt="" coords="3029,379,3126,405"/>
-<area shape="rect" id="node30" href="$exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="3648,617,3744,644"/>
-<area shape="rect" id="node37" href="$weights_8h.html" title="contains creation functions for integration weights and their inverse " alt="" coords="3739,379,3818,405"/>
-<area shape="rect" id="node40" href="$mpi__weights_8h.html" title="contains MPI weights " alt="" coords="3724,304,3831,331"/>
-<area shape="rect" id="node41" href="$base__geometry_8h.html" title="base_geometry.h" alt="" coords="3252,229,3375,256"/>
-<area shape="rect" id="node42" href="$tensor_8h.html" title="tensor.h" alt="" coords="2936,304,3005,331"/>
-<area shape="rect" id="node43" href="$base__geometry_x_8h.html" title="base_geometryX.h" alt="" coords="2841,229,2972,256"/>
-<area shape="rect" id="node44" href="$refined__grid_x_8h.html" title="refined_gridX.h" alt="" coords="2856,155,2965,181"/>
-<area shape="rect" id="node45" href="$mpi__base_8h.html" title="mpi_base.h" alt="" coords="3269,155,3358,181"/>
-<area shape="rect" id="node46" href="$transform_8h.html" title="transform.h" alt="" coords="3383,155,3471,181"/>
-<area shape="rect" id="node47" href="$multiply_8h.html" title="multiply.h" alt="" coords="2997,229,3075,256"/>
+<area shape="rect" id="node31" href="$mpi__matrix_8h.html" title="MPI matrix classes. " alt="" coords="3019,379,3117,405"/>
+<area shape="rect" id="node30" href="$exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="3680,617,3776,644"/>
+<area shape="rect" id="node37" href="$weights_8h.html" title="contains creation functions for integration weights and their inverse " alt="" coords="3738,379,3817,405"/>
+<area shape="rect" id="node40" href="$mpi__weights_8h.html" title="contains MPI weights " alt="" coords="3715,304,3821,331"/>
+<area shape="rect" id="node41" href="$base__geometry_8h.html" title="base_geometry.h" alt="" coords="3243,229,3365,256"/>
+<area shape="rect" id="node42" href="$tensor_8h.html" title="tensor.h" alt="" coords="2928,304,2997,331"/>
+<area shape="rect" id="node43" href="$base__geometry_x_8h.html" title="base_geometryX.h" alt="" coords="2832,229,2963,256"/>
+<area shape="rect" id="node44" href="$refined__grid_x_8h.html" title="refined_gridX.h" alt="" coords="2847,155,2956,181"/>
+<area shape="rect" id="node45" href="$mpi__base_8h.html" title="mpi_base.h" alt="" coords="3259,155,3349,181"/>
+<area shape="rect" id="node46" href="$transform_8h.html" title="transform.h" alt="" coords="3373,155,3461,181"/>
+<area shape="rect" id="node47" href="$multiply_8h.html" title="multiply.h" alt="" coords="2987,229,3066,256"/>
 <area shape="rect" id="node34" href="$grid_8h.html" title="base topology classes " alt="" coords="3783,461,3838,487"/>
-<area shape="rect" id="node39" href="$mpi__grid_8h.html" title="MPI Grid objects. " alt="" coords="3632,379,3715,405"/>
-<area shape="rect" id="node49" href="$dx_8h.html" title="Simple 1d derivatives. " alt="" coords="4007,304,4054,331"/>
+<area shape="rect" id="node39" href="$mpi__grid_8h.html" title="MPI Grid objects. " alt="" coords="3631,379,3713,405"/>
+<area shape="rect" id="node49" href="$dx_8h.html" title="Simple 1d derivatives. " alt="" coords="3998,304,4045,331"/>
 </map>

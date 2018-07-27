@@ -2,7 +2,7 @@
 <tagfile>
   <compound kind="file">
     <name>adaption.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
     <filename>adaption_8h</filename>
     <includes id="fluxfunctions_8h" name="fluxfunctions.h" local="yes" imported="no">fluxfunctions.h</includes>
     <class kind="struct">dg::geo::NablaPsiInv</class>
@@ -32,7 +32,7 @@
   </compound>
   <compound kind="file">
     <name>average.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
     <filename>average_8h</filename>
     <includes id="magnetic__field_8h" name="magnetic_field.h" local="yes" imported="no">magnetic_field.h</includes>
     <class kind="struct">dg::geo::DeltaFunction</class>
@@ -44,7 +44,7 @@
   </compound>
   <compound kind="file">
     <name>curvilinear.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
     <filename>curvilinear_8h</filename>
     <includes id="generator_8h" name="generator.h" local="yes" imported="no">generator.h</includes>
     <class kind="struct">dg::geo::CurvilinearGrid2d</class>
@@ -54,7 +54,7 @@
   </compound>
   <compound kind="file">
     <name>curvilinearX.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
     <filename>curvilinear_x_8h</filename>
     <includes id="generator_x_8h" name="generatorX.h" local="yes" imported="no">generatorX.h</includes>
     <includes id="curvilinear_8h" name="curvilinear.h" local="yes" imported="no">curvilinear.h</includes>
@@ -65,7 +65,7 @@
   </compound>
   <compound kind="file">
     <name>ds.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
     <filename>ds_8h</filename>
     <includes id="fieldaligned_8h" name="fieldaligned.h" local="yes" imported="no">fieldaligned.h</includes>
     <includes id="magnetic__field_8h" name="magnetic_field.h" local="yes" imported="no">magnetic_field.h</includes>
@@ -75,7 +75,7 @@
   </compound>
   <compound kind="file">
     <name>fieldaligned.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
     <filename>fieldaligned_8h</filename>
     <includes id="magnetic__field_8h" name="magnetic_field.h" local="yes" imported="no">magnetic_field.h</includes>
     <includes id="fluxfunctions_8h" name="fluxfunctions.h" local="yes" imported="no">fluxfunctions.h</includes>
@@ -131,7 +131,7 @@
   </compound>
   <compound kind="file">
     <name>flux.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
     <filename>flux_8h</filename>
     <includes id="fluxfunctions_8h" name="fluxfunctions.h" local="yes" imported="no">fluxfunctions.h</includes>
     <includes id="ribeiro_8h" name="ribeiro.h" local="yes" imported="no">ribeiro.h</includes>
@@ -142,7 +142,7 @@
   </compound>
   <compound kind="file">
     <name>fluxfunctions.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
     <filename>fluxfunctions_8h</filename>
     <class kind="struct">dg::geo::aBinaryFunctor</class>
     <class kind="struct">dg::geo::aCloneableBinaryFunctor</class>
@@ -164,7 +164,7 @@
   </compound>
   <compound kind="file">
     <name>generator.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
     <filename>generator_8h</filename>
     <class kind="struct">dg::geo::aGenerator2d</class>
     <namespace>dg</namespace>
@@ -172,7 +172,7 @@
   </compound>
   <compound kind="file">
     <name>generatorX.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
     <filename>generator_x_8h</filename>
     <class kind="struct">dg::geo::aGeneratorX2d</class>
     <namespace>dg</namespace>
@@ -180,7 +180,7 @@
   </compound>
   <compound kind="file">
     <name>geometries.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
     <filename>geometries_8h</filename>
     <includes id="simple__orthogonal_8h" name="simple_orthogonal.h" local="yes" imported="no">simple_orthogonal.h</includes>
     <includes id="separatrix__orthogonal_8h" name="separatrix_orthogonal.h" local="yes" imported="no">separatrix_orthogonal.h</includes>
@@ -204,12 +204,12 @@
   </compound>
   <compound kind="file">
     <name>geometries_doc.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
     <filename>geometries__doc_8h</filename>
   </compound>
   <compound kind="file">
     <name>guenther.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
     <filename>guenther_8h</filename>
     <includes id="guenther__parameters_8h" name="guenther_parameters.h" local="yes" imported="no">guenther_parameters.h</includes>
     <includes id="magnetic__field_8h" name="magnetic_field.h" local="yes" imported="no">magnetic_field.h</includes>
@@ -256,7 +256,7 @@
   </compound>
   <compound kind="file">
     <name>guenther_parameters.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
     <filename>guenther__parameters_8h</filename>
     <class kind="struct">dg::geo::guenther::Parameters</class>
     <namespace>dg</namespace>
@@ -265,7 +265,7 @@
   </compound>
   <compound kind="file">
     <name>hector.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
     <filename>hector_8h</filename>
     <includes id="fluxfunctions_8h" name="fluxfunctions.h" local="yes" imported="no">fluxfunctions.h</includes>
     <includes id="curvilinear_8h" name="curvilinear.h" local="yes" imported="no">curvilinear.h</includes>
@@ -277,7 +277,7 @@
   </compound>
   <compound kind="file">
     <name>init.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
     <filename>init_8h</filename>
     <includes id="fluxfunctions_8h" name="fluxfunctions.h" local="yes" imported="no">fluxfunctions.h</includes>
     <includes id="solovev__parameters_8h" name="solovev_parameters.h" local="yes" imported="no">solovev_parameters.h</includes>
@@ -296,7 +296,7 @@
   </compound>
   <compound kind="file">
     <name>magnetic_field.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
     <filename>magnetic__field_8h</filename>
     <includes id="fluxfunctions_8h" name="fluxfunctions.h" local="yes" imported="no">fluxfunctions.h</includes>
     <class kind="struct">dg::geo::TokamakMagneticField</class>
@@ -324,7 +324,7 @@
   </compound>
   <compound kind="file">
     <name>mpi_curvilinear.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
     <filename>mpi__curvilinear_8h</filename>
     <includes id="curvilinear_8h" name="curvilinear.h" local="yes" imported="no">curvilinear.h</includes>
     <includes id="generator_8h" name="generator.h" local="yes" imported="no">generator.h</includes>
@@ -335,7 +335,7 @@
   </compound>
   <compound kind="file">
     <name>mpi_fieldaligned.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
     <filename>mpi__fieldaligned_8h</filename>
     <includes id="fieldaligned_8h" name="fieldaligned.h" local="yes" imported="no">fieldaligned.h</includes>
     <namespace>dg</namespace>
@@ -343,7 +343,7 @@
   </compound>
   <compound kind="file">
     <name>polar.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
     <filename>polar_8h</filename>
     <includes id="generator_8h" name="generator.h" local="yes" imported="no">generator.h</includes>
     <class kind="struct">dg::geo::PolarGenerator</class>
@@ -353,7 +353,7 @@
   </compound>
   <compound kind="file">
     <name>refined_curvilinearX.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
     <filename>refined__curvilinear_x_8h</filename>
     <includes id="generator_x_8h" name="generatorX.h" local="yes" imported="no">generatorX.h</includes>
     <includes id="curvilinear_8h" name="curvilinear.h" local="yes" imported="no">curvilinear.h</includes>
@@ -364,7 +364,7 @@
   </compound>
   <compound kind="file">
     <name>ribeiro.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
     <filename>ribeiro_8h</filename>
     <includes id="generator_8h" name="generator.h" local="yes" imported="no">generator.h</includes>
     <includes id="utilities_8h" name="utilities.h" local="yes" imported="no">utilities.h</includes>
@@ -374,7 +374,7 @@
   </compound>
   <compound kind="file">
     <name>ribeiroX.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
     <filename>ribeiro_x_8h</filename>
     <includes id="generator_x_8h" name="generatorX.h" local="yes" imported="no">generatorX.h</includes>
     <includes id="utilities_x_8h" name="utilitiesX.h" local="yes" imported="no">utilitiesX.h</includes>
@@ -385,7 +385,7 @@
   </compound>
   <compound kind="file">
     <name>separatrix_orthogonal.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
     <filename>separatrix__orthogonal_8h</filename>
     <includes id="generator_x_8h" name="generatorX.h" local="yes" imported="no">generatorX.h</includes>
     <includes id="utilities_x_8h" name="utilitiesX.h" local="yes" imported="no">utilitiesX.h</includes>
@@ -397,7 +397,7 @@
   </compound>
   <compound kind="file">
     <name>simple_orthogonal.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
     <filename>simple__orthogonal_8h</filename>
     <includes id="generator_8h" name="generator.h" local="yes" imported="no">generator.h</includes>
     <includes id="utilities_8h" name="utilities.h" local="yes" imported="no">utilities.h</includes>
@@ -408,7 +408,7 @@
   </compound>
   <compound kind="file">
     <name>solovev.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
     <filename>solovev_8h</filename>
     <includes id="solovev__parameters_8h" name="solovev_parameters.h" local="yes" imported="no">solovev_parameters.h</includes>
     <includes id="magnetic__field_8h" name="magnetic_field.h" local="yes" imported="no">magnetic_field.h</includes>
@@ -455,7 +455,7 @@
   </compound>
   <compound kind="file">
     <name>solovev_parameters.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
     <filename>solovev__parameters_8h</filename>
     <class kind="struct">dg::geo::solovev::Parameters</class>
     <namespace>dg</namespace>
@@ -464,7 +464,7 @@
   </compound>
   <compound kind="file">
     <name>taylor.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
     <filename>taylor_8h</filename>
     <includes id="solovev__parameters_8h" name="solovev_parameters.h" local="yes" imported="no">solovev_parameters.h</includes>
     <includes id="magnetic__field_8h" name="magnetic_field.h" local="yes" imported="no">magnetic_field.h</includes>
@@ -518,7 +518,7 @@
   </compound>
   <compound kind="file">
     <name>testfunctors.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
     <filename>testfunctors_8h</filename>
     <includes id="magnetic__field_8h" name="magnetic_field.h" local="yes" imported="no">magnetic_field.h</includes>
     <namespace>dg</namespace>
@@ -526,7 +526,7 @@
   </compound>
   <compound kind="file">
     <name>toroidal.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
     <filename>toroidal_8h</filename>
     <includes id="magnetic__field_8h" name="magnetic_field.h" local="yes" imported="no">magnetic_field.h</includes>
     <class kind="struct">dg::geo::circular::Psip</class>
@@ -588,13 +588,13 @@
   </compound>
   <compound kind="file">
     <name>utilities.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
     <filename>utilities_8h</filename>
     <includes id="fluxfunctions_8h" name="fluxfunctions.h" local="yes" imported="no">fluxfunctions.h</includes>
   </compound>
   <compound kind="file">
     <name>utilitiesX.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
     <filename>utilities_x_8h</filename>
     <includes id="utilities_8h" name="utilities.h" local="yes" imported="no">utilities.h</includes>
     <namespace>dg</namespace>
@@ -628,15 +628,15 @@
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structdg_1_1geo_1_1a_binary_functor.html</anchorfile>
-      <anchor>ad9dabbefa7fd22514031d00d90131d3e</anchor>
-      <arglist>(double R, double Z) const </arglist>
+      <anchor>a7770b1c7e226bad4a9a2bf66ef7779c9</anchor>
+      <arglist>(double R, double Z) const</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structdg_1_1geo_1_1a_binary_functor.html</anchorfile>
-      <anchor>afa88ae195a6bd40aa6a89127001b09f6</anchor>
-      <arglist>(double R, double Z, double phi) const </arglist>
+      <anchor>ac1b14ae5887da480ba99557f81f08cbb</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual aBinaryFunctor *</type>
@@ -683,8 +683,8 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
-      <arglist>() const </arglist>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
+      <arglist>() const</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -695,7 +695,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -707,7 +707,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -719,7 +719,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -731,7 +731,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -743,7 +743,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -755,7 +755,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -767,7 +767,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -779,7 +779,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -791,7 +791,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -803,7 +803,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -815,7 +815,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -827,7 +827,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -839,7 +839,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -851,7 +851,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -863,7 +863,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -875,7 +875,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -887,7 +887,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -899,7 +899,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -911,7 +911,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -923,7 +923,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -935,7 +935,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -947,7 +947,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -959,7 +959,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -971,7 +971,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -983,7 +983,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -995,7 +995,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -1007,7 +1007,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -1019,7 +1019,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -1031,7 +1031,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -1043,7 +1043,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -1055,7 +1055,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -1067,7 +1067,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -1079,7 +1079,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -1091,7 +1091,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -1103,7 +1103,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -1115,7 +1115,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -1127,7 +1127,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -1139,7 +1139,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -1151,7 +1151,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -1163,7 +1163,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -1175,7 +1175,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -1187,7 +1187,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -1199,7 +1199,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -1211,7 +1211,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -1223,7 +1223,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -1235,7 +1235,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -1247,7 +1247,7 @@
       <type>virtual aBinaryFunctor *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a7e0b89ef961af8bddcaf1c9063875223</anchor>
+      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -1258,29 +1258,29 @@
       <type>double</type>
       <name>width</name>
       <anchorfile>structdg_1_1geo_1_1a_generator2d.html</anchorfile>
-      <anchor>aacd1460f191af569f3f96a8dc6250ca6</anchor>
-      <arglist>() const </arglist>
+      <anchor>aa939f37907b2aeb44e00433dad2d087a</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>height</name>
       <anchorfile>structdg_1_1geo_1_1a_generator2d.html</anchorfile>
-      <anchor>ae0ee95047448bdf9cb095c857c42b192</anchor>
-      <arglist>() const </arglist>
+      <anchor>aa5b78cd2bfdc11b17d55e4f7a9b5cd53</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>isOrthogonal</name>
       <anchorfile>structdg_1_1geo_1_1a_generator2d.html</anchorfile>
-      <anchor>a9a51fb8d2bd13a3a34581da641621404</anchor>
-      <arglist>() const </arglist>
+      <anchor>aae8c7c6603c706d5b86aece44371fe7b</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>generate</name>
       <anchorfile>structdg_1_1geo_1_1a_generator2d.html</anchorfile>
-      <anchor>a0bc80d9c5eaf5cfad5542d51fd631fd7</anchor>
-      <arglist>(const thrust::host_vector&lt; double &gt; &amp;zeta1d, const thrust::host_vector&lt; double &gt; &amp;eta1d, thrust::host_vector&lt; double &gt; &amp;x, thrust::host_vector&lt; double &gt; &amp;y, thrust::host_vector&lt; double &gt; &amp;zetaX, thrust::host_vector&lt; double &gt; &amp;zetaY, thrust::host_vector&lt; double &gt; &amp;etaX, thrust::host_vector&lt; double &gt; &amp;etaY) const </arglist>
+      <anchor>ad2fa8cacf200553165e0bd69aa1147ba</anchor>
+      <arglist>(const thrust::host_vector&lt; double &gt; &amp;zeta1d, const thrust::host_vector&lt; double &gt; &amp;eta1d, thrust::host_vector&lt; double &gt; &amp;x, thrust::host_vector&lt; double &gt; &amp;y, thrust::host_vector&lt; double &gt; &amp;zetaX, thrust::host_vector&lt; double &gt; &amp;zetaY, thrust::host_vector&lt; double &gt; &amp;etaX, thrust::host_vector&lt; double &gt; &amp;etaY) const</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual aGenerator2d *</type>
@@ -1325,43 +1325,43 @@
       <type>double</type>
       <name>zeta0</name>
       <anchorfile>structdg_1_1geo_1_1a_generator_x2d.html</anchorfile>
-      <anchor>aee55d52d246824226944a6162aa42b43</anchor>
-      <arglist>(double fx) const </arglist>
+      <anchor>ab6927f3304adebab7f97c829dd2ae826</anchor>
+      <arglist>(double fx) const</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>zeta1</name>
       <anchorfile>structdg_1_1geo_1_1a_generator_x2d.html</anchorfile>
-      <anchor>a0e5f3c54b4705e43a46faaa3cdfccb32</anchor>
-      <arglist>(double fx) const </arglist>
+      <anchor>ac9056f356e77253c0fadcc67ec8eac24</anchor>
+      <arglist>(double fx) const</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>eta0</name>
       <anchorfile>structdg_1_1geo_1_1a_generator_x2d.html</anchorfile>
-      <anchor>a65fdb7d0f1690ad006b04b077a189ec5</anchor>
-      <arglist>(double fy) const </arglist>
+      <anchor>af28add265db7559930ddeade595d94b7</anchor>
+      <arglist>(double fy) const</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>eta1</name>
       <anchorfile>structdg_1_1geo_1_1a_generator_x2d.html</anchorfile>
-      <anchor>a91d555c4accb985e5840980e508a785b</anchor>
-      <arglist>(double fy) const </arglist>
+      <anchor>a2e3ee0637c29e182dd3b696baece2152</anchor>
+      <arglist>(double fy) const</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>isOrthogonal</name>
       <anchorfile>structdg_1_1geo_1_1a_generator_x2d.html</anchorfile>
-      <anchor>affa5f4f0f45c95b060bdf5f488fa92b7</anchor>
-      <arglist>() const </arglist>
+      <anchor>a0044b9c290a3ec14d89a7633f7689417</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>generate</name>
       <anchorfile>structdg_1_1geo_1_1a_generator_x2d.html</anchorfile>
-      <anchor>ad601459e94e1edb65a53499fed3e62fd</anchor>
-      <arglist>(const thrust::host_vector&lt; double &gt; &amp;zeta1d, const thrust::host_vector&lt; double &gt; &amp;eta1d, unsigned nodeX0, unsigned nodeX1, thrust::host_vector&lt; double &gt; &amp;x, thrust::host_vector&lt; double &gt; &amp;y, thrust::host_vector&lt; double &gt; &amp;zetaX, thrust::host_vector&lt; double &gt; &amp;zetaY, thrust::host_vector&lt; double &gt; &amp;etaX, thrust::host_vector&lt; double &gt; &amp;etaY) const </arglist>
+      <anchor>ac988b01b2177fa01fc74f9eba192cec9</anchor>
+      <arglist>(const thrust::host_vector&lt; double &gt; &amp;zeta1d, const thrust::host_vector&lt; double &gt; &amp;eta1d, unsigned nodeX0, unsigned nodeX1, thrust::host_vector&lt; double &gt; &amp;x, thrust::host_vector&lt; double &gt; &amp;y, thrust::host_vector&lt; double &gt; &amp;zetaX, thrust::host_vector&lt; double &gt; &amp;zetaY, thrust::host_vector&lt; double &gt; &amp;etaX, thrust::host_vector&lt; double &gt; &amp;etaY) const</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual aGeneratorX2d *</type>
@@ -1413,15 +1413,15 @@
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structdg_1_1geo_1_1_alpha.html</anchorfile>
-      <anchor>aaa90d281a80b20275f63c3b37c84467e</anchor>
-      <arglist>(double R, double Z) const </arglist>
+      <anchor>af9910383078022eaa434e0c0c0735663</anchor>
+      <arglist>(double R, double Z) const</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structdg_1_1geo_1_1_alpha.html</anchorfile>
-      <anchor>a885ad2f5a72a42e0b0a80adfa1ef01f6</anchor>
-      <arglist>(double R, double Z, double phi) const </arglist>
+      <anchor>ad2a35c82a1539f36b4d44bc4d74b47ea</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -1515,22 +1515,22 @@
       <type>const aBinaryFunctor &amp;</type>
       <name>f</name>
       <anchorfile>structdg_1_1geo_1_1_binary_functors_lvl1.html</anchorfile>
-      <anchor>adb0731ed5f5bea103902af6f905e0c4f</anchor>
-      <arglist>() const </arglist>
+      <anchor>ac3ca69dee28bb0447108f328a0c46ff1</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const aBinaryFunctor &amp;</type>
       <name>dfx</name>
       <anchorfile>structdg_1_1geo_1_1_binary_functors_lvl1.html</anchorfile>
-      <anchor>ac93cf8aa55e992497d83a2f45c1f828c</anchor>
-      <arglist>() const </arglist>
+      <anchor>ae6a295a8a565091dd3baf54b0b11bb40</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const aBinaryFunctor &amp;</type>
       <name>dfy</name>
       <anchorfile>structdg_1_1geo_1_1_binary_functors_lvl1.html</anchorfile>
-      <anchor>a2f539564a32e3b9a7ed6aa57d2f088a7</anchor>
-      <arglist>() const </arglist>
+      <anchor>a13e43e955e5f8b5a9ebd4eba58f3d1dc</anchor>
+      <arglist>() const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -1575,50 +1575,50 @@
       <type></type>
       <name>operator BinaryFunctorsLvl1</name>
       <anchorfile>structdg_1_1geo_1_1_binary_functors_lvl2.html</anchorfile>
-      <anchor>aa44ca4b8994fd7c0a0c618be3ea27c73</anchor>
-      <arglist>() const </arglist>
+      <anchor>a83c5fb319e4d98786237608ceb37d85d</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const aBinaryFunctor &amp;</type>
       <name>f</name>
       <anchorfile>structdg_1_1geo_1_1_binary_functors_lvl2.html</anchorfile>
-      <anchor>a8c7b93a6926ebca4618f5bd898dc2f93</anchor>
-      <arglist>() const </arglist>
+      <anchor>a46f7cdba2fd9e3ad9943229005b1a27b</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const aBinaryFunctor &amp;</type>
       <name>dfx</name>
       <anchorfile>structdg_1_1geo_1_1_binary_functors_lvl2.html</anchorfile>
-      <anchor>aeed3bf721febc7610043565ac682a0d7</anchor>
-      <arglist>() const </arglist>
+      <anchor>a8e7e08358381432f78e00ad7ef364215</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const aBinaryFunctor &amp;</type>
       <name>dfy</name>
       <anchorfile>structdg_1_1geo_1_1_binary_functors_lvl2.html</anchorfile>
-      <anchor>abfeb052cad935a7a39745f362bd10a81</anchor>
-      <arglist>() const </arglist>
+      <anchor>af47021d92579014f7dae5c66757b695f</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const aBinaryFunctor &amp;</type>
       <name>dfxx</name>
       <anchorfile>structdg_1_1geo_1_1_binary_functors_lvl2.html</anchorfile>
-      <anchor>acb42e0aca3acfdc4e5fa7605bb219a9f</anchor>
-      <arglist>() const </arglist>
+      <anchor>a7a3ea0d944397f0a30b42e8b16389637</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const aBinaryFunctor &amp;</type>
       <name>dfxy</name>
       <anchorfile>structdg_1_1geo_1_1_binary_functors_lvl2.html</anchorfile>
-      <anchor>a6a39158f162f6a4e7bb8859c0f0eb20b</anchor>
-      <arglist>() const </arglist>
+      <anchor>a16bdd0080995937823f9319b51db5fb2</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const aBinaryFunctor &amp;</type>
       <name>dfyy</name>
       <anchorfile>structdg_1_1geo_1_1_binary_functors_lvl2.html</anchorfile>
-      <anchor>a802cfb20c8176a60889d6fc5d27da15a</anchor>
-      <arglist>() const </arglist>
+      <anchor>aaf8e729f5e159f2d389f3c5615a0acd3</anchor>
+      <arglist>() const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -1663,36 +1663,36 @@
       <type>const aBinaryFunctor &amp;</type>
       <name>xx</name>
       <anchorfile>structdg_1_1geo_1_1_binary_symm_tensor_lvl1.html</anchorfile>
-      <anchor>a065017df9522a8f7e5eab08c5b0cb848</anchor>
-      <arglist>() const </arglist>
+      <anchor>a43075aed13a00d04c937156a93ebde97</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const aBinaryFunctor &amp;</type>
       <name>xy</name>
       <anchorfile>structdg_1_1geo_1_1_binary_symm_tensor_lvl1.html</anchorfile>
-      <anchor>af78678f3766eb0aa00eb5c28389f8e78</anchor>
-      <arglist>() const </arglist>
+      <anchor>a8f6ba544ad7919f7db180f79ef449401</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const aBinaryFunctor &amp;</type>
       <name>yy</name>
       <anchorfile>structdg_1_1geo_1_1_binary_symm_tensor_lvl1.html</anchorfile>
-      <anchor>a9b23e703776f912c1627bed96ed89694</anchor>
-      <arglist>() const </arglist>
+      <anchor>a9d656f2c99e6430f7b1963bd58de9e63</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const aBinaryFunctor &amp;</type>
       <name>divX</name>
       <anchorfile>structdg_1_1geo_1_1_binary_symm_tensor_lvl1.html</anchorfile>
-      <anchor>a84f22c58401ddf793c323fa93a9da921</anchor>
-      <arglist>() const </arglist>
+      <anchor>ab45f34f7349a230ab2062f788ff230f6</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const aBinaryFunctor &amp;</type>
       <name>divY</name>
       <anchorfile>structdg_1_1geo_1_1_binary_symm_tensor_lvl1.html</anchorfile>
-      <anchor>af6b3887efb9589b49db577d4a1c8cd36</anchor>
-      <arglist>() const </arglist>
+      <anchor>a0e6b7dd6cf6420087bdc551a74673f2c</anchor>
+      <arglist>() const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -1737,22 +1737,22 @@
       <type>const aBinaryFunctor &amp;</type>
       <name>x</name>
       <anchorfile>structdg_1_1geo_1_1_binary_vector_lvl0.html</anchorfile>
-      <anchor>a78b8c489a775c8f5f3540c757e18c0ac</anchor>
-      <arglist>() const </arglist>
+      <anchor>a08dc355bc006d118cdd76aa24508ab73</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const aBinaryFunctor &amp;</type>
       <name>y</name>
       <anchorfile>structdg_1_1geo_1_1_binary_vector_lvl0.html</anchorfile>
-      <anchor>a14a24f909c71070f595126569afce7fa</anchor>
-      <arglist>() const </arglist>
+      <anchor>a7f4a7a7a1cea707e2343309f7973a520</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const aBinaryFunctor &amp;</type>
       <name>z</name>
       <anchorfile>structdg_1_1geo_1_1_binary_vector_lvl0.html</anchorfile>
-      <anchor>a1ada816055dcc1d6adb9b95ab2c30826</anchor>
-      <arglist>() const </arglist>
+      <anchor>ad79f4121f302da4a2e99a5100a85797a</anchor>
+      <arglist>() const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -1879,15 +1879,15 @@
       <type>const aGenerator2d &amp;</type>
       <name>generator</name>
       <anchorfile>structdg_1_1geo_1_1_curvilinear_grid2d.html</anchorfile>
-      <anchor>ac004e5858f5b192b06ee8563721b57e6</anchor>
-      <arglist>() const </arglist>
+      <anchor>a09e8129943f98d253457aee60f4ad229</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual CurvilinearGrid2d *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1_curvilinear_grid2d.html</anchorfile>
-      <anchor>a706db5a8b7ae345950c258a4337b8cd9</anchor>
-      <arglist>() const </arglist>
+      <anchor>a7779ee22578898f0c27c1e5adf6041bb</anchor>
+      <arglist>() const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -1904,15 +1904,15 @@
       <type>const aGeneratorX2d &amp;</type>
       <name>generator</name>
       <anchorfile>structdg_1_1geo_1_1_curvilinear_grid_x2d.html</anchorfile>
-      <anchor>a41749b1425724fa5849833e090b2a447</anchor>
-      <arglist>() const </arglist>
+      <anchor>ab60250fe99f4a923f21539362ec7ef47</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual CurvilinearGridX2d *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1_curvilinear_grid_x2d.html</anchorfile>
-      <anchor>ab922cd86b99ee12821d7e1d51e884e66</anchor>
-      <arglist>() const </arglist>
+      <anchor>a07511fbbf587bdf6b30ced2073d3fced</anchor>
+      <arglist>() const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -1936,22 +1936,22 @@
       <type>const aGenerator2d &amp;</type>
       <name>generator</name>
       <anchorfile>structdg_1_1geo_1_1_curvilinear_m_p_i_grid2d.html</anchorfile>
-      <anchor>ab30d36f22fdb3e632c7c5f4364ee28ce</anchor>
-      <arglist>() const </arglist>
+      <anchor>a138488db8b1539e07975790971e199d2</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual CurvilinearMPIGrid2d *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1_curvilinear_m_p_i_grid2d.html</anchorfile>
-      <anchor>ac4d249155d50520d8677a99fad558e7b</anchor>
-      <arglist>() const </arglist>
+      <anchor>ab6b8525624e96a1eb7b305e66c8534d8</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual CurvilinearGrid2d *</type>
       <name>global_geometry</name>
       <anchorfile>structdg_1_1geo_1_1_curvilinear_m_p_i_grid2d.html</anchorfile>
-      <anchor>a9919aa9ac333d563da62b86cd04095ce</anchor>
-      <arglist>() const </arglist>
+      <anchor>ac3f65ca98f06801aa9e24f4ed50ffc86</anchor>
+      <arglist>() const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -1975,15 +1975,15 @@
       <type>const aGenerator2d &amp;</type>
       <name>generator</name>
       <anchorfile>structdg_1_1geo_1_1_curvilinear_product_grid3d.html</anchorfile>
-      <anchor>a05b7a7f3f3f818871e95200239ae2e8d</anchor>
-      <arglist>() const </arglist>
+      <anchor>a75368910393dca616693e5ed216ba6ce</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual CurvilinearProductGrid3d *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1_curvilinear_product_grid3d.html</anchorfile>
-      <anchor>a5607c44e1aa1f4460773163f40d4c6d8</anchor>
-      <arglist>() const </arglist>
+      <anchor>ac75010811c79a367d26da70a3e25d13b</anchor>
+      <arglist>() const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -2000,15 +2000,15 @@
       <type>const aGeneratorX2d &amp;</type>
       <name>generator</name>
       <anchorfile>structdg_1_1geo_1_1_curvilinear_product_grid_x3d.html</anchorfile>
-      <anchor>a0306d12cf80bb64fe0f7ea600c3a87c8</anchor>
-      <arglist>() const </arglist>
+      <anchor>a9e58eee79ed6155a9031ecf72c2bd95f</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual CurvilinearProductGridX3d *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1_curvilinear_product_grid_x3d.html</anchorfile>
-      <anchor>a6476e52627569c33f63d8ead353f91ef</anchor>
-      <arglist>() const </arglist>
+      <anchor>ae6e175fbd80764f1db90b758281eda53</anchor>
+      <arglist>() const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -2032,22 +2032,22 @@
       <type>const aGenerator2d &amp;</type>
       <name>generator</name>
       <anchorfile>structdg_1_1geo_1_1_curvilinear_product_m_p_i_grid3d.html</anchorfile>
-      <anchor>ad61e688934ecbd1b7628146e53b019af</anchor>
-      <arglist>() const </arglist>
+      <anchor>ad9881323091ff886a8c9870db5aec8a1</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual CurvilinearProductMPIGrid3d *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1_curvilinear_product_m_p_i_grid3d.html</anchorfile>
-      <anchor>a347300b86b36cca7f834c0b55f2a8dab</anchor>
-      <arglist>() const </arglist>
+      <anchor>ab098d4219f0df8159356dd4d656cf9a3</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual CurvilinearProductGrid3d *</type>
       <name>global_geometry</name>
       <anchorfile>structdg_1_1geo_1_1_curvilinear_product_m_p_i_grid3d.html</anchorfile>
-      <anchor>a11e266932830b8f8ac7935ca880f3eac</anchor>
-      <arglist>() const </arglist>
+      <anchor>a9c41782e007f95e9b0ac4d2a807d011b</anchor>
+      <arglist>() const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -2064,15 +2064,15 @@
       <type>const aGeneratorX2d &amp;</type>
       <name>generator</name>
       <anchorfile>structdg_1_1geo_1_1_curvilinear_refined_grid_x2d.html</anchorfile>
-      <anchor>ac50ce661b126e8902e6db35ce6aa585f</anchor>
-      <arglist>() const </arglist>
+      <anchor>a41563f14d205fd88780341d686339474</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual CurvilinearRefinedGridX2d *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1_curvilinear_refined_grid_x2d.html</anchorfile>
-      <anchor>ac30be22dcbc2f5d75c7d0887ae8b75e0</anchor>
-      <arglist>() const </arglist>
+      <anchor>abcbccb54efa0ae66d8489bcd2422b580</anchor>
+      <arglist>() const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -2089,15 +2089,15 @@
       <type>const aGeneratorX2d &amp;</type>
       <name>generator</name>
       <anchorfile>structdg_1_1geo_1_1_curvilinear_refined_product_grid_x3d.html</anchorfile>
-      <anchor>a55c656e260da5329016a79e17d5a2aad</anchor>
-      <arglist>() const </arglist>
+      <anchor>a64633f502bd40a021b9a25aea255ccc8</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual CurvilinearRefinedProductGridX3d *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1_curvilinear_refined_product_grid_x3d.html</anchorfile>
-      <anchor>aefbae370d91f37664ffee9289a387d04</anchor>
-      <arglist>() const </arglist>
+      <anchor>ae40162c5ae1d1edca848a12187520d02</anchor>
+      <arglist>() const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -2128,15 +2128,15 @@
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structdg_1_1geo_1_1_delta_function.html</anchorfile>
-      <anchor>afb00fb6e8c5b5c3a0679d0e872ffa1c3</anchor>
-      <arglist>(double R, double Z) const </arglist>
+      <anchor>af4b5f10a95ae86754f3078c50bb9ff52</anchor>
+      <arglist>(double R, double Z) const</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structdg_1_1geo_1_1_delta_function.html</anchorfile>
-      <anchor>a53d3b44f8a4c550c4ad88ae11f0fc383</anchor>
-      <arglist>(double R, double Z, double phi) const </arglist>
+      <anchor>a480c24032407defe02dd3167cb390c4f</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -2387,29 +2387,29 @@
       <type>const container &amp;</type>
       <name>weights</name>
       <anchorfile>structdg_1_1geo_1_1_d_s.html</anchorfile>
-      <anchor>a004bab62e3c60fc16a68aa72493c4aac</anchor>
-      <arglist>() const </arglist>
+      <anchor>a186161681f43813d2036347e0b7efa17</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const container &amp;</type>
       <name>inv_weights</name>
       <anchorfile>structdg_1_1geo_1_1_d_s.html</anchorfile>
-      <anchor>a2fcff3ae57cfd042b19918580de93262</anchor>
-      <arglist>() const </arglist>
+      <anchor>ad48b9432470a8e5de58bca0fbad12b3c</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const container &amp;</type>
       <name>precond</name>
       <anchorfile>structdg_1_1geo_1_1_d_s.html</anchorfile>
-      <anchor>a0b634c59412a5bbdb93860772f9cd097</anchor>
-      <arglist>() const </arglist>
+      <anchor>a6e60e008773654113c1fab1bd3a279c7</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const FA &amp;</type>
       <name>fieldaligned</name>
       <anchorfile>structdg_1_1geo_1_1_d_s.html</anchorfile>
-      <anchor>a26667babe74320162c09f3cd6cbc48fb</anchor>
-      <arglist>() const </arglist>
+      <anchor>a9be1d0b4cd476e4363097205eccf273a</anchor>
+      <arglist>() const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -2450,15 +2450,15 @@
       <type>bool</type>
       <name>dependsOnX</name>
       <anchorfile>structdg_1_1geo_1_1_fieldaligned.html</anchorfile>
-      <anchor>ad61bc87ebb44033113209fe4d333ffa9</anchor>
-      <arglist>() const </arglist>
+      <anchor>a9406b9a8729589edc6e5dbb622b669e8</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>dependsOnY</name>
       <anchorfile>structdg_1_1geo_1_1_fieldaligned.html</anchorfile>
-      <anchor>a21cfadd891afb0d7b3e3a1478ec68ee4</anchor>
-      <arglist>() const </arglist>
+      <anchor>aa4c352bbfa9b86881c276649bf9baba8</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -2485,15 +2485,15 @@
       <type>container</type>
       <name>evaluate</name>
       <anchorfile>structdg_1_1geo_1_1_fieldaligned.html</anchorfile>
-      <anchor>aee88dfa3dec3908526fd7ea06a67f54a</anchor>
-      <arglist>(const BinaryOp &amp;binary, unsigned p0=0) const </arglist>
+      <anchor>a8afe21592ddb82168de4d1618bdc7bec</anchor>
+      <arglist>(const BinaryOp &amp;binary, unsigned p0=0) const</arglist>
     </member>
     <member kind="function">
       <type>container</type>
       <name>evaluate</name>
       <anchorfile>structdg_1_1geo_1_1_fieldaligned.html</anchorfile>
-      <anchor>af47601074730f4e33d28d712b35f9d71</anchor>
-      <arglist>(const BinaryOp &amp;binary, const UnaryOp &amp;unary, unsigned p0, unsigned rounds) const </arglist>
+      <anchor>a39a6dfbe5734561bafcc0030c468947a</anchor>
+      <arglist>(const BinaryOp &amp;binary, const UnaryOp &amp;unary, unsigned p0, unsigned rounds) const</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -2506,29 +2506,29 @@
       <type>const container &amp;</type>
       <name>hz_inv</name>
       <anchorfile>structdg_1_1geo_1_1_fieldaligned.html</anchorfile>
-      <anchor>adb657acd30f8f8dd056c65f778f2bd57</anchor>
-      <arglist>() const </arglist>
+      <anchor>a122e4fb37caeb92782211bf25ec49075</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const container &amp;</type>
       <name>hp_inv</name>
       <anchorfile>structdg_1_1geo_1_1_fieldaligned.html</anchorfile>
-      <anchor>ac62e4d36d2f4c76c1ab5c2066e8c7be0</anchor>
-      <arglist>() const </arglist>
+      <anchor>afab29f51e7d5ac5e9fdd061f7ee6ba0e</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const container &amp;</type>
       <name>hm_inv</name>
       <anchorfile>structdg_1_1geo_1_1_fieldaligned.html</anchorfile>
-      <anchor>a91ff76e1eb213daa0fc2c57cf530ee86</anchor>
-      <arglist>() const </arglist>
+      <anchor>a755fd10c422855aef0b5ee9d130a677e</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const ProductGeometry &amp;</type>
       <name>grid</name>
       <anchorfile>structdg_1_1geo_1_1_fieldaligned.html</anchorfile>
-      <anchor>a6db5e0c604847f0766de52a6fe64ca1d</anchor>
-      <arglist>() const </arglist>
+      <anchor>a3cde4145fa3be34c4edf9dc2bb15524f</anchor>
+      <arglist>() const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -2594,8 +2594,8 @@
       <type>virtual FluxGenerator *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1_flux_generator.html</anchorfile>
-      <anchor>ad6f19c9f893b4ddd9bd457d5268cc2a3</anchor>
-      <arglist>() const </arglist>
+      <anchor>ad7c8db42259626d035c8ea3339777d41</anchor>
+      <arglist>() const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -2697,22 +2697,22 @@
       <type>const dg::geo::CurvilinearGrid2d &amp;</type>
       <name>internal_grid</name>
       <anchorfile>structdg_1_1geo_1_1_hector.html</anchorfile>
-      <anchor>aa1feefa4f442635ee527258fb8610590</anchor>
-      <arglist>() const </arglist>
+      <anchor>a9467a4de877f23ce96169034bda0bb4f</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual Hector *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1_hector.html</anchorfile>
-      <anchor>ae4d5086a4baee8eb38f49d765ee416b1</anchor>
-      <arglist>() const </arglist>
+      <anchor>af3b4528adddab1c67613d38167f34983</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>isConformal</name>
       <anchorfile>structdg_1_1geo_1_1_hector.html</anchorfile>
-      <anchor>a8d6bfcf8e0a82161e3208c8bbbaf3ab4</anchor>
-      <arglist>() const </arglist>
+      <anchor>a0693be00459e859f44848b9eba769093</anchor>
+      <arglist>() const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -2910,8 +2910,8 @@
       <type>virtual LogPolarGenerator *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1_log_polar_generator.html</anchorfile>
-      <anchor>a905cf6d3ea2244272188b8f7e920dca8</anchor>
-      <arglist>() const </arglist>
+      <anchor>a82001c84bd95f50400fbbe93abe5feb9</anchor>
+      <arglist>() const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -2969,8 +2969,8 @@
       <type>void</type>
       <name>display</name>
       <anchorfile>structdg_1_1geo_1_1guenther_1_1_parameters.html</anchorfile>
-      <anchor>a37cc4b33a5682d8e4d9e1895c08e9798</anchor>
-      <arglist>(std::ostream &amp;os=std::cout) const </arglist>
+      <anchor>afe26a01fda1653e194ebc7cb017139f5</anchor>
+      <arglist>(std::ostream &amp;os=std::cout) const</arglist>
     </member>
     <member kind="variable">
       <type>double</type>
@@ -3064,8 +3064,8 @@
       <type>void</type>
       <name>display</name>
       <anchorfile>structdg_1_1geo_1_1solovev_1_1_parameters.html</anchorfile>
-      <anchor>ad9ebd66cb1e15d35201b4c98f4f81986</anchor>
-      <arglist>(std::ostream &amp;os=std::cout) const </arglist>
+      <anchor>afe2b2a26ae9434ab6909789d813b7cd4</anchor>
+      <arglist>(std::ostream &amp;os=std::cout) const</arglist>
     </member>
     <member kind="variable">
       <type>double</type>
@@ -3181,8 +3181,8 @@
       <type>virtual PolarGenerator *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1_polar_generator.html</anchorfile>
-      <anchor>aca30a75f3f8763e3f390b293af1063cd</anchor>
-      <arglist>() const </arglist>
+      <anchor>a86f90265606aad2e6e3b581af0265345</anchor>
+      <arglist>() const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -3481,8 +3481,8 @@
       <type>virtual Ribeiro *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1_ribeiro.html</anchorfile>
-      <anchor>ac517ad1ffec839c69daa60675cf5afdc</anchor>
-      <arglist>() const </arglist>
+      <anchor>a16cda75dc2e6cdd0002629a0917c8ab8</anchor>
+      <arglist>() const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -3500,8 +3500,8 @@
       <type>virtual RibeiroFluxGenerator *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1_ribeiro_flux_generator.html</anchorfile>
-      <anchor>a28835fd56a8ec5c4f6d97ce286fd165f</anchor>
-      <arglist>() const </arglist>
+      <anchor>a03b7fb9d1392ff4931a897e82e0fd873</anchor>
+      <arglist>() const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -3519,8 +3519,8 @@
       <type>virtual RibeiroX *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1_ribeiro_x.html</anchorfile>
-      <anchor>a87bc6af269c99f06c5b875acbbc21e0d</anchor>
-      <arglist>() const </arglist>
+      <anchor>a2544d18ee39646520b9b4097a4a760eb</anchor>
+      <arglist>() const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -3557,8 +3557,8 @@
       <type>SeparatrixOrthogonal *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1_separatrix_orthogonal.html</anchorfile>
-      <anchor>a2d1b5b5a3517664f518d354b3f7c1fce</anchor>
-      <arglist>() const </arglist>
+      <anchor>a2d62c9d7327548bc92ab92863c383233</anchor>
+      <arglist>() const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -3583,15 +3583,15 @@
       <type>double</type>
       <name>f0</name>
       <anchorfile>structdg_1_1geo_1_1_simple_orthogonal.html</anchorfile>
-      <anchor>ad9b406994e4edf5b9b17f676fcd6f47f</anchor>
-      <arglist>() const </arglist>
+      <anchor>a498cb2ded6eb6cd30163ebd438b5d072</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual SimpleOrthogonal *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1_simple_orthogonal.html</anchorfile>
-      <anchor>af4e9e0fd7e7ab4bbb8f2872b63695916</anchor>
-      <arglist>() const </arglist>
+      <anchor>a7ab22c7b6a693eae553763f81e5ea43b</anchor>
+      <arglist>() const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -3616,8 +3616,8 @@
       <type>SimpleOrthogonalX *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1_simple_orthogonal_x.html</anchorfile>
-      <anchor>a394b7f4f95dac5eab969f79e01fa798e</anchor>
-      <arglist>() const </arglist>
+      <anchor>a2aaa861f1f962d74a28739ef14d85650</anchor>
+      <arglist>() const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -3660,85 +3660,85 @@
       <type>double</type>
       <name>R0</name>
       <anchorfile>structdg_1_1geo_1_1_tokamak_magnetic_field.html</anchorfile>
-      <anchor>a1f1f763277b85ef1f67fb1bca02711b6</anchor>
-      <arglist>() const </arglist>
+      <anchor>ae0a8c6342375feb074e4d3af23e4dcf0</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const aBinaryFunctor &amp;</type>
       <name>psip</name>
       <anchorfile>structdg_1_1geo_1_1_tokamak_magnetic_field.html</anchorfile>
-      <anchor>a7df81e3927d399a9486be5ff40b11311</anchor>
-      <arglist>() const </arglist>
+      <anchor>a1c9a9e8e89758e1fffb02b288ba327dd</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const aBinaryFunctor &amp;</type>
       <name>psipR</name>
       <anchorfile>structdg_1_1geo_1_1_tokamak_magnetic_field.html</anchorfile>
-      <anchor>a7053541351a0b2b698b36ea6993961fb</anchor>
-      <arglist>() const </arglist>
+      <anchor>a3052d4aa8fca099edb616631edf039db</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const aBinaryFunctor &amp;</type>
       <name>psipZ</name>
       <anchorfile>structdg_1_1geo_1_1_tokamak_magnetic_field.html</anchorfile>
-      <anchor>aab64354f328b79aa584503d55e3c7ff6</anchor>
-      <arglist>() const </arglist>
+      <anchor>a7f79c50fe617f2516fe8bc3f3938513f</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const aBinaryFunctor &amp;</type>
       <name>psipRR</name>
       <anchorfile>structdg_1_1geo_1_1_tokamak_magnetic_field.html</anchorfile>
-      <anchor>a81868ff395245e05806116b0b2f51fe5</anchor>
-      <arglist>() const </arglist>
+      <anchor>aa719bb4e43a298a5e8f9b21d016272b3</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const aBinaryFunctor &amp;</type>
       <name>psipRZ</name>
       <anchorfile>structdg_1_1geo_1_1_tokamak_magnetic_field.html</anchorfile>
-      <anchor>a11a753faa4f4bc41605953c9dc696504</anchor>
-      <arglist>() const </arglist>
+      <anchor>a9943f479b3ffdf88f02f334a0db00c22</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const aBinaryFunctor &amp;</type>
       <name>psipZZ</name>
       <anchorfile>structdg_1_1geo_1_1_tokamak_magnetic_field.html</anchorfile>
-      <anchor>ac0d359a7e77c8fe1ebb9650de8cb0935</anchor>
-      <arglist>() const </arglist>
+      <anchor>a43616c8513d3e0b72c6b266e0ab31e4d</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const aBinaryFunctor &amp;</type>
       <name>ipol</name>
       <anchorfile>structdg_1_1geo_1_1_tokamak_magnetic_field.html</anchorfile>
-      <anchor>a15a902e4529cb70edb55103982216105</anchor>
-      <arglist>() const </arglist>
+      <anchor>a3973b053550e94f9c49ef53db1a90de3</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const aBinaryFunctor &amp;</type>
       <name>ipolR</name>
       <anchorfile>structdg_1_1geo_1_1_tokamak_magnetic_field.html</anchorfile>
-      <anchor>ad3466ef3cf010e7b8fadd91cc4ed3d64</anchor>
-      <arglist>() const </arglist>
+      <anchor>a474cf0c836299547768108fd8840d83b</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const aBinaryFunctor &amp;</type>
       <name>ipolZ</name>
       <anchorfile>structdg_1_1geo_1_1_tokamak_magnetic_field.html</anchorfile>
-      <anchor>ada119a76a93f32e0efce0d4e6c4d8218</anchor>
-      <arglist>() const </arglist>
+      <anchor>a3c972d5143bec58a8fae817726e2a645</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const BinaryFunctorsLvl2 &amp;</type>
       <name>get_psip</name>
       <anchorfile>structdg_1_1geo_1_1_tokamak_magnetic_field.html</anchorfile>
-      <anchor>a7a3ef90810326b03d9f2b64197f373ef</anchor>
-      <arglist>() const </arglist>
+      <anchor>af997c120fd405c750b488fbc558beb7d</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const BinaryFunctorsLvl1 &amp;</type>
       <name>get_ipol</name>
       <anchorfile>structdg_1_1geo_1_1_tokamak_magnetic_field.html</anchorfile>
-      <anchor>a61f491c62864f2e09e0a703e15483a0d</anchor>
-      <arglist>() const </arglist>
+      <anchor>ab1928bb257915a73b67e8f73da39f2ab</anchor>
+      <arglist>() const</arglist>
     </member>
   </compound>
   <compound kind="struct">

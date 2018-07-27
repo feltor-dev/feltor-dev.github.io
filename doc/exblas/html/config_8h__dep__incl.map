@@ -1,5 +1,5 @@
 <map id="config.h" name="config.h">
-<area shape="rect" id="node2" href="$accumulate_8cuh.html" title="The CUDA version of accumulate.h. " alt="" coords="36,80,151,107"/>
+<area shape="rect" id="node2" href="$accumulate_8cuh.html" title="The CUDA version of accumulate.h. " alt="" coords="67,80,181,107"/>
 <area shape="rect" id="node4" href="$accumulate_8h.html" title="Primitives for accumulation into superaccumulator. " alt="" coords="237,80,337,107"/>
 <area shape="rect" id="node3" href="$exdot__cuda_8cuh.html" title="CUDA version of exdot. " alt="" coords="5,155,120,181"/>
 <area shape="rect" id="node5" href="$exdot__omp_8h.html" title="OpenMP version of exdot. " alt="" coords="145,155,242,181"/>

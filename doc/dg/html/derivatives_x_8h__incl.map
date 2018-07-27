@@ -1,30 +1,30 @@
 <map id="geometry/derivativesX.h" name="geometry/derivativesX.h">
-<area shape="rect" id="node2" href="$grid_x_8h.html" title="base X&#45;point topology classes " alt="" coords="280,259,343,285"/>
-<area shape="rect" id="node16" href="$dx_x_8h.html" title="Simple 1d derivatives on X&#45;point topology. " alt="" coords="461,95,517,121"/>
-<area shape="rect" id="node18" href="$sparseblockmat_8h.html" title="dg/backend/sparseblockmat.h" alt="" coords="700,341,896,367"/>
-<area shape="rect" id="node21" href="$tensor__traits_8h.html" title="tensor_traits.h" alt="" coords="1652,423,1757,449"/>
-<area shape="rect" id="node24" href="$scalar__categories_8h.html" title="scalar_categories.h" alt="" coords="2037,497,2172,524"/>
-<area shape="rect" id="node26" href="$matrix__categories_8h.html" title="matrix_categories.h" alt="" coords="2037,647,2173,673"/>
-<area shape="rect" id="node32" href="$blas_8h.html" title="../blas.h" alt="" coords="1763,95,1833,121"/>
-<area shape="rect" id="node44" href="$sparseblockmat_8cuh.html" title="sparseblockmat.cuh" alt="" coords="937,259,1075,285"/>
+<area shape="rect" id="node2" href="$grid_x_8h.html" title="base X&#45;point topology classes " alt="" coords="281,259,344,285"/>
+<area shape="rect" id="node16" href="$dx_x_8h.html" title="Simple 1d derivatives on X&#45;point topology. " alt="" coords="462,95,518,121"/>
+<area shape="rect" id="node18" href="$sparseblockmat_8h.html" title="dg/backend/sparseblockmat.h" alt="" coords="701,341,897,367"/>
+<area shape="rect" id="node21" href="$tensor__traits_8h.html" title="tensor_traits.h" alt="" coords="1653,423,1759,449"/>
+<area shape="rect" id="node24" href="$scalar__categories_8h.html" title="scalar_categories.h" alt="" coords="2039,497,2173,524"/>
+<area shape="rect" id="node26" href="$matrix__categories_8h.html" title="matrix_categories.h" alt="" coords="2038,647,2174,673"/>
+<area shape="rect" id="node32" href="$blas_8h.html" title="../blas.h" alt="" coords="1706,95,1775,121"/>
+<area shape="rect" id="node44" href="$sparseblockmat_8cuh.html" title="sparseblockmat.cuh" alt="" coords="938,259,1077,285"/>
 <area shape="rect" id="node5" href="$dlt_8h.html" title="contains the discrete legendre trafo class " alt="" coords="188,423,235,449"/>
-<area shape="rect" id="node11" href="$grid_8h.html" title="base topology classes " alt="" coords="364,341,419,367"/>
+<area shape="rect" id="node11" href="$grid_8h.html" title="base topology classes " alt="" coords="365,341,420,367"/>
 <area shape="rect" id="node14" href="$enums_8h.html" title="enums " alt="" coords="80,423,164,449"/>
 <area shape="rect" id="node10" href="$exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="84,497,251,524"/>
 <area shape="rect" id="node13" href="$topological__traits_8h.html" title="topological_traits.h" alt="" coords="259,423,390,449"/>
-<area shape="rect" id="node17" href="$dx_8h.html" title="Simple 1d derivatives. " alt="" coords="511,184,557,211"/>
-<area shape="rect" id="node31" href="$weights_x_8h.html" title="contains creation functions for integration weights and their inverse on X&#45;point topology ..." alt="" coords="400,184,487,211"/>
-<area shape="rect" id="node28" href="$functions_8h.html" title="contains some utility functions for the evaluation() routines " alt="" coords="623,259,709,285"/>
-<area shape="rect" id="node29" href="$operator_8h.html" title="operator.h" alt="" coords="545,341,625,367"/>
-<area shape="rect" id="node30" href="$weights_8h.html" title="contains creation functions for integration weights and their inverse " alt="" coords="367,259,445,285"/>
-<area shape="rect" id="node19" href="/home/matthias/Projekte/feltor/doc/exblas.tag$config_8h.html" title="exblas/config.h" alt="" coords="901,423,1012,449"/>
-<area shape="rect" id="node25" href="$vector__categories_8h.html" title="vector_categories.h" alt="" coords="1627,572,1763,599"/>
-<area shape="rect" id="node27" href="$execution__policy_8h.html" title="execution_policy.h" alt="" coords="1639,497,1770,524"/>
-<area shape="rect" id="node33" href="$blas1_8h.html" title="blas1.h" alt="" coords="1851,259,1915,285"/>
-<area shape="rect" id="node42" href="$blas2_8h.html" title="blas2.h" alt="" coords="1562,259,1626,285"/>
-<area shape="rect" id="node43" href="$typedefs_8h.html" title="Useful typedefs of commonly used types. " alt="" coords="1045,184,1181,211"/>
-<area shape="rect" id="node35" href="$tensor__traits__scalar_8h.html" title="backend/tensor_traits\l_scalar.h" alt="" coords="2439,333,2586,375"/>
-<area shape="rect" id="node36" href="$tensor__traits__thrust_8h.html" title="backend/tensor_traits\l_thrust.h" alt="" coords="1239,333,1386,375"/>
-<area shape="rect" id="node38" href="$tensor__traits__cusp_8h.html" title="backend/tensor_traits\l_cusp.h" alt="" coords="1631,333,1778,375"/>
-<area shape="rect" id="node39" href="$tensor__traits__std_8h.html" title="backend/tensor_traits\l_std.h" alt="" coords="1410,333,1557,375"/>
+<area shape="rect" id="node17" href="$dx_8h.html" title="Simple 1d derivatives. " alt="" coords="512,184,559,211"/>
+<area shape="rect" id="node31" href="$weights_x_8h.html" title="contains creation functions for integration weights and their inverse on X&#45;point topology ..." alt="" coords="401,184,488,211"/>
+<area shape="rect" id="node28" href="$functions_8h.html" title="contains some utility functions for the evaluation() routines " alt="" coords="624,259,711,285"/>
+<area shape="rect" id="node29" href="$operator_8h.html" title="operator.h" alt="" coords="546,341,626,367"/>
+<area shape="rect" id="node30" href="$weights_8h.html" title="contains creation functions for integration weights and their inverse " alt="" coords="368,259,447,285"/>
+<area shape="rect" id="node19" href="/home/markus/Documents/Phd/MyFeltor/doc/exblas.tag$config_8h.html" title="exblas/config.h" alt="" coords="903,423,1013,449"/>
+<area shape="rect" id="node25" href="$vector__categories_8h.html" title="vector_categories.h" alt="" coords="1629,572,1765,599"/>
+<area shape="rect" id="node27" href="$execution__policy_8h.html" title="execution_policy.h" alt="" coords="1641,497,1771,524"/>
+<area shape="rect" id="node33" href="$blas1_8h.html" title="blas1.h" alt="" coords="1853,259,1917,285"/>
+<area shape="rect" id="node42" href="$blas2_8h.html" title="blas2.h" alt="" coords="1563,259,1627,285"/>
+<area shape="rect" id="node43" href="$typedefs_8h.html" title="Useful typedefs of commonly used types. " alt="" coords="1046,184,1182,211"/>
+<area shape="rect" id="node35" href="$tensor__traits__scalar_8h.html" title="backend/tensor_traits\l_scalar.h" alt="" coords="2441,333,2587,375"/>
+<area shape="rect" id="node36" href="$tensor__traits__thrust_8h.html" title="backend/tensor_traits\l_thrust.h" alt="" coords="1241,333,1387,375"/>
+<area shape="rect" id="node38" href="$tensor__traits__cusp_8h.html" title="backend/tensor_traits\l_cusp.h" alt="" coords="1633,333,1779,375"/>
+<area shape="rect" id="node39" href="$tensor__traits__std_8h.html" title="backend/tensor_traits\l_std.h" alt="" coords="1411,333,1558,375"/>
 </map>

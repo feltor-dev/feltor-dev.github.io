@@ -14,7 +14,7 @@ var blas1_8h =
     [ "pointwiseDot", "blas1_8h.html#gad8bde5930a50e3cf58af5c19f765ac8e", null ],
     [ "pointwiseDot", "blas1_8h.html#ga12ce2a470cebd649636725f30d88bf97", null ],
     [ "scal", "blas1_8h.html#gaa761a1672f82cf652ecb9382c9ebe525", null ],
-    [ "subroutine", "blas1_8h.html#ga82b19cc8b392f69ff4511339d9b763fd", null ],
+    [ "subroutine", "blas1_8h.html#ga7386b5cb0144d5364b8ea8c8ce1482a5", null ],
     [ "transfer", "blas1_8h.html#gae0aacd4fe731c16a9483140026c4dcc6", null ],
     [ "transfer", "blas1_8h.html#gae882fddb3f617cec92641812788168b5", null ],
     [ "transfer", "blas1_8h.html#gac2978c014dfeacf26bd2f01d5573a2c8", null ],

@@ -1,7 +1,7 @@
 <map id="cg.h" name="cg.h">
-<area shape="rect" id="node3" href="$blas_8h.html" title="blas.h" alt="" coords="2967,80,3025,107"/>
+<area shape="rect" id="node3" href="$blas_8h.html" title="blas.h" alt="" coords="3095,80,3153,107"/>
 <area shape="rect" id="node42" href="$functors_8h.html" title="functors.h" alt="" coords="3981,155,4061,181"/>
-<area shape="rect" id="node4" href="$blas1_8h.html" title="blas1.h" alt="" coords="2529,237,2593,263"/>
+<area shape="rect" id="node4" href="$blas1_8h.html" title="blas1.h" alt="" coords="2528,237,2592,263"/>
 <area shape="rect" id="node30" href="$blas2_8h.html" title="blas2.h" alt="" coords="1136,237,1200,263"/>
 <area shape="rect" id="node38" href="$typedefs_8h.html" title="Useful typedefs of commonly used types. " alt="" coords="3108,155,3244,181"/>
 <area shape="rect" id="node6" href="$tensor__traits_8h.html" title="backend/tensor_traits.h" alt="" coords="1867,408,2026,435"/>
@@ -15,13 +15,13 @@
 <area shape="rect" id="node10" href="$vector__categories_8h.html" title="vector_categories.h" alt="" coords="1592,557,1728,584"/>
 <area shape="rect" id="node11" href="$matrix__categories_8h.html" title="matrix_categories.h" alt="" coords="1592,632,1728,659"/>
 <area shape="rect" id="node12" href="$execution__policy_8h.html" title="execution_policy.h" alt="" coords="2049,483,2180,509"/>
-<area shape="rect" id="node28" href="$functions_8h.html" title="contains some utility functions for the evaluation() routines " alt="" coords="3728,408,3891,435"/>
+<area shape="rect" id="node28" href="$functions_8h.html" title="contains some utility functions for the evaluation() routines " alt="" coords="3724,408,3887,435"/>
 <area shape="rect" id="node39" href="$sparseblockmat_8h.html" title="sparseblockmat.h" alt="" coords="3341,326,3467,353"/>
 <area shape="rect" id="node40" href="$sparseblockmat_8cuh.html" title="sparseblockmat.cuh" alt="" coords="3249,237,3388,263"/>
 <area shape="rect" id="node41" href="$mpi__matrix_8h.html" title="MPI matrix classes. " alt="" coords="3127,237,3225,263"/>
-<area shape="rect" id="node46" href="$grid_8h.html" title="base topology classes " alt="" coords="3964,326,4076,353"/>
+<area shape="rect" id="node46" href="$grid_8h.html" title="base topology classes " alt="" coords="3941,326,4053,353"/>
 <area shape="rect" id="node50" href="$evaluation_8h.html" title="Function discretization routines. " alt="" coords="3542,237,3693,263"/>
-<area shape="rect" id="node47" href="$topological__traits_8h.html" title="topological_traits.h" alt="" coords="4095,408,4225,435"/>
-<area shape="rect" id="node48" href="$dlt_8h.html" title="contains the discrete legendre trafo class " alt="" coords="4023,408,4070,435"/>
-<area shape="rect" id="node49" href="$enums_8h.html" title="enums " alt="" coords="3915,408,3999,435"/>
+<area shape="rect" id="node47" href="$topological__traits_8h.html" title="topological_traits.h" alt="" coords="4091,408,4221,435"/>
+<area shape="rect" id="node48" href="$dlt_8h.html" title="contains the discrete legendre trafo class " alt="" coords="4019,408,4066,435"/>
+<area shape="rect" id="node49" href="$enums_8h.html" title="enums " alt="" coords="3911,408,3995,435"/>
 </map>

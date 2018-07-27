@@ -225,8 +225,8 @@ var hierarchy =
     [ "dg::geo::DS< ProductGeometry, IMatrix, Matrix, container >", "structdg_1_1geo_1_1_d_s.html", null ],
     [ "dg::geo::Fieldaligned< ProductGeometry, IMatrix, container >", "structdg_1_1geo_1_1_fieldaligned.html", null ],
     [ "dg::geo::FluxSurfaceAverage< container >", "structdg_1_1geo_1_1_flux_surface_average.html", null ],
-    [ "dg::geo::guenther::Parameters", "structdg_1_1geo_1_1guenther_1_1_parameters.html", null ],
     [ "dg::geo::solovev::Parameters", "structdg_1_1geo_1_1solovev_1_1_parameters.html", null ],
+    [ "dg::geo::guenther::Parameters", "structdg_1_1geo_1_1guenther_1_1_parameters.html", null ],
     [ "dg::geo::SafetyFactor< container >", "structdg_1_1geo_1_1_safety_factor.html", null ],
     [ "dg::geo::TokamakMagneticField", "structdg_1_1geo_1_1_tokamak_magnetic_field.html", null ]
 ];

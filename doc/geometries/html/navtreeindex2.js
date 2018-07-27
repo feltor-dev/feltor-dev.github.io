@@ -1,6 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"structdg_1_1geo_1_1circular_1_1_psip.html#ae959371d510a5f7358a6b0143da3e3e2":[0,2,0,4,0,0],
 "structdg_1_1geo_1_1circular_1_1_psip_r.html":[0,2,0,4,1],
 "structdg_1_1geo_1_1circular_1_1_psip_r.html#a1968053a1c6da4b94fe12fc5812e4d90":[0,2,0,4,1,0],
 "structdg_1_1geo_1_1circular_1_1_psip_z.html":[0,2,0,4,2],
@@ -12,7 +11,6 @@ var NAVTREEINDEX2 =
 "structdg_1_1geo_1_1guenther_1_1_ipol_z.html#a34513f1d4866b5dc8a8ca4c9a8fd62af":[0,2,0,2,8,0],
 "structdg_1_1geo_1_1guenther_1_1_parameters.html":[0,2,0,5],
 "structdg_1_1geo_1_1guenther_1_1_parameters.html#a11a546030144b036405db8a00b392630":[0,2,0,5,12],
-"structdg_1_1geo_1_1guenther_1_1_parameters.html#a37cc4b33a5682d8e4d9e1895c08e9798":[0,2,0,5,0],
 "structdg_1_1geo_1_1guenther_1_1_parameters.html#a55429011a0123a6d37aab26a0ec90e51":[0,2,0,5,4],
 "structdg_1_1geo_1_1guenther_1_1_parameters.html#a664699a44e8c1eb8198987a84e5711ed":[0,2,0,5,1],
 "structdg_1_1geo_1_1guenther_1_1_parameters.html#a884f948aa5339811bfaf2bb36f61c038":[0,2,0,5,2],
@@ -24,6 +22,7 @@ var NAVTREEINDEX2 =
 "structdg_1_1geo_1_1guenther_1_1_parameters.html#ad457d26dd09ac5773071f69c624826a2":[0,2,0,5,11],
 "structdg_1_1geo_1_1guenther_1_1_parameters.html#af4662cf88733d884d8896ab10739501e":[0,2,0,5,6],
 "structdg_1_1geo_1_1guenther_1_1_parameters.html#afcbf1738c0dfb6bf1b9a4573d0440468":[0,2,0,5,8],
+"structdg_1_1geo_1_1guenther_1_1_parameters.html#afe26a01fda1653e194ebc7cb017139f5":[0,2,0,5,0],
 "structdg_1_1geo_1_1guenther_1_1_psip.html":[0,2,0,2,0],
 "structdg_1_1geo_1_1guenther_1_1_psip.html#a47d0b956b1fd79a4e5dca1f982492f79":[0,2,0,2,0,0],
 "structdg_1_1geo_1_1guenther_1_1_psip_r.html":[0,2,0,2,1],
@@ -56,8 +55,8 @@ var NAVTREEINDEX2 =
 "structdg_1_1geo_1_1solovev_1_1_parameters.html#a88671d55077cc955eea851bc5187d567":[0,2,0,6,3],
 "structdg_1_1geo_1_1solovev_1_1_parameters.html#a89422d534203ddd0c2789e8ea69fb501":[0,2,0,6,4],
 "structdg_1_1geo_1_1solovev_1_1_parameters.html#ab439f555651431b5331a196441563fa3":[0,2,0,6,5],
-"structdg_1_1geo_1_1solovev_1_1_parameters.html#ad9ebd66cb1e15d35201b4c98f4f81986":[0,2,0,6,0],
 "structdg_1_1geo_1_1solovev_1_1_parameters.html#af3fa29ba6451fb6334ac7f268f271025":[0,2,0,6,14],
+"structdg_1_1geo_1_1solovev_1_1_parameters.html#afe2b2a26ae9434ab6909789d813b7cd4":[0,2,0,6,0],
 "structdg_1_1geo_1_1solovev_1_1_psip.html":[0,2,0,0,0],
 "structdg_1_1geo_1_1solovev_1_1_psip.html#ac03bbd27cfa3c3bb9915be065727ec8a":[0,2,0,0,0,0],
 "structdg_1_1geo_1_1solovev_1_1_psip_r.html":[0,2,0,0,1],

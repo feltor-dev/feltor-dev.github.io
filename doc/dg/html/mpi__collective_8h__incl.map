@@ -1,11 +1,11 @@
 <map id="backend/mpi_collective.h" name="backend/mpi_collective.h">
-<area shape="rect" id="node35" href="$blas1_8h.html" title="dg/blas1.h" alt="" coords="1448,95,1531,121"/>
-<area shape="rect" id="node45" href="$mpi__communicator_8h.html" title="mpi_communicator.h" alt="" coords="1767,288,1910,315"/>
-<area shape="rect" id="node47" href="$memory_8h.html" title="memory.h" alt="" coords="1995,288,2075,315"/>
-<area shape="rect" id="node37" href="$tensor__traits__scalar_8h.html" title="backend/tensor_traits\l_scalar.h" alt="" coords="2173,184,2320,225"/>
-<area shape="rect" id="node38" href="$tensor__traits__thrust_8h.html" title="backend/tensor_traits\l_thrust.h" alt="" coords="1416,184,1563,225"/>
-<area shape="rect" id="node39" href="$tensor__traits__cusp_8h.html" title="backend/tensor_traits\l_cusp.h" alt="" coords="299,184,445,225"/>
-<area shape="rect" id="node41" href="$tensor__traits__std_8h.html" title="backend/tensor_traits\l_std.h" alt="" coords="933,184,1080,225"/>
-<area shape="rect" id="node44" href="$mpi__vector_8h.html" title="backend/mpi_vector.h" alt="" coords="758,191,909,218"/>
-<area shape="rect" id="node50" href="$subroutines_8h.html" title="subroutines.h" alt="" coords="1291,191,1391,218"/>
+<area shape="rect" id="node35" href="$blas1_8h.html" title="dg/blas1.h" alt="" coords="1456,95,1539,121"/>
+<area shape="rect" id="node45" href="$mpi__communicator_8h.html" title="mpi_communicator.h" alt="" coords="1787,288,1930,315"/>
+<area shape="rect" id="node47" href="$memory_8h.html" title="memory.h" alt="" coords="2000,288,2080,315"/>
+<area shape="rect" id="node37" href="$tensor__traits__scalar_8h.html" title="backend/tensor_traits\l_scalar.h" alt="" coords="2181,184,2328,225"/>
+<area shape="rect" id="node38" href="$tensor__traits__thrust_8h.html" title="backend/tensor_traits\l_thrust.h" alt="" coords="1424,184,1571,225"/>
+<area shape="rect" id="node39" href="$tensor__traits__cusp_8h.html" title="backend/tensor_traits\l_cusp.h" alt="" coords="307,184,453,225"/>
+<area shape="rect" id="node41" href="$tensor__traits__std_8h.html" title="backend/tensor_traits\l_std.h" alt="" coords="941,184,1088,225"/>
+<area shape="rect" id="node44" href="$mpi__vector_8h.html" title="backend/mpi_vector.h" alt="" coords="766,191,917,218"/>
+<area shape="rect" id="node50" href="$subroutines_8h.html" title="subroutines.h" alt="" coords="1299,191,1399,218"/>
 </map>

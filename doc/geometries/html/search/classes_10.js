@@ -13,6 +13,7 @@ var searchData=
   ['sinx',['SinX',['../../../dg/html/structdg_1_1_sin_x.html',1,'dg']]],
   ['sinxcosy',['SinXCosY',['../../../dg/html/structdg_1_1_sin_x_cos_y.html',1,'dg']]],
   ['sinxsiny',['SinXSinY',['../../../dg/html/structdg_1_1_sin_x_sin_y.html',1,'dg']]],
+  ['siny',['SinY',['../../../dg/html/structdg_1_1_sin_y.html',1,'dg']]],
   ['sirk',['SIRK',['../../../dg/html/structdg_1_1_s_i_r_k.html',1,'dg']]],
   ['sparseblockmatrixtag',['SparseBlockMatrixTag',['../../../dg/html/structdg_1_1_sparse_block_matrix_tag.html',1,'dg']]],
   ['sparseelement',['SparseElement',['../../../dg/html/structdg_1_1_sparse_element.html',1,'dg']]],

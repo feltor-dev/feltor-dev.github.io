@@ -4,13 +4,13 @@ var structdg_1_1_nearest_neighbor_comm =
     [ "NearestNeighborComm", "structdg_1_1_nearest_neighbor_comm.html#a5ec314af366d32c870272005b8f38b3e", null ],
     [ "NearestNeighborComm", "structdg_1_1_nearest_neighbor_comm.html#a7f5be505eeed3a9cc72497c05e5cfc66", null ],
     [ "NearestNeighborComm", "structdg_1_1_nearest_neighbor_comm.html#a29afb9b75b076d8e3ac1d86bd5a460d4", null ],
-    [ "allocate_buffer", "structdg_1_1_nearest_neighbor_comm.html#aae69e2a327d3122556ae9bd1a1303773", null ],
-    [ "communicator", "structdg_1_1_nearest_neighbor_comm.html#af66764f2258a99dc8362548dde0bd2b8", null ],
-    [ "dims", "structdg_1_1_nearest_neighbor_comm.html#acd1cd432552d61acf86aa51cc9e546ad", null ],
-    [ "direction", "structdg_1_1_nearest_neighbor_comm.html#a226ab76e492769018e66e33a2076848a", null ],
-    [ "global_gather_init", "structdg_1_1_nearest_neighbor_comm.html#a43d126d48f5c0a82879cbee41207d625", null ],
-    [ "global_gather_wait", "structdg_1_1_nearest_neighbor_comm.html#ae16ef23a47310459714352db7752a785", null ],
-    [ "isCommunicating", "structdg_1_1_nearest_neighbor_comm.html#a2102fcfc69f5e35a0d4e0343b2fc51cc", null ],
-    [ "n", "structdg_1_1_nearest_neighbor_comm.html#a316962ff56b6f953c834219c6b9930fb", null ],
-    [ "size", "structdg_1_1_nearest_neighbor_comm.html#a6898867636891d3a989f64871add05a1", null ]
+    [ "allocate_buffer", "structdg_1_1_nearest_neighbor_comm.html#a3cd69e716a868b91de5dffc277426900", null ],
+    [ "communicator", "structdg_1_1_nearest_neighbor_comm.html#ac12e6edc549b18c0ec7cd05c37d0dd3a", null ],
+    [ "dims", "structdg_1_1_nearest_neighbor_comm.html#a5967be11066e10620c3ca6dd465d91aa", null ],
+    [ "direction", "structdg_1_1_nearest_neighbor_comm.html#a9d1bc68aac6220625cc15c2397667443", null ],
+    [ "global_gather_init", "structdg_1_1_nearest_neighbor_comm.html#a26bea27b79d0bdc0c71c895a5fa22e99", null ],
+    [ "global_gather_wait", "structdg_1_1_nearest_neighbor_comm.html#a66f64b0af913ee2c8a391c12d1728f34", null ],
+    [ "isCommunicating", "structdg_1_1_nearest_neighbor_comm.html#afda315212392b66d40083c09e73eb307", null ],
+    [ "n", "structdg_1_1_nearest_neighbor_comm.html#ae6eb00dcdff96804b314cfe88bc46229", null ],
+    [ "size", "structdg_1_1_nearest_neighbor_comm.html#ab86ede45dfe0b3a52347c54bf9254b78", null ]
 ];

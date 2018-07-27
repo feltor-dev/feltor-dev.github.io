@@ -1,5 +1,4 @@
 <map id="geometry/mpi_projection.h" name="geometry/mpi_projection.h">
 <area shape="rect" id="node2" href="$multigrid_8h.html" title="multigrid.h" alt="" coords="5,80,88,107"/>
-<area shape="rect" id="node4" href="$refined__elliptic_8h.html" title="contains an elliptic method on a refined grid " alt="" coords="113,80,229,107"/>
-<area shape="rect" id="node3" href="$algorithm_8h.html" title="algorithm.h" alt="" coords="65,155,151,181"/>
+<area shape="rect" id="node3" href="$refined__elliptic_8h.html" title="contains an elliptic method on a refined grid " alt="" coords="113,80,229,107"/>
 </map>

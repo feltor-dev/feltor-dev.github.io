@@ -5,6 +5,11 @@ permalink: /publications/
 classes: wide
 ---
 
+2018
+----
+* M. Held, M. Wiesenberger, R. Kube, A. Kendl   [Non-Oberbeck–Boussinesq zonal flow generation](https://doi.org/10.1088/1741-4326/aad28e)  Nuclear Fusion 58, 104001 (2018)
+* M. Wiesenberger, M. Held, L. Einkemmer, A. Kendl [Streamline integration as a method for structured grid generation in X-point geometry](https://doi.org/10.1016/j.jcp.2018.07.007)  Journal of Computational Physics 373, 370-384 (2018)
+
 2017
 ----
 * M. Wiesenberger, M. Held, R. Kube, O.E. Garcia   [Unified transport scaling laws for plasma blobs and depletions](https://doi.org/10.1063/1.4985318)  Physics of Plasmas 24, 064502 (2017)

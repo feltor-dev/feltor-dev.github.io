@@ -1,9 +1,9 @@
 <map id="geometry/evaluationX.h" name="geometry/evaluationX.h">
-<area shape="rect" id="node2" href="$grid_x_8h.html" title="base X&#45;point topology classes " alt="" coords="443,80,506,107"/>
-<area shape="rect" id="node18" href="$evaluation_8h.html" title="Function discretization routines. " alt="" coords="603,80,695,107"/>
+<area shape="rect" id="node2" href="$grid_x_8h.html" title="base X&#45;point topology classes " alt="" coords="446,80,509,107"/>
+<area shape="rect" id="node18" href="$evaluation_8h.html" title="Function discretization routines. " alt="" coords="605,80,697,107"/>
 <area shape="rect" id="node5" href="$dlt_8h.html" title="contains the discrete legendre trafo class " alt="" coords="257,229,303,256"/>
-<area shape="rect" id="node13" href="$grid_8h.html" title="base topology classes " alt="" coords="481,155,535,181"/>
-<area shape="rect" id="node16" href="$enums_8h.html" title="enums " alt="" coords="350,229,434,256"/>
-<area shape="rect" id="node10" href="$exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="333,304,499,331"/>
-<area shape="rect" id="node15" href="$topological__traits_8h.html" title="topological_traits.h" alt="" coords="547,229,677,256"/>
+<area shape="rect" id="node13" href="$grid_8h.html" title="base topology classes " alt="" coords="482,155,537,181"/>
+<area shape="rect" id="node16" href="$enums_8h.html" title="enums " alt="" coords="351,229,435,256"/>
+<area shape="rect" id="node10" href="$exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="334,304,501,331"/>
+<area shape="rect" id="node15" href="$topological__traits_8h.html" title="topological_traits.h" alt="" coords="549,229,680,256"/>
 </map>

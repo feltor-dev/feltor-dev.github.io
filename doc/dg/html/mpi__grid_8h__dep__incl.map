@@ -1,18 +1,18 @@
 <map id="geometry/mpi_grid.h" name="geometry/mpi_grid.h">
-<area shape="rect" id="node2" href="$average__mpi_8h.html" title="contains classes for poloidal and toroidal average computations. " alt="" coords="24,155,190,181"/>
-<area shape="rect" id="node4" href="$mpi__weights_8h.html" title="contains MPI weights " alt="" coords="25,80,189,107"/>
-<area shape="rect" id="node11" href="$fast__interpolation_8h.html" title="contains a matrix type for fast interpolations/projections " alt="" coords="837,80,1028,107"/>
-<area shape="rect" id="node13" href="$mpi__evaluation_8h.html" title="Function discretization routines for mpi vectors. " alt="" coords="384,80,563,107"/>
-<area shape="rect" id="node14" href="$mpi__base_8h.html" title="geometry/mpi_base.h" alt="" coords="214,80,360,107"/>
-<area shape="rect" id="node15" href="$mpi__derivatives_8h.html" title="geometry/mpi_derivatives.h" alt="" coords="497,155,680,181"/>
-<area shape="rect" id="node16" href="$mpi__projection_8h.html" title="Useful MPI typedefs and overloads of interpolation and projection. " alt="" coords="638,80,813,107"/>
-<area shape="rect" id="node17" href="$split__and__join_8h.html" title="geometry/split_and\l_join.h" alt="" coords="941,304,1073,345"/>
-<area shape="rect" id="node3" href="$algorithm_8h.html" title="algorithm.h" alt="" coords="509,393,596,420"/>
-<area shape="rect" id="node5" href="$geometry_8h.html" title="geometry/geometry.h" alt="" coords="225,155,370,181"/>
-<area shape="rect" id="node6" href="$elliptic_8h.html" title="General negative elliptic operators. " alt="" coords="584,229,654,256"/>
-<area shape="rect" id="node9" href="$arakawa_8h.html" title="object for computation of Poisson bracket " alt="" coords="359,229,442,256"/>
-<area shape="rect" id="node10" href="$poisson_8h.html" title="poisson.h" alt="" coords="466,229,545,256"/>
-<area shape="rect" id="node7" href="$helmholtz_8h.html" title="contains Helmholtz and Maxwell operators " alt="" coords="508,311,597,338"/>
-<area shape="rect" id="node8" href="$refined__elliptic_8h.html" title="contains an elliptic method on a refined grid " alt="" coords="673,311,789,338"/>
-<area shape="rect" id="node12" href="$multigrid_8h.html" title="multigrid.h" alt="" coords="806,155,888,181"/>
+<area shape="rect" id="node2" href="$average__mpi_8h.html" title="contains classes for poloidal and toroidal average computations. " alt="" coords="5,155,171,181"/>
+<area shape="rect" id="node3" href="$mpi__weights_8h.html" title="contains MPI weights " alt="" coords="66,80,230,107"/>
+<area shape="rect" id="node11" href="$fast__interpolation_8h.html" title="contains a matrix type for fast interpolations/projections " alt="" coords="878,80,1069,107"/>
+<area shape="rect" id="node13" href="$mpi__evaluation_8h.html" title="Function discretization routines for mpi vectors. " alt="" coords="425,80,604,107"/>
+<area shape="rect" id="node14" href="$mpi__base_8h.html" title="geometry/mpi_base.h" alt="" coords="255,80,401,107"/>
+<area shape="rect" id="node15" href="$mpi__derivatives_8h.html" title="geometry/mpi_derivatives.h" alt="" coords="550,155,733,181"/>
+<area shape="rect" id="node16" href="$mpi__projection_8h.html" title="Useful MPI typedefs and overloads of interpolation and projection. " alt="" coords="679,80,854,107"/>
+<area shape="rect" id="node17" href="$split__and__join_8h.html" title="geometry/split_and\l_join.h" alt="" coords="942,304,1074,345"/>
+<area shape="rect" id="node4" href="$geometry_8h.html" title="geometry/geometry.h" alt="" coords="278,155,423,181"/>
+<area shape="rect" id="node5" href="$algorithm_8h.html" title="algorithm.h" alt="" coords="506,393,593,420"/>
+<area shape="rect" id="node6" href="$elliptic_8h.html" title="General negative elliptic operators. " alt="" coords="514,229,585,256"/>
+<area shape="rect" id="node9" href="$arakawa_8h.html" title="object for computation of Poisson bracket " alt="" coords="609,229,692,256"/>
+<area shape="rect" id="node10" href="$poisson_8h.html" title="poisson.h" alt="" coords="411,229,490,256"/>
+<area shape="rect" id="node7" href="$helmholtz_8h.html" title="contains Helmholtz and Maxwell operators " alt="" coords="505,311,594,338"/>
+<area shape="rect" id="node8" href="$refined__elliptic_8h.html" title="contains an elliptic method on a refined grid " alt="" coords="695,311,811,338"/>
+<area shape="rect" id="node12" href="$multigrid_8h.html" title="multigrid.h" alt="" coords="896,155,979,181"/>
 </map>

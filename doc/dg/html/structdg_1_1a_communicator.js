@@ -4,13 +4,13 @@ var structdg_1_1a_communicator =
     [ "~aCommunicator", "structdg_1_1a_communicator.html#a94374e74e4a9a7857f65de3a5e64ba37", null ],
     [ "aCommunicator", "structdg_1_1a_communicator.html#a8036365511d408756d78e6aebeb3fe06", null ],
     [ "aCommunicator", "structdg_1_1a_communicator.html#a2861411ab00b8988436cf0259edbbc1b", null ],
-    [ "allocate_buffer", "structdg_1_1a_communicator.html#a0965cd94be50771a5812ab439f2b8f2f", null ],
+    [ "allocate_buffer", "structdg_1_1a_communicator.html#a9a29bf560157c2d0a81d4ce96b1a0634", null ],
     [ "clone", "structdg_1_1a_communicator.html#a08f287b55eb703e29f9f17fc128205ef", null ],
-    [ "communicator", "structdg_1_1a_communicator.html#a41da8afb78e38ddddec3eadc194dd9d7", null ],
-    [ "global_gather", "structdg_1_1a_communicator.html#aa94021c958a97fca82dde1d224c59df1", null ],
-    [ "global_gather", "structdg_1_1a_communicator.html#a52871b1c7c450b255b12fe700a86f51e", null ],
-    [ "global_scatter_reduce", "structdg_1_1a_communicator.html#aeb571e042270fece67c4f0edabb42ab0", null ],
-    [ "isCommunicating", "structdg_1_1a_communicator.html#a686946aff2fac59c4dafedd100465cb3", null ],
+    [ "communicator", "structdg_1_1a_communicator.html#acc738661d96a4d926541c14fd28723c6", null ],
+    [ "global_gather", "structdg_1_1a_communicator.html#ab47cff828dccf9cca061ea32fe40189e", null ],
+    [ "global_gather", "structdg_1_1a_communicator.html#a791dc0d9309f38350d8cfefbed86bee9", null ],
+    [ "global_scatter_reduce", "structdg_1_1a_communicator.html#add6fe775b638b9ad86a7a6e692473434", null ],
+    [ "isCommunicating", "structdg_1_1a_communicator.html#ab6da46a52184be235645f0194f22cdd2", null ],
     [ "operator=", "structdg_1_1a_communicator.html#ac3c1f30816b849bd1ee455ab174e1e3a", null ],
-    [ "size", "structdg_1_1a_communicator.html#a150f4e8ea586d3278fa178641a98e5d4", null ]
+    [ "size", "structdg_1_1a_communicator.html#a0553786aac2eb96308ec386e22ff6f3a", null ]
 ];

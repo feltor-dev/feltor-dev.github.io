@@ -2,7 +2,7 @@
 <tagfile>
   <compound kind="file">
     <name>accumulate.cuh</name>
-    <path>/home/matthias/Projekte/feltor/inc/dg/backend/exblas/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/backend/exblas/</path>
     <filename>accumulate_8cuh</filename>
     <includes id="config_8h" name="config.h" local="yes" imported="no">config.h</includes>
     <namespace>exblas</namespace>
@@ -31,7 +31,7 @@
   </compound>
   <compound kind="file">
     <name>accumulate.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/dg/backend/exblas/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/backend/exblas/</path>
     <filename>accumulate_8h</filename>
     <includes id="config_8h" name="config.h" local="yes" imported="no">config.h</includes>
     <namespace>exblas</namespace>
@@ -60,7 +60,7 @@
   </compound>
   <compound kind="file">
     <name>config.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/dg/backend/exblas/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/backend/exblas/</path>
     <filename>config_8h</filename>
     <class kind="union">exblas::udouble</class>
     <namespace>exblas</namespace>
@@ -172,7 +172,7 @@
   </compound>
   <compound kind="file">
     <name>exdot_cuda.cuh</name>
-    <path>/home/matthias/Projekte/feltor/inc/dg/backend/exblas/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/backend/exblas/</path>
     <filename>exdot__cuda_8cuh</filename>
     <includes id="accumulate_8cuh" name="accumulate.cuh" local="yes" imported="no">accumulate.cuh</includes>
     <namespace>exblas</namespace>
@@ -193,7 +193,7 @@
   </compound>
   <compound kind="file">
     <name>exdot_omp.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/dg/backend/exblas/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/backend/exblas/</path>
     <filename>exdot__omp_8h</filename>
     <includes id="accumulate_8h" name="accumulate.h" local="yes" imported="no">accumulate.h</includes>
     <namespace>exblas</namespace>
@@ -214,7 +214,7 @@
   </compound>
   <compound kind="file">
     <name>exdot_serial.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/dg/backend/exblas/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/backend/exblas/</path>
     <filename>exdot__serial_8h</filename>
     <includes id="accumulate_8h" name="accumulate.h" local="yes" imported="no">accumulate.h</includes>
     <namespace>exblas</namespace>
@@ -235,7 +235,7 @@
   </compound>
   <compound kind="file">
     <name>mpi_accumulate.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/dg/backend/exblas/</path>
+    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/backend/exblas/</path>
     <filename>mpi__accumulate_8h</filename>
     <includes id="accumulate_8h" name="accumulate.h" local="yes" imported="no">accumulate.h</includes>
     <namespace>exblas</namespace>
