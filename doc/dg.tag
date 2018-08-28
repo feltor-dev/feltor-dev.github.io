@@ -2,7 +2,7 @@
 <tagfile>
   <compound kind="file">
     <name>algorithm.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/</path>
     <filename>algorithm_8h</filename>
     <includes id="timer_8h" name="timer.h" local="yes" imported="no">backend/timer.h</includes>
     <includes id="transpose_8h" name="transpose.h" local="yes" imported="no">backend/transpose.h</includes>
@@ -20,7 +20,7 @@
   </compound>
   <compound kind="file">
     <name>arakawa.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/</path>
     <filename>arakawa_8h</filename>
     <includes id="blas_8h" name="blas.h" local="yes" imported="no">blas.h</includes>
     <includes id="geometry_8h" name="geometry.h" local="yes" imported="no">geometry/geometry.h</includes>
@@ -34,7 +34,7 @@
   </compound>
   <compound kind="file">
     <name>exceptions.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/backend/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/backend/</path>
     <filename>exceptions_8h</filename>
     <class kind="class">dg::Message</class>
     <class kind="class">dg::Error</class>
@@ -50,7 +50,7 @@
   </compound>
   <compound kind="file">
     <name>execution_policy.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/backend/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/backend/</path>
     <filename>execution__policy_8h</filename>
     <class kind="struct">dg::AnyPolicyTag</class>
     <class kind="struct">dg::SerialTag</class>
@@ -60,7 +60,7 @@
   </compound>
   <compound kind="file">
     <name>matrix_categories.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/backend/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/backend/</path>
     <filename>matrix__categories_8h</filename>
     <class kind="struct">dg::AnyMatrixTag</class>
     <class kind="struct">dg::SelfMadeMatrixTag</class>
@@ -71,7 +71,7 @@
   </compound>
   <compound kind="file">
     <name>memory.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/backend/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/backend/</path>
     <filename>memory_8h</filename>
     <class kind="struct">dg::ClonePtr</class>
     <class kind="struct">dg::Buffer</class>
@@ -79,7 +79,7 @@
   </compound>
   <compound kind="file">
     <name>mpi_collective.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/backend/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/backend/</path>
     <filename>mpi__collective_8h</filename>
     <includes id="blas1_8h" name="blas1.h" local="yes" imported="no">dg/blas1.h</includes>
     <includes id="memory_8h" name="memory.h" local="yes" imported="no">memory.h</includes>
@@ -91,21 +91,21 @@
   </compound>
   <compound kind="file">
     <name>mpi_communicator.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/backend/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/backend/</path>
     <filename>mpi__communicator_8h</filename>
     <class kind="struct">dg::aCommunicator</class>
     <namespace>dg</namespace>
   </compound>
   <compound kind="file">
     <name>mpi_init.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/backend/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/backend/</path>
     <filename>mpi__init_8h</filename>
     <includes id="enums_8h" name="enums.h" local="yes" imported="no">../enums.h</includes>
     <namespace>dg</namespace>
   </compound>
   <compound kind="file">
     <name>mpi_matrix.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/backend/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/backend/</path>
     <filename>mpi__matrix_8h</filename>
     <includes id="mpi__vector_8h" name="mpi_vector.h" local="yes" imported="no">mpi_vector.h</includes>
     <includes id="memory_8h" name="memory.h" local="yes" imported="no">memory.h</includes>
@@ -136,7 +136,7 @@
   </compound>
   <compound kind="file">
     <name>mpi_vector.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/backend/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/backend/</path>
     <filename>mpi__vector_8h</filename>
     <includes id="tensor__traits_8h" name="tensor_traits.h" local="yes" imported="no">tensor_traits.h</includes>
     <includes id="mpi__communicator_8h" name="mpi_communicator.h" local="yes" imported="no">mpi_communicator.h</includes>
@@ -148,7 +148,7 @@
   </compound>
   <compound kind="file">
     <name>scalar_categories.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/backend/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/backend/</path>
     <filename>scalar__categories_8h</filename>
     <includes id="vector__categories_8h" name="vector_categories.h" local="yes" imported="no">vector_categories.h</includes>
     <class kind="struct">dg::AnyScalarTag</class>
@@ -157,7 +157,7 @@
   </compound>
   <compound kind="file">
     <name>sparseblockmat.cuh</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/backend/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/backend/</path>
     <filename>sparseblockmat_8cuh</filename>
     <includes id="sparseblockmat_8h" name="sparseblockmat.h" local="yes" imported="no">sparseblockmat.h</includes>
     <class kind="struct">dg::EllSparseBlockMatDevice</class>
@@ -168,7 +168,7 @@
   </compound>
   <compound kind="file">
     <name>sparseblockmat.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/backend/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/backend/</path>
     <filename>sparseblockmat_8h</filename>
     <includes id="exceptions_8h" name="exceptions.h" local="yes" imported="no">exceptions.h</includes>
     <includes id="tensor__traits_8h" name="tensor_traits.h" local="yes" imported="no">tensor_traits.h</includes>
@@ -180,7 +180,7 @@
   </compound>
   <compound kind="file">
     <name>tensor_traits.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/backend/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/backend/</path>
     <filename>tensor__traits_8h</filename>
     <includes id="scalar__categories_8h" name="scalar_categories.h" local="yes" imported="no">scalar_categories.h</includes>
     <includes id="vector__categories_8h" name="vector_categories.h" local="yes" imported="no">vector_categories.h</includes>
@@ -212,7 +212,7 @@
   </compound>
   <compound kind="file">
     <name>tensor_traits_cusp.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/backend/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/backend/</path>
     <filename>tensor__traits__cusp_8h</filename>
     <includes id="vector__categories_8h" name="vector_categories.h" local="yes" imported="no">vector_categories.h</includes>
     <includes id="matrix__categories_8h" name="matrix_categories.h" local="yes" imported="no">matrix_categories.h</includes>
@@ -228,7 +228,7 @@
   </compound>
   <compound kind="file">
     <name>tensor_traits_scalar.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/backend/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/backend/</path>
     <filename>tensor__traits__scalar_8h</filename>
     <includes id="scalar__categories_8h" name="scalar_categories.h" local="yes" imported="no">scalar_categories.h</includes>
     <includes id="tensor__traits_8h" name="tensor_traits.h" local="yes" imported="no">tensor_traits.h</includes>
@@ -237,7 +237,7 @@
   </compound>
   <compound kind="file">
     <name>tensor_traits_std.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/backend/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/backend/</path>
     <filename>tensor__traits__std_8h</filename>
     <includes id="vector__categories_8h" name="vector_categories.h" local="yes" imported="no">vector_categories.h</includes>
     <includes id="tensor__traits_8h" name="tensor_traits.h" local="yes" imported="no">tensor_traits.h</includes>
@@ -247,7 +247,7 @@
   </compound>
   <compound kind="file">
     <name>tensor_traits_thrust.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/backend/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/backend/</path>
     <filename>tensor__traits__thrust_8h</filename>
     <includes id="vector__categories_8h" name="vector_categories.h" local="yes" imported="no">vector_categories.h</includes>
     <includes id="tensor__traits_8h" name="tensor_traits.h" local="yes" imported="no">tensor_traits.h</includes>
@@ -257,14 +257,14 @@
   </compound>
   <compound kind="file">
     <name>timer.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/backend/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/backend/</path>
     <filename>timer_8h</filename>
     <class kind="class">dg::Timer</class>
     <namespace>dg</namespace>
   </compound>
   <compound kind="file">
     <name>transpose.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/backend/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/backend/</path>
     <filename>transpose_8h</filename>
     <namespace>dg</namespace>
     <member kind="function">
@@ -277,7 +277,7 @@
   </compound>
   <compound kind="file">
     <name>typedefs.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/backend/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/backend/</path>
     <filename>typedefs_8h</filename>
     <includes id="sparseblockmat_8h" name="sparseblockmat.h" local="yes" imported="no">sparseblockmat.h</includes>
     <includes id="sparseblockmat_8cuh" name="sparseblockmat.cuh" local="yes" imported="no">sparseblockmat.cuh</includes>
@@ -483,7 +483,7 @@
   </compound>
   <compound kind="file">
     <name>vector_categories.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/backend/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/backend/</path>
     <filename>vector__categories_8h</filename>
     <includes id="matrix__categories_8h" name="matrix_categories.h" local="yes" imported="no">matrix_categories.h</includes>
     <class kind="struct">dg::AnyVectorTag</class>
@@ -498,7 +498,7 @@
   </compound>
   <compound kind="file">
     <name>blas.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/</path>
     <filename>blas_8h</filename>
     <includes id="blas1_8h" name="blas1.h" local="yes" imported="no">blas1.h</includes>
     <includes id="blas2_8h" name="blas2.h" local="yes" imported="no">blas2.h</includes>
@@ -506,7 +506,7 @@
   </compound>
   <compound kind="file">
     <name>blas1.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/</path>
     <filename>blas1_8h</filename>
     <includes id="tensor__traits_8h" name="tensor_traits.h" local="yes" imported="no">backend/tensor_traits.h</includes>
     <includes id="tensor__traits__scalar_8h" name="tensor_traits_scalar.h" local="yes" imported="no">backend/tensor_traits_scalar.h</includes>
@@ -660,7 +660,7 @@
   </compound>
   <compound kind="file">
     <name>blas2.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/</path>
     <filename>blas2_8h</filename>
     <includes id="tensor__traits_8h" name="tensor_traits.h" local="yes" imported="no">backend/tensor_traits.h</includes>
     <includes id="tensor__traits__std_8h" name="tensor_traits_std.h" local="yes" imported="no">backend/tensor_traits_std.h</includes>
@@ -720,7 +720,7 @@
   </compound>
   <compound kind="file">
     <name>cg.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/</path>
     <filename>cg_8h</filename>
     <includes id="blas_8h" name="blas.h" local="yes" imported="no">blas.h</includes>
     <includes id="functors_8h" name="functors.h" local="yes" imported="no">functors.h</includes>
@@ -731,18 +731,18 @@
   </compound>
   <compound kind="file">
     <name>code_snippets.dox</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/</path>
     <filename>code__snippets_8dox</filename>
   </compound>
   <compound kind="file">
     <name>dg_doc.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/</path>
     <filename>dg__doc_8h</filename>
     <namespace>dg</namespace>
   </compound>
   <compound kind="file">
     <name>elliptic.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/</path>
     <filename>elliptic_8h</filename>
     <includes id="blas_8h" name="blas.h" local="yes" imported="no">blas.h</includes>
     <includes id="enums_8h" name="enums.h" local="yes" imported="no">enums.h</includes>
@@ -760,7 +760,7 @@
   </compound>
   <compound kind="file">
     <name>enums.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/</path>
     <filename>enums_8h</filename>
     <includes id="exceptions_8h" name="exceptions.h" local="yes" imported="no">backend/exceptions.h</includes>
     <namespace>dg</namespace>
@@ -870,7 +870,7 @@
   </compound>
   <compound kind="file">
     <name>functors.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/</path>
     <filename>functors_8h</filename>
     <includes id="blas1_8h" name="blas1.h" local="yes" imported="no">blas1.h</includes>
     <includes id="grid_8h" name="grid.h" local="yes" imported="no">geometry/grid.h</includes>
@@ -926,7 +926,7 @@
   </compound>
   <compound kind="file">
     <name>average.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>average_8h</filename>
     <includes id="grid_8h" name="grid.h" local="yes" imported="no">grid.h</includes>
     <includes id="weights_8h" name="weights.h" local="yes" imported="no">weights.h</includes>
@@ -936,7 +936,7 @@
   </compound>
   <compound kind="file">
     <name>average_mpi.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>average__mpi_8h</filename>
     <includes id="average_8h" name="average.h" local="yes" imported="no">average.h</includes>
     <includes id="mpi__grid_8h" name="mpi_grid.h" local="yes" imported="no">mpi_grid.h</includes>
@@ -946,7 +946,7 @@
   </compound>
   <compound kind="file">
     <name>base_geometry.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>base__geometry_8h</filename>
     <includes id="grid_8h" name="grid.h" local="yes" imported="no">grid.h</includes>
     <includes id="tensor_8h" name="tensor.h" local="yes" imported="no">tensor.h</includes>
@@ -1002,7 +1002,7 @@
   </compound>
   <compound kind="file">
     <name>base_geometryX.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>base__geometry_x_8h</filename>
     <includes id="grid_x_8h" name="gridX.h" local="yes" imported="no">gridX.h</includes>
     <includes id="evaluation_x_8h" name="evaluationX.h" local="yes" imported="no">evaluationX.h</includes>
@@ -1057,13 +1057,13 @@
   </compound>
   <compound kind="file">
     <name>creation.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>creation_8h</filename>
     <includes id="operator_8h" name="operator.h" local="yes" imported="no">operator.h</includes>
   </compound>
   <compound kind="file">
     <name>derivatives.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>derivatives_8h</filename>
     <includes id="grid_8h" name="grid.h" local="yes" imported="no">grid.h</includes>
     <includes id="dx_8h" name="dx.h" local="yes" imported="no">dx.h</includes>
@@ -1212,7 +1212,7 @@
   </compound>
   <compound kind="file">
     <name>derivativesX.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>derivatives_x_8h</filename>
     <includes id="grid_x_8h" name="gridX.h" local="yes" imported="no">gridX.h</includes>
     <includes id="dx_x_8h" name="dxX.h" local="yes" imported="no">dxX.h</includes>
@@ -1363,7 +1363,7 @@
   </compound>
   <compound kind="file">
     <name>dgtensor.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>dgtensor_8h</filename>
     <namespace>dg</namespace>
     <member kind="function">
@@ -1376,7 +1376,7 @@
   </compound>
   <compound kind="file">
     <name>dlt.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>dlt_8h</filename>
     <includes id="exceptions_8h" name="exceptions.h" local="yes" imported="no">dg/backend/exceptions.h</includes>
     <class kind="class">dg::DLT</class>
@@ -1384,7 +1384,7 @@
   </compound>
   <compound kind="file">
     <name>dx.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>dx_8h</filename>
     <includes id="sparseblockmat_8h" name="sparseblockmat.h" local="yes" imported="no">dg/backend/sparseblockmat.h</includes>
     <includes id="grid_8h" name="grid.h" local="yes" imported="no">grid.h</includes>
@@ -1459,7 +1459,7 @@
   </compound>
   <compound kind="file">
     <name>dxX.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>dx_x_8h</filename>
     <includes id="grid_x_8h" name="gridX.h" local="yes" imported="no">gridX.h</includes>
     <includes id="dx_8h" name="dx.h" local="yes" imported="no">dx.h</includes>
@@ -1498,7 +1498,7 @@
   </compound>
   <compound kind="file">
     <name>evaluation.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>evaluation_8h</filename>
     <includes id="grid_8h" name="grid.h" local="yes" imported="no">grid.h</includes>
     <namespace>dg</namespace>
@@ -1526,7 +1526,7 @@
   </compound>
   <compound kind="file">
     <name>evaluationX.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>evaluation_x_8h</filename>
     <includes id="grid_x_8h" name="gridX.h" local="yes" imported="no">gridX.h</includes>
     <includes id="evaluation_8h" name="evaluation.h" local="yes" imported="no">evaluation.h</includes>
@@ -1555,7 +1555,7 @@
   </compound>
   <compound kind="file">
     <name>fast_interpolation.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>fast__interpolation_8h</filename>
     <includes id="memory_8h" name="memory.h" local="yes" imported="no">dg/backend/memory.h</includes>
     <includes id="enums_8h" name="enums.h" local="yes" imported="no">dg/enums.h</includes>
@@ -1569,7 +1569,7 @@
   </compound>
   <compound kind="file">
     <name>functions.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>functions_8h</filename>
     <namespace>dg</namespace>
     <member kind="define">
@@ -1582,7 +1582,7 @@
   </compound>
   <compound kind="file">
     <name>geometry.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>geometry_8h</filename>
     <includes id="evaluation_8h" name="evaluation.h" local="yes" imported="no">evaluation.h</includes>
     <includes id="weights_8h" name="weights.h" local="yes" imported="no">weights.h</includes>
@@ -1599,7 +1599,7 @@
   </compound>
   <compound kind="file">
     <name>grid.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>grid_8h</filename>
     <includes id="topological__traits_8h" name="topological_traits.h" local="yes" imported="no">topological_traits.h</includes>
     <includes id="dlt_8h" name="dlt.h" local="yes" imported="no">dlt.h</includes>
@@ -1648,7 +1648,7 @@
   </compound>
   <compound kind="file">
     <name>gridX.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>grid_x_8h</filename>
     <includes id="dlt_8h" name="dlt.h" local="yes" imported="no">dlt.h</includes>
     <includes id="grid_8h" name="grid.h" local="yes" imported="no">grid.h</includes>
@@ -1697,7 +1697,7 @@
   </compound>
   <compound kind="file">
     <name>interpolation.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>interpolation_8h</filename>
     <includes id="grid_8h" name="grid.h" local="yes" imported="no">grid.h</includes>
     <includes id="evaluation_8h" name="evaluation.h" local="yes" imported="no">evaluation.h</includes>
@@ -1793,7 +1793,7 @@
   </compound>
   <compound kind="file">
     <name>interpolationX.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>interpolation_x_8h</filename>
     <includes id="interpolation_8h" name="interpolation.h" local="yes" imported="no">interpolation.h</includes>
     <includes id="grid_x_8h" name="gridX.h" local="yes" imported="no">gridX.h</includes>
@@ -1858,7 +1858,7 @@
   </compound>
   <compound kind="file">
     <name>mpi_base.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>mpi__base_8h</filename>
     <includes id="mpi__grid_8h" name="mpi_grid.h" local="yes" imported="no">mpi_grid.h</includes>
     <includes id="base__geometry_8h" name="base_geometry.h" local="yes" imported="no">base_geometry.h</includes>
@@ -1915,7 +1915,7 @@
   </compound>
   <compound kind="file">
     <name>mpi_derivatives.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>mpi__derivatives_8h</filename>
     <includes id="sparseblockmat_8h" name="sparseblockmat.h" local="yes" imported="no">dg/backend/sparseblockmat.h</includes>
     <includes id="mpi__matrix_8h" name="mpi_matrix.h" local="yes" imported="no">dg/backend/mpi_matrix.h</includes>
@@ -2067,7 +2067,7 @@
   </compound>
   <compound kind="file">
     <name>mpi_evaluation.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>mpi__evaluation_8h</filename>
     <includes id="mpi__vector_8h" name="mpi_vector.h" local="yes" imported="no">dg/backend/mpi_vector.h</includes>
     <includes id="mpi__grid_8h" name="mpi_grid.h" local="yes" imported="no">mpi_grid.h</includes>
@@ -2104,7 +2104,7 @@
   </compound>
   <compound kind="file">
     <name>mpi_grid.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>mpi__grid_8h</filename>
     <includes id="mpi__vector_8h" name="mpi_vector.h" local="yes" imported="no">dg/backend/mpi_vector.h</includes>
     <includes id="enums_8h" name="enums.h" local="yes" imported="no">dg/enums.h</includes>
@@ -2145,7 +2145,7 @@
   </compound>
   <compound kind="file">
     <name>mpi_projection.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>mpi__projection_8h</filename>
     <includes id="typedefs_8h" name="typedefs.h" local="yes" imported="no">dg/backend/typedefs.h</includes>
     <includes id="mpi__matrix_8h" name="mpi_matrix.h" local="yes" imported="no">dg/backend/mpi_matrix.h</includes>
@@ -2241,7 +2241,7 @@
   </compound>
   <compound kind="file">
     <name>mpi_weights.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>mpi__weights_8h</filename>
     <includes id="weights_8h" name="weights.h" local="yes" imported="no">weights.h</includes>
     <includes id="mpi__grid_8h" name="mpi_grid.h" local="yes" imported="no">mpi_grid.h</includes>
@@ -2292,7 +2292,7 @@
   </compound>
   <compound kind="file">
     <name>multiply.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>multiply_8h</filename>
     <includes id="operator_8h" name="operator.h" local="yes" imported="no">operator.h</includes>
     <includes id="functors_8h" name="functors.h" local="yes" imported="no">dg/functors.h</includes>
@@ -2380,7 +2380,7 @@
   </compound>
   <compound kind="file">
     <name>operator.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>operator_8h</filename>
     <includes id="dlt_8h" name="dlt.h" local="yes" imported="no">dlt.h</includes>
     <class kind="class">dg::Operator</class>
@@ -2466,7 +2466,7 @@
   </compound>
   <compound kind="file">
     <name>operator_tensor.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>operator__tensor_8h</filename>
     <includes id="operator_8h" name="operator.h" local="yes" imported="no">operator.h</includes>
     <includes id="grid_8h" name="grid.h" local="yes" imported="no">grid.h</includes>
@@ -2495,7 +2495,7 @@
   </compound>
   <compound kind="file">
     <name>projection.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>projection_8h</filename>
     <includes id="grid_8h" name="grid.h" local="yes" imported="no">grid.h</includes>
     <includes id="interpolation_8h" name="interpolation.h" local="yes" imported="no">interpolation.h</includes>
@@ -2568,7 +2568,7 @@
   </compound>
   <compound kind="file">
     <name>projectionX.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>projection_x_8h</filename>
     <includes id="projection_8h" name="projection.h" local="yes" imported="no">projection.h</includes>
     <includes id="grid_x_8h" name="gridX.h" local="yes" imported="no">gridX.h</includes>
@@ -2619,7 +2619,7 @@
   </compound>
   <compound kind="file">
     <name>refined_grid.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>refined__grid_8h</filename>
     <includes id="memory_8h" name="memory.h" local="yes" imported="no">dg/backend/memory.h</includes>
     <includes id="blas_8h" name="blas.h" local="yes" imported="no">dg/blas.h</includes>
@@ -2687,7 +2687,7 @@
   </compound>
   <compound kind="file">
     <name>refined_gridX.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>refined__grid_x_8h</filename>
     <includes id="interpolation_8h" name="interpolation.h" local="yes" imported="no">interpolation.h</includes>
     <includes id="evaluation_x_8h" name="evaluationX.h" local="yes" imported="no">evaluationX.h</includes>
@@ -2747,7 +2747,7 @@
   </compound>
   <compound kind="file">
     <name>split_and_join.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>split__and__join_8h</filename>
     <includes id="grid_8h" name="grid.h" local="yes" imported="no">grid.h</includes>
     <includes id="mpi__vector_8h" name="mpi_vector.h" local="yes" imported="no">dg/backend/mpi_vector.h</includes>
@@ -2812,7 +2812,7 @@
   </compound>
   <compound kind="file">
     <name>tensor.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>tensor_8h</filename>
     <includes id="operator_8h" name="operator.h" local="yes" imported="no">operator.h</includes>
     <includes id="functors_8h" name="functors.h" local="yes" imported="no">dg/functors.h</includes>
@@ -2832,7 +2832,7 @@
   </compound>
   <compound kind="file">
     <name>topological_traits.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>topological__traits_8h</filename>
     <class kind="struct">dg::TopologyTraits</class>
     <class kind="struct">dg::MPITag</class>
@@ -2844,7 +2844,7 @@
   </compound>
   <compound kind="file">
     <name>transform.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>transform_8h</filename>
     <includes id="topological__traits_8h" name="topological_traits.h" local="yes" imported="no">topological_traits.h</includes>
     <includes id="multiply_8h" name="multiply.h" local="yes" imported="no">multiply.h</includes>
@@ -2918,7 +2918,7 @@
   </compound>
   <compound kind="file">
     <name>weights.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>weights_8h</filename>
     <includes id="grid_8h" name="grid.h" local="yes" imported="no">grid.h</includes>
     <includes id="enums_8h" name="enums.h" local="yes" imported="no">../enums.h</includes>
@@ -2983,7 +2983,7 @@
   </compound>
   <compound kind="file">
     <name>weightsX.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>weights_x_8h</filename>
     <includes id="weights_8h" name="weights.h" local="yes" imported="no">weights.h</includes>
     <includes id="grid_x_8h" name="gridX.h" local="yes" imported="no">gridX.h</includes>
@@ -3034,7 +3034,7 @@
   </compound>
   <compound kind="file">
     <name>xspacelib.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/geometry/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
     <filename>xspacelib_8h</filename>
     <includes id="grid_8h" name="grid.h" local="yes" imported="no">grid.h</includes>
     <includes id="dlt_8h" name="dlt.h" local="yes" imported="no">dlt.h</includes>
@@ -3061,7 +3061,7 @@
   </compound>
   <compound kind="file">
     <name>helmholtz.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/</path>
     <filename>helmholtz_8h</filename>
     <includes id="blas_8h" name="blas.h" local="yes" imported="no">blas.h</includes>
     <includes id="elliptic_8h" name="elliptic.h" local="yes" imported="no">elliptic.h</includes>
@@ -3071,7 +3071,7 @@
   </compound>
   <compound kind="file">
     <name>multigrid.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/</path>
     <filename>multigrid_8h</filename>
     <includes id="exceptions_8h" name="exceptions.h" local="yes" imported="no">backend/exceptions.h</includes>
     <includes id="memory_8h" name="memory.h" local="yes" imported="no">backend/memory.h</includes>
@@ -3085,7 +3085,7 @@
   </compound>
   <compound kind="file">
     <name>multistep.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/</path>
     <filename>multistep_8h</filename>
     <includes id="runge__kutta_8h" name="runge_kutta.h" local="yes" imported="no">runge_kutta.h</includes>
     <includes id="cg_8h" name="cg.h" local="yes" imported="no">cg.h</includes>
@@ -3096,7 +3096,7 @@
   </compound>
   <compound kind="file">
     <name>nullstelle.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/</path>
     <filename>nullstelle_8h</filename>
     <includes id="exceptions_8h" name="exceptions.h" local="yes" imported="no">backend/exceptions.h</includes>
     <class kind="class">dg::NoRoot1d</class>
@@ -3111,7 +3111,7 @@
   </compound>
   <compound kind="file">
     <name>poisson.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/</path>
     <filename>poisson_8h</filename>
     <includes id="blas_8h" name="blas.h" local="yes" imported="no">blas.h</includes>
     <includes id="geometry_8h" name="geometry.h" local="yes" imported="no">geometry/geometry.h</includes>
@@ -3125,7 +3125,7 @@
   </compound>
   <compound kind="file">
     <name>refined_elliptic.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/</path>
     <filename>refined__elliptic_8h</filename>
     <includes id="interpolation_8h" name="interpolation.h" local="yes" imported="no">geometry/interpolation.h</includes>
     <includes id="projection_8h" name="projection.h" local="yes" imported="no">geometry/projection.h</includes>
@@ -3137,7 +3137,7 @@
   </compound>
   <compound kind="file">
     <name>runge_kutta.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/</path>
     <filename>runge__kutta_8h</filename>
     <includes id="exceptions_8h" name="exceptions.h" local="yes" imported="no">backend/exceptions.h</includes>
     <includes id="blas1_8h" name="blas1.h" local="yes" imported="no">blas1.h</includes>
@@ -3163,7 +3163,7 @@
   </compound>
   <compound kind="file">
     <name>subroutines.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/dg/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/</path>
     <filename>subroutines_8h</filename>
     <includes id="functions_8h" name="functions.h" local="yes" imported="no">dg/geometry/functions.h</includes>
     <class kind="struct">dg::equals</class>

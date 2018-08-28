@@ -1,23 +1,23 @@
 <map id="algorithm.h" name="algorithm.h">
-<area shape="rect" id="node2" href="$timer_8h.html" title="backend/timer.h" alt="" coords="350,80,465,107"/>
-<area shape="rect" id="node4" href="$transpose_8h.html" title="backend/transpose.h" alt="" coords="3065,80,3208,107"/>
+<area shape="rect" id="node2" href="$timer_8h.html" title="backend/timer.h" alt="" coords="375,80,490,107"/>
+<area shape="rect" id="node4" href="$transpose_8h.html" title="backend/transpose.h" alt="" coords="2915,80,3057,107"/>
 <area shape="rect" id="node27" href="$split__and__join_8h.html" title="geometry/split_and\l_join.h" alt="" coords="384,162,516,203"/>
 <area shape="rect" id="node33" href="$xspacelib_8h.html" title="provides some utility functions " alt="" coords="1435,169,1582,196"/>
 <area shape="rect" id="node40" href="$evaluation_x_8h.html" title="Function discretization routines on X&#45;point topology. " alt="" coords="865,266,1024,293"/>
-<area shape="rect" id="node42" href="$derivatives_x_8h.html" title="Convenience functions to create 2D derivatives on X&#45;point topology. " alt="" coords="1843,80,2006,107"/>
+<area shape="rect" id="node42" href="$derivatives_x_8h.html" title="Convenience functions to create 2D derivatives on X&#45;point topology. " alt="" coords="1803,80,1966,107"/>
 <area shape="rect" id="node44" href="$weights_x_8h.html" title="contains creation functions for integration weights and their inverse on X&#45;point topology ..." alt="" coords="1100,266,1187,293"/>
-<area shape="rect" id="node45" href="$blas_8h.html" title="../blas.h" alt="" coords="4979,169,5049,196"/>
+<area shape="rect" id="node45" href="$blas_8h.html" title="../blas.h" alt="" coords="4675,169,4745,196"/>
 <area shape="rect" id="node46" href="$interpolation_x_8h.html" title="contains 1D, 2D and 3D interpolation matrix creation functions on X&#45;point topology ..." alt="" coords="1190,169,1361,196"/>
 <area shape="rect" id="node47" href="$projection_x_8h.html" title="contains creation of projection matrices for X point topology " alt="" coords="893,80,1049,107"/>
 <area shape="rect" id="node48" href="$geometry_8h.html" title="geometry/geometry.h" alt="" coords="696,266,841,293"/>
-<area shape="rect" id="node49" href="$helmholtz_8h.html" title="contains Helmholtz and Maxwell operators " alt="" coords="4767,80,4856,107"/>
-<area shape="rect" id="node50" href="$cg_8h.html" title="cg.h" alt="" coords="4039,80,4085,107"/>
+<area shape="rect" id="node49" href="$helmholtz_8h.html" title="contains Helmholtz and Maxwell operators " alt="" coords="4483,80,4572,107"/>
+<area shape="rect" id="node50" href="$cg_8h.html" title="cg.h" alt="" coords="3812,80,3859,107"/>
 <area shape="rect" id="node30" href="$grid_8h.html" title="base topology classes " alt="" coords="1197,452,1252,479"/>
 <area shape="rect" id="node32" href="$mpi__grid_8h.html" title="MPI Grid objects. " alt="" coords="487,266,570,293"/>
-<area shape="rect" id="node31" href="$dlt_8h.html" title="contains the discrete legendre trafo class " alt="" coords="1564,527,1611,553"/>
-<area shape="rect" id="node35" href="$operator_8h.html" title="operator.h" alt="" coords="1854,452,1934,479"/>
-<area shape="rect" id="node36" href="$operator__tensor_8h.html" title="operator_tensor.h" alt="" coords="1833,363,1955,389"/>
-<area shape="rect" id="node37" href="$dgtensor_8h.html" title="a tensor product function between two cusp matrices " alt="" coords="1675,363,1758,389"/>
+<area shape="rect" id="node31" href="$dlt_8h.html" title="contains the discrete legendre trafo class " alt="" coords="1555,527,1601,553"/>
+<area shape="rect" id="node35" href="$operator_8h.html" title="operator.h" alt="" coords="1845,452,1925,479"/>
+<area shape="rect" id="node36" href="$operator__tensor_8h.html" title="operator_tensor.h" alt="" coords="1823,363,1946,389"/>
+<area shape="rect" id="node37" href="$dgtensor_8h.html" title="a tensor product function between two cusp matrices " alt="" coords="1666,363,1749,389"/>
 <area shape="rect" id="node38" href="$interpolation_8h.html" title="contains 1D, 2D and 3D interpolation matrix creation functions " alt="" coords="1415,266,1517,293"/>
 <area shape="rect" id="node39" href="$evaluation_8h.html" title="Function discretization routines. " alt="" coords="988,363,1080,389"/>
 <area shape="rect" id="node41" href="$grid_x_8h.html" title="base X&#45;point topology classes " alt="" coords="1193,363,1256,389"/>

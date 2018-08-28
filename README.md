@@ -1,6 +1,7 @@
 ### Welcome to the FELTOR homepage repository
 
 #### How to view homepage locally
+Install [jekyll](https://jekyllrb.com/) to locally view the homepage:
 
 ```sh
 bundle exec jekyll serve
@@ -9,8 +10,11 @@ bundle exec jekyll serve
 
 #### How to update (doxygen) documentation
 
+Please make sure that you have the `doxygen`,
+`libjs-mathjax` and `graphviz` packages and a LateX installation (including the hitec.cls package).
+
 1. do a make clean doc in feltor/doc
-2. git rm homepage/doc
+2. git rm -r homepage/doc
 3. cp -r feltor/doc homepage/doc
 4. git add homepage/doc
 

@@ -1,4 +1,4 @@
-<!-- HTML header for doxygen 1.8.6-->
+<!-- HTML header for doxygen 1.8.11-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -26,12 +26,13 @@
 });
 </script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?.../MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="menubar.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
     <!--My own title area-->
-  <ul class="tablist"> 
+  <ul class="menubar">
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
     <li><a href="../../geometries/html/modules.html">geometries</a></li>
@@ -42,7 +43,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
    <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
@@ -552,7 +553,7 @@ template&lt;class ContainerType1 , class ContainerType2 &gt; </div>
 \[ x^T y = \sum_{i=0}^{N-1} x_i y_i \]
 </p>
 <p>where <code>i</code> iterates over <b>all</b> elements inside the given vectors. The order of iterations is indetermined. Scalar arguments to container types are interpreted as vectors with all elements constant. If <code>ContainerType</code> has the <code><a class="el" href="structdg_1_1_recursive_vector_tag.html" title="This tag indicates composition/recursion. ">RecursiveVectorTag</a></code>, <code>i</code> recursively loops over all entries. If the vector sizes do not match, the result is undefined. The compiler chooses the implementation and parallelization of this function based on given template parameters. For a full set of rules please refer to <a class="el" href="index.html#dispatch">The Level 1 dispatch system</a>.</p>
-<dl class="section note"><dt>Note</dt><dd>Our implementation guarantees binary reproducible results. The sum is computed with infinite precision and the result is rounded to the nearest double precision number. This is possible with the help of an adapted version of the <code><a class="elRef" doxygen="/home/markus/Documents/Phd/MyFeltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/namespaceexblas.html">exblas</a></code> library.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Our implementation guarantees binary reproducible results. The sum is computed with infinite precision and the result is rounded to the nearest double precision number. This is possible with the help of an adapted version of the <code><a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/namespaceexblas.html">exblas</a></code> library.</dd></dl>
 <p>For example </p><div class="fragment"><div class="line"><a class="code" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8">dg::DVec</a> two( 100,2), three(100,3);</div><div class="line"><span class="keywordtype">double</span> temp = <a class="code" href="group__blas1.html#ga7b2aa636a0fe0c7d3298b9f869658919">dg::blas1::dot</a>( two, three); <span class="comment">// temp = 30 (5*(2*3))</span></div></div><!-- fragment --> <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>Left ContainerType </td></tr>
@@ -1578,7 +1579,7 @@ If there are several <code>ContainerTypes</code> in the argument list, then <cod
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jul 27 2018 10:23:38 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -9,7 +9,7 @@
 <area shape="rect" id="node28" href="$functions_8h.html" title="contains some utility functions for the evaluation() routines " alt="" coords="921,155,1007,181"/>
 <area shape="rect" id="node29" href="$operator_8h.html" title="operator.h" alt="" coords="1208,229,1288,256"/>
 <area shape="rect" id="node32" href="$weights_8h.html" title="contains creation functions for integration weights and their inverse " alt="" coords="763,155,842,181"/>
-<area shape="rect" id="node19" href="/home/markus/Documents/Phd/MyFeltor/doc/exblas.tag$config_8h.html" title="exblas/config.h" alt="" coords="405,304,515,331"/>
+<area shape="rect" id="node19" href="/home/matthias/Projekte/feltor/doc/exblas.tag$config_8h.html" title="exblas/config.h" alt="" coords="405,304,515,331"/>
 <area shape="rect" id="node21" href="$tensor__traits_8h.html" title="tensor_traits.h" alt="" coords="275,304,381,331"/>
 <area shape="rect" id="node24" href="$scalar__categories_8h.html" title="scalar_categories.h" alt="" coords="305,379,439,405"/>
 <area shape="rect" id="node25" href="$vector__categories_8h.html" title="vector_categories.h" alt="" coords="304,453,440,480"/>

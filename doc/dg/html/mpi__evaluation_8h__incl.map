@@ -2,12 +2,12 @@
 <area shape="rect" id="node2" href="$mpi__vector_8h.html" title="dg/backend/mpi_vector.h" alt="" coords="716,155,884,181"/>
 <area shape="rect" id="node20" href="$mpi__grid_8h.html" title="MPI Grid objects. " alt="" coords="454,80,536,107"/>
 <area shape="rect" id="node34" href="$evaluation_8h.html" title="Function discretization routines. " alt="" coords="337,80,429,107"/>
-<area shape="rect" id="node6" href="/home/markus/Documents/Phd/MyFeltor/doc/exblas.tag$mpi__accumulate_8h.html" title="exblas/mpi_accumulate.h" alt="" coords="855,229,1026,256"/>
+<area shape="rect" id="node6" href="/home/matthias/Projekte/feltor/doc/exblas.tag$mpi__accumulate_8h.html" title="exblas/mpi_accumulate.h" alt="" coords="855,229,1026,256"/>
 <area shape="rect" id="node9" href="$tensor__traits_8h.html" title="tensor_traits.h" alt="" coords="1050,229,1156,256"/>
 <area shape="rect" id="node17" href="$mpi__communicator_8h.html" title="mpi_communicator.h" alt="" coords="1370,229,1513,256"/>
 <area shape="rect" id="node19" href="$memory_8h.html" title="memory.h" alt="" coords="1538,229,1618,256"/>
-<area shape="rect" id="node7" href="/home/markus/Documents/Phd/MyFeltor/doc/exblas.tag$accumulate_8h.html" title="accumulate.h" alt="" coords="672,304,772,331"/>
-<area shape="rect" id="node8" href="/home/markus/Documents/Phd/MyFeltor/doc/exblas.tag$config_8h.html" title="config.h" alt="" coords="688,379,756,405"/>
+<area shape="rect" id="node7" href="/home/matthias/Projekte/feltor/doc/exblas.tag$accumulate_8h.html" title="accumulate.h" alt="" coords="672,304,772,331"/>
+<area shape="rect" id="node8" href="/home/matthias/Projekte/feltor/doc/exblas.tag$config_8h.html" title="config.h" alt="" coords="688,379,756,405"/>
 <area shape="rect" id="node12" href="$scalar__categories_8h.html" title="scalar_categories.h" alt="" coords="1094,304,1229,331"/>
 <area shape="rect" id="node13" href="$vector__categories_8h.html" title="vector_categories.h" alt="" coords="1094,379,1230,405"/>
 <area shape="rect" id="node14" href="$matrix__categories_8h.html" title="matrix_categories.h" alt="" coords="1146,453,1282,480"/>

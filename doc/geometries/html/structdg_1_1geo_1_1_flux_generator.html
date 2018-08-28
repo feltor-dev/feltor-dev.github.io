@@ -1,4 +1,4 @@
-<!-- HTML header for doxygen 1.8.6-->
+<!-- HTML header for doxygen 1.8.11-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -26,12 +26,13 @@
 });
 </script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?.../MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="menubar.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
     <!--My own title area-->
-  <ul class="tablist"> 
+  <ul class="menubar">
       <!-- <li><a href="../../../index.html">/</a><li>-->
     <li><a href="../../dg/html/modules.html">dG</a></li>
     <li><a href="../../geometries/html/modules.html">geometries</a></li>
@@ -42,7 +43,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Geometries
    </div>
    <div id="projectbrief">Extension with magnetic flux functions, grids and grid generators</div>
@@ -155,7 +156,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A symmetry flux generator. </p>
-<div class="fragment"><div class="line">    <span class="comment">//create the magnetic field</span></div><div class="line">    <a class="code" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a> c = <a class="code" href="group__geom.html#gae3f70e88fd15dd404643f4c5941401c7">dg::geo::createSolovevField</a>( gp);</div><div class="line">    <span class="comment">//create a grid generator</span></div><div class="line">    <a class="code" href="structdg_1_1geo_1_1_flux_generator.html">dg::geo::FluxGenerator</a> flux( c.<a class="code" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#af997c120fd405c750b488fbc558beb7d">get_psip</a>(), c.<a class="code" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#ab1928bb257915a73b67e8f73da39f2ab">get_ipol</a>(), psi_0, psi_1, gp.R_0, 0., 0, <span class="keyword">false</span>);</div><div class="line">    <span class="comment">//create a grid</span></div><div class="line">    <a class="code" href="structdg_1_1geo_1_1_curvilinear_grid2d.html">dg::geo::CurvilinearGrid2d</a> g2d(flux, n, Nx,Ny, <a class="codeRef" doxygen="/home/markus/Documents/Phd/MyFeltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a>);</div></div><!-- fragment --></div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<div class="fragment"><div class="line">    <span class="comment">//create the magnetic field</span></div><div class="line">    <a class="code" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a> c = <a class="code" href="group__geom.html#gae3f70e88fd15dd404643f4c5941401c7">dg::geo::createSolovevField</a>( gp);</div><div class="line">    <span class="comment">//create a grid generator</span></div><div class="line">    <a class="code" href="structdg_1_1geo_1_1_flux_generator.html">dg::geo::FluxGenerator</a> flux( c.<a class="code" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#af997c120fd405c750b488fbc558beb7d">get_psip</a>(), c.<a class="code" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#ab1928bb257915a73b67e8f73da39f2ab">get_ipol</a>(), psi_0, psi_1, gp.R_0, 0., 0, <span class="keyword">false</span>);</div><div class="line">    <span class="comment">//create a grid</span></div><div class="line">    <a class="code" href="structdg_1_1geo_1_1_curvilinear_grid2d.html">dg::geo::CurvilinearGrid2d</a> g2d(flux, n, Nx,Ny, <a class="codeRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a>);</div></div><!-- fragment --></div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2a79a7f6af03e5735efa398e94ea05d0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2a79a7f6af03e5735efa398e94ea05d0">&#9670;&nbsp;</a></span>FluxGenerator()</h2>
 
@@ -284,7 +285,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="namespacedg_1_1geo.html">geo</a></li><li class="navelem"><a class="el" href="structdg_1_1geo_1_1_flux_generator.html">FluxGenerator</a></li>
-    <li class="footer">Generated on Fri Jul 27 2018 10:24:04 for Geometries by
+    <li class="footer">Generated on Tue Aug 28 2018 23:03:04 for Geometries by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -2,7 +2,7 @@
 <tagfile>
   <compound kind="file">
     <name>adaption.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
+    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
     <filename>adaption_8h</filename>
     <includes id="fluxfunctions_8h" name="fluxfunctions.h" local="yes" imported="no">fluxfunctions.h</includes>
     <class kind="struct">dg::geo::NablaPsiInv</class>
@@ -32,7 +32,7 @@
   </compound>
   <compound kind="file">
     <name>average.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
+    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
     <filename>average_8h</filename>
     <includes id="magnetic__field_8h" name="magnetic_field.h" local="yes" imported="no">magnetic_field.h</includes>
     <class kind="struct">dg::geo::DeltaFunction</class>
@@ -44,7 +44,7 @@
   </compound>
   <compound kind="file">
     <name>curvilinear.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
+    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
     <filename>curvilinear_8h</filename>
     <includes id="generator_8h" name="generator.h" local="yes" imported="no">generator.h</includes>
     <class kind="struct">dg::geo::CurvilinearGrid2d</class>
@@ -54,7 +54,7 @@
   </compound>
   <compound kind="file">
     <name>curvilinearX.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
+    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
     <filename>curvilinear_x_8h</filename>
     <includes id="generator_x_8h" name="generatorX.h" local="yes" imported="no">generatorX.h</includes>
     <includes id="curvilinear_8h" name="curvilinear.h" local="yes" imported="no">curvilinear.h</includes>
@@ -65,7 +65,7 @@
   </compound>
   <compound kind="file">
     <name>ds.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
+    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
     <filename>ds_8h</filename>
     <includes id="fieldaligned_8h" name="fieldaligned.h" local="yes" imported="no">fieldaligned.h</includes>
     <includes id="magnetic__field_8h" name="magnetic_field.h" local="yes" imported="no">magnetic_field.h</includes>
@@ -75,7 +75,7 @@
   </compound>
   <compound kind="file">
     <name>fieldaligned.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
+    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
     <filename>fieldaligned_8h</filename>
     <includes id="magnetic__field_8h" name="magnetic_field.h" local="yes" imported="no">magnetic_field.h</includes>
     <includes id="fluxfunctions_8h" name="fluxfunctions.h" local="yes" imported="no">fluxfunctions.h</includes>
@@ -131,7 +131,7 @@
   </compound>
   <compound kind="file">
     <name>flux.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
+    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
     <filename>flux_8h</filename>
     <includes id="fluxfunctions_8h" name="fluxfunctions.h" local="yes" imported="no">fluxfunctions.h</includes>
     <includes id="ribeiro_8h" name="ribeiro.h" local="yes" imported="no">ribeiro.h</includes>
@@ -142,7 +142,7 @@
   </compound>
   <compound kind="file">
     <name>fluxfunctions.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
+    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
     <filename>fluxfunctions_8h</filename>
     <class kind="struct">dg::geo::aBinaryFunctor</class>
     <class kind="struct">dg::geo::aCloneableBinaryFunctor</class>
@@ -164,7 +164,7 @@
   </compound>
   <compound kind="file">
     <name>generator.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
+    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
     <filename>generator_8h</filename>
     <class kind="struct">dg::geo::aGenerator2d</class>
     <namespace>dg</namespace>
@@ -172,7 +172,7 @@
   </compound>
   <compound kind="file">
     <name>generatorX.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
+    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
     <filename>generator_x_8h</filename>
     <class kind="struct">dg::geo::aGeneratorX2d</class>
     <namespace>dg</namespace>
@@ -180,7 +180,7 @@
   </compound>
   <compound kind="file">
     <name>geometries.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
+    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
     <filename>geometries_8h</filename>
     <includes id="simple__orthogonal_8h" name="simple_orthogonal.h" local="yes" imported="no">simple_orthogonal.h</includes>
     <includes id="separatrix__orthogonal_8h" name="separatrix_orthogonal.h" local="yes" imported="no">separatrix_orthogonal.h</includes>
@@ -204,12 +204,12 @@
   </compound>
   <compound kind="file">
     <name>geometries_doc.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
+    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
     <filename>geometries__doc_8h</filename>
   </compound>
   <compound kind="file">
     <name>guenther.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
+    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
     <filename>guenther_8h</filename>
     <includes id="guenther__parameters_8h" name="guenther_parameters.h" local="yes" imported="no">guenther_parameters.h</includes>
     <includes id="magnetic__field_8h" name="magnetic_field.h" local="yes" imported="no">magnetic_field.h</includes>
@@ -256,7 +256,7 @@
   </compound>
   <compound kind="file">
     <name>guenther_parameters.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
+    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
     <filename>guenther__parameters_8h</filename>
     <class kind="struct">dg::geo::guenther::Parameters</class>
     <namespace>dg</namespace>
@@ -265,7 +265,7 @@
   </compound>
   <compound kind="file">
     <name>hector.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
+    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
     <filename>hector_8h</filename>
     <includes id="fluxfunctions_8h" name="fluxfunctions.h" local="yes" imported="no">fluxfunctions.h</includes>
     <includes id="curvilinear_8h" name="curvilinear.h" local="yes" imported="no">curvilinear.h</includes>
@@ -277,7 +277,7 @@
   </compound>
   <compound kind="file">
     <name>init.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
+    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
     <filename>init_8h</filename>
     <includes id="fluxfunctions_8h" name="fluxfunctions.h" local="yes" imported="no">fluxfunctions.h</includes>
     <includes id="solovev__parameters_8h" name="solovev_parameters.h" local="yes" imported="no">solovev_parameters.h</includes>
@@ -296,7 +296,7 @@
   </compound>
   <compound kind="file">
     <name>magnetic_field.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
+    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
     <filename>magnetic__field_8h</filename>
     <includes id="fluxfunctions_8h" name="fluxfunctions.h" local="yes" imported="no">fluxfunctions.h</includes>
     <class kind="struct">dg::geo::TokamakMagneticField</class>
@@ -324,7 +324,7 @@
   </compound>
   <compound kind="file">
     <name>mpi_curvilinear.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
+    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
     <filename>mpi__curvilinear_8h</filename>
     <includes id="curvilinear_8h" name="curvilinear.h" local="yes" imported="no">curvilinear.h</includes>
     <includes id="generator_8h" name="generator.h" local="yes" imported="no">generator.h</includes>
@@ -335,7 +335,7 @@
   </compound>
   <compound kind="file">
     <name>mpi_fieldaligned.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
+    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
     <filename>mpi__fieldaligned_8h</filename>
     <includes id="fieldaligned_8h" name="fieldaligned.h" local="yes" imported="no">fieldaligned.h</includes>
     <namespace>dg</namespace>
@@ -343,7 +343,7 @@
   </compound>
   <compound kind="file">
     <name>polar.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
+    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
     <filename>polar_8h</filename>
     <includes id="generator_8h" name="generator.h" local="yes" imported="no">generator.h</includes>
     <class kind="struct">dg::geo::PolarGenerator</class>
@@ -353,7 +353,7 @@
   </compound>
   <compound kind="file">
     <name>refined_curvilinearX.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
+    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
     <filename>refined__curvilinear_x_8h</filename>
     <includes id="generator_x_8h" name="generatorX.h" local="yes" imported="no">generatorX.h</includes>
     <includes id="curvilinear_8h" name="curvilinear.h" local="yes" imported="no">curvilinear.h</includes>
@@ -364,7 +364,7 @@
   </compound>
   <compound kind="file">
     <name>ribeiro.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
+    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
     <filename>ribeiro_8h</filename>
     <includes id="generator_8h" name="generator.h" local="yes" imported="no">generator.h</includes>
     <includes id="utilities_8h" name="utilities.h" local="yes" imported="no">utilities.h</includes>
@@ -374,7 +374,7 @@
   </compound>
   <compound kind="file">
     <name>ribeiroX.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
+    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
     <filename>ribeiro_x_8h</filename>
     <includes id="generator_x_8h" name="generatorX.h" local="yes" imported="no">generatorX.h</includes>
     <includes id="utilities_x_8h" name="utilitiesX.h" local="yes" imported="no">utilitiesX.h</includes>
@@ -385,7 +385,7 @@
   </compound>
   <compound kind="file">
     <name>separatrix_orthogonal.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
+    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
     <filename>separatrix__orthogonal_8h</filename>
     <includes id="generator_x_8h" name="generatorX.h" local="yes" imported="no">generatorX.h</includes>
     <includes id="utilities_x_8h" name="utilitiesX.h" local="yes" imported="no">utilitiesX.h</includes>
@@ -397,7 +397,7 @@
   </compound>
   <compound kind="file">
     <name>simple_orthogonal.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
+    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
     <filename>simple__orthogonal_8h</filename>
     <includes id="generator_8h" name="generator.h" local="yes" imported="no">generator.h</includes>
     <includes id="utilities_8h" name="utilities.h" local="yes" imported="no">utilities.h</includes>
@@ -408,7 +408,7 @@
   </compound>
   <compound kind="file">
     <name>solovev.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
+    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
     <filename>solovev_8h</filename>
     <includes id="solovev__parameters_8h" name="solovev_parameters.h" local="yes" imported="no">solovev_parameters.h</includes>
     <includes id="magnetic__field_8h" name="magnetic_field.h" local="yes" imported="no">magnetic_field.h</includes>
@@ -455,7 +455,7 @@
   </compound>
   <compound kind="file">
     <name>solovev_parameters.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
+    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
     <filename>solovev__parameters_8h</filename>
     <class kind="struct">dg::geo::solovev::Parameters</class>
     <namespace>dg</namespace>
@@ -464,7 +464,7 @@
   </compound>
   <compound kind="file">
     <name>taylor.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
+    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
     <filename>taylor_8h</filename>
     <includes id="solovev__parameters_8h" name="solovev_parameters.h" local="yes" imported="no">solovev_parameters.h</includes>
     <includes id="magnetic__field_8h" name="magnetic_field.h" local="yes" imported="no">magnetic_field.h</includes>
@@ -518,7 +518,7 @@
   </compound>
   <compound kind="file">
     <name>testfunctors.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
+    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
     <filename>testfunctors_8h</filename>
     <includes id="magnetic__field_8h" name="magnetic_field.h" local="yes" imported="no">magnetic_field.h</includes>
     <namespace>dg</namespace>
@@ -526,7 +526,7 @@
   </compound>
   <compound kind="file">
     <name>toroidal.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
+    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
     <filename>toroidal_8h</filename>
     <includes id="magnetic__field_8h" name="magnetic_field.h" local="yes" imported="no">magnetic_field.h</includes>
     <class kind="struct">dg::geo::circular::Psip</class>
@@ -588,13 +588,13 @@
   </compound>
   <compound kind="file">
     <name>utilities.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
+    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
     <filename>utilities_8h</filename>
     <includes id="fluxfunctions_8h" name="fluxfunctions.h" local="yes" imported="no">fluxfunctions.h</includes>
   </compound>
   <compound kind="file">
     <name>utilitiesX.h</name>
-    <path>/home/markus/Documents/Phd/MyFeltor/inc/geometries/</path>
+    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
     <filename>utilities_x_8h</filename>
     <includes id="utilities_8h" name="utilities.h" local="yes" imported="no">utilities.h</includes>
     <namespace>dg</namespace>

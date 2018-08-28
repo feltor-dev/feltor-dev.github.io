@@ -5,11 +5,11 @@
 <area shape="rect" id="node4" href="$mpi__vector_8h.html" title="dg/backend/mpi_vector.h" alt="" coords="919,401,1087,427"/>
 <area shape="rect" id="node21" href="$enums_8h.html" title="enums " alt="" coords="88,483,179,509"/>
 <area shape="rect" id="node24" href="$grid_8h.html" title="base topology classes " alt="" coords="699,401,754,427"/>
-<area shape="rect" id="node8" href="/home/markus/Documents/Phd/MyFeltor/doc/exblas.tag$mpi__accumulate_8h.html" title="exblas/mpi_accumulate.h" alt="" coords="357,483,528,509"/>
+<area shape="rect" id="node8" href="/home/matthias/Projekte/feltor/doc/exblas.tag$mpi__accumulate_8h.html" title="exblas/mpi_accumulate.h" alt="" coords="357,483,528,509"/>
 <area shape="rect" id="node10" href="$tensor__traits_8h.html" title="tensor_traits.h" alt="" coords="2217,483,2322,509"/>
 <area shape="rect" id="node18" href="$mpi__communicator_8h.html" title="mpi_communicator.h" alt="" coords="787,483,930,509"/>
 <area shape="rect" id="node20" href="$memory_8h.html" title="memory.h" alt="" coords="552,483,632,509"/>
-<area shape="rect" id="node9" href="/home/markus/Documents/Phd/MyFeltor/doc/exblas.tag$accumulate_8h.html" title="accumulate.h" alt="" coords="393,557,493,584"/>
+<area shape="rect" id="node9" href="/home/matthias/Projekte/feltor/doc/exblas.tag$accumulate_8h.html" title="accumulate.h" alt="" coords="393,557,493,584"/>
 <area shape="rect" id="node13" href="$scalar__categories_8h.html" title="scalar_categories.h" alt="" coords="2590,557,2725,584"/>
 <area shape="rect" id="node14" href="$vector__categories_8h.html" title="vector_categories.h" alt="" coords="2484,632,2620,659"/>
 <area shape="rect" id="node15" href="$matrix__categories_8h.html" title="matrix_categories.h" alt="" coords="2484,707,2620,733"/>
