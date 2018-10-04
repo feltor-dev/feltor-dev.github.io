@@ -1,5 +1,5 @@
-#title: FELTOR
-#description: Numerical methods for SOL blob and turbulence simulations
+title: FELTOR
+description: "Numerical methods for two- and three-dimensional (gyro-) fluid simulations of magnetized plasmas"
 google_analytics:
 show_downloads: true
 remote_theme: mmistakes/minimal-mistakes
