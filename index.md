@@ -6,13 +6,13 @@ classes: wide
 <!-- toc: true -->
 author_profile: false
 comments: false
-excerpt: "Numerical methods for SOL blob and turbulence simulations"
+excerpt: "Numerical methods for two- and three-dimensional (gyro-) fluid simulations of magnetized plasmas"
 header:
     overlay_image: /images/3dpic_inv.jpg
     caption: "Photo credit: [**Markus Held**](https://github.com/feltor-dev/feltor/blob/master/3dpic.jpg)"
     cta_label: "github"
     cta_url: "https://github.com/feltor-dev/feltor.git"
-    
+
 ---
 
 <!--feature_row:
@@ -35,4 +35,3 @@ header:
 
 {% include feature_row %}
 -->
-  

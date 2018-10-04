@@ -1,6 +1,6 @@
-title: FELTOR
-description: Numerical methods for SOL blob and turbulence simulations
-google_analytics: 
+#title: FELTOR
+#description: Numerical methods for SOL blob and turbulence simulations
+google_analytics:
 show_downloads: true
 remote_theme: mmistakes/minimal-mistakes
 url: https://feltor-dev.github.io/
@@ -10,6 +10,6 @@ include:
   - _pages
   - .htaccess
   - _includes
-teaser: /images/3dpic.jpg    
+teaser: /images/3dpic.jpg
 minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
 github: [metadata]

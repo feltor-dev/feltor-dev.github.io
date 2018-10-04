@@ -1,12 +1,14 @@
 main:
   - title: "About"
     url: /about/
-  - title: "Wiki"
-    url: /wiki/
   - title: "Showroom"
     url: /showroom/
   - title: "Publications"
     url: /publications/
+  - title: "Wiki"
+    url: /wiki/
+  - title: "Tutorial"
+    url: /tutorial/
   - title: "Documentation"
     url: /doc/dg/html/modules.html
 
@@ -27,3 +29,17 @@ wiki:
         url: /errorhandling/
       - title: "Troubleshooting"
         url: /troubleshooting/
+
+tutorial:
+  - title: "Tutorial"
+    children:
+      - title: "Level 1"
+        url: /tutorial/
+      - title: "Level 2"
+        url: /tutorial_lvl2/
+      - title: "Level 3"
+        url: /tutorial_lvl3/
+      - title: "Level 4"
+        url: /tutorial_lvl4/
+      - title: "Level 5"
+        url: /tutorial_lvl5/
