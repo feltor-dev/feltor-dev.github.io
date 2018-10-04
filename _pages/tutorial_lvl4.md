@@ -14,7 +14,8 @@ With grids and derivatives available we are now finally in the position
 to deal with high level numerical algorithms. One example of such
 an algorithm is the discretization and inversion of elliptic equations, for example Poison's equation.
 Look at the following code, which inverts a Laplacian
-```C++
+
+{% highlight C++ linenos %}
 #include <iostream>
 //make M_PI available for msvc
 #define _USE_MATH_DEFINES
@@ -35,60 +36,61 @@ double initial( double x, double y) {
 
 int main()
 {
-    unsigned n, Nx, Ny;
-    std::cout << "Type n, Nx and Ny! \n";
-    std::cin >> n >> Nx >> Ny;
-    std::cout << "Computing on the Grid " <<n<<" x "<<Nx<<" x "<<Ny <<std::endl;
-    dg::CartesianGrid2d grid( 0, lx, 0, ly,n, Nx, Ny, dg::DIR, dg::PER);
-    std::cout<<"Evaluate initial guess for iterative scheme\n";
-    dg::HVec x = dg::evaluate( initial, grid);
-    const dg::HVec& copyable_vector = x;
+  unsigned n, Nx, Ny;
+  std::cout << "Type n, Nx and Ny! \n";
+  std::cin >> n >> Nx >> Ny;
+  std::cout << "Computing on the Grid " <<n<<" x "<<Nx<<" x "<<Ny <<std::endl;
+  dg::CartesianGrid2d grid( 0, lx, 0, ly,n, Nx, Ny, dg::DIR, dg::PER);
+  std::cout<<"Evaluate initial guess for iterative scheme\n";
+  dg::HVec x = dg::evaluate( initial, grid);
+  const dg::HVec& copyable_vector = x;
 
-    // create volume and inverse volume on previously defined grid
-    const dg::HVec vol2d = dg::create::volume( grid);
-    const dg::HVec inv_vol2d = dg::create::inv_volume( grid);
+  // create volume and inverse volume on previously defined grid
+  const dg::HVec vol2d = dg::create::volume( grid);
+  const dg::HVec inv_vol2d = dg::create::inv_volume( grid);
 
-    // Create unnormalized Laplacian
-    dg::Elliptic<dg::CartesianGrid2d, dg::HMatrix, dg::HVec> laplaceM( grid);
+  // Create unnormalized Laplacian
+  dg::Elliptic<dg::CartesianGrid2d, dg::HMatrix, dg::HVec> laplaceM( grid);
 
-    // allocate memory in conjugate gradient
-    unsigned max_iter = n*n*Nx*Ny;
-    dg::CG<dg::HVec > pcg( copyable_vector, max_iter);
+  // allocate memory in conjugate gradient
+  unsigned max_iter = n*n*Nx*Ny;
+  dg::CG<dg::HVec > pcg( copyable_vector, max_iter);
 
-    // Evaluate right hand side and solution on the grid
-    dg::HVec b = dg::evaluate ( laplace_fct, grid);
-    const dg::HVec solution = dg::evaluate ( fct, grid);
+  // Evaluate right hand side and solution on the grid
+  dg::HVec b = dg::evaluate ( laplace_fct, grid);
+  const dg::HVec solution = dg::evaluate ( fct, grid);
 
-    // normalize right hand side
-    dg::blas2::symv( vol2d, b, b);
+  // normalize right hand side
+  dg::blas2::symv( vol2d, b, b);
 
-    // use inverse volume as preconditioner in solution method
-    const double eps = 1e-6;
-    unsigned number = pcg( laplaceM, x, b, inv_vol2d, eps);
-    std::cout << "Number of pcg iterations "<< number <<"\n";
-    std::cout << "For a precision of "<< eps<<std::endl;
-    //compute error
-    dg::HVec error( solution);
-    dg::blas1::axpby( 1.,x,-1.,error);
+  // use inverse volume as preconditioner in solution method
+  const double eps = 1e-6;
+  unsigned number = pcg( laplaceM, x, b, inv_vol2d, eps);
+  std::cout << "Number of pcg iterations "<< number <<"\n";
+  std::cout << "For a precision of "<< eps<<std::endl;
+  //compute error
+  dg::HVec error( solution);
+  dg::blas1::axpby( 1.,x,-1.,error);
 
-    dg::HVec lap_x(x), residuum( b);
-    dg::blas2::symv(  laplaceM, x, lap_x);
-    dg::blas1::axpby( 1., lap_x, -1., residuum);
+  dg::HVec lap_x(x), residuum( b);
+  dg::blas2::symv(  laplaceM, x, lap_x);
+  dg::blas1::axpby( 1., lap_x, -1., residuum);
 
-    //global relative error in L2 norm is O(h^P)
-    double res;
-    res = sqrt(dg::blas2::dot( x, vol2d, x));
-    std::cout << "L2 Norm of x is               " << res << std::endl;
-    res = sqrt(dg::blas2::dot(solution, vol2d , solution));
-    std::cout << "L2 Norm of Solution is        " << res << std::endl;
-    res = sqrt(dg::blas2::dot(error, vol2d , error));
-    std::cout << "L2 Norm of Error is           " << res << std::endl;
-    res = sqrt(dg::blas2::dot( residuum, vol2d, residuum));
-    std::cout << "L2 Norm of Residuum is        " << res << std::endl;
+  //global relative error in L2 norm is O(h^P)
+  double res;
+  res = sqrt(dg::blas2::dot( x, vol2d, x));
+  std::cout << "L2 Norm of x is               " << res << std::endl;
+  res = sqrt(dg::blas2::dot(solution, vol2d , solution));
+  std::cout << "L2 Norm of Solution is        " << res << std::endl;
+  res = sqrt(dg::blas2::dot(error, vol2d , error));
+  std::cout << "L2 Norm of Error is           " << res << std::endl;
+  res = sqrt(dg::blas2::dot( residuum, vol2d, residuum));
+  std::cout << "L2 Norm of Residuum is        " << res << std::endl;
 
-    return 0;
+  return 0;
 }
-```
+{% endhighlight %}
+
 This program executes on the host as is evident from the use of
  `dg::HVec`, a typedef for `thrust::host_vector<double>`, and `dg::HMatrix`.
  The new class that we encounter in this program is `dg::Elliptic` a

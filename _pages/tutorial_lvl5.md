@@ -17,7 +17,8 @@ What remains to do is to
  multistep scheme in time. The diffusive part is solved implicitly
  and the source term is contained in the explicit part. We
  manufactured a solution to test the implementation:
- ````C++
+
+{% highlight C++ linenos %}
 #include <iostream>
 
 #include "dg/algorithm.h"
@@ -119,7 +120,7 @@ int main()
   karniadakis.init( ex, im, time, y0, dt);
   //main time loop (NT = 20)
   for( unsigned i=0; i<NT; i++)
-     karniadakis.step( ex, im, time, y0); //inplace step
+    karniadakis.step( ex, im, time, y0); //inplace step
 
   dg::blas1::axpby( -1., sol, 1., y0);
   double res = sqrt(dg::blas2::dot( w2d, y0)/norm_sol);
@@ -127,7 +128,7 @@ int main()
 
   return 0;
 }
-````
+{% endhighlight %}
 
 
 

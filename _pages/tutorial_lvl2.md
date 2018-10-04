@@ -16,7 +16,7 @@ schemes like  Runge-Kutta. Let us try to integrate the
 damped driven harmonic oscillator, for which we actually know an analytic solution.
 Consider the following code:
 
-````C++
+{% highlight C++ linenos %}
 #include <iostream>
 #include "dg/algorithm.h"
 
@@ -34,21 +34,21 @@ struct Oscillator{
     //dv/dt = -2*g*w_0*v - w_0^2 x + F(t)
     yp[1] = -2.* m_damping*m_omega_0*y[1] - m_omega_0*m_omega_0*y[0] + sin(m_omega_drive*t);
   }
-private:
+  private:
   double m_damping, m_omega_0, m_omega_drive;
 };
 
 //The analytic solution is a bit lengthy ...
 std::array<double, 2> solution( double t, double damping, double omega_0, double omega_drive)
 {
-    double tmp1 = (2.* omega_0*damping);
-    double tmp2 = (omega_0*omega_0 - omega_drive*omega_drive)/omega_drive;
-    double amp = 1./sqrt( tmp1*tmp1 + tmp2*tmp2);
-    double phi = atan( 2.* omega_drive*omega_0*damping/(omega_drive*omega_drive-omega_0*omega_0));
+  double tmp1 = (2.* omega_0*damping);
+  double tmp2 = (omega_0*omega_0 - omega_drive*omega_drive)/omega_drive;
+  double amp = 1./sqrt( tmp1*tmp1 + tmp2*tmp2);
+  double phi = atan( 2.* omega_drive*omega_0*damping/(omega_drive*omega_drive-omega_0*omega_0));
 
-    double x = amp*sin(omega_drive*t+phi)/omega_drive;
-    double v = amp*cos(omega_drive*t+phi);
-    return {x,v};
+  double x = amp*sin(omega_drive*t+phi)/omega_drive;
+  double v = amp*cos(omega_drive*t+phi);
+  return {x,v};
 }
 
 int main()
@@ -73,7 +73,7 @@ int main()
   std::cout << "Norm of error is "<<sqrt(dg::blas1::dot( u, u))<<"\n";
   return 0;
 }
-````
+{% endhighlight %}
 
 There are two new ingredients that we used in this code. The first one is the
 time stepper `dg::RK`, which is a template of the vector class. Remember, it

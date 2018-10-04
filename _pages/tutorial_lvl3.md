@@ -26,7 +26,8 @@ defines the order of the method.
 #### Function evaluation and integration
 Let us look at a first example of what we can do with these methods. Let's
 integrate a function:
-````C++
+
+{% highlight C++ linenos %}
 #include <iostream>
 #include "dg/algorithm.h"
 
@@ -36,20 +37,20 @@ double function(double x, double y){
 }
 int main()
 {
-    //create a discretization of [0,2]x[0,2] with
-    //3 polynomial coefficients and 20 cells in x and y
-    dg::CartesianGrid2d g2d( 0, 2, 0, 2, 3, 20, 20);
-    //discretize a function on this grid
-    const dg::DVec f = dg::evaluate( function, g2d);
-    //create the volume element
-    const dg::DVec vol2d = dg::create::volume( g2d);
-    //compute the integral on the device
-    double integral = dg::blas1::dot( vol2d, f);
-    // output approximates (exp(2)-exp(0))^2
-    std::cout << integral <<std::endl;
-    return 0;
+  //create a discretization of [0,2]x[0,2] with
+  //3 polynomial coefficients and 20 cells in x and y
+  dg::CartesianGrid2d g2d( 0, 2, 0, 2, 3, 20, 20);
+  //discretize a function on this grid
+  const dg::DVec f = dg::evaluate( function, g2d);
+  //create the volume element
+  const dg::DVec vol2d = dg::create::volume( g2d);
+  //compute the integral on the device
+  double integral = dg::blas1::dot( vol2d, f);
+  // output approximates (exp(2)-exp(0))^2
+  std::cout << integral <<std::endl;
+  return 0;
 }
-````
+{% endhighlight %}
 In this program we encounter a new class, the `dg::CartesianGrid2d` and
 two new functions, `dg::evaluate` and `dg::create::volume`.
 The grid class represents the topology (what point is neighbor to what other
@@ -85,7 +86,8 @@ communicator. We do this in the most direct way, namely simply allocating
 an equally sized portion of the grid to every process in the communicator.
 Then, each process can evaluate `function` only on the portion of the
 grid that it was assigned to. The result looks like this:
-````C++
+
+{% highlight C++ linenos %}
 #include <iostream>
 //activate MPI in FELTOR
 #include "mpi.h"
@@ -96,31 +98,32 @@ double function(double x, double y){
 }
 int main(int argc, char* argv[])
 {
-    //init MPI and create a 2d Cartesian Communicator assuming 4 MPI threads
-    MPI_Init( &argc, &argv);
-    int periods[2] = {true, true}, np[2] = {2,2};
-    MPI_Comm comm;
-    MPI_Cart_create( MPI_COMM_WORLD, 2, np, periods, true, &comm);
-    //create a 2d discretization of [0,2]x[0,2] with
-    // 3 polynomial coefficients and 20 cells in x and y.
-    // Each process gets 10 by 10 cells
-    dg::CartesianMPIGrid2d g2d( 0, 2, 0, 2, 3, 20, 20, comm);
-    //discretize a function on this grid
-    const dg::MDVec x = dg::evaluate( function, g2d);
-    //create the volume element
-    const dg::MDVec vol2d = dg::create::volume( g2d);
-    //compute the square L2 norm
-    double norm = dg::blas1::dot( vol2d, f);
-    //on every thread norm is now: (exp(2)-exp(0))^2
-    //be a good MPI citizen and clean up
-    MPI_Finalize();
-    return 0;
+  //init MPI and create a 2d Cartesian Communicator assuming 4 MPI threads
+  MPI_Init( &argc, &argv);
+  int periods[2] = {true, true}, np[2] = {2,2};
+  MPI_Comm comm;
+  MPI_Cart_create( MPI_COMM_WORLD, 2, np, periods, true, &comm);
+  //create a 2d discretization of [0,2]x[0,2] with
+  // 3 polynomial coefficients and 20 cells in x and y.
+  // Each process gets 10 by 10 cells
+  dg::CartesianMPIGrid2d g2d( 0, 2, 0, 2, 3, 20, 20, comm);
+  //discretize a function on this grid
+  const dg::MDVec x = dg::evaluate( function, g2d);
+  //create the volume element
+  const dg::MDVec vol2d = dg::create::volume( g2d);
+  //compute the square L2 norm
+  double norm = dg::blas1::dot( vol2d, f);
+  //on every thread norm is now: (exp(2)-exp(0))^2
+  //be a good MPI citizen and clean up
+  MPI_Finalize();
+  return 0;
 }
-````
+{% endhighlight %}
+
 #### Derivatives
 The next step after evaluating functions is to compute derivatives of course.
 Consider this example code, which computes the Arakawa bracket:
-````C++
+{% highlight C++ linenos %}
 #include <iostream>
 //make M_PI available for msvc
 #define _USE_MATH_DEFINES
@@ -128,13 +131,13 @@ Consider this example code, which computes the Arakawa bracket:
 
 //define some test functions
 double left( double x, double y) {
-    return sin(x) * cos(y);
+  return sin(x) * cos(y);
 }
 double right( double x, double y) {
-    return sin(y) * cos(x);
+  return sin(y) * cos(x);
 }
 double jacobian( double x, double y) {
-    return cos(x) * cos(y) * cos(x) * cos(y) - sin(x) * sin(y) * sin(x) * sin(y);
+  return cos(x) * cos(y) * cos(x) * cos(y) - sin(x) * sin(y) * sin(x) * sin(y);
 }
 //grid parameters
 double lx = 2.*M_PI, ly = lx;
@@ -176,7 +179,8 @@ int main()
   std::cout << "Distance to solution "<<error<<std::endl;
   return 0;
 }
-````
+{% endhighlight %}
+
 Here, we encounter the `dg::create::dx` and `dg::create::dy` functions that,
 as the names suggest, create derivatives in x and y direction respectively.
 The only parameter is the grid. Per default the boundary condition for the

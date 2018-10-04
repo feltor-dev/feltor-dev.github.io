@@ -12,7 +12,7 @@ sidebar:
 ## Vector juggling
 
 Look at the following piece of code:
-```C++
+{% highlight C++ linenos %}
 #include <iostream>
 #include <array>
 #include "dg/algorithm.h"
@@ -29,20 +29,20 @@ int main()
   std::cout << sum << std::endl;
   return 0;
 }
-```
+{% endhighlight %}
 In this code we encounter our first two dg functions, namely `dg::blas1::axpby`
 and `dg::blas1::dot`. They perform very basic operations, namely adding vectors
  and computing scalar products respectively. (You can look up their formal documentation [here](https://feltor-dev.github.io/doc/dg/html/group__blas1.html)).
 The remarkable thing about these two functions is that they are templates.
 This means you can call them for many different vector classes. We could
 for example replace the line `std::array<double,2> x={2,2}, y={4,4}` with
-````C++
+{% highlight C++ %}
 std::vector<double> x(2,2), y(2,4);
-````
+{% endhighlight %}
 or
-````C++
+{% highlight C++ %}
 thrust::vector<double> x(2,2), y(2,4);
-````
+{% endhighlight %}
 All will have the same result. Also note that all of these examples
 execute on a single CPU thread, that is the compiler chooses the same
 **serial** implementation of the vector addition and the scalar product.
@@ -50,7 +50,8 @@ execute on a single CPU thread, that is the compiler chooses the same
 So let us increase the vector size to say, a Million. Wouldn't it
 be better to perform these operations in parallel? And a measurement
 of the execution time would also be nice:
-````C++
+
+{% highlight C++ linenos %}
 #include <iostream>
 #include <array>
 #include "dg/algorithm.h"
@@ -75,7 +76,8 @@ int main()
   std::cout << sum << std::endl;
   return 0;
 }
-````
+{% endhighlight %}
+
 The first thing to notice is that we now use the
  `thrust::device_vector<double>` class. This is a vector class of
  the `thrust` library, which allocates memory on a GPU.
@@ -88,7 +90,7 @@ The first thing to notice is that we now use the
 
  So, what if the vector size is even larger `1e9` say? Then an MPI implementation
  would be handy, wouldn't it:
- ````C++
+{% highlight C++ linenos %}
  #include <iostream>
 //activate MPI in FELTOR
 #include "mpi.h"
@@ -96,41 +98,42 @@ The first thing to notice is that we now use the
 
 int main(int argc, char* argv[])
 {
-    //init MPI
-    MPI_Init( &argc, &argv);
-    MPI_Comm comm = MPI_COMM_WORLD;
-    int np = MPI_Comm_size(comm);
-    int rank = MPI_Comm_rank(comm);
-    //allocate and initialize local memory
-    thrust::device_vector<double> x_local( 1e9/np, 2), y_local(1e9/np, 4);
-    //combine the local vectors to a global MPI vector
-    dg::MPI_Vector<thrust::device_vector<double>> x(x_local, comm);
-    dg::MPI_Vector<thrust::device_vector<double>> y(x_local, comm);
+  //init MPI
+  MPI_Init( &argc, &argv);
+  MPI_Comm comm = MPI_COMM_WORLD;
+  int np = MPI_Comm_size(comm);
+  int rank = MPI_Comm_rank(comm);
+  //allocate and initialize local memory
+  thrust::device_vector<double> x_local( 1e9/np, 2), y_local(1e9/np, 4);
+  //combine the local vectors to a global MPI vector
+  dg::MPI_Vector<thrust::device_vector<double>> x(x_local, comm);
+  dg::MPI_Vector<thrust::device_vector<double>> y(x_local, comm);
 
-    dg::Timer t;
-    t.tic();
-    dg::blas1::axpby( a, x, b, y);
-    t.toc();
-    if(rank==0)std::cout << "Axpby took "<<t.diff()<<"s\n";
-    t.tic();
-    double sum = dg::blas1::dot( x,y);
-    t.toc();
-    if(rank==0)std::cout << "Dot   took "<<t.diff()<<"s\n";
-    if(rank==0)std::cout << sum << std::endl;
-    MPI_Finalize();
-    return 0;
+  dg::Timer t;
+  t.tic();
+  dg::blas1::axpby( a, x, b, y);
+  t.toc();
+  if(rank==0)std::cout << "Axpby took "<<t.diff()<<"s\n";
+  t.tic();
+  double sum = dg::blas1::dot( x,y);
+  t.toc();
+  if(rank==0)std::cout << "Dot   took "<<t.diff()<<"s\n";
+  if(rank==0)std::cout << sum << std::endl;
+  MPI_Finalize();
+  return 0;
 }
-````
+{% endhighlight %}
 Note how we have just written a hybrid MPI + GPU code!  
 One remaining thing is that we quickly get tired
  of writing `thrust::device_vector<double>` and
 especially `dg::MPI_Vector<thrust::device_vector<double>>`.
  So we invented convenient typedefs:
-````C++
+{% highlight C++ %}
 dg::DVec x_local( 1e9/np, 2), y_local(1e9/np, 4)
 dg::MVec x(x_local, comm), y(y_local, comm);
-````
- which is completely equivalent to the corresponding lines above.
+{% endhighlight %}
+
+ which is completely equivalent to the corresponding lines 16 and 17 above.
 
 A remaining question is of course: what if we do not want to add vectors
 but multiply them instead? Or take the exponential of each element?
