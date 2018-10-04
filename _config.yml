@@ -6,6 +6,7 @@ remote_theme: mmistakes/minimal-mistakes
 url: https://feltor-dev.github.io/
 plugins:
   - jekyll-mentions
+  - jekyll-include-cache
 include:
   - _pages
   - .htaccess
