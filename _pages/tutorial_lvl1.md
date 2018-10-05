@@ -11,7 +11,12 @@ sidebar:
 
 ## Vector juggling
 
-Look at the following piece of code:
+Let's say we want to add two vectors, x and y, each
+multiplied by a constant, a and b. That is we want to compute
+`y =  a*x+b*y`.
+Furthermore, assume we wish to compute the dot product
+of x and y. The following snippet of code does exactly that
+using the dg library:
 {% highlight C++ linenos %}
 #include <iostream>
 #include <array>
@@ -85,45 +90,60 @@ The first thing to notice is that we now use the
  are now called with a GPU vector class and redirects the call to the
  corresponding CUDA implementation. If you do not have a GPU you can also
  define the `THRUST_DEVICE_SYSTEM=THRUST_DEVICE_SYSTEM_OMP` Macro, then
- the call redirects to a OpenMP parallelized version. The `dg::Timer`
+ the call redirects to a OpenMP parallelized version. This is a
+ specialty of the `thrust::device_vector` class of the thrust library
+ that is included in `dg/algorithm.h`. You could also use your own
+ vector class in the `dg::blas1` functions. This is an advanced feature
+ and requires you to provide a specialization of `dg::TensorTraits`
+ for your class, where you specify the parallelization strategy that
+ the libary should choose. Please consult the [documentation](https://feltor-dev.github.io/doc/dg/html/index.html#dispatch) for further details on this.
+
+  The `dg::Timer`
  measures the time it took to execute the functions.
 
- So, what if the vector size is even larger `1e9` say? Then an MPI implementation
+ So, what if the vector size is even larger `1e8` say? Then an MPI implementation
  would be handy, wouldn't it:
 {% highlight C++ linenos %}
- #include <iostream>
+#include <iostream>
 //activate MPI in FELTOR
 #include "mpi.h"
 #include "dg/algorithm.h"
 
 int main(int argc, char* argv[])
 {
-  //init MPI
-  MPI_Init( &argc, &argv);
-  MPI_Comm comm = MPI_COMM_WORLD;
-  int np = MPI_Comm_size(comm);
-  int rank = MPI_Comm_rank(comm);
-  //allocate and initialize local memory
-  thrust::device_vector<double> x_local( 1e9/np, 2), y_local(1e9/np, 4);
-  //combine the local vectors to a global MPI vector
-  dg::MPI_Vector<thrust::device_vector<double>> x(x_local, comm);
-  dg::MPI_Vector<thrust::device_vector<double>> y(x_local, comm);
+ //init MPI
+ MPI_Init( &argc, &argv);
+ //let's take all processes
+ MPI_Comm comm = MPI_COMM_WORLD;
+ //get the number of MPI processes in the communicator
+ int np,rank;
+ MPI_Comm_size(comm, &np);
+ //get the rank of the calling process
+ MPI_Comm_rank(comm, &rank);
+ //allocate and initialize local memory
+ thrust::device_vector<double> x_local( 1e8/np, 2), y_local(1e8/np, 4);
+ //combine the local vectors to a global MPI vector
+ dg::MPI_Vector<thrust::device_vector<double>> x(x_local, comm);
+ dg::MPI_Vector<thrust::device_vector<double>> y(x_local, comm);
 
-  dg::Timer t;
-  t.tic();
-  dg::blas1::axpby( a, x, b, y);
-  t.toc();
-  if(rank==0)std::cout << "Axpby took "<<t.diff()<<"s\n";
-  t.tic();
-  double sum = dg::blas1::dot( x,y);
-  t.toc();
-  if(rank==0)std::cout << "Dot   took "<<t.diff()<<"s\n";
-  if(rank==0)std::cout << sum << std::endl;
-  MPI_Finalize();
-  return 0;
+ //now repeat the operations from before...
+ double a = 0.5, b = 0.25;
+ dg::Timer t;
+ t.tic();
+ dg::blas1::axpby( a, x, b, y);
+ t.toc();
+ if(rank==0)std::cout << "Axpby took "<<t.diff()<<"s\n";
+ t.tic();
+ double sum = dg::blas1::dot( x,y);
+ t.toc();
+ if(rank==0)std::cout << "Dot   took "<<t.diff()<<"s\n";
+ if(rank==0)std::cout << sum << std::endl;
+ //be a good MPI citizen and clean up
+ MPI_Finalize();
+ return 0;
 }
 {% endhighlight %}
-Note how we have just written a hybrid MPI + GPU code!  
+Note how we have just written a hybrid MPI + GPU code!
 One remaining thing is that we quickly get tired
  of writing `thrust::device_vector<double>` and
 especially `dg::MPI_Vector<thrust::device_vector<double>>`.
@@ -133,7 +153,7 @@ dg::DVec x_local( 1e9/np, 2), y_local(1e9/np, 4)
 dg::MVec x(x_local, comm), y(y_local, comm);
 {% endhighlight %}
 
- which is completely equivalent to the corresponding lines 16 and 17 above.
+ which is completely equivalent to the corresponding lines 14 and 16/ 17 above.
 
 A remaining question is of course: what if we do not want to add vectors
 but multiply them instead? Or take the exponential of each element?
