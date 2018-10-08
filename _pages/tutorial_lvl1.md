@@ -9,6 +9,12 @@ sidebar:
   nav: "tutorial"
 ---
 
+This tutorial explains how to use Feltor in your programs.
+If you haven't done so yet, please read the
+[Quick Start Guide](https://github.com/feltor-dev/feltor) first, which
+explains how to install the library and compile programs.
+Here, we dive right into the first example codes.
+
 ## Vector juggling
 
 Let's say we want to add two vectors, x and y, each
@@ -40,7 +46,7 @@ and `dg::blas1::dot`. They perform very basic operations, namely adding vectors
  and computing scalar products respectively. (You can look up their formal documentation [here](https://feltor-dev.github.io/doc/dg/html/group__blas1.html)).
 The remarkable thing about these two functions is that they are templates.
 This means you can call them for many different vector classes. We could
-for example replace the line `std::array<double,2> x={2,2}, y={4,4}` with
+for example replace line 8 with
 {% highlight C++ %}
 std::vector<double> x(2,2), y(2,4);
 {% endhighlight %}
@@ -64,13 +70,14 @@ of the execution time would also be nice:
 int main()
 {
   double a = 0.5, b = 0.25;
+  //use the thrust library to allocate memory on the device
   thrust::device_vector<double> x(1e6,2), y(1e6,4);
   //create a Timer
   dg::Timer t;
-  //start the timer
+  //start the clock
   t.tic();
   dg::blas1::axpby( a, x, b, y);
-  //stop the timer
+  //stop the clock
   t.toc();
   std::cout << "Axpby took "<<t.diff()<<"s\n";
   t.tic();
@@ -85,14 +92,16 @@ int main()
 
 The first thing to notice is that we now use the
  `thrust::device_vector<double>` class. This is a vector class of
- the `thrust` library, which allocates memory on a GPU.
+ the [thrust](https://thrust.github.io/) library, which allocates memory on a GPU.
  The compiler recognizes that `dg::blas1::axpby` and `dg::blas1::dot`
  are now called with a GPU vector class and redirects the call to the
  corresponding CUDA implementation. If you do not have a GPU you can also
  define the `THRUST_DEVICE_SYSTEM=THRUST_DEVICE_SYSTEM_OMP` Macro, then
  the call redirects to a OpenMP parallelized version. This is a
  specialty of the `thrust::device_vector` class of the thrust library
- that is included in `dg/algorithm.h`. You could also use your own
+ that is included in `dg/algorithm.h`.
+
+ You could also use your own
  vector class in the `dg::blas1` functions. This is an advanced feature
  and requires you to provide a specialization of `dg::TensorTraits`
  for your class, where you specify the parallelization strategy that
@@ -153,7 +162,7 @@ dg::DVec x_local( 1e9/np, 2), y_local(1e9/np, 4)
 dg::MVec x(x_local, comm), y(y_local, comm);
 {% endhighlight %}
 
- which is completely equivalent to the corresponding lines 14 and 16/ 17 above.
+ which is completely equivalent to the corresponding lines 18 and 20/ 21 above.
 
 A remaining question is of course: what if we do not want to add vectors
 but multiply them instead? Or take the exponential of each element?
@@ -166,8 +175,8 @@ so that you can create your very own blas1 function. Check out the
 The remarkable thing to take home here, is that we now have an abstract way
 to perform vector operations on many different types and with
 different parallelization. This means that you can write code that makes
-best use of the hardware you have available. Also, what if we now
-write algorithms only in terms of `dg::blas1` functions? Wouldn't we then
+best use of the hardware you have available. Furthermore, imagine that we now
+write algorithms only in terms of `dg::blas1` functions. Wouldn't we then
 have a way to run algorithms unchanged on a variety of hardware?
 
 This is in fact exactly what the `dg` library does. It provides a set of
