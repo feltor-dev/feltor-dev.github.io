@@ -15,7 +15,7 @@ If you haven't done so yet, please read the
 explains how to install the library and compile programs.
 Here, we dive right into the first example codes.
 
-## Vector juggling
+## Level 1 - Vector juggling
 
 Let's say we want to add two vectors, x and y, each
 multiplied by a constant, a and b. That is we want to compute

@@ -63,11 +63,11 @@ int main()
   //construct Runge Kutta class
   dg::RK<4, std::array<double,2> >  rk( u);
   //construct a functor with the right interface
-  Oscillator osci( damping, omega_0, omega_drive);
+  Oscillator oscillator( damping, omega_0, omega_drive);
   //integration loop
   double t=t_start;
   for( unsigned i=0; i<N; i++)
-    rk.step( functor, t, u, t, u, dt); //step inplace
+    rk.step( oscillator, t, u, t, u, dt); //update t and u inplace
   //now compute error
   dg::blas1::axpby( 1., solution(t_end, damping, omega_0, omega_drive), -1., u);
   std::cout << "Norm of error is "<<sqrt(dg::blas1::dot( u, u))<<"\n";

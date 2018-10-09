@@ -23,7 +23,7 @@ hopefully brings you up to date. In simple words these methods use
 a polynomial of arbitrary order in each grid cell instead of just one single
 point as do finite difference methods. The order of the polynomial
 defines the order of the method.
-#### Function evaluation and integration
+### Function evaluation and integration
 Let us look at a first example of what we can do with these methods. Let's
 integrate a function:
 
@@ -108,7 +108,7 @@ int main(int argc, char* argv[])
   // Each process gets 10 by 10 cells
   dg::CartesianMPIGrid2d g2d( 0, 2, 0, 2, 3, 20, 20, comm);
   //discretize a function on this grid
-  const dg::MDVec x = dg::evaluate( function, g2d);
+  const dg::MDVec f = dg::evaluate( function, g2d);
   //create the volume element
   const dg::MDVec vol2d = dg::create::volume( g2d);
   //compute the square L2 norm
@@ -120,7 +120,7 @@ int main(int argc, char* argv[])
 }
 {% endhighlight %}
 
-#### Derivatives
+### Derivatives
 The next step after evaluating functions is to compute derivatives of course.
 Consider this example code, which computes the Arakawa bracket:
 {% highlight C++ linenos %}
@@ -193,3 +193,24 @@ nothing but applying a given matrix to a vector and storing the result in
 another vector. Just as the `dg::blas1` functions the `dg::blas2` functions
 are templates that work for a variety of data types. In an MPI implementation
 we would use a `dg::MDMatrix`.
+
+### A note on boundary conditions
+The matrices in the 'dg' library only know **homogeneous** boundary conditions.
+For example when choosing `dg::DIR` as the boundary condition in `dg::create::dx`
+the assumed boundary value is zero and when choosing `dg::NEU` the assumed 
+derivative on the boundary is also zero.
+This has the advantage that our matrices are always linear. However, how do I
+implement other boundary conditions then, you ask. For example when the
+boundary value of my function is 1 and not 0?
+
+The answer is that you'll have to manually subtract the value from the function
+**before** you apply the derivative. For example if we assume that 'lhs' in the 
+previous example has non-homogeneous boundary conditions we would do something like
+{% highlight C++%}
+dg::blas1::plus( lhs, -1.);
+dg::blas2::symv( dx, lhs, dxlhs);
+{% endhighlight C++%}
+
+This procedure can be done similarly for Neumann boundary conditions, where
+you'll have to construct a function with your boundary conditions and subtract
+it before applying the derivative.

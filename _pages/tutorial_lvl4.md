@@ -49,7 +49,7 @@ int main()
   const dg::HVec vol2d = dg::create::volume( grid);
   const dg::HVec inv_vol2d = dg::create::inv_volume( grid);
 
-  // Create unnormalized Laplacian
+  // Create negative, unnormalized, positive definite Laplacian
   dg::Elliptic<dg::CartesianGrid2d, dg::HMatrix, dg::HVec> laplaceM( grid);
 
   // allocate memory in conjugate gradient
@@ -101,7 +101,8 @@ This program executes on the host as is evident from the use of
  vector class must fit together, that is, they must be useable in
  a `dg::blas2::symv` function.  Note, that the `dg::Elliptic` class
  acts as a matrix itself. This becomes clear in the line `dg::blas2::symv( laplaceM, x, lap_x)`. Note that the `M` in `laplaceM`
- reminds us that `dg::Elliptic` discretizes the negative Laplacian.
+ reminds us that `dg::Elliptic` discretizes the negative Laplacian in order to
+ generate a postive definite operator.
 
  The geometry defines the metric tensor.
  Recall, that in general the Laplacian depends on metric coefficients.
@@ -111,3 +112,14 @@ conjugate gradient solver. The `dg::CG` is a Level 2 class and thus
 only depends on the vector class that we use. Recall here that the
 conjugate gradient algorithm can be implemented with vector addition `dg::blas1::axpby`,
 a scalar product (`dg::blas1::dot`) and a matrix-vector multiplication (`dg::blas2::symv`) alone.
+
+In the above example we inverted the simple Laplacian. However, recall here
+that a conjugate gradient algorithm works for **any** matrix that is symmetric
+and positive definite. We provide a wide selection of already implemented
+matrix types in our library but you can also provide your very own matrix class
+in the above program.
+  This is an advanced feature
+ and requires you to provide a specialization of `dg::TensorTraits`
+ for your class, where you specify the parallelization strategy that
+ the libary should choose. Please consult the [documentation](https://feltor-dev.github.io/doc/dg/html/index.html#dispatch) for further details on this.
+

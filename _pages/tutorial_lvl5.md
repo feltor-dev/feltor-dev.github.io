@@ -130,12 +130,12 @@ int main()
 }
 {% endhighlight %}
 
-
-
 We have now mastered the basic `dg` library. We hope it became clear
 that it provides building blocks that you can use to solve your
 very own problem. So how do I do Input and Output of fields in my code,
 you might ask. The answer is that we do not do this. For input/output
 you will have to use other libraries that specialize on these operations.
-If we may recommend something (and in fact we use it in our programs),
-then use JSON as a format for input files and netCDF-4 for output files.
+If we may recommend something,
+then use JSON as a format for input files and NetCDF-4 for output files.
+Please take a look at the `feltor/src/` folders to see examples of how
+we ourseleves use our library in connection with JSON and NetCDF for a variety of physical models. 
