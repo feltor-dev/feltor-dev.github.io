@@ -22,8 +22,11 @@ classes: wide
 * R. Kube, M. Wiesenberger, O.E. Garcia  [Amplitude and size scaling for interchange motions of plasma filaments](https://doi.org/10.1063/1.4971220) Physics of Plasmas 23, 122302 (2016)
 * M. Held, M. Wiesenberger, J. Madsen, A. Kendl [The influence of temperature dynamics and dynamic finite ion Larmor radius effects on seeded high amplitude plasma blobs. ](https://doi.org/10.1088/0029-5515/56/12/126005) Nuclear Fusion 56, 126005 (2016)
 * M. Held, M. Wiesenberger, A. Stegmeir [Three discontinuous Galerkin schemes for the anisotropic heat conduction equation on non-aligned grids](https://doi.org/10.1016/j.cpc.2015.10.009)  Computer Physics Communications 199, 29-39 (2016)
+* M. Held [Full-F gyro-fluid modelling of the tokamak edge and scrape-off
+layer](http://diglib.uibk.ac.at/urn:nbn:at:at-ubi:1-6853) PhD thesis (2016)
 
 2014
 ----
-* M. Wiesenberger, J. Madsen, A. Kendl [Radial convection of finite ion temperature, high amplitude plasma blobs. ](https://doi.org/10.1063/1.4894220)  Phys. Plasmas 21, 092301 (2014) 
-* L. Einkemmer, M. Wiesenberger [A conservative discontinuous Galerkin scheme for the 2D incompressible Navier-Stokes equations ](https://doi.org/10.1016/j.cpc.2014.07.007)  Computer Physics Communications 185, 2865-2873 (2014) 
+* M. Wiesenberger, J. Madsen, A. Kendl [Radial convection of finite ion temperature, high amplitude plasma blobs. ](https://doi.org/10.1063/1.4894220)  Phys. Plasmas 21, 092301 (2014)
+* L. Einkemmer, M. Wiesenberger [A conservative discontinuous Galerkin scheme for the 2D incompressible Navier-Stokes equations ](https://doi.org/10.1016/j.cpc.2014.07.007)  Computer Physics Communications 185, 2865-2873 (2014)
+* M. Wiesenberger [Gyrofluid computations of filament dynamics in tokamak scrape-off layers](http://diglib.uibk.ac.at/urn:nbn:at:at-ubi:1-1799) PhD thesis (2014)
