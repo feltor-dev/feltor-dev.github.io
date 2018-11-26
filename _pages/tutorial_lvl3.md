@@ -8,7 +8,7 @@ comments: false
 sidebar:
   nav: "tutorial"
 ---
-## Fun with grids and derivatives
+## Grids and derivatives
 
 In the first two chapters we saw how to deal with vectors and how to integrate
 our first ordinary differential equation. But how about partial
@@ -16,13 +16,14 @@ differential equations? In order to define a partial differential
 equation we need an actual physical space in two dimensions say and
 define derivatives on it. However, there is such a multitude of possible
 ways to discretize the physical space and the derivatives on it that we cannot
-hope to cover them all in one library. We have thus chosen so-called
-discontinuous Galerkin methods. What? You never heard of those before?
-Don't worry. We have written an [introduction to dG methods](https://feltor-dev.github.io/doc/dg/html/dg_introduction.pdf). That
-hopefully brings you up to date. In simple words these methods use
+hope to cover them all in one library. We have chosen so-called
+discontinuous Galerkin methods. You never heard of those before?
+In simple words these methods use
 a polynomial of arbitrary order in each grid cell instead of just one single
 point as do finite difference methods. The order of the polynomial
 defines the order of the method.
+To help you get started we have written an
+[introduction to dG methods](https://feltor-dev.github.io/doc/dg/html/dg_introduction.pdf).
 ### Function evaluation and integration
 Let us look at a first example of what we can do with these methods. Let's
 integrate a function:

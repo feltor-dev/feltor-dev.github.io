@@ -159,7 +159,7 @@ especially `dg::MPI_Vector<thrust::device_vector<double>>`.
  So we invented convenient typedefs:
 {% highlight C++ %}
 dg::DVec x_local( 1e9/np, 2), y_local(1e9/np, 4)
-dg::MVec x(x_local, comm), y(y_local, comm);
+dg::MDVec x(x_local, comm), y(y_local, comm);
 {% endhighlight %}
 
  which is completely equivalent to the corresponding lines 18 and 20/ 21 above.

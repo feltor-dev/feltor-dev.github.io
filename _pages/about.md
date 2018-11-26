@@ -18,6 +18,9 @@ Please check out our [Wiki](wiki.md)
 for some general overview over the code and our design goals and
 troubleshooting.
 
+Our [Tutorial](tutorial_lvl1.md) helps you get started with programming
+with our library.
+
 In the [Documentation](http://feltor-dev.github.io/doc/dg/html/modules.html)
 you will find the technical documentation of the library.
 There, we also provide pdf files
@@ -29,22 +32,18 @@ In the [Showroom](showroom.md) we present some example simulation results.
 In [Publications](publications.md) we feature publications that were
 achieved with the help of our libary.
 
+## Who we are
+
+**Matthias Wiesenberger** started the development of FELTOR early 2012
+as part of his PhD project in the group of Alexander Kendl at
+Innsbruck University, Austria.
+Since summer 2017 Matthias has worked with the plasma physics and
+fusion energy group at the Technical University of Denmark (DTU).
+
+**Markus Held**, a fellow PhD student in Innsbruck, joined
+the development of FELTOR in 2014.
 
 ## Acknowledgements
-
-FELTOR has been developed by Matthias Wiesenberger and Markus Held since 2012, who
-by that time worked at Innsbruck University, Austria.
-We received funding from the Austrian Science Fund (FWF) within
-project W1227 and Y398 under project leader Alexander Kendl at
-Innsbruck University.
-The work has been carried out within
-the framework of the EUROfusion Consortium and has received funding
-from the Euratom research and training programme 2014-2018 under
-grant agreement No 633053.
-MW has received funding from the European Union’s Horizon 2020
-research and innovation programme under the Marie
-Sklodowska-Curie grant agreement no. 713683 (COFUNDfellowsDTU).
-
 We gratefully acknowledge fruitful discussions and code contribution from
 
 * Ralph Kube
@@ -68,6 +67,17 @@ and from Intel Barcelona
 
 * Harald Servat
 
+We received funding from the Austrian Science Fund (FWF) within
+project W1227 and Y398 under project leader Alexander Kendl at
+Innsbruck University.  The work has been carried out within
+the framework of the EUROfusion Consortium and has received funding
+from the Euratom research and training programme 2014-2018 under
+grant agreement No 633053.
+MW has received funding from the European Union’s Horizon 2020
+research and innovation programme under the Marie
+Sklodowska-Curie grant agreement no. 713683 (COFUNDfellowsDTU).
+
+
 ## Terms of use
 FELTOR is [fair](https://www.force11.org/fairprinciples) software and
 licensed under the very permissive [MIT license](https://en.wikipedia.org/wiki/MIT_License). The MIT
@@ -76,8 +86,9 @@ you name us (Matthias Wiesenberger and Markus Held) as creators, in
 particular in publications that use FELTOR to produce results. In this
 case we suggest to take a snapshot of the used code and create and cite
 a DOI via e.g. [Zenodo](http://www.zenodo.org) or to cite one of the
-existing DOIs if you did not alter the contained code in any way. We are
-happy if you cite our papers, but you don't have to just because you
+[existing DOIs](https://doi.org/10.5281/zenodo.596442)
+ if you did not alter the contained code in any way. We are
+happy if you cite [our papers](publications.md), but you don't have to just because you
 used our code and we certainly do not demand to be coauthors when we do
 not contribute directly to your results.
 
@@ -85,7 +96,7 @@ not contribute directly to your results.
 Our latest code release has a shiny DOI badge from zenodo
 
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1207806.svg)](https://doi.org/10.5281/zenodo.1207806)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.596442.svg)](https://doi.org/10.5281/zenodo.596442)
 
 
 which makes us officially citable.
