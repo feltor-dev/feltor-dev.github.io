@@ -33,13 +33,13 @@ wiki:
 tutorial:
   - title: "Tutorial"
     children:
-      - title: "Level 1"
+      - title: "Level 1: Vectors"
         url: /tutorial/
-      - title: "Level 2"
+      - title: "Level 2: Time integration"
         url: /tutorial_lvl2/
-      - title: "Level 3"
+      - title: "Level 3: Grids and derivatives"
         url: /tutorial_lvl3/
-      - title: "Level 4"
+      - title: "Level 4: Elliptic equations"
         url: /tutorial_lvl4/
-      - title: "Level 5"
+      - title: "Level 5: Applications"
         url: /tutorial_lvl5/

@@ -93,19 +93,19 @@ int main()
 
 This program executes on the host as is evident from the use of
  `dg::HVec`, a typedef for `thrust::host_vector<double>`, and `dg::HMatrix`.
- The new class that we encounter in this program is `dg::Elliptic` a
+ The new class that we encounter in this program is `dg::Elliptic`, a
  level 4 class. What this class does is to create and store the `dx` and `dy` matrices from the given grid. Furthermore, it allocates some
  internal workspace and defines a member function that uses `dg::blas1` and `dg::blas2` functions to discretize the Laplacian.
  The class depends on three template parameters,
- the geometry, the matrix and the the vector class. The matrix and the
+ the geometry, the matrix and the vector class. The matrix and the
  vector class must fit together, that is, they must be useable in
  a `dg::blas2::symv` function.  Note, that the `dg::Elliptic` class
  acts as a matrix itself. This becomes clear in the line `dg::blas2::symv( laplaceM, x, lap_x)`. Note that the `M` in `laplaceM`
  reminds us that `dg::Elliptic` discretizes the negative Laplacian in order to
  generate a postive definite operator.
 
- The geometry defines the metric tensor.
- Recall, that in general the Laplacian depends on metric coefficients.
+ The geometry `dg::CartesianGrid2d` defines a two-dimensional Euclidean metric
+ tensor. Recall, that in general the Laplacian depends on metric coefficients.
 
 Since the `dg::Elliptic` is a matrix, we can now use it in a
 conjugate gradient solver. The `dg::CG` is a Level 2 class and thus

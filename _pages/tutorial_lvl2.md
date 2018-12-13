@@ -60,8 +60,8 @@ int main()
   //set physical parameters and initial condition
   const double damping = 0.2, omega_0 = 1.0, omega_drive = 0.9;
   std::array<double,2> u = solution(t_start, damping, omega_0, omega_drive);
-  //construct Runge Kutta class
-  dg::RK<4, std::array<double,2> >  rk( u);
+  //construct Runge Kutta class with the "classic" 4 stage Butcher Tableau
+  dg::RungeKutta<std::array<double,2> >  rk("Runge-Kutta-4-4", u);
   //construct a functor with the right interface
   Oscillator oscillator( damping, omega_0, omega_drive);
   //integration loop
@@ -76,7 +76,7 @@ int main()
 {% endhighlight %}
 
 There are two new ingredients that we used in this code. The first one is the
-time stepper `dg::RK`, which is a template of the vector class. Remember, it
+time stepper `dg::RungeKutta`, which is a template of the vector class. Remember, it
 is implemented using the `dg::blas1` functions we encountered in the first
 chapter and so it will work for any vector class that we can insert into
 the `dg::blas1` functions and thus it will work for `std::array<double,2>`.
@@ -87,8 +87,10 @@ Our `Oscillator` class above is such a Functor.
 This function has to have a certain interface. Look at the
 `operator()` in the `Oscillator` class. First, it takes the current time as a
 `double` , then it takes the solution vector at the current time as input.
-The class of this solution vector `std::array<double,2>` and the template
-parameter in the `dg::RK` class must be the same. The final parameter is
+The class of this solution vector is `std::array<double,2>` and the template
+parameter in the `dg::RungeKutta` class must be the same. The final parameter is
 a reference to a vector where we store the computed result in.
-There is a collection of Time steppers that we have currently implemented
-in the [documentation](https://feltor-dev.github.io/doc/dg/html/group__time.html).
+
+There is a collection of time steppers including adaptive time steppers
+that we have currently implemented,
+see the [documentation](https://feltor-dev.github.io/doc/dg/html/group__time.html).
