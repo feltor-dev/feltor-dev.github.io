@@ -26,6 +26,7 @@ using the dg library:
 {% highlight C++ linenos %}
 #include <iostream>
 #include <array>
+// include the dg-library
 #include "dg/algorithm.h"
 
 int main()
@@ -36,7 +37,7 @@ int main()
   dg::blas1::axpby( a, x, b, y);
   // compute Sum_i x_i y_i
   double sum = dg::blas1::dot( x,y);
-  //output should be 8
+  // output should be 8
   std::cout << sum << std::endl;
   return 0;
 }

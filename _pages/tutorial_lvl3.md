@@ -30,8 +30,8 @@ integrate a function:
 
 {% highlight C++ linenos %}
 #include <iostream>
+//include the dg-library
 #include "dg/algorithm.h"
-
 //define a function to integrate
 double function(double x, double y){
   return exp(x) * exp(y);

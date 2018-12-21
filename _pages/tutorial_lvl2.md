@@ -91,6 +91,7 @@ The class of this solution vector is `std::array<double,2>` and the template
 parameter in the `dg::RungeKutta` class must be the same. The final parameter is
 a reference to a vector where we store the computed result in.
 
-There is a collection of time steppers including adaptive time steppers
-that we have currently implemented,
-see the [documentation](https://feltor-dev.github.io/doc/dg/html/group__time.html).
+There is an extensive collection of time steppers that we have currently
+implemented including multistep algorithms, explicit-implicit and adaptive time
+steppers, see the
+[documentation](https://feltor-dev.github.io/doc/dg/html/group__time.html).

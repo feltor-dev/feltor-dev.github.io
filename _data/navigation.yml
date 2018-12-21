@@ -43,3 +43,5 @@ tutorial:
         url: /tutorial_lvl4/
       - title: "Level 5: Applications"
         url: /tutorial_lvl5/
+      - title: "The Geometries extension"
+        url: /tutorial_geometries/
