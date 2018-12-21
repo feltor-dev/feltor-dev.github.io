@@ -1,5 +1,6 @@
-<map id="Basic Linear Algebra Subroutines" name="Basic Linear Algebra Subroutines">
-<area shape="rect" id="node1" href="$group__blas1.html" title="BLAS level 1 routines" alt="" coords="419,5,567,32"/>
-<area shape="rect" id="node2" href="$group__blas2.html" title="BLAS level 2 routines" alt="" coords="419,56,567,83"/>
-<area shape="rect" id="node3" href="$group__backend.html" title="Level 1: Vectors, Matrices\l and basic operations" alt="" coords="5,23,180,65"/>
+<map id="Basic container independent subroutines" name="Basic container independent subroutines">
+<area shape="rect" id="node1" href="$group__blas1.html" title="BLAS level 1 routines\l: Vector&#45;Vector" alt="" coords="473,5,621,47"/>
+<area shape="rect" id="node2" href="$group__blas2.html" title="BLAS level 2 routines\l: Matrix&#45;Vector" alt="" coords="473,71,621,112"/>
+<area shape="rect" id="node3" href="$group__tensor.html" title="Tensor&#45;Vector operations" alt="" coords="463,137,631,163"/>
+<area shape="rect" id="node4" href="$group__backend.html" title="Level 1: Vectors, Matrices\l and basic operations" alt="" coords="5,71,180,112"/>
 </map>

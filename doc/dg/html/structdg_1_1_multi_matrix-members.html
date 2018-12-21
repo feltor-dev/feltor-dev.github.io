@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -103,22 +103,23 @@ $(document).ready(function(){initNavTree('structdg_1_1_multi_matrix.html','');})
 
 <p>This is the complete list of members for <a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix&lt; MatrixType, ContainerType &gt;</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html#a21b75035ab5e7f209e05eacd1b3c0d07">get_matrices</a>()</td><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix&lt; MatrixType, ContainerType &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html#a1bcca2bc7ac23c5912fbb8f03ec3072c">get_matrices</a>() const</td><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix&lt; MatrixType, ContainerType &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html#a8dbca991fd3ff13e16f371c8b42b1067">get_temp</a>()</td><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix&lt; MatrixType, ContainerType &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html#a6435957bccc80e421c89d8488c9e6dab">get_temp</a>() const</td><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix&lt; MatrixType, ContainerType &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html#ae14e9c27d6e03614857b7086df402885">MultiMatrix</a>()</td><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix&lt; MatrixType, ContainerType &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html#ae5e7dafd471e65824ceaa4dca79c292a">MultiMatrix</a>(int dimension)</td><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix&lt; MatrixType, ContainerType &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html#a72b0c74bb179a7e43774536587d477a9">MultiMatrix</a>(const MultiMatrix&lt; OtherMatrix, OtherContainer &gt; &amp;src)</td><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix&lt; MatrixType, ContainerType &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html#acb8573038dfc39d692d368a0f8739593">real_type</a> typedef</td><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix&lt; MatrixType, ContainerType &gt;</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html#a35bd2e205f30ca5c054ddbbbe900ca6b">symv</a>(const ContainerType &amp;x, ContainerType &amp;y) const</td><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix&lt; MatrixType, ContainerType &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html#a3d11c07dcfe9c693646439574723c48c">symv</a>(real_type alpha, const ContainerType &amp;x, real_type beta, ContainerType &amp;y) const</td><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix&lt; MatrixType, ContainerType &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html#adb17118604152c1851e80f524d491952">construct</a>(const MultiMatrix&lt; OtherMatrix, OtherContainer &gt; &amp;src, Params &amp;&amp;...ps)</td><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix&lt; MatrixType, ContainerType &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html#a21b75035ab5e7f209e05eacd1b3c0d07">get_matrices</a>()</td><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix&lt; MatrixType, ContainerType &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html#a1bcca2bc7ac23c5912fbb8f03ec3072c">get_matrices</a>() const</td><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix&lt; MatrixType, ContainerType &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html#a8dbca991fd3ff13e16f371c8b42b1067">get_temp</a>()</td><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix&lt; MatrixType, ContainerType &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html#a6435957bccc80e421c89d8488c9e6dab">get_temp</a>() const</td><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix&lt; MatrixType, ContainerType &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html#ae14e9c27d6e03614857b7086df402885">MultiMatrix</a>()</td><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix&lt; MatrixType, ContainerType &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html#ae5e7dafd471e65824ceaa4dca79c292a">MultiMatrix</a>(int dimension)</td><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix&lt; MatrixType, ContainerType &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html#a72b0c74bb179a7e43774536587d477a9">MultiMatrix</a>(const MultiMatrix&lt; OtherMatrix, OtherContainer &gt; &amp;src)</td><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix&lt; MatrixType, ContainerType &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html#acb8573038dfc39d692d368a0f8739593">real_type</a> typedef</td><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix&lt; MatrixType, ContainerType &gt;</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html#a35bd2e205f30ca5c054ddbbbe900ca6b">symv</a>(const ContainerType &amp;x, ContainerType &amp;y) const</td><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix&lt; MatrixType, ContainerType &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html#a3d11c07dcfe9c693646439574723c48c">symv</a>(real_type alpha, const ContainerType &amp;x, real_type beta, ContainerType &amp;y) const</td><td class="entry"><a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix&lt; MatrixType, ContainerType &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:50 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

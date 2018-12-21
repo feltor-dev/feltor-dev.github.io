@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -113,11 +113,25 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 , <a class="el" href="structdg_1_1a_real_m_p_i_geometry2d.html#a9121b7a4b2c5cf364398824d23933d11">dg::aRealMPIGeometry2d&lt; real_type &gt;</a>
 , <a class="el" href="structdg_1_1a_real_m_p_i_geometry3d.html#a2a44948f565537d3d1ae407f80c6abd4">dg::aRealMPIGeometry3d&lt; real_type &gt;</a>
 </li>
+<li>map_index()
+: <a class="el" href="structdg_1_1_nearest_neighbor_comm.html#a8818544132cf8f05be2fa26b0a537e69">dg::NearestNeighborComm&lt; Index, Buffer, Vector &gt;</a>
+</li>
 <li>matrix()
 : <a class="el" href="structdg_1_1_m_p_i_dist_mat.html#a2d3376ce5e0862a0e5486b6c4bda9480">dg::MPIDistMat&lt; LocalMatrix, Collective &gt;</a>
 </li>
+<li>matrix_type
+: <a class="el" href="structdg_1_1_arakawa_x.html#a52b7ceeff0356d31728913ea1dc96ae9">dg::ArakawaX&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="classdg_1_1_elliptic3d.html#ad8563bd3d8e35bae6160b43d1e815a0e">dg::Elliptic3d&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="classdg_1_1_elliptic.html#a0339f2b9e7292666814bff7ed79ae9a5">dg::Elliptic&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_helmholtz2.html#af8e8f0ac287b9ff3c7718f016df5a2d6">dg::Helmholtz2&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_helmholtz3d.html#ae5570aa8b046614380ae80afd7586c04">dg::Helmholtz3d&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_helmholtz.html#a15ffedf466809e87e7bef7f34aa7e352">dg::Helmholtz&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_multigrid_c_g2d.html#aeb757d36ec9ffe31587b3d93796e6b94">dg::MultigridCG2d&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_poisson.html#ab0e34617f4c99d4c4c250a84b1bf7593">dg::Poisson&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="classdg_1_1_refined_elliptic.html#ab82ed2ecf0d5bceaf76b40dff884135a">dg::RefinedElliptic&lt; Geometry, IMatrix, Matrix, Container &gt;</a>
+</li>
 <li>max_iter()
-: <a class="el" href="structdg_1_1_multigrid_c_g2d.html#a9d52b12db2e96bfaa2c1b93c29cd8176">dg::MultigridCG2d&lt; Geometry, Matrix, container &gt;</a>
+: <a class="el" href="structdg_1_1_multigrid_c_g2d.html#ab94f4c33e61798f03fc0241e76c54efa">dg::MultigridCG2d&lt; Geometry, Matrix, Container &gt;</a>
 </li>
 <li>memory_category
 : <a class="el" href="structdg_1_1a_real_m_p_i_topology2d.html#af7489ea3debda06c3902331da6024e9a">dg::aRealMPITopology2d&lt; real_type &gt;</a>
@@ -131,7 +145,7 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 , <a class="el" href="structdg_1_1_topology_traits.html#ab645d8b9ec555edbb8a9c4dbe5e8200a">dg::TopologyTraits&lt; Topology &gt;</a>
 </li>
 <li>Message()
-: <a class="el" href="classdg_1_1_message.html#a98f87ba7128a8fe526fd069c9f29e633">dg::Message</a>
+: <a class="el" href="classdg_1_1_message.html#aed304046de640c58433eacba67fca85a">dg::Message</a>
 </li>
 <li>metric()
 : <a class="el" href="structdg_1_1a_real_geometry2d.html#ae44ca2cd920aaba214b458ab17a7a63f">dg::aRealGeometry2d&lt; real_type &gt;</a>
@@ -148,13 +162,13 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 : <a class="el" href="structdg_1_1_m_p_i___vector.html#ab79c8907a64d91971c63f1542df07f04">dg::MPI_Vector&lt; container &gt;</a>
 </li>
 <li>MPIDistMat()
-: <a class="el" href="structdg_1_1_m_p_i_dist_mat.html#accef1f6cc1037e206989eacfbf4d6be6">dg::MPIDistMat&lt; LocalMatrix, Collective &gt;</a>
+: <a class="el" href="structdg_1_1_m_p_i_dist_mat.html#a23864630bd3610bb94c0f58ffe1ef6f9">dg::MPIDistMat&lt; LocalMatrix, Collective &gt;</a>
 </li>
 <li>MultigridCG2d()
-: <a class="el" href="structdg_1_1_multigrid_c_g2d.html#a17fcd91d4e6da23ce043adbeb38edb8c">dg::MultigridCG2d&lt; Geometry, Matrix, container &gt;</a>
+: <a class="el" href="structdg_1_1_multigrid_c_g2d.html#a502323c42d6f651ea5ef5ab6d6a69127">dg::MultigridCG2d&lt; Geometry, Matrix, Container &gt;</a>
 </li>
 <li>MultiMatrix()
-: <a class="el" href="structdg_1_1_multi_matrix.html#ae14e9c27d6e03614857b7086df402885">dg::MultiMatrix&lt; MatrixType, ContainerType &gt;</a>
+: <a class="el" href="structdg_1_1_multi_matrix.html#a72b0c74bb179a7e43774536587d477a9">dg::MultiMatrix&lt; MatrixType, ContainerType &gt;</a>
 </li>
 <li>multiplyCellNumbers()
 : <a class="el" href="structdg_1_1a_real_m_p_i_topology2d.html#a4e1df80b8c060684dd0452d4a850f192">dg::aRealMPITopology2d&lt; real_type &gt;</a>
@@ -168,7 +182,7 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:50 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

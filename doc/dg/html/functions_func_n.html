@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -106,7 +106,7 @@ $(document).ready(function(){initNavTree('functions_func_n.html','');});
 , <a class="el" href="structdg_1_1a_real_topology3d.html#a9620c509fb7282ea22a0af0a42882555">dg::aRealTopology3d&lt; real_type &gt;</a>
 , <a class="el" href="structdg_1_1a_real_topology_x2d.html#acb057cf1bdea31802dc4198ea363357a">dg::aRealTopologyX2d&lt; real_type &gt;</a>
 , <a class="el" href="structdg_1_1a_real_topology_x3d.html#a345d291f9c503814a22a0ced02c7e419">dg::aRealTopologyX3d&lt; real_type &gt;</a>
-, <a class="el" href="structdg_1_1_nearest_neighbor_comm.html#ae6eb00dcdff96804b314cfe88bc46229">dg::NearestNeighborComm&lt; Index, Vector &gt;</a>
+, <a class="el" href="structdg_1_1_nearest_neighbor_comm.html#a3f7516e6a6707ebcdcafdc36d9de9f5c">dg::NearestNeighborComm&lt; Index, Buffer, Vector &gt;</a>
 , <a class="el" href="structdg_1_1_real_grid1d.html#a1c631f2939de2618df8b852056f3428d">dg::RealGrid1d&lt; real_type &gt;</a>
 </li>
 <li>N()
@@ -120,10 +120,17 @@ $(document).ready(function(){initNavTree('functions_func_n.html','');});
 : <a class="el" href="structdg_1_1a_real_refinement1d.html#aee13739fd3d75a708daaeacf46cc4fdf">dg::aRealRefinement1d&lt; real_type &gt;</a>
 </li>
 <li>NearestNeighborComm()
-: <a class="el" href="structdg_1_1_nearest_neighbor_comm.html#a5ec314af366d32c870272005b8f38b3e">dg::NearestNeighborComm&lt; Index, Vector &gt;</a>
+: <a class="el" href="structdg_1_1_nearest_neighbor_comm.html#ab8e33ecbc3e2c55deea1ddabc077aa85">dg::NearestNeighborComm&lt; Index, Buffer, Vector &gt;</a>
 </li>
 <li>NoRoot1d()
 : <a class="el" href="classdg_1_1_no_root1d.html#a6a474c7db506e8e133ae059e69eb7a10">dg::NoRoot1d</a>
+</li>
+<li>num_stages()
+: <a class="el" href="structdg_1_1_a_r_k_step.html#a0a1c5ba23f06988fc370505361243cfb">dg::ARKStep&lt; ContainerType, SolverType &gt;</a>
+, <a class="el" href="structdg_1_1_butcher_tableau.html#acff8887f43f5b6bd9ddb5afd39164115">dg::ButcherTableau&lt; real_type &gt;</a>
+, <a class="el" href="structdg_1_1_e_r_k_step.html#a095012ea4608f08685f861855ef3059f">dg::ERKStep&lt; ContainerType &gt;</a>
+, <a class="el" href="structdg_1_1_multigrid_c_g2d.html#adec75fbb948aa597f8d7c227a395028f">dg::MultigridCG2d&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_runge_kutta.html#a9723e3ed6353f1916489ab1c6572c885">dg::RungeKutta&lt; ContainerType &gt;</a>
 </li>
 <li>Nx()
 : <a class="el" href="structdg_1_1a_real_m_p_i_topology2d.html#a7f13033a2a2d49e03d774c7e2d621854">dg::aRealMPITopology2d&lt; real_type &gt;</a>
@@ -158,7 +165,7 @@ $(document).ready(function(){initNavTree('functions_func_n.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:50 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

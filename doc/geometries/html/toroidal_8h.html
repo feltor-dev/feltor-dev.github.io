@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
-<title>Geometries: toroidal.h File Reference</title>
+<title>Extension: Geometries: toroidal.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -44,9 +44,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Geometries
+   <div id="projectname">Extension: Geometries
    </div>
-   <div id="projectbrief">Extension with magnetic flux functions, grids and grid generators</div>
+   <div id="projectbrief">Magnetic flux functions, parallel derivatives and new grids and grid generators in &quot;dg/geometries/geometries.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -105,24 +105,6 @@ $(document).ready(function(){initNavTree('toroidal_8h.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="magnetic__field_8h_source.html">magnetic_field.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for toroidal.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="toroidal_8h__incl.png" border="0" usemap="#toroidal_8h" alt=""/></div>
-<map name="toroidal_8h" id="toroidal_8h">
-<area shape="rect" id="node2" href="magnetic__field_8h.html" title="magnetic_field.h" alt="" coords="22,80,139,107"/>
-<area shape="rect" id="node3" href="fluxfunctions_8h.html" title="fluxfunctions.h" alt="" coords="27,155,134,181"/>
-<area shape="rect" id="node4" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/memory_8h.html" title="dg/backend/memory.h" alt="" coords="5,229,156,256"/>
-</map>
-</div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="toroidal_8h__dep__incl.png" border="0" usemap="#toroidal_8hdep" alt=""/></div>
-<map name="toroidal_8hdep" id="toroidal_8hdep">
-<area shape="rect" id="node2" href="geometries_8h.html" title="geometries.h" alt="" coords="5,80,103,107"/>
-</map>
-</div>
 </div>
 <p><a href="toroidal_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -160,27 +142,27 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gacd371ac3baef2588c08c97cad964fa04"><td class="memItemLeft" align="right" valign="top">BinaryFunctorsLvl2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__toroidal.html#gacd371ac3baef2588c08c97cad964fa04">dg::geo::toroidal::createPsip</a> ()</td></tr>
-<tr class="memdesc:gacd371ac3baef2588c08c97cad964fa04"><td class="mdescLeft">&#160;</td><td class="mdescRight">constant \(\psi_p = 1\)  <a href="group__toroidal.html#gacd371ac3baef2588c08c97cad964fa04">More...</a><br /></td></tr>
-<tr class="separator:gacd371ac3baef2588c08c97cad964fa04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4406fe56ddb226b9752d51df87c04db9"><td class="memItemLeft" align="right" valign="top">BinaryFunctorsLvl1&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__toroidal.html#ga4406fe56ddb226b9752d51df87c04db9">dg::geo::toroidal::createIpol</a> ()</td></tr>
-<tr class="memdesc:ga4406fe56ddb226b9752d51df87c04db9"><td class="mdescLeft">&#160;</td><td class="mdescRight">constant \( I = 1\)  <a href="group__toroidal.html#ga4406fe56ddb226b9752d51df87c04db9">More...</a><br /></td></tr>
-<tr class="separator:ga4406fe56ddb226b9752d51df87c04db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1b467a106a28fe8b8ff77a374518c829"><td class="memItemLeft" align="right" valign="top">TokamakMagneticField&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__toroidal.html#ga1b467a106a28fe8b8ff77a374518c829">dg::geo::toroidal::createMagField</a> (double R0)</td></tr>
-<tr class="memdesc:ga1b467a106a28fe8b8ff77a374518c829"><td class="mdescLeft">&#160;</td><td class="mdescRight">Models a slab toroidal field.  <a href="group__toroidal.html#ga1b467a106a28fe8b8ff77a374518c829">More...</a><br /></td></tr>
-<tr class="separator:ga1b467a106a28fe8b8ff77a374518c829"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac643478ea14f273108a7190300f9b1a0"><td class="memItemLeft" align="right" valign="top">BinaryFunctorsLvl2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__circular.html#gac643478ea14f273108a7190300f9b1a0">dg::geo::circular::createPsip</a> (double R0)</td></tr>
-<tr class="memdesc:gac643478ea14f273108a7190300f9b1a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">circular \(\psi_p = \frac{1}{2}\left((R-R_0)^2 + Z^2 \right)\)  <a href="group__circular.html#gac643478ea14f273108a7190300f9b1a0">More...</a><br /></td></tr>
-<tr class="separator:gac643478ea14f273108a7190300f9b1a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1c88edf8b4078b3571ba6d404296d48d"><td class="memItemLeft" align="right" valign="top">BinaryFunctorsLvl1&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__circular.html#ga1c88edf8b4078b3571ba6d404296d48d">dg::geo::circular::createIpol</a> (double I0)</td></tr>
-<tr class="memdesc:ga1c88edf8b4078b3571ba6d404296d48d"><td class="mdescLeft">&#160;</td><td class="mdescRight">constant \( I = I_0\)  <a href="group__circular.html#ga1c88edf8b4078b3571ba6d404296d48d">More...</a><br /></td></tr>
-<tr class="separator:ga1c88edf8b4078b3571ba6d404296d48d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga24c4268469ccbabde18f7eb7ab124ac6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#ga24c4268469ccbabde18f7eb7ab124ac6">dg::geo::createToroidalField</a> (double R0)</td></tr>
-<tr class="memdesc:ga24c4268469ccbabde18f7eb7ab124ac6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Toroidal Magnetic field.  <a href="group__geom.html#ga24c4268469ccbabde18f7eb7ab124ac6">More...</a><br /></td></tr>
-<tr class="separator:ga24c4268469ccbabde18f7eb7ab124ac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa6d78afe4f306e34d509934f8f79421a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#gaa6d78afe4f306e34d509934f8f79421a">dg::geo::createCircularField</a> (double R0, double I0)</td></tr>
-<tr class="memdesc:gaa6d78afe4f306e34d509934f8f79421a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Magnetic field with circular flux surfaces and constant current.  <a href="group__geom.html#gaa6d78afe4f306e34d509934f8f79421a">More...</a><br /></td></tr>
-<tr class="separator:gaa6d78afe4f306e34d509934f8f79421a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga62d4a526e2170227a53e19f40716a061"><td class="memItemLeft" align="right" valign="top">static CylindricalFunctorsLvl2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__toroidal.html#ga62d4a526e2170227a53e19f40716a061">dg::geo::toroidal::createPsip</a> ()</td></tr>
+<tr class="memdesc:ga62d4a526e2170227a53e19f40716a061"><td class="mdescLeft">&#160;</td><td class="mdescRight">constant \(\psi_p = 1\)  <a href="group__toroidal.html#ga62d4a526e2170227a53e19f40716a061">More...</a><br /></td></tr>
+<tr class="separator:ga62d4a526e2170227a53e19f40716a061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4ea9852e07a0fcbf473cafa8625d691b"><td class="memItemLeft" align="right" valign="top">static CylindricalFunctorsLvl1&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__toroidal.html#ga4ea9852e07a0fcbf473cafa8625d691b">dg::geo::toroidal::createIpol</a> ()</td></tr>
+<tr class="memdesc:ga4ea9852e07a0fcbf473cafa8625d691b"><td class="mdescLeft">&#160;</td><td class="mdescRight">constant \( I = 1\)  <a href="group__toroidal.html#ga4ea9852e07a0fcbf473cafa8625d691b">More...</a><br /></td></tr>
+<tr class="separator:ga4ea9852e07a0fcbf473cafa8625d691b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1d02ad623c716a9b80b270c3ceeea70f"><td class="memItemLeft" align="right" valign="top">static TokamakMagneticField&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__toroidal.html#ga1d02ad623c716a9b80b270c3ceeea70f">dg::geo::toroidal::createMagField</a> (double R0)</td></tr>
+<tr class="memdesc:ga1d02ad623c716a9b80b270c3ceeea70f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Models a slab toroidal field.  <a href="group__toroidal.html#ga1d02ad623c716a9b80b270c3ceeea70f">More...</a><br /></td></tr>
+<tr class="separator:ga1d02ad623c716a9b80b270c3ceeea70f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6a9d6f6463a3b4ccd3a9659c07671cfa"><td class="memItemLeft" align="right" valign="top">static CylindricalFunctorsLvl2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__circular.html#ga6a9d6f6463a3b4ccd3a9659c07671cfa">dg::geo::circular::createPsip</a> (double R0)</td></tr>
+<tr class="memdesc:ga6a9d6f6463a3b4ccd3a9659c07671cfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">circular \(\psi_p = \frac{1}{2}\left((R-R_0)^2 + Z^2 \right)\)  <a href="group__circular.html#ga6a9d6f6463a3b4ccd3a9659c07671cfa">More...</a><br /></td></tr>
+<tr class="separator:ga6a9d6f6463a3b4ccd3a9659c07671cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab40e4b929ab5912634cd25ca472fe356"><td class="memItemLeft" align="right" valign="top">static CylindricalFunctorsLvl1&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__circular.html#gab40e4b929ab5912634cd25ca472fe356">dg::geo::circular::createIpol</a> (double I0)</td></tr>
+<tr class="memdesc:gab40e4b929ab5912634cd25ca472fe356"><td class="mdescLeft">&#160;</td><td class="mdescRight">constant \( I = I_0\)  <a href="group__circular.html#gab40e4b929ab5912634cd25ca472fe356">More...</a><br /></td></tr>
+<tr class="separator:gab40e4b929ab5912634cd25ca472fe356"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2d9ca2e61302113e806b1d05d6b3db7e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#ga2d9ca2e61302113e806b1d05d6b3db7e">dg::geo::createToroidalField</a> (double R0)</td></tr>
+<tr class="memdesc:ga2d9ca2e61302113e806b1d05d6b3db7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Toroidal Magnetic field.  <a href="group__geom.html#ga2d9ca2e61302113e806b1d05d6b3db7e">More...</a><br /></td></tr>
+<tr class="separator:ga2d9ca2e61302113e806b1d05d6b3db7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga16471692288263e2076b897dae16799f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#ga16471692288263e2076b897dae16799f">dg::geo::createCircularField</a> (double R0, double I0)</td></tr>
+<tr class="memdesc:ga16471692288263e2076b897dae16799f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Magnetic field with circular flux surfaces and constant current.  <a href="group__geom.html#ga16471692288263e2076b897dae16799f">More...</a><br /></td></tr>
+<tr class="separator:ga16471692288263e2076b897dae16799f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -188,7 +170,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="toroidal_8h.html">toroidal.h</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:03:04 for Geometries by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:57 for Extension: Geometries by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

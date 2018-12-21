@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['exdot_5fcuda_2ecuh',['exdot_cuda.cuh',['../exdot__cuda_8cuh.html',1,'']]],
-  ['exdot_5fomp_2eh',['exdot_omp.h',['../exdot__omp_8h.html',1,'']]],
-  ['exdot_5fserial_2eh',['exdot_serial.h',['../exdot__serial_8h.html',1,'']]]
+  ['mpi_5faccumulate_2eh',['mpi_accumulate.h',['../mpi__accumulate_8h.html',1,'']]]
 ];

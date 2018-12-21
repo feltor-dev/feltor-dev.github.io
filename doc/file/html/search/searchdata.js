@@ -1,10 +1,10 @@
 var indexSectionsWithContent =
 {
-  0: "dfnow",
+  0: "fnow",
   1: "n",
   2: "f",
   3: "n",
-  4: "dnow"
+  4: "now"
 };
 
 var indexSectionNames =

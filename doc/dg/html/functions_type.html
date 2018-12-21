@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -98,11 +98,47 @@ $(document).ready(function(){initNavTree('functions_type.html','');});
 <div class="contents">
 &#160;
 
+<h3><a id="index_b"></a>- b -</h3><ul>
+<li>buffer_type
+: <a class="el" href="structdg_1_1_nearest_neighbor_comm.html#aca21ce71af2867c5b4424f3aedf2ad91">dg::NearestNeighborComm&lt; Index, Buffer, Vector &gt;</a>
+</li>
+</ul>
+
+
 <h3><a id="index_c"></a>- c -</h3><ul>
+<li>const_iterator
+: <a class="el" href="structdg_1_1_view.html#a603eadfac959a4b0f66da90094fd1d74">dg::View&lt; ThrustVector &gt;</a>
+</li>
+<li>const_pointer
+: <a class="el" href="structdg_1_1_view.html#ac833e3989049b120016d7f0f85aa66a1">dg::View&lt; ThrustVector &gt;</a>
+</li>
+<li>const_pointer_type
+: <a class="el" href="structdg_1_1_nearest_neighbor_comm.html#abf727a5b8915ffad2ad814d185e417c5">dg::NearestNeighborComm&lt; Index, Buffer, Vector &gt;</a>
+</li>
 <li>container_type
-: <a class="el" href="structdg_1_1a_communicator.html#acf1b0599056bd3f22b374dcde9b1f213">dg::aCommunicator&lt; LocalContainer &gt;</a>
+: <a class="el" href="structdg_1_1a_communicator.html#a5edbb00e9845d00160d9aa75c9bd80da">dg::aCommunicator&lt; LocalContainer &gt;</a>
+, <a class="el" href="structdg_1_1_adams_bashforth.html#a1a2414c0f422719e435fcedb885faeec">dg::AdamsBashforth&lt; ContainerType &gt;</a>
+, <a class="el" href="structdg_1_1_adaptive.html#a9b0066793e3a3e9d5159da5c12dfb4b3">dg::Adaptive&lt; Stepper &gt;</a>
+, <a class="el" href="structdg_1_1_arakawa_x.html#a64303e59b909052ed5e2ee7a069baeb6">dg::ArakawaX&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_a_r_k_step.html#a2f8f1972d5cbb59f65adadb14163c48c">dg::ARKStep&lt; ContainerType, SolverType &gt;</a>
+, <a class="el" href="structdg_1_1_average.html#aaa16f1c805c79cb9864688ebdfad6ccf">dg::Average&lt; ContainerType &gt;</a>
+, <a class="el" href="classdg_1_1_c_g.html#a14fb1e36681ed536bbe769957338af16">dg::CG&lt; ContainerType &gt;</a>
+, <a class="el" href="structdg_1_1_default_solver.html#a198cee7128b283b9d1e270e8a36cf17e">dg::DefaultSolver&lt; ContainerType &gt;</a>
+, <a class="el" href="classdg_1_1_elliptic3d.html#ad305e7aefbb046b779873f91cf407993">dg::Elliptic3d&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="classdg_1_1_elliptic.html#a150f6366e58f3a46bea317f5ff3569eb">dg::Elliptic&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_e_r_k_step.html#a3e470750eeab8a05d089bae909582427">dg::ERKStep&lt; ContainerType &gt;</a>
+, <a class="el" href="structdg_1_1_extrapolation.html#a9569336bf7df69a10110a39f7204babe">dg::Extrapolation&lt; ContainerType &gt;</a>
+, <a class="el" href="structdg_1_1_helmholtz2.html#aae3689ba22fd75ddcb07ff01b256cf07">dg::Helmholtz2&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_helmholtz3d.html#aedbd778c183033aec2dd4b1a38671b82">dg::Helmholtz3d&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_helmholtz.html#a9991534c71b96e4a3caf94214523b661">dg::Helmholtz&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_karniadakis.html#a354eb528d7f7759ae89d04c6151412ac">dg::Karniadakis&lt; ContainerType, SolverType &gt;</a>
 , <a class="el" href="structdg_1_1_m_p_i___vector.html#ad42ce5571b198915c6b5c2eb9033ceb3">dg::MPI_Vector&lt; container &gt;</a>
-, <a class="el" href="structdg_1_1_nearest_neighbor_comm.html#a4484a5c5c781ed356d2d38ecc800ddcf">dg::NearestNeighborComm&lt; Index, Vector &gt;</a>
+, <a class="el" href="structdg_1_1_multigrid_c_g2d.html#ae4241083bbf815e345cbbe751e4e6d44">dg::MultigridCG2d&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_nearest_neighbor_comm.html#aabfc3bbed3b1a7ef48d4ae8d1046eac8">dg::NearestNeighborComm&lt; Index, Buffer, Vector &gt;</a>
+, <a class="el" href="structdg_1_1_poisson.html#a9909d57fa755c917cc844a3774e2fbb5">dg::Poisson&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="classdg_1_1_refined_elliptic.html#a93d58cb13096de4d2a7f6f847092ca2e">dg::RefinedElliptic&lt; Geometry, IMatrix, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_runge_kutta.html#ae18ae9edc0995efa085a7bc8acfac5a0">dg::RungeKutta&lt; ContainerType &gt;</a>
+, <a class="el" href="structdg_1_1_sparse_tensor.html#a5bf0669dc82dd8b7cd98ba435f16690d">dg::SparseTensor&lt; container &gt;</a>
 </li>
 </ul>
 
@@ -124,14 +160,28 @@ $(document).ready(function(){initNavTree('functions_type.html','');});
 
 <h3><a id="index_e"></a>- e -</h3><ul>
 <li>execution_policy
-: <a class="el" href="structdg_1_1_tensor_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1device__memory_01_4_00_01typef234173bb38c3d6e32284ba27107e7fb.html#a3807f54265d555011f0df73c9c1b5da2">dg::TensorTraits&lt; cusp::array1d&lt; T, cusp::device_memory &gt;, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
-, <a class="el" href="structdg_1_1_tensor_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1host__memory_01_4_00_01typenaf725bd90d6a127276d664beda2adcced.html#a0fc26261a582f72c6fe790976b7a153f">dg::TensorTraits&lt; cusp::array1d&lt; T, cusp::host_memory &gt;, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
-, <a class="el" href="structdg_1_1_tensor_traits_3_01_m_p_i___vector_3_01container_01_4_01_4.html#a775a58b0adca9de09a8d134c0a34e282">dg::TensorTraits&lt; MPI_Vector&lt; container &gt; &gt;</a>
+: <a class="el" href="structdg_1_1_tensor_traits_3_01_m_p_i___vector_3_01container_01_4_01_4.html#a775a58b0adca9de09a8d134c0a34e282">dg::TensorTraits&lt; MPI_Vector&lt; container &gt; &gt;</a>
 , <a class="el" href="structdg_1_1_tensor_traits_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html#a03f5cdf1772c3fda34035a98cf3c0cd7">dg::TensorTraits&lt; std::array&lt; T, N &gt; &gt;</a>
 , <a class="el" href="structdg_1_1_tensor_traits_3_01std_1_1vector_3_01_t_01_4_01_4.html#a27a7a704c81e960724333395525942bc">dg::TensorTraits&lt; std::vector&lt; T &gt; &gt;</a>
 , <a class="el" href="structdg_1_1_tensor_traits_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__arithmetic_3_382e8af1d8cb4a11a63fc6b26ba4b4b9.html#aaf3351a23bd1673600f4ba2518cdb744">dg::TensorTraits&lt; T, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
 , <a class="el" href="structdg_1_1_tensor_traits_3_01thrust_1_1device__vector_3_01_t_01_4_01_4.html#a26d37dd790a7eec86373fbf2a215c974">dg::TensorTraits&lt; thrust::device_vector&lt; T &gt; &gt;</a>
 , <a class="el" href="structdg_1_1_tensor_traits_3_01thrust_1_1host__vector_3_01_t_01_4_01_4.html#afe9e19f9d39229bcd634f6ec44ef6dbb">dg::TensorTraits&lt; thrust::host_vector&lt; T &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_tensor_traits_3_01_view_3_01_thrust_vector_01_4_01_4.html#ae57408eba2b6bba3819826b6c01fb065">dg::TensorTraits&lt; View&lt; ThrustVector &gt; &gt;</a>
+</li>
+</ul>
+
+
+<h3><a id="index_g"></a>- g -</h3><ul>
+<li>geometry_type
+: <a class="el" href="structdg_1_1_arakawa_x.html#abfa9569c00d0351a21b5560508775088">dg::ArakawaX&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="classdg_1_1_elliptic3d.html#aebe3ab313fd2b27ca536cf8723382266">dg::Elliptic3d&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="classdg_1_1_elliptic.html#a3f46a595035cc2ea721a290f69162211">dg::Elliptic&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_helmholtz2.html#a4a01cf2bcab924d334bc56b05232fff4">dg::Helmholtz2&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_helmholtz3d.html#ab233563b3747661806dfe9cac10495a4">dg::Helmholtz3d&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_helmholtz.html#aedf326be82d4f3a8fa1424820a6eadf6">dg::Helmholtz&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_multigrid_c_g2d.html#a9f15aac16dcdb67f310e0af621b538c7">dg::MultigridCG2d&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_poisson.html#a6f46f4565f5e67e358130e038c498e16">dg::Poisson&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="classdg_1_1_refined_elliptic.html#a48c7728016f89a88e3d7ddbb3b15b0fb">dg::RefinedElliptic&lt; Geometry, IMatrix, Matrix, Container &gt;</a>
 </li>
 </ul>
 
@@ -145,15 +195,24 @@ $(document).ready(function(){initNavTree('functions_type.html','');});
 
 
 <h3><a id="index_i"></a>- i -</h3><ul>
-<li>IVec
-: <a class="el" href="structdg_1_1_coo_sparse_block_mat.html#af1364d9c406951269b14c6c76ee95022">dg::CooSparseBlockMat&lt; value_type &gt;</a>
-, <a class="el" href="structdg_1_1_coo_sparse_block_mat_device.html#a6851b4bcf64dd79e775209804b51d65d">dg::CooSparseBlockMatDevice&lt; value_type &gt;</a>
-, <a class="el" href="structdg_1_1_ell_sparse_block_mat.html#a40e9077e44ec3d450eb1ee874fb7b638">dg::EllSparseBlockMat&lt; value_type &gt;</a>
+<li>iterator
+: <a class="el" href="structdg_1_1_view.html#ad0703c5aa12136c70b910b5d69cc08e8">dg::View&lt; ThrustVector &gt;</a>
 </li>
 </ul>
 
 
 <h3><a id="index_m"></a>- m -</h3><ul>
+<li>matrix_type
+: <a class="el" href="structdg_1_1_arakawa_x.html#a52b7ceeff0356d31728913ea1dc96ae9">dg::ArakawaX&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="classdg_1_1_elliptic3d.html#ad8563bd3d8e35bae6160b43d1e815a0e">dg::Elliptic3d&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="classdg_1_1_elliptic.html#a0339f2b9e7292666814bff7ed79ae9a5">dg::Elliptic&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_helmholtz2.html#af8e8f0ac287b9ff3c7718f016df5a2d6">dg::Helmholtz2&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_helmholtz3d.html#ae5570aa8b046614380ae80afd7586c04">dg::Helmholtz3d&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_helmholtz.html#a15ffedf466809e87e7bef7f34aa7e352">dg::Helmholtz&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_multigrid_c_g2d.html#aeb757d36ec9ffe31587b3d93796e6b94">dg::MultigridCG2d&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_poisson.html#ab0e34617f4c99d4c4c250a84b1bf7593">dg::Poisson&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="classdg_1_1_refined_elliptic.html#ab82ed2ecf0d5bceaf76b40dff884135a">dg::RefinedElliptic&lt; Geometry, IMatrix, Matrix, Container &gt;</a>
+</li>
 <li>memory_category
 : <a class="el" href="structdg_1_1a_real_m_p_i_topology2d.html#af7489ea3debda06c3902331da6024e9a">dg::aRealMPITopology2d&lt; real_type &gt;</a>
 , <a class="el" href="structdg_1_1a_real_m_p_i_topology3d.html#a40e7929edf5b84a4a7eaa38c83ff9a41">dg::aRealMPITopology3d&lt; real_type &gt;</a>
@@ -175,17 +234,25 @@ $(document).ready(function(){initNavTree('functions_type.html','');});
 , <a class="el" href="structdg_1_1_real_cylindrical_grid3d.html#ad96544e0664e3a56941dfa0f231a376a">dg::RealCylindricalGrid3d&lt; real_type &gt;</a>
 , <a class="el" href="structdg_1_1_real_cylindrical_m_p_i_grid3d.html#a0b64ea8180eac9ea3d30824b68baf958">dg::RealCylindricalMPIGrid3d&lt; real_type &gt;</a>
 </li>
+<li>pointer
+: <a class="el" href="structdg_1_1_view.html#a65aafb83cf73a342868d8c2e1b40f2fa">dg::View&lt; ThrustVector &gt;</a>
+</li>
+<li>pointer_type
+: <a class="el" href="structdg_1_1_nearest_neighbor_comm.html#a3428c68d97ffc6a106be3289a644f0cf">dg::NearestNeighborComm&lt; Index, Buffer, Vector &gt;</a>
+</li>
 </ul>
 
 
 <h3><a id="index_r"></a>- r -</h3><ul>
 <li>real_type
-: <a class="el" href="structdg_1_1_a_b.html#ad78f0a050c18b1c1a66cfac2957713b2">dg::AB&lt; k, ContainerType &gt;</a>
-, <a class="el" href="structdg_1_1_karniadakis.html#a1b7f645cc16714088580aea97907e42a">dg::Karniadakis&lt; ContainerType &gt;</a>
-, <a class="el" href="structdg_1_1_multi_matrix.html#acb8573038dfc39d692d368a0f8739593">dg::MultiMatrix&lt; MatrixType, ContainerType &gt;</a>
-, <a class="el" href="structdg_1_1_r_k.html#a78540b38078f021290c60e92b107689f">dg::RK&lt; s, ContainerType &gt;</a>
-, <a class="el" href="structdg_1_1_r_k__opt.html#af235053a0fc601eb1bb133ebc449789a">dg::RK_opt&lt; s, ContainerType &gt;</a>
-, <a class="el" href="structdg_1_1_s_i_r_k.html#a33eb77e0cbafb3481706abecf9e7fac6">dg::SIRK&lt; ContainerType &gt;</a>
+: <a class="el" href="structdg_1_1_multi_matrix.html#acb8573038dfc39d692d368a0f8739593">dg::MultiMatrix&lt; MatrixType, ContainerType &gt;</a>
+</li>
+</ul>
+
+
+<h3><a id="index_s"></a>- s -</h3><ul>
+<li>stepper_type
+: <a class="el" href="structdg_1_1_adaptive.html#a6c48d0d136681f6c6810e41538fb8771">dg::Adaptive&lt; Stepper &gt;</a>
 </li>
 </ul>
 
@@ -194,8 +261,6 @@ $(document).ready(function(){initNavTree('functions_type.html','');});
 <li>tensor_category
 : <a class="el" href="structdg_1_1_tensor_traits_3_01_coo_sparse_block_mat_3_01_t_01_4_01_4.html#a01a701e4ef722f90dbee17a82960cfee">dg::TensorTraits&lt; CooSparseBlockMat&lt; T &gt; &gt;</a>
 , <a class="el" href="structdg_1_1_tensor_traits_3_01_coo_sparse_block_mat_device_3_01_t_01_4_01_4.html#af2a45ceb030ac10c20051c1ea892e32c">dg::TensorTraits&lt; CooSparseBlockMatDevice&lt; T &gt; &gt;</a>
-, <a class="el" href="structdg_1_1_tensor_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1device__memory_01_4_00_01typef234173bb38c3d6e32284ba27107e7fb.html#a86f270a6e439ab9428664e39409bdfd6">dg::TensorTraits&lt; cusp::array1d&lt; T, cusp::device_memory &gt;, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
-, <a class="el" href="structdg_1_1_tensor_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1host__memory_01_4_00_01typenaf725bd90d6a127276d664beda2adcced.html#a50594239b921d753818d3216cc3cabd9">dg::TensorTraits&lt; cusp::array1d&lt; T, cusp::host_memory &gt;, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
 , <a class="el" href="structdg_1_1_tensor_traits_3_01cusp_1_1coo__matrix_3_01_i_00_01_v_00_01_m_01_4_01_4.html#a0542bf3e4489be37a6db44a22d5cd4f5">dg::TensorTraits&lt; cusp::coo_matrix&lt; I, V, M &gt; &gt;</a>
 , <a class="el" href="structdg_1_1_tensor_traits_3_01cusp_1_1csr__matrix_3_01_i_00_01_v_00_01_m_01_4_01_4.html#a9d589d777ce7ea25e58c3d2411f8b59c">dg::TensorTraits&lt; cusp::csr_matrix&lt; I, V, M &gt; &gt;</a>
 , <a class="el" href="structdg_1_1_tensor_traits_3_01cusp_1_1dia__matrix_3_01_i_00_01_v_00_01_m_01_4_01_4.html#a092259ed31f5a12f62cbf49883d48e20">dg::TensorTraits&lt; cusp::dia_matrix&lt; I, V, M &gt; &gt;</a>
@@ -211,27 +276,48 @@ $(document).ready(function(){initNavTree('functions_type.html','');});
 , <a class="el" href="structdg_1_1_tensor_traits_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__arithmetic_3_382e8af1d8cb4a11a63fc6b26ba4b4b9.html#a05cb07242a6b2ce41f3a30d3fd1a59be">dg::TensorTraits&lt; T, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
 , <a class="el" href="structdg_1_1_tensor_traits_3_01thrust_1_1device__vector_3_01_t_01_4_01_4.html#ad46373ec8e9fd9f3c056d73a3ccc1313">dg::TensorTraits&lt; thrust::device_vector&lt; T &gt; &gt;</a>
 , <a class="el" href="structdg_1_1_tensor_traits_3_01thrust_1_1host__vector_3_01_t_01_4_01_4.html#aa0391f106ccbf7c8037c280d29bdd89f">dg::TensorTraits&lt; thrust::host_vector&lt; T &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_tensor_traits_3_01_view_3_01_thrust_vector_01_4_01_4.html#adf395c874ce97a7fa7645ccc2ee3f85b">dg::TensorTraits&lt; View&lt; ThrustVector &gt; &gt;</a>
 </li>
 </ul>
 
 
 <h3><a id="index_v"></a>- v -</h3><ul>
 <li>value_type
-: <a class="el" href="structdg_1_1a_real_m_p_i_topology2d.html#ac7ed4700e661ef7aadd42c2282817603">dg::aRealMPITopology2d&lt; real_type &gt;</a>
+: <a class="el" href="structdg_1_1a_communicator.html#a6b3761c8938941ad409b0e5ae8f396ba">dg::aCommunicator&lt; LocalContainer &gt;</a>
+, <a class="el" href="structdg_1_1_adams_bashforth.html#ae258cba455a07c7fcac5f4d9d4ae3bf5">dg::AdamsBashforth&lt; ContainerType &gt;</a>
+, <a class="el" href="structdg_1_1_adaptive.html#a9f64c811c0abb1a6aa871d4bf7b868a0">dg::Adaptive&lt; Stepper &gt;</a>
+, <a class="el" href="structdg_1_1_arakawa_x.html#acf289da0211749ce91439c11f42fad3b">dg::ArakawaX&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1a_real_m_p_i_topology2d.html#ac7ed4700e661ef7aadd42c2282817603">dg::aRealMPITopology2d&lt; real_type &gt;</a>
 , <a class="el" href="structdg_1_1a_real_m_p_i_topology3d.html#a72ac6bbcc8bee903c7f872f63442f015">dg::aRealMPITopology3d&lt; real_type &gt;</a>
 , <a class="el" href="structdg_1_1a_real_topology2d.html#af74426b14531eb59433f626e62aabd66">dg::aRealTopology2d&lt; real_type &gt;</a>
 , <a class="el" href="structdg_1_1a_real_topology3d.html#a6392237ae7fd37983266d92080d11686">dg::aRealTopology3d&lt; real_type &gt;</a>
 , <a class="el" href="structdg_1_1a_real_topology_x2d.html#a373617d957d9ea3bcd071a0398e1d369">dg::aRealTopologyX2d&lt; real_type &gt;</a>
 , <a class="el" href="structdg_1_1a_real_topology_x3d.html#a8f2a0a2d640759568c916845ad08a054">dg::aRealTopologyX3d&lt; real_type &gt;</a>
-, <a class="el" href="classdg_1_1_c_g.html#a04d80ef20e62c3da6c6e179c69ad8be4">dg::CG&lt; ContainerType &gt;</a>
+, <a class="el" href="structdg_1_1_a_r_k_step.html#ab2ba292b836e088549efd5dbbb4de6e0">dg::ARKStep&lt; ContainerType, SolverType &gt;</a>
+, <a class="el" href="structdg_1_1_butcher_tableau.html#af9f9544ca1cf3c9aba9232d94257579d">dg::ButcherTableau&lt; real_type &gt;</a>
+, <a class="el" href="classdg_1_1_c_g.html#a9c685d91e2c114c6d0e93e32a91c3f8a">dg::CG&lt; ContainerType &gt;</a>
+, <a class="el" href="structdg_1_1_converts_to_butcher_tableau.html#a10685693db4f8121556330c415266f6a">dg::ConvertsToButcherTableau&lt; real_type &gt;</a>
+, <a class="el" href="structdg_1_1_default_solver.html#a97f8cab8aaa354a9f44baf19b33aefe5">dg::DefaultSolver&lt; ContainerType &gt;</a>
+, <a class="el" href="classdg_1_1_elliptic3d.html#a6f4af0cfb52029ba09b10b9f1495fbfa">dg::Elliptic3d&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="classdg_1_1_elliptic.html#a23f4bd07d427976a974c53ce43c6d806">dg::Elliptic&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_e_r_k_step.html#a72f873f92577fade064373856bcc37b5">dg::ERKStep&lt; ContainerType &gt;</a>
+, <a class="el" href="structdg_1_1_extrapolation.html#a201b041087d3c7137c0a505033fb1969">dg::Extrapolation&lt; ContainerType &gt;</a>
+, <a class="el" href="structdg_1_1_helmholtz2.html#a03cc55c501f30ded3618456effc9c43c">dg::Helmholtz2&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_helmholtz3d.html#afb9a7231555aa9c7e6065d41579af0c6">dg::Helmholtz3d&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_helmholtz.html#a7bcfe47ff38699953ffe2f8fb1d898ec">dg::Helmholtz&lt; Geometry, Matrix, Container &gt;</a>
 , <a class="el" href="structdg_1_1_invert.html#a60703c940d54cd6da959829ce4187d80">dg::Invert&lt; ContainerType &gt;</a>
+, <a class="el" href="structdg_1_1_karniadakis.html#a34eee3926acbade2f6951cb564715f61">dg::Karniadakis&lt; ContainerType, SolverType &gt;</a>
+, <a class="el" href="structdg_1_1_m_p_i_dist_mat.html#a382a85c9d413581afaccfcef642cf46b">dg::MPIDistMat&lt; LocalMatrix, Collective &gt;</a>
+, <a class="el" href="structdg_1_1_multigrid_c_g2d.html#a31cc3f8e39468ef4b723d00e11b48601">dg::MultigridCG2d&lt; Geometry, Matrix, Container &gt;</a>
 , <a class="el" href="classdg_1_1_operator.html#a322ecb3322b51f04d23178d05578cdd9">dg::Operator&lt; T &gt;</a>
+, <a class="el" href="structdg_1_1_poisson.html#a7db4d83bfc463585923b901fa0f895bf">dg::Poisson&lt; Geometry, Matrix, Container &gt;</a>
 , <a class="el" href="structdg_1_1_real_grid1d.html#afe8cb7fa6c2d5b459d12036219abe150">dg::RealGrid1d&lt; real_type &gt;</a>
 , <a class="el" href="structdg_1_1_real_grid_x1d.html#a25dc0e737c59bbb26d14b5bdd94131b8">dg::RealGridX1d&lt; real_type &gt;</a>
+, <a class="el" href="classdg_1_1_refined_elliptic.html#a50877a4197c77cfc7bc63b2b917710b2">dg::RefinedElliptic&lt; Geometry, IMatrix, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_row_col_dist_mat.html#a403442a8360abb63eef362d6ff33fb90">dg::RowColDistMat&lt; LocalMatrixInner, LocalMatrixOuter, Collective &gt;</a>
+, <a class="el" href="structdg_1_1_runge_kutta.html#a33c922bb83794eb0bb9f744489d6ac78">dg::RungeKutta&lt; ContainerType &gt;</a>
 , <a class="el" href="structdg_1_1_tensor_traits_3_01_coo_sparse_block_mat_3_01_t_01_4_01_4.html#a4dfc2591d792b9989e805a66884489bf">dg::TensorTraits&lt; CooSparseBlockMat&lt; T &gt; &gt;</a>
 , <a class="el" href="structdg_1_1_tensor_traits_3_01_coo_sparse_block_mat_device_3_01_t_01_4_01_4.html#a32bd9a338c3ba270e9c9c29469395eaf">dg::TensorTraits&lt; CooSparseBlockMatDevice&lt; T &gt; &gt;</a>
-, <a class="el" href="structdg_1_1_tensor_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1device__memory_01_4_00_01typef234173bb38c3d6e32284ba27107e7fb.html#adee7ac202627479809582c9f4d1832e9">dg::TensorTraits&lt; cusp::array1d&lt; T, cusp::device_memory &gt;, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
-, <a class="el" href="structdg_1_1_tensor_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1host__memory_01_4_00_01typenaf725bd90d6a127276d664beda2adcced.html#a372a081d769c13fe82ed230fffab9578">dg::TensorTraits&lt; cusp::array1d&lt; T, cusp::host_memory &gt;, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
 , <a class="el" href="structdg_1_1_tensor_traits_3_01cusp_1_1coo__matrix_3_01_i_00_01_v_00_01_m_01_4_01_4.html#ab02b210604438dcbb361cbae12867525">dg::TensorTraits&lt; cusp::coo_matrix&lt; I, V, M &gt; &gt;</a>
 , <a class="el" href="structdg_1_1_tensor_traits_3_01cusp_1_1csr__matrix_3_01_i_00_01_v_00_01_m_01_4_01_4.html#a20bc10733c09134ce32803bafb32f2ec">dg::TensorTraits&lt; cusp::csr_matrix&lt; I, V, M &gt; &gt;</a>
 , <a class="el" href="structdg_1_1_tensor_traits_3_01cusp_1_1dia__matrix_3_01_i_00_01_v_00_01_m_01_4_01_4.html#ac3c7c573c7471cf568fd8938a3cd3139">dg::TensorTraits&lt; cusp::dia_matrix&lt; I, V, M &gt; &gt;</a>
@@ -247,6 +333,7 @@ $(document).ready(function(){initNavTree('functions_type.html','');});
 , <a class="el" href="structdg_1_1_tensor_traits_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__arithmetic_3_382e8af1d8cb4a11a63fc6b26ba4b4b9.html#a05ea7d9d8da0527660a797720cd3cdf2">dg::TensorTraits&lt; T, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
 , <a class="el" href="structdg_1_1_tensor_traits_3_01thrust_1_1device__vector_3_01_t_01_4_01_4.html#a425cfae9bd3c3828079304a95561f560">dg::TensorTraits&lt; thrust::device_vector&lt; T &gt; &gt;</a>
 , <a class="el" href="structdg_1_1_tensor_traits_3_01thrust_1_1host__vector_3_01_t_01_4_01_4.html#adfc7f9d1bb360b0406a43d0ed05dbf61">dg::TensorTraits&lt; thrust::host_vector&lt; T &gt; &gt;</a>
+, <a class="el" href="structdg_1_1_tensor_traits_3_01_view_3_01_thrust_vector_01_4_01_4.html#ad9057534c90d0dba4909417bd45aa2dc">dg::TensorTraits&lt; View&lt; ThrustVector &gt; &gt;</a>
 , <a class="el" href="structdg_1_1_topology_traits.html#afac43512dd917206ad2f3aca2a27d4a1">dg::TopologyTraits&lt; Topology &gt;</a>
 </li>
 </ul>
@@ -255,7 +342,7 @@ $(document).ready(function(){initNavTree('functions_type.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:50 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

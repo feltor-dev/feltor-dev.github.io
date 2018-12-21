@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -106,57 +106,23 @@ $(document).ready(function(){initNavTree('multistep_8h.html','');});
 
 <p>contains multistep explicit&amp; implicit time-integrators  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="runge__kutta_8h_source.html">runge_kutta.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="cg_8h_source.html">cg.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for multistep.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="multistep_8h__incl.png" border="0" usemap="#multistep_8h" alt=""/></div>
-<map name="multistep_8h" id="multistep_8h">
-<area shape="rect" id="node2" href="runge__kutta_8h.html" title="contains runge&#45;kutta explicit time&#45;integrators " alt="" coords="1538,155,1639,181"/>
-<area shape="rect" id="node40" href="cg_8h.html" title="cg.h" alt="" coords="1043,80,1089,107"/>
-<area shape="rect" id="node5" href="exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="2882,237,3031,263"/>
-<area shape="rect" id="node9" href="blas1_8h.html" title="blas1.h" alt="" coords="1557,237,1621,263"/>
-<area shape="rect" id="node11" href="tensor__traits_8h.html" title="backend/tensor_traits.h" alt="" coords="1929,408,2088,435"/>
-<area shape="rect" id="node18" href="tensor__traits__scalar_8h.html" title="backend/tensor_traits\l_scalar.h" alt="" coords="2139,319,2286,360"/>
-<area shape="rect" id="node19" href="tensor__traits__thrust_8h.html" title="backend/tensor_traits\l_thrust.h" alt="" coords="1969,319,2115,360"/>
-<area shape="rect" id="node22" href="tensor__traits__cusp_8h.html" title="backend/tensor_traits\l_cusp.h" alt="" coords="2411,319,2558,360"/>
-<area shape="rect" id="node29" href="tensor__traits__std_8h.html" title="backend/tensor_traits\l_std.h" alt="" coords="2582,319,2729,360"/>
-<area shape="rect" id="node33" href="mpi__vector_8h.html" title="backend/mpi_vector.h" alt="" coords="657,326,808,353"/>
-<area shape="rect" id="node38" href="subroutines_8h.html" title="subroutines.h" alt="" coords="935,326,1035,353"/>
-<area shape="rect" id="node14" href="scalar__categories_8h.html" title="scalar_categories.h" alt="" coords="1668,483,1803,509"/>
-<area shape="rect" id="node15" href="vector__categories_8h.html" title="vector_categories.h" alt="" coords="1947,557,2083,584"/>
-<area shape="rect" id="node16" href="matrix__categories_8h.html" title="matrix_categories.h" alt="" coords="2226,632,2362,659"/>
-<area shape="rect" id="node17" href="execution__policy_8h.html" title="execution_policy.h" alt="" coords="1878,483,2009,509"/>
-<area shape="rect" id="node35" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/mpi__accumulate_8h.html" title="exblas/mpi_accumulate.h" alt="" coords="637,408,807,435"/>
-<area shape="rect" id="node39" href="functions_8h.html" title="contains some utility functions for the evaluation() routines " alt="" coords="962,408,1125,435"/>
-<area shape="rect" id="node42" href="blas_8h.html" title="blas.h" alt="" coords="1259,155,1316,181"/>
-<area shape="rect" id="node45" href="functors_8h.html" title="functors.h" alt="" coords="606,155,686,181"/>
-<area shape="rect" id="node43" href="blas2_8h.html" title="blas2.h" alt="" coords="2342,237,2406,263"/>
-<area shape="rect" id="node44" href="typedefs_8h.html" title="Useful typedefs of commonly used types. " alt="" coords="934,237,1070,263"/>
-<area shape="rect" id="node49" href="grid_8h.html" title="base topology classes " alt="" coords="369,326,481,353"/>
-<area shape="rect" id="node50" href="evaluation_8h.html" title="Function discretization routines. " alt="" coords="255,237,405,263"/>
-</map>
-</div>
+<div class="textblock"><code>#include &quot;<a class="el" href="implicit_8h_source.html">implicit.h</a>&quot;</code><br />
 </div>
 <p><a href="multistep_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_a_b.html">dg::AB&lt; k, ContainerType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_adams_bashforth.html">dg::AdamsBashforth&lt; ContainerType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for Adams-Bashforth explicit multistep time-integration </p><p class="formulaDsp">
-\[ u^{n+1} = u^n + \Delta t\sum_{j=0}^k b_j f\left(u^{n-j}\right) \]
+\[ u^{n+1} = u^n + \Delta t\sum_{j=0}^{s-1} b_j f\left(t^n - j \Delta t, u^{n-j}\right) \]
 </p>
-<p>.  <a href="structdg_1_1_a_b.html#details">More...</a><br /></td></tr>
+<p>.  <a href="structdg_1_1_adams_bashforth.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_karniadakis.html">dg::Karniadakis&lt; ContainerType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_karniadakis.html">dg::Karniadakis&lt; ContainerType, SolverType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for <a class="el" href="structdg_1_1_karniadakis.html" title="Struct for Karniadakis semi-implicit multistep time-integration . ">Karniadakis</a> semi-implicit multistep time-integration </p><p class="formulaDsp">
 \[ \begin{align} v^{n+1} = \sum_{q=0}^2 \alpha_q v^{n-q} + \Delta t\left[\left(\sum_{q=0}^2\beta_q \hat E(t^{n}-q\Delta t, v^{n-q})\right) + \gamma_0\hat I(t^{n}+\Delta t, v^{n+1})\right] \end{align} \]
 </p>
 <p>.  <a href="structdg_1_1_karniadakis.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_s_i_r_k.html">dg::SIRK&lt; ContainerType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Semi implicit Runge Kutta method after Yoh and Zhong (AIAA 42, 2004)  <a href="structdg_1_1_s_i_r_k.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -173,7 +139,7 @@ Namespaces</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="multistep_8h.html">multistep.h</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

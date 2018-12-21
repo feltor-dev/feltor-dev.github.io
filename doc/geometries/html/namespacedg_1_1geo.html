@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
-<title>Geometries: dg::geo Namespace Reference</title>
+<title>Extension: Geometries: dg::geo Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -44,9 +44,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Geometries
+   <div id="projectname">Extension: Geometries
    </div>
-   <div id="projectbrief">Extension with magnetic flux functions, grids and grid generators</div>
+   <div id="projectbrief">Magnetic flux functions, parallel derivatives and new grids and grid generators in &quot;dg/geometries/geometries.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -125,17 +125,8 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1a_binary_functor.html">aBinaryFunctor</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This functor represents functions written in cylindrical coordinates that are independent of the angle phi.  <a href="structdg_1_1geo_1_1a_binary_functor.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1a_cloneable_binary_functor.html">aCloneableBinaryFunctor</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intermediate implementation helper class for the clone pattern with CRTP.  <a href="structdg_1_1geo_1_1a_cloneable_binary_functor.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1a_generator2d.html">aGenerator2d</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The abstract generator base class.  <a href="structdg_1_1geo_1_1a_generator2d.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1a_generator_x2d.html">aGeneratorX2d</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The abstract generator base class.  <a href="structdg_1_1geo_1_1a_generator_x2d.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1a_cylindrical_functor.html">aCylindricalFunctor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represent functions written in cylindrical coordinates that are independent of the angle phi serving as both 2d and 3d functions.  <a href="structdg_1_1geo_1_1a_cylindrical_functor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_alpha.html">Alpha</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global safety factor </p><p class="formulaDsp">
@@ -143,54 +134,47 @@ Classes</h2></td></tr>
 </p>
 <p>.  <a href="structdg_1_1geo_1_1_alpha.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1a_real_generator2d.html">aRealGenerator2d</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The abstract generator base class.  <a href="structdg_1_1geo_1_1a_real_generator2d.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1a_real_generator_x2d.html">aRealGeneratorX2d</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The abstract generator base class.  <a href="structdg_1_1geo_1_1a_real_generator_x2d.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_b_field_p.html">BFieldP</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( B^\varphi = R_0I/R^2\)  <a href="structdg_1_1geo_1_1_b_field_p.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_b_field_r.html">BFieldR</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( B^R = R_0\psi_Z /R\)  <a href="structdg_1_1geo_1_1_b_field_r.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_b_field_t.html">BFieldT</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( B^{\theta} = B^R\partial_R\theta + B^Z\partial_Z\theta\)  <a href="structdg_1_1geo_1_1_b_field_t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_b_field_z.html">BFieldZ</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( B^Z = -R_0\psi_R /R\)  <a href="structdg_1_1geo_1_1_b_field_z.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_b_hat_p.html">BHatP</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ b_\varphi = B_\varphi/|B|\]
-</p>
-  <a href="structdg_1_1geo_1_1_b_hat_p.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( b^\varphi = B^\varphi/|B|\)  <a href="structdg_1_1geo_1_1_b_hat_p.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_b_hat_r.html">BHatR</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ b_R = B_R/|B|\]
-</p>
-  <a href="structdg_1_1geo_1_1_b_hat_r.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( b^R = B^R/|B|\)  <a href="structdg_1_1geo_1_1_b_hat_r.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_b_hat_z.html">BHatZ</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ b_Z = B_Z/|B|\]
-</p>
-  <a href="structdg_1_1geo_1_1_b_hat_z.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_binary_functor_adapter.html">BinaryFunctorAdapter</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">With this adapater class you can make any Functor cloneable.  <a href="structdg_1_1geo_1_1_binary_functor_adapter.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl1.html">BinaryFunctorsLvl1</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct bundles a function and its first derivatives.  <a href="structdg_1_1geo_1_1_binary_functors_lvl1.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl2.html">BinaryFunctorsLvl2</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct bundles a function and its first and second derivatives.  <a href="structdg_1_1geo_1_1_binary_functors_lvl2.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_binary_symm_tensor_lvl1.html">BinarySymmTensorLvl1</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_binary_vector_lvl0.html">BinaryVectorLvl0</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( b^Z = B^Z/|B|\)  <a href="structdg_1_1geo_1_1_b_hat_z.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_bmodule.html">Bmodule</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ |B| = R_0\sqrt{I^2+(\nabla\psi)^2}/R \]
-</p>
-  <a href="structdg_1_1geo_1_1_bmodule.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( |B| = R_0\sqrt{I^2+(\nabla\psi)^2}/R \)  <a href="structdg_1_1geo_1_1_bmodule.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_b_r.html">BR</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ \frac{\partial |\hat{B}| }{ \partial \hat{R}} \]
-</p>
-  <a href="structdg_1_1geo_1_1_b_r.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \frac{\partial |B| }{ \partial R} \)  <a href="structdg_1_1geo_1_1_b_r.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_b_z.html">BZ</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ \frac{\partial \hat{B} }{ \partial \hat{Z}} \]
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \frac{\partial |B| }{ \partial Z} \)  <a href="structdg_1_1geo_1_1_b_z.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_compose.html">Compose</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Composition </p><p class="formulaDsp">
+\[ f\circ\psi = f(\psi(R,Z)) \]
 </p>
-  <a href="structdg_1_1geo_1_1_b_z.html#details">More...</a><br /></td></tr>
+<p>.  <a href="structdg_1_1geo_1_1_compose.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_constant.html">Constant</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constant functor </p><p class="formulaDsp">
@@ -199,52 +183,26 @@ Classes</h2></td></tr>
 <p>.  <a href="structdg_1_1geo_1_1_constant.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_curvature_kappa_r.html">CurvatureKappaR</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ \mathcal{\hat{K}}^{\hat{R}}_{\vec{\kappa}}=0 \]
-</p>
-  <a href="structdg_1_1geo_1_1_curvature_kappa_r.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Approximate \( \mathcal{K}^{R}_{\vec{\kappa}}=0 \).  <a href="structdg_1_1geo_1_1_curvature_kappa_r.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_curvature_kappa_z.html">CurvatureKappaZ</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ \mathcal{\hat{K}}^{\hat{Z}}_{\vec{\kappa}} \]
-</p>
-  <a href="structdg_1_1geo_1_1_curvature_kappa_z.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Approximate \( \mathcal{K}^{Z}_{\vec{\kappa}} \).  <a href="structdg_1_1geo_1_1_curvature_kappa_z.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_curvature_nabla_b_r.html">CurvatureNablaBR</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ \mathcal{\hat{K}}^{\hat{R}}_{\nabla B} \]
-</p>
-  <a href="structdg_1_1geo_1_1_curvature_nabla_b_r.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Approximate \( \mathcal{K}^{R}_{\nabla B} \).  <a href="structdg_1_1geo_1_1_curvature_nabla_b_r.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_curvature_nabla_b_z.html">CurvatureNablaBZ</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ \mathcal{\hat{K}}^{\hat{Z}}_{\nabla B} \]
-</p>
-  <a href="structdg_1_1geo_1_1_curvature_nabla_b_z.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Approximate \( \mathcal{K}^{Z}_{\nabla B} \).  <a href="structdg_1_1geo_1_1_curvature_nabla_b_z.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_curvilinear_grid2d.html">CurvilinearGrid2d</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A two-dimensional grid based on curvilinear coordinates.  <a href="structdg_1_1geo_1_1_curvilinear_grid2d.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_cylindrical_functors_lvl1.html">CylindricalFunctorsLvl1</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct bundles a function and its first derivatives.  <a href="structdg_1_1geo_1_1_cylindrical_functors_lvl1.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_curvilinear_grid_x2d.html">CurvilinearGridX2d</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A two-dimensional grid based on curvilinear coordinates.  <a href="structdg_1_1geo_1_1_curvilinear_grid_x2d.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_cylindrical_functors_lvl2.html">CylindricalFunctorsLvl2</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct bundles a function and its first and second derivatives.  <a href="structdg_1_1geo_1_1_cylindrical_functors_lvl2.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_curvilinear_m_p_i_grid2d.html">CurvilinearMPIGrid2d</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A two-dimensional MPI grid based on curvilinear coordinates.  <a href="structdg_1_1geo_1_1_curvilinear_m_p_i_grid2d.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_cylindrical_symm_tensor_lvl1.html">CylindricalSymmTensorLvl1</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_curvilinear_product_grid3d.html">CurvilinearProductGrid3d</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 2x1 curvilinear product space grid.  <a href="structdg_1_1geo_1_1_curvilinear_product_grid3d.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_curvilinear_product_grid_x3d.html">CurvilinearProductGridX3d</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A three-dimensional grid based on curvilinear coordinates.  <a href="structdg_1_1geo_1_1_curvilinear_product_grid_x3d.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_curvilinear_product_m_p_i_grid3d.html">CurvilinearProductMPIGrid3d</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 2x1 curvilinear product space MPI grid.  <a href="structdg_1_1geo_1_1_curvilinear_product_m_p_i_grid3d.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_curvilinear_refined_grid_x2d.html">CurvilinearRefinedGridX2d</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A two-dimensional grid based on curvilinear coordinates.  <a href="structdg_1_1geo_1_1_curvilinear_refined_grid_x2d.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_curvilinear_refined_product_grid_x3d.html">CurvilinearRefinedProductGridX3d</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A three-dimensional grid based on curvilinear coordinates.  <a href="structdg_1_1geo_1_1_curvilinear_refined_product_grid_x3d.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_cylindrical_vector_lvl0.html">CylindricalVectorLvl0</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_delta_function.html">DeltaFunction</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delta function for poloidal flux \( B_Z\) </p><p class="formulaDsp">
@@ -253,16 +211,13 @@ Classes</h2></td></tr>
 <p>.  <a href="structdg_1_1geo_1_1_delta_function.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_divb.html">Divb</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ \nabla \cdot \vec b \]
-</p>
-  <a href="structdg_1_1geo_1_1_divb.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \nabla \cdot \vec b \)  <a href="structdg_1_1geo_1_1_divb.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_div_curvature_kappa.html">DivCurvatureKappa</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ \vec{\hat{\nabla}}\cdot \mathcal{\hat{K}}_{\vec{\kappa}} \]
-</p>
-  <a href="structdg_1_1geo_1_1_div_curvature_kappa.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Approximate \( \vec{\nabla}\cdot \mathcal{K}_{\vec{\kappa}} \).  <a href="structdg_1_1geo_1_1_div_curvature_kappa.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_div_curvature_nabla_b.html">DivCurvatureNablaB</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Approximate \( \vec{\nabla}\cdot \mathcal{K}_{\nabla B} \).  <a href="structdg_1_1geo_1_1_div_curvature_nabla_b.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_div_liseikin_x.html">DivLiseikinX</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The x-component of the divergence of the Liseikin monitor metric </p><p class="formulaDsp">
@@ -282,30 +237,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_fieldaligned.html">Fieldaligned</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and manage interpolation matrices from fieldline integration.  <a href="structdg_1_1geo_1_1_fieldaligned.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_field_p.html">FieldP</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ B_\varphi = R_0I/R^2\]
-</p>
-  <a href="structdg_1_1geo_1_1_field_p.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_field_r.html">FieldR</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ B_R = R_0\psi_Z /R\]
-</p>
-  <a href="structdg_1_1geo_1_1_field_r.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_field_t.html">FieldT</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ B^{\theta} = B^R\partial_R\theta + B^Z\partial_Z\theta\]
-</p>
-  <a href="structdg_1_1geo_1_1_field_t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_field_z.html">FieldZ</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ B_Z = -R_0\psi_R /R\]
-</p>
-  <a href="structdg_1_1geo_1_1_field_z.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_flux_generator.html">FluxGenerator</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A symmetry flux generator.  <a href="structdg_1_1geo_1_1_flux_generator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -315,44 +246,23 @@ Classes</h2></td></tr>
 </p>
 <p>.  <a href="structdg_1_1geo_1_1_flux_surface_average.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_gaussian_damping.html">GaussianDamping</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Damps the outer boundary in a zone from psipmaxcut to psipmaxcut+ 4*alpha with a normal distribution Returns 1 inside, zero outside and a gaussian within </p><p class="formulaDsp">
-\[ \begin{cases} 1 \text{ if } \psi_p(R,Z) &lt; \psi_{p,max,cut}\\ 0 \text{ if } \psi_p(R,Z) &gt; (\psi_{p,max,cut} + 4\alpha) \\ \exp\left( - \frac{(\psi_p - \psi_{p,max,cut})^2}{2\alpha^2}\right), \text{ else} \end{cases} \]
-</p>
-<p>.  <a href="structdg_1_1geo_1_1_gaussian_damping.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_grad_b_hat_p.html">GradBHatP</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \nabla_\parallel b^\varphi \)  <a href="structdg_1_1geo_1_1_grad_b_hat_p.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_gaussian_prof_damping.html">GaussianProfDamping</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Damps the inner boundary in a zone from psipmax to psipmax+ 4*alpha with a normal distribution Returns 1 inside, zero outside and a gaussian within </p><p class="formulaDsp">
-\[ \begin{cases} 1 \text{ if } \psi_p(R,Z) &lt; (\psi_{p,max} - 4\alpha)\\ 0 \text{ if } \psi_p(R,Z) &gt; \psi_{p,max} \\ \exp\left( - \frac{(\psi_p - \psi_{p,max} + 4\alpha)^2}{2\alpha^2}\right), \text{ else} \end{cases} \]
-</p>
-<p>.  <a href="structdg_1_1geo_1_1_gaussian_prof_damping.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_grad_b_hat_r.html">GradBHatR</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \nabla_\parallel b^R \)  <a href="structdg_1_1geo_1_1_grad_b_hat_r.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_gaussian_prof_x_damping.html">GaussianProfXDamping</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Damps the inner boundary in a zone from psipmax to psipmax+ 4*alpha with a normal distribution Returns 1 inside, zero outside and a gaussian within Additionally cuts if Z &lt; Z_xpoint </p><p class="formulaDsp">
-\[ \begin{cases} 1 \text{ if } \psi_p(R,Z) &lt; (\psi_{p,max} - 4\alpha) \\ 0 \text{ if } \psi_p(R,Z) &gt; \psi_{p,max} || Z &lt; -1.1\varepsilon a \\ \exp\left( - \frac{(\psi_p - \psi_{p,max})^2}{2\alpha^2}\right), \text{ else} \end{cases} \]
-</p>
-<p>.  <a href="structdg_1_1geo_1_1_gaussian_prof_x_damping.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_grad_b_hat_z.html">GradBHatZ</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \nabla_\parallel b^Z \)  <a href="structdg_1_1geo_1_1_grad_b_hat_z.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_grad_ln_b.html">GradLnB</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ \hat{\nabla}_\parallel \ln{(\hat{B})} \]
-</p>
-  <a href="structdg_1_1geo_1_1_grad_ln_b.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \nabla_\parallel \ln{(B)} \)  <a href="structdg_1_1geo_1_1_grad_ln_b.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_hector.html">Hector</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The High PrEcision Conformal grid generaTOR.  <a href="structdg_1_1geo_1_1_hector.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_inv_b.html">InvB</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ |B|^{-1} = R/R_0\sqrt{I^2+(\nabla\psi)^2} \]
-</p>
-  <a href="structdg_1_1geo_1_1_inv_b.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_iris.html">Iris</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns zero outside psipmax and inside psipmin, otherwise 1 </p><p class="formulaDsp">
-\[ \begin{cases} 1 \text{ if } \psi_{p,min} &lt; \psi_p(R,Z) &lt; \psi_{p,max}\\ 0 \text{ else} \end{cases}\]
-</p>
-<p>.  <a href="structdg_1_1geo_1_1_iris.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( |B|^{-1} = R/R_0\sqrt{I^2+(\nabla\psi)^2} \)  <a href="structdg_1_1geo_1_1_inv_b.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_liseikin___x_x.html">Liseikin_XX</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The xx-component of the Liseikin monitor metric </p><p class="formulaDsp">
@@ -373,10 +283,7 @@ Classes</h2></td></tr>
 <p>.  <a href="structdg_1_1geo_1_1_liseikin___y_y.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_ln_b.html">LnB</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ \ln{|B|} \]
-</p>
-  <a href="structdg_1_1geo_1_1_ln_b.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \ln{|B|} \)  <a href="structdg_1_1geo_1_1_ln_b.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_log_polar_generator.html">LogPolarGenerator</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log Polar coordinates (conformal)  <a href="structdg_1_1geo_1_1_log_polar_generator.html#details">More...</a><br /></td></tr>
@@ -399,32 +306,35 @@ Classes</h2></td></tr>
 </p>
 <p>.  <a href="structdg_1_1geo_1_1_nabla_psi_inv_y.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_nprofile.html">Nprofile</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns density profile with variable peak amplitude and background amplitude </p><p class="formulaDsp">
-\[ N(R,Z)=\begin{cases} A_{bg} + A_{peak}\frac{\psi_p(R,Z)} {\psi_p(R_0, 0)} \text{ if }\psi_p &lt; \psi_{p,max} \\ A_{bg} \text{ else } \end{cases} \]
-</p>
-<p>.  <a href="structdg_1_1geo_1_1_nprofile.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_polar_generator.html">PolarGenerator</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Polar coordinates.  <a href="structdg_1_1geo_1_1_polar_generator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_psi_limiter.html">PsiLimiter</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets values to one outside psipmaxcut, zero else </p><p class="formulaDsp">
-\[ \begin{cases} 1 \text{ if } \psi_p(R,Z) &gt; \psi_{p,maxlim} \\ 0 \text{ else} \end{cases}\]
-</p>
-<p>.  <a href="structdg_1_1geo_1_1_psi_limiter.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_real_curvilinear_grid2d.html">RealCurvilinearGrid2d</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A two-dimensional grid based on curvilinear coordinates.  <a href="structdg_1_1geo_1_1_real_curvilinear_grid2d.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_psi_pupil.html">PsiPupil</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns psi inside psipmax and psipmax outside psipmax </p><p class="formulaDsp">
-\[ \begin{cases} \psi_{p,max} \text{ if } \psi_p(R,Z) &gt; \psi_{p,max} \\ \psi_p(R,Z) \text{ else} \end{cases}\]
-</p>
-<p>.  <a href="structdg_1_1geo_1_1_psi_pupil.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_real_curvilinear_grid_x2d.html">RealCurvilinearGridX2d</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A two-dimensional grid based on curvilinear coordinates.  <a href="structdg_1_1geo_1_1_real_curvilinear_grid_x2d.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_pupil.html">Pupil</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns zero outside psipmaxcut otherwise 1 </p><p class="formulaDsp">
-\[ \begin{cases} 0 \text{ if } \psi_p(R,Z) &gt; \psi_{p,maxcut} \\ 1 \text{ else} \end{cases}\]
-</p>
-<p>.  <a href="structdg_1_1geo_1_1_pupil.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_real_curvilinear_m_p_i_grid2d.html">RealCurvilinearMPIGrid2d</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A two-dimensional MPI grid based on curvilinear coordinates.  <a href="structdg_1_1geo_1_1_real_curvilinear_m_p_i_grid2d.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_real_curvilinear_product_grid3d.html">RealCurvilinearProductGrid3d</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 2x1 curvilinear product space grid.  <a href="structdg_1_1geo_1_1_real_curvilinear_product_grid3d.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_real_curvilinear_product_grid_x3d.html">RealCurvilinearProductGridX3d</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A three-dimensional grid based on curvilinear coordinates.  <a href="structdg_1_1geo_1_1_real_curvilinear_product_grid_x3d.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_real_curvilinear_product_m_p_i_grid3d.html">RealCurvilinearProductMPIGrid3d</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 2x1 curvilinear product space MPI grid.  <a href="structdg_1_1geo_1_1_real_curvilinear_product_m_p_i_grid3d.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_real_curvilinear_refined_grid_x2d.html">RealCurvilinearRefinedGridX2d</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A two-dimensional grid based on curvilinear coordinates.  <a href="structdg_1_1geo_1_1_real_curvilinear_refined_grid_x2d.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_real_curvilinear_refined_product_grid_x3d.html">RealCurvilinearRefinedProductGridX3d</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A three-dimensional grid based on curvilinear coordinates.  <a href="structdg_1_1geo_1_1_real_curvilinear_refined_product_grid_x3d.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_real_cylindrical_functor.html">RealCylindricalFunctor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inject both 2d and 3d <code>operator()</code> to a 2d functor.  <a href="structdg_1_1geo_1_1_real_cylindrical_functor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_ribeiro.html">Ribeiro</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A two-dimensional grid based on "almost-conformal" coordinates by Ribeiro and Scott 2010.  <a href="structdg_1_1geo_1_1_ribeiro.html#details">More...</a><br /></td></tr>
@@ -450,30 +360,118 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_simple_orthogonal_x.html">SimpleOrthogonalX</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Choose points on inside or outside line.  <a href="structdg_1_1geo_1_1_simple_orthogonal_x.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_tanh_source.html">TanhSource</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">source for quantities N ... dtlnN = ...+ source/N Returns a tanh profile shifted to \( \psi_{p,min}-3\alpha\) </p><p class="formulaDsp">
-\[ 0.5\left( 1 + \tanh\left( -\frac{\psi_p(R,Z) - \psi_{p,min} + 3\alpha}{\alpha}\right)\right) \]
-</p>
-  <a href="structdg_1_1geo_1_1_tanh_source.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">TokamakMagneticField</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">container class of R, psi and Ipol  <a href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tokamak field as given by R0, Psi and Ipol.  <a href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_zonal_flow.html">ZonalFlow</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns zonal flow field </p><p class="formulaDsp">
-\[ N(R,Z)=\begin{cases} A_{bg} |\cos(2\pi\psi_p(R,Z) k_\psi)| \text{ if }\psi_p &lt; \psi_{p,max} \\ 0 \text{ else } \end{cases} \]
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_true_curvature_kappa_p.html">TrueCurvatureKappaP</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">True \( \mathcal{K}^\varphi_{\vec{\kappa}} \).  <a href="structdg_1_1geo_1_1_true_curvature_kappa_p.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_true_curvature_kappa_r.html">TrueCurvatureKappaR</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">True \( \mathcal{K}^R_{\vec{\kappa}} \).  <a href="structdg_1_1geo_1_1_true_curvature_kappa_r.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_true_curvature_kappa_z.html">TrueCurvatureKappaZ</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">True \( \mathcal{K}^Z_{\vec{\kappa}} \).  <a href="structdg_1_1geo_1_1_true_curvature_kappa_z.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_true_curvature_nabla_b_p.html">TrueCurvatureNablaBP</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">True \( \mathcal{K}^{\varphi}_{\nabla B} \).  <a href="structdg_1_1geo_1_1_true_curvature_nabla_b_p.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_true_curvature_nabla_b_r.html">TrueCurvatureNablaBR</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">True \( \mathcal{K}^{R}_{\nabla B} \).  <a href="structdg_1_1geo_1_1_true_curvature_nabla_b_r.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_true_curvature_nabla_b_z.html">TrueCurvatureNablaBZ</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">True \( \mathcal{K}^{Z}_{\nabla B} \).  <a href="structdg_1_1geo_1_1_true_curvature_nabla_b_z.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_true_div_curvature_kappa.html">TrueDivCurvatureKappa</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">True \( \vec{\nabla}\cdot \mathcal{K}_{\vec{\kappa}} \).  <a href="structdg_1_1geo_1_1_true_div_curvature_kappa.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_true_div_curvature_nabla_b.html">TrueDivCurvatureNablaB</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">True \( \vec{\nabla}\cdot \mathcal{K}_{\nabla B} \).  <a href="structdg_1_1geo_1_1_true_div_curvature_nabla_b.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_z_cutter.html">ZCutter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code> (double Z_X)</code> </p><p class="formulaDsp">
+\[ f(R,Z)= \begin{cases} 1 \text{ if } Z &gt; Z_X \\ 0 \text{ else } \end{cases} \]
 </p>
-  <a href="structdg_1_1geo_1_1_zonal_flow.html#details">More...</a><br /></td></tr>
+  <a href="structdg_1_1geo_1_1_z_cutter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:ga91bfc2e3554d296ed7b02b98399a97df"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__grids.html#ga91bfc2e3554d296ed7b02b98399a97df">CurvilinearGrid2d</a> = <a class="el" href="structdg_1_1geo_1_1_real_curvilinear_grid2d.html">dg::geo::RealCurvilinearGrid2d</a>&lt; double &gt;</td></tr>
+<tr class="separator:ga91bfc2e3554d296ed7b02b98399a97df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab7dae14094bc5bad939d892c4d36128b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__grids.html#gab7dae14094bc5bad939d892c4d36128b">CurvilinearProductGrid3d</a> = <a class="el" href="structdg_1_1geo_1_1_real_curvilinear_product_grid3d.html">dg::geo::RealCurvilinearProductGrid3d</a>&lt; double &gt;</td></tr>
+<tr class="separator:gab7dae14094bc5bad939d892c4d36128b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga39f185f0e62a845133105bddbbb92624"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__grids.html#ga39f185f0e62a845133105bddbbb92624">CurvilinearGridX2d</a> = <a class="el" href="structdg_1_1geo_1_1_real_curvilinear_grid_x2d.html">dg::geo::RealCurvilinearGridX2d</a>&lt; double &gt;</td></tr>
+<tr class="separator:ga39f185f0e62a845133105bddbbb92624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2d21aa9b959174ee7cf8cca4af63f6f0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__grids.html#ga2d21aa9b959174ee7cf8cca4af63f6f0">CurvilinearProductGridX3d</a> = <a class="el" href="structdg_1_1geo_1_1_real_curvilinear_product_grid_x3d.html">dg::geo::RealCurvilinearProductGridX3d</a>&lt; double &gt;</td></tr>
+<tr class="separator:ga2d21aa9b959174ee7cf8cca4af63f6f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac31adf6f15d6a1b64d5a13d751a9f449"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1_o_n_e.html">ONE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__fieldaligned.html#gac31adf6f15d6a1b64d5a13d751a9f449">FullLimiter</a></td></tr>
 <tr class="memdesc:gac31adf6f15d6a1b64d5a13d751a9f449"><td class="mdescLeft">&#160;</td><td class="mdescRight">Full Limiter means there is a limiter everywhere.  <a href="group__fieldaligned.html#gac31adf6f15d6a1b64d5a13d751a9f449">More...</a><br /></td></tr>
 <tr class="separator:gac31adf6f15d6a1b64d5a13d751a9f449"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1a10e4fdd6338136e629d3e2292bc3da"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1_z_e_r_o.html">ZERO</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__fieldaligned.html#ga1a10e4fdd6338136e629d3e2292bc3da">NoLimiter</a></td></tr>
 <tr class="memdesc:ga1a10e4fdd6338136e629d3e2292bc3da"><td class="mdescLeft">&#160;</td><td class="mdescRight">No Limiter.  <a href="group__fieldaligned.html#ga1a10e4fdd6338136e629d3e2292bc3da">More...</a><br /></td></tr>
 <tr class="separator:ga1a10e4fdd6338136e629d3e2292bc3da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacb84a8d3b8c253f1100c1530035da1de"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__fluxfunctions.html#gacb84a8d3b8c253f1100c1530035da1de">CylindricalFunctor</a> = <a class="el" href="structdg_1_1geo_1_1_real_cylindrical_functor.html">RealCylindricalFunctor</a>&lt; double &gt;</td></tr>
+<tr class="separator:gacb84a8d3b8c253f1100c1530035da1de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a0c91832616cae7dea10193bb8c9327"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg_1_1geo.html#a8a0c91832616cae7dea10193bb8c9327">aGenerator2d</a> = <a class="el" href="structdg_1_1geo_1_1a_real_generator2d.html">dg::geo::aRealGenerator2d</a>&lt; double &gt;</td></tr>
+<tr class="separator:a8a0c91832616cae7dea10193bb8c9327"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d37348fd710a0c45eb5c52ec7387e90"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg_1_1geo.html#a7d37348fd710a0c45eb5c52ec7387e90">aGeneratorX2d</a> = <a class="el" href="structdg_1_1geo_1_1a_real_generator_x2d.html">dg::geo::aRealGeneratorX2d</a>&lt; double &gt;</td></tr>
+<tr class="separator:a7d37348fd710a0c45eb5c52ec7387e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad64d512d641d71865056b1f1b83da902"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__profiles.html#gad64d512d641d71865056b1f1b83da902">Iris</a> = <a class="el" href="structdg_1_1geo_1_1_compose.html">Compose</a>&lt; <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1_iris.html">dg::Iris</a> &gt;</td></tr>
+<tr class="memdesc:gad64d512d641d71865056b1f1b83da902"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>(CylindricalFunctor psip, double psip_min, double psip_max)</code> </p><p class="formulaDsp">
+\[ f(R,Z) = \begin{cases} 1 \text{ if } \psi_{p,min} &lt; \psi_p(R,Z) &lt; \psi_{p,max}\\ 0 \text{ else} \end{cases}\]
+</p>
+  <a href="group__profiles.html#gad64d512d641d71865056b1f1b83da902">More...</a><br /></td></tr>
+<tr class="separator:gad64d512d641d71865056b1f1b83da902"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab429cc7c00f5d55def9fcaa5cda8fafd"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__profiles.html#gab429cc7c00f5d55def9fcaa5cda8fafd">Pupil</a> = <a class="el" href="structdg_1_1geo_1_1_compose.html">Compose</a>&lt; <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1_pupil.html">dg::Pupil</a> &gt;</td></tr>
+<tr class="memdesc:gab429cc7c00f5d55def9fcaa5cda8fafd"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code> (CylindricalFunctor psip, double psipmax) </code> </p><p class="formulaDsp">
+\[ f(R,Z) = \begin{cases} 0 \text{ if } \psi_p(R,Z) &gt; \psi_{p,max} \\ 1 \text{ else} \end{cases}\]
+</p>
+  <a href="group__profiles.html#gab429cc7c00f5d55def9fcaa5cda8fafd">More...</a><br /></td></tr>
+<tr class="separator:gab429cc7c00f5d55def9fcaa5cda8fafd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4e7e76bd77ae1317ed999238b4ce4e17"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__profiles.html#ga4e7e76bd77ae1317ed999238b4ce4e17">PsiPupil</a> = <a class="el" href="structdg_1_1geo_1_1_compose.html">Compose</a>&lt; <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1_psi_pupil.html">dg::PsiPupil</a> &gt;</td></tr>
+<tr class="memdesc:ga4e7e76bd77ae1317ed999238b4ce4e17"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code> (CylindricalFunctor psip, double psipmax)</code> </p><p class="formulaDsp">
+\[ f(R,Z) = \begin{cases} \psi_{p,max} \text{ if } \psi_p(R,Z) &gt; \psi_{p,max} \\ \psi_p(R,Z) \text{ else} \end{cases}\]
+</p>
+  <a href="group__profiles.html#ga4e7e76bd77ae1317ed999238b4ce4e17">More...</a><br /></td></tr>
+<tr class="separator:ga4e7e76bd77ae1317ed999238b4ce4e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga82eca5b06b94a709b4f1cbfa4b42d59f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__profiles.html#ga82eca5b06b94a709b4f1cbfa4b42d59f">PsiLimiter</a> = <a class="el" href="structdg_1_1geo_1_1_compose.html">dg::geo::Compose</a>&lt; <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1_heaviside.html">dg::Heaviside</a> &gt;</td></tr>
+<tr class="memdesc:ga82eca5b06b94a709b4f1cbfa4b42d59f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code> (CylindricalFunctor psip, double psipmax) </code> </p><p class="formulaDsp">
+\[ f(R,Z) = \begin{cases} 1 \text{ if } \psi_p(R,Z) &gt; \psi_{p,\max} \\ 0 \text{ else} \end{cases}\]
+</p>
+  <a href="group__profiles.html#ga82eca5b06b94a709b4f1cbfa4b42d59f">More...</a><br /></td></tr>
+<tr class="separator:ga82eca5b06b94a709b4f1cbfa4b42d59f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga158a9af6aef70087e95b8fd8e7dacc60"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__profiles.html#ga158a9af6aef70087e95b8fd8e7dacc60">GaussianDamping</a> = <a class="el" href="structdg_1_1geo_1_1_compose.html">dg::geo::Compose</a>&lt; <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1_gaussian_damping.html">dg::GaussianDamping</a> &gt;</td></tr>
+<tr class="memdesc:ga158a9af6aef70087e95b8fd8e7dacc60"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>(CylindricalFunctor psip, double psipmax, double alpha)</code> </p><p class="formulaDsp">
+\[ f(R,Z) = \begin{cases} 1 \text{ if } \psi_p(R,Z) &lt; \psi_{p,max}\\ 0 \text{ if } \psi_p(R,Z) &gt; (\psi_{p,max} + 4\alpha) \\ \exp\left( - \frac{(\psi_p(R,Z) - \psi_{p,max})^2}{2\alpha^2}\right), \text{ else} \end{cases} \]
+</p>
+  <a href="group__profiles.html#ga158a9af6aef70087e95b8fd8e7dacc60">More...</a><br /></td></tr>
+<tr class="separator:ga158a9af6aef70087e95b8fd8e7dacc60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga446bce2c783bba5c7b0260853259f1e1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__profiles.html#ga446bce2c783bba5c7b0260853259f1e1">TanhDamping</a> = <a class="el" href="structdg_1_1geo_1_1_compose.html">dg::geo::Compose</a>&lt; <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1_tanh_prof_x.html">dg::TanhProfX</a> &gt;</td></tr>
+<tr class="memdesc:ga446bce2c783bba5c7b0260853259f1e1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>(CylindricalFunctor psip, double psipmax, double alpha, int sign =1,double B = 0., double A = 1.) </code> </p><p class="formulaDsp">
+\[ f(R,Z) = B + 0.5 A(1+ \text{sign} \tanh((\psi_p(R,Z)-\psi_{p,max})/\alpha ) ) \]
+</p>
+  <a href="group__profiles.html#ga446bce2c783bba5c7b0260853259f1e1">More...</a><br /></td></tr>
+<tr class="separator:ga446bce2c783bba5c7b0260853259f1e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac6e56352ad1a753f9c5c7cecb0f12ee0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__profiles.html#gac6e56352ad1a753f9c5c7cecb0f12ee0">Nprofile</a> = <a class="el" href="structdg_1_1geo_1_1_compose.html">dg::geo::Compose</a>&lt; <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1_linear_x.html">dg::LinearX</a> &gt;</td></tr>
+<tr class="memdesc:gac6e56352ad1a753f9c5c7cecb0f12ee0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code> (CylindricalFunctor psip, double A, double B)</code> </p><p class="formulaDsp">
+\[ f(R,Z)= B + A\psi_p(R,Z)\]
+</p>
+  <a href="group__profiles.html#gac6e56352ad1a753f9c5c7cecb0f12ee0">More...</a><br /></td></tr>
+<tr class="separator:gac6e56352ad1a753f9c5c7cecb0f12ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga19191644f490a26ec20c3f6dac24765c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__profiles.html#ga19191644f490a26ec20c3f6dac24765c">ZonalFlow</a> = <a class="el" href="structdg_1_1geo_1_1_compose.html">dg::geo::Compose</a>&lt; <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1_sin_x.html">dg::SinX</a> &gt;</td></tr>
+<tr class="memdesc:ga19191644f490a26ec20c3f6dac24765c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>(CylindricalFunctor psip, double A, double B, double k_psi)</code> </p><p class="formulaDsp">
+\[ f(R,Z)= B + A \sin(k_\psi \psi_p(R,Z) ) \]
+</p>
+  <a href="group__profiles.html#ga19191644f490a26ec20c3f6dac24765c">More...</a><br /></td></tr>
+<tr class="separator:ga19191644f490a26ec20c3f6dac24765c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2afc1b2edf3b4ce67be2559b26d4a131"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__grids.html#ga2afc1b2edf3b4ce67be2559b26d4a131">CurvilinearMPIGrid2d</a> = <a class="el" href="structdg_1_1geo_1_1_real_curvilinear_m_p_i_grid2d.html">dg::geo::RealCurvilinearMPIGrid2d</a>&lt; double &gt;</td></tr>
+<tr class="separator:ga2afc1b2edf3b4ce67be2559b26d4a131"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga616da07412dcdbd6a5526e2c86769e69"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__grids.html#ga616da07412dcdbd6a5526e2c86769e69">CurvilinearProductMPIGrid3d</a> = <a class="el" href="structdg_1_1geo_1_1_real_curvilinear_product_m_p_i_grid3d.html">dg::geo::RealCurvilinearProductMPIGrid3d</a>&lt; double &gt;</td></tr>
+<tr class="separator:ga616da07412dcdbd6a5526e2c86769e69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga58a60acbf311bac75c5163baafd599ec"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__grids.html#ga58a60acbf311bac75c5163baafd599ec">CurvilinearRefinedGridX2d</a> = <a class="el" href="structdg_1_1geo_1_1_real_curvilinear_refined_grid_x2d.html">dg::geo::RealCurvilinearRefinedGridX2d</a>&lt; double &gt;</td></tr>
+<tr class="separator:ga58a60acbf311bac75c5163baafd599ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafab27da71f3b5b59cb756e39db2275e3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__grids.html#gafab27da71f3b5b59cb756e39db2275e3">CurvilinearRefinedProductGridX3d</a> = <a class="el" href="structdg_1_1geo_1_1_real_curvilinear_refined_product_grid_x3d.html">dg::geo::RealCurvilinearRefinedProductGridX3d</a>&lt; double &gt;</td></tr>
+<tr class="separator:gafab27da71f3b5b59cb756e39db2275e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -487,51 +485,111 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaf583c457b3907ec4e9a94d4c17427d55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl1.html">BinaryFunctorsLvl1</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__profiles.html#gaf583c457b3907ec4e9a94d4c17427d55">make_NablaPsiInvCollective</a> (const <a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl2.html">BinaryFunctorsLvl2</a> &amp;psi)</td></tr>
-<tr class="memdesc:gaf583c457b3907ec4e9a94d4c17427d55"><td class="mdescLeft">&#160;</td><td class="mdescRight">A container class that contains all <a class="el" href="structdg_1_1geo_1_1_nabla_psi_inv.html" title="A weight function for the Hector algorithm . ">NablaPsiInv</a> functors.  <a href="group__profiles.html#gaf583c457b3907ec4e9a94d4c17427d55">More...</a><br /></td></tr>
-<tr class="separator:gaf583c457b3907ec4e9a94d4c17427d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga56d2d722a2734d1685263ee8a95e7555"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1geo_1_1_binary_symm_tensor_lvl1.html">BinarySymmTensorLvl1</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__profiles.html#ga56d2d722a2734d1685263ee8a95e7555">make_LiseikinCollective</a> (const <a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl2.html">BinaryFunctorsLvl2</a> &amp;psi, double k, double eps)</td></tr>
-<tr class="separator:ga56d2d722a2734d1685263ee8a95e7555"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga669b9f0f0ae437c262b2400930feef7d"><td class="memTemplParams" colspan="2">template&lt;class BinaryFunctor &gt; </td></tr>
-<tr class="memitem:ga669b9f0f0ae437c262b2400930feef7d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1geo_1_1a_binary_functor.html">aBinaryFunctor</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__fluxfunctions.html#ga669b9f0f0ae437c262b2400930feef7d">make_aBinaryFunctor</a> (const BinaryFunctor &amp;f)</td></tr>
-<tr class="memdesc:ga669b9f0f0ae437c262b2400930feef7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this function when you want to convert any Functor to <a class="el" href="structdg_1_1geo_1_1a_binary_functor.html" title="This functor represents functions written in cylindrical coordinates that are independent of the angl...">aBinaryFunctor</a>.  <a href="group__fluxfunctions.html#ga669b9f0f0ae437c262b2400930feef7d">More...</a><br /></td></tr>
-<tr class="separator:ga669b9f0f0ae437c262b2400930feef7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad54aa312242b5245cbbf9cd4b5dfe06d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#gad54aa312242b5245cbbf9cd4b5dfe06d">createGuentherField</a> (double R_0, double I_0)</td></tr>
-<tr class="memdesc:gad54aa312242b5245cbbf9cd4b5dfe06d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Guenther Magnetic field.  <a href="group__geom.html#gad54aa312242b5245cbbf9cd4b5dfe06d">More...</a><br /></td></tr>
-<tr class="separator:gad54aa312242b5245cbbf9cd4b5dfe06d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae3f70e88fd15dd404643f4c5941401c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#gae3f70e88fd15dd404643f4c5941401c7">createSolovevField</a> (<a class="el" href="structdg_1_1geo_1_1solovev_1_1_parameters.html">dg::geo::solovev::Parameters</a> gp)</td></tr>
-<tr class="memdesc:gae3f70e88fd15dd404643f4c5941401c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Solovev Magnetic field.  <a href="group__geom.html#gae3f70e88fd15dd404643f4c5941401c7">More...</a><br /></td></tr>
-<tr class="separator:gae3f70e88fd15dd404643f4c5941401c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7d6cc4a15d5430ff5d4aad81fb7098d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#ga7d6cc4a15d5430ff5d4aad81fb7098d9">createTaylorField</a> (<a class="el" href="structdg_1_1geo_1_1solovev_1_1_parameters.html">dg::geo::solovev::Parameters</a> gp)</td></tr>
-<tr class="memdesc:ga7d6cc4a15d5430ff5d4aad81fb7098d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Taylor Magnetic field.  <a href="group__geom.html#ga7d6cc4a15d5430ff5d4aad81fb7098d9">More...</a><br /></td></tr>
-<tr class="separator:ga7d6cc4a15d5430ff5d4aad81fb7098d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga24c4268469ccbabde18f7eb7ab124ac6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#ga24c4268469ccbabde18f7eb7ab124ac6">createToroidalField</a> (double R0)</td></tr>
-<tr class="memdesc:ga24c4268469ccbabde18f7eb7ab124ac6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Toroidal Magnetic field.  <a href="group__geom.html#ga24c4268469ccbabde18f7eb7ab124ac6">More...</a><br /></td></tr>
-<tr class="separator:ga24c4268469ccbabde18f7eb7ab124ac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa6d78afe4f306e34d509934f8f79421a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#gaa6d78afe4f306e34d509934f8f79421a">createCircularField</a> (double R0, double I0)</td></tr>
-<tr class="memdesc:gaa6d78afe4f306e34d509934f8f79421a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Magnetic field with circular flux surfaces and constant current.  <a href="group__geom.html#gaa6d78afe4f306e34d509934f8f79421a">More...</a><br /></td></tr>
-<tr class="separator:gaa6d78afe4f306e34d509934f8f79421a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafcee60ecf901ef09ae3fbf87bd146fbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__misc__geo.html#gafcee60ecf901ef09ae3fbf87bd146fbd">findXpoint</a> (const <a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl2.html">BinaryFunctorsLvl2</a> &amp;psi, double &amp;R_X, double &amp;Z_X)</td></tr>
-<tr class="memdesc:gafcee60ecf901ef09ae3fbf87bd146fbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function finds the X-point via Newton iteration applied to the gradient of psi.  <a href="group__misc__geo.html#gafcee60ecf901ef09ae3fbf87bd146fbd">More...</a><br /></td></tr>
-<tr class="separator:gafcee60ecf901ef09ae3fbf87bd146fbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ee422753ae1d392e40577c69a06001c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1geo_1_1_binary_symm_tensor_lvl1.html">BinarySymmTensorLvl1</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg_1_1geo.html#a1ee422753ae1d392e40577c69a06001c">make_Xbump_monitor</a> (const <a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl2.html">BinaryFunctorsLvl2</a> &amp;psi, double &amp;R_X, double &amp;Z_X, double radiusX, double radiusY)</td></tr>
-<tr class="memdesc:a1ee422753ae1d392e40577c69a06001c"><td class="mdescLeft">&#160;</td><td class="mdescRight">construct a monitor metric in which the Laplacian vanishes at the X-point  <a href="#a1ee422753ae1d392e40577c69a06001c">More...</a><br /></td></tr>
-<tr class="separator:a1ee422753ae1d392e40577c69a06001c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a766ef7c89b58748f1eb44a7e2e5fa89e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1geo_1_1_binary_symm_tensor_lvl1.html">BinarySymmTensorLvl1</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg_1_1geo.html#a766ef7c89b58748f1eb44a7e2e5fa89e">make_Xconst_monitor</a> (const <a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl2.html">BinaryFunctorsLvl2</a> &amp;psi, double &amp;R_X, double &amp;Z_X)</td></tr>
-<tr class="memdesc:a766ef7c89b58748f1eb44a7e2e5fa89e"><td class="mdescLeft">&#160;</td><td class="mdescRight">construct a monitor metric in which the Laplacian vanishes at the X-point  <a href="#a766ef7c89b58748f1eb44a7e2e5fa89e">More...</a><br /></td></tr>
-<tr class="separator:a766ef7c89b58748f1eb44a7e2e5fa89e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga32a9569879bd13c719c77be10f0d399d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structdg_1_1geo_1_1_cylindrical_functors_lvl1.html">CylindricalFunctorsLvl1</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__profiles.html#ga32a9569879bd13c719c77be10f0d399d">make_NablaPsiInvCollective</a> (const <a class="el" href="structdg_1_1geo_1_1_cylindrical_functors_lvl2.html">CylindricalFunctorsLvl2</a> &amp;psi)</td></tr>
+<tr class="memdesc:ga32a9569879bd13c719c77be10f0d399d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A container class that contains all <a class="el" href="structdg_1_1geo_1_1_nabla_psi_inv.html" title="A weight function for the Hector algorithm . ">NablaPsiInv</a> functors.  <a href="group__profiles.html#ga32a9569879bd13c719c77be10f0d399d">More...</a><br /></td></tr>
+<tr class="separator:ga32a9569879bd13c719c77be10f0d399d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae0cb11f189e743a3291e23e2bc361bb2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structdg_1_1geo_1_1_cylindrical_symm_tensor_lvl1.html">CylindricalSymmTensorLvl1</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__profiles.html#gae0cb11f189e743a3291e23e2bc361bb2">make_LiseikinCollective</a> (const <a class="el" href="structdg_1_1geo_1_1_cylindrical_functors_lvl2.html">CylindricalFunctorsLvl2</a> &amp;psi, double k, double eps)</td></tr>
+<tr class="separator:gae0cb11f189e743a3291e23e2bc361bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4f00a11946c5ae76c6b52876292c60ca"><td class="memTemplParams" colspan="2">template&lt;class Geometry3d &gt; </td></tr>
+<tr class="memitem:ga4f00a11946c5ae76c6b52876292c60ca"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1_sparse_tensor.html">dg::SparseTensor</a>&lt; dg::get_host_vector&lt; Geometry3d &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__fluxfunctions.html#ga4f00a11946c5ae76c6b52876292c60ca">createAlignmentTensor</a> (const <a class="el" href="structdg_1_1geo_1_1_cylindrical_vector_lvl0.html">dg::geo::CylindricalVectorLvl0</a> &amp;bhat, const Geometry3d &amp;g)</td></tr>
+<tr class="memdesc:ga4f00a11946c5ae76c6b52876292c60ca"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ \chi^{ij} = b^ib^j\]
+</p>
+  <a href="group__fluxfunctions.html#ga4f00a11946c5ae76c6b52876292c60ca">More...</a><br /></td></tr>
+<tr class="separator:ga4f00a11946c5ae76c6b52876292c60ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0e6fb50126a1c44892b51db10d93fb65"><td class="memTemplParams" colspan="2">template&lt;class Geometry3d &gt; </td></tr>
+<tr class="memitem:ga0e6fb50126a1c44892b51db10d93fb65"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1_sparse_tensor.html">dg::SparseTensor</a>&lt; dg::get_host_vector&lt; Geometry3d &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__fluxfunctions.html#ga0e6fb50126a1c44892b51db10d93fb65">createProjectionTensor</a> (const <a class="el" href="structdg_1_1geo_1_1_cylindrical_vector_lvl0.html">dg::geo::CylindricalVectorLvl0</a> &amp;bhat, const Geometry3d &amp;g)</td></tr>
+<tr class="memdesc:ga0e6fb50126a1c44892b51db10d93fb65"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ \chi^{ij} = g^{ij} - b^ib^j\]
+</p>
+  <a href="group__fluxfunctions.html#ga0e6fb50126a1c44892b51db10d93fb65">More...</a><br /></td></tr>
+<tr class="separator:ga0e6fb50126a1c44892b51db10d93fb65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga70edeb1a555a6a2b05ac0485329fdcac"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#ga70edeb1a555a6a2b05ac0485329fdcac">createGuentherField</a> (double R_0, double I_0)</td></tr>
+<tr class="memdesc:ga70edeb1a555a6a2b05ac0485329fdcac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Guenther Magnetic field.  <a href="group__geom.html#ga70edeb1a555a6a2b05ac0485329fdcac">More...</a><br /></td></tr>
+<tr class="separator:ga70edeb1a555a6a2b05ac0485329fdcac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6182dc55424bffffb0d9876b9f90222d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1geo_1_1_cylindrical_vector_lvl0.html">CylindricalVectorLvl0</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__magnetic.html#ga6182dc55424bffffb0d9876b9f90222d">createBHat</a> (const <a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">TokamakMagneticField</a> &amp;mag)</td></tr>
+<tr class="memdesc:ga6182dc55424bffffb0d9876b9f90222d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Magnetic unit vector field (<a class="el" href="structdg_1_1geo_1_1_b_hat_r.html" title=" ">BHatR</a>, <a class="el" href="structdg_1_1geo_1_1_b_hat_z.html" title=" ">BHatZ</a>, <a class="el" href="structdg_1_1geo_1_1_b_hat_p.html" title=" ">BHatP</a>)  <a href="group__magnetic.html#ga6182dc55424bffffb0d9876b9f90222d">More...</a><br /></td></tr>
+<tr class="separator:ga6182dc55424bffffb0d9876b9f90222d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3ab10e21b3c879843b6bb26a49beb918"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1geo_1_1_cylindrical_vector_lvl0.html">CylindricalVectorLvl0</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__magnetic.html#ga3ab10e21b3c879843b6bb26a49beb918">createEPhi</a> ()</td></tr>
+<tr class="memdesc:ga3ab10e21b3c879843b6bb26a49beb918"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unit vector field (0, 0, 1)  <a href="group__magnetic.html#ga3ab10e21b3c879843b6bb26a49beb918">More...</a><br /></td></tr>
+<tr class="separator:ga3ab10e21b3c879843b6bb26a49beb918"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga891fbece075e21a1cdd1f15422251e7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1geo_1_1_cylindrical_vector_lvl0.html">CylindricalVectorLvl0</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__magnetic.html#ga891fbece075e21a1cdd1f15422251e7d">createCurvatureNablaB</a> (const <a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">TokamakMagneticField</a> &amp;mag)</td></tr>
+<tr class="memdesc:ga891fbece075e21a1cdd1f15422251e7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Approximate curvature vector field (<a class="el" href="structdg_1_1geo_1_1_curvature_nabla_b_r.html" title="Approximate . ">CurvatureNablaBR</a>, <a class="el" href="structdg_1_1geo_1_1_curvature_nabla_b_z.html" title="Approximate . ">CurvatureNablaBZ</a>, Constant(0))  <a href="group__magnetic.html#ga891fbece075e21a1cdd1f15422251e7d">More...</a><br /></td></tr>
+<tr class="separator:ga891fbece075e21a1cdd1f15422251e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga15544e369079fa9ab1350fe49433bbf2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1geo_1_1_cylindrical_vector_lvl0.html">CylindricalVectorLvl0</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__magnetic.html#ga15544e369079fa9ab1350fe49433bbf2">createCurvatureKappa</a> (const <a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">TokamakMagneticField</a> &amp;mag)</td></tr>
+<tr class="memdesc:ga15544e369079fa9ab1350fe49433bbf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Approximate curvature vector field (<a class="el" href="structdg_1_1geo_1_1_curvature_kappa_r.html" title="Approximate . ">CurvatureKappaR</a>, <a class="el" href="structdg_1_1geo_1_1_curvature_kappa_z.html" title="Approximate . ">CurvatureKappaZ</a>, Constant(0))  <a href="group__magnetic.html#ga15544e369079fa9ab1350fe49433bbf2">More...</a><br /></td></tr>
+<tr class="separator:ga15544e369079fa9ab1350fe49433bbf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4e605e8fb727d3ffe0c2de721d7cad67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1geo_1_1_cylindrical_vector_lvl0.html">CylindricalVectorLvl0</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__magnetic.html#ga4e605e8fb727d3ffe0c2de721d7cad67">createTrueCurvatureKappa</a> (const <a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">TokamakMagneticField</a> &amp;mag)</td></tr>
+<tr class="memdesc:ga4e605e8fb727d3ffe0c2de721d7cad67"><td class="mdescLeft">&#160;</td><td class="mdescRight">True curvature vector field (<a class="el" href="structdg_1_1geo_1_1_true_curvature_kappa_r.html" title="True . ">TrueCurvatureKappaR</a>, <a class="el" href="structdg_1_1geo_1_1_true_curvature_kappa_z.html" title="True . ">TrueCurvatureKappaZ</a>, <a class="el" href="structdg_1_1geo_1_1_true_curvature_kappa_p.html" title="True . ">TrueCurvatureKappaP</a>)  <a href="group__magnetic.html#ga4e605e8fb727d3ffe0c2de721d7cad67">More...</a><br /></td></tr>
+<tr class="separator:ga4e605e8fb727d3ffe0c2de721d7cad67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4278b6ca1435aa29063fd152f427c9c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1geo_1_1_cylindrical_vector_lvl0.html">CylindricalVectorLvl0</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__magnetic.html#ga4278b6ca1435aa29063fd152f427c9c5">createTrueCurvatureNablaB</a> (const <a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">TokamakMagneticField</a> &amp;mag)</td></tr>
+<tr class="memdesc:ga4278b6ca1435aa29063fd152f427c9c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">True curvature vector field (<a class="el" href="structdg_1_1geo_1_1_true_curvature_nabla_b_r.html" title="True . ">TrueCurvatureNablaBR</a>, <a class="el" href="structdg_1_1geo_1_1_true_curvature_nabla_b_z.html" title="True . ">TrueCurvatureNablaBZ</a>, <a class="el" href="structdg_1_1geo_1_1_true_curvature_nabla_b_p.html" title="True . ">TrueCurvatureNablaBP</a>)  <a href="group__magnetic.html#ga4278b6ca1435aa29063fd152f427c9c5">More...</a><br /></td></tr>
+<tr class="separator:ga4278b6ca1435aa29063fd152f427c9c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaadcb5ef7126a3bc41beed60c431f9368"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#gaadcb5ef7126a3bc41beed60c431f9368">createSolovevField</a> (<a class="el" href="structdg_1_1geo_1_1solovev_1_1_parameters.html">dg::geo::solovev::Parameters</a> gp)</td></tr>
+<tr class="memdesc:gaadcb5ef7126a3bc41beed60c431f9368"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Solovev Magnetic field.  <a href="group__geom.html#gaadcb5ef7126a3bc41beed60c431f9368">More...</a><br /></td></tr>
+<tr class="separator:gaadcb5ef7126a3bc41beed60c431f9368"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga27e5bae45b284ee051039ca97d7c0edb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#ga27e5bae45b284ee051039ca97d7c0edb">createTaylorField</a> (<a class="el" href="structdg_1_1geo_1_1solovev_1_1_parameters.html">dg::geo::solovev::Parameters</a> gp)</td></tr>
+<tr class="memdesc:ga27e5bae45b284ee051039ca97d7c0edb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Taylor Magnetic field.  <a href="group__geom.html#ga27e5bae45b284ee051039ca97d7c0edb">More...</a><br /></td></tr>
+<tr class="separator:ga27e5bae45b284ee051039ca97d7c0edb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2d9ca2e61302113e806b1d05d6b3db7e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#ga2d9ca2e61302113e806b1d05d6b3db7e">createToroidalField</a> (double R0)</td></tr>
+<tr class="memdesc:ga2d9ca2e61302113e806b1d05d6b3db7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Toroidal Magnetic field.  <a href="group__geom.html#ga2d9ca2e61302113e806b1d05d6b3db7e">More...</a><br /></td></tr>
+<tr class="separator:ga2d9ca2e61302113e806b1d05d6b3db7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga16471692288263e2076b897dae16799f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#ga16471692288263e2076b897dae16799f">createCircularField</a> (double R0, double I0)</td></tr>
+<tr class="memdesc:ga16471692288263e2076b897dae16799f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Magnetic field with circular flux surfaces and constant current.  <a href="group__geom.html#ga16471692288263e2076b897dae16799f">More...</a><br /></td></tr>
+<tr class="separator:ga16471692288263e2076b897dae16799f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafdf85449bb250bc67ab57989fcb768cb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__misc__geo.html#gafdf85449bb250bc67ab57989fcb768cb">findXpoint</a> (const <a class="el" href="structdg_1_1geo_1_1_cylindrical_functors_lvl2.html">CylindricalFunctorsLvl2</a> &amp;psi, double &amp;R_X, double &amp;Z_X)</td></tr>
+<tr class="memdesc:gafdf85449bb250bc67ab57989fcb768cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function finds the X-point via Newton iteration applied to the gradient of psi.  <a href="group__misc__geo.html#gafdf85449bb250bc67ab57989fcb768cb">More...</a><br /></td></tr>
+<tr class="separator:gafdf85449bb250bc67ab57989fcb768cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a351c29fa5591614e847a4c4d884a230a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structdg_1_1geo_1_1_cylindrical_symm_tensor_lvl1.html">CylindricalSymmTensorLvl1</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg_1_1geo.html#a351c29fa5591614e847a4c4d884a230a">make_Xbump_monitor</a> (const <a class="el" href="structdg_1_1geo_1_1_cylindrical_functors_lvl2.html">CylindricalFunctorsLvl2</a> &amp;psi, double &amp;R_X, double &amp;Z_X, double radiusX, double radiusY)</td></tr>
+<tr class="memdesc:a351c29fa5591614e847a4c4d884a230a"><td class="mdescLeft">&#160;</td><td class="mdescRight">construct a monitor metric in which the Laplacian vanishes at the X-point  <a href="#a351c29fa5591614e847a4c4d884a230a">More...</a><br /></td></tr>
+<tr class="separator:a351c29fa5591614e847a4c4d884a230a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fad31517c86179b341a67e10ff0fda4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structdg_1_1geo_1_1_cylindrical_symm_tensor_lvl1.html">CylindricalSymmTensorLvl1</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg_1_1geo.html#a2fad31517c86179b341a67e10ff0fda4">make_Xconst_monitor</a> (const <a class="el" href="structdg_1_1geo_1_1_cylindrical_functors_lvl2.html">CylindricalFunctorsLvl2</a> &amp;psi, double &amp;R_X, double &amp;Z_X)</td></tr>
+<tr class="memdesc:a2fad31517c86179b341a67e10ff0fda4"><td class="mdescLeft">&#160;</td><td class="mdescRight">construct a monitor metric in which the Laplacian vanishes at the X-point  <a href="#a2fad31517c86179b341a67e10ff0fda4">More...</a><br /></td></tr>
+<tr class="separator:a2fad31517c86179b341a67e10ff0fda4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a1ee422753ae1d392e40577c69a06001c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ee422753ae1d392e40577c69a06001c">&#9670;&nbsp;</a></span>make_Xbump_monitor()</h2>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a8a0c91832616cae7dea10193bb8c9327"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a0c91832616cae7dea10193bb8c9327">&#9670;&nbsp;</a></span>aGenerator2d</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdg_1_1geo_1_1_binary_symm_tensor_lvl1.html">BinarySymmTensorLvl1</a> dg::geo::make_Xbump_monitor </td>
+          <td class="memname">using <a class="el" href="namespacedg_1_1geo.html#a8a0c91832616cae7dea10193bb8c9327">dg::geo::aGenerator2d</a> = typedef <a class="el" href="structdg_1_1geo_1_1a_real_generator2d.html">dg::geo::aRealGenerator2d</a>&lt;double&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7d37348fd710a0c45eb5c52ec7387e90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d37348fd710a0c45eb5c52ec7387e90">&#9670;&nbsp;</a></span>aGeneratorX2d</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacedg_1_1geo.html#a7d37348fd710a0c45eb5c52ec7387e90">dg::geo::aGeneratorX2d</a> = typedef <a class="el" href="structdg_1_1geo_1_1a_real_generator_x2d.html">dg::geo::aRealGeneratorX2d</a>&lt;double&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a351c29fa5591614e847a4c4d884a230a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a351c29fa5591614e847a4c4d884a230a">&#9670;&nbsp;</a></span>make_Xbump_monitor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structdg_1_1geo_1_1_cylindrical_symm_tensor_lvl1.html">CylindricalSymmTensorLvl1</a> dg::geo::make_Xbump_monitor </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl2.html">BinaryFunctorsLvl2</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1geo_1_1_cylindrical_functors_lvl2.html">CylindricalFunctorsLvl2</a> &amp;&#160;</td>
           <td class="paramname"><em>psi</em>, </td>
         </tr>
         <tr>
@@ -564,6 +622,11 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>construct a monitor metric in which the Laplacian vanishes at the X-point </p>
@@ -581,16 +644,19 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a766ef7c89b58748f1eb44a7e2e5fa89e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a766ef7c89b58748f1eb44a7e2e5fa89e">&#9670;&nbsp;</a></span>make_Xconst_monitor()</h2>
+<a id="a2fad31517c86179b341a67e10ff0fda4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fad31517c86179b341a67e10ff0fda4">&#9670;&nbsp;</a></span>make_Xconst_monitor()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdg_1_1geo_1_1_binary_symm_tensor_lvl1.html">BinarySymmTensorLvl1</a> dg::geo::make_Xconst_monitor </td>
+          <td class="memname">static <a class="el" href="structdg_1_1geo_1_1_cylindrical_symm_tensor_lvl1.html">CylindricalSymmTensorLvl1</a> dg::geo::make_Xconst_monitor </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl2.html">BinaryFunctorsLvl2</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1geo_1_1_cylindrical_functors_lvl2.html">CylindricalFunctorsLvl2</a> &amp;&#160;</td>
           <td class="paramname"><em>psi</em>, </td>
         </tr>
         <tr>
@@ -611,6 +677,11 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>construct a monitor metric in which the Laplacian vanishes at the X-point </p>
@@ -632,7 +703,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="namespacedg_1_1geo.html">geo</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:03:04 for Geometries by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:57 for Extension: Geometries by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

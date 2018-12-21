@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
-<title>Geometries: magnetic_field.h File Reference</title>
+<title>Extension: Geometries: magnetic_field.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -44,9 +44,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Geometries
+   <div id="projectname">Extension: Geometries
    </div>
-   <div id="projectbrief">Extension with magnetic flux functions, grids and grid generators</div>
+   <div id="projectbrief">Magnetic flux functions, parallel derivatives and new grids and grid generators in &quot;dg/geometries/geometries.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -98,159 +98,113 @@ $(document).ready(function(){initNavTree('magnetic__field_8h.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">magnetic_field.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="fluxfunctions_8h_source.html">fluxfunctions.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for magnetic_field.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="magnetic__field_8h__incl.png" border="0" usemap="#magnetic__field_8h" alt=""/></div>
-<map name="magnetic__field_8h" id="magnetic__field_8h">
-<area shape="rect" id="node2" href="fluxfunctions_8h.html" title="fluxfunctions.h" alt="" coords="27,80,134,107"/>
-<area shape="rect" id="node3" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/memory_8h.html" title="dg/backend/memory.h" alt="" coords="5,155,156,181"/>
-</map>
-</div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="magnetic__field_8h__dep__incl.png" border="0" usemap="#magnetic__field_8hdep" alt=""/></div>
-<map name="magnetic__field_8hdep" id="magnetic__field_8hdep">
-<area shape="rect" id="node2" href="average_8h.html" title="average.h" alt="" coords="5,155,84,181"/>
-<area shape="rect" id="node3" href="geometries_8h.html" title="geometries.h" alt="" coords="253,229,351,256"/>
-<area shape="rect" id="node4" href="fieldaligned_8h.html" title="fieldaligned.h" alt="" coords="238,80,337,107"/>
-<area shape="rect" id="node5" href="ds_8h.html" title="ds.h" alt="" coords="160,155,207,181"/>
-<area shape="rect" id="node7" href="solovev_8h.html" title="solovev.h" alt="" coords="381,155,460,181"/>
-<area shape="rect" id="node8" href="guenther_8h.html" title="guenther.h" alt="" coords="485,155,567,181"/>
-<area shape="rect" id="node9" href="toroidal_8h.html" title="toroidal.h" alt="" coords="462,80,537,107"/>
-<area shape="rect" id="node10" href="taylor_8h.html" title="taylor.h" alt="" coords="561,80,627,107"/>
-<area shape="rect" id="node11" href="testfunctors_8h.html" title="testfunctors.h" alt="" coords="651,80,753,107"/>
-<area shape="rect" id="node6" href="mpi__fieldaligned_8h.html" title="mpi_fieldaligned.h" alt="" coords="231,155,357,181"/>
-</map>
-</div>
 </div>
 <p><a href="magnetic__field_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">container class of R, psi and Ipol  <a href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A tokamak field as given by R0, Psi and Ipol.  <a href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_bmodule.html">dg::geo::Bmodule</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ |B| = R_0\sqrt{I^2+(\nabla\psi)^2}/R \]
-</p>
-  <a href="structdg_1_1geo_1_1_bmodule.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( |B| = R_0\sqrt{I^2+(\nabla\psi)^2}/R \)  <a href="structdg_1_1geo_1_1_bmodule.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_inv_b.html">dg::geo::InvB</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ |B|^{-1} = R/R_0\sqrt{I^2+(\nabla\psi)^2} \]
-</p>
-  <a href="structdg_1_1geo_1_1_inv_b.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( |B|^{-1} = R/R_0\sqrt{I^2+(\nabla\psi)^2} \)  <a href="structdg_1_1geo_1_1_inv_b.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_ln_b.html">dg::geo::LnB</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ \ln{|B|} \]
-</p>
-  <a href="structdg_1_1geo_1_1_ln_b.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \ln{|B|} \)  <a href="structdg_1_1geo_1_1_ln_b.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_b_r.html">dg::geo::BR</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ \frac{\partial |\hat{B}| }{ \partial \hat{R}} \]
-</p>
-  <a href="structdg_1_1geo_1_1_b_r.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \frac{\partial |B| }{ \partial R} \)  <a href="structdg_1_1geo_1_1_b_r.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_b_z.html">dg::geo::BZ</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ \frac{\partial \hat{B} }{ \partial \hat{Z}} \]
-</p>
-  <a href="structdg_1_1geo_1_1_b_z.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \frac{\partial |B| }{ \partial Z} \)  <a href="structdg_1_1geo_1_1_b_z.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_curvature_nabla_b_r.html">dg::geo::CurvatureNablaBR</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ \mathcal{\hat{K}}^{\hat{R}}_{\nabla B} \]
-</p>
-  <a href="structdg_1_1geo_1_1_curvature_nabla_b_r.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Approximate \( \mathcal{K}^{R}_{\nabla B} \).  <a href="structdg_1_1geo_1_1_curvature_nabla_b_r.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_curvature_nabla_b_z.html">dg::geo::CurvatureNablaBZ</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ \mathcal{\hat{K}}^{\hat{Z}}_{\nabla B} \]
-</p>
-  <a href="structdg_1_1geo_1_1_curvature_nabla_b_z.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Approximate \( \mathcal{K}^{Z}_{\nabla B} \).  <a href="structdg_1_1geo_1_1_curvature_nabla_b_z.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_curvature_kappa_r.html">dg::geo::CurvatureKappaR</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ \mathcal{\hat{K}}^{\hat{R}}_{\vec{\kappa}}=0 \]
-</p>
-  <a href="structdg_1_1geo_1_1_curvature_kappa_r.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Approximate \( \mathcal{K}^{R}_{\vec{\kappa}}=0 \).  <a href="structdg_1_1geo_1_1_curvature_kappa_r.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_curvature_kappa_z.html">dg::geo::CurvatureKappaZ</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ \mathcal{\hat{K}}^{\hat{Z}}_{\vec{\kappa}} \]
-</p>
-  <a href="structdg_1_1geo_1_1_curvature_kappa_z.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Approximate \( \mathcal{K}^{Z}_{\vec{\kappa}} \).  <a href="structdg_1_1geo_1_1_curvature_kappa_z.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_div_curvature_kappa.html">dg::geo::DivCurvatureKappa</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ \vec{\hat{\nabla}}\cdot \mathcal{\hat{K}}_{\vec{\kappa}} \]
-</p>
-  <a href="structdg_1_1geo_1_1_div_curvature_kappa.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Approximate \( \vec{\nabla}\cdot \mathcal{K}_{\vec{\kappa}} \).  <a href="structdg_1_1geo_1_1_div_curvature_kappa.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_div_curvature_nabla_b.html">dg::geo::DivCurvatureNablaB</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Approximate \( \vec{\nabla}\cdot \mathcal{K}_{\nabla B} \).  <a href="structdg_1_1geo_1_1_div_curvature_nabla_b.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_true_curvature_nabla_b_r.html">dg::geo::TrueCurvatureNablaBR</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">True \( \mathcal{K}^{R}_{\nabla B} \).  <a href="structdg_1_1geo_1_1_true_curvature_nabla_b_r.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_true_curvature_nabla_b_z.html">dg::geo::TrueCurvatureNablaBZ</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">True \( \mathcal{K}^{Z}_{\nabla B} \).  <a href="structdg_1_1geo_1_1_true_curvature_nabla_b_z.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_true_curvature_nabla_b_p.html">dg::geo::TrueCurvatureNablaBP</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">True \( \mathcal{K}^{\varphi}_{\nabla B} \).  <a href="structdg_1_1geo_1_1_true_curvature_nabla_b_p.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_true_curvature_kappa_r.html">dg::geo::TrueCurvatureKappaR</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">True \( \mathcal{K}^R_{\vec{\kappa}} \).  <a href="structdg_1_1geo_1_1_true_curvature_kappa_r.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_true_curvature_kappa_z.html">dg::geo::TrueCurvatureKappaZ</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">True \( \mathcal{K}^Z_{\vec{\kappa}} \).  <a href="structdg_1_1geo_1_1_true_curvature_kappa_z.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_true_curvature_kappa_p.html">dg::geo::TrueCurvatureKappaP</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">True \( \mathcal{K}^\varphi_{\vec{\kappa}} \).  <a href="structdg_1_1geo_1_1_true_curvature_kappa_p.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_true_div_curvature_kappa.html">dg::geo::TrueDivCurvatureKappa</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">True \( \vec{\nabla}\cdot \mathcal{K}_{\vec{\kappa}} \).  <a href="structdg_1_1geo_1_1_true_div_curvature_kappa.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_true_div_curvature_nabla_b.html">dg::geo::TrueDivCurvatureNablaB</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">True \( \vec{\nabla}\cdot \mathcal{K}_{\nabla B} \).  <a href="structdg_1_1geo_1_1_true_div_curvature_nabla_b.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_grad_ln_b.html">dg::geo::GradLnB</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ \hat{\nabla}_\parallel \ln{(\hat{B})} \]
-</p>
-  <a href="structdg_1_1geo_1_1_grad_ln_b.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \nabla_\parallel \ln{(B)} \)  <a href="structdg_1_1geo_1_1_grad_ln_b.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_divb.html">dg::geo::Divb</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ \nabla \cdot \vec b \]
-</p>
-  <a href="structdg_1_1geo_1_1_divb.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \nabla \cdot \vec b \)  <a href="structdg_1_1geo_1_1_divb.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_field_p.html">dg::geo::FieldP</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ B_\varphi = R_0I/R^2\]
-</p>
-  <a href="structdg_1_1geo_1_1_field_p.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_b_field_p.html">dg::geo::BFieldP</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( B^\varphi = R_0I/R^2\)  <a href="structdg_1_1geo_1_1_b_field_p.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_field_r.html">dg::geo::FieldR</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ B_R = R_0\psi_Z /R\]
-</p>
-  <a href="structdg_1_1geo_1_1_field_r.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_b_field_r.html">dg::geo::BFieldR</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( B^R = R_0\psi_Z /R\)  <a href="structdg_1_1geo_1_1_b_field_r.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_field_z.html">dg::geo::FieldZ</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ B_Z = -R_0\psi_R /R\]
-</p>
-  <a href="structdg_1_1geo_1_1_field_z.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_b_field_z.html">dg::geo::BFieldZ</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( B^Z = -R_0\psi_R /R\)  <a href="structdg_1_1geo_1_1_b_field_z.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_field_t.html">dg::geo::FieldT</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ B^{\theta} = B^R\partial_R\theta + B^Z\partial_Z\theta\]
-</p>
-  <a href="structdg_1_1geo_1_1_field_t.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_b_field_t.html">dg::geo::BFieldT</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( B^{\theta} = B^R\partial_R\theta + B^Z\partial_Z\theta\)  <a href="structdg_1_1geo_1_1_b_field_t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_b_hat_r.html">dg::geo::BHatR</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ b_R = B_R/|B|\]
-</p>
-  <a href="structdg_1_1geo_1_1_b_hat_r.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( b^R = B^R/|B|\)  <a href="structdg_1_1geo_1_1_b_hat_r.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_b_hat_z.html">dg::geo::BHatZ</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ b_Z = B_Z/|B|\]
-</p>
-  <a href="structdg_1_1geo_1_1_b_hat_z.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( b^Z = B^Z/|B|\)  <a href="structdg_1_1geo_1_1_b_hat_z.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_b_hat_p.html">dg::geo::BHatP</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ b_\varphi = B_\varphi/|B|\]
-</p>
-  <a href="structdg_1_1geo_1_1_b_hat_p.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( b^\varphi = B^\varphi/|B|\)  <a href="structdg_1_1geo_1_1_b_hat_p.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_grad_b_hat_r.html">dg::geo::GradBHatR</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \nabla_\parallel b^R \)  <a href="structdg_1_1geo_1_1_grad_b_hat_r.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_grad_b_hat_z.html">dg::geo::GradBHatZ</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \nabla_\parallel b^Z \)  <a href="structdg_1_1geo_1_1_grad_b_hat_z.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_grad_b_hat_p.html">dg::geo::GradBHatP</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \nabla_\parallel b^\varphi \)  <a href="structdg_1_1geo_1_1_grad_b_hat_p.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -259,6 +213,27 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacedg_1_1geo"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg_1_1geo.html">dg::geo</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga6182dc55424bffffb0d9876b9f90222d"><td class="memItemLeft" align="right" valign="top">CylindricalVectorLvl0&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__magnetic.html#ga6182dc55424bffffb0d9876b9f90222d">dg::geo::createBHat</a> (const TokamakMagneticField &amp;mag)</td></tr>
+<tr class="memdesc:ga6182dc55424bffffb0d9876b9f90222d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Magnetic unit vector field (<a class="el" href="structdg_1_1geo_1_1_b_hat_r.html" title=" ">BHatR</a>, <a class="el" href="structdg_1_1geo_1_1_b_hat_z.html" title=" ">BHatZ</a>, <a class="el" href="structdg_1_1geo_1_1_b_hat_p.html" title=" ">BHatP</a>)  <a href="group__magnetic.html#ga6182dc55424bffffb0d9876b9f90222d">More...</a><br /></td></tr>
+<tr class="separator:ga6182dc55424bffffb0d9876b9f90222d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3ab10e21b3c879843b6bb26a49beb918"><td class="memItemLeft" align="right" valign="top">CylindricalVectorLvl0&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__magnetic.html#ga3ab10e21b3c879843b6bb26a49beb918">dg::geo::createEPhi</a> ()</td></tr>
+<tr class="memdesc:ga3ab10e21b3c879843b6bb26a49beb918"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unit vector field (0, 0, 1)  <a href="group__magnetic.html#ga3ab10e21b3c879843b6bb26a49beb918">More...</a><br /></td></tr>
+<tr class="separator:ga3ab10e21b3c879843b6bb26a49beb918"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga891fbece075e21a1cdd1f15422251e7d"><td class="memItemLeft" align="right" valign="top">CylindricalVectorLvl0&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__magnetic.html#ga891fbece075e21a1cdd1f15422251e7d">dg::geo::createCurvatureNablaB</a> (const TokamakMagneticField &amp;mag)</td></tr>
+<tr class="memdesc:ga891fbece075e21a1cdd1f15422251e7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Approximate curvature vector field (<a class="el" href="structdg_1_1geo_1_1_curvature_nabla_b_r.html" title="Approximate . ">CurvatureNablaBR</a>, <a class="el" href="structdg_1_1geo_1_1_curvature_nabla_b_z.html" title="Approximate . ">CurvatureNablaBZ</a>, Constant(0))  <a href="group__magnetic.html#ga891fbece075e21a1cdd1f15422251e7d">More...</a><br /></td></tr>
+<tr class="separator:ga891fbece075e21a1cdd1f15422251e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga15544e369079fa9ab1350fe49433bbf2"><td class="memItemLeft" align="right" valign="top">CylindricalVectorLvl0&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__magnetic.html#ga15544e369079fa9ab1350fe49433bbf2">dg::geo::createCurvatureKappa</a> (const TokamakMagneticField &amp;mag)</td></tr>
+<tr class="memdesc:ga15544e369079fa9ab1350fe49433bbf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Approximate curvature vector field (<a class="el" href="structdg_1_1geo_1_1_curvature_kappa_r.html" title="Approximate . ">CurvatureKappaR</a>, <a class="el" href="structdg_1_1geo_1_1_curvature_kappa_z.html" title="Approximate . ">CurvatureKappaZ</a>, Constant(0))  <a href="group__magnetic.html#ga15544e369079fa9ab1350fe49433bbf2">More...</a><br /></td></tr>
+<tr class="separator:ga15544e369079fa9ab1350fe49433bbf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4e605e8fb727d3ffe0c2de721d7cad67"><td class="memItemLeft" align="right" valign="top">CylindricalVectorLvl0&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__magnetic.html#ga4e605e8fb727d3ffe0c2de721d7cad67">dg::geo::createTrueCurvatureKappa</a> (const TokamakMagneticField &amp;mag)</td></tr>
+<tr class="memdesc:ga4e605e8fb727d3ffe0c2de721d7cad67"><td class="mdescLeft">&#160;</td><td class="mdescRight">True curvature vector field (<a class="el" href="structdg_1_1geo_1_1_true_curvature_kappa_r.html" title="True . ">TrueCurvatureKappaR</a>, <a class="el" href="structdg_1_1geo_1_1_true_curvature_kappa_z.html" title="True . ">TrueCurvatureKappaZ</a>, <a class="el" href="structdg_1_1geo_1_1_true_curvature_kappa_p.html" title="True . ">TrueCurvatureKappaP</a>)  <a href="group__magnetic.html#ga4e605e8fb727d3ffe0c2de721d7cad67">More...</a><br /></td></tr>
+<tr class="separator:ga4e605e8fb727d3ffe0c2de721d7cad67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4278b6ca1435aa29063fd152f427c9c5"><td class="memItemLeft" align="right" valign="top">CylindricalVectorLvl0&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__magnetic.html#ga4278b6ca1435aa29063fd152f427c9c5">dg::geo::createTrueCurvatureNablaB</a> (const TokamakMagneticField &amp;mag)</td></tr>
+<tr class="memdesc:ga4278b6ca1435aa29063fd152f427c9c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">True curvature vector field (<a class="el" href="structdg_1_1geo_1_1_true_curvature_nabla_b_r.html" title="True . ">TrueCurvatureNablaBR</a>, <a class="el" href="structdg_1_1geo_1_1_true_curvature_nabla_b_z.html" title="True . ">TrueCurvatureNablaBZ</a>, <a class="el" href="structdg_1_1geo_1_1_true_curvature_nabla_b_p.html" title="True . ">TrueCurvatureNablaBP</a>)  <a href="group__magnetic.html#ga4278b6ca1435aa29063fd152f427c9c5">More...</a><br /></td></tr>
+<tr class="separator:ga4278b6ca1435aa29063fd152f427c9c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>MagneticField objects </p>
@@ -268,7 +243,7 @@ Namespaces</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="magnetic__field_8h.html">magnetic_field.h</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:03:04 for Geometries by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:57 for Extension: Geometries by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

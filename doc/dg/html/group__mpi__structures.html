@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -117,13 +117,13 @@ Collaboration diagram for MPI backend:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_bijective_comm.html">dg::BijectiveComm&lt; Index, Vector &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct that performs bijective collective scatter and gather operations across processes on distributed vectors using mpi.  <a href="structdg_1_1_bijective_comm.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform bijective gather and its transpose (scatter) operation across processes on distributed vectors using mpi.  <a href="structdg_1_1_bijective_comm.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_surjective_comm.html">dg::SurjectiveComm&lt; Index, Vector &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct that performs surjective collective scatter and gather operations across processes on distributed vectors using mpi.  <a href="structdg_1_1_surjective_comm.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform surjective gather and its transpose (scatter) operation across processes on distributed vectors using mpi.  <a href="structdg_1_1_surjective_comm.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_general_comm.html">dg::GeneralComm&lt; Index, Vector &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct that performs general collective scatter and gather operations across processes on distributed vectors using mpi.  <a href="structdg_1_1_general_comm.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform general gather and its transpose (scatter) operation across processes on distributed vectors using mpi.  <a href="structdg_1_1_general_comm.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_communicator.html">dg::aCommunicator&lt; LocalContainer &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct that performs collective scatter and gather operations across processes on distributed vectors using MPI.  <a href="structdg_1_1a_communicator.html#details">More...</a><br /></td></tr>
@@ -137,7 +137,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_m_p_i___vector.html">dg::MPI_Vector&lt; container &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">mpi Vector class  <a href="structdg_1_1_m_p_i___vector.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_nearest_neighbor_comm.html">dg::NearestNeighborComm&lt; Index, Vector &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_nearest_neighbor_comm.html">dg::NearestNeighborComm&lt; Index, Buffer, Vector &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Communicator for asynchronous nearest neighbor communication.  <a href="structdg_1_1_nearest_neighbor_comm.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -157,7 +157,7 @@ Functions</h2></td></tr>
 <tr class="separator:gaf94a6a2fb51d6f795e0e9c81ae03fcdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>In this section the blas functions are implemented for the MPI+X hardware architectures, where X is e.g. CPU, GPU, accelerator cards... The general idea to achieve this is to separate global communication from local computations and thus readily reuse the existing, optimized library for the local part. </p>
+<p>In this section the blas functions are implemented for the MPI+X hardware architectures, where X is e.g. CPU, GPU, accelerator cards... The general idea to achieve this is to separate global communication from local computations and thus readily reuse the existing, optimized library for the local part. Please consult the chapter <a class="el" href="index.html#mpi_backend">The MPI interface</a> in the introduction for more details. </p>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ga521b6d6524a6d391c746ddc9a1ad5571"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga521b6d6524a6d391c746ddc9a1ad5571">&#9670;&nbsp;</a></span>dist_type</h2>
@@ -214,7 +214,7 @@ template&lt;class ConversionPolicy , class real_type &gt; </div>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">ConversionPolicy</td><td>has to have the members:<ul>
-<li><code>global2localIdx(unsigned,unsigned,unsigned)</code> <code>const</code>; where the first parameter is the global index and the other two are the pair (local idx, rank).</li>
+<li><code>bool<code>global2localIdx(unsigned,unsigned&amp;,unsigned&amp;)</code> <code>const</code>;</code> where the first parameter is the global index and the other two are the output pair (localIdx, rank). return true if successful, false if global index is not part of the grid</li>
 <li><code>MPI_Comm</code> <code>communicator</code>() <code>const</code>; returns the communicator to use in the gather/scatter</li>
 <li><code>local_size()</code>; return the local vector size </li>
 </ul>
@@ -239,7 +239,7 @@ template&lt;class ConversionPolicy , class real_type &gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

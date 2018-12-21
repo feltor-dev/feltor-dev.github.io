@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
-<title>Geometries: dg::geo::FluxSurfaceAverage&lt; container &gt; Struct Template Reference</title>
+<title>Extension: Geometries: dg::geo::FluxSurfaceAverage&lt; container &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -44,9 +44,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Geometries
+   <div id="projectname">Extension: Geometries
    </div>
-   <div id="projectbrief">Extension with magnetic flux functions, grids and grid generators</div>
+   <div id="projectbrief">Magnetic flux functions, parallel derivatives and new grids and grid generators in &quot;dg/geometries/geometries.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -129,17 +129,7 @@ struct dg::geo::FluxSurfaceAverage&lt; container &gt;</h3>
 \[ \langle f\rangle(\psi_0) = \frac{1}{A} \int dV \delta(\psi_p(R,Z)-\psi_0) |\nabla\psi_p|f(R,Z) \]
 </p>
 <p>. </p>
-<p>with \( A = \int dV \delta(\psi_p(R,Z)-\psi_0)|\nabla\psi_p|\)</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">container</td><td>A data container class for which the <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/namespacedg_1_1blas1.html">blas1</a> functionality is overloaded. We assume that container is copyable/assignable and has a swap member function. Currently this is one of<ul>
-<li><a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193">dg::HVec</a>, <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8">dg::DVec</a>, <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0">dg::MHVec</a> or <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55">dg::MDVec</a></li>
-<li>std::vector&lt;dg::HVec&gt;, std::vector&lt;dg::DVec&gt;, std::vector&lt;dg::MHVec&gt; or std::vector&lt;dg::MDVec&gt; . </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
+<p>with \( A = \int dV \delta(\psi_p(R,Z)-\psi_0)|\nabla\psi_p|\) </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9c6f7fd4e2a5c013f2f0285af256794d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9c6f7fd4e2a5c013f2f0285af256794d">&#9670;&nbsp;</a></span>FluxSurfaceAverage()</h2>
@@ -229,6 +219,7 @@ template&lt;class container  = thrust::host_vector&lt;double&gt;&gt; </div>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>q(psip0) </dd></dl>
 
 </div>
 </div>
@@ -241,7 +232,7 @@ template&lt;class container  = thrust::host_vector&lt;double&gt;&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="namespacedg_1_1geo.html">geo</a></li><li class="navelem"><a class="el" href="structdg_1_1geo_1_1_flux_surface_average.html">FluxSurfaceAverage</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:03:04 for Geometries by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:57 for Extension: Geometries by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

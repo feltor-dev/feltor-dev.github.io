@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -121,18 +121,18 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gab5f0376b6886e47e4f72c922cfc0c7a7"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
-<tr class="memitem:gab5f0376b6886e47e4f72c922cfc0c7a7"><td class="memTemplItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, real_type, cusp::host_memory &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__interpolation.html#gab5f0376b6886e47e4f72c922cfc0c7a7">dg::create::interpolation</a> (const thrust::host_vector&lt; real_type &gt; &amp;x, const <a class="el" href="structdg_1_1_real_grid1d.html">RealGrid1d</a>&lt; real_type &gt; &amp;g)</td></tr>
-<tr class="memdesc:gab5f0376b6886e47e4f72c922cfc0c7a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create interpolation matrix.  <a href="group__interpolation.html#gab5f0376b6886e47e4f72c922cfc0c7a7">More...</a><br /></td></tr>
-<tr class="separator:gab5f0376b6886e47e4f72c922cfc0c7a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafc11151503ff95782b2bfcb7aa152e0f"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:gafc11151503ff95782b2bfcb7aa152e0f"><td class="memTemplItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, real_type, cusp::host_memory &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__interpolation.html#gafc11151503ff95782b2bfcb7aa152e0f">dg::create::interpolation</a> (const thrust::host_vector&lt; real_type &gt; &amp;x, const <a class="el" href="structdg_1_1_real_grid1d.html">RealGrid1d</a>&lt; real_type &gt; &amp;g, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcx=<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a>)</td></tr>
+<tr class="memdesc:gafc11151503ff95782b2bfcb7aa152e0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create interpolation matrix.  <a href="group__interpolation.html#gafc11151503ff95782b2bfcb7aa152e0f">More...</a><br /></td></tr>
+<tr class="separator:gafc11151503ff95782b2bfcb7aa152e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac238077768fe5fc49ab3cd4f94569ef4"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
 <tr class="memitem:gac238077768fe5fc49ab3cd4f94569ef4"><td class="memTemplItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, real_type, cusp::host_memory &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__interpolation.html#gac238077768fe5fc49ab3cd4f94569ef4">dg::create::interpolation</a> (const thrust::host_vector&lt; real_type &gt; &amp;x, const thrust::host_vector&lt; real_type &gt; &amp;y, const <a class="el" href="structdg_1_1a_real_topology2d.html">aRealTopology2d</a>&lt; real_type &gt; &amp;g, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcx=<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a>, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcy=<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a>)</td></tr>
 <tr class="memdesc:gac238077768fe5fc49ab3cd4f94569ef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create interpolation matrix.  <a href="group__interpolation.html#gac238077768fe5fc49ab3cd4f94569ef4">More...</a><br /></td></tr>
 <tr class="separator:gac238077768fe5fc49ab3cd4f94569ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac940cc53d90e88a3c88a4f235ff20409"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
-<tr class="memitem:gac940cc53d90e88a3c88a4f235ff20409"><td class="memTemplItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, real_type, cusp::host_memory &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__interpolation.html#gac940cc53d90e88a3c88a4f235ff20409">dg::create::interpolation</a> (const thrust::host_vector&lt; real_type &gt; &amp;x, const thrust::host_vector&lt; real_type &gt; &amp;y, const thrust::host_vector&lt; real_type &gt; &amp;z, const <a class="el" href="structdg_1_1a_real_topology3d.html">aRealTopology3d</a>&lt; real_type &gt; &amp;g, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcx=<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a>, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcy=<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a>)</td></tr>
-<tr class="memdesc:gac940cc53d90e88a3c88a4f235ff20409"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create interpolation matrix.  <a href="group__interpolation.html#gac940cc53d90e88a3c88a4f235ff20409">More...</a><br /></td></tr>
-<tr class="separator:gac940cc53d90e88a3c88a4f235ff20409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga49b02340419df7f0617886744cbf00bf"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga49b02340419df7f0617886744cbf00bf"><td class="memTemplItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, real_type, cusp::host_memory &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__interpolation.html#ga49b02340419df7f0617886744cbf00bf">dg::create::interpolation</a> (const thrust::host_vector&lt; real_type &gt; &amp;x, const thrust::host_vector&lt; real_type &gt; &amp;y, const thrust::host_vector&lt; real_type &gt; &amp;z, const <a class="el" href="structdg_1_1a_real_topology3d.html">aRealTopology3d</a>&lt; real_type &gt; &amp;g, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcx=<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a>, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcy=<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a>, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcz=<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3">dg::PER</a>)</td></tr>
+<tr class="memdesc:ga49b02340419df7f0617886744cbf00bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create interpolation matrix.  <a href="group__interpolation.html#ga49b02340419df7f0617886744cbf00bf">More...</a><br /></td></tr>
+<tr class="separator:ga49b02340419df7f0617886744cbf00bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga43cb2b93b0c2c40e6694616bca9fc49b"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
 <tr class="memitem:ga43cb2b93b0c2c40e6694616bca9fc49b"><td class="memTemplItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, real_type, cusp::host_memory &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__interpolation.html#ga43cb2b93b0c2c40e6694616bca9fc49b">dg::create::interpolation</a> (const <a class="el" href="structdg_1_1_real_grid1d.html">RealGrid1d</a>&lt; real_type &gt; &amp;g_new, const <a class="el" href="structdg_1_1_real_grid1d.html">RealGrid1d</a>&lt; real_type &gt; &amp;g_old)</td></tr>
 <tr class="memdesc:ga43cb2b93b0c2c40e6694616bca9fc49b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create interpolation between two grids.  <a href="group__interpolation.html#ga43cb2b93b0c2c40e6694616bca9fc49b">More...</a><br /></td></tr>
@@ -199,8 +199,12 @@ Functions</h2></td></tr>
 <tr class="separator:ga37fcd75e352138c84a0fe43aa66c15dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaedd441ee788e536ebf699bd7b28d132b"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
 <tr class="memitem:gaedd441ee788e536ebf699bd7b28d132b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__typedefs.html#gac256ed27ac25d8bc36b9f59c5a447c2a">dg::tMIHMatrix</a>&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__interpolation.html#gaedd441ee788e536ebf699bd7b28d132b">dg::create::interpolation</a> (const thrust::host_vector&lt; real_type &gt; &amp;x, const thrust::host_vector&lt; real_type &gt; &amp;y, const <a class="el" href="structdg_1_1a_real_m_p_i_topology2d.html">aRealMPITopology2d</a>&lt; real_type &gt; &amp;g, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcx=<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a>, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcy=<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a>)</td></tr>
-<tr class="memdesc:gaedd441ee788e536ebf699bd7b28d132b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an MPI row distributed interpolation matrix.  <a href="group__interpolation.html#gaedd441ee788e536ebf699bd7b28d132b">More...</a><br /></td></tr>
+<tr class="memdesc:gaedd441ee788e536ebf699bd7b28d132b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an MPI row distributed interpolation 2d matrix.  <a href="group__interpolation.html#gaedd441ee788e536ebf699bd7b28d132b">More...</a><br /></td></tr>
 <tr class="separator:gaedd441ee788e536ebf699bd7b28d132b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3df432a7b55d4e48d361845c44f9f5d4"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga3df432a7b55d4e48d361845c44f9f5d4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__typedefs.html#gac256ed27ac25d8bc36b9f59c5a447c2a">dg::tMIHMatrix</a>&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__interpolation.html#ga3df432a7b55d4e48d361845c44f9f5d4">dg::create::interpolation</a> (const thrust::host_vector&lt; real_type &gt; &amp;x, const thrust::host_vector&lt; real_type &gt; &amp;y, const thrust::host_vector&lt; real_type &gt; &amp;z, const <a class="el" href="structdg_1_1a_real_m_p_i_topology2d.html">aRealMPITopology2d</a>&lt; real_type &gt; &amp;g, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcx=<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a>, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcy=<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a>, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcz=<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3">dg::PER</a>)</td></tr>
+<tr class="memdesc:ga3df432a7b55d4e48d361845c44f9f5d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an MPI row distributed interpolation 3d matrix.  <a href="group__interpolation.html#ga3df432a7b55d4e48d361845c44f9f5d4">More...</a><br /></td></tr>
+<tr class="separator:ga3df432a7b55d4e48d361845c44f9f5d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga20f69fb78f6536cff2fd882addb9ba78"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
 <tr class="memitem:ga20f69fb78f6536cff2fd882addb9ba78"><td class="memTemplItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, real_type, cusp::host_memory &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__interpolation.html#ga20f69fb78f6536cff2fd882addb9ba78">dg::create::interpolationT</a> (const <a class="el" href="structdg_1_1_real_grid1d.html">RealGrid1d</a>&lt; real_type &gt; &amp;g_new, const <a class="el" href="structdg_1_1_real_grid1d.html">RealGrid1d</a>&lt; real_type &gt; &amp;g_old)</td></tr>
 <tr class="memdesc:ga20f69fb78f6536cff2fd882addb9ba78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the transpose of the interpolation matrix from new to old.  <a href="group__interpolation.html#ga20f69fb78f6536cff2fd882addb9ba78">More...</a><br /></td></tr>
@@ -320,7 +324,7 @@ template&lt;class real_type &gt; </div>
 </div>
 </div>
 <a id="ga2b5393db21fa03f0c7738eb7dc2526b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2b5393db21fa03f0c7738eb7dc2526b7">&#9670;&nbsp;</a></span>interpolation() <span class="overload">[1/15]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2b5393db21fa03f0c7738eb7dc2526b7">&#9670;&nbsp;</a></span>interpolation() <span class="overload">[1/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -360,7 +364,7 @@ template&lt;class real_type &gt; </div>
 </div>
 </div>
 <a id="ga269972b42917096fd1206a6be83d8665"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga269972b42917096fd1206a6be83d8665">&#9670;&nbsp;</a></span>interpolation() <span class="overload">[2/15]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga269972b42917096fd1206a6be83d8665">&#9670;&nbsp;</a></span>interpolation() <span class="overload">[2/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -414,7 +418,7 @@ template&lt;class real_type &gt; </div>
 </div>
 </div>
 <a id="ga58179b948ca7bb7b2bab744c5ac3c599"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga58179b948ca7bb7b2bab744c5ac3c599">&#9670;&nbsp;</a></span>interpolation() <span class="overload">[3/15]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga58179b948ca7bb7b2bab744c5ac3c599">&#9670;&nbsp;</a></span>interpolation() <span class="overload">[3/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -476,7 +480,7 @@ template&lt;class real_type &gt; </div>
 </div>
 </div>
 <a id="ga555e06c4b7779feba87d4329c3d03624"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga555e06c4b7779feba87d4329c3d03624">&#9670;&nbsp;</a></span>interpolation() <span class="overload">[4/15]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga555e06c4b7779feba87d4329c3d03624">&#9670;&nbsp;</a></span>interpolation() <span class="overload">[4/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -517,49 +521,8 @@ template&lt;class real_type &gt; </div>
 
 </div>
 </div>
-<a id="gab5f0376b6886e47e4f72c922cfc0c7a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab5f0376b6886e47e4f72c922cfc0c7a7">&#9670;&nbsp;</a></span>interpolation() <span class="overload">[5/15]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class real_type &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">cusp::coo_matrix&lt;int, real_type, cusp::host_memory&gt; dg::create::interpolation </td>
-          <td>(</td>
-          <td class="paramtype">const thrust::host_vector&lt; real_type &gt; &amp;&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_real_grid1d.html">RealGrid1d</a>&lt; real_type &gt; &amp;&#160;</td>
-          <td class="paramname"><em>g</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create interpolation matrix. </p>
-<p>The created matrix has <code>g.size()</code> columns and <code>x.size()</code> rows. It uses polynomial interpolation given by the dG polynomials, i.e. the interpolation has order <code>g.n()</code> . When applied to a vector the result contains the interpolated values at the given interpolation points. </p><dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a> </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>X-coordinates of interpolation points </td></tr>
-    <tr><td class="paramname">g</td><td>The Grid on which to operate</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>interpolation matrix </dd></dl>
-
-</div>
-</div>
 <a id="ga827bd31c77f2d5641080b68edbdcfff1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga827bd31c77f2d5641080b68edbdcfff1">&#9670;&nbsp;</a></span>interpolation() <span class="overload">[6/15]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga827bd31c77f2d5641080b68edbdcfff1">&#9670;&nbsp;</a></span>interpolation() <span class="overload">[5/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -601,7 +564,7 @@ template&lt;class real_type &gt; </div>
 </div>
 </div>
 <a id="gaf868a30b376e9fef78f58592d37d61ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf868a30b376e9fef78f58592d37d61ca">&#9670;&nbsp;</a></span>interpolation() <span class="overload">[7/15]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf868a30b376e9fef78f58592d37d61ca">&#9670;&nbsp;</a></span>interpolation() <span class="overload">[6/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -645,7 +608,7 @@ also check the transformation matrix, which is the more general solution </dd></
 </div>
 </div>
 <a id="gafbcffe4d3860746df9e86f8e829ad457"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafbcffe4d3860746df9e86f8e829ad457">&#9670;&nbsp;</a></span>interpolation() <span class="overload">[8/15]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gafbcffe4d3860746df9e86f8e829ad457">&#9670;&nbsp;</a></span>interpolation() <span class="overload">[7/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -686,8 +649,56 @@ template&lt;class real_type &gt; </div>
 
 </div>
 </div>
+<a id="gafc11151503ff95782b2bfcb7aa152e0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafc11151503ff95782b2bfcb7aa152e0f">&#9670;&nbsp;</a></span>interpolation() <span class="overload">[8/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class real_type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">cusp::coo_matrix&lt;int, real_type, cusp::host_memory&gt; dg::create::interpolation </td>
+          <td>(</td>
+          <td class="paramtype">const thrust::host_vector&lt; real_type &gt; &amp;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_real_grid1d.html">RealGrid1d</a>&lt; real_type &gt; &amp;&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a>&#160;</td>
+          <td class="paramname"><em>bcx</em> = <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create interpolation matrix. </p>
+<p>The created matrix has <code>g.size()</code> columns and <code>x.size()</code> rows. It uses polynomial interpolation given by the dG polynomials, i.e. the interpolation has order <code>g.n()</code> . When applied to a vector the result contains the interpolated values at the given interpolation points. The given boundary conditions determine how interpolation points outside the grid domain are treated. </p><dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>X-coordinates of interpolation points </td></tr>
+    <tr><td class="paramname">g</td><td>The Grid on which to operate </td></tr>
+    <tr><td class="paramname">bcx</td><td>determines what to do when a point lies outside the boundary in x. If <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3" title="periodic boundaries ">dg::PER</a></code>, the point will be shifted topologically back onto the domain. Else the point will be mirrored at the boundary: <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10" title="Neumann on both boundaries. ">dg::NEU</a></code> will then simply interpolate at the resulting point, <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364adece0b7644d85f490823799a3b97f7e6" title="homogeneous dirichlet boundaries ">dg::DIR</a></code> will take the negative of the interpolation. (<code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ae1ff2b85fda37868973c8059e3ca3a79" title="Dirichlet on left, Neumann on right boundary. ">dg::DIR_NEU</a></code> and <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a5832830f6fb508b8932dbafad3d1b57c" title="Neumann on left, Dirichlet on right boundary. ">dg::NEU_DIR</a></code> apply <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10" title="Neumann on both boundaries. ">dg::NEU</a></code> / <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364adece0b7644d85f490823799a3b97f7e6" title="homogeneous dirichlet boundaries ">dg::DIR</a></code> to the respective left or right boundary ) This means the result of the interpolation is as if the interpolated function were Fourier transformed with the correct boundary condition and thus extended beyond the grid boundaries.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>interpolation matrix </dd></dl>
+
+</div>
+</div>
 <a id="gaad3681c543cdcd1fa4fdd0e784610afd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaad3681c543cdcd1fa4fdd0e784610afd">&#9670;&nbsp;</a></span>interpolation() <span class="overload">[9/15]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaad3681c543cdcd1fa4fdd0e784610afd">&#9670;&nbsp;</a></span>interpolation() <span class="overload">[9/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -730,71 +741,8 @@ also check the transformation matrix, which is the more general solution </dd></
 
 </div>
 </div>
-<a id="gac238077768fe5fc49ab3cd4f94569ef4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac238077768fe5fc49ab3cd4f94569ef4">&#9670;&nbsp;</a></span>interpolation() <span class="overload">[10/15]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class real_type &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">cusp::coo_matrix&lt;int, real_type, cusp::host_memory&gt; dg::create::interpolation </td>
-          <td>(</td>
-          <td class="paramtype">const thrust::host_vector&lt; real_type &gt; &amp;&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const thrust::host_vector&lt; real_type &gt; &amp;&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1a_real_topology2d.html">aRealTopology2d</a>&lt; real_type &gt; &amp;&#160;</td>
-          <td class="paramname"><em>g</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a>&#160;</td>
-          <td class="paramname"><em>bcx</em> = <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a></code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a>&#160;</td>
-          <td class="paramname"><em>bcy</em> = <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create interpolation matrix. </p>
-<p>The created matrix has <code>g.size()</code> columns and <code>x.size()</code> rows. It uses polynomial interpolation given by the dG polynomials, i.e. the interpolation has order <code>g.n()</code> . When applied to a vector the result contains the interpolated values at the given interpolation points. </p><div class="fragment"><div class="line">    <span class="comment">//create equidistant values</span></div><div class="line">    thrust::host_vector&lt;double&gt; x( g.size()), y(x);</div><div class="line">    <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> i=0; i&lt;g.Ny()*g.n(); i++)</div><div class="line">        <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> j=0; j&lt;g.Nx()*g.n(); j++)</div><div class="line">        {</div><div class="line">            x[i*g.Nx()*g.n() + j] =</div><div class="line">                    g.x0() + (j+0.5)*g.hx()/(double)(g.n());</div><div class="line">            y[i*g.Nx()*g.n() + j] =</div><div class="line">                    g.y0() + (i+0.5)*g.hy()/(double)(g.n());</div><div class="line">        }</div><div class="line">    <span class="comment">//typedef cusp::coo_matrix&lt;int, double, cusp::host_memory&gt; Matrix;</span></div><div class="line">    Matrix B = <a class="code" href="group__interpolation.html#gab5f0376b6886e47e4f72c922cfc0c7a7">dg::create::interpolation</a>( x, y, g);</div><div class="line"></div><div class="line">    <span class="keyword">const</span> thrust::host_vector&lt;double&gt; vec = <a class="code" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">dg::evaluate</a>( <span class="keyword">function</span>, g);</div><div class="line">    thrust::host_vector&lt;double&gt; inter(vec);</div><div class="line">    <a class="code" href="group__blas2.html#ga9bd2015d31362b25d61110f91cf3b0b9">dg::blas2::symv</a>( B, vec, inter);</div><div class="line">    <span class="comment">//inter now contains the values of vec interpolated at equidistant points</span></div></div><!-- fragment --> <dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a> </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>X-coordinates of interpolation points </td></tr>
-    <tr><td class="paramname">y</td><td>Y-coordinates of interpolation points ( has to have equal size as x) </td></tr>
-    <tr><td class="paramname">g</td><td>The Grid on which to operate </td></tr>
-    <tr><td class="paramname">bcx</td><td>determines what to do when a point lies exactly on the boundary in x: DIR generates zeroes in the interpolation matrix, NEU and PER interpolate the inner side polynomial. (DIR_NEU and NEU_DIR apply NEU / DIR to the respective left or right boundary ) </td></tr>
-    <tr><td class="paramname">bcy</td><td>determines what to do when a point lies exactly on the boundary in y. Behaviour correponds to bcx.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>interpolation matrix </dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>all points (x,y) must lie within or on the boundaries of g. </dd></dl>
-
-</div>
-</div>
 <a id="gaedd441ee788e536ebf699bd7b28d132b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaedd441ee788e536ebf699bd7b28d132b">&#9670;&nbsp;</a></span>interpolation() <span class="overload">[11/15]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaedd441ee788e536ebf699bd7b28d132b">&#9670;&nbsp;</a></span>interpolation() <span class="overload">[10/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -839,25 +787,163 @@ template&lt;class real_type &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Create an MPI row distributed interpolation matrix. </p>
-<p>The created matrix has <code>g.size()</code> columns and <code>x.size()</code> rows. It uses polynomial interpolation given by the dG polynomials, i.e. the interpolation has order <code>g.n()</code> . When applied to a vector the result contains the interpolated values at the given interpolation points. </p><div class="fragment"><div class="line">    <span class="comment">//create equidistant values</span></div><div class="line">    thrust::host_vector&lt;double&gt; x( g.size()), y(x);</div><div class="line">    <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> i=0; i&lt;g.Ny()*g.n(); i++)</div><div class="line">        <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> j=0; j&lt;g.Nx()*g.n(); j++)</div><div class="line">        {</div><div class="line">            x[i*g.Nx()*g.n() + j] =</div><div class="line">                    g.x0() + (j+0.5)*g.hx()/(double)(g.n());</div><div class="line">            y[i*g.Nx()*g.n() + j] =</div><div class="line">                    g.y0() + (i+0.5)*g.hy()/(double)(g.n());</div><div class="line">        }</div><div class="line">    <span class="comment">//typedef cusp::coo_matrix&lt;int, double, cusp::host_memory&gt; Matrix;</span></div><div class="line">    Matrix B = <a class="code" href="group__interpolation.html#gab5f0376b6886e47e4f72c922cfc0c7a7">dg::create::interpolation</a>( x, y, g);</div><div class="line"></div><div class="line">    <span class="keyword">const</span> thrust::host_vector&lt;double&gt; vec = <a class="code" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">dg::evaluate</a>( <span class="keyword">function</span>, g);</div><div class="line">    thrust::host_vector&lt;double&gt; inter(vec);</div><div class="line">    <a class="code" href="group__blas2.html#ga9bd2015d31362b25d61110f91cf3b0b9">dg::blas2::symv</a>( B, vec, inter);</div><div class="line">    <span class="comment">//inter now contains the values of vec interpolated at equidistant points</span></div></div><!-- fragment --> <dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a> </dd></dl>
+<p>Create an MPI row distributed interpolation 2d matrix. </p>
+<p>The created matrix has <code>g.size()</code> columns and <code>x.size()</code> rows. It uses polynomial interpolation given by the dG polynomials, i.e. the interpolation has order <code>g.n()</code> . When applied to a vector the result contains the interpolated values at the given interpolation points. The given boundary conditions determine how interpolation points outside the grid domain are treated. </p><div class="fragment"><div class="line">    <span class="comment">//create equidistant values</span></div><div class="line">    thrust::host_vector&lt;double&gt; x( g.size()), y(x);</div><div class="line">    <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> i=0; i&lt;g.Ny()*g.n(); i++)</div><div class="line">        <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> j=0; j&lt;g.Nx()*g.n(); j++)</div><div class="line">        {</div><div class="line">            <span class="comment">//intentionally set values outside the grid domain</span></div><div class="line">            x[i*g.Nx()*g.n() + j] =</div><div class="line">                    g.x0() + g.lx() + (j+0.5)*g.hx()/(double)(g.n());</div><div class="line">            y[i*g.Nx()*g.n() + j] =</div><div class="line">                    g.y0() + 2*g.ly() + (i+0.5)*g.hy()/(double)(g.n());</div><div class="line">        }</div><div class="line">    <span class="comment">//typedef cusp::coo_matrix&lt;int, double, cusp::host_memory&gt; Matrix;</span></div><div class="line">    Matrix B = <a class="code" href="group__interpolation.html#gafc11151503ff95782b2bfcb7aa152e0f">dg::create::interpolation</a>( x, y, g, <a class="code" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364adece0b7644d85f490823799a3b97f7e6">dg::DIR</a>, <a class="code" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364adece0b7644d85f490823799a3b97f7e6">dg::DIR</a>);</div><div class="line">    <span class="comment">//values outside the grid are mirrored back in</span></div><div class="line"></div><div class="line">    <span class="keyword">const</span> thrust::host_vector&lt;double&gt; vec = <a class="code" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">dg::evaluate</a>( <span class="keyword">function</span>, g);</div><div class="line">    thrust::host_vector&lt;double&gt; inter(vec);</div><div class="line">    <a class="code" href="group__blas2.html#gac3840941bd2bb1d64c6ca3fef1f1b960">dg::blas2::symv</a>( B, vec, inter);</div><div class="line">    <span class="comment">//inter now contains the values of vec interpolated at equidistant points</span></div></div><!-- fragment --> <dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>X-coordinates of interpolation points </td></tr>
-    <tr><td class="paramname">y</td><td>Y-coordinates of interpolation points ( has to have equal size as x) </td></tr>
+    <tr><td class="paramname">y</td><td>Y-coordinates of interpolation points (<code>y.size()</code> must equal <code>x.size()</code>) </td></tr>
     <tr><td class="paramname">g</td><td>The Grid on which to operate </td></tr>
-    <tr><td class="paramname">bcx</td><td>determines what to do when a point lies exactly on the boundary in x: DIR generates zeroes in the interpolation matrix, NEU and PER interpolate the inner side polynomial. (DIR_NEU and NEU_DIR apply NEU / DIR to the respective left or right boundary ) </td></tr>
-    <tr><td class="paramname">bcy</td><td>determines what to do when a point lies exactly on the boundary in y. Behaviour correponds to bcx.</td></tr>
+    <tr><td class="paramname">bcx</td><td>determines what to do when a point lies outside the boundary in x. If <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3" title="periodic boundaries ">dg::PER</a></code>, the point will be shifted topologically back onto the domain. Else the point will be mirrored at the boundary: <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10" title="Neumann on both boundaries. ">dg::NEU</a></code> will then simply interpolate at the resulting point, <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364adece0b7644d85f490823799a3b97f7e6" title="homogeneous dirichlet boundaries ">dg::DIR</a></code> will take the negative of the interpolation. (<code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ae1ff2b85fda37868973c8059e3ca3a79" title="Dirichlet on left, Neumann on right boundary. ">dg::DIR_NEU</a></code> and <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a5832830f6fb508b8932dbafad3d1b57c" title="Neumann on left, Dirichlet on right boundary. ">dg::NEU_DIR</a></code> apply <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10" title="Neumann on both boundaries. ">dg::NEU</a></code> / <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364adece0b7644d85f490823799a3b97f7e6" title="homogeneous dirichlet boundaries ">dg::DIR</a></code> to the respective left or right boundary ) This means the result of the interpolation is as if the interpolated function were Fourier transformed with the correct boundary condition and thus extended beyond the grid boundaries. </td></tr>
+    <tr><td class="paramname">bcy</td><td>analogous to <code>bcx</code>, applies to y direction</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>interpolation matrix </dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>all points (x,y) must lie within or on the boundaries of g. </dd></dl>
 
 </div>
 </div>
-<a id="gac940cc53d90e88a3c88a4f235ff20409"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac940cc53d90e88a3c88a4f235ff20409">&#9670;&nbsp;</a></span>interpolation() <span class="overload">[12/15]</span></h2>
+<a id="ga3df432a7b55d4e48d361845c44f9f5d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3df432a7b55d4e48d361845c44f9f5d4">&#9670;&nbsp;</a></span>interpolation() <span class="overload">[11/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class real_type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__typedefs.html#gac256ed27ac25d8bc36b9f59c5a447c2a">dg::tMIHMatrix</a>&lt;real_type&gt; dg::create::interpolation </td>
+          <td>(</td>
+          <td class="paramtype">const thrust::host_vector&lt; real_type &gt; &amp;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const thrust::host_vector&lt; real_type &gt; &amp;&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const thrust::host_vector&lt; real_type &gt; &amp;&#160;</td>
+          <td class="paramname"><em>z</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1a_real_m_p_i_topology2d.html">aRealMPITopology2d</a>&lt; real_type &gt; &amp;&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a>&#160;</td>
+          <td class="paramname"><em>bcx</em> = <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a>&#160;</td>
+          <td class="paramname"><em>bcy</em> = <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a>&#160;</td>
+          <td class="paramname"><em>bcz</em> = <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3">dg::PER</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create an MPI row distributed interpolation 3d matrix. </p>
+<p>The created matrix has <code>g.size()</code> columns and <code>x.size()</code> rows. It uses polynomial interpolation given by the dG polynomials, i.e. the interpolation has order <code>g.n()</code> . When applied to a vector the result contains the interpolated values at the given interpolation points. </p><div class="fragment"><div class="line">    <span class="comment">//create equidistant values</span></div><div class="line">    thrust::host_vector&lt;double&gt; x( g.size()), y(x), z(x);</div><div class="line">    <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> k=0; k&lt;g.Nz(); k++)</div><div class="line">        <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> i=0; i&lt;g.Ny()*g.n(); i++)</div><div class="line">            <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> j=0; j&lt;g.Nx()*g.n(); j++)</div><div class="line">            {</div><div class="line">                x[(k*g.Ny()*g.n() + i)*g.Nx()*g.n() + j] =</div><div class="line">                        g.x0() + (j+0.5)*g.hx()/(double)(g.n());</div><div class="line">                y[(k*g.Ny()*g.n() + i)*g.Nx()*g.n() + j] =</div><div class="line">                        g.y0() + (i+0.5)*g.hy()/(double)(g.n());</div><div class="line">                z[(k*g.Ny()*g.n() + i)*g.Nx()*g.n() + j] =</div><div class="line">                        g.z0() + (k+0.5)*g.hz();</div><div class="line">            }</div><div class="line">    <span class="comment">//typedef cusp::coo_matrix&lt;int, double, cusp::host_memory&gt; Matrix;</span></div><div class="line">    Matrix B = <a class="code" href="group__interpolation.html#gafc11151503ff95782b2bfcb7aa152e0f">dg::create::interpolation</a>( x, y, z, g);</div><div class="line">    <span class="keyword">const</span> thrust::host_vector&lt;double&gt; vec = <a class="code" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">dg::evaluate</a>( <span class="keyword">function</span>, g);</div><div class="line">    thrust::host_vector&lt;double&gt; inter(vec);</div><div class="line">    <a class="code" href="group__blas2.html#gac3840941bd2bb1d64c6ca3fef1f1b960">dg::blas2::symv</a>( B, vec, inter);</div></div><!-- fragment --> <dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>X-coordinates of interpolation points </td></tr>
+    <tr><td class="paramname">y</td><td>Y-coordinates of interpolation points (<code>y.size()</code> must equal <code>x.size()</code>) </td></tr>
+    <tr><td class="paramname">z</td><td>Z-coordinates of interpolation points (<code>z.size()</code> must equal <code>x.size()</code>) </td></tr>
+    <tr><td class="paramname">g</td><td>The Grid on which to operate </td></tr>
+    <tr><td class="paramname">bcx</td><td>determines what to do when a point lies outside the boundary in x. If <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3" title="periodic boundaries ">dg::PER</a></code>, the point will be shifted topologically back onto the domain. Else the point will be mirrored at the boundary: <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10" title="Neumann on both boundaries. ">dg::NEU</a></code> will then simply interpolate at the resulting point, <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364adece0b7644d85f490823799a3b97f7e6" title="homogeneous dirichlet boundaries ">dg::DIR</a></code> will take the negative of the interpolation. (<code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ae1ff2b85fda37868973c8059e3ca3a79" title="Dirichlet on left, Neumann on right boundary. ">dg::DIR_NEU</a></code> and <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a5832830f6fb508b8932dbafad3d1b57c" title="Neumann on left, Dirichlet on right boundary. ">dg::NEU_DIR</a></code> apply <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10" title="Neumann on both boundaries. ">dg::NEU</a></code> / <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364adece0b7644d85f490823799a3b97f7e6" title="homogeneous dirichlet boundaries ">dg::DIR</a></code> to the respective left or right boundary ) This means the result of the interpolation is as if the interpolated function were Fourier transformed with the correct boundary condition and thus extended beyond the grid boundaries. </td></tr>
+    <tr><td class="paramname">bcy</td><td>analogous to <code>bcx</code>, applies to y direction </td></tr>
+    <tr><td class="paramname">bcz</td><td>analogous to <code>bcx</code>, applies to z direction</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>interpolation matrix </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>all points (x, y, z) must lie within or on the boundaries of g </dd></dl>
+
+</div>
+</div>
+<a id="gac238077768fe5fc49ab3cd4f94569ef4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac238077768fe5fc49ab3cd4f94569ef4">&#9670;&nbsp;</a></span>interpolation() <span class="overload">[12/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class real_type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">cusp::coo_matrix&lt;int, real_type, cusp::host_memory&gt; dg::create::interpolation </td>
+          <td>(</td>
+          <td class="paramtype">const thrust::host_vector&lt; real_type &gt; &amp;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const thrust::host_vector&lt; real_type &gt; &amp;&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1a_real_topology2d.html">aRealTopology2d</a>&lt; real_type &gt; &amp;&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a>&#160;</td>
+          <td class="paramname"><em>bcx</em> = <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a>&#160;</td>
+          <td class="paramname"><em>bcy</em> = <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create interpolation matrix. </p>
+<p>The created matrix has <code>g.size()</code> columns and <code>x.size()</code> rows. It uses polynomial interpolation given by the dG polynomials, i.e. the interpolation has order <code>g.n()</code> . When applied to a vector the result contains the interpolated values at the given interpolation points. The given boundary conditions determine how interpolation points outside the grid domain are treated. </p><div class="fragment"><div class="line">    <span class="comment">//create equidistant values</span></div><div class="line">    thrust::host_vector&lt;double&gt; x( g.size()), y(x);</div><div class="line">    <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> i=0; i&lt;g.Ny()*g.n(); i++)</div><div class="line">        <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> j=0; j&lt;g.Nx()*g.n(); j++)</div><div class="line">        {</div><div class="line">            <span class="comment">//intentionally set values outside the grid domain</span></div><div class="line">            x[i*g.Nx()*g.n() + j] =</div><div class="line">                    g.x0() + g.lx() + (j+0.5)*g.hx()/(double)(g.n());</div><div class="line">            y[i*g.Nx()*g.n() + j] =</div><div class="line">                    g.y0() + 2*g.ly() + (i+0.5)*g.hy()/(double)(g.n());</div><div class="line">        }</div><div class="line">    <span class="comment">//typedef cusp::coo_matrix&lt;int, double, cusp::host_memory&gt; Matrix;</span></div><div class="line">    Matrix B = <a class="code" href="group__interpolation.html#gafc11151503ff95782b2bfcb7aa152e0f">dg::create::interpolation</a>( x, y, g, <a class="code" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364adece0b7644d85f490823799a3b97f7e6">dg::DIR</a>, <a class="code" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364adece0b7644d85f490823799a3b97f7e6">dg::DIR</a>);</div><div class="line">    <span class="comment">//values outside the grid are mirrored back in</span></div><div class="line"></div><div class="line">    <span class="keyword">const</span> thrust::host_vector&lt;double&gt; vec = <a class="code" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">dg::evaluate</a>( <span class="keyword">function</span>, g);</div><div class="line">    thrust::host_vector&lt;double&gt; inter(vec);</div><div class="line">    <a class="code" href="group__blas2.html#gac3840941bd2bb1d64c6ca3fef1f1b960">dg::blas2::symv</a>( B, vec, inter);</div><div class="line">    <span class="comment">//inter now contains the values of vec interpolated at equidistant points</span></div></div><!-- fragment --> <dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>X-coordinates of interpolation points </td></tr>
+    <tr><td class="paramname">y</td><td>Y-coordinates of interpolation points (<code>y.size()</code> must equal <code>x.size()</code>) </td></tr>
+    <tr><td class="paramname">g</td><td>The Grid on which to operate </td></tr>
+    <tr><td class="paramname">bcx</td><td>determines what to do when a point lies outside the boundary in x. If <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3" title="periodic boundaries ">dg::PER</a></code>, the point will be shifted topologically back onto the domain. Else the point will be mirrored at the boundary: <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10" title="Neumann on both boundaries. ">dg::NEU</a></code> will then simply interpolate at the resulting point, <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364adece0b7644d85f490823799a3b97f7e6" title="homogeneous dirichlet boundaries ">dg::DIR</a></code> will take the negative of the interpolation. (<code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ae1ff2b85fda37868973c8059e3ca3a79" title="Dirichlet on left, Neumann on right boundary. ">dg::DIR_NEU</a></code> and <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a5832830f6fb508b8932dbafad3d1b57c" title="Neumann on left, Dirichlet on right boundary. ">dg::NEU_DIR</a></code> apply <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10" title="Neumann on both boundaries. ">dg::NEU</a></code> / <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364adece0b7644d85f490823799a3b97f7e6" title="homogeneous dirichlet boundaries ">dg::DIR</a></code> to the respective left or right boundary ) This means the result of the interpolation is as if the interpolated function were Fourier transformed with the correct boundary condition and thus extended beyond the grid boundaries. </td></tr>
+    <tr><td class="paramname">bcy</td><td>analogous to <code>bcx</code>, applies to y direction</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>interpolation matrix </dd></dl>
+
+</div>
+</div>
+<a id="ga49b02340419df7f0617886744cbf00bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga49b02340419df7f0617886744cbf00bf">&#9670;&nbsp;</a></span>interpolation() <span class="overload">[13/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -898,7 +984,13 @@ template&lt;class real_type &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a>&#160;</td>
-          <td class="paramname"><em>bcy</em> = <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a></code>&#160;</td>
+          <td class="paramname"><em>bcy</em> = <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a>&#160;</td>
+          <td class="paramname"><em>bcz</em> = <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3">dg::PER</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -909,15 +1001,16 @@ template&lt;class real_type &gt; </div>
 </div><div class="memdoc">
 
 <p>Create interpolation matrix. </p>
-<p>The created matrix has <code>g.size()</code> columns and <code>x.size()</code> rows. It uses polynomial interpolation given by the dG polynomials, i.e. the interpolation has order <code>g.n()</code> . When applied to a vector the result contains the interpolated values at the given interpolation points. </p><div class="fragment"><div class="line">    <span class="comment">//create equidistant values</span></div><div class="line">    thrust::host_vector&lt;double&gt; x( g.size()), y(x), z(x);</div><div class="line">    <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> k=0; k&lt;g.Nz(); k++)</div><div class="line">        <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> i=0; i&lt;g.Ny()*g.n(); i++)</div><div class="line">            <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> j=0; j&lt;g.Nx()*g.n(); j++)</div><div class="line">            {</div><div class="line">                x[(k*g.Ny()*g.n() + i)*g.Nx()*g.n() + j] =</div><div class="line">                        g.x0() + (j+0.5)*g.hx()/(double)(g.n());</div><div class="line">                y[(k*g.Ny()*g.n() + i)*g.Nx()*g.n() + j] =</div><div class="line">                        g.y0() + (i+0.5)*g.hy()/(double)(g.n());</div><div class="line">                z[(k*g.Ny()*g.n() + i)*g.Nx()*g.n() + j] =</div><div class="line">                        g.z0() + (k+0.5)*g.hz();</div><div class="line">            }</div><div class="line">    <span class="comment">//typedef cusp::coo_matrix&lt;int, double, cusp::host_memory&gt; Matrix;</span></div><div class="line">    Matrix B = <a class="code" href="group__interpolation.html#gab5f0376b6886e47e4f72c922cfc0c7a7">dg::create::interpolation</a>( x, y, z, g);</div><div class="line">    <span class="keyword">const</span> thrust::host_vector&lt;double&gt; vec = <a class="code" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">dg::evaluate</a>( <span class="keyword">function</span>, g);</div><div class="line">    thrust::host_vector&lt;double&gt; inter(vec);</div><div class="line">    <a class="code" href="group__blas2.html#ga9bd2015d31362b25d61110f91cf3b0b9">dg::blas2::symv</a>( B, vec, inter);</div></div><!-- fragment --> <dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a> </dd></dl>
+<p>The created matrix has <code>g.size()</code> columns and <code>x.size()</code> rows. It uses polynomial interpolation given by the dG polynomials, i.e. the interpolation has order <code>g.n()</code> . When applied to a vector the result contains the interpolated values at the given interpolation points. </p><div class="fragment"><div class="line">    <span class="comment">//create equidistant values</span></div><div class="line">    thrust::host_vector&lt;double&gt; x( g.size()), y(x), z(x);</div><div class="line">    <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> k=0; k&lt;g.Nz(); k++)</div><div class="line">        <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> i=0; i&lt;g.Ny()*g.n(); i++)</div><div class="line">            <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> j=0; j&lt;g.Nx()*g.n(); j++)</div><div class="line">            {</div><div class="line">                x[(k*g.Ny()*g.n() + i)*g.Nx()*g.n() + j] =</div><div class="line">                        g.x0() + (j+0.5)*g.hx()/(double)(g.n());</div><div class="line">                y[(k*g.Ny()*g.n() + i)*g.Nx()*g.n() + j] =</div><div class="line">                        g.y0() + (i+0.5)*g.hy()/(double)(g.n());</div><div class="line">                z[(k*g.Ny()*g.n() + i)*g.Nx()*g.n() + j] =</div><div class="line">                        g.z0() + (k+0.5)*g.hz();</div><div class="line">            }</div><div class="line">    <span class="comment">//typedef cusp::coo_matrix&lt;int, double, cusp::host_memory&gt; Matrix;</span></div><div class="line">    Matrix B = <a class="code" href="group__interpolation.html#gafc11151503ff95782b2bfcb7aa152e0f">dg::create::interpolation</a>( x, y, z, g);</div><div class="line">    <span class="keyword">const</span> thrust::host_vector&lt;double&gt; vec = <a class="code" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">dg::evaluate</a>( <span class="keyword">function</span>, g);</div><div class="line">    thrust::host_vector&lt;double&gt; inter(vec);</div><div class="line">    <a class="code" href="group__blas2.html#gac3840941bd2bb1d64c6ca3fef1f1b960">dg::blas2::symv</a>( B, vec, inter);</div></div><!-- fragment --> <dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>X-coordinates of interpolation points </td></tr>
-    <tr><td class="paramname">y</td><td>Y-coordinates of interpolation points </td></tr>
-    <tr><td class="paramname">z</td><td>Z-coordinates of interpolation points </td></tr>
+    <tr><td class="paramname">y</td><td>Y-coordinates of interpolation points (<code>y.size()</code> must equal <code>x.size()</code>) </td></tr>
+    <tr><td class="paramname">z</td><td>Z-coordinates of interpolation points (<code>z.size()</code> must equal <code>x.size()</code>) </td></tr>
     <tr><td class="paramname">g</td><td>The Grid on which to operate </td></tr>
-    <tr><td class="paramname">bcx</td><td>determines what to do when a point lies exactly on the boundary in x: DIR generates zeroes in the interpolation matrix, NEU and PER interpolate the inner side polynomial. (DIR_NEU and NEU_DIR apply NEU / DIR to the respective left or right boundary ) </td></tr>
-    <tr><td class="paramname">bcy</td><td>determines what to do when a point lies exactly on the boundary in y. Behaviour correponds to bcx.</td></tr>
+    <tr><td class="paramname">bcx</td><td>determines what to do when a point lies outside the boundary in x. If <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3" title="periodic boundaries ">dg::PER</a></code>, the point will be shifted topologically back onto the domain. Else the point will be mirrored at the boundary: <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10" title="Neumann on both boundaries. ">dg::NEU</a></code> will then simply interpolate at the resulting point, <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364adece0b7644d85f490823799a3b97f7e6" title="homogeneous dirichlet boundaries ">dg::DIR</a></code> will take the negative of the interpolation. (<code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ae1ff2b85fda37868973c8059e3ca3a79" title="Dirichlet on left, Neumann on right boundary. ">dg::DIR_NEU</a></code> and <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a5832830f6fb508b8932dbafad3d1b57c" title="Neumann on left, Dirichlet on right boundary. ">dg::NEU_DIR</a></code> apply <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10" title="Neumann on both boundaries. ">dg::NEU</a></code> / <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364adece0b7644d85f490823799a3b97f7e6" title="homogeneous dirichlet boundaries ">dg::DIR</a></code> to the respective left or right boundary ) This means the result of the interpolation is as if the interpolated function were Fourier transformed with the correct boundary condition and thus extended beyond the grid boundaries. </td></tr>
+    <tr><td class="paramname">bcy</td><td>analogous to <code>bcx</code>, applies to y direction </td></tr>
+    <tr><td class="paramname">bcz</td><td>analogous to <code>bcx</code>, applies to z direction</td></tr>
   </table>
   </dd>
 </dl>
@@ -927,7 +1020,7 @@ template&lt;class real_type &gt; </div>
 </div>
 </div>
 <a id="ga43cb2b93b0c2c40e6694616bca9fc49b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga43cb2b93b0c2c40e6694616bca9fc49b">&#9670;&nbsp;</a></span>interpolation() <span class="overload">[13/15]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga43cb2b93b0c2c40e6694616bca9fc49b">&#9670;&nbsp;</a></span>interpolation() <span class="overload">[14/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -971,7 +1064,7 @@ also check the transformation matrix, which is the more general solution </dd></
 </div>
 </div>
 <a id="ga7615acf5b63591b625ef2a6a4d4bf575"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7615acf5b63591b625ef2a6a4d4bf575">&#9670;&nbsp;</a></span>interpolation() <span class="overload">[14/15]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7615acf5b63591b625ef2a6a4d4bf575">&#9670;&nbsp;</a></span>interpolation() <span class="overload">[15/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1015,7 +1108,7 @@ also check the transformation matrix, which is the more general solution </dd></
 </div>
 </div>
 <a id="ga910bab705307590f6f2bff0220a2c103"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga910bab705307590f6f2bff0220a2c103">&#9670;&nbsp;</a></span>interpolation() <span class="overload">[15/15]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga910bab705307590f6f2bff0220a2c103">&#9670;&nbsp;</a></span>interpolation() <span class="overload">[16/16]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1087,7 +1180,7 @@ template&lt;class real_type &gt; </div>
 </div><div class="memdoc">
 
 <p>Create the transpose of the interpolation matrix from new to old. </p>
-<p>Does the equivalent of the following </p><div class="fragment"><div class="line">Matrix A = <a class="code" href="group__interpolation.html#gab5f0376b6886e47e4f72c922cfc0c7a7">dg::create::interpolation</a>( g_old, g_new);</div><div class="line"><span class="keywordflow">return</span> A.transpose();</div></div><!-- fragment --> <dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a> </dd></dl>
+<p>Does the equivalent of the following </p><div class="fragment"><div class="line">Matrix A = <a class="code" href="group__interpolation.html#gafc11151503ff95782b2bfcb7aa152e0f">dg::create::interpolation</a>( g_old, g_new);</div><div class="line"><span class="keywordflow">return</span> A.transpose();</div></div><!-- fragment --> <dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">g_new</td><td>The new grid </td></tr>
@@ -1129,7 +1222,7 @@ template&lt;class real_type &gt; </div>
 </div><div class="memdoc">
 
 <p>Create the transpose of the interpolation matrix from new to old. </p>
-<p>Does the equivalent of the following </p><div class="fragment"><div class="line">Matrix A = <a class="code" href="group__interpolation.html#gab5f0376b6886e47e4f72c922cfc0c7a7">dg::create::interpolation</a>( g_old, g_new);</div><div class="line"><span class="keywordflow">return</span> A.transpose();</div></div><!-- fragment --> <dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a> </dd></dl>
+<p>Does the equivalent of the following </p><div class="fragment"><div class="line">Matrix A = <a class="code" href="group__interpolation.html#gafc11151503ff95782b2bfcb7aa152e0f">dg::create::interpolation</a>( g_old, g_new);</div><div class="line"><span class="keywordflow">return</span> A.transpose();</div></div><!-- fragment --> <dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">g_new</td><td>The new grid </td></tr>
@@ -1171,7 +1264,7 @@ template&lt;class real_type &gt; </div>
 </div><div class="memdoc">
 
 <p>Create the transpose of the interpolation matrix from new to old. </p>
-<p>Does the equivalent of the following </p><div class="fragment"><div class="line">Matrix A = <a class="code" href="group__interpolation.html#gab5f0376b6886e47e4f72c922cfc0c7a7">dg::create::interpolation</a>( g_old, g_new);</div><div class="line"><span class="keywordflow">return</span> A.transpose();</div></div><!-- fragment --> <dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a> </dd></dl>
+<p>Does the equivalent of the following </p><div class="fragment"><div class="line">Matrix A = <a class="code" href="group__interpolation.html#gafc11151503ff95782b2bfcb7aa152e0f">dg::create::interpolation</a>( g_old, g_new);</div><div class="line"><span class="keywordflow">return</span> A.transpose();</div></div><!-- fragment --> <dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">g_new</td><td>The new grid </td></tr>
@@ -1213,7 +1306,7 @@ template&lt;class real_type &gt; </div>
 </div><div class="memdoc">
 
 <p>Create the transpose of the interpolation matrix from new to old. </p>
-<p>Does the equivalent of the following </p><div class="fragment"><div class="line">Matrix A = <a class="code" href="group__interpolation.html#gab5f0376b6886e47e4f72c922cfc0c7a7">dg::create::interpolation</a>( g_old, g_new);</div><div class="line"><span class="keywordflow">return</span> A.transpose();</div></div><!-- fragment --> <dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a> </dd></dl>
+<p>Does the equivalent of the following </p><div class="fragment"><div class="line">Matrix A = <a class="code" href="group__interpolation.html#gafc11151503ff95782b2bfcb7aa152e0f">dg::create::interpolation</a>( g_old, g_new);</div><div class="line"><span class="keywordflow">return</span> A.transpose();</div></div><!-- fragment --> <dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">g_new</td><td>The new grid </td></tr>
@@ -1255,7 +1348,7 @@ template&lt;class real_type &gt; </div>
 </div><div class="memdoc">
 
 <p>Create the transpose of the interpolation matrix from new to old. </p>
-<p>Does the equivalent of the following </p><div class="fragment"><div class="line">Matrix A = <a class="code" href="group__interpolation.html#gab5f0376b6886e47e4f72c922cfc0c7a7">dg::create::interpolation</a>( g_old, g_new);</div><div class="line"><span class="keywordflow">return</span> A.transpose();</div></div><!-- fragment --> <dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a> </dd></dl>
+<p>Does the equivalent of the following </p><div class="fragment"><div class="line">Matrix A = <a class="code" href="group__interpolation.html#gafc11151503ff95782b2bfcb7aa152e0f">dg::create::interpolation</a>( g_old, g_new);</div><div class="line"><span class="keywordflow">return</span> A.transpose();</div></div><!-- fragment --> <dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">g_new</td><td>The new grid </td></tr>
@@ -1297,7 +1390,7 @@ template&lt;class real_type &gt; </div>
 </div><div class="memdoc">
 
 <p>Create the transpose of the interpolation matrix from new to old. </p>
-<p>Does the equivalent of the following </p><div class="fragment"><div class="line">Matrix A = <a class="code" href="group__interpolation.html#gab5f0376b6886e47e4f72c922cfc0c7a7">dg::create::interpolation</a>( g_old, g_new);</div><div class="line"><span class="keywordflow">return</span> A.transpose();</div></div><!-- fragment --> <dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a> </dd></dl>
+<p>Does the equivalent of the following </p><div class="fragment"><div class="line">Matrix A = <a class="code" href="group__interpolation.html#gafc11151503ff95782b2bfcb7aa152e0f">dg::create::interpolation</a>( g_old, g_new);</div><div class="line"><span class="keywordflow">return</span> A.transpose();</div></div><!-- fragment --> <dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">g_new</td><td>The new grid </td></tr>
@@ -1339,7 +1432,7 @@ template&lt;class real_type &gt; </div>
 </div><div class="memdoc">
 
 <p>Create the transpose of the interpolation matrix from new to old. </p>
-<p>Does the equivalent of the following </p><div class="fragment"><div class="line">Matrix A = <a class="code" href="group__interpolation.html#gab5f0376b6886e47e4f72c922cfc0c7a7">dg::create::interpolation</a>( g_old, g_new);</div><div class="line"><span class="keywordflow">return</span> A.transpose();</div></div><!-- fragment --> <dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a> </dd></dl>
+<p>Does the equivalent of the following </p><div class="fragment"><div class="line">Matrix A = <a class="code" href="group__interpolation.html#gafc11151503ff95782b2bfcb7aa152e0f">dg::create::interpolation</a>( g_old, g_new);</div><div class="line"><span class="keywordflow">return</span> A.transpose();</div></div><!-- fragment --> <dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">g_new</td><td>The new grid </td></tr>
@@ -1381,7 +1474,7 @@ template&lt;class real_type &gt; </div>
 </div><div class="memdoc">
 
 <p>Create the transpose of the interpolation matrix from new to old. </p>
-<p>Does the equivalent of the following </p><div class="fragment"><div class="line">Matrix A = <a class="code" href="group__interpolation.html#gab5f0376b6886e47e4f72c922cfc0c7a7">dg::create::interpolation</a>( g_old, g_new);</div><div class="line"><span class="keywordflow">return</span> A.transpose();</div></div><!-- fragment --> <dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a> </dd></dl>
+<p>Does the equivalent of the following </p><div class="fragment"><div class="line">Matrix A = <a class="code" href="group__interpolation.html#gafc11151503ff95782b2bfcb7aa152e0f">dg::create::interpolation</a>( g_old, g_new);</div><div class="line"><span class="keywordflow">return</span> A.transpose();</div></div><!-- fragment --> <dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">g_new</td><td>The new grid </td></tr>
@@ -1900,7 +1993,7 @@ If the grid are very incompatible the matrix-matrix multiplication can take a wh
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -97,24 +97,26 @@ $(document).ready(function(){initNavTree('structdg_1_1_karniadakis.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">dg::Karniadakis&lt; ContainerType &gt; Member List</div>  </div>
+<div class="title">dg::Karniadakis&lt; ContainerType, SolverType &gt; Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="structdg_1_1_karniadakis.html">dg::Karniadakis&lt; ContainerType &gt;</a>, including all inherited members.</p>
+<p>This is the complete list of members for <a class="el" href="structdg_1_1_karniadakis.html">dg::Karniadakis&lt; ContainerType, SolverType &gt;</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="structdg_1_1_karniadakis.html#a245f3fce2285a61607078db1e1ee9549">construct</a>(const ContainerType &amp;copyable, unsigned max_iter, real_type eps)</td><td class="entry"><a class="el" href="structdg_1_1_karniadakis.html">dg::Karniadakis&lt; ContainerType &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structdg_1_1_karniadakis.html#a911cf99d1aa7c4b5ef74ea08d8df9822">init</a>(Explicit &amp;exp, Implicit &amp;imp, real_type t0, const ContainerType &amp;u0, real_type dt)</td><td class="entry"><a class="el" href="structdg_1_1_karniadakis.html">dg::Karniadakis&lt; ContainerType &gt;</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structdg_1_1_karniadakis.html#a1834706a3dafc21b402fdce1d8caf724">Karniadakis</a>()</td><td class="entry"><a class="el" href="structdg_1_1_karniadakis.html">dg::Karniadakis&lt; ContainerType &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="structdg_1_1_karniadakis.html#a4fb6bd86147994d0a18162b5a09fd732">Karniadakis</a>(const ContainerType &amp;copyable, unsigned max_iter, real_type eps)</td><td class="entry"><a class="el" href="structdg_1_1_karniadakis.html">dg::Karniadakis&lt; ContainerType &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structdg_1_1_karniadakis.html#a1b7f645cc16714088580aea97907e42a">real_type</a> typedef</td><td class="entry"><a class="el" href="structdg_1_1_karniadakis.html">dg::Karniadakis&lt; ContainerType &gt;</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="structdg_1_1_karniadakis.html#a010b975a49928be44d56f805f0b82ef6">step</a>(Explicit &amp;exp, Implicit &amp;imp, real_type &amp;t, ContainerType &amp;u)</td><td class="entry"><a class="el" href="structdg_1_1_karniadakis.html">dg::Karniadakis&lt; ContainerType &gt;</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structdg_1_1_karniadakis.html#af5a73be7840584f1c3c8ec4cb90b47c8">construct</a>(SolverParams &amp;&amp;...ps)</td><td class="entry"><a class="el" href="structdg_1_1_karniadakis.html">dg::Karniadakis&lt; ContainerType, SolverType &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="structdg_1_1_karniadakis.html#a354eb528d7f7759ae89d04c6151412ac">container_type</a> typedef</td><td class="entry"><a class="el" href="structdg_1_1_karniadakis.html">dg::Karniadakis&lt; ContainerType, SolverType &gt;</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structdg_1_1_karniadakis.html#a1c0ec2a851a051d596ab696fc55a52e6">copyable</a>() const</td><td class="entry"><a class="el" href="structdg_1_1_karniadakis.html">dg::Karniadakis&lt; ContainerType, SolverType &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="structdg_1_1_karniadakis.html#a196e06083071940efe4087db9a34022c">init</a>(Explicit &amp;ex, Implicit &amp;im, value_type t0, const ContainerType &amp;u0, value_type dt)</td><td class="entry"><a class="el" href="structdg_1_1_karniadakis.html">dg::Karniadakis&lt; ContainerType, SolverType &gt;</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structdg_1_1_karniadakis.html#afe9153876603aa5f1a9e7f9ebb4ee8b4">Karniadakis</a>()</td><td class="entry"><a class="el" href="structdg_1_1_karniadakis.html">dg::Karniadakis&lt; ContainerType, SolverType &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="structdg_1_1_karniadakis.html#ab10fd32d59f572fa70b42fc48696a443">Karniadakis</a>(SolverParams &amp;&amp;...ps)</td><td class="entry"><a class="el" href="structdg_1_1_karniadakis.html">dg::Karniadakis&lt; ContainerType, SolverType &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structdg_1_1_karniadakis.html#adbac938cf160ac8851f839aacdb9e8a1">step</a>(Explicit &amp;ex, Implicit &amp;im, value_type &amp;t, ContainerType &amp;u)</td><td class="entry"><a class="el" href="structdg_1_1_karniadakis.html">dg::Karniadakis&lt; ContainerType, SolverType &gt;</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="structdg_1_1_karniadakis.html#a34eee3926acbade2f6951cb564715f61">value_type</a> typedef</td><td class="entry"><a class="el" href="structdg_1_1_karniadakis.html">dg::Karniadakis&lt; ContainerType, SolverType &gt;</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:50 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

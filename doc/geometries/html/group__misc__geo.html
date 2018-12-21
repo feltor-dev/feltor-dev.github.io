@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
-<title>Geometries: 5. Miscellaneous additions</title>
+<title>Extension: Geometries: 5. Miscellaneous additions</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -44,9 +44,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Geometries
+   <div id="projectname">Extension: Geometries
    </div>
-   <div id="projectbrief">Extension with magnetic flux functions, grids and grid generators</div>
+   <div id="projectbrief">Magnetic flux functions, parallel derivatives and new grids and grid generators in &quot;dg/geometries/geometries.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -112,7 +112,7 @@ Classes</h2></td></tr>
 </p>
 <p>.  <a href="structdg_1_1geo_1_1_flux_surface_average.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_safety_factor.html">dg::geo::SafetyFactor&lt; container &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_safety_factor.html">dg::geo::SafetyFactor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for the evaluation of the safety factor q </p><p class="formulaDsp">
 \[ q(\psi_0) = \frac{1}{2\pi} \int dV |\nabla\psi_p| \delta(\psi_p-\psi_0) \alpha( R,Z) \]
 </p>
@@ -121,23 +121,26 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gafcee60ecf901ef09ae3fbf87bd146fbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__misc__geo.html#gafcee60ecf901ef09ae3fbf87bd146fbd">dg::geo::findXpoint</a> (const <a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl2.html">BinaryFunctorsLvl2</a> &amp;psi, double &amp;R_X, double &amp;Z_X)</td></tr>
-<tr class="memdesc:gafcee60ecf901ef09ae3fbf87bd146fbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function finds the X-point via Newton iteration applied to the gradient of psi.  <a href="group__misc__geo.html#gafcee60ecf901ef09ae3fbf87bd146fbd">More...</a><br /></td></tr>
-<tr class="separator:gafcee60ecf901ef09ae3fbf87bd146fbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafdf85449bb250bc67ab57989fcb768cb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__misc__geo.html#gafdf85449bb250bc67ab57989fcb768cb">dg::geo::findXpoint</a> (const <a class="el" href="structdg_1_1geo_1_1_cylindrical_functors_lvl2.html">CylindricalFunctorsLvl2</a> &amp;psi, double &amp;R_X, double &amp;Z_X)</td></tr>
+<tr class="memdesc:gafdf85449bb250bc67ab57989fcb768cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function finds the X-point via Newton iteration applied to the gradient of psi.  <a href="group__misc__geo.html#gafdf85449bb250bc67ab57989fcb768cb">More...</a><br /></td></tr>
+<tr class="separator:gafdf85449bb250bc67ab57989fcb768cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Objects that are used to define and integrate the magnetic field lines. All objects can be used in the <code>evaluation</code> and <code>pullback</code> functions. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gafcee60ecf901ef09ae3fbf87bd146fbd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafcee60ecf901ef09ae3fbf87bd146fbd">&#9670;&nbsp;</a></span>findXpoint()</h2>
+<a id="gafdf85449bb250bc67ab57989fcb768cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafdf85449bb250bc67ab57989fcb768cb">&#9670;&nbsp;</a></span>findXpoint()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void dg::geo::findXpoint </td>
+          <td class="memname">static void dg::geo::findXpoint </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl2.html">BinaryFunctorsLvl2</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1geo_1_1_cylindrical_functors_lvl2.html">CylindricalFunctorsLvl2</a> &amp;&#160;</td>
           <td class="paramname"><em>psi</em>, </td>
         </tr>
         <tr>
@@ -158,6 +161,11 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>This function finds the X-point via Newton iteration applied to the gradient of psi. </p>
@@ -177,7 +185,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Aug 28 2018 23:03:04 for Geometries by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:57 for Extension: Geometries by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

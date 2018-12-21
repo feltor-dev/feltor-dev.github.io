@@ -5,12 +5,12 @@ var indexSectionsWithContent =
   2: "d",
   3: "abcdefghimnoprstuvwx",
   4: "abcdefghijklmnoprstuvwxyz~",
-  5: "abcdefilmnpqrt",
-  6: "acdefghilmnprtv",
-  7: "bcdnw",
+  5: "abcdefhiklmnpqrstvz",
+  6: "abcdefghilmnprstvz",
+  7: "bcdntw",
   8: "exyz",
   9: "os",
-  10: "12345abcdefgilmprstu"
+  10: "12345abcdefgilmprstuv"
 };
 
 var indexSectionNames =

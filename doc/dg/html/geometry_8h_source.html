@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
-<title>Discontinuous Galerkin Library: geometry/geometry.h Source File</title>
+<title>Discontinuous Galerkin Library: topology/geometry.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -102,14 +102,14 @@ $(document).ready(function(){initNavTree('geometry_8h_source.html','');});
 <div class="contents">
 <a href="geometry_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;cassert&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;thrust/host_vector.h&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="evaluation_8h.html">evaluation.h</a>&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="weights_8h.html">weights.h</a>&quot;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifdef MPI_VERSION</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mpi__vector_8h.html">dg/backend/mpi_vector.h</a>&quot;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mpi__evaluation_8h.html">mpi_evaluation.h</a>&quot;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mpi__weights_8h.html">mpi_weights.h</a>&quot;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#endif//MPI_VERSION</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="base__geometry_8h.html">base_geometry.h</a>&quot;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="base__geometry_x_8h.html">base_geometryX.h</a>&quot;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="refined__grid_x_8h.html">refined_gridX.h</a>&quot;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//#include &quot;cartesianX.h&quot;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#ifdef MPI_VERSION</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mpi__base_8h.html">mpi_base.h</a>&quot;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#endif//MPI_VERSION</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="tensor_8h.html">tensor.h</a>&quot;</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="transform_8h.html">transform.h</a>&quot;</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="multiply_8h.html">multiply.h</a>&quot;</span></div><div class="ttc" id="multiply_8h_html"><div class="ttname"><a href="multiply_8h.html">multiply.h</a></div></div>
 <div class="ttc" id="tensor_8h_html"><div class="ttname"><a href="tensor_8h.html">tensor.h</a></div></div>
-<div class="ttc" id="weights_8h_html"><div class="ttname"><a href="weights_8h.html">weights.h</a></div><div class="ttdoc">contains creation functions for integration weights and their inverse </div></div>
+<div class="ttc" id="weights_8h_html"><div class="ttname"><a href="weights_8h.html">weights.h</a></div><div class="ttdoc">Creation functions for integration weights and their inverse. </div></div>
 <div class="ttc" id="base__geometry_x_8h_html"><div class="ttname"><a href="base__geometry_x_8h.html">base_geometryX.h</a></div></div>
 <div class="ttc" id="transform_8h_html"><div class="ttname"><a href="transform_8h.html">transform.h</a></div></div>
 <div class="ttc" id="refined__grid_x_8h_html"><div class="ttname"><a href="refined__grid_x_8h.html">refined_gridX.h</a></div></div>
 <div class="ttc" id="base__geometry_8h_html"><div class="ttname"><a href="base__geometry_8h.html">base_geometry.h</a></div></div>
 <div class="ttc" id="mpi__base_8h_html"><div class="ttname"><a href="mpi__base_8h.html">mpi_base.h</a></div></div>
 <div class="ttc" id="evaluation_8h_html"><div class="ttname"><a href="evaluation_8h.html">evaluation.h</a></div><div class="ttdoc">Function discretization routines. </div></div>
-<div class="ttc" id="mpi__weights_8h_html"><div class="ttname"><a href="mpi__weights_8h.html">mpi_weights.h</a></div><div class="ttdoc">contains MPI weights </div></div>
+<div class="ttc" id="mpi__weights_8h_html"><div class="ttname"><a href="mpi__weights_8h.html">mpi_weights.h</a></div><div class="ttdoc">MPI weights. </div></div>
 <div class="ttc" id="mpi__evaluation_8h_html"><div class="ttname"><a href="mpi__evaluation_8h.html">mpi_evaluation.h</a></div><div class="ttdoc">Function discretization routines for mpi vectors. </div></div>
 <div class="ttc" id="mpi__vector_8h_html"><div class="ttname"><a href="mpi__vector_8h.html">mpi_vector.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -117,8 +117,8 @@ $(document).ready(function(){initNavTree('geometry_8h_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_e3380d2178455503f266746fb14246a5.html">geometry</a></li><li class="navelem"><a class="el" href="geometry_8h.html">geometry.h</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
+    <li class="navelem"><a class="el" href="dir_84497794bb37d283dbd68163bed8ef05.html">topology</a></li><li class="navelem"><a class="el" href="geometry_8h.html">geometry.h</a></li>
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

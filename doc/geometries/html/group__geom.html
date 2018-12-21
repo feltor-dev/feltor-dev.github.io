@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
-<title>Geometries: 3.1 New flux functions and derivatives</title>
+<title>Extension: Geometries: 3.1 New flux functions and derivatives</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -44,9 +44,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Geometries
+   <div id="projectname">Extension: Geometries
    </div>
-   <div id="projectbrief">Extension with magnetic flux functions, grids and grid generators</div>
+   <div id="projectbrief">Magnetic flux functions, parallel derivatives and new grids and grid generators in &quot;dg/geometries/geometries.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -143,32 +143,35 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gad54aa312242b5245cbbf9cd4b5dfe06d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#gad54aa312242b5245cbbf9cd4b5dfe06d">dg::geo::createGuentherField</a> (double R_0, double I_0)</td></tr>
-<tr class="memdesc:gad54aa312242b5245cbbf9cd4b5dfe06d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Guenther Magnetic field.  <a href="group__geom.html#gad54aa312242b5245cbbf9cd4b5dfe06d">More...</a><br /></td></tr>
-<tr class="separator:gad54aa312242b5245cbbf9cd4b5dfe06d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae3f70e88fd15dd404643f4c5941401c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#gae3f70e88fd15dd404643f4c5941401c7">dg::geo::createSolovevField</a> (<a class="el" href="structdg_1_1geo_1_1solovev_1_1_parameters.html">dg::geo::solovev::Parameters</a> gp)</td></tr>
-<tr class="memdesc:gae3f70e88fd15dd404643f4c5941401c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Solovev Magnetic field.  <a href="group__geom.html#gae3f70e88fd15dd404643f4c5941401c7">More...</a><br /></td></tr>
-<tr class="separator:gae3f70e88fd15dd404643f4c5941401c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7d6cc4a15d5430ff5d4aad81fb7098d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#ga7d6cc4a15d5430ff5d4aad81fb7098d9">dg::geo::createTaylorField</a> (<a class="el" href="structdg_1_1geo_1_1solovev_1_1_parameters.html">dg::geo::solovev::Parameters</a> gp)</td></tr>
-<tr class="memdesc:ga7d6cc4a15d5430ff5d4aad81fb7098d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Taylor Magnetic field.  <a href="group__geom.html#ga7d6cc4a15d5430ff5d4aad81fb7098d9">More...</a><br /></td></tr>
-<tr class="separator:ga7d6cc4a15d5430ff5d4aad81fb7098d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga24c4268469ccbabde18f7eb7ab124ac6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#ga24c4268469ccbabde18f7eb7ab124ac6">dg::geo::createToroidalField</a> (double R0)</td></tr>
-<tr class="memdesc:ga24c4268469ccbabde18f7eb7ab124ac6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Toroidal Magnetic field.  <a href="group__geom.html#ga24c4268469ccbabde18f7eb7ab124ac6">More...</a><br /></td></tr>
-<tr class="separator:ga24c4268469ccbabde18f7eb7ab124ac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa6d78afe4f306e34d509934f8f79421a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#gaa6d78afe4f306e34d509934f8f79421a">dg::geo::createCircularField</a> (double R0, double I0)</td></tr>
-<tr class="memdesc:gaa6d78afe4f306e34d509934f8f79421a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Magnetic field with circular flux surfaces and constant current.  <a href="group__geom.html#gaa6d78afe4f306e34d509934f8f79421a">More...</a><br /></td></tr>
-<tr class="separator:gaa6d78afe4f306e34d509934f8f79421a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga70edeb1a555a6a2b05ac0485329fdcac"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#ga70edeb1a555a6a2b05ac0485329fdcac">dg::geo::createGuentherField</a> (double R_0, double I_0)</td></tr>
+<tr class="memdesc:ga70edeb1a555a6a2b05ac0485329fdcac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Guenther Magnetic field.  <a href="group__geom.html#ga70edeb1a555a6a2b05ac0485329fdcac">More...</a><br /></td></tr>
+<tr class="separator:ga70edeb1a555a6a2b05ac0485329fdcac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaadcb5ef7126a3bc41beed60c431f9368"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#gaadcb5ef7126a3bc41beed60c431f9368">dg::geo::createSolovevField</a> (<a class="el" href="structdg_1_1geo_1_1solovev_1_1_parameters.html">dg::geo::solovev::Parameters</a> gp)</td></tr>
+<tr class="memdesc:gaadcb5ef7126a3bc41beed60c431f9368"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Solovev Magnetic field.  <a href="group__geom.html#gaadcb5ef7126a3bc41beed60c431f9368">More...</a><br /></td></tr>
+<tr class="separator:gaadcb5ef7126a3bc41beed60c431f9368"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga27e5bae45b284ee051039ca97d7c0edb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#ga27e5bae45b284ee051039ca97d7c0edb">dg::geo::createTaylorField</a> (<a class="el" href="structdg_1_1geo_1_1solovev_1_1_parameters.html">dg::geo::solovev::Parameters</a> gp)</td></tr>
+<tr class="memdesc:ga27e5bae45b284ee051039ca97d7c0edb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Taylor Magnetic field.  <a href="group__geom.html#ga27e5bae45b284ee051039ca97d7c0edb">More...</a><br /></td></tr>
+<tr class="separator:ga27e5bae45b284ee051039ca97d7c0edb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2d9ca2e61302113e806b1d05d6b3db7e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#ga2d9ca2e61302113e806b1d05d6b3db7e">dg::geo::createToroidalField</a> (double R0)</td></tr>
+<tr class="memdesc:ga2d9ca2e61302113e806b1d05d6b3db7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Toroidal Magnetic field.  <a href="group__geom.html#ga2d9ca2e61302113e806b1d05d6b3db7e">More...</a><br /></td></tr>
+<tr class="separator:ga2d9ca2e61302113e806b1d05d6b3db7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga16471692288263e2076b897dae16799f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#ga16471692288263e2076b897dae16799f">dg::geo::createCircularField</a> (double R0, double I0)</td></tr>
+<tr class="memdesc:ga16471692288263e2076b897dae16799f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Magnetic field with circular flux surfaces and constant current.  <a href="group__geom.html#ga16471692288263e2076b897dae16799f">More...</a><br /></td></tr>
+<tr class="separator:ga16471692288263e2076b897dae16799f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gaa6d78afe4f306e34d509934f8f79421a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa6d78afe4f306e34d509934f8f79421a">&#9670;&nbsp;</a></span>createCircularField()</h2>
+<a id="ga16471692288263e2076b897dae16799f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga16471692288263e2076b897dae16799f">&#9670;&nbsp;</a></span>createCircularField()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a> dg::geo::createCircularField </td>
+          <td class="memname">static <a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a> dg::geo::createCircularField </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>R0</em>, </td>
@@ -185,6 +188,11 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Create a Magnetic field with circular flux surfaces and constant current. </p>
@@ -202,14 +210,17 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gad54aa312242b5245cbbf9cd4b5dfe06d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad54aa312242b5245cbbf9cd4b5dfe06d">&#9670;&nbsp;</a></span>createGuentherField()</h2>
+<a id="ga70edeb1a555a6a2b05ac0485329fdcac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga70edeb1a555a6a2b05ac0485329fdcac">&#9670;&nbsp;</a></span>createGuentherField()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a> dg::geo::createGuentherField </td>
+          <td class="memname">static <a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a> dg::geo::createGuentherField </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>R_0</em>, </td>
@@ -226,6 +237,11 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Create a Guenther Magnetic field. </p>
@@ -243,20 +259,28 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gae3f70e88fd15dd404643f4c5941401c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae3f70e88fd15dd404643f4c5941401c7">&#9670;&nbsp;</a></span>createSolovevField()</h2>
+<a id="gaadcb5ef7126a3bc41beed60c431f9368"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaadcb5ef7126a3bc41beed60c431f9368">&#9670;&nbsp;</a></span>createSolovevField()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a> dg::geo::createSolovevField </td>
+          <td class="memname">static <a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a> dg::geo::createSolovevField </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structdg_1_1geo_1_1solovev_1_1_parameters.html">dg::geo::solovev::Parameters</a>&#160;</td>
           <td class="paramname"><em>gp</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Create a Solovev Magnetic field. </p>
@@ -270,20 +294,28 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga7d6cc4a15d5430ff5d4aad81fb7098d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7d6cc4a15d5430ff5d4aad81fb7098d9">&#9670;&nbsp;</a></span>createTaylorField()</h2>
+<a id="ga27e5bae45b284ee051039ca97d7c0edb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga27e5bae45b284ee051039ca97d7c0edb">&#9670;&nbsp;</a></span>createTaylorField()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a> dg::geo::createTaylorField </td>
+          <td class="memname">static <a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a> dg::geo::createTaylorField </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structdg_1_1geo_1_1solovev_1_1_parameters.html">dg::geo::solovev::Parameters</a>&#160;</td>
           <td class="paramname"><em>gp</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Create a Taylor Magnetic field. </p>
@@ -298,20 +330,28 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga24c4268469ccbabde18f7eb7ab124ac6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga24c4268469ccbabde18f7eb7ab124ac6">&#9670;&nbsp;</a></span>createToroidalField()</h2>
+<a id="ga2d9ca2e61302113e806b1d05d6b3db7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2d9ca2e61302113e806b1d05d6b3db7e">&#9670;&nbsp;</a></span>createToroidalField()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a> dg::geo::createToroidalField </td>
+          <td class="memname">static <a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a> dg::geo::createToroidalField </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>R0</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Create a Toroidal Magnetic field. </p>
@@ -334,7 +374,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Aug 28 2018 23:03:04 for Geometries by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:57 for Extension: Geometries by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

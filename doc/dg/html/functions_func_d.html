@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -99,28 +99,29 @@ $(document).ready(function(){initNavTree('functions_func_d.html','');});
 &#160;
 
 <h3><a id="index_d"></a>- d -</h3><ul>
+<li>d()
+: <a class="el" href="structdg_1_1_butcher_tableau.html#a7664e83b4ddc79df1f6fec71653a6b84">dg::ButcherTableau&lt; real_type &gt;</a>
+</li>
 <li>data()
 : <a class="el" href="structdg_1_1_buffer.html#abaeef68d4a18eb380a1206163fc1118f">dg::Buffer&lt; T &gt;</a>
 , <a class="el" href="structdg_1_1_m_p_i___vector.html#a0148f868581043d706b690f5a22cd236">dg::MPI_Vector&lt; container &gt;</a>
 , <a class="el" href="classdg_1_1_operator.html#a0596c9a8ce35abf2784be96a3295859b">dg::Operator&lt; T &gt;</a>
+, <a class="el" href="structdg_1_1_view.html#a8aa7177ce62b3e937f98a07df05b6bcb">dg::View&lt; ThrustVector &gt;</a>
 </li>
-<li>decompose()
-: <a class="el" href="structdg_1_1_cholesky_tensor.html#a9bbdc7c813063a45886c00df24a0c798">dg::CholeskyTensor&lt; ContainerType &gt;</a>
-</li>
-<li>diagonal()
-: <a class="el" href="structdg_1_1_cholesky_tensor.html#a0a22d711a1810d6cfc071557b70c7454">dg::CholeskyTensor&lt; ContainerType &gt;</a>
+<li>DefaultSolver()
+: <a class="el" href="structdg_1_1_default_solver.html#a6904af29802092b896f3a8efde1070a3">dg::DefaultSolver&lt; ContainerType &gt;</a>
 </li>
 <li>diff()
 : <a class="el" href="classdg_1_1_timer.html#a27a84dc8acb525e9617cd34d64aad4ed">dg::Timer</a>
 </li>
 <li>dims()
-: <a class="el" href="structdg_1_1_nearest_neighbor_comm.html#a5967be11066e10620c3ca6dd465d91aa">dg::NearestNeighborComm&lt; Index, Vector &gt;</a>
+: <a class="el" href="structdg_1_1_nearest_neighbor_comm.html#afcb96e1033b1ed7240735a2e73a435fe">dg::NearestNeighborComm&lt; Index, Buffer, Vector &gt;</a>
 </li>
 <li>direct_solve()
-: <a class="el" href="structdg_1_1_multigrid_c_g2d.html#aafcc41ba7e8c9af8519ec771fa330cb0">dg::MultigridCG2d&lt; Geometry, Matrix, container &gt;</a>
+: <a class="el" href="structdg_1_1_multigrid_c_g2d.html#aaf8c29f80d41cac5e6f6c73d1cb18389">dg::MultigridCG2d&lt; Geometry, Matrix, Container &gt;</a>
 </li>
 <li>direction()
-: <a class="el" href="structdg_1_1_nearest_neighbor_comm.html#a9d1bc68aac6220625cc15c2397667443">dg::NearestNeighborComm&lt; Index, Vector &gt;</a>
+: <a class="el" href="structdg_1_1_nearest_neighbor_comm.html#ad11be4522a94a3905ffe74e8b08ed96c">dg::NearestNeighborComm&lt; Index, Buffer, Vector &gt;</a>
 </li>
 <li>display()
 : <a class="el" href="structdg_1_1a_real_m_p_i_topology2d.html#acf70744ff43dc2ffd25e30efe12404a7">dg::aRealMPITopology2d&lt; real_type &gt;</a>
@@ -160,14 +161,14 @@ $(document).ready(function(){initNavTree('functions_func_d.html','');});
 , <a class="el" href="structdg_1_1a_real_topology3d.html#a070dd952345b72a78425bb3bd78cf280">dg::aRealTopology3d&lt; real_type &gt;</a>
 </li>
 <li>dx()
-: <a class="el" href="structdg_1_1_arakawa_x.html#a831d7ad5c4a02115fa22d81f9a8544f6">dg::ArakawaX&lt; Geometry, Matrix, container &gt;</a>
+: <a class="el" href="structdg_1_1_arakawa_x.html#a4470ad0a89bb10d04e12b4800b644ac7">dg::ArakawaX&lt; Geometry, Matrix, Container &gt;</a>
 , <a class="el" href="structdg_1_1_cauchy.html#a777acb08fa70c40d07c8d53e1cf62f0b">dg::Cauchy</a>
 </li>
 <li>dxlhs()
-: <a class="el" href="structdg_1_1_poisson.html#a15753840c2c1122c423c7df421f7ce4f">dg::Poisson&lt; Geometry, Matrix, container &gt;</a>
+: <a class="el" href="structdg_1_1_poisson.html#aa112d6702e6ec0037629e615634aa73d">dg::Poisson&lt; Geometry, Matrix, Container &gt;</a>
 </li>
 <li>dxrhs()
-: <a class="el" href="structdg_1_1_poisson.html#af15be11c0194e76c0e427f8926db9b64">dg::Poisson&lt; Geometry, Matrix, container &gt;</a>
+: <a class="el" href="structdg_1_1_poisson.html#afa749ff861cbf05a0cc79a59f594bf89">dg::Poisson&lt; Geometry, Matrix, Container &gt;</a>
 </li>
 <li>dxx()
 : <a class="el" href="structdg_1_1_cauchy.html#a4964182d6fa83ab8ac002ba2fef86cce">dg::Cauchy</a>
@@ -176,14 +177,14 @@ $(document).ready(function(){initNavTree('functions_func_d.html','');});
 : <a class="el" href="structdg_1_1_cauchy.html#a6ee1259a0917194949baea73ce5b0862">dg::Cauchy</a>
 </li>
 <li>dy()
-: <a class="el" href="structdg_1_1_arakawa_x.html#a2959a5fe048ab8858b67d8b06c06aaac">dg::ArakawaX&lt; Geometry, Matrix, container &gt;</a>
+: <a class="el" href="structdg_1_1_arakawa_x.html#aae6828bf204fbcd35dfc586a0fb00b3b">dg::ArakawaX&lt; Geometry, Matrix, Container &gt;</a>
 , <a class="el" href="structdg_1_1_cauchy.html#a92c34f895105f06df2e1a224a0c0a50f">dg::Cauchy</a>
 </li>
 <li>dylhs()
-: <a class="el" href="structdg_1_1_poisson.html#a00171bb950e06b5df331a345d6399b42">dg::Poisson&lt; Geometry, Matrix, container &gt;</a>
+: <a class="el" href="structdg_1_1_poisson.html#ae7793a50dc7e35c924a1f9cd533f6c42">dg::Poisson&lt; Geometry, Matrix, Container &gt;</a>
 </li>
 <li>dyrhs()
-: <a class="el" href="structdg_1_1_poisson.html#ae9500c612c21ca7d0c3412a734e85dbe">dg::Poisson&lt; Geometry, Matrix, container &gt;</a>
+: <a class="el" href="structdg_1_1_poisson.html#a10a73a1ff294880e1c7a1d2c2ed6d89a">dg::Poisson&lt; Geometry, Matrix, Container &gt;</a>
 </li>
 <li>dyy()
 : <a class="el" href="structdg_1_1_cauchy.html#aa4d74d63c993c81dd19c7e76e84e2861">dg::Cauchy</a>
@@ -194,7 +195,7 @@ $(document).ready(function(){initNavTree('functions_func_d.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:50 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

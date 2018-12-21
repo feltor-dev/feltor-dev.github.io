@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
-<title>Discontinuous Galerkin Library: geometry/mpi_weights.h File Reference</title>
+<title>Discontinuous Galerkin Library: topology/mpi_weights.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -104,50 +104,10 @@ $(document).ready(function(){initNavTree('mpi__weights_8h.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>contains MPI weights  
+<p>MPI weights.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="weights_8h_source.html">weights.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mpi__grid_8h_source.html">mpi_grid.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for mpi_weights.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="mpi__weights_8h__incl.png" border="0" usemap="#geometry_2mpi__weights_8h" alt=""/></div>
-<map name="geometry_2mpi__weights_8h" id="geometry_2mpi__weights_8h">
-<area shape="rect" id="node2" href="weights_8h.html" title="contains creation functions for integration weights and their inverse " alt="" coords="368,80,447,107"/>
-<area shape="rect" id="node18" href="mpi__grid_8h.html" title="MPI Grid objects. " alt="" coords="471,80,554,107"/>
-<area shape="rect" id="node4" href="grid_8h.html" title="base topology classes " alt="" coords="380,155,435,181"/>
-<area shape="rect" id="node16" href="enums_8h.html" title="enums " alt="" coords="120,229,204,256"/>
-<area shape="rect" id="node7" href="topological__traits_8h.html" title="topological_traits.h" alt="" coords="229,229,359,256"/>
-<area shape="rect" id="node8" href="dlt_8h.html" title="contains the discrete legendre trafo class " alt="" coords="384,229,431,256"/>
-<area shape="rect" id="node13" href="exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="84,304,251,331"/>
-<area shape="rect" id="node19" href="mpi__vector_8h.html" title="dg/backend/mpi_vector.h" alt="" coords="923,155,1091,181"/>
-<area shape="rect" id="node21" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/mpi__accumulate_8h.html" title="exblas/mpi_accumulate.h" alt="" coords="922,229,1093,256"/>
-<area shape="rect" id="node24" href="tensor__traits_8h.html" title="tensor_traits.h" alt="" coords="1117,229,1223,256"/>
-<area shape="rect" id="node32" href="mpi__communicator_8h.html" title="mpi_communicator.h" alt="" coords="1437,229,1580,256"/>
-<area shape="rect" id="node34" href="memory_8h.html" title="memory.h" alt="" coords="1605,229,1685,256"/>
-<area shape="rect" id="node22" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/accumulate_8h.html" title="accumulate.h" alt="" coords="771,304,871,331"/>
-<area shape="rect" id="node23" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/config_8h.html" title="config.h" alt="" coords="787,379,855,405"/>
-<area shape="rect" id="node27" href="scalar__categories_8h.html" title="scalar_categories.h" alt="" coords="895,304,1029,331"/>
-<area shape="rect" id="node28" href="vector__categories_8h.html" title="vector_categories.h" alt="" coords="945,379,1081,405"/>
-<area shape="rect" id="node29" href="matrix__categories_8h.html" title="matrix_categories.h" alt="" coords="997,453,1133,480"/>
-<area shape="rect" id="node30" href="execution__policy_8h.html" title="execution_policy.h" alt="" coords="1155,304,1286,331"/>
-</map>
-</div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="mpi__weights_8h__dep__incl.png" border="0" usemap="#geometry_2mpi__weights_8hdep" alt=""/></div>
-<map name="geometry_2mpi__weights_8hdep" id="geometry_2mpi__weights_8hdep">
-<area shape="rect" id="node2" href="average__mpi_8h.html" title="contains classes for poloidal and toroidal average computations. " alt="" coords="5,80,171,107"/>
-<area shape="rect" id="node3" href="geometry_8h.html" title="geometry/geometry.h" alt="" coords="195,80,341,107"/>
-<area shape="rect" id="node4" href="algorithm_8h.html" title="algorithm.h" alt="" coords="133,304,219,331"/>
-<area shape="rect" id="node5" href="elliptic_8h.html" title="General negative elliptic operators. " alt="" coords="182,155,253,181"/>
-<area shape="rect" id="node8" href="arakawa_8h.html" title="object for computation of Poisson bracket " alt="" coords="277,155,360,181"/>
-<area shape="rect" id="node9" href="poisson_8h.html" title="poisson.h" alt="" coords="385,155,463,181"/>
-<area shape="rect" id="node6" href="helmholtz_8h.html" title="contains Helmholtz and Maxwell operators " alt="" coords="173,229,262,256"/>
-<area shape="rect" id="node7" href="refined__elliptic_8h.html" title="contains an elliptic method on a refined grid " alt="" coords="286,229,402,256"/>
-</map>
-</div>
 </div>
 <p><a href="mpi__weights_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -188,14 +148,14 @@ Functions</h2></td></tr>
 <tr class="separator:ga4492c68c4ff6fde4ddcef6222faa7878"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>contains MPI weights </p>
+<div class="textblock"><p>MPI weights. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_e3380d2178455503f266746fb14246a5.html">geometry</a></li><li class="navelem"><a class="el" href="mpi__weights_8h.html">mpi_weights.h</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
+    <li class="navelem"><a class="el" href="dir_84497794bb37d283dbd68163bed8ef05.html">topology</a></li><li class="navelem"><a class="el" href="mpi__weights_8h.html">mpi_weights.h</a></li>
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

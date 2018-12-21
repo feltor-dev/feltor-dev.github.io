@@ -15,7 +15,7 @@ var dir_8c739bbef76d64b22d6b0911c526dd76 =
     [ "memory.h", "memory_8h.html", null ],
     [ "mpi_collective.h", "mpi__collective_8h.html", null ],
     [ "mpi_communicator.h", "mpi__communicator_8h.html", null ],
-    [ "mpi_init.h", "mpi__init_8h.html", null ],
+    [ "mpi_init.h", "mpi__init_8h.html", "mpi__init_8h" ],
     [ "mpi_matrix.h", "mpi__matrix_8h.html", "mpi__matrix_8h" ],
     [ "mpi_vector.h", "mpi__vector_8h.html", null ],
     [ "scalar_categories.h", "scalar__categories_8h.html", [
@@ -41,5 +41,6 @@ var dir_8c739bbef76d64b22d6b0911c526dd76 =
       [ "ThrustVectorTag", "structdg_1_1_thrust_vector_tag.html", null ],
       [ "CuspVectorTag", "structdg_1_1_cusp_vector_tag.html", null ],
       [ "StdArrayTag", "structdg_1_1_std_array_tag.html", null ]
-    ] ]
+    ] ],
+    [ "view.h", "view_8h.html", null ]
 ];

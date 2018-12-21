@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -103,106 +103,57 @@ $(document).ready(function(){initNavTree('namespacedg_1_1tensor.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>functions used in connection with the <a class="el" href="structdg_1_1_sparse_element.html" title="This is a sparse Tensor with only one element i.e. a Form. ">SparseElement</a> and <a class="el" href="structdg_1_1_sparse_tensor.html" title="Class for 2x2 and 3x3 matrices sharing or implicitly assuming elements. ">SparseTensor</a> classes  
+<p>Utility functions used in connection with the <a class="el" href="structdg_1_1_sparse_tensor.html" title="Class for 2x2 and 3x3 matrices sharing elements. ">SparseTensor</a> class.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gad6e077288a8dac522ac3d69e18ff4731"><td class="memTemplParams" colspan="2">template&lt;class ContainerType &gt; </td></tr>
-<tr class="memitem:gad6e077288a8dac522ac3d69e18ff4731"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometry.html#gad6e077288a8dac522ac3d69e18ff4731">sqrt</a> (<a class="el" href="structdg_1_1_sparse_element.html">SparseElement</a>&lt; ContainerType &gt; &amp;mu)</td></tr>
-<tr class="memdesc:gad6e077288a8dac522ac3d69e18ff4731"><td class="mdescLeft">&#160;</td><td class="mdescRight">calls sqrt transform function on value  <a href="group__geometry.html#gad6e077288a8dac522ac3d69e18ff4731">More...</a><br /></td></tr>
-<tr class="separator:gad6e077288a8dac522ac3d69e18ff4731"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac25972fa9c2741c9a18a3f672acb5962"><td class="memTemplParams" colspan="2">template&lt;class ContainerType &gt; </td></tr>
-<tr class="memitem:gac25972fa9c2741c9a18a3f672acb5962"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometry.html#gac25972fa9c2741c9a18a3f672acb5962">invert</a> (<a class="el" href="structdg_1_1_sparse_element.html">SparseElement</a>&lt; ContainerType &gt; &amp;mu)</td></tr>
-<tr class="memdesc:gac25972fa9c2741c9a18a3f672acb5962"><td class="mdescLeft">&#160;</td><td class="mdescRight">calls invert transform function on value  <a href="group__geometry.html#gac25972fa9c2741c9a18a3f672acb5962">More...</a><br /></td></tr>
-<tr class="separator:gac25972fa9c2741c9a18a3f672acb5962"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2706e25b9bab42b87ec2987e5a51a8b0"><td class="memTemplParams" colspan="2">template&lt;class ContainerType &gt; </td></tr>
-<tr class="memitem:ga2706e25b9bab42b87ec2987e5a51a8b0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometry.html#ga2706e25b9bab42b87ec2987e5a51a8b0">scal</a> (<a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; ContainerType &gt; &amp;t, const ContainerType &amp;mu)</td></tr>
-<tr class="memdesc:ga2706e25b9bab42b87ec2987e5a51a8b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale tensor with a ContainerType.  <a href="group__geometry.html#ga2706e25b9bab42b87ec2987e5a51a8b0">More...</a><br /></td></tr>
-<tr class="separator:ga2706e25b9bab42b87ec2987e5a51a8b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf1610dea3d24161146b0dd12478276e8"><td class="memTemplParams" colspan="2">template&lt;class ContainerType &gt; </td></tr>
-<tr class="memitem:gaf1610dea3d24161146b0dd12478276e8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometry.html#gaf1610dea3d24161146b0dd12478276e8">scal</a> (<a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; ContainerType &gt; &amp;t, const <a class="el" href="structdg_1_1_sparse_element.html">SparseElement</a>&lt; ContainerType &gt; &amp;mu)</td></tr>
-<tr class="memdesc:gaf1610dea3d24161146b0dd12478276e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale tensor with a form.  <a href="group__geometry.html#gaf1610dea3d24161146b0dd12478276e8">More...</a><br /></td></tr>
-<tr class="separator:gaf1610dea3d24161146b0dd12478276e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad2a387e1bcf735b1784c42d661664c5b"><td class="memTemplParams" colspan="2">template&lt;class ContainerType &gt; </td></tr>
-<tr class="memitem:gad2a387e1bcf735b1784c42d661664c5b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometry.html#gad2a387e1bcf735b1784c42d661664c5b">pointwiseDot</a> (const <a class="el" href="structdg_1_1_sparse_element.html">SparseElement</a>&lt; ContainerType &gt; &amp;mu, const ContainerType &amp;in, ContainerType &amp;out)</td></tr>
-<tr class="memdesc:gad2a387e1bcf735b1784c42d661664c5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply ContainerType with form.  <a href="group__geometry.html#gad2a387e1bcf735b1784c42d661664c5b">More...</a><br /></td></tr>
-<tr class="separator:gad2a387e1bcf735b1784c42d661664c5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1cf9f3b3d7ac14eeb3973b7d48162ee0"><td class="memTemplParams" colspan="2">template&lt;class ContainerType &gt; </td></tr>
-<tr class="memitem:ga1cf9f3b3d7ac14eeb3973b7d48162ee0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometry.html#ga1cf9f3b3d7ac14eeb3973b7d48162ee0">pointwiseDot</a> (const ContainerType &amp;in, const <a class="el" href="structdg_1_1_sparse_element.html">SparseElement</a>&lt; ContainerType &gt; &amp;mu, ContainerType &amp;out)</td></tr>
-<tr class="memdesc:ga1cf9f3b3d7ac14eeb3973b7d48162ee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply ContainerType with form.  <a href="group__geometry.html#ga1cf9f3b3d7ac14eeb3973b7d48162ee0">More...</a><br /></td></tr>
-<tr class="separator:ga1cf9f3b3d7ac14eeb3973b7d48162ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga966fdaa02f2747b9a31bdf5ee9247acf"><td class="memTemplParams" colspan="2">template&lt;class ContainerType &gt; </td></tr>
-<tr class="memitem:ga966fdaa02f2747b9a31bdf5ee9247acf"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometry.html#ga966fdaa02f2747b9a31bdf5ee9247acf">pointwiseDivide</a> (const ContainerType &amp;in, const <a class="el" href="structdg_1_1_sparse_element.html">SparseElement</a>&lt; ContainerType &gt; &amp;mu, ContainerType &amp;out)</td></tr>
-<tr class="memdesc:ga966fdaa02f2747b9a31bdf5ee9247acf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Divide ContainerType with form.  <a href="group__geometry.html#ga966fdaa02f2747b9a31bdf5ee9247acf">More...</a><br /></td></tr>
-<tr class="separator:ga966fdaa02f2747b9a31bdf5ee9247acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa587bbf994bf989afb64a851c928b930"><td class="memTemplParams" colspan="2">template&lt;class ContainerType &gt; </td></tr>
-<tr class="memitem:gaa587bbf994bf989afb64a851c928b930"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometry.html#gaa587bbf994bf989afb64a851c928b930">multiply2d</a> (const <a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; ContainerType &gt; &amp;t, const ContainerType &amp;in0, const ContainerType &amp;in1, ContainerType &amp;out0, ContainerType &amp;out1)</td></tr>
-<tr class="memdesc:gaa587bbf994bf989afb64a851c928b930"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply a tensor with a vector in 2d.  <a href="group__geometry.html#gaa587bbf994bf989afb64a851c928b930">More...</a><br /></td></tr>
-<tr class="separator:gaa587bbf994bf989afb64a851c928b930"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf9bae390e3376a971ec6b4190c204542"><td class="memTemplParams" colspan="2">template&lt;class ContainerType &gt; </td></tr>
-<tr class="memitem:gaf9bae390e3376a971ec6b4190c204542"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometry.html#gaf9bae390e3376a971ec6b4190c204542">multiply3d</a> (const <a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; ContainerType &gt; &amp;t, const ContainerType &amp;in0, const ContainerType &amp;in1, const ContainerType &amp;in2, ContainerType &amp;out0, ContainerType &amp;out1, ContainerType &amp;out2)</td></tr>
-<tr class="memdesc:gaf9bae390e3376a971ec6b4190c204542"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply a tensor with a vector in 2d.  <a href="group__geometry.html#gaf9bae390e3376a971ec6b4190c204542">More...</a><br /></td></tr>
-<tr class="separator:gaf9bae390e3376a971ec6b4190c204542"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga677ecbd54bef59027114b7ab2da6b9f0"><td class="memTemplParams" colspan="2">template&lt;class ContainerType &gt; </td></tr>
-<tr class="memitem:ga677ecbd54bef59027114b7ab2da6b9f0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1_sparse_element.html">SparseElement</a>&lt; ContainerType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometry.html#ga677ecbd54bef59027114b7ab2da6b9f0">determinant</a> (const <a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; ContainerType &gt; &amp;t)</td></tr>
-<tr class="memdesc:ga677ecbd54bef59027114b7ab2da6b9f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the determinant of a tensor.  <a href="group__geometry.html#ga677ecbd54bef59027114b7ab2da6b9f0">More...</a><br /></td></tr>
-<tr class="separator:ga677ecbd54bef59027114b7ab2da6b9f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9ce0c1d5eeab50e58f80f2cff7f27b94"><td class="memTemplParams" colspan="2">template&lt;class ContainerType &gt; </td></tr>
-<tr class="memitem:ga9ce0c1d5eeab50e58f80f2cff7f27b94"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1_sparse_element.html">SparseElement</a>&lt; ContainerType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometry.html#ga9ce0c1d5eeab50e58f80f2cff7f27b94">volume</a> (const <a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; ContainerType &gt; &amp;t)</td></tr>
-<tr class="memdesc:ga9ce0c1d5eeab50e58f80f2cff7f27b94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the sqrt of the inverse determinant of a tensor.  <a href="group__geometry.html#ga9ce0c1d5eeab50e58f80f2cff7f27b94">More...</a><br /></td></tr>
-<tr class="separator:ga9ce0c1d5eeab50e58f80f2cff7f27b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7a79deb6f85f2cf6218546b8913f6b6"><td class="memTemplParams" colspan="2">template&lt;class ContainerType &gt; </td></tr>
-<tr class="memitem:aa7a79deb6f85f2cf6218546b8913f6b6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; ContainerType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedg_1_1tensor.html#aa7a79deb6f85f2cf6218546b8913f6b6">dense</a> (const <a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; ContainerType &gt; &amp;tensor)</td></tr>
-<tr class="memdesc:aa7a79deb6f85f2cf6218546b8913f6b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a tensor with all unset values filled with explicit 0 or 1 using <code><a class="el" href="group__blas1.html#ga493c6b70c8c889beaec1c3a669e3809b" title=" ">dg::blas1::transform</a></code>.  <a href="#aa7a79deb6f85f2cf6218546b8913f6b6">More...</a><br /></td></tr>
-<tr class="separator:aa7a79deb6f85f2cf6218546b8913f6b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab8253e13a6e951887fc59592af0717b3"><td class="memTemplParams" colspan="2">template&lt;class ContainerType0 , class ContainerType1 &gt; </td></tr>
+<tr class="memitem:gab8253e13a6e951887fc59592af0717b3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tensor.html#gab8253e13a6e951887fc59592af0717b3">scal</a> (<a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; ContainerType0 &gt; &amp;t, const ContainerType1 &amp;mu)</td></tr>
+<tr class="memdesc:gab8253e13a6e951887fc59592af0717b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( t^{ij} = \mu t^{ij} \ \forall i,j \)  <a href="group__tensor.html#gab8253e13a6e951887fc59592af0717b3">More...</a><br /></td></tr>
+<tr class="separator:gab8253e13a6e951887fc59592af0717b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1b07c5a3d2efa00644eb4e6f1248d07a"><td class="memTemplParams" colspan="2">template&lt;class ContainerType0 , class ContainerType1 , class ContainerType2 , class ContainerType3 , class ContainerType4 &gt; </td></tr>
+<tr class="memitem:ga1b07c5a3d2efa00644eb4e6f1248d07a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tensor.html#ga1b07c5a3d2efa00644eb4e6f1248d07a">multiply2d</a> (const <a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; ContainerType0 &gt; &amp;t, const ContainerType1 &amp;in0, const ContainerType2 &amp;in1, ContainerType3 &amp;out0, ContainerType4 &amp;out1)</td></tr>
+<tr class="memdesc:ga1b07c5a3d2efa00644eb4e6f1248d07a"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( w^i = \sum_{i=0}^1t^{ij}v_j \text{ for } i\in \{0,1\}\)  <a href="group__tensor.html#ga1b07c5a3d2efa00644eb4e6f1248d07a">More...</a><br /></td></tr>
+<tr class="separator:ga1b07c5a3d2efa00644eb4e6f1248d07a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7e100a5b20fd970ebbc1ef5e9bb018e7"><td class="memTemplParams" colspan="2">template&lt;class ContainerType0 , class ContainerType1 , class ContainerType2 , class ContainerType3 , class ContainerType4 , class ContainerType5 , class ContainerType6 &gt; </td></tr>
+<tr class="memitem:ga7e100a5b20fd970ebbc1ef5e9bb018e7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tensor.html#ga7e100a5b20fd970ebbc1ef5e9bb018e7">multiply3d</a> (const <a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; ContainerType0 &gt; &amp;t, const ContainerType1 &amp;in0, const ContainerType2 &amp;in1, const ContainerType3 &amp;in2, ContainerType4 &amp;out0, ContainerType5 &amp;out1, ContainerType6 &amp;out2)</td></tr>
+<tr class="memdesc:ga7e100a5b20fd970ebbc1ef5e9bb018e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( w^i = \sum_{i=0}^2t^{ij}v_j \text{ for } i\in \{0,1,2\}\)  <a href="group__tensor.html#ga7e100a5b20fd970ebbc1ef5e9bb018e7">More...</a><br /></td></tr>
+<tr class="separator:ga7e100a5b20fd970ebbc1ef5e9bb018e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1ce7cb0f74bb9c80b839b4771b8657d2"><td class="memTemplParams" colspan="2">template&lt;class ContainerType0 , class ContainerType1 , class ContainerType2 , class ContainerType3 , class ContainerType4 &gt; </td></tr>
+<tr class="memitem:ga1ce7cb0f74bb9c80b839b4771b8657d2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tensor.html#ga1ce7cb0f74bb9c80b839b4771b8657d2">inv_multiply2d</a> (const <a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; ContainerType0 &gt; &amp;t, const ContainerType1 &amp;in0, const ContainerType2 &amp;in1, ContainerType3 &amp;out0, ContainerType4 &amp;out1)</td></tr>
+<tr class="memdesc:ga1ce7cb0f74bb9c80b839b4771b8657d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( v_j = \sum_{i=0}^1(t^{-1})_{ji}w^i \text{ for } i\in \{0,1\}\)  <a href="group__tensor.html#ga1ce7cb0f74bb9c80b839b4771b8657d2">More...</a><br /></td></tr>
+<tr class="separator:ga1ce7cb0f74bb9c80b839b4771b8657d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga167a888144d611c14d05c2142fd95064"><td class="memTemplParams" colspan="2">template&lt;class ContainerType0 , class ContainerType1 , class ContainerType2 , class ContainerType3 , class ContainerType4 , class ContainerType5 , class ContainerType6 &gt; </td></tr>
+<tr class="memitem:ga167a888144d611c14d05c2142fd95064"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tensor.html#ga167a888144d611c14d05c2142fd95064">inv_multiply3d</a> (const <a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; ContainerType0 &gt; &amp;t, const ContainerType1 &amp;in0, const ContainerType2 &amp;in1, const ContainerType3 &amp;in2, ContainerType4 &amp;out0, ContainerType5 &amp;out1, ContainerType6 &amp;out2)</td></tr>
+<tr class="memdesc:ga167a888144d611c14d05c2142fd95064"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( v_j = \sum_{i=0}^2(t^{-1})_{ji}w^i \text{ for } i\in \{0,1,2\}\)i  <a href="group__tensor.html#ga167a888144d611c14d05c2142fd95064">More...</a><br /></td></tr>
+<tr class="separator:ga167a888144d611c14d05c2142fd95064"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga439491ad1ce54f447e75e67ff9235c18"><td class="memTemplParams" colspan="2">template&lt;class ContainerType &gt; </td></tr>
+<tr class="memitem:ga439491ad1ce54f447e75e67ff9235c18"><td class="memTemplItemLeft" align="right" valign="top">ContainerType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tensor.html#ga439491ad1ce54f447e75e67ff9235c18">determinant2d</a> (const <a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; ContainerType &gt; &amp;t)</td></tr>
+<tr class="memdesc:ga439491ad1ce54f447e75e67ff9235c18"><td class="mdescLeft">&#160;</td><td class="mdescRight">\(\det_{2d}( t)\)  <a href="group__tensor.html#ga439491ad1ce54f447e75e67ff9235c18">More...</a><br /></td></tr>
+<tr class="separator:ga439491ad1ce54f447e75e67ff9235c18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6b6d04226d2382a21c737d9bcd23a00b"><td class="memTemplParams" colspan="2">template&lt;class ContainerType &gt; </td></tr>
+<tr class="memitem:ga6b6d04226d2382a21c737d9bcd23a00b"><td class="memTemplItemLeft" align="right" valign="top">ContainerType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tensor.html#ga6b6d04226d2382a21c737d9bcd23a00b">determinant</a> (const <a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; ContainerType &gt; &amp;t)</td></tr>
+<tr class="memdesc:ga6b6d04226d2382a21c737d9bcd23a00b"><td class="mdescLeft">&#160;</td><td class="mdescRight">\(\det( t)\)  <a href="group__tensor.html#ga6b6d04226d2382a21c737d9bcd23a00b">More...</a><br /></td></tr>
+<tr class="separator:ga6b6d04226d2382a21c737d9bcd23a00b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabca3e13e824c6cf0ec1606f035406c23"><td class="memTemplParams" colspan="2">template&lt;class ContainerType &gt; </td></tr>
+<tr class="memitem:gabca3e13e824c6cf0ec1606f035406c23"><td class="memTemplItemLeft" align="right" valign="top">ContainerType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tensor.html#gabca3e13e824c6cf0ec1606f035406c23">volume2d</a> (const <a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; ContainerType &gt; &amp;t)</td></tr>
+<tr class="memdesc:gabca3e13e824c6cf0ec1606f035406c23"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \sqrt{\det_{2d}(t)}^{-1}\)  <a href="group__tensor.html#gabca3e13e824c6cf0ec1606f035406c23">More...</a><br /></td></tr>
+<tr class="separator:gabca3e13e824c6cf0ec1606f035406c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7356ee29303d9600291cd7489085492d"><td class="memTemplParams" colspan="2">template&lt;class ContainerType &gt; </td></tr>
+<tr class="memitem:ga7356ee29303d9600291cd7489085492d"><td class="memTemplItemLeft" align="right" valign="top">ContainerType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tensor.html#ga7356ee29303d9600291cd7489085492d">volume</a> (const <a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; ContainerType &gt; &amp;t)</td></tr>
+<tr class="memdesc:ga7356ee29303d9600291cd7489085492d"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \sqrt{\det(t)}^{-1}\)  <a href="group__tensor.html#ga7356ee29303d9600291cd7489085492d">More...</a><br /></td></tr>
+<tr class="separator:ga7356ee29303d9600291cd7489085492d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>functions used in connection with the <a class="el" href="structdg_1_1_sparse_element.html" title="This is a sparse Tensor with only one element i.e. a Form. ">SparseElement</a> and <a class="el" href="structdg_1_1_sparse_tensor.html" title="Class for 2x2 and 3x3 matrices sharing or implicitly assuming elements. ">SparseTensor</a> classes </p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="aa7a79deb6f85f2cf6218546b8913f6b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7a79deb6f85f2cf6218546b8913f6b6">&#9670;&nbsp;</a></span>dense()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ContainerType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt;ContainerType&gt; dg::tensor::dense </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; ContainerType &gt; &amp;&#160;</td>
-          <td class="paramname"><em>tensor</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Construct a tensor with all unset values filled with explicit 0 or 1 using <code><a class="el" href="group__blas1.html#ga493c6b70c8c889beaec1c3a669e3809b" title=" ">dg::blas1::transform</a></code>. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">ContainerType</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> and <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. Among others<ul>
-<li><code> <a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193" title="Host Vector. ">dg::HVec</a> (serial), <a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a> (cuda / omp), <a class="el" href="group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a> (mpi + serial) or <a class="el" href="group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a> (mpi + cuda / omp) </code></li>
-<li><code> std::vector&lt;dg::DVec&gt; (vector of shared device vectors), std::array&lt;double, 4&gt; (array of 4 doubles)</code></li>
-<li><code> double (scalar)</code> and other primitive types ...</li>
-</ul>
-If there are several <code>ContainerTypes</code> in the argument list, then <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> must exist for all of them </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="index.html#dispatch">The Level 1 dispatch system</a> for a detailed explanation of our type dispatch system </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>a dense tensor </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>undefined if <code>t.isEmpty()</code> returns true </dd></dl>
-
-</div>
-</div>
-</div><!-- contents -->
+<div class="textblock"><p>Utility functions used in connection with the <a class="el" href="structdg_1_1_sparse_tensor.html" title="Class for 2x2 and 3x3 matrices sharing elements. ">SparseTensor</a> class. </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="namespacedg_1_1tensor.html">tensor</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:50 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -109,16 +109,13 @@ $(document).ready(function(){initNavTree('functions_n.html','');});
 , <a class="el" href="structdg_1_1_coo_sparse_block_mat.html#a6b253047ab5281181c67c9a7e073cf26">dg::CooSparseBlockMat&lt; value_type &gt;</a>
 , <a class="el" href="structdg_1_1_coo_sparse_block_mat_device.html#a0431d433d163c176ee823b9ad1ae5c90">dg::CooSparseBlockMatDevice&lt; value_type &gt;</a>
 , <a class="el" href="structdg_1_1_ell_sparse_block_mat.html#aa29bbb8bca4155841dbb603362dcdfe4">dg::EllSparseBlockMat&lt; value_type &gt;</a>
-, <a class="el" href="structdg_1_1_nearest_neighbor_comm.html#ae6eb00dcdff96804b314cfe88bc46229">dg::NearestNeighborComm&lt; Index, Vector &gt;</a>
+, <a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html#a7afe743ff3d3711e22c3990966bf67fd">dg::EllSparseBlockMatDevice&lt; value_type &gt;</a>
+, <a class="el" href="structdg_1_1_nearest_neighbor_comm.html#a3f7516e6a6707ebcdcafdc36d9de9f5c">dg::NearestNeighborComm&lt; Index, Buffer, Vector &gt;</a>
+, <a class="el" href="structdg_1_1_real_grid1d.html#a1c631f2939de2618df8b852056f3428d">dg::RealGrid1d&lt; real_type &gt;</a>
 </li>
 <li>N()
 : <a class="el" href="structdg_1_1_real_grid1d.html#aad2b1983fdc91626a165b05db68a83d1">dg::RealGrid1d&lt; real_type &gt;</a>
-</li>
-<li>n()
-: <a class="el" href="structdg_1_1_real_grid1d.html#a1c631f2939de2618df8b852056f3428d">dg::RealGrid1d&lt; real_type &gt;</a>
-</li>
-<li>N()
-: <a class="el" href="structdg_1_1_real_grid_x1d.html#a8e3567e58f027c14cf169fd63710d7bb">dg::RealGridX1d&lt; real_type &gt;</a>
+, <a class="el" href="structdg_1_1_real_grid_x1d.html#a8e3567e58f027c14cf169fd63710d7bb">dg::RealGridX1d&lt; real_type &gt;</a>
 </li>
 <li>n()
 : <a class="el" href="structdg_1_1_real_grid_x1d.html#aa57a218e8b0e9467a5633fc46f54f265">dg::RealGridX1d&lt; real_type &gt;</a>
@@ -127,7 +124,7 @@ $(document).ready(function(){initNavTree('functions_n.html','');});
 : <a class="el" href="structdg_1_1a_real_refinement1d.html#aee13739fd3d75a708daaeacf46cc4fdf">dg::aRealRefinement1d&lt; real_type &gt;</a>
 </li>
 <li>NearestNeighborComm()
-: <a class="el" href="structdg_1_1_nearest_neighbor_comm.html#a5ec314af366d32c870272005b8f38b3e">dg::NearestNeighborComm&lt; Index, Vector &gt;</a>
+: <a class="el" href="structdg_1_1_nearest_neighbor_comm.html#ab8e33ecbc3e2c55deea1ddabc077aa85">dg::NearestNeighborComm&lt; Index, Buffer, Vector &gt;</a>
 </li>
 <li>NoRoot1d()
 : <a class="el" href="classdg_1_1_no_root1d.html#a6a474c7db506e8e133ae059e69eb7a10">dg::NoRoot1d</a>
@@ -136,6 +133,7 @@ $(document).ready(function(){initNavTree('functions_n.html','');});
 : <a class="el" href="structdg_1_1_coo_sparse_block_mat.html#abb69f47621c8e59bf74f5008b02a3728">dg::CooSparseBlockMat&lt; value_type &gt;</a>
 , <a class="el" href="structdg_1_1_coo_sparse_block_mat_device.html#a894ea8c7ded18fd040777960446ca9d3">dg::CooSparseBlockMatDevice&lt; value_type &gt;</a>
 , <a class="el" href="structdg_1_1_ell_sparse_block_mat.html#a97dc6569dd4fcc1af9847b8c8fb9f287">dg::EllSparseBlockMat&lt; value_type &gt;</a>
+, <a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html#adb1aad4dd1b166288984cfef1e4b95eb">dg::EllSparseBlockMatDevice&lt; value_type &gt;</a>
 </li>
 <li>num_entries
 : <a class="el" href="structdg_1_1_coo_sparse_block_mat.html#af67dc52548a78dd6a9b4b9dc17497240">dg::CooSparseBlockMat&lt; value_type &gt;</a>
@@ -145,6 +143,14 @@ $(document).ready(function(){initNavTree('functions_n.html','');});
 : <a class="el" href="structdg_1_1_coo_sparse_block_mat.html#a037e28160d038c6c3d190d533553b1f9">dg::CooSparseBlockMat&lt; value_type &gt;</a>
 , <a class="el" href="structdg_1_1_coo_sparse_block_mat_device.html#a27d674e045b26ad46382d360c50282d3">dg::CooSparseBlockMatDevice&lt; value_type &gt;</a>
 , <a class="el" href="structdg_1_1_ell_sparse_block_mat.html#a4bf43725ff2db10da6ddda7508ff7b27">dg::EllSparseBlockMat&lt; value_type &gt;</a>
+, <a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html#acc7fe861d56f4c1dcd81ae79b3bb2951">dg::EllSparseBlockMatDevice&lt; value_type &gt;</a>
+</li>
+<li>num_stages()
+: <a class="el" href="structdg_1_1_a_r_k_step.html#a0a1c5ba23f06988fc370505361243cfb">dg::ARKStep&lt; ContainerType, SolverType &gt;</a>
+, <a class="el" href="structdg_1_1_butcher_tableau.html#acff8887f43f5b6bd9ddb5afd39164115">dg::ButcherTableau&lt; real_type &gt;</a>
+, <a class="el" href="structdg_1_1_e_r_k_step.html#a095012ea4608f08685f861855ef3059f">dg::ERKStep&lt; ContainerType &gt;</a>
+, <a class="el" href="structdg_1_1_multigrid_c_g2d.html#adec75fbb948aa597f8d7c227a395028f">dg::MultigridCG2d&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_runge_kutta.html#a9723e3ed6353f1916489ab1c6572c885">dg::RungeKutta&lt; ContainerType &gt;</a>
 </li>
 <li>Nx()
 : <a class="el" href="structdg_1_1a_real_m_p_i_topology2d.html#a7f13033a2a2d49e03d774c7e2d621854">dg::aRealMPITopology2d&lt; real_type &gt;</a>
@@ -179,7 +185,7 @@ $(document).ready(function(){initNavTree('functions_n.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:50 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

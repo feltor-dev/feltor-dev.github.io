@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
-<title>Geometries: 3.3 Profile functors based on flux functions</title>
+<title>Extension: Geometries: 3.3 Profile functors based on flux functions</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -44,9 +44,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Geometries
+   <div id="projectname">Extension: Geometries
    </div>
-   <div id="projectbrief">Extension with magnetic flux functions, grids and grid generators</div>
+   <div id="projectbrief">Magnetic flux functions, parallel derivatives and new grids and grid generators in &quot;dg/geometries/geometries.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -98,6 +98,7 @@ $(document).ready(function(){initNavTree('group__profiles.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">3.3 Profile functors based on flux functions<div class="ingroups"><a class="el" href="group__fluxfunctions.html">3. New functors based on the magnetic field geometry</a></div></div>  </div>
@@ -175,87 +176,247 @@ Classes</h2></td></tr>
 </p>
 <p>.  <a href="structdg_1_1geo_1_1_alpha.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_iris.html">dg::geo::Iris</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns zero outside psipmax and inside psipmin, otherwise 1 </p><p class="formulaDsp">
-\[ \begin{cases} 1 \text{ if } \psi_{p,min} &lt; \psi_p(R,Z) &lt; \psi_{p,max}\\ 0 \text{ else} \end{cases}\]
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_compose.html">dg::geo::Compose&lt; UnaryFunctor &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Composition </p><p class="formulaDsp">
+\[ f\circ\psi = f(\psi(R,Z)) \]
 </p>
-<p>.  <a href="structdg_1_1geo_1_1_iris.html#details">More...</a><br /></td></tr>
+<p>.  <a href="structdg_1_1geo_1_1_compose.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_pupil.html">dg::geo::Pupil</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns zero outside psipmaxcut otherwise 1 </p><p class="formulaDsp">
-\[ \begin{cases} 0 \text{ if } \psi_p(R,Z) &gt; \psi_{p,maxcut} \\ 1 \text{ else} \end{cases}\]
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_z_cutter.html">dg::geo::ZCutter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code> (double Z_X)</code> </p><p class="formulaDsp">
+\[ f(R,Z)= \begin{cases} 1 \text{ if } Z &gt; Z_X \\ 0 \text{ else } \end{cases} \]
 </p>
-<p>.  <a href="structdg_1_1geo_1_1_pupil.html#details">More...</a><br /></td></tr>
+  <a href="structdg_1_1geo_1_1_z_cutter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_psi_pupil.html">dg::geo::PsiPupil</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns psi inside psipmax and psipmax outside psipmax </p><p class="formulaDsp">
-\[ \begin{cases} \psi_{p,max} \text{ if } \psi_p(R,Z) &gt; \psi_{p,max} \\ \psi_p(R,Z) \text{ else} \end{cases}\]
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gad64d512d641d71865056b1f1b83da902"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__profiles.html#gad64d512d641d71865056b1f1b83da902">dg::geo::Iris</a> = <a class="el" href="structdg_1_1geo_1_1_compose.html">Compose</a>&lt; <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1_iris.html">dg::Iris</a> &gt;</td></tr>
+<tr class="memdesc:gad64d512d641d71865056b1f1b83da902"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>(CylindricalFunctor psip, double psip_min, double psip_max)</code> </p><p class="formulaDsp">
+\[ f(R,Z) = \begin{cases} 1 \text{ if } \psi_{p,min} &lt; \psi_p(R,Z) &lt; \psi_{p,max}\\ 0 \text{ else} \end{cases}\]
 </p>
-<p>.  <a href="structdg_1_1geo_1_1_psi_pupil.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_psi_limiter.html">dg::geo::PsiLimiter</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets values to one outside psipmaxcut, zero else </p><p class="formulaDsp">
-\[ \begin{cases} 1 \text{ if } \psi_p(R,Z) &gt; \psi_{p,maxlim} \\ 0 \text{ else} \end{cases}\]
+  <a href="group__profiles.html#gad64d512d641d71865056b1f1b83da902">More...</a><br /></td></tr>
+<tr class="separator:gad64d512d641d71865056b1f1b83da902"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab429cc7c00f5d55def9fcaa5cda8fafd"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__profiles.html#gab429cc7c00f5d55def9fcaa5cda8fafd">dg::geo::Pupil</a> = <a class="el" href="structdg_1_1geo_1_1_compose.html">Compose</a>&lt; <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1_pupil.html">dg::Pupil</a> &gt;</td></tr>
+<tr class="memdesc:gab429cc7c00f5d55def9fcaa5cda8fafd"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code> (CylindricalFunctor psip, double psipmax) </code> </p><p class="formulaDsp">
+\[ f(R,Z) = \begin{cases} 0 \text{ if } \psi_p(R,Z) &gt; \psi_{p,max} \\ 1 \text{ else} \end{cases}\]
 </p>
-<p>.  <a href="structdg_1_1geo_1_1_psi_limiter.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_gaussian_damping.html">dg::geo::GaussianDamping</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Damps the outer boundary in a zone from psipmaxcut to psipmaxcut+ 4*alpha with a normal distribution Returns 1 inside, zero outside and a gaussian within </p><p class="formulaDsp">
-\[ \begin{cases} 1 \text{ if } \psi_p(R,Z) &lt; \psi_{p,max,cut}\\ 0 \text{ if } \psi_p(R,Z) &gt; (\psi_{p,max,cut} + 4\alpha) \\ \exp\left( - \frac{(\psi_p - \psi_{p,max,cut})^2}{2\alpha^2}\right), \text{ else} \end{cases} \]
+  <a href="group__profiles.html#gab429cc7c00f5d55def9fcaa5cda8fafd">More...</a><br /></td></tr>
+<tr class="separator:gab429cc7c00f5d55def9fcaa5cda8fafd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4e7e76bd77ae1317ed999238b4ce4e17"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__profiles.html#ga4e7e76bd77ae1317ed999238b4ce4e17">dg::geo::PsiPupil</a> = <a class="el" href="structdg_1_1geo_1_1_compose.html">Compose</a>&lt; <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1_psi_pupil.html">dg::PsiPupil</a> &gt;</td></tr>
+<tr class="memdesc:ga4e7e76bd77ae1317ed999238b4ce4e17"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code> (CylindricalFunctor psip, double psipmax)</code> </p><p class="formulaDsp">
+\[ f(R,Z) = \begin{cases} \psi_{p,max} \text{ if } \psi_p(R,Z) &gt; \psi_{p,max} \\ \psi_p(R,Z) \text{ else} \end{cases}\]
 </p>
-<p>.  <a href="structdg_1_1geo_1_1_gaussian_damping.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_gaussian_prof_damping.html">dg::geo::GaussianProfDamping</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Damps the inner boundary in a zone from psipmax to psipmax+ 4*alpha with a normal distribution Returns 1 inside, zero outside and a gaussian within </p><p class="formulaDsp">
-\[ \begin{cases} 1 \text{ if } \psi_p(R,Z) &lt; (\psi_{p,max} - 4\alpha)\\ 0 \text{ if } \psi_p(R,Z) &gt; \psi_{p,max} \\ \exp\left( - \frac{(\psi_p - \psi_{p,max} + 4\alpha)^2}{2\alpha^2}\right), \text{ else} \end{cases} \]
+  <a href="group__profiles.html#ga4e7e76bd77ae1317ed999238b4ce4e17">More...</a><br /></td></tr>
+<tr class="separator:ga4e7e76bd77ae1317ed999238b4ce4e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga82eca5b06b94a709b4f1cbfa4b42d59f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__profiles.html#ga82eca5b06b94a709b4f1cbfa4b42d59f">dg::geo::PsiLimiter</a> = <a class="el" href="structdg_1_1geo_1_1_compose.html">dg::geo::Compose</a>&lt; <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1_heaviside.html">dg::Heaviside</a> &gt;</td></tr>
+<tr class="memdesc:ga82eca5b06b94a709b4f1cbfa4b42d59f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code> (CylindricalFunctor psip, double psipmax) </code> </p><p class="formulaDsp">
+\[ f(R,Z) = \begin{cases} 1 \text{ if } \psi_p(R,Z) &gt; \psi_{p,\max} \\ 0 \text{ else} \end{cases}\]
 </p>
-<p>.  <a href="structdg_1_1geo_1_1_gaussian_prof_damping.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_gaussian_prof_x_damping.html">dg::geo::GaussianProfXDamping</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Damps the inner boundary in a zone from psipmax to psipmax+ 4*alpha with a normal distribution Returns 1 inside, zero outside and a gaussian within Additionally cuts if Z &lt; Z_xpoint </p><p class="formulaDsp">
-\[ \begin{cases} 1 \text{ if } \psi_p(R,Z) &lt; (\psi_{p,max} - 4\alpha) \\ 0 \text{ if } \psi_p(R,Z) &gt; \psi_{p,max} || Z &lt; -1.1\varepsilon a \\ \exp\left( - \frac{(\psi_p - \psi_{p,max})^2}{2\alpha^2}\right), \text{ else} \end{cases} \]
+  <a href="group__profiles.html#ga82eca5b06b94a709b4f1cbfa4b42d59f">More...</a><br /></td></tr>
+<tr class="separator:ga82eca5b06b94a709b4f1cbfa4b42d59f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga158a9af6aef70087e95b8fd8e7dacc60"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__profiles.html#ga158a9af6aef70087e95b8fd8e7dacc60">dg::geo::GaussianDamping</a> = <a class="el" href="structdg_1_1geo_1_1_compose.html">dg::geo::Compose</a>&lt; <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1_gaussian_damping.html">dg::GaussianDamping</a> &gt;</td></tr>
+<tr class="memdesc:ga158a9af6aef70087e95b8fd8e7dacc60"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>(CylindricalFunctor psip, double psipmax, double alpha)</code> </p><p class="formulaDsp">
+\[ f(R,Z) = \begin{cases} 1 \text{ if } \psi_p(R,Z) &lt; \psi_{p,max}\\ 0 \text{ if } \psi_p(R,Z) &gt; (\psi_{p,max} + 4\alpha) \\ \exp\left( - \frac{(\psi_p(R,Z) - \psi_{p,max})^2}{2\alpha^2}\right), \text{ else} \end{cases} \]
 </p>
-<p>.  <a href="structdg_1_1geo_1_1_gaussian_prof_x_damping.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_tanh_source.html">dg::geo::TanhSource</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">source for quantities N ... dtlnN = ...+ source/N Returns a tanh profile shifted to \( \psi_{p,min}-3\alpha\) </p><p class="formulaDsp">
-\[ 0.5\left( 1 + \tanh\left( -\frac{\psi_p(R,Z) - \psi_{p,min} + 3\alpha}{\alpha}\right)\right) \]
+  <a href="group__profiles.html#ga158a9af6aef70087e95b8fd8e7dacc60">More...</a><br /></td></tr>
+<tr class="separator:ga158a9af6aef70087e95b8fd8e7dacc60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga446bce2c783bba5c7b0260853259f1e1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__profiles.html#ga446bce2c783bba5c7b0260853259f1e1">dg::geo::TanhDamping</a> = <a class="el" href="structdg_1_1geo_1_1_compose.html">dg::geo::Compose</a>&lt; <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1_tanh_prof_x.html">dg::TanhProfX</a> &gt;</td></tr>
+<tr class="memdesc:ga446bce2c783bba5c7b0260853259f1e1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>(CylindricalFunctor psip, double psipmax, double alpha, int sign =1,double B = 0., double A = 1.) </code> </p><p class="formulaDsp">
+\[ f(R,Z) = B + 0.5 A(1+ \text{sign} \tanh((\psi_p(R,Z)-\psi_{p,max})/\alpha ) ) \]
 </p>
-  <a href="structdg_1_1geo_1_1_tanh_source.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_nprofile.html">dg::geo::Nprofile</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns density profile with variable peak amplitude and background amplitude </p><p class="formulaDsp">
-\[ N(R,Z)=\begin{cases} A_{bg} + A_{peak}\frac{\psi_p(R,Z)} {\psi_p(R_0, 0)} \text{ if }\psi_p &lt; \psi_{p,max} \\ A_{bg} \text{ else } \end{cases} \]
+  <a href="group__profiles.html#ga446bce2c783bba5c7b0260853259f1e1">More...</a><br /></td></tr>
+<tr class="separator:ga446bce2c783bba5c7b0260853259f1e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac6e56352ad1a753f9c5c7cecb0f12ee0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__profiles.html#gac6e56352ad1a753f9c5c7cecb0f12ee0">dg::geo::Nprofile</a> = <a class="el" href="structdg_1_1geo_1_1_compose.html">dg::geo::Compose</a>&lt; <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1_linear_x.html">dg::LinearX</a> &gt;</td></tr>
+<tr class="memdesc:gac6e56352ad1a753f9c5c7cecb0f12ee0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code> (CylindricalFunctor psip, double A, double B)</code> </p><p class="formulaDsp">
+\[ f(R,Z)= B + A\psi_p(R,Z)\]
 </p>
-<p>.  <a href="structdg_1_1geo_1_1_nprofile.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_zonal_flow.html">dg::geo::ZonalFlow</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns zonal flow field </p><p class="formulaDsp">
-\[ N(R,Z)=\begin{cases} A_{bg} |\cos(2\pi\psi_p(R,Z) k_\psi)| \text{ if }\psi_p &lt; \psi_{p,max} \\ 0 \text{ else } \end{cases} \]
+  <a href="group__profiles.html#gac6e56352ad1a753f9c5c7cecb0f12ee0">More...</a><br /></td></tr>
+<tr class="separator:gac6e56352ad1a753f9c5c7cecb0f12ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga19191644f490a26ec20c3f6dac24765c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__profiles.html#ga19191644f490a26ec20c3f6dac24765c">dg::geo::ZonalFlow</a> = <a class="el" href="structdg_1_1geo_1_1_compose.html">dg::geo::Compose</a>&lt; <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1_sin_x.html">dg::SinX</a> &gt;</td></tr>
+<tr class="memdesc:ga19191644f490a26ec20c3f6dac24765c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>(CylindricalFunctor psip, double A, double B, double k_psi)</code> </p><p class="formulaDsp">
+\[ f(R,Z)= B + A \sin(k_\psi \psi_p(R,Z) ) \]
 </p>
-  <a href="structdg_1_1geo_1_1_zonal_flow.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+  <a href="group__profiles.html#ga19191644f490a26ec20c3f6dac24765c">More...</a><br /></td></tr>
+<tr class="separator:ga19191644f490a26ec20c3f6dac24765c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaf583c457b3907ec4e9a94d4c17427d55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl1.html">BinaryFunctorsLvl1</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__profiles.html#gaf583c457b3907ec4e9a94d4c17427d55">dg::geo::make_NablaPsiInvCollective</a> (const <a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl2.html">BinaryFunctorsLvl2</a> &amp;psi)</td></tr>
-<tr class="memdesc:gaf583c457b3907ec4e9a94d4c17427d55"><td class="mdescLeft">&#160;</td><td class="mdescRight">A container class that contains all <a class="el" href="structdg_1_1geo_1_1_nabla_psi_inv.html" title="A weight function for the Hector algorithm . ">NablaPsiInv</a> functors.  <a href="group__profiles.html#gaf583c457b3907ec4e9a94d4c17427d55">More...</a><br /></td></tr>
-<tr class="separator:gaf583c457b3907ec4e9a94d4c17427d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga56d2d722a2734d1685263ee8a95e7555"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1geo_1_1_binary_symm_tensor_lvl1.html">BinarySymmTensorLvl1</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__profiles.html#ga56d2d722a2734d1685263ee8a95e7555">dg::geo::make_LiseikinCollective</a> (const <a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl2.html">BinaryFunctorsLvl2</a> &amp;psi, double k, double eps)</td></tr>
-<tr class="separator:ga56d2d722a2734d1685263ee8a95e7555"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga32a9569879bd13c719c77be10f0d399d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structdg_1_1geo_1_1_cylindrical_functors_lvl1.html">CylindricalFunctorsLvl1</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__profiles.html#ga32a9569879bd13c719c77be10f0d399d">dg::geo::make_NablaPsiInvCollective</a> (const <a class="el" href="structdg_1_1geo_1_1_cylindrical_functors_lvl2.html">CylindricalFunctorsLvl2</a> &amp;psi)</td></tr>
+<tr class="memdesc:ga32a9569879bd13c719c77be10f0d399d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A container class that contains all <a class="el" href="structdg_1_1geo_1_1_nabla_psi_inv.html" title="A weight function for the Hector algorithm . ">NablaPsiInv</a> functors.  <a href="group__profiles.html#ga32a9569879bd13c719c77be10f0d399d">More...</a><br /></td></tr>
+<tr class="separator:ga32a9569879bd13c719c77be10f0d399d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae0cb11f189e743a3291e23e2bc361bb2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structdg_1_1geo_1_1_cylindrical_symm_tensor_lvl1.html">CylindricalSymmTensorLvl1</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__profiles.html#gae0cb11f189e743a3291e23e2bc361bb2">dg::geo::make_LiseikinCollective</a> (const <a class="el" href="structdg_1_1geo_1_1_cylindrical_functors_lvl2.html">CylindricalFunctorsLvl2</a> &amp;psi, double k, double eps)</td></tr>
+<tr class="separator:gae0cb11f189e743a3291e23e2bc361bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="ga56d2d722a2734d1685263ee8a95e7555"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga56d2d722a2734d1685263ee8a95e7555">&#9670;&nbsp;</a></span>make_LiseikinCollective()</h2>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="ga158a9af6aef70087e95b8fd8e7dacc60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga158a9af6aef70087e95b8fd8e7dacc60">&#9670;&nbsp;</a></span>GaussianDamping</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdg_1_1geo_1_1_binary_symm_tensor_lvl1.html">BinarySymmTensorLvl1</a> dg::geo::make_LiseikinCollective </td>
+          <td class="memname">using <a class="el" href="group__profiles.html#ga158a9af6aef70087e95b8fd8e7dacc60">dg::geo::GaussianDamping</a> = typedef <a class="el" href="structdg_1_1geo_1_1_compose.html">dg::geo::Compose</a>&lt;<a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1_gaussian_damping.html">dg::GaussianDamping</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>(CylindricalFunctor psip, double psipmax, double alpha)</code> </p><p class="formulaDsp">
+\[ f(R,Z) = \begin{cases} 1 \text{ if } \psi_p(R,Z) &lt; \psi_{p,max}\\ 0 \text{ if } \psi_p(R,Z) &gt; (\psi_{p,max} + 4\alpha) \\ \exp\left( - \frac{(\psi_p(R,Z) - \psi_{p,max})^2}{2\alpha^2}\right), \text{ else} \end{cases} \]
+</p>
+ </p>
+
+</div>
+</div>
+<a id="gad64d512d641d71865056b1f1b83da902"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad64d512d641d71865056b1f1b83da902">&#9670;&nbsp;</a></span>Iris</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__profiles.html#gad64d512d641d71865056b1f1b83da902">dg::geo::Iris</a> = typedef <a class="el" href="structdg_1_1geo_1_1_compose.html">Compose</a>&lt;<a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1_iris.html">dg::Iris</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>(CylindricalFunctor psip, double psip_min, double psip_max)</code> </p><p class="formulaDsp">
+\[ f(R,Z) = \begin{cases} 1 \text{ if } \psi_{p,min} &lt; \psi_p(R,Z) &lt; \psi_{p,max}\\ 0 \text{ else} \end{cases}\]
+</p>
+ </p>
+
+</div>
+</div>
+<a id="gac6e56352ad1a753f9c5c7cecb0f12ee0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac6e56352ad1a753f9c5c7cecb0f12ee0">&#9670;&nbsp;</a></span>Nprofile</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__profiles.html#gac6e56352ad1a753f9c5c7cecb0f12ee0">dg::geo::Nprofile</a> = typedef <a class="el" href="structdg_1_1geo_1_1_compose.html">dg::geo::Compose</a>&lt;<a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1_linear_x.html">dg::LinearX</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code> (CylindricalFunctor psip, double A, double B)</code> </p><p class="formulaDsp">
+\[ f(R,Z)= B + A\psi_p(R,Z)\]
+</p>
+ </p>
+
+</div>
+</div>
+<a id="ga82eca5b06b94a709b4f1cbfa4b42d59f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga82eca5b06b94a709b4f1cbfa4b42d59f">&#9670;&nbsp;</a></span>PsiLimiter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__profiles.html#ga82eca5b06b94a709b4f1cbfa4b42d59f">dg::geo::PsiLimiter</a> = typedef <a class="el" href="structdg_1_1geo_1_1_compose.html">dg::geo::Compose</a>&lt;<a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1_heaviside.html">dg::Heaviside</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code> (CylindricalFunctor psip, double psipmax) </code> </p><p class="formulaDsp">
+\[ f(R,Z) = \begin{cases} 1 \text{ if } \psi_p(R,Z) &gt; \psi_{p,\max} \\ 0 \text{ else} \end{cases}\]
+</p>
+ </p>
+
+</div>
+</div>
+<a id="ga4e7e76bd77ae1317ed999238b4ce4e17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4e7e76bd77ae1317ed999238b4ce4e17">&#9670;&nbsp;</a></span>PsiPupil</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__profiles.html#ga4e7e76bd77ae1317ed999238b4ce4e17">dg::geo::PsiPupil</a> = typedef <a class="el" href="structdg_1_1geo_1_1_compose.html">Compose</a>&lt;<a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1_psi_pupil.html">dg::PsiPupil</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code> (CylindricalFunctor psip, double psipmax)</code> </p><p class="formulaDsp">
+\[ f(R,Z) = \begin{cases} \psi_{p,max} \text{ if } \psi_p(R,Z) &gt; \psi_{p,max} \\ \psi_p(R,Z) \text{ else} \end{cases}\]
+</p>
+ </p>
+
+</div>
+</div>
+<a id="gab429cc7c00f5d55def9fcaa5cda8fafd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab429cc7c00f5d55def9fcaa5cda8fafd">&#9670;&nbsp;</a></span>Pupil</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__profiles.html#gab429cc7c00f5d55def9fcaa5cda8fafd">dg::geo::Pupil</a> = typedef <a class="el" href="structdg_1_1geo_1_1_compose.html">Compose</a>&lt;<a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1_pupil.html">dg::Pupil</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code> (CylindricalFunctor psip, double psipmax) </code> </p><p class="formulaDsp">
+\[ f(R,Z) = \begin{cases} 0 \text{ if } \psi_p(R,Z) &gt; \psi_{p,max} \\ 1 \text{ else} \end{cases}\]
+</p>
+ </p>
+
+</div>
+</div>
+<a id="ga446bce2c783bba5c7b0260853259f1e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga446bce2c783bba5c7b0260853259f1e1">&#9670;&nbsp;</a></span>TanhDamping</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__profiles.html#ga446bce2c783bba5c7b0260853259f1e1">dg::geo::TanhDamping</a> = typedef <a class="el" href="structdg_1_1geo_1_1_compose.html">dg::geo::Compose</a>&lt;<a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1_tanh_prof_x.html">dg::TanhProfX</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>(CylindricalFunctor psip, double psipmax, double alpha, int sign =1,double B = 0., double A = 1.) </code> </p><p class="formulaDsp">
+\[ f(R,Z) = B + 0.5 A(1+ \text{sign} \tanh((\psi_p(R,Z)-\psi_{p,max})/\alpha ) ) \]
+</p>
+ </p>
+<p>Similar to GaussianProfDamping is zero outside given <code>psipmax</code> and one inside of it. </p>
+
+</div>
+</div>
+<a id="ga19191644f490a26ec20c3f6dac24765c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga19191644f490a26ec20c3f6dac24765c">&#9670;&nbsp;</a></span>ZonalFlow</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__profiles.html#ga19191644f490a26ec20c3f6dac24765c">dg::geo::ZonalFlow</a> = typedef <a class="el" href="structdg_1_1geo_1_1_compose.html">dg::geo::Compose</a>&lt;<a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1_sin_x.html">dg::SinX</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>(CylindricalFunctor psip, double A, double B, double k_psi)</code> </p><p class="formulaDsp">
+\[ f(R,Z)= B + A \sin(k_\psi \psi_p(R,Z) ) \]
+</p>
+ </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="gae0cb11f189e743a3291e23e2bc361bb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae0cb11f189e743a3291e23e2bc361bb2">&#9670;&nbsp;</a></span>make_LiseikinCollective()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structdg_1_1geo_1_1_cylindrical_symm_tensor_lvl1.html">CylindricalSymmTensorLvl1</a> dg::geo::make_LiseikinCollective </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl2.html">BinaryFunctorsLvl2</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1geo_1_1_cylindrical_functors_lvl2.html">CylindricalFunctorsLvl2</a> &amp;&#160;</td>
           <td class="paramname"><em>psi</em>, </td>
         </tr>
         <tr>
@@ -276,24 +437,37 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="gaf583c457b3907ec4e9a94d4c17427d55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf583c457b3907ec4e9a94d4c17427d55">&#9670;&nbsp;</a></span>make_NablaPsiInvCollective()</h2>
+<a id="ga32a9569879bd13c719c77be10f0d399d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga32a9569879bd13c719c77be10f0d399d">&#9670;&nbsp;</a></span>make_NablaPsiInvCollective()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl1.html">BinaryFunctorsLvl1</a> dg::geo::make_NablaPsiInvCollective </td>
+          <td class="memname">static <a class="el" href="structdg_1_1geo_1_1_cylindrical_functors_lvl1.html">CylindricalFunctorsLvl1</a> dg::geo::make_NablaPsiInvCollective </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl2.html">BinaryFunctorsLvl2</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1geo_1_1_cylindrical_functors_lvl2.html">CylindricalFunctorsLvl2</a> &amp;&#160;</td>
           <td class="paramname"><em>psi</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>A container class that contains all <a class="el" href="structdg_1_1geo_1_1_nabla_psi_inv.html" title="A weight function for the Hector algorithm . ">NablaPsiInv</a> functors. </p>
@@ -305,7 +479,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Aug 28 2018 23:03:04 for Geometries by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:57 for Extension: Geometries by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

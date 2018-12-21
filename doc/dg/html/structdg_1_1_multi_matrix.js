@@ -4,6 +4,7 @@ var structdg_1_1_multi_matrix =
     [ "MultiMatrix", "structdg_1_1_multi_matrix.html#ae14e9c27d6e03614857b7086df402885", null ],
     [ "MultiMatrix", "structdg_1_1_multi_matrix.html#ae5e7dafd471e65824ceaa4dca79c292a", null ],
     [ "MultiMatrix", "structdg_1_1_multi_matrix.html#a72b0c74bb179a7e43774536587d477a9", null ],
+    [ "construct", "structdg_1_1_multi_matrix.html#adb17118604152c1851e80f524d491952", null ],
     [ "get_matrices", "structdg_1_1_multi_matrix.html#a21b75035ab5e7f209e05eacd1b3c0d07", null ],
     [ "get_matrices", "structdg_1_1_multi_matrix.html#a1bcca2bc7ac23c5912fbb8f03ec3072c", null ],
     [ "get_temp", "structdg_1_1_multi_matrix.html#a8dbca991fd3ff13e16f371c8b42b1067", null ],

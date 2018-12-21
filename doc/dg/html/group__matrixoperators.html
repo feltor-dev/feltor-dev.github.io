@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -97,7 +97,8 @@ $(document).ready(function(){initNavTree('group__matrixoperators.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">Elliptic and Helmholtz operators<div class="ingroups"><a class="el" href="group__numerical1.html">Level 4: Advanced numerical schemes</a></div></div>  </div>
 </div><!--header-->
@@ -114,35 +115,136 @@ Collaboration diagram for Elliptic and Helmholtz operators:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_elliptic.html">dg::Elliptic&lt; Geometry, Matrix, container &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operator that acts as a 2d negative elliptic differential operator  <a href="classdg_1_1_elliptic.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_elliptic.html">dg::Elliptic&lt; Geometry, Matrix, Container &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 2d negative elliptic differential operator.  <a href="classdg_1_1_elliptic.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_general_elliptic.html">dg::GeneralElliptic&lt; Geometry, Matrix, container &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operator that acts as a 3d negative elliptic differential operator  <a href="structdg_1_1_general_elliptic.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_elliptic3d.html">dg::Elliptic3d&lt; Geometry, Matrix, Container &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 3d negative elliptic differential operator.  <a href="classdg_1_1_elliptic3d.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_general_elliptic_sym.html">dg::GeneralEllipticSym&lt; Geometry, Matrix, container &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operator that acts as a 3d negative elliptic differential operator. Is the symmetric of the <a class="el" href="structdg_1_1_general_elliptic.html" title="Operator that acts as a 3d negative elliptic differential operator ">GeneralElliptic</a> with 0.5(D_+ + D_-) or vice versa  <a href="structdg_1_1_general_elliptic_sym.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_tensor_elliptic.html">dg::TensorElliptic&lt; Geometry, Matrix, container &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operator that acts as a 2d negative elliptic differential operator  <a href="structdg_1_1_tensor_elliptic.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz.html">dg::Helmholtz&lt; Geometry, Matrix, container &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz.html">dg::Helmholtz&lt; Geometry, Matrix, Container &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix class that represents a Helmholtz-type operator.  <a href="structdg_1_1_helmholtz.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html">dg::Helmholtz2&lt; Geometry, Matrix, container &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix class that represents a more general Helmholtz-type operator.  <a href="structdg_1_1_helmholtz2.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz3d.html">dg::Helmholtz3d&lt; Geometry, Matrix, Container &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix class that represents a 3d Helmholtz-type operator.  <a href="structdg_1_1_helmholtz3d.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_refined_elliptic.html">dg::RefinedElliptic&lt; Geometry, IMatrix, Matrix, container &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The refined version of <code><a class="el" href="classdg_1_1_elliptic.html" title="Operator that acts as a 2d negative elliptic differential operator ">Elliptic</a></code>.  <a href="classdg_1_1_refined_elliptic.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html">dg::Helmholtz2&lt; Geometry, Matrix, Container &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">DEPRECATED, Matrix class that represents a more general Helmholtz-type operator.  <a href="structdg_1_1_helmholtz2.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_refined_elliptic.html">dg::RefinedElliptic&lt; Geometry, IMatrix, Matrix, Container &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The refined version of <code><a class="el" href="classdg_1_1_elliptic.html" title="A 2d negative elliptic differential operator. ">Elliptic</a></code>.  <a href="classdg_1_1_refined_elliptic.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gae40a319b095c51491395216d59fd8645"><td class="memTemplParams" colspan="2">template&lt;class Geometry , class Matrix , class Container &gt; </td></tr>
+<tr class="memitem:gae40a319b095c51491395216d59fd8645"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__matrixoperators.html#gae40a319b095c51491395216d59fd8645">dg::Elliptic2d</a> = <a class="el" href="classdg_1_1_elliptic.html">Elliptic</a>&lt; Geometry, Matrix, Container &gt;</td></tr>
+<tr class="memdesc:gae40a319b095c51491395216d59fd8645"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 2d negative elliptic differential operator.  <a href="group__matrixoperators.html#gae40a319b095c51491395216d59fd8645">More...</a><br /></td></tr>
+<tr class="separator:gae40a319b095c51491395216d59fd8645"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97e96ca43b1ba76d3f820afc72b1d753"><td class="memTemplParams" colspan="2">template&lt;class Geometry , class Matrix , class Container &gt; </td></tr>
+<tr class="memitem:ga97e96ca43b1ba76d3f820afc72b1d753"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__matrixoperators.html#ga97e96ca43b1ba76d3f820afc72b1d753">dg::Helmholtz2d</a> = <a class="el" href="structdg_1_1_helmholtz.html">Helmholtz</a>&lt; Geometry, Matrix, Container &gt;</td></tr>
+<tr class="memdesc:ga97e96ca43b1ba76d3f820afc72b1d753"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix class that represents a Helmholtz-type operator.  <a href="group__matrixoperators.html#ga97e96ca43b1ba76d3f820afc72b1d753">More...</a><br /></td></tr>
+<tr class="separator:ga97e96ca43b1ba76d3f820afc72b1d753"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="gae40a319b095c51491395216d59fd8645"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae40a319b095c51491395216d59fd8645">&#9670;&nbsp;</a></span>Elliptic2d</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Geometry , class Matrix , class Container &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__matrixoperators.html#gae40a319b095c51491395216d59fd8645">dg::Elliptic2d</a> = typedef <a class="el" href="classdg_1_1_elliptic.html">Elliptic</a>&lt;Geometry, Matrix, Container&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A 2d negative elliptic differential operator. </p>
+<p>The term discretized is </p><p class="formulaDsp">
+\[ -\nabla \cdot ( \chi \nabla_\perp ) \]
+</p>
+<p> where \( \nabla_\perp \) is the two-dimensional gradient and \(\chi\) is a (possibly spatially dependent) tensor. In general coordinates that means </p><p class="formulaDsp">
+\[ -\frac{1}{\sqrt{g}}\left( \partial_x\left(\sqrt{g}\left(\chi^{xx}\partial_x + \chi^{xy}\partial_y \right)\right) + \partial_y\left(\sqrt{g} \left(\chi^{yx}\partial_x + \chi^{yy}\partial_y \right)\right) \right)\]
+</p>
+<p> is discretized. Per default, \( \chi\) is the metric tensor but you can set it to any tensor you like (in order for the operator to be invertible \(\chi\) should be symmetric and positive definite though). Note that the local discontinuous Galerkin discretization adds so-called jump terms </p><p class="formulaDsp">
+\[ D^\dagger \chi D + \alpha J \]
+</p>
+<p> where \(\alpha\) is a scale factor ( = jfactor), \( D \) contains the discretizations of the above derivatives, and \( J\) is a self-adjoint matrix. (The symmetric part of \(J\) is added <b>before</b> the volume element is divided). The adjoint of a matrix is defined with respect to the volume element including dG weights. Usually, the default \( \alpha=1 \) is a good choice. However, in some cases, e.g. when \( \chi \) exhibits very large variations \( \alpha=0.1\) or \( \alpha=0.01\) might be better values. In a time dependent problem the value of \(\alpha\) determines the numerical diffusion, i.e. for too low values numerical oscillations may appear. Also note that a forward discretization has more diffusion than a centered discretization.</p>
+<p>The following code snippet demonstrates the use of <code><a class="el" href="classdg_1_1_elliptic.html" title="A 2d negative elliptic differential operator. ">Elliptic</a></code> in an inversion problem </p><div class="fragment"><div class="line">    <span class="comment">//create an Elliptic object without volume form (not normed)</span></div><div class="line">    <a class="code" href="classdg_1_1_elliptic.html">dg::Elliptic&lt;dg::CartesianGrid2d, dg::DMatrix, dg::DVec&gt;</a> pol_forward( grid, <a class="code" href="group__creation.html#gga9945b71a335bc97f78dc7425911c7287a07217e3dd9be28b4da85d46fef38f066">dg::not_normed</a>, <a class="code" href="group__creation.html#ggabf9ea3df33484cbb5886e257c3899e48a6281b4fc609cb723a615662b5adac9df">dg::centered</a>, jfactor);</div><div class="line"></div><div class="line">    <span class="comment">//Set the chi function (chi is a dg::DVec of size grid.size())</span></div><div class="line">    pol_forward.set_chi( chi);</div><div class="line"></div><div class="line">    <span class="comment">//construct an invert object</span></div><div class="line">    <a class="code" href="structdg_1_1_invert.html">dg::Invert&lt;dg::DVec &gt;</a> invert_fw( x, n*n*Nx*Ny, eps);</div><div class="line"></div><div class="line">    <span class="comment">//invert the elliptic equation</span></div><div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot; &quot;</span>&lt;&lt; invert_fw( pol_forward, x, b, w2d, v2d, chi_inv);</div><div class="line"></div><div class="line">    <span class="comment">//compute the error (solution contains analytic solution</span></div><div class="line">    <a class="code" href="group__blas1.html#ga5c7ddbf70dd74867e45c9d4f40b36cf7">dg::blas1::axpby</a>( 1.,x,-1., solution, error);</div><div class="line"></div><div class="line">    <span class="comment">//compute the L2 norm of the error</span></div><div class="line">    <span class="keywordtype">double</span> err = <a class="code" href="group__blas2.html#gaaafba91956e948b0ea53f30889a3c20d">dg::blas2::dot</a>( w2d, error);</div><div class="line"></div><div class="line">    <span class="comment">//output the relative error</span></div><div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot; &quot;</span>&lt;&lt;sqrt( err/norm) &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div></div><!-- fragment --> <dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Geometry</td><td>A type that is or derives from one of the abstract geometry base classes ( <code>aGeometry2d</code>, <code>aGeometry3d</code>, <code>aMPIGeometry2d</code>, ...). <code>Geometry</code> determines which <code>Matrix</code> and <code>Container</code> types can be used: </td></tr>
+    <tr><td class="paramname">Matrix</td><td>A class for which the <a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a> functions are callable in connection with the <code>Container</code> class and to which the return type of <code><a class="el" href="group__creation.html#ga51aea0f47c5a77bb1a3bce187839dc85" title="Create 2d derivative in x-direction. ">create::dx()</a></code> can be converted using <code><a class="el" href="group__blas2.html#ga53701ba3118a2256a93a4d92a7a8a597" title="; Generic way to copy and/or convert a Matrix type to a different Matrix type ">dg::blas2::transfer</a></code>. The <code>Matrix</code> type can be one of:<ul>
+<li><code><a class="el" href="group__typedefs.html#gac2134505608b45616787fdb2f6eedc87" title="Host Matrix for derivatives. ">dg::HMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193" title="Host Vector. ">dg::HVec</a></code> and one of the shared memory geometries</li>
+<li><code><a class="el" href="group__typedefs.html#gafdf2ecb95cbc87a1544136d28d535f16" title="Device Matrix for derivatives. ">dg::DMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code> and one of the shared memory geometries</li>
+<li><code><a class="el" href="group__typedefs.html#gaff79c734c7916054c7dc24e6bc437161" title="MPI Host Matrix for derivatives. ">dg::MHMatrix</a></code> with <code><a class="el" href="group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> and one of the MPI geometries</li>
+<li><code><a class="el" href="group__typedefs.html#gaad32454aa2aca3cbb93448d7b5daf005" title="MPI Device Matrix for derivatives. ">dg::MDMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> and one of the MPI geometries </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">Container</td><td>A data container class for which the <code><a class="el" href="namespacedg_1_1blas1.html" title="BLAS Level 1 routines. ">blas1</a></code> functionality is overloaded and to which the return type of <code><a class="el" href="group__blas1.html#ga7386b5cb0144d5364b8ea8c8ce1482a5" title="; Customizable and generic blas1 function ">blas1::subroutine()</a></code> can be converted using <code><a class="el" href="group__backend.html#gab0ca1b8d3f70004e25ddc2010f7e9e0d" title="Generic way to assign the contents of a from_ContainerType object to a ContainerType object optionall...">dg::assign</a></code>. We assume that <code>Container</code> is copyable/assignable and has a swap member function. In connection with <code>Geometry</code> this is one of<ul>
+<li><code><a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193" title="Host Vector. ">dg::HVec</a></code>, <code><a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code> when <code>Geometry</code> is a shared memory geometry</li>
+<li><code><a class="el" href="group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code><a class="el" href="group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> when <code>Geometry</code> is one of the MPI geometries This class has the <code><a class="el" href="structdg_1_1_self_made_matrix_tag.html" title="Indicates that the type has a member function with the same name and interface (up to the matrix itse...">SelfMadeMatrixTag</a></code> so it can be used in <a class="el" href="group__blas2.html#gac3840941bd2bb1d64c6ca3fef1f1b960" title=" ">blas2::symv</a> functions and thus in a conjugate gradient solver. </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>The constructors initialize \( \chi=1\) so that a negative laplacian operator results </dd>
+<dd>
+The inverse of \( \chi\) makes a good general purpose preconditioner </dd>
+<dd>
+the jump term \( \alpha J\) adds artificial numerical diffusion as discussed above </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Pay attention to the negative sign which is necessary to make the matrix <b>positive</b> <b>definite</b> </dd></dl>
+
+</div>
+</div>
+<a id="ga97e96ca43b1ba76d3f820afc72b1d753"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga97e96ca43b1ba76d3f820afc72b1d753">&#9670;&nbsp;</a></span>Helmholtz2d</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Geometry , class Matrix , class Container &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__matrixoperators.html#ga97e96ca43b1ba76d3f820afc72b1d753">dg::Helmholtz2d</a> = typedef <a class="el" href="structdg_1_1_helmholtz.html">Helmholtz</a>&lt;Geometry, Matrix, Container&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Matrix class that represents a Helmholtz-type operator. </p>
+<p>Unnormed discretization of </p><p class="formulaDsp">
+\[ (\chi+\alpha\Delta) \]
+</p>
+<p> where \( \chi\) is a function and \(\alpha\) a scalar. </p><dl class="section attention"><dt>Attention</dt><dd>The Laplacian in this formula is positive as opposed to the negative sign in the <code><a class="el" href="classdg_1_1_elliptic.html" title="A 2d negative elliptic differential operator. ">Elliptic</a></code> operator</dd></dl>
+<p>Can be used by the <a class="el" href="classdg_1_1_c_g.html" title="Functor class for the preconditioned conjugate gradient method to solve . ">CG</a> class. The following example shows how the class can be used to act as a <code><a class="el" href="structdg_1_1_helmholtz2.html" title="DEPRECATED, Matrix class that represents a more general Helmholtz-type operator. ">Helmholtz2</a></code> operator: </p><div class="fragment"><div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Alternative test with two Helmholtz operators\n&quot;</span>;</div><div class="line">    <a class="code" href="structdg_1_1_helmholtz.html">dg::Helmholtz&lt; dg::CartesianGrid2d, dg::DMatrix, dg::DVec &gt;</a> gamma1inv(grid2d, alpha ,<a class="code" href="group__creation.html#ggabf9ea3df33484cbb5886e257c3899e48a6281b4fc609cb723a615662b5adac9df">dg::centered</a>);</div><div class="line">    gamma1inv.set_chi( chi);</div><div class="line">    <a class="code" href="structdg_1_1_invert.html">dg::Invert&lt;dg::DVec&gt;</a> invertO(  x, grid2d.size(), eps/100);</div><div class="line">    <a class="code" href="structdg_1_1_invert.html">dg::Invert&lt;dg::DVec&gt;</a> invertOO( x, grid2d.size(), eps/100);</div><div class="line">    t.tic();</div><div class="line">    <span class="keywordtype">unsigned</span> number1 = invertO( gamma1inv, phi, rholap);</div><div class="line">    <a class="code" href="group__blas1.html#gad2dcd7cffe760b7bacfdd7647d86e602">dg::blas1::pointwiseDot</a>( phi, chi, phi);</div><div class="line">    <span class="keywordtype">unsigned</span> number2 = invertOO( gamma1inv, x, phi);</div><div class="line">    t.toc();</div><div class="line">    <span class="comment">//Evaluation</span></div><div class="line">    <a class="code" href="group__blas1.html#ga5c7ddbf70dd74867e45c9d4f40b36cf7">dg::blas1::axpby</a>( 1., sol, -1., x);</div></div><!-- fragment --> <dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Geometry</td><td>A type that is or derives from one of the abstract geometry base classes ( <code>aGeometry2d</code>, <code>aGeometry3d</code>, <code>aMPIGeometry2d</code>, ...). <code>Geometry</code> determines which <code>Matrix</code> and <code>Container</code> types can be used: </td></tr>
+    <tr><td class="paramname">Matrix</td><td>A class for which the <a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a> functions are callable in connection with the <code>Container</code> class and to which the return type of <code><a class="el" href="group__creation.html#ga51aea0f47c5a77bb1a3bce187839dc85" title="Create 2d derivative in x-direction. ">create::dx()</a></code> can be converted using <code><a class="el" href="group__blas2.html#ga53701ba3118a2256a93a4d92a7a8a597" title="; Generic way to copy and/or convert a Matrix type to a different Matrix type ">dg::blas2::transfer</a></code>. The <code>Matrix</code> type can be one of:<ul>
+<li><code><a class="el" href="group__typedefs.html#gac2134505608b45616787fdb2f6eedc87" title="Host Matrix for derivatives. ">dg::HMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193" title="Host Vector. ">dg::HVec</a></code> and one of the shared memory geometries</li>
+<li><code><a class="el" href="group__typedefs.html#gafdf2ecb95cbc87a1544136d28d535f16" title="Device Matrix for derivatives. ">dg::DMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code> and one of the shared memory geometries</li>
+<li><code><a class="el" href="group__typedefs.html#gaff79c734c7916054c7dc24e6bc437161" title="MPI Host Matrix for derivatives. ">dg::MHMatrix</a></code> with <code><a class="el" href="group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> and one of the MPI geometries</li>
+<li><code><a class="el" href="group__typedefs.html#gaad32454aa2aca3cbb93448d7b5daf005" title="MPI Device Matrix for derivatives. ">dg::MDMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> and one of the MPI geometries </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">Container</td><td>A data container class for which the <code><a class="el" href="namespacedg_1_1blas1.html" title="BLAS Level 1 routines. ">blas1</a></code> functionality is overloaded and to which the return type of <code><a class="el" href="group__blas1.html#ga7386b5cb0144d5364b8ea8c8ce1482a5" title="; Customizable and generic blas1 function ">blas1::subroutine()</a></code> can be converted using <code><a class="el" href="group__backend.html#gab0ca1b8d3f70004e25ddc2010f7e9e0d" title="Generic way to assign the contents of a from_ContainerType object to a ContainerType object optionall...">dg::assign</a></code>. We assume that <code>Container</code> is copyable/assignable and has a swap member function. In connection with <code>Geometry</code> this is one of<ul>
+<li><code><a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193" title="Host Vector. ">dg::HVec</a></code>, <code><a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code> when <code>Geometry</code> is a shared memory geometry</li>
+<li><code><a class="el" href="group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code><a class="el" href="group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> when <code>Geometry</code> is one of the MPI geometries </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
-<title>Geometries: Class List</title>
+<title>Extension: Geometries: Class List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -44,9 +44,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Geometries
+   <div id="projectname">Extension: Geometries
    </div>
-   <div id="projectbrief">Extension with magnetic flux functions, grids and grid generators</div>
+   <div id="projectbrief">Magnetic flux functions, parallel derivatives and new grids and grid generators in &quot;dg/geometries/geometries.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -230,202 +230,124 @@ $(document).ready(function(){initNavTree('annotated.html','');});
 \[ \frac{\partial^2 \hat{\psi}_p }{ \partial \hat{Z}^2}\]
 </p>
  </td></tr>
-<tr id="row_0_0_4_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1a_binary_functor.html" target="_self">aBinaryFunctor</a></td><td class="desc">This functor represents functions written in cylindrical coordinates that are independent of the angle phi </td></tr>
-<tr id="row_0_0_5_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1a_cloneable_binary_functor.html" target="_self">aCloneableBinaryFunctor</a></td><td class="desc">Intermediate implementation helper class for the clone pattern with CRTP </td></tr>
-<tr id="row_0_0_6_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1a_generator2d.html" target="_self">aGenerator2d</a></td><td class="desc">The abstract generator base class </td></tr>
-<tr id="row_0_0_7_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1a_generator_x2d.html" target="_self">aGeneratorX2d</a></td><td class="desc">The abstract generator base class </td></tr>
-<tr id="row_0_0_8_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_alpha.html" target="_self">Alpha</a></td><td class="desc">Global safety factor </p><p class="formulaDsp">
+<tr id="row_0_0_4_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1a_cylindrical_functor.html" target="_self">aCylindricalFunctor</a></td><td class="desc">Represent functions written in cylindrical coordinates that are independent of the angle phi serving as both 2d and 3d functions </td></tr>
+<tr id="row_0_0_5_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_alpha.html" target="_self">Alpha</a></td><td class="desc">Global safety factor </p><p class="formulaDsp">
 \[ \alpha(R,Z) = \frac{|B^\varphi|}{R|B^\eta|} = \frac{I_{pol}(R,Z)}{R|\nabla\psi_p|} \]
 </p>
  </td></tr>
-<tr id="row_0_0_9_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_b_hat_p.html" target="_self">BHatP</a></td><td class="desc"><p class="formulaDsp">
-\[ b_\varphi = B_\varphi/|B|\]
+<tr id="row_0_0_6_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1a_real_generator2d.html" target="_self">aRealGenerator2d</a></td><td class="desc">The abstract generator base class </td></tr>
+<tr id="row_0_0_7_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1a_real_generator_x2d.html" target="_self">aRealGeneratorX2d</a></td><td class="desc">The abstract generator base class </td></tr>
+<tr id="row_0_0_8_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_b_field_p.html" target="_self">BFieldP</a></td><td class="desc">\( B^\varphi = R_0I/R^2\) </td></tr>
+<tr id="row_0_0_9_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_b_field_r.html" target="_self">BFieldR</a></td><td class="desc">\( B^R = R_0\psi_Z /R\) </td></tr>
+<tr id="row_0_0_10_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_b_field_t.html" target="_self">BFieldT</a></td><td class="desc">\( B^{\theta} = B^R\partial_R\theta + B^Z\partial_Z\theta\) </td></tr>
+<tr id="row_0_0_11_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_b_field_z.html" target="_self">BFieldZ</a></td><td class="desc">\( B^Z = -R_0\psi_R /R\) </td></tr>
+<tr id="row_0_0_12_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_b_hat_p.html" target="_self">BHatP</a></td><td class="desc">\( b^\varphi = B^\varphi/|B|\) </td></tr>
+<tr id="row_0_0_13_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_b_hat_r.html" target="_self">BHatR</a></td><td class="desc">\( b^R = B^R/|B|\) </td></tr>
+<tr id="row_0_0_14_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_b_hat_z.html" target="_self">BHatZ</a></td><td class="desc">\( b^Z = B^Z/|B|\) </td></tr>
+<tr id="row_0_0_15_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_bmodule.html" target="_self">Bmodule</a></td><td class="desc">\( |B| = R_0\sqrt{I^2+(\nabla\psi)^2}/R \) </td></tr>
+<tr id="row_0_0_16_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_b_r.html" target="_self">BR</a></td><td class="desc">\( \frac{\partial |B| }{ \partial R} \) </td></tr>
+<tr id="row_0_0_17_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_b_z.html" target="_self">BZ</a></td><td class="desc">\( \frac{\partial |B| }{ \partial Z} \) </td></tr>
+<tr id="row_0_0_18_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_compose.html" target="_self">Compose</a></td><td class="desc">Composition </p><p class="formulaDsp">
+\[ f\circ\psi = f(\psi(R,Z)) \]
 </p>
  </td></tr>
-<tr id="row_0_0_10_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_b_hat_r.html" target="_self">BHatR</a></td><td class="desc"><p class="formulaDsp">
-\[ b_R = B_R/|B|\]
-</p>
- </td></tr>
-<tr id="row_0_0_11_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_b_hat_z.html" target="_self">BHatZ</a></td><td class="desc"><p class="formulaDsp">
-\[ b_Z = B_Z/|B|\]
-</p>
- </td></tr>
-<tr id="row_0_0_12_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_binary_functor_adapter.html" target="_self">BinaryFunctorAdapter</a></td><td class="desc">With this adapater class you can make any Functor cloneable </td></tr>
-<tr id="row_0_0_13_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl1.html" target="_self">BinaryFunctorsLvl1</a></td><td class="desc">This struct bundles a function and its first derivatives </td></tr>
-<tr id="row_0_0_14_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl2.html" target="_self">BinaryFunctorsLvl2</a></td><td class="desc">This struct bundles a function and its first and second derivatives </td></tr>
-<tr id="row_0_0_15_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_binary_symm_tensor_lvl1.html" target="_self">BinarySymmTensorLvl1</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_16_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_binary_vector_lvl0.html" target="_self">BinaryVectorLvl0</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_17_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_bmodule.html" target="_self">Bmodule</a></td><td class="desc"><p class="formulaDsp">
-\[ |B| = R_0\sqrt{I^2+(\nabla\psi)^2}/R \]
-</p>
- </td></tr>
-<tr id="row_0_0_18_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_b_r.html" target="_self">BR</a></td><td class="desc"><p class="formulaDsp">
-\[ \frac{\partial |\hat{B}| }{ \partial \hat{R}} \]
-</p>
- </td></tr>
-<tr id="row_0_0_19_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_b_z.html" target="_self">BZ</a></td><td class="desc"><p class="formulaDsp">
-\[ \frac{\partial \hat{B} }{ \partial \hat{Z}} \]
-</p>
- </td></tr>
-<tr id="row_0_0_20_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_constant.html" target="_self">Constant</a></td><td class="desc">The constant functor </p><p class="formulaDsp">
+<tr id="row_0_0_19_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_constant.html" target="_self">Constant</a></td><td class="desc">The constant functor </p><p class="formulaDsp">
 \[ f(x,y) = c\]
 </p>
  </td></tr>
-<tr id="row_0_0_21_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_curvature_kappa_r.html" target="_self">CurvatureKappaR</a></td><td class="desc"><p class="formulaDsp">
-\[ \mathcal{\hat{K}}^{\hat{R}}_{\vec{\kappa}}=0 \]
-</p>
- </td></tr>
-<tr id="row_0_0_22_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_curvature_kappa_z.html" target="_self">CurvatureKappaZ</a></td><td class="desc"><p class="formulaDsp">
-\[ \mathcal{\hat{K}}^{\hat{Z}}_{\vec{\kappa}} \]
-</p>
- </td></tr>
-<tr id="row_0_0_23_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_curvature_nabla_b_r.html" target="_self">CurvatureNablaBR</a></td><td class="desc"><p class="formulaDsp">
-\[ \mathcal{\hat{K}}^{\hat{R}}_{\nabla B} \]
-</p>
- </td></tr>
-<tr id="row_0_0_24_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_curvature_nabla_b_z.html" target="_self">CurvatureNablaBZ</a></td><td class="desc"><p class="formulaDsp">
-\[ \mathcal{\hat{K}}^{\hat{Z}}_{\nabla B} \]
-</p>
- </td></tr>
-<tr id="row_0_0_25_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_curvilinear_grid2d.html" target="_self">CurvilinearGrid2d</a></td><td class="desc">A two-dimensional grid based on curvilinear coordinates </td></tr>
-<tr id="row_0_0_26_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_curvilinear_grid_x2d.html" target="_self">CurvilinearGridX2d</a></td><td class="desc">A two-dimensional grid based on curvilinear coordinates </td></tr>
-<tr id="row_0_0_27_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_curvilinear_m_p_i_grid2d.html" target="_self">CurvilinearMPIGrid2d</a></td><td class="desc">A two-dimensional MPI grid based on curvilinear coordinates </td></tr>
-<tr id="row_0_0_28_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_curvilinear_product_grid3d.html" target="_self">CurvilinearProductGrid3d</a></td><td class="desc">A 2x1 curvilinear product space grid </td></tr>
-<tr id="row_0_0_29_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_curvilinear_product_grid_x3d.html" target="_self">CurvilinearProductGridX3d</a></td><td class="desc">A three-dimensional grid based on curvilinear coordinates </td></tr>
-<tr id="row_0_0_30_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_curvilinear_product_m_p_i_grid3d.html" target="_self">CurvilinearProductMPIGrid3d</a></td><td class="desc">A 2x1 curvilinear product space MPI grid </td></tr>
-<tr id="row_0_0_31_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_curvilinear_refined_grid_x2d.html" target="_self">CurvilinearRefinedGridX2d</a></td><td class="desc">A two-dimensional grid based on curvilinear coordinates </td></tr>
-<tr id="row_0_0_32_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_curvilinear_refined_product_grid_x3d.html" target="_self">CurvilinearRefinedProductGridX3d</a></td><td class="desc">A three-dimensional grid based on curvilinear coordinates </td></tr>
-<tr id="row_0_0_33_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_delta_function.html" target="_self">DeltaFunction</a></td><td class="desc">Delta function for poloidal flux \( B_Z\) </p><p class="formulaDsp">
+<tr id="row_0_0_20_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_curvature_kappa_r.html" target="_self">CurvatureKappaR</a></td><td class="desc">Approximate \( \mathcal{K}^{R}_{\vec{\kappa}}=0 \) </td></tr>
+<tr id="row_0_0_21_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_curvature_kappa_z.html" target="_self">CurvatureKappaZ</a></td><td class="desc">Approximate \( \mathcal{K}^{Z}_{\vec{\kappa}} \) </td></tr>
+<tr id="row_0_0_22_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_curvature_nabla_b_r.html" target="_self">CurvatureNablaBR</a></td><td class="desc">Approximate \( \mathcal{K}^{R}_{\nabla B} \) </td></tr>
+<tr id="row_0_0_23_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_curvature_nabla_b_z.html" target="_self">CurvatureNablaBZ</a></td><td class="desc">Approximate \( \mathcal{K}^{Z}_{\nabla B} \) </td></tr>
+<tr id="row_0_0_24_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_cylindrical_functors_lvl1.html" target="_self">CylindricalFunctorsLvl1</a></td><td class="desc">This struct bundles a function and its first derivatives </td></tr>
+<tr id="row_0_0_25_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_cylindrical_functors_lvl2.html" target="_self">CylindricalFunctorsLvl2</a></td><td class="desc">This struct bundles a function and its first and second derivatives </td></tr>
+<tr id="row_0_0_26_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_cylindrical_symm_tensor_lvl1.html" target="_self">CylindricalSymmTensorLvl1</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_27_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_cylindrical_vector_lvl0.html" target="_self">CylindricalVectorLvl0</a></td><td class="desc"></td></tr>
+<tr id="row_0_0_28_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_delta_function.html" target="_self">DeltaFunction</a></td><td class="desc">Delta function for poloidal flux \( B_Z\) </p><p class="formulaDsp">
 \[ |\nabla \psi_p|\delta(\psi_p(R,Z)-\psi_0) = \frac{\sqrt{ (\nabla \psi_p)^2}}{\sqrt{2\pi\varepsilon}} \exp\left(-\frac{(\psi_p(R,Z) - \psi_{0})^2}{2\varepsilon} \right) \]
 </p>
  </td></tr>
-<tr id="row_0_0_34_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_divb.html" target="_self">Divb</a></td><td class="desc"><p class="formulaDsp">
-\[ \nabla \cdot \vec b \]
-</p>
- </td></tr>
-<tr id="row_0_0_35_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_div_curvature_kappa.html" target="_self">DivCurvatureKappa</a></td><td class="desc"><p class="formulaDsp">
-\[ \vec{\hat{\nabla}}\cdot \mathcal{\hat{K}}_{\vec{\kappa}} \]
-</p>
- </td></tr>
-<tr id="row_0_0_36_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_div_liseikin_x.html" target="_self">DivLiseikinX</a></td><td class="desc">The x-component of the divergence of the Liseikin monitor metric </p><p class="formulaDsp">
+<tr id="row_0_0_29_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_divb.html" target="_self">Divb</a></td><td class="desc">\( \nabla \cdot \vec b \) </td></tr>
+<tr id="row_0_0_30_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_div_curvature_kappa.html" target="_self">DivCurvatureKappa</a></td><td class="desc">Approximate \( \vec{\nabla}\cdot \mathcal{K}_{\vec{\kappa}} \) </td></tr>
+<tr id="row_0_0_31_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_div_curvature_nabla_b.html" target="_self">DivCurvatureNablaB</a></td><td class="desc">Approximate \( \vec{\nabla}\cdot \mathcal{K}_{\nabla B} \) </td></tr>
+<tr id="row_0_0_32_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_div_liseikin_x.html" target="_self">DivLiseikinX</a></td><td class="desc">The x-component of the divergence of the Liseikin monitor metric </p><p class="formulaDsp">
 \[ \partial_x \chi^{xx} + \partial_y\chi^{yx}\]
 </p>
  </td></tr>
-<tr id="row_0_0_37_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_div_liseikin_y.html" target="_self">DivLiseikinY</a></td><td class="desc">The y-component of the divergence of the Liseikin monitor metric </p><p class="formulaDsp">
+<tr id="row_0_0_33_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_div_liseikin_y.html" target="_self">DivLiseikinY</a></td><td class="desc">The y-component of the divergence of the Liseikin monitor metric </p><p class="formulaDsp">
 \[ \partial_x \chi^{xy} + \partial_y\chi^{yy}\]
 </p>
  </td></tr>
-<tr id="row_0_0_38_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_d_s.html" target="_self">DS</a></td><td class="desc">Class for the evaluation of parallel derivatives </td></tr>
-<tr id="row_0_0_39_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_fieldaligned.html" target="_self">Fieldaligned</a></td><td class="desc">Create and manage interpolation matrices from fieldline integration </td></tr>
-<tr id="row_0_0_40_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_field_p.html" target="_self">FieldP</a></td><td class="desc"><p class="formulaDsp">
-\[ B_\varphi = R_0I/R^2\]
-</p>
- </td></tr>
-<tr id="row_0_0_41_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_field_r.html" target="_self">FieldR</a></td><td class="desc"><p class="formulaDsp">
-\[ B_R = R_0\psi_Z /R\]
-</p>
- </td></tr>
-<tr id="row_0_0_42_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_field_t.html" target="_self">FieldT</a></td><td class="desc"><p class="formulaDsp">
-\[ B^{\theta} = B^R\partial_R\theta + B^Z\partial_Z\theta\]
-</p>
- </td></tr>
-<tr id="row_0_0_43_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_field_z.html" target="_self">FieldZ</a></td><td class="desc"><p class="formulaDsp">
-\[ B_Z = -R_0\psi_R /R\]
-</p>
- </td></tr>
-<tr id="row_0_0_44_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_flux_generator.html" target="_self">FluxGenerator</a></td><td class="desc">A symmetry flux generator </td></tr>
-<tr id="row_0_0_45_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_flux_surface_average.html" target="_self">FluxSurfaceAverage</a></td><td class="desc">Flux surface average over quantity </p><p class="formulaDsp">
+<tr id="row_0_0_34_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_d_s.html" target="_self">DS</a></td><td class="desc">Class for the evaluation of parallel derivatives </td></tr>
+<tr id="row_0_0_35_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_fieldaligned.html" target="_self">Fieldaligned</a></td><td class="desc">Create and manage interpolation matrices from fieldline integration </td></tr>
+<tr id="row_0_0_36_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_flux_generator.html" target="_self">FluxGenerator</a></td><td class="desc">A symmetry flux generator </td></tr>
+<tr id="row_0_0_37_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_flux_surface_average.html" target="_self">FluxSurfaceAverage</a></td><td class="desc">Flux surface average over quantity </p><p class="formulaDsp">
 \[ \langle f\rangle(\psi_0) = \frac{1}{A} \int dV \delta(\psi_p(R,Z)-\psi_0) |\nabla\psi_p|f(R,Z) \]
 </p>
  </td></tr>
-<tr id="row_0_0_46_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_gaussian_damping.html" target="_self">GaussianDamping</a></td><td class="desc">Damps the outer boundary in a zone from psipmaxcut to psipmaxcut+ 4*alpha with a normal distribution Returns 1 inside, zero outside and a gaussian within </p><p class="formulaDsp">
-\[ \begin{cases} 1 \text{ if } \psi_p(R,Z) &lt; \psi_{p,max,cut}\\ 0 \text{ if } \psi_p(R,Z) &gt; (\psi_{p,max,cut} + 4\alpha) \\ \exp\left( - \frac{(\psi_p - \psi_{p,max,cut})^2}{2\alpha^2}\right), \text{ else} \end{cases} \]
-</p>
- </td></tr>
-<tr id="row_0_0_47_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_gaussian_prof_damping.html" target="_self">GaussianProfDamping</a></td><td class="desc">Damps the inner boundary in a zone from psipmax to psipmax+ 4*alpha with a normal distribution Returns 1 inside, zero outside and a gaussian within </p><p class="formulaDsp">
-\[ \begin{cases} 1 \text{ if } \psi_p(R,Z) &lt; (\psi_{p,max} - 4\alpha)\\ 0 \text{ if } \psi_p(R,Z) &gt; \psi_{p,max} \\ \exp\left( - \frac{(\psi_p - \psi_{p,max} + 4\alpha)^2}{2\alpha^2}\right), \text{ else} \end{cases} \]
-</p>
- </td></tr>
-<tr id="row_0_0_48_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_gaussian_prof_x_damping.html" target="_self">GaussianProfXDamping</a></td><td class="desc">Damps the inner boundary in a zone from psipmax to psipmax+ 4*alpha with a normal distribution Returns 1 inside, zero outside and a gaussian within Additionally cuts if Z &lt; Z_xpoint </p><p class="formulaDsp">
-\[ \begin{cases} 1 \text{ if } \psi_p(R,Z) &lt; (\psi_{p,max} - 4\alpha) \\ 0 \text{ if } \psi_p(R,Z) &gt; \psi_{p,max} || Z &lt; -1.1\varepsilon a \\ \exp\left( - \frac{(\psi_p - \psi_{p,max})^2}{2\alpha^2}\right), \text{ else} \end{cases} \]
-</p>
- </td></tr>
-<tr id="row_0_0_49_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_grad_ln_b.html" target="_self">GradLnB</a></td><td class="desc"><p class="formulaDsp">
-\[ \hat{\nabla}_\parallel \ln{(\hat{B})} \]
-</p>
- </td></tr>
-<tr id="row_0_0_50_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_hector.html" target="_self">Hector</a></td><td class="desc">The High PrEcision Conformal grid generaTOR </td></tr>
-<tr id="row_0_0_51_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_inv_b.html" target="_self">InvB</a></td><td class="desc"><p class="formulaDsp">
-\[ |B|^{-1} = R/R_0\sqrt{I^2+(\nabla\psi)^2} \]
-</p>
- </td></tr>
-<tr id="row_0_0_52_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_iris.html" target="_self">Iris</a></td><td class="desc">Returns zero outside psipmax and inside psipmin, otherwise 1 </p><p class="formulaDsp">
-\[ \begin{cases} 1 \text{ if } \psi_{p,min} &lt; \psi_p(R,Z) &lt; \psi_{p,max}\\ 0 \text{ else} \end{cases}\]
-</p>
- </td></tr>
-<tr id="row_0_0_53_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_liseikin___x_x.html" target="_self">Liseikin_XX</a></td><td class="desc">The xx-component of the Liseikin monitor metric </p><p class="formulaDsp">
+<tr id="row_0_0_38_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_grad_b_hat_p.html" target="_self">GradBHatP</a></td><td class="desc">\( \nabla_\parallel b^\varphi \) </td></tr>
+<tr id="row_0_0_39_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_grad_b_hat_r.html" target="_self">GradBHatR</a></td><td class="desc">\( \nabla_\parallel b^R \) </td></tr>
+<tr id="row_0_0_40_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_grad_b_hat_z.html" target="_self">GradBHatZ</a></td><td class="desc">\( \nabla_\parallel b^Z \) </td></tr>
+<tr id="row_0_0_41_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_grad_ln_b.html" target="_self">GradLnB</a></td><td class="desc">\( \nabla_\parallel \ln{(B)} \) </td></tr>
+<tr id="row_0_0_42_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_hector.html" target="_self">Hector</a></td><td class="desc">The High PrEcision Conformal grid generaTOR </td></tr>
+<tr id="row_0_0_43_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_inv_b.html" target="_self">InvB</a></td><td class="desc">\( |B|^{-1} = R/R_0\sqrt{I^2+(\nabla\psi)^2} \) </td></tr>
+<tr id="row_0_0_44_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_liseikin___x_x.html" target="_self">Liseikin_XX</a></td><td class="desc">The xx-component of the Liseikin monitor metric </p><p class="formulaDsp">
 \[ \chi^{xx} = (\psi_y^2+k^2\psi_x^2 + \varepsilon)/\sqrt{\det \chi} \]
 </p>
  </td></tr>
-<tr id="row_0_0_54_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_liseikin___x_y.html" target="_self">Liseikin_XY</a></td><td class="desc">The xy-component of the Liseikin monitor metric </p><p class="formulaDsp">
+<tr id="row_0_0_45_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_liseikin___x_y.html" target="_self">Liseikin_XY</a></td><td class="desc">The xy-component of the Liseikin monitor metric </p><p class="formulaDsp">
 \[ \chi^{xy} = (-\psi_x\psi_y+k^2\psi_x\psi_y )/\sqrt{\det \chi} \]
 </p>
  </td></tr>
-<tr id="row_0_0_55_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_liseikin___y_y.html" target="_self">Liseikin_YY</a></td><td class="desc">The yy-component of the Liseikin monitor metric </p><p class="formulaDsp">
+<tr id="row_0_0_46_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_liseikin___y_y.html" target="_self">Liseikin_YY</a></td><td class="desc">The yy-component of the Liseikin monitor metric </p><p class="formulaDsp">
 \[ \chi^{yy} = (\varepsilon+\psi_x^2+k^2\psi_y^2 )/\sqrt{\det \chi} \]
 </p>
  </td></tr>
-<tr id="row_0_0_56_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_ln_b.html" target="_self">LnB</a></td><td class="desc"><p class="formulaDsp">
-\[ \ln{|B|} \]
-</p>
- </td></tr>
-<tr id="row_0_0_57_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_log_polar_generator.html" target="_self">LogPolarGenerator</a></td><td class="desc">Log Polar coordinates (conformal) </td></tr>
-<tr id="row_0_0_58_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_nabla_psi_inv.html" target="_self">NablaPsiInv</a></td><td class="desc">A weight function for the <a class="el" href="structdg_1_1geo_1_1_hector.html" title="The High PrEcision Conformal grid generaTOR. ">Hector</a> algorithm </p><p class="formulaDsp">
+<tr id="row_0_0_47_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_ln_b.html" target="_self">LnB</a></td><td class="desc">\( \ln{|B|} \) </td></tr>
+<tr id="row_0_0_48_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_log_polar_generator.html" target="_self">LogPolarGenerator</a></td><td class="desc">Log Polar coordinates (conformal) </td></tr>
+<tr id="row_0_0_49_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_nabla_psi_inv.html" target="_self">NablaPsiInv</a></td><td class="desc">A weight function for the <a class="el" href="structdg_1_1geo_1_1_hector.html" title="The High PrEcision Conformal grid generaTOR. ">Hector</a> algorithm </p><p class="formulaDsp">
 \[ |\nabla\psi|^{-1} = (\psi_x^2 + \psi_y^2)^{-1/2} \]
 </p>
  </td></tr>
-<tr id="row_0_0_59_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_nabla_psi_inv_x.html" target="_self">NablaPsiInvX</a></td><td class="desc">Derivative of the weight function </p><p class="formulaDsp">
+<tr id="row_0_0_50_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_nabla_psi_inv_x.html" target="_self">NablaPsiInvX</a></td><td class="desc">Derivative of the weight function </p><p class="formulaDsp">
 \[\partial_x|\nabla\psi|^{-1} \]
 </p>
  </td></tr>
-<tr id="row_0_0_60_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_nabla_psi_inv_y.html" target="_self">NablaPsiInvY</a></td><td class="desc">Derivative of the weight function </p><p class="formulaDsp">
+<tr id="row_0_0_51_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_nabla_psi_inv_y.html" target="_self">NablaPsiInvY</a></td><td class="desc">Derivative of the weight function </p><p class="formulaDsp">
 \[ \partial_y|\nabla\psi|^{-1} \]
 </p>
  </td></tr>
-<tr id="row_0_0_61_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_nprofile.html" target="_self">Nprofile</a></td><td class="desc">Returns density profile with variable peak amplitude and background amplitude </p><p class="formulaDsp">
-\[ N(R,Z)=\begin{cases} A_{bg} + A_{peak}\frac{\psi_p(R,Z)} {\psi_p(R_0, 0)} \text{ if }\psi_p &lt; \psi_{p,max} \\ A_{bg} \text{ else } \end{cases} \]
-</p>
- </td></tr>
-<tr id="row_0_0_62_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_polar_generator.html" target="_self">PolarGenerator</a></td><td class="desc">Polar coordinates </td></tr>
-<tr id="row_0_0_63_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_psi_limiter.html" target="_self">PsiLimiter</a></td><td class="desc">Sets values to one outside psipmaxcut, zero else </p><p class="formulaDsp">
-\[ \begin{cases} 1 \text{ if } \psi_p(R,Z) &gt; \psi_{p,maxlim} \\ 0 \text{ else} \end{cases}\]
-</p>
- </td></tr>
-<tr id="row_0_0_64_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_psi_pupil.html" target="_self">PsiPupil</a></td><td class="desc">Returns psi inside psipmax and psipmax outside psipmax </p><p class="formulaDsp">
-\[ \begin{cases} \psi_{p,max} \text{ if } \psi_p(R,Z) &gt; \psi_{p,max} \\ \psi_p(R,Z) \text{ else} \end{cases}\]
-</p>
- </td></tr>
-<tr id="row_0_0_65_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_pupil.html" target="_self">Pupil</a></td><td class="desc">Returns zero outside psipmaxcut otherwise 1 </p><p class="formulaDsp">
-\[ \begin{cases} 0 \text{ if } \psi_p(R,Z) &gt; \psi_{p,maxcut} \\ 1 \text{ else} \end{cases}\]
-</p>
- </td></tr>
-<tr id="row_0_0_66_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_ribeiro.html" target="_self">Ribeiro</a></td><td class="desc">A two-dimensional grid based on "almost-conformal" coordinates by Ribeiro and Scott 2010 </td></tr>
-<tr id="row_0_0_67_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_ribeiro_flux_generator.html" target="_self">RibeiroFluxGenerator</a></td><td class="desc">Same as the <a class="el" href="structdg_1_1geo_1_1_ribeiro.html" title="A two-dimensional grid based on &quot;almost-conformal&quot; coordinates by Ribeiro and Scott 2010...">Ribeiro</a> class just but uses psi as a flux label directly </td></tr>
-<tr id="row_0_0_68_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_ribeiro_x.html" target="_self">RibeiroX</a></td><td class="desc">A two-dimensional grid based on "almost-conformal" coordinates by Ribeiro and Scott 2010 </td></tr>
-<tr id="row_0_0_69_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_safety_factor.html" target="_self">SafetyFactor</a></td><td class="desc">Class for the evaluation of the safety factor q </p><p class="formulaDsp">
+<tr id="row_0_0_52_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_polar_generator.html" target="_self">PolarGenerator</a></td><td class="desc">Polar coordinates </td></tr>
+<tr id="row_0_0_53_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_real_curvilinear_grid2d.html" target="_self">RealCurvilinearGrid2d</a></td><td class="desc">A two-dimensional grid based on curvilinear coordinates </td></tr>
+<tr id="row_0_0_54_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_real_curvilinear_grid_x2d.html" target="_self">RealCurvilinearGridX2d</a></td><td class="desc">A two-dimensional grid based on curvilinear coordinates </td></tr>
+<tr id="row_0_0_55_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_real_curvilinear_m_p_i_grid2d.html" target="_self">RealCurvilinearMPIGrid2d</a></td><td class="desc">A two-dimensional MPI grid based on curvilinear coordinates </td></tr>
+<tr id="row_0_0_56_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_real_curvilinear_product_grid3d.html" target="_self">RealCurvilinearProductGrid3d</a></td><td class="desc">A 2x1 curvilinear product space grid </td></tr>
+<tr id="row_0_0_57_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_real_curvilinear_product_grid_x3d.html" target="_self">RealCurvilinearProductGridX3d</a></td><td class="desc">A three-dimensional grid based on curvilinear coordinates </td></tr>
+<tr id="row_0_0_58_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_real_curvilinear_product_m_p_i_grid3d.html" target="_self">RealCurvilinearProductMPIGrid3d</a></td><td class="desc">A 2x1 curvilinear product space MPI grid </td></tr>
+<tr id="row_0_0_59_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_real_curvilinear_refined_grid_x2d.html" target="_self">RealCurvilinearRefinedGridX2d</a></td><td class="desc">A two-dimensional grid based on curvilinear coordinates </td></tr>
+<tr id="row_0_0_60_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_real_curvilinear_refined_product_grid_x3d.html" target="_self">RealCurvilinearRefinedProductGridX3d</a></td><td class="desc">A three-dimensional grid based on curvilinear coordinates </td></tr>
+<tr id="row_0_0_61_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_real_cylindrical_functor.html" target="_self">RealCylindricalFunctor</a></td><td class="desc">Inject both 2d and 3d <code>operator()</code> to a 2d functor </td></tr>
+<tr id="row_0_0_62_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_ribeiro.html" target="_self">Ribeiro</a></td><td class="desc">A two-dimensional grid based on "almost-conformal" coordinates by Ribeiro and Scott 2010 </td></tr>
+<tr id="row_0_0_63_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_ribeiro_flux_generator.html" target="_self">RibeiroFluxGenerator</a></td><td class="desc">Same as the <a class="el" href="structdg_1_1geo_1_1_ribeiro.html" title="A two-dimensional grid based on &quot;almost-conformal&quot; coordinates by Ribeiro and Scott 2010...">Ribeiro</a> class just but uses psi as a flux label directly </td></tr>
+<tr id="row_0_0_64_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_ribeiro_x.html" target="_self">RibeiroX</a></td><td class="desc">A two-dimensional grid based on "almost-conformal" coordinates by Ribeiro and Scott 2010 </td></tr>
+<tr id="row_0_0_65_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_safety_factor.html" target="_self">SafetyFactor</a></td><td class="desc">Class for the evaluation of the safety factor q </p><p class="formulaDsp">
 \[ q(\psi_0) = \frac{1}{2\pi} \int dV |\nabla\psi_p| \delta(\psi_p-\psi_0) \alpha( R,Z) \]
 </p>
  </td></tr>
-<tr id="row_0_0_70_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_separatrix_orthogonal.html" target="_self">SeparatrixOrthogonal</a></td><td class="desc">Choose points on separatrix and construct grid from there </td></tr>
-<tr id="row_0_0_71_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_simple_orthogonal.html" target="_self">SimpleOrthogonal</a></td><td class="desc">Generate a simple orthogonal grid </td></tr>
-<tr id="row_0_0_72_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_simple_orthogonal_x.html" target="_self">SimpleOrthogonalX</a></td><td class="desc">Choose points on inside or outside line </td></tr>
-<tr id="row_0_0_73_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_tanh_source.html" target="_self">TanhSource</a></td><td class="desc">Source for quantities N ... dtlnN = ...+ source/N Returns a tanh profile shifted to \( \psi_{p,min}-3\alpha\) </p><p class="formulaDsp">
-\[ 0.5\left( 1 + \tanh\left( -\frac{\psi_p(R,Z) - \psi_{p,min} + 3\alpha}{\alpha}\right)\right) \]
-</p>
- </td></tr>
-<tr id="row_0_0_74_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html" target="_self">TokamakMagneticField</a></td><td class="desc">Container class of R, psi and Ipol </td></tr>
-<tr id="row_0_0_75_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_zonal_flow.html" target="_self">ZonalFlow</a></td><td class="desc">Returns zonal flow field </p><p class="formulaDsp">
-\[ N(R,Z)=\begin{cases} A_{bg} |\cos(2\pi\psi_p(R,Z) k_\psi)| \text{ if }\psi_p &lt; \psi_{p,max} \\ 0 \text{ else } \end{cases} \]
+<tr id="row_0_0_66_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_separatrix_orthogonal.html" target="_self">SeparatrixOrthogonal</a></td><td class="desc">Choose points on separatrix and construct grid from there </td></tr>
+<tr id="row_0_0_67_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_simple_orthogonal.html" target="_self">SimpleOrthogonal</a></td><td class="desc">Generate a simple orthogonal grid </td></tr>
+<tr id="row_0_0_68_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_simple_orthogonal_x.html" target="_self">SimpleOrthogonalX</a></td><td class="desc">Choose points on inside or outside line </td></tr>
+<tr id="row_0_0_69_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html" target="_self">TokamakMagneticField</a></td><td class="desc">A tokamak field as given by R0, Psi and Ipol </td></tr>
+<tr id="row_0_0_70_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_true_curvature_kappa_p.html" target="_self">TrueCurvatureKappaP</a></td><td class="desc">True \( \mathcal{K}^\varphi_{\vec{\kappa}} \) </td></tr>
+<tr id="row_0_0_71_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_true_curvature_kappa_r.html" target="_self">TrueCurvatureKappaR</a></td><td class="desc">True \( \mathcal{K}^R_{\vec{\kappa}} \) </td></tr>
+<tr id="row_0_0_72_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_true_curvature_kappa_z.html" target="_self">TrueCurvatureKappaZ</a></td><td class="desc">True \( \mathcal{K}^Z_{\vec{\kappa}} \) </td></tr>
+<tr id="row_0_0_73_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_true_curvature_nabla_b_p.html" target="_self">TrueCurvatureNablaBP</a></td><td class="desc">True \( \mathcal{K}^{\varphi}_{\nabla B} \) </td></tr>
+<tr id="row_0_0_74_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_true_curvature_nabla_b_r.html" target="_self">TrueCurvatureNablaBR</a></td><td class="desc">True \( \mathcal{K}^{R}_{\nabla B} \) </td></tr>
+<tr id="row_0_0_75_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_true_curvature_nabla_b_z.html" target="_self">TrueCurvatureNablaBZ</a></td><td class="desc">True \( \mathcal{K}^{Z}_{\nabla B} \) </td></tr>
+<tr id="row_0_0_76_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_true_div_curvature_kappa.html" target="_self">TrueDivCurvatureKappa</a></td><td class="desc">True \( \vec{\nabla}\cdot \mathcal{K}_{\vec{\kappa}} \) </td></tr>
+<tr id="row_0_0_77_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_true_div_curvature_nabla_b.html" target="_self">TrueDivCurvatureNablaB</a></td><td class="desc">True \( \vec{\nabla}\cdot \mathcal{K}_{\nabla B} \) </td></tr>
+<tr id="row_0_0_78_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1geo_1_1_z_cutter.html" target="_self">ZCutter</a></td><td class="desc"><code> (double Z_X)</code> </p><p class="formulaDsp">
+\[ f(R,Z)= \begin{cases} 1 \text{ if } Z &gt; Z_X \\ 0 \text{ else } \end{cases} \]
 </p>
  </td></tr>
 </table>
@@ -435,7 +357,7 @@ $(document).ready(function(){initNavTree('annotated.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Aug 28 2018 23:03:04 for Geometries by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:57 for Extension: Geometries by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

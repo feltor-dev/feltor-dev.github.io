@@ -15,7 +15,7 @@ var classdg_1_1_operator =
     [ "operator-", "classdg_1_1_operator.html#a73556e06534d0076ae9eb69ef9009485", null ],
     [ "operator-=", "classdg_1_1_operator.html#aae1278088b73bd0ee1e27fcd0e7ff3c7", null ],
     [ "operator==", "classdg_1_1_operator.html#a508b5ee0bfabfe96bbe7894f6d23fdf0", null ],
-    [ "resize", "classdg_1_1_operator.html#a4c03dee26cfa432aecb8d9a5b2b2e56c", null ],
+    [ "resize", "classdg_1_1_operator.html#a44444c7825eaa78694f13ad3fed1f5e8", null ],
     [ "size", "classdg_1_1_operator.html#a27a50258a872a793ac1976e0264dca8d", null ],
     [ "swap_lines", "classdg_1_1_operator.html#a83eadeace6ca788f8fd06a3210674baa", null ],
     [ "transpose", "classdg_1_1_operator.html#ae4121fa51cf89a4975c216617c287ac0", null ],

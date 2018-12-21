@@ -1,14 +1,12 @@
 var multiply_8h =
 [
-    [ "determinant", "multiply_8h.html#ga677ecbd54bef59027114b7ab2da6b9f0", null ],
-    [ "invert", "multiply_8h.html#gac25972fa9c2741c9a18a3f672acb5962", null ],
-    [ "multiply2d", "multiply_8h.html#gaa587bbf994bf989afb64a851c928b930", null ],
-    [ "multiply3d", "multiply_8h.html#gaf9bae390e3376a971ec6b4190c204542", null ],
-    [ "pointwiseDivide", "multiply_8h.html#ga966fdaa02f2747b9a31bdf5ee9247acf", null ],
-    [ "pointwiseDot", "multiply_8h.html#gad2a387e1bcf735b1784c42d661664c5b", null ],
-    [ "pointwiseDot", "multiply_8h.html#ga1cf9f3b3d7ac14eeb3973b7d48162ee0", null ],
-    [ "scal", "multiply_8h.html#ga2706e25b9bab42b87ec2987e5a51a8b0", null ],
-    [ "scal", "multiply_8h.html#gaf1610dea3d24161146b0dd12478276e8", null ],
-    [ "sqrt", "multiply_8h.html#gad6e077288a8dac522ac3d69e18ff4731", null ],
-    [ "volume", "multiply_8h.html#ga9ce0c1d5eeab50e58f80f2cff7f27b94", null ]
+    [ "determinant", "multiply_8h.html#ga6b6d04226d2382a21c737d9bcd23a00b", null ],
+    [ "determinant2d", "multiply_8h.html#ga439491ad1ce54f447e75e67ff9235c18", null ],
+    [ "inv_multiply2d", "multiply_8h.html#ga1ce7cb0f74bb9c80b839b4771b8657d2", null ],
+    [ "inv_multiply3d", "multiply_8h.html#ga167a888144d611c14d05c2142fd95064", null ],
+    [ "multiply2d", "multiply_8h.html#ga1b07c5a3d2efa00644eb4e6f1248d07a", null ],
+    [ "multiply3d", "multiply_8h.html#ga7e100a5b20fd970ebbc1ef5e9bb018e7", null ],
+    [ "scal", "multiply_8h.html#gab8253e13a6e951887fc59592af0717b3", null ],
+    [ "volume", "multiply_8h.html#ga7356ee29303d9600291cd7489085492d", null ],
+    [ "volume2d", "multiply_8h.html#gabca3e13e824c6cf0ec1606f035406c23", null ]
 ];

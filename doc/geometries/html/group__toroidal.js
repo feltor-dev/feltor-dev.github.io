@@ -1,6 +1,6 @@
 var group__toroidal =
 [
-    [ "createIpol", "group__toroidal.html#ga4406fe56ddb226b9752d51df87c04db9", null ],
-    [ "createMagField", "group__toroidal.html#ga1b467a106a28fe8b8ff77a374518c829", null ],
-    [ "createPsip", "group__toroidal.html#gacd371ac3baef2588c08c97cad964fa04", null ]
+    [ "createIpol", "group__toroidal.html#ga4ea9852e07a0fcbf473cafa8625d691b", null ],
+    [ "createMagField", "group__toroidal.html#ga1d02ad623c716a9b80b270c3ceeea70f", null ],
+    [ "createPsip", "group__toroidal.html#ga62d4a526e2170227a53e19f40716a061", null ]
 ];

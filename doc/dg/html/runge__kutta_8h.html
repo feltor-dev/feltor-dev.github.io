@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -105,68 +105,33 @@ $(document).ready(function(){initNavTree('runge__kutta_8h.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>contains runge-kutta explicit time-integrators  
+<p>Runge-Kutta explicit time-integrators.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;array&gt;</code><br />
 <code>#include &quot;<a class="el" href="exceptions_8h_source.html">backend/exceptions.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="tableau_8h_source.html">tableau.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="blas1_8h_source.html">blas1.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for runge_kutta.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="runge__kutta_8h__incl.png" border="0" usemap="#runge__kutta_8h" alt=""/></div>
-<map name="runge__kutta_8h" id="runge__kutta_8h">
-<area shape="rect" id="node4" href="exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="2726,80,2875,107"/>
-<area shape="rect" id="node8" href="blas1_8h.html" title="blas1.h" alt="" coords="1486,80,1550,107"/>
-<area shape="rect" id="node10" href="tensor__traits_8h.html" title="backend/tensor_traits.h" alt="" coords="1452,244,1610,271"/>
-<area shape="rect" id="node17" href="tensor__traits__scalar_8h.html" title="backend/tensor_traits\l_scalar.h" alt="" coords="1592,155,1739,196"/>
-<area shape="rect" id="node18" href="tensor__traits__thrust_8h.html" title="backend/tensor_traits\l_thrust.h" alt="" coords="1814,155,1960,196"/>
-<area shape="rect" id="node21" href="tensor__traits__cusp_8h.html" title="backend/tensor_traits\l_cusp.h" alt="" coords="336,155,483,196"/>
-<area shape="rect" id="node28" href="tensor__traits__std_8h.html" title="backend/tensor_traits\l_std.h" alt="" coords="2475,155,2622,196"/>
-<area shape="rect" id="node32" href="mpi__vector_8h.html" title="backend/mpi_vector.h" alt="" coords="2021,162,2172,189"/>
-<area shape="rect" id="node43" href="subroutines_8h.html" title="subroutines.h" alt="" coords="1468,162,1568,189"/>
-<area shape="rect" id="node13" href="scalar__categories_8h.html" title="scalar_categories.h" alt="" coords="1022,319,1157,345"/>
-<area shape="rect" id="node14" href="vector__categories_8h.html" title="vector_categories.h" alt="" coords="1232,393,1368,420"/>
-<area shape="rect" id="node15" href="matrix__categories_8h.html" title="matrix_categories.h" alt="" coords="1127,468,1263,495"/>
-<area shape="rect" id="node16" href="execution__policy_8h.html" title="execution_policy.h" alt="" coords="1283,319,1414,345"/>
-<area shape="rect" id="node34" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/mpi__accumulate_8h.html" title="exblas/mpi_accumulate.h" alt="" coords="2427,244,2598,271"/>
-<area shape="rect" id="node38" href="mpi__communicator_8h.html" title="mpi_communicator.h" alt="" coords="2025,244,2168,271"/>
-<area shape="rect" id="node40" href="memory_8h.html" title="memory.h" alt="" coords="2192,244,2272,271"/>
-<area shape="rect" id="node35" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/accumulate_8h.html" title="accumulate.h" alt="" coords="2462,319,2562,345"/>
-<area shape="rect" id="node36" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/config_8h.html" title="config.h" alt="" coords="2478,393,2546,420"/>
-<area shape="rect" id="node44" href="functions_8h.html" title="contains some utility functions for the evaluation() routines " alt="" coords="1214,244,1376,271"/>
-</map>
-</div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="runge__kutta_8h__dep__incl.png" border="0" usemap="#runge__kutta_8hdep" alt=""/></div>
-<map name="runge__kutta_8hdep" id="runge__kutta_8hdep">
-<area shape="rect" id="node2" href="multistep_8h.html" title="contains multistep explicit&amp; implicit time&#45;integrators " alt="" coords="13,80,99,107"/>
-</map>
-</div>
+<code>#include &quot;<a class="el" href="implicit_8h_source.html">implicit.h</a>&quot;</code><br />
 </div>
 <p><a href="runge__kutta_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1rk__coeff.html">dg::rk_coeff&lt; k, real_type &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">coefficients for explicit <a class="el" href="structdg_1_1_r_k.html" title="Struct for Runge-Kutta explicit time-integration, classic formulation . ">RK</a> methods  <a href="structdg_1_1rk__coeff.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1rk__classic.html">dg::rk_classic&lt; s, real_type &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">coefficients for explicit <a class="el" href="structdg_1_1_r_k.html" title="Struct for Runge-Kutta explicit time-integration, classic formulation . ">RK</a> methods  <a href="structdg_1_1rk__classic.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_r_k__opt.html">dg::RK_opt&lt; s, ContainerType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for Runge-Kutta explicit time-integration optimized for few vector additions </p><p class="formulaDsp">
-\[ \begin{align} u^{n+1} = u^{n} + \Delta t\sum_{j=1}^s b_j k_j \\ k_j = f\left( u^n + \Delta t \sum_{l=1}^j a_{jl} k_l\right) \end{align} \]
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_e_r_k_step.html">dg::ERKStep&lt; ContainerType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for Embedded Runge Kutta explicit time-step with error estimate </p><p class="formulaDsp">
+\[ \begin{align} k_i = f\left( t^n + c_i \Delta t, u^n + \Delta t \sum_{j=1}^{s-1} a_{ij} k_j\right) \\ u^{n+1} = u^{n} + \Delta t\sum_{j=1}^s b_j k_j \\ \tilde u^{n+1} = u^{n} + \Delta t\sum_{j=1}^s \tilde b_j k_j \end{align} \]
 </p>
-<p>.  <a href="structdg_1_1_r_k__opt.html#details">More...</a><br /></td></tr>
+<p>.  <a href="structdg_1_1_e_r_k_step.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_r_k.html">dg::RK&lt; s, ContainerType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for Runge-Kutta explicit time-integration, classic formulation </p><p class="formulaDsp">
-\[ \begin{align} u^{n+1} = u^{n} + \Delta t\sum_{j=1}^s b_j k_j \\ k_j = f\left( u^n + \Delta t \sum_{l=1}^j a_{jl} k_l\right) \end{align} \]
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_a_r_k_step.html">dg::ARKStep&lt; ContainerType, SolverType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for Additive Runge Kutta (semi-implicit) time-step with error estimate following <a href="http://runge.math.smu.edu/arkode_dev/doc/guide/build/html/Mathematics.html#arkstep-additive-runge-kutta-methods">The ARKode library</a>  <a href="structdg_1_1_a_r_k_step.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_runge_kutta.html">dg::RungeKutta&lt; ContainerType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for Runge-Kutta fixed-step explicit time-integration </p><p class="formulaDsp">
+\[ \begin{align} k_i = f\left( t^n + c_i \Delta t, u^n + \Delta t \sum_{j=1}^{s-1} a_{ij} k_j\right) \\ u^{n+1} = u^{n} + \Delta t\sum_{j=1}^s b_j k_j \end{align} \]
 </p>
-<p>.  <a href="structdg_1_1_r_k.html#details">More...</a><br /></td></tr>
+<p>.  <a href="structdg_1_1_runge_kutta.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -177,24 +142,20 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga15213ce3b66c2d24d60d064a2871917d"><td class="memTemplParams" colspan="2">template&lt;unsigned s, class RHS , class ContainerType &gt; </td></tr>
-<tr class="memitem:ga15213ce3b66c2d24d60d064a2871917d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__time.html#ga15213ce3b66c2d24d60d064a2871917d">dg::stepperRK</a> (RHS &amp;rhs, get_value_type&lt; ContainerType &gt; t_begin, const ContainerType &amp;begin, get_value_type&lt; ContainerType &gt; t_end, ContainerType &amp;end, unsigned N)</td></tr>
-<tr class="memdesc:ga15213ce3b66c2d24d60d064a2871917d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrate differential equation with a stage s Runge-Kutta scheme and a fixed number of steps.  <a href="group__time.html#ga15213ce3b66c2d24d60d064a2871917d">More...</a><br /></td></tr>
-<tr class="separator:ga15213ce3b66c2d24d60d064a2871917d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad6229d5ae4b046d09c402cdab727d207"><td class="memTemplParams" colspan="2">template&lt;unsigned s, class RHS , class ContainerType &gt; </td></tr>
-<tr class="memitem:gad6229d5ae4b046d09c402cdab727d207"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__time.html#gad6229d5ae4b046d09c402cdab727d207">dg::integrateRK</a> (RHS &amp;rhs, get_value_type&lt; ContainerType &gt; t_begin, const ContainerType &amp;begin, get_value_type&lt; ContainerType &gt; t_end, ContainerType &amp;end, get_value_type&lt; ContainerType &gt; eps_abs, unsigned NT_init=2)</td></tr>
-<tr class="memdesc:gad6229d5ae4b046d09c402cdab727d207"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrates the differential equation using a stage s Runge-Kutta scheme, a rudimentary stepsize-control and monitoring the sanity of integration.  <a href="group__time.html#gad6229d5ae4b046d09c402cdab727d207">More...</a><br /></td></tr>
-<tr class="separator:gad6229d5ae4b046d09c402cdab727d207"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1b3aa83f9b7e90dbbd3cdac88654e04b"><td class="memTemplParams" colspan="2">template&lt;class RHS , class ContainerType &gt; </td></tr>
+<tr class="memitem:ga1b3aa83f9b7e90dbbd3cdac88654e04b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__time.html#ga1b3aa83f9b7e90dbbd3cdac88654e04b">dg::stepperRK</a> (ConvertsToButcherTableau&lt; get_value_type&lt; ContainerType &gt;&gt; tableau, RHS &amp;rhs, get_value_type&lt; ContainerType &gt; t_begin, const ContainerType &amp;begin, get_value_type&lt; ContainerType &gt; t_end, ContainerType &amp;end, unsigned N)</td></tr>
+<tr class="memdesc:ga1b3aa83f9b7e90dbbd3cdac88654e04b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrate differential equation with an explicit Runge-Kutta scheme and a fixed number of steps.  <a href="group__time.html#ga1b3aa83f9b7e90dbbd3cdac88654e04b">More...</a><br /></td></tr>
+<tr class="separator:ga1b3aa83f9b7e90dbbd3cdac88654e04b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>contains runge-kutta explicit time-integrators </p>
+<div class="textblock"><p>Runge-Kutta explicit time-integrators. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="runge__kutta_8h.html">runge_kutta.h</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -1,41 +1,41 @@
 var group__generators__geo =
 [
     [ "FluxGenerator", "structdg_1_1geo_1_1_flux_generator.html", [
-      [ "FluxGenerator", "structdg_1_1geo_1_1_flux_generator.html#a2a79a7f6af03e5735efa398e94ea05d0", null ],
+      [ "FluxGenerator", "structdg_1_1geo_1_1_flux_generator.html#aef95b5a2b3ce9bf5c5044d8390308aaa", null ],
       [ "clone", "structdg_1_1geo_1_1_flux_generator.html#ad7c8db42259626d035c8ea3339777d41", null ]
     ] ],
     [ "RibeiroFluxGenerator", "structdg_1_1geo_1_1_ribeiro_flux_generator.html", [
-      [ "RibeiroFluxGenerator", "structdg_1_1geo_1_1_ribeiro_flux_generator.html#ab0f8ec8635f28c5041fabf8f98972fe6", null ],
+      [ "RibeiroFluxGenerator", "structdg_1_1geo_1_1_ribeiro_flux_generator.html#ae6b958cac3d065c8057b575e20ed4c14", null ],
       [ "clone", "structdg_1_1geo_1_1_ribeiro_flux_generator.html#a03b7fb9d1392ff4931a897e82e0fd873", null ]
     ] ],
-    [ "aGenerator2d", "structdg_1_1geo_1_1a_generator2d.html", [
-      [ "~aGenerator2d", "structdg_1_1geo_1_1a_generator2d.html#a20e1572cd6b64a7dbcc31b31e271efb1", null ],
-      [ "aGenerator2d", "structdg_1_1geo_1_1a_generator2d.html#a1ba45e17451a791fe32bdf64a15d42b0", null ],
-      [ "aGenerator2d", "structdg_1_1geo_1_1a_generator2d.html#acbcab00c8b85625ac0a0ebd72b1ae3f3", null ],
-      [ "clone", "structdg_1_1geo_1_1a_generator2d.html#a9e58be43f55c993a0e746ed80f3df6af", null ],
-      [ "generate", "structdg_1_1geo_1_1a_generator2d.html#ad2fa8cacf200553165e0bd69aa1147ba", null ],
-      [ "height", "structdg_1_1geo_1_1a_generator2d.html#aa5b78cd2bfdc11b17d55e4f7a9b5cd53", null ],
-      [ "isOrthogonal", "structdg_1_1geo_1_1a_generator2d.html#aae8c7c6603c706d5b86aece44371fe7b", null ],
-      [ "operator=", "structdg_1_1geo_1_1a_generator2d.html#a659ff8773653987dc7dfcd0e5639d18f", null ],
-      [ "width", "structdg_1_1geo_1_1a_generator2d.html#aa939f37907b2aeb44e00433dad2d087a", null ]
+    [ "aRealGenerator2d", "structdg_1_1geo_1_1a_real_generator2d.html", [
+      [ "~aRealGenerator2d", "structdg_1_1geo_1_1a_real_generator2d.html#a1fc124e34b2aa512ed258aad2cc81741", null ],
+      [ "aRealGenerator2d", "structdg_1_1geo_1_1a_real_generator2d.html#a5723d952cbc70329a43cb4ce79bc0850", null ],
+      [ "aRealGenerator2d", "structdg_1_1geo_1_1a_real_generator2d.html#ab4668c6ee09db8331e2dcf0948996e40", null ],
+      [ "clone", "structdg_1_1geo_1_1a_real_generator2d.html#a8ad214a31cb801e413fbe6cd3de548f2", null ],
+      [ "generate", "structdg_1_1geo_1_1a_real_generator2d.html#a76dbbeee37a3679e0c128f6887420a09", null ],
+      [ "height", "structdg_1_1geo_1_1a_real_generator2d.html#ae07b0e7b6b9f3e406eff6a5c7ecc5599", null ],
+      [ "isOrthogonal", "structdg_1_1geo_1_1a_real_generator2d.html#a87ca554f5e07b34f401f26fdae310c59", null ],
+      [ "operator=", "structdg_1_1geo_1_1a_real_generator2d.html#ad85bedbf06e7cadb2a27ba02807a1760", null ],
+      [ "width", "structdg_1_1geo_1_1a_real_generator2d.html#ad2f83e627dcf61953136a282c6cf901f", null ]
     ] ],
-    [ "aGeneratorX2d", "structdg_1_1geo_1_1a_generator_x2d.html", [
-      [ "~aGeneratorX2d", "structdg_1_1geo_1_1a_generator_x2d.html#a75ad9dfa1ef6af69482b64a943441ca8", null ],
-      [ "aGeneratorX2d", "structdg_1_1geo_1_1a_generator_x2d.html#a9615acb98205b533c7f6c686e256fdfc", null ],
-      [ "aGeneratorX2d", "structdg_1_1geo_1_1a_generator_x2d.html#a0918e8b57f5c2dda9bd77b61c3913e59", null ],
-      [ "clone", "structdg_1_1geo_1_1a_generator_x2d.html#ae667dad34791d7516f6b08caaeb7c1b2", null ],
-      [ "eta0", "structdg_1_1geo_1_1a_generator_x2d.html#af28add265db7559930ddeade595d94b7", null ],
-      [ "eta1", "structdg_1_1geo_1_1a_generator_x2d.html#a2e3ee0637c29e182dd3b696baece2152", null ],
-      [ "generate", "structdg_1_1geo_1_1a_generator_x2d.html#ac988b01b2177fa01fc74f9eba192cec9", null ],
-      [ "isOrthogonal", "structdg_1_1geo_1_1a_generator_x2d.html#a0044b9c290a3ec14d89a7633f7689417", null ],
-      [ "operator=", "structdg_1_1geo_1_1a_generator_x2d.html#a2c4330f49a3ea57eebd108988bdf5cca", null ],
-      [ "zeta0", "structdg_1_1geo_1_1a_generator_x2d.html#ab6927f3304adebab7f97c829dd2ae826", null ],
-      [ "zeta1", "structdg_1_1geo_1_1a_generator_x2d.html#ac9056f356e77253c0fadcc67ec8eac24", null ]
+    [ "aRealGeneratorX2d", "structdg_1_1geo_1_1a_real_generator_x2d.html", [
+      [ "~aRealGeneratorX2d", "structdg_1_1geo_1_1a_real_generator_x2d.html#a58ad3e78765b49386a4558a28e2e7cfc", null ],
+      [ "aRealGeneratorX2d", "structdg_1_1geo_1_1a_real_generator_x2d.html#a3efa833422582b2d09914a3edd69b7da", null ],
+      [ "aRealGeneratorX2d", "structdg_1_1geo_1_1a_real_generator_x2d.html#a3e845c65978154cf3fa8e844d77c3dea", null ],
+      [ "clone", "structdg_1_1geo_1_1a_real_generator_x2d.html#af0185c7e2782a7688d26062f3dc5a258", null ],
+      [ "eta0", "structdg_1_1geo_1_1a_real_generator_x2d.html#a4205c0a5cd8beef9e497998af4a9f637", null ],
+      [ "eta1", "structdg_1_1geo_1_1a_real_generator_x2d.html#aa01d1f45432084e9b447299f16564df9", null ],
+      [ "generate", "structdg_1_1geo_1_1a_real_generator_x2d.html#a99a1e8abb1b24e17bcea435dd965927a", null ],
+      [ "isOrthogonal", "structdg_1_1geo_1_1a_real_generator_x2d.html#a486f0cec7e9c82146184967f1dd1afee", null ],
+      [ "operator=", "structdg_1_1geo_1_1a_real_generator_x2d.html#aece3389387c5ea71e7b73eab014aa58d", null ],
+      [ "zeta0", "structdg_1_1geo_1_1a_real_generator_x2d.html#a3d5606ff39709ba99c6df22add335ef9", null ],
+      [ "zeta1", "structdg_1_1geo_1_1a_real_generator_x2d.html#a903b81e434916c8e087727bf16a00179", null ]
     ] ],
     [ "Hector", "structdg_1_1geo_1_1_hector.html", [
-      [ "Hector", "structdg_1_1geo_1_1_hector.html#a012a5464b4027d2329e34fc0b0eef996", null ],
-      [ "Hector", "structdg_1_1geo_1_1_hector.html#a4c27d0f4763342bda8445f243019e1b1", null ],
-      [ "Hector", "structdg_1_1geo_1_1_hector.html#a2d13856cbb84c0ffa1624c7b3c3c175e", null ],
+      [ "Hector", "structdg_1_1geo_1_1_hector.html#ad4972eb79f779e4748dbac8b582d0e17", null ],
+      [ "Hector", "structdg_1_1geo_1_1_hector.html#a195124ce20d6890d237d08e821d61d76", null ],
+      [ "Hector", "structdg_1_1geo_1_1_hector.html#ae9a21636a483154ba7718e79c7e2d776", null ],
       [ "clone", "structdg_1_1geo_1_1_hector.html#af3b4528adddab1c67613d38167f34983", null ],
       [ "internal_grid", "structdg_1_1geo_1_1_hector.html#a9467a4de877f23ce96169034bda0bb4f", null ],
       [ "isConformal", "structdg_1_1geo_1_1_hector.html#a0693be00459e859f44848b9eba769093", null ]
@@ -49,25 +49,25 @@ var group__generators__geo =
       [ "clone", "structdg_1_1geo_1_1_log_polar_generator.html#a82001c84bd95f50400fbbe93abe5feb9", null ]
     ] ],
     [ "Ribeiro", "structdg_1_1geo_1_1_ribeiro.html", [
-      [ "Ribeiro", "structdg_1_1geo_1_1_ribeiro.html#ac4d27e1c9d8820f16607014af587a941", null ],
+      [ "Ribeiro", "structdg_1_1geo_1_1_ribeiro.html#aa7cbf74e8a39c0dcaa1bc1779a24d5cf", null ],
       [ "clone", "structdg_1_1geo_1_1_ribeiro.html#a16cda75dc2e6cdd0002629a0917c8ab8", null ]
     ] ],
     [ "RibeiroX", "structdg_1_1geo_1_1_ribeiro_x.html", [
-      [ "RibeiroX", "structdg_1_1geo_1_1_ribeiro_x.html#a80a2c02d4b45c92a3d66f62190ddd38a", null ],
+      [ "RibeiroX", "structdg_1_1geo_1_1_ribeiro_x.html#aae0e71f22e46aa26a72955df5fdd52cf", null ],
       [ "clone", "structdg_1_1geo_1_1_ribeiro_x.html#a2544d18ee39646520b9b4097a4a760eb", null ]
     ] ],
     [ "SimpleOrthogonalX", "structdg_1_1geo_1_1_simple_orthogonal_x.html", [
       [ "SimpleOrthogonalX", "structdg_1_1geo_1_1_simple_orthogonal_x.html#aedfdd38c13c75bda7b50fd8151157a30", null ],
-      [ "SimpleOrthogonalX", "structdg_1_1geo_1_1_simple_orthogonal_x.html#ad9e81366799f28e7012410fecf480ff3", null ],
-      [ "clone", "structdg_1_1geo_1_1_simple_orthogonal_x.html#a2aaa861f1f962d74a28739ef14d85650", null ]
+      [ "SimpleOrthogonalX", "structdg_1_1geo_1_1_simple_orthogonal_x.html#a89710b2ccec147728d19942897bbca5c", null ],
+      [ "clone", "structdg_1_1geo_1_1_simple_orthogonal_x.html#a2b1d10f3c2aee3a728d34a439e5e5440", null ]
     ] ],
     [ "SeparatrixOrthogonal", "structdg_1_1geo_1_1_separatrix_orthogonal.html", [
-      [ "SeparatrixOrthogonal", "structdg_1_1geo_1_1_separatrix_orthogonal.html#a388622333d76b0e4b5fb98f488bb927e", null ],
+      [ "SeparatrixOrthogonal", "structdg_1_1geo_1_1_separatrix_orthogonal.html#a40d326a33d5d11a19360c8151eb19c0b", null ],
       [ "clone", "structdg_1_1geo_1_1_separatrix_orthogonal.html#a2d62c9d7327548bc92ab92863c383233", null ]
     ] ],
     [ "SimpleOrthogonal", "structdg_1_1geo_1_1_simple_orthogonal.html", [
-      [ "SimpleOrthogonal", "structdg_1_1geo_1_1_simple_orthogonal.html#aee61c5e84a90f1b758ca4653f43245d7", null ],
-      [ "SimpleOrthogonal", "structdg_1_1geo_1_1_simple_orthogonal.html#ac5fb6e5b5a1f95d9625f236e07c35e37", null ],
+      [ "SimpleOrthogonal", "structdg_1_1geo_1_1_simple_orthogonal.html#a69338732ebe0463ff9be5835b8474f08", null ],
+      [ "SimpleOrthogonal", "structdg_1_1geo_1_1_simple_orthogonal.html#a7b54bcf61d214025007c07bcbdd531cf", null ],
       [ "clone", "structdg_1_1geo_1_1_simple_orthogonal.html#a7ab22c7b6a693eae553763f81e5ea43b", null ],
       [ "f0", "structdg_1_1geo_1_1_simple_orthogonal.html#a498cb2ded6eb6cd30163ebd438b5d072", null ]
     ] ]

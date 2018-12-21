@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
-<title>Discontinuous Galerkin Library: geometry/fast_interpolation.h File Reference</title>
+<title>Discontinuous Galerkin Library: topology/fast_interpolation.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('fast__interpolation_8h.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>contains a matrix type for fast interpolations/projections  
+<p>A matrix type for fast interpolations/projections.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;thrust/host_vector.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="memory_8h_source.html">dg/backend/memory.h</a>&quot;</code><br />
@@ -114,46 +114,6 @@ $(document).ready(function(){initNavTree('fast__interpolation_8h.html','');});
 <code>#include &quot;<a class="el" href="interpolation_8h_source.html">interpolation.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="projection_8h_source.html">projection.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mpi__grid_8h_source.html">mpi_grid.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for fast_interpolation.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="fast__interpolation_8h__incl.png" border="0" usemap="#geometry_2fast__interpolation_8h" alt=""/></div>
-<map name="geometry_2fast__interpolation_8h" id="geometry_2fast__interpolation_8h">
-<area shape="rect" id="node3" href="memory_8h.html" title="dg/backend/memory.h" alt="" coords="5,319,156,345"/>
-<area shape="rect" id="node4" href="enums_8h.html" title="enums " alt="" coords="4647,393,4738,420"/>
-<area shape="rect" id="node10" href="blas_8h.html" title="dg/blas.h" alt="" coords="1705,80,1779,107"/>
-<area shape="rect" id="node39" href="grid_8h.html" title="base topology classes " alt="" coords="4351,319,4405,345"/>
-<area shape="rect" id="node43" href="interpolation_8h.html" title="contains 1D, 2D and 3D interpolation matrix creation functions " alt="" coords="3959,155,4061,181"/>
-<area shape="rect" id="node47" href="projection_8h.html" title="contains creation of projection matrices " alt="" coords="4341,80,4431,107"/>
-<area shape="rect" id="node50" href="mpi__grid_8h.html" title="MPI Grid objects. " alt="" coords="4235,155,4318,181"/>
-<area shape="rect" id="node6" href="exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="4618,468,4767,495"/>
-<area shape="rect" id="node11" href="blas1_8h.html" title="blas1.h" alt="" coords="1409,155,1473,181"/>
-<area shape="rect" id="node30" href="blas2_8h.html" title="blas2.h" alt="" coords="2470,155,2534,181"/>
-<area shape="rect" id="node38" href="typedefs_8h.html" title="Useful typedefs of commonly used types. " alt="" coords="514,155,650,181"/>
-<area shape="rect" id="node13" href="tensor__traits_8h.html" title="backend/tensor_traits.h" alt="" coords="1643,319,1801,345"/>
-<area shape="rect" id="node14" href="tensor__traits__scalar_8h.html" title="backend/tensor_traits\l_scalar.h" alt="" coords="1538,229,1685,271"/>
-<area shape="rect" id="node15" href="tensor__traits__thrust_8h.html" title="backend/tensor_traits\l_thrust.h" alt="" coords="1367,229,1514,271"/>
-<area shape="rect" id="node17" href="tensor__traits__cusp_8h.html" title="backend/tensor_traits\l_cusp.h" alt="" coords="2157,229,2303,271"/>
-<area shape="rect" id="node21" href="tensor__traits__std_8h.html" title="backend/tensor_traits\l_std.h" alt="" coords="1759,229,1906,271"/>
-<area shape="rect" id="node25" href="mpi__vector_8h.html" title="backend/mpi_vector.h" alt="" coords="843,237,993,263"/>
-<area shape="rect" id="node28" href="subroutines_8h.html" title="subroutines.h" alt="" coords="1981,237,2081,263"/>
-<area shape="rect" id="node29" href="functions_8h.html" title="contains some utility functions for the evaluation() routines " alt="" coords="1919,319,2082,345"/>
-<area shape="rect" id="node41" href="topological__traits_8h.html" title="topological_traits.h" alt="" coords="4321,393,4451,420"/>
-<area shape="rect" id="node42" href="dlt_8h.html" title="contains the discrete legendre trafo class " alt="" coords="4576,393,4623,420"/>
-<area shape="rect" id="node44" href="evaluation_8h.html" title="Function discretization routines. " alt="" coords="4147,237,4239,263"/>
-<area shape="rect" id="node45" href="creation_8h.html" title="creation.h" alt="" coords="3845,237,3924,263"/>
-<area shape="rect" id="node46" href="operator__tensor_8h.html" title="operator_tensor.h" alt="" coords="3949,237,4071,263"/>
-<area shape="rect" id="node49" href="weights_8h.html" title="contains creation functions for integration weights and their inverse " alt="" coords="4467,237,4545,263"/>
-</map>
-</div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="fast__interpolation_8h__dep__incl.png" border="0" usemap="#geometry_2fast__interpolation_8hdep" alt=""/></div>
-<map name="geometry_2fast__interpolation_8hdep" id="geometry_2fast__interpolation_8hdep">
-<area shape="rect" id="node2" href="multigrid_8h.html" title="multigrid.h" alt="" coords="59,80,142,107"/>
-</map>
-</div>
 </div>
 <p><a href="fast__interpolation_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -170,14 +130,14 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>contains a matrix type for fast interpolations/projections </p>
+<div class="textblock"><p>A matrix type for fast interpolations/projections. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_e3380d2178455503f266746fb14246a5.html">geometry</a></li><li class="navelem"><a class="el" href="fast__interpolation_8h.html">fast_interpolation.h</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
+    <li class="navelem"><a class="el" href="dir_84497794bb37d283dbd68163bed8ef05.html">topology</a></li><li class="navelem"><a class="el" href="fast__interpolation_8h.html">fast_interpolation.h</a></li>
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

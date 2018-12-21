@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['per',['PER',['../../../dg/html/group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3',1,'dg::PER()'],['../../../dg/html/group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3',1,'PER()(Global Namespace)']]],
-  ['psipmax',['psipmax',['../structdg_1_1geo_1_1guenther_1_1_parameters.html#af4662cf88733d884d8896ab10739501e',1,'dg::geo::guenther::Parameters::psipmax()'],['../structdg_1_1geo_1_1solovev_1_1_parameters.html#a3b736b4e0adf76dd178e3c3d15b2623b',1,'dg::geo::solovev::Parameters::psipmax()']]],
-  ['psipmaxcut',['psipmaxcut',['../structdg_1_1geo_1_1guenther_1_1_parameters.html#a88b8084817a56b02e67aff32eb56366c',1,'dg::geo::guenther::Parameters::psipmaxcut()'],['../structdg_1_1geo_1_1solovev_1_1_parameters.html#a618be8aa154476d822968f179fd52983',1,'dg::geo::solovev::Parameters::psipmaxcut()']]],
-  ['psipmaxlim',['psipmaxlim',['../structdg_1_1geo_1_1guenther_1_1_parameters.html#afcbf1738c0dfb6bf1b9a4573d0440468',1,'dg::geo::guenther::Parameters::psipmaxlim()'],['../structdg_1_1geo_1_1solovev_1_1_parameters.html#a6cd01dee63118f4d12aaf13d8e541c6f',1,'dg::geo::solovev::Parameters::psipmaxlim()']]],
-  ['psipmin',['psipmin',['../structdg_1_1geo_1_1guenther_1_1_parameters.html#aa1f03dc9076937119f19e7fe4974375d',1,'dg::geo::guenther::Parameters::psipmin()'],['../structdg_1_1geo_1_1solovev_1_1_parameters.html#a62a25e8097050d25ee6a631c35740ac7',1,'dg::geo::solovev::Parameters::psipmin()']]]
+  ['m1',['m1',['../../../dg/html/structdg_1_1_composite.html#a3fa35db6b3c0a2a6963c34752ebbc6f8',1,'dg::Composite']]],
+  ['m2',['m2',['../../../dg/html/structdg_1_1_composite.html#a80a6e0600198a5ce4763b66feadf0b5d',1,'dg::Composite']]],
+  ['midpoint_5f2_5f2',['MIDPOINT_2_2',['../../../dg/html/group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a53589c3f492267933d52411a91abe87f',1,'dg::MIDPOINT_2_2()'],['../../../dg/html/group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a53589c3f492267933d52411a91abe87f',1,'MIDPOINT_2_2()(Global Namespace)']]]
 ];

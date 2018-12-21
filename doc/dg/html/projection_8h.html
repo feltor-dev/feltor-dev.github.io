@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
-<title>Discontinuous Galerkin Library: geometry/projection.h File Reference</title>
+<title>Discontinuous Galerkin Library: topology/projection.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('projection_8h.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>contains creation of projection matrices  
+<p>Creation of projection matrices.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;cusp/coo_matrix.h&gt;</code><br />
@@ -112,38 +112,6 @@ $(document).ready(function(){initNavTree('projection_8h.html','');});
 <code>#include &quot;<a class="el" href="grid_8h_source.html">grid.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="interpolation_8h_source.html">interpolation.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="weights_8h_source.html">weights.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for projection.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="projection_8h__incl.png" border="0" usemap="#geometry_2projection_8h" alt=""/></div>
-<map name="geometry_2projection_8h" id="geometry_2projection_8h">
-<area shape="rect" id="node5" href="grid_8h.html" title="base topology classes " alt="" coords="602,229,657,256"/>
-<area shape="rect" id="node19" href="interpolation_8h.html" title="contains 1D, 2D and 3D interpolation matrix creation functions " alt="" coords="369,80,471,107"/>
-<area shape="rect" id="node30" href="weights_8h.html" title="contains creation functions for integration weights and their inverse " alt="" coords="898,155,977,181"/>
-<area shape="rect" id="node9" href="topological__traits_8h.html" title="topological_traits.h" alt="" coords="676,304,807,331"/>
-<area shape="rect" id="node10" href="dlt_8h.html" title="contains the discrete legendre trafo class " alt="" coords="522,304,569,331"/>
-<area shape="rect" id="node17" href="enums_8h.html" title="enums " alt="" coords="831,304,915,331"/>
-<area shape="rect" id="node14" href="exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="618,379,785,405"/>
-<area shape="rect" id="node21" href="evaluation_8h.html" title="Function discretization routines. " alt="" coords="759,155,851,181"/>
-<area shape="rect" id="node23" href="functions_8h.html" title="contains some utility functions for the evaluation() routines " alt="" coords="145,155,231,181"/>
-<area shape="rect" id="node24" href="creation_8h.html" title="creation.h" alt="" coords="255,155,334,181"/>
-<area shape="rect" id="node28" href="operator__tensor_8h.html" title="operator_tensor.h" alt="" coords="359,155,481,181"/>
-<area shape="rect" id="node25" href="operator_8h.html" title="operator.h" alt="" coords="257,229,337,256"/>
-</map>
-</div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="projection_8h__dep__incl.png" border="0" usemap="#geometry_2projection_8hdep" alt=""/></div>
-<map name="geometry_2projection_8hdep" id="geometry_2projection_8hdep">
-<area shape="rect" id="node2" href="fast__interpolation_8h.html" title="contains a matrix type for fast interpolations/projections " alt="" coords="5,80,196,107"/>
-<area shape="rect" id="node4" href="mpi__projection_8h.html" title="Useful MPI typedefs and overloads of interpolation and projection. " alt="" coords="220,80,395,107"/>
-<area shape="rect" id="node5" href="refined__elliptic_8h.html" title="contains an elliptic method on a refined grid " alt="" coords="307,155,423,181"/>
-<area shape="rect" id="node6" href="projection_x_8h.html" title="contains creation of projection matrices for X point topology " alt="" coords="471,80,627,107"/>
-<area shape="rect" id="node3" href="multigrid_8h.html" title="multigrid.h" alt="" coords="158,155,241,181"/>
-<area shape="rect" id="node7" href="algorithm_8h.html" title="algorithm.h" alt="" coords="505,155,592,181"/>
-</map>
-</div>
 </div>
 <p><a href="projection_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -158,6 +126,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga008408676aea2583d10dc001e9b8b9f1"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:ga008408676aea2583d10dc001e9b8b9f1"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__misc.html#ga008408676aea2583d10dc001e9b8b9f1">dg::gcd</a> (T a, T b)</td></tr>
+<tr class="memdesc:ga008408676aea2583d10dc001e9b8b9f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Greatest common divisor.  <a href="group__misc.html#ga008408676aea2583d10dc001e9b8b9f1">More...</a><br /></td></tr>
+<tr class="separator:ga008408676aea2583d10dc001e9b8b9f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae521421a2db99cf793bb0f2cd5a16126"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:gae521421a2db99cf793bb0f2cd5a16126"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__misc.html#gae521421a2db99cf793bb0f2cd5a16126">dg::lcm</a> (T a, T b)</td></tr>
+<tr class="memdesc:gae521421a2db99cf793bb0f2cd5a16126"><td class="mdescLeft">&#160;</td><td class="mdescRight">Least common multiple.  <a href="group__misc.html#gae521421a2db99cf793bb0f2cd5a16126">More...</a><br /></td></tr>
+<tr class="separator:gae521421a2db99cf793bb0f2cd5a16126"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga20f69fb78f6536cff2fd882addb9ba78"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
 <tr class="memitem:ga20f69fb78f6536cff2fd882addb9ba78"><td class="memTemplItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, real_type, cusp::host_memory &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__interpolation.html#ga20f69fb78f6536cff2fd882addb9ba78">dg::create::interpolationT</a> (const RealGrid1d&lt; real_type &gt; &amp;g_new, const RealGrid1d&lt; real_type &gt; &amp;g_old)</td></tr>
 <tr class="memdesc:ga20f69fb78f6536cff2fd882addb9ba78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the transpose of the interpolation matrix from new to old.  <a href="group__interpolation.html#ga20f69fb78f6536cff2fd882addb9ba78">More...</a><br /></td></tr>
@@ -196,14 +172,14 @@ Functions</h2></td></tr>
 <tr class="separator:gad069ca6eb4b8294f47b8981db73ec303"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>contains creation of projection matrices </p>
+<div class="textblock"><p>Creation of projection matrices. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_e3380d2178455503f266746fb14246a5.html">geometry</a></li><li class="navelem"><a class="el" href="projection_8h.html">projection.h</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
+    <li class="navelem"><a class="el" href="dir_84497794bb37d283dbd68163bed8ef05.html">topology</a></li><li class="navelem"><a class="el" href="projection_8h.html">projection.h</a></li>
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

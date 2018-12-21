@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -105,53 +105,10 @@ $(document).ready(function(){initNavTree('sparseblockmat_8h.html','');});
 <div class="contents">
 <div class="textblock"><code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;thrust/host_vector.h&gt;</code><br />
-<code>#include &quot;<a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/config_8h.html">exblas/config.h</a>&quot;</code><br />
+<code>#include &quot;exblas/config.h&quot;</code><br />
 <code>#include &quot;config.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="exceptions_8h_source.html">exceptions.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="tensor__traits_8h_source.html">tensor_traits.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for sparseblockmat.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="sparseblockmat_8h__incl.png" border="0" usemap="#backend_2sparseblockmat_8h" alt=""/></div>
-<map name="backend_2sparseblockmat_8h" id="backend_2sparseblockmat_8h">
-<area shape="rect" id="node4" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/config_8h.html" title="exblas/config.h" alt="" coords="251,80,362,107"/>
-<area shape="rect" id="node6" href="exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="479,80,575,107"/>
-<area shape="rect" id="node10" href="tensor__traits_8h.html" title="tensor_traits.h" alt="" coords="897,80,1002,107"/>
-<area shape="rect" id="node13" href="scalar__categories_8h.html" title="scalar_categories.h" alt="" coords="882,155,1017,181"/>
-<area shape="rect" id="node14" href="vector__categories_8h.html" title="vector_categories.h" alt="" coords="932,229,1068,256"/>
-<area shape="rect" id="node15" href="matrix__categories_8h.html" title="matrix_categories.h" alt="" coords="984,304,1120,331"/>
-<area shape="rect" id="node16" href="execution__policy_8h.html" title="execution_policy.h" alt="" coords="1143,155,1273,181"/>
-</map>
-</div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="sparseblockmat_8h__dep__incl.png" border="0" usemap="#backend_2sparseblockmat_8hdep" alt=""/></div>
-<map name="backend_2sparseblockmat_8hdep" id="backend_2sparseblockmat_8hdep">
-<area shape="rect" id="node2" href="sparseblockmat_8cuh.html" title="backend/sparseblockmat.cuh" alt="" coords="772,80,964,107"/>
-<area shape="rect" id="node3" href="typedefs_8h.html" title="Useful typedefs of commonly used types. " alt="" coords="644,155,780,181"/>
-<area shape="rect" id="node20" href="dx_8h.html" title="Simple 1d derivatives. " alt="" coords="1056,155,1161,181"/>
-<area shape="rect" id="node22" href="mpi__derivatives_8h.html" title="geometry/mpi_derivatives.h" alt="" coords="917,453,1100,480"/>
-<area shape="rect" id="node23" href="dx_x_8h.html" title="Simple 1d derivatives on X&#45;point topology. " alt="" coords="1146,229,1260,256"/>
-<area shape="rect" id="node4" href="blas_8h.html" title="blas.h" alt="" coords="682,229,740,256"/>
-<area shape="rect" id="node19" href="mpi__projection_8h.html" title="Useful MPI typedefs and overloads of interpolation and projection. " alt="" coords="116,304,290,331"/>
-<area shape="rect" id="node5" href="derivatives_x_8h.html" title="Convenience functions to create 2D derivatives on X&#45;point topology. " alt="" coords="1256,304,1419,331"/>
-<area shape="rect" id="node6" href="algorithm_8h.html" title="algorithm.h" alt="" coords="616,677,702,704"/>
-<area shape="rect" id="node7" href="fast__interpolation_8h.html" title="contains a matrix type for fast interpolations/projections " alt="" coords="314,304,505,331"/>
-<area shape="rect" id="node8" href="multigrid_8h.html" title="multigrid.h" alt="" coords="343,379,426,405"/>
-<area shape="rect" id="node9" href="refined__grid_8h.html" title="geometry/refined_grid.h" alt="" coords="632,304,790,331"/>
-<area shape="rect" id="node12" href="elliptic_8h.html" title="General negative elliptic operators. " alt="" coords="702,528,773,555"/>
-<area shape="rect" id="node13" href="helmholtz_8h.html" title="contains Helmholtz and Maxwell operators " alt="" coords="697,603,786,629"/>
-<area shape="rect" id="node15" href="arakawa_8h.html" title="object for computation of Poisson bracket " alt="" coords="1084,528,1167,555"/>
-<area shape="rect" id="node16" href="poisson_8h.html" title="poisson.h" alt="" coords="918,528,997,555"/>
-<area shape="rect" id="node17" href="cg_8h.html" title="cg.h" alt="" coords="45,304,92,331"/>
-<area shape="rect" id="node10" href="refined__grid_x_8h.html" title="geometry/refined_gridX.h" alt="" coords="609,379,776,405"/>
-<area shape="rect" id="node14" href="refined__elliptic_8h.html" title="contains an elliptic method on a refined grid " alt="" coords="498,603,614,629"/>
-<area shape="rect" id="node11" href="geometry_8h.html" title="geometry/geometry.h" alt="" coords="594,453,740,480"/>
-<area shape="rect" id="node18" href="multistep_8h.html" title="contains multistep explicit&amp; implicit time&#45;integrators " alt="" coords="106,379,193,405"/>
-<area shape="rect" id="node21" href="derivatives_8h.html" title="Convenience functions to create 2D derivatives. " alt="" coords="1043,379,1198,405"/>
-</map>
-</div>
 </div>
 <p><a href="sparseblockmat_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -180,7 +137,7 @@ Namespaces</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_8c739bbef76d64b22d6b0911c526dd76.html">backend</a></li><li class="navelem"><a class="el" href="sparseblockmat_8h.html">sparseblockmat.h</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -27,5 +27,7 @@ var enums_8h =
     [ "norm", "enums_8h.html#ga9945b71a335bc97f78dc7425911c7287", [
       [ "normed", "enums_8h.html#gga9945b71a335bc97f78dc7425911c7287a3f222a3e51d054ebe21228c62569e123", null ],
       [ "not_normed", "enums_8h.html#gga9945b71a335bc97f78dc7425911c7287a07217e3dd9be28b4da85d46fef38f066", null ]
-    ] ]
+    ] ],
+    [ "bc2str", "enums_8h.html#gaaddc055ad4bead1c127e85c0242e64d4", null ],
+    [ "str2bc", "enums_8h.html#ga92d83820c2595e12cdff8edb406838f1", null ]
 ];

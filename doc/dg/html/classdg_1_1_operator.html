@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -147,9 +147,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a27a50258a872a793ac1976e0264dca8d"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_operator.html#a27a50258a872a793ac1976e0264dca8d">size</a> () const</td></tr>
 <tr class="memdesc:a27a50258a872a793ac1976e0264dca8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size n of the <a class="el" href="classdg_1_1_operator.html" title="Helper class mainly for the assembly of Matrices. ">Operator</a>.  <a href="#a27a50258a872a793ac1976e0264dca8d">More...</a><br /></td></tr>
 <tr class="separator:a27a50258a872a793ac1976e0264dca8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c03dee26cfa432aecb8d9a5b2b2e56c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_operator.html#a4c03dee26cfa432aecb8d9a5b2b2e56c">resize</a> (unsigned m)</td></tr>
-<tr class="memdesc:a4c03dee26cfa432aecb8d9a5b2b2e56c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resize.  <a href="#a4c03dee26cfa432aecb8d9a5b2b2e56c">More...</a><br /></td></tr>
-<tr class="separator:a4c03dee26cfa432aecb8d9a5b2b2e56c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44444c7825eaa78694f13ad3fed1f5e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_operator.html#a44444c7825eaa78694f13ad3fed1f5e8">resize</a> (unsigned m, T val=T())</td></tr>
+<tr class="memdesc:a44444c7825eaa78694f13ad3fed1f5e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resize.  <a href="#a44444c7825eaa78694f13ad3fed1f5e8">More...</a><br /></td></tr>
+<tr class="separator:a44444c7825eaa78694f13ad3fed1f5e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0596c9a8ce35abf2784be96a3295859b"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="classdg_1_1_operator.html#a322ecb3322b51f04d23178d05578cdd9">value_type</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_operator.html#a0596c9a8ce35abf2784be96a3295859b">data</a> () const</td></tr>
 <tr class="memdesc:a0596c9a8ce35abf2784be96a3295859b"><td class="mdescLeft">&#160;</td><td class="mdescRight">access underlying data  <a href="#a0596c9a8ce35abf2784be96a3295859b">More...</a><br /></td></tr>
 <tr class="separator:a0596c9a8ce35abf2784be96a3295859b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -786,8 +786,8 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a id="a4c03dee26cfa432aecb8d9a5b2b2e56c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c03dee26cfa432aecb8d9a5b2b2e56c">&#9670;&nbsp;</a></span>resize()</h2>
+<a id="a44444c7825eaa78694f13ad3fed1f5e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44444c7825eaa78694f13ad3fed1f5e8">&#9670;&nbsp;</a></span>resize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -801,8 +801,18 @@ template&lt;class T&gt; </div>
           <td class="memname">void <a class="el" href="classdg_1_1_operator.html">dg::Operator</a>&lt; T &gt;::resize </td>
           <td>(</td>
           <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>m</em></td><td>)</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>val</em> = <code>T()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -816,6 +826,7 @@ template&lt;class T&gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">m</td><td>new size </td></tr>
+    <tr><td class="paramname">val</td><td>if m is greater than the current size new elements are initialized with val </td></tr>
   </table>
   </dd>
 </dl>
@@ -1312,7 +1323,7 @@ template&lt;class Istream &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>geometry/<a class="el" href="operator_8h_source.html">operator.h</a></li>
+<li>topology/<a class="el" href="operator_8h_source.html">operator.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -1320,7 +1331,7 @@ template&lt;class Istream &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="classdg_1_1_operator.html">Operator</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:50 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

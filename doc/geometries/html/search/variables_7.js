@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['left_5fsize',['left_size',['../../../dg/html/structdg_1_1_coo_sparse_block_mat.html#a5879228f786f6a22e351e26edd00423b',1,'dg::CooSparseBlockMat::left_size()'],['../../../dg/html/structdg_1_1_coo_sparse_block_mat_device.html#acc51c1366a433bf91d0693880b5e5eda',1,'dg::CooSparseBlockMatDevice::left_size()'],['../../../dg/html/structdg_1_1_ell_sparse_block_mat.html#a794a041e52b3e4fd6297d0dec8f3fc8b',1,'dg::EllSparseBlockMat::left_size()']]]
+  ['i_5f0',['I_0',['../structdg_1_1geo_1_1guenther_1_1_parameters.html#ab6c8f90fed93e3071fd5dc1cda09da55',1,'dg::geo::guenther::Parameters']]],
+  ['implicit_5feuler_5f1_5f1',['IMPLICIT_EULER_1_1',['../../../dg/html/group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a5d4c148035a981dfce0fe5b0f481a1fa',1,'dg::IMPLICIT_EULER_1_1()'],['../../../dg/html/group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a5d4c148035a981dfce0fe5b0f481a1fa',1,'IMPLICIT_EULER_1_1()(Global Namespace)']]]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
-<title>Discontinuous Galerkin Library: Basic Linear Algebra Subroutines</title>
+<title>Discontinuous Galerkin Library: Basic container independent subroutines</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -99,26 +99,29 @@ $(document).ready(function(){initNavTree('group__blas.html','');});
   <div class="summary">
 <a href="#groups">Modules</a>  </div>
   <div class="headertitle">
-<div class="title">Basic Linear Algebra Subroutines<div class="ingroups"><a class="el" href="group__backend.html">Level 1: Vectors, Matrices and basic operations</a></div></div>  </div>
+<div class="title">Basic container independent subroutines<div class="ingroups"><a class="el" href="group__backend.html">Level 1: Vectors, Matrices and basic operations</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Collaboration diagram for Basic Linear Algebra Subroutines:</div>
+Collaboration diagram for Basic container independent subroutines:</div>
 <div class="dyncontent">
 <center><table><tr><td><img src="group__blas.png" border="0" alt="" usemap="#group____blas"/>
 <map name="group____blas" id="group____blas">
-<area shape="rect" id="node1" href="group__blas1.html" title="BLAS level 1 routines" alt="" coords="419,5,567,32"/>
-<area shape="rect" id="node2" href="group__blas2.html" title="BLAS level 2 routines" alt="" coords="419,56,567,83"/>
-<area shape="rect" id="node3" href="group__backend.html" title="Level 1: Vectors, Matrices\l and basic operations" alt="" coords="5,23,180,65"/>
+<area shape="rect" id="node1" href="group__blas1.html" title="BLAS level 1 routines\l: Vector&#45;Vector" alt="" coords="473,5,621,47"/>
+<area shape="rect" id="node2" href="group__blas2.html" title="BLAS level 2 routines\l: Matrix&#45;Vector" alt="" coords="473,71,621,112"/>
+<area shape="rect" id="node3" href="group__tensor.html" title="Tensor&#45;Vector operations" alt="" coords="463,137,631,163"/>
+<area shape="rect" id="node4" href="group__backend.html" title="Level 1: Vectors, Matrices\l and basic operations" alt="" coords="5,71,180,112"/>
 </map>
 </td></tr></table></center>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="groups"></a>
 Modules</h2></td></tr>
-<tr class="memitem:group__blas1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__blas1.html">BLAS level 1 routines</a></td></tr>
+<tr class="memitem:group__blas1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__blas1.html">BLAS level 1 routines: Vector-Vector</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__blas2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__blas2.html">BLAS level 2 routines</a></td></tr>
+<tr class="memitem:group__blas2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__blas2.html">BLAS level 2 routines: Matrix-Vector</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:group__tensor"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tensor.html">Tensor-Vector operations</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -128,7 +131,7 @@ Modules</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

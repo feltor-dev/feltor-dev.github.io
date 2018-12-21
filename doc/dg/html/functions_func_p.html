@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -99,12 +99,6 @@ $(document).ready(function(){initNavTree('functions_func_p.html','');});
 &#160;
 
 <h3><a id="index_p"></a>- p -</h3><ul>
-<li>parallel()
-: <a class="el" href="structdg_1_1_sparse_tensor.html#a767f975173078bfa07bf9020fd0589c9">dg::SparseTensor&lt; T &gt;</a>
-</li>
-<li>perp()
-: <a class="el" href="structdg_1_1_sparse_tensor.html#aba5e2f7cf1e56989263a88a5d8b64b70">dg::SparseTensor&lt; T &gt;</a>
-</li>
 <li>perp_grid()
 : <a class="el" href="structdg_1_1a_real_product_geometry3d.html#a7007f5cf6aa52cdd69650010294c02af">dg::aRealProductGeometry3d&lt; real_type &gt;</a>
 , <a class="el" href="structdg_1_1a_real_product_m_p_i_geometry3d.html#a8c5b10048fb8665ef559c4bd0824e0d0">dg::aRealProductMPIGeometry3d&lt; real_type &gt;</a>
@@ -117,19 +111,24 @@ $(document).ready(function(){initNavTree('functions_func_p.html','');});
 : <a class="el" href="structdg_1_1_p_l_u_s.html#a6046659f109429be9e83c4a344c14064">dg::PLUS&lt; T &gt;</a>
 </li>
 <li>Poisson()
-: <a class="el" href="structdg_1_1_poisson.html#a6a3803ce000045dbb08a84599807b09e">dg::Poisson&lt; Geometry, Matrix, container &gt;</a>
+: <a class="el" href="structdg_1_1_poisson.html#a74677e77775fd0f46c8d9d949de36ab3">dg::Poisson&lt; Geometry, Matrix, Container &gt;</a>
 </li>
 <li>precond()
-: <a class="el" href="classdg_1_1_elliptic.html#a30c0fc3ebb4b991e78d4cb2df5215c98">dg::Elliptic&lt; Geometry, Matrix, container &gt;</a>
-, <a class="el" href="structdg_1_1_general_elliptic.html#aa8b7cf862b47e81e7458e47eee3a11b8">dg::GeneralElliptic&lt; Geometry, Matrix, container &gt;</a>
-, <a class="el" href="structdg_1_1_general_elliptic_sym.html#a2161083adc7554e24a55fb7db690a8f7">dg::GeneralEllipticSym&lt; Geometry, Matrix, container &gt;</a>
-, <a class="el" href="structdg_1_1_helmholtz2.html#a5612b2dbc865d1887f3104ee5fbf75e0">dg::Helmholtz2&lt; Geometry, Matrix, container &gt;</a>
-, <a class="el" href="structdg_1_1_helmholtz.html#adab4705a89091d07ac9dd38f38739a96">dg::Helmholtz&lt; Geometry, Matrix, container &gt;</a>
-, <a class="el" href="classdg_1_1_refined_elliptic.html#a0bbb67afe779f2f7cb0dcc6ff59c69a5">dg::RefinedElliptic&lt; Geometry, IMatrix, Matrix, container &gt;</a>
-, <a class="el" href="structdg_1_1_tensor_elliptic.html#a9c294672d7e2fab769b40e8d3a6d100a">dg::TensorElliptic&lt; Geometry, Matrix, container &gt;</a>
+: <a class="el" href="classdg_1_1_elliptic3d.html#abb7628e55a62a1dc25eb361255c6990c">dg::Elliptic3d&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="classdg_1_1_elliptic.html#a848d56b38f75128943e8dec9a77c13b5">dg::Elliptic&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_helmholtz2.html#a93bc6a38997a470cec011923bdb8104b">dg::Helmholtz2&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_helmholtz3d.html#ac85524be720f2b18838fd210e6b6dea7">dg::Helmholtz3d&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_helmholtz.html#a7670cd8e66b2ea2487821473225bbdb0">dg::Helmholtz&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="classdg_1_1_refined_elliptic.html#a0eaed7709e17c0ece5d10067bb1492f9">dg::RefinedElliptic&lt; Geometry, IMatrix, Matrix, Container &gt;</a>
 </li>
 <li>project()
-: <a class="el" href="structdg_1_1_multigrid_c_g2d.html#aacd6f23ae2c53214da6292507c6ee457">dg::MultigridCG2d&lt; Geometry, Matrix, container &gt;</a>
+: <a class="el" href="structdg_1_1_multigrid_c_g2d.html#a2f373eb2c53b09484688dfb06e9b7b33">dg::MultigridCG2d&lt; Geometry, Matrix, Container &gt;</a>
+</li>
+<li>PsiPupil()
+: <a class="el" href="structdg_1_1_psi_pupil.html#a62a3822519d49540e9faee24607df3f1">dg::PsiPupil</a>
+</li>
+<li>Pupil()
+: <a class="el" href="structdg_1_1_pupil.html#a479e782efe8f97f50d4ed30f27b05ef3">dg::Pupil</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -137,7 +136,7 @@ $(document).ready(function(){initNavTree('functions_func_p.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:50 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

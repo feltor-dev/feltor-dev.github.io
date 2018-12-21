@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
-<title>Discontinuous Galerkin Library: dg::Helmholtz2&lt; Geometry, Matrix, container &gt; Struct Template Reference</title>
+<title>Discontinuous Galerkin Library: dg::Helmholtz2&lt; Geometry, Matrix, Container &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -97,83 +97,92 @@ $(document).ready(function(){initNavTree('structdg_1_1_helmholtz2.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="structdg_1_1_helmholtz2-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">dg::Helmholtz2&lt; Geometry, Matrix, container &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__numerical1.html">Level 4: Advanced numerical schemes</a> &raquo; <a class="el" href="group__matrixoperators.html">Elliptic and Helmholtz operators</a></div></div>  </div>
+<div class="title">dg::Helmholtz2&lt; Geometry, Matrix, Container &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__numerical1.html">Level 4: Advanced numerical schemes</a> &raquo; <a class="el" href="group__matrixoperators.html">Elliptic and Helmholtz operators</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Matrix class that represents a more general Helmholtz-type operator.  
+<p>DEPRECATED, Matrix class that represents a more general Helmholtz-type operator.  
  <a href="structdg_1_1_helmholtz2.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="helmholtz_8h_source.html">helmholtz.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aae3689ba22fd75ddcb07ff01b256cf07"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html#aae3689ba22fd75ddcb07ff01b256cf07">container_type</a> = Container</td></tr>
+<tr class="separator:aae3689ba22fd75ddcb07ff01b256cf07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a01cf2bcab924d334bc56b05232fff4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html#a4a01cf2bcab924d334bc56b05232fff4">geometry_type</a> = Geometry</td></tr>
+<tr class="separator:a4a01cf2bcab924d334bc56b05232fff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8e8f0ac287b9ff3c7718f016df5a2d6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html#af8e8f0ac287b9ff3c7718f016df5a2d6">matrix_type</a> = Matrix</td></tr>
+<tr class="separator:af8e8f0ac287b9ff3c7718f016df5a2d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03cc55c501f30ded3618456effc9c43c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html#a03cc55c501f30ded3618456effc9c43c">value_type</a> = <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; Container &gt;</td></tr>
+<tr class="separator:a03cc55c501f30ded3618456effc9c43c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac6ee676364ed9dff9181f96b595cce44"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html#ac6ee676364ed9dff9181f96b595cce44">Helmholtz2</a> ()</td></tr>
-<tr class="memdesc:ac6ee676364ed9dff9181f96b595cce44"><td class="mdescLeft">&#160;</td><td class="mdescRight">empty object ( no memory allocation)  <a href="#ac6ee676364ed9dff9181f96b595cce44">More...</a><br /></td></tr>
-<tr class="separator:ac6ee676364ed9dff9181f96b595cce44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ef0758cdef3c713b3c4d8a2c768f212"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html#a8ef0758cdef3c713b3c4d8a2c768f212">Helmholtz2</a> (const Geometry &amp;g, double <a class="el" href="structdg_1_1_helmholtz2.html#a1d121f6cee8f4079c5f09a174a3af2aa">alpha</a>=1., <a class="el" href="group__creation.html#gabf9ea3df33484cbb5886e257c3899e48">direction</a> dir=<a class="el" href="group__creation.html#ggabf9ea3df33484cbb5886e257c3899e48a573a4a72e7f55df92b88c254a13762f2">dg::forward</a>, double jfactor=1.)</td></tr>
-<tr class="memdesc:a8ef0758cdef3c713b3c4d8a2c768f212"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct <code><a class="el" href="structdg_1_1_helmholtz2.html" title="Matrix class that represents a more general Helmholtz-type operator. ">Helmholtz2</a></code> operator.  <a href="#a8ef0758cdef3c713b3c4d8a2c768f212">More...</a><br /></td></tr>
-<tr class="separator:a8ef0758cdef3c713b3c4d8a2c768f212"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab06a6967a434103972d3ba634b11495a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html#ab06a6967a434103972d3ba634b11495a">Helmholtz2</a> (const Geometry &amp;g, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> bcx, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> bcy, double <a class="el" href="structdg_1_1_helmholtz2.html#a1d121f6cee8f4079c5f09a174a3af2aa">alpha</a>=1., <a class="el" href="group__creation.html#gabf9ea3df33484cbb5886e257c3899e48">direction</a> dir=<a class="el" href="group__creation.html#ggabf9ea3df33484cbb5886e257c3899e48a573a4a72e7f55df92b88c254a13762f2">dg::forward</a>, double jfactor=1.)</td></tr>
-<tr class="memdesc:ab06a6967a434103972d3ba634b11495a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct <code><a class="el" href="structdg_1_1_helmholtz2.html" title="Matrix class that represents a more general Helmholtz-type operator. ">Helmholtz2</a></code> operator.  <a href="#ab06a6967a434103972d3ba634b11495a">More...</a><br /></td></tr>
-<tr class="separator:ab06a6967a434103972d3ba634b11495a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62389ad5437c224d2d47121acfc97a30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html#a62389ad5437c224d2d47121acfc97a30">construct</a> (const Geometry &amp;g, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> bcx, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> bcy, double <a class="el" href="structdg_1_1_helmholtz2.html#a1d121f6cee8f4079c5f09a174a3af2aa">alpha</a>=1, <a class="el" href="group__creation.html#gabf9ea3df33484cbb5886e257c3899e48">direction</a> dir=<a class="el" href="group__creation.html#ggabf9ea3df33484cbb5886e257c3899e48a573a4a72e7f55df92b88c254a13762f2">dg::forward</a>, double jfactor=1.)</td></tr>
-<tr class="memdesc:a62389ad5437c224d2d47121acfc97a30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct <code><a class="el" href="structdg_1_1_helmholtz2.html" title="Matrix class that represents a more general Helmholtz-type operator. ">Helmholtz2</a></code> operator.  <a href="#a62389ad5437c224d2d47121acfc97a30">More...</a><br /></td></tr>
-<tr class="separator:a62389ad5437c224d2d47121acfc97a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bd8e3fa774a7dd865ef87aa1cfb8a7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html#a9bd8e3fa774a7dd865ef87aa1cfb8a7e">construct</a> (const Geometry &amp;g, double <a class="el" href="structdg_1_1_helmholtz2.html#a1d121f6cee8f4079c5f09a174a3af2aa">alpha</a>=1, <a class="el" href="group__creation.html#gabf9ea3df33484cbb5886e257c3899e48">direction</a> dir=<a class="el" href="group__creation.html#ggabf9ea3df33484cbb5886e257c3899e48a573a4a72e7f55df92b88c254a13762f2">dg::forward</a>, double jfactor=1.)</td></tr>
-<tr class="memdesc:a9bd8e3fa774a7dd865ef87aa1cfb8a7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct <code><a class="el" href="structdg_1_1_helmholtz2.html" title="Matrix class that represents a more general Helmholtz-type operator. ">Helmholtz2</a></code> operator.  <a href="#a9bd8e3fa774a7dd865ef87aa1cfb8a7e">More...</a><br /></td></tr>
-<tr class="separator:a9bd8e3fa774a7dd865ef87aa1cfb8a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa388825715f244f16fc1f17a5b03598b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html#aa388825715f244f16fc1f17a5b03598b">symv</a> (const container &amp;<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>, container &amp;<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>)</td></tr>
-<tr class="memdesc:aa388825715f244f16fc1f17a5b03598b"><td class="mdescLeft">&#160;</td><td class="mdescRight">apply operator  <a href="#aa388825715f244f16fc1f17a5b03598b">More...</a><br /></td></tr>
-<tr class="separator:aa388825715f244f16fc1f17a5b03598b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d2582bd5798d1414b1a3e0a80f1849b"><td class="memItemLeft" align="right" valign="top">const container &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html#a5d2582bd5798d1414b1a3e0a80f1849b">weights</a> () const</td></tr>
-<tr class="memdesc:a5d2582bd5798d1414b1a3e0a80f1849b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the vector making the matrix symmetric.  <a href="#a5d2582bd5798d1414b1a3e0a80f1849b">More...</a><br /></td></tr>
-<tr class="separator:a5d2582bd5798d1414b1a3e0a80f1849b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c584ab406059b8cba748208c8f088fb"><td class="memItemLeft" align="right" valign="top">const container &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html#a6c584ab406059b8cba748208c8f088fb">inv_weights</a> () const</td></tr>
-<tr class="memdesc:a6c584ab406059b8cba748208c8f088fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the vector missing in the un-normed symmetric matrix.  <a href="#a6c584ab406059b8cba748208c8f088fb">More...</a><br /></td></tr>
-<tr class="separator:a6c584ab406059b8cba748208c8f088fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5612b2dbc865d1887f3104ee5fbf75e0"><td class="memItemLeft" align="right" valign="top">const container &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html#a5612b2dbc865d1887f3104ee5fbf75e0">precond</a> () const</td></tr>
-<tr class="memdesc:a5612b2dbc865d1887f3104ee5fbf75e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preconditioner to use in conjugate gradient solvers.  <a href="#a5612b2dbc865d1887f3104ee5fbf75e0">More...</a><br /></td></tr>
-<tr class="separator:a5612b2dbc865d1887f3104ee5fbf75e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d121f6cee8f4079c5f09a174a3af2aa"><td class="memItemLeft" align="right" valign="top">double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html#a1d121f6cee8f4079c5f09a174a3af2aa">alpha</a> ()</td></tr>
-<tr class="memdesc:a1d121f6cee8f4079c5f09a174a3af2aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change alpha.  <a href="#a1d121f6cee8f4079c5f09a174a3af2aa">More...</a><br /></td></tr>
-<tr class="separator:a1d121f6cee8f4079c5f09a174a3af2aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb46624ba66eef6237153cb96a163fbb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html#abb46624ba66eef6237153cb96a163fbb">alpha</a> () const</td></tr>
-<tr class="memdesc:abb46624ba66eef6237153cb96a163fbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access alpha.  <a href="#abb46624ba66eef6237153cb96a163fbb">More...</a><br /></td></tr>
-<tr class="separator:abb46624ba66eef6237153cb96a163fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26060bbbc8458aa9ac61b1b99db17ca4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html#a26060bbbc8458aa9ac61b1b99db17ca4">set_chi</a> (const container &amp;<a class="el" href="structdg_1_1_helmholtz2.html#ad61b2c14e667ba4a39f27310fe172fc3">chi</a>)</td></tr>
-<tr class="memdesc:a26060bbbc8458aa9ac61b1b99db17ca4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Chi in the above formula.  <a href="#a26060bbbc8458aa9ac61b1b99db17ca4">More...</a><br /></td></tr>
-<tr class="separator:a26060bbbc8458aa9ac61b1b99db17ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c6d500ae3b270291446ee2afe194fcc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html#a4c6d500ae3b270291446ee2afe194fcc">reset_chi</a> ()</td></tr>
-<tr class="memdesc:a4c6d500ae3b270291446ee2afe194fcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets chi back to one.  <a href="#a4c6d500ae3b270291446ee2afe194fcc">More...</a><br /></td></tr>
-<tr class="separator:a4c6d500ae3b270291446ee2afe194fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad61b2c14e667ba4a39f27310fe172fc3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structdg_1_1_sparse_element.html">SparseElement</a>&lt; container &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html#ad61b2c14e667ba4a39f27310fe172fc3">chi</a> () const</td></tr>
-<tr class="memdesc:ad61b2c14e667ba4a39f27310fe172fc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access chi.  <a href="#ad61b2c14e667ba4a39f27310fe172fc3">More...</a><br /></td></tr>
-<tr class="separator:ad61b2c14e667ba4a39f27310fe172fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe943ee4f86e282d3182fc2b0bea2224"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html#afe943ee4f86e282d3182fc2b0bea2224">Helmholtz2</a> ()</td></tr>
+<tr class="memdesc:afe943ee4f86e282d3182fc2b0bea2224"><td class="mdescLeft">&#160;</td><td class="mdescRight">empty object ( no memory allocation)  <a href="#afe943ee4f86e282d3182fc2b0bea2224">More...</a><br /></td></tr>
+<tr class="separator:afe943ee4f86e282d3182fc2b0bea2224"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaa679abeff1bbb0d1283030d1ba0106"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html#acaa679abeff1bbb0d1283030d1ba0106">Helmholtz2</a> (const Geometry &amp;g, <a class="el" href="structdg_1_1_helmholtz2.html#a03cc55c501f30ded3618456effc9c43c">value_type</a> <a class="el" href="structdg_1_1_helmholtz2.html#a24d5acb0d363715cd6f7a7e9f1da7711">alpha</a>=1., <a class="el" href="group__creation.html#gabf9ea3df33484cbb5886e257c3899e48">direction</a> dir=<a class="el" href="group__creation.html#ggabf9ea3df33484cbb5886e257c3899e48a573a4a72e7f55df92b88c254a13762f2">dg::forward</a>, <a class="el" href="structdg_1_1_helmholtz2.html#a03cc55c501f30ded3618456effc9c43c">value_type</a> jfactor=1.)</td></tr>
+<tr class="memdesc:acaa679abeff1bbb0d1283030d1ba0106"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct <code><a class="el" href="structdg_1_1_helmholtz2.html" title="DEPRECATED, Matrix class that represents a more general Helmholtz-type operator. ">Helmholtz2</a></code> operator.  <a href="#acaa679abeff1bbb0d1283030d1ba0106">More...</a><br /></td></tr>
+<tr class="separator:acaa679abeff1bbb0d1283030d1ba0106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31fe84b70ad5c3d3c396cfa2cb147bed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html#a31fe84b70ad5c3d3c396cfa2cb147bed">Helmholtz2</a> (const Geometry &amp;g, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> bcx, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> bcy, <a class="el" href="structdg_1_1_helmholtz2.html#a03cc55c501f30ded3618456effc9c43c">value_type</a> <a class="el" href="structdg_1_1_helmholtz2.html#a24d5acb0d363715cd6f7a7e9f1da7711">alpha</a>=1., <a class="el" href="group__creation.html#gabf9ea3df33484cbb5886e257c3899e48">direction</a> dir=<a class="el" href="group__creation.html#ggabf9ea3df33484cbb5886e257c3899e48a573a4a72e7f55df92b88c254a13762f2">dg::forward</a>, <a class="el" href="structdg_1_1_helmholtz2.html#a03cc55c501f30ded3618456effc9c43c">value_type</a> jfactor=1.)</td></tr>
+<tr class="memdesc:a31fe84b70ad5c3d3c396cfa2cb147bed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct <code><a class="el" href="structdg_1_1_helmholtz2.html" title="DEPRECATED, Matrix class that represents a more general Helmholtz-type operator. ">Helmholtz2</a></code> operator.  <a href="#a31fe84b70ad5c3d3c396cfa2cb147bed">More...</a><br /></td></tr>
+<tr class="separator:a31fe84b70ad5c3d3c396cfa2cb147bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34c0975f36c9ed183ff737ad128feb61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html#a34c0975f36c9ed183ff737ad128feb61">construct</a> (const Geometry &amp;g, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> bcx, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> bcy, <a class="el" href="structdg_1_1_helmholtz2.html#a03cc55c501f30ded3618456effc9c43c">value_type</a> <a class="el" href="structdg_1_1_helmholtz2.html#a24d5acb0d363715cd6f7a7e9f1da7711">alpha</a>=1, <a class="el" href="group__creation.html#gabf9ea3df33484cbb5886e257c3899e48">direction</a> dir=<a class="el" href="group__creation.html#ggabf9ea3df33484cbb5886e257c3899e48a573a4a72e7f55df92b88c254a13762f2">dg::forward</a>, <a class="el" href="structdg_1_1_helmholtz2.html#a03cc55c501f30ded3618456effc9c43c">value_type</a> jfactor=1.)</td></tr>
+<tr class="memdesc:a34c0975f36c9ed183ff737ad128feb61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct <code><a class="el" href="structdg_1_1_helmholtz2.html" title="DEPRECATED, Matrix class that represents a more general Helmholtz-type operator. ">Helmholtz2</a></code> operator.  <a href="#a34c0975f36c9ed183ff737ad128feb61">More...</a><br /></td></tr>
+<tr class="separator:a34c0975f36c9ed183ff737ad128feb61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a345a1b4a6029c87207c4613e5516ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html#a4a345a1b4a6029c87207c4613e5516ed">construct</a> (const Geometry &amp;g, <a class="el" href="structdg_1_1_helmholtz2.html#a03cc55c501f30ded3618456effc9c43c">value_type</a> <a class="el" href="structdg_1_1_helmholtz2.html#a24d5acb0d363715cd6f7a7e9f1da7711">alpha</a>=1, <a class="el" href="group__creation.html#gabf9ea3df33484cbb5886e257c3899e48">direction</a> dir=<a class="el" href="group__creation.html#ggabf9ea3df33484cbb5886e257c3899e48a573a4a72e7f55df92b88c254a13762f2">dg::forward</a>, <a class="el" href="structdg_1_1_helmholtz2.html#a03cc55c501f30ded3618456effc9c43c">value_type</a> jfactor=1.)</td></tr>
+<tr class="memdesc:a4a345a1b4a6029c87207c4613e5516ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct <code><a class="el" href="structdg_1_1_helmholtz2.html" title="DEPRECATED, Matrix class that represents a more general Helmholtz-type operator. ">Helmholtz2</a></code> operator.  <a href="#a4a345a1b4a6029c87207c4613e5516ed">More...</a><br /></td></tr>
+<tr class="separator:a4a345a1b4a6029c87207c4613e5516ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf758e9988a361d080e83626806ee955"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html#abf758e9988a361d080e83626806ee955">symv</a> (const Container &amp;<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>, Container &amp;<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>)</td></tr>
+<tr class="memdesc:abf758e9988a361d080e83626806ee955"><td class="mdescLeft">&#160;</td><td class="mdescRight">apply operator  <a href="#abf758e9988a361d080e83626806ee955">More...</a><br /></td></tr>
+<tr class="separator:abf758e9988a361d080e83626806ee955"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a825bd67bc60d477e90dc716a81b241e6"><td class="memItemLeft" align="right" valign="top">const Container &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html#a825bd67bc60d477e90dc716a81b241e6">weights</a> () const</td></tr>
+<tr class="memdesc:a825bd67bc60d477e90dc716a81b241e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the vector making the matrix symmetric.  <a href="#a825bd67bc60d477e90dc716a81b241e6">More...</a><br /></td></tr>
+<tr class="separator:a825bd67bc60d477e90dc716a81b241e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66dadf1b2ea023183a06e38b49312265"><td class="memItemLeft" align="right" valign="top">const Container &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html#a66dadf1b2ea023183a06e38b49312265">inv_weights</a> () const</td></tr>
+<tr class="memdesc:a66dadf1b2ea023183a06e38b49312265"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the vector missing in the un-normed symmetric matrix.  <a href="#a66dadf1b2ea023183a06e38b49312265">More...</a><br /></td></tr>
+<tr class="separator:a66dadf1b2ea023183a06e38b49312265"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93bc6a38997a470cec011923bdb8104b"><td class="memItemLeft" align="right" valign="top">const Container &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html#a93bc6a38997a470cec011923bdb8104b">precond</a> () const</td></tr>
+<tr class="memdesc:a93bc6a38997a470cec011923bdb8104b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preconditioner to use in conjugate gradient solvers.  <a href="#a93bc6a38997a470cec011923bdb8104b">More...</a><br /></td></tr>
+<tr class="separator:a93bc6a38997a470cec011923bdb8104b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24d5acb0d363715cd6f7a7e9f1da7711"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1_helmholtz2.html#a03cc55c501f30ded3618456effc9c43c">value_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html#a24d5acb0d363715cd6f7a7e9f1da7711">alpha</a> ()</td></tr>
+<tr class="memdesc:a24d5acb0d363715cd6f7a7e9f1da7711"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change alpha.  <a href="#a24d5acb0d363715cd6f7a7e9f1da7711">More...</a><br /></td></tr>
+<tr class="separator:a24d5acb0d363715cd6f7a7e9f1da7711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6b890fbad9fb61b3e87903cd8857c44"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1_helmholtz2.html#a03cc55c501f30ded3618456effc9c43c">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html#ad6b890fbad9fb61b3e87903cd8857c44">alpha</a> () const</td></tr>
+<tr class="memdesc:ad6b890fbad9fb61b3e87903cd8857c44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access alpha.  <a href="#ad6b890fbad9fb61b3e87903cd8857c44">More...</a><br /></td></tr>
+<tr class="separator:ad6b890fbad9fb61b3e87903cd8857c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eb5c89121a7de7974725c4614808b7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html#a3eb5c89121a7de7974725c4614808b7a">set_chi</a> (const Container &amp;<a class="el" href="structdg_1_1_helmholtz2.html#a835d1c25a476791395b21368b8dd315c">chi</a>)</td></tr>
+<tr class="memdesc:a3eb5c89121a7de7974725c4614808b7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Chi in the above formula.  <a href="#a3eb5c89121a7de7974725c4614808b7a">More...</a><br /></td></tr>
+<tr class="separator:a3eb5c89121a7de7974725c4614808b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a835d1c25a476791395b21368b8dd315c"><td class="memItemLeft" align="right" valign="top">const Container &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html#a835d1c25a476791395b21368b8dd315c">chi</a> () const</td></tr>
+<tr class="memdesc:a835d1c25a476791395b21368b8dd315c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access chi.  <a href="#a835d1c25a476791395b21368b8dd315c">More...</a><br /></td></tr>
+<tr class="separator:a835d1c25a476791395b21368b8dd315c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class Geometry, class Matrix, class container&gt;<br />
-struct dg::Helmholtz2&lt; Geometry, Matrix, container &gt;</h3>
+<div class="textblock"><h3>template&lt;class Geometry, class Matrix, class Container&gt;<br />
+struct dg::Helmholtz2&lt; Geometry, Matrix, Container &gt;</h3>
 
-<p>Matrix class that represents a more general Helmholtz-type operator. </p>
+<p>DEPRECATED, Matrix class that represents a more general Helmholtz-type operator. </p>
 <p>Unnormed discretization of </p><p class="formulaDsp">
 \[ \left[ \chi +2 \alpha\Delta + \alpha^2\Delta \left(\chi^{-1}\Delta \right)\right] \]
 </p>
 <p> where \( \chi\) is a function and \(\alpha\) a scalar. Can be used by the <a class="el" href="structdg_1_1_invert.html" title="Wrapper around CG and Extrapolation to solve the Equation . ">Invert</a> class</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Geometry</td><td>A type that is or derives from one of the abstract geometry base classes ( <code>aGeometry2d</code>, <code>aGeometry3d</code>, <code>aMPIGeometry2d</code>, ...). <code>Geometry</code> determines which <code>Matrix</code> and <code>container</code> types can be used: </td></tr>
-    <tr><td class="paramname">Matrix</td><td>A class for which the <a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a> functions are callable in connection with the <code>container</code> class and to which the return type of <code><a class="el" href="group__creation.html#ga51aea0f47c5a77bb1a3bce187839dc85" title="Create 2d derivative in x-direction. ">create::dx()</a></code> can be converted using <code><a class="el" href="group__blas2.html#ga53701ba3118a2256a93a4d92a7a8a597" title="; Generic way to copy and/or convert a Matrix type to a different Matrix type ">dg::blas2::transfer</a></code>. The <code>Matrix</code> type can be one of:<ul>
+    <tr><td class="paramname">Geometry</td><td>A type that is or derives from one of the abstract geometry base classes ( <code>aGeometry2d</code>, <code>aGeometry3d</code>, <code>aMPIGeometry2d</code>, ...). <code>Geometry</code> determines which <code>Matrix</code> and <code>Container</code> types can be used: </td></tr>
+    <tr><td class="paramname">Matrix</td><td>A class for which the <a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a> functions are callable in connection with the <code>Container</code> class and to which the return type of <code><a class="el" href="group__creation.html#ga51aea0f47c5a77bb1a3bce187839dc85" title="Create 2d derivative in x-direction. ">create::dx()</a></code> can be converted using <code><a class="el" href="group__blas2.html#ga53701ba3118a2256a93a4d92a7a8a597" title="; Generic way to copy and/or convert a Matrix type to a different Matrix type ">dg::blas2::transfer</a></code>. The <code>Matrix</code> type can be one of:<ul>
 <li><code><a class="el" href="group__typedefs.html#gac2134505608b45616787fdb2f6eedc87" title="Host Matrix for derivatives. ">dg::HMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193" title="Host Vector. ">dg::HVec</a></code> and one of the shared memory geometries</li>
 <li><code><a class="el" href="group__typedefs.html#gafdf2ecb95cbc87a1544136d28d535f16" title="Device Matrix for derivatives. ">dg::DMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code> and one of the shared memory geometries</li>
 <li><code><a class="el" href="group__typedefs.html#gaff79c734c7916054c7dc24e6bc437161" title="MPI Host Matrix for derivatives. ">dg::MHMatrix</a></code> with <code><a class="el" href="group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> and one of the MPI geometries</li>
 <li><code><a class="el" href="group__typedefs.html#gaad32454aa2aca3cbb93448d7b5daf005" title="MPI Device Matrix for derivatives. ">dg::MDMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> and one of the MPI geometries </li>
 </ul>
 </td></tr>
-    <tr><td class="paramname">container</td><td>A data container class for which the <code><a class="el" href="namespacedg_1_1blas1.html" title="BLAS Level 1 routines. ">blas1</a></code> functionality is overloaded and to which the return type of <code><a class="el" href="group__blas1.html#gaad7b58d466d813898b68189b44619210" title=" ">blas1::evaluate()</a></code> can be converted using <code><a class="el" href="group__blas1.html#gae0aacd4fe731c16a9483140026c4dcc6" title="y=x; Generic way to copy-construct/assign-to an object of to_ContainerType type from a different from...">dg::blas1::transfer</a></code>. We assume that <code>container</code> is copyable/assignable and has a swap member function. In connection with <code>Geometry</code> this is one of<ul>
+    <tr><td class="paramname">Container</td><td>A data container class for which the <code><a class="el" href="namespacedg_1_1blas1.html" title="BLAS Level 1 routines. ">blas1</a></code> functionality is overloaded and to which the return type of <code><a class="el" href="group__blas1.html#ga7386b5cb0144d5364b8ea8c8ce1482a5" title="; Customizable and generic blas1 function ">blas1::subroutine()</a></code> can be converted using <code><a class="el" href="group__backend.html#gab0ca1b8d3f70004e25ddc2010f7e9e0d" title="Generic way to assign the contents of a from_ContainerType object to a ContainerType object optionall...">dg::assign</a></code>. We assume that <code>Container</code> is copyable/assignable and has a swap member function. In connection with <code>Geometry</code> this is one of<ul>
 <li><code><a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193" title="Host Vector. ">dg::HVec</a></code>, <code><a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code> when <code>Geometry</code> is a shared memory geometry</li>
 <li><code><a class="el" href="group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code><a class="el" href="group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> when <code>Geometry</code> is one of the MPI geometries </li>
 </ul>
@@ -181,23 +190,87 @@ struct dg::Helmholtz2&lt; Geometry, Matrix, container &gt;</h3>
   </table>
   </dd>
 </dl>
-<dl class="section attention"><dt>Attention</dt><dd>The Laplacian in this formula is positive as opposed to the negative sign in the <code><a class="el" href="classdg_1_1_elliptic.html" title="Operator that acts as a 2d negative elliptic differential operator ">Elliptic</a></code> operator </dd>
-<dd>
-It is MUCH better to solve the normal <code><a class="el" href="structdg_1_1_helmholtz.html" title="Matrix class that represents a Helmholtz-type operator. ">Helmholtz</a></code> operator twice, consecutively, than solving the <code><a class="el" href="structdg_1_1_helmholtz2.html" title="Matrix class that represents a more general Helmholtz-type operator. ">Helmholtz2</a></code> operator once. The following code snippet shows how to do it: <div class="fragment"><div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Alternative test with two Helmholtz operators\n&quot;</span>;</div><div class="line">    <a class="code" href="structdg_1_1_helmholtz.html">dg::Helmholtz&lt; dg::CartesianGrid2d, dg::DMatrix, dg::DVec &gt;</a> gamma1inv(grid2d, <a class="code" href="structdg_1_1_helmholtz2.html#a1d121f6cee8f4079c5f09a174a3af2aa">alpha</a> ,<a class="code" href="group__creation.html#ggabf9ea3df33484cbb5886e257c3899e48a6281b4fc609cb723a615662b5adac9df">dg::centered</a>);</div><div class="line">    gamma1inv.set_chi( <a class="code" href="structdg_1_1_helmholtz2.html#ad61b2c14e667ba4a39f27310fe172fc3">chi</a>);</div><div class="line">    <a class="code" href="structdg_1_1_invert.html">dg::Invert&lt;dg::DVec&gt;</a> invertO(  x, grid2d.size(), eps/100);</div><div class="line">    <a class="code" href="structdg_1_1_invert.html">dg::Invert&lt;dg::DVec&gt;</a> invertOO( x, grid2d.size(), eps/100);</div><div class="line">    t.tic();</div><div class="line">    <span class="keywordtype">unsigned</span> number1 = invertO( gamma1inv, phi, rholap);</div><div class="line">    <a class="code" href="group__blas1.html#gad2dcd7cffe760b7bacfdd7647d86e602">dg::blas1::pointwiseDot</a>( phi, <a class="code" href="structdg_1_1_helmholtz2.html#ad61b2c14e667ba4a39f27310fe172fc3">chi</a>, phi);</div><div class="line">    <span class="keywordtype">unsigned</span> number2 = invertOO( gamma1inv, x, phi);</div><div class="line">    t.toc();</div><div class="line">    <span class="comment">//Evaluation</span></div><div class="line">    <a class="code" href="group__blas1.html#ga5c7ddbf70dd74867e45c9d4f40b36cf7">dg::blas1::axpby</a>( 1., sol, -1., x);</div></div><!-- fragment --></dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ac6ee676364ed9dff9181f96b595cce44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6ee676364ed9dff9181f96b595cce44">&#9670;&nbsp;</a></span>Helmholtz2() <span class="overload">[1/3]</span></h2>
+<dl class="section note"><dt>Note</dt><dd>The Laplacian in this formula is positive as opposed to the negative sign in the <code><a class="el" href="classdg_1_1_elliptic.html" title="A 2d negative elliptic differential operator. ">Elliptic</a></code> operator </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>It is MUCH better to solve the normal <code><a class="el" href="structdg_1_1_helmholtz.html" title="Matrix class that represents a Helmholtz-type operator. ">Helmholtz</a></code> operator twice, consecutively, than solving the <code><a class="el" href="structdg_1_1_helmholtz2.html" title="DEPRECATED, Matrix class that represents a more general Helmholtz-type operator. ">Helmholtz2</a></code> operator once. The following code snippet shows how to do it: <div class="fragment"><div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Alternative test with two Helmholtz operators\n&quot;</span>;</div><div class="line">    <a class="code" href="structdg_1_1_helmholtz.html">dg::Helmholtz&lt; dg::CartesianGrid2d, dg::DMatrix, dg::DVec &gt;</a> gamma1inv(grid2d, <a class="code" href="structdg_1_1_helmholtz2.html#a24d5acb0d363715cd6f7a7e9f1da7711">alpha</a> ,<a class="code" href="group__creation.html#ggabf9ea3df33484cbb5886e257c3899e48a6281b4fc609cb723a615662b5adac9df">dg::centered</a>);</div><div class="line">    gamma1inv.set_chi( <a class="code" href="structdg_1_1_helmholtz2.html#a835d1c25a476791395b21368b8dd315c">chi</a>);</div><div class="line">    <a class="code" href="structdg_1_1_invert.html">dg::Invert&lt;dg::DVec&gt;</a> invertO(  x, grid2d.size(), eps/100);</div><div class="line">    <a class="code" href="structdg_1_1_invert.html">dg::Invert&lt;dg::DVec&gt;</a> invertOO( x, grid2d.size(), eps/100);</div><div class="line">    t.tic();</div><div class="line">    <span class="keywordtype">unsigned</span> number1 = invertO( gamma1inv, phi, rholap);</div><div class="line">    <a class="code" href="group__blas1.html#gad2dcd7cffe760b7bacfdd7647d86e602">dg::blas1::pointwiseDot</a>( phi, <a class="code" href="structdg_1_1_helmholtz2.html#a835d1c25a476791395b21368b8dd315c">chi</a>, phi);</div><div class="line">    <span class="keywordtype">unsigned</span> number2 = invertOO( gamma1inv, x, phi);</div><div class="line">    t.toc();</div><div class="line">    <span class="comment">//Evaluation</span></div><div class="line">    <a class="code" href="group__blas1.html#ga5c7ddbf70dd74867e45c9d4f40b36cf7">dg::blas1::axpby</a>( 1., sol, -1., x);</div></div><!-- fragment --></dd></dl>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="aae3689ba22fd75ddcb07ff01b256cf07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae3689ba22fd75ddcb07ff01b256cf07">&#9670;&nbsp;</a></span>container_type</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Geometry , class Matrix , class container &gt; </div>
+template&lt;class Geometry , class Matrix , class Container &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structdg_1_1_helmholtz2.html">dg::Helmholtz2</a>&lt; Geometry, Matrix, Container &gt;::<a class="el" href="structdg_1_1_helmholtz2.html#aae3689ba22fd75ddcb07ff01b256cf07">container_type</a> =  Container</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4a01cf2bcab924d334bc56b05232fff4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a01cf2bcab924d334bc56b05232fff4">&#9670;&nbsp;</a></span>geometry_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Geometry , class Matrix , class Container &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structdg_1_1_helmholtz2.html">dg::Helmholtz2</a>&lt; Geometry, Matrix, Container &gt;::<a class="el" href="structdg_1_1_helmholtz2.html#a4a01cf2bcab924d334bc56b05232fff4">geometry_type</a> =  Geometry</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af8e8f0ac287b9ff3c7718f016df5a2d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8e8f0ac287b9ff3c7718f016df5a2d6">&#9670;&nbsp;</a></span>matrix_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Geometry , class Matrix , class Container &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structdg_1_1_helmholtz2.html">dg::Helmholtz2</a>&lt; Geometry, Matrix, Container &gt;::<a class="el" href="structdg_1_1_helmholtz2.html#af8e8f0ac287b9ff3c7718f016df5a2d6">matrix_type</a> =  Matrix</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a03cc55c501f30ded3618456effc9c43c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03cc55c501f30ded3618456effc9c43c">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Geometry , class Matrix , class Container &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structdg_1_1_helmholtz2.html">dg::Helmholtz2</a>&lt; Geometry, Matrix, Container &gt;::<a class="el" href="structdg_1_1_helmholtz2.html#a03cc55c501f30ded3618456effc9c43c">value_type</a> =  <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt;Container&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="afe943ee4f86e282d3182fc2b0bea2224"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe943ee4f86e282d3182fc2b0bea2224">&#9670;&nbsp;</a></span>Helmholtz2() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Geometry , class Matrix , class Container &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdg_1_1_helmholtz2.html">dg::Helmholtz2</a>&lt; Geometry, Matrix, container &gt;::<a class="el" href="structdg_1_1_helmholtz2.html">Helmholtz2</a> </td>
+          <td class="memname"><a class="el" href="structdg_1_1_helmholtz2.html">dg::Helmholtz2</a>&lt; Geometry, Matrix, Container &gt;::<a class="el" href="structdg_1_1_helmholtz2.html">Helmholtz2</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -214,19 +287,19 @@ template&lt;class Geometry , class Matrix , class container &gt; </div>
 
 </div>
 </div>
-<a id="a8ef0758cdef3c713b3c4d8a2c768f212"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ef0758cdef3c713b3c4d8a2c768f212">&#9670;&nbsp;</a></span>Helmholtz2() <span class="overload">[2/3]</span></h2>
+<a id="acaa679abeff1bbb0d1283030d1ba0106"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acaa679abeff1bbb0d1283030d1ba0106">&#9670;&nbsp;</a></span>Helmholtz2() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Geometry , class Matrix , class container &gt; </div>
+template&lt;class Geometry , class Matrix , class Container &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdg_1_1_helmholtz2.html">dg::Helmholtz2</a>&lt; Geometry, Matrix, container &gt;::<a class="el" href="structdg_1_1_helmholtz2.html">Helmholtz2</a> </td>
+          <td class="memname"><a class="el" href="structdg_1_1_helmholtz2.html">dg::Helmholtz2</a>&lt; Geometry, Matrix, Container &gt;::<a class="el" href="structdg_1_1_helmholtz2.html">Helmholtz2</a> </td>
           <td>(</td>
           <td class="paramtype">const Geometry &amp;&#160;</td>
           <td class="paramname"><em>g</em>, </td>
@@ -234,7 +307,7 @@ template&lt;class Geometry , class Matrix , class container &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype"><a class="el" href="structdg_1_1_helmholtz2.html#a03cc55c501f30ded3618456effc9c43c">value_type</a>&#160;</td>
           <td class="paramname"><em>alpha</em> = <code>1.</code>, </td>
         </tr>
         <tr>
@@ -246,7 +319,7 @@ template&lt;class Geometry , class Matrix , class container &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype"><a class="el" href="structdg_1_1_helmholtz2.html#a03cc55c501f30ded3618456effc9c43c">value_type</a>&#160;</td>
           <td class="paramname"><em>jfactor</em> = <code>1.</code>&#160;</td>
         </tr>
         <tr>
@@ -262,7 +335,7 @@ template&lt;class Geometry , class Matrix , class container &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Construct <code><a class="el" href="structdg_1_1_helmholtz2.html" title="Matrix class that represents a more general Helmholtz-type operator. ">Helmholtz2</a></code> operator. </p>
+<p>Construct <code><a class="el" href="structdg_1_1_helmholtz2.html" title="DEPRECATED, Matrix class that represents a more general Helmholtz-type operator. ">Helmholtz2</a></code> operator. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">g</td><td>The grid to use </td></tr>
@@ -276,19 +349,19 @@ template&lt;class Geometry , class Matrix , class container &gt; </div>
 
 </div>
 </div>
-<a id="ab06a6967a434103972d3ba634b11495a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab06a6967a434103972d3ba634b11495a">&#9670;&nbsp;</a></span>Helmholtz2() <span class="overload">[3/3]</span></h2>
+<a id="a31fe84b70ad5c3d3c396cfa2cb147bed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31fe84b70ad5c3d3c396cfa2cb147bed">&#9670;&nbsp;</a></span>Helmholtz2() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Geometry , class Matrix , class container &gt; </div>
+template&lt;class Geometry , class Matrix , class Container &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdg_1_1_helmholtz2.html">dg::Helmholtz2</a>&lt; Geometry, Matrix, container &gt;::<a class="el" href="structdg_1_1_helmholtz2.html">Helmholtz2</a> </td>
+          <td class="memname"><a class="el" href="structdg_1_1_helmholtz2.html">dg::Helmholtz2</a>&lt; Geometry, Matrix, Container &gt;::<a class="el" href="structdg_1_1_helmholtz2.html">Helmholtz2</a> </td>
           <td>(</td>
           <td class="paramtype">const Geometry &amp;&#160;</td>
           <td class="paramname"><em>g</em>, </td>
@@ -308,7 +381,7 @@ template&lt;class Geometry , class Matrix , class container &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype"><a class="el" href="structdg_1_1_helmholtz2.html#a03cc55c501f30ded3618456effc9c43c">value_type</a>&#160;</td>
           <td class="paramname"><em>alpha</em> = <code>1.</code>, </td>
         </tr>
         <tr>
@@ -320,7 +393,7 @@ template&lt;class Geometry , class Matrix , class container &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype"><a class="el" href="structdg_1_1_helmholtz2.html#a03cc55c501f30ded3618456effc9c43c">value_type</a>&#160;</td>
           <td class="paramname"><em>jfactor</em> = <code>1.</code>&#160;</td>
         </tr>
         <tr>
@@ -336,7 +409,7 @@ template&lt;class Geometry , class Matrix , class container &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Construct <code><a class="el" href="structdg_1_1_helmholtz2.html" title="Matrix class that represents a more general Helmholtz-type operator. ">Helmholtz2</a></code> operator. </p>
+<p>Construct <code><a class="el" href="structdg_1_1_helmholtz2.html" title="DEPRECATED, Matrix class that represents a more general Helmholtz-type operator. ">Helmholtz2</a></code> operator. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">g</td><td>The grid to use </td></tr>
@@ -353,19 +426,19 @@ template&lt;class Geometry , class Matrix , class container &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a1d121f6cee8f4079c5f09a174a3af2aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d121f6cee8f4079c5f09a174a3af2aa">&#9670;&nbsp;</a></span>alpha() <span class="overload">[1/2]</span></h2>
+<a id="a24d5acb0d363715cd6f7a7e9f1da7711"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24d5acb0d363715cd6f7a7e9f1da7711">&#9670;&nbsp;</a></span>alpha() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Geometry , class Matrix , class container &gt; </div>
+template&lt;class Geometry , class Matrix , class Container &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double&amp; <a class="el" href="structdg_1_1_helmholtz2.html">dg::Helmholtz2</a>&lt; Geometry, Matrix, container &gt;::alpha </td>
+          <td class="memname"><a class="el" href="structdg_1_1_helmholtz2.html#a03cc55c501f30ded3618456effc9c43c">value_type</a>&amp; <a class="el" href="structdg_1_1_helmholtz2.html">dg::Helmholtz2</a>&lt; Geometry, Matrix, Container &gt;::alpha </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -383,19 +456,19 @@ template&lt;class Geometry , class Matrix , class container &gt; </div>
 
 </div>
 </div>
-<a id="abb46624ba66eef6237153cb96a163fbb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb46624ba66eef6237153cb96a163fbb">&#9670;&nbsp;</a></span>alpha() <span class="overload">[2/2]</span></h2>
+<a id="ad6b890fbad9fb61b3e87903cd8857c44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6b890fbad9fb61b3e87903cd8857c44">&#9670;&nbsp;</a></span>alpha() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Geometry , class Matrix , class container &gt; </div>
+template&lt;class Geometry , class Matrix , class Container &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double <a class="el" href="structdg_1_1_helmholtz2.html">dg::Helmholtz2</a>&lt; Geometry, Matrix, container &gt;::alpha </td>
+          <td class="memname"><a class="el" href="structdg_1_1_helmholtz2.html#a03cc55c501f30ded3618456effc9c43c">value_type</a> <a class="el" href="structdg_1_1_helmholtz2.html">dg::Helmholtz2</a>&lt; Geometry, Matrix, Container &gt;::alpha </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -413,19 +486,19 @@ template&lt;class Geometry , class Matrix , class container &gt; </div>
 
 </div>
 </div>
-<a id="ad61b2c14e667ba4a39f27310fe172fc3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad61b2c14e667ba4a39f27310fe172fc3">&#9670;&nbsp;</a></span>chi()</h2>
+<a id="a835d1c25a476791395b21368b8dd315c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a835d1c25a476791395b21368b8dd315c">&#9670;&nbsp;</a></span>chi()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Geometry , class Matrix , class container &gt; </div>
+template&lt;class Geometry , class Matrix , class Container &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="structdg_1_1_sparse_element.html">SparseElement</a>&lt;container&gt;&amp; <a class="el" href="structdg_1_1_helmholtz2.html">dg::Helmholtz2</a>&lt; Geometry, Matrix, container &gt;::chi </td>
+          <td class="memname">const Container&amp; <a class="el" href="structdg_1_1_helmholtz2.html">dg::Helmholtz2</a>&lt; Geometry, Matrix, Container &gt;::chi </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -443,19 +516,19 @@ template&lt;class Geometry , class Matrix , class container &gt; </div>
 
 </div>
 </div>
-<a id="a62389ad5437c224d2d47121acfc97a30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62389ad5437c224d2d47121acfc97a30">&#9670;&nbsp;</a></span>construct() <span class="overload">[1/2]</span></h2>
+<a id="a34c0975f36c9ed183ff737ad128feb61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34c0975f36c9ed183ff737ad128feb61">&#9670;&nbsp;</a></span>construct() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Geometry , class Matrix , class container &gt; </div>
+template&lt;class Geometry , class Matrix , class Container &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="structdg_1_1_helmholtz2.html">dg::Helmholtz2</a>&lt; Geometry, Matrix, container &gt;::construct </td>
+          <td class="memname">void <a class="el" href="structdg_1_1_helmholtz2.html">dg::Helmholtz2</a>&lt; Geometry, Matrix, Container &gt;::construct </td>
           <td>(</td>
           <td class="paramtype">const Geometry &amp;&#160;</td>
           <td class="paramname"><em>g</em>, </td>
@@ -475,7 +548,7 @@ template&lt;class Geometry , class Matrix , class container &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype"><a class="el" href="structdg_1_1_helmholtz2.html#a03cc55c501f30ded3618456effc9c43c">value_type</a>&#160;</td>
           <td class="paramname"><em>alpha</em> = <code>1</code>, </td>
         </tr>
         <tr>
@@ -487,7 +560,7 @@ template&lt;class Geometry , class Matrix , class container &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype"><a class="el" href="structdg_1_1_helmholtz2.html#a03cc55c501f30ded3618456effc9c43c">value_type</a>&#160;</td>
           <td class="paramname"><em>jfactor</em> = <code>1.</code>&#160;</td>
         </tr>
         <tr>
@@ -503,7 +576,7 @@ template&lt;class Geometry , class Matrix , class container &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Construct <code><a class="el" href="structdg_1_1_helmholtz2.html" title="Matrix class that represents a more general Helmholtz-type operator. ">Helmholtz2</a></code> operator. </p>
+<p>Construct <code><a class="el" href="structdg_1_1_helmholtz2.html" title="DEPRECATED, Matrix class that represents a more general Helmholtz-type operator. ">Helmholtz2</a></code> operator. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">g</td><td>The grid to use </td></tr>
@@ -519,19 +592,19 @@ template&lt;class Geometry , class Matrix , class container &gt; </div>
 
 </div>
 </div>
-<a id="a9bd8e3fa774a7dd865ef87aa1cfb8a7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9bd8e3fa774a7dd865ef87aa1cfb8a7e">&#9670;&nbsp;</a></span>construct() <span class="overload">[2/2]</span></h2>
+<a id="a4a345a1b4a6029c87207c4613e5516ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a345a1b4a6029c87207c4613e5516ed">&#9670;&nbsp;</a></span>construct() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Geometry , class Matrix , class container &gt; </div>
+template&lt;class Geometry , class Matrix , class Container &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="structdg_1_1_helmholtz2.html">dg::Helmholtz2</a>&lt; Geometry, Matrix, container &gt;::construct </td>
+          <td class="memname">void <a class="el" href="structdg_1_1_helmholtz2.html">dg::Helmholtz2</a>&lt; Geometry, Matrix, Container &gt;::construct </td>
           <td>(</td>
           <td class="paramtype">const Geometry &amp;&#160;</td>
           <td class="paramname"><em>g</em>, </td>
@@ -539,7 +612,7 @@ template&lt;class Geometry , class Matrix , class container &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype"><a class="el" href="structdg_1_1_helmholtz2.html#a03cc55c501f30ded3618456effc9c43c">value_type</a>&#160;</td>
           <td class="paramname"><em>alpha</em> = <code>1</code>, </td>
         </tr>
         <tr>
@@ -551,7 +624,7 @@ template&lt;class Geometry , class Matrix , class container &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype"><a class="el" href="structdg_1_1_helmholtz2.html#a03cc55c501f30ded3618456effc9c43c">value_type</a>&#160;</td>
           <td class="paramname"><em>jfactor</em> = <code>1.</code>&#160;</td>
         </tr>
         <tr>
@@ -567,7 +640,7 @@ template&lt;class Geometry , class Matrix , class container &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Construct <code><a class="el" href="structdg_1_1_helmholtz2.html" title="Matrix class that represents a more general Helmholtz-type operator. ">Helmholtz2</a></code> operator. </p>
+<p>Construct <code><a class="el" href="structdg_1_1_helmholtz2.html" title="DEPRECATED, Matrix class that represents a more general Helmholtz-type operator. ">Helmholtz2</a></code> operator. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">g</td><td>The grid to use </td></tr>
@@ -581,19 +654,19 @@ template&lt;class Geometry , class Matrix , class container &gt; </div>
 
 </div>
 </div>
-<a id="a6c584ab406059b8cba748208c8f088fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c584ab406059b8cba748208c8f088fb">&#9670;&nbsp;</a></span>inv_weights()</h2>
+<a id="a66dadf1b2ea023183a06e38b49312265"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66dadf1b2ea023183a06e38b49312265">&#9670;&nbsp;</a></span>inv_weights()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Geometry , class Matrix , class container &gt; </div>
+template&lt;class Geometry , class Matrix , class Container &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const container&amp; <a class="el" href="structdg_1_1_helmholtz2.html">dg::Helmholtz2</a>&lt; Geometry, Matrix, container &gt;::inv_weights </td>
+          <td class="memname">const Container&amp; <a class="el" href="structdg_1_1_helmholtz2.html">dg::Helmholtz2</a>&lt; Geometry, Matrix, Container &gt;::inv_weights </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -607,23 +680,23 @@ template&lt;class Geometry , class Matrix , class container &gt; </div>
 </div><div class="memdoc">
 
 <p>Return the vector missing in the un-normed symmetric matrix. </p>
-<p>i.e. the inverse of the <a class="el" href="structdg_1_1_helmholtz2.html#a5d2582bd5798d1414b1a3e0a80f1849b" title="Return the vector making the matrix symmetric. ">weights()</a> function </p><dl class="section return"><dt>Returns</dt><dd>inverse volume form including inverse weights </dd></dl>
+<p>i.e. the inverse of the <a class="el" href="structdg_1_1_helmholtz2.html#a825bd67bc60d477e90dc716a81b241e6" title="Return the vector making the matrix symmetric. ">weights()</a> function </p><dl class="section return"><dt>Returns</dt><dd>inverse volume form including inverse weights </dd></dl>
 
 </div>
 </div>
-<a id="a5612b2dbc865d1887f3104ee5fbf75e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5612b2dbc865d1887f3104ee5fbf75e0">&#9670;&nbsp;</a></span>precond()</h2>
+<a id="a93bc6a38997a470cec011923bdb8104b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93bc6a38997a470cec011923bdb8104b">&#9670;&nbsp;</a></span>precond()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Geometry , class Matrix , class container &gt; </div>
+template&lt;class Geometry , class Matrix , class Container &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const container&amp; <a class="el" href="structdg_1_1_helmholtz2.html">dg::Helmholtz2</a>&lt; Geometry, Matrix, container &gt;::precond </td>
+          <td class="memname">const Container&amp; <a class="el" href="structdg_1_1_helmholtz2.html">dg::Helmholtz2</a>&lt; Geometry, Matrix, Container &gt;::precond </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -641,50 +714,21 @@ template&lt;class Geometry , class Matrix , class container &gt; </div>
 
 </div>
 </div>
-<a id="a4c6d500ae3b270291446ee2afe194fcc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c6d500ae3b270291446ee2afe194fcc">&#9670;&nbsp;</a></span>reset_chi()</h2>
+<a id="a3eb5c89121a7de7974725c4614808b7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3eb5c89121a7de7974725c4614808b7a">&#9670;&nbsp;</a></span>set_chi()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Geometry , class Matrix , class container &gt; </div>
+template&lt;class Geometry , class Matrix , class Container &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="structdg_1_1_helmholtz2.html">dg::Helmholtz2</a>&lt; Geometry, Matrix, container &gt;::reset_chi </td>
+          <td class="memname">void <a class="el" href="structdg_1_1_helmholtz2.html">dg::Helmholtz2</a>&lt; Geometry, Matrix, Container &gt;::set_chi </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets chi back to one. </p>
-
-</div>
-</div>
-<a id="a26060bbbc8458aa9ac61b1b99db17ca4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26060bbbc8458aa9ac61b1b99db17ca4">&#9670;&nbsp;</a></span>set_chi()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Geometry , class Matrix , class container &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="structdg_1_1_helmholtz2.html">dg::Helmholtz2</a>&lt; Geometry, Matrix, container &gt;::set_chi </td>
-          <td>(</td>
-          <td class="paramtype">const container &amp;&#160;</td>
+          <td class="paramtype">const Container &amp;&#160;</td>
           <td class="paramname"><em>chi</em></td><td>)</td>
           <td></td>
         </tr>
@@ -706,27 +750,27 @@ template&lt;class Geometry , class Matrix , class container &gt; </div>
 
 </div>
 </div>
-<a id="aa388825715f244f16fc1f17a5b03598b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa388825715f244f16fc1f17a5b03598b">&#9670;&nbsp;</a></span>symv()</h2>
+<a id="abf758e9988a361d080e83626806ee955"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf758e9988a361d080e83626806ee955">&#9670;&nbsp;</a></span>symv()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Geometry , class Matrix , class container &gt; </div>
+template&lt;class Geometry , class Matrix , class Container &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="structdg_1_1_helmholtz2.html">dg::Helmholtz2</a>&lt; Geometry, Matrix, container &gt;::symv </td>
+          <td class="memname">void <a class="el" href="structdg_1_1_helmholtz2.html">dg::Helmholtz2</a>&lt; Geometry, Matrix, Container &gt;::symv </td>
           <td>(</td>
-          <td class="paramtype">const container &amp;&#160;</td>
+          <td class="paramtype">const Container &amp;&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">container &amp;&#160;</td>
+          <td class="paramtype">Container &amp;&#160;</td>
           <td class="paramname"><em>y</em>&#160;</td>
         </tr>
         <tr>
@@ -757,19 +801,19 @@ template&lt;class Geometry , class Matrix , class container &gt; </div>
 
 </div>
 </div>
-<a id="a5d2582bd5798d1414b1a3e0a80f1849b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d2582bd5798d1414b1a3e0a80f1849b">&#9670;&nbsp;</a></span>weights()</h2>
+<a id="a825bd67bc60d477e90dc716a81b241e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a825bd67bc60d477e90dc716a81b241e6">&#9670;&nbsp;</a></span>weights()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Geometry , class Matrix , class container &gt; </div>
+template&lt;class Geometry , class Matrix , class Container &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const container&amp; <a class="el" href="structdg_1_1_helmholtz2.html">dg::Helmholtz2</a>&lt; Geometry, Matrix, container &gt;::weights </td>
+          <td class="memname">const Container&amp; <a class="el" href="structdg_1_1_helmholtz2.html">dg::Helmholtz2</a>&lt; Geometry, Matrix, Container &gt;::weights </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -796,7 +840,7 @@ template&lt;class Geometry , class Matrix , class container &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_helmholtz2.html">Helmholtz2</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:50 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

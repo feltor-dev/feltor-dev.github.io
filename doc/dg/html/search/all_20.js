@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['_7eabinaryfunctor',['~aBinaryFunctor',['../../../geometries/html/structdg_1_1geo_1_1a_binary_functor.html#a99c22fd3a26d662f0f7acfb478ad8718',1,'dg::geo::aBinaryFunctor']]],
   ['_7eacommunicator',['~aCommunicator',['../structdg_1_1a_communicator.html#a94374e74e4a9a7857f65de3a5e64ba37',1,'dg::aCommunicator']]],
-  ['_7eagenerator2d',['~aGenerator2d',['../../../geometries/html/structdg_1_1geo_1_1a_generator2d.html#a20e1572cd6b64a7dbcc31b31e271efb1',1,'dg::geo::aGenerator2d']]],
-  ['_7eageneratorx2d',['~aGeneratorX2d',['../../../geometries/html/structdg_1_1geo_1_1a_generator_x2d.html#a75ad9dfa1ef6af69482b64a943441ca8',1,'dg::geo::aGeneratorX2d']]],
+  ['_7earealgenerator2d',['~aRealGenerator2d',['../../../geometries/html/structdg_1_1geo_1_1a_real_generator2d.html#a1fc124e34b2aa512ed258aad2cc81741',1,'dg::geo::aRealGenerator2d']]],
+  ['_7earealgeneratorx2d',['~aRealGeneratorX2d',['../../../geometries/html/structdg_1_1geo_1_1a_real_generator_x2d.html#a58ad3e78765b49386a4558a28e2e7cfc',1,'dg::geo::aRealGeneratorX2d']]],
   ['_7earealgeometry2d',['~aRealGeometry2d',['../structdg_1_1a_real_geometry2d.html#a9e9ccb28e6b0df2acc0badbc4b9c510b',1,'dg::aRealGeometry2d']]],
   ['_7earealgeometry3d',['~aRealGeometry3d',['../structdg_1_1a_real_geometry3d.html#ad8d504c010350e99f07874fb84ac7ea9',1,'dg::aRealGeometry3d']]],
   ['_7earealgeometryx2d',['~aRealGeometryX2d',['../structdg_1_1a_real_geometry_x2d.html#ae5217f8bb7a7a47e700056def0a17da2',1,'dg::aRealGeometryX2d']]],
@@ -21,7 +20,6 @@ var searchData=
   ['_7earealtopologyx2d',['~aRealTopologyX2d',['../structdg_1_1a_real_topology_x2d.html#ae7e1de8dfb21c4c66a9b52bc22d3406a',1,'dg::aRealTopologyX2d']]],
   ['_7earealtopologyx3d',['~aRealTopologyX3d',['../structdg_1_1a_real_topology_x3d.html#a9c29a0d0b76d5fbd2841411b34ce6b27',1,'dg::aRealTopologyX3d']]],
   ['_7ebuffer',['~Buffer',['../structdg_1_1_buffer.html#a5331276000ae01418b1d2f8de29e5f3f',1,'dg::Buffer']]],
-  ['_7ecloneptr',['~ClonePtr',['../structdg_1_1_clone_ptr.html#a2c7b2642e761259b51c515daa48b14a0',1,'dg::ClonePtr']]],
   ['_7eerror',['~Error',['../classdg_1_1_error.html#aa128e2a9c314f3685b90968a7182e373',1,'dg::Error']]],
   ['_7efail',['~Fail',['../structdg_1_1_fail.html#ab661a6c4e4c56ac2136e787f797396dd',1,'dg::Fail']]],
   ['_7emessage',['~Message',['../classdg_1_1_message.html#af882d452d44235589e47e1b5f769efc7',1,'dg::Message']]]

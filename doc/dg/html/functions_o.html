@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -102,39 +102,50 @@ $(document).ready(function(){initNavTree('functions_o.html','');});
 <li>Operator()
 : <a class="el" href="classdg_1_1_operator.html#af341daeacc03a69bacaaf2335cd6f228">dg::Operator&lt; T &gt;</a>
 </li>
+<li>operator bool()
+: <a class="el" href="structdg_1_1_clone_ptr.html#a50eeda908332d60253ba37b50e193f01">dg::ClonePtr&lt; Cloneable &gt;</a>
+</li>
+<li>operator ButcherTableau&lt; real_type &gt;()
+: <a class="el" href="structdg_1_1_converts_to_butcher_tableau.html#a7b46a00d42dd1d177daf2491fc583786">dg::ConvertsToButcherTableau&lt; real_type &gt;</a>
+</li>
 <li>operator!=()
 : <a class="el" href="classdg_1_1_operator.html#ab4ecb3a5d8671e65f4ab5210d8c4745f">dg::Operator&lt; T &gt;</a>
 </li>
 <li>operator()()
 : <a class="el" href="structdg_1_1_a_b_s.html#a8bb07d882f3f7614d24f5f9aa3d03d64">dg::ABS&lt; T &gt;</a>
-, <a class="el" href="structdg_1_1_abs_max.html#ae0e234f8cfccaccd2a9159934023dea2">dg::AbsMax&lt; T &gt;</a>
-, <a class="el" href="structdg_1_1_abs_min.html#ab82c3b544ad06e8a5f4c2ef5d3512258">dg::AbsMin&lt; T &gt;</a>
-, <a class="el" href="structdg_1_1_arakawa_x.html#a304bbcf8f3563d3d513d5f14ff0ef3ed">dg::ArakawaX&lt; Geometry, Matrix, container &gt;</a>
-, <a class="el" href="structdg_1_1_average.html#a54d14739c0b19dd2852eca61c914060a">dg::Average&lt; container &gt;</a>
+, <a class="el" href="structdg_1_1_abs_max.html#a838aa03ebc9d155f0b9cb8caa35157d3">dg::AbsMax&lt; T &gt;</a>
+, <a class="el" href="structdg_1_1_abs_min.html#aa1abd700121746ac95007c0acf0ce34b">dg::AbsMin&lt; T &gt;</a>
+, <a class="el" href="structdg_1_1_arakawa_x.html#a72e9783e7a27d2a27343dd3775ac3a1c">dg::ArakawaX&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_average.html#a183da327d1dc76e85bf3af3659f05469">dg::Average&lt; ContainerType &gt;</a>
 , <a class="el" href="structdg_1_1_average_3_01_m_p_i___vector_3_01container_01_4_01_4.html#a4f9bbf8e052446f09b1809ad375d16ac">dg::Average&lt; MPI_Vector&lt; container &gt; &gt;</a>
 , <a class="el" href="structdg_1_1_bath_r_z.html#a7c954690f2256c913663f902312781d2">dg::BathRZ</a>
 , <a class="el" href="structdg_1_1_cauchy.html#a8a34afc1cc6167fb1fc3164dc1265f28">dg::Cauchy</a>
-, <a class="el" href="classdg_1_1_c_g.html#ab59936562d7dd90bc74f78b7d2648e26">dg::CG&lt; ContainerType &gt;</a>
+, <a class="el" href="classdg_1_1_c_g.html#aff284ac528386b529d0a7b04ffe54196">dg::CG&lt; ContainerType &gt;</a>
 , <a class="el" href="structdg_1_1_c_o_n_s_t_a_n_t.html#a2f1c8c3d3f4f83d8c3d9c1b6958f6c4b">dg::CONSTANT</a>
 , <a class="el" href="structdg_1_1_cos_x_cos_y.html#a7467eab4c9867948b447d544766b5752">dg::CosXCosY</a>
 , <a class="el" href="structdg_1_1_cos_y.html#a2804431f969b2f3e3af2820e0ea210c3">dg::CosY</a>
 , <a class="el" href="structdg_1_1divides__equals.html#ab8dc753b0827006b723838e28c0a36ac">dg::divides_equals</a>
+, <a class="el" href="structdg_1_1_embedded_pair_sum.html#a18384fc803b00c68d25029152ac0ef6a">dg::EmbeddedPairSum</a>
 , <a class="el" href="structdg_1_1equals.html#a7e26ab1d9bf67fc1727955a4f83376d7">dg::equals</a>
 , <a class="el" href="structdg_1_1_e_x_p.html#a742a51ce093ad043ae954eff696c63b1">dg::EXP&lt; T &gt;</a>
-, <a class="el" href="structdg_1_1_exp_prof_x.html#a0e1417ec498b8315227acee451400110">dg::ExpProfX</a>
+, <a class="el" href="structdg_1_1_exp_prof_x.html#a429de10dbd1c859d0e9e709b14ff8df6">dg::ExpProfX</a>
 , <a class="el" href="structdg_1_1_gaussian3d.html#a4e4512b60ba1b4156f4adfc7c71e0218">dg::Gaussian3d</a>
 , <a class="el" href="structdg_1_1_gaussian.html#a6c4064423964f591ea37246a89132173">dg::Gaussian</a>
-, <a class="el" href="structdg_1_1_gaussian_x.html#a180d9b21a30f7d01c40b83165ba47408">dg::GaussianX</a>
+, <a class="el" href="structdg_1_1_gaussian_damping.html#a2a3cbf8c4fbb3d1af15b35c61d99a0af">dg::GaussianDamping</a>
+, <a class="el" href="structdg_1_1_gaussian_x.html#a43a3277aa3d2a099285a48bb1bc5426d">dg::GaussianX</a>
 , <a class="el" href="structdg_1_1_gaussian_y.html#ad92600ba2b7233f13885ea58c752de77">dg::GaussianY</a>
 , <a class="el" href="structdg_1_1_gaussian_z.html#a6a4659e6beeb3d33351518675b2fb3bc">dg::GaussianZ</a>
-, <a class="el" href="structdg_1_1_histogram2_d.html#a4551a2a448c83dc5598f950265d84324">dg::Histogram2D&lt; container &gt;</a>
-, <a class="el" href="structdg_1_1_histogram.html#a79f8d9be520a70161e2d19accc5d4a92">dg::Histogram&lt; container &gt;</a>
-, <a class="el" href="structdg_1_1_inv_cosh_xsq.html#a6b06a694942ef53b22e12120f36206f1">dg::InvCoshXsq</a>
+, <a class="el" href="structdg_1_1_heaviside.html#ad45990076119f479851bdef8bb8dbc7c">dg::Heaviside</a>
+, <a class="el" href="structdg_1_1_histogram2_d.html#ab3b3619e6fbe0e9083c0890146330a43">dg::Histogram2D&lt; container &gt;</a>
+, <a class="el" href="structdg_1_1_histogram.html#a54ef2f9dfccf5c2969399b1ce49b6387">dg::Histogram&lt; container &gt;</a>
+, <a class="el" href="structdg_1_1_inv_cosh_xsq.html#a97e25d41cb85a3e080fcb7baec54f518">dg::InvCoshXsq</a>
+, <a class="el" href="structdg_1_1_invert.html#a41e28631d625a654de18278118029b74">dg::Invert&lt; ContainerType &gt;</a>
 , <a class="el" href="structdg_1_1_i_n_v_e_r_t.html#ae59a5f20252066e6c10f8d92c9c9fc29">dg::INVERT&lt; T &gt;</a>
-, <a class="el" href="structdg_1_1_invert.html#a39eebbdecf9e41cff2c5ab4a17a536d1">dg::Invert&lt; ContainerType &gt;</a>
+, <a class="el" href="structdg_1_1_invert.html#ac20a389295c81afe7906747938456fd8">dg::Invert&lt; ContainerType &gt;</a>
+, <a class="el" href="structdg_1_1_iris.html#afd89f1159ddacc146aec47305893a516">dg::Iris</a>
 , <a class="el" href="structdg_1_1_island_x_y.html#a8339aaf1084886de392c5526123f15e2">dg::IslandXY</a>
 , <a class="el" href="structdg_1_1_lamb.html#a9491de6dbcd01c16abe2fd72d7031b19">dg::Lamb</a>
-, <a class="el" href="structdg_1_1_linear_x.html#a7e4ac41e7807bf4a75a4d37921488dae">dg::LinearX</a>
+, <a class="el" href="structdg_1_1_linear_x.html#a082d05ac51dd757bf78c3cb0c026ede0">dg::LinearX</a>
 , <a class="el" href="structdg_1_1_linear_y.html#a4ae75a5bed6b449dd1bd38ebe3c448d0">dg::LinearY</a>
 , <a class="el" href="structdg_1_1_linear_z.html#abd2f7b2a00fbeca594b5b60ef89a1a95">dg::LinearZ</a>
 , <a class="el" href="structdg_1_1_l_n.html#a96dd7f6b61baad75332f7f3b06d4caf0">dg::LN&lt; T &gt;</a>
@@ -143,23 +154,29 @@ $(document).ready(function(){initNavTree('functions_o.html','');});
 , <a class="el" href="structdg_1_1_m_o_d.html#a391838c2e9904a47e3755a99449c5898">dg::MOD&lt; T &gt;</a>
 , <a class="el" href="structdg_1_1_o_n_e.html#a12a3ae48e2e4118af510e261cf5ee3d1">dg::ONE</a>
 , <a class="el" href="classdg_1_1_operator.html#ada4d2d751a0fee7360c156aeb5cd9da8">dg::Operator&lt; T &gt;</a>
+, <a class="el" href="structdg_1_1_pair_sum.html#ac6066507a57ab2d70176d744f9c8b77e">dg::PairSum</a>
 , <a class="el" href="structdg_1_1_p_l_u_s.html#aa11a1e9dd44eff890f79a84e69886ece">dg::PLUS&lt; T &gt;</a>
 , <a class="el" href="structdg_1_1plus__equals.html#a67a4374e48e8a2b78e38c31e14f3787f">dg::plus_equals</a>
-, <a class="el" href="structdg_1_1_poisson.html#a21d2c759b839d9b8d7266f4adbd1c069">dg::Poisson&lt; Geometry, Matrix, container &gt;</a>
+, <a class="el" href="structdg_1_1_poisson.html#ad60e506911c9c3a5c5b4fb26ed7e13ba">dg::Poisson&lt; Geometry, Matrix, Container &gt;</a>
 , <a class="el" href="structdg_1_1_p_o_s_v_a_l_u_e.html#ae30b9233ddd94a619806b9a8dbf02818">dg::POSVALUE&lt; T &gt;</a>
-, <a class="el" href="structdg_1_1_sin_prof_x.html#a06680697a068117deb620f1c0c4a4a07">dg::SinProfX</a>
-, <a class="el" href="structdg_1_1_sin_x.html#a56f852f67848d2500b526d226919b80b">dg::SinX</a>
+, <a class="el" href="structdg_1_1_psi_pupil.html#ab34522531c531d5323e4a0895b4e43af">dg::PsiPupil</a>
+, <a class="el" href="structdg_1_1_pupil.html#a015cdcd708d4519f11c9c3293cb71142">dg::Pupil</a>
+, <a class="el" href="structdg_1_1_sin_prof_x.html#ab6ed5e24b74ace0cf6d200d1cc618ea5">dg::SinProfX</a>
+, <a class="el" href="structdg_1_1_sin_x.html#a29718d7f20b332c64b61d0f75480345f">dg::SinX</a>
 , <a class="el" href="structdg_1_1_sin_x_cos_y.html#a7c6db7e26afc406b49ea2aa65a8e610c">dg::SinXCosY</a>
 , <a class="el" href="structdg_1_1_sin_x_sin_y.html#ade8488added34c1963b7de57b56a0196">dg::SinXSinY</a>
 , <a class="el" href="structdg_1_1_sin_y.html#a691ced3363e6032eb8d24590e87c50a1">dg::SinY</a>
 , <a class="el" href="structdg_1_1_s_q_r_t.html#aff0a630beb7a03098397e1694e384e6c">dg::SQRT&lt; T &gt;</a>
-, <a class="el" href="structdg_1_1_tanh_prof_x.html#a6f64fff5c52838cf05c242528eb41740">dg::TanhProfX</a>
+, <a class="el" href="structdg_1_1_sum.html#ae4317583a3bb4d477f8bfca06829c8d0">dg::Sum</a>
+, <a class="el" href="structdg_1_1_tanh_prof_x.html#aa8bae8e58ff82891e491538b8c6ed627">dg::TanhProfX</a>
 , <a class="el" href="structdg_1_1times__equals.html#aa903c19e83040089612b25778950597c">dg::times_equals</a>
+, <a class="el" href="structdg_1_1_triplet_sum.html#ae08c84844308c8c9c4183a3e0d8f7f8f">dg::TripletSum</a>
 , <a class="el" href="structdg_1_1_vortex.html#a2ff6d88733a783fad4331490093652e8">dg::Vortex</a>
 , <a class="el" href="structdg_1_1_z_e_r_o.html#a117d414fd6d9b543ac3fdf30cfbb44bc">dg::ZERO</a>
 </li>
-<li>operator*
-: <a class="el" href="classdg_1_1_operator.html#aa0c12018483764a7d5bbbe9715ceeedb">dg::Operator&lt; T &gt;</a>
+<li>operator*()
+: <a class="el" href="structdg_1_1_clone_ptr.html#ae3e3d9530ce254f9935f49fc53765c9d">dg::ClonePtr&lt; Cloneable &gt;</a>
+, <a class="el" href="classdg_1_1_operator.html#a59ac512dcfdd7d5cbaf91b99c9570f69">dg::Operator&lt; T &gt;</a>
 </li>
 <li>operator*=()
 : <a class="el" href="classdg_1_1_operator.html#aa17b5845d02c2981174a77b1b8ca8dab">dg::Operator&lt; T &gt;</a>
@@ -175,6 +192,9 @@ $(document).ready(function(){initNavTree('functions_o.html','');});
 </li>
 <li>operator-=()
 : <a class="el" href="classdg_1_1_operator.html#aae1278088b73bd0ee1e27fcd0e7ff3c7">dg::Operator&lt; T &gt;</a>
+</li>
+<li>operator-&gt;()
+: <a class="el" href="structdg_1_1_clone_ptr.html#a1dd607b948d4baf247939a70f7442125">dg::ClonePtr&lt; Cloneable &gt;</a>
 </li>
 <li>operator&lt;&lt;
 : <a class="el" href="classdg_1_1_message.html#a614c98fe65726d2e34adfb8fffc52f5f">dg::Message</a>
@@ -199,7 +219,7 @@ $(document).ready(function(){initNavTree('functions_o.html','');});
 , <a class="el" href="structdg_1_1a_real_topology_x2d.html#adcd7a18c720c7261c697fb059c92e9da">dg::aRealTopologyX2d&lt; real_type &gt;</a>
 , <a class="el" href="structdg_1_1a_real_topology_x3d.html#adec8f39fc9d02b6135903eb1d7ef0b54">dg::aRealTopologyX3d&lt; real_type &gt;</a>
 , <a class="el" href="structdg_1_1_buffer.html#a4f8c9eaf193ea924e0b0d5f00714d71f">dg::Buffer&lt; T &gt;</a>
-, <a class="el" href="structdg_1_1_clone_ptr.html#a079af556922b25988dbf17317adf6652">dg::ClonePtr&lt; cloneable &gt;</a>
+, <a class="el" href="structdg_1_1_clone_ptr.html#ad408cb431458d294da5332c18fa23b41">dg::ClonePtr&lt; Cloneable &gt;</a>
 , <a class="el" href="structdg_1_1_composite.html#afac33c60ce48942be09a7d19c33343dd">dg::Composite&lt; Matrix &gt;</a>
 </li>
 <li>operator==()
@@ -207,6 +227,12 @@ $(document).ready(function(){initNavTree('functions_o.html','');});
 </li>
 <li>operator&gt;&gt;
 : <a class="el" href="classdg_1_1_operator.html#a48552daaed7c7274884efa19e3985e0a">dg::Operator&lt; T &gt;</a>
+</li>
+<li>order()
+: <a class="el" href="structdg_1_1_a_r_k_step.html#a00ddc9888a7e8fd78df554024b59935b">dg::ARKStep&lt; ContainerType, SolverType &gt;</a>
+, <a class="el" href="structdg_1_1_butcher_tableau.html#a087de9c037155748988d2e9f6e530ba7">dg::ButcherTableau&lt; real_type &gt;</a>
+, <a class="el" href="structdg_1_1_e_r_k_step.html#ada7824a8c5643fddde70c5c7876b4367">dg::ERKStep&lt; ContainerType &gt;</a>
+, <a class="el" href="structdg_1_1_runge_kutta.html#a6986ca45c09f4546d9979bafe542653d">dg::RungeKutta&lt; ContainerType &gt;</a>
 </li>
 <li>outer_matrix()
 : <a class="el" href="structdg_1_1_row_col_dist_mat.html#a263c6c683aae00ecf28565184870faab">dg::RowColDistMat&lt; LocalMatrixInner, LocalMatrixOuter, Collective &gt;</a>
@@ -228,7 +254,7 @@ $(document).ready(function(){initNavTree('functions_o.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:50 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

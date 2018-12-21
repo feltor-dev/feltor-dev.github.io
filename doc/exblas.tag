@@ -4,7 +4,6 @@
     <name>accumulate.cuh</name>
     <path>/home/matthias/Projekte/feltor/inc/dg/backend/exblas/</path>
     <filename>accumulate_8cuh</filename>
-    <includes id="config_8h" name="config.h" local="yes" imported="no">config.h</includes>
     <namespace>exblas</namespace>
     <namespace>exblas::gpu</namespace>
     <member kind="function" static="yes">
@@ -33,7 +32,6 @@
     <name>accumulate.h</name>
     <path>/home/matthias/Projekte/feltor/inc/dg/backend/exblas/</path>
     <filename>accumulate_8h</filename>
-    <includes id="config_8h" name="config.h" local="yes" imported="no">config.h</includes>
     <namespace>exblas</namespace>
     <namespace>exblas::cpu</namespace>
     <member kind="function" static="yes">
@@ -56,118 +54,6 @@
       <anchorfile>namespaceexblas_1_1cpu.html</anchorfile>
       <anchor>ac16158f26c0ea9b96fea9cfacf870f53</anchor>
       <arglist>(int64_t *accumulator)</arglist>
-    </member>
-  </compound>
-  <compound kind="file">
-    <name>config.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/dg/backend/exblas/</path>
-    <filename>config_8h</filename>
-    <class kind="union">exblas::udouble</class>
-    <namespace>exblas</namespace>
-    <member kind="enumeration">
-      <type></type>
-      <name>Status</name>
-      <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>a33a26be6853bc1125ea07a6311df4409</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Exact</name>
-      <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>a33a26be6853bc1125ea07a6311df4409aa620d9b3018e3cf33182cc0a183c9a41</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Inexact</name>
-      <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>a33a26be6853bc1125ea07a6311df4409a8ccfa5d4276e891871ae86f31ceb47ec</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>MinusInfinity</name>
-      <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>a33a26be6853bc1125ea07a6311df4409ac70a03ed98fa9b721febe34dbe2296db</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PlusInfinity</name>
-      <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>a33a26be6853bc1125ea07a6311df4409a9a66cd9bdc0c9913ff24713153f36d15</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Overflow</name>
-      <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>a33a26be6853bc1125ea07a6311df4409acf9491c26a08f7717dd463d11579f0da</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>sNaN</name>
-      <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>a33a26be6853bc1125ea07a6311df4409a2bc609c25879368122248182e791b686</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>qNaN</name>
-      <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>a33a26be6853bc1125ea07a6311df4409ac643e2c9d1c5d6e3dc58575fb5823948</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" static="yes">
-      <type>static constexpr int</type>
-      <name>KRX</name>
-      <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>a81808a49717819440744a3cc80c2f0a2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" static="yes">
-      <type>static constexpr int</type>
-      <name>DIGITS</name>
-      <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>ab7155cf5cd239ccfc433456b86a0d1b3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" static="yes">
-      <type>static constexpr int</type>
-      <name>F_WORDS</name>
-      <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>aa8d2167b8bdbeec6e4209a4312c2afd4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" static="yes">
-      <type>static constexpr int</type>
-      <name>E_WORDS</name>
-      <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>a0f0bf3b7fb9c704401f9f6d276d400f8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" static="yes">
-      <type>static constexpr int</type>
-      <name>BIN_COUNT</name>
-      <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>ac83bf3b1e58c63896dbe5cb3f6e55cd8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" static="yes">
-      <type>static constexpr int</type>
-      <name>IMIN</name>
-      <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>ac38e8f3644f78c72b6faebe50bcbe1bb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" static="yes">
-      <type>static constexpr int</type>
-      <name>IMAX</name>
-      <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>a20d6da0425e24b08fbf52a86b8cc94af</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" static="yes">
-      <type>static constexpr double</type>
-      <name>DELTASCALE</name>
-      <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>a8850e70cb161d0677d9f50cae8d024b4</anchor>
-      <arglist></arglist>
     </member>
   </compound>
   <compound kind="file">
@@ -254,79 +140,11 @@
       <arglist>(unsigned num_superacc, int64_t *in, int64_t *out, MPI_Comm comm, MPI_Comm comm_mod, MPI_Comm comm_mod_reduce)</arglist>
     </member>
   </compound>
-  <compound kind="union">
-    <name>exblas::udouble</name>
-    <filename>unionexblas_1_1udouble.html</filename>
-    <member kind="variable">
-      <type>double</type>
-      <name>d</name>
-      <anchorfile>unionexblas_1_1udouble.html</anchorfile>
-      <anchor>ad115249e363b024b947ea30df3a02de5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>int64_t</type>
-      <name>i</name>
-      <anchorfile>unionexblas_1_1udouble.html</anchorfile>
-      <anchor>a9d4866f2f6f7db59d5409c72657a4cf5</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
   <compound kind="namespace">
     <name>exblas</name>
     <filename>namespaceexblas.html</filename>
     <namespace>exblas::cpu</namespace>
     <namespace>exblas::gpu</namespace>
-    <class kind="union">exblas::udouble</class>
-    <member kind="enumeration">
-      <type></type>
-      <name>Status</name>
-      <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>a33a26be6853bc1125ea07a6311df4409</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Exact</name>
-      <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>a33a26be6853bc1125ea07a6311df4409aa620d9b3018e3cf33182cc0a183c9a41</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Inexact</name>
-      <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>a33a26be6853bc1125ea07a6311df4409a8ccfa5d4276e891871ae86f31ceb47ec</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>MinusInfinity</name>
-      <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>a33a26be6853bc1125ea07a6311df4409ac70a03ed98fa9b721febe34dbe2296db</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PlusInfinity</name>
-      <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>a33a26be6853bc1125ea07a6311df4409a9a66cd9bdc0c9913ff24713153f36d15</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Overflow</name>
-      <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>a33a26be6853bc1125ea07a6311df4409acf9491c26a08f7717dd463d11579f0da</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>sNaN</name>
-      <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>a33a26be6853bc1125ea07a6311df4409a2bc609c25879368122248182e791b686</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>qNaN</name>
-      <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>a33a26be6853bc1125ea07a6311df4409ac643e2c9d1c5d6e3dc58575fb5823948</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="function">
       <type>__host__ void</type>
       <name>exdot_gpu</name>
@@ -382,62 +200,6 @@
       <anchorfile>namespaceexblas.html</anchorfile>
       <anchor>ab4c1247c02e14edcae026d41b3f5c6fb</anchor>
       <arglist>(unsigned num_superacc, int64_t *in, int64_t *out, MPI_Comm comm, MPI_Comm comm_mod, MPI_Comm comm_mod_reduce)</arglist>
-    </member>
-    <member kind="variable" static="yes">
-      <type>static constexpr int</type>
-      <name>KRX</name>
-      <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>a81808a49717819440744a3cc80c2f0a2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" static="yes">
-      <type>static constexpr int</type>
-      <name>DIGITS</name>
-      <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>ab7155cf5cd239ccfc433456b86a0d1b3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" static="yes">
-      <type>static constexpr int</type>
-      <name>F_WORDS</name>
-      <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>aa8d2167b8bdbeec6e4209a4312c2afd4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" static="yes">
-      <type>static constexpr int</type>
-      <name>E_WORDS</name>
-      <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>a0f0bf3b7fb9c704401f9f6d276d400f8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" static="yes">
-      <type>static constexpr int</type>
-      <name>BIN_COUNT</name>
-      <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>ac83bf3b1e58c63896dbe5cb3f6e55cd8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" static="yes">
-      <type>static constexpr int</type>
-      <name>IMIN</name>
-      <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>ac38e8f3644f78c72b6faebe50bcbe1bb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" static="yes">
-      <type>static constexpr int</type>
-      <name>IMAX</name>
-      <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>a20d6da0425e24b08fbf52a86b8cc94af</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable" static="yes">
-      <type>static constexpr double</type>
-      <name>DELTASCALE</name>
-      <anchorfile>namespaceexblas.html</anchorfile>
-      <anchor>a8850e70cb161d0677d9f50cae8d024b4</anchor>
-      <arglist></arglist>
     </member>
   </compound>
   <compound kind="namespace">

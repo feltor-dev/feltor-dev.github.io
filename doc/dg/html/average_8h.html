@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
-<title>Discontinuous Galerkin Library: geometry/average.h File Reference</title>
+<title>Discontinuous Galerkin Library: topology/average.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -104,56 +104,19 @@ $(document).ready(function(){initNavTree('average_8h.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>contains classes for poloidal and toroidal average computations.  
+<p>Classes for poloidal and toroidal average computations.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="grid_8h_source.html">grid.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="weights_8h_source.html">weights.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="blas1_8h_source.html">dg/blas1.h</a>&quot;</code><br />
 <code>#include &quot;dg/backend/average_dispatch.h&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for average.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="average_8h__incl.png" border="0" usemap="#geometry_2average_8h" alt=""/></div>
-<map name="geometry_2average_8h" id="geometry_2average_8h">
-<area shape="rect" id="node2" href="grid_8h.html" title="base topology classes " alt="" coords="384,177,439,203"/>
-<area shape="rect" id="node15" href="weights_8h.html" title="contains creation functions for integration weights and their inverse " alt="" coords="478,87,556,114"/>
-<area shape="rect" id="node16" href="blas1_8h.html" title="dg/blas1.h" alt="" coords="2200,87,2282,114"/>
-<area shape="rect" id="node6" href="topological__traits_8h.html" title="topological_traits.h" alt="" coords="212,259,342,285"/>
-<area shape="rect" id="node7" href="dlt_8h.html" title="contains the discrete legendre trafo class " alt="" coords="58,259,104,285"/>
-<area shape="rect" id="node13" href="enums_8h.html" title="enums " alt="" coords="367,259,451,285"/>
-<area shape="rect" id="node12" href="exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="216,333,383,360"/>
-<area shape="rect" id="node18" href="tensor__traits_8h.html" title="backend/tensor_traits.h" alt="" coords="2783,259,2942,285"/>
-<area shape="rect" id="node25" href="tensor__traits__scalar_8h.html" title="backend/tensor_traits\l_scalar.h" alt="" coords="2864,169,3010,211"/>
-<area shape="rect" id="node26" href="tensor__traits__thrust_8h.html" title="backend/tensor_traits\l_thrust.h" alt="" coords="754,169,901,211"/>
-<area shape="rect" id="node28" href="tensor__traits__cusp_8h.html" title="backend/tensor_traits\l_cusp.h" alt="" coords="1444,169,1590,211"/>
-<area shape="rect" id="node35" href="tensor__traits__std_8h.html" title="backend/tensor_traits\l_std.h" alt="" coords="3034,169,3181,211"/>
-<area shape="rect" id="node39" href="mpi__vector_8h.html" title="backend/mpi_vector.h" alt="" coords="1728,177,1879,203"/>
-<area shape="rect" id="node47" href="subroutines_8h.html" title="subroutines.h" alt="" coords="3228,177,3328,203"/>
-<area shape="rect" id="node21" href="scalar__categories_8h.html" title="scalar_categories.h" alt="" coords="2912,333,3047,360"/>
-<area shape="rect" id="node22" href="vector__categories_8h.html" title="vector_categories.h" alt="" coords="2501,408,2637,435"/>
-<area shape="rect" id="node23" href="matrix__categories_8h.html" title="matrix_categories.h" alt="" coords="2353,483,2489,509"/>
-<area shape="rect" id="node24" href="execution__policy_8h.html" title="execution_policy.h" alt="" coords="2650,333,2781,360"/>
-<area shape="rect" id="node41" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/mpi__accumulate_8h.html" title="exblas/mpi_accumulate.h" alt="" coords="2345,259,2516,285"/>
-<area shape="rect" id="node43" href="mpi__communicator_8h.html" title="mpi_communicator.h" alt="" coords="1943,259,2086,285"/>
-<area shape="rect" id="node44" href="memory_8h.html" title="memory.h" alt="" coords="2110,259,2190,285"/>
-<area shape="rect" id="node48" href="functions_8h.html" title="contains some utility functions for the evaluation() routines " alt="" coords="3197,259,3360,285"/>
-</map>
-</div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="average_8h__dep__incl.png" border="0" usemap="#geometry_2average_8hdep" alt=""/></div>
-<map name="geometry_2average_8hdep" id="geometry_2average_8hdep">
-<area shape="rect" id="node2" href="average__mpi_8h.html" title="contains classes for poloidal and toroidal average computations. " alt="" coords="5,80,171,107"/>
-</map>
-</div>
 </div>
 <p><a href="average_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_average.html">dg::Average&lt; container &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for average computations over a given direction or plane.  <a href="structdg_1_1_average.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_average.html">dg::Average&lt; ContainerType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for average computations in a Cartesian topology.  <a href="structdg_1_1_average.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -163,14 +126,14 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>contains classes for poloidal and toroidal average computations. </p>
+<div class="textblock"><p>Classes for poloidal and toroidal average computations. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_e3380d2178455503f266746fb14246a5.html">geometry</a></li><li class="navelem"><a class="el" href="average_8h.html">average.h</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
+    <li class="navelem"><a class="el" href="dir_84497794bb37d283dbd68163bed8ef05.html">topology</a></li><li class="navelem"><a class="el" href="average_8h.html">average.h</a></li>
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

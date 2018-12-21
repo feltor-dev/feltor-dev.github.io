@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -104,8 +104,8 @@ $(document).ready(function(){initNavTree('structdg_1_1_tanh_prof_x.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>Functor for a step function using tanh </p><p class="formulaDsp">
-\[ f(x,y) = 0.5 profamp(1+ sign \tanh((x-x_b)/width ) )+bgampg \]
+<p>Step function using tanh </p><p class="formulaDsp">
+\[ f(x) = B + 0.5 A(1+ \text{sign} \tanh((x-x_b)/\alpha ) ) \]
 </p>
 <p>.  
  <a href="structdg_1_1_tanh_prof_x.html#details">More...</a></p>
@@ -114,21 +114,24 @@ $(document).ready(function(){initNavTree('structdg_1_1_tanh_prof_x.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a38043606afa505f7f9a70511119ac74b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_tanh_prof_x.html#a38043606afa505f7f9a70511119ac74b">TanhProfX</a> (double xb, double width, int sign, double bgamp, double profamp)</td></tr>
-<tr class="memdesc:a38043606afa505f7f9a70511119ac74b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct with xb, width and sign.  <a href="#a38043606afa505f7f9a70511119ac74b">More...</a><br /></td></tr>
-<tr class="separator:a38043606afa505f7f9a70511119ac74b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af43b20abf216b2802ef1538f847915a8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_tanh_prof_x.html#af43b20abf216b2802ef1538f847915a8">TanhProfX</a> (double xb, double width, int sign=1, double bgamp=0., double profamp=1.)</td></tr>
+<tr class="memdesc:af43b20abf216b2802ef1538f847915a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct with xb, width and sign.  <a href="#af43b20abf216b2802ef1538f847915a8">More...</a><br /></td></tr>
+<tr class="separator:af43b20abf216b2802ef1538f847915a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8bae8e58ff82891e491538b8c6ed627"><td class="memItemLeft" align="right" valign="top"><a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_tanh_prof_x.html#aa8bae8e58ff82891e491538b8c6ed627">operator()</a> (double <a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>) const</td></tr>
+<tr class="separator:aa8bae8e58ff82891e491538b8c6ed627"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f64fff5c52838cf05c242528eb41740"><td class="memItemLeft" align="right" valign="top"><a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_tanh_prof_x.html#a6f64fff5c52838cf05c242528eb41740">operator()</a> (double <a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>, double <a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>) const</td></tr>
-<tr class="memdesc:a6f64fff5c52838cf05c242528eb41740"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return left side step function.  <a href="#a6f64fff5c52838cf05c242528eb41740">More...</a><br /></td></tr>
 <tr class="separator:a6f64fff5c52838cf05c242528eb41740"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6aca5e22ad75bbb03745ef87aa7619b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_tanh_prof_x.html#a6aca5e22ad75bbb03745ef87aa7619b7">operator()</a> (double <a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>, double <a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>, double <a class="el" href="group__creation.html#gga4de4a3d7cd219a55affa992871e8598fafbade9e36a3f36d3d676c1b808451dd7">z</a>) const</td></tr>
+<tr class="separator:a6aca5e22ad75bbb03745ef87aa7619b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Functor for a step function using tanh </p><p class="formulaDsp">
-\[ f(x,y) = 0.5 profamp(1+ sign \tanh((x-x_b)/width ) )+bgampg \]
+<div class="textblock"><p>Step function using tanh </p><p class="formulaDsp">
+\[ f(x) = B + 0.5 A(1+ \text{sign} \tanh((x-x_b)/\alpha ) ) \]
 </p>
 <p>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a38043606afa505f7f9a70511119ac74b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38043606afa505f7f9a70511119ac74b">&#9670;&nbsp;</a></span>TanhProfX()</h2>
+<a id="af43b20abf216b2802ef1538f847915a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af43b20abf216b2802ef1538f847915a8">&#9670;&nbsp;</a></span>TanhProfX()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -152,19 +155,19 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>sign</em>, </td>
+          <td class="paramname"><em>sign</em> = <code>1</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>bgamp</em>, </td>
+          <td class="paramname"><em>bgamp</em> = <code>0.</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>profamp</em>&#160;</td>
+          <td class="paramname"><em>profamp</em> = <code>1.</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -183,10 +186,10 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">xb</td><td>boundary value </td></tr>
-    <tr><td class="paramname">width</td><td>damping width </td></tr>
+    <tr><td class="paramname">width</td><td>damping width <code>alpha</code> </td></tr>
     <tr><td class="paramname">sign</td><td>sign of the Tanh, defines the damping direction </td></tr>
-    <tr><td class="paramname">bgamp</td><td>background amplitude </td></tr>
-    <tr><td class="paramname">profamp</td><td>profile amplitude </td></tr>
+    <tr><td class="paramname">bgamp</td><td>background amplitude <code>B</code> </td></tr>
+    <tr><td class="paramname">profamp</td><td>profile amplitude <code>A</code> </td></tr>
   </table>
   </dd>
 </dl>
@@ -194,8 +197,34 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa8bae8e58ff82891e491538b8c6ed627"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8bae8e58ff82891e491538b8c6ed627">&#9670;&nbsp;</a></span>operator()() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double dg::TanhProfX::operator() </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a6f64fff5c52838cf05c242528eb41740"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f64fff5c52838cf05c242528eb41740">&#9670;&nbsp;</a></span>operator()()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f64fff5c52838cf05c242528eb41740">&#9670;&nbsp;</a></span>operator()() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -228,15 +257,47 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Return left side step function. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>x - coordianate </td></tr>
-    <tr><td class="paramname">y</td><td>y - coordianate</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>result </dd></dl>
+</div>
+</div>
+<a id="a6aca5e22ad75bbb03745ef87aa7619b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6aca5e22ad75bbb03745ef87aa7619b7">&#9670;&nbsp;</a></span>operator()() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double dg::TanhProfX::operator() </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -249,7 +310,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_tanh_prof_x.html">TanhProfX</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:50 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

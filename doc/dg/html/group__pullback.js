@@ -8,5 +8,5 @@ var group__pullback =
     [ "pullback", "group__pullback.html#ga45daa901c64e2dd3dea4ecaca7ef7921", null ],
     [ "pushForward", "group__pullback.html#gaf1b8e5426e47a83f079b723dcad325e5", null ],
     [ "pushForwardPerp", "group__pullback.html#gab8b4c0a46bf70e59e456df9bf8a68e0d", null ],
-    [ "pushForwardPerp", "group__pullback.html#gae217bca44c066edc7bfb66a1786d7265", null ]
+    [ "pushForwardPerp", "group__pullback.html#ga0184e8f7d99dcfde909c850ff4f85c0b", null ]
 ];

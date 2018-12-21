@@ -28,6 +28,7 @@ var structdg_1_1a_real_topology3d =
     [ "operator=", "structdg_1_1a_real_topology3d.html#af30e5a52cf5451e3a403a65b5dff7fc1", null ],
     [ "set", "structdg_1_1a_real_topology3d.html#aa016cb924a13881677207e349bf07774", null ],
     [ "shift_topologic", "structdg_1_1a_real_topology3d.html#a33a7c62e9617f17e52f3cdb81261cd12", null ],
+    [ "shift_topologic", "structdg_1_1a_real_topology3d.html#ac85da80be632e6e197d4322c73a62817", null ],
     [ "size", "structdg_1_1a_real_topology3d.html#a13d7fa0ab0e09b99217e8ac122a8c63b", null ],
     [ "x0", "structdg_1_1a_real_topology3d.html#a6c70e4d1c5730715427d54b7170336a3", null ],
     [ "x1", "structdg_1_1a_real_topology3d.html#aaf516cc24a8de72e250334288d48cf9e", null ],

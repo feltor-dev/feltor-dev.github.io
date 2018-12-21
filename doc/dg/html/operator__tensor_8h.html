@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
-<title>Discontinuous Galerkin Library: geometry/operator_tensor.h File Reference</title>
+<title>Discontinuous Galerkin Library: topology/operator_tensor.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -108,43 +108,6 @@ $(document).ready(function(){initNavTree('operator__tensor_8h.html','');});
 <code>#include &lt;cusp/multiply.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="operator_8h_source.html">operator.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="grid_8h_source.html">grid.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for operator_tensor.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="operator__tensor_8h__incl.png" border="0" usemap="#geometry_2operator__tensor_8h" alt=""/></div>
-<map name="geometry_2operator__tensor_8h" id="geometry_2operator__tensor_8h">
-<area shape="rect" id="node5" href="operator_8h.html" title="operator.h" alt="" coords="252,80,332,107"/>
-<area shape="rect" id="node17" href="grid_8h.html" title="base topology classes " alt="" coords="389,80,443,107"/>
-<area shape="rect" id="node11" href="dlt_8h.html" title="contains the discrete legendre trafo class " alt="" coords="293,155,339,181"/>
-<area shape="rect" id="node14" href="exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="417,229,583,256"/>
-<area shape="rect" id="node19" href="topological__traits_8h.html" title="topological_traits.h" alt="" coords="808,155,939,181"/>
-<area shape="rect" id="node20" href="enums_8h.html" title="enums " alt="" coords="537,155,621,181"/>
-</map>
-</div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="operator__tensor_8h__dep__incl.png" border="0" usemap="#geometry_2operator__tensor_8hdep" alt=""/></div>
-<map name="geometry_2operator__tensor_8hdep" id="geometry_2operator__tensor_8hdep">
-<area shape="rect" id="node2" href="interpolation_8h.html" title="contains 1D, 2D and 3D interpolation matrix creation functions " alt="" coords="591,80,752,107"/>
-<area shape="rect" id="node18" href="xspacelib_8h.html" title="provides some utility functions " alt="" coords="1039,155,1186,181"/>
-<area shape="rect" id="node3" href="fast__interpolation_8h.html" title="contains a matrix type for fast interpolations/projections " alt="" coords="24,229,215,256"/>
-<area shape="rect" id="node4" href="multigrid_8h.html" title="multigrid.h" alt="" coords="78,304,161,331"/>
-<area shape="rect" id="node5" href="projection_8h.html" title="contains creation of projection matrices " alt="" coords="305,155,451,181"/>
-<area shape="rect" id="node7" href="refined__elliptic_8h.html" title="contains an elliptic method on a refined grid " alt="" coords="496,453,612,480"/>
-<area shape="rect" id="node10" href="refined__grid_x_8h.html" title="geometry/refined_gridX.h" alt="" coords="677,229,844,256"/>
-<area shape="rect" id="node16" href="refined__grid_8h.html" title="geometry/refined_grid.h" alt="" coords="592,155,751,181"/>
-<area shape="rect" id="node17" href="interpolation_x_8h.html" title="contains 1D, 2D and 3D interpolation matrix creation functions on X&#45;point topology ..." alt="" coords="903,453,1074,480"/>
-<area shape="rect" id="node6" href="mpi__projection_8h.html" title="Useful MPI typedefs and overloads of interpolation and projection. " alt="" coords="291,229,465,256"/>
-<area shape="rect" id="node8" href="projection_x_8h.html" title="contains creation of projection matrices for X point topology " alt="" coords="204,304,360,331"/>
-<area shape="rect" id="node9" href="algorithm_8h.html" title="algorithm.h" alt="" coords="788,528,875,555"/>
-<area shape="rect" id="node11" href="geometry_8h.html" title="geometry/geometry.h" alt="" coords="688,304,833,331"/>
-<area shape="rect" id="node12" href="elliptic_8h.html" title="General negative elliptic operators. " alt="" coords="796,379,867,405"/>
-<area shape="rect" id="node14" href="arakawa_8h.html" title="object for computation of Poisson bracket " alt="" coords="891,379,974,405"/>
-<area shape="rect" id="node15" href="poisson_8h.html" title="poisson.h" alt="" coords="693,379,772,405"/>
-<area shape="rect" id="node13" href="helmholtz_8h.html" title="contains Helmholtz and Maxwell operators " alt="" coords="787,453,876,480"/>
-</map>
-</div>
 </div>
 <p><a href="operator__tensor_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -174,8 +137,8 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_e3380d2178455503f266746fb14246a5.html">geometry</a></li><li class="navelem"><a class="el" href="operator__tensor_8h.html">operator_tensor.h</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
+    <li class="navelem"><a class="el" href="dir_84497794bb37d283dbd68163bed8ef05.html">topology</a></li><li class="navelem"><a class="el" href="operator__tensor_8h.html">operator_tensor.h</a></li>
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

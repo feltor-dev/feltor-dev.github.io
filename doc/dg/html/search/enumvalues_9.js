@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['z',['z',['../group__creation.html#gga4de4a3d7cd219a55affa992871e8598fafbade9e36a3f36d3d676c1b808451dd7',1,'dg']]]
+  ['midpoint_5f2_5f2',['MIDPOINT_2_2',['../group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a53589c3f492267933d52411a91abe87f',1,'dg']]]
 ];

@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -116,93 +116,42 @@ Collaboration diagram for evaluate:</div>
 Functions</h2></td></tr>
 <tr class="memitem:ga0d2da37399e38acb2b243f568d5e7443"><td class="memTemplParams" colspan="2">template&lt;class UnaryOp , class real_type &gt; </td></tr>
 <tr class="memitem:ga0d2da37399e38acb2b243f568d5e7443"><td class="memTemplItemLeft" align="right" valign="top">thrust::host_vector&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">dg::evaluate</a> (UnaryOp f, const <a class="el" href="structdg_1_1_real_grid1d.html">RealGrid1d</a>&lt; real_type &gt; &amp;g)</td></tr>
-<tr class="memdesc:ga0d2da37399e38acb2b243f568d5e7443"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a function on gaussian abscissas.  <a href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">More...</a><br /></td></tr>
+<tr class="memdesc:ga0d2da37399e38acb2b243f568d5e7443"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a 1d function on grid coordinates.  <a href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">More...</a><br /></td></tr>
 <tr class="separator:ga0d2da37399e38acb2b243f568d5e7443"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga619eb1504db9c29b1a7f2ebf1a13e93f"><td class="memTemplParams" colspan="2">template&lt;class BinaryOp , class real_type &gt; </td></tr>
 <tr class="memitem:ga619eb1504db9c29b1a7f2ebf1a13e93f"><td class="memTemplItemLeft" align="right" valign="top">thrust::host_vector&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__evaluation.html#ga619eb1504db9c29b1a7f2ebf1a13e93f">dg::evaluate</a> (const BinaryOp &amp;f, const <a class="el" href="structdg_1_1a_real_topology2d.html">aRealTopology2d</a>&lt; real_type &gt; &amp;g)</td></tr>
-<tr class="memdesc:ga619eb1504db9c29b1a7f2ebf1a13e93f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a function on gaussian abscissas.  <a href="group__evaluation.html#ga619eb1504db9c29b1a7f2ebf1a13e93f">More...</a><br /></td></tr>
+<tr class="memdesc:ga619eb1504db9c29b1a7f2ebf1a13e93f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a 2d function on grid coordinates.  <a href="group__evaluation.html#ga619eb1504db9c29b1a7f2ebf1a13e93f">More...</a><br /></td></tr>
 <tr class="separator:ga619eb1504db9c29b1a7f2ebf1a13e93f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga001bb58dc67e68e4c86affabea23908c"><td class="memTemplParams" colspan="2">template&lt;class TernaryOp , class real_type &gt; </td></tr>
 <tr class="memitem:ga001bb58dc67e68e4c86affabea23908c"><td class="memTemplItemLeft" align="right" valign="top">thrust::host_vector&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__evaluation.html#ga001bb58dc67e68e4c86affabea23908c">dg::evaluate</a> (const TernaryOp &amp;f, const <a class="el" href="structdg_1_1a_real_topology3d.html">aRealTopology3d</a>&lt; real_type &gt; &amp;g)</td></tr>
-<tr class="memdesc:ga001bb58dc67e68e4c86affabea23908c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a function on gaussian abscissas.  <a href="group__evaluation.html#ga001bb58dc67e68e4c86affabea23908c">More...</a><br /></td></tr>
+<tr class="memdesc:ga001bb58dc67e68e4c86affabea23908c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a 3d function on grid coordinates.  <a href="group__evaluation.html#ga001bb58dc67e68e4c86affabea23908c">More...</a><br /></td></tr>
 <tr class="separator:ga001bb58dc67e68e4c86affabea23908c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabe69c7f3d4f90f0792902fe817ed81e5"><td class="memTemplParams" colspan="2">template&lt;class UnaryOp , class real_type &gt; </td></tr>
 <tr class="memitem:gabe69c7f3d4f90f0792902fe817ed81e5"><td class="memTemplItemLeft" align="right" valign="top">thrust::host_vector&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__evaluation.html#gabe69c7f3d4f90f0792902fe817ed81e5">dg::evaluate</a> (UnaryOp f, const <a class="el" href="structdg_1_1_real_grid_x1d.html">RealGridX1d</a>&lt; real_type &gt; &amp;g)</td></tr>
-<tr class="memdesc:gabe69c7f3d4f90f0792902fe817ed81e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a function on gaussian abscissas.  <a href="group__evaluation.html#gabe69c7f3d4f90f0792902fe817ed81e5">More...</a><br /></td></tr>
+<tr class="memdesc:gabe69c7f3d4f90f0792902fe817ed81e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a 1d function on grid coordinates.  <a href="group__evaluation.html#gabe69c7f3d4f90f0792902fe817ed81e5">More...</a><br /></td></tr>
 <tr class="separator:gabe69c7f3d4f90f0792902fe817ed81e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab60cad2b1e49591135255b8f51f6e772"><td class="memTemplParams" colspan="2">template&lt;class BinaryOp , class real_type &gt; </td></tr>
 <tr class="memitem:gab60cad2b1e49591135255b8f51f6e772"><td class="memTemplItemLeft" align="right" valign="top">thrust::host_vector&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__evaluation.html#gab60cad2b1e49591135255b8f51f6e772">dg::evaluate</a> (const BinaryOp &amp;f, const <a class="el" href="structdg_1_1a_real_topology_x2d.html">aRealTopologyX2d</a>&lt; real_type &gt; &amp;g)</td></tr>
-<tr class="memdesc:gab60cad2b1e49591135255b8f51f6e772"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a function on gaussian abscissas.  <a href="group__evaluation.html#gab60cad2b1e49591135255b8f51f6e772">More...</a><br /></td></tr>
+<tr class="memdesc:gab60cad2b1e49591135255b8f51f6e772"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a 2d function on grid coordinates.  <a href="group__evaluation.html#gab60cad2b1e49591135255b8f51f6e772">More...</a><br /></td></tr>
 <tr class="separator:gab60cad2b1e49591135255b8f51f6e772"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac222de3553c5442c440cf48e1df64fbe"><td class="memTemplParams" colspan="2">template&lt;class TernaryOp , class real_type &gt; </td></tr>
 <tr class="memitem:gac222de3553c5442c440cf48e1df64fbe"><td class="memTemplItemLeft" align="right" valign="top">thrust::host_vector&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__evaluation.html#gac222de3553c5442c440cf48e1df64fbe">dg::evaluate</a> (const TernaryOp &amp;f, const <a class="el" href="structdg_1_1a_real_topology_x3d.html">aRealTopologyX3d</a>&lt; real_type &gt; &amp;g)</td></tr>
-<tr class="memdesc:gac222de3553c5442c440cf48e1df64fbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a function on gaussian abscissas.  <a href="group__evaluation.html#gac222de3553c5442c440cf48e1df64fbe">More...</a><br /></td></tr>
+<tr class="memdesc:gac222de3553c5442c440cf48e1df64fbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a 3d function on grid coordinates.  <a href="group__evaluation.html#gac222de3553c5442c440cf48e1df64fbe">More...</a><br /></td></tr>
 <tr class="separator:gac222de3553c5442c440cf48e1df64fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6fe75b724d63814d9b236c9908e6b523"><td class="memTemplParams" colspan="2">template&lt;class BinaryOp , class real_type &gt; </td></tr>
 <tr class="memitem:ga6fe75b724d63814d9b236c9908e6b523"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt; thrust::host_vector&lt; real_type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__evaluation.html#ga6fe75b724d63814d9b236c9908e6b523">dg::evaluate</a> (const BinaryOp &amp;f, const <a class="el" href="structdg_1_1a_real_m_p_i_topology2d.html">aRealMPITopology2d</a>&lt; real_type &gt; &amp;g)</td></tr>
-<tr class="memdesc:ga6fe75b724d63814d9b236c9908e6b523"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a function on gaussian abscissas.  <a href="group__evaluation.html#ga6fe75b724d63814d9b236c9908e6b523">More...</a><br /></td></tr>
+<tr class="memdesc:ga6fe75b724d63814d9b236c9908e6b523"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a 2d function on mpi distributed grid coordinates.  <a href="group__evaluation.html#ga6fe75b724d63814d9b236c9908e6b523">More...</a><br /></td></tr>
 <tr class="separator:ga6fe75b724d63814d9b236c9908e6b523"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3035e2b20e6178bcfc7341388e4d63a4"><td class="memTemplParams" colspan="2">template&lt;class TernaryOp , class real_type &gt; </td></tr>
 <tr class="memitem:ga3035e2b20e6178bcfc7341388e4d63a4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt; thrust::host_vector&lt; real_type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__evaluation.html#ga3035e2b20e6178bcfc7341388e4d63a4">dg::evaluate</a> (const TernaryOp &amp;f, const <a class="el" href="structdg_1_1a_real_m_p_i_topology3d.html">aRealMPITopology3d</a>&lt; real_type &gt; &amp;g)</td></tr>
-<tr class="memdesc:ga3035e2b20e6178bcfc7341388e4d63a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a function on gaussian abscissas.  <a href="group__evaluation.html#ga3035e2b20e6178bcfc7341388e4d63a4">More...</a><br /></td></tr>
+<tr class="memdesc:ga3035e2b20e6178bcfc7341388e4d63a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a 3d function on mpi distributed grid coordinates.  <a href="group__evaluation.html#ga3035e2b20e6178bcfc7341388e4d63a4">More...</a><br /></td></tr>
 <tr class="separator:ga3035e2b20e6178bcfc7341388e4d63a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>The function discretisation routines compute the DG discretisation of analytic functions on a given grid. In 1D the discretisation simply consists of n function values per grid cell ( where n is the number of Legendre coefficients used; currently 1 &lt;= n &lt;= 20 ) evaluated at the <a class="el" href="structdg_1_1_gaussian.html" title="Functor returning a gaussian . ">Gaussian</a> abscissas in the respective cell. In 2D and 3D we simply use the product space. We choose x to be the contiguous direction. The first elements of the resulting vector lie in the cell at (x0,y0) and the last in (x1, y1). </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga6fe75b724d63814d9b236c9908e6b523"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6fe75b724d63814d9b236c9908e6b523">&#9670;&nbsp;</a></span>evaluate() <span class="overload">[1/8]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class BinaryOp , class real_type &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt;thrust::host_vector&lt;real_type&gt; &gt; dg::evaluate </td>
-          <td>(</td>
-          <td class="paramtype">const BinaryOp &amp;&#160;</td>
-          <td class="paramname"><em>f</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1a_real_m_p_i_topology2d.html">aRealMPITopology2d</a>&lt; real_type &gt; &amp;&#160;</td>
-          <td class="paramname"><em>g</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Evaluate a function on gaussian abscissas. </p>
-<p>Evaluates f(x) on the given grid</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">BinaryOp</td><td>A class or function type with a member/signature equivalent to<ul>
-<li>double operator()(double, double) const </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">f</td><td>The function to evaluate: f = f(x,y) </td></tr>
-    <tr><td class="paramname">g</td><td>The 2d grid on which to evaluate f</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A MPI Vector with values </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a></dd></dl>
-<p>This code snippet demonstrates how to discretize and compute the norm of a function on a distributed memory system </p><div class="fragment"><div class="line"><span class="comment">//define the function to integrate</span></div><div class="line"><span class="keywordtype">double</span> <span class="keyword">function</span>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> amp){</div><div class="line">    <span class="keywordflow">return</span> amp*exp(x)*exp(y);</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// create a grid of the domain [0,2]x[0,2] with 20 cells in x and y and 3 polynomial coefficients</span></div><div class="line"><span class="comment">//... use MPI_Cart_create to create 2d Cartesian communicator</span></div><div class="line"><a class="code" href="structdg_1_1_real_m_p_i_grid2d.html">dg::MPIGrid2d</a> g2d( 0, 2, 0, 2, 3, 20, 20, comm2d);</div><div class="line"></div><div class="line"><span class="comment">// create the Gaussian weights (volume form) for the integration</span></div><div class="line"><span class="keyword">const</span> <a class="code" href="structdg_1_1_m_p_i___vector.html">dg::MHVec</a> w2d = <a class="code" href="group__highlevel.html#ga771996962c7762bc7ee00b522a17259f">dg::create::weights</a>( g2d);</div><div class="line"></div><div class="line"><span class="comment">// our function needs to depend only on x and y so let&#39;s fix the amplitude to 2</span></div><div class="line"><span class="keyword">using namespace </span>std::placeholders; <span class="comment">//for _1, _2</span></div><div class="line"><span class="keyword">auto</span> functor = std::bind( <span class="keyword">function</span>, _1, _2, 2.);</div><div class="line"></div><div class="line"><span class="comment">// discretize the function on the grid</span></div><div class="line"><span class="keyword">const</span> <a class="code" href="structdg_1_1_m_p_i___vector.html">dg::MHVec</a> vec = <a class="code" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">dg::evaluate</a>( functor, g2d);</div><div class="line"></div><div class="line"><span class="comment">// multiply and sum the results</span></div><div class="line"><span class="keywordtype">double</span> norm = <a class="code" href="group__blas2.html#gaaafba91956e948b0ea53f30889a3c20d">dg::blas2::dot</a>( vec, w2d, vec);</div><div class="line"></div><div class="line"><span class="comment">// norm is now: (e^4-1)^2</span></div></div><!-- fragment --> 
-</div>
-</div>
 <a id="gabe69c7f3d4f90f0792902fe817ed81e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabe69c7f3d4f90f0792902fe817ed81e5">&#9670;&nbsp;</a></span>evaluate() <span class="overload">[2/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gabe69c7f3d4f90f0792902fe817ed81e5">&#9670;&nbsp;</a></span>evaluate() <span class="overload">[1/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -229,42 +178,51 @@ template&lt;class UnaryOp , class real_type &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Evaluate a function on gaussian abscissas. </p>
-<p>Evaluates f(x) on the intervall (a,b) </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+<p>Evaluate a 1d function on grid coordinates. </p>
+<p>Evaluate is equivalent to the following:</p>
+<ol type="1">
+<li>generate a list of grid coordinates \( x_i\) representing the given computational space discretization (the grid)</li>
+<li>evaluate the given function or functor at these coordinates and store the result in the output vector \( v_i = f(x_i)\) for all <code>i</code> </li>
+</ol>
+<p>This code snippet demonstrates how to discretize and integrate a function </p><div class="fragment"><div class="line"><span class="comment">// create a one-dimensional grid on the domain [0,2] with 3 polynomial coefficients and 20 cells</span></div><div class="line"><a class="code" href="structdg_1_1_real_grid1d.html">dg::Grid1d</a> g1d( 0, 2, 3, 20);</div><div class="line"></div><div class="line"><span class="comment">// create the Gaussian weights (volume form) for the integration</span></div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193">dg::HVec</a> w1d = <a class="code" href="group__highlevel.html#ga771996962c7762bc7ee00b522a17259f">dg::create::weights</a>( g1d);</div><div class="line"></div><div class="line"><span class="comment">// discretize the exponential function on the grid</span></div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193">dg::HVec</a> vec = <a class="code" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">dg::evaluate</a>( exp, g1d);</div><div class="line"></div><div class="line"><span class="comment">// now compute the scalar product (the integral)</span></div><div class="line"><span class="keywordtype">double</span> integral = <a class="code" href="group__blas1.html#ga7b2aa636a0fe0c7d3298b9f869658919">dg::blas1::dot</a>( w1d, vec);</div><div class="line"></div><div class="line"><span class="comment">// integral is now: e^2-1</span></div></div><!-- fragment --> <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">UnaryOp</td><td>Model of Unary Function </td></tr>
+    <tr><td class="paramname">UnaryOp</td><td>Model of Unary Function <code>real_type</code> <code>f(real_type)</code> </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">f</td><td>The function to evaluate </td></tr>
-    <tr><td class="paramname">g</td><td>The grid on which to evaluate f</td></tr>
+    <tr><td class="paramname">g</td><td>The grid that defines the computational space on which to evaluate f</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A DG Host Vector with values </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The output vector <code>v</code> as a host vector </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Use the elementary function \( f(x) = x \) (<code><a class="el" href="group__functions.html#ga21055512458a88c314621a912fb1417f" title=" ">dg::cooX1d()</a></code> ) to generate the list of grid coordinates </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a> </dd>
+<dd>
+<code><a class="el" href="group__pullback.html#ga17d53d4c95becdd93597cb5b69a5525c" title="Pull back a function defined in physical coordinates to the curvilinear (computational) coordinate sy...">dg::pullback</a></code> if you want to <a class="el" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443" title="Evaluate a 1d function on grid coordinates. ">evaluate</a> a function in physical space </dd></dl>
 
 </div>
 </div>
-<a id="ga0d2da37399e38acb2b243f568d5e7443"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0d2da37399e38acb2b243f568d5e7443">&#9670;&nbsp;</a></span>evaluate() <span class="overload">[3/8]</span></h2>
+<a id="ga6fe75b724d63814d9b236c9908e6b523"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6fe75b724d63814d9b236c9908e6b523">&#9670;&nbsp;</a></span>evaluate() <span class="overload">[2/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class UnaryOp , class real_type &gt; </div>
+template&lt;class BinaryOp , class real_type &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">thrust::host_vector&lt;real_type&gt; dg::evaluate </td>
+          <td class="memname"><a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt;thrust::host_vector&lt;real_type&gt; &gt; dg::evaluate </td>
           <td>(</td>
-          <td class="paramtype">UnaryOp&#160;</td>
+          <td class="paramtype">const BinaryOp &amp;&#160;</td>
           <td class="paramname"><em>f</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_real_grid1d.html">RealGrid1d</a>&lt; real_type &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1a_real_m_p_i_topology2d.html">aRealMPITopology2d</a>&lt; real_type &gt; &amp;&#160;</td>
           <td class="paramname"><em>g</em>&#160;</td>
         </tr>
         <tr>
@@ -275,27 +233,36 @@ template&lt;class UnaryOp , class real_type &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Evaluate a function on gaussian abscissas. </p>
-<p>Evaluates f(x) on the intervall (a,b) </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+<p>Evaluate a 2d function on mpi distributed grid coordinates. </p>
+<p>Evaluate is equivalent to the following:</p>
+<ol type="1">
+<li>generate the list of grid coordinates \( x_i\), \( y_i\) representing the local part of the given computational space discretization (the grid) that the calling process owns</li>
+<li>evaluate the given function or functor at these coordinates and store the result in the output vector \( v_i = f(x_i, y_i)\) for all <code>i</code> </li>
+</ol>
+<p>This code snippet demonstrates how to discretize and compute the norm of a function on a distributed memory system </p><div class="fragment"><div class="line"><span class="comment">//define the function to integrate</span></div><div class="line"><span class="keywordtype">double</span> <span class="keyword">function</span>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> amp){</div><div class="line">    <span class="keywordflow">return</span> amp*exp(x)*exp(y);</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// create a grid of the domain [0,2]x[0,2] with 20 cells in x and y and 3 polynomial coefficients</span></div><div class="line"><span class="comment">//... use MPI_Cart_create to create 2d Cartesian communicator</span></div><div class="line"><a class="code" href="structdg_1_1_real_m_p_i_grid2d.html">dg::MPIGrid2d</a> g2d( 0, 2, 0, 2, 3, 20, 20, comm2d);</div><div class="line"></div><div class="line"><span class="comment">// create the Gaussian weights (volume form) for the integration</span></div><div class="line"><span class="keyword">const</span> <a class="code" href="structdg_1_1_m_p_i___vector.html">dg::MHVec</a> w2d = <a class="code" href="group__highlevel.html#ga771996962c7762bc7ee00b522a17259f">dg::create::weights</a>( g2d);</div><div class="line"></div><div class="line"><span class="comment">// our function needs to depend only on x and y so let&#39;s fix the amplitude to 2</span></div><div class="line"><span class="keyword">using namespace </span>std::placeholders; <span class="comment">//for _1, _2</span></div><div class="line"><span class="keyword">auto</span> functor = std::bind( <span class="keyword">function</span>, _1, _2, 2.);</div><div class="line"></div><div class="line"><span class="comment">// discretize the function on the grid</span></div><div class="line"><span class="keyword">const</span> <a class="code" href="structdg_1_1_m_p_i___vector.html">dg::MHVec</a> vec = <a class="code" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">dg::evaluate</a>( functor, g2d);</div><div class="line"></div><div class="line"><span class="comment">// multiply and sum the results</span></div><div class="line"><span class="keywordtype">double</span> norm = <a class="code" href="group__blas2.html#gaaafba91956e948b0ea53f30889a3c20d">dg::blas2::dot</a>( vec, w2d, vec);</div><div class="line"></div><div class="line"><span class="comment">// norm is now: (e^4-1)^2</span></div></div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">UnaryOp</td><td>Model of Unary Function </td></tr>
+    <tr><td class="paramname">BinaryOp</td><td>A class or function type with a member/signature equivalent to<ul>
+<li>real_type operator()(real_type, real_type) const </li>
+</ul>
+</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">f</td><td>The function to evaluate </td></tr>
-    <tr><td class="paramname">g</td><td>The grid on which to evaluate f</td></tr>
+    <tr><td class="paramname">f</td><td>The function to evaluate: f = f(x,y) </td></tr>
+    <tr><td class="paramname">g</td><td>The 2d grid on which to evaluate <code>f</code> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A DG Host Vector with values </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a></dd></dl>
-<p>This code snippet demonstrates how to discretize and integrate a function </p><div class="fragment"><div class="line"><span class="comment">// create a one-dimensional grid on the domain [0,2] with 3 polynomial coefficients and 20 cells</span></div><div class="line"><a class="code" href="structdg_1_1_real_grid1d.html">dg::Grid1d</a> g1d( 0, 2, 3, 20);</div><div class="line"></div><div class="line"><span class="comment">// create the Gaussian weights (volume form) for the integration</span></div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193">dg::HVec</a> w1d = <a class="code" href="group__highlevel.html#ga771996962c7762bc7ee00b522a17259f">dg::create::weights</a>( g1d);</div><div class="line"></div><div class="line"><span class="comment">// discretize the exponential function on the grid</span></div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193">dg::HVec</a> vec = <a class="code" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">dg::evaluate</a>( exp, g1d);</div><div class="line"></div><div class="line"><span class="comment">// now compute the scalar product (the integral)</span></div><div class="line"><span class="keywordtype">double</span> integral = <a class="code" href="group__blas1.html#ga7b2aa636a0fe0c7d3298b9f869658919">dg::blas1::dot</a>( w1d, vec);</div><div class="line"></div><div class="line"><span class="comment">// integral is now: e^2-1</span></div></div><!-- fragment --> 
+<dl class="section return"><dt>Returns</dt><dd>The output vector <code>v</code> as an MPI host Vector </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Use the elementary function \( f(x,y) = x \) (<code><a class="el" href="group__functions.html#gadb49e10685e2bcdd8a27ef88f2857151" title=" ">dg::cooX2d</a></code>) to generate the list of grid coordinates in <code>x</code> direction (or analogous in <code>y</code>, <code><a class="el" href="group__functions.html#ga5aa995cf5e888c9ee1026b78f6f78cc5" title=" ">dg::cooY2d</a></code>) </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a> </dd></dl>
+
 </div>
 </div>
 <a id="gab60cad2b1e49591135255b8f51f6e772"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab60cad2b1e49591135255b8f51f6e772">&#9670;&nbsp;</a></span>evaluate() <span class="overload">[4/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gab60cad2b1e49591135255b8f51f6e772">&#9670;&nbsp;</a></span>evaluate() <span class="overload">[3/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -322,12 +289,16 @@ template&lt;class BinaryOp , class real_type &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Evaluate a function on gaussian abscissas. </p>
-<p>Evaluates f(x) on the given grid</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
+<p>Evaluate a 2d function on grid coordinates. </p>
+<p>Evaluate is equivalent to the following:</p>
+<ol type="1">
+<li>generate the list of grid coordinates \( x_i\), \( y_i\) representing the given computational space discretization (the grid)</li>
+<li>evaluate the given function or functor at these coordinates and store the result in the output vector \( v_i = f(x_i, y_i)\) for all <code>i</code> </li>
+</ol>
+<p>This code snippet demonstrates how to discretize and compute the norm of a function on a shared memory system </p><div class="fragment"><div class="line"><span class="comment">// define the function to integrate</span></div><div class="line"><span class="keywordtype">double</span> <span class="keyword">function</span>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> amp){</div><div class="line">    <span class="keywordflow">return</span> amp*exp(x)*exp(y);</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// create a grid of the domain [0,2]x[0,2] with 20 cells in x and y and 3 polynomial coefficients</span></div><div class="line"><a class="code" href="structdg_1_1_real_grid2d.html">dg::Grid2d</a> g2d( 0, 2, 0, 2, 3, 20, 20);</div><div class="line"></div><div class="line"><span class="comment">// create the Gaussian weights (volume form) for the integration</span></div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193">dg::HVec</a> w2d = <a class="code" href="group__highlevel.html#ga771996962c7762bc7ee00b522a17259f">dg::create::weights</a>( g2d);</div><div class="line"></div><div class="line"><span class="comment">// our function needs to depend only on x and y so let&#39;s fix the amplitude to 2</span></div><div class="line"><span class="keyword">using namespace </span>std::placeholders; <span class="comment">//for _1, _2</span></div><div class="line"><span class="keyword">auto</span> functor = std::bind( <span class="keyword">function</span>, _1, _2, 2.);</div><div class="line"></div><div class="line"><span class="comment">// discretize the function on the grid</span></div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193">dg::HVec</a> vec = <a class="code" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">dg::evaluate</a>( functor, g2d);</div><div class="line"></div><div class="line"><span class="comment">// now compute the scalar product (the L2 norm)</span></div><div class="line"><span class="keywordtype">double</span> norm = <a class="code" href="group__blas2.html#gaaafba91956e948b0ea53f30889a3c20d">dg::blas2::dot</a>( vec, w2d, vec);</div><div class="line"></div><div class="line"><span class="comment">// norm is now: (e^4-1)^2</span></div></div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">BinaryOp</td><td>A class or function type with a member/signature equivalent to<ul>
-<li>double operator()(double, double) const </li>
+<li>real_type operator()(real_type, real_type) const </li>
 </ul>
 </td></tr>
   </table>
@@ -336,17 +307,20 @@ template&lt;class BinaryOp , class real_type &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">f</td><td>The function to evaluate: f = f(x,y) </td></tr>
-    <tr><td class="paramname">g</td><td>The 2d grid on which to evaluate f</td></tr>
+    <tr><td class="paramname">g</td><td>The 2d grid on which to evaluate <code>f</code> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A dG Host Vector with values </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Copies the binary <a class="el" href="classdg_1_1_operator.html" title="Helper class mainly for the assembly of Matrices. ">Operator</a>. This function is meant for small function objects, that may be constructed during function call. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The output vector <code>v</code> as a host vector </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Use the elementary function \( f(x,y) = x \) (<code><a class="el" href="group__functions.html#gadb49e10685e2bcdd8a27ef88f2857151" title=" ">dg::cooX2d</a></code>) to generate the list of grid coordinates in <code>x</code> direction (or analogous in <code>y</code>, <code><a class="el" href="group__functions.html#ga5aa995cf5e888c9ee1026b78f6f78cc5" title=" ">dg::cooY2d</a></code>) </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a> </dd>
+<dd>
+<code><a class="el" href="group__pullback.html#ga17d53d4c95becdd93597cb5b69a5525c" title="Pull back a function defined in physical coordinates to the curvilinear (computational) coordinate sy...">dg::pullback</a></code> if you want to <a class="el" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443" title="Evaluate a 1d function on grid coordinates. ">evaluate</a> a function in physical space </dd></dl>
 
 </div>
 </div>
 <a id="gac222de3553c5442c440cf48e1df64fbe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac222de3553c5442c440cf48e1df64fbe">&#9670;&nbsp;</a></span>evaluate() <span class="overload">[5/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gac222de3553c5442c440cf48e1df64fbe">&#9670;&nbsp;</a></span>evaluate() <span class="overload">[4/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -373,12 +347,16 @@ template&lt;class TernaryOp , class real_type &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Evaluate a function on gaussian abscissas. </p>
-<p>Evaluates f(x,y,z) on the given grid</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
+<p>Evaluate a 3d function on grid coordinates. </p>
+<p>Evaluate is equivalent to the following:</p>
+<ol type="1">
+<li>generate the list of grid coordinates \( x_i\), \( y_i\), \( z_i \) representing the given computational space discretization (the grid)</li>
+<li>evaluate the given function or functor at these coordinates and store the result in the output vector \( v_i = f(x_i, y_i, z_i)\) for all <code>i</code> </li>
+</ol>
+<p>This code snippet demonstrates how to discretize and compute the norm of a function </p><div class="fragment"><div class="line"><span class="comment">// define the function to integrate</span></div><div class="line"><span class="keywordtype">double</span> <span class="keyword">function</span>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> <a class="code" href="group__creation.html#gga4de4a3d7cd219a55affa992871e8598fafbade9e36a3f36d3d676c1b808451dd7">z</a>, <span class="keywordtype">double</span> amp){</div><div class="line">    <span class="keywordflow">return</span> amp*exp(x)*exp(y)*exp(z);</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// create a grid of the domain [0,2]x[0,2]x[0,2] with 20 cells in x, y and z and 3 polynomial coefficients and x and y and 1 in z</span></div><div class="line"><a class="code" href="structdg_1_1_real_grid3d.html">dg::Grid3d</a> g3d( 0, 2, 0, 2, 0, 2, 3, 20, 20, 20);</div><div class="line"></div><div class="line"><span class="comment">// create the Gaussian weights (volume form) for the integration</span></div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193">dg::HVec</a> w3d = <a class="code" href="group__highlevel.html#ga771996962c7762bc7ee00b522a17259f">dg::create::weights</a>( g3d);</div><div class="line"></div><div class="line"><span class="comment">// our function needs to depend only on x, y and z so let&#39;s fix the amplitude to 2</span></div><div class="line"><span class="keyword">using namespace </span>std::placeholders; <span class="comment">//for _1, _2, _3</span></div><div class="line"><span class="keyword">auto</span> functor = std::bind( <span class="keyword">function</span>, _1, _2, _3, 2.);</div><div class="line"></div><div class="line"><span class="comment">// discretize the function on the grid</span></div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193">dg::HVec</a> vec = <a class="code" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">dg::evaluate</a>( functor, g3d);</div><div class="line"></div><div class="line"><span class="comment">// now compute the scalar product (the L2 norm)</span></div><div class="line"><span class="keywordtype">double</span> norm = <a class="code" href="group__blas2.html#gaaafba91956e948b0ea53f30889a3c20d">dg::blas2::dot</a>(vec, w3d, vec);</div><div class="line"></div><div class="line"><span class="comment">// norm is now: (exp(4)-exp(0))^3/2</span></div></div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">TernaryOp</td><td>A class or function type with a member/signature equivalent to<ul>
-<li>double operator()(double, double, double) const </li>
+<li>real_type operator()(real_type, real_type, real_type) const </li>
 </ul>
 </td></tr>
   </table>
@@ -387,12 +365,70 @@ template&lt;class TernaryOp , class real_type &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">f</td><td>The function to evaluate: f = f(x,y,z) </td></tr>
-    <tr><td class="paramname">g</td><td>The 3d grid on which to evaluate f</td></tr>
+    <tr><td class="paramname">g</td><td>The 3d grid on which to evaluate <code>f</code> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A dG Host Vector with values </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Copies the ternary <a class="el" href="classdg_1_1_operator.html" title="Helper class mainly for the assembly of Matrices. ">Operator</a>. This function is meant for small function objects, that may be constructed during function call. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The output vector <code>v</code> as a host vector </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Use the elementary function \( f(x,y,z) = x \) (<code><a class="el" href="group__functions.html#gadd9ae95517a739c80452afc7fc9c36ae" title=" ">dg::cooX3d</a></code>) to generate the list of grid coordinates in <code>x</code> direction (or analogous in <code>y</code>, <code><a class="el" href="group__functions.html#gaafbff988d4cff4a0643e819b3f6962cc" title=" ">dg::cooY3d</a></code> or <code>z</code>, <code><a class="el" href="group__functions.html#ga89a354d8268ca0f86486a93683fda7d4" title=" ">dg::cooZ3d</a></code>) </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a> </dd>
+<dd>
+<code><a class="el" href="group__pullback.html#ga17d53d4c95becdd93597cb5b69a5525c" title="Pull back a function defined in physical coordinates to the curvilinear (computational) coordinate sy...">dg::pullback</a></code> if you want to <a class="el" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443" title="Evaluate a 1d function on grid coordinates. ">evaluate</a> a function in physical space </dd></dl>
+
+</div>
+</div>
+<a id="ga0d2da37399e38acb2b243f568d5e7443"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0d2da37399e38acb2b243f568d5e7443">&#9670;&nbsp;</a></span>evaluate() <span class="overload">[5/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class UnaryOp , class real_type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">thrust::host_vector&lt;real_type&gt; dg::evaluate </td>
+          <td>(</td>
+          <td class="paramtype">UnaryOp&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_real_grid1d.html">RealGrid1d</a>&lt; real_type &gt; &amp;&#160;</td>
+          <td class="paramname"><em>g</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Evaluate a 1d function on grid coordinates. </p>
+<p>Evaluate is equivalent to the following:</p>
+<ol type="1">
+<li>generate a list of grid coordinates \( x_i\) representing the given computational space discretization (the grid)</li>
+<li>evaluate the given function or functor at these coordinates and store the result in the output vector \( v_i = f(x_i)\) for all <code>i</code> </li>
+</ol>
+<p>This code snippet demonstrates how to discretize and integrate a function </p><div class="fragment"><div class="line"><span class="comment">// create a one-dimensional grid on the domain [0,2] with 3 polynomial coefficients and 20 cells</span></div><div class="line"><a class="code" href="structdg_1_1_real_grid1d.html">dg::Grid1d</a> g1d( 0, 2, 3, 20);</div><div class="line"></div><div class="line"><span class="comment">// create the Gaussian weights (volume form) for the integration</span></div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193">dg::HVec</a> w1d = <a class="code" href="group__highlevel.html#ga771996962c7762bc7ee00b522a17259f">dg::create::weights</a>( g1d);</div><div class="line"></div><div class="line"><span class="comment">// discretize the exponential function on the grid</span></div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193">dg::HVec</a> vec = <a class="code" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">dg::evaluate</a>( exp, g1d);</div><div class="line"></div><div class="line"><span class="comment">// now compute the scalar product (the integral)</span></div><div class="line"><span class="keywordtype">double</span> integral = <a class="code" href="group__blas1.html#ga7b2aa636a0fe0c7d3298b9f869658919">dg::blas1::dot</a>( w1d, vec);</div><div class="line"></div><div class="line"><span class="comment">// integral is now: e^2-1</span></div></div><!-- fragment --> <dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">UnaryOp</td><td>Model of Unary Function <code>real_type</code> <code>f(real_type)</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>The function to evaluate </td></tr>
+    <tr><td class="paramname">g</td><td>The grid that defines the computational space on which to evaluate f</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The output vector <code>v</code> as a host vector </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Use the elementary function \( f(x) = x \) (<code><a class="el" href="group__functions.html#ga21055512458a88c314621a912fb1417f" title=" ">dg::cooX1d()</a></code> ) to generate the list of grid coordinates </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a> </dd>
+<dd>
+<code><a class="el" href="group__pullback.html#ga17d53d4c95becdd93597cb5b69a5525c" title="Pull back a function defined in physical coordinates to the curvilinear (computational) coordinate sy...">dg::pullback</a></code> if you want to <a class="el" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443" title="Evaluate a 1d function on grid coordinates. ">evaluate</a> a function in physical space </dd></dl>
 
 </div>
 </div>
@@ -424,12 +460,16 @@ template&lt;class TernaryOp , class real_type &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Evaluate a function on gaussian abscissas. </p>
-<p>Evaluates f(x,y,z) on the given grid</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
+<p>Evaluate a 3d function on mpi distributed grid coordinates. </p>
+<p>Evaluate is equivalent to the following:</p>
+<ol type="1">
+<li>generate the list of grid coordinates \( x_i\), \( y_i\), \( z_i \) representing the local part of the given computational space discretization (the grid) that the calling process owns</li>
+<li>evaluate the given function or functor at these coordinates and store the result in the output vector \( v_i = f(x_i, y_i, z_i)\) for all <code>i</code> </li>
+</ol>
+<p>This code snippet demonstrates how to discretize and compute the norm of a function </p><div class="fragment"><div class="line"><span class="comment">// define the function to integrate</span></div><div class="line"><span class="keywordtype">double</span> <span class="keyword">function</span>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> z, <span class="keywordtype">double</span> amp){</div><div class="line">    <span class="keywordflow">return</span> amp*exp(x)*exp(y)*exp(z);</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// create a grid of the domain [0,2]x[0,2]x[0,2] with 20 cells in x, y and z and 3 polynomial coefficients and x and y and 1 in z</span></div><div class="line"><span class="comment">//... use MPI_Cart_create to create 3d Cartesian communicator</span></div><div class="line"><a class="code" href="structdg_1_1_real_m_p_i_grid3d.html">dg::MPIGrid3d</a> g3d( 0, 2, 0, 2, 0, 2, 3, 20, 20, 20, comm3d);</div><div class="line"></div><div class="line"><span class="comment">// create the Gaussian weights (volume form) for the integration</span></div><div class="line"><span class="keyword">const</span> <a class="code" href="structdg_1_1_m_p_i___vector.html">dg::MHVec</a> w3d = <a class="code" href="group__highlevel.html#ga771996962c7762bc7ee00b522a17259f">dg::create::weights</a>( g3d);</div><div class="line"></div><div class="line"><span class="comment">// our function needs to depend only on x, y and z so let&#39;s fix the amplitude to 2</span></div><div class="line"><span class="keyword">using namespace </span>std::placeholders; <span class="comment">//for _1, _2, _3</span></div><div class="line"><span class="keyword">auto</span> functor = std::bind( <span class="keyword">function</span>, _1, _2, _3, 2.);</div><div class="line"></div><div class="line"><span class="comment">// discretize the function on the grid</span></div><div class="line"><span class="keyword">const</span> <a class="code" href="structdg_1_1_m_p_i___vector.html">dg::MHVec</a> vec = <a class="code" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">dg::evaluate</a>( functor, g3d);</div><div class="line"></div><div class="line"><span class="comment">// now compute the scalar product (the L2 norm)</span></div><div class="line"><span class="keywordtype">double</span> norm = <a class="code" href="group__blas2.html#gaaafba91956e948b0ea53f30889a3c20d">dg::blas2::dot</a>(vec, w3d, vec);</div><div class="line"></div><div class="line"><span class="comment">// norm is now: (exp(4)-exp(0))^3/2</span></div></div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">TernaryOp</td><td>A class or function type with a member/signature equivalent to<ul>
-<li>double operator()(double, double, double) const </li>
+<li>real_type operator()(real_type, real_type, real_type) const </li>
 </ul>
 </td></tr>
   </table>
@@ -438,13 +478,14 @@ template&lt;class TernaryOp , class real_type &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">f</td><td>The function to evaluate: f = f(x,y,z) </td></tr>
-    <tr><td class="paramname">g</td><td>The 3d grid on which to evaluate f</td></tr>
+    <tr><td class="paramname">g</td><td>The 3d grid on which to evaluate <code>f</code> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A MPI Vector with values </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a></dd></dl>
-<p>This code snippet demonstrates how to discretize and compute the norm of a function </p><div class="fragment"><div class="line"><span class="comment">// define the function to integrate</span></div><div class="line"><span class="keywordtype">double</span> <span class="keyword">function</span>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> <a class="code" href="group__creation.html#gga4de4a3d7cd219a55affa992871e8598fafbade9e36a3f36d3d676c1b808451dd7">z</a>, <span class="keywordtype">double</span> amp){</div><div class="line">    <span class="keywordflow">return</span> amp*exp(x)*exp(y)*exp(z);</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// create a grid of the domain [0,2]x[0,2]x[0,2] with 20 cells in x, y and z and 3 polynomial coefficients and x and y and 1 in z</span></div><div class="line"><span class="comment">//... use MPI_Cart_create to create 3d Cartesian communicator</span></div><div class="line"><a class="code" href="structdg_1_1_real_m_p_i_grid3d.html">dg::MPIGrid3d</a> g3d( 0, 2, 0, 2, 0, 2, 3, 20, 20, 20, comm3d);</div><div class="line"></div><div class="line"><span class="comment">// create the Gaussian weights (volume form) for the integration</span></div><div class="line"><span class="keyword">const</span> <a class="code" href="structdg_1_1_m_p_i___vector.html">dg::MHVec</a> w3d = <a class="code" href="group__highlevel.html#ga771996962c7762bc7ee00b522a17259f">dg::create::weights</a>( g3d);</div><div class="line"></div><div class="line"><span class="comment">// our function needs to depend only on x, y and z so let&#39;s fix the amplitude to 2</span></div><div class="line"><span class="keyword">using namespace </span>std::placeholders; <span class="comment">//for _1, _2, _3</span></div><div class="line"><span class="keyword">auto</span> functor = std::bind( <span class="keyword">function</span>, _1, _2, _3, 2.);</div><div class="line"></div><div class="line"><span class="comment">// discretize the function on the grid</span></div><div class="line"><span class="keyword">const</span> <a class="code" href="structdg_1_1_m_p_i___vector.html">dg::MHVec</a> vec = <a class="code" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">dg::evaluate</a>( functor, g3d);</div><div class="line"></div><div class="line"><span class="comment">// now compute the scalar product (the L2 norm)</span></div><div class="line"><span class="keywordtype">double</span> norm = <a class="code" href="group__blas2.html#gaaafba91956e948b0ea53f30889a3c20d">dg::blas2::dot</a>(vec, w3d, vec);</div><div class="line"></div><div class="line"><span class="comment">// norm is now: (exp(4)-exp(0))^3/2</span></div></div><!-- fragment --> 
+<dl class="section return"><dt>Returns</dt><dd>The output vector <code>v</code> as an MPI host Vector </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Use the elementary function \( f(x,y,z) = x \) (<code><a class="el" href="group__functions.html#gadd9ae95517a739c80452afc7fc9c36ae" title=" ">dg::cooX3d</a></code>) to generate the list of grid coordinates in <code>x</code> direction (or analogous in <code>y</code>, <code><a class="el" href="group__functions.html#gaafbff988d4cff4a0643e819b3f6962cc" title=" ">dg::cooY3d</a></code> or <code>z</code>, <code><a class="el" href="group__functions.html#ga89a354d8268ca0f86486a93683fda7d4" title=" ">dg::cooZ3d</a></code>) </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a> </dd></dl>
+
 </div>
 </div>
 <a id="ga619eb1504db9c29b1a7f2ebf1a13e93f"></a>
@@ -475,12 +516,16 @@ template&lt;class BinaryOp , class real_type &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Evaluate a function on gaussian abscissas. </p>
-<p>Evaluates f(x) on the given grid</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
+<p>Evaluate a 2d function on grid coordinates. </p>
+<p>Evaluate is equivalent to the following:</p>
+<ol type="1">
+<li>generate the list of grid coordinates \( x_i\), \( y_i\) representing the given computational space discretization (the grid)</li>
+<li>evaluate the given function or functor at these coordinates and store the result in the output vector \( v_i = f(x_i, y_i)\) for all <code>i</code> </li>
+</ol>
+<p>This code snippet demonstrates how to discretize and compute the norm of a function on a shared memory system </p><div class="fragment"><div class="line"><span class="comment">// define the function to integrate</span></div><div class="line"><span class="keywordtype">double</span> <span class="keyword">function</span>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> amp){</div><div class="line">    <span class="keywordflow">return</span> amp*exp(x)*exp(y);</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// create a grid of the domain [0,2]x[0,2] with 20 cells in x and y and 3 polynomial coefficients</span></div><div class="line"><a class="code" href="structdg_1_1_real_grid2d.html">dg::Grid2d</a> g2d( 0, 2, 0, 2, 3, 20, 20);</div><div class="line"></div><div class="line"><span class="comment">// create the Gaussian weights (volume form) for the integration</span></div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193">dg::HVec</a> w2d = <a class="code" href="group__highlevel.html#ga771996962c7762bc7ee00b522a17259f">dg::create::weights</a>( g2d);</div><div class="line"></div><div class="line"><span class="comment">// our function needs to depend only on x and y so let&#39;s fix the amplitude to 2</span></div><div class="line"><span class="keyword">using namespace </span>std::placeholders; <span class="comment">//for _1, _2</span></div><div class="line"><span class="keyword">auto</span> functor = std::bind( <span class="keyword">function</span>, _1, _2, 2.);</div><div class="line"></div><div class="line"><span class="comment">// discretize the function on the grid</span></div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193">dg::HVec</a> vec = <a class="code" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">dg::evaluate</a>( functor, g2d);</div><div class="line"></div><div class="line"><span class="comment">// now compute the scalar product (the L2 norm)</span></div><div class="line"><span class="keywordtype">double</span> norm = <a class="code" href="group__blas2.html#gaaafba91956e948b0ea53f30889a3c20d">dg::blas2::dot</a>( vec, w2d, vec);</div><div class="line"></div><div class="line"><span class="comment">// norm is now: (e^4-1)^2</span></div></div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">BinaryOp</td><td>A class or function type with a member/signature equivalent to<ul>
-<li>double operator()(double, double) const </li>
+<li>real_type operator()(real_type, real_type) const </li>
 </ul>
 </td></tr>
   </table>
@@ -489,13 +534,16 @@ template&lt;class BinaryOp , class real_type &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">f</td><td>The function to evaluate: f = f(x,y) </td></tr>
-    <tr><td class="paramname">g</td><td>The 2d grid on which to evaluate f</td></tr>
+    <tr><td class="paramname">g</td><td>The 2d grid on which to evaluate <code>f</code> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A dG Host Vector with values </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a></dd></dl>
-<p>This code snippet demonstrates how to discretize and compute the norm of a function on a shared memory system </p><div class="fragment"><div class="line"><span class="comment">// define the function to integrate</span></div><div class="line"><span class="keywordtype">double</span> <span class="keyword">function</span>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> amp){</div><div class="line">    <span class="keywordflow">return</span> amp*exp(x)*exp(y);</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// create a grid of the domain [0,2]x[0,2] with 20 cells in x and y and 3 polynomial coefficients</span></div><div class="line"><a class="code" href="structdg_1_1_real_grid2d.html">dg::Grid2d</a> g2d( 0, 2, 0, 2, 3, 20, 20);</div><div class="line"></div><div class="line"><span class="comment">// create the Gaussian weights (volume form) for the integration</span></div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193">dg::HVec</a> w2d = <a class="code" href="group__highlevel.html#ga771996962c7762bc7ee00b522a17259f">dg::create::weights</a>( g2d);</div><div class="line"></div><div class="line"><span class="comment">// our function needs to depend only on x and y so let&#39;s fix the amplitude to 2</span></div><div class="line"><span class="keyword">using namespace </span>std::placeholders; <span class="comment">//for _1, _2</span></div><div class="line"><span class="keyword">auto</span> functor = std::bind( <span class="keyword">function</span>, _1, _2, 2.);</div><div class="line"></div><div class="line"><span class="comment">// discretize the function on the grid</span></div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193">dg::HVec</a> vec = <a class="code" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">dg::evaluate</a>( functor, g2d);</div><div class="line"></div><div class="line"><span class="comment">// now compute the scalar product (the L2 norm)</span></div><div class="line"><span class="keywordtype">double</span> norm = <a class="code" href="group__blas2.html#gaaafba91956e948b0ea53f30889a3c20d">dg::blas2::dot</a>( vec, w2d, vec);</div><div class="line"></div><div class="line"><span class="comment">// norm is now: (e^4-1)^2</span></div></div><!-- fragment --> 
+<dl class="section return"><dt>Returns</dt><dd>The output vector <code>v</code> as a host vector </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Use the elementary function \( f(x,y) = x \) (<code><a class="el" href="group__functions.html#gadb49e10685e2bcdd8a27ef88f2857151" title=" ">dg::cooX2d</a></code>) to generate the list of grid coordinates in <code>x</code> direction (or analogous in <code>y</code>, <code><a class="el" href="group__functions.html#ga5aa995cf5e888c9ee1026b78f6f78cc5" title=" ">dg::cooY2d</a></code>) </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a> </dd>
+<dd>
+<code><a class="el" href="group__pullback.html#ga17d53d4c95becdd93597cb5b69a5525c" title="Pull back a function defined in physical coordinates to the curvilinear (computational) coordinate sy...">dg::pullback</a></code> if you want to <a class="el" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443" title="Evaluate a 1d function on grid coordinates. ">evaluate</a> a function in physical space </dd></dl>
+
 </div>
 </div>
 <a id="ga001bb58dc67e68e4c86affabea23908c"></a>
@@ -526,12 +574,16 @@ template&lt;class TernaryOp , class real_type &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Evaluate a function on gaussian abscissas. </p>
-<p>Evaluates f(x,y,z) on the given grid</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
+<p>Evaluate a 3d function on grid coordinates. </p>
+<p>Evaluate is equivalent to the following:</p>
+<ol type="1">
+<li>generate the list of grid coordinates \( x_i\), \( y_i\), \( z_i \) representing the given computational space discretization (the grid)</li>
+<li>evaluate the given function or functor at these coordinates and store the result in the output vector \( v_i = f(x_i, y_i, z_i)\) for all <code>i</code> </li>
+</ol>
+<p>This code snippet demonstrates how to discretize and compute the norm of a function </p><div class="fragment"><div class="line"><span class="comment">// define the function to integrate</span></div><div class="line"><span class="keywordtype">double</span> <span class="keyword">function</span>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> z, <span class="keywordtype">double</span> amp){</div><div class="line">    <span class="keywordflow">return</span> amp*exp(x)*exp(y)*exp(z);</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// create a grid of the domain [0,2]x[0,2]x[0,2] with 20 cells in x, y and z and 3 polynomial coefficients and x and y and 1 in z</span></div><div class="line"><a class="code" href="structdg_1_1_real_grid3d.html">dg::Grid3d</a> g3d( 0, 2, 0, 2, 0, 2, 3, 20, 20, 20);</div><div class="line"></div><div class="line"><span class="comment">// create the Gaussian weights (volume form) for the integration</span></div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193">dg::HVec</a> w3d = <a class="code" href="group__highlevel.html#ga771996962c7762bc7ee00b522a17259f">dg::create::weights</a>( g3d);</div><div class="line"></div><div class="line"><span class="comment">// our function needs to depend only on x, y and z so let&#39;s fix the amplitude to 2</span></div><div class="line"><span class="keyword">using namespace </span>std::placeholders; <span class="comment">//for _1, _2, _3</span></div><div class="line"><span class="keyword">auto</span> functor = std::bind( <span class="keyword">function</span>, _1, _2, _3, 2.);</div><div class="line"></div><div class="line"><span class="comment">// discretize the function on the grid</span></div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193">dg::HVec</a> vec = <a class="code" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">dg::evaluate</a>( functor, g3d);</div><div class="line"></div><div class="line"><span class="comment">// now compute the scalar product (the L2 norm)</span></div><div class="line"><span class="keywordtype">double</span> norm = <a class="code" href="group__blas2.html#gaaafba91956e948b0ea53f30889a3c20d">dg::blas2::dot</a>(vec, w3d, vec);</div><div class="line"></div><div class="line"><span class="comment">// norm is now: (exp(4)-exp(0))^3/2</span></div></div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">TernaryOp</td><td>A class or function type with a member/signature equivalent to<ul>
-<li>double operator()(double, double, double) const </li>
+<li>real_type operator()(real_type, real_type, real_type) const </li>
 </ul>
 </td></tr>
   </table>
@@ -540,13 +592,16 @@ template&lt;class TernaryOp , class real_type &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">f</td><td>The function to evaluate: f = f(x,y,z) </td></tr>
-    <tr><td class="paramname">g</td><td>The 3d grid on which to evaluate f</td></tr>
+    <tr><td class="paramname">g</td><td>The 3d grid on which to evaluate <code>f</code> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A dG Host Vector with values </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a></dd></dl>
-<p>This code snippet demonstrates how to discretize and compute the norm of a function </p><div class="fragment"><div class="line"><span class="comment">// define the function to integrate</span></div><div class="line"><span class="keywordtype">double</span> <span class="keyword">function</span>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> z, <span class="keywordtype">double</span> amp){</div><div class="line">    <span class="keywordflow">return</span> amp*exp(x)*exp(y)*exp(z);</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// create a grid of the domain [0,2]x[0,2]x[0,2] with 20 cells in x, y and z and 3 polynomial coefficients and x and y and 1 in z</span></div><div class="line"><a class="code" href="structdg_1_1_real_grid3d.html">dg::Grid3d</a> g3d( 0, 2, 0, 2, 0, 2, 3, 20, 20, 20);</div><div class="line"></div><div class="line"><span class="comment">// create the Gaussian weights (volume form) for the integration</span></div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193">dg::HVec</a> w3d = <a class="code" href="group__highlevel.html#ga771996962c7762bc7ee00b522a17259f">dg::create::weights</a>( g3d);</div><div class="line"></div><div class="line"><span class="comment">// our function needs to depend only on x, y and z so let&#39;s fix the amplitude to 2</span></div><div class="line"><span class="keyword">using namespace </span>std::placeholders; <span class="comment">//for _1, _2, _3</span></div><div class="line"><span class="keyword">auto</span> functor = std::bind( <span class="keyword">function</span>, _1, _2, _3, 2.);</div><div class="line"></div><div class="line"><span class="comment">// discretize the function on the grid</span></div><div class="line"><span class="keyword">const</span> <a class="code" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193">dg::HVec</a> vec = <a class="code" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">dg::evaluate</a>( functor, g3d);</div><div class="line"></div><div class="line"><span class="comment">// now compute the scalar product (the L2 norm)</span></div><div class="line"><span class="keywordtype">double</span> norm = <a class="code" href="group__blas2.html#gaaafba91956e948b0ea53f30889a3c20d">dg::blas2::dot</a>(vec, w3d, vec);</div><div class="line"></div><div class="line"><span class="comment">// norm is now: (exp(4)-exp(0))^3/2</span></div></div><!-- fragment --> 
+<dl class="section return"><dt>Returns</dt><dd>The output vector <code>v</code> as a host vector </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Use the elementary function \( f(x,y,z) = x \) (<code><a class="el" href="group__functions.html#gadd9ae95517a739c80452afc7fc9c36ae" title=" ">dg::cooX3d</a></code>) to generate the list of grid coordinates in <code>x</code> direction (or analogous in <code>y</code>, <code><a class="el" href="group__functions.html#gaafbff988d4cff4a0643e819b3f6962cc" title=" ">dg::cooY3d</a></code> or <code>z</code>, <code><a class="el" href="group__functions.html#ga89a354d8268ca0f86486a93683fda7d4" title=" ">dg::cooZ3d</a></code>) </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="./dg_introduction.pdf" target="_blank">Introduction to dg methods</a> </dd>
+<dd>
+<code><a class="el" href="group__pullback.html#ga17d53d4c95becdd93597cb5b69a5525c" title="Pull back a function defined in physical coordinates to the curvilinear (computational) coordinate sy...">dg::pullback</a></code> if you want to <a class="el" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443" title="Evaluate a 1d function on grid coordinates. ">evaluate</a> a function in physical space </dd></dl>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -554,7 +609,7 @@ template&lt;class TernaryOp , class real_type &gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

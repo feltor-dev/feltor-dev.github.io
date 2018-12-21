@@ -1,12 +1,17 @@
 var structdg_1_1_poisson =
 [
-    [ "Poisson", "structdg_1_1_poisson.html#a6a3803ce000045dbb08a84599807b09e", null ],
-    [ "Poisson", "structdg_1_1_poisson.html#a5434af4bd31bbe596b5a9b96ef505f35", null ],
-    [ "Poisson", "structdg_1_1_poisson.html#aa29e71f25b3e64f8cd1f238310bc59b2", null ],
-    [ "dxlhs", "structdg_1_1_poisson.html#a15753840c2c1122c423c7df421f7ce4f", null ],
-    [ "dxrhs", "structdg_1_1_poisson.html#af15be11c0194e76c0e427f8926db9b64", null ],
-    [ "dylhs", "structdg_1_1_poisson.html#a00171bb950e06b5df331a345d6399b42", null ],
-    [ "dyrhs", "structdg_1_1_poisson.html#ae9500c612c21ca7d0c3412a734e85dbe", null ],
-    [ "operator()", "structdg_1_1_poisson.html#a21d2c759b839d9b8d7266f4adbd1c069", null ],
-    [ "variationRHS", "structdg_1_1_poisson.html#ada279f7ffead5ed6ef676c96354f8787", null ]
+    [ "container_type", "structdg_1_1_poisson.html#a9909d57fa755c917cc844a3774e2fbb5", null ],
+    [ "geometry_type", "structdg_1_1_poisson.html#a6f46f4565f5e67e358130e038c498e16", null ],
+    [ "matrix_type", "structdg_1_1_poisson.html#ab0e34617f4c99d4c4c250a84b1bf7593", null ],
+    [ "value_type", "structdg_1_1_poisson.html#a7db4d83bfc463585923b901fa0f895bf", null ],
+    [ "Poisson", "structdg_1_1_poisson.html#a82113887e820079f6e9f9331c5065a42", null ],
+    [ "Poisson", "structdg_1_1_poisson.html#a6239fcf7105953113b5d0136dbb4edf0", null ],
+    [ "Poisson", "structdg_1_1_poisson.html#a74677e77775fd0f46c8d9d949de36ab3", null ],
+    [ "dxlhs", "structdg_1_1_poisson.html#aa112d6702e6ec0037629e615634aa73d", null ],
+    [ "dxrhs", "structdg_1_1_poisson.html#afa749ff861cbf05a0cc79a59f594bf89", null ],
+    [ "dylhs", "structdg_1_1_poisson.html#ae7793a50dc7e35c924a1f9cd533f6c42", null ],
+    [ "dyrhs", "structdg_1_1_poisson.html#a10a73a1ff294880e1c7a1d2c2ed6d89a", null ],
+    [ "operator()", "structdg_1_1_poisson.html#ad60e506911c9c3a5c5b4fb26ed7e13ba", null ],
+    [ "set_chi", "structdg_1_1_poisson.html#a9aae656b490b396feceec683b95ac454", null ],
+    [ "variationRHS", "structdg_1_1_poisson.html#a310867ef3ebd010038605dc9ca9e96e4", null ]
 ];

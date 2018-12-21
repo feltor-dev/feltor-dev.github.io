@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -167,6 +167,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad521129841b9b7c34955a04cbc192245"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_real_grid1d.html#ad521129841b9b7c34955a04cbc192245">shift_topologic</a> (real_type <a class="el" href="structdg_1_1_real_grid1d.html#ab59a01f31f70589c28a396f669d29337">x0</a>, real_type &amp;<a class="el" href="structdg_1_1_real_grid1d.html#aa966d5f133b54b947fd6563a11ddedeb">x1</a>) const</td></tr>
 <tr class="memdesc:ad521129841b9b7c34955a04cbc192245"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shifts a point coordinate if periodic.  <a href="#ad521129841b9b7c34955a04cbc192245">More...</a><br /></td></tr>
 <tr class="separator:ad521129841b9b7c34955a04cbc192245"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab87976bed26c14f769352549f13c9f15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_real_grid1d.html#ab87976bed26c14f769352549f13c9f15">shift_topologic</a> (real_type <a class="el" href="structdg_1_1_real_grid1d.html#ab59a01f31f70589c28a396f669d29337">x0</a>, real_type &amp;<a class="el" href="structdg_1_1_real_grid1d.html#aa966d5f133b54b947fd6563a11ddedeb">x1</a>, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> <a class="el" href="structdg_1_1_real_grid1d.html#a0e9b382200cb203ff232706210ca8d8c">bcx</a>) const</td></tr>
+<tr class="memdesc:ab87976bed26c14f769352549f13c9f15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shifts a point coordinate if periodic.  <a href="#ab87976bed26c14f769352549f13c9f15">More...</a><br /></td></tr>
+<tr class="separator:ab87976bed26c14f769352549f13c9f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad39b309f33dd338e6f5f4f3fc5f9d614"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_real_grid1d.html#ad39b309f33dd338e6f5f4f3fc5f9d614">contains</a> (real_type <a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>) const</td></tr>
 <tr class="memdesc:ad39b309f33dd338e6f5f4f3fc5f9d614"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the grid contains a point.  <a href="#ad39b309f33dd338e6f5f4f3fc5f9d614">More...</a><br /></td></tr>
 <tr class="separator:ad39b309f33dd338e6f5f4f3fc5f9d614"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -741,7 +744,7 @@ template&lt;class real_type&gt; </div>
 </div>
 </div>
 <a id="ad521129841b9b7c34955a04cbc192245"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad521129841b9b7c34955a04cbc192245">&#9670;&nbsp;</a></span>shift_topologic()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad521129841b9b7c34955a04cbc192245">&#9670;&nbsp;</a></span>shift_topologic() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -781,6 +784,60 @@ template&lt;class real_type&gt; </div>
   <table class="params">
     <tr><td class="paramname">x0</td><td>arbitrary point (irrelevant for the function, it's there to be consistent with GridX1d) </td></tr>
     <tr><td class="paramname">x1</td><td>end point (inout) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab87976bed26c14f769352549f13c9f15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab87976bed26c14f769352549f13c9f15">&#9670;&nbsp;</a></span>shift_topologic() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class real_type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structdg_1_1_real_grid1d.html">dg::RealGrid1d</a>&lt; real_type &gt;::shift_topologic </td>
+          <td>(</td>
+          <td class="paramtype">real_type&#160;</td>
+          <td class="paramname"><em>x0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">real_type &amp;&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a>&#160;</td>
+          <td class="paramname"><em>bcx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Shifts a point coordinate if periodic. </p>
+<p>This function shifts a point coordinate to its value between <a class="el" href="structdg_1_1_real_grid1d.html#ab59a01f31f70589c28a396f669d29337" title="left boundary ">x0()</a> and <a class="el" href="structdg_1_1_real_grid1d.html#aa966d5f133b54b947fd6563a11ddedeb" title="right boundary ">x1()</a> if <code>bcx==<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3" title="periodic boundaries ">dg::PER</a></code> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x0</td><td>arbitrary point (irrelevant for the function, it's there to be consistent with GridX1d) </td></tr>
+    <tr><td class="paramname">x1</td><td>end point (inout) </td></tr>
+    <tr><td class="paramname">bcx</td><td>overrule grid internal boundary condition </td></tr>
   </table>
   </dd>
 </dl>
@@ -875,7 +932,7 @@ template&lt;class real_type&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>geometry/<a class="el" href="grid_8h_source.html">grid.h</a></li>
+<li>topology/<a class="el" href="grid_8h_source.html">grid.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -883,7 +940,7 @@ template&lt;class real_type&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_real_grid1d.html">RealGrid1d</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:50 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

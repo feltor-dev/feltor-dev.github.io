@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['d',['d',['../unionexblas_1_1udouble.html#ad115249e363b024b947ea30df3a02de5',1,'exblas::udouble']]],
-  ['deltascale',['DELTASCALE',['../namespaceexblas.html#a8850e70cb161d0677d9f50cae8d024b4',1,'exblas']]],
-  ['digits',['DIGITS',['../namespaceexblas.html#ab7155cf5cd239ccfc433456b86a0d1b3',1,'exblas']]]
+  ['normalize',['Normalize',['../namespaceexblas_1_1gpu.html#aeb32ed446b906beac69d2d39fac0854e',1,'exblas::gpu::Normalize()'],['../namespaceexblas_1_1cpu.html#aa6fb1968e9f213e58316d4cc9357cebe',1,'exblas::cpu::Normalize()']]]
 ];

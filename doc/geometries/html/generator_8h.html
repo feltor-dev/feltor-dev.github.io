@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
-<title>Geometries: generator.h File Reference</title>
+<title>Extension: Geometries: generator.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -44,9 +44,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Geometries
+   <div id="projectname">Extension: Geometries
    </div>
-   <div id="projectbrief">Extension with magnetic flux functions, grids and grid generators</div>
+   <div id="projectbrief">Magnetic flux functions, parallel derivatives and new grids and grid generators in &quot;dg/geometries/geometries.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -98,40 +98,19 @@ $(document).ready(function(){initNavTree('generator_8h.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">generator.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="generator_8h__dep__incl.png" border="0" usemap="#generator_8hdep" alt=""/></div>
-<map name="generator_8hdep" id="generator_8hdep">
-<area shape="rect" id="node2" href="curvilinear_8h.html" title="curvilinear.h" alt="" coords="344,80,436,107"/>
-<area shape="rect" id="node10" href="mpi__curvilinear_8h.html" title="mpi_curvilinear.h" alt="" coords="478,155,598,181"/>
-<area shape="rect" id="node11" href="ribeiro_8h.html" title="ribeiro.h" alt="" coords="681,80,749,107"/>
-<area shape="rect" id="node14" href="simple__orthogonal_8h.html" title="simple_orthogonal.h" alt="" coords="803,155,942,181"/>
-<area shape="rect" id="node16" href="polar_8h.html" title="polar.h" alt="" coords="942,80,1003,107"/>
-<area shape="rect" id="node3" href="curvilinear_x_8h.html" title="curvilinearX.h" alt="" coords="278,229,379,256"/>
-<area shape="rect" id="node4" href="geometries_8h.html" title="geometries.h" alt="" coords="565,304,663,331"/>
-<area shape="rect" id="node5" href="fieldaligned_8h.html" title="fieldaligned.h" alt="" coords="33,155,131,181"/>
-<area shape="rect" id="node8" href="hector_8h.html" title="hector.h" alt="" coords="507,229,577,256"/>
-<area shape="rect" id="node9" href="refined__curvilinear_x_8h.html" title="refined_curvilinearX.h" alt="" coords="155,155,302,181"/>
-<area shape="rect" id="node6" href="ds_8h.html" title="ds.h" alt="" coords="5,229,52,256"/>
-<area shape="rect" id="node7" href="mpi__fieldaligned_8h.html" title="mpi_fieldaligned.h" alt="" coords="76,229,203,256"/>
-<area shape="rect" id="node12" href="flux_8h.html" title="flux.h" alt="" coords="623,155,677,181"/>
-<area shape="rect" id="node13" href="ribeiro_x_8h.html" title="ribeiroX.h" alt="" coords="651,229,729,256"/>
-<area shape="rect" id="node15" href="separatrix__orthogonal_8h.html" title="separatrix_orthogonal.h" alt="" coords="854,229,1011,256"/>
-</map>
-</div>
-</div>
+
 <p><a href="generator_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1a_generator2d.html">dg::geo::aGenerator2d</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The abstract generator base class.  <a href="structdg_1_1geo_1_1a_generator2d.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1a_real_generator2d.html">dg::geo::aRealGenerator2d&lt; real_type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The abstract generator base class.  <a href="structdg_1_1geo_1_1a_real_generator2d.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -140,6 +119,11 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacedg_1_1geo"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg_1_1geo.html">dg::geo</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a8a0c91832616cae7dea10193bb8c9327"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg_1_1geo.html#a8a0c91832616cae7dea10193bb8c9327">dg::geo::aGenerator2d</a> = <a class="el" href="structdg_1_1geo_1_1a_real_generator2d.html">dg::geo::aRealGenerator2d</a>&lt; double &gt;</td></tr>
+<tr class="separator:a8a0c91832616cae7dea10193bb8c9327"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -147,7 +131,7 @@ Namespaces</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="generator_8h.html">generator.h</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:03:04 for Geometries by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:57 for Extension: Geometries by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

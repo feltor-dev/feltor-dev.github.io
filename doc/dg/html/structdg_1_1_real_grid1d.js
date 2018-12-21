@@ -17,6 +17,7 @@ var structdg_1_1_real_grid1d =
     [ "set", "structdg_1_1_real_grid1d.html#a3c5c7d6cc366a4561a1405526a3ba25a", null ],
     [ "set", "structdg_1_1_real_grid1d.html#a5b73685504772096fe8ae9902eaf7ca9", null ],
     [ "shift_topologic", "structdg_1_1_real_grid1d.html#ad521129841b9b7c34955a04cbc192245", null ],
+    [ "shift_topologic", "structdg_1_1_real_grid1d.html#ab87976bed26c14f769352549f13c9f15", null ],
     [ "size", "structdg_1_1_real_grid1d.html#a51307e35b5bae9592b29b4669f088b8a", null ],
     [ "x0", "structdg_1_1_real_grid1d.html#ab59a01f31f70589c28a396f669d29337", null ],
     [ "x1", "structdg_1_1_real_grid1d.html#aa966d5f133b54b947fd6563a11ddedeb", null ]

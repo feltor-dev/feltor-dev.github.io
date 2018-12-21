@@ -1,9 +1,11 @@
 var searchData=
 [
-  ['value',['value',['../structdg_1_1_sparse_element.html#ae1f954ff16f720f574cbe6c79d33026f',1,'dg::SparseElement::value() const'],['../structdg_1_1_sparse_element.html#a414fcfcda446e0e95dfdaf36f1e80bb0',1,'dg::SparseElement::value()'],['../structdg_1_1_sparse_tensor.html#a72f28874df57981daa8cd5ed8f7292ce',1,'dg::SparseTensor::value()']]],
-  ['values',['values',['../structdg_1_1_sparse_tensor.html#adf4df1180f333e6b9e0430f39f1e4e72',1,'dg::SparseTensor::values()'],['../structdg_1_1_sparse_tensor.html#a6323132fbfb24f70e8220fb12cede86b',1,'dg::SparseTensor::values() const']]],
-  ['variation',['variation',['../structdg_1_1_arakawa_x.html#a289a1260a866710e46050063d7acaed3',1,'dg::ArakawaX']]],
-  ['variationrhs',['variationRHS',['../structdg_1_1_poisson.html#ada279f7ffead5ed6ef676c96354f8787',1,'dg::Poisson']]],
-  ['volume',['volume',['../group__geometry.html#ga9ce0c1d5eeab50e58f80f2cff7f27b94',1,'dg::tensor::volume()'],['../group__metric.html#ga3c86995e21edbffbde353246289b503a',1,'dg::create::volume()']]],
+  ['value',['value',['../structdg_1_1_sparse_tensor.html#a2abbf46355415ac69fcdb41b9e5f2cb3',1,'dg::SparseTensor']]],
+  ['values',['values',['../structdg_1_1_sparse_tensor.html#a67d5c41aaa1dba66d43ba05816bb9ec7',1,'dg::SparseTensor::values()'],['../structdg_1_1_sparse_tensor.html#aa25dd4c34381d6ad8a89df93bffde44e',1,'dg::SparseTensor::values() const']]],
+  ['variation',['variation',['../structdg_1_1_arakawa_x.html#aade2ca485922c9d68cdd892879b357b1',1,'dg::ArakawaX']]],
+  ['variationrhs',['variationRHS',['../structdg_1_1_poisson.html#a310867ef3ebd010038605dc9ca9e96e4',1,'dg::Poisson']]],
+  ['view',['View',['../structdg_1_1_view.html#a705f3dc64a44fe89672d5321eff587a9',1,'dg::View::View(void)'],['../structdg_1_1_view.html#a1cb733130affe1ec9990b7d822237d5c',1,'dg::View::View(OtherView &amp;src)'],['../structdg_1_1_view.html#ab75889c58a13d500104f4b88a47a980f',1,'dg::View::View(InputIterator data, unsigned size)']]],
+  ['volume',['volume',['../group__tensor.html#ga7356ee29303d9600291cd7489085492d',1,'dg::tensor::volume()'],['../group__metric.html#ga3c86995e21edbffbde353246289b503a',1,'dg::create::volume()']]],
+  ['volume2d',['volume2d',['../group__tensor.html#gabca3e13e824c6cf0ec1606f035406c23',1,'dg::tensor']]],
   ['vortex',['Vortex',['../structdg_1_1_vortex.html#a3cb30fdf2c8da900f2b6f3366dbaf237',1,'dg::Vortex']]]
 ];

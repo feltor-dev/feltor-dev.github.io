@@ -26,6 +26,6 @@ var typedefs_8h =
     [ "MDVec", "typedefs_8h.html#ga1e23fb8b50d38d43beb4bf3689c20a55", null ],
     [ "MHMatrix", "typedefs_8h.html#gaff79c734c7916054c7dc24e6bc437161", null ],
     [ "MHVec", "typedefs_8h.html#gac127f65b65c035ebe413aee5abffd6f0", null ],
-    [ "NNCD", "typedefs_8h.html#ga5ad903c7e171878d6c402a20370ec5d4", null ],
-    [ "NNCH", "typedefs_8h.html#ga93e65948d51a0d9f05bf04c99272c118", null ]
+    [ "NNCD", "typedefs_8h.html#ga5e198b15d0b8913c34c5767225ba0d92", null ],
+    [ "NNCH", "typedefs_8h.html#gab32a9018dc40257974c1da36be740d05", null ]
 ];

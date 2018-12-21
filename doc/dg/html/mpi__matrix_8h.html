@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -99,7 +99,8 @@ $(document).ready(function(){initNavTree('mpi__matrix_8h.html','');});
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">mpi_matrix.h File Reference</div>  </div>
 </div><!--header-->
@@ -109,49 +110,7 @@ $(document).ready(function(){initNavTree('mpi__matrix_8h.html','');});
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="mpi__vector_8h_source.html">mpi_vector.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="memory_8h_source.html">memory.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for mpi_matrix.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="mpi__matrix_8h__incl.png" border="0" usemap="#backend_2mpi__matrix_8h" alt=""/></div>
-<map name="backend_2mpi__matrix_8h" id="backend_2mpi__matrix_8h">
-<area shape="rect" id="node2" href="mpi__vector_8h.html" title="mpi_vector.h" alt="" coords="588,95,685,121"/>
-<area shape="rect" id="node19" href="memory_8h.html" title="memory.h" alt="" coords="1071,184,1151,211"/>
-<area shape="rect" id="node6" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/mpi__accumulate_8h.html" title="exblas/mpi_accumulate.h" alt="" coords="389,184,559,211"/>
-<area shape="rect" id="node9" href="tensor__traits_8h.html" title="tensor_traits.h" alt="" coords="584,184,689,211"/>
-<area shape="rect" id="node17" href="mpi__communicator_8h.html" title="mpi_communicator.h" alt="" coords="904,184,1047,211"/>
-<area shape="rect" id="node7" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/accumulate_8h.html" title="accumulate.h" alt="" coords="197,259,297,285"/>
-<area shape="rect" id="node8" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/config_8h.html" title="config.h" alt="" coords="213,333,281,360"/>
-<area shape="rect" id="node12" href="scalar__categories_8h.html" title="scalar_categories.h" alt="" coords="569,259,704,285"/>
-<area shape="rect" id="node13" href="vector__categories_8h.html" title="vector_categories.h" alt="" coords="619,333,755,360"/>
-<area shape="rect" id="node14" href="matrix__categories_8h.html" title="matrix_categories.h" alt="" coords="671,408,807,435"/>
-<area shape="rect" id="node15" href="execution__policy_8h.html" title="execution_policy.h" alt="" coords="830,259,961,285"/>
-</map>
-</div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="mpi__matrix_8h__dep__incl.png" border="0" usemap="#backend_2mpi__matrix_8hdep" alt=""/></div>
-<map name="backend_2mpi__matrix_8hdep" id="backend_2mpi__matrix_8hdep">
-<area shape="rect" id="node2" href="typedefs_8h.html" title="Useful typedefs of commonly used types. " alt="" coords="643,80,779,107"/>
-<area shape="rect" id="node18" href="mpi__projection_8h.html" title="Useful MPI typedefs and overloads of interpolation and projection. " alt="" coords="799,155,974,181"/>
-<area shape="rect" id="node19" href="mpi__derivatives_8h.html" title="geometry/mpi_derivatives.h" alt="" coords="145,379,327,405"/>
-<area shape="rect" id="node3" href="blas_8h.html" title="blas.h" alt="" coords="630,155,687,181"/>
-<area shape="rect" id="node4" href="derivatives_x_8h.html" title="Convenience functions to create 2D derivatives on X&#45;point topology. " alt="" coords="761,379,924,405"/>
-<area shape="rect" id="node5" href="algorithm_8h.html" title="algorithm.h" alt="" coords="954,603,1041,629"/>
-<area shape="rect" id="node6" href="fast__interpolation_8h.html" title="contains a matrix type for fast interpolations/projections " alt="" coords="697,229,887,256"/>
-<area shape="rect" id="node7" href="multigrid_8h.html" title="multigrid.h" alt="" coords="816,304,899,331"/>
-<area shape="rect" id="node8" href="refined__grid_8h.html" title="geometry/refined_grid.h" alt="" coords="462,229,621,256"/>
-<area shape="rect" id="node11" href="elliptic_8h.html" title="General negative elliptic operators. " alt="" coords="523,453,594,480"/>
-<area shape="rect" id="node12" href="helmholtz_8h.html" title="contains Helmholtz and Maxwell operators " alt="" coords="514,528,603,555"/>
-<area shape="rect" id="node14" href="arakawa_8h.html" title="object for computation of Poisson bracket " alt="" coords="324,453,407,480"/>
-<area shape="rect" id="node15" href="poisson_8h.html" title="poisson.h" alt="" coords="197,453,275,480"/>
-<area shape="rect" id="node16" href="cg_8h.html" title="cg.h" alt="" coords="1014,229,1061,256"/>
-<area shape="rect" id="node9" href="refined__grid_x_8h.html" title="geometry/refined_gridX.h" alt="" coords="382,304,549,331"/>
-<area shape="rect" id="node13" href="refined__elliptic_8h.html" title="contains an elliptic method on a refined grid " alt="" coords="627,528,743,555"/>
-<area shape="rect" id="node10" href="geometry_8h.html" title="geometry/geometry.h" alt="" coords="403,379,549,405"/>
-<area shape="rect" id="node17" href="multistep_8h.html" title="contains multistep explicit&amp; implicit time&#45;integrators " alt="" coords="923,304,1010,331"/>
-</map>
-</div>
+<code>#include &quot;<a class="el" href="timer_8h_source.html">timer.h</a>&quot;</code><br />
 </div>
 <p><a href="mpi__matrix_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -173,6 +132,9 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacedg"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg.html">dg</a></td></tr>
 <tr class="memdesc:namespacedg"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the namespace for all functions and classes defined and used by the discontinuous Galerkin solvers. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacedg_1_1blas2"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg_1_1blas2.html">dg::blas2</a></td></tr>
+<tr class="memdesc:namespacedg_1_1blas2"><td class="mdescLeft">&#160;</td><td class="mdescRight">BLAS Level 2 routines. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -181,6 +143,17 @@ Enumerations</h2></td></tr>
  }<tr class="memdesc:ga521b6d6524a6d391c746ddc9a1ad5571"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of distribution of MPI distributed matrices.  <a href="group__mpi__structures.html#ga521b6d6524a6d391c746ddc9a1ad5571">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:ga521b6d6524a6d391c746ddc9a1ad5571"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:gac3840941bd2bb1d64c6ca3fef1f1b960"><td class="memTemplParams" colspan="2">template&lt;class MatrixType , class ContainerType1 , class ContainerType2 &gt; </td></tr>
+<tr class="memitem:gac3840941bd2bb1d64c6ca3fef1f1b960"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas2.html#gac3840941bd2bb1d64c6ca3fef1f1b960">dg::blas2::symv</a> (MatrixType &amp;&amp;M, const ContainerType1 &amp;x, ContainerType2 &amp;y)</td></tr>
+<tr class="memdesc:gac3840941bd2bb1d64c6ca3fef1f1b960"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( y = M x\)  <a href="group__blas2.html#gac3840941bd2bb1d64c6ca3fef1f1b960">More...</a><br /></td></tr>
+<tr class="separator:gac3840941bd2bb1d64c6ca3fef1f1b960"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9bd2015d31362b25d61110f91cf3b0b9"><td class="memTemplParams" colspan="2">template&lt;class MatrixType , class ContainerType1 , class ContainerType2 &gt; </td></tr>
+<tr class="memitem:ga9bd2015d31362b25d61110f91cf3b0b9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas2.html#ga9bd2015d31362b25d61110f91cf3b0b9">dg::blas2::symv</a> (get_value_type&lt; ContainerType1 &gt; alpha, MatrixType &amp;&amp;M, const ContainerType1 &amp;x, get_value_type&lt; ContainerType1 &gt; beta, ContainerType2 &amp;y)</td></tr>
+<tr class="memdesc:ga9bd2015d31362b25d61110f91cf3b0b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( y = \alpha M x + \beta y\)  <a href="group__blas2.html#ga9bd2015d31362b25d61110f91cf3b0b9">More...</a><br /></td></tr>
+<tr class="separator:ga9bd2015d31362b25d61110f91cf3b0b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>MPI matrix classes. </p>
@@ -191,7 +164,7 @@ Enumerations</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_8c739bbef76d64b22d6b0911c526dd76.html">backend</a></li><li class="navelem"><a class="el" href="mpi__matrix_8h.html">mpi_matrix.h</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

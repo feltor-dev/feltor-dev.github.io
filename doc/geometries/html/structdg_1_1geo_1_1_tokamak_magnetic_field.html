@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
-<title>Geometries: dg::geo::TokamakMagneticField Struct Reference</title>
+<title>Extension: Geometries: dg::geo::TokamakMagneticField Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -44,9 +44,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Geometries
+   <div id="projectname">Extension: Geometries
    </div>
-   <div id="projectbrief">Extension with magnetic flux functions, grids and grid generators</div>
+   <div id="projectbrief">Magnetic flux functions, parallel derivatives and new grids and grid generators in &quot;dg/geometries/geometries.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('structdg_1_1geo_1_1_tokamak_magnetic_f
 </div><!--header-->
 <div class="contents">
 
-<p>container class of R, psi and Ipol  
+<p>A tokamak field as given by R0, Psi and Ipol.  
  <a href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="magnetic__field_8h_source.html">magnetic_field.h</a>&gt;</code></p>
@@ -114,52 +114,48 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a62b29afae92474e66a531228ca430f38"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#a62b29afae92474e66a531228ca430f38">TokamakMagneticField</a> ()</td></tr>
 <tr class="memdesc:a62b29afae92474e66a531228ca430f38"><td class="mdescLeft">&#160;</td><td class="mdescRight">as long as the field stays empty the access functions are undefined  <a href="#a62b29afae92474e66a531228ca430f38">More...</a><br /></td></tr>
 <tr class="separator:a62b29afae92474e66a531228ca430f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4eca74f22b6b38a8e0e9aaf7084937e9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#a4eca74f22b6b38a8e0e9aaf7084937e9">TokamakMagneticField</a> (double <a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#ae0a8c6342375feb074e4d3af23e4dcf0">R0</a>, const <a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl2.html">BinaryFunctorsLvl2</a> &amp;<a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#a1c9a9e8e89758e1fffb02b288ba327dd">psip</a>, const <a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl1.html">BinaryFunctorsLvl1</a> &amp;<a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#a3973b053550e94f9c49ef53db1a90de3">ipol</a>)</td></tr>
-<tr class="separator:a4eca74f22b6b38a8e0e9aaf7084937e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7da01a190bc2e67a2f6734920ff40c0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#a7da01a190bc2e67a2f6734920ff40c0f">set</a> (double <a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#ae0a8c6342375feb074e4d3af23e4dcf0">R0</a>, const <a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl2.html">BinaryFunctorsLvl2</a> &amp;<a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#a1c9a9e8e89758e1fffb02b288ba327dd">psip</a>, const <a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl1.html">BinaryFunctorsLvl1</a> &amp;<a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#a3973b053550e94f9c49ef53db1a90de3">ipol</a>)</td></tr>
-<tr class="separator:a7da01a190bc2e67a2f6734920ff40c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83ed6160c9125deac370e58f6e42954d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#a83ed6160c9125deac370e58f6e42954d">TokamakMagneticField</a> (double <a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#ae0a8c6342375feb074e4d3af23e4dcf0">R0</a>, const <a class="el" href="structdg_1_1geo_1_1_cylindrical_functors_lvl2.html">CylindricalFunctorsLvl2</a> &amp;<a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#a72a512e0daccc855cf77368579042a5a">psip</a>, const <a class="el" href="structdg_1_1geo_1_1_cylindrical_functors_lvl1.html">CylindricalFunctorsLvl1</a> &amp;<a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#a556631a90198e1a869d42718976f982a">ipol</a>)</td></tr>
+<tr class="separator:a83ed6160c9125deac370e58f6e42954d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc749e70a6f8e9d297a7bc32063ae9d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#adc749e70a6f8e9d297a7bc32063ae9d9">set</a> (double <a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#ae0a8c6342375feb074e4d3af23e4dcf0">R0</a>, const <a class="el" href="structdg_1_1geo_1_1_cylindrical_functors_lvl2.html">CylindricalFunctorsLvl2</a> &amp;<a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#a72a512e0daccc855cf77368579042a5a">psip</a>, const <a class="el" href="structdg_1_1geo_1_1_cylindrical_functors_lvl1.html">CylindricalFunctorsLvl1</a> &amp;<a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#a556631a90198e1a869d42718976f982a">ipol</a>)</td></tr>
+<tr class="separator:adc749e70a6f8e9d297a7bc32063ae9d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0a8c6342375feb074e4d3af23e4dcf0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#ae0a8c6342375feb074e4d3af23e4dcf0">R0</a> () const</td></tr>
 <tr class="memdesc:ae0a8c6342375feb074e4d3af23e4dcf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( R_0 \)  <a href="#ae0a8c6342375feb074e4d3af23e4dcf0">More...</a><br /></td></tr>
 <tr class="separator:ae0a8c6342375feb074e4d3af23e4dcf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c9a9e8e89758e1fffb02b288ba327dd"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structdg_1_1geo_1_1a_binary_functor.html">aBinaryFunctor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#a1c9a9e8e89758e1fffb02b288ba327dd">psip</a> () const</td></tr>
-<tr class="memdesc:a1c9a9e8e89758e1fffb02b288ba327dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \psi_p(R,Z)\), where R, Z are cylindrical coordinates  <a href="#a1c9a9e8e89758e1fffb02b288ba327dd">More...</a><br /></td></tr>
-<tr class="separator:a1c9a9e8e89758e1fffb02b288ba327dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3052d4aa8fca099edb616631edf039db"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structdg_1_1geo_1_1a_binary_functor.html">aBinaryFunctor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#a3052d4aa8fca099edb616631edf039db">psipR</a> () const</td></tr>
-<tr class="memdesc:a3052d4aa8fca099edb616631edf039db"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \partial_R \psi_p(R,Z)\), where R, Z are cylindrical coordinates  <a href="#a3052d4aa8fca099edb616631edf039db">More...</a><br /></td></tr>
-<tr class="separator:a3052d4aa8fca099edb616631edf039db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f79c50fe617f2516fe8bc3f3938513f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structdg_1_1geo_1_1a_binary_functor.html">aBinaryFunctor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#a7f79c50fe617f2516fe8bc3f3938513f">psipZ</a> () const</td></tr>
-<tr class="memdesc:a7f79c50fe617f2516fe8bc3f3938513f"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \partial_Z \psi_p(R,Z)\), where R, Z are cylindrical coordinates  <a href="#a7f79c50fe617f2516fe8bc3f3938513f">More...</a><br /></td></tr>
-<tr class="separator:a7f79c50fe617f2516fe8bc3f3938513f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa719bb4e43a298a5e8f9b21d016272b3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structdg_1_1geo_1_1a_binary_functor.html">aBinaryFunctor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#aa719bb4e43a298a5e8f9b21d016272b3">psipRR</a> () const</td></tr>
-<tr class="memdesc:aa719bb4e43a298a5e8f9b21d016272b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \partial_R\partial_R \psi_p(R,Z)\), where R, Z are cylindrical coordinates  <a href="#aa719bb4e43a298a5e8f9b21d016272b3">More...</a><br /></td></tr>
-<tr class="separator:aa719bb4e43a298a5e8f9b21d016272b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9943f479b3ffdf88f02f334a0db00c22"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structdg_1_1geo_1_1a_binary_functor.html">aBinaryFunctor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#a9943f479b3ffdf88f02f334a0db00c22">psipRZ</a> () const</td></tr>
-<tr class="memdesc:a9943f479b3ffdf88f02f334a0db00c22"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \partial_R\partial_Z \psi_p(R,Z)\), where R, Z are cylindrical coordinates  <a href="#a9943f479b3ffdf88f02f334a0db00c22">More...</a><br /></td></tr>
-<tr class="separator:a9943f479b3ffdf88f02f334a0db00c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43616c8513d3e0b72c6b266e0ab31e4d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structdg_1_1geo_1_1a_binary_functor.html">aBinaryFunctor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#a43616c8513d3e0b72c6b266e0ab31e4d">psipZZ</a> () const</td></tr>
-<tr class="memdesc:a43616c8513d3e0b72c6b266e0ab31e4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \partial_Z\partial_Z \psi_p(R,Z)\), where R, Z are cylindrical coordinates  <a href="#a43616c8513d3e0b72c6b266e0ab31e4d">More...</a><br /></td></tr>
-<tr class="separator:a43616c8513d3e0b72c6b266e0ab31e4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3973b053550e94f9c49ef53db1a90de3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structdg_1_1geo_1_1a_binary_functor.html">aBinaryFunctor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#a3973b053550e94f9c49ef53db1a90de3">ipol</a> () const</td></tr>
-<tr class="memdesc:a3973b053550e94f9c49ef53db1a90de3"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( I(\psi_p) \) the current  <a href="#a3973b053550e94f9c49ef53db1a90de3">More...</a><br /></td></tr>
-<tr class="separator:a3973b053550e94f9c49ef53db1a90de3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a474cf0c836299547768108fd8840d83b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structdg_1_1geo_1_1a_binary_functor.html">aBinaryFunctor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#a474cf0c836299547768108fd8840d83b">ipolR</a> () const</td></tr>
-<tr class="memdesc:a474cf0c836299547768108fd8840d83b"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \partial_R I(\psi_p) \)  <a href="#a474cf0c836299547768108fd8840d83b">More...</a><br /></td></tr>
-<tr class="separator:a474cf0c836299547768108fd8840d83b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c972d5143bec58a8fae817726e2a645"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structdg_1_1geo_1_1a_binary_functor.html">aBinaryFunctor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#a3c972d5143bec58a8fae817726e2a645">ipolZ</a> () const</td></tr>
-<tr class="memdesc:a3c972d5143bec58a8fae817726e2a645"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \partial_Z I(\psi_p) \)  <a href="#a3c972d5143bec58a8fae817726e2a645">More...</a><br /></td></tr>
-<tr class="separator:a3c972d5143bec58a8fae817726e2a645"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af997c120fd405c750b488fbc558beb7d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl2.html">BinaryFunctorsLvl2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#af997c120fd405c750b488fbc558beb7d">get_psip</a> () const</td></tr>
-<tr class="separator:af997c120fd405c750b488fbc558beb7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1928bb257915a73b67e8f73da39f2ab"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl1.html">BinaryFunctorsLvl1</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#ab1928bb257915a73b67e8f73da39f2ab">get_ipol</a> () const</td></tr>
-<tr class="separator:ab1928bb257915a73b67e8f73da39f2ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72a512e0daccc855cf77368579042a5a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="group__fluxfunctions.html#gacb84a8d3b8c253f1100c1530035da1de">CylindricalFunctor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#a72a512e0daccc855cf77368579042a5a">psip</a> () const</td></tr>
+<tr class="memdesc:a72a512e0daccc855cf77368579042a5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \psi_p(R,Z)\), where R, Z are cylindrical coordinates  <a href="#a72a512e0daccc855cf77368579042a5a">More...</a><br /></td></tr>
+<tr class="separator:a72a512e0daccc855cf77368579042a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a419ada116d941d5ad60cac878b6093b7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="group__fluxfunctions.html#gacb84a8d3b8c253f1100c1530035da1de">CylindricalFunctor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#a419ada116d941d5ad60cac878b6093b7">psipR</a> () const</td></tr>
+<tr class="memdesc:a419ada116d941d5ad60cac878b6093b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \partial_R \psi_p(R,Z)\), where R, Z are cylindrical coordinates  <a href="#a419ada116d941d5ad60cac878b6093b7">More...</a><br /></td></tr>
+<tr class="separator:a419ada116d941d5ad60cac878b6093b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b22ac87a3ca2d6790f5d121c8f38576"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="group__fluxfunctions.html#gacb84a8d3b8c253f1100c1530035da1de">CylindricalFunctor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#a0b22ac87a3ca2d6790f5d121c8f38576">psipZ</a> () const</td></tr>
+<tr class="memdesc:a0b22ac87a3ca2d6790f5d121c8f38576"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \partial_Z \psi_p(R,Z)\), where R, Z are cylindrical coordinates  <a href="#a0b22ac87a3ca2d6790f5d121c8f38576">More...</a><br /></td></tr>
+<tr class="separator:a0b22ac87a3ca2d6790f5d121c8f38576"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9471c0c69d320e3dbfd0f67f3e074bc9"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="group__fluxfunctions.html#gacb84a8d3b8c253f1100c1530035da1de">CylindricalFunctor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#a9471c0c69d320e3dbfd0f67f3e074bc9">psipRR</a> () const</td></tr>
+<tr class="memdesc:a9471c0c69d320e3dbfd0f67f3e074bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \partial_R\partial_R \psi_p(R,Z)\), where R, Z are cylindrical coordinates  <a href="#a9471c0c69d320e3dbfd0f67f3e074bc9">More...</a><br /></td></tr>
+<tr class="separator:a9471c0c69d320e3dbfd0f67f3e074bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70e1aad0b66947aae757258bede39e20"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="group__fluxfunctions.html#gacb84a8d3b8c253f1100c1530035da1de">CylindricalFunctor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#a70e1aad0b66947aae757258bede39e20">psipRZ</a> () const</td></tr>
+<tr class="memdesc:a70e1aad0b66947aae757258bede39e20"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \partial_R\partial_Z \psi_p(R,Z)\), where R, Z are cylindrical coordinates  <a href="#a70e1aad0b66947aae757258bede39e20">More...</a><br /></td></tr>
+<tr class="separator:a70e1aad0b66947aae757258bede39e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac94c922619d7d7639024fd4620636d64"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="group__fluxfunctions.html#gacb84a8d3b8c253f1100c1530035da1de">CylindricalFunctor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#ac94c922619d7d7639024fd4620636d64">psipZZ</a> () const</td></tr>
+<tr class="memdesc:ac94c922619d7d7639024fd4620636d64"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \partial_Z\partial_Z \psi_p(R,Z)\), where R, Z are cylindrical coordinates  <a href="#ac94c922619d7d7639024fd4620636d64">More...</a><br /></td></tr>
+<tr class="separator:ac94c922619d7d7639024fd4620636d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a556631a90198e1a869d42718976f982a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="group__fluxfunctions.html#gacb84a8d3b8c253f1100c1530035da1de">CylindricalFunctor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#a556631a90198e1a869d42718976f982a">ipol</a> () const</td></tr>
+<tr class="memdesc:a556631a90198e1a869d42718976f982a"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( I(\psi_p) \) the current  <a href="#a556631a90198e1a869d42718976f982a">More...</a><br /></td></tr>
+<tr class="separator:a556631a90198e1a869d42718976f982a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eb2cc07e379768d3e31d494a4275e58"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="group__fluxfunctions.html#gacb84a8d3b8c253f1100c1530035da1de">CylindricalFunctor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#a7eb2cc07e379768d3e31d494a4275e58">ipolR</a> () const</td></tr>
+<tr class="memdesc:a7eb2cc07e379768d3e31d494a4275e58"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \partial_R I(\psi_p) \)  <a href="#a7eb2cc07e379768d3e31d494a4275e58">More...</a><br /></td></tr>
+<tr class="separator:a7eb2cc07e379768d3e31d494a4275e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af348318d51bb4673649ef62c14c4226f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="group__fluxfunctions.html#gacb84a8d3b8c253f1100c1530035da1de">CylindricalFunctor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#af348318d51bb4673649ef62c14c4226f">ipolZ</a> () const</td></tr>
+<tr class="memdesc:af348318d51bb4673649ef62c14c4226f"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \partial_Z I(\psi_p) \)  <a href="#af348318d51bb4673649ef62c14c4226f">More...</a><br /></td></tr>
+<tr class="separator:af348318d51bb4673649ef62c14c4226f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36ac488e075a238724fffc929d16d32f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structdg_1_1geo_1_1_cylindrical_functors_lvl2.html">CylindricalFunctorsLvl2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#a36ac488e075a238724fffc929d16d32f">get_psip</a> () const</td></tr>
+<tr class="separator:a36ac488e075a238724fffc929d16d32f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cac5f2580c55eeee4b3b4da8b76a371"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structdg_1_1geo_1_1_cylindrical_functors_lvl1.html">CylindricalFunctorsLvl1</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html#a8cac5f2580c55eeee4b3b4da8b76a371">get_ipol</a> () const</td></tr>
+<tr class="separator:a8cac5f2580c55eeee4b3b4da8b76a371"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>container class of R, psi and Ipol </p>
-<p>This is the representation of toroidally axisymmetric magnetic fields that can be modeled in the form </p><p class="formulaDsp">
-\[ \vec B = \frac{R_0}{R} \left( I(\psi_p) \hat e_\varphi + \nabla \psi_p \times \hat e_\varphi\right) \]
-</p>
-<p> where \( R_0\) is a normalization constant, \( I\) the poloidal current and \( \psi_p\) the poloidal flux function. </p><div class="fragment"><div class="line">    <span class="keyword">const</span> <a class="codeRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1_real_cylindrical_grid3d.html">dg::CylindricalGrid3d</a> g3d( R_0 - a, R_0+a, -a, a, 0, 2.*M_PI, n, Nx, Ny, Nz, <a class="codeRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a>, <a class="codeRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a>, <a class="codeRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3">dg::PER</a>);</div><div class="line">    <span class="comment">//create magnetic field</span></div><div class="line">    <span class="keyword">const</span> <a class="code" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a> mag = <a class="code" href="group__geom.html#gaa6d78afe4f306e34d509934f8f79421a">dg::geo::createCircularField</a>( R_0, I_0);</div><div class="line">    <span class="keyword">const</span> <a class="code" href="structdg_1_1geo_1_1_binary_vector_lvl0.html">dg::geo::BinaryVectorLvl0</a> bhat( (<a class="code" href="structdg_1_1geo_1_1_b_hat_r.html">dg::geo::BHatR</a>)(mag), (<a class="code" href="structdg_1_1geo_1_1_b_hat_z.html">dg::geo::BHatZ</a>)(mag), (<a class="code" href="structdg_1_1geo_1_1_b_hat_p.html">dg::geo::BHatP</a>)(mag));</div><div class="line">    <span class="comment">//create Fieldaligned object and construct DS from it</span></div><div class="line">    <span class="keyword">const</span> <a class="code" href="structdg_1_1geo_1_1_fieldaligned.html">dg::geo::Fieldaligned&lt;dg::aProductGeometry3d,dg::IDMatrix,dg::DVec&gt;</a>  dsFA( bhat, g3d, <a class="codeRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a>, <a class="codeRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a>, <a class="codeRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1_z_e_r_o.html">dg::geo::NoLimiter</a>(), 1e-8, mx, my, <span class="keyword">true</span>,<span class="keyword">true</span>,<span class="keyword">true</span>);</div><div class="line">    <a class="code" href="structdg_1_1geo_1_1_d_s.html">dg::geo::DS&lt;dg::aProductGeometry3d, dg::IDMatrix, dg::DMatrix, dg::DVec&gt;</a> ds( dsFA, <a class="codeRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__creation.html#gga9945b71a335bc97f78dc7425911c7287a07217e3dd9be28b4da85d46fef38f066">dg::not_normed</a>, <a class="codeRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__creation.html#ggabf9ea3df33484cbb5886e257c3899e48a6281b4fc609cb723a615662b5adac9df">dg::centered</a>);</div><div class="line">    <span class="comment">//apply to function</span></div><div class="line">    <a class="codeRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8">dg::DVec</a> <span class="keyword">function</span> = <a class="codeRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">dg::evaluate</a>( func, g3d), derivative(<span class="keyword">function</span>);</div><div class="line">    ds( <span class="keyword">function</span>, derivative);</div></div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>We implicitly also assume the toroidal field line approximation, i.e. all curvature and other perpendicular terms created with this field will assume that the perpendicular direction lies within the R-Z planes of a cylindrical grid (The plane \( \perp \hat e_\varphi\) ) </dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<div class="textblock"><p>A tokamak field as given by R0, Psi and Ipol. </p>
+<p>This is the representation of toroidally axisymmetric magnetic fields that can be modeled in the form \( \vec B(R,Z,\varphi) = \frac{R_0}{R} \left( I(\psi_p) \hat e_\varphi + \nabla \psi_p \times \hat e_\varphi\right) \) where \( R_0\) is a normalization constant, \( I\) the poloidal current and \( \psi_p\) the poloidal flux function. </p><div class="fragment"><div class="line">    <span class="keyword">const</span> <a class="codeRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1_real_cylindrical_grid3d.html">dg::CylindricalGrid3d</a> g3d( R_0-a, R_0+a, -a, a, 0, 2.*M_PI, n, Nx, Ny, Nz, <a class="codeRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a>, <a class="codeRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a>, <a class="codeRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3">dg::PER</a>);</div><div class="line">    <span class="comment">//create magnetic field</span></div><div class="line">    <span class="keyword">const</span> <a class="code" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a> mag = <a class="code" href="group__geom.html#ga16471692288263e2076b897dae16799f">dg::geo::createCircularField</a>( R_0, I_0);</div><div class="line">    <span class="keyword">const</span> <a class="code" href="structdg_1_1geo_1_1_cylindrical_vector_lvl0.html">dg::geo::CylindricalVectorLvl0</a> bhat = <a class="code" href="group__magnetic.html#ga6182dc55424bffffb0d9876b9f90222d">dg::geo::createBHat</a>(mag);</div><div class="line">    <span class="comment">//create Fieldaligned object and construct DS from it</span></div><div class="line">    <a class="code" href="structdg_1_1geo_1_1_fieldaligned.html">dg::geo::Fieldaligned&lt;dg::aProductGeometry3d,dg::IDMatrix,dg::DVec&gt;</a>  dsFA( bhat, g3d, <a class="codeRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a>, <a class="codeRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a>, <a class="codeRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/structdg_1_1_z_e_r_o.html">dg::geo::NoLimiter</a>(), 1e-8, mx, my);</div><div class="line">    <a class="code" href="structdg_1_1geo_1_1_d_s.html">dg::geo::DS&lt;dg::aProductGeometry3d, dg::IDMatrix, dg::DMatrix, dg::DVec&gt;</a> ds( dsFA, <a class="codeRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/group__creation.html#ggabf9ea3df33484cbb5886e257c3899e48a6281b4fc609cb723a615662b5adac9df">dg::centered</a>);</div></div><!-- fragment --></div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a62b29afae92474e66a531228ca430f38"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a62b29afae92474e66a531228ca430f38">&#9670;&nbsp;</a></span>TokamakMagneticField() <span class="overload">[1/2]</span></h2>
 
@@ -187,8 +183,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4eca74f22b6b38a8e0e9aaf7084937e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4eca74f22b6b38a8e0e9aaf7084937e9">&#9670;&nbsp;</a></span>TokamakMagneticField() <span class="overload">[2/2]</span></h2>
+<a id="a83ed6160c9125deac370e58f6e42954d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83ed6160c9125deac370e58f6e42954d">&#9670;&nbsp;</a></span>TokamakMagneticField() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -205,13 +201,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl2.html">BinaryFunctorsLvl2</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1geo_1_1_cylindrical_functors_lvl2.html">CylindricalFunctorsLvl2</a> &amp;&#160;</td>
           <td class="paramname"><em>psip</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl1.html">BinaryFunctorsLvl1</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1geo_1_1_cylindrical_functors_lvl1.html">CylindricalFunctorsLvl1</a> &amp;&#160;</td>
           <td class="paramname"><em>ipol</em>&#160;</td>
         </tr>
         <tr>
@@ -230,8 +226,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab1928bb257915a73b67e8f73da39f2ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1928bb257915a73b67e8f73da39f2ab">&#9670;&nbsp;</a></span>get_ipol()</h2>
+<a id="a8cac5f2580c55eeee4b3b4da8b76a371"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cac5f2580c55eeee4b3b4da8b76a371">&#9670;&nbsp;</a></span>get_ipol()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -240,7 +236,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl1.html">BinaryFunctorsLvl1</a>&amp; dg::geo::TokamakMagneticField::get_ipol </td>
+          <td class="memname">const <a class="el" href="structdg_1_1geo_1_1_cylindrical_functors_lvl1.html">CylindricalFunctorsLvl1</a>&amp; dg::geo::TokamakMagneticField::get_ipol </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -255,8 +251,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af997c120fd405c750b488fbc558beb7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af997c120fd405c750b488fbc558beb7d">&#9670;&nbsp;</a></span>get_psip()</h2>
+<a id="a36ac488e075a238724fffc929d16d32f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36ac488e075a238724fffc929d16d32f">&#9670;&nbsp;</a></span>get_psip()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -265,7 +261,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl2.html">BinaryFunctorsLvl2</a>&amp; dg::geo::TokamakMagneticField::get_psip </td>
+          <td class="memname">const <a class="el" href="structdg_1_1geo_1_1_cylindrical_functors_lvl2.html">CylindricalFunctorsLvl2</a>&amp; dg::geo::TokamakMagneticField::get_psip </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -280,8 +276,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3973b053550e94f9c49ef53db1a90de3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3973b053550e94f9c49ef53db1a90de3">&#9670;&nbsp;</a></span>ipol()</h2>
+<a id="a556631a90198e1a869d42718976f982a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a556631a90198e1a869d42718976f982a">&#9670;&nbsp;</a></span>ipol()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -290,7 +286,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="structdg_1_1geo_1_1a_binary_functor.html">aBinaryFunctor</a>&amp; dg::geo::TokamakMagneticField::ipol </td>
+          <td class="memname">const <a class="el" href="group__fluxfunctions.html#gacb84a8d3b8c253f1100c1530035da1de">CylindricalFunctor</a>&amp; dg::geo::TokamakMagneticField::ipol </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -307,8 +303,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a474cf0c836299547768108fd8840d83b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a474cf0c836299547768108fd8840d83b">&#9670;&nbsp;</a></span>ipolR()</h2>
+<a id="a7eb2cc07e379768d3e31d494a4275e58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eb2cc07e379768d3e31d494a4275e58">&#9670;&nbsp;</a></span>ipolR()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -317,7 +313,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="structdg_1_1geo_1_1a_binary_functor.html">aBinaryFunctor</a>&amp; dg::geo::TokamakMagneticField::ipolR </td>
+          <td class="memname">const <a class="el" href="group__fluxfunctions.html#gacb84a8d3b8c253f1100c1530035da1de">CylindricalFunctor</a>&amp; dg::geo::TokamakMagneticField::ipolR </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -334,8 +330,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3c972d5143bec58a8fae817726e2a645"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c972d5143bec58a8fae817726e2a645">&#9670;&nbsp;</a></span>ipolZ()</h2>
+<a id="af348318d51bb4673649ef62c14c4226f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af348318d51bb4673649ef62c14c4226f">&#9670;&nbsp;</a></span>ipolZ()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -344,7 +340,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="structdg_1_1geo_1_1a_binary_functor.html">aBinaryFunctor</a>&amp; dg::geo::TokamakMagneticField::ipolZ </td>
+          <td class="memname">const <a class="el" href="group__fluxfunctions.html#gacb84a8d3b8c253f1100c1530035da1de">CylindricalFunctor</a>&amp; dg::geo::TokamakMagneticField::ipolZ </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -361,8 +357,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1c9a9e8e89758e1fffb02b288ba327dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c9a9e8e89758e1fffb02b288ba327dd">&#9670;&nbsp;</a></span>psip()</h2>
+<a id="a72a512e0daccc855cf77368579042a5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72a512e0daccc855cf77368579042a5a">&#9670;&nbsp;</a></span>psip()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -371,7 +367,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="structdg_1_1geo_1_1a_binary_functor.html">aBinaryFunctor</a>&amp; dg::geo::TokamakMagneticField::psip </td>
+          <td class="memname">const <a class="el" href="group__fluxfunctions.html#gacb84a8d3b8c253f1100c1530035da1de">CylindricalFunctor</a>&amp; dg::geo::TokamakMagneticField::psip </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -388,8 +384,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3052d4aa8fca099edb616631edf039db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3052d4aa8fca099edb616631edf039db">&#9670;&nbsp;</a></span>psipR()</h2>
+<a id="a419ada116d941d5ad60cac878b6093b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a419ada116d941d5ad60cac878b6093b7">&#9670;&nbsp;</a></span>psipR()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -398,7 +394,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="structdg_1_1geo_1_1a_binary_functor.html">aBinaryFunctor</a>&amp; dg::geo::TokamakMagneticField::psipR </td>
+          <td class="memname">const <a class="el" href="group__fluxfunctions.html#gacb84a8d3b8c253f1100c1530035da1de">CylindricalFunctor</a>&amp; dg::geo::TokamakMagneticField::psipR </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -415,8 +411,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa719bb4e43a298a5e8f9b21d016272b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa719bb4e43a298a5e8f9b21d016272b3">&#9670;&nbsp;</a></span>psipRR()</h2>
+<a id="a9471c0c69d320e3dbfd0f67f3e074bc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9471c0c69d320e3dbfd0f67f3e074bc9">&#9670;&nbsp;</a></span>psipRR()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -425,7 +421,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="structdg_1_1geo_1_1a_binary_functor.html">aBinaryFunctor</a>&amp; dg::geo::TokamakMagneticField::psipRR </td>
+          <td class="memname">const <a class="el" href="group__fluxfunctions.html#gacb84a8d3b8c253f1100c1530035da1de">CylindricalFunctor</a>&amp; dg::geo::TokamakMagneticField::psipRR </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -442,8 +438,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9943f479b3ffdf88f02f334a0db00c22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9943f479b3ffdf88f02f334a0db00c22">&#9670;&nbsp;</a></span>psipRZ()</h2>
+<a id="a70e1aad0b66947aae757258bede39e20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70e1aad0b66947aae757258bede39e20">&#9670;&nbsp;</a></span>psipRZ()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -452,7 +448,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="structdg_1_1geo_1_1a_binary_functor.html">aBinaryFunctor</a>&amp; dg::geo::TokamakMagneticField::psipRZ </td>
+          <td class="memname">const <a class="el" href="group__fluxfunctions.html#gacb84a8d3b8c253f1100c1530035da1de">CylindricalFunctor</a>&amp; dg::geo::TokamakMagneticField::psipRZ </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -469,8 +465,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7f79c50fe617f2516fe8bc3f3938513f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f79c50fe617f2516fe8bc3f3938513f">&#9670;&nbsp;</a></span>psipZ()</h2>
+<a id="a0b22ac87a3ca2d6790f5d121c8f38576"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b22ac87a3ca2d6790f5d121c8f38576">&#9670;&nbsp;</a></span>psipZ()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -479,7 +475,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="structdg_1_1geo_1_1a_binary_functor.html">aBinaryFunctor</a>&amp; dg::geo::TokamakMagneticField::psipZ </td>
+          <td class="memname">const <a class="el" href="group__fluxfunctions.html#gacb84a8d3b8c253f1100c1530035da1de">CylindricalFunctor</a>&amp; dg::geo::TokamakMagneticField::psipZ </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -496,8 +492,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a43616c8513d3e0b72c6b266e0ab31e4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43616c8513d3e0b72c6b266e0ab31e4d">&#9670;&nbsp;</a></span>psipZZ()</h2>
+<a id="ac94c922619d7d7639024fd4620636d64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac94c922619d7d7639024fd4620636d64">&#9670;&nbsp;</a></span>psipZZ()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -506,7 +502,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="structdg_1_1geo_1_1a_binary_functor.html">aBinaryFunctor</a>&amp; dg::geo::TokamakMagneticField::psipZZ </td>
+          <td class="memname">const <a class="el" href="group__fluxfunctions.html#gacb84a8d3b8c253f1100c1530035da1de">CylindricalFunctor</a>&amp; dg::geo::TokamakMagneticField::psipZZ </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -550,8 +546,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7da01a190bc2e67a2f6734920ff40c0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7da01a190bc2e67a2f6734920ff40c0f">&#9670;&nbsp;</a></span>set()</h2>
+<a id="adc749e70a6f8e9d297a7bc32063ae9d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc749e70a6f8e9d297a7bc32063ae9d9">&#9670;&nbsp;</a></span>set()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -568,13 +564,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl2.html">BinaryFunctorsLvl2</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1geo_1_1_cylindrical_functors_lvl2.html">CylindricalFunctorsLvl2</a> &amp;&#160;</td>
           <td class="paramname"><em>psip</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl1.html">BinaryFunctorsLvl1</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1geo_1_1_cylindrical_functors_lvl1.html">CylindricalFunctorsLvl1</a> &amp;&#160;</td>
           <td class="paramname"><em>ipol</em>&#160;</td>
         </tr>
         <tr>
@@ -601,7 +597,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="namespacedg_1_1geo.html">geo</a></li><li class="navelem"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">TokamakMagneticField</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:03:04 for Geometries by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:57 for Extension: Geometries by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
-<title>Discontinuous Galerkin Library: dg::Average&lt; container &gt; Struct Template Reference</title>
+<title>Discontinuous Galerkin Library: dg::Average&lt; ContainerType &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -97,49 +97,72 @@ $(document).ready(function(){initNavTree('structdg_1_1_average.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="structdg_1_1_average-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">dg::Average&lt; container &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__geo.html">Level 3: Topology and Geometry</a> &raquo; <a class="el" href="group__grid.html">Topological grids and operations</a> &raquo; <a class="el" href="group__utilities.html">Averaging</a></div></div>  </div>
+<div class="title">dg::Average&lt; ContainerType &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__geo.html">Level 3: Topology and Geometry</a> &raquo; <a class="el" href="group__grid.html">Topological grids and operations</a> &raquo; <a class="el" href="group__utilities.html">Averaging</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Class for average computations over a given direction or plane.  
+<p>Class for average computations in a Cartesian topology.  
  <a href="structdg_1_1_average.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="average_8h_source.html">average.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aaa16f1c805c79cb9864688ebdfad6ccf"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_average.html#aaa16f1c805c79cb9864688ebdfad6ccf">container_type</a> = ContainerType</td></tr>
+<tr class="separator:aaa16f1c805c79cb9864688ebdfad6ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a608b7f3a330debfab5329b8928af255d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_average.html#a608b7f3a330debfab5329b8928af255d">Average</a> (const <a class="el" href="group__gridtypes.html#gae3d12cf3fe25ad7c9ce423df0b5cd5bd">aTopology2d</a> &amp;g, enum <a class="el" href="group__creation.html#gace76090e6c95d39b59a1dee2db968d14">coo2d</a> <a class="el" href="group__creation.html#gabf9ea3df33484cbb5886e257c3899e48">direction</a>)</td></tr>
-<tr class="memdesc:a608b7f3a330debfab5329b8928af255d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare internal workspace.  <a href="#a608b7f3a330debfab5329b8928af255d">More...</a><br /></td></tr>
-<tr class="separator:a608b7f3a330debfab5329b8928af255d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa6bb048e6717047dd29bf991220b10c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_average.html#afa6bb048e6717047dd29bf991220b10c">Average</a> (const <a class="el" href="group__gridtypes.html#ga534001144a75391bd6311a94f1dc6320">aTopology3d</a> &amp;g, enum <a class="el" href="group__creation.html#ga4de4a3d7cd219a55affa992871e8598f">coo3d</a> <a class="el" href="group__creation.html#gabf9ea3df33484cbb5886e257c3899e48">direction</a>)</td></tr>
-<tr class="memdesc:afa6bb048e6717047dd29bf991220b10c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare internal workspace.  <a href="#afa6bb048e6717047dd29bf991220b10c">More...</a><br /></td></tr>
-<tr class="separator:afa6bb048e6717047dd29bf991220b10c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54d14739c0b19dd2852eca61c914060a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_average.html#a54d14739c0b19dd2852eca61c914060a">operator()</a> (const container &amp;src, container &amp;res, bool extend=true)</td></tr>
-<tr class="memdesc:a54d14739c0b19dd2852eca61c914060a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the average as configured in the constructor.  <a href="#a54d14739c0b19dd2852eca61c914060a">More...</a><br /></td></tr>
-<tr class="separator:a54d14739c0b19dd2852eca61c914060a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47345d8ad3e7832dfd5326fb456dab51"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_average.html#a47345d8ad3e7832dfd5326fb456dab51">Average</a> (const <a class="el" href="group__gridtypes.html#gae3d12cf3fe25ad7c9ce423df0b5cd5bd">aTopology2d</a> &amp;g, enum <a class="el" href="group__creation.html#gace76090e6c95d39b59a1dee2db968d14">coo2d</a> <a class="el" href="group__creation.html#gabf9ea3df33484cbb5886e257c3899e48">direction</a>)</td></tr>
+<tr class="memdesc:a47345d8ad3e7832dfd5326fb456dab51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare internal workspace.  <a href="#a47345d8ad3e7832dfd5326fb456dab51">More...</a><br /></td></tr>
+<tr class="separator:a47345d8ad3e7832dfd5326fb456dab51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1051b4634f13a6114151ad269b016a6a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_average.html#a1051b4634f13a6114151ad269b016a6a">Average</a> (const <a class="el" href="group__gridtypes.html#ga534001144a75391bd6311a94f1dc6320">aTopology3d</a> &amp;g, enum <a class="el" href="group__creation.html#ga4de4a3d7cd219a55affa992871e8598f">coo3d</a> <a class="el" href="group__creation.html#gabf9ea3df33484cbb5886e257c3899e48">direction</a>)</td></tr>
+<tr class="memdesc:a1051b4634f13a6114151ad269b016a6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare internal workspace.  <a href="#a1051b4634f13a6114151ad269b016a6a">More...</a><br /></td></tr>
+<tr class="separator:a1051b4634f13a6114151ad269b016a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a183da327d1dc76e85bf3af3659f05469"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_average.html#a183da327d1dc76e85bf3af3659f05469">operator()</a> (const ContainerType &amp;src, ContainerType &amp;res, bool extend=true)</td></tr>
+<tr class="memdesc:a183da327d1dc76e85bf3af3659f05469"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the average as configured in the constructor.  <a href="#a183da327d1dc76e85bf3af3659f05469">More...</a><br /></td></tr>
+<tr class="separator:a183da327d1dc76e85bf3af3659f05469"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class container&gt;<br />
-struct dg::Average&lt; container &gt;</h3>
+<div class="textblock"><h3>template&lt;class ContainerType&gt;<br />
+struct dg::Average&lt; ContainerType &gt;</h3>
 
-<p>Class for average computations over a given direction or plane. </p>
-<div class="fragment"><div class="line">    <span class="keyword">const</span> <a class="code" href="structdg_1_1_real_grid2d.html">dg::Grid2d</a> g( 0, lx, 0, ly, n, Nx, Ny);</div><div class="line"></div><div class="line">    <a class="code" href="structdg_1_1_average.html">dg::Average&lt; dg::DVec &gt;</a> pol(g, <a class="code" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">dg::coo2d::y</a>);</div><div class="line"></div><div class="line">    <span class="keyword">const</span> <a class="code" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8">dg::DVec</a> vector = <a class="code" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">dg::evaluate</a>( <span class="keyword">function</span> ,g);</div><div class="line">    <a class="code" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8">dg::DVec</a> average_y( vector);</div><div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Averaging y ... \n&quot;</span>;</div><div class="line">    pol( vector, average_y);</div></div><!-- fragment --></div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a608b7f3a330debfab5329b8928af255d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a608b7f3a330debfab5329b8928af255d">&#9670;&nbsp;</a></span>Average() <span class="overload">[1/2]</span></h2>
+<p>Class for average computations in a Cartesian topology. </p>
+<p>Given a Cartesian topology it is possible to define a partial reduction of a given vector. In two dimensions for example we can define a reduction over all points that are neighbors in the x (or y) direction. We are then left with Ny (Nx) points. In three dimensions we can define the reduction along the x, y, z directions but also over all points in the xy (xz or yz) planes. We are left with two- (respectively three-)dimensional vectors. </p><div class="fragment"><div class="line">    <span class="keyword">const</span> <a class="code" href="structdg_1_1_real_grid2d.html">dg::Grid2d</a> g( 0, lx, 0, ly, n, Nx, Ny);</div><div class="line"></div><div class="line">    <a class="code" href="structdg_1_1_average.html">dg::Average&lt; dg::DVec &gt;</a> pol(g, <a class="code" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">dg::coo2d::y</a>);</div><div class="line"></div><div class="line">    <span class="keyword">const</span> <a class="code" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8">dg::DVec</a> vector = <a class="code" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">dg::evaluate</a>( <span class="keyword">function</span> ,g);</div><div class="line">    <a class="code" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8">dg::DVec</a> average_y( vector);</div><div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Averaging y ... \n&quot;</span>;</div><div class="line">    pol( vector, average_y);</div></div><!-- fragment --></div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="aaa16f1c805c79cb9864688ebdfad6ccf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa16f1c805c79cb9864688ebdfad6ccf">&#9670;&nbsp;</a></span>container_type</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class container&gt; </div>
+template&lt;class ContainerType&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structdg_1_1_average.html">dg::Average</a>&lt; ContainerType &gt;::<a class="el" href="structdg_1_1_average.html#aaa16f1c805c79cb9864688ebdfad6ccf">container_type</a> =  ContainerType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a47345d8ad3e7832dfd5326fb456dab51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47345d8ad3e7832dfd5326fb456dab51">&#9670;&nbsp;</a></span>Average() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ContainerType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdg_1_1_average.html">dg::Average</a>&lt; container &gt;::<a class="el" href="structdg_1_1_average.html">Average</a> </td>
+          <td class="memname"><a class="el" href="structdg_1_1_average.html">dg::Average</a>&lt; ContainerType &gt;::<a class="el" href="structdg_1_1_average.html">Average</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__gridtypes.html#gae3d12cf3fe25ad7c9ce423df0b5cd5bd">aTopology2d</a> &amp;&#160;</td>
           <td class="paramname"><em>g</em>, </td>
@@ -174,19 +197,19 @@ template&lt;class container&gt; </div>
 
 </div>
 </div>
-<a id="afa6bb048e6717047dd29bf991220b10c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa6bb048e6717047dd29bf991220b10c">&#9670;&nbsp;</a></span>Average() <span class="overload">[2/2]</span></h2>
+<a id="a1051b4634f13a6114151ad269b016a6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1051b4634f13a6114151ad269b016a6a">&#9670;&nbsp;</a></span>Average() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class container&gt; </div>
+template&lt;class ContainerType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdg_1_1_average.html">dg::Average</a>&lt; container &gt;::<a class="el" href="structdg_1_1_average.html">Average</a> </td>
+          <td class="memname"><a class="el" href="structdg_1_1_average.html">dg::Average</a>&lt; ContainerType &gt;::<a class="el" href="structdg_1_1_average.html">Average</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__gridtypes.html#ga534001144a75391bd6311a94f1dc6320">aTopology3d</a> &amp;&#160;</td>
           <td class="paramname"><em>g</em>, </td>
@@ -222,27 +245,27 @@ template&lt;class container&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a54d14739c0b19dd2852eca61c914060a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54d14739c0b19dd2852eca61c914060a">&#9670;&nbsp;</a></span>operator()()</h2>
+<a id="a183da327d1dc76e85bf3af3659f05469"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a183da327d1dc76e85bf3af3659f05469">&#9670;&nbsp;</a></span>operator()()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class container&gt; </div>
+template&lt;class ContainerType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="structdg_1_1_average.html">dg::Average</a>&lt; container &gt;::operator() </td>
+          <td class="memname">void <a class="el" href="structdg_1_1_average.html">dg::Average</a>&lt; ContainerType &gt;::operator() </td>
           <td>(</td>
-          <td class="paramtype">const container &amp;&#160;</td>
+          <td class="paramtype">const ContainerType &amp;&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">container &amp;&#160;</td>
+          <td class="paramtype">ContainerType &amp;&#160;</td>
           <td class="paramname"><em>res</em>, </td>
         </tr>
         <tr>
@@ -281,7 +304,7 @@ template&lt;class container&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>geometry/<a class="el" href="average_8h_source.html">average.h</a></li>
+<li>topology/<a class="el" href="average_8h_source.html">average.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -289,7 +312,7 @@ template&lt;class container&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_average.html">Average</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

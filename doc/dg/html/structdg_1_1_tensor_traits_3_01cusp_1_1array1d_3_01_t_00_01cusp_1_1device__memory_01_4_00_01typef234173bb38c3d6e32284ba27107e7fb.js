@@ -1,6 +1,0 @@
-var structdg_1_1_tensor_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1device__memory_01_4_00_01typef234173bb38c3d6e32284ba27107e7fb =
-[
-    [ "execution_policy", "structdg_1_1_tensor_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1device__memory_01_4_00_01typef234173bb38c3d6e32284ba27107e7fb.html#a3807f54265d555011f0df73c9c1b5da2", null ],
-    [ "tensor_category", "structdg_1_1_tensor_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1device__memory_01_4_00_01typef234173bb38c3d6e32284ba27107e7fb.html#a86f270a6e439ab9428664e39409bdfd6", null ],
-    [ "value_type", "structdg_1_1_tensor_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1device__memory_01_4_00_01typef234173bb38c3d6e32284ba27107e7fb.html#adee7ac202627479809582c9f4d1832e9", null ]
-];

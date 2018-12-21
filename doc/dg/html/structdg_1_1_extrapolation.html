@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -97,6 +97,7 @@ $(document).ready(function(){initNavTree('structdg_1_1_extrapolation.html','');}
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="structdg_1_1_extrapolation-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -104,36 +105,59 @@ $(document).ready(function(){initNavTree('structdg_1_1_extrapolation.html','');}
 </div><!--header-->
 <div class="contents">
 
-<p>Class that stores up to three solutions of iterative methods and can be used to get initial guesses based on past solutions.  
+<p>Extrapolate based on up to three past solutions.  
  <a href="structdg_1_1_extrapolation.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="cg_8h_source.html">cg.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a201b041087d3c7137c0a505033fb1969"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_extrapolation.html#a201b041087d3c7137c0a505033fb1969">value_type</a> = <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt;</td></tr>
+<tr class="separator:a201b041087d3c7137c0a505033fb1969"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9569336bf7df69a10110a39f7204babe"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_extrapolation.html#a9569336bf7df69a10110a39f7204babe">container_type</a> = ContainerType</td></tr>
+<tr class="separator:a9569336bf7df69a10110a39f7204babe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8814b074223912d8c4acc29d0a73e7b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_extrapolation.html#a8814b074223912d8c4acc29d0a73e7b7">Extrapolation</a> (unsigned number=2)</td></tr>
-<tr class="memdesc:a8814b074223912d8c4acc29d0a73e7b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set extrapolation number without initializing values.  <a href="#a8814b074223912d8c4acc29d0a73e7b7">More...</a><br /></td></tr>
+<tr class="memdesc:a8814b074223912d8c4acc29d0a73e7b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set extrapolation order without initializing values.  <a href="#a8814b074223912d8c4acc29d0a73e7b7">More...</a><br /></td></tr>
 <tr class="separator:a8814b074223912d8c4acc29d0a73e7b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba0342f727afe755149ee7b9fe286d59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_extrapolation.html#aba0342f727afe755149ee7b9fe286d59">Extrapolation</a> (unsigned number, <a class="el" href="structdg_1_1_extrapolation.html#a201b041087d3c7137c0a505033fb1969">value_type</a> t_init, const ContainerType &amp;init)</td></tr>
+<tr class="memdesc:aba0342f727afe755149ee7b9fe286d59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set extrapolation order and initialize values.  <a href="#aba0342f727afe755149ee7b9fe286d59">More...</a><br /></td></tr>
+<tr class="separator:aba0342f727afe755149ee7b9fe286d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacb255378c2a4c1f3d7bd1a07dc78ff9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_extrapolation.html#aacb255378c2a4c1f3d7bd1a07dc78ff9">Extrapolation</a> (unsigned number, const ContainerType &amp;init)</td></tr>
-<tr class="memdesc:aacb255378c2a4c1f3d7bd1a07dc78ff9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set extrapolation number and initialize values.  <a href="#aacb255378c2a4c1f3d7bd1a07dc78ff9">More...</a><br /></td></tr>
+<tr class="memdesc:aacb255378c2a4c1f3d7bd1a07dc78ff9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set extrapolation order and initialize values (equidistant)  <a href="#aacb255378c2a4c1f3d7bd1a07dc78ff9">More...</a><br /></td></tr>
 <tr class="separator:aacb255378c2a4c1f3d7bd1a07dc78ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d202f5c6cd9a44fa654f88e353c4c09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_extrapolation.html#a8d202f5c6cd9a44fa654f88e353c4c09">set_number</a> (unsigned number)</td></tr>
-<tr class="memdesc:a8d202f5c6cd9a44fa654f88e353c4c09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set extrapolation number without initializing values.  <a href="#a8d202f5c6cd9a44fa654f88e353c4c09">More...</a><br /></td></tr>
+<tr class="memdesc:a8d202f5c6cd9a44fa654f88e353c4c09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set extrapolation order without initializing values.  <a href="#a8d202f5c6cd9a44fa654f88e353c4c09">More...</a><br /></td></tr>
 <tr class="separator:a8d202f5c6cd9a44fa654f88e353c4c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af992634d53a305afdfc0d65dab641e6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_extrapolation.html#af992634d53a305afdfc0d65dab641e6e">set_number</a> (unsigned number, <a class="el" href="structdg_1_1_extrapolation.html#a201b041087d3c7137c0a505033fb1969">value_type</a> t_init, const ContainerType &amp;init)</td></tr>
+<tr class="memdesc:af992634d53a305afdfc0d65dab641e6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set extrapolation order and initialize values.  <a href="#af992634d53a305afdfc0d65dab641e6e">More...</a><br /></td></tr>
+<tr class="separator:af992634d53a305afdfc0d65dab641e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4999c81aa4becbaa1f8c7dc561ae3ee9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_extrapolation.html#a4999c81aa4becbaa1f8c7dc561ae3ee9">set_number</a> (unsigned number, const ContainerType &amp;init)</td></tr>
-<tr class="memdesc:a4999c81aa4becbaa1f8c7dc561ae3ee9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set extrapolation number and initialize values.  <a href="#a4999c81aa4becbaa1f8c7dc561ae3ee9">More...</a><br /></td></tr>
+<tr class="memdesc:a4999c81aa4becbaa1f8c7dc561ae3ee9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set extrapolation order and initialize values (equidistant)  <a href="#a4999c81aa4becbaa1f8c7dc561ae3ee9">More...</a><br /></td></tr>
 <tr class="separator:a4999c81aa4becbaa1f8c7dc561ae3ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79c8275765acb2b0c01d06ff87ac1389"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_extrapolation.html#a79c8275765acb2b0c01d06ff87ac1389">get_number</a> () const</td></tr>
-<tr class="memdesc:a79c8275765acb2b0c01d06ff87ac1389"><td class="mdescLeft">&#160;</td><td class="mdescRight">read the current extrapolation number  <a href="#a79c8275765acb2b0c01d06ff87ac1389">More...</a><br /></td></tr>
+<tr class="memdesc:a79c8275765acb2b0c01d06ff87ac1389"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the current extrapolation number  <a href="#a79c8275765acb2b0c01d06ff87ac1389">More...</a><br /></td></tr>
 <tr class="separator:a79c8275765acb2b0c01d06ff87ac1389"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d01c8b58e070df71c0c2056aae8f1b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_extrapolation.html#a1d01c8b58e070df71c0c2056aae8f1b3">extrapolate</a> (ContainerType &amp;new_x) const</td></tr>
-<tr class="memdesc:a1d01c8b58e070df71c0c2056aae8f1b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extrapolate values (<code>number</code> +1 memops)  <a href="#a1d01c8b58e070df71c0c2056aae8f1b3">More...</a><br /></td></tr>
-<tr class="separator:a1d01c8b58e070df71c0c2056aae8f1b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d21ae55618484f9a7122149d4d683f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_extrapolation.html#a3d21ae55618484f9a7122149d4d683f4">update</a> (const ContainerType &amp;new_head)</td></tr>
-<tr class="memdesc:a3d21ae55618484f9a7122149d4d683f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">move the all values one step back and copy the given vector as current head  <a href="#a3d21ae55618484f9a7122149d4d683f4">More...</a><br /></td></tr>
-<tr class="separator:a3d21ae55618484f9a7122149d4d683f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1921e0916d240a193b9bfef135bd290a"><td class="memTemplParams" colspan="2">template&lt;class ContainerType0 &gt; </td></tr>
+<tr class="memitem:a1921e0916d240a193b9bfef135bd290a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_extrapolation.html#a1921e0916d240a193b9bfef135bd290a">extrapolate</a> (<a class="el" href="structdg_1_1_extrapolation.html#a201b041087d3c7137c0a505033fb1969">value_type</a> t, ContainerType0 &amp;new_x) const</td></tr>
+<tr class="memdesc:a1921e0916d240a193b9bfef135bd290a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extrapolate value to given time.  <a href="#a1921e0916d240a193b9bfef135bd290a">More...</a><br /></td></tr>
+<tr class="separator:a1921e0916d240a193b9bfef135bd290a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a2a77ab70d4dbd321a9e40987686c1a"><td class="memTemplParams" colspan="2">template&lt;class ContainerType0 &gt; </td></tr>
+<tr class="memitem:a7a2a77ab70d4dbd321a9e40987686c1a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_extrapolation.html#a7a2a77ab70d4dbd321a9e40987686c1a">extrapolate</a> (ContainerType0 &amp;new_x) const</td></tr>
+<tr class="memdesc:a7a2a77ab70d4dbd321a9e40987686c1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extrapolate value.  <a href="#a7a2a77ab70d4dbd321a9e40987686c1a">More...</a><br /></td></tr>
+<tr class="separator:a7a2a77ab70d4dbd321a9e40987686c1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae568c9e1cc58d37cec74d9394f288fc6"><td class="memTemplParams" colspan="2">template&lt;class ContainerType0 &gt; </td></tr>
+<tr class="memitem:ae568c9e1cc58d37cec74d9394f288fc6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_extrapolation.html#ae568c9e1cc58d37cec74d9394f288fc6">update</a> (<a class="el" href="structdg_1_1_extrapolation.html#a201b041087d3c7137c0a505033fb1969">value_type</a> t_new, const ContainerType0 &amp;new_entry)</td></tr>
+<tr class="memdesc:ae568c9e1cc58d37cec74d9394f288fc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">insert a new entry, deleting the oldest entry or update existing entry  <a href="#ae568c9e1cc58d37cec74d9394f288fc6">More...</a><br /></td></tr>
+<tr class="separator:ae568c9e1cc58d37cec74d9394f288fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7f82d0fc6eaf03abcc55d166ad00810"><td class="memTemplParams" colspan="2">template&lt;class ContainerType0 &gt; </td></tr>
+<tr class="memitem:aa7f82d0fc6eaf03abcc55d166ad00810"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_extrapolation.html#aa7f82d0fc6eaf03abcc55d166ad00810">update</a> (const ContainerType0 &amp;new_entry)</td></tr>
+<tr class="memdesc:aa7f82d0fc6eaf03abcc55d166ad00810"><td class="mdescLeft">&#160;</td><td class="mdescRight">insert a new entry  <a href="#aa7f82d0fc6eaf03abcc55d166ad00810">More...</a><br /></td></tr>
+<tr class="separator:aa7f82d0fc6eaf03abcc55d166ad00810"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa28f43a9d6d19f4de467072c797bd76f"><td class="memItemLeft" align="right" valign="top">const ContainerType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_extrapolation.html#aa28f43a9d6d19f4de467072c797bd76f">head</a> () const</td></tr>
-<tr class="memdesc:aa28f43a9d6d19f4de467072c797bd76f"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the current head  <a href="#aa28f43a9d6d19f4de467072c797bd76f">More...</a><br /></td></tr>
+<tr class="memdesc:aa28f43a9d6d19f4de467072c797bd76f"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the current head (the one most recently inserted)  <a href="#aa28f43a9d6d19f4de467072c797bd76f">More...</a><br /></td></tr>
 <tr class="separator:aa28f43a9d6d19f4de467072c797bd76f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74c24fc0a25791c49654c6e10587194f"><td class="memItemLeft" align="right" valign="top">ContainerType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_extrapolation.html#a74c24fc0a25791c49654c6e10587194f">tail</a> ()</td></tr>
 <tr class="memdesc:a74c24fc0a25791c49654c6e10587194f"><td class="mdescLeft">&#160;</td><td class="mdescRight">write access to tail value ( the one that will be deleted in the next update  <a href="#a74c24fc0a25791c49654c6e10587194f">More...</a><br /></td></tr>
@@ -146,11 +170,12 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><h3>template&lt;class ContainerType&gt;<br />
 struct dg::Extrapolation&lt; ContainerType &gt;</h3>
 
-<p>Class that stores up to three solutions of iterative methods and can be used to get initial guesses based on past solutions. </p>
-<p class="formulaDsp">
+<p>Extrapolate based on up to three past solutions. </p>
+<p>The intention of this class is to provide an initial guess for iterative solvers based on past solutions: </p><p class="formulaDsp">
 \[ x_{init} = \alpha_0 x_0 + \alpha_{-1}x_{-1} + \alpha_{-2} x_{-2}\]
 </p>
-<p> where the indices indicate the current (0) and past (negative) solutions.</p>
+<p> where the indices indicate the current (0) and past (negative) solutions. Choose between 1 (constant), 2 (linear) or 3 (parabola) extrapolation. The user can choose to provide a time value <code>t_i</code> associated with the <code>x_i</code>, which are then used to compute the coefficients <code>alpha_i</code> (using Lagrange interpolation). Otherwise an equidistant distribution is assumed.</p>
+<dl class="section note"><dt>Note</dt><dd>Since extrapolation with higher order polynomials is so prone to oscillations anything higher than linear rarely leads to anything useful. So best stick to constant or linear extrapolation</dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">ContainerType</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> and <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. Among others<ul>
@@ -162,10 +187,45 @@ If there are several <code>ContainerTypes</code> in the argument list, then <cod
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="index.html#dispatch">The Level 1 dispatch system</a> for a detailed explanation of our type dispatch system </dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="index.html#dispatch">The Level 1 dispatch system</a> for a detailed explanation of our type dispatch system</dd>
+<dd>
+<a href="https://en.wikipedia.org/wiki/Extrapolation">https://en.wikipedia.org/wiki/Extrapolation</a> </dd></dl>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a9569336bf7df69a10110a39f7204babe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9569336bf7df69a10110a39f7204babe">&#9670;&nbsp;</a></span>container_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ContainerType&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structdg_1_1_extrapolation.html">dg::Extrapolation</a>&lt; ContainerType &gt;::<a class="el" href="structdg_1_1_extrapolation.html#a9569336bf7df69a10110a39f7204babe">container_type</a> =  ContainerType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a201b041087d3c7137c0a505033fb1969"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a201b041087d3c7137c0a505033fb1969">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ContainerType&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structdg_1_1_extrapolation.html">dg::Extrapolation</a>&lt; ContainerType &gt;::<a class="el" href="structdg_1_1_extrapolation.html#a201b041087d3c7137c0a505033fb1969">value_type</a> =  <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt;ContainerType&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8814b074223912d8c4acc29d0a73e7b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8814b074223912d8c4acc29d0a73e7b7">&#9670;&nbsp;</a></span>Extrapolation() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8814b074223912d8c4acc29d0a73e7b7">&#9670;&nbsp;</a></span>Extrapolation() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -190,10 +250,10 @@ template&lt;class ContainerType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Set extrapolation number without initializing values. </p>
+<p>Set extrapolation order without initializing values. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">number</td><td>number of vectors to use for extrapolation ( 0&lt;=number&lt;=3) </td></tr>
+    <tr><td class="paramname">number</td><td>number of vectors to use for extrapolation. Choose between 1 (constant), 2 (linear) or 3 (parabola) extrapolation. </td></tr>
   </table>
   </dd>
 </dl>
@@ -201,8 +261,62 @@ template&lt;class ContainerType&gt; </div>
 
 </div>
 </div>
+<a id="aba0342f727afe755149ee7b9fe286d59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba0342f727afe755149ee7b9fe286d59">&#9670;&nbsp;</a></span>Extrapolation() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ContainerType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdg_1_1_extrapolation.html">dg::Extrapolation</a>&lt; ContainerType &gt;::<a class="el" href="structdg_1_1_extrapolation.html">Extrapolation</a> </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>number</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structdg_1_1_extrapolation.html#a201b041087d3c7137c0a505033fb1969">value_type</a>&#160;</td>
+          <td class="paramname"><em>t_init</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ContainerType &amp;&#160;</td>
+          <td class="paramname"><em>init</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set extrapolation order and initialize values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">number</td><td>number of vectors to use for extrapolation. Choose between 1 (constant), 2 (linear) or 3 (parabola) extrapolation. </td></tr>
+    <tr><td class="paramname">t_init</td><td>the times are initialized with the values <code> t_init, t_init-1 , t_init-2 </code> </td></tr>
+    <tr><td class="paramname">init</td><td>the vectors are initialized with this value </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aacb255378c2a4c1f3d7bd1a07dc78ff9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aacb255378c2a4c1f3d7bd1a07dc78ff9">&#9670;&nbsp;</a></span>Extrapolation() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aacb255378c2a4c1f3d7bd1a07dc78ff9">&#9670;&nbsp;</a></span>Extrapolation() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -237,25 +351,28 @@ template&lt;class ContainerType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Set extrapolation number and initialize values. </p>
+<p>Set extrapolation order and initialize values (equidistant) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">number</td><td>number of vectors to use for extrapolation ( 0&lt;=number&lt;=3) </td></tr>
+    <tr><td class="paramname">number</td><td>number of vectors to use for extrapolation. Choose between 1 (constant), 2 (linear) or 3 (parabola) extrapolation. </td></tr>
     <tr><td class="paramname">init</td><td>the vectors are initialized with this value </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section note"><dt>Note</dt><dd>the times are initialized with the values <code> 0, -1 , -2 </code> </dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a1d01c8b58e070df71c0c2056aae8f1b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d01c8b58e070df71c0c2056aae8f1b3">&#9670;&nbsp;</a></span>extrapolate()</h2>
+<a id="a1921e0916d240a193b9bfef135bd290a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1921e0916d240a193b9bfef135bd290a">&#9670;&nbsp;</a></span>extrapolate() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class ContainerType&gt; </div>
+<div class="memtemplate">
+template&lt;class ContainerType0 &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -263,7 +380,62 @@ template&lt;class ContainerType&gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="structdg_1_1_extrapolation.html">dg::Extrapolation</a>&lt; ContainerType &gt;::extrapolate </td>
           <td>(</td>
-          <td class="paramtype">ContainerType &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structdg_1_1_extrapolation.html#a201b041087d3c7137c0a505033fb1969">value_type</a>&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ContainerType0 &amp;&#160;</td>
+          <td class="paramname"><em>new_x</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Extrapolate value to given time. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>time to which to extrapolate (must be different from the times used in the update function, else division by zero occurs) </td></tr>
+    <tr><td class="paramname">new_x</td><td>(write only) contains extrapolated value on output ( may alias the tail) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ContainerType0</td><td>must be usable with <code>ContainerType</code> in <a class="el" href="index.html#dispatch">The Level 1 dispatch system</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7a2a77ab70d4dbd321a9e40987686c1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a2a77ab70d4dbd321a9e40987686c1a">&#9670;&nbsp;</a></span>extrapolate() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ContainerType&gt; </div>
+<div class="memtemplate">
+template&lt;class ContainerType0 &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structdg_1_1_extrapolation.html">dg::Extrapolation</a>&lt; ContainerType &gt;::extrapolate </td>
+          <td>(</td>
+          <td class="paramtype">ContainerType0 &amp;&#160;</td>
           <td class="paramname"><em>new_x</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -275,10 +447,17 @@ template&lt;class ContainerType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Extrapolate values (<code>number</code> +1 memops) </p>
+<p>Extrapolate value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">new_x</td><td>(write only) contains extrapolated value on output ( may alias the tail) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Assumes that extrapolation time equals last inserted time+1 </dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ContainerType0</td><td>must be usable with <code>ContainerType</code> in <a class="el" href="index.html#dispatch">The Level 1 dispatch system</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -310,7 +489,7 @@ template&lt;class ContainerType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>read the current extrapolation number </p>
+<p>return the current extrapolation number </p>
 
 </div>
 </div>
@@ -339,13 +518,13 @@ template&lt;class ContainerType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>return the current head </p>
+<p>return the current head (the one most recently inserted) </p>
 <dl class="section return"><dt>Returns</dt><dd>current head (undefined if number==0) </dd></dl>
 
 </div>
 </div>
 <a id="a8d202f5c6cd9a44fa654f88e353c4c09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d202f5c6cd9a44fa654f88e353c4c09">&#9670;&nbsp;</a></span>set_number() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d202f5c6cd9a44fa654f88e353c4c09">&#9670;&nbsp;</a></span>set_number() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -370,10 +549,10 @@ template&lt;class ContainerType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Set extrapolation number without initializing values. </p>
+<p>Set extrapolation order without initializing values. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">number</td><td>number of vectors to use for extrapolation ( 0&lt;=number&lt;=3) </td></tr>
+    <tr><td class="paramname">number</td><td>number of vectors to use for extrapolation. Choose between 1 (constant), 2 (linear) or 3 (parabola) extrapolation. </td></tr>
   </table>
   </dd>
 </dl>
@@ -381,8 +560,62 @@ template&lt;class ContainerType&gt; </div>
 
 </div>
 </div>
+<a id="af992634d53a305afdfc0d65dab641e6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af992634d53a305afdfc0d65dab641e6e">&#9670;&nbsp;</a></span>set_number() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ContainerType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structdg_1_1_extrapolation.html">dg::Extrapolation</a>&lt; ContainerType &gt;::set_number </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>number</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structdg_1_1_extrapolation.html#a201b041087d3c7137c0a505033fb1969">value_type</a>&#160;</td>
+          <td class="paramname"><em>t_init</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ContainerType &amp;&#160;</td>
+          <td class="paramname"><em>init</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set extrapolation order and initialize values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">number</td><td>number of vectors to use for extrapolation. Choose between 1 (constant), 2 (linear) or 3 (parabola) extrapolation. </td></tr>
+    <tr><td class="paramname">t_init</td><td>the times are initialized with the values <code> t_init, t_init-1 , t_init-2 </code> </td></tr>
+    <tr><td class="paramname">init</td><td>the vectors are initialized with this value </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a4999c81aa4becbaa1f8c7dc561ae3ee9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4999c81aa4becbaa1f8c7dc561ae3ee9">&#9670;&nbsp;</a></span>set_number() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4999c81aa4becbaa1f8c7dc561ae3ee9">&#9670;&nbsp;</a></span>set_number() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -417,14 +650,15 @@ template&lt;class ContainerType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Set extrapolation number and initialize values. </p>
+<p>Set extrapolation order and initialize values (equidistant) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">number</td><td>number of vectors to use for extrapolation ( 0&lt;=number&lt;=3) </td></tr>
+    <tr><td class="paramname">number</td><td>number of vectors to use for extrapolation. Choose between 1 (constant), 2 (linear) or 3 (parabola) extrapolation. </td></tr>
     <tr><td class="paramname">init</td><td>the vectors are initialized with this value </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section note"><dt>Note</dt><dd>the times are initialized with the values <code> 0, -1 , -2 </code> </dd></dl>
 
 </div>
 </div>
@@ -486,13 +720,15 @@ template&lt;class ContainerType&gt; </div>
 
 </div>
 </div>
-<a id="a3d21ae55618484f9a7122149d4d683f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d21ae55618484f9a7122149d4d683f4">&#9670;&nbsp;</a></span>update()</h2>
+<a id="ae568c9e1cc58d37cec74d9394f288fc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae568c9e1cc58d37cec74d9394f288fc6">&#9670;&nbsp;</a></span>update() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class ContainerType&gt; </div>
+<div class="memtemplate">
+template&lt;class ContainerType0 &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -500,8 +736,63 @@ template&lt;class ContainerType&gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="structdg_1_1_extrapolation.html">dg::Extrapolation</a>&lt; ContainerType &gt;::update </td>
           <td>(</td>
-          <td class="paramtype">const ContainerType &amp;&#160;</td>
-          <td class="paramname"><em>new_head</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structdg_1_1_extrapolation.html#a201b041087d3c7137c0a505033fb1969">value_type</a>&#160;</td>
+          <td class="paramname"><em>t_new</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ContainerType0 &amp;&#160;</td>
+          <td class="paramname"><em>new_entry</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>insert a new entry, deleting the oldest entry or update existing entry </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t_new</td><td>the time for the new entry </td></tr>
+    <tr><td class="paramname">new_entry</td><td>the new entry ( may alias the tail), replaces value of existing entry if <code>t_new</code> already exists </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ContainerType0</td><td>must be usable with <code>ContainerType</code> in <a class="el" href="index.html#dispatch">The Level 1 dispatch system</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa7f82d0fc6eaf03abcc55d166ad00810"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7f82d0fc6eaf03abcc55d166ad00810">&#9670;&nbsp;</a></span>update() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ContainerType&gt; </div>
+<div class="memtemplate">
+template&lt;class ContainerType0 &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structdg_1_1_extrapolation.html">dg::Extrapolation</a>&lt; ContainerType &gt;::update </td>
+          <td>(</td>
+          <td class="paramtype">const ContainerType0 &amp;&#160;</td>
+          <td class="paramname"><em>new_entry</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -512,10 +803,17 @@ template&lt;class ContainerType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>move the all values one step back and copy the given vector as current head </p>
+<p>insert a new entry </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">new_head</td><td>the new head ( may alias the tail) </td></tr>
+    <tr><td class="paramname">new_entry</td><td>the new entry ( may alias the tail) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Assumes new time equals last inserted time+1 </dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ContainerType0</td><td>must be usable with <code>ContainerType</code> in <a class="el" href="index.html#dispatch">The Level 1 dispatch system</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -531,7 +829,7 @@ template&lt;class ContainerType&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_extrapolation.html">Extrapolation</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:50 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

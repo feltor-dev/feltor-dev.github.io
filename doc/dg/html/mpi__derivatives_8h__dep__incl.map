@@ -1,8 +1,0 @@
-<map id="geometry/mpi_derivatives.h" name="geometry/mpi_derivatives.h">
-<area shape="rect" id="node2" href="$elliptic_8h.html" title="General negative elliptic operators. " alt="" coords="77,80,148,107"/>
-<area shape="rect" id="node6" href="$arakawa_8h.html" title="object for computation of Poisson bracket " alt="" coords="173,80,255,107"/>
-<area shape="rect" id="node7" href="$poisson_8h.html" title="poisson.h" alt="" coords="280,80,359,107"/>
-<area shape="rect" id="node3" href="$helmholtz_8h.html" title="contains Helmholtz and Maxwell operators " alt="" coords="5,155,95,181"/>
-<area shape="rect" id="node5" href="$refined__elliptic_8h.html" title="contains an elliptic method on a refined grid " alt="" coords="119,155,235,181"/>
-<area shape="rect" id="node4" href="$algorithm_8h.html" title="algorithm.h" alt="" coords="7,229,93,256"/>
-</map>

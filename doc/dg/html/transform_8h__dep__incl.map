@@ -1,9 +1,0 @@
-<map id="geometry/transform.h" name="geometry/transform.h">
-<area shape="rect" id="node2" href="$geometry_8h.html" title="geometry/geometry.h" alt="" coords="68,80,213,107"/>
-<area shape="rect" id="node3" href="$algorithm_8h.html" title="algorithm.h" alt="" coords="5,304,92,331"/>
-<area shape="rect" id="node4" href="$elliptic_8h.html" title="General negative elliptic operators. " alt="" coords="55,155,125,181"/>
-<area shape="rect" id="node7" href="$arakawa_8h.html" title="object for computation of Poisson bracket " alt="" coords="150,155,233,181"/>
-<area shape="rect" id="node8" href="$poisson_8h.html" title="poisson.h" alt="" coords="257,155,336,181"/>
-<area shape="rect" id="node5" href="$helmholtz_8h.html" title="contains Helmholtz and Maxwell operators " alt="" coords="45,229,135,256"/>
-<area shape="rect" id="node6" href="$refined__elliptic_8h.html" title="contains an elliptic method on a refined grid " alt="" coords="159,229,275,256"/>
-</map>

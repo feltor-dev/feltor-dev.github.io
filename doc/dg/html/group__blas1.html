@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
-<title>Discontinuous Galerkin Library: BLAS level 1 routines</title>
+<title>Discontinuous Galerkin Library: BLAS level 1 routines: Vector-Vector</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -100,15 +100,15 @@ $(document).ready(function(){initNavTree('group__blas1.html','');});
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">BLAS level 1 routines<div class="ingroups"><a class="el" href="group__backend.html">Level 1: Vectors, Matrices and basic operations</a> &raquo; <a class="el" href="group__blas.html">Basic Linear Algebra Subroutines</a></div></div>  </div>
+<div class="title">BLAS level 1 routines: Vector-Vector<div class="ingroups"><a class="el" href="group__backend.html">Level 1: Vectors, Matrices and basic operations</a> &raquo; <a class="el" href="group__blas.html">Basic container independent subroutines</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Collaboration diagram for BLAS level 1 routines:</div>
+Collaboration diagram for BLAS level 1 routines: Vector-Vector:</div>
 <div class="dyncontent">
 <center><table><tr><td><img src="group__blas1.png" border="0" alt="" usemap="#group____blas1"/>
 <map name="group____blas1" id="group____blas1">
-<area shape="rect" id="node2" href="group__blas.html" title="Basic Linear Algebra\l Subroutines" alt="" coords="5,5,148,47"/>
+<area shape="rect" id="node2" href="group__blas.html" title="Basic container independent\l subroutines" alt="" coords="5,5,192,47"/>
 </map>
 </td></tr></table></center>
 </div>
@@ -175,7 +175,7 @@ Functions</h2></td></tr>
 <tr class="separator:ga493c6b70c8c889beaec1c3a669e3809b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaad7b58d466d813898b68189b44619210"><td class="memTemplParams" colspan="2">template&lt;class ContainerType , class BinarySubroutine , class Functor , class ContainerType0 , class ... ContainerTypes&gt; </td></tr>
 <tr class="memitem:gaad7b58d466d813898b68189b44619210"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#gaad7b58d466d813898b68189b44619210">dg::blas1::evaluate</a> (ContainerType &amp;y, BinarySubroutine f, Functor g, const ContainerType0 &amp;x0, const ContainerTypes &amp;...xs)</td></tr>
-<tr class="memdesc:gaad7b58d466d813898b68189b44619210"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( y = f(y, g(x_0,x_1,...)\)  <a href="group__blas1.html#gaad7b58d466d813898b68189b44619210">More...</a><br /></td></tr>
+<tr class="memdesc:gaad7b58d466d813898b68189b44619210"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( f(y, g(x_0,x_1,...))\)  <a href="group__blas1.html#gaad7b58d466d813898b68189b44619210">More...</a><br /></td></tr>
 <tr class="separator:gaad7b58d466d813898b68189b44619210"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7386b5cb0144d5364b8ea8c8ce1482a5"><td class="memTemplParams" colspan="2">template&lt;class Subroutine , class ContainerType , class ... ContainerTypes&gt; </td></tr>
 <tr class="memitem:ga7386b5cb0144d5364b8ea8c8ce1482a5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#ga7386b5cb0144d5364b8ea8c8ce1482a5">dg::blas1::subroutine</a> (Subroutine f, ContainerType &amp;&amp;x, ContainerTypes &amp;&amp;... xs)</td></tr>
@@ -185,17 +185,17 @@ Functions</h2></td></tr>
 <tr class="memitem:ga7b2aa636a0fe0c7d3298b9f869658919"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#ga7b2aa636a0fe0c7d3298b9f869658919">dg::blas1::dot</a> (const ContainerType1 &amp;x, const ContainerType2 &amp;y)</td></tr>
 <tr class="memdesc:ga7b2aa636a0fe0c7d3298b9f869658919"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( x^T y\) Binary reproducible Euclidean dot product between two vectors  <a href="group__blas1.html#ga7b2aa636a0fe0c7d3298b9f869658919">More...</a><br /></td></tr>
 <tr class="separator:ga7b2aa636a0fe0c7d3298b9f869658919"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae0aacd4fe731c16a9483140026c4dcc6"><td class="memTemplParams" colspan="2">template&lt;class to_ContainerType , class from_ContainerType &gt; </td></tr>
-<tr class="memitem:gae0aacd4fe731c16a9483140026c4dcc6"><td class="memTemplItemLeft" align="right" valign="top">to_ContainerType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#gae0aacd4fe731c16a9483140026c4dcc6">dg::blas1::transfer</a> (const from_ContainerType &amp;src)</td></tr>
-<tr class="memdesc:gae0aacd4fe731c16a9483140026c4dcc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">y=x; Generic way to copy-construct/assign-to an object of <code>to_ContainerType</code> type from a different <code>from_ContainerType</code> type  <a href="group__blas1.html#gae0aacd4fe731c16a9483140026c4dcc6">More...</a><br /></td></tr>
-<tr class="separator:gae0aacd4fe731c16a9483140026c4dcc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae882fddb3f617cec92641812788168b5"><td class="memTemplParams" colspan="2">template&lt;class from_ContainerType , class to_ContainerType &gt; </td></tr>
-<tr class="memitem:gae882fddb3f617cec92641812788168b5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#gae882fddb3f617cec92641812788168b5">dg::blas1::transfer</a> (const from_ContainerType &amp;source, to_ContainerType &amp;target)</td></tr>
-<tr class="memdesc:gae882fddb3f617cec92641812788168b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">y=x; Generic way to copy an object of <code>from_ContainerType</code> type to an object of different <code>to_ContainerType</code> type  <a href="group__blas1.html#gae882fddb3f617cec92641812788168b5">More...</a><br /></td></tr>
-<tr class="separator:gae882fddb3f617cec92641812788168b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7015027c22263460fbe5270fe3ff1e3e"><td class="memTemplParams" colspan="2">template&lt;class ContainerType , class from_ContainerType &gt; </td></tr>
+<tr class="memitem:ga7015027c22263460fbe5270fe3ff1e3e"><td class="memTemplItemLeft" align="right" valign="top">ContainerType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#ga7015027c22263460fbe5270fe3ff1e3e">dg::blas1::transfer</a> (const from_ContainerType &amp;from)</td></tr>
+<tr class="memdesc:ga7015027c22263460fbe5270fe3ff1e3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated: Use <code><a class="el" href="group__backend.html#ga5dbfc632d4d66d2d926dd525ed7fcea8" title="Generic way to construct an object of ContainerType given a from_ContainerType object and optional ad...">dg::construct&lt;ContainerType&gt;()</a></code> instead.  <a href="group__blas1.html#ga7015027c22263460fbe5270fe3ff1e3e">More...</a><br /></td></tr>
+<tr class="separator:ga7015027c22263460fbe5270fe3ff1e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gade1bcfb06cb5827db21be8f73535b159"><td class="memTemplParams" colspan="2">template&lt;class from_ContainerType , class ContainerType &gt; </td></tr>
+<tr class="memitem:gade1bcfb06cb5827db21be8f73535b159"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#gade1bcfb06cb5827db21be8f73535b159">dg::blas1::transfer</a> (const from_ContainerType &amp;from, ContainerType &amp;to)</td></tr>
+<tr class="memdesc:gade1bcfb06cb5827db21be8f73535b159"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated: Use <code><a class="el" href="group__backend.html#gab0ca1b8d3f70004e25ddc2010f7e9e0d" title="Generic way to assign the contents of a from_ContainerType object to a ContainerType object optionall...">dg::assign&lt;ContainerType&gt;()</a></code> instead.  <a href="group__blas1.html#gade1bcfb06cb5827db21be8f73535b159">More...</a><br /></td></tr>
+<tr class="separator:gade1bcfb06cb5827db21be8f73535b159"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>This group contains Vector-Vector operations. Successive calls to blas routines are executed sequentially. A manual synchronization of threads or devices is never needed in an application using these functions. All functions returning a value block until the value is ready. </p>
+<p>Successive calls to blas routines are executed sequentially. A manual synchronization of threads or devices is never needed in an application using these functions. All functions returning a value block until the value is ready. </p>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga5c7ddbf70dd74867e45c9d4f40b36cf7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga5c7ddbf70dd74867e45c9d4f40b36cf7">&#9670;&nbsp;</a></span>axpby() <span class="overload">[1/2]</span></h2>
@@ -494,7 +494,7 @@ template&lt;class ContainerTypeIn , class ContainerTypeOut &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>in contrast to the <code><a class="el" href="group__blas1.html#gae0aacd4fe731c16a9483140026c4dcc6" title="y=x; Generic way to copy-construct/assign-to an object of to_ContainerType type from a different from...">blas1::transfer</a></code> functions the <code>copy</code> function uses the execution policy to determine the implementation and thus works only on types with same execution policy </dd>
+<dl class="section note"><dt>Note</dt><dd>in contrast to the (deprecated) <code><a class="el" href="group__blas1.html#ga7015027c22263460fbe5270fe3ff1e3e" title="Deprecated: Use dg::construct&lt;ContainerType&gt;() instead. ">blas1::transfer</a></code> functions the <code>copy</code> function uses the execution policy to determine the implementation and thus works only on types with same execution policy </dd>
 <dd>
 catches self-assignment</dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
@@ -632,15 +632,15 @@ template&lt;class ContainerType , class BinarySubroutine , class Functor , class
 </table>
 </div><div class="memdoc">
 
-<p>\( y = f(y, g(x_0,x_1,...)\) </p>
+<p>\( f(y, g(x_0,x_1,...))\) </p>
 <p>This routine elementwise evaluates </p><p class="formulaDsp">
 \[ f(y_i , g(x_{0i}, x_{1i}, ...)) \]
 </p>
 <p>where <code>i</code> iterates over <b>all</b> elements inside the given vectors. The order of iterations is indetermined. Scalar arguments to container types are interpreted as vectors with all elements constant. If <code>ContainerType</code> has the <code><a class="el" href="structdg_1_1_recursive_vector_tag.html" title="This tag indicates composition/recursion. ">RecursiveVectorTag</a></code>, <code>i</code> recursively loops over all entries. If the vector sizes do not match, the result is undefined. The compiler chooses the implementation and parallelization of this function based on given template parameters. For a full set of rules please refer to <a class="el" href="index.html#dispatch">The Level 1 dispatch system</a>.</p>
-<div class="fragment"><div class="line"><span class="keywordtype">double</span> <span class="keyword">function</span>( <span class="keywordtype">double</span> <a class="code" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>, <span class="keywordtype">double</span> <a class="code" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>) {</div><div class="line">    <span class="keywordflow">return</span> sin(x)*sin(y);</div><div class="line">}</div><div class="line"><a class="code" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193">dg::HVec</a> pi2(20, <a class="code" href="functors_8h.html#ae71449b1cc6e6250b91f539153a7a0d3">M_PI</a>/2.), pi3( 20, 3*<a class="code" href="functors_8h.html#ae71449b1cc6e6250b91f539153a7a0d3">M_PI</a>/2.), result(20, 0);</div><div class="line"><a class="code" href="group__blas1.html#gaad7b58d466d813898b68189b44619210">dg::blas1::evaluate</a>( result, <a class="code" href="structdg_1_1equals.html">dg::equals</a>(), <span class="keyword">function</span>, pi2, pi3);</div><div class="line"><span class="comment">// result[i] =  -1. (sin(M_PI/2.)*sin(3*M_PI/2.))</span></div></div><!-- fragment --> <dl class="params"><dt>Parameters</dt><dd>
+<div class="fragment"><div class="line"><span class="keywordtype">double</span> <span class="keyword">function</span>( <span class="keywordtype">double</span> <a class="code" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>, <span class="keywordtype">double</span> <a class="code" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>) {</div><div class="line">    <span class="keywordflow">return</span> sin(x)*sin(y);</div><div class="line">}</div><div class="line"><a class="code" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193">dg::HVec</a> pi2(20, <a class="code" href="functors_8h.html#ae71449b1cc6e6250b91f539153a7a0d3">M_PI</a>/2.), pi3( 20, 3*<a class="code" href="functors_8h.html#ae71449b1cc6e6250b91f539153a7a0d3">M_PI</a>/2.), result(20, 0);</div><div class="line"><a class="code" href="group__blas1.html#gaad7b58d466d813898b68189b44619210">dg::blas1::evaluate</a>( result, <a class="code" href="structdg_1_1equals.html">dg::equals</a>(), <span class="keyword">function</span>, pi2, pi3);</div><div class="line"><span class="comment">// result[i] = sin(M_PI/2.)*sin(3*M_PI/2.) = -1</span></div></div><!-- fragment --> <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">y</td><td>contains result </td></tr>
-    <tr><td class="paramname">f</td><td>The subroutine </td></tr>
+    <tr><td class="paramname">f</td><td>The subroutine, for example <code><a class="el" href="structdg_1_1equals.html" title=" ">dg::equals</a></code> or <code><a class="el" href="structdg_1_1plus__equals.html" title=" ">dg::plus_equals</a></code> </td></tr>
     <tr><td class="paramname">g</td><td>The functor to evaluate </td></tr>
     <tr><td class="paramname">x0</td><td>first input </td></tr>
     <tr><td class="paramname">xs</td><td>more input </td></tr>
@@ -650,8 +650,8 @@ template&lt;class ContainerType , class BinarySubroutine , class Functor , class
 <dl class="section note"><dt>Note</dt><dd>all aliases allowed </dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">BinarySubroutine</td><td>Functor with signature: <code>void</code> <code>operator()( value_type_y&amp;, value_type_g)</code> i.e. it writes into the first and reads from its second argument </td></tr>
-    <tr><td class="paramname">Functor</td><td>signature: <code>value_type_g</code> <code>operator()</code>( value_type_x0, value_type_x1, ...) </td></tr>
+    <tr><td class="paramname">BinarySubroutine</td><td>Functor with signature: <code> void operator()( value_type_y&amp;, value_type_g) </code> i.e. it writes into the first and reads from its (first and) second argument </td></tr>
+    <tr><td class="paramname">Functor</td><td>signature: <code> value_type_g operator()( value_type_x0, value_type_x1, ...) </code> </td></tr>
   </table>
   </dd>
 </dl>
@@ -1367,22 +1367,22 @@ If there are several <code>ContainerTypes</code> in the argument list, then <cod
 
 </div>
 </div>
-<a id="gae0aacd4fe731c16a9483140026c4dcc6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae0aacd4fe731c16a9483140026c4dcc6">&#9670;&nbsp;</a></span>transfer() <span class="overload">[1/2]</span></h2>
+<a id="ga7015027c22263460fbe5270fe3ff1e3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7015027c22263460fbe5270fe3ff1e3e">&#9670;&nbsp;</a></span>transfer() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class to_ContainerType , class from_ContainerType &gt; </div>
+template&lt;class ContainerType , class from_ContainerType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">to_ContainerType dg::blas1::transfer </td>
+          <td class="memname">ContainerType dg::blas1::transfer </td>
           <td>(</td>
           <td class="paramtype">const from_ContainerType &amp;&#160;</td>
-          <td class="paramname"><em>src</em></td><td>)</td>
+          <td class="paramname"><em>from</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1393,46 +1393,18 @@ template&lt;class to_ContainerType , class from_ContainerType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>y=x; Generic way to copy-construct/assign-to an object of <code>to_ContainerType</code> type from a different <code>from_ContainerType</code> type </p>
-<p>The idea of this function is to convert between types with the same data layout but different execution policies (e.g. from CPU to GPU, or sequential to parallel execution)</p>
-<p>For example </p><div class="fragment"><div class="line"><a class="code" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193">dg::HVec</a> host( 100, 1.);</div><div class="line"><a class="code" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8">dg::DVec</a> device = dg::tansfer&lt;dg::DVec&gt;( host );</div><div class="line">std::array&lt;dg::DVec, 3&gt; device_arr = dg::transfer&lt;std::array&lt;dg::DVec, 3&gt;&gt;( host );</div></div><!-- fragment --> <dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">src</td><td>source </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>src</code> converted to the new format </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>since this function is quite often used there is a higher level alias <code><a class="el" href="group__misc.html#ga244bc00e5a4d8412553121f873e608c2" title="High level alias for dg::blas1::transfer(const from_ContainerType&amp;) ">dg::transfer(From&amp;&amp;)</a></code> </dd>
-<dd>
-it is possible to transfer a ContainerType to a <code> std::array&lt;ContainerType, N&gt; </code>(all elements are initialized to ContainerType) but not a <code> std::vector&lt;ContainerType&gt;</code> (since the desired size of the <code>std::vector</code> cannot be known)</dd></dl>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">ContainerType</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> and <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. Among others<ul>
-<li><code> <a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193" title="Host Vector. ">dg::HVec</a> (serial), <a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a> (cuda / omp), <a class="el" href="group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a> (mpi + serial) or <a class="el" href="group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a> (mpi + cuda / omp) </code></li>
-<li><code> std::vector&lt;dg::DVec&gt; (vector of shared device vectors), std::array&lt;double, 4&gt; (array of 4 doubles)</code></li>
-<li><code> double (scalar)</code> and other primitive types ...</li>
-</ul>
-If there are several <code>ContainerTypes</code> in the argument list, then <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> must exist for all of them </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="index.html#dispatch">The Level 1 dispatch system</a> for a detailed explanation of our type dispatch system </dd></dl>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">to_ContainerType</td><td>another ContainerType type, must have the same data policy derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> as <code>ContainerType</code> (with the exception of <code>std::array</code>) but can have different execution policy </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Deprecated: Use <code><a class="el" href="group__backend.html#ga5dbfc632d4d66d2d926dd525ed7fcea8" title="Generic way to construct an object of ContainerType given a from_ContainerType object and optional ad...">dg::construct&lt;ContainerType&gt;()</a></code> instead. </p>
+<dl class="section attention"><dt>Attention</dt><dd>This function is deprecated! Please replace with <code><a class="el" href="group__backend.html#ga5dbfc632d4d66d2d926dd525ed7fcea8" title="Generic way to construct an object of ContainerType given a from_ContainerType object and optional ad...">dg::construct</a></code> (data transfer between different devices) </dd></dl>
 
 </div>
 </div>
-<a id="gae882fddb3f617cec92641812788168b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae882fddb3f617cec92641812788168b5">&#9670;&nbsp;</a></span>transfer() <span class="overload">[2/2]</span></h2>
+<a id="gade1bcfb06cb5827db21be8f73535b159"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gade1bcfb06cb5827db21be8f73535b159">&#9670;&nbsp;</a></span>transfer() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class from_ContainerType , class to_ContainerType &gt; </div>
+template&lt;class from_ContainerType , class ContainerType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1441,13 +1413,13 @@ template&lt;class from_ContainerType , class to_ContainerType &gt; </div>
           <td class="memname">void dg::blas1::transfer </td>
           <td>(</td>
           <td class="paramtype">const from_ContainerType &amp;&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
+          <td class="paramname"><em>from</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">to_ContainerType &amp;&#160;</td>
-          <td class="paramname"><em>target</em>&#160;</td>
+          <td class="paramtype">ContainerType &amp;&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1462,38 +1434,8 @@ template&lt;class from_ContainerType , class to_ContainerType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>y=x; Generic way to copy an object of <code>from_ContainerType</code> type to an object of different <code>to_ContainerType</code> type </p>
-<p>The idea of this function is to convert between types with the same data layout but different execution policies (e.g. from CPU to GPU, or sequential to parallel execution)</p>
-<p>For example </p><div class="fragment"><div class="line"><a class="code" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193">dg::HVec</a> host( 100, 3);</div><div class="line"><a class="code" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8">dg::DVec</a> device;</div><div class="line"><a class="code" href="group__misc.html#gac2978c014dfeacf26bd2f01d5573a2c8">dg::transfer</a>( host, device); <span class="comment">//device now equals host</span></div><div class="line">std::array&lt;dg::DVec, 3&gt; device_arr;</div><div class="line"><a class="code" href="group__misc.html#gac2978c014dfeacf26bd2f01d5573a2c8">dg::transfer</a>( host, device_arr); <span class="comment">//every element of device_arr now equals host</span></div></div><!-- fragment --> <dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">source</td><td>source </td></tr>
-    <tr><td class="paramname">target</td><td>sink </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd><code>target</code> gets resized properly i.e. memory will be allocated if needed </dd>
-<dd>
-since this function is quite often used there is a higher level alias <code><a class="el" href="group__misc.html#gac2978c014dfeacf26bd2f01d5573a2c8" title="High level alias for dg::blas1::transfer(const from_ContainerType&amp;,to_ContainerType&amp;) ...">dg::transfer(From&amp;&amp;,To&amp;&amp;)</a></code> </dd>
-<dd>
-it is possible to transfer a ContainerType to a <code> std::array&lt;ContainerType, N&gt; </code>(all elements are initialized to ContainerType) but not a <code> std::vector&lt;ContainerType&gt;</code> (since the desired size of the <code>std::vector</code> cannot be known)</dd></dl>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">ContainerType</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> and <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. Among others<ul>
-<li><code> <a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193" title="Host Vector. ">dg::HVec</a> (serial), <a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a> (cuda / omp), <a class="el" href="group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a> (mpi + serial) or <a class="el" href="group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a> (mpi + cuda / omp) </code></li>
-<li><code> std::vector&lt;dg::DVec&gt; (vector of shared device vectors), std::array&lt;double, 4&gt; (array of 4 doubles)</code></li>
-<li><code> double (scalar)</code> and other primitive types ...</li>
-</ul>
-If there are several <code>ContainerTypes</code> in the argument list, then <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> must exist for all of them </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="index.html#dispatch">The Level 1 dispatch system</a> for a detailed explanation of our type dispatch system </dd></dl>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">to_ContainerType</td><td>another ContainerType type, must have the same data policy derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> as <code>ContainerType</code> (with the exception of <code>std::array</code>) but can have different execution policy </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Deprecated: Use <code><a class="el" href="group__backend.html#gab0ca1b8d3f70004e25ddc2010f7e9e0d" title="Generic way to assign the contents of a from_ContainerType object to a ContainerType object optionall...">dg::assign&lt;ContainerType&gt;()</a></code> instead. </p>
+<dl class="section attention"><dt>Attention</dt><dd>This function is deprecated! Please replace with either <code><a class="el" href="group__blas1.html#ga0ed8d5b1a17d0e8882b2d253a0d3fbed" title=" ">dg::blas1::copy</a></code> (parallel copy between compatible types) or <code><a class="el" href="group__backend.html#gab0ca1b8d3f70004e25ddc2010f7e9e0d" title="Generic way to assign the contents of a from_ContainerType object to a ContainerType object optionall...">dg::assign</a></code> (data transfer between devices)" </dd></dl>
 
 </div>
 </div>
@@ -1579,7 +1521,7 @@ If there are several <code>ContainerTypes</code> in the argument list, then <cod
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

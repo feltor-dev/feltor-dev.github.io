@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
-<title>Geometries: average.h File Reference</title>
+<title>Extension: Geometries: average.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -44,9 +44,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Geometries
+   <div id="projectname">Extension: Geometries
    </div>
-   <div id="projectbrief">Extension with magnetic flux functions, grids and grid generators</div>
+   <div id="projectbrief">Magnetic flux functions, parallel derivatives and new grids and grid generators in &quot;dg/geometries/geometries.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -104,32 +104,8 @@ $(document).ready(function(){initNavTree('average_8h.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;thrust/host_vector.h&gt;</code><br />
-<code>#include &quot;<a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/weights_8h.html">dg/geometry/weights.h</a>&quot;</code><br />
+<code>#include &quot;<a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/weights_8h.html">dg/topology/weights.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="magnetic__field_8h_source.html">magnetic_field.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for average.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="average_8h__incl.png" border="0" usemap="#average_8h" alt=""/></div>
-<map name="average_8h" id="average_8h">
-<area shape="rect" id="node3" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/weights_8h.html" title="dg/geometry/weights.h" alt="" coords="187,80,341,107"/>
-<area shape="rect" id="node9" href="magnetic__field_8h.html" title="magnetic_field.h" alt="" coords="365,80,483,107"/>
-<area shape="rect" id="node4" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/grid_8h.html" title="grid.h" alt="" coords="167,155,222,181"/>
-<area shape="rect" id="node8" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/enums_8h.html" title="../enums.h" alt="" coords="231,229,315,256"/>
-<area shape="rect" id="node5" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/topological__traits_8h.html" title="topological_traits.h" alt="" coords="5,229,136,256"/>
-<area shape="rect" id="node6" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/dlt_8h.html" title="dlt.h" alt="" coords="161,229,207,256"/>
-<area shape="rect" id="node7" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/exceptions_8h.html" title="dg/backend/exceptions.h" alt="" coords="145,304,311,331"/>
-<area shape="rect" id="node10" href="fluxfunctions_8h.html" title="fluxfunctions.h" alt="" coords="371,155,477,181"/>
-<area shape="rect" id="node11" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/memory_8h.html" title="dg/backend/memory.h" alt="" coords="349,229,499,256"/>
-</map>
-</div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="average_8h__dep__incl.png" border="0" usemap="#average_8hdep" alt=""/></div>
-<map name="average_8hdep" id="average_8hdep">
-<area shape="rect" id="node2" href="geometries_8h.html" title="geometries.h" alt="" coords="5,80,103,107"/>
-</map>
-</div>
 </div>
 <p><a href="average_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -153,7 +129,7 @@ Classes</h2></td></tr>
 </p>
 <p>.  <a href="structdg_1_1geo_1_1_flux_surface_average.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_safety_factor.html">dg::geo::SafetyFactor&lt; container &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_safety_factor.html">dg::geo::SafetyFactor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for the evaluation of the safety factor q </p><p class="formulaDsp">
 \[ q(\psi_0) = \frac{1}{2\pi} \int dV |\nabla\psi_p| \delta(\psi_p-\psi_0) \alpha( R,Z) \]
 </p>
@@ -175,7 +151,7 @@ Namespaces</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="average_8h.html">average.h</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:03:04 for Geometries by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:57 for Extension: Geometries by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

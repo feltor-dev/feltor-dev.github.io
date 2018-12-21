@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -130,22 +130,10 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf01302b85e93b5461ecd500a29daca4b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__typedefs.html#ga188bea19979cfa0701387bfc5272be79">dg::IHMatrix</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__scatter.html#gaf01302b85e93b5461ecd500a29daca4b">dg::create::backscatter</a> (const <a class="el" href="structdg_1_1a_real_topology3d.html">aRealTopology3d</a>&lt; real_type &gt; &amp;g)</td></tr>
 <tr class="memdesc:gaf01302b85e93b5461ecd500a29daca4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">make a matrix that transforms values to an equidistant grid ready for visualisation  <a href="group__scatter.html#gaf01302b85e93b5461ecd500a29daca4b">More...</a><br /></td></tr>
 <tr class="separator:gaf01302b85e93b5461ecd500a29daca4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad248d03c048ec1f0514d4da553779cf5"><td class="memTemplParams" colspan="2">template&lt;class thrust_vector1 , class thrust_vector2 &gt; </td></tr>
-<tr class="memitem:gad248d03c048ec1f0514d4da553779cf5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__scatter.html#gad248d03c048ec1f0514d4da553779cf5">dg::split</a> (const thrust_vector1 &amp;in, std::vector&lt; thrust_vector2 &gt; &amp;out, const <a class="el" href="group__gridtypes.html#ga534001144a75391bd6311a94f1dc6320">aTopology3d</a> &amp;grid)</td></tr>
-<tr class="memdesc:gad248d03c048ec1f0514d4da553779cf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Split a vector into planes.  <a href="group__scatter.html#gad248d03c048ec1f0514d4da553779cf5">More...</a><br /></td></tr>
-<tr class="separator:gad248d03c048ec1f0514d4da553779cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac424c8a0b8a098cb56380424cdf4b345"><td class="memTemplParams" colspan="2">template&lt;class thrust_vector1 , class thrust_vector2 &gt; </td></tr>
-<tr class="memitem:gac424c8a0b8a098cb56380424cdf4b345"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__scatter.html#gac424c8a0b8a098cb56380424cdf4b345">dg::split</a> (const <a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt; thrust_vector1 &gt; &amp;in, std::vector&lt; <a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt; thrust_vector2 &gt; &gt; &amp;out, const <a class="el" href="group__gridtypes.html#gab52aaf1578631594a9423e604b2e1232">aMPITopology3d</a> &amp;grid)</td></tr>
-<tr class="memdesc:gac424c8a0b8a098cb56380424cdf4b345"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI Version of split.  <a href="group__scatter.html#gac424c8a0b8a098cb56380424cdf4b345">More...</a><br /></td></tr>
-<tr class="separator:gac424c8a0b8a098cb56380424cdf4b345"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga152f3e19ab6de8779795ebbac5264d22"><td class="memTemplParams" colspan="2">template&lt;class thrust_vector1 , class thrust_vector2 &gt; </td></tr>
-<tr class="memitem:ga152f3e19ab6de8779795ebbac5264d22"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__scatter.html#ga152f3e19ab6de8779795ebbac5264d22">dg::join</a> (const std::vector&lt; thrust_vector1 &gt; &amp;in, thrust_vector2 &amp;out, const <a class="el" href="group__gridtypes.html#ga534001144a75391bd6311a94f1dc6320">aTopology3d</a> &amp;grid)</td></tr>
-<tr class="memdesc:ga152f3e19ab6de8779795ebbac5264d22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Revert split operation.  <a href="group__scatter.html#ga152f3e19ab6de8779795ebbac5264d22">More...</a><br /></td></tr>
-<tr class="separator:ga152f3e19ab6de8779795ebbac5264d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga218937241fac17d1c7a8bcff2030e525"><td class="memTemplParams" colspan="2">template&lt;class thrust_vector1 , class thrust_vector2 &gt; </td></tr>
-<tr class="memitem:ga218937241fac17d1c7a8bcff2030e525"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__scatter.html#ga218937241fac17d1c7a8bcff2030e525">dg::join</a> (const std::vector&lt; <a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt; thrust_vector1 &gt; &gt; &amp;in, <a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt; thrust_vector2 &gt; &amp;out, const <a class="el" href="group__gridtypes.html#gab52aaf1578631594a9423e604b2e1232">aMPITopology3d</a> &amp;grid)</td></tr>
-<tr class="memdesc:ga218937241fac17d1c7a8bcff2030e525"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI Version of join.  <a href="group__scatter.html#ga218937241fac17d1c7a8bcff2030e525">More...</a><br /></td></tr>
-<tr class="separator:ga218937241fac17d1c7a8bcff2030e525"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4275df839eb577fb71d48017170d0e67"><td class="memTemplParams" colspan="2">template&lt;class SharedContainer &gt; </td></tr>
+<tr class="memitem:ga4275df839eb577fb71d48017170d0e67"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__scatter.html#ga4275df839eb577fb71d48017170d0e67">dg::split</a> (SharedContainer &amp;in, std::vector&lt; <a class="el" href="structdg_1_1_view.html">View</a>&lt; SharedContainer &gt;&gt; &amp;out, const <a class="el" href="group__gridtypes.html#ga534001144a75391bd6311a94f1dc6320">aTopology3d</a> &amp;grid)</td></tr>
+<tr class="memdesc:ga4275df839eb577fb71d48017170d0e67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Split a vector into planes along the last dimension (fast version)  <a href="group__scatter.html#ga4275df839eb577fb71d48017170d0e67">More...</a><br /></td></tr>
+<tr class="separator:ga4275df839eb577fb71d48017170d0e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
@@ -289,24 +277,24 @@ template&lt;class real_type &gt; </div>
 
 </div>
 </div>
-<a id="ga152f3e19ab6de8779795ebbac5264d22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga152f3e19ab6de8779795ebbac5264d22">&#9670;&nbsp;</a></span>join() <span class="overload">[1/2]</span></h2>
+<a id="ga4275df839eb577fb71d48017170d0e67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4275df839eb577fb71d48017170d0e67">&#9670;&nbsp;</a></span>split()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class thrust_vector1 , class thrust_vector2 &gt; </div>
+template&lt;class SharedContainer &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void dg::join </td>
+          <td class="memname">void dg::split </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; thrust_vector1 &gt; &amp;&#160;</td>
+          <td class="paramtype">SharedContainer &amp;&#160;</td>
           <td class="paramname"><em>in</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">thrust_vector2 &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="structdg_1_1_view.html">View</a>&lt; SharedContainer &gt;&gt; &amp;&#160;</td>
           <td class="paramname"><em>out</em>, </td>
         </tr>
         <tr>
@@ -323,186 +311,22 @@ template&lt;class thrust_vector1 , class thrust_vector2 &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Revert split operation. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">thrust_vector1</td><td>either <code>thrust::host_vector</code> or <code>thrust::device_vector</code> </td></tr>
-    <tr><td class="paramname">thrust_vector2</td><td>either <code>thrust::host_vector</code> or <code>thrust::device_vector</code> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">in</td><td><code>grid.Nz()</code> 2d vectors of 2d size </td></tr>
-    <tr><td class="paramname">out</td><td>contiguous 3d vector (gets resized if necessary) </td></tr>
-    <tr><td class="paramname">grid</td><td>provide dimensions in 3rd and first two dimensions </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>split followed by join restores the original vector </dd></dl>
-
-</div>
-</div>
-<a id="ga218937241fac17d1c7a8bcff2030e525"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga218937241fac17d1c7a8bcff2030e525">&#9670;&nbsp;</a></span>join() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class thrust_vector1 , class thrust_vector2 &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void dg::join </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt; thrust_vector1 &gt; &gt; &amp;&#160;</td>
-          <td class="paramname"><em>in</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt; thrust_vector2 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>out</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="group__gridtypes.html#gab52aaf1578631594a9423e604b2e1232">aMPITopology3d</a> &amp;&#160;</td>
-          <td class="paramname"><em>grid</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>MPI Version of join. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">thrust_vector1</td><td>either <code>thrust::host_vector</code> or <code>thrust::device_vector</code> </td></tr>
-    <tr><td class="paramname">thrust_vector2</td><td>either <code>thrust::host_vector</code> or <code>thrust::device_vector</code> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">in</td><td><code>grid.Nz()</code> 2d vectors of 2d size </td></tr>
-    <tr><td class="paramname">out</td><td>contiguous 3d vector (gets resized if necessary) </td></tr>
-    <tr><td class="paramname">grid</td><td>provide dimensions in 3rd and first two dimensions </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>split followed by join restores the original vector </dd></dl>
-
-</div>
-</div>
-<a id="gad248d03c048ec1f0514d4da553779cf5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad248d03c048ec1f0514d4da553779cf5">&#9670;&nbsp;</a></span>split() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class thrust_vector1 , class thrust_vector2 &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void dg::split </td>
-          <td>(</td>
-          <td class="paramtype">const thrust_vector1 &amp;&#160;</td>
-          <td class="paramname"><em>in</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; thrust_vector2 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>out</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="group__gridtypes.html#ga534001144a75391bd6311a94f1dc6320">aTopology3d</a> &amp;&#160;</td>
-          <td class="paramname"><em>grid</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Split a vector into planes. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">thrust_vector1</td><td>either thrust::host_vector or <code>thrust::device_vector</code> </td></tr>
-    <tr><td class="paramname">thrust_vector2</td><td>either thrust::host_vector or <code>thrust::device_vector</code> </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Split a vector into planes along the last dimension (fast version) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">in</td><td>contiguous 3d vector (must be of size <code>grid.size()</code>) </td></tr>
-    <tr><td class="paramname">out</td><td>contains <code>grid.Nz()</code> 2d vectors of 2d size on output (gets resized if necessary) </td></tr>
+    <tr><td class="paramname">out</td><td>contains <code>grid.Nz()</code> 2d vector views of 2d size on output </td></tr>
     <tr><td class="paramname">grid</td><td>provide dimensions in 3rd and first two dimensions </td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="gac424c8a0b8a098cb56380424cdf4b345"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac424c8a0b8a098cb56380424cdf4b345">&#9670;&nbsp;</a></span>split() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class thrust_vector1 , class thrust_vector2 &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void dg::split </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt; thrust_vector1 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>in</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt; thrust_vector2 &gt; &gt; &amp;&#160;</td>
-          <td class="paramname"><em>out</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="group__gridtypes.html#gab52aaf1578631594a9423e604b2e1232">aMPITopology3d</a> &amp;&#160;</td>
-          <td class="paramname"><em>grid</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>MPI Version of split. </p>
+<dl class="section attention"><dt>Attention</dt><dd>out will NOT be resized </dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">thrust_vector1</td><td>either thrust::host_vector or <code>thrust::device_vector</code> </td></tr>
-    <tr><td class="paramname">thrust_vector2</td><td>either thrust::host_vector or <code>thrust::device_vector</code> </td></tr>
+    <tr><td class="paramname">SharedContainer</td><td><code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> exists for this class and the <code>tensor_category</code> derives from <code><a class="el" href="structdg_1_1_shared_vector_tag.html" title="Indicate a contiguous chunk of shared memory. ">SharedVectorTag</a></code> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">in</td><td>contiguous 3d vector (must be of size <code>grid.size()</code>) </td></tr>
-    <tr><td class="paramname">out</td><td>contains <code>grid.Nz()</code> 2d vectors of 2d size on output (gets resized if necessary) </td></tr>
-    <tr><td class="paramname">grid</td><td>provide dimensions in 3rd and first two dimensions </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>every plane in out holds a 2d Cartesian MPI_Communicator </dd>
-<dd>
-two seperately split vectors have congruent (not identical) MPI_Communicators (Note here the MPI concept of congruent vs. identical communicators) </dd></dl>
 
 </div>
 </div>
@@ -511,7 +335,7 @@ two seperately split vectors have congruent (not identical) MPI_Communicators (N
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

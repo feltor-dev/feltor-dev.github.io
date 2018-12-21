@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -98,6 +98,7 @@ $(document).ready(function(){initNavTree('structdg_1_1_ell_sparse_block_mat_devi
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structdg_1_1_ell_sparse_block_mat_device-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">dg::EllSparseBlockMatDevice&lt; value_type &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__backend.html">Level 1: Vectors, Matrices and basic operations</a> &raquo; <a class="el" href="group__sparsematrix.html">Sparse matrix formats</a></div></div>  </div>
@@ -109,12 +110,11 @@ $(document).ready(function(){initNavTree('structdg_1_1_ell_sparse_block_mat_devi
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a125eb1a68a5b6eac5d402d2898de4ca2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html#a125eb1a68a5b6eac5d402d2898de4ca2">EllSparseBlockMatDevice</a> ()</td></tr>
-<tr class="separator:a125eb1a68a5b6eac5d402d2898de4ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6766c8c73e729e5a13d93cd5ac3876a1"><td class="memTemplParams" colspan="2">template&lt;class OtherValueType &gt; </td></tr>
-<tr class="memitem:a6766c8c73e729e5a13d93cd5ac3876a1"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html#a6766c8c73e729e5a13d93cd5ac3876a1">EllSparseBlockMatDevice</a> (const <a class="el" href="structdg_1_1_ell_sparse_block_mat.html">EllSparseBlockMat</a>&lt; OtherValueType &gt; &amp;src)</td></tr>
-<tr class="memdesc:a6766c8c73e729e5a13d93cd5ac3876a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate storage.  <a href="#a6766c8c73e729e5a13d93cd5ac3876a1">More...</a><br /></td></tr>
-<tr class="separator:a6766c8c73e729e5a13d93cd5ac3876a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f7f83f9b74968648ab7c1cd548e8904"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html#a8f7f83f9b74968648ab7c1cd548e8904">EllSparseBlockMatDevice</a> ()=default</td></tr>
+<tr class="separator:a8f7f83f9b74968648ab7c1cd548e8904"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca4ffc61d868a50c82fad641a68acf87"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html#aca4ffc61d868a50c82fad641a68acf87">EllSparseBlockMatDevice</a> (const <a class="el" href="structdg_1_1_ell_sparse_block_mat.html">EllSparseBlockMat</a>&lt; value_type &gt; &amp;src)</td></tr>
+<tr class="memdesc:aca4ffc61d868a50c82fad641a68acf87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate storage.  <a href="#aca4ffc61d868a50c82fad641a68acf87">More...</a><br /></td></tr>
+<tr class="separator:aca4ffc61d868a50c82fad641a68acf87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c021c5e0ced2718d12a80f8270a061a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html#a6c021c5e0ced2718d12a80f8270a061a">display</a> (std::ostream &amp;os=std::cout) const</td></tr>
 <tr class="memdesc:a6c021c5e0ced2718d12a80f8270a061a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display internal data to a stream.  <a href="#a6c021c5e0ced2718d12a80f8270a061a">More...</a><br /></td></tr>
 <tr class="separator:a6c021c5e0ced2718d12a80f8270a061a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,6 +128,31 @@ Public Member Functions</h2></td></tr>
 </p>
 <p>.  <a href="#a464efc3091f4729535a209d1ec3f05b5">More...</a><br /></td></tr>
 <tr class="separator:a464efc3091f4729535a209d1ec3f05b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad18d4b22f0e0e75e06a72ba1b2d2ad3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html#ad18d4b22f0e0e75e06a72ba1b2d2ad3e">launch_multiply_kernel</a> (value_type alpha, const value_type *<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>, value_type beta, value_type *<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>) const</td></tr>
+<tr class="separator:ad18d4b22f0e0e75e06a72ba1b2d2ad3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ab5b3371129dfa29f106350bde0ac7075"><td class="memItemLeft" align="right" valign="top">thrust::device_vector&lt; value_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html#ab5b3371129dfa29f106350bde0ac7075">data</a></td></tr>
+<tr class="separator:ab5b3371129dfa29f106350bde0ac7075"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a541a42344486e7463a09e6ce4a3b5af4"><td class="memItemLeft" align="right" valign="top">thrust::device_vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html#a541a42344486e7463a09e6ce4a3b5af4">cols_idx</a></td></tr>
+<tr class="separator:a541a42344486e7463a09e6ce4a3b5af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acabaa88b868db38955700ea378061509"><td class="memItemLeft" align="right" valign="top">thrust::device_vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html#acabaa88b868db38955700ea378061509">data_idx</a></td></tr>
+<tr class="separator:acabaa88b868db38955700ea378061509"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a743f516b0bd5052848b945cce15881a6"><td class="memItemLeft" align="right" valign="top">thrust::device_vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html#a743f516b0bd5052848b945cce15881a6">right_range</a></td></tr>
+<tr class="separator:a743f516b0bd5052848b945cce15881a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc7fe861d56f4c1dcd81ae79b3bb2951"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html#acc7fe861d56f4c1dcd81ae79b3bb2951">num_rows</a></td></tr>
+<tr class="separator:acc7fe861d56f4c1dcd81ae79b3bb2951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb1aad4dd1b166288984cfef1e4b95eb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html#adb1aad4dd1b166288984cfef1e4b95eb">num_cols</a></td></tr>
+<tr class="separator:adb1aad4dd1b166288984cfef1e4b95eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6368bd585349eef8400172e45e826a13"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html#a6368bd585349eef8400172e45e826a13">blocks_per_line</a></td></tr>
+<tr class="separator:a6368bd585349eef8400172e45e826a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7afe743ff3d3711e22c3990966bf67fd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html#a7afe743ff3d3711e22c3990966bf67fd">n</a></td></tr>
+<tr class="separator:a7afe743ff3d3711e22c3990966bf67fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac451ad2a5a789a51fb1d5299ae2e3fac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html#ac451ad2a5a789a51fb1d5299ae2e3fac">left_size</a></td></tr>
+<tr class="separator:ac451ad2a5a789a51fb1d5299ae2e3fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeac11bbc94ffc964e220978f676d53eb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html#aeac11bbc94ffc964e220978f676d53eb">right_size</a></td></tr>
+<tr class="separator:aeac11bbc94ffc964e220978f676d53eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class value_type&gt;<br />
@@ -136,8 +161,8 @@ struct dg::EllSparseBlockMatDevice&lt; value_type &gt;</h3>
 <p>Ell Sparse Block Matrix format device version. </p>
 <p>This class holds a copy of a <a class="el" href="structdg_1_1_ell_sparse_block_mat.html" title="Ell Sparse Block Matrix format. ">EllSparseBlockMat</a> on the device, which may be gpu or omp depending on the THRUST_DEVICE_SYSTEM macro. It can be applied to device vectors and does the same thing as the host version </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a125eb1a68a5b6eac5d402d2898de4ca2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a125eb1a68a5b6eac5d402d2898de4ca2">&#9670;&nbsp;</a></span>EllSparseBlockMatDevice() <span class="overload">[1/2]</span></h2>
+<a id="a8f7f83f9b74968648ab7c1cd548e8904"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f7f83f9b74968648ab7c1cd548e8904">&#9670;&nbsp;</a></span>EllSparseBlockMatDevice() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -156,22 +181,20 @@ template&lt;class value_type &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a6766c8c73e729e5a13d93cd5ac3876a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6766c8c73e729e5a13d93cd5ac3876a1">&#9670;&nbsp;</a></span>EllSparseBlockMatDevice() <span class="overload">[2/2]</span></h2>
+<a id="aca4ffc61d868a50c82fad641a68acf87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca4ffc61d868a50c82fad641a68acf87">&#9670;&nbsp;</a></span>EllSparseBlockMatDevice() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class value_type &gt; </div>
-<div class="memtemplate">
-template&lt;class OtherValueType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -179,7 +202,7 @@ template&lt;class OtherValueType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html">dg::EllSparseBlockMatDevice</a>&lt; value_type &gt;::<a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html">EllSparseBlockMatDevice</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_ell_sparse_block_mat.html">EllSparseBlockMat</a>&lt; OtherValueType &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_ell_sparse_block_mat.html">EllSparseBlockMat</a>&lt; value_type &gt; &amp;&#160;</td>
           <td class="paramname"><em>src</em></td><td>)</td>
           <td></td>
         </tr>
@@ -227,6 +250,48 @@ template&lt;class value_type &gt; </div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ad18d4b22f0e0e75e06a72ba1b2d2ad3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad18d4b22f0e0e75e06a72ba1b2d2ad3e">&#9670;&nbsp;</a></span>launch_multiply_kernel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class value_type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html">dg::EllSparseBlockMatDevice</a>&lt; value_type &gt;::launch_multiply_kernel </td>
+          <td>(</td>
+          <td class="paramtype">value_type&#160;</td>
+          <td class="paramname"><em>alpha</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const value_type *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">value_type&#160;</td>
+          <td class="paramname"><em>beta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">value_type *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -358,6 +423,167 @@ template&lt;class value_type &gt; </div>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a6368bd585349eef8400172e45e826a13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6368bd585349eef8400172e45e826a13">&#9670;&nbsp;</a></span>blocks_per_line</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class value_type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html">dg::EllSparseBlockMatDevice</a>&lt; value_type &gt;::blocks_per_line</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a541a42344486e7463a09e6ce4a3b5af4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a541a42344486e7463a09e6ce4a3b5af4">&#9670;&nbsp;</a></span>cols_idx</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class value_type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">thrust::device_vector&lt;int&gt; <a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html">dg::EllSparseBlockMatDevice</a>&lt; value_type &gt;::cols_idx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab5b3371129dfa29f106350bde0ac7075"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5b3371129dfa29f106350bde0ac7075">&#9670;&nbsp;</a></span>data</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class value_type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">thrust::device_vector&lt;value_type&gt; <a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html">dg::EllSparseBlockMatDevice</a>&lt; value_type &gt;::data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acabaa88b868db38955700ea378061509"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acabaa88b868db38955700ea378061509">&#9670;&nbsp;</a></span>data_idx</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class value_type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">thrust::device_vector&lt;int&gt; <a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html">dg::EllSparseBlockMatDevice</a>&lt; value_type &gt;::data_idx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac451ad2a5a789a51fb1d5299ae2e3fac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac451ad2a5a789a51fb1d5299ae2e3fac">&#9670;&nbsp;</a></span>left_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class value_type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html">dg::EllSparseBlockMatDevice</a>&lt; value_type &gt;::left_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7afe743ff3d3711e22c3990966bf67fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7afe743ff3d3711e22c3990966bf67fd">&#9670;&nbsp;</a></span>n</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class value_type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html">dg::EllSparseBlockMatDevice</a>&lt; value_type &gt;::n</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adb1aad4dd1b166288984cfef1e4b95eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb1aad4dd1b166288984cfef1e4b95eb">&#9670;&nbsp;</a></span>num_cols</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class value_type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html">dg::EllSparseBlockMatDevice</a>&lt; value_type &gt;::num_cols</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acc7fe861d56f4c1dcd81ae79b3bb2951"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc7fe861d56f4c1dcd81ae79b3bb2951">&#9670;&nbsp;</a></span>num_rows</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class value_type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html">dg::EllSparseBlockMatDevice</a>&lt; value_type &gt;::num_rows</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a743f516b0bd5052848b945cce15881a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a743f516b0bd5052848b945cce15881a6">&#9670;&nbsp;</a></span>right_range</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class value_type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">thrust::device_vector&lt;int&gt; <a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html">dg::EllSparseBlockMatDevice</a>&lt; value_type &gt;::right_range</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeac11bbc94ffc964e220978f676d53eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeac11bbc94ffc964e220978f676d53eb">&#9670;&nbsp;</a></span>right_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class value_type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html">dg::EllSparseBlockMatDevice</a>&lt; value_type &gt;::right_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>backend/<a class="el" href="sparseblockmat_8cuh.html">sparseblockmat.cuh</a></li>
 </ul>
@@ -367,7 +593,7 @@ template&lt;class value_type &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html">EllSparseBlockMatDevice</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:50 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

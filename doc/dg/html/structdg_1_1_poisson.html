@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
-<title>Discontinuous Galerkin Library: dg::Poisson&lt; Geometry, Matrix, container &gt; Struct Template Reference</title>
+<title>Discontinuous Galerkin Library: dg::Poisson&lt; Geometry, Matrix, Container &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -97,10 +97,11 @@ $(document).ready(function(){initNavTree('structdg_1_1_poisson.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="structdg_1_1_poisson-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">dg::Poisson&lt; Geometry, Matrix, container &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__numerical1.html">Level 4: Advanced numerical schemes</a> &raquo; <a class="el" href="group__arakawa.html">Discretization of Poisson bracket</a></div></div>  </div>
+<div class="title">dg::Poisson&lt; Geometry, Matrix, Container &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__numerical1.html">Level 4: Advanced numerical schemes</a> &raquo; <a class="el" href="group__arakawa.html">Discretization of Poisson bracket</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -109,52 +110,72 @@ $(document).ready(function(){initNavTree('structdg_1_1_poisson.html','');});
 
 <p><code>#include &lt;<a class="el" href="poisson_8h_source.html">poisson.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a6f46f4565f5e67e358130e038c498e16"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_poisson.html#a6f46f4565f5e67e358130e038c498e16">geometry_type</a> = Geometry</td></tr>
+<tr class="separator:a6f46f4565f5e67e358130e038c498e16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0e34617f4c99d4c4c250a84b1bf7593"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_poisson.html#ab0e34617f4c99d4c4c250a84b1bf7593">matrix_type</a> = Matrix</td></tr>
+<tr class="separator:ab0e34617f4c99d4c4c250a84b1bf7593"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9909d57fa755c917cc844a3774e2fbb5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_poisson.html#a9909d57fa755c917cc844a3774e2fbb5">container_type</a> = Container</td></tr>
+<tr class="separator:a9909d57fa755c917cc844a3774e2fbb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7db4d83bfc463585923b901fa0f895bf"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_poisson.html#a7db4d83bfc463585923b901fa0f895bf">value_type</a> = <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; Container &gt;</td></tr>
+<tr class="separator:a7db4d83bfc463585923b901fa0f895bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6a3803ce000045dbb08a84599807b09e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_poisson.html#a6a3803ce000045dbb08a84599807b09e">Poisson</a> (const Geometry &amp;g)</td></tr>
-<tr class="memdesc:a6a3803ce000045dbb08a84599807b09e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create <a class="el" href="structdg_1_1_poisson.html" title="Poisson bracket scheme. ">Poisson</a> on a grid.  <a href="#a6a3803ce000045dbb08a84599807b09e">More...</a><br /></td></tr>
-<tr class="separator:a6a3803ce000045dbb08a84599807b09e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5434af4bd31bbe596b5a9b96ef505f35"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_poisson.html#a5434af4bd31bbe596b5a9b96ef505f35">Poisson</a> (const Geometry &amp;g, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> bcx, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> bcy)</td></tr>
-<tr class="memdesc:a5434af4bd31bbe596b5a9b96ef505f35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create <a class="el" href="structdg_1_1_poisson.html" title="Poisson bracket scheme. ">Poisson</a> on a grid using different boundary conditions.  <a href="#a5434af4bd31bbe596b5a9b96ef505f35">More...</a><br /></td></tr>
-<tr class="separator:a5434af4bd31bbe596b5a9b96ef505f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa29e71f25b3e64f8cd1f238310bc59b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_poisson.html#aa29e71f25b3e64f8cd1f238310bc59b2">Poisson</a> (const Geometry &amp;g, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> bcxlhs, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> bcylhs, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> bcxrhs, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> bcyrhs)</td></tr>
-<tr class="memdesc:aa29e71f25b3e64f8cd1f238310bc59b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create <a class="el" href="structdg_1_1_poisson.html" title="Poisson bracket scheme. ">Poisson</a> on a grid using different boundary conditions.  <a href="#aa29e71f25b3e64f8cd1f238310bc59b2">More...</a><br /></td></tr>
-<tr class="separator:aa29e71f25b3e64f8cd1f238310bc59b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21d2c759b839d9b8d7266f4adbd1c069"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_poisson.html#a21d2c759b839d9b8d7266f4adbd1c069">operator()</a> (const container &amp;lhs, const container &amp;rhs, container &amp;result)</td></tr>
-<tr class="memdesc:a21d2c759b839d9b8d7266f4adbd1c069"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute poisson's bracket.  <a href="#a21d2c759b839d9b8d7266f4adbd1c069">More...</a><br /></td></tr>
-<tr class="separator:a21d2c759b839d9b8d7266f4adbd1c069"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15753840c2c1122c423c7df421f7ce4f"><td class="memItemLeft" align="right" valign="top">const Matrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_poisson.html#a15753840c2c1122c423c7df421f7ce4f">dxlhs</a> ()</td></tr>
-<tr class="memdesc:a15753840c2c1122c423c7df421f7ce4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return internally used x - derivative.  <a href="#a15753840c2c1122c423c7df421f7ce4f">More...</a><br /></td></tr>
-<tr class="separator:a15753840c2c1122c423c7df421f7ce4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00171bb950e06b5df331a345d6399b42"><td class="memItemLeft" align="right" valign="top">const Matrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_poisson.html#a00171bb950e06b5df331a345d6399b42">dylhs</a> ()</td></tr>
-<tr class="memdesc:a00171bb950e06b5df331a345d6399b42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return internally used y - derivative.  <a href="#a00171bb950e06b5df331a345d6399b42">More...</a><br /></td></tr>
-<tr class="separator:a00171bb950e06b5df331a345d6399b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af15be11c0194e76c0e427f8926db9b64"><td class="memItemLeft" align="right" valign="top">const Matrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_poisson.html#af15be11c0194e76c0e427f8926db9b64">dxrhs</a> ()</td></tr>
-<tr class="memdesc:af15be11c0194e76c0e427f8926db9b64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return internally used x - derivative.  <a href="#af15be11c0194e76c0e427f8926db9b64">More...</a><br /></td></tr>
-<tr class="separator:af15be11c0194e76c0e427f8926db9b64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9500c612c21ca7d0c3412a734e85dbe"><td class="memItemLeft" align="right" valign="top">const Matrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_poisson.html#ae9500c612c21ca7d0c3412a734e85dbe">dyrhs</a> ()</td></tr>
-<tr class="memdesc:ae9500c612c21ca7d0c3412a734e85dbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return internally used y - derivative.  <a href="#ae9500c612c21ca7d0c3412a734e85dbe">More...</a><br /></td></tr>
-<tr class="separator:ae9500c612c21ca7d0c3412a734e85dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada279f7ffead5ed6ef676c96354f8787"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_poisson.html#ada279f7ffead5ed6ef676c96354f8787">variationRHS</a> (const container &amp;phi, container &amp;varphi)</td></tr>
-<tr class="memdesc:ada279f7ffead5ed6ef676c96354f8787"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the total variation integrand, uses bc of rhs of poisson bracket.  <a href="#ada279f7ffead5ed6ef676c96354f8787">More...</a><br /></td></tr>
-<tr class="separator:ada279f7ffead5ed6ef676c96354f8787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82113887e820079f6e9f9331c5065a42"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_poisson.html#a82113887e820079f6e9f9331c5065a42">Poisson</a> (const Geometry &amp;g)</td></tr>
+<tr class="memdesc:a82113887e820079f6e9f9331c5065a42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create <a class="el" href="structdg_1_1_poisson.html" title="Poisson bracket scheme. ">Poisson</a> on a grid.  <a href="#a82113887e820079f6e9f9331c5065a42">More...</a><br /></td></tr>
+<tr class="separator:a82113887e820079f6e9f9331c5065a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6239fcf7105953113b5d0136dbb4edf0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_poisson.html#a6239fcf7105953113b5d0136dbb4edf0">Poisson</a> (const Geometry &amp;g, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> bcx, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> bcy)</td></tr>
+<tr class="memdesc:a6239fcf7105953113b5d0136dbb4edf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create <a class="el" href="structdg_1_1_poisson.html" title="Poisson bracket scheme. ">Poisson</a> on a grid using different boundary conditions.  <a href="#a6239fcf7105953113b5d0136dbb4edf0">More...</a><br /></td></tr>
+<tr class="separator:a6239fcf7105953113b5d0136dbb4edf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74677e77775fd0f46c8d9d949de36ab3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_poisson.html#a74677e77775fd0f46c8d9d949de36ab3">Poisson</a> (const Geometry &amp;g, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> bcxlhs, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> bcylhs, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> bcxrhs, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> bcyrhs)</td></tr>
+<tr class="memdesc:a74677e77775fd0f46c8d9d949de36ab3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create <a class="el" href="structdg_1_1_poisson.html" title="Poisson bracket scheme. ">Poisson</a> on a grid using different boundary conditions.  <a href="#a74677e77775fd0f46c8d9d949de36ab3">More...</a><br /></td></tr>
+<tr class="separator:a74677e77775fd0f46c8d9d949de36ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad60e506911c9c3a5c5b4fb26ed7e13ba"><td class="memTemplParams" colspan="2">template&lt;class ContainerType0 , class ContainerType1 , class ContainerType2 &gt; </td></tr>
+<tr class="memitem:ad60e506911c9c3a5c5b4fb26ed7e13ba"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_poisson.html#ad60e506911c9c3a5c5b4fb26ed7e13ba">operator()</a> (const ContainerType0 &amp;lhs, const ContainerType1 &amp;rhs, ContainerType2 &amp;result)</td></tr>
+<tr class="memdesc:ad60e506911c9c3a5c5b4fb26ed7e13ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute poisson's bracket.  <a href="#ad60e506911c9c3a5c5b4fb26ed7e13ba">More...</a><br /></td></tr>
+<tr class="separator:ad60e506911c9c3a5c5b4fb26ed7e13ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aae656b490b396feceec683b95ac454"><td class="memTemplParams" colspan="2">template&lt;class ContainerType0 &gt; </td></tr>
+<tr class="memitem:a9aae656b490b396feceec683b95ac454"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_poisson.html#a9aae656b490b396feceec683b95ac454">set_chi</a> (const ContainerType0 &amp;new_chi)</td></tr>
+<tr class="memdesc:a9aae656b490b396feceec683b95ac454"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change Chi.  <a href="#a9aae656b490b396feceec683b95ac454">More...</a><br /></td></tr>
+<tr class="separator:a9aae656b490b396feceec683b95ac454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa112d6702e6ec0037629e615634aa73d"><td class="memItemLeft" align="right" valign="top">const Matrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_poisson.html#aa112d6702e6ec0037629e615634aa73d">dxlhs</a> () const</td></tr>
+<tr class="memdesc:aa112d6702e6ec0037629e615634aa73d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return internally used x - derivative.  <a href="#aa112d6702e6ec0037629e615634aa73d">More...</a><br /></td></tr>
+<tr class="separator:aa112d6702e6ec0037629e615634aa73d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7793a50dc7e35c924a1f9cd533f6c42"><td class="memItemLeft" align="right" valign="top">const Matrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_poisson.html#ae7793a50dc7e35c924a1f9cd533f6c42">dylhs</a> () const</td></tr>
+<tr class="memdesc:ae7793a50dc7e35c924a1f9cd533f6c42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return internally used y - derivative.  <a href="#ae7793a50dc7e35c924a1f9cd533f6c42">More...</a><br /></td></tr>
+<tr class="separator:ae7793a50dc7e35c924a1f9cd533f6c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa749ff861cbf05a0cc79a59f594bf89"><td class="memItemLeft" align="right" valign="top">const Matrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_poisson.html#afa749ff861cbf05a0cc79a59f594bf89">dxrhs</a> () const</td></tr>
+<tr class="memdesc:afa749ff861cbf05a0cc79a59f594bf89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return internally used x - derivative.  <a href="#afa749ff861cbf05a0cc79a59f594bf89">More...</a><br /></td></tr>
+<tr class="separator:afa749ff861cbf05a0cc79a59f594bf89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10a73a1ff294880e1c7a1d2c2ed6d89a"><td class="memItemLeft" align="right" valign="top">const Matrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_poisson.html#a10a73a1ff294880e1c7a1d2c2ed6d89a">dyrhs</a> ()</td></tr>
+<tr class="memdesc:a10a73a1ff294880e1c7a1d2c2ed6d89a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return internally used y - derivative.  <a href="#a10a73a1ff294880e1c7a1d2c2ed6d89a">More...</a><br /></td></tr>
+<tr class="separator:a10a73a1ff294880e1c7a1d2c2ed6d89a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a310867ef3ebd010038605dc9ca9e96e4"><td class="memTemplParams" colspan="2">template&lt;class ContainerType0 , class ContainerType1 &gt; </td></tr>
+<tr class="memitem:a310867ef3ebd010038605dc9ca9e96e4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_poisson.html#a310867ef3ebd010038605dc9ca9e96e4">variationRHS</a> (const ContainerType0 &amp;phi, ContainerType1 &amp;varphi)</td></tr>
+<tr class="memdesc:a310867ef3ebd010038605dc9ca9e96e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the total variation integrand, uses bc of rhs of poisson bracket.  <a href="#a310867ef3ebd010038605dc9ca9e96e4">More...</a><br /></td></tr>
+<tr class="separator:a310867ef3ebd010038605dc9ca9e96e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class Geometry, class Matrix, class container&gt;<br />
-struct dg::Poisson&lt; Geometry, Matrix, container &gt;</h3>
+<div class="textblock"><h3>template&lt;class Geometry, class Matrix, class Container&gt;<br />
+struct dg::Poisson&lt; Geometry, Matrix, Container &gt;</h3>
 
 <p><a class="el" href="structdg_1_1_poisson.html" title="Poisson bracket scheme. ">Poisson</a> bracket scheme. </p>
-<p>Has the possitility to use mixed boundary conditions </p><div class="fragment"><div class="line">    <span class="keyword">const</span> <a class="code" href="structdg_1_1_real_cartesian_grid2d.html">dg::CartesianGrid2d</a> grid( 0, lx, 0, ly, n, Nx, Ny);</div><div class="line">    <span class="keyword">const</span> <a class="code" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8">dg::DVec</a> lhs = <a class="code" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">dg::evaluate</a>( left, grid);</div><div class="line">    <span class="keyword">const</span> <a class="code" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8">dg::DVec</a> rhs = <a class="code" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">dg::evaluate</a>( right, grid);</div><div class="line">    <a class="code" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8">dg::DVec</a> jac(lhs);</div><div class="line"></div><div class="line">    <a class="code" href="structdg_1_1_poisson.html">dg::Poisson&lt;dg::aGeometry2d, dg::DMatrix, dg::DVec&gt;</a> poisson( grid, bcxlhs, bcylhs,bcxrhs, bcyrhs );</div><div class="line">    poisson( lhs, rhs, jac);</div></div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
+<p>Computes </p><p class="formulaDsp">
+\[ [f,g] := \chi/\sqrt{g_{2d}}\left(\partial_x f\partial_y g - \partial_y f\partial_x g\right) \]
+</p>
+<p> where \( g_{2d} = g/g_{zz}\) is the two-dimensional volume element of the plane in 2x1 product space and \( \chi\) is an optional factor. Has the possitility to use mixed boundary conditions </p><div class="fragment"><div class="line">    <span class="keyword">const</span> <a class="code" href="structdg_1_1_real_cartesian_grid2d.html">dg::CartesianGrid2d</a> grid( 0, lx, 0, ly, n, Nx, Ny);</div><div class="line">    <span class="keyword">const</span> <a class="code" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8">dg::DVec</a> lhs = <a class="code" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">dg::evaluate</a>( left, grid);</div><div class="line">    <span class="keyword">const</span> <a class="code" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8">dg::DVec</a> rhs = <a class="code" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">dg::evaluate</a>( right, grid);</div><div class="line">    <a class="code" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8">dg::DVec</a> jac(lhs);</div><div class="line"></div><div class="line">    <a class="code" href="structdg_1_1_poisson.html">dg::Poisson&lt;dg::aGeometry2d, dg::DMatrix, dg::DVec&gt;</a> poisson( grid, bcxlhs, bcylhs,bcxrhs, bcyrhs );</div><div class="line">    poisson( lhs, rhs, jac);</div></div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Geometry</td><td>A type that is or derives from one of the abstract geometry base classes ( <code>aGeometry2d</code>, <code>aGeometry3d</code>, <code>aMPIGeometry2d</code>, ...). <code>Geometry</code> determines which <code>Matrix</code> and <code>container</code> types can be used: </td></tr>
-    <tr><td class="paramname">Matrix</td><td>A class for which the <a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a> functions are callable in connection with the <code>container</code> class and to which the return type of <code><a class="el" href="group__creation.html#ga51aea0f47c5a77bb1a3bce187839dc85" title="Create 2d derivative in x-direction. ">create::dx()</a></code> can be converted using <code><a class="el" href="group__blas2.html#ga53701ba3118a2256a93a4d92a7a8a597" title="; Generic way to copy and/or convert a Matrix type to a different Matrix type ">dg::blas2::transfer</a></code>. The <code>Matrix</code> type can be one of:<ul>
+    <tr><td class="paramname">Geometry</td><td>A type that is or derives from one of the abstract geometry base classes ( <code>aGeometry2d</code>, <code>aGeometry3d</code>, <code>aMPIGeometry2d</code>, ...). <code>Geometry</code> determines which <code>Matrix</code> and <code>Container</code> types can be used: </td></tr>
+    <tr><td class="paramname">Matrix</td><td>A class for which the <a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a> functions are callable in connection with the <code>Container</code> class and to which the return type of <code><a class="el" href="group__creation.html#ga51aea0f47c5a77bb1a3bce187839dc85" title="Create 2d derivative in x-direction. ">create::dx()</a></code> can be converted using <code><a class="el" href="group__blas2.html#ga53701ba3118a2256a93a4d92a7a8a597" title="; Generic way to copy and/or convert a Matrix type to a different Matrix type ">dg::blas2::transfer</a></code>. The <code>Matrix</code> type can be one of:<ul>
 <li><code><a class="el" href="group__typedefs.html#gac2134505608b45616787fdb2f6eedc87" title="Host Matrix for derivatives. ">dg::HMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193" title="Host Vector. ">dg::HVec</a></code> and one of the shared memory geometries</li>
 <li><code><a class="el" href="group__typedefs.html#gafdf2ecb95cbc87a1544136d28d535f16" title="Device Matrix for derivatives. ">dg::DMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code> and one of the shared memory geometries</li>
 <li><code><a class="el" href="group__typedefs.html#gaff79c734c7916054c7dc24e6bc437161" title="MPI Host Matrix for derivatives. ">dg::MHMatrix</a></code> with <code><a class="el" href="group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> and one of the MPI geometries</li>
 <li><code><a class="el" href="group__typedefs.html#gaad32454aa2aca3cbb93448d7b5daf005" title="MPI Device Matrix for derivatives. ">dg::MDMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> and one of the MPI geometries </li>
 </ul>
 </td></tr>
-    <tr><td class="paramname">container</td><td>A data container class for which the <code><a class="el" href="namespacedg_1_1blas1.html" title="BLAS Level 1 routines. ">blas1</a></code> functionality is overloaded and to which the return type of <code><a class="el" href="group__blas1.html#gaad7b58d466d813898b68189b44619210" title=" ">blas1::evaluate()</a></code> can be converted using <code><a class="el" href="group__blas1.html#gae0aacd4fe731c16a9483140026c4dcc6" title="y=x; Generic way to copy-construct/assign-to an object of to_ContainerType type from a different from...">dg::blas1::transfer</a></code>. We assume that <code>container</code> is copyable/assignable and has a swap member function. In connection with <code>Geometry</code> this is one of<ul>
+    <tr><td class="paramname">Container</td><td>A data container class for which the <code><a class="el" href="namespacedg_1_1blas1.html" title="BLAS Level 1 routines. ">blas1</a></code> functionality is overloaded and to which the return type of <code><a class="el" href="group__blas1.html#ga7386b5cb0144d5364b8ea8c8ce1482a5" title="; Customizable and generic blas1 function ">blas1::subroutine()</a></code> can be converted using <code><a class="el" href="group__backend.html#gab0ca1b8d3f70004e25ddc2010f7e9e0d" title="Generic way to assign the contents of a from_ContainerType object to a ContainerType object optionall...">dg::assign</a></code>. We assume that <code>Container</code> is copyable/assignable and has a swap member function. In connection with <code>Geometry</code> this is one of<ul>
 <li><code><a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193" title="Host Vector. ">dg::HVec</a></code>, <code><a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code> when <code>Geometry</code> is a shared memory geometry</li>
 <li><code><a class="el" href="group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code><a class="el" href="group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> when <code>Geometry</code> is one of the MPI geometries </li>
 </ul>
@@ -162,17 +183,82 @@ struct dg::Poisson&lt; Geometry, Matrix, container &gt;</h3>
   </table>
   </dd>
 </dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a6a3803ce000045dbb08a84599807b09e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a3803ce000045dbb08a84599807b09e">&#9670;&nbsp;</a></span>Poisson() <span class="overload">[1/3]</span></h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a9909d57fa755c917cc844a3774e2fbb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9909d57fa755c917cc844a3774e2fbb5">&#9670;&nbsp;</a></span>container_type</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Geometry, class Matrix, class container&gt; </div>
+template&lt;class Geometry, class Matrix, class Container&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdg_1_1_poisson.html">dg::Poisson</a>&lt; Geometry, Matrix, container &gt;::<a class="el" href="structdg_1_1_poisson.html">Poisson</a> </td>
+          <td class="memname">using <a class="el" href="structdg_1_1_poisson.html">dg::Poisson</a>&lt; Geometry, Matrix, Container &gt;::<a class="el" href="structdg_1_1_poisson.html#a9909d57fa755c917cc844a3774e2fbb5">container_type</a> =  Container</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6f46f4565f5e67e358130e038c498e16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f46f4565f5e67e358130e038c498e16">&#9670;&nbsp;</a></span>geometry_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Geometry, class Matrix, class Container&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structdg_1_1_poisson.html">dg::Poisson</a>&lt; Geometry, Matrix, Container &gt;::<a class="el" href="structdg_1_1_poisson.html#a6f46f4565f5e67e358130e038c498e16">geometry_type</a> =  Geometry</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab0e34617f4c99d4c4c250a84b1bf7593"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0e34617f4c99d4c4c250a84b1bf7593">&#9670;&nbsp;</a></span>matrix_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Geometry, class Matrix, class Container&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structdg_1_1_poisson.html">dg::Poisson</a>&lt; Geometry, Matrix, Container &gt;::<a class="el" href="structdg_1_1_poisson.html#ab0e34617f4c99d4c4c250a84b1bf7593">matrix_type</a> =  Matrix</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7db4d83bfc463585923b901fa0f895bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7db4d83bfc463585923b901fa0f895bf">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Geometry, class Matrix, class Container&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structdg_1_1_poisson.html">dg::Poisson</a>&lt; Geometry, Matrix, Container &gt;::<a class="el" href="structdg_1_1_poisson.html#a7db4d83bfc463585923b901fa0f895bf">value_type</a> =  <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt;Container&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a82113887e820079f6e9f9331c5065a42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82113887e820079f6e9f9331c5065a42">&#9670;&nbsp;</a></span>Poisson() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Geometry, class Matrix, class Container&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdg_1_1_poisson.html">dg::Poisson</a>&lt; Geometry, Matrix, Container &gt;::<a class="el" href="structdg_1_1_poisson.html">Poisson</a> </td>
           <td>(</td>
           <td class="paramtype">const Geometry &amp;&#160;</td>
           <td class="paramname"><em>g</em></td><td>)</td>
@@ -188,19 +274,20 @@ template&lt;class Geometry, class Matrix, class container&gt; </div>
   </table>
   </dd>
 </dl>
+<dl class="section note"><dt>Note</dt><dd>chi defaults to 1 </dd></dl>
 
 </div>
 </div>
-<a id="a5434af4bd31bbe596b5a9b96ef505f35"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5434af4bd31bbe596b5a9b96ef505f35">&#9670;&nbsp;</a></span>Poisson() <span class="overload">[2/3]</span></h2>
+<a id="a6239fcf7105953113b5d0136dbb4edf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6239fcf7105953113b5d0136dbb4edf0">&#9670;&nbsp;</a></span>Poisson() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Geometry, class Matrix, class container&gt; </div>
+template&lt;class Geometry, class Matrix, class Container&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdg_1_1_poisson.html">dg::Poisson</a>&lt; Geometry, Matrix, container &gt;::<a class="el" href="structdg_1_1_poisson.html">Poisson</a> </td>
+          <td class="memname"><a class="el" href="structdg_1_1_poisson.html">dg::Poisson</a>&lt; Geometry, Matrix, Container &gt;::<a class="el" href="structdg_1_1_poisson.html">Poisson</a> </td>
           <td>(</td>
           <td class="paramtype">const Geometry &amp;&#160;</td>
           <td class="paramname"><em>g</em>, </td>
@@ -234,19 +321,20 @@ template&lt;class Geometry, class Matrix, class container&gt; </div>
   </table>
   </dd>
 </dl>
+<dl class="section note"><dt>Note</dt><dd>chi defaults to 1 </dd></dl>
 
 </div>
 </div>
-<a id="aa29e71f25b3e64f8cd1f238310bc59b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa29e71f25b3e64f8cd1f238310bc59b2">&#9670;&nbsp;</a></span>Poisson() <span class="overload">[3/3]</span></h2>
+<a id="a74677e77775fd0f46c8d9d949de36ab3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74677e77775fd0f46c8d9d949de36ab3">&#9670;&nbsp;</a></span>Poisson() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Geometry, class Matrix, class container&gt; </div>
+template&lt;class Geometry, class Matrix, class Container&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdg_1_1_poisson.html">dg::Poisson</a>&lt; Geometry, Matrix, container &gt;::<a class="el" href="structdg_1_1_poisson.html">Poisson</a> </td>
+          <td class="memname"><a class="el" href="structdg_1_1_poisson.html">dg::Poisson</a>&lt; Geometry, Matrix, Container &gt;::<a class="el" href="structdg_1_1_poisson.html">Poisson</a> </td>
           <td>(</td>
           <td class="paramtype">const Geometry &amp;&#160;</td>
           <td class="paramname"><em>g</em>, </td>
@@ -294,26 +382,27 @@ template&lt;class Geometry, class Matrix, class container&gt; </div>
   </table>
   </dd>
 </dl>
+<dl class="section note"><dt>Note</dt><dd>chi defaults to 1 </dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a15753840c2c1122c423c7df421f7ce4f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a15753840c2c1122c423c7df421f7ce4f">&#9670;&nbsp;</a></span>dxlhs()</h2>
+<a id="aa112d6702e6ec0037629e615634aa73d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa112d6702e6ec0037629e615634aa73d">&#9670;&nbsp;</a></span>dxlhs()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Geometry, class Matrix, class container&gt; </div>
+template&lt;class Geometry, class Matrix, class Container&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const Matrix&amp; <a class="el" href="structdg_1_1_poisson.html">dg::Poisson</a>&lt; Geometry, Matrix, container &gt;::dxlhs </td>
+          <td class="memname">const Matrix&amp; <a class="el" href="structdg_1_1_poisson.html">dg::Poisson</a>&lt; Geometry, Matrix, Container &gt;::dxlhs </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -324,26 +413,26 @@ template&lt;class Geometry, class Matrix, class container&gt; </div>
 </div><div class="memdoc">
 
 <p>Return internally used x - derivative. </p>
-<p>The same as a call to dg::create::dx( g, bcx) </p><dl class="section return"><dt>Returns</dt><dd>derivative </dd></dl>
+<p>The same as a call to <code>dg::create::dx( g, bcxlhs)</code> </p><dl class="section return"><dt>Returns</dt><dd>derivative </dd></dl>
 
 </div>
 </div>
-<a id="af15be11c0194e76c0e427f8926db9b64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af15be11c0194e76c0e427f8926db9b64">&#9670;&nbsp;</a></span>dxrhs()</h2>
+<a id="afa749ff861cbf05a0cc79a59f594bf89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa749ff861cbf05a0cc79a59f594bf89">&#9670;&nbsp;</a></span>dxrhs()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Geometry, class Matrix, class container&gt; </div>
+template&lt;class Geometry, class Matrix, class Container&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const Matrix&amp; <a class="el" href="structdg_1_1_poisson.html">dg::Poisson</a>&lt; Geometry, Matrix, container &gt;::dxrhs </td>
+          <td class="memname">const Matrix&amp; <a class="el" href="structdg_1_1_poisson.html">dg::Poisson</a>&lt; Geometry, Matrix, Container &gt;::dxrhs </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -354,23 +443,53 @@ template&lt;class Geometry, class Matrix, class container&gt; </div>
 </div><div class="memdoc">
 
 <p>Return internally used x - derivative. </p>
-<p>The same as a call to dg::create::dx( g, bcx) </p><dl class="section return"><dt>Returns</dt><dd>derivative </dd></dl>
+<p>The same as a call to <code>dg::create::dx( g, bcxrhs)</code> </p><dl class="section return"><dt>Returns</dt><dd>derivative </dd></dl>
 
 </div>
 </div>
-<a id="a00171bb950e06b5df331a345d6399b42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00171bb950e06b5df331a345d6399b42">&#9670;&nbsp;</a></span>dylhs()</h2>
+<a id="ae7793a50dc7e35c924a1f9cd533f6c42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7793a50dc7e35c924a1f9cd533f6c42">&#9670;&nbsp;</a></span>dylhs()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Geometry, class Matrix, class container&gt; </div>
+template&lt;class Geometry, class Matrix, class Container&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const Matrix&amp; <a class="el" href="structdg_1_1_poisson.html">dg::Poisson</a>&lt; Geometry, Matrix, container &gt;::dylhs </td>
+          <td class="memname">const Matrix&amp; <a class="el" href="structdg_1_1_poisson.html">dg::Poisson</a>&lt; Geometry, Matrix, Container &gt;::dylhs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return internally used y - derivative. </p>
+<p>The same as a call to <code>dg::create::dy( g, bcylhs)</code> </p><dl class="section return"><dt>Returns</dt><dd>derivative </dd></dl>
+
+</div>
+</div>
+<a id="a10a73a1ff294880e1c7a1d2c2ed6d89a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10a73a1ff294880e1c7a1d2c2ed6d89a">&#9670;&nbsp;</a></span>dyrhs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Geometry, class Matrix, class Container&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const Matrix&amp; <a class="el" href="structdg_1_1_poisson.html">dg::Poisson</a>&lt; Geometry, Matrix, Container &gt;::dyrhs </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -384,64 +503,36 @@ template&lt;class Geometry, class Matrix, class container&gt; </div>
 </div><div class="memdoc">
 
 <p>Return internally used y - derivative. </p>
-<p>The same as a call to dg::create::dy( g, bcy) </p><dl class="section return"><dt>Returns</dt><dd>derivative </dd></dl>
+<p>The same as a call to <code>dg::create::dy( g, bcyrhs)</code> </p><dl class="section return"><dt>Returns</dt><dd>derivative </dd></dl>
 
 </div>
 </div>
-<a id="ae9500c612c21ca7d0c3412a734e85dbe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9500c612c21ca7d0c3412a734e85dbe">&#9670;&nbsp;</a></span>dyrhs()</h2>
+<a id="ad60e506911c9c3a5c5b4fb26ed7e13ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad60e506911c9c3a5c5b4fb26ed7e13ba">&#9670;&nbsp;</a></span>operator()()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Geometry, class Matrix, class container&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const Matrix&amp; <a class="el" href="structdg_1_1_poisson.html">dg::Poisson</a>&lt; Geometry, Matrix, container &gt;::dyrhs </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Return internally used y - derivative. </p>
-<p>The same as a call to dg::create::dy( g, bcy) </p><dl class="section return"><dt>Returns</dt><dd>derivative </dd></dl>
-
-</div>
-</div>
-<a id="a21d2c759b839d9b8d7266f4adbd1c069"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21d2c759b839d9b8d7266f4adbd1c069">&#9670;&nbsp;</a></span>operator()()</h2>
-
-<div class="memitem">
-<div class="memproto">
+template&lt;class Geometry, class Matrix, class Container&gt; </div>
 <div class="memtemplate">
-template&lt;class Geometry, class Matrix, class container&gt; </div>
+template&lt;class ContainerType0 , class ContainerType1 , class ContainerType2 &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="structdg_1_1_poisson.html">dg::Poisson</a>&lt; Geometry, Matrix, container &gt;::operator() </td>
+          <td class="memname">void <a class="el" href="structdg_1_1_poisson.html">dg::Poisson</a>&lt; Geometry, Matrix, Container &gt;::operator() </td>
           <td>(</td>
-          <td class="paramtype">const container &amp;&#160;</td>
+          <td class="paramtype">const ContainerType0 &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const container &amp;&#160;</td>
+          <td class="paramtype">const ContainerType1 &amp;&#160;</td>
           <td class="paramname"><em>rhs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">container &amp;&#160;</td>
+          <td class="paramtype">ContainerType2 &amp;&#160;</td>
           <td class="paramname"><em>result</em>&#160;</td>
         </tr>
         <tr>
@@ -464,30 +555,82 @@ template&lt;class Geometry, class Matrix, class container&gt; </div>
   </table>
   </dd>
 </dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ContainerTypes</td><td>must be usable with <code>Container</code> in <a class="el" href="index.html#dispatch">The Level 1 dispatch system</a> </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="ada279f7ffead5ed6ef676c96354f8787"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada279f7ffead5ed6ef676c96354f8787">&#9670;&nbsp;</a></span>variationRHS()</h2>
+<a id="a9aae656b490b396feceec683b95ac454"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aae656b490b396feceec683b95ac454">&#9670;&nbsp;</a></span>set_chi()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Geometry, class Matrix, class container&gt; </div>
+template&lt;class Geometry, class Matrix, class Container&gt; </div>
+<div class="memtemplate">
+template&lt;class ContainerType0 &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="structdg_1_1_poisson.html">dg::Poisson</a>&lt; Geometry, Matrix, container &gt;::variationRHS </td>
+          <td class="memname">void <a class="el" href="structdg_1_1_poisson.html">dg::Poisson</a>&lt; Geometry, Matrix, Container &gt;::set_chi </td>
           <td>(</td>
-          <td class="paramtype">const container &amp;&#160;</td>
+          <td class="paramtype">const ContainerType0 &amp;&#160;</td>
+          <td class="paramname"><em>new_chi</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Change Chi. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">new_chi</td><td>The new chi </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ContainerTypes</td><td>must be usable with <code>Container</code> in <a class="el" href="index.html#dispatch">The Level 1 dispatch system</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a310867ef3ebd010038605dc9ca9e96e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a310867ef3ebd010038605dc9ca9e96e4">&#9670;&nbsp;</a></span>variationRHS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Geometry, class Matrix, class Container&gt; </div>
+<div class="memtemplate">
+template&lt;class ContainerType0 , class ContainerType1 &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structdg_1_1_poisson.html">dg::Poisson</a>&lt; Geometry, Matrix, Container &gt;::variationRHS </td>
+          <td>(</td>
+          <td class="paramtype">const ContainerType0 &amp;&#160;</td>
           <td class="paramname"><em>phi</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">container &amp;&#160;</td>
+          <td class="paramtype">ContainerType1 &amp;&#160;</td>
           <td class="paramname"><em>varphi</em>&#160;</td>
         </tr>
         <tr>
@@ -514,6 +657,12 @@ template&lt;class Geometry, class Matrix, class container&gt; </div>
   </table>
   </dd>
 </dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ContainerTypes</td><td>must be usable with <code>Container</code> in <a class="el" href="index.html#dispatch">The Level 1 dispatch system</a> </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -526,7 +675,7 @@ template&lt;class Geometry, class Matrix, class container&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_poisson.html">Poisson</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:50 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

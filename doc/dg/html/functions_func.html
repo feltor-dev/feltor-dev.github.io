@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -99,31 +99,35 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 &#160;
 
 <h3><a id="index_a"></a>- a -</h3><ul>
-<li>AB()
-: <a class="el" href="structdg_1_1_a_b.html#a7e987412f81e91199d4cb88770b5679f">dg::AB&lt; k, ContainerType &gt;</a>
+<li>a()
+: <a class="el" href="structdg_1_1_butcher_tableau.html#a6493b23b11f5fc66933320ab2a1b5d3e">dg::ButcherTableau&lt; real_type &gt;</a>
 </li>
 <li>abscissas()
 : <a class="el" href="classdg_1_1_d_l_t.html#a8054945946ffebfd5454893e3b81e51d">dg::DLT&lt; real_type &gt;</a>
 </li>
 <li>aCommunicator()
-: <a class="el" href="structdg_1_1a_communicator.html#a8036365511d408756d78e6aebeb3fe06">dg::aCommunicator&lt; LocalContainer &gt;</a>
+: <a class="el" href="structdg_1_1a_communicator.html#a2861411ab00b8988436cf0259edbbc1b">dg::aCommunicator&lt; LocalContainer &gt;</a>
 </li>
-<li>adaptive_step()
-: <a class="el" href="structdg_1_1_s_i_r_k.html#aa683c9617de983f14e18a66167d6db7b">dg::SIRK&lt; ContainerType &gt;</a>
+<li>AdamsBashforth()
+: <a class="el" href="structdg_1_1_adams_bashforth.html#aed45d94c2d7c92b386cd26f0c827cdfd">dg::AdamsBashforth&lt; ContainerType &gt;</a>
+</li>
+<li>Adaptive()
+: <a class="el" href="structdg_1_1_adaptive.html#ae5cb5e4317ad65086f4272a6a48b69e2">dg::Adaptive&lt; Stepper &gt;</a>
 </li>
 <li>add_value()
 : <a class="el" href="structdg_1_1_coo_sparse_block_mat.html#aa573b0725f3c77c5037c42f01ab18d8a">dg::CooSparseBlockMat&lt; value_type &gt;</a>
 </li>
 <li>allocate_buffer()
 : <a class="el" href="structdg_1_1a_communicator.html#a9a29bf560157c2d0a81d4ce96b1a0634">dg::aCommunicator&lt; LocalContainer &gt;</a>
-, <a class="el" href="structdg_1_1_nearest_neighbor_comm.html#a3cd69e716a868b91de5dffc277426900">dg::NearestNeighborComm&lt; Index, Vector &gt;</a>
+, <a class="el" href="structdg_1_1_nearest_neighbor_comm.html#a9938f3e7dfddbdeaf95a7563df70f56e">dg::NearestNeighborComm&lt; Index, Buffer, Vector &gt;</a>
 </li>
 <li>alpha()
-: <a class="el" href="structdg_1_1_helmholtz2.html#a1d121f6cee8f4079c5f09a174a3af2aa">dg::Helmholtz2&lt; Geometry, Matrix, container &gt;</a>
-, <a class="el" href="structdg_1_1_helmholtz.html#a58d072eef47b4629774c953d2a1804f7">dg::Helmholtz&lt; Geometry, Matrix, container &gt;</a>
+: <a class="el" href="structdg_1_1_helmholtz2.html#ad6b890fbad9fb61b3e87903cd8857c44">dg::Helmholtz2&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_helmholtz3d.html#a852bf1c6f34be82b1edef6df17775b99">dg::Helmholtz3d&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_helmholtz.html#aecaabc0dc1c50ca35399d89dfb262faf">dg::Helmholtz&lt; Geometry, Matrix, Container &gt;</a>
 </li>
 <li>ArakawaX()
-: <a class="el" href="structdg_1_1_arakawa_x.html#a8479e75dfb66ebcdd67b2e6b48aed12b">dg::ArakawaX&lt; Geometry, Matrix, container &gt;</a>
+: <a class="el" href="structdg_1_1_arakawa_x.html#a243bd50339803a21d15b80b14d0c9e4c">dg::ArakawaX&lt; Geometry, Matrix, Container &gt;</a>
 </li>
 <li>aRealGeometry2d()
 : <a class="el" href="structdg_1_1a_real_geometry2d.html#aa85bbd873da2905b19ba22ab194abea5">dg::aRealGeometry2d&lt; real_type &gt;</a>
@@ -156,26 +160,29 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 : <a class="el" href="structdg_1_1a_real_product_m_p_i_geometry3d.html#ae7af0e03444f1236cf0b655e4695b96d">dg::aRealProductMPIGeometry3d&lt; real_type &gt;</a>
 </li>
 <li>aRealRefinement1d()
-: <a class="el" href="structdg_1_1a_real_refinement1d.html#aa30ed397b6917b027db918dc289b08a6">dg::aRealRefinement1d&lt; real_type &gt;</a>
+: <a class="el" href="structdg_1_1a_real_refinement1d.html#a31c28314a759d92c19c7c6dc47f690ef">dg::aRealRefinement1d&lt; real_type &gt;</a>
 </li>
 <li>aRealRefinementX2d()
-: <a class="el" href="structdg_1_1a_real_refinement_x2d.html#a63dece62b1775a3797a5cba1c4ec9b9b">dg::aRealRefinementX2d&lt; real_type &gt;</a>
+: <a class="el" href="structdg_1_1a_real_refinement_x2d.html#a1a003ce21fcc3858b6784a6a0f9090cd">dg::aRealRefinementX2d&lt; real_type &gt;</a>
 </li>
 <li>aRealTopology2d()
-: <a class="el" href="structdg_1_1a_real_topology2d.html#aab9314f7577e8252b589232c8c630f72">dg::aRealTopology2d&lt; real_type &gt;</a>
+: <a class="el" href="structdg_1_1a_real_topology2d.html#ad1edba19469c2ba8937128e143f24eab">dg::aRealTopology2d&lt; real_type &gt;</a>
 </li>
 <li>aRealTopology3d()
-: <a class="el" href="structdg_1_1a_real_topology3d.html#abae8627102e80cae58bed3e810268d5e">dg::aRealTopology3d&lt; real_type &gt;</a>
+: <a class="el" href="structdg_1_1a_real_topology3d.html#aa34a2f91dcc179b0754bb582d3fe732e">dg::aRealTopology3d&lt; real_type &gt;</a>
 </li>
 <li>aRealTopologyX2d()
-: <a class="el" href="structdg_1_1a_real_topology_x2d.html#a7f557032f5a24ebb3b641dc7d06bcff5">dg::aRealTopologyX2d&lt; real_type &gt;</a>
+: <a class="el" href="structdg_1_1a_real_topology_x2d.html#adda955cb2882ad513639f3cafce760b8">dg::aRealTopologyX2d&lt; real_type &gt;</a>
 </li>
 <li>aRealTopologyX3d()
 : <a class="el" href="structdg_1_1a_real_topology_x3d.html#ae94c9b60852d6987e3ab88b69c2aa90c">dg::aRealTopologyX3d&lt; real_type &gt;</a>
 </li>
+<li>ARKStep()
+: <a class="el" href="structdg_1_1_a_r_k_step.html#a6f3e1bfa5c26f44a6381d829cd44d81d">dg::ARKStep&lt; ContainerType, SolverType &gt;</a>
+</li>
 <li>Average()
-: <a class="el" href="structdg_1_1_average.html#a608b7f3a330debfab5329b8928af255d">dg::Average&lt; container &gt;</a>
-, <a class="el" href="structdg_1_1_average_3_01_m_p_i___vector_3_01container_01_4_01_4.html#a07c7154e79d3c5a232dc762b946f896c">dg::Average&lt; MPI_Vector&lt; container &gt; &gt;</a>
+: <a class="el" href="structdg_1_1_average.html#a1051b4634f13a6114151ad269b016a6a">dg::Average&lt; ContainerType &gt;</a>
+, <a class="el" href="structdg_1_1_average_3_01_m_p_i___vector_3_01container_01_4_01_4.html#aefe43778599144bcedf36646d411e787">dg::Average&lt; MPI_Vector&lt; container &gt; &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -183,7 +190,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:50 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

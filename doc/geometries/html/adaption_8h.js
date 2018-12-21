@@ -1,5 +1,5 @@
 var adaption_8h =
 [
-    [ "make_LiseikinCollective", "adaption_8h.html#ga56d2d722a2734d1685263ee8a95e7555", null ],
-    [ "make_NablaPsiInvCollective", "adaption_8h.html#gaf583c457b3907ec4e9a94d4c17427d55", null ]
+    [ "make_LiseikinCollective", "adaption_8h.html#gae0cb11f189e743a3291e23e2bc361bb2", null ],
+    [ "make_NablaPsiInvCollective", "adaption_8h.html#ga32a9569879bd13c719c77be10f0d399d", null ]
 ];

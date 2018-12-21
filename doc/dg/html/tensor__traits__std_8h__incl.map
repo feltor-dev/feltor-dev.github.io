@@ -1,7 +1,0 @@
-<map id="backend/tensor_traits_std.h" name="backend/tensor_traits_std.h">
-<area shape="rect" id="node4" href="$vector__categories_8h.html" title="vector_categories.h" alt="" coords="235,244,371,271"/>
-<area shape="rect" id="node6" href="$tensor__traits_8h.html" title="tensor_traits.h" alt="" coords="331,95,437,121"/>
-<area shape="rect" id="node5" href="$matrix__categories_8h.html" title="matrix_categories.h" alt="" coords="5,319,141,345"/>
-<area shape="rect" id="node9" href="$scalar__categories_8h.html" title="scalar_categories.h" alt="" coords="59,169,194,196"/>
-<area shape="rect" id="node10" href="$execution__policy_8h.html" title="execution_policy.h" alt="" coords="517,169,648,196"/>
-</map>

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['nc_5ferror',['NC_Error',['../structfile_1_1_n_c___error.html',1,'file::NC_Error'],['../structfile_1_1_n_c___error.html#af6ea2424a203866b70e471cd9bc000b2',1,'file::NC_Error::NC_Error()']]],
-  ['nc_5ferror_5fhandle',['NC_Error_Handle',['../structfile_1_1_n_c___error___handle.html',1,'file']]],
-  ['nc_5futilities_2eh',['nc_utilities.h',['../nc__utilities_8h.html',1,'']]]
+  ['operator_28_29',['operator()',['../structfile_1_1_n_c___error___handle.html#a8bd5f4e0fc6b1ae522661e7bafecba77',1,'file::NC_Error_Handle']]],
+  ['operator_3d',['operator=',['../structfile_1_1_n_c___error___handle.html#a6c78ea299668625bf11bdb0493be26f0',1,'file::NC_Error_Handle']]]
 ];

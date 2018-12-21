@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
-<title>ExBLAS: accumulate.cuh File Reference</title>
+<title>Extension: ExBLAS: accumulate.cuh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,9 +31,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">ExBLAS
+   <div id="projectname">Extension: ExBLAS
    </div>
-   <div id="projectbrief">feltor adaption of the exblas library</div>
+   <div id="projectbrief">Adaption of the exblas library (included in &quot;dg/algorithm.h&quot;)</div>
   </td>
  </tr>
  </tbody>
@@ -79,14 +79,13 @@ $(function() {
 
 <p>The CUDA version of <a class="el" href="accumulate_8h.html" title="Primitives for accumulation into superaccumulator. ">accumulate.h</a>.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="config_8h_source.html">config.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;config.h&quot;</code><br />
 <code>#include &quot;mylibm.cuh&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for accumulate.cuh:</div>
 <div class="dyncontent">
 <div class="center"><img src="accumulate_8cuh__incl.png" border="0" usemap="#accumulate_8cuh" alt=""/></div>
 <map name="accumulate_8cuh" id="accumulate_8cuh">
-<area shape="rect" id="node2" href="config_8h.html" title="Configuration of superaccumulators. " alt="" coords="86,80,154,107"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -109,14 +108,6 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a908987c09b7bce3b9d33bd905e21caf3"><td class="memTemplParams" colspan="2"><a id="a908987c09b7bce3b9d33bd905e21caf3"></a>
-template&lt;class T &gt; </td></tr>
-<tr class="memitem:a908987c09b7bce3b9d33bd905e21caf3"><td class="memTemplItemLeft" align="right" valign="top">static __device__ double&#160;</td><td class="memTemplItemRight" valign="bottom"><b>exblas::gpu::get_element</b> (T x, int i)</td></tr>
-<tr class="separator:a908987c09b7bce3b9d33bd905e21caf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a302cefb4778209cf1b0acc8a5f35a1b3"><td class="memTemplParams" colspan="2"><a id="a302cefb4778209cf1b0acc8a5f35a1b3"></a>
-template&lt;class T &gt; </td></tr>
-<tr class="memitem:a302cefb4778209cf1b0acc8a5f35a1b3"><td class="memTemplItemLeft" align="right" valign="top">static __device__ double&#160;</td><td class="memTemplItemRight" valign="bottom"><b>exblas::gpu::get_element</b> (T *x, int i)</td></tr>
-<tr class="separator:a302cefb4778209cf1b0acc8a5f35a1b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ce4483a8e61941fc3670e59f0a853aa"><td class="memItemLeft" align="right" valign="top">static __device__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas_1_1gpu.html#a0ce4483a8e61941fc3670e59f0a853aa">exblas::gpu::Accumulate</a> (int64_t *accumulator, double x, int stride=1)</td></tr>
 <tr class="memdesc:a0ce4483a8e61941fc3670e59f0a853aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accumulate a double to the superaccumulator (GPU version)  <a href="namespaceexblas_1_1gpu.html#a0ce4483a8e61941fc3670e59f0a853aa">More...</a><br /></td></tr>
 <tr class="separator:a0ce4483a8e61941fc3670e59f0a853aa"><td class="memSeparator" colspan="2">&#160;</td></tr>

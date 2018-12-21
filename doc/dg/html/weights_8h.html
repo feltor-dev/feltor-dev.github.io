@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
-<title>Discontinuous Galerkin Library: geometry/weights.h File Reference</title>
+<title>Discontinuous Galerkin Library: topology/weights.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -104,54 +104,11 @@ $(document).ready(function(){initNavTree('weights_8h.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>contains creation functions for integration weights and their inverse  
+<p>Creation functions for integration weights and their inverse.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;thrust/host_vector.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="grid_8h_source.html">grid.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="enums_8h_source.html">../enums.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for weights.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="weights_8h__incl.png" border="0" usemap="#geometry_2weights_8h" alt=""/></div>
-<map name="geometry_2weights_8h" id="geometry_2weights_8h">
-<area shape="rect" id="node3" href="grid_8h.html" title="base topology classes " alt="" coords="319,80,374,107"/>
-<area shape="rect" id="node15" href="enums_8h.html" title="enums " alt="" coords="591,155,675,181"/>
-<area shape="rect" id="node6" href="topological__traits_8h.html" title="topological_traits.h" alt="" coords="341,155,472,181"/>
-<area shape="rect" id="node7" href="dlt_8h.html" title="contains the discrete legendre trafo class " alt="" coords="497,155,543,181"/>
-<area shape="rect" id="node12" href="exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="574,229,741,256"/>
-</map>
-</div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="weights_8h__dep__incl.png" border="0" usemap="#geometry_2weights_8hdep" alt=""/></div>
-<map name="geometry_2weights_8hdep" id="geometry_2weights_8hdep">
-<area shape="rect" id="node2" href="average_8h.html" title="contains classes for poloidal and toroidal average computations. " alt="" coords="5,80,143,107"/>
-<area shape="rect" id="node4" href="mpi__weights_8h.html" title="contains MPI weights " alt="" coords="167,80,331,107"/>
-<area shape="rect" id="node5" href="geometry_8h.html" title="geometry/geometry.h" alt="" coords="587,229,732,256"/>
-<area shape="rect" id="node12" href="dx_8h.html" title="Simple 1d derivatives. " alt="" coords="576,80,681,107"/>
-<area shape="rect" id="node17" href="weights_x_8h.html" title="contains creation functions for integration weights and their inverse on X&#45;point topology ..." alt="" coords="355,80,500,107"/>
-<area shape="rect" id="node19" href="projection_8h.html" title="contains creation of projection matrices " alt="" coords="1233,229,1379,256"/>
-<area shape="rect" id="node24" href="refined__grid_8h.html" title="geometry/refined_grid.h" alt="" coords="705,80,864,107"/>
-<area shape="rect" id="node25" href="transform_8h.html" title="geometry/transform.h" alt="" coords="767,155,914,181"/>
-<area shape="rect" id="node3" href="average__mpi_8h.html" title="contains classes for poloidal and toroidal average computations. " alt="" coords="43,155,209,181"/>
-<area shape="rect" id="node6" href="algorithm_8h.html" title="algorithm.h" alt="" coords="616,453,703,480"/>
-<area shape="rect" id="node7" href="elliptic_8h.html" title="General negative elliptic operators. " alt="" coords="709,304,780,331"/>
-<area shape="rect" id="node10" href="arakawa_8h.html" title="object for computation of Poisson bracket " alt="" coords="909,304,991,331"/>
-<area shape="rect" id="node11" href="poisson_8h.html" title="poisson.h" alt="" coords="804,304,883,331"/>
-<area shape="rect" id="node8" href="helmholtz_8h.html" title="contains Helmholtz and Maxwell operators " alt="" coords="699,379,788,405"/>
-<area shape="rect" id="node9" href="refined__elliptic_8h.html" title="contains an elliptic method on a refined grid " alt="" coords="1097,379,1213,405"/>
-<area shape="rect" id="node13" href="derivatives_8h.html" title="Convenience functions to create 2D derivatives. " alt="" coords="938,155,1093,181"/>
-<area shape="rect" id="node15" href="dx_x_8h.html" title="Simple 1d derivatives on X&#45;point topology. " alt="" coords="386,155,501,181"/>
-<area shape="rect" id="node14" href="mpi__derivatives_8h.html" title="geometry/mpi_derivatives.h" alt="" coords="859,229,1041,256"/>
-<area shape="rect" id="node16" href="derivatives_x_8h.html" title="Convenience functions to create 2D derivatives on X&#45;point topology. " alt="" coords="393,229,555,256"/>
-<area shape="rect" id="node18" href="refined__grid_x_8h.html" title="geometry/refined_gridX.h" alt="" coords="576,155,743,181"/>
-<area shape="rect" id="node20" href="fast__interpolation_8h.html" title="contains a matrix type for fast interpolations/projections " alt="" coords="1417,304,1608,331"/>
-<area shape="rect" id="node22" href="mpi__projection_8h.html" title="Useful MPI typedefs and overloads of interpolation and projection. " alt="" coords="1219,304,1393,331"/>
-<area shape="rect" id="node23" href="projection_x_8h.html" title="contains creation of projection matrices for X point topology " alt="" coords="1519,379,1675,405"/>
-<area shape="rect" id="node21" href="multigrid_8h.html" title="multigrid.h" alt="" coords="1314,379,1397,405"/>
-</map>
-</div>
 </div>
 <p><a href="weights_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -200,14 +157,14 @@ Functions</h2></td></tr>
 <tr class="separator:gad8cd595e5a376727cc749717f019e094"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>contains creation functions for integration weights and their inverse </p>
+<div class="textblock"><p>Creation functions for integration weights and their inverse. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_e3380d2178455503f266746fb14246a5.html">geometry</a></li><li class="navelem"><a class="el" href="weights_8h.html">weights.h</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
+    <li class="navelem"><a class="el" href="dir_84497794bb37d283dbd68163bed8ef05.html">topology</a></li><li class="navelem"><a class="el" href="weights_8h.html">weights.h</a></li>
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

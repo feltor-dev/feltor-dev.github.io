@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -100,11 +100,11 @@ $(document).ready(function(){initNavTree('functions_func_i.html','');});
 
 <h3><a id="index_i"></a>- i -</h3><ul>
 <li>idx()
-: <a class="el" href="structdg_1_1_sparse_tensor.html#a3c14083d5108f5d4d5feea5416c55ff7">dg::SparseTensor&lt; T &gt;</a>
+: <a class="el" href="structdg_1_1_sparse_tensor.html#a360416d36b69a36180f095422e5ba3b5">dg::SparseTensor&lt; container &gt;</a>
 </li>
 <li>init()
-: <a class="el" href="structdg_1_1_a_b.html#aa1b08f9aa38b33ebb057262c1bc05f90">dg::AB&lt; k, ContainerType &gt;</a>
-, <a class="el" href="structdg_1_1_karniadakis.html#a911cf99d1aa7c4b5ef74ea08d8df9822">dg::Karniadakis&lt; ContainerType &gt;</a>
+: <a class="el" href="structdg_1_1_adams_bashforth.html#a0c96dc12b2d7616d2e8dab3ac929638e">dg::AdamsBashforth&lt; ContainerType &gt;</a>
+, <a class="el" href="structdg_1_1_karniadakis.html#a196e06083071940efe4087db9a34022c">dg::Karniadakis&lt; ContainerType, SolverType &gt;</a>
 </li>
 <li>inner_matrix()
 : <a class="el" href="structdg_1_1_row_col_dist_mat.html#afdcfb2d5cac13f8964427d480341b5f4">dg::RowColDistMat&lt; LocalMatrixInner, LocalMatrixOuter, Collective &gt;</a>
@@ -124,13 +124,12 @@ $(document).ready(function(){initNavTree('functions_func_i.html','');});
 : <a class="el" href="structdg_1_1_cauchy.html#ab4cb7084297243f723ba1546bd46d9ab">dg::Cauchy</a>
 </li>
 <li>inv_weights()
-: <a class="el" href="classdg_1_1_elliptic.html#a308e983f69cda480dec152dcd812c145">dg::Elliptic&lt; Geometry, Matrix, container &gt;</a>
-, <a class="el" href="structdg_1_1_general_elliptic.html#a6d6787386138fbe7fae290df24a2df48">dg::GeneralElliptic&lt; Geometry, Matrix, container &gt;</a>
-, <a class="el" href="structdg_1_1_general_elliptic_sym.html#a857dd63c20186cb6613fe9417ba43300">dg::GeneralEllipticSym&lt; Geometry, Matrix, container &gt;</a>
-, <a class="el" href="structdg_1_1_helmholtz2.html#a6c584ab406059b8cba748208c8f088fb">dg::Helmholtz2&lt; Geometry, Matrix, container &gt;</a>
-, <a class="el" href="structdg_1_1_helmholtz.html#a5affb13e95e0d4a8d26a3f48bddbce08">dg::Helmholtz&lt; Geometry, Matrix, container &gt;</a>
-, <a class="el" href="classdg_1_1_refined_elliptic.html#ade3e9510ea653c56eef2854705c96d37">dg::RefinedElliptic&lt; Geometry, IMatrix, Matrix, container &gt;</a>
-, <a class="el" href="structdg_1_1_tensor_elliptic.html#aa15c9deb78152409a5de311fa2124aad">dg::TensorElliptic&lt; Geometry, Matrix, container &gt;</a>
+: <a class="el" href="classdg_1_1_elliptic3d.html#ad2cc23fe392c0adbd0f68e87214a1a88">dg::Elliptic3d&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="classdg_1_1_elliptic.html#a613ed76a58696ecdb18e4b24b0b6b352">dg::Elliptic&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_helmholtz2.html#a66dadf1b2ea023183a06e38b49312265">dg::Helmholtz2&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_helmholtz3d.html#a50c613f747cddaf6ea578b4011cebd73">dg::Helmholtz3d&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_helmholtz.html#a0ed40c1ed88521c0b62c2af280a642c9">dg::Helmholtz&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="classdg_1_1_refined_elliptic.html#a9540cef789c4143703f8b38ff0f2feb7">dg::RefinedElliptic&lt; Geometry, IMatrix, Matrix, Container &gt;</a>
 </li>
 <li>InvCoshXsq()
 : <a class="el" href="structdg_1_1_inv_cosh_xsq.html#ab62d44f245bfc5bf37c5afb3054ae021">dg::InvCoshXsq</a>
@@ -138,28 +137,24 @@ $(document).ready(function(){initNavTree('functions_func_i.html','');});
 <li>Invert()
 : <a class="el" href="structdg_1_1_invert.html#ad421714f956db8e011509d72c015d77b">dg::Invert&lt; ContainerType &gt;</a>
 </li>
+<li>Iris()
+: <a class="el" href="structdg_1_1_iris.html#a09896aad3771228af5307fc699aeee16">dg::Iris</a>
+</li>
 <li>isCommunicating()
 : <a class="el" href="structdg_1_1a_communicator.html#ab6da46a52184be235645f0194f22cdd2">dg::aCommunicator&lt; LocalContainer &gt;</a>
-, <a class="el" href="structdg_1_1_nearest_neighbor_comm.html#afda315212392b66d40083c09e73eb307">dg::NearestNeighborComm&lt; Index, Vector &gt;</a>
+, <a class="el" href="structdg_1_1_nearest_neighbor_comm.html#af4382fb4c96b288d55e062e64c235ada">dg::NearestNeighborComm&lt; Index, Buffer, Vector &gt;</a>
 </li>
-<li>isDense()
-: <a class="el" href="structdg_1_1_sparse_tensor.html#ae0c022eb771adbcb9cf1f2ace9edb0d5">dg::SparseTensor&lt; T &gt;</a>
+<li>isEmbedded()
+: <a class="el" href="structdg_1_1_butcher_tableau.html#a4a084e63ea537ec672a39269fde978d0">dg::ButcherTableau&lt; real_type &gt;</a>
 </li>
-<li>isDiagonal()
-: <a class="el" href="structdg_1_1_sparse_tensor.html#a356a09670a7bc0f650af7dc33b8d0110">dg::SparseTensor&lt; T &gt;</a>
+<li>isFsal()
+: <a class="el" href="structdg_1_1_butcher_tableau.html#a29976a04e3e2173c09e6fb2fc45ea593">dg::ButcherTableau&lt; real_type &gt;</a>
 </li>
-<li>isEmpty()
-: <a class="el" href="structdg_1_1_sparse_tensor.html#a6852009a7a381529ad829c092c66ce3f">dg::SparseTensor&lt; T &gt;</a>
+<li>isImplicit()
+: <a class="el" href="structdg_1_1_butcher_tableau.html#ac257734c8e914138c993ce916b934550">dg::ButcherTableau&lt; real_type &gt;</a>
 </li>
 <li>IslandXY()
 : <a class="el" href="structdg_1_1_island_x_y.html#aea020c0f8bbfff76caa5dad2692bf266">dg::IslandXY</a>
-</li>
-<li>isPerp()
-: <a class="el" href="structdg_1_1_sparse_tensor.html#aa33a8cd08db5dbcfcf473816ae107809">dg::SparseTensor&lt; T &gt;</a>
-</li>
-<li>isSet()
-: <a class="el" href="structdg_1_1_sparse_element.html#a15ca94870cd9e05ee8f5a0dad979114b">dg::SparseElement&lt; T &gt;</a>
-, <a class="el" href="structdg_1_1_sparse_tensor.html#a6e004de4ce433c2a94a30e341cd4bb5d">dg::SparseTensor&lt; T &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -167,7 +162,7 @@ $(document).ready(function(){initNavTree('functions_func_i.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:50 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

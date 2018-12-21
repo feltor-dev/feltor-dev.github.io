@@ -1,9 +1,11 @@
 var structdg_1_1_karniadakis =
 [
-    [ "real_type", "structdg_1_1_karniadakis.html#a1b7f645cc16714088580aea97907e42a", null ],
-    [ "Karniadakis", "structdg_1_1_karniadakis.html#a1834706a3dafc21b402fdce1d8caf724", null ],
-    [ "Karniadakis", "structdg_1_1_karniadakis.html#a4fb6bd86147994d0a18162b5a09fd732", null ],
-    [ "construct", "structdg_1_1_karniadakis.html#a245f3fce2285a61607078db1e1ee9549", null ],
-    [ "init", "structdg_1_1_karniadakis.html#a911cf99d1aa7c4b5ef74ea08d8df9822", null ],
-    [ "step", "structdg_1_1_karniadakis.html#a010b975a49928be44d56f805f0b82ef6", null ]
+    [ "container_type", "structdg_1_1_karniadakis.html#a354eb528d7f7759ae89d04c6151412ac", null ],
+    [ "value_type", "structdg_1_1_karniadakis.html#a34eee3926acbade2f6951cb564715f61", null ],
+    [ "Karniadakis", "structdg_1_1_karniadakis.html#afe9153876603aa5f1a9e7f9ebb4ee8b4", null ],
+    [ "Karniadakis", "structdg_1_1_karniadakis.html#ab10fd32d59f572fa70b42fc48696a443", null ],
+    [ "construct", "structdg_1_1_karniadakis.html#af5a73be7840584f1c3c8ec4cb90b47c8", null ],
+    [ "copyable", "structdg_1_1_karniadakis.html#a1c0ec2a851a051d596ab696fc55a52e6", null ],
+    [ "init", "structdg_1_1_karniadakis.html#a196e06083071940efe4087db9a34022c", null ],
+    [ "step", "structdg_1_1_karniadakis.html#adbac938cf160ac8851f839aacdb9e8a1", null ]
 ];

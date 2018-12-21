@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -118,7 +118,7 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0f9c525a987ea24d60acd942cb5a4f1c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_m_p_i___vector.html#a0f9c525a987ea24d60acd942cb5a4f1c">MPI_Vector</a> ()</td></tr>
-<tr class="memdesc:a0f9c525a987ea24d60acd942cb5a4f1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">no data is allocated, communicator is MPI_COMM_WORLD  <a href="#a0f9c525a987ea24d60acd942cb5a4f1c">More...</a><br /></td></tr>
+<tr class="memdesc:a0f9c525a987ea24d60acd942cb5a4f1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">no data is allocated, communicators are <code>MPI_COMM_NULL</code>  <a href="#a0f9c525a987ea24d60acd942cb5a4f1c">More...</a><br /></td></tr>
 <tr class="separator:a0f9c525a987ea24d60acd942cb5a4f1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab79c8907a64d91971c63f1542df07f04"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_m_p_i___vector.html#ab79c8907a64d91971c63f1542df07f04">MPI_Vector</a> (const container &amp;<a class="el" href="structdg_1_1_m_p_i___vector.html#a0148f868581043d706b690f5a22cd236">data</a>, MPI_Comm comm)</td></tr>
 <tr class="memdesc:ab79c8907a64d91971c63f1542df07f04"><td class="mdescLeft">&#160;</td><td class="mdescRight">construct a vector  <a href="#ab79c8907a64d91971c63f1542df07f04">More...</a><br /></td></tr>
@@ -142,9 +142,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab0d4fab5307f188d3ac9256e45e54646"><td class="memItemLeft" align="right" valign="top">MPI_Comm&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_m_p_i___vector.html#ab0d4fab5307f188d3ac9256e45e54646">communicator_mod_reduce</a> () const</td></tr>
 <tr class="memdesc:ab0d4fab5307f188d3ac9256e45e54646"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a communicator consisting of all processes with rank 0 in <code><a class="el" href="structdg_1_1_m_p_i___vector.html#a888b92389a999dbbe0f6151fa657d3b9" title="Returns a communicator of fixed size 128. ">communicator_mod()</a></code>  <a href="#ab0d4fab5307f188d3ac9256e45e54646">More...</a><br /></td></tr>
 <tr class="separator:ab0d4fab5307f188d3ac9256e45e54646"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca96f102ec953e04b5fd0151bdf17b1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_m_p_i___vector.html#aca96f102ec953e04b5fd0151bdf17b1b">set_communicator</a> (MPI_Comm comm)</td></tr>
-<tr class="memdesc:aca96f102ec953e04b5fd0151bdf17b1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the communicator to which this vector belongs.  <a href="#aca96f102ec953e04b5fd0151bdf17b1b">More...</a><br /></td></tr>
-<tr class="separator:aca96f102ec953e04b5fd0151bdf17b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2442299b7209bebfc668cedb7ecce42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_m_p_i___vector.html#ac2442299b7209bebfc668cedb7ecce42">set_communicator</a> (MPI_Comm comm, MPI_Comm comm_mod, MPI_Comm comm_mod_reduce)</td></tr>
+<tr class="memdesc:ac2442299b7209bebfc668cedb7ecce42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the communicators with <code><a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/namespaceexblas.html#a0b5cd15f02ce8ac7c0a18d7a0691c2e8">exblas::mpi_reduce_communicator</a></code>.  <a href="#ac2442299b7209bebfc668cedb7ecce42">More...</a><br /></td></tr>
+<tr class="separator:ac2442299b7209bebfc668cedb7ecce42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adec1137c3cdb2954fb55dfc180cb3ccd"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_m_p_i___vector.html#adec1137c3cdb2954fb55dfc180cb3ccd">size</a> () const</td></tr>
 <tr class="memdesc:adec1137c3cdb2954fb55dfc180cb3ccd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the size of the data object.  <a href="#adec1137c3cdb2954fb55dfc180cb3ccd">More...</a><br /></td></tr>
 <tr class="separator:adec1137c3cdb2954fb55dfc180cb3ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -207,7 +207,7 @@ template&lt;class container&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>no data is allocated, communicator is MPI_COMM_WORLD </p>
+<p>no data is allocated, communicators are <code>MPI_COMM_NULL</code> </p>
 
 </div>
 </div>
@@ -248,10 +248,10 @@ template&lt;class container&gt; </div>
 </div><div class="memdoc">
 
 <p>construct a vector </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>calls <code><a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/namespaceexblas.html#a0b5cd15f02ce8ac7c0a18d7a0691c2e8">exblas::mpi_reduce_communicator()</a></code> (collective call) </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>internal data copy </td></tr>
-    <tr><td class="paramname">comm</td><td>MPI communicator </td></tr>
+    <tr><td class="paramname">comm</td><td>MPI communicator (may not be <code>MPI_COMM_NULL</code>) </td></tr>
   </table>
   </dd>
 </dl>
@@ -452,8 +452,8 @@ template&lt;class container&gt; </div>
 
 </div>
 </div>
-<a id="aca96f102ec953e04b5fd0151bdf17b1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca96f102ec953e04b5fd0151bdf17b1b">&#9670;&nbsp;</a></span>set_communicator()</h2>
+<a id="ac2442299b7209bebfc668cedb7ecce42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2442299b7209bebfc668cedb7ecce42">&#9670;&nbsp;</a></span>set_communicator()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -467,8 +467,24 @@ template&lt;class container&gt; </div>
           <td class="memname">void <a class="el" href="structdg_1_1_m_p_i___vector.html">dg::MPI_Vector</a>&lt; container &gt;::set_communicator </td>
           <td>(</td>
           <td class="paramtype">MPI_Comm&#160;</td>
-          <td class="paramname"><em>comm</em></td><td>)</td>
+          <td class="paramname"><em>comm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">MPI_Comm&#160;</td>
+          <td class="paramname"><em>comm_mod</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MPI_Comm&#160;</td>
+          <td class="paramname"><em>comm_mod_reduce</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -478,7 +494,7 @@ template&lt;class container&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Set the communicator to which this vector belongs. </p>
+<p>Set the communicators with <code><a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/namespaceexblas.html#a0b5cd15f02ce8ac7c0a18d7a0691c2e8">exblas::mpi_reduce_communicator</a></code>. </p>
 
 </div>
 </div>
@@ -557,7 +573,7 @@ template&lt;class container&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:50 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

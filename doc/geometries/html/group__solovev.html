@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
-<title>Geometries: The solovev magnetic field</title>
+<title>Extension: Geometries: The solovev magnetic field</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -44,9 +44,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Geometries
+   <div id="projectname">Extension: Geometries
    </div>
-   <div id="projectbrief">Extension with magnetic flux functions, grids and grid generators</div>
+   <div id="projectbrief">Magnetic flux functions, parallel derivatives and new grids and grid generators in &quot;dg/geometries/geometries.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -172,65 +172,89 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gabf3dc35f257d294b5df5236e85a42fb2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl2.html">dg::geo::BinaryFunctorsLvl2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__solovev.html#gabf3dc35f257d294b5df5236e85a42fb2">dg::geo::solovev::createPsip</a> (<a class="el" href="structdg_1_1geo_1_1solovev_1_1_parameters.html">Parameters</a> gp)</td></tr>
-<tr class="separator:gabf3dc35f257d294b5df5236e85a42fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac26e8e0eb7617b304f61bb1038b22ef8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl1.html">dg::geo::BinaryFunctorsLvl1</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__solovev.html#gac26e8e0eb7617b304f61bb1038b22ef8">dg::geo::solovev::createIpol</a> (<a class="el" href="structdg_1_1geo_1_1solovev_1_1_parameters.html">Parameters</a> gp)</td></tr>
-<tr class="separator:gac26e8e0eb7617b304f61bb1038b22ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga48a224d8779049a93e97a2fd348ad481"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__solovev.html#ga48a224d8779049a93e97a2fd348ad481">dg::geo::solovev::createMagField</a> (<a class="el" href="structdg_1_1geo_1_1solovev_1_1_parameters.html">Parameters</a> gp)</td></tr>
-<tr class="separator:ga48a224d8779049a93e97a2fd348ad481"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafeb61fe925c670850a85b4c3ee9cb390"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structdg_1_1geo_1_1_cylindrical_functors_lvl2.html">dg::geo::CylindricalFunctorsLvl2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__solovev.html#gafeb61fe925c670850a85b4c3ee9cb390">dg::geo::solovev::createPsip</a> (<a class="el" href="structdg_1_1geo_1_1solovev_1_1_parameters.html">Parameters</a> gp)</td></tr>
+<tr class="separator:gafeb61fe925c670850a85b4c3ee9cb390"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6808a16f5d40c82d590048388bc7361a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structdg_1_1geo_1_1_cylindrical_functors_lvl1.html">dg::geo::CylindricalFunctorsLvl1</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__solovev.html#ga6808a16f5d40c82d590048388bc7361a">dg::geo::solovev::createIpol</a> (<a class="el" href="structdg_1_1geo_1_1solovev_1_1_parameters.html">Parameters</a> gp)</td></tr>
+<tr class="separator:ga6808a16f5d40c82d590048388bc7361a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad3675f715472ee97a6c3133905bb3697"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__solovev.html#gad3675f715472ee97a6c3133905bb3697">dg::geo::solovev::createMagField</a> (<a class="el" href="structdg_1_1geo_1_1solovev_1_1_parameters.html">Parameters</a> gp)</td></tr>
+<tr class="separator:gad3675f715472ee97a6c3133905bb3697"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gac26e8e0eb7617b304f61bb1038b22ef8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac26e8e0eb7617b304f61bb1038b22ef8">&#9670;&nbsp;</a></span>createIpol()</h2>
+<a id="ga6808a16f5d40c82d590048388bc7361a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6808a16f5d40c82d590048388bc7361a">&#9670;&nbsp;</a></span>createIpol()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl1.html">dg::geo::BinaryFunctorsLvl1</a> dg::geo::solovev::createIpol </td>
+          <td class="memname">static <a class="el" href="structdg_1_1geo_1_1_cylindrical_functors_lvl1.html">dg::geo::CylindricalFunctorsLvl1</a> dg::geo::solovev::createIpol </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structdg_1_1geo_1_1solovev_1_1_parameters.html">Parameters</a>&#160;</td>
           <td class="paramname"><em>gp</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ga48a224d8779049a93e97a2fd348ad481"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga48a224d8779049a93e97a2fd348ad481">&#9670;&nbsp;</a></span>createMagField()</h2>
+<a id="gad3675f715472ee97a6c3133905bb3697"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad3675f715472ee97a6c3133905bb3697">&#9670;&nbsp;</a></span>createMagField()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a> dg::geo::solovev::createMagField </td>
+          <td class="memname">static <a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a> dg::geo::solovev::createMagField </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structdg_1_1geo_1_1solovev_1_1_parameters.html">Parameters</a>&#160;</td>
           <td class="paramname"><em>gp</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="gabf3dc35f257d294b5df5236e85a42fb2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabf3dc35f257d294b5df5236e85a42fb2">&#9670;&nbsp;</a></span>createPsip()</h2>
+<a id="gafeb61fe925c670850a85b4c3ee9cb390"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafeb61fe925c670850a85b4c3ee9cb390">&#9670;&nbsp;</a></span>createPsip()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdg_1_1geo_1_1_binary_functors_lvl2.html">dg::geo::BinaryFunctorsLvl2</a> dg::geo::solovev::createPsip </td>
+          <td class="memname">static <a class="el" href="structdg_1_1geo_1_1_cylindrical_functors_lvl2.html">dg::geo::CylindricalFunctorsLvl2</a> dg::geo::solovev::createPsip </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structdg_1_1geo_1_1solovev_1_1_parameters.html">Parameters</a>&#160;</td>
           <td class="paramname"><em>gp</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -240,7 +264,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Aug 28 2018 23:03:04 for Geometries by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:57 for Extension: Geometries by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

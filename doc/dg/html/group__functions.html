@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -97,7 +97,8 @@ $(document).ready(function(){initNavTree('group__functions.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Functions and Functors<div class="ingroups"><a class="el" href="group__misc.html">Level 0: Miscellaneous additions</a></div></div>  </div>
 </div><!--header-->
@@ -115,13 +116,13 @@ Collaboration diagram for Functions and Functors:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_abs_max.html">dg::AbsMax&lt; T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor for the absolute maximum </p><p class="formulaDsp">
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Absolute maximum </p><p class="formulaDsp">
 \[ f(x,y) = \max(|x|,|y|)\]
 </p>
 <p>.  <a href="structdg_1_1_abs_max.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_abs_min.html">dg::AbsMin&lt; T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor for the absolute maximum </p><p class="formulaDsp">
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Absolute minimum </p><p class="formulaDsp">
 \[ f(x,y) = \min(|x|,|y|)\]
 </p>
 <p>.  <a href="structdg_1_1_abs_min.html#details">More...</a><br /></td></tr>
@@ -145,121 +146,136 @@ Classes</h2></td></tr>
 <p>.  <a href="structdg_1_1_gaussian3d.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_gaussian_x.html">dg::GaussianX</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor returning a gaussian in x-direction </p><p class="formulaDsp">
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="structdg_1_1_gaussian.html" title="Functor returning a gaussian . ">Gaussian</a> in x-direction </p><p class="formulaDsp">
 \[ f(x,y) = Ae^{-\frac{(x-x_0)^2}{2\sigma_x^2} } \]
 </p>
 <p>.  <a href="structdg_1_1_gaussian_x.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_gaussian_y.html">dg::GaussianY</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor returning a gaussian in y-direction </p><p class="formulaDsp">
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="structdg_1_1_gaussian.html" title="Functor returning a gaussian . ">Gaussian</a> in y-direction </p><p class="formulaDsp">
 \[ f(x,y) = Ae^{-\frac{(y-y_0)^2}{2\sigma_y^2}} \]
 </p>
 <p>.  <a href="structdg_1_1_gaussian_y.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_gaussian_z.html">dg::GaussianZ</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor returning a gaussian in z-direction </p><p class="formulaDsp">
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="structdg_1_1_gaussian.html" title="Functor returning a gaussian . ">Gaussian</a> in z-direction </p><p class="formulaDsp">
 \[ f(x,y,z) = Ae^{-\frac{(z-z_0)^2}{2\sigma_z^2}} \]
 </p>
 <p>.  <a href="structdg_1_1_gaussian_z.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_island_x_y.html">dg::IslandXY</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor for Island </p><p class="formulaDsp">
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Island function </p><p class="formulaDsp">
 \[ f(x,y) = \lambda \ln{(\cosh{(x/\lambda) } +\epsilon \cos(y/\lambda)) } \]
 </p>
 <p>.  <a href="structdg_1_1_island_x_y.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_sin_x_sin_y.html">dg::SinXSinY</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor for a sin prof in x and y-direction </p><p class="formulaDsp">
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A sin prof in x and y-direction </p><p class="formulaDsp">
 \[ f(x,y) =B+ A \sin(k_x x) \sin(k_y y) \]
 </p>
 <p>.  <a href="structdg_1_1_sin_x_sin_y.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_cos_x_cos_y.html">dg::CosXCosY</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor for a cos prof in x and y-direction </p><p class="formulaDsp">
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A cos prof in x and y-direction </p><p class="formulaDsp">
 \[ f(x,y) =B+ A \cos(k_x x) \cos(k_y y) \]
 </p>
 <p>.  <a href="structdg_1_1_cos_x_cos_y.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_sin_x_cos_y.html">dg::SinXCosY</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor for a sin prof in x- and and cos prof in y-direction </p><p class="formulaDsp">
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A sin prof in x- and cos prof in y-direction </p><p class="formulaDsp">
 \[ f(x,y) =B+ A \sin(k_x x) \cos(k_y y) \]
 </p>
 <p>.  <a href="structdg_1_1_sin_x_cos_y.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_sin_x.html">dg::SinX</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor for a sin prof in x-direction </p><p class="formulaDsp">
-\[ f(x,y) =B+ A \sin(k_x x) \]
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A sin prof in x-direction </p><p class="formulaDsp">
+\[ f(x) = f(x,y) = f(x,y,z) =B+ A \sin(k_x x) \]
 </p>
 <p>.  <a href="structdg_1_1_sin_x.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_sin_y.html">dg::SinY</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor for a sin prof in y-direction </p><p class="formulaDsp">
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A sin prof in y-direction </p><p class="formulaDsp">
 \[ f(x,y) =B+ A \sin(k_y y) \]
 </p>
 <p>.  <a href="structdg_1_1_sin_y.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_cos_y.html">dg::CosY</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor for a sin prof in x-direction </p><p class="formulaDsp">
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A sin prof in x-direction </p><p class="formulaDsp">
 \[ f(x,y) =B+ A \cos(k_y y) \]
 </p>
 <p>.  <a href="structdg_1_1_cos_y.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_inv_cosh_xsq.html">dg::InvCoshXsq</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor for a sin prof in x and y-direction </p><p class="formulaDsp">
-\[ f(x,y) =B+ A \sin(k_x x) \sin(k_y y) \]
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inverse cosh profile </p><p class="formulaDsp">
+\[ f(x,y) =A/\cosh^2(k_x x) \]
 </p>
 <p>.  <a href="structdg_1_1_inv_cosh_xsq.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_sin_prof_x.html">dg::SinProfX</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor for a sin prof in x-direction </p><p class="formulaDsp">
-\[ f(x,y) = B + A(1-\sin(k_xx )) \]
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sin prof in x-direction </p><p class="formulaDsp">
+\[ f(x) = f(x,y) = f(x,y,z) = B + A(1 - \sin(k_xx )) \]
 </p>
 <p>.  <a href="structdg_1_1_sin_prof_x.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_exp_prof_x.html">dg::ExpProfX</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor for a exp prof in x-direction </p><p class="formulaDsp">
-\[ f(x,y) = B + A\exp(-x/L_n) \]
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exp prof in x-direction </p><p class="formulaDsp">
+\[ f(x) = f(x,y) = f(x,y,z) = B + A\exp(-x/L_n) \]
 </p>
 <p>.  <a href="structdg_1_1_exp_prof_x.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_linear_x.html">dg::LinearX</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor for a linear polynomial in x-direction </p><p class="formulaDsp">
-\[ f(x,y) = ax+b \]
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A linear function in x-direction </p><p class="formulaDsp">
+\[ f(x) = f(x,y) = f(x,y,z) = ax+b \]
 </p>
 <p>.  <a href="structdg_1_1_linear_x.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_linear_y.html">dg::LinearY</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor for a linear polynomial in y-direction </p><p class="formulaDsp">
-\[ f(x,y) = ay+b \]
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A linear polynomial in y-direction </p><p class="formulaDsp">
+\[ f(x,y) = f(x,y,z) = ay+b \]
 </p>
 <p>.  <a href="structdg_1_1_linear_y.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_linear_z.html">dg::LinearZ</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor for a linear polynomial in z-direction </p><p class="formulaDsp">
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A linear function in z-direction </p><p class="formulaDsp">
 \[ f(x,y,z) = az+b \]
 </p>
 <p>.  <a href="structdg_1_1_linear_z.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_iris.html">dg::Iris</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zero outside psimax and inside psimin, otherwise 1 </p><p class="formulaDsp">
+\[ \begin{cases} 1 \text{ if } \psi_{\min} &lt; \psi &lt; \psi_{\max}\\ 0 \text{ else} \end{cases}\]
+</p>
+<p>.  <a href="structdg_1_1_iris.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_pupil.html">dg::Pupil</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zero outside psimax, otherwise 1 </p><p class="formulaDsp">
+\[ \begin{cases} 0 \text{ if } \psi &gt; \psi_{\max} \\ 1 \text{ else} \end{cases}\]
+</p>
+<p>.  <a href="structdg_1_1_pupil.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_psi_pupil.html">dg::PsiPupil</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Psi inside psimax and psimax outside psimax </p><p class="formulaDsp">
+\[ \begin{cases} \psi_{\max} \text{ if } \psi &gt; \psi_{\max} \\ \psi \text{ else} \end{cases}\]
+</p>
+<p>.  <a href="structdg_1_1_psi_pupil.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_heaviside.html">dg::Heaviside</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zero up to psimax, then one </p><p class="formulaDsp">
+\[ \begin{cases} 1 \text{ if } \psi &gt; \psi_{\max} \\ 0 \text{ else} \end{cases}\]
+</p>
+<p>.  <a href="structdg_1_1_heaviside.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_gaussian_damping.html">dg::GaussianDamping</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">One up to <code>psimax</code>, then a <a class="el" href="structdg_1_1_gaussian.html" title="Functor returning a gaussian . ">Gaussian</a> down to zero </p><p class="formulaDsp">
+\[ \begin{cases} 1 \text{ if } \psi &lt; \psi_{\max}\\ 0 \text{ if } \psi &gt; (\psi_{\max} + 4\alpha) \\ \exp\left( - \frac{(\psi - \psi_{\max})^2}{2\alpha^2}\right), \text{ else} \end{cases} \]
+</p>
+<p>.  <a href="structdg_1_1_gaussian_damping.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_tanh_prof_x.html">dg::TanhProfX</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor for a step function using tanh </p><p class="formulaDsp">
-\[ f(x,y) = 0.5 profamp(1+ sign \tanh((x-x_b)/width ) )+bgampg \]
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Step function using tanh </p><p class="formulaDsp">
+\[ f(x) = B + 0.5 A(1+ \text{sign} \tanh((x-x_b)/\alpha ) ) \]
 </p>
 <p>.  <a href="structdg_1_1_tanh_prof_x.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_lamb.html">dg::Lamb</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor returning a <a class="el" href="structdg_1_1_lamb.html" title="Functor returning a Lamb dipole . ">Lamb</a> dipole </p><p class="formulaDsp">
-\[ f(x,y) = \begin{cases} 2\lambda U J_1(\lambda r) / J_0(\gamma)\cos(\theta) \text{ for } r&lt;R \\ 0 \text{ else} \end{cases} \]
-</p>
-<p>.  <a href="structdg_1_1_lamb.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_vortex.html">dg::Vortex</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a 2d vortex function </p><p class="formulaDsp">
-\[f(x,y) =\begin{cases} \frac{u_d}{1.2965125} \left( r\left(1+\frac{\beta_i^2}{g_i^2}\right) - R \frac{\beta_i^2}{g_i^2} \frac{J_1(g_ir/R)}{J_1(g_i)}\right)\cos(\theta) \text{ if } r &lt; R \\ \frac{u_d}{1.2965125} R \frac{K_1(\beta_i {r}/{R})}{K_1(\beta)} \cos(\theta) \text{ else } \end{cases} \]
-</p>
-<p>.  <a href="structdg_1_1_vortex.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_bath_r_z.html">dg::BathRZ</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes a random bath in the RZ plane.  <a href="structdg_1_1_bath_r_z.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_e_x_p.html">dg::EXP&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exponential </p><p class="formulaDsp">
@@ -333,6 +349,21 @@ Classes</h2></td></tr>
 </p>
 <p>.  <a href="structdg_1_1_z_e_r_o.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_lamb.html">dg::Lamb</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor returning a <a class="el" href="structdg_1_1_lamb.html" title="Functor returning a Lamb dipole . ">Lamb</a> dipole </p><p class="formulaDsp">
+\[ f(x,y) = \begin{cases} 2\lambda U J_1(\lambda r) / J_0(\gamma)\cos(\theta) \text{ for } r&lt;R \\ 0 \text{ else} \end{cases} \]
+</p>
+<p>.  <a href="structdg_1_1_lamb.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_vortex.html">dg::Vortex</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a 2d vortex function </p><p class="formulaDsp">
+\[f(x,y) =\begin{cases} \frac{u_d}{1.2965125} \left( r\left(1+\frac{\beta_i^2}{g_i^2}\right) - R \frac{\beta_i^2}{g_i^2} \frac{J_1(g_ir/R)}{J_1(g_i)}\right)\cos(\theta) \text{ if } r &lt; R \\ \frac{u_d}{1.2965125} R \frac{K_1(\beta_i {r}/{R})}{K_1(\beta)} \cos(\theta) \text{ else } \end{cases} \]
+</p>
+<p>.  <a href="structdg_1_1_vortex.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_bath_r_z.html">dg::BathRZ</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes a random bath in the RZ plane.  <a href="structdg_1_1_bath_r_z.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_histogram.html">dg::Histogram&lt; container &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute a histogram on a 1D grid.  <a href="structdg_1_1_histogram.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -354,15 +385,881 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1divides__equals.html">dg::divides_equals</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( x/=y\)  <a href="structdg_1_1divides__equals.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_sum.html">dg::Sum</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ \sum_i x_i \]
+</p>
+  <a href="structdg_1_1_sum.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_pair_sum.html">dg::PairSum</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ \sum_i \alpha_i x_i \]
+</p>
+  <a href="structdg_1_1_pair_sum.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_embedded_pair_sum.html">dg::EmbeddedPairSum</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ y = \sum_i a_i x_i,\quad \tilde y = \sum_i \tilde a_i x_i \]
+</p>
+  <a href="structdg_1_1_embedded_pair_sum.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_triplet_sum.html">dg::TripletSum</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ \sum_i \alpha_i x_i y_i \]
+</p>
+  <a href="structdg_1_1_triplet_sum.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:gabab1bdc50508bd0f04f3cd0b45dd72e3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#gabab1bdc50508bd0f04f3cd0b45dd72e3">dg::one</a> (double x)</td></tr>
+<tr class="memdesc:gabab1bdc50508bd0f04f3cd0b45dd72e3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x) = 1\]
+</p>
+  <a href="group__functions.html#gabab1bdc50508bd0f04f3cd0b45dd72e3">More...</a><br /></td></tr>
+<tr class="separator:gabab1bdc50508bd0f04f3cd0b45dd72e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gada629959f5298f4221d35fd8cb880a0d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#gada629959f5298f4221d35fd8cb880a0d">dg::one</a> (double x, double y)</td></tr>
+<tr class="memdesc:gada629959f5298f4221d35fd8cb880a0d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y) = 1\]
+</p>
+  <a href="group__functions.html#gada629959f5298f4221d35fd8cb880a0d">More...</a><br /></td></tr>
+<tr class="separator:gada629959f5298f4221d35fd8cb880a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae7ba1400d58619bc271c6611acf5994b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#gae7ba1400d58619bc271c6611acf5994b">dg::one</a> (double x, double y, double z)</td></tr>
+<tr class="memdesc:gae7ba1400d58619bc271c6611acf5994b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y,z) = 1\]
+</p>
+  <a href="group__functions.html#gae7ba1400d58619bc271c6611acf5994b">More...</a><br /></td></tr>
+<tr class="separator:gae7ba1400d58619bc271c6611acf5994b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad1e45796f68232b124d0f5baea6fceca"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#gad1e45796f68232b124d0f5baea6fceca">dg::zero</a> (double x)</td></tr>
+<tr class="memdesc:gad1e45796f68232b124d0f5baea6fceca"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x) = 0\]
+</p>
+  <a href="group__functions.html#gad1e45796f68232b124d0f5baea6fceca">More...</a><br /></td></tr>
+<tr class="separator:gad1e45796f68232b124d0f5baea6fceca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad0bd961c4529039c4e651fc9e3901f60"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#gad0bd961c4529039c4e651fc9e3901f60">dg::zero</a> (double x, double y)</td></tr>
+<tr class="memdesc:gad0bd961c4529039c4e651fc9e3901f60"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y) = 0\]
+</p>
+  <a href="group__functions.html#gad0bd961c4529039c4e651fc9e3901f60">More...</a><br /></td></tr>
+<tr class="separator:gad0bd961c4529039c4e651fc9e3901f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6d27b092dcd9613c1c5eeaa1cf208e83"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga6d27b092dcd9613c1c5eeaa1cf208e83">dg::zero</a> (double x, double y, double z)</td></tr>
+<tr class="memdesc:ga6d27b092dcd9613c1c5eeaa1cf208e83"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y,z) = 0\]
+</p>
+  <a href="group__functions.html#ga6d27b092dcd9613c1c5eeaa1cf208e83">More...</a><br /></td></tr>
+<tr class="separator:ga6d27b092dcd9613c1c5eeaa1cf208e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga21055512458a88c314621a912fb1417f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga21055512458a88c314621a912fb1417f">dg::cooX1d</a> (double x)</td></tr>
+<tr class="memdesc:ga21055512458a88c314621a912fb1417f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x) = x\]
+</p>
+  <a href="group__functions.html#ga21055512458a88c314621a912fb1417f">More...</a><br /></td></tr>
+<tr class="separator:ga21055512458a88c314621a912fb1417f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadb49e10685e2bcdd8a27ef88f2857151"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#gadb49e10685e2bcdd8a27ef88f2857151">dg::cooX2d</a> (double x, double y)</td></tr>
+<tr class="memdesc:gadb49e10685e2bcdd8a27ef88f2857151"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y) = x\]
+</p>
+  <a href="group__functions.html#gadb49e10685e2bcdd8a27ef88f2857151">More...</a><br /></td></tr>
+<tr class="separator:gadb49e10685e2bcdd8a27ef88f2857151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd9ae95517a739c80452afc7fc9c36ae"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#gadd9ae95517a739c80452afc7fc9c36ae">dg::cooX3d</a> (double x, double y, double z)</td></tr>
+<tr class="memdesc:gadd9ae95517a739c80452afc7fc9c36ae"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y,z) = x\]
+</p>
+  <a href="group__functions.html#gadd9ae95517a739c80452afc7fc9c36ae">More...</a><br /></td></tr>
+<tr class="separator:gadd9ae95517a739c80452afc7fc9c36ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5aa995cf5e888c9ee1026b78f6f78cc5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga5aa995cf5e888c9ee1026b78f6f78cc5">dg::cooY2d</a> (double x, double y)</td></tr>
+<tr class="memdesc:ga5aa995cf5e888c9ee1026b78f6f78cc5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y) = y\]
+</p>
+  <a href="group__functions.html#ga5aa995cf5e888c9ee1026b78f6f78cc5">More...</a><br /></td></tr>
+<tr class="separator:ga5aa995cf5e888c9ee1026b78f6f78cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaafbff988d4cff4a0643e819b3f6962cc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#gaafbff988d4cff4a0643e819b3f6962cc">dg::cooY3d</a> (double x, double y, double z)</td></tr>
+<tr class="memdesc:gaafbff988d4cff4a0643e819b3f6962cc"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y,z) = y\]
+</p>
+  <a href="group__functions.html#gaafbff988d4cff4a0643e819b3f6962cc">More...</a><br /></td></tr>
+<tr class="separator:gaafbff988d4cff4a0643e819b3f6962cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga89a354d8268ca0f86486a93683fda7d4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga89a354d8268ca0f86486a93683fda7d4">dg::cooZ3d</a> (double x, double y, double z)</td></tr>
+<tr class="memdesc:ga89a354d8268ca0f86486a93683fda7d4"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y,z) = z\]
+</p>
+  <a href="group__functions.html#ga89a354d8268ca0f86486a93683fda7d4">More...</a><br /></td></tr>
+<tr class="separator:ga89a354d8268ca0f86486a93683fda7d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6157ca9bd4d2ffec4b6bd7c22ed073fe"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga6157ca9bd4d2ffec4b6bd7c22ed073fe">dg::one</a> (float x)</td></tr>
+<tr class="memdesc:ga6157ca9bd4d2ffec4b6bd7c22ed073fe"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x) = 1\]
+</p>
+  <a href="group__functions.html#ga6157ca9bd4d2ffec4b6bd7c22ed073fe">More...</a><br /></td></tr>
+<tr class="separator:ga6157ca9bd4d2ffec4b6bd7c22ed073fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga99d493917c25c36d4e82248fcebd7550"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga99d493917c25c36d4e82248fcebd7550">dg::one</a> (float x, float y)</td></tr>
+<tr class="memdesc:ga99d493917c25c36d4e82248fcebd7550"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y) = 1\]
+</p>
+  <a href="group__functions.html#ga99d493917c25c36d4e82248fcebd7550">More...</a><br /></td></tr>
+<tr class="separator:ga99d493917c25c36d4e82248fcebd7550"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabadfb8fdc2962f824d2b1fe1c0e73cd5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#gabadfb8fdc2962f824d2b1fe1c0e73cd5">dg::one</a> (float x, float y, float z)</td></tr>
+<tr class="memdesc:gabadfb8fdc2962f824d2b1fe1c0e73cd5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y,z) = 1\]
+</p>
+  <a href="group__functions.html#gabadfb8fdc2962f824d2b1fe1c0e73cd5">More...</a><br /></td></tr>
+<tr class="separator:gabadfb8fdc2962f824d2b1fe1c0e73cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga44292f31f77c0cad8a3d8e0a88c7840b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga44292f31f77c0cad8a3d8e0a88c7840b">dg::zero</a> (float x)</td></tr>
+<tr class="memdesc:ga44292f31f77c0cad8a3d8e0a88c7840b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x) = 0\]
+</p>
+  <a href="group__functions.html#ga44292f31f77c0cad8a3d8e0a88c7840b">More...</a><br /></td></tr>
+<tr class="separator:ga44292f31f77c0cad8a3d8e0a88c7840b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b38e6d17d96de78beedafc4c9e4437e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga0b38e6d17d96de78beedafc4c9e4437e">dg::zero</a> (float x, float y)</td></tr>
+<tr class="memdesc:ga0b38e6d17d96de78beedafc4c9e4437e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y) = 0\]
+</p>
+  <a href="group__functions.html#ga0b38e6d17d96de78beedafc4c9e4437e">More...</a><br /></td></tr>
+<tr class="separator:ga0b38e6d17d96de78beedafc4c9e4437e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga43b7fe30d4e22f1cf3dace0dd474c7d9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga43b7fe30d4e22f1cf3dace0dd474c7d9">dg::zero</a> (float x, float y, float z)</td></tr>
+<tr class="memdesc:ga43b7fe30d4e22f1cf3dace0dd474c7d9"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y,z) = 0\]
+</p>
+  <a href="group__functions.html#ga43b7fe30d4e22f1cf3dace0dd474c7d9">More...</a><br /></td></tr>
+<tr class="separator:ga43b7fe30d4e22f1cf3dace0dd474c7d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>The functions are useful mainly in the constructor of <a class="el" href="classdg_1_1_operator.html" title="Helper class mainly for the assembly of Matrices. ">Operator</a> objects. The functors are useful for either vector transformations or as init functions in the evaluate routines. </p>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ga21055512458a88c314621a912fb1417f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga21055512458a88c314621a912fb1417f">&#9670;&nbsp;</a></span>cooX1d()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double dg::cooX1d </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><p class="formulaDsp">
+\[ f(x) = x\]
+</p>
+ </p>
+
+</div>
+</div>
+<a id="gadb49e10685e2bcdd8a27ef88f2857151"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadb49e10685e2bcdd8a27ef88f2857151">&#9670;&nbsp;</a></span>cooX2d()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double dg::cooX2d </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><p class="formulaDsp">
+\[ f(x,y) = x\]
+</p>
+ </p>
+
+</div>
+</div>
+<a id="gadd9ae95517a739c80452afc7fc9c36ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadd9ae95517a739c80452afc7fc9c36ae">&#9670;&nbsp;</a></span>cooX3d()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double dg::cooX3d </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><p class="formulaDsp">
+\[ f(x,y,z) = x\]
+</p>
+ </p>
+
+</div>
+</div>
+<a id="ga5aa995cf5e888c9ee1026b78f6f78cc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5aa995cf5e888c9ee1026b78f6f78cc5">&#9670;&nbsp;</a></span>cooY2d()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double dg::cooY2d </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><p class="formulaDsp">
+\[ f(x,y) = y\]
+</p>
+ </p>
+
+</div>
+</div>
+<a id="gaafbff988d4cff4a0643e819b3f6962cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaafbff988d4cff4a0643e819b3f6962cc">&#9670;&nbsp;</a></span>cooY3d()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double dg::cooY3d </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><p class="formulaDsp">
+\[ f(x,y,z) = y\]
+</p>
+ </p>
+
+</div>
+</div>
+<a id="ga89a354d8268ca0f86486a93683fda7d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga89a354d8268ca0f86486a93683fda7d4">&#9670;&nbsp;</a></span>cooZ3d()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double dg::cooZ3d </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><p class="formulaDsp">
+\[ f(x,y,z) = z\]
+</p>
+ </p>
+
+</div>
+</div>
+<a id="gabab1bdc50508bd0f04f3cd0b45dd72e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabab1bdc50508bd0f04f3cd0b45dd72e3">&#9670;&nbsp;</a></span>one() <span class="overload">[1/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double dg::one </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><p class="formulaDsp">
+\[ f(x) = 1\]
+</p>
+ </p>
+
+</div>
+</div>
+<a id="gada629959f5298f4221d35fd8cb880a0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gada629959f5298f4221d35fd8cb880a0d">&#9670;&nbsp;</a></span>one() <span class="overload">[2/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double dg::one </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><p class="formulaDsp">
+\[ f(x,y) = 1\]
+</p>
+ </p>
+
+</div>
+</div>
+<a id="gae7ba1400d58619bc271c6611acf5994b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae7ba1400d58619bc271c6611acf5994b">&#9670;&nbsp;</a></span>one() <span class="overload">[3/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double dg::one </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><p class="formulaDsp">
+\[ f(x,y,z) = 1\]
+</p>
+ </p>
+
+</div>
+</div>
+<a id="ga6157ca9bd4d2ffec4b6bd7c22ed073fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6157ca9bd4d2ffec4b6bd7c22ed073fe">&#9670;&nbsp;</a></span>one() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> float dg::one </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><p class="formulaDsp">
+\[ f(x) = 1\]
+</p>
+ </p>
+
+</div>
+</div>
+<a id="ga99d493917c25c36d4e82248fcebd7550"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga99d493917c25c36d4e82248fcebd7550">&#9670;&nbsp;</a></span>one() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> float dg::one </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><p class="formulaDsp">
+\[ f(x,y) = 1\]
+</p>
+ </p>
+
+</div>
+</div>
+<a id="gabadfb8fdc2962f824d2b1fe1c0e73cd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabadfb8fdc2962f824d2b1fe1c0e73cd5">&#9670;&nbsp;</a></span>one() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> float dg::one </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><p class="formulaDsp">
+\[ f(x,y,z) = 1\]
+</p>
+ </p>
+
+</div>
+</div>
+<a id="gad1e45796f68232b124d0f5baea6fceca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad1e45796f68232b124d0f5baea6fceca">&#9670;&nbsp;</a></span>zero() <span class="overload">[1/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double dg::zero </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><p class="formulaDsp">
+\[ f(x) = 0\]
+</p>
+ </p>
+
+</div>
+</div>
+<a id="gad0bd961c4529039c4e651fc9e3901f60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad0bd961c4529039c4e651fc9e3901f60">&#9670;&nbsp;</a></span>zero() <span class="overload">[2/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double dg::zero </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><p class="formulaDsp">
+\[ f(x,y) = 0\]
+</p>
+ </p>
+
+</div>
+</div>
+<a id="ga6d27b092dcd9613c1c5eeaa1cf208e83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6d27b092dcd9613c1c5eeaa1cf208e83">&#9670;&nbsp;</a></span>zero() <span class="overload">[3/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double dg::zero </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><p class="formulaDsp">
+\[ f(x,y,z) = 0\]
+</p>
+ </p>
+
+</div>
+</div>
+<a id="ga44292f31f77c0cad8a3d8e0a88c7840b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga44292f31f77c0cad8a3d8e0a88c7840b">&#9670;&nbsp;</a></span>zero() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> float dg::zero </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><p class="formulaDsp">
+\[ f(x) = 0\]
+</p>
+ </p>
+
+</div>
+</div>
+<a id="ga0b38e6d17d96de78beedafc4c9e4437e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0b38e6d17d96de78beedafc4c9e4437e">&#9670;&nbsp;</a></span>zero() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> float dg::zero </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><p class="formulaDsp">
+\[ f(x,y) = 0\]
+</p>
+ </p>
+
+</div>
+</div>
+<a id="ga43b7fe30d4e22f1cf3dace0dd474c7d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga43b7fe30d4e22f1cf3dace0dd474c7d9">&#9670;&nbsp;</a></span>zero() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> float dg::zero </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><p class="formulaDsp">
+\[ f(x,y,z) = 0\]
+</p>
+ </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

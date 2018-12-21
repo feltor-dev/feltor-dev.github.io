@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
-<title>Discontinuous Galerkin Library: geometry/functions.h File Reference</title>
+<title>Discontinuous Galerkin Library: topology/functions.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -98,60 +98,16 @@ $(document).ready(function(){initNavTree('functions_8h.html','');});
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">functions.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>contains some utility functions for the evaluation() routines  
+<p>Some utility functions for the <a class="el" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443" title="Evaluate a 1d function on grid coordinates. ">dg::evaluate</a> routines.  
 <a href="#details">More...</a></p>
-<div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="functions_8h__dep__incl.png" border="0" usemap="#geometry_2functions_8hdep" alt=""/></div>
-<map name="geometry_2functions_8hdep" id="geometry_2functions_8hdep">
-<area shape="rect" id="node2" href="dx_8h.html" title="Simple 1d derivatives. " alt="" coords="987,304,1092,331"/>
-<area shape="rect" id="node4" href="mpi__derivatives_8h.html" title="geometry/mpi_derivatives.h" alt="" coords="848,603,1031,629"/>
-<area shape="rect" id="node13" href="subroutines_8h.html" title="subroutines.h" alt="" coords="621,80,721,107"/>
-<area shape="rect" id="node33" href="functors_8h.html" title="functors.h" alt="" coords="365,229,445,256"/>
-<area shape="rect" id="node35" href="interpolation_8h.html" title="contains 1D, 2D and 3D interpolation matrix creation functions " alt="" coords="1763,379,1924,405"/>
-<area shape="rect" id="node3" href="derivatives_8h.html" title="Convenience functions to create 2D derivatives. " alt="" coords="991,528,1146,555"/>
-<area shape="rect" id="node11" href="dx_x_8h.html" title="Simple 1d derivatives on X&#45;point topology. " alt="" coords="1342,379,1457,405"/>
-<area shape="rect" id="node5" href="elliptic_8h.html" title="General negative elliptic operators. " alt="" coords="1147,677,1217,704"/>
-<area shape="rect" id="node9" href="arakawa_8h.html" title="object for computation of Poisson bracket " alt="" coords="646,677,729,704"/>
-<area shape="rect" id="node10" href="poisson_8h.html" title="poisson.h" alt="" coords="809,677,888,704"/>
-<area shape="rect" id="node6" href="helmholtz_8h.html" title="contains Helmholtz and Maxwell operators " alt="" coords="1240,752,1329,779"/>
-<area shape="rect" id="node8" href="refined__elliptic_8h.html" title="contains an elliptic method on a refined grid " alt="" coords="1823,752,1939,779"/>
-<area shape="rect" id="node7" href="algorithm_8h.html" title="algorithm.h" alt="" coords="1368,827,1455,853"/>
-<area shape="rect" id="node12" href="derivatives_x_8h.html" title="Convenience functions to create 2D derivatives on X&#45;point topology. " alt="" coords="1373,453,1535,480"/>
-<area shape="rect" id="node14" href="blas1_8h.html" title="blas1.h" alt="" coords="621,155,685,181"/>
-<area shape="rect" id="node15" href="mpi__collective_8h.html" title="backend/mpi_collective.h" alt="" coords="1329,229,1499,256"/>
-<area shape="rect" id="node18" href="average_8h.html" title="contains classes for poloidal and toroidal average computations. " alt="" coords="653,229,791,256"/>
-<area shape="rect" id="node20" href="tensor_8h.html" title="geometry/tensor.h" alt="" coords="520,304,647,331"/>
-<area shape="rect" id="node28" href="multiply_8h.html" title="geometry/multiply.h" alt="" coords="282,379,418,405"/>
-<area shape="rect" id="node29" href="blas_8h.html" title="blas.h" alt="" coords="1205,379,1263,405"/>
-<area shape="rect" id="node34" href="runge__kutta_8h.html" title="contains runge&#45;kutta explicit time&#45;integrators " alt="" coords="103,229,205,256"/>
-<area shape="rect" id="node16" href="mpi__projection_8h.html" title="Useful MPI typedefs and overloads of interpolation and projection. " alt="" coords="1793,528,1968,555"/>
-<area shape="rect" id="node17" href="multigrid_8h.html" title="multigrid.h" alt="" coords="1581,603,1663,629"/>
-<area shape="rect" id="node19" href="average__mpi_8h.html" title="contains classes for poloidal and toroidal average computations. " alt="" coords="671,304,837,331"/>
-<area shape="rect" id="node21" href="base__geometry_8h.html" title="geometry/base_geometry.h" alt="" coords="493,379,673,405"/>
-<area shape="rect" id="node22" href="geometry_8h.html" title="geometry/geometry.h" alt="" coords="512,603,657,629"/>
-<area shape="rect" id="node25" href="mpi__base_8h.html" title="geometry/mpi_base.h" alt="" coords="349,453,495,480"/>
-<area shape="rect" id="node27" href="base__geometry_x_8h.html" title="geometry/base_geometryX.h" alt="" coords="621,453,810,480"/>
-<area shape="rect" id="node23" href="refined__grid_8h.html" title="geometry/refined_grid.h" alt="" coords="1037,453,1196,480"/>
-<area shape="rect" id="node26" href="transform_8h.html" title="geometry/transform.h" alt="" coords="178,453,325,480"/>
-<area shape="rect" id="node24" href="refined__grid_x_8h.html" title="geometry/refined_gridX.h" alt="" coords="749,528,916,555"/>
-<area shape="rect" id="node30" href="fast__interpolation_8h.html" title="contains a matrix type for fast interpolations/projections " alt="" coords="1527,528,1717,555"/>
-<area shape="rect" id="node31" href="cg_8h.html" title="cg.h" alt="" coords="56,453,103,480"/>
-<area shape="rect" id="node32" href="multistep_8h.html" title="contains multistep explicit&amp; implicit time&#45;integrators " alt="" coords="5,528,92,555"/>
-<area shape="rect" id="node36" href="projection_8h.html" title="contains creation of projection matrices " alt="" coords="1863,453,2010,480"/>
-<area shape="rect" id="node38" href="interpolation_x_8h.html" title="contains 1D, 2D and 3D interpolation matrix creation functions on X&#45;point topology ..." alt="" coords="2145,603,2315,629"/>
-<area shape="rect" id="node39" href="xspacelib_8h.html" title="provides some utility functions " alt="" coords="2241,677,2387,704"/>
-<area shape="rect" id="node37" href="projection_x_8h.html" title="contains creation of projection matrices for X point topology " alt="" coords="1967,752,2123,779"/>
-</map>
-</div>
-</div>
+
 <p><a href="functions_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -165,9 +121,120 @@ Macros</h2></td></tr>
 <tr class="memitem:aa181978ebbc17b8ea6d6c072e06c2d05"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a></td></tr>
 <tr class="memdesc:aa181978ebbc17b8ea6d6c072e06c2d05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expands to __host__ __device__ if compiled with nvcc else is empty.  <a href="#aa181978ebbc17b8ea6d6c072e06c2d05">More...</a><br /></td></tr>
 <tr class="separator:aa181978ebbc17b8ea6d6c072e06c2d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:gabab1bdc50508bd0f04f3cd0b45dd72e3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#gabab1bdc50508bd0f04f3cd0b45dd72e3">dg::one</a> (double x)</td></tr>
+<tr class="memdesc:gabab1bdc50508bd0f04f3cd0b45dd72e3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x) = 1\]
+</p>
+  <a href="group__functions.html#gabab1bdc50508bd0f04f3cd0b45dd72e3">More...</a><br /></td></tr>
+<tr class="separator:gabab1bdc50508bd0f04f3cd0b45dd72e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gada629959f5298f4221d35fd8cb880a0d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#gada629959f5298f4221d35fd8cb880a0d">dg::one</a> (double x, double y)</td></tr>
+<tr class="memdesc:gada629959f5298f4221d35fd8cb880a0d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y) = 1\]
+</p>
+  <a href="group__functions.html#gada629959f5298f4221d35fd8cb880a0d">More...</a><br /></td></tr>
+<tr class="separator:gada629959f5298f4221d35fd8cb880a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae7ba1400d58619bc271c6611acf5994b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#gae7ba1400d58619bc271c6611acf5994b">dg::one</a> (double x, double y, double z)</td></tr>
+<tr class="memdesc:gae7ba1400d58619bc271c6611acf5994b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y,z) = 1\]
+</p>
+  <a href="group__functions.html#gae7ba1400d58619bc271c6611acf5994b">More...</a><br /></td></tr>
+<tr class="separator:gae7ba1400d58619bc271c6611acf5994b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad1e45796f68232b124d0f5baea6fceca"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#gad1e45796f68232b124d0f5baea6fceca">dg::zero</a> (double x)</td></tr>
+<tr class="memdesc:gad1e45796f68232b124d0f5baea6fceca"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x) = 0\]
+</p>
+  <a href="group__functions.html#gad1e45796f68232b124d0f5baea6fceca">More...</a><br /></td></tr>
+<tr class="separator:gad1e45796f68232b124d0f5baea6fceca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad0bd961c4529039c4e651fc9e3901f60"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#gad0bd961c4529039c4e651fc9e3901f60">dg::zero</a> (double x, double y)</td></tr>
+<tr class="memdesc:gad0bd961c4529039c4e651fc9e3901f60"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y) = 0\]
+</p>
+  <a href="group__functions.html#gad0bd961c4529039c4e651fc9e3901f60">More...</a><br /></td></tr>
+<tr class="separator:gad0bd961c4529039c4e651fc9e3901f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6d27b092dcd9613c1c5eeaa1cf208e83"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga6d27b092dcd9613c1c5eeaa1cf208e83">dg::zero</a> (double x, double y, double z)</td></tr>
+<tr class="memdesc:ga6d27b092dcd9613c1c5eeaa1cf208e83"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y,z) = 0\]
+</p>
+  <a href="group__functions.html#ga6d27b092dcd9613c1c5eeaa1cf208e83">More...</a><br /></td></tr>
+<tr class="separator:ga6d27b092dcd9613c1c5eeaa1cf208e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga21055512458a88c314621a912fb1417f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga21055512458a88c314621a912fb1417f">dg::cooX1d</a> (double x)</td></tr>
+<tr class="memdesc:ga21055512458a88c314621a912fb1417f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x) = x\]
+</p>
+  <a href="group__functions.html#ga21055512458a88c314621a912fb1417f">More...</a><br /></td></tr>
+<tr class="separator:ga21055512458a88c314621a912fb1417f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadb49e10685e2bcdd8a27ef88f2857151"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#gadb49e10685e2bcdd8a27ef88f2857151">dg::cooX2d</a> (double x, double y)</td></tr>
+<tr class="memdesc:gadb49e10685e2bcdd8a27ef88f2857151"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y) = x\]
+</p>
+  <a href="group__functions.html#gadb49e10685e2bcdd8a27ef88f2857151">More...</a><br /></td></tr>
+<tr class="separator:gadb49e10685e2bcdd8a27ef88f2857151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd9ae95517a739c80452afc7fc9c36ae"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#gadd9ae95517a739c80452afc7fc9c36ae">dg::cooX3d</a> (double x, double y, double z)</td></tr>
+<tr class="memdesc:gadd9ae95517a739c80452afc7fc9c36ae"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y,z) = x\]
+</p>
+  <a href="group__functions.html#gadd9ae95517a739c80452afc7fc9c36ae">More...</a><br /></td></tr>
+<tr class="separator:gadd9ae95517a739c80452afc7fc9c36ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5aa995cf5e888c9ee1026b78f6f78cc5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga5aa995cf5e888c9ee1026b78f6f78cc5">dg::cooY2d</a> (double x, double y)</td></tr>
+<tr class="memdesc:ga5aa995cf5e888c9ee1026b78f6f78cc5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y) = y\]
+</p>
+  <a href="group__functions.html#ga5aa995cf5e888c9ee1026b78f6f78cc5">More...</a><br /></td></tr>
+<tr class="separator:ga5aa995cf5e888c9ee1026b78f6f78cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaafbff988d4cff4a0643e819b3f6962cc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#gaafbff988d4cff4a0643e819b3f6962cc">dg::cooY3d</a> (double x, double y, double z)</td></tr>
+<tr class="memdesc:gaafbff988d4cff4a0643e819b3f6962cc"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y,z) = y\]
+</p>
+  <a href="group__functions.html#gaafbff988d4cff4a0643e819b3f6962cc">More...</a><br /></td></tr>
+<tr class="separator:gaafbff988d4cff4a0643e819b3f6962cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga89a354d8268ca0f86486a93683fda7d4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga89a354d8268ca0f86486a93683fda7d4">dg::cooZ3d</a> (double x, double y, double z)</td></tr>
+<tr class="memdesc:ga89a354d8268ca0f86486a93683fda7d4"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y,z) = z\]
+</p>
+  <a href="group__functions.html#ga89a354d8268ca0f86486a93683fda7d4">More...</a><br /></td></tr>
+<tr class="separator:ga89a354d8268ca0f86486a93683fda7d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6157ca9bd4d2ffec4b6bd7c22ed073fe"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga6157ca9bd4d2ffec4b6bd7c22ed073fe">dg::one</a> (float x)</td></tr>
+<tr class="memdesc:ga6157ca9bd4d2ffec4b6bd7c22ed073fe"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x) = 1\]
+</p>
+  <a href="group__functions.html#ga6157ca9bd4d2ffec4b6bd7c22ed073fe">More...</a><br /></td></tr>
+<tr class="separator:ga6157ca9bd4d2ffec4b6bd7c22ed073fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga99d493917c25c36d4e82248fcebd7550"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga99d493917c25c36d4e82248fcebd7550">dg::one</a> (float x, float y)</td></tr>
+<tr class="memdesc:ga99d493917c25c36d4e82248fcebd7550"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y) = 1\]
+</p>
+  <a href="group__functions.html#ga99d493917c25c36d4e82248fcebd7550">More...</a><br /></td></tr>
+<tr class="separator:ga99d493917c25c36d4e82248fcebd7550"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabadfb8fdc2962f824d2b1fe1c0e73cd5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#gabadfb8fdc2962f824d2b1fe1c0e73cd5">dg::one</a> (float x, float y, float z)</td></tr>
+<tr class="memdesc:gabadfb8fdc2962f824d2b1fe1c0e73cd5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y,z) = 1\]
+</p>
+  <a href="group__functions.html#gabadfb8fdc2962f824d2b1fe1c0e73cd5">More...</a><br /></td></tr>
+<tr class="separator:gabadfb8fdc2962f824d2b1fe1c0e73cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga44292f31f77c0cad8a3d8e0a88c7840b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga44292f31f77c0cad8a3d8e0a88c7840b">dg::zero</a> (float x)</td></tr>
+<tr class="memdesc:ga44292f31f77c0cad8a3d8e0a88c7840b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x) = 0\]
+</p>
+  <a href="group__functions.html#ga44292f31f77c0cad8a3d8e0a88c7840b">More...</a><br /></td></tr>
+<tr class="separator:ga44292f31f77c0cad8a3d8e0a88c7840b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b38e6d17d96de78beedafc4c9e4437e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga0b38e6d17d96de78beedafc4c9e4437e">dg::zero</a> (float x, float y)</td></tr>
+<tr class="memdesc:ga0b38e6d17d96de78beedafc4c9e4437e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y) = 0\]
+</p>
+  <a href="group__functions.html#ga0b38e6d17d96de78beedafc4c9e4437e">More...</a><br /></td></tr>
+<tr class="separator:ga0b38e6d17d96de78beedafc4c9e4437e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga43b7fe30d4e22f1cf3dace0dd474c7d9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga43b7fe30d4e22f1cf3dace0dd474c7d9">dg::zero</a> (float x, float y, float z)</td></tr>
+<tr class="memdesc:ga43b7fe30d4e22f1cf3dace0dd474c7d9"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y,z) = 0\]
+</p>
+  <a href="group__functions.html#ga43b7fe30d4e22f1cf3dace0dd474c7d9">More...</a><br /></td></tr>
+<tr class="separator:ga43b7fe30d4e22f1cf3dace0dd474c7d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>contains some utility functions for the evaluation() routines </p>
+<div class="textblock"><p>Some utility functions for the <a class="el" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443" title="Evaluate a 1d function on grid coordinates. ">dg::evaluate</a> routines. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="aa181978ebbc17b8ea6d6c072e06c2d05"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa181978ebbc17b8ea6d6c072e06c2d05">&#9670;&nbsp;</a></span>DG_DEVICE</h2>
@@ -190,8 +257,8 @@ Macros</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_e3380d2178455503f266746fb14246a5.html">geometry</a></li><li class="navelem"><a class="el" href="functions_8h.html">functions.h</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
+    <li class="navelem"><a class="el" href="dir_84497794bb37d283dbd68163bed8ef05.html">topology</a></li><li class="navelem"><a class="el" href="functions_8h.html">functions.h</a></li>
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

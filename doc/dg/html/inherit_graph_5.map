@@ -1,6 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structdg_1_1a_communicator.html" title="dg::aCommunicator\&lt;\l Vector \&gt;" alt="" coords="5,71,149,112"/>
-<area shape="rect" id="node2" href="$structdg_1_1_bijective_comm.html" title="Struct that performs bijective collective scatter and gather operations across processes on distribut..." alt="" coords="215,5,356,47"/>
-<area shape="rect" id="node3" href="$structdg_1_1_general_comm.html" title="Struct that performs general collective scatter and gather operations across processes on distributed..." alt="" coords="197,71,373,112"/>
-<area shape="rect" id="node4" href="$structdg_1_1_surjective_comm.html" title="Struct that performs surjective collective scatter and gather operations across processes on distribu..." alt="" coords="215,136,356,177"/>
+<area shape="rect" id="node1" href="$structdg_1_1_adams_bashforth.html" title="Struct for Adams&#45;Bashforth explicit multistep time&#45;integration . " alt="" coords="5,5,147,47"/>
 </map>

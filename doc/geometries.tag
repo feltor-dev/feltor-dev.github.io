@@ -15,19 +15,19 @@
     <class kind="struct">dg::geo::DivLiseikinY</class>
     <namespace>dg</namespace>
     <namespace>dg::geo</namespace>
-    <member kind="function">
-      <type>BinaryFunctorsLvl1</type>
+    <member kind="function" static="yes">
+      <type>static CylindricalFunctorsLvl1</type>
       <name>make_NablaPsiInvCollective</name>
       <anchorfile>group__profiles.html</anchorfile>
-      <anchor>gaf583c457b3907ec4e9a94d4c17427d55</anchor>
-      <arglist>(const BinaryFunctorsLvl2 &amp;psi)</arglist>
+      <anchor>ga32a9569879bd13c719c77be10f0d399d</anchor>
+      <arglist>(const CylindricalFunctorsLvl2 &amp;psi)</arglist>
     </member>
-    <member kind="function">
-      <type>BinarySymmTensorLvl1</type>
+    <member kind="function" static="yes">
+      <type>static CylindricalSymmTensorLvl1</type>
       <name>make_LiseikinCollective</name>
       <anchorfile>group__profiles.html</anchorfile>
-      <anchor>ga56d2d722a2734d1685263ee8a95e7555</anchor>
-      <arglist>(const BinaryFunctorsLvl2 &amp;psi, double k, double eps)</arglist>
+      <anchor>gae0cb11f189e743a3291e23e2bc361bb2</anchor>
+      <arglist>(const CylindricalFunctorsLvl2 &amp;psi, double k, double eps)</arglist>
     </member>
   </compound>
   <compound kind="file">
@@ -47,10 +47,24 @@
     <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
     <filename>curvilinear_8h</filename>
     <includes id="generator_8h" name="generator.h" local="yes" imported="no">generator.h</includes>
-    <class kind="struct">dg::geo::CurvilinearGrid2d</class>
-    <class kind="struct">dg::geo::CurvilinearProductGrid3d</class>
+    <class kind="struct">dg::geo::RealCurvilinearGrid2d</class>
+    <class kind="struct">dg::geo::RealCurvilinearProductGrid3d</class>
     <namespace>dg</namespace>
     <namespace>dg::geo</namespace>
+    <member kind="typedef">
+      <type>dg::geo::RealCurvilinearGrid2d&lt; double &gt;</type>
+      <name>CurvilinearGrid2d</name>
+      <anchorfile>group__grids.html</anchorfile>
+      <anchor>ga91bfc2e3554d296ed7b02b98399a97df</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::geo::RealCurvilinearProductGrid3d&lt; double &gt;</type>
+      <name>CurvilinearProductGrid3d</name>
+      <anchorfile>group__grids.html</anchorfile>
+      <anchor>gab7dae14094bc5bad939d892c4d36128b</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>curvilinearX.h</name>
@@ -58,10 +72,24 @@
     <filename>curvilinear_x_8h</filename>
     <includes id="generator_x_8h" name="generatorX.h" local="yes" imported="no">generatorX.h</includes>
     <includes id="curvilinear_8h" name="curvilinear.h" local="yes" imported="no">curvilinear.h</includes>
-    <class kind="struct">dg::geo::CurvilinearProductGridX3d</class>
-    <class kind="struct">dg::geo::CurvilinearGridX2d</class>
+    <class kind="struct">dg::geo::RealCurvilinearProductGridX3d</class>
+    <class kind="struct">dg::geo::RealCurvilinearGridX2d</class>
     <namespace>dg</namespace>
     <namespace>dg::geo</namespace>
+    <member kind="typedef">
+      <type>dg::geo::RealCurvilinearGridX2d&lt; double &gt;</type>
+      <name>CurvilinearGridX2d</name>
+      <anchorfile>group__grids.html</anchorfile>
+      <anchor>ga39f185f0e62a845133105bddbbb92624</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::geo::RealCurvilinearProductGridX3d&lt; double &gt;</type>
+      <name>CurvilinearProductGridX3d</name>
+      <anchorfile>group__grids.html</anchorfile>
+      <anchor>ga2d21aa9b959174ee7cf8cca4af63f6f0</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>ds.h</name>
@@ -144,39 +172,66 @@
     <name>fluxfunctions.h</name>
     <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
     <filename>fluxfunctions_8h</filename>
-    <class kind="struct">dg::geo::aBinaryFunctor</class>
-    <class kind="struct">dg::geo::aCloneableBinaryFunctor</class>
-    <class kind="struct">dg::geo::BinaryFunctorAdapter</class>
+    <class kind="struct">dg::geo::RealCylindricalFunctor</class>
+    <class kind="struct">dg::geo::aCylindricalFunctor</class>
     <class kind="struct">dg::geo::Constant</class>
-    <class kind="struct">dg::geo::BinaryFunctorsLvl1</class>
-    <class kind="struct">dg::geo::BinaryFunctorsLvl2</class>
-    <class kind="struct">dg::geo::BinarySymmTensorLvl1</class>
-    <class kind="struct">dg::geo::BinaryVectorLvl0</class>
+    <class kind="struct">dg::geo::CylindricalFunctorsLvl1</class>
+    <class kind="struct">dg::geo::CylindricalFunctorsLvl2</class>
+    <class kind="struct">dg::geo::CylindricalSymmTensorLvl1</class>
+    <class kind="struct">dg::geo::CylindricalVectorLvl0</class>
     <namespace>dg</namespace>
     <namespace>dg::geo</namespace>
-    <member kind="function">
-      <type>aBinaryFunctor *</type>
-      <name>make_aBinaryFunctor</name>
+    <member kind="typedef">
+      <type>RealCylindricalFunctor&lt; double &gt;</type>
+      <name>CylindricalFunctor</name>
       <anchorfile>group__fluxfunctions.html</anchorfile>
-      <anchor>ga669b9f0f0ae437c262b2400930feef7d</anchor>
-      <arglist>(const BinaryFunctor &amp;f)</arglist>
+      <anchor>gacb84a8d3b8c253f1100c1530035da1de</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type>dg::SparseTensor&lt; dg::get_host_vector&lt; Geometry3d &gt; &gt;</type>
+      <name>createAlignmentTensor</name>
+      <anchorfile>group__fluxfunctions.html</anchorfile>
+      <anchor>ga4f00a11946c5ae76c6b52876292c60ca</anchor>
+      <arglist>(const dg::geo::CylindricalVectorLvl0 &amp;bhat, const Geometry3d &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>dg::SparseTensor&lt; dg::get_host_vector&lt; Geometry3d &gt; &gt;</type>
+      <name>createProjectionTensor</name>
+      <anchorfile>group__fluxfunctions.html</anchorfile>
+      <anchor>ga0e6fb50126a1c44892b51db10d93fb65</anchor>
+      <arglist>(const dg::geo::CylindricalVectorLvl0 &amp;bhat, const Geometry3d &amp;g)</arglist>
     </member>
   </compound>
   <compound kind="file">
     <name>generator.h</name>
     <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
     <filename>generator_8h</filename>
-    <class kind="struct">dg::geo::aGenerator2d</class>
+    <class kind="struct">dg::geo::aRealGenerator2d</class>
     <namespace>dg</namespace>
     <namespace>dg::geo</namespace>
+    <member kind="typedef">
+      <type>dg::geo::aRealGenerator2d&lt; double &gt;</type>
+      <name>aGenerator2d</name>
+      <anchorfile>namespacedg_1_1geo.html</anchorfile>
+      <anchor>a8a0c91832616cae7dea10193bb8c9327</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>generatorX.h</name>
     <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
     <filename>generator_x_8h</filename>
-    <class kind="struct">dg::geo::aGeneratorX2d</class>
+    <class kind="struct">dg::geo::aRealGeneratorX2d</class>
     <namespace>dg</namespace>
     <namespace>dg::geo</namespace>
+    <member kind="typedef">
+      <type>dg::geo::aRealGeneratorX2d&lt; double &gt;</type>
+      <name>aGeneratorX2d</name>
+      <anchorfile>namespacedg_1_1geo.html</anchorfile>
+      <anchor>a7d37348fd710a0c45eb5c52ec7387e90</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>geometries.h</name>
@@ -225,32 +280,32 @@
     <namespace>dg</namespace>
     <namespace>dg::geo</namespace>
     <namespace>dg::geo::guenther</namespace>
-    <member kind="function">
-      <type>BinaryFunctorsLvl2</type>
+    <member kind="function" static="yes">
+      <type>static CylindricalFunctorsLvl2</type>
       <name>createPsip</name>
       <anchorfile>group__guenther.html</anchorfile>
-      <anchor>ga99f433f328033896ebc3f92bfdea7766</anchor>
+      <anchor>ga285fcbae9a9d44cbe5586a7b28148b99</anchor>
       <arglist>(double R_0)</arglist>
     </member>
-    <member kind="function">
-      <type>BinaryFunctorsLvl1</type>
+    <member kind="function" static="yes">
+      <type>static CylindricalFunctorsLvl1</type>
       <name>createIpol</name>
       <anchorfile>group__guenther.html</anchorfile>
-      <anchor>gab485e0d1f70ab41dde2060da9f409be3</anchor>
+      <anchor>ga1c418d39f07e69144f44223117ea6b93</anchor>
       <arglist>(double I_0)</arglist>
     </member>
-    <member kind="function">
-      <type>TokamakMagneticField</type>
+    <member kind="function" static="yes">
+      <type>static TokamakMagneticField</type>
       <name>createMagField</name>
       <anchorfile>group__guenther.html</anchorfile>
-      <anchor>gaec0f20e402dcb50145ccf8745ff22ca5</anchor>
+      <anchor>ga4a82083bf29cb70373b84720eba60d83</anchor>
       <arglist>(double R_0, double I_0)</arglist>
     </member>
-    <member kind="function">
-      <type>dg::geo::TokamakMagneticField</type>
+    <member kind="function" static="yes">
+      <type>static dg::geo::TokamakMagneticField</type>
       <name>createGuentherField</name>
       <anchorfile>group__geom.html</anchorfile>
-      <anchor>gad54aa312242b5245cbbf9cd4b5dfe06d</anchor>
+      <anchor>ga70edeb1a555a6a2b05ac0485329fdcac</anchor>
       <arglist>(double R_0, double I_0)</arglist>
     </member>
   </compound>
@@ -281,18 +336,66 @@
     <filename>init_8h</filename>
     <includes id="fluxfunctions_8h" name="fluxfunctions.h" local="yes" imported="no">fluxfunctions.h</includes>
     <includes id="solovev__parameters_8h" name="solovev_parameters.h" local="yes" imported="no">solovev_parameters.h</includes>
-    <class kind="struct">dg::geo::Iris</class>
-    <class kind="struct">dg::geo::Pupil</class>
-    <class kind="struct">dg::geo::PsiPupil</class>
-    <class kind="struct">dg::geo::PsiLimiter</class>
-    <class kind="struct">dg::geo::GaussianDamping</class>
-    <class kind="struct">dg::geo::GaussianProfDamping</class>
-    <class kind="struct">dg::geo::GaussianProfXDamping</class>
-    <class kind="struct">dg::geo::TanhSource</class>
-    <class kind="struct">dg::geo::Nprofile</class>
-    <class kind="struct">dg::geo::ZonalFlow</class>
+    <class kind="struct">dg::geo::Compose</class>
+    <class kind="struct">dg::geo::ZCutter</class>
     <namespace>dg</namespace>
     <namespace>dg::geo</namespace>
+    <member kind="typedef">
+      <type>Compose&lt; dg::Iris &gt;</type>
+      <name>Iris</name>
+      <anchorfile>group__profiles.html</anchorfile>
+      <anchor>gad64d512d641d71865056b1f1b83da902</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>Compose&lt; dg::Pupil &gt;</type>
+      <name>Pupil</name>
+      <anchorfile>group__profiles.html</anchorfile>
+      <anchor>gab429cc7c00f5d55def9fcaa5cda8fafd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>Compose&lt; dg::PsiPupil &gt;</type>
+      <name>PsiPupil</name>
+      <anchorfile>group__profiles.html</anchorfile>
+      <anchor>ga4e7e76bd77ae1317ed999238b4ce4e17</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::geo::Compose&lt; dg::Heaviside &gt;</type>
+      <name>PsiLimiter</name>
+      <anchorfile>group__profiles.html</anchorfile>
+      <anchor>ga82eca5b06b94a709b4f1cbfa4b42d59f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::geo::Compose&lt; dg::GaussianDamping &gt;</type>
+      <name>GaussianDamping</name>
+      <anchorfile>group__profiles.html</anchorfile>
+      <anchor>ga158a9af6aef70087e95b8fd8e7dacc60</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::geo::Compose&lt; dg::TanhProfX &gt;</type>
+      <name>TanhDamping</name>
+      <anchorfile>group__profiles.html</anchorfile>
+      <anchor>ga446bce2c783bba5c7b0260853259f1e1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::geo::Compose&lt; dg::LinearX &gt;</type>
+      <name>Nprofile</name>
+      <anchorfile>group__profiles.html</anchorfile>
+      <anchor>gac6e56352ad1a753f9c5c7cecb0f12ee0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::geo::Compose&lt; dg::SinX &gt;</type>
+      <name>ZonalFlow</name>
+      <anchorfile>group__profiles.html</anchorfile>
+      <anchor>ga19191644f490a26ec20c3f6dac24765c</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>magnetic_field.h</name>
@@ -310,17 +413,71 @@
     <class kind="struct">dg::geo::CurvatureKappaR</class>
     <class kind="struct">dg::geo::CurvatureKappaZ</class>
     <class kind="struct">dg::geo::DivCurvatureKappa</class>
+    <class kind="struct">dg::geo::DivCurvatureNablaB</class>
+    <class kind="struct">dg::geo::TrueCurvatureNablaBR</class>
+    <class kind="struct">dg::geo::TrueCurvatureNablaBZ</class>
+    <class kind="struct">dg::geo::TrueCurvatureNablaBP</class>
+    <class kind="struct">dg::geo::TrueCurvatureKappaR</class>
+    <class kind="struct">dg::geo::TrueCurvatureKappaZ</class>
+    <class kind="struct">dg::geo::TrueCurvatureKappaP</class>
+    <class kind="struct">dg::geo::TrueDivCurvatureKappa</class>
+    <class kind="struct">dg::geo::TrueDivCurvatureNablaB</class>
     <class kind="struct">dg::geo::GradLnB</class>
     <class kind="struct">dg::geo::Divb</class>
-    <class kind="struct">dg::geo::FieldP</class>
-    <class kind="struct">dg::geo::FieldR</class>
-    <class kind="struct">dg::geo::FieldZ</class>
-    <class kind="struct">dg::geo::FieldT</class>
+    <class kind="struct">dg::geo::BFieldP</class>
+    <class kind="struct">dg::geo::BFieldR</class>
+    <class kind="struct">dg::geo::BFieldZ</class>
+    <class kind="struct">dg::geo::BFieldT</class>
     <class kind="struct">dg::geo::BHatR</class>
     <class kind="struct">dg::geo::BHatZ</class>
     <class kind="struct">dg::geo::BHatP</class>
+    <class kind="struct">dg::geo::GradBHatR</class>
+    <class kind="struct">dg::geo::GradBHatZ</class>
+    <class kind="struct">dg::geo::GradBHatP</class>
     <namespace>dg</namespace>
     <namespace>dg::geo</namespace>
+    <member kind="function">
+      <type>CylindricalVectorLvl0</type>
+      <name>createBHat</name>
+      <anchorfile>group__magnetic.html</anchorfile>
+      <anchor>ga6182dc55424bffffb0d9876b9f90222d</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+    </member>
+    <member kind="function">
+      <type>CylindricalVectorLvl0</type>
+      <name>createEPhi</name>
+      <anchorfile>group__magnetic.html</anchorfile>
+      <anchor>ga3ab10e21b3c879843b6bb26a49beb918</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>CylindricalVectorLvl0</type>
+      <name>createCurvatureNablaB</name>
+      <anchorfile>group__magnetic.html</anchorfile>
+      <anchor>ga891fbece075e21a1cdd1f15422251e7d</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+    </member>
+    <member kind="function">
+      <type>CylindricalVectorLvl0</type>
+      <name>createCurvatureKappa</name>
+      <anchorfile>group__magnetic.html</anchorfile>
+      <anchor>ga15544e369079fa9ab1350fe49433bbf2</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+    </member>
+    <member kind="function">
+      <type>CylindricalVectorLvl0</type>
+      <name>createTrueCurvatureKappa</name>
+      <anchorfile>group__magnetic.html</anchorfile>
+      <anchor>ga4e605e8fb727d3ffe0c2de721d7cad67</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+    </member>
+    <member kind="function">
+      <type>CylindricalVectorLvl0</type>
+      <name>createTrueCurvatureNablaB</name>
+      <anchorfile>group__magnetic.html</anchorfile>
+      <anchor>ga4278b6ca1435aa29063fd152f427c9c5</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>mpi_curvilinear.h</name>
@@ -328,10 +485,24 @@
     <filename>mpi__curvilinear_8h</filename>
     <includes id="curvilinear_8h" name="curvilinear.h" local="yes" imported="no">curvilinear.h</includes>
     <includes id="generator_8h" name="generator.h" local="yes" imported="no">generator.h</includes>
-    <class kind="struct">dg::geo::CurvilinearMPIGrid2d</class>
-    <class kind="struct">dg::geo::CurvilinearProductMPIGrid3d</class>
+    <class kind="struct">dg::geo::RealCurvilinearMPIGrid2d</class>
+    <class kind="struct">dg::geo::RealCurvilinearProductMPIGrid3d</class>
     <namespace>dg</namespace>
     <namespace>dg::geo</namespace>
+    <member kind="typedef">
+      <type>dg::geo::RealCurvilinearMPIGrid2d&lt; double &gt;</type>
+      <name>CurvilinearMPIGrid2d</name>
+      <anchorfile>group__grids.html</anchorfile>
+      <anchor>ga2afc1b2edf3b4ce67be2559b26d4a131</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::geo::RealCurvilinearProductMPIGrid3d&lt; double &gt;</type>
+      <name>CurvilinearProductMPIGrid3d</name>
+      <anchorfile>group__grids.html</anchorfile>
+      <anchor>ga616da07412dcdbd6a5526e2c86769e69</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>mpi_fieldaligned.h</name>
@@ -357,10 +528,24 @@
     <filename>refined__curvilinear_x_8h</filename>
     <includes id="generator_x_8h" name="generatorX.h" local="yes" imported="no">generatorX.h</includes>
     <includes id="curvilinear_8h" name="curvilinear.h" local="yes" imported="no">curvilinear.h</includes>
-    <class kind="struct">dg::geo::CurvilinearRefinedProductGridX3d</class>
-    <class kind="struct">dg::geo::CurvilinearRefinedGridX2d</class>
+    <class kind="struct">dg::geo::RealCurvilinearRefinedProductGridX3d</class>
+    <class kind="struct">dg::geo::RealCurvilinearRefinedGridX2d</class>
     <namespace>dg</namespace>
     <namespace>dg::geo</namespace>
+    <member kind="typedef">
+      <type>dg::geo::RealCurvilinearRefinedGridX2d&lt; double &gt;</type>
+      <name>CurvilinearRefinedGridX2d</name>
+      <anchorfile>group__grids.html</anchorfile>
+      <anchor>ga58a60acbf311bac75c5163baafd599ec</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::geo::RealCurvilinearRefinedProductGridX3d&lt; double &gt;</type>
+      <name>CurvilinearRefinedProductGridX3d</name>
+      <anchorfile>group__grids.html</anchorfile>
+      <anchor>gafab27da71f3b5b59cb756e39db2275e3</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>ribeiro.h</name>
@@ -424,32 +609,32 @@
     <namespace>dg</namespace>
     <namespace>dg::geo</namespace>
     <namespace>dg::geo::solovev</namespace>
-    <member kind="function">
-      <type>dg::geo::BinaryFunctorsLvl2</type>
+    <member kind="function" static="yes">
+      <type>static dg::geo::CylindricalFunctorsLvl2</type>
       <name>createPsip</name>
       <anchorfile>group__solovev.html</anchorfile>
-      <anchor>gabf3dc35f257d294b5df5236e85a42fb2</anchor>
+      <anchor>gafeb61fe925c670850a85b4c3ee9cb390</anchor>
       <arglist>(Parameters gp)</arglist>
     </member>
-    <member kind="function">
-      <type>dg::geo::BinaryFunctorsLvl1</type>
+    <member kind="function" static="yes">
+      <type>static dg::geo::CylindricalFunctorsLvl1</type>
       <name>createIpol</name>
       <anchorfile>group__solovev.html</anchorfile>
-      <anchor>gac26e8e0eb7617b304f61bb1038b22ef8</anchor>
+      <anchor>ga6808a16f5d40c82d590048388bc7361a</anchor>
       <arglist>(Parameters gp)</arglist>
     </member>
-    <member kind="function">
-      <type>dg::geo::TokamakMagneticField</type>
+    <member kind="function" static="yes">
+      <type>static dg::geo::TokamakMagneticField</type>
       <name>createMagField</name>
       <anchorfile>group__solovev.html</anchorfile>
-      <anchor>ga48a224d8779049a93e97a2fd348ad481</anchor>
+      <anchor>gad3675f715472ee97a6c3133905bb3697</anchor>
       <arglist>(Parameters gp)</arglist>
     </member>
-    <member kind="function">
-      <type>dg::geo::TokamakMagneticField</type>
+    <member kind="function" static="yes">
+      <type>static dg::geo::TokamakMagneticField</type>
       <name>createSolovevField</name>
       <anchorfile>group__geom.html</anchorfile>
-      <anchor>gae3f70e88fd15dd404643f4c5941401c7</anchor>
+      <anchor>gaadcb5ef7126a3bc41beed60c431f9368</anchor>
       <arglist>(dg::geo::solovev::Parameters gp)</arglist>
     </member>
   </compound>
@@ -487,32 +672,32 @@
       <anchor>gae9e235fc51b6b03228d8eb38673af549</anchor>
       <arglist></arglist>
     </member>
-    <member kind="function">
-      <type>BinaryFunctorsLvl2</type>
+    <member kind="function" static="yes">
+      <type>static CylindricalFunctorsLvl2</type>
       <name>createPsip</name>
       <anchorfile>group__taylor.html</anchorfile>
-      <anchor>ga4bb35f27443e897af4a1050cae9b8e5d</anchor>
+      <anchor>gaf803ceb487fe15a20509185cf645c2f6</anchor>
       <arglist>(solovev::Parameters gp)</arglist>
     </member>
-    <member kind="function">
-      <type>BinaryFunctorsLvl1</type>
+    <member kind="function" static="yes">
+      <type>static CylindricalFunctorsLvl1</type>
       <name>createIpol</name>
       <anchorfile>group__taylor.html</anchorfile>
-      <anchor>gaf585a6dde7802ef9d3b119a50b1318d2</anchor>
+      <anchor>gab3f3b82303a3e64031d92ce7bb5ac49b</anchor>
       <arglist>(solovev::Parameters gp)</arglist>
     </member>
-    <member kind="function">
-      <type>dg::geo::TokamakMagneticField</type>
+    <member kind="function" static="yes">
+      <type>static dg::geo::TokamakMagneticField</type>
       <name>createMagField</name>
       <anchorfile>group__taylor.html</anchorfile>
-      <anchor>gaaf85a7ecbfa540aedd2a48a5a2f24fa2</anchor>
+      <anchor>ga3f430483239ba136340bf0f0a7828e26</anchor>
       <arglist>(solovev::Parameters gp)</arglist>
     </member>
-    <member kind="function">
-      <type>dg::geo::TokamakMagneticField</type>
+    <member kind="function" static="yes">
+      <type>static dg::geo::TokamakMagneticField</type>
       <name>createTaylorField</name>
       <anchorfile>group__geom.html</anchorfile>
-      <anchor>ga7d6cc4a15d5430ff5d4aad81fb7098d9</anchor>
+      <anchor>ga27e5bae45b284ee051039ca97d7c0edb</anchor>
       <arglist>(dg::geo::solovev::Parameters gp)</arglist>
     </member>
   </compound>
@@ -536,53 +721,53 @@
     <namespace>dg::geo</namespace>
     <namespace>dg::geo::toroidal</namespace>
     <namespace>dg::geo::circular</namespace>
-    <member kind="function">
-      <type>BinaryFunctorsLvl2</type>
+    <member kind="function" static="yes">
+      <type>static CylindricalFunctorsLvl2</type>
       <name>createPsip</name>
       <anchorfile>group__toroidal.html</anchorfile>
-      <anchor>gacd371ac3baef2588c08c97cad964fa04</anchor>
+      <anchor>ga62d4a526e2170227a53e19f40716a061</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="function">
-      <type>BinaryFunctorsLvl1</type>
+    <member kind="function" static="yes">
+      <type>static CylindricalFunctorsLvl1</type>
       <name>createIpol</name>
       <anchorfile>group__toroidal.html</anchorfile>
-      <anchor>ga4406fe56ddb226b9752d51df87c04db9</anchor>
+      <anchor>ga4ea9852e07a0fcbf473cafa8625d691b</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="function">
-      <type>TokamakMagneticField</type>
+    <member kind="function" static="yes">
+      <type>static TokamakMagneticField</type>
       <name>createMagField</name>
       <anchorfile>group__toroidal.html</anchorfile>
-      <anchor>ga1b467a106a28fe8b8ff77a374518c829</anchor>
+      <anchor>ga1d02ad623c716a9b80b270c3ceeea70f</anchor>
       <arglist>(double R0)</arglist>
     </member>
-    <member kind="function">
-      <type>BinaryFunctorsLvl2</type>
+    <member kind="function" static="yes">
+      <type>static CylindricalFunctorsLvl2</type>
       <name>createPsip</name>
       <anchorfile>group__circular.html</anchorfile>
-      <anchor>gac643478ea14f273108a7190300f9b1a0</anchor>
+      <anchor>ga6a9d6f6463a3b4ccd3a9659c07671cfa</anchor>
       <arglist>(double R0)</arglist>
     </member>
-    <member kind="function">
-      <type>BinaryFunctorsLvl1</type>
+    <member kind="function" static="yes">
+      <type>static CylindricalFunctorsLvl1</type>
       <name>createIpol</name>
       <anchorfile>group__circular.html</anchorfile>
-      <anchor>ga1c88edf8b4078b3571ba6d404296d48d</anchor>
+      <anchor>gab40e4b929ab5912634cd25ca472fe356</anchor>
       <arglist>(double I0)</arglist>
     </member>
-    <member kind="function">
-      <type>dg::geo::TokamakMagneticField</type>
+    <member kind="function" static="yes">
+      <type>static dg::geo::TokamakMagneticField</type>
       <name>createToroidalField</name>
       <anchorfile>group__geom.html</anchorfile>
-      <anchor>ga24c4268469ccbabde18f7eb7ab124ac6</anchor>
+      <anchor>ga2d9ca2e61302113e806b1d05d6b3db7e</anchor>
       <arglist>(double R0)</arglist>
     </member>
-    <member kind="function">
-      <type>dg::geo::TokamakMagneticField</type>
+    <member kind="function" static="yes">
+      <type>static dg::geo::TokamakMagneticField</type>
       <name>createCircularField</name>
       <anchorfile>group__geom.html</anchorfile>
-      <anchor>gaa6d78afe4f306e34d509934f8f79421a</anchor>
+      <anchor>ga16471692288263e2076b897dae16799f</anchor>
       <arglist>(double R0, double I0)</arglist>
     </member>
   </compound>
@@ -599,804 +784,963 @@
     <includes id="utilities_8h" name="utilities.h" local="yes" imported="no">utilities.h</includes>
     <namespace>dg</namespace>
     <namespace>dg::geo</namespace>
-    <member kind="function">
-      <type>void</type>
+    <member kind="function" static="yes">
+      <type>static void</type>
       <name>findXpoint</name>
       <anchorfile>group__misc__geo.html</anchorfile>
-      <anchor>gafcee60ecf901ef09ae3fbf87bd146fbd</anchor>
-      <arglist>(const BinaryFunctorsLvl2 &amp;psi, double &amp;R_X, double &amp;Z_X)</arglist>
+      <anchor>gafdf85449bb250bc67ab57989fcb768cb</anchor>
+      <arglist>(const CylindricalFunctorsLvl2 &amp;psi, double &amp;R_X, double &amp;Z_X)</arglist>
     </member>
-    <member kind="function">
-      <type>BinarySymmTensorLvl1</type>
+    <member kind="function" static="yes">
+      <type>static CylindricalSymmTensorLvl1</type>
       <name>make_Xbump_monitor</name>
       <anchorfile>namespacedg_1_1geo.html</anchorfile>
-      <anchor>a1ee422753ae1d392e40577c69a06001c</anchor>
-      <arglist>(const BinaryFunctorsLvl2 &amp;psi, double &amp;R_X, double &amp;Z_X, double radiusX, double radiusY)</arglist>
+      <anchor>a351c29fa5591614e847a4c4d884a230a</anchor>
+      <arglist>(const CylindricalFunctorsLvl2 &amp;psi, double &amp;R_X, double &amp;Z_X, double radiusX, double radiusY)</arglist>
     </member>
-    <member kind="function">
-      <type>BinarySymmTensorLvl1</type>
+    <member kind="function" static="yes">
+      <type>static CylindricalSymmTensorLvl1</type>
       <name>make_Xconst_monitor</name>
       <anchorfile>namespacedg_1_1geo.html</anchorfile>
-      <anchor>a766ef7c89b58748f1eb44a7e2e5fa89e</anchor>
-      <arglist>(const BinaryFunctorsLvl2 &amp;psi, double &amp;R_X, double &amp;Z_X)</arglist>
+      <anchor>a2fad31517c86179b341a67e10ff0fda4</anchor>
+      <arglist>(const CylindricalFunctorsLvl2 &amp;psi, double &amp;R_X, double &amp;Z_X)</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>dg::geo::aBinaryFunctor</name>
-    <filename>structdg_1_1geo_1_1a_binary_functor.html</filename>
+    <name>dg::geo::aCylindricalFunctor</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <templarg>Derived</templarg>
     <member kind="function">
       <type>double</type>
       <name>operator()</name>
-      <anchorfile>structdg_1_1geo_1_1a_binary_functor.html</anchorfile>
-      <anchor>a7770b1c7e226bad4a9a2bf66ef7779c9</anchor>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
       <arglist>(double R, double Z) const</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>operator()</name>
-      <anchorfile>structdg_1_1geo_1_1a_binary_functor.html</anchorfile>
-      <anchor>ac1b14ae5887da480ba99557f81f08cbb</anchor>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
       <arglist>(double R, double Z, double phi) const</arglist>
     </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_binary_functor.html</anchorfile>
-      <anchor>a973d12b5e8088b5d2e09c50b14e51feb</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual</type>
-      <name>~aBinaryFunctor</name>
-      <anchorfile>structdg_1_1geo_1_1a_binary_functor.html</anchorfile>
-      <anchor>a99c22fd3a26d662f0f7acfb478ad8718</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type></type>
-      <name>aBinaryFunctor</name>
-      <anchorfile>structdg_1_1geo_1_1a_binary_functor.html</anchorfile>
-      <anchor>ae4e3b3a216d5bbe14a5383aa67882f9f</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type></type>
-      <name>aBinaryFunctor</name>
-      <anchorfile>structdg_1_1geo_1_1a_binary_functor.html</anchorfile>
-      <anchor>a5dcb9c5c0c86b9083b0bebbe0dc24bca</anchor>
-      <arglist>(const aBinaryFunctor &amp;)</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type>aBinaryFunctor &amp;</type>
-      <name>operator=</name>
-      <anchorfile>structdg_1_1geo_1_1a_binary_functor.html</anchorfile>
-      <anchor>a3aa6fb6fb8acb751668c846d7747276a</anchor>
-      <arglist>(const aBinaryFunctor &amp;)</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>dg::geo::aCloneableBinaryFunctor</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <templarg>Derived</templarg>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
   </compound>
   <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; BHatP &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; BHatR &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; BHatZ &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; BinaryFunctorAdapter&lt; BinaryFunctor &gt; &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; Bmodule &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; BR &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; BZ &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; Constant &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; CurvatureKappaR &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; CurvatureKappaZ &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; CurvatureNablaBR &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; CurvatureNablaBZ &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; DivCurvatureKappa &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; DivLiseikinX &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; DivLiseikinY &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; FieldP &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; FieldR &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; FieldT &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; FieldZ &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; GaussianDamping &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; GaussianProfDamping &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; GaussianProfXDamping &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; GradLnB &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; InvB &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; Ipol &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; IpolR &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; IpolZ &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; Iris &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; Liseikin_XX &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; Liseikin_XY &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; Liseikin_YY &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; LnB &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; NablaPsiInv &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; NablaPsiInvX &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; NablaPsiInvY &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; Nprofile &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; PsiLimiter &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; Psip &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; PsipR &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; PsipRR &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; PsipRZ &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; PsiPupil &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; PsipZ &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; PsipZZ &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; Pupil &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; TanhSource &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCloneableBinaryFunctor&lt; ZonalFlow &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cloneable_binary_functor.html</filename>
-    <base>dg::geo::aBinaryFunctor</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual aBinaryFunctor *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_cloneable_binary_functor.html</anchorfile>
-      <anchor>a165b15b089799f4ee4a57a0344293302</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>dg::geo::aGenerator2d</name>
-    <filename>structdg_1_1geo_1_1a_generator2d.html</filename>
+    <name>aCylindricalFunctor&lt; BFieldP &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
     <member kind="function">
       <type>double</type>
-      <name>width</name>
-      <anchorfile>structdg_1_1geo_1_1a_generator2d.html</anchorfile>
-      <anchor>aa939f37907b2aeb44e00433dad2d087a</anchor>
-      <arglist>() const</arglist>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
     </member>
     <member kind="function">
       <type>double</type>
-      <name>height</name>
-      <anchorfile>structdg_1_1geo_1_1a_generator2d.html</anchorfile>
-      <anchor>aa5b78cd2bfdc11b17d55e4f7a9b5cd53</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>isOrthogonal</name>
-      <anchorfile>structdg_1_1geo_1_1a_generator2d.html</anchorfile>
-      <anchor>aae8c7c6603c706d5b86aece44371fe7b</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>generate</name>
-      <anchorfile>structdg_1_1geo_1_1a_generator2d.html</anchorfile>
-      <anchor>ad2fa8cacf200553165e0bd69aa1147ba</anchor>
-      <arglist>(const thrust::host_vector&lt; double &gt; &amp;zeta1d, const thrust::host_vector&lt; double &gt; &amp;eta1d, thrust::host_vector&lt; double &gt; &amp;x, thrust::host_vector&lt; double &gt; &amp;y, thrust::host_vector&lt; double &gt; &amp;zetaX, thrust::host_vector&lt; double &gt; &amp;zetaY, thrust::host_vector&lt; double &gt; &amp;etaX, thrust::host_vector&lt; double &gt; &amp;etaY) const</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual aGenerator2d *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_generator2d.html</anchorfile>
-      <anchor>a9e58be43f55c993a0e746ed80f3df6af</anchor>
-      <arglist>() const =0</arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual</type>
-      <name>~aGenerator2d</name>
-      <anchorfile>structdg_1_1geo_1_1a_generator2d.html</anchorfile>
-      <anchor>a20e1572cd6b64a7dbcc31b31e271efb1</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type></type>
-      <name>aGenerator2d</name>
-      <anchorfile>structdg_1_1geo_1_1a_generator2d.html</anchorfile>
-      <anchor>a1ba45e17451a791fe32bdf64a15d42b0</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type></type>
-      <name>aGenerator2d</name>
-      <anchorfile>structdg_1_1geo_1_1a_generator2d.html</anchorfile>
-      <anchor>acbcab00c8b85625ac0a0ebd72b1ae3f3</anchor>
-      <arglist>(const aGenerator2d &amp;)</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type>aGenerator2d &amp;</type>
-      <name>operator=</name>
-      <anchorfile>structdg_1_1geo_1_1a_generator2d.html</anchorfile>
-      <anchor>a659ff8773653987dc7dfcd0e5639d18f</anchor>
-      <arglist>(const aGenerator2d &amp;)</arglist>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
     </member>
   </compound>
-  <compound kind="struct">
-    <name>dg::geo::aGeneratorX2d</name>
-    <filename>structdg_1_1geo_1_1a_generator_x2d.html</filename>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; BFieldR &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
     <member kind="function">
       <type>double</type>
-      <name>zeta0</name>
-      <anchorfile>structdg_1_1geo_1_1a_generator_x2d.html</anchorfile>
-      <anchor>ab6927f3304adebab7f97c829dd2ae826</anchor>
-      <arglist>(double fx) const</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>zeta1</name>
-      <anchorfile>structdg_1_1geo_1_1a_generator_x2d.html</anchorfile>
-      <anchor>ac9056f356e77253c0fadcc67ec8eac24</anchor>
-      <arglist>(double fx) const</arglist>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
     </member>
     <member kind="function">
       <type>double</type>
-      <name>eta0</name>
-      <anchorfile>structdg_1_1geo_1_1a_generator_x2d.html</anchorfile>
-      <anchor>af28add265db7559930ddeade595d94b7</anchor>
-      <arglist>(double fy) const</arglist>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; BFieldT &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
     </member>
     <member kind="function">
       <type>double</type>
-      <name>eta1</name>
-      <anchorfile>structdg_1_1geo_1_1a_generator_x2d.html</anchorfile>
-      <anchor>a2e3ee0637c29e182dd3b696baece2152</anchor>
-      <arglist>(double fy) const</arglist>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; BFieldZ &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
-      <name>isOrthogonal</name>
-      <anchorfile>structdg_1_1geo_1_1a_generator_x2d.html</anchorfile>
-      <anchor>a0044b9c290a3ec14d89a7633f7689417</anchor>
-      <arglist>() const</arglist>
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; BHatP &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
     </member>
     <member kind="function">
-      <type>void</type>
-      <name>generate</name>
-      <anchorfile>structdg_1_1geo_1_1a_generator_x2d.html</anchorfile>
-      <anchor>ac988b01b2177fa01fc74f9eba192cec9</anchor>
-      <arglist>(const thrust::host_vector&lt; double &gt; &amp;zeta1d, const thrust::host_vector&lt; double &gt; &amp;eta1d, unsigned nodeX0, unsigned nodeX1, thrust::host_vector&lt; double &gt; &amp;x, thrust::host_vector&lt; double &gt; &amp;y, thrust::host_vector&lt; double &gt; &amp;zetaX, thrust::host_vector&lt; double &gt; &amp;zetaY, thrust::host_vector&lt; double &gt; &amp;etaX, thrust::host_vector&lt; double &gt; &amp;etaY) const</arglist>
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
     </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual aGeneratorX2d *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1a_generator_x2d.html</anchorfile>
-      <anchor>ae667dad34791d7516f6b08caaeb7c1b2</anchor>
-      <arglist>() const =0</arglist>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; BHatR &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual</type>
-      <name>~aGeneratorX2d</name>
-      <anchorfile>structdg_1_1geo_1_1a_generator_x2d.html</anchorfile>
-      <anchor>a75ad9dfa1ef6af69482b64a943441ca8</anchor>
-      <arglist>()</arglist>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
     </member>
-    <member kind="function" protection="protected">
-      <type></type>
-      <name>aGeneratorX2d</name>
-      <anchorfile>structdg_1_1geo_1_1a_generator_x2d.html</anchorfile>
-      <anchor>a9615acb98205b533c7f6c686e256fdfc</anchor>
-      <arglist>()</arglist>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; BHatZ &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
     </member>
-    <member kind="function" protection="protected">
-      <type></type>
-      <name>aGeneratorX2d</name>
-      <anchorfile>structdg_1_1geo_1_1a_generator_x2d.html</anchorfile>
-      <anchor>a0918e8b57f5c2dda9bd77b61c3913e59</anchor>
-      <arglist>(const aGeneratorX2d &amp;src)</arglist>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
     </member>
-    <member kind="function" protection="protected">
-      <type>aGeneratorX2d &amp;</type>
-      <name>operator=</name>
-      <anchorfile>structdg_1_1geo_1_1a_generator_x2d.html</anchorfile>
-      <anchor>a2c4330f49a3ea57eebd108988bdf5cca</anchor>
-      <arglist>(const aGeneratorX2d &amp;src)</arglist>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; Bmodule &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; BR &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; BZ &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; Compose&lt; UnaryFunctor &gt; &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; Constant &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; CurvatureKappaR &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; CurvatureKappaZ &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; CurvatureNablaBR &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; CurvatureNablaBZ &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; Divb &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; DivCurvatureKappa &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; DivCurvatureNablaB &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; DivLiseikinX &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; DivLiseikinY &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; GradBHatP &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; GradBHatR &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; GradBHatZ &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; GradLnB &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; InvB &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; Ipol &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; IpolR &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; IpolZ &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; Liseikin_XX &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; Liseikin_XY &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; Liseikin_YY &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; LnB &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; NablaPsiInv &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; NablaPsiInvX &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; NablaPsiInvY &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; Psip &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; PsipR &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; PsipRR &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; PsipRZ &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; PsipZ &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; PsipZZ &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; TrueCurvatureKappaP &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; TrueCurvatureKappaR &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; TrueCurvatureKappaZ &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; TrueCurvatureNablaBP &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; TrueCurvatureNablaBR &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; TrueCurvatureNablaBZ &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; TrueDivCurvatureKappa &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; TrueDivCurvatureNablaB &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; ZCutter &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -1425,9 +1769,235 @@
     </member>
   </compound>
   <compound kind="struct">
+    <name>dg::geo::aRealGenerator2d</name>
+    <filename>structdg_1_1geo_1_1a_real_generator2d.html</filename>
+    <templarg>real_type</templarg>
+    <member kind="function">
+      <type>real_type</type>
+      <name>width</name>
+      <anchorfile>structdg_1_1geo_1_1a_real_generator2d.html</anchorfile>
+      <anchor>ad2f83e627dcf61953136a282c6cf901f</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>real_type</type>
+      <name>height</name>
+      <anchorfile>structdg_1_1geo_1_1a_real_generator2d.html</anchorfile>
+      <anchor>ae07b0e7b6b9f3e406eff6a5c7ecc5599</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isOrthogonal</name>
+      <anchorfile>structdg_1_1geo_1_1a_real_generator2d.html</anchorfile>
+      <anchor>a87ca554f5e07b34f401f26fdae310c59</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>generate</name>
+      <anchorfile>structdg_1_1geo_1_1a_real_generator2d.html</anchorfile>
+      <anchor>a76dbbeee37a3679e0c128f6887420a09</anchor>
+      <arglist>(const thrust::host_vector&lt; real_type &gt; &amp;zeta1d, const thrust::host_vector&lt; real_type &gt; &amp;eta1d, thrust::host_vector&lt; real_type &gt; &amp;x, thrust::host_vector&lt; real_type &gt; &amp;y, thrust::host_vector&lt; real_type &gt; &amp;zetaX, thrust::host_vector&lt; real_type &gt; &amp;zetaY, thrust::host_vector&lt; real_type &gt; &amp;etaX, thrust::host_vector&lt; real_type &gt; &amp;etaY) const</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual aRealGenerator2d *</type>
+      <name>clone</name>
+      <anchorfile>structdg_1_1geo_1_1a_real_generator2d.html</anchorfile>
+      <anchor>a8ad214a31cb801e413fbe6cd3de548f2</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~aRealGenerator2d</name>
+      <anchorfile>structdg_1_1geo_1_1a_real_generator2d.html</anchorfile>
+      <anchor>a1fc124e34b2aa512ed258aad2cc81741</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type></type>
+      <name>aRealGenerator2d</name>
+      <anchorfile>structdg_1_1geo_1_1a_real_generator2d.html</anchorfile>
+      <anchor>a5723d952cbc70329a43cb4ce79bc0850</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type></type>
+      <name>aRealGenerator2d</name>
+      <anchorfile>structdg_1_1geo_1_1a_real_generator2d.html</anchorfile>
+      <anchor>ab4668c6ee09db8331e2dcf0948996e40</anchor>
+      <arglist>(const aRealGenerator2d &amp;)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>aRealGenerator2d &amp;</type>
+      <name>operator=</name>
+      <anchorfile>structdg_1_1geo_1_1a_real_generator2d.html</anchorfile>
+      <anchor>ad85bedbf06e7cadb2a27ba02807a1760</anchor>
+      <arglist>(const aRealGenerator2d &amp;)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::aRealGeneratorX2d</name>
+    <filename>structdg_1_1geo_1_1a_real_generator_x2d.html</filename>
+    <templarg>real_type</templarg>
+    <member kind="function">
+      <type>real_type</type>
+      <name>zeta0</name>
+      <anchorfile>structdg_1_1geo_1_1a_real_generator_x2d.html</anchorfile>
+      <anchor>a3d5606ff39709ba99c6df22add335ef9</anchor>
+      <arglist>(real_type fx) const</arglist>
+    </member>
+    <member kind="function">
+      <type>real_type</type>
+      <name>zeta1</name>
+      <anchorfile>structdg_1_1geo_1_1a_real_generator_x2d.html</anchorfile>
+      <anchor>a903b81e434916c8e087727bf16a00179</anchor>
+      <arglist>(real_type fx) const</arglist>
+    </member>
+    <member kind="function">
+      <type>real_type</type>
+      <name>eta0</name>
+      <anchorfile>structdg_1_1geo_1_1a_real_generator_x2d.html</anchorfile>
+      <anchor>a4205c0a5cd8beef9e497998af4a9f637</anchor>
+      <arglist>(real_type fy) const</arglist>
+    </member>
+    <member kind="function">
+      <type>real_type</type>
+      <name>eta1</name>
+      <anchorfile>structdg_1_1geo_1_1a_real_generator_x2d.html</anchorfile>
+      <anchor>aa01d1f45432084e9b447299f16564df9</anchor>
+      <arglist>(real_type fy) const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isOrthogonal</name>
+      <anchorfile>structdg_1_1geo_1_1a_real_generator_x2d.html</anchorfile>
+      <anchor>a486f0cec7e9c82146184967f1dd1afee</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>generate</name>
+      <anchorfile>structdg_1_1geo_1_1a_real_generator_x2d.html</anchorfile>
+      <anchor>a99a1e8abb1b24e17bcea435dd965927a</anchor>
+      <arglist>(const thrust::host_vector&lt; real_type &gt; &amp;zeta1d, const thrust::host_vector&lt; real_type &gt; &amp;eta1d, unsigned nodeX0, unsigned nodeX1, thrust::host_vector&lt; real_type &gt; &amp;x, thrust::host_vector&lt; real_type &gt; &amp;y, thrust::host_vector&lt; real_type &gt; &amp;zetaX, thrust::host_vector&lt; real_type &gt; &amp;zetaY, thrust::host_vector&lt; real_type &gt; &amp;etaX, thrust::host_vector&lt; real_type &gt; &amp;etaY) const</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual aRealGeneratorX2d *</type>
+      <name>clone</name>
+      <anchorfile>structdg_1_1geo_1_1a_real_generator_x2d.html</anchorfile>
+      <anchor>af0185c7e2782a7688d26062f3dc5a258</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~aRealGeneratorX2d</name>
+      <anchorfile>structdg_1_1geo_1_1a_real_generator_x2d.html</anchorfile>
+      <anchor>a58ad3e78765b49386a4558a28e2e7cfc</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type></type>
+      <name>aRealGeneratorX2d</name>
+      <anchorfile>structdg_1_1geo_1_1a_real_generator_x2d.html</anchorfile>
+      <anchor>a3efa833422582b2d09914a3edd69b7da</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type></type>
+      <name>aRealGeneratorX2d</name>
+      <anchorfile>structdg_1_1geo_1_1a_real_generator_x2d.html</anchorfile>
+      <anchor>a3e845c65978154cf3fa8e844d77c3dea</anchor>
+      <arglist>(const aRealGeneratorX2d &amp;src)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>aRealGeneratorX2d &amp;</type>
+      <name>operator=</name>
+      <anchorfile>structdg_1_1geo_1_1a_real_generator_x2d.html</anchorfile>
+      <anchor>aece3389387c5ea71e7b73eab014aa58d</anchor>
+      <arglist>(const aRealGeneratorX2d &amp;src)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::BFieldP</name>
+    <filename>structdg_1_1geo_1_1_b_field_p.html</filename>
+    <base>aCylindricalFunctor&lt; BFieldP &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>BFieldP</name>
+      <anchorfile>structdg_1_1geo_1_1_b_field_p.html</anchorfile>
+      <anchor>ae5b4ab6b79fa30688e51d9d8352b0290</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_b_field_p.html</anchorfile>
+      <anchor>a08f49a5042db46834a4ca12dc97926b2</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::BFieldR</name>
+    <filename>structdg_1_1geo_1_1_b_field_r.html</filename>
+    <base>aCylindricalFunctor&lt; BFieldR &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>BFieldR</name>
+      <anchorfile>structdg_1_1geo_1_1_b_field_r.html</anchorfile>
+      <anchor>a89d335b3579a3c7582e329e9be383939</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_b_field_r.html</anchorfile>
+      <anchor>adc129dda690d066b49ca37f6e843ee7b</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::BFieldT</name>
+    <filename>structdg_1_1geo_1_1_b_field_t.html</filename>
+    <base>aCylindricalFunctor&lt; BFieldT &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>BFieldT</name>
+      <anchorfile>structdg_1_1geo_1_1_b_field_t.html</anchorfile>
+      <anchor>a1458440c8994450fe1bd68236bae8c32</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_b_field_t.html</anchorfile>
+      <anchor>a2d453d1dd4a7f34dafb127a1e1ed74a4</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::BFieldZ</name>
+    <filename>structdg_1_1geo_1_1_b_field_z.html</filename>
+    <base>aCylindricalFunctor&lt; BFieldZ &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>BFieldZ</name>
+      <anchorfile>structdg_1_1geo_1_1_b_field_z.html</anchorfile>
+      <anchor>aa82c6cebc3845f5153f82512de493508</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_b_field_z.html</anchorfile>
+      <anchor>a1e1049d28280cc7ece6be6e5d8b9d903</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
     <name>dg::geo::BHatP</name>
     <filename>structdg_1_1geo_1_1_b_hat_p.html</filename>
-    <base>aCloneableBinaryFunctor&lt; BHatP &gt;</base>
+    <base>aCylindricalFunctor&lt; BHatP &gt;</base>
     <member kind="function">
       <type></type>
       <name>BHatP</name>
@@ -1435,11 +2005,18 @@
       <anchor>aed0db37bd242e043d93e9d4a479bd0de</anchor>
       <arglist>(const TokamakMagneticField &amp;mag)</arglist>
     </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_b_hat_p.html</anchorfile>
+      <anchor>a84cb5fb89d871e3ae9668cfa0aa91297</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::BHatR</name>
     <filename>structdg_1_1geo_1_1_b_hat_r.html</filename>
-    <base>aCloneableBinaryFunctor&lt; BHatR &gt;</base>
+    <base>aCylindricalFunctor&lt; BHatR &gt;</base>
     <member kind="function">
       <type></type>
       <name>BHatR</name>
@@ -1447,11 +2024,18 @@
       <anchor>a64ff96371259409af76c97ec34fe6166</anchor>
       <arglist>(const TokamakMagneticField &amp;mag)</arglist>
     </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_b_hat_r.html</anchorfile>
+      <anchor>afb19b7c2fa67e0aedb1851bc9c139fdb</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::BHatZ</name>
     <filename>structdg_1_1geo_1_1_b_hat_z.html</filename>
-    <base>aCloneableBinaryFunctor&lt; BHatZ &gt;</base>
+    <base>aCylindricalFunctor&lt; BHatZ &gt;</base>
     <member kind="function">
       <type></type>
       <name>BHatZ</name>
@@ -1459,306 +2043,18 @@
       <anchor>a86ab37c369150cf13f83410e4967c748</anchor>
       <arglist>(const TokamakMagneticField &amp;mag)</arglist>
     </member>
-  </compound>
-  <compound kind="struct">
-    <name>dg::geo::BinaryFunctorAdapter</name>
-    <filename>structdg_1_1geo_1_1_binary_functor_adapter.html</filename>
-    <templarg></templarg>
-    <base>aCloneableBinaryFunctor&lt; BinaryFunctorAdapter&lt; BinaryFunctor &gt; &gt;</base>
     <member kind="function">
-      <type></type>
-      <name>BinaryFunctorAdapter</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_functor_adapter.html</anchorfile>
-      <anchor>a7515c445b6b937d65f02c13be052ddb7</anchor>
-      <arglist>(const BinaryFunctor &amp;f)</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>dg::geo::BinaryFunctorsLvl1</name>
-    <filename>structdg_1_1geo_1_1_binary_functors_lvl1.html</filename>
-    <member kind="function">
-      <type></type>
-      <name>BinaryFunctorsLvl1</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_functors_lvl1.html</anchorfile>
-      <anchor>a70c11caac7cf1ef1a3078bd96813e1ea</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>BinaryFunctorsLvl1</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_functors_lvl1.html</anchorfile>
-      <anchor>a0f47be587e83a86a9ac9eefebddde88e</anchor>
-      <arglist>(aBinaryFunctor *f, aBinaryFunctor *fx, aBinaryFunctor *fy)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>BinaryFunctorsLvl1</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_functors_lvl1.html</anchorfile>
-      <anchor>ad8005949b3ffff7d1eebeb79db3b8cc3</anchor>
-      <arglist>(const aBinaryFunctor &amp;f, const aBinaryFunctor &amp;fx, const aBinaryFunctor &amp;fy)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>reset</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_functors_lvl1.html</anchorfile>
-      <anchor>a2b7275e36081459ea8b476148621be1f</anchor>
-      <arglist>(aBinaryFunctor *f, aBinaryFunctor *fx, aBinaryFunctor *fy)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>reset</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_functors_lvl1.html</anchorfile>
-      <anchor>aa57baec4ebd0f05875493777bb278a92</anchor>
-      <arglist>(const aBinaryFunctor &amp;f, const aBinaryFunctor &amp;fx, const aBinaryFunctor &amp;fy)</arglist>
-    </member>
-    <member kind="function">
-      <type>const aBinaryFunctor &amp;</type>
-      <name>f</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_functors_lvl1.html</anchorfile>
-      <anchor>ac3ca69dee28bb0447108f328a0c46ff1</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>const aBinaryFunctor &amp;</type>
-      <name>dfx</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_functors_lvl1.html</anchorfile>
-      <anchor>ae6a295a8a565091dd3baf54b0b11bb40</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>const aBinaryFunctor &amp;</type>
-      <name>dfy</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_functors_lvl1.html</anchorfile>
-      <anchor>a13e43e955e5f8b5a9ebd4eba58f3d1dc</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>dg::geo::BinaryFunctorsLvl2</name>
-    <filename>structdg_1_1geo_1_1_binary_functors_lvl2.html</filename>
-    <member kind="function">
-      <type></type>
-      <name>BinaryFunctorsLvl2</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_functors_lvl2.html</anchorfile>
-      <anchor>a6005dbbc55ef5687ae54f1ecda461085</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>BinaryFunctorsLvl2</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_functors_lvl2.html</anchorfile>
-      <anchor>a122de0181d3596640e04514b898a8104</anchor>
-      <arglist>(aBinaryFunctor *f, aBinaryFunctor *fx, aBinaryFunctor *fy, aBinaryFunctor *fxx, aBinaryFunctor *fxy, aBinaryFunctor *fyy)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>BinaryFunctorsLvl2</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_functors_lvl2.html</anchorfile>
-      <anchor>a22f65d4229faebc8689b159bef8bd5b7</anchor>
-      <arglist>(const aBinaryFunctor &amp;f, const aBinaryFunctor &amp;fx, const aBinaryFunctor &amp;fy, const aBinaryFunctor &amp;fxx, const aBinaryFunctor &amp;fxy, const aBinaryFunctor &amp;fyy)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>reset</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_functors_lvl2.html</anchorfile>
-      <anchor>a0c2ae0741668627025e0935ab3efa3c8</anchor>
-      <arglist>(aBinaryFunctor *f, aBinaryFunctor *fx, aBinaryFunctor *fy, aBinaryFunctor *fxx, aBinaryFunctor *fxy, aBinaryFunctor *fyy)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>reset</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_functors_lvl2.html</anchorfile>
-      <anchor>a7252f3d38d88ca09b1c6140a2ffeff41</anchor>
-      <arglist>(const aBinaryFunctor &amp;f, const aBinaryFunctor &amp;fx, const aBinaryFunctor &amp;fy, const aBinaryFunctor &amp;fxx, const aBinaryFunctor &amp;fxy, const aBinaryFunctor &amp;fyy)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>operator BinaryFunctorsLvl1</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_functors_lvl2.html</anchorfile>
-      <anchor>a83c5fb319e4d98786237608ceb37d85d</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>const aBinaryFunctor &amp;</type>
-      <name>f</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_functors_lvl2.html</anchorfile>
-      <anchor>a46f7cdba2fd9e3ad9943229005b1a27b</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>const aBinaryFunctor &amp;</type>
-      <name>dfx</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_functors_lvl2.html</anchorfile>
-      <anchor>a8e7e08358381432f78e00ad7ef364215</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>const aBinaryFunctor &amp;</type>
-      <name>dfy</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_functors_lvl2.html</anchorfile>
-      <anchor>af47021d92579014f7dae5c66757b695f</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>const aBinaryFunctor &amp;</type>
-      <name>dfxx</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_functors_lvl2.html</anchorfile>
-      <anchor>a7a3ea0d944397f0a30b42e8b16389637</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>const aBinaryFunctor &amp;</type>
-      <name>dfxy</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_functors_lvl2.html</anchorfile>
-      <anchor>a16bdd0080995937823f9319b51db5fb2</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>const aBinaryFunctor &amp;</type>
-      <name>dfyy</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_functors_lvl2.html</anchorfile>
-      <anchor>aaf8e729f5e159f2d389f3c5615a0acd3</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>dg::geo::BinarySymmTensorLvl1</name>
-    <filename>structdg_1_1geo_1_1_binary_symm_tensor_lvl1.html</filename>
-    <member kind="function">
-      <type></type>
-      <name>BinarySymmTensorLvl1</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_symm_tensor_lvl1.html</anchorfile>
-      <anchor>aece8f48d68f9ea20cae52d9ffdb9d24f</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>BinarySymmTensorLvl1</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_symm_tensor_lvl1.html</anchorfile>
-      <anchor>a6973b3d6b22789ddcbef074cea2b59ee</anchor>
-      <arglist>(aBinaryFunctor *chi_xx, aBinaryFunctor *chi_xy, aBinaryFunctor *chi_yy, aBinaryFunctor *divChiX, aBinaryFunctor *divChiY)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>BinarySymmTensorLvl1</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_symm_tensor_lvl1.html</anchorfile>
-      <anchor>acacb0e74a21d1cf2744117f2abce1ef3</anchor>
-      <arglist>(const aBinaryFunctor &amp;chi_xx, const aBinaryFunctor &amp;chi_xy, const aBinaryFunctor &amp;chi_yy, const aBinaryFunctor &amp;divChiX, const aBinaryFunctor &amp;divChiY)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>reset</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_symm_tensor_lvl1.html</anchorfile>
-      <anchor>a376661679d416d05d2189444cb992717</anchor>
-      <arglist>(aBinaryFunctor *chi_xx, aBinaryFunctor *chi_xy, aBinaryFunctor *chi_yy, aBinaryFunctor *divChiX, aBinaryFunctor *divChiY)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>reset</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_symm_tensor_lvl1.html</anchorfile>
-      <anchor>a1a95028302e684bfcbb47d35029924c4</anchor>
-      <arglist>(const aBinaryFunctor &amp;chi_xx, const aBinaryFunctor &amp;chi_xy, const aBinaryFunctor &amp;chi_yy, const aBinaryFunctor &amp;divChiX, const aBinaryFunctor &amp;divChiY)</arglist>
-    </member>
-    <member kind="function">
-      <type>const aBinaryFunctor &amp;</type>
-      <name>xx</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_symm_tensor_lvl1.html</anchorfile>
-      <anchor>a43075aed13a00d04c937156a93ebde97</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>const aBinaryFunctor &amp;</type>
-      <name>xy</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_symm_tensor_lvl1.html</anchorfile>
-      <anchor>a8f6ba544ad7919f7db180f79ef449401</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>const aBinaryFunctor &amp;</type>
-      <name>yy</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_symm_tensor_lvl1.html</anchorfile>
-      <anchor>a9d656f2c99e6430f7b1963bd58de9e63</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>const aBinaryFunctor &amp;</type>
-      <name>divX</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_symm_tensor_lvl1.html</anchorfile>
-      <anchor>ab45f34f7349a230ab2062f788ff230f6</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>const aBinaryFunctor &amp;</type>
-      <name>divY</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_symm_tensor_lvl1.html</anchorfile>
-      <anchor>a0e6b7dd6cf6420087bdc551a74673f2c</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>dg::geo::BinaryVectorLvl0</name>
-    <filename>structdg_1_1geo_1_1_binary_vector_lvl0.html</filename>
-    <member kind="function">
-      <type></type>
-      <name>BinaryVectorLvl0</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_vector_lvl0.html</anchorfile>
-      <anchor>a4d6c92a8845277c162c8b93afaa32353</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>BinaryVectorLvl0</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_vector_lvl0.html</anchorfile>
-      <anchor>af691907b52b03c9b97445bc9d1f7357f</anchor>
-      <arglist>(aBinaryFunctor *v_x, aBinaryFunctor *v_y, aBinaryFunctor *v_z)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>BinaryVectorLvl0</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_vector_lvl0.html</anchorfile>
-      <anchor>ad0621fac12071d57d7aa59d8c619e07a</anchor>
-      <arglist>(const aBinaryFunctor &amp;v_x, const aBinaryFunctor &amp;v_y, const aBinaryFunctor &amp;v_z)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>reset</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_vector_lvl0.html</anchorfile>
-      <anchor>a5028d7d7b224f75781191aebf3d0db02</anchor>
-      <arglist>(aBinaryFunctor *v_x, aBinaryFunctor *v_y, aBinaryFunctor *v_z)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>reset</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_vector_lvl0.html</anchorfile>
-      <anchor>a73ec4b440022981683312b8fbcf12f97</anchor>
-      <arglist>(const aBinaryFunctor &amp;v_x, const aBinaryFunctor &amp;v_y, const aBinaryFunctor &amp;v_z)</arglist>
-    </member>
-    <member kind="function">
-      <type>const aBinaryFunctor &amp;</type>
-      <name>x</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_vector_lvl0.html</anchorfile>
-      <anchor>a08dc355bc006d118cdd76aa24508ab73</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>const aBinaryFunctor &amp;</type>
-      <name>y</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_vector_lvl0.html</anchorfile>
-      <anchor>a7f4a7a7a1cea707e2343309f7973a520</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>const aBinaryFunctor &amp;</type>
-      <name>z</name>
-      <anchorfile>structdg_1_1geo_1_1_binary_vector_lvl0.html</anchorfile>
-      <anchor>ad79f4121f302da4a2e99a5100a85797a</anchor>
-      <arglist>() const</arglist>
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_b_hat_z.html</anchorfile>
+      <anchor>aeccb61015f0c70f5a92f8680b73798ce</anchor>
+      <arglist>(double R, double Z) const</arglist>
     </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::Bmodule</name>
     <filename>structdg_1_1geo_1_1_bmodule.html</filename>
-    <base>aCloneableBinaryFunctor&lt; Bmodule &gt;</base>
+    <base>aCylindricalFunctor&lt; Bmodule &gt;</base>
     <member kind="function">
       <type></type>
       <name>Bmodule</name>
@@ -1766,11 +2062,18 @@
       <anchor>a175e62a152a6a6326076d185eb853d40</anchor>
       <arglist>(const TokamakMagneticField &amp;mag)</arglist>
     </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_bmodule.html</anchorfile>
+      <anchor>aa327adacf6f73006ef6933eef6a50991</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::BR</name>
     <filename>structdg_1_1geo_1_1_b_r.html</filename>
-    <base>aCloneableBinaryFunctor&lt; BR &gt;</base>
+    <base>aCylindricalFunctor&lt; BR &gt;</base>
     <member kind="function">
       <type></type>
       <name>BR</name>
@@ -1778,11 +2081,18 @@
       <anchor>af513d6cfb6767b943b5e6222f675bf71</anchor>
       <arglist>(const TokamakMagneticField &amp;mag)</arglist>
     </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_b_r.html</anchorfile>
+      <anchor>a19c4c875015149a7f64234d0368a2465</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::BZ</name>
     <filename>structdg_1_1geo_1_1_b_z.html</filename>
-    <base>aCloneableBinaryFunctor&lt; BZ &gt;</base>
+    <base>aCylindricalFunctor&lt; BZ &gt;</base>
     <member kind="function">
       <type></type>
       <name>BZ</name>
@@ -1790,11 +2100,38 @@
       <anchor>a28c98537a9eb29f881e6bc2653765b2e</anchor>
       <arglist>(const TokamakMagneticField &amp;mag)</arglist>
     </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_b_z.html</anchorfile>
+      <anchor>a7865acb3387d5cdd21959b0209429573</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::Compose</name>
+    <filename>structdg_1_1geo_1_1_compose.html</filename>
+    <templarg></templarg>
+    <base>aCylindricalFunctor&lt; Compose&lt; UnaryFunctor &gt; &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>Compose</name>
+      <anchorfile>structdg_1_1geo_1_1_compose.html</anchorfile>
+      <anchor>addeb93c185cb79e7b9926a30d6b5c6b8</anchor>
+      <arglist>(CylindricalFunctor psi, FunctorParams &amp;&amp;... ps)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_compose.html</anchorfile>
+      <anchor>abd6fc13d46ef09def9bd60b4b11a5fa6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::Constant</name>
     <filename>structdg_1_1geo_1_1_constant.html</filename>
-    <base>aCloneableBinaryFunctor&lt; Constant &gt;</base>
+    <base>aCylindricalFunctor&lt; Constant &gt;</base>
     <member kind="function">
       <type></type>
       <name>Constant</name>
@@ -1802,11 +2139,18 @@
       <anchor>a1e71243ed68c71184b636137d56f9a73</anchor>
       <arglist>(double c)</arglist>
     </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_constant.html</anchorfile>
+      <anchor>a06f6859b451f18c44a954aa2588629ac</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::CurvatureKappaR</name>
     <filename>structdg_1_1geo_1_1_curvature_kappa_r.html</filename>
-    <base>aCloneableBinaryFunctor&lt; CurvatureKappaR &gt;</base>
+    <base>aCylindricalFunctor&lt; CurvatureKappaR &gt;</base>
     <member kind="function">
       <type></type>
       <name>CurvatureKappaR</name>
@@ -1821,11 +2165,18 @@
       <anchor>a3e2523319ad30d683a7d9598b03049cd</anchor>
       <arglist>(const TokamakMagneticField &amp;mag)</arglist>
     </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_curvature_kappa_r.html</anchorfile>
+      <anchor>aa8194512236b03ad70ec83ac4d9a7905</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::CurvatureKappaZ</name>
     <filename>structdg_1_1geo_1_1_curvature_kappa_z.html</filename>
-    <base>aCloneableBinaryFunctor&lt; CurvatureKappaZ &gt;</base>
+    <base>aCylindricalFunctor&lt; CurvatureKappaZ &gt;</base>
     <member kind="function">
       <type></type>
       <name>CurvatureKappaZ</name>
@@ -1833,11 +2184,18 @@
       <anchor>a93ba48d2bff43d2249ffec2da333f5e9</anchor>
       <arglist>(const TokamakMagneticField &amp;mag)</arglist>
     </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_curvature_kappa_z.html</anchorfile>
+      <anchor>a1f868a4921ae1a8eea06372974ba9695</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::CurvatureNablaBR</name>
     <filename>structdg_1_1geo_1_1_curvature_nabla_b_r.html</filename>
-    <base>aCloneableBinaryFunctor&lt; CurvatureNablaBR &gt;</base>
+    <base>aCylindricalFunctor&lt; CurvatureNablaBR &gt;</base>
     <member kind="function">
       <type></type>
       <name>CurvatureNablaBR</name>
@@ -1845,11 +2203,18 @@
       <anchor>a4df80c8bef9691e4a04acc738d539b85</anchor>
       <arglist>(const TokamakMagneticField &amp;mag)</arglist>
     </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_curvature_nabla_b_r.html</anchorfile>
+      <anchor>aaed339fcf36edd9d11f6db105319e3e0</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::CurvatureNablaBZ</name>
     <filename>structdg_1_1geo_1_1_curvature_nabla_b_z.html</filename>
-    <base>aCloneableBinaryFunctor&lt; CurvatureNablaBZ &gt;</base>
+    <base>aCylindricalFunctor&lt; CurvatureNablaBZ &gt;</base>
     <member kind="function">
       <type></type>
       <name>CurvatureNablaBZ</name>
@@ -1857,246 +2222,237 @@
       <anchor>ad7c59d9f2027bcc6d734b048aa075d06</anchor>
       <arglist>(const TokamakMagneticField &amp;mag)</arglist>
     </member>
-  </compound>
-  <compound kind="struct">
-    <name>dg::geo::CurvilinearGrid2d</name>
-    <filename>structdg_1_1geo_1_1_curvilinear_grid2d.html</filename>
     <member kind="function">
-      <type></type>
-      <name>CurvilinearGrid2d</name>
-      <anchorfile>structdg_1_1geo_1_1_curvilinear_grid2d.html</anchorfile>
-      <anchor>aac22c8881036811dc7658a608fbcfe63</anchor>
-      <arglist>(const aGenerator2d &amp;generator, unsigned n, unsigned Nx, unsigned Ny, dg::bc bcx=dg::DIR, bc bcy=dg::PER)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>CurvilinearGrid2d</name>
-      <anchorfile>structdg_1_1geo_1_1_curvilinear_grid2d.html</anchorfile>
-      <anchor>a03e755bf3a4f8068a9349026d6dc07c4</anchor>
-      <arglist>(CurvilinearProductGrid3d g)</arglist>
-    </member>
-    <member kind="function">
-      <type>const aGenerator2d &amp;</type>
-      <name>generator</name>
-      <anchorfile>structdg_1_1geo_1_1_curvilinear_grid2d.html</anchorfile>
-      <anchor>a09e8129943f98d253457aee60f4ad229</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual CurvilinearGrid2d *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1_curvilinear_grid2d.html</anchorfile>
-      <anchor>a7779ee22578898f0c27c1e5adf6041bb</anchor>
-      <arglist>() const</arglist>
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_curvature_nabla_b_z.html</anchorfile>
+      <anchor>ad2dfbcfc0258a428c2abd342a985a757</anchor>
+      <arglist>(double R, double Z) const</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>dg::geo::CurvilinearGridX2d</name>
-    <filename>structdg_1_1geo_1_1_curvilinear_grid_x2d.html</filename>
+    <name>dg::geo::CylindricalFunctorsLvl1</name>
+    <filename>structdg_1_1geo_1_1_cylindrical_functors_lvl1.html</filename>
     <member kind="function">
       <type></type>
-      <name>CurvilinearGridX2d</name>
-      <anchorfile>structdg_1_1geo_1_1_curvilinear_grid_x2d.html</anchorfile>
-      <anchor>a438ee55145383dce454208d721bb7e95</anchor>
-      <arglist>(const aGeneratorX2d &amp;generator, double fx, double fy, unsigned n, unsigned Nx, unsigned Ny, dg::bc bcx=dg::DIR, bc bcy=dg::PER)</arglist>
+      <name>CylindricalFunctorsLvl1</name>
+      <anchorfile>structdg_1_1geo_1_1_cylindrical_functors_lvl1.html</anchorfile>
+      <anchor>a6610120434ae389cc352175092bd2ca3</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function">
-      <type>const aGeneratorX2d &amp;</type>
-      <name>generator</name>
-      <anchorfile>structdg_1_1geo_1_1_curvilinear_grid_x2d.html</anchorfile>
-      <anchor>ab60250fe99f4a923f21539362ec7ef47</anchor>
+      <type></type>
+      <name>CylindricalFunctorsLvl1</name>
+      <anchorfile>structdg_1_1geo_1_1_cylindrical_functors_lvl1.html</anchorfile>
+      <anchor>a23c4cc21e256ed4b0a7089f02e9113d0</anchor>
+      <arglist>(CylindricalFunctor f, CylindricalFunctor fx, CylindricalFunctor fy)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>reset</name>
+      <anchorfile>structdg_1_1geo_1_1_cylindrical_functors_lvl1.html</anchorfile>
+      <anchor>a0e03e570150456975aba195223c345ba</anchor>
+      <arglist>(CylindricalFunctor f, CylindricalFunctor fx, CylindricalFunctor fy)</arglist>
+    </member>
+    <member kind="function">
+      <type>const CylindricalFunctor &amp;</type>
+      <name>f</name>
+      <anchorfile>structdg_1_1geo_1_1_cylindrical_functors_lvl1.html</anchorfile>
+      <anchor>a438ebc53d9914838c0f36ff218607232</anchor>
       <arglist>() const</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual CurvilinearGridX2d *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1_curvilinear_grid_x2d.html</anchorfile>
-      <anchor>a07511fbbf587bdf6b30ced2073d3fced</anchor>
+    <member kind="function">
+      <type>const CylindricalFunctor &amp;</type>
+      <name>dfx</name>
+      <anchorfile>structdg_1_1geo_1_1_cylindrical_functors_lvl1.html</anchorfile>
+      <anchor>a4357af1a62ca7ae72326df6ca3720a84</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>const CylindricalFunctor &amp;</type>
+      <name>dfy</name>
+      <anchorfile>structdg_1_1geo_1_1_cylindrical_functors_lvl1.html</anchorfile>
+      <anchor>a260a82db5460115eb11de8d68e992414</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>dg::geo::CurvilinearMPIGrid2d</name>
-    <filename>structdg_1_1geo_1_1_curvilinear_m_p_i_grid2d.html</filename>
+    <name>dg::geo::CylindricalFunctorsLvl2</name>
+    <filename>structdg_1_1geo_1_1_cylindrical_functors_lvl2.html</filename>
     <member kind="function">
       <type></type>
-      <name>CurvilinearMPIGrid2d</name>
-      <anchorfile>structdg_1_1geo_1_1_curvilinear_m_p_i_grid2d.html</anchorfile>
-      <anchor>a66d72f305a9fe29cfb6fd9c1d631930d</anchor>
-      <arglist>(const aGenerator2d &amp;generator, unsigned n, unsigned Nx, unsigned Ny, dg::bc bcx, dg::bc bcy, MPI_Comm comm)</arglist>
+      <name>CylindricalFunctorsLvl2</name>
+      <anchorfile>structdg_1_1geo_1_1_cylindrical_functors_lvl2.html</anchorfile>
+      <anchor>a688dbed54c091ece2c408e8bd059bf1e</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type></type>
-      <name>CurvilinearMPIGrid2d</name>
-      <anchorfile>structdg_1_1geo_1_1_curvilinear_m_p_i_grid2d.html</anchorfile>
-      <anchor>a792e4ba3524124414cf0194d4369d277</anchor>
-      <arglist>(const CurvilinearProductMPIGrid3d &amp;g)</arglist>
+      <name>CylindricalFunctorsLvl2</name>
+      <anchorfile>structdg_1_1geo_1_1_cylindrical_functors_lvl2.html</anchorfile>
+      <anchor>a378a5ff1b39c08140d0b67c66eae5333</anchor>
+      <arglist>(CylindricalFunctor f, CylindricalFunctor fx, CylindricalFunctor fy, CylindricalFunctor fxx, CylindricalFunctor fxy, CylindricalFunctor fyy)</arglist>
     </member>
     <member kind="function">
-      <type>const aGenerator2d &amp;</type>
-      <name>generator</name>
-      <anchorfile>structdg_1_1geo_1_1_curvilinear_m_p_i_grid2d.html</anchorfile>
-      <anchor>a138488db8b1539e07975790971e199d2</anchor>
+      <type>void</type>
+      <name>reset</name>
+      <anchorfile>structdg_1_1geo_1_1_cylindrical_functors_lvl2.html</anchorfile>
+      <anchor>adcc62c8b3f6bf1e83eca1105c0e0543f</anchor>
+      <arglist>(CylindricalFunctor f, CylindricalFunctor fx, CylindricalFunctor fy, CylindricalFunctor fxx, CylindricalFunctor fxy, CylindricalFunctor fyy)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>operator CylindricalFunctorsLvl1</name>
+      <anchorfile>structdg_1_1geo_1_1_cylindrical_functors_lvl2.html</anchorfile>
+      <anchor>a08fef0ec5ad1a2a75d557f4a14c7b8ba</anchor>
       <arglist>() const</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual CurvilinearMPIGrid2d *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1_curvilinear_m_p_i_grid2d.html</anchorfile>
-      <anchor>ab6b8525624e96a1eb7b305e66c8534d8</anchor>
+    <member kind="function">
+      <type>const CylindricalFunctor &amp;</type>
+      <name>f</name>
+      <anchorfile>structdg_1_1geo_1_1_cylindrical_functors_lvl2.html</anchorfile>
+      <anchor>a51339da527af3791f39752a5ca1eaf3b</anchor>
       <arglist>() const</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual CurvilinearGrid2d *</type>
-      <name>global_geometry</name>
-      <anchorfile>structdg_1_1geo_1_1_curvilinear_m_p_i_grid2d.html</anchorfile>
-      <anchor>ac3f65ca98f06801aa9e24f4ed50ffc86</anchor>
+    <member kind="function">
+      <type>const CylindricalFunctor &amp;</type>
+      <name>dfx</name>
+      <anchorfile>structdg_1_1geo_1_1_cylindrical_functors_lvl2.html</anchorfile>
+      <anchor>a7d9e82084e925c8600217db208525342</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>const CylindricalFunctor &amp;</type>
+      <name>dfy</name>
+      <anchorfile>structdg_1_1geo_1_1_cylindrical_functors_lvl2.html</anchorfile>
+      <anchor>a68f22b4774b49a8034830a5948fc0f3f</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>const CylindricalFunctor &amp;</type>
+      <name>dfxx</name>
+      <anchorfile>structdg_1_1geo_1_1_cylindrical_functors_lvl2.html</anchorfile>
+      <anchor>a3e3e2316be744d3d1ff7d16ac320fb89</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>const CylindricalFunctor &amp;</type>
+      <name>dfxy</name>
+      <anchorfile>structdg_1_1geo_1_1_cylindrical_functors_lvl2.html</anchorfile>
+      <anchor>a23973566841a98e10625482e0e08153c</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>const CylindricalFunctor &amp;</type>
+      <name>dfyy</name>
+      <anchorfile>structdg_1_1geo_1_1_cylindrical_functors_lvl2.html</anchorfile>
+      <anchor>a3d9cc4ca34e041d7ebcd3b11e6925304</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>dg::geo::CurvilinearProductGrid3d</name>
-    <filename>structdg_1_1geo_1_1_curvilinear_product_grid3d.html</filename>
-    <member kind="typedef">
-      <type>CurvilinearGrid2d</type>
-      <name>perpendicular_grid</name>
-      <anchorfile>structdg_1_1geo_1_1_curvilinear_product_grid3d.html</anchorfile>
-      <anchor>ad34070a495f745e71fdd269713363068</anchor>
-      <arglist></arglist>
+    <name>dg::geo::CylindricalSymmTensorLvl1</name>
+    <filename>structdg_1_1geo_1_1_cylindrical_symm_tensor_lvl1.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>CylindricalSymmTensorLvl1</name>
+      <anchorfile>structdg_1_1geo_1_1_cylindrical_symm_tensor_lvl1.html</anchorfile>
+      <anchor>a25ef339a144a04905e650980ee461016</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type></type>
-      <name>CurvilinearProductGrid3d</name>
-      <anchorfile>structdg_1_1geo_1_1_curvilinear_product_grid3d.html</anchorfile>
-      <anchor>aa5def3a6d21440bfa6d4e250951f5092</anchor>
-      <arglist>(const aGenerator2d &amp;generator, unsigned n, unsigned Nx, unsigned Ny, unsigned Nz, bc bcx=dg::DIR, bc bcy=dg::PER, bc bcz=dg::PER)</arglist>
+      <name>CylindricalSymmTensorLvl1</name>
+      <anchorfile>structdg_1_1geo_1_1_cylindrical_symm_tensor_lvl1.html</anchorfile>
+      <anchor>a0dcd2f6f60b54a20205ad118acb9cb87</anchor>
+      <arglist>(CylindricalFunctor chi_xx, CylindricalFunctor chi_xy, CylindricalFunctor chi_yy, CylindricalFunctor divChiX, CylindricalFunctor divChiY)</arglist>
     </member>
     <member kind="function">
-      <type>const aGenerator2d &amp;</type>
-      <name>generator</name>
-      <anchorfile>structdg_1_1geo_1_1_curvilinear_product_grid3d.html</anchorfile>
-      <anchor>a75368910393dca616693e5ed216ba6ce</anchor>
+      <type>void</type>
+      <name>reset</name>
+      <anchorfile>structdg_1_1geo_1_1_cylindrical_symm_tensor_lvl1.html</anchorfile>
+      <anchor>a04b73689620af88caddfdd406bc0dc8e</anchor>
+      <arglist>(CylindricalFunctor chi_xx, CylindricalFunctor chi_xy, CylindricalFunctor chi_yy, CylindricalFunctor divChiX, CylindricalFunctor divChiY)</arglist>
+    </member>
+    <member kind="function">
+      <type>const CylindricalFunctor &amp;</type>
+      <name>xx</name>
+      <anchorfile>structdg_1_1geo_1_1_cylindrical_symm_tensor_lvl1.html</anchorfile>
+      <anchor>af627421304545dfaeb3d9116b9d64b6f</anchor>
       <arglist>() const</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual CurvilinearProductGrid3d *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1_curvilinear_product_grid3d.html</anchorfile>
-      <anchor>ac75010811c79a367d26da70a3e25d13b</anchor>
+    <member kind="function">
+      <type>const CylindricalFunctor &amp;</type>
+      <name>xy</name>
+      <anchorfile>structdg_1_1geo_1_1_cylindrical_symm_tensor_lvl1.html</anchorfile>
+      <anchor>a196053d756a9c427fa2f6d879c138f21</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>const CylindricalFunctor &amp;</type>
+      <name>yy</name>
+      <anchorfile>structdg_1_1geo_1_1_cylindrical_symm_tensor_lvl1.html</anchorfile>
+      <anchor>ae71dfaccdaaa0ea3384c5b2a081fbcc9</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>const CylindricalFunctor &amp;</type>
+      <name>divX</name>
+      <anchorfile>structdg_1_1geo_1_1_cylindrical_symm_tensor_lvl1.html</anchorfile>
+      <anchor>a3c95b2451c799525956e90542167d254</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>const CylindricalFunctor &amp;</type>
+      <name>divY</name>
+      <anchorfile>structdg_1_1geo_1_1_cylindrical_symm_tensor_lvl1.html</anchorfile>
+      <anchor>abf97b5bbc7b7a9a06eb5606f53543e82</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>dg::geo::CurvilinearProductGridX3d</name>
-    <filename>structdg_1_1geo_1_1_curvilinear_product_grid_x3d.html</filename>
+    <name>dg::geo::CylindricalVectorLvl0</name>
+    <filename>structdg_1_1geo_1_1_cylindrical_vector_lvl0.html</filename>
     <member kind="function">
       <type></type>
-      <name>CurvilinearProductGridX3d</name>
-      <anchorfile>structdg_1_1geo_1_1_curvilinear_product_grid_x3d.html</anchorfile>
-      <anchor>a5fe08c69395631bd61f0ff379bab6f4b</anchor>
-      <arglist>(const aGeneratorX2d &amp;generator, double fx, double fy, unsigned n, unsigned Nx, unsigned Ny, unsigned Nz, bc bcx=dg::DIR, bc bcy=dg::PER, bc bcz=dg::PER)</arglist>
-    </member>
-    <member kind="function">
-      <type>const aGeneratorX2d &amp;</type>
-      <name>generator</name>
-      <anchorfile>structdg_1_1geo_1_1_curvilinear_product_grid_x3d.html</anchorfile>
-      <anchor>a9e58eee79ed6155a9031ecf72c2bd95f</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual CurvilinearProductGridX3d *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1_curvilinear_product_grid_x3d.html</anchorfile>
-      <anchor>ae6e175fbd80764f1db90b758281eda53</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>dg::geo::CurvilinearProductMPIGrid3d</name>
-    <filename>structdg_1_1geo_1_1_curvilinear_product_m_p_i_grid3d.html</filename>
-    <member kind="typedef">
-      <type>dg::geo::CurvilinearMPIGrid2d</type>
-      <name>perpendicular_grid</name>
-      <anchorfile>structdg_1_1geo_1_1_curvilinear_product_m_p_i_grid3d.html</anchorfile>
-      <anchor>a4110562a50a8393fa94a1168014abf01</anchor>
-      <arglist></arglist>
+      <name>CylindricalVectorLvl0</name>
+      <anchorfile>structdg_1_1geo_1_1_cylindrical_vector_lvl0.html</anchorfile>
+      <anchor>aab6c311c0ede491bed9635c1ec003aec</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type></type>
-      <name>CurvilinearProductMPIGrid3d</name>
-      <anchorfile>structdg_1_1geo_1_1_curvilinear_product_m_p_i_grid3d.html</anchorfile>
-      <anchor>a4f28b861c2683aa6a8363f38a4336062</anchor>
-      <arglist>(const aGenerator2d &amp;generator, unsigned n, unsigned Nx, unsigned Ny, unsigned Nz, bc bcx, bc bcy, bc bcz, MPI_Comm comm)</arglist>
+      <name>CylindricalVectorLvl0</name>
+      <anchorfile>structdg_1_1geo_1_1_cylindrical_vector_lvl0.html</anchorfile>
+      <anchor>a4b446336459ea9a7c43d0f16b77a088d</anchor>
+      <arglist>(CylindricalFunctor v_x, CylindricalFunctor v_y, CylindricalFunctor v_z)</arglist>
     </member>
     <member kind="function">
-      <type>const aGenerator2d &amp;</type>
-      <name>generator</name>
-      <anchorfile>structdg_1_1geo_1_1_curvilinear_product_m_p_i_grid3d.html</anchorfile>
-      <anchor>ad9881323091ff886a8c9870db5aec8a1</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual CurvilinearProductMPIGrid3d *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1_curvilinear_product_m_p_i_grid3d.html</anchorfile>
-      <anchor>ab098d4219f0df8159356dd4d656cf9a3</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual CurvilinearProductGrid3d *</type>
-      <name>global_geometry</name>
-      <anchorfile>structdg_1_1geo_1_1_curvilinear_product_m_p_i_grid3d.html</anchorfile>
-      <anchor>a9c41782e007f95e9b0ac4d2a807d011b</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>dg::geo::CurvilinearRefinedGridX2d</name>
-    <filename>structdg_1_1geo_1_1_curvilinear_refined_grid_x2d.html</filename>
-    <member kind="function">
-      <type></type>
-      <name>CurvilinearRefinedGridX2d</name>
-      <anchorfile>structdg_1_1geo_1_1_curvilinear_refined_grid_x2d.html</anchorfile>
-      <anchor>a0c219dc42229e7da7bd2c21fd1f9fd64</anchor>
-      <arglist>(const aRefinementX2d &amp;ref, const aGeneratorX2d &amp;generator, double fx, double fy, unsigned n, unsigned Nx, unsigned Ny, dg::bc bcx=dg::DIR, bc bcy=dg::NEU)</arglist>
+      <type>void</type>
+      <name>reset</name>
+      <anchorfile>structdg_1_1geo_1_1_cylindrical_vector_lvl0.html</anchorfile>
+      <anchor>a7712e0cafed6ce1d532c2fc4f5e10a5c</anchor>
+      <arglist>(CylindricalFunctor v_x, CylindricalFunctor v_y, CylindricalFunctor v_z)</arglist>
     </member>
     <member kind="function">
-      <type>const aGeneratorX2d &amp;</type>
-      <name>generator</name>
-      <anchorfile>structdg_1_1geo_1_1_curvilinear_refined_grid_x2d.html</anchorfile>
-      <anchor>a41563f14d205fd88780341d686339474</anchor>
+      <type>const CylindricalFunctor &amp;</type>
+      <name>x</name>
+      <anchorfile>structdg_1_1geo_1_1_cylindrical_vector_lvl0.html</anchorfile>
+      <anchor>a6ef49a79e3d3d7a947d3df80a1845476</anchor>
       <arglist>() const</arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual CurvilinearRefinedGridX2d *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1_curvilinear_refined_grid_x2d.html</anchorfile>
-      <anchor>abcbccb54efa0ae66d8489bcd2422b580</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>dg::geo::CurvilinearRefinedProductGridX3d</name>
-    <filename>structdg_1_1geo_1_1_curvilinear_refined_product_grid_x3d.html</filename>
-    <member kind="function">
-      <type></type>
-      <name>CurvilinearRefinedProductGridX3d</name>
-      <anchorfile>structdg_1_1geo_1_1_curvilinear_refined_product_grid_x3d.html</anchorfile>
-      <anchor>af7501a441a29c84c698ab8aebac6d2fa</anchor>
-      <arglist>(const aRefinementX2d &amp;ref, const aGeneratorX2d &amp;generator, double fx, double fy, unsigned n, unsigned Nx, unsigned Ny, unsigned Nz, bc bcx=dg::DIR, bc bcy=dg::NEU, bc bcz=dg::PER)</arglist>
     </member>
     <member kind="function">
-      <type>const aGeneratorX2d &amp;</type>
-      <name>generator</name>
-      <anchorfile>structdg_1_1geo_1_1_curvilinear_refined_product_grid_x3d.html</anchorfile>
-      <anchor>a64633f502bd40a021b9a25aea255ccc8</anchor>
+      <type>const CylindricalFunctor &amp;</type>
+      <name>y</name>
+      <anchorfile>structdg_1_1geo_1_1_cylindrical_vector_lvl0.html</anchorfile>
+      <anchor>a7391641c609d632d654600dfda67c8b9</anchor>
       <arglist>() const</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual CurvilinearRefinedProductGridX3d *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1_curvilinear_refined_product_grid_x3d.html</anchorfile>
-      <anchor>ae40162c5ae1d1edca848a12187520d02</anchor>
+    <member kind="function">
+      <type>const CylindricalFunctor &amp;</type>
+      <name>z</name>
+      <anchorfile>structdg_1_1geo_1_1_cylindrical_vector_lvl0.html</anchorfile>
+      <anchor>a3fc79ba422fdbcc08b9054f2c9f64ca3</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -2142,7 +2498,7 @@
   <compound kind="struct">
     <name>dg::geo::Divb</name>
     <filename>structdg_1_1geo_1_1_divb.html</filename>
-    <base>aCloneableBinaryFunctor&lt; GradLnB &gt;</base>
+    <base>aCylindricalFunctor&lt; Divb &gt;</base>
     <member kind="function">
       <type></type>
       <name>Divb</name>
@@ -2150,11 +2506,18 @@
       <anchor>ac5f4caae4aefc822f193ba316ee170fc</anchor>
       <arglist>(const TokamakMagneticField &amp;mag)</arglist>
     </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_divb.html</anchorfile>
+      <anchor>ab16ff500593cfd834e8f6ecb9c30ab2d</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::DivCurvatureKappa</name>
     <filename>structdg_1_1geo_1_1_div_curvature_kappa.html</filename>
-    <base>aCloneableBinaryFunctor&lt; DivCurvatureKappa &gt;</base>
+    <base>aCylindricalFunctor&lt; DivCurvatureKappa &gt;</base>
     <member kind="function">
       <type></type>
       <name>DivCurvatureKappa</name>
@@ -2162,29 +2525,69 @@
       <anchor>abf47c06ca114bb79e86bd76bf1d48034</anchor>
       <arglist>(const TokamakMagneticField &amp;mag)</arglist>
     </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_div_curvature_kappa.html</anchorfile>
+      <anchor>a95df99941f4502a49f90fa83a85f4235</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::DivCurvatureNablaB</name>
+    <filename>structdg_1_1geo_1_1_div_curvature_nabla_b.html</filename>
+    <base>aCylindricalFunctor&lt; DivCurvatureNablaB &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>DivCurvatureNablaB</name>
+      <anchorfile>structdg_1_1geo_1_1_div_curvature_nabla_b.html</anchorfile>
+      <anchor>aacc879d38cd1acdd0839ea347a3106fb</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_div_curvature_nabla_b.html</anchorfile>
+      <anchor>a71dd8352d2d828aa2d8d235f7dad13d8</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::DivLiseikinX</name>
     <filename>structdg_1_1geo_1_1_div_liseikin_x.html</filename>
-    <base>aCloneableBinaryFunctor&lt; DivLiseikinX &gt;</base>
+    <base>aCylindricalFunctor&lt; DivLiseikinX &gt;</base>
     <member kind="function">
       <type></type>
       <name>DivLiseikinX</name>
       <anchorfile>structdg_1_1geo_1_1_div_liseikin_x.html</anchorfile>
-      <anchor>ac5796df43625d0dd10e1ac8b7e919c0f</anchor>
-      <arglist>(const BinaryFunctorsLvl2 &amp;psi, double k, double eps)</arglist>
+      <anchor>a11c3ef94270e19d742f50d8be930e648</anchor>
+      <arglist>(const CylindricalFunctorsLvl2 &amp;psi, double k, double eps)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_div_liseikin_x.html</anchorfile>
+      <anchor>ace451202e69a740ea952eb80b103edd6</anchor>
+      <arglist>(double x, double y) const</arglist>
     </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::DivLiseikinY</name>
     <filename>structdg_1_1geo_1_1_div_liseikin_y.html</filename>
-    <base>aCloneableBinaryFunctor&lt; DivLiseikinY &gt;</base>
+    <base>aCylindricalFunctor&lt; DivLiseikinY &gt;</base>
     <member kind="function">
       <type></type>
       <name>DivLiseikinY</name>
       <anchorfile>structdg_1_1geo_1_1_div_liseikin_y.html</anchorfile>
-      <anchor>a800d0240f110722640b893e14b8569d8</anchor>
-      <arglist>(const BinaryFunctorsLvl2 &amp;psi, double k, double eps)</arglist>
+      <anchor>a27a32ff50033699bbb41faaed347fd4e</anchor>
+      <arglist>(const CylindricalFunctorsLvl2 &amp;psi, double k, double eps)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_div_liseikin_y.html</anchorfile>
+      <anchor>a925701056ac0361d057137d68e845848</anchor>
+      <arglist>(double x, double y) const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -2212,29 +2615,36 @@
       <type></type>
       <name>DS</name>
       <anchorfile>structdg_1_1geo_1_1_d_s.html</anchorfile>
-      <anchor>a1bc6775cb33544a79f1e8037f283e0a8</anchor>
-      <arglist>(const dg::geo::TokamakMagneticField &amp;vec, const ProductGeometry &amp;grid, dg::bc bcx=dg::NEU, dg::bc bcy=dg::NEU, Limiter limit=FullLimiter(), dg::norm no=dg::normed, dg::direction dir=dg::centered, double eps=1e-5, unsigned multiplyX=10, unsigned multiplyY=10, bool dependsOnX=true, bool dependsOnY=true, bool integrateAll=true, double deltaPhi=-1)</arglist>
+      <anchor>a82b8277c8ee59e348d87b9e43ba0dc3a</anchor>
+      <arglist>(const dg::geo::TokamakMagneticField &amp;vec, const ProductGeometry &amp;grid, dg::bc bcx=dg::NEU, dg::bc bcy=dg::NEU, Limiter limit=FullLimiter(), dg::direction dir=dg::centered, double eps=1e-5, unsigned mx=10, unsigned my=10, double deltaPhi=-1)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>DS</name>
       <anchorfile>structdg_1_1geo_1_1_d_s.html</anchorfile>
-      <anchor>a5ebaed8638267fbaedc29968bfc3219b</anchor>
-      <arglist>(const dg::geo::BinaryVectorLvl0 &amp;vec, const ProductGeometry &amp;grid, dg::bc bcx=dg::NEU, dg::bc bcy=dg::NEU, Limiter limit=FullLimiter(), dg::norm no=dg::normed, dg::direction dir=dg::centered, double eps=1e-5, unsigned multiplyX=10, unsigned multiplyY=10, bool dependsOnX=true, bool dependsOnY=true, bool integrateAll=true, double deltaPhi=-1)</arglist>
+      <anchor>a41149195ff54693259471dcb2ad766d9</anchor>
+      <arglist>(const dg::geo::CylindricalVectorLvl0 &amp;vec, const ProductGeometry &amp;grid, dg::bc bcx=dg::NEU, dg::bc bcy=dg::NEU, Limiter limit=FullLimiter(), dg::direction dir=dg::centered, double eps=1e-5, unsigned mx=10, unsigned my=10, double deltaPhi=-1)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>DS</name>
       <anchorfile>structdg_1_1geo_1_1_d_s.html</anchorfile>
-      <anchor>a215b83e9c29b7ba8af530aeee91d895c</anchor>
-      <arglist>(const FA &amp;fieldaligned, dg::norm no=dg::normed, dg::direction dir=dg::centered)</arglist>
+      <anchor>a7f0f9a42762ff9f75c03086b0b3fa708</anchor>
+      <arglist>(FA fieldaligned, dg::direction dir=dg::centered)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>construct</name>
       <anchorfile>structdg_1_1geo_1_1_d_s.html</anchorfile>
-      <anchor>a64ae114ed661c3409cc53b209c3a48e8</anchor>
-      <arglist>(const FA &amp;fieldaligned, dg::norm no=dg::normed, dg::direction dir=dg::centered)</arglist>
+      <anchor>aff0dac9a94313bf6d006c1e398d1e56c</anchor>
+      <arglist>(Params &amp;&amp;...ps)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_direction</name>
+      <anchorfile>structdg_1_1geo_1_1_d_s.html</anchorfile>
+      <anchor>a889a9a97c8c2c94308f2936a8753f490</anchor>
+      <arglist>(dg::direction dir)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -2301,44 +2711,44 @@
     </member>
     <member kind="function">
       <type>void</type>
-      <name>forwardDiv</name>
+      <name>divForward</name>
       <anchorfile>structdg_1_1geo_1_1_d_s.html</anchorfile>
-      <anchor>af8ed43f349b4d24349728da7617fa65e</anchor>
+      <anchor>a76f5b90b635b69bb0c5eacde3e3647a7</anchor>
       <arglist>(double alpha, const container &amp;f, double beta, container &amp;g)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
-      <name>backwardDiv</name>
+      <name>divBackward</name>
       <anchorfile>structdg_1_1geo_1_1_d_s.html</anchorfile>
-      <anchor>ac739bf6d0229ad9b7a5d19014e915c00</anchor>
+      <anchor>af397aba8d43c37b88e1d85272d662d4d</anchor>
       <arglist>(double alpha, const container &amp;f, double beta, container &amp;g)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
-      <name>centeredDiv</name>
+      <name>divCentered</name>
       <anchorfile>structdg_1_1geo_1_1_d_s.html</anchorfile>
-      <anchor>a9a900c954253b1325074fbbaeebbdcf8</anchor>
+      <anchor>a64d5b30389cb32f6b624de430483ea54</anchor>
       <arglist>(double alpha, const container &amp;f, double beta, container &amp;g)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
-      <name>forwardDiv</name>
+      <name>divForward</name>
       <anchorfile>structdg_1_1geo_1_1_d_s.html</anchorfile>
-      <anchor>a4b5c9d0f7ad2f772a5e169038417c770</anchor>
+      <anchor>a6fa2b1fe16de8ec27c88ab6522367352</anchor>
       <arglist>(const container &amp;f, container &amp;g)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
-      <name>backwardDiv</name>
+      <name>divBackward</name>
       <anchorfile>structdg_1_1geo_1_1_d_s.html</anchorfile>
-      <anchor>a7d0a3571fff8f52bb2b8bfc450549dfc</anchor>
+      <anchor>a2a489bdafca25538c65ceba000a1fef8</anchor>
       <arglist>(const container &amp;f, container &amp;g)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
-      <name>centeredDiv</name>
+      <name>divCentered</name>
       <anchorfile>structdg_1_1geo_1_1_d_s.html</anchorfile>
-      <anchor>a2e58aca0efe20933f41e2f40175af310</anchor>
+      <anchor>ad464d8ddfe153648575abf6e6ca0d91d</anchor>
       <arglist>(const container &amp;f, container &amp;g)</arglist>
     </member>
     <member kind="function">
@@ -2354,6 +2764,34 @@
       <anchorfile>structdg_1_1geo_1_1_d_s.html</anchorfile>
       <anchor>a6e4ff8ce9d41c92ca5d8ef2dcae6dff3</anchor>
       <arglist>(double alpha, const container &amp;f, double beta, container &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ds</name>
+      <anchorfile>structdg_1_1geo_1_1_d_s.html</anchorfile>
+      <anchor>a0a97e094e84673f71297df22a9bba4c5</anchor>
+      <arglist>(dg::direction dir, const container &amp;f, container &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ds</name>
+      <anchorfile>structdg_1_1geo_1_1_d_s.html</anchorfile>
+      <anchor>a3de32d878848eebdea7aee2d41b87a27</anchor>
+      <arglist>(dg::direction dir, double alpha, const container &amp;f, double beta, container &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>div</name>
+      <anchorfile>structdg_1_1geo_1_1_d_s.html</anchorfile>
+      <anchor>a397b9c50490e4c721c488c3568e6a5c2</anchor>
+      <arglist>(dg::direction dir, const container &amp;f, container &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>div</name>
+      <anchorfile>structdg_1_1geo_1_1_d_s.html</anchorfile>
+      <anchor>ac5b4f28a8012eb265343f2fecb88a2f4</anchor>
+      <arglist>(dg::direction dir, double alpha, const container &amp;f, double beta, container &amp;g)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -2429,35 +2867,35 @@
       <type></type>
       <name>Fieldaligned</name>
       <anchorfile>structdg_1_1geo_1_1_fieldaligned.html</anchorfile>
-      <anchor>a753759cfcc2110718046b413d584dce5</anchor>
-      <arglist>(const dg::geo::TokamakMagneticField &amp;vec, const ProductGeometry &amp;grid, dg::bc bcx=dg::NEU, dg::bc bcy=dg::NEU, Limiter limit=FullLimiter(), double eps=1e-5, unsigned multiplyX=10, unsigned multiplyY=10, bool dependsOnX=true, bool dependsOnY=true, bool integrateAll=true, double deltaPhi=-1)</arglist>
+      <anchor>ac4c8d5d59e3850bf7a285c056217a629</anchor>
+      <arglist>(const dg::geo::TokamakMagneticField &amp;vec, const ProductGeometry &amp;grid, dg::bc bcx=dg::NEU, dg::bc bcy=dg::NEU, Limiter limit=FullLimiter(), double eps=1e-5, unsigned mx=10, unsigned my=10, double deltaPhi=-1)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>Fieldaligned</name>
       <anchorfile>structdg_1_1geo_1_1_fieldaligned.html</anchorfile>
-      <anchor>abbf86a08ce44a275a4ed184be89bde10</anchor>
-      <arglist>(const dg::geo::BinaryVectorLvl0 &amp;vec, const ProductGeometry &amp;grid, dg::bc bcx=dg::NEU, dg::bc bcy=dg::NEU, Limiter limit=FullLimiter(), double eps=1e-5, unsigned multiplyX=10, unsigned multiplyY=10, bool dependsOnX=true, bool dependsOnY=true, bool integrateAll=true, double deltaPhi=-1)</arglist>
+      <anchor>a520fd70cdc8ea5d74da61c69d515b111</anchor>
+      <arglist>(const dg::geo::CylindricalVectorLvl0 &amp;vec, const ProductGeometry &amp;grid, dg::bc bcx=dg::NEU, dg::bc bcy=dg::NEU, Limiter limit=FullLimiter(), double eps=1e-5, unsigned mx=10, unsigned my=10, double deltaPhi=-1)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>construct</name>
       <anchorfile>structdg_1_1geo_1_1_fieldaligned.html</anchorfile>
-      <anchor>a88fa70e7466201ab62cd68c55a5d822d</anchor>
-      <arglist>(const dg::geo::BinaryVectorLvl0 &amp;vec, const ProductGeometry &amp;grid, dg::bc bcx=dg::NEU, dg::bc bcy=dg::NEU, Limiter limit=FullLimiter(), double eps=1e-5, unsigned multiplyX=10, unsigned multiplyY=10, bool dependsOnX=true, bool dependsOnY=true, bool integrateAll=true, double deltaPhi=-1)</arglist>
+      <anchor>ab90913a78a7c6bd680f3ad55f071b58a</anchor>
+      <arglist>(Params &amp;&amp;...ps)</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
-      <name>dependsOnX</name>
+      <type>dg::bc</type>
+      <name>bcx</name>
       <anchorfile>structdg_1_1geo_1_1_fieldaligned.html</anchorfile>
-      <anchor>a9406b9a8729589edc6e5dbb622b669e8</anchor>
+      <anchor>a0467cd614bca4ebbe231155453d647cd</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
-      <name>dependsOnY</name>
+      <type>dg::bc</type>
+      <name>bcy</name>
       <anchorfile>structdg_1_1geo_1_1_fieldaligned.html</anchorfile>
-      <anchor>aa4c352bbfa9b86881c276649bf9baba8</anchor>
+      <anchor>aa5add7df8d14903c8adff9243a128237</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
@@ -2504,9 +2942,9 @@
     </member>
     <member kind="function">
       <type>const container &amp;</type>
-      <name>hz_inv</name>
+      <name>hm_inv</name>
       <anchorfile>structdg_1_1geo_1_1_fieldaligned.html</anchorfile>
-      <anchor>a122e4fb37caeb92782211bf25ec49075</anchor>
+      <anchor>a755fd10c422855aef0b5ee9d130a677e</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
@@ -2518,9 +2956,9 @@
     </member>
     <member kind="function">
       <type>const container &amp;</type>
-      <name>hm_inv</name>
+      <name>h0_inv</name>
       <anchorfile>structdg_1_1geo_1_1_fieldaligned.html</anchorfile>
-      <anchor>a755fd10c422855aef0b5ee9d130a677e</anchor>
+      <anchor>aefcebb5858d82881a2c93e5ac2a49646</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
@@ -2532,63 +2970,15 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>dg::geo::FieldP</name>
-    <filename>structdg_1_1geo_1_1_field_p.html</filename>
-    <base>aCloneableBinaryFunctor&lt; FieldP &gt;</base>
-    <member kind="function">
-      <type></type>
-      <name>FieldP</name>
-      <anchorfile>structdg_1_1geo_1_1_field_p.html</anchorfile>
-      <anchor>a6e2562204c86b87b3dffc8c2236e8f07</anchor>
-      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>dg::geo::FieldR</name>
-    <filename>structdg_1_1geo_1_1_field_r.html</filename>
-    <base>aCloneableBinaryFunctor&lt; FieldR &gt;</base>
-    <member kind="function">
-      <type></type>
-      <name>FieldR</name>
-      <anchorfile>structdg_1_1geo_1_1_field_r.html</anchorfile>
-      <anchor>a11933716e98ec7ce1dfa05bfcb920417</anchor>
-      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>dg::geo::FieldT</name>
-    <filename>structdg_1_1geo_1_1_field_t.html</filename>
-    <base>aCloneableBinaryFunctor&lt; FieldT &gt;</base>
-    <member kind="function">
-      <type></type>
-      <name>FieldT</name>
-      <anchorfile>structdg_1_1geo_1_1_field_t.html</anchorfile>
-      <anchor>ae50199277dd285f62110ba7efe4bfbee</anchor>
-      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>dg::geo::FieldZ</name>
-    <filename>structdg_1_1geo_1_1_field_z.html</filename>
-    <base>aCloneableBinaryFunctor&lt; FieldZ &gt;</base>
-    <member kind="function">
-      <type></type>
-      <name>FieldZ</name>
-      <anchorfile>structdg_1_1geo_1_1_field_z.html</anchorfile>
-      <anchor>ad3d31aae083500f5a65472ae79d2c353</anchor>
-      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
     <name>dg::geo::FluxGenerator</name>
     <filename>structdg_1_1geo_1_1_flux_generator.html</filename>
-    <base>dg::geo::aGenerator2d</base>
+    <base>dg::geo::aRealGenerator2d</base>
     <member kind="function">
       <type></type>
       <name>FluxGenerator</name>
       <anchorfile>structdg_1_1geo_1_1_flux_generator.html</anchorfile>
-      <anchor>a2a79a7f6af03e5735efa398e94ea05d0</anchor>
-      <arglist>(const BinaryFunctorsLvl2 &amp;psi, const BinaryFunctorsLvl1 &amp;ipol, double psi_0, double psi_1, double x0, double y0, int mode=0, bool verbose=false)</arglist>
+      <anchor>aef95b5a2b3ce9bf5c5044d8390308aaa</anchor>
+      <arglist>(const CylindricalFunctorsLvl2 &amp;psi, const CylindricalFunctorsLvl1 &amp;ipol, double psi_0, double psi_1, double x0, double y0, int mode=0, bool verbose=false)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual FluxGenerator *</type>
@@ -2618,51 +3008,79 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>dg::geo::GaussianDamping</name>
-    <filename>structdg_1_1geo_1_1_gaussian_damping.html</filename>
-    <base>aCloneableBinaryFunctor&lt; GaussianDamping &gt;</base>
+    <name>dg::geo::GradBHatP</name>
+    <filename>structdg_1_1geo_1_1_grad_b_hat_p.html</filename>
+    <base>aCylindricalFunctor&lt; GradBHatP &gt;</base>
     <member kind="function">
       <type></type>
-      <name>GaussianDamping</name>
-      <anchorfile>structdg_1_1geo_1_1_gaussian_damping.html</anchorfile>
-      <anchor>a1b0fb0da5253dd9bb7b6ff6138211ccd</anchor>
-      <arglist>(const aBinaryFunctor &amp;psi, double psipmaxcut, double alpha)</arglist>
+      <name>GradBHatP</name>
+      <anchorfile>structdg_1_1geo_1_1_grad_b_hat_p.html</anchorfile>
+      <anchor>ae079acc95642d043ce3f5687422fb08c</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_grad_b_hat_p.html</anchorfile>
+      <anchor>a2e160447ec0795b5f406cecf7a662012</anchor>
+      <arglist>(double R, double Z) const</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>dg::geo::GaussianProfDamping</name>
-    <filename>structdg_1_1geo_1_1_gaussian_prof_damping.html</filename>
-    <base>aCloneableBinaryFunctor&lt; GaussianProfDamping &gt;</base>
+    <name>dg::geo::GradBHatR</name>
+    <filename>structdg_1_1geo_1_1_grad_b_hat_r.html</filename>
+    <base>aCylindricalFunctor&lt; GradBHatR &gt;</base>
     <member kind="function">
       <type></type>
-      <name>GaussianProfDamping</name>
-      <anchorfile>structdg_1_1geo_1_1_gaussian_prof_damping.html</anchorfile>
-      <anchor>a60a8783223bfcc396ac43ab151d10197</anchor>
-      <arglist>(const aBinaryFunctor &amp;psi, double psipmax, double alpha)</arglist>
+      <name>GradBHatR</name>
+      <anchorfile>structdg_1_1geo_1_1_grad_b_hat_r.html</anchorfile>
+      <anchor>a8b2a94872db6d8957ea8f7c6c1f5f7b7</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_grad_b_hat_r.html</anchorfile>
+      <anchor>a7a04bc3b500961872b2da72197ebcdb4</anchor>
+      <arglist>(double R, double Z) const</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>dg::geo::GaussianProfXDamping</name>
-    <filename>structdg_1_1geo_1_1_gaussian_prof_x_damping.html</filename>
-    <base>aCloneableBinaryFunctor&lt; GaussianProfXDamping &gt;</base>
+    <name>dg::geo::GradBHatZ</name>
+    <filename>structdg_1_1geo_1_1_grad_b_hat_z.html</filename>
+    <base>aCylindricalFunctor&lt; GradBHatZ &gt;</base>
     <member kind="function">
       <type></type>
-      <name>GaussianProfXDamping</name>
-      <anchorfile>structdg_1_1geo_1_1_gaussian_prof_x_damping.html</anchorfile>
-      <anchor>a61c3ff440dd9b82aecb3bfe1a2e13ca4</anchor>
-      <arglist>(const aBinaryFunctor &amp;psi, dg::geo::solovev::Parameters gp)</arglist>
+      <name>GradBHatZ</name>
+      <anchorfile>structdg_1_1geo_1_1_grad_b_hat_z.html</anchorfile>
+      <anchor>a7a6a5dfce68903ae780640dc68397539</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_grad_b_hat_z.html</anchorfile>
+      <anchor>a60d6bae777d73a6212480f5721ca166d</anchor>
+      <arglist>(double R, double Z) const</arglist>
     </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::GradLnB</name>
     <filename>structdg_1_1geo_1_1_grad_ln_b.html</filename>
-    <base>aCloneableBinaryFunctor&lt; GradLnB &gt;</base>
+    <base>aCylindricalFunctor&lt; GradLnB &gt;</base>
     <member kind="function">
       <type></type>
       <name>GradLnB</name>
       <anchorfile>structdg_1_1geo_1_1_grad_ln_b.html</anchorfile>
       <anchor>a577c8b41b5d64e9ba598f3ca2f9ce23b</anchor>
       <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_grad_ln_b.html</anchorfile>
+      <anchor>a9adeb4213905e2a3478d90a0285f989b</anchor>
+      <arglist>(double R, double Z) const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -2671,27 +3089,27 @@
     <templarg></templarg>
     <templarg></templarg>
     <templarg></templarg>
-    <base>dg::geo::aGenerator2d</base>
+    <base>dg::geo::aRealGenerator2d</base>
     <member kind="function">
       <type></type>
       <name>Hector</name>
       <anchorfile>structdg_1_1geo_1_1_hector.html</anchorfile>
-      <anchor>a012a5464b4027d2329e34fc0b0eef996</anchor>
-      <arglist>(const BinaryFunctorsLvl2 &amp;psi, double psi0, double psi1, double X0, double Y0, unsigned n=13, unsigned Nx=2, unsigned Ny=10, double eps_u=1e-10, bool verbose=false)</arglist>
+      <anchor>ad4972eb79f779e4748dbac8b582d0e17</anchor>
+      <arglist>(const CylindricalFunctorsLvl2 &amp;psi, double psi0, double psi1, double X0, double Y0, unsigned n=13, unsigned Nx=2, unsigned Ny=10, double eps_u=1e-10, bool verbose=false)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>Hector</name>
       <anchorfile>structdg_1_1geo_1_1_hector.html</anchorfile>
-      <anchor>a4c27d0f4763342bda8445f243019e1b1</anchor>
-      <arglist>(const BinaryFunctorsLvl2 &amp;psi, const BinaryFunctorsLvl1 &amp;chi, double psi0, double psi1, double X0, double Y0, unsigned n=13, unsigned Nx=2, unsigned Ny=10, double eps_u=1e-10, bool verbose=false)</arglist>
+      <anchor>a195124ce20d6890d237d08e821d61d76</anchor>
+      <arglist>(const CylindricalFunctorsLvl2 &amp;psi, const CylindricalFunctorsLvl1 &amp;chi, double psi0, double psi1, double X0, double Y0, unsigned n=13, unsigned Nx=2, unsigned Ny=10, double eps_u=1e-10, bool verbose=false)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>Hector</name>
       <anchorfile>structdg_1_1geo_1_1_hector.html</anchorfile>
-      <anchor>a2d13856cbb84c0ffa1624c7b3c3c175e</anchor>
-      <arglist>(const BinaryFunctorsLvl2 &amp;psi, const BinarySymmTensorLvl1 &amp;chi, double psi0, double psi1, double X0, double Y0, unsigned n=13, unsigned Nx=2, unsigned Ny=10, double eps_u=1e-10, bool verbose=false)</arglist>
+      <anchor>ae9a21636a483154ba7718e79c7e2d776</anchor>
+      <arglist>(const CylindricalFunctorsLvl2 &amp;psi, const CylindricalSymmTensorLvl1 &amp;chi, double psi0, double psi1, double X0, double Y0, unsigned n=13, unsigned Nx=2, unsigned Ny=10, double eps_u=1e-10, bool verbose=false)</arglist>
     </member>
     <member kind="function">
       <type>const dg::geo::CurvilinearGrid2d &amp;</type>
@@ -2718,7 +3136,7 @@
   <compound kind="struct">
     <name>dg::geo::InvB</name>
     <filename>structdg_1_1geo_1_1_inv_b.html</filename>
-    <base>aCloneableBinaryFunctor&lt; InvB &gt;</base>
+    <base>aCylindricalFunctor&lt; InvB &gt;</base>
     <member kind="function">
       <type></type>
       <name>InvB</name>
@@ -2726,11 +3144,18 @@
       <anchor>a4ed37d858312bda694199ba43e5a84af</anchor>
       <arglist>(const TokamakMagneticField &amp;mag)</arglist>
     </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_inv_b.html</anchorfile>
+      <anchor>a5921f603ede799732763131d11c56250</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::guenther::Ipol</name>
     <filename>structdg_1_1geo_1_1guenther_1_1_ipol.html</filename>
-    <base>aCloneableBinaryFunctor&lt; Ipol &gt;</base>
+    <base>aCylindricalFunctor&lt; Ipol &gt;</base>
     <member kind="function">
       <type></type>
       <name>Ipol</name>
@@ -2738,11 +3163,18 @@
       <anchor>a744deeaf7ccf76078c6ae9259b85a7bb</anchor>
       <arglist>(double I_0)</arglist>
     </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1guenther_1_1_ipol.html</anchorfile>
+      <anchor>af196306dd348bda5b719de7670403323</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::solovev::Ipol</name>
     <filename>structdg_1_1geo_1_1solovev_1_1_ipol.html</filename>
-    <base>aCloneableBinaryFunctor&lt; Ipol &gt;</base>
+    <base>aCylindricalFunctor&lt; Ipol &gt;</base>
     <member kind="function">
       <type></type>
       <name>Ipol</name>
@@ -2750,11 +3182,18 @@
       <anchor>ae70a8c7d7fab2a38fcbe36b32f9b055f</anchor>
       <arglist>(Parameters gp)</arglist>
     </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1solovev_1_1_ipol.html</anchorfile>
+      <anchor>a71946840089171b68a3f13376b4560f3</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::taylor::Ipol</name>
     <filename>structdg_1_1geo_1_1taylor_1_1_ipol.html</filename>
-    <base>aCloneableBinaryFunctor&lt; Ipol &gt;</base>
+    <base>aCylindricalFunctor&lt; Ipol &gt;</base>
     <member kind="function">
       <type></type>
       <name>Ipol</name>
@@ -2762,11 +3201,18 @@
       <anchor>a4f30b8c2dddc0d9dc00e3845db473aea</anchor>
       <arglist>(solovev::Parameters gp)</arglist>
     </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1taylor_1_1_ipol.html</anchorfile>
+      <anchor>a8063ea031c114570b8a1aad95d8d48ae</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::guenther::IpolR</name>
     <filename>structdg_1_1geo_1_1guenther_1_1_ipol_r.html</filename>
-    <base>aCloneableBinaryFunctor&lt; IpolR &gt;</base>
+    <base>aCylindricalFunctor&lt; IpolR &gt;</base>
     <member kind="function">
       <type></type>
       <name>IpolR</name>
@@ -2774,11 +3220,18 @@
       <anchor>a72bca8838e38e8c642e4ebed910c16bc</anchor>
       <arglist>()</arglist>
     </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1guenther_1_1_ipol_r.html</anchorfile>
+      <anchor>a9a8b104deb3f77185bb9b6d5058b760b</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::solovev::IpolR</name>
     <filename>structdg_1_1geo_1_1solovev_1_1_ipol_r.html</filename>
-    <base>aCloneableBinaryFunctor&lt; IpolR &gt;</base>
+    <base>aCylindricalFunctor&lt; IpolR &gt;</base>
     <member kind="function">
       <type></type>
       <name>IpolR</name>
@@ -2786,11 +3239,18 @@
       <anchor>ae32d0be0e080ab3a81ed082b5c5a26bd</anchor>
       <arglist>(Parameters gp)</arglist>
     </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1solovev_1_1_ipol_r.html</anchorfile>
+      <anchor>ad3be82adb49c5218632709da9f7542c3</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::taylor::IpolR</name>
     <filename>structdg_1_1geo_1_1taylor_1_1_ipol_r.html</filename>
-    <base>aCloneableBinaryFunctor&lt; IpolR &gt;</base>
+    <base>aCylindricalFunctor&lt; IpolR &gt;</base>
     <member kind="function">
       <type></type>
       <name>IpolR</name>
@@ -2798,11 +3258,18 @@
       <anchor>a91c271daa29a18095a4ce5d189501e41</anchor>
       <arglist>(solovev::Parameters gp)</arglist>
     </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1taylor_1_1_ipol_r.html</anchorfile>
+      <anchor>a31eae6bac08a72b0c9093187699e2288</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::guenther::IpolZ</name>
     <filename>structdg_1_1geo_1_1guenther_1_1_ipol_z.html</filename>
-    <base>aCloneableBinaryFunctor&lt; IpolZ &gt;</base>
+    <base>aCylindricalFunctor&lt; IpolZ &gt;</base>
     <member kind="function">
       <type></type>
       <name>IpolZ</name>
@@ -2810,11 +3277,18 @@
       <anchor>a34513f1d4866b5dc8a8ca4c9a8fd62af</anchor>
       <arglist>()</arglist>
     </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1guenther_1_1_ipol_z.html</anchorfile>
+      <anchor>a3b485a80089cb1a52409851b5ff2e228</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::solovev::IpolZ</name>
     <filename>structdg_1_1geo_1_1solovev_1_1_ipol_z.html</filename>
-    <base>aCloneableBinaryFunctor&lt; IpolZ &gt;</base>
+    <base>aCylindricalFunctor&lt; IpolZ &gt;</base>
     <member kind="function">
       <type></type>
       <name>IpolZ</name>
@@ -2822,11 +3296,18 @@
       <anchor>ae3fd27816ee07e54be13c8256fd53373</anchor>
       <arglist>(Parameters gp)</arglist>
     </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1solovev_1_1_ipol_z.html</anchorfile>
+      <anchor>ad0660366aec56a21bcebb3f31f0b3460</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::taylor::IpolZ</name>
     <filename>structdg_1_1geo_1_1taylor_1_1_ipol_z.html</filename>
-    <base>aCloneableBinaryFunctor&lt; IpolZ &gt;</base>
+    <base>aCylindricalFunctor&lt; IpolZ &gt;</base>
     <member kind="function">
       <type></type>
       <name>IpolZ</name>
@@ -2834,59 +3315,75 @@
       <anchor>a272cebab34aefc33e870fa40a292a812</anchor>
       <arglist>(solovev::Parameters gp)</arglist>
     </member>
-  </compound>
-  <compound kind="struct">
-    <name>dg::geo::Iris</name>
-    <filename>structdg_1_1geo_1_1_iris.html</filename>
-    <base>aCloneableBinaryFunctor&lt; Iris &gt;</base>
     <member kind="function">
-      <type></type>
-      <name>Iris</name>
-      <anchorfile>structdg_1_1geo_1_1_iris.html</anchorfile>
-      <anchor>adec00102277dce6f9c9bb9b5bab1bb11</anchor>
-      <arglist>(const aBinaryFunctor &amp;psi, double psi_min, double psi_max)</arglist>
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1taylor_1_1_ipol_z.html</anchorfile>
+      <anchor>a1d1f56252cedc9e43ac08a1961a7141c</anchor>
+      <arglist>(double R, double Z) const</arglist>
     </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::Liseikin_XX</name>
     <filename>structdg_1_1geo_1_1_liseikin___x_x.html</filename>
-    <base>aCloneableBinaryFunctor&lt; Liseikin_XX &gt;</base>
+    <base>aCylindricalFunctor&lt; Liseikin_XX &gt;</base>
     <member kind="function">
       <type></type>
       <name>Liseikin_XX</name>
       <anchorfile>structdg_1_1geo_1_1_liseikin___x_x.html</anchorfile>
-      <anchor>aa1f8a6890a994452109d1c99b258b6d2</anchor>
-      <arglist>(const BinaryFunctorsLvl1 &amp;psi, double k, double eps)</arglist>
+      <anchor>ab1bef3b188b7e258d1593ae9bd6bfa5f</anchor>
+      <arglist>(const CylindricalFunctorsLvl1 &amp;psi, double k, double eps)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_liseikin___x_x.html</anchorfile>
+      <anchor>aebb8f6fed481ae7cfdd04a650a38e003</anchor>
+      <arglist>(double x, double y) const</arglist>
     </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::Liseikin_XY</name>
     <filename>structdg_1_1geo_1_1_liseikin___x_y.html</filename>
-    <base>aCloneableBinaryFunctor&lt; Liseikin_XY &gt;</base>
+    <base>aCylindricalFunctor&lt; Liseikin_XY &gt;</base>
     <member kind="function">
       <type></type>
       <name>Liseikin_XY</name>
       <anchorfile>structdg_1_1geo_1_1_liseikin___x_y.html</anchorfile>
-      <anchor>af35c0d3feb4e3ef4549f5fe581275b9b</anchor>
-      <arglist>(const BinaryFunctorsLvl1 &amp;psi, double k, double eps)</arglist>
+      <anchor>aec4ed02a5b8fe0630092a1156970cc38</anchor>
+      <arglist>(const CylindricalFunctorsLvl1 &amp;psi, double k, double eps)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_liseikin___x_y.html</anchorfile>
+      <anchor>a37b8e9b07c2820ec047a423cf3b85023</anchor>
+      <arglist>(double x, double y) const</arglist>
     </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::Liseikin_YY</name>
     <filename>structdg_1_1geo_1_1_liseikin___y_y.html</filename>
-    <base>aCloneableBinaryFunctor&lt; Liseikin_YY &gt;</base>
+    <base>aCylindricalFunctor&lt; Liseikin_YY &gt;</base>
     <member kind="function">
       <type></type>
       <name>Liseikin_YY</name>
       <anchorfile>structdg_1_1geo_1_1_liseikin___y_y.html</anchorfile>
-      <anchor>a77837b976980f960b1da62faf272c7c2</anchor>
-      <arglist>(const BinaryFunctorsLvl1 &amp;psi, double k, double eps)</arglist>
+      <anchor>aa43098942e1c01f401b014b8b6c269c6</anchor>
+      <arglist>(const CylindricalFunctorsLvl1 &amp;psi, double k, double eps)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_liseikin___y_y.html</anchorfile>
+      <anchor>ae4e97ba03fd656f49ada1912ac889145</anchor>
+      <arglist>(double x, double y) const</arglist>
     </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::LnB</name>
     <filename>structdg_1_1geo_1_1_ln_b.html</filename>
-    <base>aCloneableBinaryFunctor&lt; LnB &gt;</base>
+    <base>aCylindricalFunctor&lt; LnB &gt;</base>
     <member kind="function">
       <type></type>
       <name>LnB</name>
@@ -2894,11 +3391,18 @@
       <anchor>ac3c11970529e0716deca9527bcad5302</anchor>
       <arglist>(const TokamakMagneticField &amp;mag)</arglist>
     </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_ln_b.html</anchorfile>
+      <anchor>ab28a632ca9d0704ef5044880f2b22403</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::LogPolarGenerator</name>
     <filename>structdg_1_1geo_1_1_log_polar_generator.html</filename>
-    <base>dg::geo::aGenerator2d</base>
+    <base>dg::geo::aRealGenerator2d</base>
     <member kind="function">
       <type></type>
       <name>LogPolarGenerator</name>
@@ -2917,49 +3421,58 @@
   <compound kind="struct">
     <name>dg::geo::NablaPsiInv</name>
     <filename>structdg_1_1geo_1_1_nabla_psi_inv.html</filename>
-    <base>aCloneableBinaryFunctor&lt; NablaPsiInv &gt;</base>
+    <base>aCylindricalFunctor&lt; NablaPsiInv &gt;</base>
     <member kind="function">
       <type></type>
       <name>NablaPsiInv</name>
       <anchorfile>structdg_1_1geo_1_1_nabla_psi_inv.html</anchorfile>
-      <anchor>adda3ca8cbe790180e87a798c83501e7b</anchor>
-      <arglist>(const BinaryFunctorsLvl1 &amp;psi)</arglist>
+      <anchor>a4208c5a5efde00d57da762aa7ef7d558</anchor>
+      <arglist>(const CylindricalFunctorsLvl1 &amp;psi)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_nabla_psi_inv.html</anchorfile>
+      <anchor>a287b3f93b1898a6834f9a337c2946faf</anchor>
+      <arglist>(double x, double y) const</arglist>
     </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::NablaPsiInvX</name>
     <filename>structdg_1_1geo_1_1_nabla_psi_inv_x.html</filename>
-    <base>aCloneableBinaryFunctor&lt; NablaPsiInvX &gt;</base>
+    <base>aCylindricalFunctor&lt; NablaPsiInvX &gt;</base>
     <member kind="function">
       <type></type>
       <name>NablaPsiInvX</name>
       <anchorfile>structdg_1_1geo_1_1_nabla_psi_inv_x.html</anchorfile>
-      <anchor>a65a432e7e799a3ca391a2fac6a47d967</anchor>
-      <arglist>(const BinaryFunctorsLvl2 &amp;psi)</arglist>
+      <anchor>a5fff864fd3009ee69c20796c014cf266</anchor>
+      <arglist>(const CylindricalFunctorsLvl2 &amp;psi)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_nabla_psi_inv_x.html</anchorfile>
+      <anchor>a47d5bb28ad53211904d274383cd091d9</anchor>
+      <arglist>(double x, double y) const</arglist>
     </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::NablaPsiInvY</name>
     <filename>structdg_1_1geo_1_1_nabla_psi_inv_y.html</filename>
-    <base>aCloneableBinaryFunctor&lt; NablaPsiInvY &gt;</base>
+    <base>aCylindricalFunctor&lt; NablaPsiInvY &gt;</base>
     <member kind="function">
       <type></type>
       <name>NablaPsiInvY</name>
       <anchorfile>structdg_1_1geo_1_1_nabla_psi_inv_y.html</anchorfile>
-      <anchor>a487487e53a19f8e7d17bfb569ae632e1</anchor>
-      <arglist>(const BinaryFunctorsLvl2 &amp;psi)</arglist>
+      <anchor>a062746a6dc3adc3618453b3053ba83a4</anchor>
+      <arglist>(const CylindricalFunctorsLvl2 &amp;psi)</arglist>
     </member>
-  </compound>
-  <compound kind="struct">
-    <name>dg::geo::Nprofile</name>
-    <filename>structdg_1_1geo_1_1_nprofile.html</filename>
-    <base>aCloneableBinaryFunctor&lt; Nprofile &gt;</base>
     <member kind="function">
-      <type></type>
-      <name>Nprofile</name>
-      <anchorfile>structdg_1_1geo_1_1_nprofile.html</anchorfile>
-      <anchor>a3cecf5ec600f5781bc5fa001ca4f0c3f</anchor>
-      <arglist>(double bgprofamp, double peakamp, dg::geo::solovev::Parameters gp, const aBinaryFunctor &amp;psi)</arglist>
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_nabla_psi_inv_y.html</anchorfile>
+      <anchor>a93328398df02f5b42214b79b7ce69cc5</anchor>
+      <arglist>(double x, double y) const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -3060,6 +3573,13 @@
   <compound kind="struct">
     <name>dg::geo::solovev::Parameters</name>
     <filename>structdg_1_1geo_1_1solovev_1_1_parameters.html</filename>
+    <member kind="function">
+      <type>bool</type>
+      <name>hasXpoint</name>
+      <anchorfile>structdg_1_1geo_1_1solovev_1_1_parameters.html</anchorfile>
+      <anchor>ab77a9350c78104f2879b2dbf6b3f9bda</anchor>
+      <arglist>() const</arglist>
+    </member>
     <member kind="function">
       <type>void</type>
       <name>display</name>
@@ -3169,7 +3689,7 @@
   <compound kind="struct">
     <name>dg::geo::PolarGenerator</name>
     <filename>structdg_1_1geo_1_1_polar_generator.html</filename>
-    <base>dg::geo::aGenerator2d</base>
+    <base>dg::geo::aRealGenerator2d</base>
     <member kind="function">
       <type></type>
       <name>PolarGenerator</name>
@@ -3186,33 +3706,9 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>dg::geo::PsiLimiter</name>
-    <filename>structdg_1_1geo_1_1_psi_limiter.html</filename>
-    <base>aCloneableBinaryFunctor&lt; PsiLimiter &gt;</base>
-    <member kind="function">
-      <type></type>
-      <name>PsiLimiter</name>
-      <anchorfile>structdg_1_1geo_1_1_psi_limiter.html</anchorfile>
-      <anchor>a37d437104dfb4d9077ddaaf7f877a787</anchor>
-      <arglist>(const aBinaryFunctor &amp;psi, double psipmaxlim)</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>dg::geo::guenther::Psip</name>
-    <filename>structdg_1_1geo_1_1guenther_1_1_psip.html</filename>
-    <base>aCloneableBinaryFunctor&lt; Psip &gt;</base>
-    <member kind="function">
-      <type></type>
-      <name>Psip</name>
-      <anchorfile>structdg_1_1geo_1_1guenther_1_1_psip.html</anchorfile>
-      <anchor>a47d0b956b1fd79a4e5dca1f982492f79</anchor>
-      <arglist>(double R_0)</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
     <name>dg::geo::solovev::Psip</name>
     <filename>structdg_1_1geo_1_1solovev_1_1_psip.html</filename>
-    <base>aCloneableBinaryFunctor&lt; Psip &gt;</base>
+    <base>aCylindricalFunctor&lt; Psip &gt;</base>
     <member kind="function">
       <type></type>
       <name>Psip</name>
@@ -3220,23 +3716,18 @@
       <anchor>ac03bbd27cfa3c3bb9915be065727ec8a</anchor>
       <arglist>(Parameters gp)</arglist>
     </member>
-  </compound>
-  <compound kind="struct">
-    <name>dg::geo::taylor::Psip</name>
-    <filename>structdg_1_1geo_1_1taylor_1_1_psip.html</filename>
-    <base>aCloneableBinaryFunctor&lt; Psip &gt;</base>
     <member kind="function">
-      <type></type>
-      <name>Psip</name>
-      <anchorfile>structdg_1_1geo_1_1taylor_1_1_psip.html</anchorfile>
-      <anchor>a1c29628665bf4b0cef009680ec41b2b3</anchor>
-      <arglist>(solovev::Parameters gp)</arglist>
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1solovev_1_1_psip.html</anchorfile>
+      <anchor>a50c4db13db386880180faf8587d2daf8</anchor>
+      <arglist>(double R, double Z) const</arglist>
     </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::circular::Psip</name>
     <filename>structdg_1_1geo_1_1circular_1_1_psip.html</filename>
-    <base>aCloneableBinaryFunctor&lt; Psip &gt;</base>
+    <base>aCylindricalFunctor&lt; Psip &gt;</base>
     <member kind="function">
       <type></type>
       <name>Psip</name>
@@ -3244,47 +3735,56 @@
       <anchor>ae959371d510a5f7358a6b0143da3e3e2</anchor>
       <arglist>(double R0)</arglist>
     </member>
-  </compound>
-  <compound kind="struct">
-    <name>dg::geo::guenther::PsipR</name>
-    <filename>structdg_1_1geo_1_1guenther_1_1_psip_r.html</filename>
-    <base>aCloneableBinaryFunctor&lt; PsipR &gt;</base>
     <member kind="function">
-      <type></type>
-      <name>PsipR</name>
-      <anchorfile>structdg_1_1geo_1_1guenther_1_1_psip_r.html</anchorfile>
-      <anchor>ad220d935c23098e4cf9a7e2cd77bd5d3</anchor>
-      <arglist>(double R_0)</arglist>
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1circular_1_1_psip.html</anchorfile>
+      <anchor>a5476a62ac8f65807d2e0ff36f522c6c0</anchor>
+      <arglist>(double R, double Z) const</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>dg::geo::taylor::PsipR</name>
-    <filename>structdg_1_1geo_1_1taylor_1_1_psip_r.html</filename>
-    <base>aCloneableBinaryFunctor&lt; PsipR &gt;</base>
+    <name>dg::geo::taylor::Psip</name>
+    <filename>structdg_1_1geo_1_1taylor_1_1_psip.html</filename>
+    <base>aCylindricalFunctor&lt; Psip &gt;</base>
     <member kind="function">
       <type></type>
-      <name>PsipR</name>
-      <anchorfile>structdg_1_1geo_1_1taylor_1_1_psip_r.html</anchorfile>
-      <anchor>ae476cfaa416530715e7977f7485d66e3</anchor>
+      <name>Psip</name>
+      <anchorfile>structdg_1_1geo_1_1taylor_1_1_psip.html</anchorfile>
+      <anchor>a1c29628665bf4b0cef009680ec41b2b3</anchor>
       <arglist>(solovev::Parameters gp)</arglist>
     </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1taylor_1_1_psip.html</anchorfile>
+      <anchor>abd3ff140498d4df7909b1e179eeb1989</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
   </compound>
   <compound kind="struct">
-    <name>dg::geo::circular::PsipR</name>
-    <filename>structdg_1_1geo_1_1circular_1_1_psip_r.html</filename>
-    <base>aCloneableBinaryFunctor&lt; PsipR &gt;</base>
+    <name>dg::geo::guenther::Psip</name>
+    <filename>structdg_1_1geo_1_1guenther_1_1_psip.html</filename>
+    <base>aCylindricalFunctor&lt; Psip &gt;</base>
     <member kind="function">
       <type></type>
-      <name>PsipR</name>
-      <anchorfile>structdg_1_1geo_1_1circular_1_1_psip_r.html</anchorfile>
-      <anchor>a1968053a1c6da4b94fe12fc5812e4d90</anchor>
-      <arglist>(double R0)</arglist>
+      <name>Psip</name>
+      <anchorfile>structdg_1_1geo_1_1guenther_1_1_psip.html</anchorfile>
+      <anchor>a47d0b956b1fd79a4e5dca1f982492f79</anchor>
+      <arglist>(double R_0)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1guenther_1_1_psip.html</anchorfile>
+      <anchor>afee35283c998558a6f2f2b016bb49551</anchor>
+      <arglist>(double R, double Z) const</arglist>
     </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::solovev::PsipR</name>
     <filename>structdg_1_1geo_1_1solovev_1_1_psip_r.html</filename>
-    <base>aCloneableBinaryFunctor&lt; PsipR &gt;</base>
+    <base>aCylindricalFunctor&lt; PsipR &gt;</base>
     <member kind="function">
       <type></type>
       <name>PsipR</name>
@@ -3292,11 +3792,75 @@
       <anchor>ae2bb58c1b1010e496e60ff577c1abd1b</anchor>
       <arglist>(Parameters gp)</arglist>
     </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1solovev_1_1_psip_r.html</anchorfile>
+      <anchor>a396bea0cce001970f97781ab8f098529</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::circular::PsipR</name>
+    <filename>structdg_1_1geo_1_1circular_1_1_psip_r.html</filename>
+    <base>aCylindricalFunctor&lt; PsipR &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>PsipR</name>
+      <anchorfile>structdg_1_1geo_1_1circular_1_1_psip_r.html</anchorfile>
+      <anchor>a1968053a1c6da4b94fe12fc5812e4d90</anchor>
+      <arglist>(double R0)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1circular_1_1_psip_r.html</anchorfile>
+      <anchor>aea3b25ee751e91083dbd6d0dfbf3251e</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::taylor::PsipR</name>
+    <filename>structdg_1_1geo_1_1taylor_1_1_psip_r.html</filename>
+    <base>aCylindricalFunctor&lt; PsipR &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>PsipR</name>
+      <anchorfile>structdg_1_1geo_1_1taylor_1_1_psip_r.html</anchorfile>
+      <anchor>ae476cfaa416530715e7977f7485d66e3</anchor>
+      <arglist>(solovev::Parameters gp)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1taylor_1_1_psip_r.html</anchorfile>
+      <anchor>a25b766e5370cf6adfd8745a8db48e256</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::guenther::PsipR</name>
+    <filename>structdg_1_1geo_1_1guenther_1_1_psip_r.html</filename>
+    <base>aCylindricalFunctor&lt; PsipR &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>PsipR</name>
+      <anchorfile>structdg_1_1geo_1_1guenther_1_1_psip_r.html</anchorfile>
+      <anchor>ad220d935c23098e4cf9a7e2cd77bd5d3</anchor>
+      <arglist>(double R_0)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1guenther_1_1_psip_r.html</anchorfile>
+      <anchor>a7d9b0723e3c174bb3c0ca17d6bf035b9</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::guenther::PsipRR</name>
     <filename>structdg_1_1geo_1_1guenther_1_1_psip_r_r.html</filename>
-    <base>aCloneableBinaryFunctor&lt; PsipRR &gt;</base>
+    <base>aCylindricalFunctor&lt; PsipRR &gt;</base>
     <member kind="function">
       <type></type>
       <name>PsipRR</name>
@@ -3304,23 +3868,18 @@
       <anchor>a529c8a3c5ab1773b3042781be74b684f</anchor>
       <arglist>(double R_0)</arglist>
     </member>
-  </compound>
-  <compound kind="struct">
-    <name>dg::geo::solovev::PsipRR</name>
-    <filename>structdg_1_1geo_1_1solovev_1_1_psip_r_r.html</filename>
-    <base>aCloneableBinaryFunctor&lt; PsipRR &gt;</base>
     <member kind="function">
-      <type></type>
-      <name>PsipRR</name>
-      <anchorfile>structdg_1_1geo_1_1solovev_1_1_psip_r_r.html</anchorfile>
-      <anchor>ad46e72e774f3068ca07290e8fc521308</anchor>
-      <arglist>(Parameters gp)</arglist>
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1guenther_1_1_psip_r_r.html</anchorfile>
+      <anchor>a79021e667b24a669dca0a45d31505617</anchor>
+      <arglist>(double R, double Z) const</arglist>
     </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::taylor::PsipRR</name>
     <filename>structdg_1_1geo_1_1taylor_1_1_psip_r_r.html</filename>
-    <base>aCloneableBinaryFunctor&lt; PsipRR &gt;</base>
+    <base>aCylindricalFunctor&lt; PsipRR &gt;</base>
     <member kind="function">
       <type></type>
       <name>PsipRR</name>
@@ -3328,35 +3887,37 @@
       <anchor>a45e63ccdad005dffc6d794432a0ee2e2</anchor>
       <arglist>(solovev::Parameters gp)</arglist>
     </member>
-  </compound>
-  <compound kind="struct">
-    <name>dg::geo::guenther::PsipRZ</name>
-    <filename>structdg_1_1geo_1_1guenther_1_1_psip_r_z.html</filename>
-    <base>aCloneableBinaryFunctor&lt; PsipRZ &gt;</base>
     <member kind="function">
-      <type></type>
-      <name>PsipRZ</name>
-      <anchorfile>structdg_1_1geo_1_1guenther_1_1_psip_r_z.html</anchorfile>
-      <anchor>a4d6299b83846e8a5df0c926740476602</anchor>
-      <arglist>(double R_0)</arglist>
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1taylor_1_1_psip_r_r.html</anchorfile>
+      <anchor>a815336e49973e0d06369119848905313</anchor>
+      <arglist>(double R, double Z) const</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>dg::geo::solovev::PsipRZ</name>
-    <filename>structdg_1_1geo_1_1solovev_1_1_psip_r_z.html</filename>
-    <base>aCloneableBinaryFunctor&lt; PsipRZ &gt;</base>
+    <name>dg::geo::solovev::PsipRR</name>
+    <filename>structdg_1_1geo_1_1solovev_1_1_psip_r_r.html</filename>
+    <base>aCylindricalFunctor&lt; PsipRR &gt;</base>
     <member kind="function">
       <type></type>
-      <name>PsipRZ</name>
-      <anchorfile>structdg_1_1geo_1_1solovev_1_1_psip_r_z.html</anchorfile>
-      <anchor>af063dcef72311f64d7647a16f2e5c6d9</anchor>
+      <name>PsipRR</name>
+      <anchorfile>structdg_1_1geo_1_1solovev_1_1_psip_r_r.html</anchorfile>
+      <anchor>ad46e72e774f3068ca07290e8fc521308</anchor>
       <arglist>(Parameters gp)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1solovev_1_1_psip_r_r.html</anchorfile>
+      <anchor>ac7ce47105a1bd3d30a5cfc4a26993108</anchor>
+      <arglist>(double R, double Z) const</arglist>
     </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::taylor::PsipRZ</name>
     <filename>structdg_1_1geo_1_1taylor_1_1_psip_r_z.html</filename>
-    <base>aCloneableBinaryFunctor&lt; PsipRZ &gt;</base>
+    <base>aCylindricalFunctor&lt; PsipRZ &gt;</base>
     <member kind="function">
       <type></type>
       <name>PsipRZ</name>
@@ -3364,47 +3925,56 @@
       <anchor>a7d60529fe9b5027df36d396c806f782f</anchor>
       <arglist>(solovev::Parameters gp)</arglist>
     </member>
-  </compound>
-  <compound kind="struct">
-    <name>dg::geo::PsiPupil</name>
-    <filename>structdg_1_1geo_1_1_psi_pupil.html</filename>
-    <base>aCloneableBinaryFunctor&lt; PsiPupil &gt;</base>
     <member kind="function">
-      <type></type>
-      <name>PsiPupil</name>
-      <anchorfile>structdg_1_1geo_1_1_psi_pupil.html</anchorfile>
-      <anchor>ac5973becf859f6a149ba7909fd1d925c</anchor>
-      <arglist>(const aBinaryFunctor &amp;psi, double psipmax)</arglist>
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1taylor_1_1_psip_r_z.html</anchorfile>
+      <anchor>a5065f9aa7892404b709c975d61f3ec8c</anchor>
+      <arglist>(double R, double Z) const</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>dg::geo::guenther::PsipZ</name>
-    <filename>structdg_1_1geo_1_1guenther_1_1_psip_z.html</filename>
-    <base>aCloneableBinaryFunctor&lt; PsipZ &gt;</base>
+    <name>dg::geo::solovev::PsipRZ</name>
+    <filename>structdg_1_1geo_1_1solovev_1_1_psip_r_z.html</filename>
+    <base>aCylindricalFunctor&lt; PsipRZ &gt;</base>
     <member kind="function">
       <type></type>
-      <name>PsipZ</name>
-      <anchorfile>structdg_1_1geo_1_1guenther_1_1_psip_z.html</anchorfile>
-      <anchor>a46c18861500af9fdded5a4db65b3101c</anchor>
+      <name>PsipRZ</name>
+      <anchorfile>structdg_1_1geo_1_1solovev_1_1_psip_r_z.html</anchorfile>
+      <anchor>af063dcef72311f64d7647a16f2e5c6d9</anchor>
+      <arglist>(Parameters gp)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1solovev_1_1_psip_r_z.html</anchorfile>
+      <anchor>ae10457da3f4e1adfb9e4082ba61619f6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::guenther::PsipRZ</name>
+    <filename>structdg_1_1geo_1_1guenther_1_1_psip_r_z.html</filename>
+    <base>aCylindricalFunctor&lt; PsipRZ &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>PsipRZ</name>
+      <anchorfile>structdg_1_1geo_1_1guenther_1_1_psip_r_z.html</anchorfile>
+      <anchor>a4d6299b83846e8a5df0c926740476602</anchor>
       <arglist>(double R_0)</arglist>
     </member>
-  </compound>
-  <compound kind="struct">
-    <name>dg::geo::taylor::PsipZ</name>
-    <filename>structdg_1_1geo_1_1taylor_1_1_psip_z.html</filename>
-    <base>aCloneableBinaryFunctor&lt; PsipZ &gt;</base>
     <member kind="function">
-      <type></type>
-      <name>PsipZ</name>
-      <anchorfile>structdg_1_1geo_1_1taylor_1_1_psip_z.html</anchorfile>
-      <anchor>aae60b21061965dc9222b27aa8e952016</anchor>
-      <arglist>(solovev::Parameters gp)</arglist>
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1guenther_1_1_psip_r_z.html</anchorfile>
+      <anchor>a3494d73dacd40e0035ceedc074311168</anchor>
+      <arglist>(double R, double Z) const</arglist>
     </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::solovev::PsipZ</name>
     <filename>structdg_1_1geo_1_1solovev_1_1_psip_z.html</filename>
-    <base>aCloneableBinaryFunctor&lt; PsipZ &gt;</base>
+    <base>aCylindricalFunctor&lt; PsipZ &gt;</base>
     <member kind="function">
       <type></type>
       <name>PsipZ</name>
@@ -3412,28 +3982,68 @@
       <anchor>a01cf7922316a5c149f1162c40c0563a8</anchor>
       <arglist>(Parameters gp)</arglist>
     </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1solovev_1_1_psip_z.html</anchorfile>
+      <anchor>a309a9796262e7d089e4587f4d76de126</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::taylor::PsipZ</name>
+    <filename>structdg_1_1geo_1_1taylor_1_1_psip_z.html</filename>
+    <base>aCylindricalFunctor&lt; PsipZ &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>PsipZ</name>
+      <anchorfile>structdg_1_1geo_1_1taylor_1_1_psip_z.html</anchorfile>
+      <anchor>aae60b21061965dc9222b27aa8e952016</anchor>
+      <arglist>(solovev::Parameters gp)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1taylor_1_1_psip_z.html</anchorfile>
+      <anchor>ae7c82c349b1a479f208d84808ab9c516</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::guenther::PsipZ</name>
+    <filename>structdg_1_1geo_1_1guenther_1_1_psip_z.html</filename>
+    <base>aCylindricalFunctor&lt; PsipZ &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>PsipZ</name>
+      <anchorfile>structdg_1_1geo_1_1guenther_1_1_psip_z.html</anchorfile>
+      <anchor>a46c18861500af9fdded5a4db65b3101c</anchor>
+      <arglist>(double R_0)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1guenther_1_1_psip_z.html</anchorfile>
+      <anchor>abf9e71c5da96c2cc6b920382484d6167</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::circular::PsipZ</name>
     <filename>structdg_1_1geo_1_1circular_1_1_psip_z.html</filename>
-    <base>aCloneableBinaryFunctor&lt; PsipZ &gt;</base>
-  </compound>
-  <compound kind="struct">
-    <name>dg::geo::taylor::PsipZZ</name>
-    <filename>structdg_1_1geo_1_1taylor_1_1_psip_z_z.html</filename>
-    <base>aCloneableBinaryFunctor&lt; PsipZZ &gt;</base>
+    <base>aCylindricalFunctor&lt; PsipZ &gt;</base>
     <member kind="function">
-      <type></type>
-      <name>PsipZZ</name>
-      <anchorfile>structdg_1_1geo_1_1taylor_1_1_psip_z_z.html</anchorfile>
-      <anchor>a306fc1e77d632e3e25a126c3ac1791eb</anchor>
-      <arglist>(solovev::Parameters gp)</arglist>
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1circular_1_1_psip_z.html</anchorfile>
+      <anchor>ad44eb87d832769e8aeba66534a1a29c8</anchor>
+      <arglist>(double R, double Z) const</arglist>
     </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::guenther::PsipZZ</name>
     <filename>structdg_1_1geo_1_1guenther_1_1_psip_z_z.html</filename>
-    <base>aCloneableBinaryFunctor&lt; PsipZZ &gt;</base>
+    <base>aCylindricalFunctor&lt; PsipZZ &gt;</base>
     <member kind="function">
       <type></type>
       <name>PsipZZ</name>
@@ -3441,11 +4051,18 @@
       <anchor>a4528a753ddd1eb64985c91d18576103e</anchor>
       <arglist>(double R_0)</arglist>
     </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1guenther_1_1_psip_z_z.html</anchorfile>
+      <anchor>a2beb74814851035152da8d65550b67d0</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::solovev::PsipZZ</name>
     <filename>structdg_1_1geo_1_1solovev_1_1_psip_z_z.html</filename>
-    <base>aCloneableBinaryFunctor&lt; PsipZZ &gt;</base>
+    <base>aCylindricalFunctor&lt; PsipZZ &gt;</base>
     <member kind="function">
       <type></type>
       <name>PsipZZ</name>
@@ -3453,29 +4070,390 @@
       <anchor>a63358b219686b61f5a11f7fe01ad1da6</anchor>
       <arglist>(Parameters gp)</arglist>
     </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1solovev_1_1_psip_z_z.html</anchorfile>
+      <anchor>a97af34a5353cb27665508a82033bff28</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
   </compound>
   <compound kind="struct">
-    <name>dg::geo::Pupil</name>
-    <filename>structdg_1_1geo_1_1_pupil.html</filename>
-    <base>aCloneableBinaryFunctor&lt; Pupil &gt;</base>
+    <name>dg::geo::taylor::PsipZZ</name>
+    <filename>structdg_1_1geo_1_1taylor_1_1_psip_z_z.html</filename>
+    <base>aCylindricalFunctor&lt; PsipZZ &gt;</base>
     <member kind="function">
       <type></type>
-      <name>Pupil</name>
-      <anchorfile>structdg_1_1geo_1_1_pupil.html</anchorfile>
-      <anchor>ab30546c3dbd1c6751550b0a951b6ccb1</anchor>
-      <arglist>(const aBinaryFunctor &amp;psi, double psipmaxcut)</arglist>
+      <name>PsipZZ</name>
+      <anchorfile>structdg_1_1geo_1_1taylor_1_1_psip_z_z.html</anchorfile>
+      <anchor>a306fc1e77d632e3e25a126c3ac1791eb</anchor>
+      <arglist>(solovev::Parameters gp)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1taylor_1_1_psip_z_z.html</anchorfile>
+      <anchor>a14c6e85bf3f516533373ac93d3a2c5c4</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::RealCurvilinearGrid2d</name>
+    <filename>structdg_1_1geo_1_1_real_curvilinear_grid2d.html</filename>
+    <templarg>real_type</templarg>
+    <member kind="function">
+      <type></type>
+      <name>RealCurvilinearGrid2d</name>
+      <anchorfile>structdg_1_1geo_1_1_real_curvilinear_grid2d.html</anchorfile>
+      <anchor>a4ad08f1ca6a34966ce295df294a2779f</anchor>
+      <arglist>(const aRealGenerator2d&lt; real_type &gt; &amp;generator, unsigned n, unsigned Nx, unsigned Ny, dg::bc bcx=dg::DIR, bc bcy=dg::PER)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>RealCurvilinearGrid2d</name>
+      <anchorfile>structdg_1_1geo_1_1_real_curvilinear_grid2d.html</anchorfile>
+      <anchor>ac29a6426e03e6cde827823e8f5653e8b</anchor>
+      <arglist>(RealCurvilinearProductGrid3d&lt; real_type &gt; g)</arglist>
+    </member>
+    <member kind="function">
+      <type>const aRealGenerator2d&lt; real_type &gt; &amp;</type>
+      <name>generator</name>
+      <anchorfile>structdg_1_1geo_1_1_real_curvilinear_grid2d.html</anchorfile>
+      <anchor>ac33589d19e4f77265cf07eeb337b2a24</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual RealCurvilinearGrid2d *</type>
+      <name>clone</name>
+      <anchorfile>structdg_1_1geo_1_1_real_curvilinear_grid2d.html</anchorfile>
+      <anchor>acf9436dd2d6a20028337de17e94a16fe</anchor>
+      <arglist>() const override final</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>RealCurvilinearGrid2d&lt; double &gt;</name>
+    <filename>structdg_1_1geo_1_1_real_curvilinear_grid2d.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>RealCurvilinearGrid2d</name>
+      <anchorfile>structdg_1_1geo_1_1_real_curvilinear_grid2d.html</anchorfile>
+      <anchor>a4ad08f1ca6a34966ce295df294a2779f</anchor>
+      <arglist>(const aRealGenerator2d&lt; double &gt; &amp;generator, unsigned n, unsigned Nx, unsigned Ny, dg::bc bcx=dg::DIR, bc bcy=dg::PER)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>RealCurvilinearGrid2d</name>
+      <anchorfile>structdg_1_1geo_1_1_real_curvilinear_grid2d.html</anchorfile>
+      <anchor>ac29a6426e03e6cde827823e8f5653e8b</anchor>
+      <arglist>(RealCurvilinearProductGrid3d&lt; double &gt; g)</arglist>
+    </member>
+    <member kind="function">
+      <type>const aRealGenerator2d&lt; double &gt; &amp;</type>
+      <name>generator</name>
+      <anchorfile>structdg_1_1geo_1_1_real_curvilinear_grid2d.html</anchorfile>
+      <anchor>ac33589d19e4f77265cf07eeb337b2a24</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual RealCurvilinearGrid2d *</type>
+      <name>clone</name>
+      <anchorfile>structdg_1_1geo_1_1_real_curvilinear_grid2d.html</anchorfile>
+      <anchor>acf9436dd2d6a20028337de17e94a16fe</anchor>
+      <arglist>() const override final</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::RealCurvilinearGridX2d</name>
+    <filename>structdg_1_1geo_1_1_real_curvilinear_grid_x2d.html</filename>
+    <templarg></templarg>
+    <member kind="function">
+      <type></type>
+      <name>RealCurvilinearGridX2d</name>
+      <anchorfile>structdg_1_1geo_1_1_real_curvilinear_grid_x2d.html</anchorfile>
+      <anchor>a4efd261745dd0866804731669dfdf7cf</anchor>
+      <arglist>(const aRealGeneratorX2d&lt; real_type &gt; &amp;generator, real_type fx, real_type fy, unsigned n, unsigned Nx, unsigned Ny, dg::bc bcx=dg::DIR, bc bcy=dg::PER)</arglist>
+    </member>
+    <member kind="function">
+      <type>const aRealGeneratorX2d&lt; real_type &gt; &amp;</type>
+      <name>generator</name>
+      <anchorfile>structdg_1_1geo_1_1_real_curvilinear_grid_x2d.html</anchorfile>
+      <anchor>aa1eb76550af0f22661890e7754d8afa6</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual RealCurvilinearGridX2d *</type>
+      <name>clone</name>
+      <anchorfile>structdg_1_1geo_1_1_real_curvilinear_grid_x2d.html</anchorfile>
+      <anchor>a6efcfec5c8f19eb0333f2bc2daba5649</anchor>
+      <arglist>() const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::RealCurvilinearMPIGrid2d</name>
+    <filename>structdg_1_1geo_1_1_real_curvilinear_m_p_i_grid2d.html</filename>
+    <templarg>real_type</templarg>
+    <member kind="function">
+      <type></type>
+      <name>RealCurvilinearMPIGrid2d</name>
+      <anchorfile>structdg_1_1geo_1_1_real_curvilinear_m_p_i_grid2d.html</anchorfile>
+      <anchor>ade4c978917093643105f35380ee9d11e</anchor>
+      <arglist>(const aRealGenerator2d&lt; real_type &gt; &amp;generator, unsigned n, unsigned Nx, unsigned Ny, dg::bc bcx, dg::bc bcy, MPI_Comm comm)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>RealCurvilinearMPIGrid2d</name>
+      <anchorfile>structdg_1_1geo_1_1_real_curvilinear_m_p_i_grid2d.html</anchorfile>
+      <anchor>a11c19bb9b724720902a062d719d9bb60</anchor>
+      <arglist>(const RealCurvilinearProductMPIGrid3d&lt; real_type &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>const aRealGenerator2d&lt; real_type &gt; &amp;</type>
+      <name>generator</name>
+      <anchorfile>structdg_1_1geo_1_1_real_curvilinear_m_p_i_grid2d.html</anchorfile>
+      <anchor>af446f9a65b2e3e30faf74a9b995c1289</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual RealCurvilinearMPIGrid2d *</type>
+      <name>clone</name>
+      <anchorfile>structdg_1_1geo_1_1_real_curvilinear_m_p_i_grid2d.html</anchorfile>
+      <anchor>a58bee88b0d3a52d845b0e8b50183d640</anchor>
+      <arglist>() const override final</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual RealCurvilinearGrid2d&lt; real_type &gt; *</type>
+      <name>global_geometry</name>
+      <anchorfile>structdg_1_1geo_1_1_real_curvilinear_m_p_i_grid2d.html</anchorfile>
+      <anchor>a4ebaa06274b3b686792734a04c0386fb</anchor>
+      <arglist>() const override final</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::RealCurvilinearProductGrid3d</name>
+    <filename>structdg_1_1geo_1_1_real_curvilinear_product_grid3d.html</filename>
+    <templarg>real_type</templarg>
+    <member kind="typedef">
+      <type>RealCurvilinearGrid2d&lt; real_type &gt;</type>
+      <name>perpendicular_grid</name>
+      <anchorfile>structdg_1_1geo_1_1_real_curvilinear_product_grid3d.html</anchorfile>
+      <anchor>ad17ecec1614eb1c35050b82421cc14e1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>RealCurvilinearProductGrid3d</name>
+      <anchorfile>structdg_1_1geo_1_1_real_curvilinear_product_grid3d.html</anchorfile>
+      <anchor>a0df7ec9734a5b0fcf57b193902b7e1a6</anchor>
+      <arglist>(const aRealGenerator2d&lt; real_type &gt; &amp;generator, unsigned n, unsigned Nx, unsigned Ny, unsigned Nz, bc bcx=dg::DIR, bc bcy=dg::PER, bc bcz=dg::PER)</arglist>
+    </member>
+    <member kind="function">
+      <type>const aRealGenerator2d&lt; real_type &gt; &amp;</type>
+      <name>generator</name>
+      <anchorfile>structdg_1_1geo_1_1_real_curvilinear_product_grid3d.html</anchorfile>
+      <anchor>ad6590dc059b84d07ddbf49e99d0c1e8a</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual RealCurvilinearProductGrid3d *</type>
+      <name>clone</name>
+      <anchorfile>structdg_1_1geo_1_1_real_curvilinear_product_grid3d.html</anchorfile>
+      <anchor>abe38a68ef764db4da46b20d005f4b70b</anchor>
+      <arglist>() const override final</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::RealCurvilinearProductGridX3d</name>
+    <filename>structdg_1_1geo_1_1_real_curvilinear_product_grid_x3d.html</filename>
+    <templarg>real_type</templarg>
+    <member kind="function">
+      <type></type>
+      <name>RealCurvilinearProductGridX3d</name>
+      <anchorfile>structdg_1_1geo_1_1_real_curvilinear_product_grid_x3d.html</anchorfile>
+      <anchor>a005b59293ab4ac0e4330409fe39061c9</anchor>
+      <arglist>(const aRealGeneratorX2d&lt; real_type &gt; &amp;generator, real_type fx, real_type fy, unsigned n, unsigned Nx, unsigned Ny, unsigned Nz, bc bcx=dg::DIR, bc bcy=dg::PER, bc bcz=dg::PER)</arglist>
+    </member>
+    <member kind="function">
+      <type>const aRealGeneratorX2d&lt; real_type &gt; &amp;</type>
+      <name>generator</name>
+      <anchorfile>structdg_1_1geo_1_1_real_curvilinear_product_grid_x3d.html</anchorfile>
+      <anchor>aace9032b9c4ff4e15af11dd18a88b535</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual RealCurvilinearProductGridX3d *</type>
+      <name>clone</name>
+      <anchorfile>structdg_1_1geo_1_1_real_curvilinear_product_grid_x3d.html</anchorfile>
+      <anchor>afc8ff19c9b2f7298451bc46d1dfd874e</anchor>
+      <arglist>() const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::RealCurvilinearProductMPIGrid3d</name>
+    <filename>structdg_1_1geo_1_1_real_curvilinear_product_m_p_i_grid3d.html</filename>
+    <templarg>real_type</templarg>
+    <member kind="typedef">
+      <type>dg::geo::RealCurvilinearMPIGrid2d&lt; real_type &gt;</type>
+      <name>perpendicular_grid</name>
+      <anchorfile>structdg_1_1geo_1_1_real_curvilinear_product_m_p_i_grid3d.html</anchorfile>
+      <anchor>a8183e37c63decd2606bc9adc6d79a3b1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>RealCurvilinearProductMPIGrid3d</name>
+      <anchorfile>structdg_1_1geo_1_1_real_curvilinear_product_m_p_i_grid3d.html</anchorfile>
+      <anchor>aa7b1fd917bbc01b9c9c0e1700c8292d5</anchor>
+      <arglist>(const aRealGenerator2d&lt; real_type &gt; &amp;generator, unsigned n, unsigned Nx, unsigned Ny, unsigned Nz, bc bcx, bc bcy, bc bcz, MPI_Comm comm)</arglist>
+    </member>
+    <member kind="function">
+      <type>const aRealGenerator2d&lt; real_type &gt; &amp;</type>
+      <name>generator</name>
+      <anchorfile>structdg_1_1geo_1_1_real_curvilinear_product_m_p_i_grid3d.html</anchorfile>
+      <anchor>a5ff3d3bf891efaf78d578f252830e49b</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual RealCurvilinearProductMPIGrid3d *</type>
+      <name>clone</name>
+      <anchorfile>structdg_1_1geo_1_1_real_curvilinear_product_m_p_i_grid3d.html</anchorfile>
+      <anchor>a796e2215d4c47955770a74e92eebc747</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual RealCurvilinearProductGrid3d&lt; real_type &gt; *</type>
+      <name>global_geometry</name>
+      <anchorfile>structdg_1_1geo_1_1_real_curvilinear_product_m_p_i_grid3d.html</anchorfile>
+      <anchor>a5615dcb1abc631e1998c533288dae0d4</anchor>
+      <arglist>() const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::RealCurvilinearRefinedGridX2d</name>
+    <filename>structdg_1_1geo_1_1_real_curvilinear_refined_grid_x2d.html</filename>
+    <templarg></templarg>
+    <member kind="function">
+      <type></type>
+      <name>RealCurvilinearRefinedGridX2d</name>
+      <anchorfile>structdg_1_1geo_1_1_real_curvilinear_refined_grid_x2d.html</anchorfile>
+      <anchor>aaec50088d66361ef776c478016c20f89</anchor>
+      <arglist>(const aRealRefinementX2d&lt; real_type &gt; &amp;ref, const aRealGeneratorX2d&lt; real_type &gt; &amp;generator, real_type fx, real_type fy, unsigned n, unsigned Nx, unsigned Ny, dg::bc bcx=dg::DIR, bc bcy=dg::NEU)</arglist>
+    </member>
+    <member kind="function">
+      <type>const aRealGeneratorX2d&lt; real_type &gt; &amp;</type>
+      <name>generator</name>
+      <anchorfile>structdg_1_1geo_1_1_real_curvilinear_refined_grid_x2d.html</anchorfile>
+      <anchor>a136a23793f00a6edd22cef5a2fae843c</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual RealCurvilinearRefinedGridX2d *</type>
+      <name>clone</name>
+      <anchorfile>structdg_1_1geo_1_1_real_curvilinear_refined_grid_x2d.html</anchorfile>
+      <anchor>a206fffc0e285694018bfdff7115ce407</anchor>
+      <arglist>() const override final</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::RealCurvilinearRefinedProductGridX3d</name>
+    <filename>structdg_1_1geo_1_1_real_curvilinear_refined_product_grid_x3d.html</filename>
+    <templarg>real_type</templarg>
+    <member kind="function">
+      <type></type>
+      <name>RealCurvilinearRefinedProductGridX3d</name>
+      <anchorfile>structdg_1_1geo_1_1_real_curvilinear_refined_product_grid_x3d.html</anchorfile>
+      <anchor>a36fa8bf6b2dfc081ed4135cae4a84e54</anchor>
+      <arglist>(const aRealRefinementX2d&lt; real_type &gt; &amp;ref, const aRealGeneratorX2d&lt; real_type &gt; &amp;generator, real_type fx, real_type fy, unsigned n, unsigned Nx, unsigned Ny, unsigned Nz, bc bcx=dg::DIR, bc bcy=dg::NEU, bc bcz=dg::PER)</arglist>
+    </member>
+    <member kind="function">
+      <type>const aRealGeneratorX2d&lt; real_type &gt; &amp;</type>
+      <name>generator</name>
+      <anchorfile>structdg_1_1geo_1_1_real_curvilinear_refined_product_grid_x3d.html</anchorfile>
+      <anchor>a50817be1626829e953f043ba066aef8e</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual RealCurvilinearRefinedProductGridX3d *</type>
+      <name>clone</name>
+      <anchorfile>structdg_1_1geo_1_1_real_curvilinear_refined_product_grid_x3d.html</anchorfile>
+      <anchor>a3d02917aec438f9337962976907bf4d3</anchor>
+      <arglist>() const override final</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::RealCylindricalFunctor</name>
+    <filename>structdg_1_1geo_1_1_real_cylindrical_functor.html</filename>
+    <templarg>real_type</templarg>
+    <member kind="function">
+      <type></type>
+      <name>RealCylindricalFunctor</name>
+      <anchorfile>structdg_1_1geo_1_1_real_cylindrical_functor.html</anchorfile>
+      <anchor>a1dfd74dc92197485f88278842e274533</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>RealCylindricalFunctor</name>
+      <anchorfile>structdg_1_1geo_1_1_real_cylindrical_functor.html</anchorfile>
+      <anchor>af43959f3b10924996f27fd8cab57e7e2</anchor>
+      <arglist>(BinaryFunctor f)</arglist>
+    </member>
+    <member kind="function">
+      <type>real_type</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1_real_cylindrical_functor.html</anchorfile>
+      <anchor>a5a6ce761389ba82184d630f4756e9f32</anchor>
+      <arglist>(real_type R, real_type Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>real_type</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1_real_cylindrical_functor.html</anchorfile>
+      <anchor>a53ad871e635f0f024fca1390ebc71174</anchor>
+      <arglist>(real_type R, real_type Z, real_type phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>RealCylindricalFunctor&lt; double &gt;</name>
+    <filename>structdg_1_1geo_1_1_real_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>RealCylindricalFunctor</name>
+      <anchorfile>structdg_1_1geo_1_1_real_cylindrical_functor.html</anchorfile>
+      <anchor>a1dfd74dc92197485f88278842e274533</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>RealCylindricalFunctor</name>
+      <anchorfile>structdg_1_1geo_1_1_real_cylindrical_functor.html</anchorfile>
+      <anchor>af43959f3b10924996f27fd8cab57e7e2</anchor>
+      <arglist>(BinaryFunctor f)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1_real_cylindrical_functor.html</anchorfile>
+      <anchor>a5a6ce761389ba82184d630f4756e9f32</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1_real_cylindrical_functor.html</anchorfile>
+      <anchor>a53ad871e635f0f024fca1390ebc71174</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
     </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::Ribeiro</name>
     <filename>structdg_1_1geo_1_1_ribeiro.html</filename>
-    <base>dg::geo::aGenerator2d</base>
+    <base>dg::geo::aRealGenerator2d</base>
     <member kind="function">
       <type></type>
       <name>Ribeiro</name>
       <anchorfile>structdg_1_1geo_1_1_ribeiro.html</anchorfile>
-      <anchor>ac4d27e1c9d8820f16607014af587a941</anchor>
-      <arglist>(const BinaryFunctorsLvl2 &amp;psi, double psi_0, double psi_1, double x0, double y0, int mode=0, bool verbose=false)</arglist>
+      <anchor>aa7cbf74e8a39c0dcaa1bc1779a24d5cf</anchor>
+      <arglist>(const CylindricalFunctorsLvl2 &amp;psi, double psi_0, double psi_1, double x0, double y0, int mode=0, bool verbose=false)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual Ribeiro *</type>
@@ -3488,13 +4466,13 @@
   <compound kind="struct">
     <name>dg::geo::RibeiroFluxGenerator</name>
     <filename>structdg_1_1geo_1_1_ribeiro_flux_generator.html</filename>
-    <base>dg::geo::aGenerator2d</base>
+    <base>dg::geo::aRealGenerator2d</base>
     <member kind="function">
       <type></type>
       <name>RibeiroFluxGenerator</name>
       <anchorfile>structdg_1_1geo_1_1_ribeiro_flux_generator.html</anchorfile>
-      <anchor>ab0f8ec8635f28c5041fabf8f98972fe6</anchor>
-      <arglist>(const BinaryFunctorsLvl2 &amp;psi, double psi_0, double psi_1, double x0, double y0, int mode=0, bool verbose=false)</arglist>
+      <anchor>ae6b958cac3d065c8057b575e20ed4c14</anchor>
+      <arglist>(const CylindricalFunctorsLvl2 &amp;psi, double psi_0, double psi_1, double x0, double y0, int mode=0, bool verbose=false)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual RibeiroFluxGenerator *</type>
@@ -3507,13 +4485,13 @@
   <compound kind="struct">
     <name>dg::geo::RibeiroX</name>
     <filename>structdg_1_1geo_1_1_ribeiro_x.html</filename>
-    <base>dg::geo::aGeneratorX2d</base>
+    <base>dg::geo::aRealGeneratorX2d</base>
     <member kind="function">
       <type></type>
       <name>RibeiroX</name>
       <anchorfile>structdg_1_1geo_1_1_ribeiro_x.html</anchorfile>
-      <anchor>a80a2c02d4b45c92a3d66f62190ddd38a</anchor>
-      <arglist>(const BinaryFunctorsLvl2 &amp;psi, double psi_0, double fx, double xX, double yX, double x0, double y0)</arglist>
+      <anchor>aae0e71f22e46aa26a72955df5fdd52cf</anchor>
+      <arglist>(const CylindricalFunctorsLvl2 &amp;psi, double psi_0, double fx, double xX, double yX, double x0, double y0)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual RibeiroX *</type>
@@ -3526,32 +4504,31 @@
   <compound kind="struct">
     <name>dg::geo::SafetyFactor</name>
     <filename>structdg_1_1geo_1_1_safety_factor.html</filename>
-    <templarg></templarg>
     <member kind="function">
       <type></type>
       <name>SafetyFactor</name>
       <anchorfile>structdg_1_1geo_1_1_safety_factor.html</anchorfile>
-      <anchor>a65053a557022167b4804d648c321c2f5</anchor>
-      <arglist>(const dg::Grid2d &amp;g2d, const TokamakMagneticField &amp;c, const container &amp;f)</arglist>
+      <anchor>a23a4c486a07227e5764c4e1d96b52fc7</anchor>
+      <arglist>(const dg::Grid2d &amp;g2d, const TokamakMagneticField &amp;c)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structdg_1_1geo_1_1_safety_factor.html</anchorfile>
-      <anchor>a3d4a13c73832202d11a9efcec14781fb</anchor>
+      <anchor>ab62f6edca1f75965d6de82a39d2e34af</anchor>
       <arglist>(double psip0)</arglist>
     </member>
   </compound>
   <compound kind="struct">
     <name>dg::geo::SeparatrixOrthogonal</name>
     <filename>structdg_1_1geo_1_1_separatrix_orthogonal.html</filename>
-    <base>dg::geo::aGeneratorX2d</base>
+    <base>dg::geo::aRealGeneratorX2d</base>
     <member kind="function">
       <type></type>
       <name>SeparatrixOrthogonal</name>
       <anchorfile>structdg_1_1geo_1_1_separatrix_orthogonal.html</anchorfile>
-      <anchor>a388622333d76b0e4b5fb98f488bb927e</anchor>
-      <arglist>(const BinaryFunctorsLvl2 &amp;psi, const BinarySymmTensorLvl1 &amp;chi, double psi_0, double xX, double yX, double x0, double y0, int firstline, bool verbose=false)</arglist>
+      <anchor>a40d326a33d5d11a19360c8151eb19c0b</anchor>
+      <arglist>(const CylindricalFunctorsLvl2 &amp;psi, const CylindricalSymmTensorLvl1 &amp;chi, double psi_0, double xX, double yX, double x0, double y0, int firstline, bool verbose=false)</arglist>
     </member>
     <member kind="function">
       <type>SeparatrixOrthogonal *</type>
@@ -3564,20 +4541,20 @@
   <compound kind="struct">
     <name>dg::geo::SimpleOrthogonal</name>
     <filename>structdg_1_1geo_1_1_simple_orthogonal.html</filename>
-    <base>dg::geo::aGenerator2d</base>
+    <base>dg::geo::aRealGenerator2d</base>
     <member kind="function">
       <type></type>
       <name>SimpleOrthogonal</name>
       <anchorfile>structdg_1_1geo_1_1_simple_orthogonal.html</anchorfile>
-      <anchor>aee61c5e84a90f1b758ca4653f43245d7</anchor>
-      <arglist>(const BinaryFunctorsLvl2 &amp;psi, double psi_0, double psi_1, double x0, double y0, int firstline=0)</arglist>
+      <anchor>a69338732ebe0463ff9be5835b8474f08</anchor>
+      <arglist>(const CylindricalFunctorsLvl2 &amp;psi, double psi_0, double psi_1, double x0, double y0, int firstline=0)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>SimpleOrthogonal</name>
       <anchorfile>structdg_1_1geo_1_1_simple_orthogonal.html</anchorfile>
-      <anchor>ac5fb6e5b5a1f95d9625f236e07c35e37</anchor>
-      <arglist>(const BinaryFunctorsLvl2 &amp;psi, const BinarySymmTensorLvl1 &amp;chi, double psi_0, double psi_1, double x0, double y0, int firstline=0)</arglist>
+      <anchor>a7b54bcf61d214025007c07bcbdd531cf</anchor>
+      <arglist>(const CylindricalFunctorsLvl2 &amp;psi, const CylindricalSymmTensorLvl1 &amp;chi, double psi_0, double psi_1, double x0, double y0, int firstline=0)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
@@ -3597,7 +4574,7 @@
   <compound kind="struct">
     <name>dg::geo::SimpleOrthogonalX</name>
     <filename>structdg_1_1geo_1_1_simple_orthogonal_x.html</filename>
-    <base>dg::geo::aGeneratorX2d</base>
+    <base>dg::geo::aRealGeneratorX2d</base>
     <member kind="function">
       <type></type>
       <name>SimpleOrthogonalX</name>
@@ -3609,27 +4586,15 @@
       <type></type>
       <name>SimpleOrthogonalX</name>
       <anchorfile>structdg_1_1geo_1_1_simple_orthogonal_x.html</anchorfile>
-      <anchor>ad9e81366799f28e7012410fecf480ff3</anchor>
-      <arglist>(const BinaryFunctorsLvl2 &amp;psi, double psi_0, double xX, double yX, double x0, double y0, int firstline=0)</arglist>
+      <anchor>a89710b2ccec147728d19942897bbca5c</anchor>
+      <arglist>(const CylindricalFunctorsLvl2 &amp;psi, double psi_0, double xX, double yX, double x0, double y0, int firstline=0)</arglist>
     </member>
-    <member kind="function">
-      <type>SimpleOrthogonalX *</type>
+    <member kind="function" virtualness="virtual">
+      <type>virtual SimpleOrthogonalX *</type>
       <name>clone</name>
       <anchorfile>structdg_1_1geo_1_1_simple_orthogonal_x.html</anchorfile>
-      <anchor>a2aaa861f1f962d74a28739ef14d85650</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>dg::geo::TanhSource</name>
-    <filename>structdg_1_1geo_1_1_tanh_source.html</filename>
-    <base>aCloneableBinaryFunctor&lt; TanhSource &gt;</base>
-    <member kind="function">
-      <type></type>
-      <name>TanhSource</name>
-      <anchorfile>structdg_1_1geo_1_1_tanh_source.html</anchorfile>
-      <anchor>a8727910f07e32e6574f627c9306adbdb</anchor>
-      <arglist>(const aBinaryFunctor &amp;psi, double psipmin, double alpha)</arglist>
+      <anchor>a2b1d10f3c2aee3a728d34a439e5e5440</anchor>
+      <arglist>() const override final</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -3646,15 +4611,15 @@
       <type></type>
       <name>TokamakMagneticField</name>
       <anchorfile>structdg_1_1geo_1_1_tokamak_magnetic_field.html</anchorfile>
-      <anchor>a4eca74f22b6b38a8e0e9aaf7084937e9</anchor>
-      <arglist>(double R0, const BinaryFunctorsLvl2 &amp;psip, const BinaryFunctorsLvl1 &amp;ipol)</arglist>
+      <anchor>a83ed6160c9125deac370e58f6e42954d</anchor>
+      <arglist>(double R0, const CylindricalFunctorsLvl2 &amp;psip, const CylindricalFunctorsLvl1 &amp;ipol)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>set</name>
       <anchorfile>structdg_1_1geo_1_1_tokamak_magnetic_field.html</anchorfile>
-      <anchor>a7da01a190bc2e67a2f6734920ff40c0f</anchor>
-      <arglist>(double R0, const BinaryFunctorsLvl2 &amp;psip, const BinaryFunctorsLvl1 &amp;ipol)</arglist>
+      <anchor>adc749e70a6f8e9d297a7bc32063ae9d9</anchor>
+      <arglist>(double R0, const CylindricalFunctorsLvl2 &amp;psip, const CylindricalFunctorsLvl1 &amp;ipol)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
@@ -3664,93 +4629,252 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>const aBinaryFunctor &amp;</type>
+      <type>const CylindricalFunctor &amp;</type>
       <name>psip</name>
       <anchorfile>structdg_1_1geo_1_1_tokamak_magnetic_field.html</anchorfile>
-      <anchor>a1c9a9e8e89758e1fffb02b288ba327dd</anchor>
+      <anchor>a72a512e0daccc855cf77368579042a5a</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>const aBinaryFunctor &amp;</type>
+      <type>const CylindricalFunctor &amp;</type>
       <name>psipR</name>
       <anchorfile>structdg_1_1geo_1_1_tokamak_magnetic_field.html</anchorfile>
-      <anchor>a3052d4aa8fca099edb616631edf039db</anchor>
+      <anchor>a419ada116d941d5ad60cac878b6093b7</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>const aBinaryFunctor &amp;</type>
+      <type>const CylindricalFunctor &amp;</type>
       <name>psipZ</name>
       <anchorfile>structdg_1_1geo_1_1_tokamak_magnetic_field.html</anchorfile>
-      <anchor>a7f79c50fe617f2516fe8bc3f3938513f</anchor>
+      <anchor>a0b22ac87a3ca2d6790f5d121c8f38576</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>const aBinaryFunctor &amp;</type>
+      <type>const CylindricalFunctor &amp;</type>
       <name>psipRR</name>
       <anchorfile>structdg_1_1geo_1_1_tokamak_magnetic_field.html</anchorfile>
-      <anchor>aa719bb4e43a298a5e8f9b21d016272b3</anchor>
+      <anchor>a9471c0c69d320e3dbfd0f67f3e074bc9</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>const aBinaryFunctor &amp;</type>
+      <type>const CylindricalFunctor &amp;</type>
       <name>psipRZ</name>
       <anchorfile>structdg_1_1geo_1_1_tokamak_magnetic_field.html</anchorfile>
-      <anchor>a9943f479b3ffdf88f02f334a0db00c22</anchor>
+      <anchor>a70e1aad0b66947aae757258bede39e20</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>const aBinaryFunctor &amp;</type>
+      <type>const CylindricalFunctor &amp;</type>
       <name>psipZZ</name>
       <anchorfile>structdg_1_1geo_1_1_tokamak_magnetic_field.html</anchorfile>
-      <anchor>a43616c8513d3e0b72c6b266e0ab31e4d</anchor>
+      <anchor>ac94c922619d7d7639024fd4620636d64</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>const aBinaryFunctor &amp;</type>
+      <type>const CylindricalFunctor &amp;</type>
       <name>ipol</name>
       <anchorfile>structdg_1_1geo_1_1_tokamak_magnetic_field.html</anchorfile>
-      <anchor>a3973b053550e94f9c49ef53db1a90de3</anchor>
+      <anchor>a556631a90198e1a869d42718976f982a</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>const aBinaryFunctor &amp;</type>
+      <type>const CylindricalFunctor &amp;</type>
       <name>ipolR</name>
       <anchorfile>structdg_1_1geo_1_1_tokamak_magnetic_field.html</anchorfile>
-      <anchor>a474cf0c836299547768108fd8840d83b</anchor>
+      <anchor>a7eb2cc07e379768d3e31d494a4275e58</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>const aBinaryFunctor &amp;</type>
+      <type>const CylindricalFunctor &amp;</type>
       <name>ipolZ</name>
       <anchorfile>structdg_1_1geo_1_1_tokamak_magnetic_field.html</anchorfile>
-      <anchor>a3c972d5143bec58a8fae817726e2a645</anchor>
+      <anchor>af348318d51bb4673649ef62c14c4226f</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>const BinaryFunctorsLvl2 &amp;</type>
+      <type>const CylindricalFunctorsLvl2 &amp;</type>
       <name>get_psip</name>
       <anchorfile>structdg_1_1geo_1_1_tokamak_magnetic_field.html</anchorfile>
-      <anchor>af997c120fd405c750b488fbc558beb7d</anchor>
+      <anchor>a36ac488e075a238724fffc929d16d32f</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>const BinaryFunctorsLvl1 &amp;</type>
+      <type>const CylindricalFunctorsLvl1 &amp;</type>
       <name>get_ipol</name>
       <anchorfile>structdg_1_1geo_1_1_tokamak_magnetic_field.html</anchorfile>
-      <anchor>ab1928bb257915a73b67e8f73da39f2ab</anchor>
+      <anchor>a8cac5f2580c55eeee4b3b4da8b76a371</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>dg::geo::ZonalFlow</name>
-    <filename>structdg_1_1geo_1_1_zonal_flow.html</filename>
-    <base>aCloneableBinaryFunctor&lt; ZonalFlow &gt;</base>
+    <name>dg::geo::TrueCurvatureKappaP</name>
+    <filename>structdg_1_1geo_1_1_true_curvature_kappa_p.html</filename>
+    <base>aCylindricalFunctor&lt; TrueCurvatureKappaP &gt;</base>
     <member kind="function">
       <type></type>
-      <name>ZonalFlow</name>
-      <anchorfile>structdg_1_1geo_1_1_zonal_flow.html</anchorfile>
-      <anchor>a43b854c741bc27cf47ee8ccafe478dd3</anchor>
-      <arglist>(double amplitude, double k_psi, dg::geo::solovev::Parameters gp, const aBinaryFunctor &amp;psi)</arglist>
+      <name>TrueCurvatureKappaP</name>
+      <anchorfile>structdg_1_1geo_1_1_true_curvature_kappa_p.html</anchorfile>
+      <anchor>a1eba46968e18e7ba71c7010ee7d95db9</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_true_curvature_kappa_p.html</anchorfile>
+      <anchor>aeb9978bf2188ea08a03afb9c1613b3d5</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::TrueCurvatureKappaR</name>
+    <filename>structdg_1_1geo_1_1_true_curvature_kappa_r.html</filename>
+    <base>aCylindricalFunctor&lt; TrueCurvatureKappaR &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>TrueCurvatureKappaR</name>
+      <anchorfile>structdg_1_1geo_1_1_true_curvature_kappa_r.html</anchorfile>
+      <anchor>aa0cd1d20db5ddac62776191497fad1e6</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_true_curvature_kappa_r.html</anchorfile>
+      <anchor>a6332b574d643ce7c9c602699b3732090</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::TrueCurvatureKappaZ</name>
+    <filename>structdg_1_1geo_1_1_true_curvature_kappa_z.html</filename>
+    <base>aCylindricalFunctor&lt; TrueCurvatureKappaZ &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>TrueCurvatureKappaZ</name>
+      <anchorfile>structdg_1_1geo_1_1_true_curvature_kappa_z.html</anchorfile>
+      <anchor>aa25f011b23539f147ac338d4521ad1cd</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_true_curvature_kappa_z.html</anchorfile>
+      <anchor>ad9a8891bffd6cabfc4e9fb63d25f4c7e</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::TrueCurvatureNablaBP</name>
+    <filename>structdg_1_1geo_1_1_true_curvature_nabla_b_p.html</filename>
+    <base>aCylindricalFunctor&lt; TrueCurvatureNablaBP &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>TrueCurvatureNablaBP</name>
+      <anchorfile>structdg_1_1geo_1_1_true_curvature_nabla_b_p.html</anchorfile>
+      <anchor>a8223cbae98d28edff96f34025466f500</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_true_curvature_nabla_b_p.html</anchorfile>
+      <anchor>a7641b88532862782cd66cd33c3365bbe</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::TrueCurvatureNablaBR</name>
+    <filename>structdg_1_1geo_1_1_true_curvature_nabla_b_r.html</filename>
+    <base>aCylindricalFunctor&lt; TrueCurvatureNablaBR &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>TrueCurvatureNablaBR</name>
+      <anchorfile>structdg_1_1geo_1_1_true_curvature_nabla_b_r.html</anchorfile>
+      <anchor>afd2c3d4249c693846672f89e67151300</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_true_curvature_nabla_b_r.html</anchorfile>
+      <anchor>a04c8ee66acd3cc18e908e5bdddbf66ed</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::TrueCurvatureNablaBZ</name>
+    <filename>structdg_1_1geo_1_1_true_curvature_nabla_b_z.html</filename>
+    <base>aCylindricalFunctor&lt; TrueCurvatureNablaBZ &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>TrueCurvatureNablaBZ</name>
+      <anchorfile>structdg_1_1geo_1_1_true_curvature_nabla_b_z.html</anchorfile>
+      <anchor>ab5fa6aa01e014037632a8f34bb446904</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_true_curvature_nabla_b_z.html</anchorfile>
+      <anchor>a8fa59ffab175217f1a103371535d848e</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::TrueDivCurvatureKappa</name>
+    <filename>structdg_1_1geo_1_1_true_div_curvature_kappa.html</filename>
+    <base>aCylindricalFunctor&lt; TrueDivCurvatureKappa &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>TrueDivCurvatureKappa</name>
+      <anchorfile>structdg_1_1geo_1_1_true_div_curvature_kappa.html</anchorfile>
+      <anchor>a3bb491ae33a73cdfab90f0244a805b89</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_true_div_curvature_kappa.html</anchorfile>
+      <anchor>a004f28807f6e63d1fe9d3df998ebf958</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::TrueDivCurvatureNablaB</name>
+    <filename>structdg_1_1geo_1_1_true_div_curvature_nabla_b.html</filename>
+    <base>aCylindricalFunctor&lt; TrueDivCurvatureNablaB &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>TrueDivCurvatureNablaB</name>
+      <anchorfile>structdg_1_1geo_1_1_true_div_curvature_nabla_b.html</anchorfile>
+      <anchor>ad29528c0cb4731e9ae8bfb683f057195</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_true_div_curvature_nabla_b.html</anchorfile>
+      <anchor>a55e22adde61890d1c2100841d78fe69b</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::ZCutter</name>
+    <filename>structdg_1_1geo_1_1_z_cutter.html</filename>
+    <base>aCylindricalFunctor&lt; ZCutter &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>ZCutter</name>
+      <anchorfile>structdg_1_1geo_1_1_z_cutter.html</anchorfile>
+      <anchor>a9be47e3b05988d867bdfa4d5470babc3</anchor>
+      <arglist>(double ZX)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_z_cutter.html</anchorfile>
+      <anchor>a97cc268e23623d01ea166d0a5c95bc4e</anchor>
+      <arglist>(double R, double Z) const</arglist>
     </member>
   </compound>
   <compound kind="namespace">
@@ -3766,55 +4890,46 @@
     <namespace>dg::geo::solovev</namespace>
     <namespace>dg::geo::taylor</namespace>
     <namespace>dg::geo::toroidal</namespace>
-    <class kind="struct">dg::geo::aBinaryFunctor</class>
-    <class kind="struct">dg::geo::aCloneableBinaryFunctor</class>
-    <class kind="struct">dg::geo::aGenerator2d</class>
-    <class kind="struct">dg::geo::aGeneratorX2d</class>
+    <class kind="struct">dg::geo::aCylindricalFunctor</class>
     <class kind="struct">dg::geo::Alpha</class>
+    <class kind="struct">dg::geo::aRealGenerator2d</class>
+    <class kind="struct">dg::geo::aRealGeneratorX2d</class>
+    <class kind="struct">dg::geo::BFieldP</class>
+    <class kind="struct">dg::geo::BFieldR</class>
+    <class kind="struct">dg::geo::BFieldT</class>
+    <class kind="struct">dg::geo::BFieldZ</class>
     <class kind="struct">dg::geo::BHatP</class>
     <class kind="struct">dg::geo::BHatR</class>
     <class kind="struct">dg::geo::BHatZ</class>
-    <class kind="struct">dg::geo::BinaryFunctorAdapter</class>
-    <class kind="struct">dg::geo::BinaryFunctorsLvl1</class>
-    <class kind="struct">dg::geo::BinaryFunctorsLvl2</class>
-    <class kind="struct">dg::geo::BinarySymmTensorLvl1</class>
-    <class kind="struct">dg::geo::BinaryVectorLvl0</class>
     <class kind="struct">dg::geo::Bmodule</class>
     <class kind="struct">dg::geo::BR</class>
     <class kind="struct">dg::geo::BZ</class>
+    <class kind="struct">dg::geo::Compose</class>
     <class kind="struct">dg::geo::Constant</class>
     <class kind="struct">dg::geo::CurvatureKappaR</class>
     <class kind="struct">dg::geo::CurvatureKappaZ</class>
     <class kind="struct">dg::geo::CurvatureNablaBR</class>
     <class kind="struct">dg::geo::CurvatureNablaBZ</class>
-    <class kind="struct">dg::geo::CurvilinearGrid2d</class>
-    <class kind="struct">dg::geo::CurvilinearGridX2d</class>
-    <class kind="struct">dg::geo::CurvilinearMPIGrid2d</class>
-    <class kind="struct">dg::geo::CurvilinearProductGrid3d</class>
-    <class kind="struct">dg::geo::CurvilinearProductGridX3d</class>
-    <class kind="struct">dg::geo::CurvilinearProductMPIGrid3d</class>
-    <class kind="struct">dg::geo::CurvilinearRefinedGridX2d</class>
-    <class kind="struct">dg::geo::CurvilinearRefinedProductGridX3d</class>
+    <class kind="struct">dg::geo::CylindricalFunctorsLvl1</class>
+    <class kind="struct">dg::geo::CylindricalFunctorsLvl2</class>
+    <class kind="struct">dg::geo::CylindricalSymmTensorLvl1</class>
+    <class kind="struct">dg::geo::CylindricalVectorLvl0</class>
     <class kind="struct">dg::geo::DeltaFunction</class>
     <class kind="struct">dg::geo::Divb</class>
     <class kind="struct">dg::geo::DivCurvatureKappa</class>
+    <class kind="struct">dg::geo::DivCurvatureNablaB</class>
     <class kind="struct">dg::geo::DivLiseikinX</class>
     <class kind="struct">dg::geo::DivLiseikinY</class>
     <class kind="struct">dg::geo::DS</class>
     <class kind="struct">dg::geo::Fieldaligned</class>
-    <class kind="struct">dg::geo::FieldP</class>
-    <class kind="struct">dg::geo::FieldR</class>
-    <class kind="struct">dg::geo::FieldT</class>
-    <class kind="struct">dg::geo::FieldZ</class>
     <class kind="struct">dg::geo::FluxGenerator</class>
     <class kind="struct">dg::geo::FluxSurfaceAverage</class>
-    <class kind="struct">dg::geo::GaussianDamping</class>
-    <class kind="struct">dg::geo::GaussianProfDamping</class>
-    <class kind="struct">dg::geo::GaussianProfXDamping</class>
+    <class kind="struct">dg::geo::GradBHatP</class>
+    <class kind="struct">dg::geo::GradBHatR</class>
+    <class kind="struct">dg::geo::GradBHatZ</class>
     <class kind="struct">dg::geo::GradLnB</class>
     <class kind="struct">dg::geo::Hector</class>
     <class kind="struct">dg::geo::InvB</class>
-    <class kind="struct">dg::geo::Iris</class>
     <class kind="struct">dg::geo::Liseikin_XX</class>
     <class kind="struct">dg::geo::Liseikin_XY</class>
     <class kind="struct">dg::geo::Liseikin_YY</class>
@@ -3823,11 +4938,16 @@
     <class kind="struct">dg::geo::NablaPsiInv</class>
     <class kind="struct">dg::geo::NablaPsiInvX</class>
     <class kind="struct">dg::geo::NablaPsiInvY</class>
-    <class kind="struct">dg::geo::Nprofile</class>
     <class kind="struct">dg::geo::PolarGenerator</class>
-    <class kind="struct">dg::geo::PsiLimiter</class>
-    <class kind="struct">dg::geo::PsiPupil</class>
-    <class kind="struct">dg::geo::Pupil</class>
+    <class kind="struct">dg::geo::RealCurvilinearGrid2d</class>
+    <class kind="struct">dg::geo::RealCurvilinearGridX2d</class>
+    <class kind="struct">dg::geo::RealCurvilinearMPIGrid2d</class>
+    <class kind="struct">dg::geo::RealCurvilinearProductGrid3d</class>
+    <class kind="struct">dg::geo::RealCurvilinearProductGridX3d</class>
+    <class kind="struct">dg::geo::RealCurvilinearProductMPIGrid3d</class>
+    <class kind="struct">dg::geo::RealCurvilinearRefinedGridX2d</class>
+    <class kind="struct">dg::geo::RealCurvilinearRefinedProductGridX3d</class>
+    <class kind="struct">dg::geo::RealCylindricalFunctor</class>
     <class kind="struct">dg::geo::Ribeiro</class>
     <class kind="struct">dg::geo::RibeiroFluxGenerator</class>
     <class kind="struct">dg::geo::RibeiroX</class>
@@ -3835,9 +4955,44 @@
     <class kind="struct">dg::geo::SeparatrixOrthogonal</class>
     <class kind="struct">dg::geo::SimpleOrthogonal</class>
     <class kind="struct">dg::geo::SimpleOrthogonalX</class>
-    <class kind="struct">dg::geo::TanhSource</class>
     <class kind="struct">dg::geo::TokamakMagneticField</class>
-    <class kind="struct">dg::geo::ZonalFlow</class>
+    <class kind="struct">dg::geo::TrueCurvatureKappaP</class>
+    <class kind="struct">dg::geo::TrueCurvatureKappaR</class>
+    <class kind="struct">dg::geo::TrueCurvatureKappaZ</class>
+    <class kind="struct">dg::geo::TrueCurvatureNablaBP</class>
+    <class kind="struct">dg::geo::TrueCurvatureNablaBR</class>
+    <class kind="struct">dg::geo::TrueCurvatureNablaBZ</class>
+    <class kind="struct">dg::geo::TrueDivCurvatureKappa</class>
+    <class kind="struct">dg::geo::TrueDivCurvatureNablaB</class>
+    <class kind="struct">dg::geo::ZCutter</class>
+    <member kind="typedef">
+      <type>dg::geo::RealCurvilinearGrid2d&lt; double &gt;</type>
+      <name>CurvilinearGrid2d</name>
+      <anchorfile>group__grids.html</anchorfile>
+      <anchor>ga91bfc2e3554d296ed7b02b98399a97df</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::geo::RealCurvilinearProductGrid3d&lt; double &gt;</type>
+      <name>CurvilinearProductGrid3d</name>
+      <anchorfile>group__grids.html</anchorfile>
+      <anchor>gab7dae14094bc5bad939d892c4d36128b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::geo::RealCurvilinearGridX2d&lt; double &gt;</type>
+      <name>CurvilinearGridX2d</name>
+      <anchorfile>group__grids.html</anchorfile>
+      <anchor>ga39f185f0e62a845133105bddbbb92624</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::geo::RealCurvilinearProductGridX3d&lt; double &gt;</type>
+      <name>CurvilinearProductGridX3d</name>
+      <anchorfile>group__grids.html</anchorfile>
+      <anchor>ga2d21aa9b959174ee7cf8cca4af63f6f0</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="typedef">
       <type>ONE</type>
       <name>FullLimiter</name>
@@ -3850,6 +5005,111 @@
       <name>NoLimiter</name>
       <anchorfile>group__fieldaligned.html</anchorfile>
       <anchor>ga1a10e4fdd6338136e629d3e2292bc3da</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>RealCylindricalFunctor&lt; double &gt;</type>
+      <name>CylindricalFunctor</name>
+      <anchorfile>group__fluxfunctions.html</anchorfile>
+      <anchor>gacb84a8d3b8c253f1100c1530035da1de</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::geo::aRealGenerator2d&lt; double &gt;</type>
+      <name>aGenerator2d</name>
+      <anchorfile>namespacedg_1_1geo.html</anchorfile>
+      <anchor>a8a0c91832616cae7dea10193bb8c9327</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::geo::aRealGeneratorX2d&lt; double &gt;</type>
+      <name>aGeneratorX2d</name>
+      <anchorfile>namespacedg_1_1geo.html</anchorfile>
+      <anchor>a7d37348fd710a0c45eb5c52ec7387e90</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>Compose&lt; dg::Iris &gt;</type>
+      <name>Iris</name>
+      <anchorfile>group__profiles.html</anchorfile>
+      <anchor>gad64d512d641d71865056b1f1b83da902</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>Compose&lt; dg::Pupil &gt;</type>
+      <name>Pupil</name>
+      <anchorfile>group__profiles.html</anchorfile>
+      <anchor>gab429cc7c00f5d55def9fcaa5cda8fafd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>Compose&lt; dg::PsiPupil &gt;</type>
+      <name>PsiPupil</name>
+      <anchorfile>group__profiles.html</anchorfile>
+      <anchor>ga4e7e76bd77ae1317ed999238b4ce4e17</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::geo::Compose&lt; dg::Heaviside &gt;</type>
+      <name>PsiLimiter</name>
+      <anchorfile>group__profiles.html</anchorfile>
+      <anchor>ga82eca5b06b94a709b4f1cbfa4b42d59f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::geo::Compose&lt; dg::GaussianDamping &gt;</type>
+      <name>GaussianDamping</name>
+      <anchorfile>group__profiles.html</anchorfile>
+      <anchor>ga158a9af6aef70087e95b8fd8e7dacc60</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::geo::Compose&lt; dg::TanhProfX &gt;</type>
+      <name>TanhDamping</name>
+      <anchorfile>group__profiles.html</anchorfile>
+      <anchor>ga446bce2c783bba5c7b0260853259f1e1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::geo::Compose&lt; dg::LinearX &gt;</type>
+      <name>Nprofile</name>
+      <anchorfile>group__profiles.html</anchorfile>
+      <anchor>gac6e56352ad1a753f9c5c7cecb0f12ee0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::geo::Compose&lt; dg::SinX &gt;</type>
+      <name>ZonalFlow</name>
+      <anchorfile>group__profiles.html</anchorfile>
+      <anchor>ga19191644f490a26ec20c3f6dac24765c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::geo::RealCurvilinearMPIGrid2d&lt; double &gt;</type>
+      <name>CurvilinearMPIGrid2d</name>
+      <anchorfile>group__grids.html</anchorfile>
+      <anchor>ga2afc1b2edf3b4ce67be2559b26d4a131</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::geo::RealCurvilinearProductMPIGrid3d&lt; double &gt;</type>
+      <name>CurvilinearProductMPIGrid3d</name>
+      <anchorfile>group__grids.html</anchorfile>
+      <anchor>ga616da07412dcdbd6a5526e2c86769e69</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::geo::RealCurvilinearRefinedGridX2d&lt; double &gt;</type>
+      <name>CurvilinearRefinedGridX2d</name>
+      <anchorfile>group__grids.html</anchorfile>
+      <anchor>ga58a60acbf311bac75c5163baafd599ec</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::geo::RealCurvilinearRefinedProductGridX3d&lt; double &gt;</type>
+      <name>CurvilinearRefinedProductGridX3d</name>
+      <anchorfile>group__grids.html</anchorfile>
+      <anchor>gafab27da71f3b5b59cb756e39db2275e3</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -3883,82 +5143,131 @@
       <anchor>gga10e4ac4f15fe73a4ff10569985224101af101993895ad46716e7324439d6bd226</anchor>
       <arglist></arglist>
     </member>
-    <member kind="function">
-      <type>BinaryFunctorsLvl1</type>
+    <member kind="function" static="yes">
+      <type>static CylindricalFunctorsLvl1</type>
       <name>make_NablaPsiInvCollective</name>
       <anchorfile>group__profiles.html</anchorfile>
-      <anchor>gaf583c457b3907ec4e9a94d4c17427d55</anchor>
-      <arglist>(const BinaryFunctorsLvl2 &amp;psi)</arglist>
+      <anchor>ga32a9569879bd13c719c77be10f0d399d</anchor>
+      <arglist>(const CylindricalFunctorsLvl2 &amp;psi)</arglist>
     </member>
-    <member kind="function">
-      <type>BinarySymmTensorLvl1</type>
+    <member kind="function" static="yes">
+      <type>static CylindricalSymmTensorLvl1</type>
       <name>make_LiseikinCollective</name>
       <anchorfile>group__profiles.html</anchorfile>
-      <anchor>ga56d2d722a2734d1685263ee8a95e7555</anchor>
-      <arglist>(const BinaryFunctorsLvl2 &amp;psi, double k, double eps)</arglist>
+      <anchor>gae0cb11f189e743a3291e23e2bc361bb2</anchor>
+      <arglist>(const CylindricalFunctorsLvl2 &amp;psi, double k, double eps)</arglist>
     </member>
     <member kind="function">
-      <type>aBinaryFunctor *</type>
-      <name>make_aBinaryFunctor</name>
+      <type>dg::SparseTensor&lt; dg::get_host_vector&lt; Geometry3d &gt; &gt;</type>
+      <name>createAlignmentTensor</name>
       <anchorfile>group__fluxfunctions.html</anchorfile>
-      <anchor>ga669b9f0f0ae437c262b2400930feef7d</anchor>
-      <arglist>(const BinaryFunctor &amp;f)</arglist>
+      <anchor>ga4f00a11946c5ae76c6b52876292c60ca</anchor>
+      <arglist>(const dg::geo::CylindricalVectorLvl0 &amp;bhat, const Geometry3d &amp;g)</arglist>
     </member>
     <member kind="function">
-      <type>dg::geo::TokamakMagneticField</type>
+      <type>dg::SparseTensor&lt; dg::get_host_vector&lt; Geometry3d &gt; &gt;</type>
+      <name>createProjectionTensor</name>
+      <anchorfile>group__fluxfunctions.html</anchorfile>
+      <anchor>ga0e6fb50126a1c44892b51db10d93fb65</anchor>
+      <arglist>(const dg::geo::CylindricalVectorLvl0 &amp;bhat, const Geometry3d &amp;g)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static dg::geo::TokamakMagneticField</type>
       <name>createGuentherField</name>
       <anchorfile>group__geom.html</anchorfile>
-      <anchor>gad54aa312242b5245cbbf9cd4b5dfe06d</anchor>
+      <anchor>ga70edeb1a555a6a2b05ac0485329fdcac</anchor>
       <arglist>(double R_0, double I_0)</arglist>
     </member>
     <member kind="function">
-      <type>dg::geo::TokamakMagneticField</type>
+      <type>CylindricalVectorLvl0</type>
+      <name>createBHat</name>
+      <anchorfile>group__magnetic.html</anchorfile>
+      <anchor>ga6182dc55424bffffb0d9876b9f90222d</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+    </member>
+    <member kind="function">
+      <type>CylindricalVectorLvl0</type>
+      <name>createEPhi</name>
+      <anchorfile>group__magnetic.html</anchorfile>
+      <anchor>ga3ab10e21b3c879843b6bb26a49beb918</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>CylindricalVectorLvl0</type>
+      <name>createCurvatureNablaB</name>
+      <anchorfile>group__magnetic.html</anchorfile>
+      <anchor>ga891fbece075e21a1cdd1f15422251e7d</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+    </member>
+    <member kind="function">
+      <type>CylindricalVectorLvl0</type>
+      <name>createCurvatureKappa</name>
+      <anchorfile>group__magnetic.html</anchorfile>
+      <anchor>ga15544e369079fa9ab1350fe49433bbf2</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+    </member>
+    <member kind="function">
+      <type>CylindricalVectorLvl0</type>
+      <name>createTrueCurvatureKappa</name>
+      <anchorfile>group__magnetic.html</anchorfile>
+      <anchor>ga4e605e8fb727d3ffe0c2de721d7cad67</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+    </member>
+    <member kind="function">
+      <type>CylindricalVectorLvl0</type>
+      <name>createTrueCurvatureNablaB</name>
+      <anchorfile>group__magnetic.html</anchorfile>
+      <anchor>ga4278b6ca1435aa29063fd152f427c9c5</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static dg::geo::TokamakMagneticField</type>
       <name>createSolovevField</name>
       <anchorfile>group__geom.html</anchorfile>
-      <anchor>gae3f70e88fd15dd404643f4c5941401c7</anchor>
+      <anchor>gaadcb5ef7126a3bc41beed60c431f9368</anchor>
       <arglist>(dg::geo::solovev::Parameters gp)</arglist>
     </member>
-    <member kind="function">
-      <type>dg::geo::TokamakMagneticField</type>
+    <member kind="function" static="yes">
+      <type>static dg::geo::TokamakMagneticField</type>
       <name>createTaylorField</name>
       <anchorfile>group__geom.html</anchorfile>
-      <anchor>ga7d6cc4a15d5430ff5d4aad81fb7098d9</anchor>
+      <anchor>ga27e5bae45b284ee051039ca97d7c0edb</anchor>
       <arglist>(dg::geo::solovev::Parameters gp)</arglist>
     </member>
-    <member kind="function">
-      <type>dg::geo::TokamakMagneticField</type>
+    <member kind="function" static="yes">
+      <type>static dg::geo::TokamakMagneticField</type>
       <name>createToroidalField</name>
       <anchorfile>group__geom.html</anchorfile>
-      <anchor>ga24c4268469ccbabde18f7eb7ab124ac6</anchor>
+      <anchor>ga2d9ca2e61302113e806b1d05d6b3db7e</anchor>
       <arglist>(double R0)</arglist>
     </member>
-    <member kind="function">
-      <type>dg::geo::TokamakMagneticField</type>
+    <member kind="function" static="yes">
+      <type>static dg::geo::TokamakMagneticField</type>
       <name>createCircularField</name>
       <anchorfile>group__geom.html</anchorfile>
-      <anchor>gaa6d78afe4f306e34d509934f8f79421a</anchor>
+      <anchor>ga16471692288263e2076b897dae16799f</anchor>
       <arglist>(double R0, double I0)</arglist>
     </member>
-    <member kind="function">
-      <type>void</type>
+    <member kind="function" static="yes">
+      <type>static void</type>
       <name>findXpoint</name>
       <anchorfile>group__misc__geo.html</anchorfile>
-      <anchor>gafcee60ecf901ef09ae3fbf87bd146fbd</anchor>
-      <arglist>(const BinaryFunctorsLvl2 &amp;psi, double &amp;R_X, double &amp;Z_X)</arglist>
+      <anchor>gafdf85449bb250bc67ab57989fcb768cb</anchor>
+      <arglist>(const CylindricalFunctorsLvl2 &amp;psi, double &amp;R_X, double &amp;Z_X)</arglist>
     </member>
-    <member kind="function">
-      <type>BinarySymmTensorLvl1</type>
+    <member kind="function" static="yes">
+      <type>static CylindricalSymmTensorLvl1</type>
       <name>make_Xbump_monitor</name>
       <anchorfile>namespacedg_1_1geo.html</anchorfile>
-      <anchor>a1ee422753ae1d392e40577c69a06001c</anchor>
-      <arglist>(const BinaryFunctorsLvl2 &amp;psi, double &amp;R_X, double &amp;Z_X, double radiusX, double radiusY)</arglist>
+      <anchor>a351c29fa5591614e847a4c4d884a230a</anchor>
+      <arglist>(const CylindricalFunctorsLvl2 &amp;psi, double &amp;R_X, double &amp;Z_X, double radiusX, double radiusY)</arglist>
     </member>
-    <member kind="function">
-      <type>BinarySymmTensorLvl1</type>
+    <member kind="function" static="yes">
+      <type>static CylindricalSymmTensorLvl1</type>
       <name>make_Xconst_monitor</name>
       <anchorfile>namespacedg_1_1geo.html</anchorfile>
-      <anchor>a766ef7c89b58748f1eb44a7e2e5fa89e</anchor>
-      <arglist>(const BinaryFunctorsLvl2 &amp;psi, double &amp;R_X, double &amp;Z_X)</arglist>
+      <anchor>a2fad31517c86179b341a67e10ff0fda4</anchor>
+      <arglist>(const CylindricalFunctorsLvl2 &amp;psi, double &amp;R_X, double &amp;Z_X)</arglist>
     </member>
   </compound>
   <compound kind="namespace">
@@ -3967,18 +5276,18 @@
     <class kind="struct">dg::geo::circular::Psip</class>
     <class kind="struct">dg::geo::circular::PsipR</class>
     <class kind="struct">dg::geo::circular::PsipZ</class>
-    <member kind="function">
-      <type>BinaryFunctorsLvl2</type>
+    <member kind="function" static="yes">
+      <type>static CylindricalFunctorsLvl2</type>
       <name>createPsip</name>
       <anchorfile>group__circular.html</anchorfile>
-      <anchor>gac643478ea14f273108a7190300f9b1a0</anchor>
+      <anchor>ga6a9d6f6463a3b4ccd3a9659c07671cfa</anchor>
       <arglist>(double R0)</arglist>
     </member>
-    <member kind="function">
-      <type>BinaryFunctorsLvl1</type>
+    <member kind="function" static="yes">
+      <type>static CylindricalFunctorsLvl1</type>
       <name>createIpol</name>
       <anchorfile>group__circular.html</anchorfile>
-      <anchor>ga1c88edf8b4078b3571ba6d404296d48d</anchor>
+      <anchor>gab40e4b929ab5912634cd25ca472fe356</anchor>
       <arglist>(double I0)</arglist>
     </member>
   </compound>
@@ -3995,25 +5304,25 @@
     <class kind="struct">dg::geo::guenther::PsipRZ</class>
     <class kind="struct">dg::geo::guenther::PsipZ</class>
     <class kind="struct">dg::geo::guenther::PsipZZ</class>
-    <member kind="function">
-      <type>BinaryFunctorsLvl2</type>
+    <member kind="function" static="yes">
+      <type>static CylindricalFunctorsLvl2</type>
       <name>createPsip</name>
       <anchorfile>group__guenther.html</anchorfile>
-      <anchor>ga99f433f328033896ebc3f92bfdea7766</anchor>
+      <anchor>ga285fcbae9a9d44cbe5586a7b28148b99</anchor>
       <arglist>(double R_0)</arglist>
     </member>
-    <member kind="function">
-      <type>BinaryFunctorsLvl1</type>
+    <member kind="function" static="yes">
+      <type>static CylindricalFunctorsLvl1</type>
       <name>createIpol</name>
       <anchorfile>group__guenther.html</anchorfile>
-      <anchor>gab485e0d1f70ab41dde2060da9f409be3</anchor>
+      <anchor>ga1c418d39f07e69144f44223117ea6b93</anchor>
       <arglist>(double I_0)</arglist>
     </member>
-    <member kind="function">
-      <type>TokamakMagneticField</type>
+    <member kind="function" static="yes">
+      <type>static TokamakMagneticField</type>
       <name>createMagField</name>
       <anchorfile>group__guenther.html</anchorfile>
-      <anchor>gaec0f20e402dcb50145ccf8745ff22ca5</anchor>
+      <anchor>ga4a82083bf29cb70373b84720eba60d83</anchor>
       <arglist>(double R_0, double I_0)</arglist>
     </member>
   </compound>
@@ -4030,25 +5339,25 @@
     <class kind="struct">dg::geo::solovev::PsipRZ</class>
     <class kind="struct">dg::geo::solovev::PsipZ</class>
     <class kind="struct">dg::geo::solovev::PsipZZ</class>
-    <member kind="function">
-      <type>dg::geo::BinaryFunctorsLvl2</type>
+    <member kind="function" static="yes">
+      <type>static dg::geo::CylindricalFunctorsLvl2</type>
       <name>createPsip</name>
       <anchorfile>group__solovev.html</anchorfile>
-      <anchor>gabf3dc35f257d294b5df5236e85a42fb2</anchor>
+      <anchor>gafeb61fe925c670850a85b4c3ee9cb390</anchor>
       <arglist>(Parameters gp)</arglist>
     </member>
-    <member kind="function">
-      <type>dg::geo::BinaryFunctorsLvl1</type>
+    <member kind="function" static="yes">
+      <type>static dg::geo::CylindricalFunctorsLvl1</type>
       <name>createIpol</name>
       <anchorfile>group__solovev.html</anchorfile>
-      <anchor>gac26e8e0eb7617b304f61bb1038b22ef8</anchor>
+      <anchor>ga6808a16f5d40c82d590048388bc7361a</anchor>
       <arglist>(Parameters gp)</arglist>
     </member>
-    <member kind="function">
-      <type>dg::geo::TokamakMagneticField</type>
+    <member kind="function" static="yes">
+      <type>static dg::geo::TokamakMagneticField</type>
       <name>createMagField</name>
       <anchorfile>group__solovev.html</anchorfile>
-      <anchor>ga48a224d8779049a93e97a2fd348ad481</anchor>
+      <anchor>gad3675f715472ee97a6c3133905bb3697</anchor>
       <arglist>(Parameters gp)</arglist>
     </member>
   </compound>
@@ -4071,50 +5380,50 @@
       <anchor>gae9e235fc51b6b03228d8eb38673af549</anchor>
       <arglist></arglist>
     </member>
-    <member kind="function">
-      <type>BinaryFunctorsLvl2</type>
+    <member kind="function" static="yes">
+      <type>static CylindricalFunctorsLvl2</type>
       <name>createPsip</name>
       <anchorfile>group__taylor.html</anchorfile>
-      <anchor>ga4bb35f27443e897af4a1050cae9b8e5d</anchor>
+      <anchor>gaf803ceb487fe15a20509185cf645c2f6</anchor>
       <arglist>(solovev::Parameters gp)</arglist>
     </member>
-    <member kind="function">
-      <type>BinaryFunctorsLvl1</type>
+    <member kind="function" static="yes">
+      <type>static CylindricalFunctorsLvl1</type>
       <name>createIpol</name>
       <anchorfile>group__taylor.html</anchorfile>
-      <anchor>gaf585a6dde7802ef9d3b119a50b1318d2</anchor>
+      <anchor>gab3f3b82303a3e64031d92ce7bb5ac49b</anchor>
       <arglist>(solovev::Parameters gp)</arglist>
     </member>
-    <member kind="function">
-      <type>dg::geo::TokamakMagneticField</type>
+    <member kind="function" static="yes">
+      <type>static dg::geo::TokamakMagneticField</type>
       <name>createMagField</name>
       <anchorfile>group__taylor.html</anchorfile>
-      <anchor>gaaf85a7ecbfa540aedd2a48a5a2f24fa2</anchor>
+      <anchor>ga3f430483239ba136340bf0f0a7828e26</anchor>
       <arglist>(solovev::Parameters gp)</arglist>
     </member>
   </compound>
   <compound kind="namespace">
     <name>dg::geo::toroidal</name>
     <filename>namespacedg_1_1geo_1_1toroidal.html</filename>
-    <member kind="function">
-      <type>BinaryFunctorsLvl2</type>
+    <member kind="function" static="yes">
+      <type>static CylindricalFunctorsLvl2</type>
       <name>createPsip</name>
       <anchorfile>group__toroidal.html</anchorfile>
-      <anchor>gacd371ac3baef2588c08c97cad964fa04</anchor>
+      <anchor>ga62d4a526e2170227a53e19f40716a061</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="function">
-      <type>BinaryFunctorsLvl1</type>
+    <member kind="function" static="yes">
+      <type>static CylindricalFunctorsLvl1</type>
       <name>createIpol</name>
       <anchorfile>group__toroidal.html</anchorfile>
-      <anchor>ga4406fe56ddb226b9752d51df87c04db9</anchor>
+      <anchor>ga4ea9852e07a0fcbf473cafa8625d691b</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="function">
-      <type>TokamakMagneticField</type>
+    <member kind="function" static="yes">
+      <type>static TokamakMagneticField</type>
       <name>createMagField</name>
       <anchorfile>group__toroidal.html</anchorfile>
-      <anchor>ga1b467a106a28fe8b8ff77a374518c829</anchor>
+      <anchor>ga1d02ad623c716a9b80b270c3ceeea70f</anchor>
       <arglist>(double R0)</arglist>
     </member>
   </compound>
@@ -4124,8 +5433,8 @@
     <filename>group__generators__geo.html</filename>
     <class kind="struct">dg::geo::FluxGenerator</class>
     <class kind="struct">dg::geo::RibeiroFluxGenerator</class>
-    <class kind="struct">dg::geo::aGenerator2d</class>
-    <class kind="struct">dg::geo::aGeneratorX2d</class>
+    <class kind="struct">dg::geo::aRealGenerator2d</class>
+    <class kind="struct">dg::geo::aRealGeneratorX2d</class>
     <class kind="struct">dg::geo::Hector</class>
     <class kind="struct">dg::geo::PolarGenerator</class>
     <class kind="struct">dg::geo::LogPolarGenerator</class>
@@ -4139,14 +5448,70 @@
     <name>grids</name>
     <title>2. New geometric grids</title>
     <filename>group__grids.html</filename>
-    <class kind="struct">dg::geo::CurvilinearGrid2d</class>
-    <class kind="struct">dg::geo::CurvilinearProductGrid3d</class>
-    <class kind="struct">dg::geo::CurvilinearProductGridX3d</class>
-    <class kind="struct">dg::geo::CurvilinearGridX2d</class>
-    <class kind="struct">dg::geo::CurvilinearMPIGrid2d</class>
-    <class kind="struct">dg::geo::CurvilinearProductMPIGrid3d</class>
-    <class kind="struct">dg::geo::CurvilinearRefinedProductGridX3d</class>
-    <class kind="struct">dg::geo::CurvilinearRefinedGridX2d</class>
+    <class kind="struct">dg::geo::RealCurvilinearGrid2d</class>
+    <class kind="struct">dg::geo::RealCurvilinearProductGrid3d</class>
+    <class kind="struct">dg::geo::RealCurvilinearProductGridX3d</class>
+    <class kind="struct">dg::geo::RealCurvilinearGridX2d</class>
+    <class kind="struct">dg::geo::RealCurvilinearMPIGrid2d</class>
+    <class kind="struct">dg::geo::RealCurvilinearProductMPIGrid3d</class>
+    <class kind="struct">dg::geo::RealCurvilinearRefinedProductGridX3d</class>
+    <class kind="struct">dg::geo::RealCurvilinearRefinedGridX2d</class>
+    <member kind="typedef">
+      <type>dg::geo::RealCurvilinearGrid2d&lt; double &gt;</type>
+      <name>CurvilinearGrid2d</name>
+      <anchorfile>group__grids.html</anchorfile>
+      <anchor>ga91bfc2e3554d296ed7b02b98399a97df</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::geo::RealCurvilinearProductGrid3d&lt; double &gt;</type>
+      <name>CurvilinearProductGrid3d</name>
+      <anchorfile>group__grids.html</anchorfile>
+      <anchor>gab7dae14094bc5bad939d892c4d36128b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::geo::RealCurvilinearGridX2d&lt; double &gt;</type>
+      <name>CurvilinearGridX2d</name>
+      <anchorfile>group__grids.html</anchorfile>
+      <anchor>ga39f185f0e62a845133105bddbbb92624</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::geo::RealCurvilinearProductGridX3d&lt; double &gt;</type>
+      <name>CurvilinearProductGridX3d</name>
+      <anchorfile>group__grids.html</anchorfile>
+      <anchor>ga2d21aa9b959174ee7cf8cca4af63f6f0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::geo::RealCurvilinearMPIGrid2d&lt; double &gt;</type>
+      <name>CurvilinearMPIGrid2d</name>
+      <anchorfile>group__grids.html</anchorfile>
+      <anchor>ga2afc1b2edf3b4ce67be2559b26d4a131</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::geo::RealCurvilinearProductMPIGrid3d&lt; double &gt;</type>
+      <name>CurvilinearProductMPIGrid3d</name>
+      <anchorfile>group__grids.html</anchorfile>
+      <anchor>ga616da07412dcdbd6a5526e2c86769e69</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::geo::RealCurvilinearRefinedGridX2d&lt; double &gt;</type>
+      <name>CurvilinearRefinedGridX2d</name>
+      <anchorfile>group__grids.html</anchorfile>
+      <anchor>ga58a60acbf311bac75c5163baafd599ec</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::geo::RealCurvilinearRefinedProductGridX3d&lt; double &gt;</type>
+      <name>CurvilinearRefinedProductGridX3d</name>
+      <anchorfile>group__grids.html</anchorfile>
+      <anchor>gafab27da71f3b5b59cb756e39db2275e3</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="group">
     <name>fluxfunctions</name>
@@ -4155,20 +5520,33 @@
     <subgroup>geom</subgroup>
     <subgroup>magnetic</subgroup>
     <subgroup>profiles</subgroup>
-    <class kind="struct">dg::geo::aBinaryFunctor</class>
-    <class kind="struct">dg::geo::aCloneableBinaryFunctor</class>
-    <class kind="struct">dg::geo::BinaryFunctorAdapter</class>
+    <class kind="struct">dg::geo::RealCylindricalFunctor</class>
+    <class kind="struct">dg::geo::aCylindricalFunctor</class>
     <class kind="struct">dg::geo::Constant</class>
-    <class kind="struct">dg::geo::BinaryFunctorsLvl1</class>
-    <class kind="struct">dg::geo::BinaryFunctorsLvl2</class>
-    <class kind="struct">dg::geo::BinarySymmTensorLvl1</class>
-    <class kind="struct">dg::geo::BinaryVectorLvl0</class>
-    <member kind="function">
-      <type>aBinaryFunctor *</type>
-      <name>make_aBinaryFunctor</name>
+    <class kind="struct">dg::geo::CylindricalFunctorsLvl1</class>
+    <class kind="struct">dg::geo::CylindricalFunctorsLvl2</class>
+    <class kind="struct">dg::geo::CylindricalSymmTensorLvl1</class>
+    <class kind="struct">dg::geo::CylindricalVectorLvl0</class>
+    <member kind="typedef">
+      <type>RealCylindricalFunctor&lt; double &gt;</type>
+      <name>CylindricalFunctor</name>
       <anchorfile>group__fluxfunctions.html</anchorfile>
-      <anchor>ga669b9f0f0ae437c262b2400930feef7d</anchor>
-      <arglist>(const BinaryFunctor &amp;f)</arglist>
+      <anchor>gacb84a8d3b8c253f1100c1530035da1de</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type>dg::SparseTensor&lt; dg::get_host_vector&lt; Geometry3d &gt; &gt;</type>
+      <name>createAlignmentTensor</name>
+      <anchorfile>group__fluxfunctions.html</anchorfile>
+      <anchor>ga4f00a11946c5ae76c6b52876292c60ca</anchor>
+      <arglist>(const dg::geo::CylindricalVectorLvl0 &amp;bhat, const Geometry3d &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>dg::SparseTensor&lt; dg::get_host_vector&lt; Geometry3d &gt; &gt;</type>
+      <name>createProjectionTensor</name>
+      <anchorfile>group__fluxfunctions.html</anchorfile>
+      <anchor>ga0e6fb50126a1c44892b51db10d93fb65</anchor>
+      <arglist>(const dg::geo::CylindricalVectorLvl0 &amp;bhat, const Geometry3d &amp;g)</arglist>
     </member>
   </compound>
   <compound kind="group">
@@ -4182,39 +5560,39 @@
     <subgroup>circular</subgroup>
     <class kind="struct">dg::geo::guenther::Parameters</class>
     <class kind="struct">dg::geo::solovev::Parameters</class>
-    <member kind="function">
-      <type>dg::geo::TokamakMagneticField</type>
+    <member kind="function" static="yes">
+      <type>static dg::geo::TokamakMagneticField</type>
       <name>createGuentherField</name>
       <anchorfile>group__geom.html</anchorfile>
-      <anchor>gad54aa312242b5245cbbf9cd4b5dfe06d</anchor>
+      <anchor>ga70edeb1a555a6a2b05ac0485329fdcac</anchor>
       <arglist>(double R_0, double I_0)</arglist>
     </member>
-    <member kind="function">
-      <type>dg::geo::TokamakMagneticField</type>
+    <member kind="function" static="yes">
+      <type>static dg::geo::TokamakMagneticField</type>
       <name>createSolovevField</name>
       <anchorfile>group__geom.html</anchorfile>
-      <anchor>gae3f70e88fd15dd404643f4c5941401c7</anchor>
+      <anchor>gaadcb5ef7126a3bc41beed60c431f9368</anchor>
       <arglist>(dg::geo::solovev::Parameters gp)</arglist>
     </member>
-    <member kind="function">
-      <type>dg::geo::TokamakMagneticField</type>
+    <member kind="function" static="yes">
+      <type>static dg::geo::TokamakMagneticField</type>
       <name>createTaylorField</name>
       <anchorfile>group__geom.html</anchorfile>
-      <anchor>ga7d6cc4a15d5430ff5d4aad81fb7098d9</anchor>
+      <anchor>ga27e5bae45b284ee051039ca97d7c0edb</anchor>
       <arglist>(dg::geo::solovev::Parameters gp)</arglist>
     </member>
-    <member kind="function">
-      <type>dg::geo::TokamakMagneticField</type>
+    <member kind="function" static="yes">
+      <type>static dg::geo::TokamakMagneticField</type>
       <name>createToroidalField</name>
       <anchorfile>group__geom.html</anchorfile>
-      <anchor>ga24c4268469ccbabde18f7eb7ab124ac6</anchor>
+      <anchor>ga2d9ca2e61302113e806b1d05d6b3db7e</anchor>
       <arglist>(double R0)</arglist>
     </member>
-    <member kind="function">
-      <type>dg::geo::TokamakMagneticField</type>
+    <member kind="function" static="yes">
+      <type>static dg::geo::TokamakMagneticField</type>
       <name>createCircularField</name>
       <anchorfile>group__geom.html</anchorfile>
-      <anchor>gaa6d78afe4f306e34d509934f8f79421a</anchor>
+      <anchor>ga16471692288263e2076b897dae16799f</anchor>
       <arglist>(double R0, double I0)</arglist>
     </member>
   </compound>
@@ -4231,25 +5609,25 @@
     <class kind="struct">dg::geo::solovev::Ipol</class>
     <class kind="struct">dg::geo::solovev::IpolR</class>
     <class kind="struct">dg::geo::solovev::IpolZ</class>
-    <member kind="function">
-      <type>dg::geo::BinaryFunctorsLvl2</type>
+    <member kind="function" static="yes">
+      <type>static dg::geo::CylindricalFunctorsLvl2</type>
       <name>createPsip</name>
       <anchorfile>group__solovev.html</anchorfile>
-      <anchor>gabf3dc35f257d294b5df5236e85a42fb2</anchor>
+      <anchor>gafeb61fe925c670850a85b4c3ee9cb390</anchor>
       <arglist>(Parameters gp)</arglist>
     </member>
-    <member kind="function">
-      <type>dg::geo::BinaryFunctorsLvl1</type>
+    <member kind="function" static="yes">
+      <type>static dg::geo::CylindricalFunctorsLvl1</type>
       <name>createIpol</name>
       <anchorfile>group__solovev.html</anchorfile>
-      <anchor>gac26e8e0eb7617b304f61bb1038b22ef8</anchor>
+      <anchor>ga6808a16f5d40c82d590048388bc7361a</anchor>
       <arglist>(Parameters gp)</arglist>
     </member>
-    <member kind="function">
-      <type>dg::geo::TokamakMagneticField</type>
+    <member kind="function" static="yes">
+      <type>static dg::geo::TokamakMagneticField</type>
       <name>createMagField</name>
       <anchorfile>group__solovev.html</anchorfile>
-      <anchor>ga48a224d8779049a93e97a2fd348ad481</anchor>
+      <anchor>gad3675f715472ee97a6c3133905bb3697</anchor>
       <arglist>(Parameters gp)</arglist>
     </member>
   </compound>
@@ -4273,25 +5651,25 @@
       <anchor>gae9e235fc51b6b03228d8eb38673af549</anchor>
       <arglist></arglist>
     </member>
-    <member kind="function">
-      <type>BinaryFunctorsLvl2</type>
+    <member kind="function" static="yes">
+      <type>static CylindricalFunctorsLvl2</type>
       <name>createPsip</name>
       <anchorfile>group__taylor.html</anchorfile>
-      <anchor>ga4bb35f27443e897af4a1050cae9b8e5d</anchor>
+      <anchor>gaf803ceb487fe15a20509185cf645c2f6</anchor>
       <arglist>(solovev::Parameters gp)</arglist>
     </member>
-    <member kind="function">
-      <type>BinaryFunctorsLvl1</type>
+    <member kind="function" static="yes">
+      <type>static CylindricalFunctorsLvl1</type>
       <name>createIpol</name>
       <anchorfile>group__taylor.html</anchorfile>
-      <anchor>gaf585a6dde7802ef9d3b119a50b1318d2</anchor>
+      <anchor>gab3f3b82303a3e64031d92ce7bb5ac49b</anchor>
       <arglist>(solovev::Parameters gp)</arglist>
     </member>
-    <member kind="function">
-      <type>dg::geo::TokamakMagneticField</type>
+    <member kind="function" static="yes">
+      <type>static dg::geo::TokamakMagneticField</type>
       <name>createMagField</name>
       <anchorfile>group__taylor.html</anchorfile>
-      <anchor>gaaf85a7ecbfa540aedd2a48a5a2f24fa2</anchor>
+      <anchor>ga3f430483239ba136340bf0f0a7828e26</anchor>
       <arglist>(solovev::Parameters gp)</arglist>
     </member>
   </compound>
@@ -4308,25 +5686,25 @@
     <class kind="struct">dg::geo::guenther::Ipol</class>
     <class kind="struct">dg::geo::guenther::IpolR</class>
     <class kind="struct">dg::geo::guenther::IpolZ</class>
-    <member kind="function">
-      <type>BinaryFunctorsLvl2</type>
+    <member kind="function" static="yes">
+      <type>static CylindricalFunctorsLvl2</type>
       <name>createPsip</name>
       <anchorfile>group__guenther.html</anchorfile>
-      <anchor>ga99f433f328033896ebc3f92bfdea7766</anchor>
+      <anchor>ga285fcbae9a9d44cbe5586a7b28148b99</anchor>
       <arglist>(double R_0)</arglist>
     </member>
-    <member kind="function">
-      <type>BinaryFunctorsLvl1</type>
+    <member kind="function" static="yes">
+      <type>static CylindricalFunctorsLvl1</type>
       <name>createIpol</name>
       <anchorfile>group__guenther.html</anchorfile>
-      <anchor>gab485e0d1f70ab41dde2060da9f409be3</anchor>
+      <anchor>ga1c418d39f07e69144f44223117ea6b93</anchor>
       <arglist>(double I_0)</arglist>
     </member>
-    <member kind="function">
-      <type>TokamakMagneticField</type>
+    <member kind="function" static="yes">
+      <type>static TokamakMagneticField</type>
       <name>createMagField</name>
       <anchorfile>group__guenther.html</anchorfile>
-      <anchor>gaec0f20e402dcb50145ccf8745ff22ca5</anchor>
+      <anchor>ga4a82083bf29cb70373b84720eba60d83</anchor>
       <arglist>(double R_0, double I_0)</arglist>
     </member>
   </compound>
@@ -4334,25 +5712,25 @@
     <name>toroidal</name>
     <title>The Purely Toroidal magnetic field</title>
     <filename>group__toroidal.html</filename>
-    <member kind="function">
-      <type>BinaryFunctorsLvl2</type>
+    <member kind="function" static="yes">
+      <type>static CylindricalFunctorsLvl2</type>
       <name>createPsip</name>
       <anchorfile>group__toroidal.html</anchorfile>
-      <anchor>gacd371ac3baef2588c08c97cad964fa04</anchor>
+      <anchor>ga62d4a526e2170227a53e19f40716a061</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="function">
-      <type>BinaryFunctorsLvl1</type>
+    <member kind="function" static="yes">
+      <type>static CylindricalFunctorsLvl1</type>
       <name>createIpol</name>
       <anchorfile>group__toroidal.html</anchorfile>
-      <anchor>ga4406fe56ddb226b9752d51df87c04db9</anchor>
+      <anchor>ga4ea9852e07a0fcbf473cafa8625d691b</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="function">
-      <type>TokamakMagneticField</type>
+    <member kind="function" static="yes">
+      <type>static TokamakMagneticField</type>
       <name>createMagField</name>
       <anchorfile>group__toroidal.html</anchorfile>
-      <anchor>ga1b467a106a28fe8b8ff77a374518c829</anchor>
+      <anchor>ga1d02ad623c716a9b80b270c3ceeea70f</anchor>
       <arglist>(double R0)</arglist>
     </member>
   </compound>
@@ -4363,18 +5741,18 @@
     <class kind="struct">dg::geo::circular::Psip</class>
     <class kind="struct">dg::geo::circular::PsipR</class>
     <class kind="struct">dg::geo::circular::PsipZ</class>
-    <member kind="function">
-      <type>BinaryFunctorsLvl2</type>
+    <member kind="function" static="yes">
+      <type>static CylindricalFunctorsLvl2</type>
       <name>createPsip</name>
       <anchorfile>group__circular.html</anchorfile>
-      <anchor>gac643478ea14f273108a7190300f9b1a0</anchor>
+      <anchor>ga6a9d6f6463a3b4ccd3a9659c07671cfa</anchor>
       <arglist>(double R0)</arglist>
     </member>
-    <member kind="function">
-      <type>BinaryFunctorsLvl1</type>
+    <member kind="function" static="yes">
+      <type>static CylindricalFunctorsLvl1</type>
       <name>createIpol</name>
       <anchorfile>group__circular.html</anchorfile>
-      <anchor>ga1c88edf8b4078b3571ba6d404296d48d</anchor>
+      <anchor>gab40e4b929ab5912634cd25ca472fe356</anchor>
       <arglist>(double I0)</arglist>
     </member>
   </compound>
@@ -4393,15 +5771,69 @@
     <class kind="struct">dg::geo::CurvatureKappaR</class>
     <class kind="struct">dg::geo::CurvatureKappaZ</class>
     <class kind="struct">dg::geo::DivCurvatureKappa</class>
+    <class kind="struct">dg::geo::DivCurvatureNablaB</class>
+    <class kind="struct">dg::geo::TrueCurvatureNablaBR</class>
+    <class kind="struct">dg::geo::TrueCurvatureNablaBZ</class>
+    <class kind="struct">dg::geo::TrueCurvatureNablaBP</class>
+    <class kind="struct">dg::geo::TrueCurvatureKappaR</class>
+    <class kind="struct">dg::geo::TrueCurvatureKappaZ</class>
+    <class kind="struct">dg::geo::TrueCurvatureKappaP</class>
+    <class kind="struct">dg::geo::TrueDivCurvatureKappa</class>
+    <class kind="struct">dg::geo::TrueDivCurvatureNablaB</class>
     <class kind="struct">dg::geo::GradLnB</class>
     <class kind="struct">dg::geo::Divb</class>
-    <class kind="struct">dg::geo::FieldP</class>
-    <class kind="struct">dg::geo::FieldR</class>
-    <class kind="struct">dg::geo::FieldZ</class>
-    <class kind="struct">dg::geo::FieldT</class>
+    <class kind="struct">dg::geo::BFieldP</class>
+    <class kind="struct">dg::geo::BFieldR</class>
+    <class kind="struct">dg::geo::BFieldZ</class>
+    <class kind="struct">dg::geo::BFieldT</class>
     <class kind="struct">dg::geo::BHatR</class>
     <class kind="struct">dg::geo::BHatZ</class>
     <class kind="struct">dg::geo::BHatP</class>
+    <class kind="struct">dg::geo::GradBHatR</class>
+    <class kind="struct">dg::geo::GradBHatZ</class>
+    <class kind="struct">dg::geo::GradBHatP</class>
+    <member kind="function">
+      <type>CylindricalVectorLvl0</type>
+      <name>createBHat</name>
+      <anchorfile>group__magnetic.html</anchorfile>
+      <anchor>ga6182dc55424bffffb0d9876b9f90222d</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+    </member>
+    <member kind="function">
+      <type>CylindricalVectorLvl0</type>
+      <name>createEPhi</name>
+      <anchorfile>group__magnetic.html</anchorfile>
+      <anchor>ga3ab10e21b3c879843b6bb26a49beb918</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>CylindricalVectorLvl0</type>
+      <name>createCurvatureNablaB</name>
+      <anchorfile>group__magnetic.html</anchorfile>
+      <anchor>ga891fbece075e21a1cdd1f15422251e7d</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+    </member>
+    <member kind="function">
+      <type>CylindricalVectorLvl0</type>
+      <name>createCurvatureKappa</name>
+      <anchorfile>group__magnetic.html</anchorfile>
+      <anchor>ga15544e369079fa9ab1350fe49433bbf2</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+    </member>
+    <member kind="function">
+      <type>CylindricalVectorLvl0</type>
+      <name>createTrueCurvatureKappa</name>
+      <anchorfile>group__magnetic.html</anchorfile>
+      <anchor>ga4e605e8fb727d3ffe0c2de721d7cad67</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+    </member>
+    <member kind="function">
+      <type>CylindricalVectorLvl0</type>
+      <name>createTrueCurvatureNablaB</name>
+      <anchorfile>group__magnetic.html</anchorfile>
+      <anchor>ga4278b6ca1435aa29063fd152f427c9c5</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+    </member>
   </compound>
   <compound kind="group">
     <name>profiles</name>
@@ -4417,29 +5849,77 @@
     <class kind="struct">dg::geo::DivLiseikinY</class>
     <class kind="struct">dg::geo::DeltaFunction</class>
     <class kind="struct">dg::geo::Alpha</class>
-    <class kind="struct">dg::geo::Iris</class>
-    <class kind="struct">dg::geo::Pupil</class>
-    <class kind="struct">dg::geo::PsiPupil</class>
-    <class kind="struct">dg::geo::PsiLimiter</class>
-    <class kind="struct">dg::geo::GaussianDamping</class>
-    <class kind="struct">dg::geo::GaussianProfDamping</class>
-    <class kind="struct">dg::geo::GaussianProfXDamping</class>
-    <class kind="struct">dg::geo::TanhSource</class>
-    <class kind="struct">dg::geo::Nprofile</class>
-    <class kind="struct">dg::geo::ZonalFlow</class>
-    <member kind="function">
-      <type>BinaryFunctorsLvl1</type>
+    <class kind="struct">dg::geo::Compose</class>
+    <class kind="struct">dg::geo::ZCutter</class>
+    <member kind="typedef">
+      <type>Compose&lt; dg::Iris &gt;</type>
+      <name>Iris</name>
+      <anchorfile>group__profiles.html</anchorfile>
+      <anchor>gad64d512d641d71865056b1f1b83da902</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>Compose&lt; dg::Pupil &gt;</type>
+      <name>Pupil</name>
+      <anchorfile>group__profiles.html</anchorfile>
+      <anchor>gab429cc7c00f5d55def9fcaa5cda8fafd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>Compose&lt; dg::PsiPupil &gt;</type>
+      <name>PsiPupil</name>
+      <anchorfile>group__profiles.html</anchorfile>
+      <anchor>ga4e7e76bd77ae1317ed999238b4ce4e17</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::geo::Compose&lt; dg::Heaviside &gt;</type>
+      <name>PsiLimiter</name>
+      <anchorfile>group__profiles.html</anchorfile>
+      <anchor>ga82eca5b06b94a709b4f1cbfa4b42d59f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::geo::Compose&lt; dg::GaussianDamping &gt;</type>
+      <name>GaussianDamping</name>
+      <anchorfile>group__profiles.html</anchorfile>
+      <anchor>ga158a9af6aef70087e95b8fd8e7dacc60</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::geo::Compose&lt; dg::TanhProfX &gt;</type>
+      <name>TanhDamping</name>
+      <anchorfile>group__profiles.html</anchorfile>
+      <anchor>ga446bce2c783bba5c7b0260853259f1e1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::geo::Compose&lt; dg::LinearX &gt;</type>
+      <name>Nprofile</name>
+      <anchorfile>group__profiles.html</anchorfile>
+      <anchor>gac6e56352ad1a753f9c5c7cecb0f12ee0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::geo::Compose&lt; dg::SinX &gt;</type>
+      <name>ZonalFlow</name>
+      <anchorfile>group__profiles.html</anchorfile>
+      <anchor>ga19191644f490a26ec20c3f6dac24765c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static CylindricalFunctorsLvl1</type>
       <name>make_NablaPsiInvCollective</name>
       <anchorfile>group__profiles.html</anchorfile>
-      <anchor>gaf583c457b3907ec4e9a94d4c17427d55</anchor>
-      <arglist>(const BinaryFunctorsLvl2 &amp;psi)</arglist>
+      <anchor>ga32a9569879bd13c719c77be10f0d399d</anchor>
+      <arglist>(const CylindricalFunctorsLvl2 &amp;psi)</arglist>
     </member>
-    <member kind="function">
-      <type>BinarySymmTensorLvl1</type>
+    <member kind="function" static="yes">
+      <type>static CylindricalSymmTensorLvl1</type>
       <name>make_LiseikinCollective</name>
       <anchorfile>group__profiles.html</anchorfile>
-      <anchor>ga56d2d722a2734d1685263ee8a95e7555</anchor>
-      <arglist>(const BinaryFunctorsLvl2 &amp;psi, double k, double eps)</arglist>
+      <anchor>gae0cb11f189e743a3291e23e2bc361bb2</anchor>
+      <arglist>(const CylindricalFunctorsLvl2 &amp;psi, double k, double eps)</arglist>
     </member>
   </compound>
   <compound kind="group">
@@ -4500,12 +5980,12 @@
     <filename>group__misc__geo.html</filename>
     <class kind="struct">dg::geo::FluxSurfaceAverage</class>
     <class kind="struct">dg::geo::SafetyFactor</class>
-    <member kind="function">
-      <type>void</type>
+    <member kind="function" static="yes">
+      <type>static void</type>
       <name>findXpoint</name>
       <anchorfile>group__misc__geo.html</anchorfile>
-      <anchor>gafcee60ecf901ef09ae3fbf87bd146fbd</anchor>
-      <arglist>(const BinaryFunctorsLvl2 &amp;psi, double &amp;R_X, double &amp;Z_X)</arglist>
+      <anchor>gafdf85449bb250bc67ab57989fcb768cb</anchor>
+      <arglist>(const CylindricalFunctorsLvl2 &amp;psi, double &amp;R_X, double &amp;Z_X)</arglist>
     </member>
   </compound>
   <compound kind="page">

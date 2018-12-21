@@ -24,6 +24,7 @@ var structdg_1_1a_real_topology2d =
     [ "operator=", "structdg_1_1a_real_topology2d.html#ac5714df844ad0f03405e6f8aa82e804b", null ],
     [ "set", "structdg_1_1a_real_topology2d.html#a486277fa092c222b28b16dbb45415109", null ],
     [ "shift_topologic", "structdg_1_1a_real_topology2d.html#ab374d53611ea473afa5ea27b34f11b19", null ],
+    [ "shift_topologic", "structdg_1_1a_real_topology2d.html#a7537c960361cf1aa99762ec0fb595ce9", null ],
     [ "size", "structdg_1_1a_real_topology2d.html#a9c845ed70b611a51f85436e6d4fd5874", null ],
     [ "x0", "structdg_1_1a_real_topology2d.html#a304d4f80327d051852c3c963a6e04c81", null ],
     [ "x1", "structdg_1_1a_real_topology2d.html#ad28b1b826e97472b0e6276db5dc9d276", null ],

@@ -1,11 +1,13 @@
 var classdg_1_1_c_g =
 [
-    [ "value_type", "classdg_1_1_c_g.html#a04d80ef20e62c3da6c6e179c69ad8be4", null ],
+    [ "container_type", "classdg_1_1_c_g.html#a14fb1e36681ed536bbe769957338af16", null ],
+    [ "value_type", "classdg_1_1_c_g.html#a9c685d91e2c114c6d0e93e32a91c3f8a", null ],
     [ "CG", "classdg_1_1_c_g.html#a52f6463497a82386d8e44ae5483ce946", null ],
     [ "CG", "classdg_1_1_c_g.html#a41dcaa356305d5299f03461e69c7bc0d", null ],
     [ "construct", "classdg_1_1_c_g.html#aaf8569c62fab3c585b9e3f94fc12f5cc", null ],
+    [ "copyable", "classdg_1_1_c_g.html#ae76842e598679c9632aeefe05f8052df", null ],
     [ "get_max", "classdg_1_1_c_g.html#a7d88fca3305063dfe3466f47482c1abd", null ],
-    [ "operator()", "classdg_1_1_c_g.html#ab59936562d7dd90bc74f78b7d2648e26", null ],
-    [ "operator()", "classdg_1_1_c_g.html#a38cf6f89412d17454ad1194ff9208d75", null ],
+    [ "operator()", "classdg_1_1_c_g.html#aff284ac528386b529d0a7b04ffe54196", null ],
+    [ "operator()", "classdg_1_1_c_g.html#abe2ed59a86ec7abb2d0a8486a23ac526", null ],
     [ "set_max", "classdg_1_1_c_g.html#a083fe42115bbe0b70ae1a12439c4669a", null ]
 ];

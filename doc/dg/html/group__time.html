@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -98,6 +98,7 @@ $(document).ready(function(){initNavTree('group__time.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Time integrators<div class="ingroups"><a class="el" href="group__numerical0.html">Level 2: Basic numerical algorithms</a></div></div>  </div>
@@ -115,96 +116,262 @@ Collaboration diagram for Time integrators:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_a_b.html">dg::AB&lt; k, ContainerType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for Adams-Bashforth explicit multistep time-integration </p><p class="formulaDsp">
-\[ u^{n+1} = u^n + \Delta t\sum_{j=0}^k b_j f\left(u^{n-j}\right) \]
-</p>
-<p>.  <a href="structdg_1_1_a_b.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_adaptive.html">dg::Adaptive&lt; Stepper &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Driver class for adaptive timestep integration.  <a href="structdg_1_1_adaptive.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_karniadakis.html">dg::Karniadakis&lt; ContainerType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_adams_bashforth.html">dg::AdamsBashforth&lt; ContainerType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for Adams-Bashforth explicit multistep time-integration </p><p class="formulaDsp">
+\[ u^{n+1} = u^n + \Delta t\sum_{j=0}^{s-1} b_j f\left(t^n - j \Delta t, u^{n-j}\right) \]
+</p>
+<p>.  <a href="structdg_1_1_adams_bashforth.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_karniadakis.html">dg::Karniadakis&lt; ContainerType, SolverType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for <a class="el" href="structdg_1_1_karniadakis.html" title="Struct for Karniadakis semi-implicit multistep time-integration . ">Karniadakis</a> semi-implicit multistep time-integration </p><p class="formulaDsp">
 \[ \begin{align} v^{n+1} = \sum_{q=0}^2 \alpha_q v^{n-q} + \Delta t\left[\left(\sum_{q=0}^2\beta_q \hat E(t^{n}-q\Delta t, v^{n-q})\right) + \gamma_0\hat I(t^{n}+\Delta t, v^{n+1})\right] \end{align} \]
 </p>
 <p>.  <a href="structdg_1_1_karniadakis.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_s_i_r_k.html">dg::SIRK&lt; ContainerType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Semi implicit Runge Kutta method after Yoh and Zhong (AIAA 42, 2004)  <a href="structdg_1_1_s_i_r_k.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_r_k__opt.html">dg::RK_opt&lt; s, ContainerType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for Runge-Kutta explicit time-integration optimized for few vector additions </p><p class="formulaDsp">
-\[ \begin{align} u^{n+1} = u^{n} + \Delta t\sum_{j=1}^s b_j k_j \\ k_j = f\left( u^n + \Delta t \sum_{l=1}^j a_{jl} k_l\right) \end{align} \]
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_e_r_k_step.html">dg::ERKStep&lt; ContainerType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for Embedded Runge Kutta explicit time-step with error estimate </p><p class="formulaDsp">
+\[ \begin{align} k_i = f\left( t^n + c_i \Delta t, u^n + \Delta t \sum_{j=1}^{s-1} a_{ij} k_j\right) \\ u^{n+1} = u^{n} + \Delta t\sum_{j=1}^s b_j k_j \\ \tilde u^{n+1} = u^{n} + \Delta t\sum_{j=1}^s \tilde b_j k_j \end{align} \]
 </p>
-<p>.  <a href="structdg_1_1_r_k__opt.html#details">More...</a><br /></td></tr>
+<p>.  <a href="structdg_1_1_e_r_k_step.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_r_k.html">dg::RK&lt; s, ContainerType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for Runge-Kutta explicit time-integration, classic formulation </p><p class="formulaDsp">
-\[ \begin{align} u^{n+1} = u^{n} + \Delta t\sum_{j=1}^s b_j k_j \\ k_j = f\left( u^n + \Delta t \sum_{l=1}^j a_{jl} k_l\right) \end{align} \]
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_a_r_k_step.html">dg::ARKStep&lt; ContainerType, SolverType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for Additive Runge Kutta (semi-implicit) time-step with error estimate following <a href="http://runge.math.smu.edu/arkode_dev/doc/guide/build/html/Mathematics.html#arkstep-additive-runge-kutta-methods">The ARKode library</a>  <a href="structdg_1_1_a_r_k_step.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_runge_kutta.html">dg::RungeKutta&lt; ContainerType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for Runge-Kutta fixed-step explicit time-integration </p><p class="formulaDsp">
+\[ \begin{align} k_i = f\left( t^n + c_i \Delta t, u^n + \Delta t \sum_{j=1}^{s-1} a_{ij} k_j\right) \\ u^{n+1} = u^{n} + \Delta t\sum_{j=1}^s b_j k_j \end{align} \]
 </p>
-<p>.  <a href="structdg_1_1_r_k.html#details">More...</a><br /></td></tr>
+<p>.  <a href="structdg_1_1_runge_kutta.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_butcher_tableau.html">dg::ButcherTableau&lt; real_type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manage coefficients of a (extended) Butcher tableau.  <a href="structdg_1_1_butcher_tableau.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_converts_to_butcher_tableau.html">dg::ConvertsToButcherTableau&lt; real_type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert identifiers to their corresponding <code><a class="el" href="structdg_1_1_butcher_tableau.html" title="Manage coefficients of a (extended) Butcher tableau. ">dg::ButcherTableau</a></code>.  <a href="structdg_1_1_converts_to_butcher_tableau.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ga80d4d81df02e5311bb20b3f74ea45992"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__time.html#ga80d4d81df02e5311bb20b3f74ea45992">dg::tableau_identifier</a> { <br />
+&#160;&#160;<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a5679da92a2aeff58e4d1d8dd0950bfb5">dg::EXPLICIT_EULER_1_1</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a53589c3f492267933d52411a91abe87f">dg::MIDPOINT_2_2</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992ae9e2f280b69980d9f3a31b1af3e0f1c5">dg::KUTTA_3_3</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a9563ea198fa964124c2e1797882452ca">dg::CLASSIC_4_4</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a969e565c5774496edc78deb801ab2ca8">dg::HEUN_EULER_2_1_2</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992ab5342d81c85674726787aa3b494f63b9">dg::BOGACKI_SHAMPINE_4_2_3</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992ad6386c96898e925be6781c3c68310c4f">dg::ARK324L2SA_ERK_4_2_3</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992ad40588a67499cabb21074dfdae448041">dg::ZONNEVELD_5_3_4</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a617285cf8cc8b5c0b7c0c99a0eed7b77">dg::ARK436L2SA_ERK_6_3_4</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a4f13e6b1d5695276f8f99e07d86f5667">dg::SAYFY_ABURUB_6_3_4</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a896ad5875cfc107eb383d4880fbe5184">dg::CASH_KARP_6_4_5</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992ae40966a5ad092b052a51188a05c6ea47">dg::FEHLBERG_6_4_5</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a5e964b2560e1c1b03d280c766fc5a129">dg::DORMAND_PRINCE_7_4_5</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992ae3f4bc121a421ca3501bfae79943a134">dg::ARK548L2SA_ERK_8_4_5</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992aa29646a0456ce45916235f7991a7226e">dg::VERNER_8_5_6</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a728a76f092f543a1ab3de59110857d0c">dg::FEHLBERG_13_7_8</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a8d9f6fc38535d5c30a2ca1d2133a9b75">dg::FEAGIN_17_8_10</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a5d4c148035a981dfce0fe5b0f481a1fa">dg::IMPLICIT_EULER_1_1</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a72bd02f1580c5bb96958efa4f511f8aa">dg::SDIRK_2_1_2</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a5ffadf91baa3b323a4e1407cf2f42926">dg::BILLINGTON_3_3_2</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992aea4ea0cbea708f0db5605fb2b3444834">dg::TRBDF2_3_3_2</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a4237a65080e211e5eedc4d9998bb1e54">dg::KVAERNO_4_2_3</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a6fc7f6581d7f900694db6c8e91a17281">dg::ARK324L2SA_DIRK_4_2_3</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a2199f11f4b226c6803b65a1a7168b87a">dg::CASH_5_2_4</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a534549bf28e481c52c64871dcd48d8c6">dg::CASH_5_3_4</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992ababbb34a98a801e7cc89920a1daa4d9d">dg::SDIRK_5_3_4</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a7e0890fc92aaf7c8867b364d22c8ac22">dg::KVAERNO_5_3_4</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992ab4f90835b6871a2dc7a7e2151ee8ab34">dg::ARK436L2SA_DIRK_6_3_4</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992abbedd7f8ef68aea027dc79e60df79b4f">dg::KVAERNO_7_4_5</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992ad17ee32bcc10dbb681d704e9dc3d0425">dg::ARK548L2SA_DIRK_8_4_5</a>
+<br />
+ }<tr class="memdesc:ga80d4d81df02e5311bb20b3f74ea45992"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identify the Butcher Tableaus provided by this library.  <a href="group__time.html#ga80d4d81df02e5311bb20b3f74ea45992">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:ga80d4d81df02e5311bb20b3f74ea45992"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga15213ce3b66c2d24d60d064a2871917d"><td class="memTemplParams" colspan="2">template&lt;unsigned s, class RHS , class ContainerType &gt; </td></tr>
-<tr class="memitem:ga15213ce3b66c2d24d60d064a2871917d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__time.html#ga15213ce3b66c2d24d60d064a2871917d">dg::stepperRK</a> (RHS &amp;rhs, <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt; t_begin, const ContainerType &amp;begin, <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt; t_end, ContainerType &amp;end, unsigned N)</td></tr>
-<tr class="memdesc:ga15213ce3b66c2d24d60d064a2871917d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrate differential equation with a stage s Runge-Kutta scheme and a fixed number of steps.  <a href="group__time.html#ga15213ce3b66c2d24d60d064a2871917d">More...</a><br /></td></tr>
-<tr class="separator:ga15213ce3b66c2d24d60d064a2871917d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad6229d5ae4b046d09c402cdab727d207"><td class="memTemplParams" colspan="2">template&lt;unsigned s, class RHS , class ContainerType &gt; </td></tr>
-<tr class="memitem:gad6229d5ae4b046d09c402cdab727d207"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__time.html#gad6229d5ae4b046d09c402cdab727d207">dg::integrateRK</a> (RHS &amp;rhs, <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt; t_begin, const ContainerType &amp;begin, <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt; t_end, ContainerType &amp;end, <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt; eps_abs, unsigned NT_init=2)</td></tr>
-<tr class="memdesc:gad6229d5ae4b046d09c402cdab727d207"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrates the differential equation using a stage s Runge-Kutta scheme, a rudimentary stepsize-control and monitoring the sanity of integration.  <a href="group__time.html#gad6229d5ae4b046d09c402cdab727d207">More...</a><br /></td></tr>
-<tr class="separator:gad6229d5ae4b046d09c402cdab727d207"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6dc9be16f5de1b06f0be3e23cd87436d"><td class="memTemplParams" colspan="2">template&lt;class ContainerType &gt; </td></tr>
+<tr class="memitem:ga6dc9be16f5de1b06f0be3e23cd87436d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__time.html#ga6dc9be16f5de1b06f0be3e23cd87436d">dg::l2norm</a> (const ContainerType &amp;x)</td></tr>
+<tr class="memdesc:ga6dc9be16f5de1b06f0be3e23cd87436d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute </p><p class="formulaDsp">
+\[ \sqrt{\sum_i x_i^2}\]
+</p>
+<p> using <code><a class="el" href="group__blas1.html#ga7b2aa636a0fe0c7d3298b9f869658919" title=" Binary reproducible Euclidean dot product between two vectors ">dg::blas1::dot</a></code>.  <a href="group__time.html#ga6dc9be16f5de1b06f0be3e23cd87436d">More...</a><br /></td></tr>
+<tr class="separator:ga6dc9be16f5de1b06f0be3e23cd87436d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab60fda586e101a8aeb69efa31c46805c"><td class="memTemplParams" colspan="2">template&lt;class value_type &gt; </td></tr>
+<tr class="memitem:gab60fda586e101a8aeb69efa31c46805c"><td class="memTemplItemLeft" align="right" valign="top">value_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__time.html#gab60fda586e101a8aeb69efa31c46805c">dg::pid_control</a> (value_type dt_old, value_type eps_0, value_type eps_1, value_type eps_2, unsigned embedded_order, unsigned order)</td></tr>
+<tr class="memdesc:gab60fda586e101a8aeb69efa31c46805c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ h&#39;= h \epsilon_n^{-0.58/p}\epsilon_{n-1}^{0.21/p}\epsilon_{n-2}^{-0.1/p}\]
+</p>
+  <a href="group__time.html#gab60fda586e101a8aeb69efa31c46805c">More...</a><br /></td></tr>
+<tr class="separator:gab60fda586e101a8aeb69efa31c46805c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9ae3e9b854050898f3bf5128b07c2875"><td class="memTemplParams" colspan="2">template&lt;class value_type &gt; </td></tr>
+<tr class="memitem:ga9ae3e9b854050898f3bf5128b07c2875"><td class="memTemplItemLeft" align="right" valign="top">value_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__time.html#ga9ae3e9b854050898f3bf5128b07c2875">dg::pi_control</a> (value_type dt_old, value_type eps_0, value_type eps_1, value_type eps_2, unsigned embedded_order, unsigned order)</td></tr>
+<tr class="memdesc:ga9ae3e9b854050898f3bf5128b07c2875"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ h&#39;= h \epsilon_n^{-0.8/p}\epsilon_{n-1}^{0.31/p}\]
+</p>
+  <a href="group__time.html#ga9ae3e9b854050898f3bf5128b07c2875">More...</a><br /></td></tr>
+<tr class="separator:ga9ae3e9b854050898f3bf5128b07c2875"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac7e4186fd8d1d853624ea7446f05283e"><td class="memTemplParams" colspan="2">template&lt;class value_type &gt; </td></tr>
+<tr class="memitem:gac7e4186fd8d1d853624ea7446f05283e"><td class="memTemplItemLeft" align="right" valign="top">value_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__time.html#gac7e4186fd8d1d853624ea7446f05283e">dg::i_control</a> (value_type dt_old, value_type eps_0, value_type eps_1, value_type eps_2, unsigned embedded_order, unsigned order)</td></tr>
+<tr class="memdesc:gac7e4186fd8d1d853624ea7446f05283e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ h&#39;= h \epsilon_n^{-1/p}\]
+</p>
+  <a href="group__time.html#gac7e4186fd8d1d853624ea7446f05283e">More...</a><br /></td></tr>
+<tr class="separator:gac7e4186fd8d1d853624ea7446f05283e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8ddda07de4b014ed14f7f8f40be08cf9"><td class="memTemplParams" colspan="2">template&lt;class Adaptive , class RHS , class ContainerType , class ErrorNorm  = get_value_type&lt;ContainerType&gt;( const ContainerType&amp;), class ControlFunction  = get_value_type&lt;ContainerType&gt; (get_value_type&lt;ContainerType&gt;, get_value_type&lt;ContainerType&gt;, get_value_type&lt;ContainerType&gt;, get_value_type&lt;ContainerType&gt;, unsigned, unsigned)&gt; </td></tr>
+<tr class="memitem:ga8ddda07de4b014ed14f7f8f40be08cf9"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__time.html#ga8ddda07de4b014ed14f7f8f40be08cf9">dg::integrateAdaptive</a> (<a class="el" href="structdg_1_1_adaptive.html">Adaptive</a> &amp;adaptive, RHS &amp;rhs, <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt; t0, const ContainerType &amp;u0, <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt; t1, ContainerType &amp;u1, <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt; dt, ControlFunction control, ErrorNorm <a class="el" href="group__creation.html#ga9945b71a335bc97f78dc7425911c7287">norm</a>, <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt; rtol, <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt; atol=1e-10)</td></tr>
+<tr class="memdesc:ga8ddda07de4b014ed14f7f8f40be08cf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrates a differential equation using a one-step explicit Timestepper, with adaptive stepsize-control and monitoring the sanity of integration.  <a href="group__time.html#ga8ddda07de4b014ed14f7f8f40be08cf9">More...</a><br /></td></tr>
+<tr class="separator:ga8ddda07de4b014ed14f7f8f40be08cf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9548e190f99b7f0a577b3fe58ff10d86"><td class="memTemplParams" colspan="2">template&lt;class RHS , class ContainerType , class ErrorNorm  = get_value_type&lt;ContainerType&gt;( const ContainerType&amp;), class ControlFunction  = get_value_type&lt;ContainerType&gt; (get_value_type&lt;ContainerType&gt;, get_value_type&lt;ContainerType&gt;, get_value_type&lt;ContainerType&gt;, get_value_type&lt;ContainerType&gt;, unsigned, unsigned)&gt; </td></tr>
+<tr class="memitem:ga9548e190f99b7f0a577b3fe58ff10d86"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__time.html#ga9548e190f99b7f0a577b3fe58ff10d86">dg::integrateERK</a> (std::string name, RHS &amp;rhs, <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt; t0, const ContainerType &amp;u0, <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt; t1, ContainerType &amp;u1, <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt; dt, ControlFunction control, ErrorNorm <a class="el" href="group__creation.html#ga9945b71a335bc97f78dc7425911c7287">norm</a>, <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt; rtol, <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt; atol=1e-10)</td></tr>
+<tr class="memdesc:ga9548e190f99b7f0a577b3fe58ff10d86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shortcut for <code><a class="el" href="group__time.html#ga8ddda07de4b014ed14f7f8f40be08cf9" title="Integrates a differential equation using a one-step explicit Timestepper, with adaptive stepsize-cont...">dg::integrateAdaptive</a></code> with an embedded ERK class as timestepper </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> rhs(<span class="keywordtype">double</span> t, <span class="keyword">const</span> std::array&lt;double,2&gt;&amp; y, std::array&lt;double,2&gt;&amp; yp, <span class="keywordtype">double</span> damping, <span class="keywordtype">double</span> omega_0, <span class="keywordtype">double</span> omega_drive){</div><div class="line">    <span class="comment">//damped driven harmonic oscillator</span></div><div class="line">    <span class="comment">// x -&gt; y[0] , v -&gt; y[1]</span></div><div class="line">    yp[0] = y[1];</div><div class="line">    yp[1] = -2.*damping*omega_0*y[1] - omega_0*omega_0*y[0] + sin(omega_drive*t);</div><div class="line">}</div></div><!-- fragment --><div class="fragment"><div class="line">    <span class="comment">//... in main</span></div><div class="line">    <span class="comment">//set start and end time</span></div><div class="line">    <span class="keyword">const</span> <span class="keywordtype">double</span> t_start = 0., t_end = 1.;</div><div class="line">    <span class="comment">//set physical parameters and initial condition</span></div><div class="line">    <span class="keyword">const</span> <span class="keywordtype">double</span> damping = 0.2, omega_0 = 1.0, omega_drive = 0.9;</div><div class="line">    std::array&lt;double,2&gt; u_start = solution(t_start, damping, omega_0, omega_drive), u_end(u_start);</div><div class="line">    <span class="comment">//construct a functor with the right interface</span></div><div class="line">    <span class="keyword">using namespace </span>std::placeholders; <span class="comment">//for _1, _2, _3</span></div><div class="line">    <span class="keyword">auto</span> functor = std::bind( rhs, _1, _2, _3, damping, omega_0, omega_drive);</div><div class="line">    <span class="keywordtype">double</span> dt= 0;</div><div class="line">    <span class="comment">//integration</span></div><div class="line">    <span class="keywordtype">int</span> counter = <a class="code" href="group__time.html#ga9548e190f99b7f0a577b3fe58ff10d86">dg::integrateERK</a>( <span class="stringliteral">&quot;Dormand-Prince-7-4-5&quot;</span>, functor, t_start, u_start, t_end, u_end, dt, <a class="code" href="group__time.html#gab60fda586e101a8aeb69efa31c46805c">dg::pid_control</a>, <a class="code" href="group__time.html#ga6dc9be16f5de1b06f0be3e23cd87436d">dg::l2norm</a>, 1e-6);</div><div class="line">    <span class="comment">//now compute error</span></div><div class="line">    <a class="code" href="group__blas1.html#ga5c7ddbf70dd74867e45c9d4f40b36cf7">dg::blas1::axpby</a>( 1., solution(t_end, damping, omega_0, omega_drive), -1., u_end);</div><div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;With &quot;</span>&lt;&lt;counter&lt;&lt;<span class="stringliteral">&quot;\t Dormand Prince steps norm of error is &quot;</span>&lt;&lt;sqrt(<a class="code" href="group__blas1.html#ga7b2aa636a0fe0c7d3298b9f869658919">dg::blas1::dot</a>( u_end, u_end))&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;</div></div><!-- fragment --> <a href="group__time.html#ga9548e190f99b7f0a577b3fe58ff10d86">More...</a><br /></td></tr>
+<tr class="separator:ga9548e190f99b7f0a577b3fe58ff10d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1b3aa83f9b7e90dbbd3cdac88654e04b"><td class="memTemplParams" colspan="2">template&lt;class RHS , class ContainerType &gt; </td></tr>
+<tr class="memitem:ga1b3aa83f9b7e90dbbd3cdac88654e04b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__time.html#ga1b3aa83f9b7e90dbbd3cdac88654e04b">dg::stepperRK</a> (<a class="el" href="structdg_1_1_converts_to_butcher_tableau.html">ConvertsToButcherTableau</a>&lt; <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt;&gt; tableau, RHS &amp;rhs, <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt; t_begin, const ContainerType &amp;begin, <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt; t_end, ContainerType &amp;end, unsigned N)</td></tr>
+<tr class="memdesc:ga1b3aa83f9b7e90dbbd3cdac88654e04b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrate differential equation with an explicit Runge-Kutta scheme and a fixed number of steps.  <a href="group__time.html#ga1b3aa83f9b7e90dbbd3cdac88654e04b">More...</a><br /></td></tr>
+<tr class="separator:ga1b3aa83f9b7e90dbbd3cdac88654e04b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ga80d4d81df02e5311bb20b3f74ea45992"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga80d4d81df02e5311bb20b3f74ea45992">&#9670;&nbsp;</a></span>tableau_identifier</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__time.html#ga80d4d81df02e5311bb20b3f74ea45992">dg::tableau_identifier</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Identify the Butcher Tableaus provided by this library. </p>
+<p>We follow the naming convention of the ARKode library <a href="http://runge.math.smu.edu/arkode_dev/doc/guide/build/html/Butcher.html">http://runge.math.smu.edu/arkode_dev/doc/guide/build/html/Butcher.html</a> (They also provide nice stability plots for their methods) as NAME-S-P-Q or NAME-S-Q, where</p><ul>
+<li>NAME is the author or name of the method</li>
+<li>S is the number of stages in the method</li>
+<li>P is the global order of the embedding</li>
+<li>Q is the global order of the method</li>
+</ul>
+<dl class="section note"><dt>Note</dt><dd>In some of the links below you might want to use the search function of your browser to find the indicated method </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga80d4d81df02e5311bb20b3f74ea45992a5679da92a2aeff58e4d1d8dd0950bfb5"></a>EXPLICIT_EULER_1_1&#160;</td><td class="fielddoc"><p><a href="https://en.wikipedia.org/wiki/List_of_Runge%E2%80%93Kutta_methods">Euler</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga80d4d81df02e5311bb20b3f74ea45992a53589c3f492267933d52411a91abe87f"></a>MIDPOINT_2_2&#160;</td><td class="fielddoc"><p><a href="https://en.wikipedia.org/wiki/List_of_Runge%E2%80%93Kutta_methods">Midpoint-2-2</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga80d4d81df02e5311bb20b3f74ea45992ae9e2f280b69980d9f3a31b1af3e0f1c5"></a>KUTTA_3_3&#160;</td><td class="fielddoc"><p><a href="https://en.wikipedia.org/wiki/List_of_Runge%E2%80%93Kutta_methods">Kutta-3-3</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga80d4d81df02e5311bb20b3f74ea45992a9563ea198fa964124c2e1797882452ca"></a>CLASSIC_4_4&#160;</td><td class="fielddoc"><p><a href="https://en.wikipedia.org/wiki/List_of_Runge%E2%80%93Kutta_methods">Runge-Kutta-4-4</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga80d4d81df02e5311bb20b3f74ea45992a969e565c5774496edc78deb801ab2ca8"></a>HEUN_EULER_2_1_2&#160;</td><td class="fielddoc"><p><a href="https://en.wikipedia.org/wiki/List_of_Runge%E2%80%93Kutta_methods">Heun-Euler-2-1-2</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga80d4d81df02e5311bb20b3f74ea45992ab5342d81c85674726787aa3b494f63b9"></a>BOGACKI_SHAMPINE_4_2_3&#160;</td><td class="fielddoc"><p><a href="https://en.wikipedia.org/wiki/List_of_Runge%E2%80%93Kutta_methods">Bogacki-Shampine-4-2-3</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga80d4d81df02e5311bb20b3f74ea45992ad6386c96898e925be6781c3c68310c4f"></a>ARK324L2SA_ERK_4_2_3&#160;</td><td class="fielddoc"><p><a href="http://runge.math.smu.edu/arkode_dev/doc/guide/build/html/Butcher.html">ARK-4-2-3 (explicit)</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga80d4d81df02e5311bb20b3f74ea45992ad40588a67499cabb21074dfdae448041"></a>ZONNEVELD_5_3_4&#160;</td><td class="fielddoc"><p><a href="http://runge.math.smu.edu/arkode_dev/doc/guide/build/html/Butcher.html">Zonnveld-5-3-4</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga80d4d81df02e5311bb20b3f74ea45992a617285cf8cc8b5c0b7c0c99a0eed7b77"></a>ARK436L2SA_ERK_6_3_4&#160;</td><td class="fielddoc"><p><a href="http://runge.math.smu.edu/arkode_dev/doc/guide/build/html/Butcher.html">ARK-6-3-4 (explicit)</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga80d4d81df02e5311bb20b3f74ea45992a4f13e6b1d5695276f8f99e07d86f5667"></a>SAYFY_ABURUB_6_3_4&#160;</td><td class="fielddoc"><p><a href="http://runge.math.smu.edu/arkode_dev/doc/guide/build/html/Butcher.html">Sayfy-Aburub-6-3-4</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga80d4d81df02e5311bb20b3f74ea45992a896ad5875cfc107eb383d4880fbe5184"></a>CASH_KARP_6_4_5&#160;</td><td class="fielddoc"><p><a href="https://en.wikipedia.org/wiki/List_of_Runge%E2%80%93Kutta_methods">Cash-Karp-6-4-5</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga80d4d81df02e5311bb20b3f74ea45992ae40966a5ad092b052a51188a05c6ea47"></a>FEHLBERG_6_4_5&#160;</td><td class="fielddoc"><p><a href="https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta%E2%80%93Fehlberg_method">Fehlberg-6-4-5</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga80d4d81df02e5311bb20b3f74ea45992a5e964b2560e1c1b03d280c766fc5a129"></a>DORMAND_PRINCE_7_4_5&#160;</td><td class="fielddoc"><p><a href="https://en.wikipedia.org/wiki/Dormand%E2%80%93Prince_method">Dormand-Prince-7-4-5</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga80d4d81df02e5311bb20b3f74ea45992ae3f4bc121a421ca3501bfae79943a134"></a>ARK548L2SA_ERK_8_4_5&#160;</td><td class="fielddoc"><p><a href="http://runge.math.smu.edu/arkode_dev/doc/guide/build/html/Butcher.html">ARK-4-2-3 (explicit)</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga80d4d81df02e5311bb20b3f74ea45992aa29646a0456ce45916235f7991a7226e"></a>VERNER_8_5_6&#160;</td><td class="fielddoc"><p><a href="http://runge.math.smu.edu/arkode_dev/doc/guide/build/html/Butcher.html">Verner-8-5-6</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga80d4d81df02e5311bb20b3f74ea45992a728a76f092f543a1ab3de59110857d0c"></a>FEHLBERG_13_7_8&#160;</td><td class="fielddoc"><p><a href="http://runge.math.smu.edu/arkode_dev/doc/guide/build/html/Butcher.html">Fehlberg-13-7-8</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga80d4d81df02e5311bb20b3f74ea45992a8d9f6fc38535d5c30a2ca1d2133a9b75"></a>FEAGIN_17_8_10&#160;</td><td class="fielddoc"><p><a href="http://sce.uhcl.edu/rungekutta/">Feagin-17-8-10</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga80d4d81df02e5311bb20b3f74ea45992a5d4c148035a981dfce0fe5b0f481a1fa"></a>IMPLICIT_EULER_1_1&#160;</td><td class="fielddoc"><p><a href="https://en.wikipedia.org/wiki/List_of_Runge%E2%80%93Kutta_methods">Euler (implicit)</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga80d4d81df02e5311bb20b3f74ea45992a72bd02f1580c5bb96958efa4f511f8aa"></a>SDIRK_2_1_2&#160;</td><td class="fielddoc"><p><a href="http://runge.math.smu.edu/arkode_dev/doc/guide/build/html/Butcher.html">SDIRK-2-1-2</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga80d4d81df02e5311bb20b3f74ea45992a5ffadf91baa3b323a4e1407cf2f42926"></a>BILLINGTON_3_3_2&#160;</td><td class="fielddoc"><p><a href="http://runge.math.smu.edu/arkode_dev/doc/guide/build/html/Butcher.html">Billington-3-3-2</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga80d4d81df02e5311bb20b3f74ea45992aea4ea0cbea708f0db5605fb2b3444834"></a>TRBDF2_3_3_2&#160;</td><td class="fielddoc"><p><a href="http://runge.math.smu.edu/arkode_dev/doc/guide/build/html/Butcher.html">TRBDF2-3-3-2</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga80d4d81df02e5311bb20b3f74ea45992a4237a65080e211e5eedc4d9998bb1e54"></a>KVAERNO_4_2_3&#160;</td><td class="fielddoc"><p><a href="http://runge.math.smu.edu/arkode_dev/doc/guide/build/html/Butcher.html">Kvaerno-4-2-3</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga80d4d81df02e5311bb20b3f74ea45992a6fc7f6581d7f900694db6c8e91a17281"></a>ARK324L2SA_DIRK_4_2_3&#160;</td><td class="fielddoc"><p><a href="http://runge.math.smu.edu/arkode_dev/doc/guide/build/html/Butcher.html">ARK-4-2-3 (implicit)</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga80d4d81df02e5311bb20b3f74ea45992a2199f11f4b226c6803b65a1a7168b87a"></a>CASH_5_2_4&#160;</td><td class="fielddoc"><p><a href="http://runge.math.smu.edu/arkode_dev/doc/guide/build/html/Butcher.html">Cash-5-2-4</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga80d4d81df02e5311bb20b3f74ea45992a534549bf28e481c52c64871dcd48d8c6"></a>CASH_5_3_4&#160;</td><td class="fielddoc"><p><a href="http://runge.math.smu.edu/arkode_dev/doc/guide/build/html/Butcher.html">Cash-5-3-4</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga80d4d81df02e5311bb20b3f74ea45992ababbb34a98a801e7cc89920a1daa4d9d"></a>SDIRK_5_3_4&#160;</td><td class="fielddoc"><p><a href="http://runge.math.smu.edu/arkode_dev/doc/guide/build/html/Butcher.html">SDIRK-5-3-4</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga80d4d81df02e5311bb20b3f74ea45992a7e0890fc92aaf7c8867b364d22c8ac22"></a>KVAERNO_5_3_4&#160;</td><td class="fielddoc"><p><a href="http://runge.math.smu.edu/arkode_dev/doc/guide/build/html/Butcher.html">Kvaerno-5-3-4</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga80d4d81df02e5311bb20b3f74ea45992ab4f90835b6871a2dc7a7e2151ee8ab34"></a>ARK436L2SA_DIRK_6_3_4&#160;</td><td class="fielddoc"><p><a href="http://runge.math.smu.edu/arkode_dev/doc/guide/build/html/Butcher.html">ARK-6-3-4 (implicit)</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga80d4d81df02e5311bb20b3f74ea45992abbedd7f8ef68aea027dc79e60df79b4f"></a>KVAERNO_7_4_5&#160;</td><td class="fielddoc"><p><a href="http://runge.math.smu.edu/arkode_dev/doc/guide/build/html/Butcher.html">Kvaerno-7-4-5</a> </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga80d4d81df02e5311bb20b3f74ea45992ad17ee32bcc10dbb681d704e9dc3d0425"></a>ARK548L2SA_DIRK_8_4_5&#160;</td><td class="fielddoc"><p><a href="http://runge.math.smu.edu/arkode_dev/doc/guide/build/html/Butcher.html">ARK-8-4-5 (implicit)</a> </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gad6229d5ae4b046d09c402cdab727d207"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad6229d5ae4b046d09c402cdab727d207">&#9670;&nbsp;</a></span>integrateRK()</h2>
+<a id="gac7e4186fd8d1d853624ea7446f05283e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac7e4186fd8d1d853624ea7446f05283e">&#9670;&nbsp;</a></span>i_control()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;unsigned s, class RHS , class ContainerType &gt; </div>
+template&lt;class value_type &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">int dg::integrateRK </td>
+          <td class="memname">value_type dg::i_control </td>
           <td>(</td>
-          <td class="paramtype">RHS &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em>, </td>
+          <td class="paramtype">value_type&#160;</td>
+          <td class="paramname"><em>dt_old</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt;&#160;</td>
-          <td class="paramname"><em>t_begin</em>, </td>
+          <td class="paramtype">value_type&#160;</td>
+          <td class="paramname"><em>eps_0</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const ContainerType &amp;&#160;</td>
-          <td class="paramname"><em>begin</em>, </td>
+          <td class="paramtype">value_type&#160;</td>
+          <td class="paramname"><em>eps_1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt;&#160;</td>
-          <td class="paramname"><em>t_end</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ContainerType &amp;&#160;</td>
-          <td class="paramname"><em>end</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt;&#160;</td>
-          <td class="paramname"><em>eps_abs</em>, </td>
+          <td class="paramtype">value_type&#160;</td>
+          <td class="paramname"><em>eps_2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>NT_init</em> = <code>2</code>&#160;</td>
+          <td class="paramname"><em>embedded_order</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>order</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -214,13 +381,119 @@ template&lt;unsigned s, class RHS , class ContainerType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Integrates the differential equation using a stage s Runge-Kutta scheme, a rudimentary stepsize-control and monitoring the sanity of integration. </p>
-<p>Doubles the number of timesteps until the desired accuracy is reached</p>
+<p><p class="formulaDsp">
+\[ h&#39;= h \epsilon_n^{-1/p}\]
+</p>
+ </p>
+
+</div>
+</div>
+<a id="ga8ddda07de4b014ed14f7f8f40be08cf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8ddda07de4b014ed14f7f8f40be08cf9">&#9670;&nbsp;</a></span>integrateAdaptive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Adaptive , class RHS , class ContainerType , class ErrorNorm  = get_value_type&lt;ContainerType&gt;( const ContainerType&amp;), class ControlFunction  = get_value_type&lt;ContainerType&gt; (get_value_type&lt;ContainerType&gt;, get_value_type&lt;ContainerType&gt;, get_value_type&lt;ContainerType&gt;, get_value_type&lt;ContainerType&gt;, unsigned, unsigned)&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int dg::integrateAdaptive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdg_1_1_adaptive.html">Adaptive</a> &amp;&#160;</td>
+          <td class="paramname"><em>adaptive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RHS &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt;&#160;</td>
+          <td class="paramname"><em>t0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ContainerType &amp;&#160;</td>
+          <td class="paramname"><em>u0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt;&#160;</td>
+          <td class="paramname"><em>t1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ContainerType &amp;&#160;</td>
+          <td class="paramname"><em>u1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt;&#160;</td>
+          <td class="paramname"><em>dt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ControlFunction&#160;</td>
+          <td class="paramname"><em>control</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ErrorNorm&#160;</td>
+          <td class="paramname"><em>norm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt;&#160;</td>
+          <td class="paramname"><em>rtol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt;&#160;</td>
+          <td class="paramname"><em>atol</em> = <code>1e-10</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Integrates a differential equation using a one-step explicit Timestepper, with adaptive stepsize-control and monitoring the sanity of integration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">adaptive</td><td>An instance of the <a class="el" href="structdg_1_1_adaptive.html" title="Driver class for adaptive timestep integration. ">Adaptive</a> class </td></tr>
+    <tr><td class="paramname">rhs</td><td>The right-hand-side</td></tr>
+    <tr><td class="paramname">t0</td><td>initial time </td></tr>
+    <tr><td class="paramname">u0</td><td>value at <code>t0</code> </td></tr>
+    <tr><td class="paramname">t1</td><td>(write only) end time ( equals <code>t0+dt</code> on output if the step was accepted, otherwise equals <code>t0</code>, may alias <code>t0</code>) </td></tr>
+    <tr><td class="paramname">u1</td><td>(write only) contains the updated result on output if the step was accepted, otherwise a copy of <code>u0</code> (may alias <code>u0</code>) </td></tr>
+    <tr><td class="paramname">dt</td><td>on input: timestep to try out (see <a class="el" href="structdg_1_1_adaptive.html#a2cdd79d57b8a9dd603329fd4ad9bce21" title="Guess an initial stepsize. ">dg::Adaptive::guess_stepsize()</a> for an initial stepsize). On output: stepsize proposed by the controller that can be used to continue the integration in the next step. </td></tr>
+    <tr><td class="paramname">control</td><td>The control function. Usually <code><a class="el" href="group__time.html#gab60fda586e101a8aeb69efa31c46805c" title=" ">dg::pid_control</a></code> is a good choice </td></tr>
+    <tr><td class="paramname">norm</td><td>The error norm. Usually <code><a class="el" href="group__time.html#ga6dc9be16f5de1b06f0be3e23cd87436d" title="Compute  using dg::blas1::dot. ">dg::l2norm</a></code> is a good choice, but for very small vector sizes the time for the binary reproducible dot product might become a performance bottleneck. Then it's time for your own implementation. </td></tr>
+    <tr><td class="paramname">rtol</td><td>the desired relative accuracy. Usually 1e-5 is a good choice. </td></tr>
+    <tr><td class="paramname">atol</td><td>the desired absolute accuracy. Usually 1e-10 is a good choice. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Try not to mess with dt. The controller is best left alone and it does a very good job choosing timesteps. But how do I output my solution at certain (equidistant) timesteps? First, think about if you really, really need that. Why is it so bad to have output at non-equidistant timesteps? If you are still firm, then consider using an interpolation scheme (cf. <code><a class="el" href="structdg_1_1_extrapolation.html" title="Extrapolate based on up to three past solutions. ">dg::Extrapolation</a></code>). Let choosing the timestep yourself be the very last option if the others are not viable </dd>
+<dd>
+For partial differential equations the exact value of <code>rtol</code> and <code>atol</code> might not be important. Due to the CFL condition there might be a sharp barrier in the range of possible stepsizes and the controller usually does a good job finding it and keeping the timestep "just right". However, don't make <code>rtol</code> too small, <code>1e-1</code> say, since then the controller might get too close to the CFL barrier. The timestepper is still able to crash, mind, even though the chances of that happening are somewhat lower than in a fixed stepsize method. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>number of steps</dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">s</td><td>Order of the method (1, 2, 3, 4, 6, 17)</td></tr>
-    <tr><td class="paramname">RHS</td><td>The right hand side is a functor type with no return value (subroutine) of signature <code> void operator()(value_type, const ContainerType&amp;, ContainerType&amp;)</code> The first argument is the time, the second is the input vector, which the functor may <b>not</b> override, and the third is the output, i.e. y' = f(t, y) translates to f(t, y, y'). The two ContainerType arguments never alias each other in calls to the functor. </td></tr>
-    <tr><td class="paramname">RHS</td><td>In addition, there must be the function <code>bool</code> <code>monitor( const ContainerType&amp; end)</code>; available, which is called after every step. Return <code>true</code> if everything is ok and <code>false</code> if the integrator certainly fails. The other function is the <code>real_type</code> <code>error( const ContainerType&amp; end0, const ContainerType&amp; end1)</code>; which computes the error norm in which the integrator should converge.</td></tr>
+    <tr><td class="paramname">RHS</td><td>The right hand side is a functor type with no return value (subroutine) of signature <code> void operator()(value_type, const ContainerType&amp;, ContainerType&amp;)</code> The first argument is the time, the second is the input vector, which the functor may <b>not</b> override, and the third is the output, i.e. y' = f(t, y) translates to f(t, y, y'). The two ContainerType arguments never alias each other in calls to the functor.</td></tr>
     <tr><td class="paramname">ContainerType</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> and <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. Among others<ul>
 <li><code> <a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193" title="Host Vector. ">dg::HVec</a> (serial), <a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a> (cuda / omp), <a class="el" href="group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a> (mpi + serial) or <a class="el" href="group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a> (mpi + cuda / omp) </code></li>
 <li><code> std::vector&lt;dg::DVec&gt; (vector of shared device vectors), std::array&lt;double, 4&gt; (array of 4 doubles)</code></li>
@@ -231,33 +504,307 @@ If there are several <code>ContainerTypes</code> in the argument list, then <cod
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd>See <a class="el" href="index.html#dispatch">The Level 1 dispatch system</a> for a detailed explanation of our type dispatch system </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rhs</td><td>The right-hand-side </td></tr>
-    <tr><td class="paramname">t_begin</td><td>initial time </td></tr>
-    <tr><td class="paramname">begin</td><td>initial condition </td></tr>
-    <tr><td class="paramname">t_end</td><td>final time </td></tr>
-    <tr><td class="paramname">end</td><td>(write-only) contains solution on output </td></tr>
-    <tr><td class="paramname">eps_abs</td><td>desired accuracy in the error function between <code>end</code> and <code>end_old</code> </td></tr>
-    <tr><td class="paramname">NT_init</td><td>initial number of steps </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>number of iterations if converged, -1 and a warning to <code>std::cerr</code> when <code>isnan</code> appears, -2 if failed to reach <code>eps_abs</code> </dd></dl>
 
 </div>
 </div>
-<a id="ga15213ce3b66c2d24d60d064a2871917d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga15213ce3b66c2d24d60d064a2871917d">&#9670;&nbsp;</a></span>stepperRK()</h2>
+<a id="ga9548e190f99b7f0a577b3fe58ff10d86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9548e190f99b7f0a577b3fe58ff10d86">&#9670;&nbsp;</a></span>integrateERK()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;unsigned s, class RHS , class ContainerType &gt; </div>
+template&lt;class RHS , class ContainerType , class ErrorNorm  = get_value_type&lt;ContainerType&gt;( const ContainerType&amp;), class ControlFunction  = get_value_type&lt;ContainerType&gt; (get_value_type&lt;ContainerType&gt;, get_value_type&lt;ContainerType&gt;, get_value_type&lt;ContainerType&gt;, get_value_type&lt;ContainerType&gt;, unsigned, unsigned)&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int dg::integrateERK </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RHS &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt;&#160;</td>
+          <td class="paramname"><em>t0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ContainerType &amp;&#160;</td>
+          <td class="paramname"><em>u0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt;&#160;</td>
+          <td class="paramname"><em>t1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ContainerType &amp;&#160;</td>
+          <td class="paramname"><em>u1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt;&#160;</td>
+          <td class="paramname"><em>dt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ControlFunction&#160;</td>
+          <td class="paramname"><em>control</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ErrorNorm&#160;</td>
+          <td class="paramname"><em>norm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt;&#160;</td>
+          <td class="paramname"><em>rtol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt;&#160;</td>
+          <td class="paramname"><em>atol</em> = <code>1e-10</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Shortcut for <code><a class="el" href="group__time.html#ga8ddda07de4b014ed14f7f8f40be08cf9" title="Integrates a differential equation using a one-step explicit Timestepper, with adaptive stepsize-cont...">dg::integrateAdaptive</a></code> with an embedded ERK class as timestepper </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> rhs(<span class="keywordtype">double</span> t, <span class="keyword">const</span> std::array&lt;double,2&gt;&amp; y, std::array&lt;double,2&gt;&amp; yp, <span class="keywordtype">double</span> damping, <span class="keywordtype">double</span> omega_0, <span class="keywordtype">double</span> omega_drive){</div><div class="line">    <span class="comment">//damped driven harmonic oscillator</span></div><div class="line">    <span class="comment">// x -&gt; y[0] , v -&gt; y[1]</span></div><div class="line">    yp[0] = y[1];</div><div class="line">    yp[1] = -2.*damping*omega_0*y[1] - omega_0*omega_0*y[0] + sin(omega_drive*t);</div><div class="line">}</div></div><!-- fragment --><div class="fragment"><div class="line">    <span class="comment">//... in main</span></div><div class="line">    <span class="comment">//set start and end time</span></div><div class="line">    <span class="keyword">const</span> <span class="keywordtype">double</span> t_start = 0., t_end = 1.;</div><div class="line">    <span class="comment">//set physical parameters and initial condition</span></div><div class="line">    <span class="keyword">const</span> <span class="keywordtype">double</span> damping = 0.2, omega_0 = 1.0, omega_drive = 0.9;</div><div class="line">    std::array&lt;double,2&gt; u_start = solution(t_start, damping, omega_0, omega_drive), u_end(u_start);</div><div class="line">    <span class="comment">//construct a functor with the right interface</span></div><div class="line">    <span class="keyword">using namespace </span>std::placeholders; <span class="comment">//for _1, _2, _3</span></div><div class="line">    <span class="keyword">auto</span> functor = std::bind( rhs, _1, _2, _3, damping, omega_0, omega_drive);</div><div class="line">    <span class="keywordtype">double</span> dt= 0;</div><div class="line">    <span class="comment">//integration</span></div><div class="line">    <span class="keywordtype">int</span> counter = <a class="code" href="group__time.html#ga9548e190f99b7f0a577b3fe58ff10d86">dg::integrateERK</a>( <span class="stringliteral">&quot;Dormand-Prince-7-4-5&quot;</span>, functor, t_start, u_start, t_end, u_end, dt, <a class="code" href="group__time.html#gab60fda586e101a8aeb69efa31c46805c">dg::pid_control</a>, <a class="code" href="group__time.html#ga6dc9be16f5de1b06f0be3e23cd87436d">dg::l2norm</a>, 1e-6);</div><div class="line">    <span class="comment">//now compute error</span></div><div class="line">    <a class="code" href="group__blas1.html#ga5c7ddbf70dd74867e45c9d4f40b36cf7">dg::blas1::axpby</a>( 1., solution(t_end, damping, omega_0, omega_drive), -1., u_end);</div><div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;With &quot;</span>&lt;&lt;counter&lt;&lt;<span class="stringliteral">&quot;\t Dormand Prince steps norm of error is &quot;</span>&lt;&lt;sqrt(<a class="code" href="group__blas1.html#ga7b2aa636a0fe0c7d3298b9f869658919">dg::blas1::dot</a>( u_end, u_end))&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;</div></div><!-- fragment --></p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>name of an embedded method that <code><a class="el" href="structdg_1_1_converts_to_butcher_tableau.html" title="Convert identifiers to their corresponding dg::ButcherTableau. ">ConvertsToButcherTableau</a></code> </td></tr>
+    <tr><td class="paramname">rhs</td><td>The right-hand-side</td></tr>
+    <tr><td class="paramname">t0</td><td>initial time </td></tr>
+    <tr><td class="paramname">u0</td><td>value at <code>t0</code> </td></tr>
+    <tr><td class="paramname">t1</td><td>(write only) end time ( equals <code>t0+dt</code> on output if the step was accepted, otherwise equals <code>t0</code>, may alias <code>t0</code>) </td></tr>
+    <tr><td class="paramname">u1</td><td>(write only) contains the updated result on output if the step was accepted, otherwise a copy of <code>u0</code> (may alias <code>u0</code>) </td></tr>
+    <tr><td class="paramname">dt</td><td>on input: timestep to try out (see <a class="el" href="structdg_1_1_adaptive.html#a2cdd79d57b8a9dd603329fd4ad9bce21" title="Guess an initial stepsize. ">dg::Adaptive::guess_stepsize()</a> for an initial stepsize). On output: stepsize proposed by the controller that can be used to continue the integration in the next step. </td></tr>
+    <tr><td class="paramname">control</td><td>The control function. Usually <code><a class="el" href="group__time.html#gab60fda586e101a8aeb69efa31c46805c" title=" ">dg::pid_control</a></code> is a good choice </td></tr>
+    <tr><td class="paramname">norm</td><td>The error norm. Usually <code><a class="el" href="group__time.html#ga6dc9be16f5de1b06f0be3e23cd87436d" title="Compute  using dg::blas1::dot. ">dg::l2norm</a></code> is a good choice, but for very small vector sizes the time for the binary reproducible dot product might become a performance bottleneck. Then it's time for your own implementation. </td></tr>
+    <tr><td class="paramname">rtol</td><td>the desired relative accuracy. Usually 1e-5 is a good choice. </td></tr>
+    <tr><td class="paramname">atol</td><td>the desired absolute accuracy. Usually 1e-10 is a good choice. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Try not to mess with dt. The controller is best left alone and it does a very good job choosing timesteps. But how do I output my solution at certain (equidistant) timesteps? First, think about if you really, really need that. Why is it so bad to have output at non-equidistant timesteps? If you are still firm, then consider using an interpolation scheme (cf. <code><a class="el" href="structdg_1_1_extrapolation.html" title="Extrapolate based on up to three past solutions. ">dg::Extrapolation</a></code>). Let choosing the timestep yourself be the very last option if the others are not viable </dd>
+<dd>
+For partial differential equations the exact value of <code>rtol</code> and <code>atol</code> might not be important. Due to the CFL condition there might be a sharp barrier in the range of possible stepsizes and the controller usually does a good job finding it and keeping the timestep "just right". However, don't make <code>rtol</code> too small, <code>1e-1</code> say, since then the controller might get too close to the CFL barrier. The timestepper is still able to crash, mind, even though the chances of that happening are somewhat lower than in a fixed stepsize method. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>number of steps</dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">RHS</td><td>The right hand side is a functor type with no return value (subroutine) of signature <code> void operator()(value_type, const ContainerType&amp;, ContainerType&amp;)</code> The first argument is the time, the second is the input vector, which the functor may <b>not</b> override, and the third is the output, i.e. y' = f(t, y) translates to f(t, y, y'). The two ContainerType arguments never alias each other in calls to the functor.</td></tr>
+    <tr><td class="paramname">ContainerType</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> and <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. Among others<ul>
+<li><code> <a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193" title="Host Vector. ">dg::HVec</a> (serial), <a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a> (cuda / omp), <a class="el" href="group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a> (mpi + serial) or <a class="el" href="group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a> (mpi + cuda / omp) </code></li>
+<li><code> std::vector&lt;dg::DVec&gt; (vector of shared device vectors), std::array&lt;double, 4&gt; (array of 4 doubles)</code></li>
+<li><code> double (scalar)</code> and other primitive types ...</li>
+</ul>
+If there are several <code>ContainerTypes</code> in the argument list, then <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> must exist for all of them </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="index.html#dispatch">The Level 1 dispatch system</a> for a detailed explanation of our type dispatch system </dd></dl>
+
+</div>
+</div>
+<a id="ga6dc9be16f5de1b06f0be3e23cd87436d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6dc9be16f5de1b06f0be3e23cd87436d">&#9670;&nbsp;</a></span>l2norm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ContainerType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt;ContainerType&gt; dg::l2norm </td>
+          <td>(</td>
+          <td class="paramtype">const ContainerType &amp;&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compute </p><p class="formulaDsp">
+\[ \sqrt{\sum_i x_i^2}\]
+</p>
+<p> using <code><a class="el" href="group__blas1.html#ga7b2aa636a0fe0c7d3298b9f869658919" title=" Binary reproducible Euclidean dot product between two vectors ">dg::blas1::dot</a></code>. </p>
+<p>The intention of this function is to used in the <code><a class="el" href="structdg_1_1_adaptive.html" title="Driver class for adaptive timestep integration. ">Adaptive</a></code> timestepping class. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Vector to take the norm of </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>sqrt(dg::blas1::dot(x,x))</code> </dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ContainerType</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> and <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. Among others<ul>
+<li><code> <a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193" title="Host Vector. ">dg::HVec</a> (serial), <a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a> (cuda / omp), <a class="el" href="group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a> (mpi + serial) or <a class="el" href="group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a> (mpi + cuda / omp) </code></li>
+<li><code> std::vector&lt;dg::DVec&gt; (vector of shared device vectors), std::array&lt;double, 4&gt; (array of 4 doubles)</code></li>
+<li><code> double (scalar)</code> and other primitive types ...</li>
+</ul>
+If there are several <code>ContainerTypes</code> in the argument list, then <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> must exist for all of them </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="index.html#dispatch">The Level 1 dispatch system</a> for a detailed explanation of our type dispatch system </dd></dl>
+
+</div>
+</div>
+<a id="ga9ae3e9b854050898f3bf5128b07c2875"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9ae3e9b854050898f3bf5128b07c2875">&#9670;&nbsp;</a></span>pi_control()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class value_type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">value_type dg::pi_control </td>
+          <td>(</td>
+          <td class="paramtype">value_type&#160;</td>
+          <td class="paramname"><em>dt_old</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">value_type&#160;</td>
+          <td class="paramname"><em>eps_0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">value_type&#160;</td>
+          <td class="paramname"><em>eps_1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">value_type&#160;</td>
+          <td class="paramname"><em>eps_2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>embedded_order</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>order</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><p class="formulaDsp">
+\[ h&#39;= h \epsilon_n^{-0.8/p}\epsilon_{n-1}^{0.31/p}\]
+</p>
+ </p>
+
+</div>
+</div>
+<a id="gab60fda586e101a8aeb69efa31c46805c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab60fda586e101a8aeb69efa31c46805c">&#9670;&nbsp;</a></span>pid_control()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class value_type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">value_type dg::pid_control </td>
+          <td>(</td>
+          <td class="paramtype">value_type&#160;</td>
+          <td class="paramname"><em>dt_old</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">value_type&#160;</td>
+          <td class="paramname"><em>eps_0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">value_type&#160;</td>
+          <td class="paramname"><em>eps_1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">value_type&#160;</td>
+          <td class="paramname"><em>eps_2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>embedded_order</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>order</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><p class="formulaDsp">
+\[ h&#39;= h \epsilon_n^{-0.58/p}\epsilon_{n-1}^{0.21/p}\epsilon_{n-2}^{-0.1/p}\]
+</p>
+ </p>
+
+</div>
+</div>
+<a id="ga1b3aa83f9b7e90dbbd3cdac88654e04b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1b3aa83f9b7e90dbbd3cdac88654e04b">&#9670;&nbsp;</a></span>stepperRK()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class RHS , class ContainerType &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void dg::stepperRK </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="structdg_1_1_converts_to_butcher_tableau.html">ConvertsToButcherTableau</a>&lt; <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt;&gt;&#160;</td>
+          <td class="paramname"><em>tableau</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">RHS &amp;&#160;</td>
           <td class="paramname"><em>rhs</em>, </td>
         </tr>
@@ -299,10 +846,9 @@ template&lt;unsigned s, class RHS , class ContainerType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Integrate differential equation with a stage s Runge-Kutta scheme and a fixed number of steps. </p>
+<p>Integrate differential equation with an explicit Runge-Kutta scheme and a fixed number of steps. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">s</td><td># of stages (1, 2, 3, 4, 6, 17)</td></tr>
     <tr><td class="paramname">RHS</td><td>The right hand side is a functor type with no return value (subroutine) of signature <code> void operator()(value_type, const ContainerType&amp;, ContainerType&amp;)</code> The first argument is the time, the second is the input vector, which the functor may <b>not</b> override, and the third is the output, i.e. y' = f(t, y) translates to f(t, y, y'). The two ContainerType arguments never alias each other in calls to the functor.</td></tr>
     <tr><td class="paramname">ContainerType</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> and <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. Among others<ul>
 <li><code> <a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193" title="Host Vector. ">dg::HVec</a> (serial), <a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a> (cuda / omp), <a class="el" href="group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a> (mpi + serial) or <a class="el" href="group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a> (mpi + cuda / omp) </code></li>
@@ -316,6 +862,7 @@ If there are several <code>ContainerTypes</code> in the argument list, then <cod
 <dl class="section see"><dt>See also</dt><dd>See <a class="el" href="index.html#dispatch">The Level 1 dispatch system</a> for a detailed explanation of our type dispatch system </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">tableau</td><td>Tableau, name or identifier that <code><a class="el" href="structdg_1_1_converts_to_butcher_tableau.html" title="Convert identifiers to their corresponding dg::ButcherTableau. ">ConvertsToButcherTableau</a></code> </td></tr>
     <tr><td class="paramname">rhs</td><td>The right-hand-side </td></tr>
     <tr><td class="paramname">t_begin</td><td>initial time </td></tr>
     <tr><td class="paramname">begin</td><td>initial condition </td></tr>
@@ -333,7 +880,7 @@ If there are several <code>ContainerTypes</code> in the argument list, then <cod
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

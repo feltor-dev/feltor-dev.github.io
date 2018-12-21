@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
-<title>ExBLAS: exblas Namespace Reference</title>
+<title>Extension: ExBLAS: exblas Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,9 +31,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">ExBLAS
+   <div id="projectname">Extension: ExBLAS
    </div>
-   <div id="projectbrief">feltor adaption of the exblas library</div>
+   <div id="projectbrief">Adaption of the exblas library (included in &quot;dg/algorithm.h&quot;)</div>
   </td>
  </tr>
  </tbody>
@@ -71,10 +71,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">exblas Namespace Reference</div>  </div>
 </div><!--header-->
@@ -91,28 +88,6 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespaceexblas_1_1gpu"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas_1_1gpu.html">gpu</a></td></tr>
 <tr class="memdesc:namespaceexblas_1_1gpu"><td class="mdescLeft">&#160;</td><td class="mdescRight">gpu (CUDA) versions of primitive functions <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionexblas_1_1udouble.html">udouble</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility union to display all bits of a double (using "type-punning")  <a href="unionexblas_1_1udouble.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a33a26be6853bc1125ea07a6311df4409"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#a33a26be6853bc1125ea07a6311df4409">Status</a> { <br />
-&#160;&#160;<a class="el" href="namespaceexblas.html#a33a26be6853bc1125ea07a6311df4409aa620d9b3018e3cf33182cc0a183c9a41">Exact</a>, 
-<a class="el" href="namespaceexblas.html#a33a26be6853bc1125ea07a6311df4409a8ccfa5d4276e891871ae86f31ceb47ec">Inexact</a>, 
-<a class="el" href="namespaceexblas.html#a33a26be6853bc1125ea07a6311df4409ac70a03ed98fa9b721febe34dbe2296db">MinusInfinity</a>, 
-<a class="el" href="namespaceexblas.html#a33a26be6853bc1125ea07a6311df4409a9a66cd9bdc0c9913ff24713153f36d15">PlusInfinity</a>, 
-<br />
-&#160;&#160;<a class="el" href="namespaceexblas.html#a33a26be6853bc1125ea07a6311df4409acf9491c26a08f7717dd463d11579f0da">Overflow</a>, 
-<a class="el" href="namespaceexblas.html#a33a26be6853bc1125ea07a6311df4409a2bc609c25879368122248182e791b686">sNaN</a>, 
-<a class="el" href="namespaceexblas.html#a33a26be6853bc1125ea07a6311df4409ac643e2c9d1c5d6e3dc58575fb5823948">qNaN</a>
-<br />
- }<tr class="memdesc:a33a26be6853bc1125ea07a6311df4409"><td class="mdescLeft">&#160;</td><td class="mdescRight">Characterizes the result of summation.  <a href="namespaceexblas.html#a33a26be6853bc1125ea07a6311df4409">More...</a><br /></td></tr>
-</td></tr>
-<tr class="separator:a33a26be6853bc1125ea07a6311df4409"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -146,78 +121,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ab4c1247c02e14edcae026d41b3f5c6fb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#ab4c1247c02e14edcae026d41b3f5c6fb">reduce_mpi_cpu</a> (unsigned num_superacc, int64_t *in, int64_t *out, MPI_Comm comm, MPI_Comm comm_mod, MPI_Comm comm_mod_reduce)</td></tr>
 <tr class="memdesc:ab4c1247c02e14edcae026d41b3f5c6fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">reduce a number of superaccumulators distributed among mpi processes  <a href="#ab4c1247c02e14edcae026d41b3f5c6fb">More...</a><br /></td></tr>
 <tr class="separator:ab4c1247c02e14edcae026d41b3f5c6fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a81808a49717819440744a3cc80c2f0a2"><td class="memItemLeft" align="right" valign="top"><a id="a81808a49717819440744a3cc80c2f0a2"></a>
-static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#a81808a49717819440744a3cc80c2f0a2">KRX</a> = 8</td></tr>
-<tr class="memdesc:a81808a49717819440744a3cc80c2f0a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">High-radix carry-save bits. <br /></td></tr>
-<tr class="separator:a81808a49717819440744a3cc80c2f0a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7155cf5cd239ccfc433456b86a0d1b3"><td class="memItemLeft" align="right" valign="top"><a id="ab7155cf5cd239ccfc433456b86a0d1b3"></a>
-static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#ab7155cf5cd239ccfc433456b86a0d1b3">DIGITS</a> = 64 - <a class="el" href="namespaceexblas.html#a81808a49717819440744a3cc80c2f0a2">KRX</a></td></tr>
-<tr class="memdesc:ab7155cf5cd239ccfc433456b86a0d1b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of nonoverlapping digits <br /></td></tr>
-<tr class="separator:ab7155cf5cd239ccfc433456b86a0d1b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8d2167b8bdbeec6e4209a4312c2afd4"><td class="memItemLeft" align="right" valign="top"><a id="aa8d2167b8bdbeec6e4209a4312c2afd4"></a>
-static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#aa8d2167b8bdbeec6e4209a4312c2afd4">F_WORDS</a> = 20</td></tr>
-<tr class="memdesc:aa8d2167b8bdbeec6e4209a4312c2afd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of uper exponent words (64bits) <br /></td></tr>
-<tr class="separator:aa8d2167b8bdbeec6e4209a4312c2afd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f0bf3b7fb9c704401f9f6d276d400f8"><td class="memItemLeft" align="right" valign="top"><a id="a0f0bf3b7fb9c704401f9f6d276d400f8"></a>
-static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#a0f0bf3b7fb9c704401f9f6d276d400f8">E_WORDS</a> = 19</td></tr>
-<tr class="memdesc:a0f0bf3b7fb9c704401f9f6d276d400f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of lower exponent words (64bits) <br /></td></tr>
-<tr class="separator:a0f0bf3b7fb9c704401f9f6d276d400f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac83bf3b1e58c63896dbe5cb3f6e55cd8"><td class="memItemLeft" align="right" valign="top"><a id="ac83bf3b1e58c63896dbe5cb3f6e55cd8"></a>
-static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#ac83bf3b1e58c63896dbe5cb3f6e55cd8">BIN_COUNT</a> = <a class="el" href="namespaceexblas.html#aa8d2167b8bdbeec6e4209a4312c2afd4">F_WORDS</a>+<a class="el" href="namespaceexblas.html#a0f0bf3b7fb9c704401f9f6d276d400f8">E_WORDS</a></td></tr>
-<tr class="memdesc:ac83bf3b1e58c63896dbe5cb3f6e55cd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">size of superaccumulator (in 64 bit units) <br /></td></tr>
-<tr class="separator:ac83bf3b1e58c63896dbe5cb3f6e55cd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac38e8f3644f78c72b6faebe50bcbe1bb"><td class="memItemLeft" align="right" valign="top"><a id="ac38e8f3644f78c72b6faebe50bcbe1bb"></a>
-static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#ac38e8f3644f78c72b6faebe50bcbe1bb">IMIN</a> = 0</td></tr>
-<tr class="memdesc:ac38e8f3644f78c72b6faebe50bcbe1bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">first index in a superaccumulator <br /></td></tr>
-<tr class="separator:ac38e8f3644f78c72b6faebe50bcbe1bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20d6da0425e24b08fbf52a86b8cc94af"><td class="memItemLeft" align="right" valign="top"><a id="a20d6da0425e24b08fbf52a86b8cc94af"></a>
-static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#a20d6da0425e24b08fbf52a86b8cc94af">IMAX</a> = <a class="el" href="namespaceexblas.html#ac83bf3b1e58c63896dbe5cb3f6e55cd8">BIN_COUNT</a>-1</td></tr>
-<tr class="memdesc:a20d6da0425e24b08fbf52a86b8cc94af"><td class="mdescLeft">&#160;</td><td class="mdescRight">last index in a superaccumulator <br /></td></tr>
-<tr class="separator:a20d6da0425e24b08fbf52a86b8cc94af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8850e70cb161d0677d9f50cae8d024b4"><td class="memItemLeft" align="right" valign="top"><a id="a8850e70cb161d0677d9f50cae8d024b4"></a>
-static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexblas.html#a8850e70cb161d0677d9f50cae8d024b4">DELTASCALE</a> = double(1ull &lt;&lt; DIGITS)</td></tr>
-<tr class="memdesc:a8850e70cb161d0677d9f50cae8d024b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assumes KRX&gt;0. <br /></td></tr>
-<tr class="separator:a8850e70cb161d0677d9f50cae8d024b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This is the namespace for all functions and classes defined and used in the exblas library. </p>
-</div><h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a33a26be6853bc1125ea07a6311df4409"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33a26be6853bc1125ea07a6311df4409">&#9670;&nbsp;</a></span>Status</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="namespaceexblas.html#a33a26be6853bc1125ea07a6311df4409">exblas::Status</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Characterizes the result of summation. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a33a26be6853bc1125ea07a6311df4409aa620d9b3018e3cf33182cc0a183c9a41"></a>Exact&#160;</td><td class="fielddoc"><p>Reproducible and accurate </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a33a26be6853bc1125ea07a6311df4409a8ccfa5d4276e891871ae86f31ceb47ec"></a>Inexact&#160;</td><td class="fielddoc"><p>non-accurate </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a33a26be6853bc1125ea07a6311df4409ac70a03ed98fa9b721febe34dbe2296db"></a>MinusInfinity&#160;</td><td class="fielddoc"><p>minus infinity </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a33a26be6853bc1125ea07a6311df4409a9a66cd9bdc0c9913ff24713153f36d15"></a>PlusInfinity&#160;</td><td class="fielddoc"><p>plus infinity </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a33a26be6853bc1125ea07a6311df4409acf9491c26a08f7717dd463d11579f0da"></a>Overflow&#160;</td><td class="fielddoc"><p>overflow occurred </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a33a26be6853bc1125ea07a6311df4409a2bc609c25879368122248182e791b686"></a>sNaN&#160;</td><td class="fielddoc"><p>not-a-number </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a33a26be6853bc1125ea07a6311df4409ac643e2c9d1c5d6e3dc58575fb5823948"></a>qNaN&#160;</td><td class="fielddoc"><p>not-a-number </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="af9ac3f6a557ba58156bb5d3d02b41758"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af9ac3f6a557ba58156bb5d3d02b41758">&#9670;&nbsp;</a></span>exdot_cpu() <span class="overload">[1/2]</span></h2>
 
@@ -274,7 +181,7 @@ template&lt;class PointerOrValue1 , class PointerOrValue2 , size_t NBFPE = 8&gt;
     <tr><td class="paramname">size</td><td>size N of the arrays to sum </td></tr>
     <tr><td class="paramname">x1_ptr</td><td>first array </td></tr>
     <tr><td class="paramname">x2_ptr</td><td>second array </td></tr>
-    <tr><td class="paramname">h_superacc</td><td>pointer to an array of 64 bit integers (the superaccumulator) in host memory with size at least <code><a class="el" href="namespaceexblas.html#ac83bf3b1e58c63896dbe5cb3f6e55cd8" title="size of superaccumulator (in 64 bit units) ">exblas::BIN_COUNT</a></code> (39) (contents are overwritten) </td></tr>
+    <tr><td class="paramname">h_superacc</td><td>pointer to an array of 64 bit integers (the superaccumulator) in host memory with size at least <code>exblas::BIN_COUNT</code> (39) (contents are overwritten) </td></tr>
   </table>
   </dd>
 </dl>
@@ -345,7 +252,7 @@ template&lt;class PointerOrValue1 , class PointerOrValue2 , class PointerOrValue
     <tr><td class="paramname">x1_ptr</td><td>first array </td></tr>
     <tr><td class="paramname">x2_ptr</td><td>second array </td></tr>
     <tr><td class="paramname">x3_ptr</td><td>third array </td></tr>
-    <tr><td class="paramname">h_superacc</td><td>pointer to an array of 64 bit integegers (the superaccumulator) in host memory with size at least <code><a class="el" href="namespaceexblas.html#ac83bf3b1e58c63896dbe5cb3f6e55cd8" title="size of superaccumulator (in 64 bit units) ">exblas::BIN_COUNT</a></code> (39) (contents are overwritten) </td></tr>
+    <tr><td class="paramname">h_superacc</td><td>pointer to an array of 64 bit integegers (the superaccumulator) in host memory with size at least <code>exblas::BIN_COUNT</code> (39) (contents are overwritten) </td></tr>
   </table>
   </dd>
 </dl>
@@ -409,7 +316,7 @@ template&lt;class PointerOrValue1 , class PointerOrValue2 , size_t NBFPE = 3&gt;
     <tr><td class="paramname">size</td><td>size N of the arrays to sum </td></tr>
     <tr><td class="paramname">x1_ptr</td><td>first array </td></tr>
     <tr><td class="paramname">x2_ptr</td><td>second array </td></tr>
-    <tr><td class="paramname">d_superacc</td><td>pointer to an array of 64 bit integers (the superaccumulator) in device memory with size at least <code><a class="el" href="namespaceexblas.html#ac83bf3b1e58c63896dbe5cb3f6e55cd8" title="size of superaccumulator (in 64 bit units) ">exblas::BIN_COUNT</a></code> (39) (contents are overwritten) </td></tr>
+    <tr><td class="paramname">d_superacc</td><td>pointer to an array of 64 bit integers (the superaccumulator) in device memory with size at least <code>exblas::BIN_COUNT</code> (39) (contents are overwritten) </td></tr>
   </table>
   </dd>
 </dl>
@@ -480,7 +387,7 @@ template&lt;class PointerOrValue1 , class PointerOrValue2 , class PointerOrValue
     <tr><td class="paramname">x1_ptr</td><td>first array </td></tr>
     <tr><td class="paramname">x2_ptr</td><td>second array </td></tr>
     <tr><td class="paramname">x3_ptr</td><td>third array </td></tr>
-    <tr><td class="paramname">d_superacc</td><td>pointer to an array of 64 bit integegers (the superaccumulator) in device memory with size at least <code><a class="el" href="namespaceexblas.html#ac83bf3b1e58c63896dbe5cb3f6e55cd8" title="size of superaccumulator (in 64 bit units) ">exblas::BIN_COUNT</a></code> (39) (contents are overwritten) </td></tr>
+    <tr><td class="paramname">d_superacc</td><td>pointer to an array of 64 bit integegers (the superaccumulator) in device memory with size at least <code>exblas::BIN_COUNT</code> (39) (contents are overwritten) </td></tr>
   </table>
   </dd>
 </dl>
@@ -544,7 +451,7 @@ template&lt;class PointerOrValue1 , class PointerOrValue2 , size_t NBFPE = 8&gt;
     <tr><td class="paramname">size</td><td>size N of the arrays to sum </td></tr>
     <tr><td class="paramname">x1_ptr</td><td>first array </td></tr>
     <tr><td class="paramname">x2_ptr</td><td>second array </td></tr>
-    <tr><td class="paramname">h_superacc</td><td>pointer to an array of 64 bit integers (the superaccumulator) in host memory with size at least <code><a class="el" href="namespaceexblas.html#ac83bf3b1e58c63896dbe5cb3f6e55cd8" title="size of superaccumulator (in 64 bit units) ">exblas::BIN_COUNT</a></code> (39) (contents are overwritten) </td></tr>
+    <tr><td class="paramname">h_superacc</td><td>pointer to an array of 64 bit integers (the superaccumulator) in host memory with size at least <code>exblas::BIN_COUNT</code> (39) (contents are overwritten) </td></tr>
   </table>
   </dd>
 </dl>
@@ -615,7 +522,7 @@ template&lt;class PointerOrValue1 , class PointerOrValue2 , class PointerOrValue
     <tr><td class="paramname">x1_ptr</td><td>first array </td></tr>
     <tr><td class="paramname">x2_ptr</td><td>second array </td></tr>
     <tr><td class="paramname">x3_ptr</td><td>third array </td></tr>
-    <tr><td class="paramname">h_superacc</td><td>pointer to an array of 64 bit integegers (the superaccumulator) in host memory with size at least <code><a class="el" href="namespaceexblas.html#ac83bf3b1e58c63896dbe5cb3f6e55cd8" title="size of superaccumulator (in 64 bit units) ">exblas::BIN_COUNT</a></code> (39) (contents are overwritten) </td></tr>
+    <tr><td class="paramname">h_superacc</td><td>pointer to an array of 64 bit integegers (the superaccumulator) in host memory with size at least <code>exblas::BIN_COUNT</code> (39) (contents are overwritten) </td></tr>
   </table>
   </dd>
 </dl>
@@ -666,7 +573,7 @@ template&lt;class PointerOrValue1 , class PointerOrValue2 , class PointerOrValue
 <p>This function can be used to partition communicators for the <code><a class="el" href="namespaceexblas.html#ab4c1247c02e14edcae026d41b3f5c6fb" title="reduce a number of superaccumulators distributed among mpi processes ">exblas::reduce_mpi_cpu</a></code> function. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">comm</td><td>the input communicator (unmodified) </td></tr>
+    <tr><td class="paramname">comm</td><td>the input communicator (unmodified, may not be <code>MPI_COMM_NULL</code>) </td></tr>
     <tr><td class="paramname">comm_mod</td><td>a subgroup of comm (comm is split) </td></tr>
     <tr><td class="paramname">comm_mod_reduce</td><td>a subgroup of comm, consists of all rank 0 processes in comm_mod </td></tr>
   </table>
@@ -739,8 +646,8 @@ template&lt;class PointerOrValue1 , class PointerOrValue2 , class PointerOrValue
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">num_superacc</td><td>number of Superaccumulators eaach process holds </td></tr>
-    <tr><td class="paramname">in</td><td>unnormalized input superaccumulators ( must be of size num_superacc*<code><a class="el" href="namespaceexblas.html#ac83bf3b1e58c63896dbe5cb3f6e55cd8" title="size of superaccumulator (in 64 bit units) ">exblas::BIN_COUNT</a></code>, allocated on the cpu) (read/write, undefined on out) </td></tr>
-    <tr><td class="paramname">out</td><td>each process contains the result on output( must be of size num_superacc*<code><a class="el" href="namespaceexblas.html#ac83bf3b1e58c63896dbe5cb3f6e55cd8" title="size of superaccumulator (in 64 bit units) ">exblas::BIN_COUNT</a></code>, allocated on the cpu) (write, may not alias in) </td></tr>
+    <tr><td class="paramname">in</td><td>unnormalized input superaccumulators ( must be of size num_superacc*<code>exblas::BIN_COUNT</code>, allocated on the cpu) (read/write, undefined on out) </td></tr>
+    <tr><td class="paramname">out</td><td>each process contains the result on output( must be of size num_superacc*<code>exblas::BIN_COUNT</code>, allocated on the cpu) (write, may not alias in) </td></tr>
     <tr><td class="paramname">comm</td><td>The complete MPI communicator </td></tr>
     <tr><td class="paramname">comm_mod</td><td>This is comm modulo 128 ( or any other number &lt;256) </td></tr>
     <tr><td class="paramname">comm_mod_reduce</td><td>This is the communicator consisting of all rank 0 processes in comm_mod, may be <code>MPI_COMM_NULL</code> </td></tr>

@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -99,6 +99,9 @@ $(document).ready(function(){initNavTree('functions_b.html','');});
 <div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
 
 <h3><a id="index_b"></a>- b -</h3><ul>
+<li>b()
+: <a class="el" href="structdg_1_1_butcher_tableau.html#abc9151ce94f584eee65d4fedecffe9ad">dg::ButcherTableau&lt; real_type &gt;</a>
+</li>
 <li>backward()
 : <a class="el" href="classdg_1_1_d_l_t.html#adc8c0d2db069652cf10fc95f2d74cd74">dg::DLT&lt; real_type &gt;</a>
 </li>
@@ -131,17 +134,34 @@ $(document).ready(function(){initNavTree('functions_b.html','');});
 , <a class="el" href="structdg_1_1a_real_topology3d.html#a40a6674b9ea9103d65029eb9d106a78e">dg::aRealTopology3d&lt; real_type &gt;</a>
 , <a class="el" href="structdg_1_1a_real_topology_x3d.html#adff7b858f00a703a2f11d5cd854e438b">dg::aRealTopologyX3d&lt; real_type &gt;</a>
 </li>
+<li>begin()
+: <a class="el" href="structdg_1_1_view.html#a96671c17c1c3203a76a00c1aca9cd0a5">dg::View&lt; ThrustVector &gt;</a>
+</li>
 <li>BijectiveComm()
-: <a class="el" href="structdg_1_1_bijective_comm.html#ac2caf023a7c9fd5c743f6f1d1d7fa04c">dg::BijectiveComm&lt; Index, Vector &gt;</a>
+: <a class="el" href="structdg_1_1_bijective_comm.html#a6ae489e5157a1aae7b07b4871d715ea4">dg::BijectiveComm&lt; Index, Vector &gt;</a>
 </li>
 <li>binwidth()
 : <a class="el" href="structdg_1_1_histogram.html#a41da837ab831cd709ccb49390163b407">dg::Histogram&lt; container &gt;</a>
 </li>
 <li>blocks_per_line
 : <a class="el" href="structdg_1_1_ell_sparse_block_mat.html#a49d70e8ce88ac45a7db26c1375550834">dg::EllSparseBlockMat&lt; value_type &gt;</a>
+, <a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html#a6368bd585349eef8400172e45e826a13">dg::EllSparseBlockMatDevice&lt; value_type &gt;</a>
+</li>
+<li>bt()
+: <a class="el" href="structdg_1_1_butcher_tableau.html#a10b7e1b192ceb514db307af8ce8eec91">dg::ButcherTableau&lt; real_type &gt;</a>
 </li>
 <li>Buffer()
 : <a class="el" href="structdg_1_1_buffer.html#a0cc9848bc155bebc044924b580e3010f">dg::Buffer&lt; T &gt;</a>
+</li>
+<li>buffer_size()
+: <a class="el" href="structdg_1_1a_communicator.html#a7c0b8733751b2b82449a54676e4f0397">dg::aCommunicator&lt; LocalContainer &gt;</a>
+, <a class="el" href="structdg_1_1_nearest_neighbor_comm.html#a0304036df7739faf176f8dc62d633c7c">dg::NearestNeighborComm&lt; Index, Buffer, Vector &gt;</a>
+</li>
+<li>buffer_type
+: <a class="el" href="structdg_1_1_nearest_neighbor_comm.html#aca21ce71af2867c5b4424f3aedf2ad91">dg::NearestNeighborComm&lt; Index, Buffer, Vector &gt;</a>
+</li>
+<li>ButcherTableau()
+: <a class="el" href="structdg_1_1_butcher_tableau.html#a72fa34bde9a17f925a56b5b5e8f44881">dg::ButcherTableau&lt; real_type &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -149,7 +169,7 @@ $(document).ready(function(){initNavTree('functions_b.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:50 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

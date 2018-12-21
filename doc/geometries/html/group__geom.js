@@ -22,6 +22,7 @@ var group__geom =
     ] ],
     [ "Parameters", "structdg_1_1geo_1_1solovev_1_1_parameters.html", [
       [ "display", "structdg_1_1geo_1_1solovev_1_1_parameters.html#afe2b2a26ae9434ab6909789d813b7cd4", null ],
+      [ "hasXpoint", "structdg_1_1geo_1_1solovev_1_1_parameters.html#ab77a9350c78104f2879b2dbf6b3f9bda", null ],
       [ "A", "structdg_1_1geo_1_1solovev_1_1_parameters.html#a36af63065c1d6b6e54571d655c7e07da", null ],
       [ "a", "structdg_1_1geo_1_1solovev_1_1_parameters.html#a245bcf30102133b8faa508dcf4a88481", null ],
       [ "alpha", "structdg_1_1geo_1_1solovev_1_1_parameters.html#a88671d55077cc955eea851bc5187d567", null ],
@@ -37,9 +38,9 @@ var group__geom =
       [ "rk4eps", "structdg_1_1geo_1_1solovev_1_1_parameters.html#a48a2b3f947a46c6ed98c70f9384b93c6", null ],
       [ "triangularity", "structdg_1_1geo_1_1solovev_1_1_parameters.html#af3fa29ba6451fb6334ac7f268f271025", null ]
     ] ],
-    [ "createCircularField", "group__geom.html#gaa6d78afe4f306e34d509934f8f79421a", null ],
-    [ "createGuentherField", "group__geom.html#gad54aa312242b5245cbbf9cd4b5dfe06d", null ],
-    [ "createSolovevField", "group__geom.html#gae3f70e88fd15dd404643f4c5941401c7", null ],
-    [ "createTaylorField", "group__geom.html#ga7d6cc4a15d5430ff5d4aad81fb7098d9", null ],
-    [ "createToroidalField", "group__geom.html#ga24c4268469ccbabde18f7eb7ab124ac6", null ]
+    [ "createCircularField", "group__geom.html#ga16471692288263e2076b897dae16799f", null ],
+    [ "createGuentherField", "group__geom.html#ga70edeb1a555a6a2b05ac0485329fdcac", null ],
+    [ "createSolovevField", "group__geom.html#gaadcb5ef7126a3bc41beed60c431f9368", null ],
+    [ "createTaylorField", "group__geom.html#ga27e5bae45b284ee051039ca97d7c0edb", null ],
+    [ "createToroidalField", "group__geom.html#ga2d9ca2e61302113e806b1d05d6b3db7e", null ]
 ];

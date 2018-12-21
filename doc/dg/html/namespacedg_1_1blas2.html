@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('namespacedg_1_1blas2.html','');});
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">dg::blas2 Namespace Reference<div class="ingroups"><a class="el" href="group__backend.html">Level 1: Vectors, Matrices and basic operations</a> &raquo; <a class="el" href="group__blas.html">Basic Linear Algebra Subroutines</a> &raquo; <a class="el" href="group__blas2.html">BLAS level 2 routines</a></div></div>  </div>
+<div class="title">dg::blas2 Namespace Reference<div class="ingroups"><a class="el" href="group__backend.html">Level 1: Vectors, Matrices and basic operations</a> &raquo; <a class="el" href="group__blas.html">Basic container independent subroutines</a> &raquo; <a class="el" href="group__blas2.html">BLAS level 2 routines: Matrix-Vector</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -108,6 +108,14 @@ $(document).ready(function(){initNavTree('namespacedg_1_1blas2.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:gac3840941bd2bb1d64c6ca3fef1f1b960"><td class="memTemplParams" colspan="2">template&lt;class MatrixType , class ContainerType1 , class ContainerType2 &gt; </td></tr>
+<tr class="memitem:gac3840941bd2bb1d64c6ca3fef1f1b960"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas2.html#gac3840941bd2bb1d64c6ca3fef1f1b960">symv</a> (MatrixType &amp;&amp;M, const ContainerType1 &amp;x, ContainerType2 &amp;y)</td></tr>
+<tr class="memdesc:gac3840941bd2bb1d64c6ca3fef1f1b960"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( y = M x\)  <a href="group__blas2.html#gac3840941bd2bb1d64c6ca3fef1f1b960">More...</a><br /></td></tr>
+<tr class="separator:gac3840941bd2bb1d64c6ca3fef1f1b960"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9bd2015d31362b25d61110f91cf3b0b9"><td class="memTemplParams" colspan="2">template&lt;class MatrixType , class ContainerType1 , class ContainerType2 &gt; </td></tr>
+<tr class="memitem:ga9bd2015d31362b25d61110f91cf3b0b9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas2.html#ga9bd2015d31362b25d61110f91cf3b0b9">symv</a> (<a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType1 &gt; alpha, MatrixType &amp;&amp;M, const ContainerType1 &amp;x, <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType1 &gt; beta, ContainerType2 &amp;y)</td></tr>
+<tr class="memdesc:ga9bd2015d31362b25d61110f91cf3b0b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( y = \alpha M x + \beta y\)  <a href="group__blas2.html#ga9bd2015d31362b25d61110f91cf3b0b9">More...</a><br /></td></tr>
+<tr class="separator:ga9bd2015d31362b25d61110f91cf3b0b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaaafba91956e948b0ea53f30889a3c20d"><td class="memTemplParams" colspan="2">template&lt;class ContainerType1 , class MatrixType , class ContainerType2 &gt; </td></tr>
 <tr class="memitem:gaaafba91956e948b0ea53f30889a3c20d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; MatrixType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas2.html#gaaafba91956e948b0ea53f30889a3c20d">dot</a> (const ContainerType1 &amp;x, const MatrixType &amp;m, const ContainerType2 &amp;y)</td></tr>
 <tr class="memdesc:gaaafba91956e948b0ea53f30889a3c20d"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( x^T M y\); Binary reproducible general dot product  <a href="group__blas2.html#gaaafba91956e948b0ea53f30889a3c20d">More...</a><br /></td></tr>
@@ -116,14 +124,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga33daee0a61293b14d7bbe5cf901993d1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; MatrixType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas2.html#ga33daee0a61293b14d7bbe5cf901993d1">dot</a> (const MatrixType &amp;m, const ContainerType &amp;x)</td></tr>
 <tr class="memdesc:ga33daee0a61293b14d7bbe5cf901993d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( x^T M x\); Binary reproducible general dot product  <a href="group__blas2.html#ga33daee0a61293b14d7bbe5cf901993d1">More...</a><br /></td></tr>
 <tr class="separator:ga33daee0a61293b14d7bbe5cf901993d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9bd2015d31362b25d61110f91cf3b0b9"><td class="memTemplParams" colspan="2">template&lt;class MatrixType , class ContainerType1 , class ContainerType2 &gt; </td></tr>
-<tr class="memitem:ga9bd2015d31362b25d61110f91cf3b0b9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas2.html#ga9bd2015d31362b25d61110f91cf3b0b9">symv</a> (<a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType1 &gt; alpha, MatrixType &amp;&amp;M, const ContainerType1 &amp;x, <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType1 &gt; beta, ContainerType2 &amp;y)</td></tr>
-<tr class="memdesc:ga9bd2015d31362b25d61110f91cf3b0b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( y = \alpha M x + \beta y\)  <a href="group__blas2.html#ga9bd2015d31362b25d61110f91cf3b0b9">More...</a><br /></td></tr>
-<tr class="separator:ga9bd2015d31362b25d61110f91cf3b0b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac3840941bd2bb1d64c6ca3fef1f1b960"><td class="memTemplParams" colspan="2">template&lt;class MatrixType , class ContainerType1 , class ContainerType2 &gt; </td></tr>
-<tr class="memitem:gac3840941bd2bb1d64c6ca3fef1f1b960"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas2.html#gac3840941bd2bb1d64c6ca3fef1f1b960">symv</a> (MatrixType &amp;&amp;M, const ContainerType1 &amp;x, ContainerType2 &amp;y)</td></tr>
-<tr class="memdesc:gac3840941bd2bb1d64c6ca3fef1f1b960"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( y = M x\)  <a href="group__blas2.html#gac3840941bd2bb1d64c6ca3fef1f1b960">More...</a><br /></td></tr>
-<tr class="separator:gac3840941bd2bb1d64c6ca3fef1f1b960"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1b7e3b58697b6e93169eebbda63f3ed3"><td class="memTemplParams" colspan="2">template&lt;class MatrixType , class ContainerType1 , class ContainerType2 &gt; </td></tr>
 <tr class="memitem:ga1b7e3b58697b6e93169eebbda63f3ed3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas2.html#ga1b7e3b58697b6e93169eebbda63f3ed3">gemv</a> (<a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType1 &gt; alpha, MatrixType &amp;&amp;M, const ContainerType1 &amp;x, <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType1 &gt; beta, ContainerType2 &amp;y)</td></tr>
 <tr class="memdesc:ga1b7e3b58697b6e93169eebbda63f3ed3"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( y = \alpha M x + \beta y \); (alias for symv)  <a href="group__blas2.html#ga1b7e3b58697b6e93169eebbda63f3ed3">More...</a><br /></td></tr>
@@ -146,7 +146,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="namespacedg_1_1blas2.html">blas2</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:50 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

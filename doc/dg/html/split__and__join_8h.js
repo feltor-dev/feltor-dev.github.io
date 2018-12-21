@@ -1,7 +1,8 @@
 var split__and__join_8h =
 [
-    [ "join", "split__and__join_8h.html#ga152f3e19ab6de8779795ebbac5264d22", null ],
-    [ "join", "split__and__join_8h.html#ga218937241fac17d1c7a8bcff2030e525", null ],
-    [ "split", "split__and__join_8h.html#gad248d03c048ec1f0514d4da553779cf5", null ],
-    [ "split", "split__and__join_8h.html#gac424c8a0b8a098cb56380424cdf4b345", null ]
+    [ "get_mpi_view_type", "split__and__join_8h.html#acb7a5e956e97daec026c30a79ab6d5d8", null ],
+    [ "split", "split__and__join_8h.html#ga4275df839eb577fb71d48017170d0e67", null ],
+    [ "split", "split__and__join_8h.html#a08316df93eaabd70bd006ca6ad4a13f0", null ],
+    [ "split", "split__and__join_8h.html#a16d3fd96a974a4e2aa921b60e04263fc", null ],
+    [ "split", "split__and__join_8h.html#a67700f4f3546f7b2db7748106d89ba4b", null ]
 ];

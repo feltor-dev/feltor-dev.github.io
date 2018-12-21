@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -99,26 +99,25 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 <div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
 
 <h3><a id="index_c"></a>- c -</h3><ul>
+<li>c()
+: <a class="el" href="structdg_1_1_butcher_tableau.html#a08d1ddf8e542ad7867a2fa675aaad26e">dg::ButcherTableau&lt; real_type &gt;</a>
+</li>
 <li>Cauchy()
 : <a class="el" href="structdg_1_1_cauchy.html#a508cb8140a3505aeeac4af782e779d50">dg::Cauchy</a>
+</li>
+<li>cbegin()
+: <a class="el" href="structdg_1_1_view.html#a7e35d7aeb63af64f7495fbb5ac09731e">dg::View&lt; ThrustVector &gt;</a>
+</li>
+<li>cend()
+: <a class="el" href="structdg_1_1_view.html#aad7433f5c7ec23c0c305dbea3e8e2d15">dg::View&lt; ThrustVector &gt;</a>
 </li>
 <li>CG()
 : <a class="el" href="classdg_1_1_c_g.html#a52f6463497a82386d8e44ae5483ce946">dg::CG&lt; ContainerType &gt;</a>
 </li>
 <li>chi()
-: <a class="el" href="structdg_1_1_helmholtz2.html#ad61b2c14e667ba4a39f27310fe172fc3">dg::Helmholtz2&lt; Geometry, Matrix, container &gt;</a>
-, <a class="el" href="structdg_1_1_helmholtz.html#adb81588da70e542906b4ea9221ac18fc">dg::Helmholtz&lt; Geometry, Matrix, container &gt;</a>
-</li>
-<li>CholeskyTensor()
-: <a class="el" href="structdg_1_1_cholesky_tensor.html#a1491f97ae8281d7018a093f3e928e098">dg::CholeskyTensor&lt; ContainerType &gt;</a>
-</li>
-<li>clear()
-: <a class="el" href="structdg_1_1_clone_ptr.html#a54641291df1c52ad84136398542dadb9">dg::ClonePtr&lt; cloneable &gt;</a>
-, <a class="el" href="structdg_1_1_sparse_element.html#a15843a21781c10499116e35c71a261c3">dg::SparseElement&lt; T &gt;</a>
-, <a class="el" href="structdg_1_1_sparse_tensor.html#a1d5cae3091a4d2cba5bfc988c10397cb">dg::SparseTensor&lt; T &gt;</a>
-</li>
-<li>clear_unused_values()
-: <a class="el" href="structdg_1_1_sparse_tensor.html#aae504809640ec3d3dc202e66ab786e79">dg::SparseTensor&lt; T &gt;</a>
+: <a class="el" href="structdg_1_1_helmholtz2.html#a835d1c25a476791395b21368b8dd315c">dg::Helmholtz2&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_helmholtz3d.html#a0d57cc4d0ce7c5b1214be18ac2cc4d51">dg::Helmholtz3d&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_helmholtz.html#a3fed0183ddba0121a3838181479ab2d1">dg::Helmholtz&lt; Geometry, Matrix, Container &gt;</a>
 </li>
 <li>clone()
 : <a class="el" href="structdg_1_1a_communicator.html#a08f287b55eb703e29f9f17fc128205ef">dg::aCommunicator&lt; LocalContainer &gt;</a>
@@ -132,8 +131,8 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 , <a class="el" href="structdg_1_1a_real_product_m_p_i_geometry3d.html#a99f9bde165498322c7c397214a6d9298">dg::aRealProductMPIGeometry3d&lt; real_type &gt;</a>
 , <a class="el" href="structdg_1_1a_real_refinement1d.html#ab5d05aee92cc5a1a33f10174cd34de31">dg::aRealRefinement1d&lt; real_type &gt;</a>
 , <a class="el" href="structdg_1_1a_real_refinement_x2d.html#a35913d85441fcaa41296e1fa61e7c76d">dg::aRealRefinementX2d&lt; real_type &gt;</a>
-, <a class="el" href="structdg_1_1_bijective_comm.html#ad9a309629c010ef6c629f09d50a8d4d6">dg::BijectiveComm&lt; Index, Vector &gt;</a>
-, <a class="el" href="structdg_1_1_general_comm.html#a4936832cf4eae4f09c85e15c4301e050">dg::GeneralComm&lt; Index, Vector &gt;</a>
+, <a class="el" href="structdg_1_1_bijective_comm.html#aba5ee2b71fcc57f5e4412e5cb01bc859">dg::BijectiveComm&lt; Index, Vector &gt;</a>
+, <a class="el" href="structdg_1_1_general_comm.html#a54756d7f20d5c5e4aacb4bd0f5f060df">dg::GeneralComm&lt; Index, Vector &gt;</a>
 , <a class="el" href="structdg_1_1_real_cartesian_grid2d.html#a8cb629986672f0735e7bc4140f58cc9d">dg::RealCartesianGrid2d&lt; real_type &gt;</a>
 , <a class="el" href="structdg_1_1_real_cartesian_grid3d.html#acdf686962dd0aa0e7e24a4c7949f3335">dg::RealCartesianGrid3d&lt; real_type &gt;</a>
 , <a class="el" href="structdg_1_1_real_cartesian_grid_x2d.html#a7eb9fdb89e7efb56096167739f1f2907">dg::RealCartesianGridX2d&lt; real_type &gt;</a>
@@ -153,26 +152,27 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 , <a class="el" href="structdg_1_1_real_identity_refinement.html#ac7c8a4ad8d37f3a62a5dcb29791ddadd">dg::RealIdentityRefinement&lt; real_type &gt;</a>
 , <a class="el" href="structdg_1_1_real_identity_x_refinement.html#a29889845e8f0aee625c455455fdcc14e">dg::RealIdentityXRefinement&lt; real_type &gt;</a>
 , <a class="el" href="structdg_1_1_real_linear_refinement.html#a8a511999d3452811d3513275a95846bd">dg::RealLinearRefinement&lt; real_type &gt;</a>
-, <a class="el" href="structdg_1_1_surjective_comm.html#a40da180c2b7d5d3a2355f19f1381885a">dg::SurjectiveComm&lt; Index, Vector &gt;</a>
+, <a class="el" href="structdg_1_1_surjective_comm.html#ab81cbf7211aafe2fd0cb3d9db3b7ea0a">dg::SurjectiveComm&lt; Index, Vector &gt;</a>
 </li>
 <li>ClonePtr()
-: <a class="el" href="structdg_1_1_clone_ptr.html#aedaac1678cd61e8d9c70cbdbf7aea559">dg::ClonePtr&lt; cloneable &gt;</a>
+: <a class="el" href="structdg_1_1_clone_ptr.html#aa6de7af4345b06324f9ca10a51113dc9">dg::ClonePtr&lt; Cloneable &gt;</a>
 </li>
 <li>collective()
 : <a class="el" href="structdg_1_1_m_p_i_dist_mat.html#aae90f803eb3a199ba64f205a83e54cc8">dg::MPIDistMat&lt; LocalMatrix, Collective &gt;</a>
 , <a class="el" href="structdg_1_1_row_col_dist_mat.html#ab70ee973dfe83d2ada2133f24a851c83">dg::RowColDistMat&lt; LocalMatrixInner, LocalMatrixOuter, Collective &gt;</a>
 </li>
 <li>cols_idx
-: <a class="el" href="structdg_1_1_coo_sparse_block_mat.html#afe6aef39315e35ed975eb7d1f4f1201e">dg::CooSparseBlockMat&lt; value_type &gt;</a>
-, <a class="el" href="structdg_1_1_coo_sparse_block_mat_device.html#a58a0e16fcee98327445638faced63857">dg::CooSparseBlockMatDevice&lt; value_type &gt;</a>
-, <a class="el" href="structdg_1_1_ell_sparse_block_mat.html#a252ee653004c5f47c96452924dde056f">dg::EllSparseBlockMat&lt; value_type &gt;</a>
+: <a class="el" href="structdg_1_1_coo_sparse_block_mat.html#ae692b6fd313470e6c4cd849a069ba3d2">dg::CooSparseBlockMat&lt; value_type &gt;</a>
+, <a class="el" href="structdg_1_1_coo_sparse_block_mat_device.html#a6a02b88a24c003ea4e0f1f6302fed780">dg::CooSparseBlockMatDevice&lt; value_type &gt;</a>
+, <a class="el" href="structdg_1_1_ell_sparse_block_mat.html#a9cae2f1171d04d37513a7d1685604dcf">dg::EllSparseBlockMat&lt; value_type &gt;</a>
+, <a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html#a541a42344486e7463a09e6ce4a3b5af4">dg::EllSparseBlockMatDevice&lt; value_type &gt;</a>
 </li>
 <li>communicator()
 : <a class="el" href="structdg_1_1a_communicator.html#acc738661d96a4d926541c14fd28723c6">dg::aCommunicator&lt; LocalContainer &gt;</a>
 , <a class="el" href="structdg_1_1a_real_m_p_i_topology2d.html#aae6c74dc4b243d6506cceaeb9151085f">dg::aRealMPITopology2d&lt; real_type &gt;</a>
 , <a class="el" href="structdg_1_1a_real_m_p_i_topology3d.html#a51b172bcc25af8c1bd6e5c9a4caa691e">dg::aRealMPITopology3d&lt; real_type &gt;</a>
 , <a class="el" href="structdg_1_1_m_p_i___vector.html#aab440e329ae64ae5261a5c7fd313ab19">dg::MPI_Vector&lt; container &gt;</a>
-, <a class="el" href="structdg_1_1_nearest_neighbor_comm.html#ac12e6edc549b18c0ec7cd05c37d0dd3a">dg::NearestNeighborComm&lt; Index, Vector &gt;</a>
+, <a class="el" href="structdg_1_1_nearest_neighbor_comm.html#a5a3cd554cb8023482bce926157ad74b0">dg::NearestNeighborComm&lt; Index, Buffer, Vector &gt;</a>
 </li>
 <li>communicator_mod()
 : <a class="el" href="structdg_1_1_m_p_i___vector.html#a888b92389a999dbbe0f6151fa657d3b9">dg::MPI_Vector&lt; container &gt;</a>
@@ -181,30 +181,65 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 : <a class="el" href="structdg_1_1_m_p_i___vector.html#ab0d4fab5307f188d3ac9256e45e54646">dg::MPI_Vector&lt; container &gt;</a>
 </li>
 <li>Composite()
-: <a class="el" href="structdg_1_1_composite.html#af913961fbb4b1cd76b473da03a273021">dg::Composite&lt; Matrix &gt;</a>
+: <a class="el" href="structdg_1_1_composite.html#a5f0439e353e3571a36e2311420a6b8ef">dg::Composite&lt; Matrix &gt;</a>
 </li>
 <li>compute_rhs()
-: <a class="el" href="classdg_1_1_refined_elliptic.html#a12f50a889b2e48d1afc01e77f6734abb">dg::RefinedElliptic&lt; Geometry, IMatrix, Matrix, container &gt;</a>
+: <a class="el" href="classdg_1_1_refined_elliptic.html#ae4f90ec42be50b32dae584b8943f2fe9">dg::RefinedElliptic&lt; Geometry, IMatrix, Matrix, Container &gt;</a>
+</li>
+<li>const_iterator
+: <a class="el" href="structdg_1_1_view.html#a603eadfac959a4b0f66da90094fd1d74">dg::View&lt; ThrustVector &gt;</a>
+</li>
+<li>const_pointer
+: <a class="el" href="structdg_1_1_view.html#ac833e3989049b120016d7f0f85aa66a1">dg::View&lt; ThrustVector &gt;</a>
+</li>
+<li>const_pointer_type
+: <a class="el" href="structdg_1_1_nearest_neighbor_comm.html#abf727a5b8915ffad2ad814d185e417c5">dg::NearestNeighborComm&lt; Index, Buffer, Vector &gt;</a>
 </li>
 <li>CONSTANT()
 : <a class="el" href="structdg_1_1_c_o_n_s_t_a_n_t.html#ae8096ed918793f4de9c56cb7d39baa98">dg::CONSTANT</a>
 </li>
 <li>construct()
-: <a class="el" href="structdg_1_1_a_b.html#af8faf8cdfcd2bbf37346d44f81a4e134">dg::AB&lt; k, ContainerType &gt;</a>
+: <a class="el" href="structdg_1_1_adams_bashforth.html#ae53b8de9bf4329f7505da26e3c0027db">dg::AdamsBashforth&lt; ContainerType &gt;</a>
+, <a class="el" href="structdg_1_1_a_r_k_step.html#a1c5edac448897ec6b8b71cd496dfe717">dg::ARKStep&lt; ContainerType, SolverType &gt;</a>
 , <a class="el" href="classdg_1_1_c_g.html#aaf8569c62fab3c585b9e3f94fc12f5cc">dg::CG&lt; ContainerType &gt;</a>
-, <a class="el" href="classdg_1_1_elliptic.html#a82875ed9346187989d5c2f4ae1aee615">dg::Elliptic&lt; Geometry, Matrix, container &gt;</a>
-, <a class="el" href="structdg_1_1_helmholtz2.html#a9bd8e3fa774a7dd865ef87aa1cfb8a7e">dg::Helmholtz2&lt; Geometry, Matrix, container &gt;</a>
-, <a class="el" href="structdg_1_1_helmholtz.html#a11998bdace133b5680e8eb62f81d05cf">dg::Helmholtz&lt; Geometry, Matrix, container &gt;</a>
+, <a class="el" href="classdg_1_1_elliptic3d.html#a6d57c72f58e09b36ecbc692f4926abf4">dg::Elliptic3d&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="classdg_1_1_elliptic.html#a8db8b3caeb3194d6fb456d6b029a8225">dg::Elliptic&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_e_r_k_step.html#ace314e006d67d8b2bab053b4d37e5cd7">dg::ERKStep&lt; ContainerType &gt;</a>
+, <a class="el" href="structdg_1_1_helmholtz2.html#a34c0975f36c9ed183ff737ad128feb61">dg::Helmholtz2&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_helmholtz3d.html#a20a5a314c52672f3b2bac3baed7f8797">dg::Helmholtz3d&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_helmholtz.html#adabc88e10bf72d3b6818ce45f6d42c06">dg::Helmholtz&lt; Geometry, Matrix, Container &gt;</a>
 , <a class="el" href="structdg_1_1_invert.html#aaf69eecf9a6e93105dc0488dac5cb6cd">dg::Invert&lt; ContainerType &gt;</a>
-, <a class="el" href="structdg_1_1_karniadakis.html#a245f3fce2285a61607078db1e1ee9549">dg::Karniadakis&lt; ContainerType &gt;</a>
-, <a class="el" href="structdg_1_1_r_k.html#aaf25ba6332995423600b55d3eb1f35bf">dg::RK&lt; s, ContainerType &gt;</a>
-, <a class="el" href="structdg_1_1_r_k__opt.html#aaa6e071366b07d7fa7700ab05a2546fb">dg::RK_opt&lt; s, ContainerType &gt;</a>
-, <a class="el" href="structdg_1_1_s_i_r_k.html#a8ae2575fc6092264c11fab9d6d3f4e87">dg::SIRK&lt; ContainerType &gt;</a>
+, <a class="el" href="structdg_1_1_karniadakis.html#af5a73be7840584f1c3c8ec4cb90b47c8">dg::Karniadakis&lt; ContainerType, SolverType &gt;</a>
+, <a class="el" href="structdg_1_1_multigrid_c_g2d.html#a57371021bd45a3a8e8de3d39d8ea8876">dg::MultigridCG2d&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_multi_matrix.html#adb17118604152c1851e80f524d491952">dg::MultiMatrix&lt; MatrixType, ContainerType &gt;</a>
+, <a class="el" href="structdg_1_1_runge_kutta.html#a5516ce0fa8f8e3217c9bf4eb1bf38e7a">dg::RungeKutta&lt; ContainerType &gt;</a>
+, <a class="el" href="structdg_1_1_sparse_tensor.html#a092437fae121aafca6d75cdc16f059d1">dg::SparseTensor&lt; container &gt;</a>
+, <a class="el" href="structdg_1_1_view.html#aac16426643de19452a940cd57cc19475">dg::View&lt; ThrustVector &gt;</a>
 </li>
 <li>container_type
-: <a class="el" href="structdg_1_1a_communicator.html#acf1b0599056bd3f22b374dcde9b1f213">dg::aCommunicator&lt; LocalContainer &gt;</a>
+: <a class="el" href="structdg_1_1a_communicator.html#a5edbb00e9845d00160d9aa75c9bd80da">dg::aCommunicator&lt; LocalContainer &gt;</a>
+, <a class="el" href="structdg_1_1_adams_bashforth.html#a1a2414c0f422719e435fcedb885faeec">dg::AdamsBashforth&lt; ContainerType &gt;</a>
+, <a class="el" href="structdg_1_1_adaptive.html#a9b0066793e3a3e9d5159da5c12dfb4b3">dg::Adaptive&lt; Stepper &gt;</a>
+, <a class="el" href="structdg_1_1_arakawa_x.html#a64303e59b909052ed5e2ee7a069baeb6">dg::ArakawaX&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_a_r_k_step.html#a2f8f1972d5cbb59f65adadb14163c48c">dg::ARKStep&lt; ContainerType, SolverType &gt;</a>
+, <a class="el" href="structdg_1_1_average.html#aaa16f1c805c79cb9864688ebdfad6ccf">dg::Average&lt; ContainerType &gt;</a>
+, <a class="el" href="classdg_1_1_c_g.html#a14fb1e36681ed536bbe769957338af16">dg::CG&lt; ContainerType &gt;</a>
+, <a class="el" href="structdg_1_1_default_solver.html#a198cee7128b283b9d1e270e8a36cf17e">dg::DefaultSolver&lt; ContainerType &gt;</a>
+, <a class="el" href="classdg_1_1_elliptic3d.html#ad305e7aefbb046b779873f91cf407993">dg::Elliptic3d&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="classdg_1_1_elliptic.html#a150f6366e58f3a46bea317f5ff3569eb">dg::Elliptic&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_e_r_k_step.html#a3e470750eeab8a05d089bae909582427">dg::ERKStep&lt; ContainerType &gt;</a>
+, <a class="el" href="structdg_1_1_extrapolation.html#a9569336bf7df69a10110a39f7204babe">dg::Extrapolation&lt; ContainerType &gt;</a>
+, <a class="el" href="structdg_1_1_helmholtz2.html#aae3689ba22fd75ddcb07ff01b256cf07">dg::Helmholtz2&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_helmholtz3d.html#aedbd778c183033aec2dd4b1a38671b82">dg::Helmholtz3d&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_helmholtz.html#a9991534c71b96e4a3caf94214523b661">dg::Helmholtz&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_karniadakis.html#a354eb528d7f7759ae89d04c6151412ac">dg::Karniadakis&lt; ContainerType, SolverType &gt;</a>
 , <a class="el" href="structdg_1_1_m_p_i___vector.html#ad42ce5571b198915c6b5c2eb9033ceb3">dg::MPI_Vector&lt; container &gt;</a>
-, <a class="el" href="structdg_1_1_nearest_neighbor_comm.html#a4484a5c5c781ed356d2d38ecc800ddcf">dg::NearestNeighborComm&lt; Index, Vector &gt;</a>
+, <a class="el" href="structdg_1_1_multigrid_c_g2d.html#ae4241083bbf815e345cbbe751e4e6d44">dg::MultigridCG2d&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_nearest_neighbor_comm.html#aabfc3bbed3b1a7ef48d4ae8d1046eac8">dg::NearestNeighborComm&lt; Index, Buffer, Vector &gt;</a>
+, <a class="el" href="structdg_1_1_poisson.html#a9909d57fa755c917cc844a3774e2fbb5">dg::Poisson&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="classdg_1_1_refined_elliptic.html#a93d58cb13096de4d2a7f6f847092ca2e">dg::RefinedElliptic&lt; Geometry, IMatrix, Matrix, Container &gt;</a>
+, <a class="el" href="structdg_1_1_runge_kutta.html#ae18ae9edc0995efa085a7bc8acfac5a0">dg::RungeKutta&lt; ContainerType &gt;</a>
+, <a class="el" href="structdg_1_1_sparse_tensor.html#a5bf0669dc82dd8b7cd98ba435f16690d">dg::SparseTensor&lt; container &gt;</a>
 </li>
 <li>contains()
 : <a class="el" href="structdg_1_1a_real_topology2d.html#a70221bf918027b50f18b082330638149">dg::aRealTopology2d&lt; real_type &gt;</a>
@@ -214,11 +249,24 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 , <a class="el" href="structdg_1_1_real_grid1d.html#ad39b309f33dd338e6f5f4f3fc5f9d614">dg::RealGrid1d&lt; real_type &gt;</a>
 , <a class="el" href="structdg_1_1_real_grid_x1d.html#a3ea0d54654b61e5cbc354cefea6b6035">dg::RealGridX1d&lt; real_type &gt;</a>
 </li>
+<li>ConvertsToButcherTableau()
+: <a class="el" href="structdg_1_1_converts_to_butcher_tableau.html#a9b45685b346a1828e3794e232df6b802">dg::ConvertsToButcherTableau&lt; real_type &gt;</a>
+</li>
 <li>CooSparseBlockMat()
-: <a class="el" href="structdg_1_1_coo_sparse_block_mat.html#acce1f37c294317037956daa3bdf8b089">dg::CooSparseBlockMat&lt; value_type &gt;</a>
+: <a class="el" href="structdg_1_1_coo_sparse_block_mat.html#adb3d7d1d91b63aa3ce3cba8cf9aca306">dg::CooSparseBlockMat&lt; value_type &gt;</a>
 </li>
 <li>CooSparseBlockMatDevice()
-: <a class="el" href="structdg_1_1_coo_sparse_block_mat_device.html#abe618362c10f53456200f9aa40e8b6fe">dg::CooSparseBlockMatDevice&lt; value_type &gt;</a>
+: <a class="el" href="structdg_1_1_coo_sparse_block_mat_device.html#a1c9bf61b26c1bb26256442254524e968">dg::CooSparseBlockMatDevice&lt; value_type &gt;</a>
+</li>
+<li>copyable()
+: <a class="el" href="structdg_1_1_adams_bashforth.html#afb0d9871d3d244d1d43f79add98480f8">dg::AdamsBashforth&lt; ContainerType &gt;</a>
+, <a class="el" href="structdg_1_1_a_r_k_step.html#a6788d11bafef3590a17688e0714d1dd7">dg::ARKStep&lt; ContainerType, SolverType &gt;</a>
+, <a class="el" href="classdg_1_1_c_g.html#ae76842e598679c9632aeefe05f8052df">dg::CG&lt; ContainerType &gt;</a>
+, <a class="el" href="structdg_1_1_default_solver.html#afd1a33d687b9347d50876909ffbc0bb8">dg::DefaultSolver&lt; ContainerType &gt;</a>
+, <a class="el" href="structdg_1_1_e_r_k_step.html#a8d691967766ff8b86c662bfb7c83b30a">dg::ERKStep&lt; ContainerType &gt;</a>
+, <a class="el" href="structdg_1_1_invert.html#a6b54d781f5543ffc3233f5e875308ca4">dg::Invert&lt; ContainerType &gt;</a>
+, <a class="el" href="structdg_1_1_karniadakis.html#a1c0ec2a851a051d596ab696fc55a52e6">dg::Karniadakis&lt; ContainerType, SolverType &gt;</a>
+, <a class="el" href="structdg_1_1_runge_kutta.html#ab73b503a32b62763968482786c6dc6d7">dg::RungeKutta&lt; ContainerType &gt;</a>
 </li>
 <li>CosXCosY()
 : <a class="el" href="structdg_1_1_cos_x_cos_y.html#a4c785a3e0a75ad1e0b543fec7479a631">dg::CosXCosY</a>
@@ -232,7 +280,7 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:50 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

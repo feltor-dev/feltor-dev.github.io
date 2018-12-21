@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('group__pullback.html','');});
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">pullback and pushforward<div class="ingroups"><a class="el" href="group__geo.html">Level 3: Topology and Geometry</a> &raquo; <a class="el" href="group__geometry.html">Geometric grids and operations</a></div></div>  </div>
+<div class="title">pullback and pushforward<div class="ingroups"><a class="el" href="group__geo.html">Level 3: Topology and Geometry</a> &raquo; <a class="el" href="group__geometry.html">Geometric grids and tensor operations</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
@@ -107,7 +107,7 @@ Collaboration diagram for pullback and pushforward:</div>
 <div class="dyncontent">
 <center><table><tr><td><img src="group__pullback.png" border="0" alt="" usemap="#group____pullback"/>
 <map name="group____pullback" id="group____pullback">
-<area shape="rect" id="node1" href="group__geometry.html" title="Geometric grids and\l operations" alt="" coords="5,5,144,47"/>
+<area shape="rect" id="node1" href="group__geometry.html" title="Geometric grids and\l tensor operations" alt="" coords="5,5,144,47"/>
 </map>
 </td></tr></table></center>
 </div>
@@ -116,27 +116,27 @@ Collaboration diagram for pullback and pushforward:</div>
 Functions</h2></td></tr>
 <tr class="memitem:ga17d53d4c95becdd93597cb5b69a5525c"><td class="memTemplParams" colspan="2">template&lt;class Functor , class real_type &gt; </td></tr>
 <tr class="memitem:ga17d53d4c95becdd93597cb5b69a5525c"><td class="memTemplItemLeft" align="right" valign="top">thrust::host_vector&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__pullback.html#ga17d53d4c95becdd93597cb5b69a5525c">dg::pullback</a> (const Functor &amp;f, const <a class="el" href="structdg_1_1a_real_geometry_x2d.html">aRealGeometryX2d</a>&lt; real_type &gt; &amp;g)</td></tr>
-<tr class="memdesc:ga17d53d4c95becdd93597cb5b69a5525c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function pulls back a function defined in some basic coordinates to the curvilinear coordinate system.  <a href="group__pullback.html#ga17d53d4c95becdd93597cb5b69a5525c">More...</a><br /></td></tr>
+<tr class="memdesc:ga17d53d4c95becdd93597cb5b69a5525c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pull back a function defined in physical coordinates to the curvilinear (computational) coordinate system.  <a href="group__pullback.html#ga17d53d4c95becdd93597cb5b69a5525c">More...</a><br /></td></tr>
 <tr class="separator:ga17d53d4c95becdd93597cb5b69a5525c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga45daa901c64e2dd3dea4ecaca7ef7921"><td class="memTemplParams" colspan="2">template&lt;class Functor , class real_type &gt; </td></tr>
 <tr class="memitem:ga45daa901c64e2dd3dea4ecaca7ef7921"><td class="memTemplItemLeft" align="right" valign="top">thrust::host_vector&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__pullback.html#ga45daa901c64e2dd3dea4ecaca7ef7921">dg::pullback</a> (const Functor &amp;f, const <a class="el" href="structdg_1_1a_real_geometry_x3d.html">aRealGeometryX3d</a>&lt; real_type &gt; &amp;g)</td></tr>
-<tr class="memdesc:ga45daa901c64e2dd3dea4ecaca7ef7921"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function pulls back a function defined in some basic coordinates to the curvilinear coordinate system.  <a href="group__pullback.html#ga45daa901c64e2dd3dea4ecaca7ef7921">More...</a><br /></td></tr>
+<tr class="memdesc:ga45daa901c64e2dd3dea4ecaca7ef7921"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pull back a function defined in physical coordinates to the curvilinear (computational) coordinate system.  <a href="group__pullback.html#ga45daa901c64e2dd3dea4ecaca7ef7921">More...</a><br /></td></tr>
 <tr class="separator:ga45daa901c64e2dd3dea4ecaca7ef7921"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga389d22ba68460599babde906e5cce6fd"><td class="memTemplParams" colspan="2">template&lt;class Functor , class real_type &gt; </td></tr>
 <tr class="memitem:ga389d22ba68460599babde906e5cce6fd"><td class="memTemplItemLeft" align="right" valign="top">thrust::host_vector&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__pullback.html#ga389d22ba68460599babde906e5cce6fd">dg::pullback</a> (const Functor &amp;f, const <a class="el" href="structdg_1_1a_real_geometry2d.html">aRealGeometry2d</a>&lt; real_type &gt; &amp;g)</td></tr>
-<tr class="memdesc:ga389d22ba68460599babde906e5cce6fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function pulls back a function defined in some basic coordinates to the curvilinear coordinate system.  <a href="group__pullback.html#ga389d22ba68460599babde906e5cce6fd">More...</a><br /></td></tr>
+<tr class="memdesc:ga389d22ba68460599babde906e5cce6fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pull back a function defined in physical coordinates to the curvilinear (computational) coordinate system.  <a href="group__pullback.html#ga389d22ba68460599babde906e5cce6fd">More...</a><br /></td></tr>
 <tr class="separator:ga389d22ba68460599babde906e5cce6fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5214d5d24f42bce5d5204861979b3599"><td class="memTemplParams" colspan="2">template&lt;class Functor , class real_type &gt; </td></tr>
 <tr class="memitem:ga5214d5d24f42bce5d5204861979b3599"><td class="memTemplItemLeft" align="right" valign="top">thrust::host_vector&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__pullback.html#ga5214d5d24f42bce5d5204861979b3599">dg::pullback</a> (const Functor &amp;f, const <a class="el" href="structdg_1_1a_real_geometry3d.html">aRealGeometry3d</a>&lt; real_type &gt; &amp;g)</td></tr>
-<tr class="memdesc:ga5214d5d24f42bce5d5204861979b3599"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function pulls back a function defined in some basic coordinates to the curvilinear coordinate system.  <a href="group__pullback.html#ga5214d5d24f42bce5d5204861979b3599">More...</a><br /></td></tr>
+<tr class="memdesc:ga5214d5d24f42bce5d5204861979b3599"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pull back a function defined in physical coordinates to the curvilinear (computational) coordinate system.  <a href="group__pullback.html#ga5214d5d24f42bce5d5204861979b3599">More...</a><br /></td></tr>
 <tr class="separator:ga5214d5d24f42bce5d5204861979b3599"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2d71aff5166fbff905d8d8194b674ade"><td class="memTemplParams" colspan="2">template&lt;class Functor , class real_type &gt; </td></tr>
 <tr class="memitem:ga2d71aff5166fbff905d8d8194b674ade"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt; thrust::host_vector&lt; real_type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__pullback.html#ga2d71aff5166fbff905d8d8194b674ade">dg::pullback</a> (const Functor &amp;f, const <a class="el" href="structdg_1_1a_real_m_p_i_geometry2d.html">aRealMPIGeometry2d</a>&lt; real_type &gt; &amp;g)</td></tr>
-<tr class="memdesc:ga2d71aff5166fbff905d8d8194b674ade"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function pulls back a function defined in some basic coordinates to the curvilinear coordinate system.  <a href="group__pullback.html#ga2d71aff5166fbff905d8d8194b674ade">More...</a><br /></td></tr>
+<tr class="memdesc:ga2d71aff5166fbff905d8d8194b674ade"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pull back a function defined in physical coordinates to the curvilinear (computational) coordinate system.  <a href="group__pullback.html#ga2d71aff5166fbff905d8d8194b674ade">More...</a><br /></td></tr>
 <tr class="separator:ga2d71aff5166fbff905d8d8194b674ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga920bccad6d4428f91519f26182011df1"><td class="memTemplParams" colspan="2">template&lt;class Functor , class real_type &gt; </td></tr>
 <tr class="memitem:ga920bccad6d4428f91519f26182011df1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt; thrust::host_vector&lt; real_type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__pullback.html#ga920bccad6d4428f91519f26182011df1">dg::pullback</a> (const Functor &amp;f, const <a class="el" href="structdg_1_1a_real_m_p_i_geometry3d.html">aRealMPIGeometry3d</a>&lt; real_type &gt; &amp;g)</td></tr>
-<tr class="memdesc:ga920bccad6d4428f91519f26182011df1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function pulls back a function defined in some basic coordinates to the curvilinear coordinate system.  <a href="group__pullback.html#ga920bccad6d4428f91519f26182011df1">More...</a><br /></td></tr>
+<tr class="memdesc:ga920bccad6d4428f91519f26182011df1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pull back a function defined in physical coordinates to the curvilinear (computational) coordinate system.  <a href="group__pullback.html#ga920bccad6d4428f91519f26182011df1">More...</a><br /></td></tr>
 <tr class="separator:ga920bccad6d4428f91519f26182011df1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab8b4c0a46bf70e59e456df9bf8a68e0d"><td class="memTemplParams" colspan="2">template&lt;class Functor1 , class Functor2 , class container , class Geometry &gt; </td></tr>
 <tr class="memitem:gab8b4c0a46bf70e59e456df9bf8a68e0d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__pullback.html#gab8b4c0a46bf70e59e456df9bf8a68e0d">dg::pushForwardPerp</a> (const Functor1 &amp;vR, const Functor2 &amp;vZ, container &amp;vx, container &amp;vy, const Geometry &amp;g)</td></tr>
@@ -146,10 +146,10 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf1b8e5426e47a83f079b723dcad325e5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__pullback.html#gaf1b8e5426e47a83f079b723dcad325e5">dg::pushForward</a> (const Functor1 &amp;vR, const Functor2 &amp;vZ, const Functor3 &amp;vPhi, container &amp;vx, container &amp;vy, container &amp;vz, const Geometry &amp;g)</td></tr>
 <tr class="memdesc:gaf1b8e5426e47a83f079b723dcad325e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push forward a vector from cylindrical or Cartesian to a new coordinate system.  <a href="group__pullback.html#gaf1b8e5426e47a83f079b723dcad325e5">More...</a><br /></td></tr>
 <tr class="separator:gaf1b8e5426e47a83f079b723dcad325e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae217bca44c066edc7bfb66a1786d7265"><td class="memTemplParams" colspan="2">template&lt;class FunctorRR , class FunctorRZ , class FunctorZZ , class container , class Geometry &gt; </td></tr>
-<tr class="memitem:gae217bca44c066edc7bfb66a1786d7265"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__pullback.html#gae217bca44c066edc7bfb66a1786d7265">dg::pushForwardPerp</a> (const FunctorRR &amp;chiRR, const FunctorRZ &amp;chiRZ, const FunctorZZ &amp;chiZZ, container &amp;chixx, container &amp;chixy, container &amp;chiyy, const Geometry &amp;g)</td></tr>
-<tr class="memdesc:gae217bca44c066edc7bfb66a1786d7265"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push forward a symmetric 2d tensor from cylindrical or Cartesian to a new coordinate system.  <a href="group__pullback.html#gae217bca44c066edc7bfb66a1786d7265">More...</a><br /></td></tr>
-<tr class="separator:gae217bca44c066edc7bfb66a1786d7265"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0184e8f7d99dcfde909c850ff4f85c0b"><td class="memTemplParams" colspan="2">template&lt;class FunctorRR , class FunctorRZ , class FunctorZZ , class container , class Geometry &gt; </td></tr>
+<tr class="memitem:ga0184e8f7d99dcfde909c850ff4f85c0b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__pullback.html#ga0184e8f7d99dcfde909c850ff4f85c0b">dg::pushForwardPerp</a> (const FunctorRR &amp;chiRR, const FunctorRZ &amp;chiRZ, const FunctorZZ &amp;chiZZ, <a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; container &gt; &amp;chi, const Geometry &amp;g)</td></tr>
+<tr class="memdesc:ga0184e8f7d99dcfde909c850ff4f85c0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push forward a symmetric 2d tensor from cylindrical or Cartesian to a new coordinate system.  <a href="group__pullback.html#ga0184e8f7d99dcfde909c850ff4f85c0b">More...</a><br /></td></tr>
+<tr class="separator:ga0184e8f7d99dcfde909c850ff4f85c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
@@ -181,22 +181,28 @@ template&lt;class Functor , class real_type &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>This function pulls back a function defined in some basic coordinates to the curvilinear coordinate system. </p>
-<p>e.g. F(x,y) = f(R(x,y), Z(x,y)) in 2d </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+<p>Pull back a function defined in physical coordinates to the curvilinear (computational) coordinate system. </p>
+<p>Pullback is equivalent to the following:</p>
+<ol type="1">
+<li>generate the list of physical space coordinates (e.g. in 2d \( x_i = x(\zeta_i, \eta_i),\ y_i = y(\zeta_i, \eta_i)\) for all <code>i</code>)</li>
+<li>evaluate the given function or functor at these coordinates and store the result in the output vector (e.g. in 2d \( v_i = f(x_i,y_i)\) for all <code>i</code>)</li>
+</ol>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Functor</td><td>The binary or ternary function class </td></tr>
+    <tr><td class="paramname">Functor</td><td>The binary (for 2d grids) or ternary (for 3d grids) function or functor with signature: <code>real_type ( real_type x, real_type y) ; real_type ( real_type x, real_type y, real_type z) </code> </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">f</td><td>The function defined in cartesian coordinates </td></tr>
+    <tr><td class="paramname">f</td><td>The function defined in physical coordinates </td></tr>
     <tr><td class="paramname">g</td><td>a two- or three dimensional Geometry </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Template deduction for the Functor will fail if you overload functions with different dimensionality (e.g. real_type sine( real_type x) and real_type sine(real_type x, real_type y) ) You will want to rename those uniquely</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>A set of points representing F </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The output vector <code>v</code> as a host vector</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>If the function is defined in computational space coordinates, then use <code><a class="el" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443" title="Evaluate a 1d function on grid coordinates. ">dg::evaluate</a></code> </dd></dl>
 
 </div>
 </div>
@@ -228,22 +234,28 @@ template&lt;class Functor , class real_type &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>This function pulls back a function defined in some basic coordinates to the curvilinear coordinate system. </p>
-<p>e.g. F(x,y) = f(R(x,y), Z(x,y)) in 2d </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+<p>Pull back a function defined in physical coordinates to the curvilinear (computational) coordinate system. </p>
+<p>Pullback is equivalent to the following:</p>
+<ol type="1">
+<li>generate the list of physical space coordinates (e.g. in 2d \( x_i = x(\zeta_i, \eta_i),\ y_i = y(\zeta_i, \eta_i)\) for all <code>i</code>)</li>
+<li>evaluate the given function or functor at these coordinates and store the result in the output vector (e.g. in 2d \( v_i = f(x_i,y_i)\) for all <code>i</code>)</li>
+</ol>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Functor</td><td>The binary or ternary function class </td></tr>
+    <tr><td class="paramname">Functor</td><td>The binary (for 2d grids) or ternary (for 3d grids) function or functor with signature: <code>real_type ( real_type x, real_type y) ; real_type ( real_type x, real_type y, real_type z) </code> </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">f</td><td>The function defined in cartesian coordinates </td></tr>
+    <tr><td class="paramname">f</td><td>The function defined in physical coordinates </td></tr>
     <tr><td class="paramname">g</td><td>a two- or three dimensional Geometry </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Template deduction for the Functor will fail if you overload functions with different dimensionality (e.g. real_type sine( real_type x) and real_type sine(real_type x, real_type y) ) You will want to rename those uniquely</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>A set of points representing F </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The output vector <code>v</code> as a host vector</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>If the function is defined in computational space coordinates, then use <code><a class="el" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443" title="Evaluate a 1d function on grid coordinates. ">dg::evaluate</a></code> </dd></dl>
 
 </div>
 </div>
@@ -275,22 +287,28 @@ template&lt;class Functor , class real_type &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>This function pulls back a function defined in some basic coordinates to the curvilinear coordinate system. </p>
-<p>e.g. F(x,y) = f(R(x,y), Z(x,y)) in 2d </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+<p>Pull back a function defined in physical coordinates to the curvilinear (computational) coordinate system. </p>
+<p>Pullback is equivalent to the following:</p>
+<ol type="1">
+<li>generate the list of physical space coordinates (e.g. in 2d \( x_i = x(\zeta_i, \eta_i),\ y_i = y(\zeta_i, \eta_i)\) for all <code>i</code>)</li>
+<li>evaluate the given function or functor at these coordinates and store the result in the output vector (e.g. in 2d \( v_i = f(x_i,y_i)\) for all <code>i</code>)</li>
+</ol>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Functor</td><td>The binary or ternary function class </td></tr>
+    <tr><td class="paramname">Functor</td><td>The binary (for 2d grids) or ternary (for 3d grids) function or functor with signature: <code>real_type ( real_type x, real_type y) ; real_type ( real_type x, real_type y, real_type z) </code> </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">f</td><td>The function defined in cartesian coordinates </td></tr>
+    <tr><td class="paramname">f</td><td>The function defined in physical coordinates </td></tr>
     <tr><td class="paramname">g</td><td>a two- or three dimensional Geometry </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Template deduction for the Functor will fail if you overload functions with different dimensionality (e.g. real_type sine( real_type x) and real_type sine(real_type x, real_type y) ) You will want to rename those uniquely</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>A set of points representing F </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The output vector <code>v</code> as a host vector</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>If the function is defined in computational space coordinates, then use <code><a class="el" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443" title="Evaluate a 1d function on grid coordinates. ">dg::evaluate</a></code> </dd></dl>
 
 </div>
 </div>
@@ -322,22 +340,28 @@ template&lt;class Functor , class real_type &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>This function pulls back a function defined in some basic coordinates to the curvilinear coordinate system. </p>
-<p>e.g. F(x,y) = f(R(x,y), Z(x,y)) in 2d </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+<p>Pull back a function defined in physical coordinates to the curvilinear (computational) coordinate system. </p>
+<p>Pullback is equivalent to the following:</p>
+<ol type="1">
+<li>generate the list of physical space coordinates (e.g. in 2d \( x_i = x(\zeta_i, \eta_i),\ y_i = y(\zeta_i, \eta_i)\) for all <code>i</code>)</li>
+<li>evaluate the given function or functor at these coordinates and store the result in the output vector (e.g. in 2d \( v_i = f(x_i,y_i)\) for all <code>i</code>)</li>
+</ol>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Functor</td><td>The binary or ternary function class </td></tr>
+    <tr><td class="paramname">Functor</td><td>The binary (for 2d grids) or ternary (for 3d grids) function or functor with signature: <code>real_type ( real_type x, real_type y) ; real_type ( real_type x, real_type y, real_type z) </code> </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">f</td><td>The function defined in cartesian coordinates </td></tr>
+    <tr><td class="paramname">f</td><td>The function defined in physical coordinates </td></tr>
     <tr><td class="paramname">g</td><td>a two- or three dimensional Geometry </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Template deduction for the Functor will fail if you overload functions with different dimensionality (e.g. real_type sine( real_type x) and real_type sine(real_type x, real_type y) ) You will want to rename those uniquely</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>A set of points representing F </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The output vector <code>v</code> as a host vector</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>If the function is defined in computational space coordinates, then use <code><a class="el" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443" title="Evaluate a 1d function on grid coordinates. ">dg::evaluate</a></code> </dd></dl>
 
 </div>
 </div>
@@ -369,22 +393,28 @@ template&lt;class Functor , class real_type &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>This function pulls back a function defined in some basic coordinates to the curvilinear coordinate system. </p>
-<p>e.g. F(x,y) = f(R(x,y), Z(x,y)) in 2d </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+<p>Pull back a function defined in physical coordinates to the curvilinear (computational) coordinate system. </p>
+<p>Pullback is equivalent to the following:</p>
+<ol type="1">
+<li>generate the list of physical space coordinates (e.g. in 2d \( x_i = x(\zeta_i, \eta_i),\ y_i = y(\zeta_i, \eta_i)\) for all <code>i</code>)</li>
+<li>evaluate the given function or functor at these coordinates and store the result in the output vector (e.g. in 2d \( v_i = f(x_i,y_i)\) for all <code>i</code>)</li>
+</ol>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Functor</td><td>The binary or ternary function class </td></tr>
+    <tr><td class="paramname">Functor</td><td>The binary (for 2d grids) or ternary (for 3d grids) function or functor with signature: <code>real_type ( real_type x, real_type y) ; real_type ( real_type x, real_type y, real_type z) </code> </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">f</td><td>The function defined in cartesian coordinates </td></tr>
+    <tr><td class="paramname">f</td><td>The function defined in physical coordinates </td></tr>
     <tr><td class="paramname">g</td><td>a two- or three dimensional Geometry </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Template deduction for the Functor will fail if you overload functions with different dimensionality (e.g. real_type sine( real_type x) and real_type sine(real_type x, real_type y) ) You will want to rename those uniquely</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>A set of points representing F </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The output vector <code>v</code> as a host vector</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>If the function is defined in computational space coordinates, then use <code><a class="el" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443" title="Evaluate a 1d function on grid coordinates. ">dg::evaluate</a></code> </dd></dl>
 
 </div>
 </div>
@@ -416,22 +446,28 @@ template&lt;class Functor , class real_type &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>This function pulls back a function defined in some basic coordinates to the curvilinear coordinate system. </p>
-<p>e.g. F(x,y) = f(R(x,y), Z(x,y)) in 2d </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+<p>Pull back a function defined in physical coordinates to the curvilinear (computational) coordinate system. </p>
+<p>Pullback is equivalent to the following:</p>
+<ol type="1">
+<li>generate the list of physical space coordinates (e.g. in 2d \( x_i = x(\zeta_i, \eta_i),\ y_i = y(\zeta_i, \eta_i)\) for all <code>i</code>)</li>
+<li>evaluate the given function or functor at these coordinates and store the result in the output vector (e.g. in 2d \( v_i = f(x_i,y_i)\) for all <code>i</code>)</li>
+</ol>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Functor</td><td>The binary or ternary function class </td></tr>
+    <tr><td class="paramname">Functor</td><td>The binary (for 2d grids) or ternary (for 3d grids) function or functor with signature: <code>real_type ( real_type x, real_type y) ; real_type ( real_type x, real_type y, real_type z) </code> </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">f</td><td>The function defined in cartesian coordinates </td></tr>
+    <tr><td class="paramname">f</td><td>The function defined in physical coordinates </td></tr>
     <tr><td class="paramname">g</td><td>a two- or three dimensional Geometry </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Template deduction for the Functor will fail if you overload functions with different dimensionality (e.g. real_type sine( real_type x) and real_type sine(real_type x, real_type y) ) You will want to rename those uniquely</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>A set of points representing F </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The output vector <code>v</code> as a host vector</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>If the function is defined in computational space coordinates, then use <code><a class="el" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443" title="Evaluate a 1d function on grid coordinates. ">dg::evaluate</a></code> </dd></dl>
 
 </div>
 </div>
@@ -502,12 +538,12 @@ template&lt;class Functor1 , class Functor2 , class Functor3 , class container ,
     <tr><td class="paramname">Functor1</td><td>Binary or Ternary functor </td></tr>
     <tr><td class="paramname">Functor2</td><td>Binary or Ternary functor </td></tr>
     <tr><td class="paramname">Functor3</td><td>Binary or Ternary functor</td></tr>
-    <tr><td class="paramname">container</td><td>A data container class for which the <code><a class="el" href="namespacedg_1_1blas1.html" title="BLAS Level 1 routines. ">blas1</a></code> functionality is overloaded and to which the return type of <code><a class="el" href="group__blas1.html#gaad7b58d466d813898b68189b44619210" title=" ">blas1::evaluate()</a></code> can be converted using <code><a class="el" href="group__misc.html#gac2978c014dfeacf26bd2f01d5573a2c8" title="High level alias for dg::blas1::transfer(const from_ContainerType&amp;,to_ContainerType&amp;) ...">dg::transfer</a></code>. We assume that <code>container</code> is copyable/assignable and has a swap member function. In connection with <code>Geometry</code> this is one of<ul>
+    <tr><td class="paramname">Container</td><td>A data container class for which the <code><a class="el" href="namespacedg_1_1blas1.html" title="BLAS Level 1 routines. ">blas1</a></code> functionality is overloaded and to which the return type of <code><a class="el" href="group__blas1.html#ga7386b5cb0144d5364b8ea8c8ce1482a5" title="; Customizable and generic blas1 function ">blas1::subroutine()</a></code> can be converted using <code><a class="el" href="group__backend.html#ga5dbfc632d4d66d2d926dd525ed7fcea8" title="Generic way to construct an object of ContainerType given a from_ContainerType object and optional ad...">dg::construct</a></code>. We assume that <code>Container</code> is copyable/assignable and has a swap member function. In connection with <code>Geometry</code> this is one of<ul>
 <li><code><a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193" title="Host Vector. ">dg::HVec</a></code>, <code><a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code> when <code>Geometry</code> is a shared memory geometry</li>
 <li><code><a class="el" href="group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code><a class="el" href="group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> when <code>Geometry</code> is one of the MPI geometries </li>
 </ul>
 </td></tr>
-    <tr><td class="paramname">Geometry</td><td>A type that is or derives from one of the abstract geometry base classes ( <code>aGeometry2d</code>, <code>aGeometry3d</code>, <code>aMPIGeometry2d</code>, ...). <code>Geometry</code> determines which <code>container</code> type can be used. </td></tr>
+    <tr><td class="paramname">Geometry</td><td>A type that is or derives from one of the abstract geometry base classes ( <code>aGeometry2d</code>, <code>aGeometry3d</code>, <code>aMPIGeometry2d</code>, ...). <code>Geometry</code> determines which <code>Container</code> type can be used. </td></tr>
   </table>
   </dd>
 </dl>
@@ -580,12 +616,12 @@ template&lt;class Functor1 , class Functor2 , class container , class Geometry &
   <table class="tparams">
     <tr><td class="paramname">Functor1</td><td>Binary or Ternary functor </td></tr>
     <tr><td class="paramname">Functor2</td><td>Binary or Ternary functor</td></tr>
-    <tr><td class="paramname">container</td><td>A data container class for which the <code><a class="el" href="namespacedg_1_1blas1.html" title="BLAS Level 1 routines. ">blas1</a></code> functionality is overloaded and to which the return type of <code><a class="el" href="group__blas1.html#gaad7b58d466d813898b68189b44619210" title=" ">blas1::evaluate()</a></code> can be converted using <code><a class="el" href="group__misc.html#gac2978c014dfeacf26bd2f01d5573a2c8" title="High level alias for dg::blas1::transfer(const from_ContainerType&amp;,to_ContainerType&amp;) ...">dg::transfer</a></code>. We assume that <code>container</code> is copyable/assignable and has a swap member function. In connection with <code>Geometry</code> this is one of<ul>
+    <tr><td class="paramname">Container</td><td>A data container class for which the <code><a class="el" href="namespacedg_1_1blas1.html" title="BLAS Level 1 routines. ">blas1</a></code> functionality is overloaded and to which the return type of <code><a class="el" href="group__blas1.html#ga7386b5cb0144d5364b8ea8c8ce1482a5" title="; Customizable and generic blas1 function ">blas1::subroutine()</a></code> can be converted using <code><a class="el" href="group__backend.html#ga5dbfc632d4d66d2d926dd525ed7fcea8" title="Generic way to construct an object of ContainerType given a from_ContainerType object and optional ad...">dg::construct</a></code>. We assume that <code>Container</code> is copyable/assignable and has a swap member function. In connection with <code>Geometry</code> this is one of<ul>
 <li><code><a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193" title="Host Vector. ">dg::HVec</a></code>, <code><a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code> when <code>Geometry</code> is a shared memory geometry</li>
 <li><code><a class="el" href="group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code><a class="el" href="group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> when <code>Geometry</code> is one of the MPI geometries </li>
 </ul>
 </td></tr>
-    <tr><td class="paramname">Geometry</td><td>A type that is or derives from one of the abstract geometry base classes ( <code>aGeometry2d</code>, <code>aGeometry3d</code>, <code>aMPIGeometry2d</code>, ...). <code>Geometry</code> determines which <code>container</code> type can be used. </td></tr>
+    <tr><td class="paramname">Geometry</td><td>A type that is or derives from one of the abstract geometry base classes ( <code>aGeometry2d</code>, <code>aGeometry3d</code>, <code>aMPIGeometry2d</code>, ...). <code>Geometry</code> determines which <code>Container</code> type can be used. </td></tr>
   </table>
   </dd>
 </dl>
@@ -602,8 +638,8 @@ template&lt;class Functor1 , class Functor2 , class container , class Geometry &
 
 </div>
 </div>
-<a id="gae217bca44c066edc7bfb66a1786d7265"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae217bca44c066edc7bfb66a1786d7265">&#9670;&nbsp;</a></span>pushForwardPerp() <span class="overload">[2/2]</span></h2>
+<a id="ga0184e8f7d99dcfde909c850ff4f85c0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0184e8f7d99dcfde909c850ff4f85c0b">&#9670;&nbsp;</a></span>pushForwardPerp() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -631,20 +667,8 @@ template&lt;class FunctorRR , class FunctorRZ , class FunctorZZ , class containe
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">container &amp;&#160;</td>
-          <td class="paramname"><em>chixx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">container &amp;&#160;</td>
-          <td class="paramname"><em>chixy</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">container &amp;&#160;</td>
-          <td class="paramname"><em>chiyy</em>, </td>
+          <td class="paramtype"><a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; container &gt; &amp;&#160;</td>
+          <td class="paramname"><em>chi</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -669,12 +693,12 @@ template&lt;class FunctorRR , class FunctorRZ , class FunctorZZ , class containe
     <tr><td class="paramname">FunctorRR</td><td>Binary or Ternary functor </td></tr>
     <tr><td class="paramname">FunctorRZ</td><td>Binary or Ternary functor </td></tr>
     <tr><td class="paramname">FunctorZZ</td><td>Binary or Ternary functor</td></tr>
-    <tr><td class="paramname">container</td><td>A data container class for which the <code><a class="el" href="namespacedg_1_1blas1.html" title="BLAS Level 1 routines. ">blas1</a></code> functionality is overloaded and to which the return type of <code><a class="el" href="group__blas1.html#gaad7b58d466d813898b68189b44619210" title=" ">blas1::evaluate()</a></code> can be converted using <code><a class="el" href="group__misc.html#gac2978c014dfeacf26bd2f01d5573a2c8" title="High level alias for dg::blas1::transfer(const from_ContainerType&amp;,to_ContainerType&amp;) ...">dg::transfer</a></code>. We assume that <code>container</code> is copyable/assignable and has a swap member function. In connection with <code>Geometry</code> this is one of<ul>
+    <tr><td class="paramname">Container</td><td>A data container class for which the <code><a class="el" href="namespacedg_1_1blas1.html" title="BLAS Level 1 routines. ">blas1</a></code> functionality is overloaded and to which the return type of <code><a class="el" href="group__blas1.html#ga7386b5cb0144d5364b8ea8c8ce1482a5" title="; Customizable and generic blas1 function ">blas1::subroutine()</a></code> can be converted using <code><a class="el" href="group__backend.html#ga5dbfc632d4d66d2d926dd525ed7fcea8" title="Generic way to construct an object of ContainerType given a from_ContainerType object and optional ad...">dg::construct</a></code>. We assume that <code>Container</code> is copyable/assignable and has a swap member function. In connection with <code>Geometry</code> this is one of<ul>
 <li><code><a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193" title="Host Vector. ">dg::HVec</a></code>, <code><a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code> when <code>Geometry</code> is a shared memory geometry</li>
 <li><code><a class="el" href="group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code><a class="el" href="group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> when <code>Geometry</code> is one of the MPI geometries </li>
 </ul>
 </td></tr>
-    <tr><td class="paramname">Geometry</td><td>A type that is or derives from one of the abstract geometry base classes ( <code>aGeometry2d</code>, <code>aGeometry3d</code>, <code>aMPIGeometry2d</code>, ...). <code>Geometry</code> determines which <code>container</code> type can be used. </td></tr>
+    <tr><td class="paramname">Geometry</td><td>A type that is or derives from one of the abstract geometry base classes ( <code>aGeometry2d</code>, <code>aGeometry3d</code>, <code>aMPIGeometry2d</code>, ...). <code>Geometry</code> determines which <code>Container</code> type can be used. </td></tr>
   </table>
   </dd>
 </dl>
@@ -683,9 +707,7 @@ template&lt;class FunctorRR , class FunctorRZ , class FunctorZZ , class containe
     <tr><td class="paramname">chiRR</td><td>input RR-component in cylindrical coordinates </td></tr>
     <tr><td class="paramname">chiRZ</td><td>input RZ-component in cylindrical coordinates </td></tr>
     <tr><td class="paramname">chiZZ</td><td>input ZZ-component in cylindrical coordinates </td></tr>
-    <tr><td class="paramname">chixx</td><td>xx-component of tensor (gets properly resized) </td></tr>
-    <tr><td class="paramname">chixy</td><td>xy-component of tensor (gets properly resized) </td></tr>
-    <tr><td class="paramname">chiyy</td><td>yy-component of tensor (gets properly resized) </td></tr>
+    <tr><td class="paramname">chi</td><td>tensor (gets properly resized) </td></tr>
     <tr><td class="paramname">g</td><td>The geometry object </td></tr>
   </table>
   </dd>
@@ -698,7 +720,7 @@ template&lt;class FunctorRR , class FunctorRZ , class FunctorZZ , class containe
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

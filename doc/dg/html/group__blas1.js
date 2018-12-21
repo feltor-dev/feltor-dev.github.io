@@ -16,7 +16,7 @@ var group__blas1 =
     [ "pointwiseDot", "group__blas1.html#ga12ce2a470cebd649636725f30d88bf97", null ],
     [ "scal", "group__blas1.html#gaa761a1672f82cf652ecb9382c9ebe525", null ],
     [ "subroutine", "group__blas1.html#ga7386b5cb0144d5364b8ea8c8ce1482a5", null ],
-    [ "transfer", "group__blas1.html#gae0aacd4fe731c16a9483140026c4dcc6", null ],
-    [ "transfer", "group__blas1.html#gae882fddb3f617cec92641812788168b5", null ],
+    [ "transfer", "group__blas1.html#ga7015027c22263460fbe5270fe3ff1e3e", null ],
+    [ "transfer", "group__blas1.html#gade1bcfb06cb5827db21be8f73535b159", null ],
     [ "transform", "group__blas1.html#ga493c6b70c8c889beaec1c3a669e3809b", null ]
 ];

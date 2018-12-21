@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -97,7 +97,6 @@ $(document).ready(function(){initNavTree('structdg_1_1_coo_sparse_block_mat.html
 
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structdg_1_1_coo_sparse_block_mat-members.html">List of all members</a>  </div>
@@ -111,17 +110,11 @@ $(document).ready(function(){initNavTree('structdg_1_1_coo_sparse_block_mat.html
 
 <p><code>#include &lt;<a class="el" href="sparseblockmat_8h_source.html">sparseblockmat.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:af1364d9c406951269b14c6c76ee95022"><td class="memItemLeft" align="right" valign="top">typedef thrust::host_vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#af1364d9c406951269b14c6c76ee95022">IVec</a></td></tr>
-<tr class="memdesc:af1364d9c406951269b14c6c76ee95022"><td class="mdescLeft">&#160;</td><td class="mdescRight">typedef for easy programming  <a href="#af1364d9c406951269b14c6c76ee95022">More...</a><br /></td></tr>
-<tr class="separator:af1364d9c406951269b14c6c76ee95022"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa24a0237ff6d15655372d7b8181b5b32"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#aa24a0237ff6d15655372d7b8181b5b32">CooSparseBlockMat</a> ()</td></tr>
-<tr class="memdesc:aa24a0237ff6d15655372d7b8181b5b32"><td class="mdescLeft">&#160;</td><td class="mdescRight">default constructor does nothing  <a href="#aa24a0237ff6d15655372d7b8181b5b32">More...</a><br /></td></tr>
-<tr class="separator:aa24a0237ff6d15655372d7b8181b5b32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb3d7d1d91b63aa3ce3cba8cf9aca306"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#adb3d7d1d91b63aa3ce3cba8cf9aca306">CooSparseBlockMat</a> ()=default</td></tr>
+<tr class="memdesc:adb3d7d1d91b63aa3ce3cba8cf9aca306"><td class="mdescLeft">&#160;</td><td class="mdescRight">default constructor does nothing  <a href="#adb3d7d1d91b63aa3ce3cba8cf9aca306">More...</a><br /></td></tr>
+<tr class="separator:adb3d7d1d91b63aa3ce3cba8cf9aca306"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acce1f37c294317037956daa3bdf8b089"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#acce1f37c294317037956daa3bdf8b089">CooSparseBlockMat</a> (int num_block_rows, int num_block_cols, int <a class="el" href="structdg_1_1_coo_sparse_block_mat.html#a6b253047ab5281181c67c9a7e073cf26">n</a>, int <a class="el" href="structdg_1_1_coo_sparse_block_mat.html#a5879228f786f6a22e351e26edd00423b">left_size</a>, int <a class="el" href="structdg_1_1_coo_sparse_block_mat.html#af2e04cf5f744a5a2284b57d50c849545">right_size</a>)</td></tr>
 <tr class="memdesc:acce1f37c294317037956daa3bdf8b089"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate storage.  <a href="#acce1f37c294317037956daa3bdf8b089">More...</a><br /></td></tr>
 <tr class="separator:acce1f37c294317037956daa3bdf8b089"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,9 +125,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab547f80e7381e6780fa7961159830a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c405af0b529010f56f034423fc512ec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#a0c405af0b529010f56f034423fc512ec">total_num_cols</a> () const</td></tr>
 <tr class="separator:a0c405af0b529010f56f034423fc512ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5cdc6db2506164e49e81fb71bd02114"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#ab5cdc6db2506164e49e81fb71bd02114">symv</a> (<a class="el" href="structdg_1_1_shared_vector_tag.html">SharedVectorTag</a>, <a class="el" href="structdg_1_1_serial_tag.html">SerialTag</a>, value_type alpha, const value_type *RESTRICT <a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>, value_type beta, value_type *RESTRICT <a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>) const</td></tr>
-<tr class="memdesc:ab5cdc6db2506164e49e81fb71bd02114"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply the matrix to a vector.  <a href="#ab5cdc6db2506164e49e81fb71bd02114">More...</a><br /></td></tr>
-<tr class="separator:ab5cdc6db2506164e49e81fb71bd02114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91cdd748508dd4729f7a545653107705"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#a91cdd748508dd4729f7a545653107705">symv</a> (<a class="el" href="structdg_1_1_shared_vector_tag.html">SharedVectorTag</a>, <a class="el" href="structdg_1_1_serial_tag.html">SerialTag</a>, value_type alpha, const value_type **<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>, value_type beta, value_type *RESTRICT <a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>) const</td></tr>
+<tr class="memdesc:a91cdd748508dd4729f7a545653107705"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply the matrix to a vector.  <a href="#a91cdd748508dd4729f7a545653107705">More...</a><br /></td></tr>
+<tr class="separator:a91cdd748508dd4729f7a545653107705"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27227d871e3d2da4b11eea8e40db2cda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#a27227d871e3d2da4b11eea8e40db2cda">display</a> (std::ostream &amp;os=std::cout, bool show_data=false) const</td></tr>
 <tr class="memdesc:a27227d871e3d2da4b11eea8e40db2cda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display internal data to a stream.  <a href="#a27227d871e3d2da4b11eea8e40db2cda">More...</a><br /></td></tr>
 <tr class="separator:a27227d871e3d2da4b11eea8e40db2cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,19 +135,19 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a270f8fb63a914c19b7053beeb03b7432"><td class="memItemLeft" align="right" valign="top">thrust::host_vector&lt; value_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#a270f8fb63a914c19b7053beeb03b7432">data</a></td></tr>
-<tr class="memdesc:a270f8fb63a914c19b7053beeb03b7432"><td class="mdescLeft">&#160;</td><td class="mdescRight">The data array is of size n*n*num_different_blocks and contains the blocks.  <a href="#a270f8fb63a914c19b7053beeb03b7432">More...</a><br /></td></tr>
+<tr class="memdesc:a270f8fb63a914c19b7053beeb03b7432"><td class="mdescLeft">&#160;</td><td class="mdescRight">The data array is of size <code>n*n*num_different_blocks</code> and contains the blocks.  <a href="#a270f8fb63a914c19b7053beeb03b7432">More...</a><br /></td></tr>
 <tr class="separator:a270f8fb63a914c19b7053beeb03b7432"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe6aef39315e35ed975eb7d1f4f1201e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#af1364d9c406951269b14c6c76ee95022">IVec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#afe6aef39315e35ed975eb7d1f4f1201e">cols_idx</a></td></tr>
-<tr class="memdesc:afe6aef39315e35ed975eb7d1f4f1201e"><td class="mdescLeft">&#160;</td><td class="mdescRight">is of size num_block_rows and contains the column indices  <a href="#afe6aef39315e35ed975eb7d1f4f1201e">More...</a><br /></td></tr>
-<tr class="separator:afe6aef39315e35ed975eb7d1f4f1201e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae111264bca83f893a8be9d4b6f8a87fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#af1364d9c406951269b14c6c76ee95022">IVec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#ae111264bca83f893a8be9d4b6f8a87fe">rows_idx</a></td></tr>
-<tr class="memdesc:ae111264bca83f893a8be9d4b6f8a87fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">is of size num_block_rows and contains the row  <a href="#ae111264bca83f893a8be9d4b6f8a87fe">More...</a><br /></td></tr>
-<tr class="separator:ae111264bca83f893a8be9d4b6f8a87fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca232359fb1e449032f48dfa9f3c9f66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#af1364d9c406951269b14c6c76ee95022">IVec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#aca232359fb1e449032f48dfa9f3c9f66">data_idx</a></td></tr>
-<tr class="memdesc:aca232359fb1e449032f48dfa9f3c9f66"><td class="mdescLeft">&#160;</td><td class="mdescRight">has the same size as cols_idx and contains indices into the data array  <a href="#aca232359fb1e449032f48dfa9f3c9f66">More...</a><br /></td></tr>
-<tr class="separator:aca232359fb1e449032f48dfa9f3c9f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae692b6fd313470e6c4cd849a069ba3d2"><td class="memItemLeft" align="right" valign="top">thrust::host_vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#ae692b6fd313470e6c4cd849a069ba3d2">cols_idx</a></td></tr>
+<tr class="memdesc:ae692b6fd313470e6c4cd849a069ba3d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">is of size <code>num_entries</code> and contains the column indices  <a href="#ae692b6fd313470e6c4cd849a069ba3d2">More...</a><br /></td></tr>
+<tr class="separator:ae692b6fd313470e6c4cd849a069ba3d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47f1fd7b3572f09aabe5dc9269a6dbe7"><td class="memItemLeft" align="right" valign="top">thrust::host_vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#a47f1fd7b3572f09aabe5dc9269a6dbe7">rows_idx</a></td></tr>
+<tr class="memdesc:a47f1fd7b3572f09aabe5dc9269a6dbe7"><td class="mdescLeft">&#160;</td><td class="mdescRight">is of size <code>num_entries</code> and contains the row indices  <a href="#a47f1fd7b3572f09aabe5dc9269a6dbe7">More...</a><br /></td></tr>
+<tr class="separator:a47f1fd7b3572f09aabe5dc9269a6dbe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13ade6a19e96a10d9aa55220a92365f1"><td class="memItemLeft" align="right" valign="top">thrust::host_vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#a13ade6a19e96a10d9aa55220a92365f1">data_idx</a></td></tr>
+<tr class="memdesc:a13ade6a19e96a10d9aa55220a92365f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">is of size <code>num_entries</code> and contains indices into the data array  <a href="#a13ade6a19e96a10d9aa55220a92365f1">More...</a><br /></td></tr>
+<tr class="separator:a13ade6a19e96a10d9aa55220a92365f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a037e28160d038c6c3d190d533553b1f9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#a037e28160d038c6c3d190d533553b1f9">num_rows</a></td></tr>
-<tr class="memdesc:a037e28160d038c6c3d190d533553b1f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of rows, each row contains blocks  <a href="#a037e28160d038c6c3d190d533553b1f9">More...</a><br /></td></tr>
+<tr class="memdesc:a037e28160d038c6c3d190d533553b1f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of rows  <a href="#a037e28160d038c6c3d190d533553b1f9">More...</a><br /></td></tr>
 <tr class="separator:a037e28160d038c6c3d190d533553b1f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb69f47621c8e59bf74f5008b02a3728"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#abb69f47621c8e59bf74f5008b02a3728">num_cols</a></td></tr>
 <tr class="memdesc:abb69f47621c8e59bf74f5008b02a3728"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of columns  <a href="#abb69f47621c8e59bf74f5008b02a3728">More...</a><br /></td></tr>
@@ -180,29 +173,12 @@ struct dg::CooSparseBlockMat&lt; value_type &gt;</h3>
 <p>The basis of this format is the well-known coordinate sparse matrix format. The clue is that instead of a values array we use an index array with indices into a data array that contains the actual blocks. This safes storage if the number of nonrecurrent blocks is small. The indices and blocks are those of a one-dimensional problem. When we want to apply the matrix to a multidimensional vector we can multiply it by Kronecker deltas of the form </p><p class="formulaDsp">
 \[ 1\otimes M \otimes 1\]
 </p>
-<p> where \( 1\) are diagonal matrices of variable size and \( M\) is our one-dimensional matrix. </p><dl class="section note"><dt>Note</dt><dd>This matrix type is used for the computation of boundary points in mpi - distributed matrices </dd></dl>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="af1364d9c406951269b14c6c76ee95022"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1364d9c406951269b14c6c76ee95022">&#9670;&nbsp;</a></span>IVec</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class value_type&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef thrust::host_vector&lt;int&gt; <a class="el" href="structdg_1_1_coo_sparse_block_mat.html">dg::CooSparseBlockMat</a>&lt; value_type &gt;::<a class="el" href="structdg_1_1_coo_sparse_block_mat.html#af1364d9c406951269b14c6c76ee95022">IVec</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>typedef for easy programming </p>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aa24a0237ff6d15655372d7b8181b5b32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa24a0237ff6d15655372d7b8181b5b32">&#9670;&nbsp;</a></span>CooSparseBlockMat() <span class="overload">[1/2]</span></h2>
+<p> where \( 1\) are diagonal matrices of variable size and \( M\) is our one-dimensional matrix. </p><dl class="section note"><dt>Note</dt><dd>This matrix type is used for the computation of boundary points in an mpi - distributed <code><a class="el" href="structdg_1_1_ell_sparse_block_mat.html" title="Ell Sparse Block Matrix format. ">EllSparseBlockMat</a></code> </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>We assume that the input vector in <code>symv</code> has the layout that is given by the <a class="el" href="structdg_1_1_buffer.html" title="a manager class that invokes the copy constructor on the managed ptr when copied (deep copy) ...">Buffer</a> vectors in <code><a class="el" href="structdg_1_1_nearest_neighbor_comm.html" title="Communicator for asynchronous nearest neighbor communication. ">dg::NearestNeighborComm</a></code> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="structdg_1_1_nearest_neighbor_comm.html" title="Communicator for asynchronous nearest neighbor communication. ">dg::NearestNeighborComm</a></code> </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="adb3d7d1d91b63aa3ce3cba8cf9aca306"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb3d7d1d91b63aa3ce3cba8cf9aca306">&#9670;&nbsp;</a></span>CooSparseBlockMat() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -221,7 +197,7 @@ template&lt;class value_type&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -392,8 +368,8 @@ template&lt;class value_type&gt; </div>
 
 </div>
 </div>
-<a id="ab5cdc6db2506164e49e81fb71bd02114"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5cdc6db2506164e49e81fb71bd02114">&#9670;&nbsp;</a></span>symv()</h2>
+<a id="a91cdd748508dd4729f7a545653107705"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91cdd748508dd4729f7a545653107705">&#9670;&nbsp;</a></span>symv()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -421,7 +397,7 @@ template&lt;class value_type&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const value_type *RESTRICT&#160;</td>
+          <td class="paramtype">const value_type **&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
@@ -513,8 +489,8 @@ template&lt;class value_type&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="afe6aef39315e35ed975eb7d1f4f1201e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe6aef39315e35ed975eb7d1f4f1201e">&#9670;&nbsp;</a></span>cols_idx</h2>
+<a id="ae692b6fd313470e6c4cd849a069ba3d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae692b6fd313470e6c4cd849a069ba3d2">&#9670;&nbsp;</a></span>cols_idx</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -522,12 +498,12 @@ template&lt;class value_type&gt; </div>
 template&lt;class value_type&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#af1364d9c406951269b14c6c76ee95022">IVec</a> <a class="el" href="structdg_1_1_coo_sparse_block_mat.html">dg::CooSparseBlockMat</a>&lt; value_type &gt;::cols_idx</td>
+          <td class="memname">thrust::host_vector&lt;int&gt; <a class="el" href="structdg_1_1_coo_sparse_block_mat.html">dg::CooSparseBlockMat</a>&lt; value_type &gt;::cols_idx</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>is of size num_block_rows and contains the column indices </p>
+<p>is of size <code>num_entries</code> and contains the column indices </p>
 
 </div>
 </div>
@@ -545,12 +521,12 @@ template&lt;class value_type&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>The data array is of size n*n*num_different_blocks and contains the blocks. </p>
+<p>The data array is of size <code>n*n*num_different_blocks</code> and contains the blocks. </p>
 
 </div>
 </div>
-<a id="aca232359fb1e449032f48dfa9f3c9f66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca232359fb1e449032f48dfa9f3c9f66">&#9670;&nbsp;</a></span>data_idx</h2>
+<a id="a13ade6a19e96a10d9aa55220a92365f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13ade6a19e96a10d9aa55220a92365f1">&#9670;&nbsp;</a></span>data_idx</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -558,12 +534,12 @@ template&lt;class value_type&gt; </div>
 template&lt;class value_type&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#af1364d9c406951269b14c6c76ee95022">IVec</a> <a class="el" href="structdg_1_1_coo_sparse_block_mat.html">dg::CooSparseBlockMat</a>&lt; value_type &gt;::data_idx</td>
+          <td class="memname">thrust::host_vector&lt;int&gt; <a class="el" href="structdg_1_1_coo_sparse_block_mat.html">dg::CooSparseBlockMat</a>&lt; value_type &gt;::data_idx</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>has the same size as cols_idx and contains indices into the data array </p>
+<p>is of size <code>num_entries</code> and contains indices into the data array </p>
 
 </div>
 </div>
@@ -653,7 +629,7 @@ template&lt;class value_type&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>number of rows, each row contains blocks </p>
+<p>number of rows </p>
 
 </div>
 </div>
@@ -675,8 +651,8 @@ template&lt;class value_type&gt; </div>
 
 </div>
 </div>
-<a id="ae111264bca83f893a8be9d4b6f8a87fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae111264bca83f893a8be9d4b6f8a87fe">&#9670;&nbsp;</a></span>rows_idx</h2>
+<a id="a47f1fd7b3572f09aabe5dc9269a6dbe7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47f1fd7b3572f09aabe5dc9269a6dbe7">&#9670;&nbsp;</a></span>rows_idx</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -684,12 +660,12 @@ template&lt;class value_type&gt; </div>
 template&lt;class value_type&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#af1364d9c406951269b14c6c76ee95022">IVec</a> <a class="el" href="structdg_1_1_coo_sparse_block_mat.html">dg::CooSparseBlockMat</a>&lt; value_type &gt;::rows_idx</td>
+          <td class="memname">thrust::host_vector&lt;int&gt; <a class="el" href="structdg_1_1_coo_sparse_block_mat.html">dg::CooSparseBlockMat</a>&lt; value_type &gt;::rows_idx</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>is of size num_block_rows and contains the row </p>
+<p>is of size <code>num_entries</code> and contains the row indices </p>
 
 </div>
 </div>
@@ -702,7 +678,7 @@ template&lt;class value_type&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html">CooSparseBlockMat</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:50 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

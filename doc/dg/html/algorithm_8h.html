@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -102,47 +102,29 @@ $(document).ready(function(){initNavTree('algorithm_8h.html','');});
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="timer_8h_source.html">backend/timer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="transpose_8h_source.html">backend/transpose.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="split__and__join_8h_source.html">geometry/split_and_join.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="xspacelib_8h_source.html">geometry/xspacelib.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="evaluation_x_8h_source.html">geometry/evaluationX.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="derivatives_x_8h_source.html">geometry/derivativesX.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="weights_x_8h_source.html">geometry/weightsX.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="interpolation_x_8h_source.html">geometry/interpolationX.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="projection_x_8h_source.html">geometry/projectionX.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="geometry_8h_source.html">geometry/geometry.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="split__and__join_8h_source.html">topology/split_and_join.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="xspacelib_8h_source.html">topology/xspacelib.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="evaluation_x_8h_source.html">topology/evaluationX.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="derivatives_x_8h_source.html">topology/derivativesX.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="weights_x_8h_source.html">topology/weightsX.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="interpolation_x_8h_source.html">topology/interpolationX.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="projection_x_8h_source.html">topology/projectionX.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="geometry_8h_source.html">topology/geometry.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="blas_8h_source.html">blas.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="helmholtz_8h_source.html">helmholtz.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="cg_8h_source.html">cg.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for algorithm.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="algorithm_8h__incl.png" border="0" usemap="#algorithm_8h" alt=""/></div>
-<map name="algorithm_8h" id="algorithm_8h">
-<area shape="rect" id="node2" href="timer_8h.html" title="backend/timer.h" alt="" coords="375,80,490,107"/>
-<area shape="rect" id="node4" href="transpose_8h.html" title="backend/transpose.h" alt="" coords="2915,80,3057,107"/>
-<area shape="rect" id="node27" href="split__and__join_8h.html" title="geometry/split_and\l_join.h" alt="" coords="384,162,516,203"/>
-<area shape="rect" id="node33" href="xspacelib_8h.html" title="provides some utility functions " alt="" coords="1435,169,1582,196"/>
-<area shape="rect" id="node40" href="evaluation_x_8h.html" title="Function discretization routines on X&#45;point topology. " alt="" coords="865,266,1024,293"/>
-<area shape="rect" id="node42" href="derivatives_x_8h.html" title="Convenience functions to create 2D derivatives on X&#45;point topology. " alt="" coords="1803,80,1966,107"/>
-<area shape="rect" id="node44" href="weights_x_8h.html" title="contains creation functions for integration weights and their inverse on X&#45;point topology ..." alt="" coords="1100,266,1187,293"/>
-<area shape="rect" id="node45" href="blas_8h.html" title="../blas.h" alt="" coords="4675,169,4745,196"/>
-<area shape="rect" id="node46" href="interpolation_x_8h.html" title="contains 1D, 2D and 3D interpolation matrix creation functions on X&#45;point topology ..." alt="" coords="1190,169,1361,196"/>
-<area shape="rect" id="node47" href="projection_x_8h.html" title="contains creation of projection matrices for X point topology " alt="" coords="893,80,1049,107"/>
-<area shape="rect" id="node48" href="geometry_8h.html" title="geometry/geometry.h" alt="" coords="696,266,841,293"/>
-<area shape="rect" id="node49" href="helmholtz_8h.html" title="contains Helmholtz and Maxwell operators " alt="" coords="4483,80,4572,107"/>
-<area shape="rect" id="node50" href="cg_8h.html" title="cg.h" alt="" coords="3812,80,3859,107"/>
-<area shape="rect" id="node30" href="grid_8h.html" title="base topology classes " alt="" coords="1197,452,1252,479"/>
-<area shape="rect" id="node32" href="mpi__grid_8h.html" title="MPI Grid objects. " alt="" coords="487,266,570,293"/>
-<area shape="rect" id="node31" href="dlt_8h.html" title="contains the discrete legendre trafo class " alt="" coords="1555,527,1601,553"/>
-<area shape="rect" id="node35" href="operator_8h.html" title="operator.h" alt="" coords="1845,452,1925,479"/>
-<area shape="rect" id="node36" href="operator__tensor_8h.html" title="operator_tensor.h" alt="" coords="1823,363,1946,389"/>
-<area shape="rect" id="node37" href="dgtensor_8h.html" title="a tensor product function between two cusp matrices " alt="" coords="1666,363,1749,389"/>
-<area shape="rect" id="node38" href="interpolation_8h.html" title="contains 1D, 2D and 3D interpolation matrix creation functions " alt="" coords="1415,266,1517,293"/>
-<area shape="rect" id="node39" href="evaluation_8h.html" title="Function discretization routines. " alt="" coords="988,363,1080,389"/>
-<area shape="rect" id="node41" href="grid_x_8h.html" title="base X&#45;point topology classes " alt="" coords="1193,363,1256,389"/>
-<area shape="rect" id="node43" href="dx_x_8h.html" title="Simple 1d derivatives on X&#45;point topology. " alt="" coords="1110,169,1166,196"/>
-</map>
-</div>
+<code>#include &quot;<a class="el" href="functors_8h_source.html">functors.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="multistep_8h_source.html">multistep.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="elliptic_8h_source.html">elliptic.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="runge__kutta_8h_source.html">runge_kutta.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="adaptive_8h_source.html">adaptive.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="multigrid_8h_source.html">multigrid.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="refined__elliptic_8h_source.html">refined_elliptic.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="arakawa_8h_source.html">arakawa.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="poisson_8h_source.html">poisson.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="average_8h_source.html">topology/average.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="average__mpi_8h_source.html">topology/average_mpi.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mpi__init_8h_source.html">backend/mpi_init.h</a>&quot;</code><br />
 </div>
 <p><a href="algorithm_8h_source.html">Go to the source code of this file.</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -154,7 +136,7 @@ Include dependency graph for algorithm.h:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="algorithm_8h.html">algorithm.h</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

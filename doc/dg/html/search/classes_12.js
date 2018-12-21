@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['udouble',['udouble',['../../../exblas/html/unionexblas_1_1udouble.html',1,'exblas']]]
+  ['view',['View',['../structdg_1_1_view.html',1,'dg']]],
+  ['vortex',['Vortex',['../structdg_1_1_vortex.html',1,'dg']]]
 ];

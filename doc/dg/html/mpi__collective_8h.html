@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -114,45 +114,19 @@ $(document).ready(function(){initNavTree('mpi__collective_8h.html','');});
 <code>#include &quot;<a class="el" href="blas1_8h_source.html">dg/blas1.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="memory_8h_source.html">memory.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mpi__communicator_8h_source.html">mpi_communicator.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for mpi_collective.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="mpi__collective_8h__incl.png" border="0" usemap="#backend_2mpi__collective_8h" alt=""/></div>
-<map name="backend_2mpi__collective_8h" id="backend_2mpi__collective_8h">
-<area shape="rect" id="node35" href="blas1_8h.html" title="dg/blas1.h" alt="" coords="1448,95,1531,121"/>
-<area shape="rect" id="node45" href="mpi__communicator_8h.html" title="mpi_communicator.h" alt="" coords="1767,288,1910,315"/>
-<area shape="rect" id="node47" href="memory_8h.html" title="memory.h" alt="" coords="1996,288,2076,315"/>
-<area shape="rect" id="node37" href="tensor__traits__scalar_8h.html" title="backend/tensor_traits\l_scalar.h" alt="" coords="2173,184,2320,225"/>
-<area shape="rect" id="node38" href="tensor__traits__thrust_8h.html" title="backend/tensor_traits\l_thrust.h" alt="" coords="1416,184,1563,225"/>
-<area shape="rect" id="node39" href="tensor__traits__cusp_8h.html" title="backend/tensor_traits\l_cusp.h" alt="" coords="299,184,445,225"/>
-<area shape="rect" id="node41" href="tensor__traits__std_8h.html" title="backend/tensor_traits\l_std.h" alt="" coords="933,184,1080,225"/>
-<area shape="rect" id="node44" href="mpi__vector_8h.html" title="backend/mpi_vector.h" alt="" coords="758,191,909,218"/>
-<area shape="rect" id="node50" href="subroutines_8h.html" title="subroutines.h" alt="" coords="1291,191,1391,218"/>
-</map>
-</div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="mpi__collective_8h__dep__incl.png" border="0" usemap="#backend_2mpi__collective_8hdep" alt=""/></div>
-<map name="backend_2mpi__collective_8hdep" id="backend_2mpi__collective_8hdep">
-<area shape="rect" id="node2" href="mpi__projection_8h.html" title="Useful MPI typedefs and overloads of interpolation and projection. " alt="" coords="21,80,195,107"/>
-<area shape="rect" id="node3" href="multigrid_8h.html" title="multigrid.h" alt="" coords="5,155,88,181"/>
-<area shape="rect" id="node4" href="refined__elliptic_8h.html" title="contains an elliptic method on a refined grid " alt="" coords="113,155,229,181"/>
-</map>
-</div>
 </div>
 <p><a href="mpi__collective_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_bijective_comm.html">dg::BijectiveComm&lt; Index, Vector &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct that performs bijective collective scatter and gather operations across processes on distributed vectors using mpi.  <a href="structdg_1_1_bijective_comm.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform bijective gather and its transpose (scatter) operation across processes on distributed vectors using mpi.  <a href="structdg_1_1_bijective_comm.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_surjective_comm.html">dg::SurjectiveComm&lt; Index, Vector &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct that performs surjective collective scatter and gather operations across processes on distributed vectors using mpi.  <a href="structdg_1_1_surjective_comm.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform surjective gather and its transpose (scatter) operation across processes on distributed vectors using mpi.  <a href="structdg_1_1_surjective_comm.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_general_comm.html">dg::GeneralComm&lt; Index, Vector &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct that performs general collective scatter and gather operations across processes on distributed vectors using mpi.  <a href="structdg_1_1_general_comm.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform general gather and its transpose (scatter) operation across processes on distributed vectors using mpi.  <a href="structdg_1_1_general_comm.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -167,7 +141,7 @@ Namespaces</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_8c739bbef76d64b22d6b0911c526dd76.html">backend</a></li><li class="navelem"><a class="el" href="mpi__collective_8h.html">mpi_collective.h</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

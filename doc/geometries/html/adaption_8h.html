@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
-<title>Geometries: adaption.h File Reference</title>
+<title>Extension: Geometries: adaption.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -44,9 +44,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Geometries
+   <div id="projectname">Extension: Geometries
    </div>
-   <div id="projectbrief">Extension with magnetic flux functions, grids and grid generators</div>
+   <div id="projectbrief">Magnetic flux functions, parallel derivatives and new grids and grid generators in &quot;dg/geometries/geometries.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -105,26 +105,6 @@ $(document).ready(function(){initNavTree('adaption_8h.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="fluxfunctions_8h_source.html">fluxfunctions.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for adaption.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="adaption_8h__incl.png" border="0" usemap="#adaption_8h" alt=""/></div>
-<map name="adaption_8h" id="adaption_8h">
-<area shape="rect" id="node2" href="fluxfunctions_8h.html" title="fluxfunctions.h" alt="" coords="27,80,134,107"/>
-<area shape="rect" id="node3" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/memory_8h.html" title="dg/backend/memory.h" alt="" coords="5,155,156,181"/>
-</map>
-</div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="adaption_8h__dep__incl.png" border="0" usemap="#adaption_8hdep" alt=""/></div>
-<map name="adaption_8hdep" id="adaption_8hdep">
-<area shape="rect" id="node2" href="simple__orthogonal_8h.html" title="simple_orthogonal.h" alt="" coords="32,80,171,107"/>
-<area shape="rect" id="node3" href="geometries_8h.html" title="geometries.h" alt="" coords="110,229,207,256"/>
-<area shape="rect" id="node5" href="hector_8h.html" title="hector.h" alt="" coords="255,155,324,181"/>
-<area shape="rect" id="node4" href="separatrix__orthogonal_8h.html" title="separatrix_orthogonal.h" alt="" coords="23,155,180,181"/>
-</map>
-</div>
 </div>
 <p><a href="adaption_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -188,11 +168,11 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaf583c457b3907ec4e9a94d4c17427d55"><td class="memItemLeft" align="right" valign="top">BinaryFunctorsLvl1&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__profiles.html#gaf583c457b3907ec4e9a94d4c17427d55">dg::geo::make_NablaPsiInvCollective</a> (const BinaryFunctorsLvl2 &amp;psi)</td></tr>
-<tr class="memdesc:gaf583c457b3907ec4e9a94d4c17427d55"><td class="mdescLeft">&#160;</td><td class="mdescRight">A container class that contains all <a class="el" href="structdg_1_1geo_1_1_nabla_psi_inv.html" title="A weight function for the Hector algorithm . ">NablaPsiInv</a> functors.  <a href="group__profiles.html#gaf583c457b3907ec4e9a94d4c17427d55">More...</a><br /></td></tr>
-<tr class="separator:gaf583c457b3907ec4e9a94d4c17427d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga56d2d722a2734d1685263ee8a95e7555"><td class="memItemLeft" align="right" valign="top">BinarySymmTensorLvl1&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__profiles.html#ga56d2d722a2734d1685263ee8a95e7555">dg::geo::make_LiseikinCollective</a> (const BinaryFunctorsLvl2 &amp;psi, double k, double eps)</td></tr>
-<tr class="separator:ga56d2d722a2734d1685263ee8a95e7555"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga32a9569879bd13c719c77be10f0d399d"><td class="memItemLeft" align="right" valign="top">static CylindricalFunctorsLvl1&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__profiles.html#ga32a9569879bd13c719c77be10f0d399d">dg::geo::make_NablaPsiInvCollective</a> (const CylindricalFunctorsLvl2 &amp;psi)</td></tr>
+<tr class="memdesc:ga32a9569879bd13c719c77be10f0d399d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A container class that contains all <a class="el" href="structdg_1_1geo_1_1_nabla_psi_inv.html" title="A weight function for the Hector algorithm . ">NablaPsiInv</a> functors.  <a href="group__profiles.html#ga32a9569879bd13c719c77be10f0d399d">More...</a><br /></td></tr>
+<tr class="separator:ga32a9569879bd13c719c77be10f0d399d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae0cb11f189e743a3291e23e2bc361bb2"><td class="memItemLeft" align="right" valign="top">static CylindricalSymmTensorLvl1&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__profiles.html#gae0cb11f189e743a3291e23e2bc361bb2">dg::geo::make_LiseikinCollective</a> (const CylindricalFunctorsLvl2 &amp;psi, double k, double eps)</td></tr>
+<tr class="separator:gae0cb11f189e743a3291e23e2bc361bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>contains an adaption function and a monitor metric for the Hector algorithm </p>
@@ -202,7 +182,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="adaption_8h.html">adaption.h</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:03:04 for Geometries by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:57 for Extension: Geometries by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

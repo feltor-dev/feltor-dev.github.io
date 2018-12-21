@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -97,7 +97,8 @@ $(document).ready(function(){initNavTree('group__backend.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#groups">Modules</a>  </div>
+<a href="#groups">Modules</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Level 1: Vectors, Matrices and basic operations</div>  </div>
 </div><!--header-->
@@ -107,35 +108,184 @@ Collaboration diagram for Level 1: Vectors, Matrices and basic operations:</div>
 <div class="dyncontent">
 <center><table><tr><td><img src="group__backend.png" border="0" alt="" usemap="#group____backend"/>
 <map name="group____backend" id="group____backend">
-<area shape="rect" id="node1" href="group__mpi__structures.html" title="MPI backend" alt="" coords="262,5,361,32"/>
-<area shape="rect" id="node2" href="group__typedefs.html" title="Useful Typedefs" alt="" coords="252,56,371,83"/>
-<area shape="rect" id="node3" href="group__dispatch.html" title="The tag dispatch system" alt="" coords="228,107,395,133"/>
-<area shape="rect" id="node4" href="group__sparsematrix.html" title="Sparse matrix formats" alt="" coords="236,157,387,184"/>
-<area shape="rect" id="node6" href="group__blas.html" title="Basic Linear Algebra\l Subroutines" alt="" coords="240,209,383,250"/>
+<area shape="rect" id="node1" href="group__mpi__structures.html" title="MPI backend" alt="" coords="272,5,371,32"/>
+<area shape="rect" id="node2" href="group__view.html" title="Vector view" alt="" coords="276,56,367,83"/>
+<area shape="rect" id="node3" href="group__typedefs.html" title="Useful Typedefs" alt="" coords="262,107,381,133"/>
+<area shape="rect" id="node4" href="group__dispatch.html" title="The tag dispatch system" alt="" coords="238,157,405,184"/>
+<area shape="rect" id="node5" href="group__sparsematrix.html" title="Sparse matrix formats" alt="" coords="246,208,397,235"/>
+<area shape="rect" id="node7" href="group__blas.html" title="Basic container independent\l subroutines" alt="" coords="228,259,415,301"/>
 </map>
 </td></tr></table></center>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="groups"></a>
 Modules</h2></td></tr>
-<tr class="memitem:group__blas"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__blas.html">Basic Linear Algebra Subroutines</a></td></tr>
+<tr class="memitem:group__blas"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__blas.html">Basic container independent subroutines</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:group__typedefs"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html">Useful Typedefs</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:group__sparsematrix"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sparsematrix.html">Sparse matrix formats</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:group__view"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__view.html">Vector view</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:group__mpi__structures"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mpi__structures.html">MPI backend</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:group__dispatch"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dispatch.html">The tag dispatch system</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:gab0ca1b8d3f70004e25ddc2010f7e9e0d"><td class="memTemplParams" colspan="2">template&lt;class from_ContainerType , class ContainerType , class ... Params&gt; </td></tr>
+<tr class="memitem:gab0ca1b8d3f70004e25ddc2010f7e9e0d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__backend.html#gab0ca1b8d3f70004e25ddc2010f7e9e0d">dg::assign</a> (const from_ContainerType &amp;from, ContainerType &amp;to, Params &amp;&amp;... ps)</td></tr>
+<tr class="memdesc:gab0ca1b8d3f70004e25ddc2010f7e9e0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic way to assign the contents of a <code>from_ContainerType</code> object to a <code>ContainerType</code> object optionally given additional parameters.  <a href="group__backend.html#gab0ca1b8d3f70004e25ddc2010f7e9e0d">More...</a><br /></td></tr>
+<tr class="separator:gab0ca1b8d3f70004e25ddc2010f7e9e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5dbfc632d4d66d2d926dd525ed7fcea8"><td class="memTemplParams" colspan="2">template&lt;class ContainerType , class from_ContainerType , class ... Params&gt; </td></tr>
+<tr class="memitem:ga5dbfc632d4d66d2d926dd525ed7fcea8"><td class="memTemplItemLeft" align="right" valign="top">ContainerType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__backend.html#ga5dbfc632d4d66d2d926dd525ed7fcea8">dg::construct</a> (const from_ContainerType &amp;from, Params &amp;&amp;... ps)</td></tr>
+<tr class="memdesc:ga5dbfc632d4d66d2d926dd525ed7fcea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic way to construct an object of <code>ContainerType</code> given a <code>from_ContainerType</code> object and optional additional parameters.  <a href="group__backend.html#ga5dbfc632d4d66d2d926dd525ed7fcea8">More...</a><br /></td></tr>
+<tr class="separator:ga5dbfc632d4d66d2d926dd525ed7fcea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="gab0ca1b8d3f70004e25ddc2010f7e9e0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab0ca1b8d3f70004e25ddc2010f7e9e0d">&#9670;&nbsp;</a></span>assign()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class from_ContainerType , class ContainerType , class ... Params&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dg::assign </td>
+          <td>(</td>
+          <td class="paramtype">const from_ContainerType &amp;&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ContainerType &amp;&#160;</td>
+          <td class="paramname"><em>to</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Params &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>ps</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generic way to assign the contents of a <code>from_ContainerType</code> object to a <code>ContainerType</code> object optionally given additional parameters. </p>
+<p>The idea of this function is to convert between types with the same data layout but different execution policies (e.g. from a thrust::host_vector to a thrust::device_vector). If the layout differs, additional parameters can be used to achieve what you want.</p>
+<p>For example </p><div class="fragment"><div class="line"><a class="code" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193">dg::HVec</a> host( 100, 1.);</div><div class="line"><a class="code" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8">dg::DVec</a> device(100);</div><div class="line"><a class="code" href="group__backend.html#gab0ca1b8d3f70004e25ddc2010f7e9e0d">dg::assign</a>( host, device );</div><div class="line"><span class="comment">//let us construct a std::vector of 3 dg::DVec from a host vector</span></div><div class="line">std::vector&lt;dg::DVec&gt; device_vec(3);</div><div class="line"><a class="code" href="group__backend.html#gab0ca1b8d3f70004e25ddc2010f7e9e0d">dg::assign</a>( host, device_vec, 3);</div></div><!-- fragment --> <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">from</td><td>source vector </td></tr>
+    <tr><td class="paramname">to</td><td>target vector contains a copy of <code>from</code> on output (memory is automatically resized if necessary) </td></tr>
+    <tr><td class="paramname">ps</td><td>additional parameters usable for the transfer operation </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>it is possible to assign a <code>from_ContainerType</code> to a <code> std::array&lt;ContainerType, N&gt; </code> (all elements are initialized with from_ContainerType) and also a <code> std::vector&lt;ContainerType&gt;</code> ( the desired size of the <code>std::vector</code> must be provided as an additional parameter) </dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">from_ContainerType</td><td>must have the same data policy derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> as <code>ContainerType</code> (with the exception of <code>std::array</code> and <code>std::vector</code>) but can have different execution policy </td></tr>
+    <tr><td class="paramname">Params</td><td>in some cases additional parameters that are necessary to assign objects of Type <code>ContainerType</code> </td></tr>
+    <tr><td class="paramname">ContainerType</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> and <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. Among others<ul>
+<li><code> <a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193" title="Host Vector. ">dg::HVec</a> (serial), <a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a> (cuda / omp), <a class="el" href="group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a> (mpi + serial) or <a class="el" href="group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a> (mpi + cuda / omp) </code></li>
+<li><code> std::vector&lt;dg::DVec&gt; (vector of shared device vectors), std::array&lt;double, 4&gt; (array of 4 doubles)</code></li>
+<li><code> double (scalar)</code> and other primitive types ...</li>
+</ul>
+If there are several <code>ContainerTypes</code> in the argument list, then <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> must exist for all of them </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="index.html#dispatch">The Level 1 dispatch system</a> for a detailed explanation of our type dispatch system </dd></dl>
+
+</div>
+</div>
+<a id="ga5dbfc632d4d66d2d926dd525ed7fcea8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5dbfc632d4d66d2d926dd525ed7fcea8">&#9670;&nbsp;</a></span>construct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ContainerType , class from_ContainerType , class ... Params&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ContainerType dg::construct </td>
+          <td>(</td>
+          <td class="paramtype">const from_ContainerType &amp;&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Params &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>ps</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generic way to construct an object of <code>ContainerType</code> given a <code>from_ContainerType</code> object and optional additional parameters. </p>
+<p>The idea of this function is to convert between types with the same data layout but different execution policies (e.g. from a thrust::host_vector to a thrust::device_vector) If the layout differs, additional parameters can be used to achieve what you want.</p>
+<p>For example </p><div class="fragment"><div class="line"><a class="code" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193">dg::HVec</a> host( 100, 1.);</div><div class="line"><a class="code" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8">dg::DVec</a> device = dg::construct&lt;dg::DVec&gt;( host );</div><div class="line">std::array&lt;dg::DVec, 3&gt; device_arr = dg::construct&lt;std::array&lt;dg::DVec, 3&gt;&gt;( host );</div><div class="line"><span class="comment">//let us construct a std::vector of 3 dg::DVec from a host vector</span></div><div class="line">std::vector&lt;dg::DVec&gt; device_vec = dg::construct&lt;std::vector&lt;dg::DVec&gt;&gt;( host, 3);</div></div><!-- fragment --> <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">from</td><td>source vector </td></tr>
+    <tr><td class="paramname">ps</td><td>additional parameters necessary to construct a <code>ContainerType</code> object </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>from</code> converted to the new format (memory is allocated accordingly) </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>it is possible to construct a <code> std::array&lt;ContainerType, N&gt; </code> (all elements are initialized with from_ContainerType) and also a <code> std::vector&lt;ContainerType&gt;</code> ( the desired size of the <code>std::vector</code> must be provided as an additional parameter) given a <code>from_ContainerType</code> </dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">from_ContainerType</td><td>must have the same data policy derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> as <code>ContainerType</code> (with the exception of <code>std::array</code> and <code>std::vector</code>) but can have different execution policy </td></tr>
+    <tr><td class="paramname">Params</td><td>in some cases additional parameters that are necessary to construct objects of Type <code>ContainerType</code> </td></tr>
+    <tr><td class="paramname">ContainerType</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> and <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. Among others<ul>
+<li><code> <a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193" title="Host Vector. ">dg::HVec</a> (serial), <a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a> (cuda / omp), <a class="el" href="group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a> (mpi + serial) or <a class="el" href="group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a> (mpi + cuda / omp) </code></li>
+<li><code> std::vector&lt;dg::DVec&gt; (vector of shared device vectors), std::array&lt;double, 4&gt; (array of 4 doubles)</code></li>
+<li><code> double (scalar)</code> and other primitive types ...</li>
+</ul>
+If there are several <code>ContainerTypes</code> in the argument list, then <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> must exist for all of them </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="index.html#dispatch">The Level 1 dispatch system</a> for a detailed explanation of our type dispatch system </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

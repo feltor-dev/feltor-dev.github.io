@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -104,8 +104,8 @@ $(document).ready(function(){initNavTree('structdg_1_1_inv_cosh_xsq.html','');})
 </div><!--header-->
 <div class="contents">
 
-<p>Functor for a sin prof in x and y-direction </p><p class="formulaDsp">
-\[ f(x,y) =B+ A \sin(k_x x) \sin(k_y y) \]
+<p>Inverse cosh profile </p><p class="formulaDsp">
+\[ f(x,y) =A/\cosh^2(k_x x) \]
 </p>
 <p>.  
  <a href="structdg_1_1_inv_cosh_xsq.html#details">More...</a></p>
@@ -117,13 +117,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab62d44f245bfc5bf37c5afb3054ae021"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_inv_cosh_xsq.html#ab62d44f245bfc5bf37c5afb3054ae021">InvCoshXsq</a> (double amp, double kx)</td></tr>
 <tr class="memdesc:ab62d44f245bfc5bf37c5afb3054ae021"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct with two coefficients.  <a href="#ab62d44f245bfc5bf37c5afb3054ae021">More...</a><br /></td></tr>
 <tr class="separator:ab62d44f245bfc5bf37c5afb3054ae021"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97e25d41cb85a3e080fcb7baec54f518"><td class="memItemLeft" align="right" valign="top"><a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_inv_cosh_xsq.html#a97e25d41cb85a3e080fcb7baec54f518">operator()</a> (double <a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>) const</td></tr>
+<tr class="separator:a97e25d41cb85a3e080fcb7baec54f518"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b06a694942ef53b22e12120f36206f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_inv_cosh_xsq.html#a6b06a694942ef53b22e12120f36206f1">operator()</a> (double <a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>, double <a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>) const</td></tr>
-<tr class="memdesc:a6b06a694942ef53b22e12120f36206f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return profile.  <a href="#a6b06a694942ef53b22e12120f36206f1">More...</a><br /></td></tr>
 <tr class="separator:a6b06a694942ef53b22e12120f36206f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab66ee16d1d9888519d934d3d76deb50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_inv_cosh_xsq.html#aab66ee16d1d9888519d934d3d76deb50">operator()</a> (double <a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>, double <a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>, double <a class="el" href="group__creation.html#gga4de4a3d7cd219a55affa992871e8598fafbade9e36a3f36d3d676c1b808451dd7">z</a>) const</td></tr>
+<tr class="separator:aab66ee16d1d9888519d934d3d76deb50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Functor for a sin prof in x and y-direction </p><p class="formulaDsp">
-\[ f(x,y) =B+ A \sin(k_x x) \sin(k_y y) \]
+<div class="textblock"><p>Inverse cosh profile </p><p class="formulaDsp">
+\[ f(x,y) =A/\cosh^2(k_x x) \]
 </p>
 <p>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -173,8 +176,34 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a97e25d41cb85a3e080fcb7baec54f518"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97e25d41cb85a3e080fcb7baec54f518">&#9670;&nbsp;</a></span>operator()() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double dg::InvCoshXsq::operator() </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a6b06a694942ef53b22e12120f36206f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b06a694942ef53b22e12120f36206f1">&#9670;&nbsp;</a></span>operator()()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b06a694942ef53b22e12120f36206f1">&#9670;&nbsp;</a></span>operator()() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -207,15 +236,47 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Return profile. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>x - coordinate </td></tr>
-    <tr><td class="paramname">y</td><td>y - coordinate</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>\( f(x,y)\) </dd></dl>
+</div>
+</div>
+<a id="aab66ee16d1d9888519d934d3d76deb50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab66ee16d1d9888519d934d3d76deb50">&#9670;&nbsp;</a></span>operator()() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double dg::InvCoshXsq::operator() </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -228,7 +289,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_inv_cosh_xsq.html">InvCoshXsq</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:50 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

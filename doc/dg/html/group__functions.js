@@ -1,10 +1,10 @@
 var group__functions =
 [
     [ "AbsMax", "structdg_1_1_abs_max.html", [
-      [ "operator()", "structdg_1_1_abs_max.html#ae0e234f8cfccaccd2a9159934023dea2", null ]
+      [ "operator()", "structdg_1_1_abs_max.html#a838aa03ebc9d155f0b9cb8caa35157d3", null ]
     ] ],
     [ "AbsMin", "structdg_1_1_abs_min.html", [
-      [ "operator()", "structdg_1_1_abs_min.html#ab82c3b544ad06e8a5f4c2ef5d3512258", null ]
+      [ "operator()", "structdg_1_1_abs_min.html#aa1abd700121746ac95007c0acf0ce34b", null ]
     ] ],
     [ "Gaussian", "structdg_1_1_gaussian.html", [
       [ "Gaussian", "structdg_1_1_gaussian.html#aba2df3bbc671faf0a429ab001db27055", null ],
@@ -28,7 +28,9 @@ var group__functions =
     ] ],
     [ "GaussianX", "structdg_1_1_gaussian_x.html", [
       [ "GaussianX", "structdg_1_1_gaussian_x.html#a8126f14bde2aec2566da04d2697d0964", null ],
-      [ "operator()", "structdg_1_1_gaussian_x.html#a180d9b21a30f7d01c40b83165ba47408", null ]
+      [ "operator()", "structdg_1_1_gaussian_x.html#a43a3277aa3d2a099285a48bb1bc5426d", null ],
+      [ "operator()", "structdg_1_1_gaussian_x.html#a180d9b21a30f7d01c40b83165ba47408", null ],
+      [ "operator()", "structdg_1_1_gaussian_x.html#a5f230c77e9bf8a0e3a5b50da0484a899", null ]
     ] ],
     [ "GaussianY", "structdg_1_1_gaussian_y.html", [
       [ "GaussianY", "structdg_1_1_gaussian_y.html#a02d66ca7623f6132e0290fd33568af1f", null ],
@@ -57,7 +59,9 @@ var group__functions =
     ] ],
     [ "SinX", "structdg_1_1_sin_x.html", [
       [ "SinX", "structdg_1_1_sin_x.html#ab12cf6b148f6284d52fc3f6286cd500e", null ],
-      [ "operator()", "structdg_1_1_sin_x.html#a56f852f67848d2500b526d226919b80b", null ]
+      [ "operator()", "structdg_1_1_sin_x.html#a29718d7f20b332c64b61d0f75480345f", null ],
+      [ "operator()", "structdg_1_1_sin_x.html#a56f852f67848d2500b526d226919b80b", null ],
+      [ "operator()", "structdg_1_1_sin_x.html#a65cb6642ab37a8fff6eb017f4b246fc7", null ]
     ] ],
     [ "SinY", "structdg_1_1_sin_y.html", [
       [ "SinY", "structdg_1_1_sin_y.html#aa16b9d571271d4326e1c4a8b951cd5d8", null ],
@@ -69,21 +73,27 @@ var group__functions =
     ] ],
     [ "InvCoshXsq", "structdg_1_1_inv_cosh_xsq.html", [
       [ "InvCoshXsq", "structdg_1_1_inv_cosh_xsq.html#ab62d44f245bfc5bf37c5afb3054ae021", null ],
-      [ "operator()", "structdg_1_1_inv_cosh_xsq.html#a6b06a694942ef53b22e12120f36206f1", null ]
+      [ "operator()", "structdg_1_1_inv_cosh_xsq.html#a97e25d41cb85a3e080fcb7baec54f518", null ],
+      [ "operator()", "structdg_1_1_inv_cosh_xsq.html#a6b06a694942ef53b22e12120f36206f1", null ],
+      [ "operator()", "structdg_1_1_inv_cosh_xsq.html#aab66ee16d1d9888519d934d3d76deb50", null ]
     ] ],
     [ "SinProfX", "structdg_1_1_sin_prof_x.html", [
       [ "SinProfX", "structdg_1_1_sin_prof_x.html#a1d8a1a06b4c66cf68b532ddaa47e3e4e", null ],
-      [ "operator()", "structdg_1_1_sin_prof_x.html#a06680697a068117deb620f1c0c4a4a07", null ]
+      [ "operator()", "structdg_1_1_sin_prof_x.html#ab6ed5e24b74ace0cf6d200d1cc618ea5", null ],
+      [ "operator()", "structdg_1_1_sin_prof_x.html#a06680697a068117deb620f1c0c4a4a07", null ],
+      [ "operator()", "structdg_1_1_sin_prof_x.html#a6162b09c1c2a2a5a8140659be6b72830", null ]
     ] ],
     [ "ExpProfX", "structdg_1_1_exp_prof_x.html", [
       [ "ExpProfX", "structdg_1_1_exp_prof_x.html#acf9e0f6bda55e047dc46c397830505b3", null ],
-      [ "operator()", "structdg_1_1_exp_prof_x.html#a0e1417ec498b8315227acee451400110", null ]
+      [ "operator()", "structdg_1_1_exp_prof_x.html#a429de10dbd1c859d0e9e709b14ff8df6", null ],
+      [ "operator()", "structdg_1_1_exp_prof_x.html#a0e1417ec498b8315227acee451400110", null ],
+      [ "operator()", "structdg_1_1_exp_prof_x.html#a0dce6eb6c3b11850932c4bea287f6cf9", null ]
     ] ],
     [ "LinearX", "structdg_1_1_linear_x.html", [
       [ "LinearX", "structdg_1_1_linear_x.html#a2721b98ac435a39e4864b42657e7c07c", null ],
-      [ "operator()", "structdg_1_1_linear_x.html#a7e4ac41e7807bf4a75a4d37921488dae", null ],
+      [ "operator()", "structdg_1_1_linear_x.html#a082d05ac51dd757bf78c3cb0c026ede0", null ],
       [ "operator()", "structdg_1_1_linear_x.html#a8d76a05ee99409fe9a11023950ccefe8", null ],
-      [ "operator()", "structdg_1_1_linear_x.html#a082d05ac51dd757bf78c3cb0c026ede0", null ]
+      [ "operator()", "structdg_1_1_linear_x.html#a7e4ac41e7807bf4a75a4d37921488dae", null ]
     ] ],
     [ "LinearY", "structdg_1_1_linear_y.html", [
       [ "LinearY", "structdg_1_1_linear_y.html#a141df376a562eb957ae6c05ce76c78d8", null ],
@@ -94,25 +104,31 @@ var group__functions =
       [ "LinearZ", "structdg_1_1_linear_z.html#aafebe34c10d894f6f0122264ac96a1a0", null ],
       [ "operator()", "structdg_1_1_linear_z.html#abd2f7b2a00fbeca594b5b60ef89a1a95", null ]
     ] ],
+    [ "Iris", "structdg_1_1_iris.html", [
+      [ "Iris", "structdg_1_1_iris.html#a09896aad3771228af5307fc699aeee16", null ],
+      [ "operator()", "structdg_1_1_iris.html#afd89f1159ddacc146aec47305893a516", null ]
+    ] ],
+    [ "Pupil", "structdg_1_1_pupil.html", [
+      [ "Pupil", "structdg_1_1_pupil.html#a479e782efe8f97f50d4ed30f27b05ef3", null ],
+      [ "operator()", "structdg_1_1_pupil.html#a015cdcd708d4519f11c9c3293cb71142", null ]
+    ] ],
+    [ "PsiPupil", "structdg_1_1_psi_pupil.html", [
+      [ "PsiPupil", "structdg_1_1_psi_pupil.html#a62a3822519d49540e9faee24607df3f1", null ],
+      [ "operator()", "structdg_1_1_psi_pupil.html#ab34522531c531d5323e4a0895b4e43af", null ]
+    ] ],
+    [ "Heaviside", "structdg_1_1_heaviside.html", [
+      [ "Heaviside", "structdg_1_1_heaviside.html#aeb2f9b60796260a17c1d7dc3fa4281bc", null ],
+      [ "operator()", "structdg_1_1_heaviside.html#ad45990076119f479851bdef8bb8dbc7c", null ]
+    ] ],
+    [ "GaussianDamping", "structdg_1_1_gaussian_damping.html", [
+      [ "GaussianDamping", "structdg_1_1_gaussian_damping.html#a7f046248fa21ca4637cd2e4a6416ac24", null ],
+      [ "operator()", "structdg_1_1_gaussian_damping.html#a2a3cbf8c4fbb3d1af15b35c61d99a0af", null ]
+    ] ],
     [ "TanhProfX", "structdg_1_1_tanh_prof_x.html", [
-      [ "TanhProfX", "structdg_1_1_tanh_prof_x.html#a38043606afa505f7f9a70511119ac74b", null ],
-      [ "operator()", "structdg_1_1_tanh_prof_x.html#a6f64fff5c52838cf05c242528eb41740", null ]
-    ] ],
-    [ "Lamb", "structdg_1_1_lamb.html", [
-      [ "Lamb", "structdg_1_1_lamb.html#a8bbe13dcd12f398e0426f1c92388ecdd", null ],
-      [ "energy", "structdg_1_1_lamb.html#a58b2ef1b7f2b2e8d4f049ab82a6f9d93", null ],
-      [ "enstrophy", "structdg_1_1_lamb.html#a9116ad77bc494ee87b0e7b8d76fada71", null ],
-      [ "operator()", "structdg_1_1_lamb.html#a9491de6dbcd01c16abe2fd72d7031b19", null ]
-    ] ],
-    [ "Vortex", "structdg_1_1_vortex.html", [
-      [ "Vortex", "structdg_1_1_vortex.html#a3cb30fdf2c8da900f2b6f3366dbaf237", null ],
-      [ "operator()", "structdg_1_1_vortex.html#a2ff6d88733a783fad4331490093652e8", null ],
-      [ "operator()", "structdg_1_1_vortex.html#a702f35dac640eb5af31e8aa10b0e3f01", null ]
-    ] ],
-    [ "BathRZ", "structdg_1_1_bath_r_z.html", [
-      [ "BathRZ", "structdg_1_1_bath_r_z.html#a82bad049fbb282df69e7f8e596dd07e7", null ],
-      [ "operator()", "structdg_1_1_bath_r_z.html#a7c954690f2256c913663f902312781d2", null ],
-      [ "operator()", "structdg_1_1_bath_r_z.html#a5949df5c0583260eef668b33c8937634", null ]
+      [ "TanhProfX", "structdg_1_1_tanh_prof_x.html#af43b20abf216b2802ef1538f847915a8", null ],
+      [ "operator()", "structdg_1_1_tanh_prof_x.html#aa8bae8e58ff82891e491538b8c6ed627", null ],
+      [ "operator()", "structdg_1_1_tanh_prof_x.html#a6f64fff5c52838cf05c242528eb41740", null ],
+      [ "operator()", "structdg_1_1_tanh_prof_x.html#a6aca5e22ad75bbb03745ef87aa7619b7", null ]
     ] ],
     [ "EXP", "structdg_1_1_e_x_p.html", [
       [ "EXP", "structdg_1_1_e_x_p.html#a3794ca4d364489927eac4e8654b06e9d", null ],
@@ -160,14 +176,30 @@ var group__functions =
       [ "operator()", "structdg_1_1_z_e_r_o.html#a049c8d998d51fac9aea99f2c2a87b882", null ],
       [ "operator()", "structdg_1_1_z_e_r_o.html#af1eab37cbfb06765881c904967d5e590", null ]
     ] ],
+    [ "Lamb", "structdg_1_1_lamb.html", [
+      [ "Lamb", "structdg_1_1_lamb.html#a8bbe13dcd12f398e0426f1c92388ecdd", null ],
+      [ "energy", "structdg_1_1_lamb.html#adda0fbe43c2cd511c3f8ae332037780a", null ],
+      [ "enstrophy", "structdg_1_1_lamb.html#a1a4d0a6af4739c93de2d72fc0ad9931d", null ],
+      [ "operator()", "structdg_1_1_lamb.html#a9491de6dbcd01c16abe2fd72d7031b19", null ]
+    ] ],
+    [ "Vortex", "structdg_1_1_vortex.html", [
+      [ "Vortex", "structdg_1_1_vortex.html#a3cb30fdf2c8da900f2b6f3366dbaf237", null ],
+      [ "operator()", "structdg_1_1_vortex.html#a2ff6d88733a783fad4331490093652e8", null ],
+      [ "operator()", "structdg_1_1_vortex.html#a702f35dac640eb5af31e8aa10b0e3f01", null ]
+    ] ],
+    [ "BathRZ", "structdg_1_1_bath_r_z.html", [
+      [ "BathRZ", "structdg_1_1_bath_r_z.html#a82bad049fbb282df69e7f8e596dd07e7", null ],
+      [ "operator()", "structdg_1_1_bath_r_z.html#a7c954690f2256c913663f902312781d2", null ],
+      [ "operator()", "structdg_1_1_bath_r_z.html#a5949df5c0583260eef668b33c8937634", null ]
+    ] ],
     [ "Histogram", "structdg_1_1_histogram.html", [
       [ "Histogram", "structdg_1_1_histogram.html#a0759e95df4ac5885f8f436ea47334fe9", null ],
       [ "binwidth", "structdg_1_1_histogram.html#a41da837ab831cd709ccb49390163b407", null ],
-      [ "operator()", "structdg_1_1_histogram.html#a79f8d9be520a70161e2d19accc5d4a92", null ]
+      [ "operator()", "structdg_1_1_histogram.html#a54ef2f9dfccf5c2969399b1ce49b6387", null ]
     ] ],
     [ "Histogram2D", "structdg_1_1_histogram2_d.html", [
       [ "Histogram2D", "structdg_1_1_histogram2_d.html#a5b8734d23299e56a4755fe91a3b005f3", null ],
-      [ "operator()", "structdg_1_1_histogram2_d.html#a4551a2a448c83dc5598f950265d84324", null ]
+      [ "operator()", "structdg_1_1_histogram2_d.html#ab3b3619e6fbe0e9083c0890146330a43", null ]
     ] ],
     [ "equals", "structdg_1_1equals.html", [
       [ "operator()", "structdg_1_1equals.html#a7e26ab1d9bf67fc1727955a4f83376d7", null ]
@@ -183,5 +215,35 @@ var group__functions =
     ] ],
     [ "divides_equals", "structdg_1_1divides__equals.html", [
       [ "operator()", "structdg_1_1divides__equals.html#ab8dc753b0827006b723838e28c0a36ac", null ]
-    ] ]
+    ] ],
+    [ "Sum", "structdg_1_1_sum.html", [
+      [ "operator()", "structdg_1_1_sum.html#ae4317583a3bb4d477f8bfca06829c8d0", null ]
+    ] ],
+    [ "PairSum", "structdg_1_1_pair_sum.html", [
+      [ "operator()", "structdg_1_1_pair_sum.html#ac6066507a57ab2d70176d744f9c8b77e", null ]
+    ] ],
+    [ "EmbeddedPairSum", "structdg_1_1_embedded_pair_sum.html", [
+      [ "operator()", "structdg_1_1_embedded_pair_sum.html#a18384fc803b00c68d25029152ac0ef6a", null ]
+    ] ],
+    [ "TripletSum", "structdg_1_1_triplet_sum.html", [
+      [ "operator()", "structdg_1_1_triplet_sum.html#ae08c84844308c8c9c4183a3e0d8f7f8f", null ]
+    ] ],
+    [ "cooX1d", "group__functions.html#ga21055512458a88c314621a912fb1417f", null ],
+    [ "cooX2d", "group__functions.html#gadb49e10685e2bcdd8a27ef88f2857151", null ],
+    [ "cooX3d", "group__functions.html#gadd9ae95517a739c80452afc7fc9c36ae", null ],
+    [ "cooY2d", "group__functions.html#ga5aa995cf5e888c9ee1026b78f6f78cc5", null ],
+    [ "cooY3d", "group__functions.html#gaafbff988d4cff4a0643e819b3f6962cc", null ],
+    [ "cooZ3d", "group__functions.html#ga89a354d8268ca0f86486a93683fda7d4", null ],
+    [ "one", "group__functions.html#gabab1bdc50508bd0f04f3cd0b45dd72e3", null ],
+    [ "one", "group__functions.html#gada629959f5298f4221d35fd8cb880a0d", null ],
+    [ "one", "group__functions.html#gae7ba1400d58619bc271c6611acf5994b", null ],
+    [ "one", "group__functions.html#ga6157ca9bd4d2ffec4b6bd7c22ed073fe", null ],
+    [ "one", "group__functions.html#ga99d493917c25c36d4e82248fcebd7550", null ],
+    [ "one", "group__functions.html#gabadfb8fdc2962f824d2b1fe1c0e73cd5", null ],
+    [ "zero", "group__functions.html#gad1e45796f68232b124d0f5baea6fceca", null ],
+    [ "zero", "group__functions.html#gad0bd961c4529039c4e651fc9e3901f60", null ],
+    [ "zero", "group__functions.html#ga6d27b092dcd9613c1c5eeaa1cf208e83", null ],
+    [ "zero", "group__functions.html#ga44292f31f77c0cad8a3d8e0a88c7840b", null ],
+    [ "zero", "group__functions.html#ga0b38e6d17d96de78beedafc4c9e4437e", null ],
+    [ "zero", "group__functions.html#ga43b7fe30d4e22f1cf3dace0dd474c7d9", null ]
 ];

@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['agenerator2d',['aGenerator2d',['../../../geometries/html/namespacedg_1_1geo.html#a8a0c91832616cae7dea10193bb8c9327',1,'dg::geo']]],
+  ['ageneratorx2d',['aGeneratorX2d',['../../../geometries/html/namespacedg_1_1geo.html#a7d37348fd710a0c45eb5c52ec7387e90',1,'dg::geo']]],
   ['ageometry2d',['aGeometry2d',['../group__gridtypes.html#ga0194a345f358474eacd0d8fd668ddeb5',1,'dg']]],
   ['ageometry3d',['aGeometry3d',['../group__gridtypes.html#ga98e551dd078cf173433853670e84d61a',1,'dg']]],
   ['ageometryx2d',['aGeometryX2d',['../group__gridtypes.html#ga1614909b8085b3521f6eb6a8a7ee2185',1,'dg']]],

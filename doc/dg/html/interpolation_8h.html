@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
-<title>Discontinuous Galerkin Library: geometry/interpolation.h File Reference</title>
+<title>Discontinuous Galerkin Library: topology/interpolation.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('interpolation_8h.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>contains 1D, 2D and 3D interpolation matrix creation functions  
+<p>1D, 2D and 3D interpolation matrix creation functions  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;cusp/coo_matrix.h&gt;</code><br />
 <code>#include &lt;cusp/csr_matrix.h&gt;</code><br />
@@ -114,46 +114,6 @@ $(document).ready(function(){initNavTree('interpolation_8h.html','');});
 <code>#include &quot;<a class="el" href="functions_8h_source.html">functions.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="creation_8h_source.html">creation.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="operator__tensor_8h_source.html">operator_tensor.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for interpolation.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="interpolation_8h__incl.png" border="0" usemap="#geometry_2interpolation_8h" alt=""/></div>
-<map name="geometry_2interpolation_8h" id="geometry_2interpolation_8h">
-<area shape="rect" id="node4" href="grid_8h.html" title="base topology classes " alt="" coords="399,155,454,181"/>
-<area shape="rect" id="node19" href="evaluation_8h.html" title="Function discretization routines. " alt="" coords="166,80,258,107"/>
-<area shape="rect" id="node21" href="functions_8h.html" title="contains some utility functions for the evaluation() routines " alt="" coords="535,80,622,107"/>
-<area shape="rect" id="node22" href="creation_8h.html" title="creation.h" alt="" coords="646,80,725,107"/>
-<area shape="rect" id="node26" href="operator__tensor_8h.html" title="operator_tensor.h" alt="" coords="749,80,872,107"/>
-<area shape="rect" id="node8" href="topological__traits_8h.html" title="topological_traits.h" alt="" coords="395,229,525,256"/>
-<area shape="rect" id="node9" href="dlt_8h.html" title="contains the discrete legendre trafo class " alt="" coords="639,229,686,256"/>
-<area shape="rect" id="node17" href="enums_8h.html" title="enums " alt="" coords="286,229,370,256"/>
-<area shape="rect" id="node14" href="exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="351,304,518,331"/>
-<area shape="rect" id="node23" href="operator_8h.html" title="operator.h" alt="" coords="684,155,764,181"/>
-</map>
-</div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="interpolation_8h__dep__incl.png" border="0" usemap="#geometry_2interpolation_8hdep" alt=""/></div>
-<map name="geometry_2interpolation_8hdep" id="geometry_2interpolation_8hdep">
-<area shape="rect" id="node2" href="fast__interpolation_8h.html" title="contains a matrix type for fast interpolations/projections " alt="" coords="334,155,525,181"/>
-<area shape="rect" id="node3" href="multigrid_8h.html" title="multigrid.h" alt="" coords="388,229,471,256"/>
-<area shape="rect" id="node4" href="projection_8h.html" title="contains creation of projection matrices " alt="" coords="563,80,710,107"/>
-<area shape="rect" id="node6" href="refined__elliptic_8h.html" title="contains an elliptic method on a refined grid " alt="" coords="522,379,638,405"/>
-<area shape="rect" id="node9" href="refined__grid_x_8h.html" title="geometry/refined_gridX.h" alt="" coords="25,155,192,181"/>
-<area shape="rect" id="node15" href="refined__grid_8h.html" title="geometry/refined_grid.h" alt="" coords="116,80,274,107"/>
-<area shape="rect" id="node16" href="interpolation_x_8h.html" title="contains 1D, 2D and 3D interpolation matrix creation functions on X&#45;point topology ..." alt="" coords="951,379,1122,405"/>
-<area shape="rect" id="node17" href="xspacelib_8h.html" title="provides some utility functions " alt="" coords="852,80,999,107"/>
-<area shape="rect" id="node5" href="mpi__projection_8h.html" title="Useful MPI typedefs and overloads of interpolation and projection. " alt="" coords="549,155,724,181"/>
-<area shape="rect" id="node7" href="projection_x_8h.html" title="contains creation of projection matrices for X point topology " alt="" coords="669,229,825,256"/>
-<area shape="rect" id="node8" href="algorithm_8h.html" title="algorithm.h" alt="" coords="704,453,790,480"/>
-<area shape="rect" id="node10" href="geometry_8h.html" title="geometry/geometry.h" alt="" coords="36,229,181,256"/>
-<area shape="rect" id="node11" href="elliptic_8h.html" title="General negative elliptic operators. " alt="" coords="24,304,94,331"/>
-<area shape="rect" id="node13" href="arakawa_8h.html" title="object for computation of Poisson bracket " alt="" coords="222,304,304,331"/>
-<area shape="rect" id="node14" href="poisson_8h.html" title="poisson.h" alt="" coords="118,304,197,331"/>
-<area shape="rect" id="node12" href="helmholtz_8h.html" title="contains Helmholtz and Maxwell operators " alt="" coords="217,379,306,405"/>
-</map>
-</div>
 </div>
 <p><a href="interpolation_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -181,18 +141,18 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gab5f0376b6886e47e4f72c922cfc0c7a7"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
-<tr class="memitem:gab5f0376b6886e47e4f72c922cfc0c7a7"><td class="memTemplItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, real_type, cusp::host_memory &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__interpolation.html#gab5f0376b6886e47e4f72c922cfc0c7a7">dg::create::interpolation</a> (const thrust::host_vector&lt; real_type &gt; &amp;x, const RealGrid1d&lt; real_type &gt; &amp;g)</td></tr>
-<tr class="memdesc:gab5f0376b6886e47e4f72c922cfc0c7a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create interpolation matrix.  <a href="group__interpolation.html#gab5f0376b6886e47e4f72c922cfc0c7a7">More...</a><br /></td></tr>
-<tr class="separator:gab5f0376b6886e47e4f72c922cfc0c7a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafc11151503ff95782b2bfcb7aa152e0f"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:gafc11151503ff95782b2bfcb7aa152e0f"><td class="memTemplItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, real_type, cusp::host_memory &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__interpolation.html#gafc11151503ff95782b2bfcb7aa152e0f">dg::create::interpolation</a> (const thrust::host_vector&lt; real_type &gt; &amp;x, const RealGrid1d&lt; real_type &gt; &amp;g, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcx=<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a>)</td></tr>
+<tr class="memdesc:gafc11151503ff95782b2bfcb7aa152e0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create interpolation matrix.  <a href="group__interpolation.html#gafc11151503ff95782b2bfcb7aa152e0f">More...</a><br /></td></tr>
+<tr class="separator:gafc11151503ff95782b2bfcb7aa152e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac238077768fe5fc49ab3cd4f94569ef4"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
 <tr class="memitem:gac238077768fe5fc49ab3cd4f94569ef4"><td class="memTemplItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, real_type, cusp::host_memory &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__interpolation.html#gac238077768fe5fc49ab3cd4f94569ef4">dg::create::interpolation</a> (const thrust::host_vector&lt; real_type &gt; &amp;x, const thrust::host_vector&lt; real_type &gt; &amp;y, const aRealTopology2d&lt; real_type &gt; &amp;g, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcx=<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a>, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcy=<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a>)</td></tr>
 <tr class="memdesc:gac238077768fe5fc49ab3cd4f94569ef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create interpolation matrix.  <a href="group__interpolation.html#gac238077768fe5fc49ab3cd4f94569ef4">More...</a><br /></td></tr>
 <tr class="separator:gac238077768fe5fc49ab3cd4f94569ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac940cc53d90e88a3c88a4f235ff20409"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
-<tr class="memitem:gac940cc53d90e88a3c88a4f235ff20409"><td class="memTemplItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, real_type, cusp::host_memory &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__interpolation.html#gac940cc53d90e88a3c88a4f235ff20409">dg::create::interpolation</a> (const thrust::host_vector&lt; real_type &gt; &amp;x, const thrust::host_vector&lt; real_type &gt; &amp;y, const thrust::host_vector&lt; real_type &gt; &amp;z, const aRealTopology3d&lt; real_type &gt; &amp;g, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcx=<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a>, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcy=<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a>)</td></tr>
-<tr class="memdesc:gac940cc53d90e88a3c88a4f235ff20409"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create interpolation matrix.  <a href="group__interpolation.html#gac940cc53d90e88a3c88a4f235ff20409">More...</a><br /></td></tr>
-<tr class="separator:gac940cc53d90e88a3c88a4f235ff20409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga49b02340419df7f0617886744cbf00bf"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga49b02340419df7f0617886744cbf00bf"><td class="memTemplItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, real_type, cusp::host_memory &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__interpolation.html#ga49b02340419df7f0617886744cbf00bf">dg::create::interpolation</a> (const thrust::host_vector&lt; real_type &gt; &amp;x, const thrust::host_vector&lt; real_type &gt; &amp;y, const thrust::host_vector&lt; real_type &gt; &amp;z, const aRealTopology3d&lt; real_type &gt; &amp;g, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcx=<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a>, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcy=<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364ad8a2f69a62e7fdafe1665ae7162e8e10">dg::NEU</a>, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcz=<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3">dg::PER</a>)</td></tr>
+<tr class="memdesc:ga49b02340419df7f0617886744cbf00bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create interpolation matrix.  <a href="group__interpolation.html#ga49b02340419df7f0617886744cbf00bf">More...</a><br /></td></tr>
+<tr class="separator:ga49b02340419df7f0617886744cbf00bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga43cb2b93b0c2c40e6694616bca9fc49b"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
 <tr class="memitem:ga43cb2b93b0c2c40e6694616bca9fc49b"><td class="memTemplItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, real_type, cusp::host_memory &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__interpolation.html#ga43cb2b93b0c2c40e6694616bca9fc49b">dg::create::interpolation</a> (const RealGrid1d&lt; real_type &gt; &amp;g_new, const RealGrid1d&lt; real_type &gt; &amp;g_old)</td></tr>
 <tr class="memdesc:ga43cb2b93b0c2c40e6694616bca9fc49b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create interpolation between two grids.  <a href="group__interpolation.html#ga43cb2b93b0c2c40e6694616bca9fc49b">More...</a><br /></td></tr>
@@ -215,14 +175,14 @@ Functions</h2></td></tr>
 <tr class="separator:ga3b64dbb139c1f3cf64bdf63eb84c20e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>contains 1D, 2D and 3D interpolation matrix creation functions </p>
+<div class="textblock"><p>1D, 2D and 3D interpolation matrix creation functions </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_e3380d2178455503f266746fb14246a5.html">geometry</a></li><li class="navelem"><a class="el" href="interpolation_8h.html">interpolation.h</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
+    <li class="navelem"><a class="el" href="dir_84497794bb37d283dbd68163bed8ef05.html">topology</a></li><li class="navelem"><a class="el" href="interpolation_8h.html">interpolation.h</a></li>
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

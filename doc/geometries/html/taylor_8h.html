@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
-<title>Geometries: taylor.h File Reference</title>
+<title>Extension: Geometries: taylor.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -44,9 +44,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Geometries
+   <div id="projectname">Extension: Geometries
    </div>
-   <div id="projectbrief">Extension with magnetic flux functions, grids and grid generators</div>
+   <div id="projectbrief">Magnetic flux functions, parallel derivatives and new grids and grid generators in &quot;dg/geometries/geometries.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -111,48 +111,10 @@ $(document).ready(function(){initNavTree('taylor_8h.html','');});
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;boost/math/special_functions.hpp&gt;</code><br />
 <code>#include &quot;<a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/blas_8h.html">dg/blas.h</a>&quot;</code><br />
-<code>#include &quot;<a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/functions_8h.html">dg/geometry/functions.h</a>&quot;</code><br />
+<code>#include &quot;<a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/functions_8h.html">dg/topology/functions.h</a>&quot;</code><br />
 <code>#include &quot;<a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/functors_8h.html">dg/functors.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="solovev__parameters_8h_source.html">solovev_parameters.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="magnetic__field_8h_source.html">magnetic_field.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for taylor.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="taylor_8h__incl.png" border="0" usemap="#taylor_8h" alt=""/></div>
-<map name="taylor_8h" id="taylor_8h">
-<area shape="rect" id="node7" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/blas_8h.html" title="dg/blas.h" alt="" coords="1025,87,1100,114"/>
-<area shape="rect" id="node22" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/functions_8h.html" title="dg/geometry/functions.h" alt="" coords="1608,408,1771,435"/>
-<area shape="rect" id="node29" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/functors_8h.html" title="dg/functors.h" alt="" coords="1295,87,1393,114"/>
-<area shape="rect" id="node35" href="solovev__parameters_8h.html" title="solovev_parameters.h" alt="" coords="694,87,845,114"/>
-<area shape="rect" id="node37" href="magnetic__field_8h.html" title="magnetic_field.h" alt="" coords="1145,87,1263,114"/>
-<area shape="rect" id="node8" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/blas1_8h.html" title="blas1.h" alt="" coords="660,244,724,271"/>
-<area shape="rect" id="node23" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/blas2_8h.html" title="blas2.h" alt="" coords="388,244,452,271"/>
-<area shape="rect" id="node24" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/typedefs_8h.html" title="backend/typedefs.h" alt="" coords="984,169,1120,196"/>
-<area shape="rect" id="node9" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/tensor__traits_8h.html" title="backend/tensor_traits.h" alt="" coords="463,408,622,435"/>
-<area shape="rect" id="node14" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/tensor__traits__scalar_8h.html" title="backend/tensor_traits\l_scalar.h" alt="" coords="619,319,765,360"/>
-<area shape="rect" id="node15" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/tensor__traits__thrust_8h.html" title="backend/tensor_traits\l_thrust.h" alt="" coords="347,319,493,360"/>
-<area shape="rect" id="node16" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/tensor__traits__cusp_8h.html" title="backend/tensor_traits\l_cusp.h" alt="" coords="5,319,152,360"/>
-<area shape="rect" id="node17" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/tensor__traits__std_8h.html" title="backend/tensor_traits\l_std.h" alt="" coords="176,319,323,360"/>
-<area shape="rect" id="node18" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/mpi__vector_8h.html" title="backend/mpi_vector.h" alt="" coords="790,326,941,353"/>
-<area shape="rect" id="node21" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/subroutines_8h.html" title="subroutines.h" alt="" coords="1166,326,1266,353"/>
-<area shape="rect" id="node10" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/scalar__categories_8h.html" title="scalar_categories.h" alt="" coords="594,483,729,509"/>
-<area shape="rect" id="node11" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/vector__categories_8h.html" title="vector_categories.h" alt="" coords="232,557,368,584"/>
-<area shape="rect" id="node12" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/matrix__categories_8h.html" title="matrix_categories.h" alt="" coords="232,632,368,659"/>
-<area shape="rect" id="node13" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/execution__policy_8h.html" title="execution_policy.h" alt="" coords="337,483,468,509"/>
-<area shape="rect" id="node19" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/mpi__communicator_8h.html" title="mpi_communicator.h" alt="" coords="783,408,926,435"/>
-<area shape="rect" id="node20" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/memory_8h.html" title="memory.h" alt="" coords="951,408,1031,435"/>
-<area shape="rect" id="node25" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/sparseblockmat_8h.html" title="sparseblockmat.h" alt="" coords="1016,326,1141,353"/>
-<area shape="rect" id="node27" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/sparseblockmat_8cuh.html" title="sparseblockmat.cuh" alt="" coords="1089,244,1228,271"/>
-<area shape="rect" id="node28" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/mpi__matrix_8h.html" title="mpi_matrix.h" alt="" coords="917,244,1014,271"/>
-<area shape="rect" id="node26" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/exceptions_8h.html" title="exceptions.h" alt="" coords="1336,408,1432,435"/>
-<area shape="rect" id="node30" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/grid_8h.html" title="geometry/grid.h" alt="" coords="1401,244,1513,271"/>
-<area shape="rect" id="node34" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/evaluation_8h.html" title="geometry/evaluation.h" alt="" coords="1382,169,1533,196"/>
-<area shape="rect" id="node31" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/topological__traits_8h.html" title="topological_traits.h" alt="" coords="1521,326,1652,353"/>
-<area shape="rect" id="node32" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/dlt_8h.html" title="dlt.h" alt="" coords="1450,326,1497,353"/>
-<area shape="rect" id="node33" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/enums_8h.html" title="../enums.h" alt="" coords="1342,326,1426,353"/>
-<area shape="rect" id="node38" href="fluxfunctions_8h.html" title="fluxfunctions.h" alt="" coords="1180,169,1287,196"/>
-</map>
-</div>
 </div>
 <p><a href="taylor_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -231,15 +193,15 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga4bb35f27443e897af4a1050cae9b8e5d"><td class="memItemLeft" align="right" valign="top">BinaryFunctorsLvl2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__taylor.html#ga4bb35f27443e897af4a1050cae9b8e5d">dg::geo::taylor::createPsip</a> (solovev::Parameters gp)</td></tr>
-<tr class="separator:ga4bb35f27443e897af4a1050cae9b8e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf585a6dde7802ef9d3b119a50b1318d2"><td class="memItemLeft" align="right" valign="top">BinaryFunctorsLvl1&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__taylor.html#gaf585a6dde7802ef9d3b119a50b1318d2">dg::geo::taylor::createIpol</a> (solovev::Parameters gp)</td></tr>
-<tr class="separator:gaf585a6dde7802ef9d3b119a50b1318d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaaf85a7ecbfa540aedd2a48a5a2f24fa2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__taylor.html#gaaf85a7ecbfa540aedd2a48a5a2f24fa2">dg::geo::taylor::createMagField</a> (solovev::Parameters gp)</td></tr>
-<tr class="separator:gaaf85a7ecbfa540aedd2a48a5a2f24fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7d6cc4a15d5430ff5d4aad81fb7098d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#ga7d6cc4a15d5430ff5d4aad81fb7098d9">dg::geo::createTaylorField</a> (<a class="el" href="structdg_1_1geo_1_1solovev_1_1_parameters.html">dg::geo::solovev::Parameters</a> gp)</td></tr>
-<tr class="memdesc:ga7d6cc4a15d5430ff5d4aad81fb7098d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Taylor Magnetic field.  <a href="group__geom.html#ga7d6cc4a15d5430ff5d4aad81fb7098d9">More...</a><br /></td></tr>
-<tr class="separator:ga7d6cc4a15d5430ff5d4aad81fb7098d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf803ceb487fe15a20509185cf645c2f6"><td class="memItemLeft" align="right" valign="top">static CylindricalFunctorsLvl2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__taylor.html#gaf803ceb487fe15a20509185cf645c2f6">dg::geo::taylor::createPsip</a> (solovev::Parameters gp)</td></tr>
+<tr class="separator:gaf803ceb487fe15a20509185cf645c2f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab3f3b82303a3e64031d92ce7bb5ac49b"><td class="memItemLeft" align="right" valign="top">static CylindricalFunctorsLvl1&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__taylor.html#gab3f3b82303a3e64031d92ce7bb5ac49b">dg::geo::taylor::createIpol</a> (solovev::Parameters gp)</td></tr>
+<tr class="separator:gab3f3b82303a3e64031d92ce7bb5ac49b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3f430483239ba136340bf0f0a7828e26"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__taylor.html#ga3f430483239ba136340bf0f0a7828e26">dg::geo::taylor::createMagField</a> (solovev::Parameters gp)</td></tr>
+<tr class="separator:ga3f430483239ba136340bf0f0a7828e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga27e5bae45b284ee051039ca97d7c0edb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structdg_1_1geo_1_1_tokamak_magnetic_field.html">dg::geo::TokamakMagneticField</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#ga27e5bae45b284ee051039ca97d7c0edb">dg::geo::createTaylorField</a> (<a class="el" href="structdg_1_1geo_1_1solovev_1_1_parameters.html">dg::geo::solovev::Parameters</a> gp)</td></tr>
+<tr class="memdesc:ga27e5bae45b284ee051039ca97d7c0edb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Taylor Magnetic field.  <a href="group__geom.html#ga27e5bae45b284ee051039ca97d7c0edb">More...</a><br /></td></tr>
+<tr class="separator:ga27e5bae45b284ee051039ca97d7c0edb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>MagneticField objects </p><dl class="section attention"><dt>Attention</dt><dd>When the taylor field is used we need the <a href="http://www.boost.org">boost</a> library for special functions </dd></dl>
@@ -249,7 +211,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="taylor_8h.html">taylor.h</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:03:04 for Geometries by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:57 for Extension: Geometries by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

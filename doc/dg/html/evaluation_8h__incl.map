@@ -1,7 +1,0 @@
-<map id="geometry/evaluation.h" name="geometry/evaluation.h">
-<area shape="rect" id="node6" href="$grid_8h.html" title="base topology classes " alt="" coords="220,80,275,107"/>
-<area shape="rect" id="node7" href="$topological__traits_8h.html" title="topological_traits.h" alt="" coords="341,155,471,181"/>
-<area shape="rect" id="node8" href="$dlt_8h.html" title="contains the discrete legendre trafo class " alt="" coords="496,155,543,181"/>
-<area shape="rect" id="node16" href="$enums_8h.html" title="enums " alt="" coords="633,155,717,181"/>
-<area shape="rect" id="node13" href="$exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="592,229,759,256"/>
-</map>

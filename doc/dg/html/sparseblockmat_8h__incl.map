@@ -1,9 +1,0 @@
-<map id="backend/sparseblockmat.h" name="backend/sparseblockmat.h">
-<area shape="rect" id="node4" href="/home/matthias/Projekte/feltor/doc/exblas.tag$config_8h.html" title="exblas/config.h" alt="" coords="251,80,362,107"/>
-<area shape="rect" id="node6" href="$exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="479,80,575,107"/>
-<area shape="rect" id="node10" href="$tensor__traits_8h.html" title="tensor_traits.h" alt="" coords="897,80,1002,107"/>
-<area shape="rect" id="node13" href="$scalar__categories_8h.html" title="scalar_categories.h" alt="" coords="882,155,1017,181"/>
-<area shape="rect" id="node14" href="$vector__categories_8h.html" title="vector_categories.h" alt="" coords="932,229,1068,256"/>
-<area shape="rect" id="node15" href="$matrix__categories_8h.html" title="matrix_categories.h" alt="" coords="984,304,1120,331"/>
-<area shape="rect" id="node16" href="$execution__policy_8h.html" title="execution_policy.h" alt="" coords="1143,155,1273,181"/>
-</map>

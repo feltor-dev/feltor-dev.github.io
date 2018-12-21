@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
-<title>Discontinuous Galerkin Library: geometry/derivativesX.h File Reference</title>
+<title>Discontinuous Galerkin Library: topology/derivativesX.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -110,49 +110,6 @@ $(document).ready(function(){initNavTree('derivatives_x_8h.html','');});
 <div class="textblock"><code>#include &quot;<a class="el" href="grid_x_8h_source.html">gridX.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dx_x_8h_source.html">dxX.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="blas_8h_source.html">../blas.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for derivativesX.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="derivatives_x_8h__incl.png" border="0" usemap="#geometry_2derivatives_x_8h" alt=""/></div>
-<map name="geometry_2derivatives_x_8h" id="geometry_2derivatives_x_8h">
-<area shape="rect" id="node2" href="grid_x_8h.html" title="base X&#45;point topology classes " alt="" coords="281,259,344,285"/>
-<area shape="rect" id="node16" href="dx_x_8h.html" title="Simple 1d derivatives on X&#45;point topology. " alt="" coords="462,95,518,121"/>
-<area shape="rect" id="node18" href="sparseblockmat_8h.html" title="dg/backend/sparseblockmat.h" alt="" coords="701,341,897,367"/>
-<area shape="rect" id="node21" href="tensor__traits_8h.html" title="tensor_traits.h" alt="" coords="1653,423,1759,449"/>
-<area shape="rect" id="node24" href="scalar__categories_8h.html" title="scalar_categories.h" alt="" coords="2039,497,2173,524"/>
-<area shape="rect" id="node26" href="matrix__categories_8h.html" title="matrix_categories.h" alt="" coords="2038,647,2174,673"/>
-<area shape="rect" id="node32" href="blas_8h.html" title="../blas.h" alt="" coords="1706,95,1775,121"/>
-<area shape="rect" id="node44" href="sparseblockmat_8cuh.html" title="sparseblockmat.cuh" alt="" coords="938,259,1077,285"/>
-<area shape="rect" id="node5" href="dlt_8h.html" title="contains the discrete legendre trafo class " alt="" coords="188,423,235,449"/>
-<area shape="rect" id="node11" href="grid_8h.html" title="base topology classes " alt="" coords="365,341,420,367"/>
-<area shape="rect" id="node14" href="enums_8h.html" title="enums " alt="" coords="80,423,164,449"/>
-<area shape="rect" id="node10" href="exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="84,497,251,524"/>
-<area shape="rect" id="node13" href="topological__traits_8h.html" title="topological_traits.h" alt="" coords="259,423,390,449"/>
-<area shape="rect" id="node17" href="dx_8h.html" title="Simple 1d derivatives. " alt="" coords="512,184,559,211"/>
-<area shape="rect" id="node31" href="weights_x_8h.html" title="contains creation functions for integration weights and their inverse on X&#45;point topology ..." alt="" coords="401,184,488,211"/>
-<area shape="rect" id="node28" href="functions_8h.html" title="contains some utility functions for the evaluation() routines " alt="" coords="624,259,711,285"/>
-<area shape="rect" id="node29" href="operator_8h.html" title="operator.h" alt="" coords="546,341,626,367"/>
-<area shape="rect" id="node30" href="weights_8h.html" title="contains creation functions for integration weights and their inverse " alt="" coords="368,259,447,285"/>
-<area shape="rect" id="node19" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/config_8h.html" title="exblas/config.h" alt="" coords="903,423,1013,449"/>
-<area shape="rect" id="node25" href="vector__categories_8h.html" title="vector_categories.h" alt="" coords="1629,572,1765,599"/>
-<area shape="rect" id="node27" href="execution__policy_8h.html" title="execution_policy.h" alt="" coords="1641,497,1771,524"/>
-<area shape="rect" id="node33" href="blas1_8h.html" title="blas1.h" alt="" coords="1853,259,1917,285"/>
-<area shape="rect" id="node42" href="blas2_8h.html" title="blas2.h" alt="" coords="1563,259,1627,285"/>
-<area shape="rect" id="node43" href="typedefs_8h.html" title="Useful typedefs of commonly used types. " alt="" coords="1046,184,1182,211"/>
-<area shape="rect" id="node35" href="tensor__traits__scalar_8h.html" title="backend/tensor_traits\l_scalar.h" alt="" coords="2441,333,2587,375"/>
-<area shape="rect" id="node36" href="tensor__traits__thrust_8h.html" title="backend/tensor_traits\l_thrust.h" alt="" coords="1241,333,1387,375"/>
-<area shape="rect" id="node38" href="tensor__traits__cusp_8h.html" title="backend/tensor_traits\l_cusp.h" alt="" coords="1633,333,1779,375"/>
-<area shape="rect" id="node39" href="tensor__traits__std_8h.html" title="backend/tensor_traits\l_std.h" alt="" coords="1411,333,1558,375"/>
-</map>
-</div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="derivatives_x_8h__dep__incl.png" border="0" usemap="#geometry_2derivatives_x_8hdep" alt=""/></div>
-<map name="geometry_2derivatives_x_8hdep" id="geometry_2derivatives_x_8hdep">
-<area shape="rect" id="node2" href="algorithm_8h.html" title="algorithm.h" alt="" coords="43,80,130,107"/>
-</map>
-</div>
 </div>
 <p><a href="derivatives_x_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -260,8 +217,8 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_e3380d2178455503f266746fb14246a5.html">geometry</a></li><li class="navelem"><a class="el" href="derivatives_x_8h.html">derivativesX.h</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
+    <li class="navelem"><a class="el" href="dir_84497794bb37d283dbd68163bed8ef05.html">topology</a></li><li class="navelem"><a class="el" href="derivatives_x_8h.html">derivativesX.h</a></li>
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

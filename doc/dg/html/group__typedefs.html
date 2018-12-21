@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -156,24 +156,24 @@ Typedefs</h2></td></tr>
 <tr class="memitem:gaaf5a0cd11a882f188d77db14120433ad"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gaaf5a0cd11a882f188d77db14120433ad">dg::fMDVec</a> = <a class="el" href="structdg_1_1_m_p_i___vector.html">dg::MPI_Vector</a>&lt; <a class="el" href="group__typedefs.html#ga78b0309b2b460fb21919b29701c8dbb4">dg::fDVec</a> &gt;</td></tr>
 <tr class="memdesc:gaaf5a0cd11a882f188d77db14120433ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI Device Vector s.a. <a class="el" href="group__typedefs.html#ga78b0309b2b460fb21919b29701c8dbb4" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::fDVec</a>.  <a href="group__typedefs.html#gaaf5a0cd11a882f188d77db14120433ad">More...</a><br /></td></tr>
 <tr class="separator:gaaf5a0cd11a882f188d77db14120433ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga93e65948d51a0d9f05bf04c99272c118"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
-<tr class="memitem:ga93e65948d51a0d9f05bf04c99272c118"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga93e65948d51a0d9f05bf04c99272c118">dg::NNCH</a> = <a class="el" href="structdg_1_1_nearest_neighbor_comm.html">dg::NearestNeighborComm</a>&lt; <a class="el" href="group__typedefs.html#ga6dcaf6113666c77a4bd46bf93a16ce4d">dg::iHVec</a>, thrust::host_vector&lt; real_type &gt; &gt;</td></tr>
-<tr class="memdesc:ga93e65948d51a0d9f05bf04c99272c118"><td class="mdescLeft">&#160;</td><td class="mdescRight">host Communicator for the use in an mpi matrix for derivatives  <a href="group__typedefs.html#ga93e65948d51a0d9f05bf04c99272c118">More...</a><br /></td></tr>
-<tr class="separator:ga93e65948d51a0d9f05bf04c99272c118"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5ad903c7e171878d6c402a20370ec5d4"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
-<tr class="memitem:ga5ad903c7e171878d6c402a20370ec5d4"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga5ad903c7e171878d6c402a20370ec5d4">dg::NNCD</a> = <a class="el" href="structdg_1_1_nearest_neighbor_comm.html">dg::NearestNeighborComm</a>&lt; <a class="el" href="group__typedefs.html#ga47171b298736a17b3e4ff54ec561f028">dg::iDVec</a>, thrust::device_vector&lt; real_type &gt; &gt;</td></tr>
-<tr class="memdesc:ga5ad903c7e171878d6c402a20370ec5d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">host Communicator for the use in an mpi matrix for derivatives  <a href="group__typedefs.html#ga5ad903c7e171878d6c402a20370ec5d4">More...</a><br /></td></tr>
-<tr class="separator:ga5ad903c7e171878d6c402a20370ec5d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8e6c8b7e3091e961b10fbf646065b670"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga8e6c8b7e3091e961b10fbf646065b670">dg::dNNCH</a> = <a class="el" href="group__typedefs.html#ga93e65948d51a0d9f05bf04c99272c118">dg::NNCH</a>&lt; double &gt;</td></tr>
+<tr class="memitem:gab32a9018dc40257974c1da36be740d05"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:gab32a9018dc40257974c1da36be740d05"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gab32a9018dc40257974c1da36be740d05">dg::NNCH</a> = <a class="el" href="structdg_1_1_nearest_neighbor_comm.html">dg::NearestNeighborComm</a>&lt; <a class="el" href="group__typedefs.html#ga6dcaf6113666c77a4bd46bf93a16ce4d">dg::iHVec</a>, thrust::host_vector&lt; const real_type * &gt;, thrust::host_vector&lt; real_type &gt; &gt;</td></tr>
+<tr class="memdesc:gab32a9018dc40257974c1da36be740d05"><td class="mdescLeft">&#160;</td><td class="mdescRight">host Communicator for the use in an mpi matrix for derivatives  <a href="group__typedefs.html#gab32a9018dc40257974c1da36be740d05">More...</a><br /></td></tr>
+<tr class="separator:gab32a9018dc40257974c1da36be740d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5e198b15d0b8913c34c5767225ba0d92"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga5e198b15d0b8913c34c5767225ba0d92"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga5e198b15d0b8913c34c5767225ba0d92">dg::NNCD</a> = <a class="el" href="structdg_1_1_nearest_neighbor_comm.html">dg::NearestNeighborComm</a>&lt; <a class="el" href="group__typedefs.html#ga47171b298736a17b3e4ff54ec561f028">dg::iDVec</a>, thrust::device_vector&lt; const real_type * &gt;, thrust::device_vector&lt; real_type &gt; &gt;</td></tr>
+<tr class="memdesc:ga5e198b15d0b8913c34c5767225ba0d92"><td class="mdescLeft">&#160;</td><td class="mdescRight">host Communicator for the use in an mpi matrix for derivatives  <a href="group__typedefs.html#ga5e198b15d0b8913c34c5767225ba0d92">More...</a><br /></td></tr>
+<tr class="separator:ga5e198b15d0b8913c34c5767225ba0d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8e6c8b7e3091e961b10fbf646065b670"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga8e6c8b7e3091e961b10fbf646065b670">dg::dNNCH</a> = <a class="el" href="group__typedefs.html#gab32a9018dc40257974c1da36be740d05">dg::NNCH</a>&lt; double &gt;</td></tr>
 <tr class="memdesc:ga8e6c8b7e3091e961b10fbf646065b670"><td class="mdescLeft">&#160;</td><td class="mdescRight">host Communicator for the use in an mpi matrix for derivatives  <a href="group__typedefs.html#ga8e6c8b7e3091e961b10fbf646065b670">More...</a><br /></td></tr>
 <tr class="separator:ga8e6c8b7e3091e961b10fbf646065b670"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf58692e972aa256e5034c76cd8c676d0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gaf58692e972aa256e5034c76cd8c676d0">dg::fNNCH</a> = <a class="el" href="group__typedefs.html#ga93e65948d51a0d9f05bf04c99272c118">dg::NNCH</a>&lt; float &gt;</td></tr>
+<tr class="memitem:gaf58692e972aa256e5034c76cd8c676d0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gaf58692e972aa256e5034c76cd8c676d0">dg::fNNCH</a> = <a class="el" href="group__typedefs.html#gab32a9018dc40257974c1da36be740d05">dg::NNCH</a>&lt; float &gt;</td></tr>
 <tr class="memdesc:gaf58692e972aa256e5034c76cd8c676d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">host Communicator for the use in an mpi matrix for derivatives  <a href="group__typedefs.html#gaf58692e972aa256e5034c76cd8c676d0">More...</a><br /></td></tr>
 <tr class="separator:gaf58692e972aa256e5034c76cd8c676d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga89a3930157f77be79532f3d51c7b3db0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga89a3930157f77be79532f3d51c7b3db0">dg::dNNCD</a> = <a class="el" href="group__typedefs.html#ga5ad903c7e171878d6c402a20370ec5d4">dg::NNCD</a>&lt; double &gt;</td></tr>
+<tr class="memitem:ga89a3930157f77be79532f3d51c7b3db0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga89a3930157f77be79532f3d51c7b3db0">dg::dNNCD</a> = <a class="el" href="group__typedefs.html#ga5e198b15d0b8913c34c5767225ba0d92">dg::NNCD</a>&lt; double &gt;</td></tr>
 <tr class="memdesc:ga89a3930157f77be79532f3d51c7b3db0"><td class="mdescLeft">&#160;</td><td class="mdescRight">device Communicator for the use in an mpi matrix for derivatives  <a href="group__typedefs.html#ga89a3930157f77be79532f3d51c7b3db0">More...</a><br /></td></tr>
 <tr class="separator:ga89a3930157f77be79532f3d51c7b3db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad6239a57d8e92a0a068dff591891dee1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gad6239a57d8e92a0a068dff591891dee1">dg::fNNCD</a> = <a class="el" href="group__typedefs.html#ga5ad903c7e171878d6c402a20370ec5d4">dg::NNCD</a>&lt; float &gt;</td></tr>
+<tr class="memitem:gad6239a57d8e92a0a068dff591891dee1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gad6239a57d8e92a0a068dff591891dee1">dg::fNNCD</a> = <a class="el" href="group__typedefs.html#ga5e198b15d0b8913c34c5767225ba0d92">dg::NNCD</a>&lt; float &gt;</td></tr>
 <tr class="memdesc:gad6239a57d8e92a0a068dff591891dee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">device Communicator for the use in an mpi matrix for derivatives  <a href="group__typedefs.html#gad6239a57d8e92a0a068dff591891dee1">More...</a><br /></td></tr>
 <tr class="separator:gad6239a57d8e92a0a068dff591891dee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga00c1e29dbf19330c5e34986229f480a1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga00c1e29dbf19330c5e34986229f480a1">dg::CooMat</a> = <a class="el" href="structdg_1_1_coo_sparse_block_mat.html">dg::CooSparseBlockMat</a>&lt; double &gt;</td></tr>
@@ -271,7 +271,7 @@ Typedefs</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group__typedefs.html#ga89a3930157f77be79532f3d51c7b3db0">dg::dNNCD</a> = typedef <a class="el" href="group__typedefs.html#ga5ad903c7e171878d6c402a20370ec5d4">dg::NNCD</a>&lt;double&gt;</td>
+          <td class="memname">using <a class="el" href="group__typedefs.html#ga89a3930157f77be79532f3d51c7b3db0">dg::dNNCD</a> = typedef <a class="el" href="group__typedefs.html#ga5e198b15d0b8913c34c5767225ba0d92">dg::NNCD</a>&lt;double&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -287,7 +287,7 @@ Typedefs</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group__typedefs.html#ga8e6c8b7e3091e961b10fbf646065b670">dg::dNNCH</a> = typedef <a class="el" href="group__typedefs.html#ga93e65948d51a0d9f05bf04c99272c118">dg::NNCH</a>&lt;double&gt;</td>
+          <td class="memname">using <a class="el" href="group__typedefs.html#ga8e6c8b7e3091e961b10fbf646065b670">dg::dNNCH</a> = typedef <a class="el" href="group__typedefs.html#gab32a9018dc40257974c1da36be740d05">dg::NNCH</a>&lt;double&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -475,7 +475,7 @@ Typedefs</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group__typedefs.html#gad6239a57d8e92a0a068dff591891dee1">dg::fNNCD</a> = typedef <a class="el" href="group__typedefs.html#ga5ad903c7e171878d6c402a20370ec5d4">dg::NNCD</a>&lt;float&gt;</td>
+          <td class="memname">using <a class="el" href="group__typedefs.html#gad6239a57d8e92a0a068dff591891dee1">dg::fNNCD</a> = typedef <a class="el" href="group__typedefs.html#ga5e198b15d0b8913c34c5767225ba0d92">dg::NNCD</a>&lt;float&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -491,7 +491,7 @@ Typedefs</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group__typedefs.html#gaf58692e972aa256e5034c76cd8c676d0">dg::fNNCH</a> = typedef <a class="el" href="group__typedefs.html#ga93e65948d51a0d9f05bf04c99272c118">dg::NNCH</a>&lt;float&gt;</td>
+          <td class="memname">using <a class="el" href="group__typedefs.html#gaf58692e972aa256e5034c76cd8c676d0">dg::fNNCH</a> = typedef <a class="el" href="group__typedefs.html#gab32a9018dc40257974c1da36be740d05">dg::NNCH</a>&lt;float&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -684,8 +684,8 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="ga5ad903c7e171878d6c402a20370ec5d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5ad903c7e171878d6c402a20370ec5d4">&#9670;&nbsp;</a></span>NNCD</h2>
+<a id="ga5e198b15d0b8913c34c5767225ba0d92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5e198b15d0b8913c34c5767225ba0d92">&#9670;&nbsp;</a></span>NNCD</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -693,7 +693,7 @@ Typedefs</h2></td></tr>
 template&lt;class real_type &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group__typedefs.html#ga5ad903c7e171878d6c402a20370ec5d4">dg::NNCD</a> = typedef <a class="el" href="structdg_1_1_nearest_neighbor_comm.html">dg::NearestNeighborComm</a>&lt;<a class="el" href="group__typedefs.html#ga47171b298736a17b3e4ff54ec561f028">dg::iDVec</a>, thrust::device_vector&lt;real_type&gt; &gt;</td>
+          <td class="memname">using <a class="el" href="group__typedefs.html#ga5e198b15d0b8913c34c5767225ba0d92">dg::NNCD</a> = typedef <a class="el" href="structdg_1_1_nearest_neighbor_comm.html">dg::NearestNeighborComm</a>&lt;<a class="el" href="group__typedefs.html#ga47171b298736a17b3e4ff54ec561f028">dg::iDVec</a>, thrust::device_vector&lt;const real_type*&gt;, thrust::device_vector&lt;real_type&gt; &gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -702,8 +702,8 @@ template&lt;class real_type &gt; </div>
 
 </div>
 </div>
-<a id="ga93e65948d51a0d9f05bf04c99272c118"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga93e65948d51a0d9f05bf04c99272c118">&#9670;&nbsp;</a></span>NNCH</h2>
+<a id="gab32a9018dc40257974c1da36be740d05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab32a9018dc40257974c1da36be740d05">&#9670;&nbsp;</a></span>NNCH</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -711,7 +711,7 @@ template&lt;class real_type &gt; </div>
 template&lt;class real_type &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group__typedefs.html#ga93e65948d51a0d9f05bf04c99272c118">dg::NNCH</a> = typedef <a class="el" href="structdg_1_1_nearest_neighbor_comm.html">dg::NearestNeighborComm</a>&lt;<a class="el" href="group__typedefs.html#ga6dcaf6113666c77a4bd46bf93a16ce4d">dg::iHVec</a>, thrust::host_vector&lt;real_type&gt; &gt;</td>
+          <td class="memname">using <a class="el" href="group__typedefs.html#gab32a9018dc40257974c1da36be740d05">dg::NNCH</a> = typedef <a class="el" href="structdg_1_1_nearest_neighbor_comm.html">dg::NearestNeighborComm</a>&lt;<a class="el" href="group__typedefs.html#ga6dcaf6113666c77a4bd46bf93a16ce4d">dg::iHVec</a>, thrust::host_vector&lt;const real_type*&gt;, thrust::host_vector&lt;real_type&gt; &gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -789,7 +789,7 @@ template&lt;class real_type &gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

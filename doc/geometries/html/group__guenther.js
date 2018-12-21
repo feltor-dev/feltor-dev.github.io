@@ -1,33 +1,42 @@
 var group__guenther =
 [
     [ "Psip", "structdg_1_1geo_1_1guenther_1_1_psip.html", [
-      [ "Psip", "structdg_1_1geo_1_1guenther_1_1_psip.html#a47d0b956b1fd79a4e5dca1f982492f79", null ]
+      [ "Psip", "structdg_1_1geo_1_1guenther_1_1_psip.html#a47d0b956b1fd79a4e5dca1f982492f79", null ],
+      [ "do_compute", "structdg_1_1geo_1_1guenther_1_1_psip.html#afee35283c998558a6f2f2b016bb49551", null ]
     ] ],
     [ "PsipR", "structdg_1_1geo_1_1guenther_1_1_psip_r.html", [
-      [ "PsipR", "structdg_1_1geo_1_1guenther_1_1_psip_r.html#ad220d935c23098e4cf9a7e2cd77bd5d3", null ]
+      [ "PsipR", "structdg_1_1geo_1_1guenther_1_1_psip_r.html#ad220d935c23098e4cf9a7e2cd77bd5d3", null ],
+      [ "do_compute", "structdg_1_1geo_1_1guenther_1_1_psip_r.html#a7d9b0723e3c174bb3c0ca17d6bf035b9", null ]
     ] ],
     [ "PsipRR", "structdg_1_1geo_1_1guenther_1_1_psip_r_r.html", [
-      [ "PsipRR", "structdg_1_1geo_1_1guenther_1_1_psip_r_r.html#a529c8a3c5ab1773b3042781be74b684f", null ]
+      [ "PsipRR", "structdg_1_1geo_1_1guenther_1_1_psip_r_r.html#a529c8a3c5ab1773b3042781be74b684f", null ],
+      [ "do_compute", "structdg_1_1geo_1_1guenther_1_1_psip_r_r.html#a79021e667b24a669dca0a45d31505617", null ]
     ] ],
     [ "PsipZ", "structdg_1_1geo_1_1guenther_1_1_psip_z.html", [
-      [ "PsipZ", "structdg_1_1geo_1_1guenther_1_1_psip_z.html#a46c18861500af9fdded5a4db65b3101c", null ]
+      [ "PsipZ", "structdg_1_1geo_1_1guenther_1_1_psip_z.html#a46c18861500af9fdded5a4db65b3101c", null ],
+      [ "do_compute", "structdg_1_1geo_1_1guenther_1_1_psip_z.html#abf9e71c5da96c2cc6b920382484d6167", null ]
     ] ],
     [ "PsipZZ", "structdg_1_1geo_1_1guenther_1_1_psip_z_z.html", [
-      [ "PsipZZ", "structdg_1_1geo_1_1guenther_1_1_psip_z_z.html#a4528a753ddd1eb64985c91d18576103e", null ]
+      [ "PsipZZ", "structdg_1_1geo_1_1guenther_1_1_psip_z_z.html#a4528a753ddd1eb64985c91d18576103e", null ],
+      [ "do_compute", "structdg_1_1geo_1_1guenther_1_1_psip_z_z.html#a2beb74814851035152da8d65550b67d0", null ]
     ] ],
     [ "PsipRZ", "structdg_1_1geo_1_1guenther_1_1_psip_r_z.html", [
-      [ "PsipRZ", "structdg_1_1geo_1_1guenther_1_1_psip_r_z.html#a4d6299b83846e8a5df0c926740476602", null ]
+      [ "PsipRZ", "structdg_1_1geo_1_1guenther_1_1_psip_r_z.html#a4d6299b83846e8a5df0c926740476602", null ],
+      [ "do_compute", "structdg_1_1geo_1_1guenther_1_1_psip_r_z.html#a3494d73dacd40e0035ceedc074311168", null ]
     ] ],
     [ "Ipol", "structdg_1_1geo_1_1guenther_1_1_ipol.html", [
-      [ "Ipol", "structdg_1_1geo_1_1guenther_1_1_ipol.html#a744deeaf7ccf76078c6ae9259b85a7bb", null ]
+      [ "Ipol", "structdg_1_1geo_1_1guenther_1_1_ipol.html#a744deeaf7ccf76078c6ae9259b85a7bb", null ],
+      [ "do_compute", "structdg_1_1geo_1_1guenther_1_1_ipol.html#af196306dd348bda5b719de7670403323", null ]
     ] ],
     [ "IpolR", "structdg_1_1geo_1_1guenther_1_1_ipol_r.html", [
-      [ "IpolR", "structdg_1_1geo_1_1guenther_1_1_ipol_r.html#a72bca8838e38e8c642e4ebed910c16bc", null ]
+      [ "IpolR", "structdg_1_1geo_1_1guenther_1_1_ipol_r.html#a72bca8838e38e8c642e4ebed910c16bc", null ],
+      [ "do_compute", "structdg_1_1geo_1_1guenther_1_1_ipol_r.html#a9a8b104deb3f77185bb9b6d5058b760b", null ]
     ] ],
     [ "IpolZ", "structdg_1_1geo_1_1guenther_1_1_ipol_z.html", [
-      [ "IpolZ", "structdg_1_1geo_1_1guenther_1_1_ipol_z.html#a34513f1d4866b5dc8a8ca4c9a8fd62af", null ]
+      [ "IpolZ", "structdg_1_1geo_1_1guenther_1_1_ipol_z.html#a34513f1d4866b5dc8a8ca4c9a8fd62af", null ],
+      [ "do_compute", "structdg_1_1geo_1_1guenther_1_1_ipol_z.html#a3b485a80089cb1a52409851b5ff2e228", null ]
     ] ],
-    [ "createIpol", "group__guenther.html#gab485e0d1f70ab41dde2060da9f409be3", null ],
-    [ "createMagField", "group__guenther.html#gaec0f20e402dcb50145ccf8745ff22ca5", null ],
-    [ "createPsip", "group__guenther.html#ga99f433f328033896ebc3f92bfdea7766", null ]
+    [ "createIpol", "group__guenther.html#ga1c418d39f07e69144f44223117ea6b93", null ],
+    [ "createMagField", "group__guenther.html#ga4a82083bf29cb70373b84720eba60d83", null ],
+    [ "createPsip", "group__guenther.html#ga285fcbae9a9d44cbe5586a7b28148b99", null ]
 ];

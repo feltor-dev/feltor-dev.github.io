@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('namespacedg_1_1blas1.html','');});
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">dg::blas1 Namespace Reference<div class="ingroups"><a class="el" href="group__backend.html">Level 1: Vectors, Matrices and basic operations</a> &raquo; <a class="el" href="group__blas.html">Basic Linear Algebra Subroutines</a> &raquo; <a class="el" href="group__blas1.html">BLAS level 1 routines</a></div></div>  </div>
+<div class="title">dg::blas1 Namespace Reference<div class="ingroups"><a class="el" href="group__backend.html">Level 1: Vectors, Matrices and basic operations</a> &raquo; <a class="el" href="group__blas.html">Basic container independent subroutines</a> &raquo; <a class="el" href="group__blas1.html">BLAS level 1 routines: Vector-Vector</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -162,7 +162,7 @@ Functions</h2></td></tr>
 <tr class="separator:ga493c6b70c8c889beaec1c3a669e3809b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaad7b58d466d813898b68189b44619210"><td class="memTemplParams" colspan="2">template&lt;class ContainerType , class BinarySubroutine , class Functor , class ContainerType0 , class ... ContainerTypes&gt; </td></tr>
 <tr class="memitem:gaad7b58d466d813898b68189b44619210"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#gaad7b58d466d813898b68189b44619210">evaluate</a> (ContainerType &amp;y, BinarySubroutine f, Functor g, const ContainerType0 &amp;x0, const ContainerTypes &amp;...xs)</td></tr>
-<tr class="memdesc:gaad7b58d466d813898b68189b44619210"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( y = f(y, g(x_0,x_1,...)\)  <a href="group__blas1.html#gaad7b58d466d813898b68189b44619210">More...</a><br /></td></tr>
+<tr class="memdesc:gaad7b58d466d813898b68189b44619210"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( f(y, g(x_0,x_1,...))\)  <a href="group__blas1.html#gaad7b58d466d813898b68189b44619210">More...</a><br /></td></tr>
 <tr class="separator:gaad7b58d466d813898b68189b44619210"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7386b5cb0144d5364b8ea8c8ce1482a5"><td class="memTemplParams" colspan="2">template&lt;class Subroutine , class ContainerType , class ... ContainerTypes&gt; </td></tr>
 <tr class="memitem:ga7386b5cb0144d5364b8ea8c8ce1482a5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#ga7386b5cb0144d5364b8ea8c8ce1482a5">subroutine</a> (Subroutine f, ContainerType &amp;&amp;x, ContainerTypes &amp;&amp;... xs)</td></tr>
@@ -172,14 +172,14 @@ Functions</h2></td></tr>
 <tr class="memitem:ga7b2aa636a0fe0c7d3298b9f869658919"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#ga7b2aa636a0fe0c7d3298b9f869658919">dot</a> (const ContainerType1 &amp;x, const ContainerType2 &amp;y)</td></tr>
 <tr class="memdesc:ga7b2aa636a0fe0c7d3298b9f869658919"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( x^T y\) Binary reproducible Euclidean dot product between two vectors  <a href="group__blas1.html#ga7b2aa636a0fe0c7d3298b9f869658919">More...</a><br /></td></tr>
 <tr class="separator:ga7b2aa636a0fe0c7d3298b9f869658919"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae0aacd4fe731c16a9483140026c4dcc6"><td class="memTemplParams" colspan="2">template&lt;class to_ContainerType , class from_ContainerType &gt; </td></tr>
-<tr class="memitem:gae0aacd4fe731c16a9483140026c4dcc6"><td class="memTemplItemLeft" align="right" valign="top">to_ContainerType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#gae0aacd4fe731c16a9483140026c4dcc6">transfer</a> (const from_ContainerType &amp;src)</td></tr>
-<tr class="memdesc:gae0aacd4fe731c16a9483140026c4dcc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">y=x; Generic way to copy-construct/assign-to an object of <code>to_ContainerType</code> type from a different <code>from_ContainerType</code> type  <a href="group__blas1.html#gae0aacd4fe731c16a9483140026c4dcc6">More...</a><br /></td></tr>
-<tr class="separator:gae0aacd4fe731c16a9483140026c4dcc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae882fddb3f617cec92641812788168b5"><td class="memTemplParams" colspan="2">template&lt;class from_ContainerType , class to_ContainerType &gt; </td></tr>
-<tr class="memitem:gae882fddb3f617cec92641812788168b5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#gae882fddb3f617cec92641812788168b5">transfer</a> (const from_ContainerType &amp;source, to_ContainerType &amp;target)</td></tr>
-<tr class="memdesc:gae882fddb3f617cec92641812788168b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">y=x; Generic way to copy an object of <code>from_ContainerType</code> type to an object of different <code>to_ContainerType</code> type  <a href="group__blas1.html#gae882fddb3f617cec92641812788168b5">More...</a><br /></td></tr>
-<tr class="separator:gae882fddb3f617cec92641812788168b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7015027c22263460fbe5270fe3ff1e3e"><td class="memTemplParams" colspan="2">template&lt;class ContainerType , class from_ContainerType &gt; </td></tr>
+<tr class="memitem:ga7015027c22263460fbe5270fe3ff1e3e"><td class="memTemplItemLeft" align="right" valign="top">ContainerType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#ga7015027c22263460fbe5270fe3ff1e3e">transfer</a> (const from_ContainerType &amp;from)</td></tr>
+<tr class="memdesc:ga7015027c22263460fbe5270fe3ff1e3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated: Use <code><a class="el" href="group__backend.html#ga5dbfc632d4d66d2d926dd525ed7fcea8" title="Generic way to construct an object of ContainerType given a from_ContainerType object and optional ad...">dg::construct&lt;ContainerType&gt;()</a></code> instead.  <a href="group__blas1.html#ga7015027c22263460fbe5270fe3ff1e3e">More...</a><br /></td></tr>
+<tr class="separator:ga7015027c22263460fbe5270fe3ff1e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gade1bcfb06cb5827db21be8f73535b159"><td class="memTemplParams" colspan="2">template&lt;class from_ContainerType , class ContainerType &gt; </td></tr>
+<tr class="memitem:gade1bcfb06cb5827db21be8f73535b159"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__blas1.html#gade1bcfb06cb5827db21be8f73535b159">transfer</a> (const from_ContainerType &amp;from, ContainerType &amp;to)</td></tr>
+<tr class="memdesc:gade1bcfb06cb5827db21be8f73535b159"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated: Use <code><a class="el" href="group__backend.html#gab0ca1b8d3f70004e25ddc2010f7e9e0d" title="Generic way to assign the contents of a from_ContainerType object to a ContainerType object optionall...">dg::assign&lt;ContainerType&gt;()</a></code> instead.  <a href="group__blas1.html#gade1bcfb06cb5827db21be8f73535b159">More...</a><br /></td></tr>
+<tr class="separator:gade1bcfb06cb5827db21be8f73535b159"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>BLAS Level 1 routines. </p>
@@ -192,7 +192,7 @@ A manual synchronization of threads or devices is never needed in an application
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="namespacedg_1_1blas1.html">blas1</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:50 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -7,6 +7,6 @@ var transform_8h =
     [ "pullback", "transform_8h.html#ga920bccad6d4428f91519f26182011df1", null ],
     [ "pushForward", "transform_8h.html#gaf1b8e5426e47a83f079b723dcad325e5", null ],
     [ "pushForwardPerp", "transform_8h.html#gab8b4c0a46bf70e59e456df9bf8a68e0d", null ],
-    [ "pushForwardPerp", "transform_8h.html#gae217bca44c066edc7bfb66a1786d7265", null ],
+    [ "pushForwardPerp", "transform_8h.html#ga0184e8f7d99dcfde909c850ff4f85c0b", null ],
     [ "volume", "transform_8h.html#ga3c86995e21edbffbde353246289b503a", null ]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
-<title>Discontinuous Galerkin Library: dg::ArakawaX&lt; Geometry, Matrix, container &gt; Struct Template Reference</title>
+<title>Discontinuous Galerkin Library: dg::ArakawaX&lt; Geometry, Matrix, Container &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -97,10 +97,11 @@ $(document).ready(function(){initNavTree('structdg_1_1_arakawa_x.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="structdg_1_1_arakawa_x-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">dg::ArakawaX&lt; Geometry, Matrix, container &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__numerical1.html">Level 4: Advanced numerical schemes</a> &raquo; <a class="el" href="group__arakawa.html">Discretization of Poisson bracket</a></div></div>  </div>
+<div class="title">dg::ArakawaX&lt; Geometry, Matrix, Container &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__numerical1.html">Level 4: Advanced numerical schemes</a> &raquo; <a class="el" href="group__arakawa.html">Discretization of Poisson bracket</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -109,46 +110,63 @@ $(document).ready(function(){initNavTree('structdg_1_1_arakawa_x.html','');});
 
 <p><code>#include &lt;<a class="el" href="arakawa_8h_source.html">arakawa.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:abfa9569c00d0351a21b5560508775088"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_arakawa_x.html#abfa9569c00d0351a21b5560508775088">geometry_type</a> = Geometry</td></tr>
+<tr class="separator:abfa9569c00d0351a21b5560508775088"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52b7ceeff0356d31728913ea1dc96ae9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_arakawa_x.html#a52b7ceeff0356d31728913ea1dc96ae9">matrix_type</a> = Matrix</td></tr>
+<tr class="separator:a52b7ceeff0356d31728913ea1dc96ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64303e59b909052ed5e2ee7a069baeb6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_arakawa_x.html#a64303e59b909052ed5e2ee7a069baeb6">container_type</a> = Container</td></tr>
+<tr class="separator:a64303e59b909052ed5e2ee7a069baeb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf289da0211749ce91439c11f42fad3b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_arakawa_x.html#acf289da0211749ce91439c11f42fad3b">value_type</a> = <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; Container &gt;</td></tr>
+<tr class="separator:acf289da0211749ce91439c11f42fad3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8479e75dfb66ebcdd67b2e6b48aed12b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_arakawa_x.html#a8479e75dfb66ebcdd67b2e6b48aed12b">ArakawaX</a> (const Geometry &amp;g)</td></tr>
-<tr class="memdesc:a8479e75dfb66ebcdd67b2e6b48aed12b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create Arakawa on a grid.  <a href="#a8479e75dfb66ebcdd67b2e6b48aed12b">More...</a><br /></td></tr>
-<tr class="separator:a8479e75dfb66ebcdd67b2e6b48aed12b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecef46b3ae7e785f03a406d9cec27448"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_arakawa_x.html#aecef46b3ae7e785f03a406d9cec27448">ArakawaX</a> (const Geometry &amp;g, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> bcx, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> bcy)</td></tr>
-<tr class="memdesc:aecef46b3ae7e785f03a406d9cec27448"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create Arakawa on a grid using different boundary conditions.  <a href="#aecef46b3ae7e785f03a406d9cec27448">More...</a><br /></td></tr>
-<tr class="separator:aecef46b3ae7e785f03a406d9cec27448"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a304bbcf8f3563d3d513d5f14ff0ef3ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_arakawa_x.html#a304bbcf8f3563d3d513d5f14ff0ef3ed">operator()</a> (const container &amp;lhs, const container &amp;rhs, container &amp;result)</td></tr>
-<tr class="memdesc:a304bbcf8f3563d3d513d5f14ff0ef3ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute <a class="el" href="structdg_1_1_poisson.html" title="Poisson bracket scheme. ">Poisson</a> bracket.  <a href="#a304bbcf8f3563d3d513d5f14ff0ef3ed">More...</a><br /></td></tr>
-<tr class="separator:a304bbcf8f3563d3d513d5f14ff0ef3ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a831d7ad5c4a02115fa22d81f9a8544f6"><td class="memItemLeft" align="right" valign="top">const Matrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_arakawa_x.html#a831d7ad5c4a02115fa22d81f9a8544f6">dx</a> ()</td></tr>
-<tr class="memdesc:a831d7ad5c4a02115fa22d81f9a8544f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return internally used x - derivative.  <a href="#a831d7ad5c4a02115fa22d81f9a8544f6">More...</a><br /></td></tr>
-<tr class="separator:a831d7ad5c4a02115fa22d81f9a8544f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2959a5fe048ab8858b67d8b06c06aaac"><td class="memItemLeft" align="right" valign="top">const Matrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_arakawa_x.html#a2959a5fe048ab8858b67d8b06c06aaac">dy</a> ()</td></tr>
-<tr class="memdesc:a2959a5fe048ab8858b67d8b06c06aaac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return internally used y - derivative.  <a href="#a2959a5fe048ab8858b67d8b06c06aaac">More...</a><br /></td></tr>
-<tr class="separator:a2959a5fe048ab8858b67d8b06c06aaac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a289a1260a866710e46050063d7acaed3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_arakawa_x.html#a289a1260a866710e46050063d7acaed3">variation</a> (const container &amp;phi, container &amp;varphi)</td></tr>
-<tr class="memdesc:a289a1260a866710e46050063d7acaed3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the total variation integrand.  <a href="#a289a1260a866710e46050063d7acaed3">More...</a><br /></td></tr>
-<tr class="separator:a289a1260a866710e46050063d7acaed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a243bd50339803a21d15b80b14d0c9e4c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_arakawa_x.html#a243bd50339803a21d15b80b14d0c9e4c">ArakawaX</a> (const Geometry &amp;g)</td></tr>
+<tr class="memdesc:a243bd50339803a21d15b80b14d0c9e4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create Arakawa on a grid.  <a href="#a243bd50339803a21d15b80b14d0c9e4c">More...</a><br /></td></tr>
+<tr class="separator:a243bd50339803a21d15b80b14d0c9e4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ffda1e5246eac36e4e285a0b8ea5881"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_arakawa_x.html#a3ffda1e5246eac36e4e285a0b8ea5881">ArakawaX</a> (const Geometry &amp;g, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> bcx, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> bcy)</td></tr>
+<tr class="memdesc:a3ffda1e5246eac36e4e285a0b8ea5881"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create Arakawa on a grid using different boundary conditions.  <a href="#a3ffda1e5246eac36e4e285a0b8ea5881">More...</a><br /></td></tr>
+<tr class="separator:a3ffda1e5246eac36e4e285a0b8ea5881"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72e9783e7a27d2a27343dd3775ac3a1c"><td class="memTemplParams" colspan="2">template&lt;class ContainerType0 , class ContainerType1 , class ContainerType2 &gt; </td></tr>
+<tr class="memitem:a72e9783e7a27d2a27343dd3775ac3a1c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_arakawa_x.html#a72e9783e7a27d2a27343dd3775ac3a1c">operator()</a> (const ContainerType0 &amp;lhs, const ContainerType1 &amp;rhs, ContainerType2 &amp;result)</td></tr>
+<tr class="memdesc:a72e9783e7a27d2a27343dd3775ac3a1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute <a class="el" href="structdg_1_1_poisson.html" title="Poisson bracket scheme. ">Poisson</a> bracket.  <a href="#a72e9783e7a27d2a27343dd3775ac3a1c">More...</a><br /></td></tr>
+<tr class="separator:a72e9783e7a27d2a27343dd3775ac3a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10061ac073c8ad9cefb1ed6252e326d8"><td class="memTemplParams" colspan="2">template&lt;class ContainerType0 &gt; </td></tr>
+<tr class="memitem:a10061ac073c8ad9cefb1ed6252e326d8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_arakawa_x.html#a10061ac073c8ad9cefb1ed6252e326d8">set_chi</a> (const ContainerType0 &amp;new_chi)</td></tr>
+<tr class="memdesc:a10061ac073c8ad9cefb1ed6252e326d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change Chi.  <a href="#a10061ac073c8ad9cefb1ed6252e326d8">More...</a><br /></td></tr>
+<tr class="separator:a10061ac073c8ad9cefb1ed6252e326d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4470ad0a89bb10d04e12b4800b644ac7"><td class="memItemLeft" align="right" valign="top">const Matrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_arakawa_x.html#a4470ad0a89bb10d04e12b4800b644ac7">dx</a> () const</td></tr>
+<tr class="memdesc:a4470ad0a89bb10d04e12b4800b644ac7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return internally used x - derivative.  <a href="#a4470ad0a89bb10d04e12b4800b644ac7">More...</a><br /></td></tr>
+<tr class="separator:a4470ad0a89bb10d04e12b4800b644ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae6828bf204fbcd35dfc586a0fb00b3b"><td class="memItemLeft" align="right" valign="top">const Matrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_arakawa_x.html#aae6828bf204fbcd35dfc586a0fb00b3b">dy</a> () const</td></tr>
+<tr class="memdesc:aae6828bf204fbcd35dfc586a0fb00b3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return internally used y - derivative.  <a href="#aae6828bf204fbcd35dfc586a0fb00b3b">More...</a><br /></td></tr>
+<tr class="separator:aae6828bf204fbcd35dfc586a0fb00b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aade2ca485922c9d68cdd892879b357b1"><td class="memTemplParams" colspan="2">template&lt;class ContainerType0 , class ContainerType1 &gt; </td></tr>
+<tr class="memitem:aade2ca485922c9d68cdd892879b357b1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_arakawa_x.html#aade2ca485922c9d68cdd892879b357b1">variation</a> (const ContainerType0 &amp;phi, ContainerType1 &amp;varphi)</td></tr>
+<tr class="memdesc:aade2ca485922c9d68cdd892879b357b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the total variation integrand.  <a href="#aade2ca485922c9d68cdd892879b357b1">More...</a><br /></td></tr>
+<tr class="separator:aade2ca485922c9d68cdd892879b357b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class Geometry, class Matrix, class container&gt;<br />
-struct dg::ArakawaX&lt; Geometry, Matrix, container &gt;</h3>
+<div class="textblock"><h3>template&lt;class Geometry, class Matrix, class Container&gt;<br />
+struct dg::ArakawaX&lt; Geometry, Matrix, Container &gt;</h3>
 
 <p>X-space generalized version of Arakawa's scheme. </p>
 <p>Computes </p><p class="formulaDsp">
-\[ [f,g] := 1/\sqrt{g_{2d}}\left(\partial_x f\partial_y g - \partial_y f\partial_x g\right) \]
+\[ [f,g] := \chi/\sqrt{g_{2d}}\left(\partial_x f\partial_y g - \partial_y f\partial_x g\right) \]
 </p>
-<p> where \( g_{2d} = g/g_{zz}\) is the two-dimensional volume element of the plane in 2x1 product space. </p><div class="fragment"><div class="line"><span class="keyword">const</span> <span class="keywordtype">double</span> lx = 2*<a class="code" href="functors_8h.html#ae71449b1cc6e6250b91f539153a7a0d3">M_PI</a>;</div><div class="line"><span class="keyword">const</span> <span class="keywordtype">double</span> ly = 2*<a class="code" href="functors_8h.html#ae71449b1cc6e6250b91f539153a7a0d3">M_PI</a>;</div><div class="line"><a class="code" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcx = <a class="code" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3">dg::PER</a>;</div><div class="line"><a class="code" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcy = <a class="code" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3">dg::PER</a>;</div><div class="line"></div><div class="line"><span class="keywordtype">double</span> left( <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y) {</div><div class="line">    <span class="keywordflow">return</span> sin(x)*cos(y);</div><div class="line">}</div><div class="line"><span class="keywordtype">double</span> right( <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y) {</div><div class="line">    <span class="keywordflow">return</span> sin(y)*cos(x); </div><div class="line">}</div><div class="line"><span class="keywordtype">double</span> jacobian( <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y) {</div><div class="line">    <span class="keywordflow">return</span> cos(x)*cos(y)*cos(x)*cos(y) - sin(x)*sin(y)*sin(x)*sin(y);</div><div class="line">}</div></div><!-- fragment --><div class="fragment"><div class="line">    <span class="comment">// create a Cartesian grid on the domain [0,lx]x[0,ly]</span></div><div class="line">    <span class="keyword">const</span> <a class="code" href="structdg_1_1_real_cartesian_grid2d.html">dg::CartesianGrid2d</a> grid( 0, lx, 0, ly, n, Nx, Ny, bcx, bcy);</div><div class="line"></div><div class="line">    <span class="comment">// evaluate left and right hand side on the grid</span></div><div class="line">    <span class="keyword">const</span> <a class="code" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8">dg::DVec</a> lhs = dg::transfer&lt;dg::DVec&gt;( <a class="code" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">dg::evaluate</a>( left, grid));</div><div class="line">    <span class="keyword">const</span> <a class="code" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8">dg::DVec</a> rhs = dg::transfer&lt;dg::DVec&gt;( <a class="code" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">dg::evaluate</a>( right, grid));</div><div class="line">    <a class="code" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8">dg::DVec</a> jac(lhs);</div><div class="line"></div><div class="line">    <span class="comment">// create an Arakawa object</span></div><div class="line">    <a class="code" href="structdg_1_1_arakawa_x.html">dg::ArakawaX&lt;dg::aGeometry2d, dg::DMatrix, dg::DVec&gt;</a> arakawa( grid);</div><div class="line"></div><div class="line">    <span class="comment">//apply arakawa scheme</span></div><div class="line">    arakawa( lhs, rhs, jac);</div></div><!-- fragment --> <dl class="tparams"><dt>Template Parameters</dt><dd>
+<p> where \( g_{2d} = g/g_{zz}\) is the two-dimensional volume element of the plane in 2x1 product space and \( \chi\) is an optional factor. If \( \chi=1\), then the discretization conserves, mass, energy and enstrophy. </p><div class="fragment"><div class="line"><span class="keyword">const</span> <span class="keywordtype">double</span> lx = 2*<a class="code" href="functors_8h.html#ae71449b1cc6e6250b91f539153a7a0d3">M_PI</a>;</div><div class="line"><span class="keyword">const</span> <span class="keywordtype">double</span> ly = 2*<a class="code" href="functors_8h.html#ae71449b1cc6e6250b91f539153a7a0d3">M_PI</a>;</div><div class="line"><a class="code" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcx = <a class="code" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3">dg::PER</a>;</div><div class="line"><a class="code" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcy = <a class="code" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3">dg::PER</a>;</div><div class="line"></div><div class="line"><span class="keywordtype">double</span> left( <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y) {</div><div class="line">    <span class="keywordflow">return</span> sin(x)*cos(y);</div><div class="line">}</div><div class="line"><span class="keywordtype">double</span> right( <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y) {</div><div class="line">    <span class="keywordflow">return</span> sin(y)*cos(x); </div><div class="line">}</div><div class="line"><span class="keywordtype">double</span> jacobian( <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y) {</div><div class="line">    <span class="keywordflow">return</span> cos(x)*cos(y)*cos(x)*cos(y) - sin(x)*sin(y)*sin(x)*sin(y);</div><div class="line">}</div></div><!-- fragment --><div class="fragment"><div class="line">    <span class="comment">// create a Cartesian grid on the domain [0,lx]x[0,ly]</span></div><div class="line">    <span class="keyword">const</span> <a class="code" href="structdg_1_1_real_cartesian_grid2d.html">dg::CartesianGrid2d</a> grid( 0, lx, 0, ly, n, Nx, Ny, bcx, bcy);</div><div class="line"></div><div class="line">    <span class="comment">// evaluate left and right hand side on the grid</span></div><div class="line">    <span class="keyword">const</span> <a class="code" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8">dg::DVec</a> lhs = dg::construct&lt;dg::DVec&gt;( <a class="code" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">dg::evaluate</a>( left, grid));</div><div class="line">    <span class="keyword">const</span> <a class="code" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8">dg::DVec</a> rhs = dg::construct&lt;dg::DVec&gt;( <a class="code" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">dg::evaluate</a>( right, grid));</div><div class="line">    <a class="code" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8">dg::DVec</a> jac(lhs);</div><div class="line"></div><div class="line">    <span class="comment">// create an Arakawa object</span></div><div class="line">    <a class="code" href="structdg_1_1_arakawa_x.html">dg::ArakawaX&lt;dg::aGeometry2d, dg::DMatrix, dg::DVec&gt;</a> arakawa( grid);</div><div class="line"></div><div class="line">    <span class="comment">//apply arakawa scheme</span></div><div class="line">    arakawa( lhs, rhs, jac);</div></div><!-- fragment --> <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Geometry</td><td>A type that is or derives from one of the abstract geometry base classes ( <code>aGeometry2d</code>, <code>aGeometry3d</code>, <code>aMPIGeometry2d</code>, ...). <code>Geometry</code> determines which <code>Matrix</code> and <code>container</code> types can be used: </td></tr>
-    <tr><td class="paramname">Matrix</td><td>A class for which the <a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a> functions are callable in connection with the <code>container</code> class and to which the return type of <code><a class="el" href="group__creation.html#ga51aea0f47c5a77bb1a3bce187839dc85" title="Create 2d derivative in x-direction. ">create::dx()</a></code> can be converted using <code><a class="el" href="group__blas2.html#ga53701ba3118a2256a93a4d92a7a8a597" title="; Generic way to copy and/or convert a Matrix type to a different Matrix type ">dg::blas2::transfer</a></code>. The <code>Matrix</code> type can be one of:<ul>
+    <tr><td class="paramname">Geometry</td><td>A type that is or derives from one of the abstract geometry base classes ( <code>aGeometry2d</code>, <code>aGeometry3d</code>, <code>aMPIGeometry2d</code>, ...). <code>Geometry</code> determines which <code>Matrix</code> and <code>Container</code> types can be used: </td></tr>
+    <tr><td class="paramname">Matrix</td><td>A class for which the <a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a> functions are callable in connection with the <code>Container</code> class and to which the return type of <code><a class="el" href="group__creation.html#ga51aea0f47c5a77bb1a3bce187839dc85" title="Create 2d derivative in x-direction. ">create::dx()</a></code> can be converted using <code><a class="el" href="group__blas2.html#ga53701ba3118a2256a93a4d92a7a8a597" title="; Generic way to copy and/or convert a Matrix type to a different Matrix type ">dg::blas2::transfer</a></code>. The <code>Matrix</code> type can be one of:<ul>
 <li><code><a class="el" href="group__typedefs.html#gac2134505608b45616787fdb2f6eedc87" title="Host Matrix for derivatives. ">dg::HMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193" title="Host Vector. ">dg::HVec</a></code> and one of the shared memory geometries</li>
 <li><code><a class="el" href="group__typedefs.html#gafdf2ecb95cbc87a1544136d28d535f16" title="Device Matrix for derivatives. ">dg::DMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code> and one of the shared memory geometries</li>
 <li><code><a class="el" href="group__typedefs.html#gaff79c734c7916054c7dc24e6bc437161" title="MPI Host Matrix for derivatives. ">dg::MHMatrix</a></code> with <code><a class="el" href="group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> and one of the MPI geometries</li>
 <li><code><a class="el" href="group__typedefs.html#gaad32454aa2aca3cbb93448d7b5daf005" title="MPI Device Matrix for derivatives. ">dg::MDMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> and one of the MPI geometries </li>
 </ul>
 </td></tr>
-    <tr><td class="paramname">container</td><td>A data container class for which the <code><a class="el" href="namespacedg_1_1blas1.html" title="BLAS Level 1 routines. ">blas1</a></code> functionality is overloaded and to which the return type of <code><a class="el" href="group__blas1.html#gaad7b58d466d813898b68189b44619210" title=" ">blas1::evaluate()</a></code> can be converted using <code><a class="el" href="group__blas1.html#gae0aacd4fe731c16a9483140026c4dcc6" title="y=x; Generic way to copy-construct/assign-to an object of to_ContainerType type from a different from...">dg::blas1::transfer</a></code>. We assume that <code>container</code> is copyable/assignable and has a swap member function. In connection with <code>Geometry</code> this is one of<ul>
+    <tr><td class="paramname">Container</td><td>A data container class for which the <code><a class="el" href="namespacedg_1_1blas1.html" title="BLAS Level 1 routines. ">blas1</a></code> functionality is overloaded and to which the return type of <code><a class="el" href="group__blas1.html#ga7386b5cb0144d5364b8ea8c8ce1482a5" title="; Customizable and generic blas1 function ">blas1::subroutine()</a></code> can be converted using <code><a class="el" href="group__backend.html#gab0ca1b8d3f70004e25ddc2010f7e9e0d" title="Generic way to assign the contents of a from_ContainerType object to a ContainerType object optionall...">dg::assign</a></code>. We assume that <code>Container</code> is copyable/assignable and has a swap member function. In connection with <code>Geometry</code> this is one of<ul>
 <li><code><a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193" title="Host Vector. ">dg::HVec</a></code>, <code><a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code> when <code>Geometry</code> is a shared memory geometry</li>
 <li><code><a class="el" href="group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code><a class="el" href="group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> when <code>Geometry</code> is one of the MPI geometries </li>
 </ul>
@@ -156,17 +174,82 @@ struct dg::ArakawaX&lt; Geometry, Matrix, container &gt;</h3>
   </table>
   </dd>
 </dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a8479e75dfb66ebcdd67b2e6b48aed12b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8479e75dfb66ebcdd67b2e6b48aed12b">&#9670;&nbsp;</a></span>ArakawaX() <span class="overload">[1/2]</span></h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a64303e59b909052ed5e2ee7a069baeb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64303e59b909052ed5e2ee7a069baeb6">&#9670;&nbsp;</a></span>container_type</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Geometry, class Matrix, class container&gt; </div>
+template&lt;class Geometry, class Matrix, class Container&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdg_1_1_arakawa_x.html">dg::ArakawaX</a>&lt; Geometry, Matrix, container &gt;::<a class="el" href="structdg_1_1_arakawa_x.html">ArakawaX</a> </td>
+          <td class="memname">using <a class="el" href="structdg_1_1_arakawa_x.html">dg::ArakawaX</a>&lt; Geometry, Matrix, Container &gt;::<a class="el" href="structdg_1_1_arakawa_x.html#a64303e59b909052ed5e2ee7a069baeb6">container_type</a> =  Container</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abfa9569c00d0351a21b5560508775088"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfa9569c00d0351a21b5560508775088">&#9670;&nbsp;</a></span>geometry_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Geometry, class Matrix, class Container&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structdg_1_1_arakawa_x.html">dg::ArakawaX</a>&lt; Geometry, Matrix, Container &gt;::<a class="el" href="structdg_1_1_arakawa_x.html#abfa9569c00d0351a21b5560508775088">geometry_type</a> =  Geometry</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a52b7ceeff0356d31728913ea1dc96ae9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52b7ceeff0356d31728913ea1dc96ae9">&#9670;&nbsp;</a></span>matrix_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Geometry, class Matrix, class Container&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structdg_1_1_arakawa_x.html">dg::ArakawaX</a>&lt; Geometry, Matrix, Container &gt;::<a class="el" href="structdg_1_1_arakawa_x.html#a52b7ceeff0356d31728913ea1dc96ae9">matrix_type</a> =  Matrix</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acf289da0211749ce91439c11f42fad3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf289da0211749ce91439c11f42fad3b">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Geometry, class Matrix, class Container&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structdg_1_1_arakawa_x.html">dg::ArakawaX</a>&lt; Geometry, Matrix, Container &gt;::<a class="el" href="structdg_1_1_arakawa_x.html#acf289da0211749ce91439c11f42fad3b">value_type</a> =  <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt;Container&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a243bd50339803a21d15b80b14d0c9e4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a243bd50339803a21d15b80b14d0c9e4c">&#9670;&nbsp;</a></span>ArakawaX() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Geometry, class Matrix, class Container&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdg_1_1_arakawa_x.html">dg::ArakawaX</a>&lt; Geometry, Matrix, Container &gt;::<a class="el" href="structdg_1_1_arakawa_x.html">ArakawaX</a> </td>
           <td>(</td>
           <td class="paramtype">const Geometry &amp;&#160;</td>
           <td class="paramname"><em>g</em></td><td>)</td>
@@ -182,19 +265,20 @@ template&lt;class Geometry, class Matrix, class container&gt; </div>
   </table>
   </dd>
 </dl>
+<dl class="section note"><dt>Note</dt><dd>chi defaults to 1 </dd></dl>
 
 </div>
 </div>
-<a id="aecef46b3ae7e785f03a406d9cec27448"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aecef46b3ae7e785f03a406d9cec27448">&#9670;&nbsp;</a></span>ArakawaX() <span class="overload">[2/2]</span></h2>
+<a id="a3ffda1e5246eac36e4e285a0b8ea5881"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ffda1e5246eac36e4e285a0b8ea5881">&#9670;&nbsp;</a></span>ArakawaX() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Geometry, class Matrix, class container&gt; </div>
+template&lt;class Geometry, class Matrix, class Container&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdg_1_1_arakawa_x.html">dg::ArakawaX</a>&lt; Geometry, Matrix, container &gt;::<a class="el" href="structdg_1_1_arakawa_x.html">ArakawaX</a> </td>
+          <td class="memname"><a class="el" href="structdg_1_1_arakawa_x.html">dg::ArakawaX</a>&lt; Geometry, Matrix, Container &gt;::<a class="el" href="structdg_1_1_arakawa_x.html">ArakawaX</a> </td>
           <td>(</td>
           <td class="paramtype">const Geometry &amp;&#160;</td>
           <td class="paramname"><em>g</em>, </td>
@@ -228,26 +312,27 @@ template&lt;class Geometry, class Matrix, class container&gt; </div>
   </table>
   </dd>
 </dl>
+<dl class="section note"><dt>Note</dt><dd>chi defaults to 1 </dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a831d7ad5c4a02115fa22d81f9a8544f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a831d7ad5c4a02115fa22d81f9a8544f6">&#9670;&nbsp;</a></span>dx()</h2>
+<a id="a4470ad0a89bb10d04e12b4800b644ac7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4470ad0a89bb10d04e12b4800b644ac7">&#9670;&nbsp;</a></span>dx()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Geometry, class Matrix, class container&gt; </div>
+template&lt;class Geometry, class Matrix, class Container&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const Matrix&amp; <a class="el" href="structdg_1_1_arakawa_x.html">dg::ArakawaX</a>&lt; Geometry, Matrix, container &gt;::dx </td>
+          <td class="memname">const Matrix&amp; <a class="el" href="structdg_1_1_arakawa_x.html">dg::ArakawaX</a>&lt; Geometry, Matrix, Container &gt;::dx </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -262,22 +347,22 @@ template&lt;class Geometry, class Matrix, class container&gt; </div>
 
 </div>
 </div>
-<a id="a2959a5fe048ab8858b67d8b06c06aaac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2959a5fe048ab8858b67d8b06c06aaac">&#9670;&nbsp;</a></span>dy()</h2>
+<a id="aae6828bf204fbcd35dfc586a0fb00b3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae6828bf204fbcd35dfc586a0fb00b3b">&#9670;&nbsp;</a></span>dy()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Geometry, class Matrix, class container&gt; </div>
+template&lt;class Geometry, class Matrix, class Container&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const Matrix&amp; <a class="el" href="structdg_1_1_arakawa_x.html">dg::ArakawaX</a>&lt; Geometry, Matrix, container &gt;::dy </td>
+          <td class="memname">const Matrix&amp; <a class="el" href="structdg_1_1_arakawa_x.html">dg::ArakawaX</a>&lt; Geometry, Matrix, Container &gt;::dy </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -292,30 +377,32 @@ template&lt;class Geometry, class Matrix, class container&gt; </div>
 
 </div>
 </div>
-<a id="a304bbcf8f3563d3d513d5f14ff0ef3ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a304bbcf8f3563d3d513d5f14ff0ef3ed">&#9670;&nbsp;</a></span>operator()()</h2>
+<a id="a72e9783e7a27d2a27343dd3775ac3a1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72e9783e7a27d2a27343dd3775ac3a1c">&#9670;&nbsp;</a></span>operator()()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Geometry, class Matrix, class container&gt; </div>
+template&lt;class Geometry, class Matrix, class Container&gt; </div>
+<div class="memtemplate">
+template&lt;class ContainerType0 , class ContainerType1 , class ContainerType2 &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="structdg_1_1_arakawa_x.html">dg::ArakawaX</a>&lt; Geometry, Matrix, container &gt;::operator() </td>
+          <td class="memname">void <a class="el" href="structdg_1_1_arakawa_x.html">dg::ArakawaX</a>&lt; Geometry, Matrix, Container &gt;::operator() </td>
           <td>(</td>
-          <td class="paramtype">const container &amp;&#160;</td>
+          <td class="paramtype">const ContainerType0 &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const container &amp;&#160;</td>
+          <td class="paramtype">const ContainerType1 &amp;&#160;</td>
           <td class="paramname"><em>rhs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">container &amp;&#160;</td>
+          <td class="paramtype">ContainerType2 &amp;&#160;</td>
           <td class="paramname"><em>result</em>&#160;</td>
         </tr>
         <tr>
@@ -338,31 +425,83 @@ template&lt;class Geometry, class Matrix, class container&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>memops: 25 reads; 9 writes (+ 2 reads and 1 write, if geometry is nontrivial) </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>memops: 30 </dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ContainerTypes</td><td>must be usable with <code>Container</code> in <a class="el" href="index.html#dispatch">The Level 1 dispatch system</a> </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a289a1260a866710e46050063d7acaed3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a289a1260a866710e46050063d7acaed3">&#9670;&nbsp;</a></span>variation()</h2>
+<a id="a10061ac073c8ad9cefb1ed6252e326d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10061ac073c8ad9cefb1ed6252e326d8">&#9670;&nbsp;</a></span>set_chi()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Geometry, class Matrix, class container&gt; </div>
+template&lt;class Geometry, class Matrix, class Container&gt; </div>
+<div class="memtemplate">
+template&lt;class ContainerType0 &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="structdg_1_1_arakawa_x.html">dg::ArakawaX</a>&lt; Geometry, Matrix, container &gt;::variation </td>
+          <td class="memname">void <a class="el" href="structdg_1_1_arakawa_x.html">dg::ArakawaX</a>&lt; Geometry, Matrix, Container &gt;::set_chi </td>
           <td>(</td>
-          <td class="paramtype">const container &amp;&#160;</td>
+          <td class="paramtype">const ContainerType0 &amp;&#160;</td>
+          <td class="paramname"><em>new_chi</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Change Chi. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">new_chi</td><td>The new chi </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ContainerTypes</td><td>must be usable with <code>Container</code> in <a class="el" href="index.html#dispatch">The Level 1 dispatch system</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aade2ca485922c9d68cdd892879b357b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aade2ca485922c9d68cdd892879b357b1">&#9670;&nbsp;</a></span>variation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Geometry, class Matrix, class Container&gt; </div>
+<div class="memtemplate">
+template&lt;class ContainerType0 , class ContainerType1 &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structdg_1_1_arakawa_x.html">dg::ArakawaX</a>&lt; Geometry, Matrix, Container &gt;::variation </td>
+          <td>(</td>
+          <td class="paramtype">const ContainerType0 &amp;&#160;</td>
           <td class="paramname"><em>phi</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">container &amp;&#160;</td>
+          <td class="paramtype">ContainerType1 &amp;&#160;</td>
           <td class="paramname"><em>varphi</em>&#160;</td>
         </tr>
         <tr>
@@ -389,6 +528,12 @@ template&lt;class Geometry, class Matrix, class container&gt; </div>
   </table>
   </dd>
 </dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ContainerTypes</td><td>must be usable with <code>Container</code> in <a class="el" href="index.html#dispatch">The Level 1 dispatch system</a> </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -401,7 +546,7 @@ template&lt;class Geometry, class Matrix, class container&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_arakawa_x.html">ArakawaX</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

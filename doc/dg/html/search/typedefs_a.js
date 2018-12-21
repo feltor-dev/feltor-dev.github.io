@@ -1,6 +1,13 @@
 var searchData=
 [
-  ['nncd',['NNCD',['../group__typedefs.html#ga5ad903c7e171878d6c402a20370ec5d4',1,'dg']]],
-  ['nnch',['NNCH',['../group__typedefs.html#ga93e65948d51a0d9f05bf04c99272c118',1,'dg']]],
-  ['nolimiter',['NoLimiter',['../../../geometries/html/group__fieldaligned.html#ga1a10e4fdd6338136e629d3e2292bc3da',1,'dg::geo::NoLimiter()'],['../../../geometries/html/group__fieldaligned.html#ga1a10e4fdd6338136e629d3e2292bc3da',1,'NoLimiter()(Global Namespace)']]]
+  ['matrix_5ftype',['matrix_type',['../structdg_1_1_arakawa_x.html#a52b7ceeff0356d31728913ea1dc96ae9',1,'dg::ArakawaX::matrix_type()'],['../classdg_1_1_elliptic.html#a0339f2b9e7292666814bff7ed79ae9a5',1,'dg::Elliptic::matrix_type()'],['../classdg_1_1_elliptic3d.html#ad8563bd3d8e35bae6160b43d1e815a0e',1,'dg::Elliptic3d::matrix_type()'],['../structdg_1_1_helmholtz.html#a15ffedf466809e87e7bef7f34aa7e352',1,'dg::Helmholtz::matrix_type()'],['../structdg_1_1_helmholtz3d.html#ae5570aa8b046614380ae80afd7586c04',1,'dg::Helmholtz3d::matrix_type()'],['../structdg_1_1_helmholtz2.html#af8e8f0ac287b9ff3c7718f016df5a2d6',1,'dg::Helmholtz2::matrix_type()'],['../structdg_1_1_multigrid_c_g2d.html#aeb757d36ec9ffe31587b3d93796e6b94',1,'dg::MultigridCG2d::matrix_type()'],['../structdg_1_1_poisson.html#ab0e34617f4c99d4c4c250a84b1bf7593',1,'dg::Poisson::matrix_type()'],['../classdg_1_1_refined_elliptic.html#ab82ed2ecf0d5bceaf76b40dff884135a',1,'dg::RefinedElliptic::matrix_type()']]],
+  ['mdmatrix',['MDMatrix',['../group__typedefs.html#gaad32454aa2aca3cbb93448d7b5daf005',1,'dg']]],
+  ['mdvec',['MDVec',['../group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55',1,'dg']]],
+  ['memory_5fcategory',['memory_category',['../structdg_1_1_real_grid1d.html#acc357eed0968ddfe052a69494e346e9e',1,'dg::RealGrid1d::memory_category()'],['../structdg_1_1a_real_topology2d.html#afca88b2b146b9b540720efe949f7e930',1,'dg::aRealTopology2d::memory_category()'],['../structdg_1_1a_real_topology3d.html#aa349bc2911bb3edefc08964874a37426',1,'dg::aRealTopology3d::memory_category()'],['../structdg_1_1_real_grid_x1d.html#a785dfc413eced0eff09d1e6932b4c3f2',1,'dg::RealGridX1d::memory_category()'],['../structdg_1_1a_real_topology_x2d.html#af60c5325a03d78424d5672521004d776',1,'dg::aRealTopologyX2d::memory_category()'],['../structdg_1_1a_real_topology_x3d.html#a2819a92815b238d3baad600aab917cb3',1,'dg::aRealTopologyX3d::memory_category()'],['../structdg_1_1a_real_m_p_i_topology2d.html#af7489ea3debda06c3902331da6024e9a',1,'dg::aRealMPITopology2d::memory_category()'],['../structdg_1_1a_real_m_p_i_topology3d.html#a40e7929edf5b84a4a7eaa38c83ff9a41',1,'dg::aRealMPITopology3d::memory_category()'],['../structdg_1_1_topology_traits.html#ab645d8b9ec555edbb8a9c4dbe5e8200a',1,'dg::TopologyTraits::memory_category()']]],
+  ['mhmatrix',['MHMatrix',['../group__typedefs.html#gaff79c734c7916054c7dc24e6bc437161',1,'dg']]],
+  ['mhvec',['MHVec',['../group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0',1,'dg']]],
+  ['midmatrix',['MIDMatrix',['../group__typedefs.html#ga741f7ee9c9dd42c856046d37adc0f85c',1,'dg']]],
+  ['mihmatrix',['MIHMatrix',['../group__typedefs.html#gaaf14c451a536c94f30a0ac6b7150c2e2',1,'dg']]],
+  ['mpigrid2d',['MPIGrid2d',['../group__gridtypes.html#ga492b972b6b0822517291a1c0de786996',1,'dg']]],
+  ['mpigrid3d',['MPIGrid3d',['../group__gridtypes.html#ga1a7b625b75effa1be77424511e8a6a74',1,'dg']]]
 ];

@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('structdg_1_1_abs_min.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>Functor for the absolute maximum </p><p class="formulaDsp">
+<p>Absolute minimum </p><p class="formulaDsp">
 \[ f(x,y) = \min(|x|,|y|)\]
 </p>
 <p>.  
@@ -114,27 +114,21 @@ $(document).ready(function(){initNavTree('structdg_1_1_abs_min.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab82c3b544ad06e8a5f4c2ef5d3512258"><td class="memItemLeft" align="right" valign="top"><a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_abs_min.html#ab82c3b544ad06e8a5f4c2ef5d3512258">operator()</a> (const T &amp;<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>, const T &amp;<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>) const</td></tr>
-<tr class="memdesc:ab82c3b544ad06e8a5f4c2ef5d3512258"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the asbolute minimum.  <a href="#ab82c3b544ad06e8a5f4c2ef5d3512258">More...</a><br /></td></tr>
-<tr class="separator:ab82c3b544ad06e8a5f4c2ef5d3512258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1abd700121746ac95007c0acf0ce34b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_abs_min.html#aa1abd700121746ac95007c0acf0ce34b">operator()</a> (T <a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>, T <a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>) const</td></tr>
+<tr class="memdesc:aa1abd700121746ac95007c0acf0ce34b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the asbolute minimum.  <a href="#aa1abd700121746ac95007c0acf0ce34b">More...</a><br /></td></tr>
+<tr class="separator:aa1abd700121746ac95007c0acf0ce34b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class T = double&gt;<br />
 struct dg::AbsMin&lt; T &gt;</h3>
 
-<p>Functor for the absolute maximum </p><p class="formulaDsp">
+<p>Absolute minimum </p><p class="formulaDsp">
 \[ f(x,y) = \min(|x|,|y|)\]
 </p>
 <p>. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>value-type </td></tr>
-  </table>
-  </dd>
-</dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab82c3b544ad06e8a5f4c2ef5d3512258"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab82c3b544ad06e8a5f4c2ef5d3512258">&#9670;&nbsp;</a></span>operator()()</h2>
+<a id="aa1abd700121746ac95007c0acf0ce34b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1abd700121746ac95007c0acf0ce34b">&#9670;&nbsp;</a></span>operator()()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -147,13 +141,13 @@ template&lt;class T  = double&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> T <a class="el" href="structdg_1_1_abs_min.html">dg::AbsMin</a>&lt; T &gt;::operator() </td>
           <td>(</td>
-          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>y</em>&#160;</td>
         </tr>
         <tr>
@@ -190,7 +184,7 @@ template&lt;class T  = double&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_abs_min.html">AbsMin</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

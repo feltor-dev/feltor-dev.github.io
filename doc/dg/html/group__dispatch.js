@@ -1,5 +1,10 @@
 var group__dispatch =
 [
+    [ "TensorTraits< View< ThrustVector > >", "structdg_1_1_tensor_traits_3_01_view_3_01_thrust_vector_01_4_01_4.html", [
+      [ "execution_policy", "structdg_1_1_tensor_traits_3_01_view_3_01_thrust_vector_01_4_01_4.html#ae57408eba2b6bba3819826b6c01fb065", null ],
+      [ "tensor_category", "structdg_1_1_tensor_traits_3_01_view_3_01_thrust_vector_01_4_01_4.html#adf395c874ce97a7fa7645ccc2ee3f85b", null ],
+      [ "value_type", "structdg_1_1_tensor_traits_3_01_view_3_01_thrust_vector_01_4_01_4.html#ad9057534c90d0dba4909417bd45aa2dc", null ]
+    ] ],
     [ "TensorTraits< RowColDistMat< LI, LO, C > >", "structdg_1_1_tensor_traits_3_01_row_col_dist_mat_3_01_l_i_00_01_l_o_00_01_c_01_4_01_4.html", [
       [ "tensor_category", "structdg_1_1_tensor_traits_3_01_row_col_dist_mat_3_01_l_i_00_01_l_o_00_01_c_01_4_01_4.html#aca27f13b20d633c4891e99f413a5aff1", null ],
       [ "value_type", "structdg_1_1_tensor_traits_3_01_row_col_dist_mat_3_01_l_i_00_01_l_o_00_01_c_01_4_01_4.html#ad08dd42403cc37fa22fb336164cf87e4", null ]
@@ -38,16 +43,6 @@ var group__dispatch =
       [ "execution_policy", "structdg_1_1_tensor_traits_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__arithmetic_3_382e8af1d8cb4a11a63fc6b26ba4b4b9.html#aaf3351a23bd1673600f4ba2518cdb744", null ],
       [ "tensor_category", "structdg_1_1_tensor_traits_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__arithmetic_3_382e8af1d8cb4a11a63fc6b26ba4b4b9.html#a05cb07242a6b2ce41f3a30d3fd1a59be", null ],
       [ "value_type", "structdg_1_1_tensor_traits_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__arithmetic_3_382e8af1d8cb4a11a63fc6b26ba4b4b9.html#a05ea7d9d8da0527660a797720cd3cdf2", null ]
-    ] ],
-    [ "TensorTraits< cusp::array1d< T, cusp::host_memory >, typename std::enable_if< std::is_arithmetic< T >::value >::type >", "structdg_1_1_tensor_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1host__memory_01_4_00_01typenaf725bd90d6a127276d664beda2adcced.html", [
-      [ "execution_policy", "structdg_1_1_tensor_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1host__memory_01_4_00_01typenaf725bd90d6a127276d664beda2adcced.html#a0fc26261a582f72c6fe790976b7a153f", null ],
-      [ "tensor_category", "structdg_1_1_tensor_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1host__memory_01_4_00_01typenaf725bd90d6a127276d664beda2adcced.html#a50594239b921d753818d3216cc3cabd9", null ],
-      [ "value_type", "structdg_1_1_tensor_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1host__memory_01_4_00_01typenaf725bd90d6a127276d664beda2adcced.html#a372a081d769c13fe82ed230fffab9578", null ]
-    ] ],
-    [ "TensorTraits< cusp::array1d< T, cusp::device_memory >, typename std::enable_if< std::is_arithmetic< T >::value >::type >", "structdg_1_1_tensor_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1device__memory_01_4_00_01typef234173bb38c3d6e32284ba27107e7fb.html", [
-      [ "execution_policy", "structdg_1_1_tensor_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1device__memory_01_4_00_01typef234173bb38c3d6e32284ba27107e7fb.html#a3807f54265d555011f0df73c9c1b5da2", null ],
-      [ "tensor_category", "structdg_1_1_tensor_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1device__memory_01_4_00_01typef234173bb38c3d6e32284ba27107e7fb.html#a86f270a6e439ab9428664e39409bdfd6", null ],
-      [ "value_type", "structdg_1_1_tensor_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1device__memory_01_4_00_01typef234173bb38c3d6e32284ba27107e7fb.html#adee7ac202627479809582c9f4d1832e9", null ]
     ] ],
     [ "TensorTraits< cusp::coo_matrix< I, V, M > >", "structdg_1_1_tensor_traits_3_01cusp_1_1coo__matrix_3_01_i_00_01_v_00_01_m_01_4_01_4.html", [
       [ "tensor_category", "structdg_1_1_tensor_traits_3_01cusp_1_1coo__matrix_3_01_i_00_01_v_00_01_m_01_4_01_4.html#a0542bf3e4489be37a6db44a22d5cd4f5", null ],

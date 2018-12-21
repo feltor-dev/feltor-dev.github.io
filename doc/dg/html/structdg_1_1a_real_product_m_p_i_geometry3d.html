@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('structdg_1_1a_real_product_m_p_i_geome
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="structdg_1_1a_real_product_m_p_i_geometry3d-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">dg::aRealProductMPIGeometry3d&lt; real_type &gt; Struct Template Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group__geo.html">Level 3: Topology and Geometry</a> &raquo; <a class="el" href="group__geometry.html">Geometric grids and operations</a> &raquo; <a class="el" href="group__basicgeometry.html">Geometry base classes</a></div></div>  </div>
+<div class="title">dg::aRealProductMPIGeometry3d&lt; real_type &gt; Struct Template Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group__geo.html">Level 3: Topology and Geometry</a> &raquo; <a class="el" href="group__geometry.html">Geometric grids and tensor operations</a> &raquo; <a class="el" href="group__basicgeometry.html">Geometry base classes</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -137,7 +137,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a38d0ec28b14f1eb72247a84217bbaed0 inherit pub_methods_structdg_1_1a_real_m_p_i_geometry3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Jacobian of the coordinate transformation from physical to computational space.  <a href="structdg_1_1a_real_m_p_i_geometry3d.html#a38d0ec28b14f1eb72247a84217bbaed0">More...</a><br /></td></tr>
 <tr class="separator:a38d0ec28b14f1eb72247a84217bbaed0 inherit pub_methods_structdg_1_1a_real_m_p_i_geometry3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adefa4ab5da88507ad1a88810dfc10046 inherit pub_methods_structdg_1_1a_real_m_p_i_geometry3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; <a class="el" href="structdg_1_1a_real_m_p_i_geometry3d.html#a07bcb7c605c9ebc76c28680a1a786a60">host_vector</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_real_m_p_i_geometry3d.html#adefa4ab5da88507ad1a88810dfc10046">metric</a> () const</td></tr>
-<tr class="memdesc:adefa4ab5da88507ad1a88810dfc10046 inherit pub_methods_structdg_1_1a_real_m_p_i_geometry3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Metric tensor of the coordinate system.  <a href="structdg_1_1a_real_m_p_i_geometry3d.html#adefa4ab5da88507ad1a88810dfc10046">More...</a><br /></td></tr>
+<tr class="memdesc:adefa4ab5da88507ad1a88810dfc10046 inherit pub_methods_structdg_1_1a_real_m_p_i_geometry3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The (contravariant) metric tensor of the coordinate system.  <a href="structdg_1_1a_real_m_p_i_geometry3d.html#adefa4ab5da88507ad1a88810dfc10046">More...</a><br /></td></tr>
 <tr class="separator:adefa4ab5da88507ad1a88810dfc10046 inherit pub_methods_structdg_1_1a_real_m_p_i_geometry3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a44948f565537d3d1ae407f80c6abd4 inherit pub_methods_structdg_1_1a_real_m_p_i_geometry3d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structdg_1_1a_real_m_p_i_geometry3d.html#a07bcb7c605c9ebc76c28680a1a786a60">host_vector</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_real_m_p_i_geometry3d.html#a2a44948f565537d3d1ae407f80c6abd4">map</a> () const</td></tr>
 <tr class="memdesc:a2a44948f565537d3d1ae407f80c6abd4 inherit pub_methods_structdg_1_1a_real_m_p_i_geometry3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The coordinate map from computational to physical space.  <a href="structdg_1_1a_real_m_p_i_geometry3d.html#a2a44948f565537d3d1ae407f80c6abd4">More...</a><br /></td></tr>
@@ -456,7 +456,7 @@ template&lt;class real_type &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>geometry/<a class="el" href="mpi__base_8h_source.html">mpi_base.h</a></li>
+<li>topology/<a class="el" href="mpi__base_8h_source.html">mpi_base.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -464,7 +464,7 @@ template&lt;class real_type &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1a_real_product_m_p_i_geometry3d.html">aRealProductMPIGeometry3d</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

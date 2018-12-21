@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
-<title>Geometries: Namespace Members</title>
+<title>Extension: Geometries: Namespace Members</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -44,9 +44,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Geometries
+   <div id="projectname">Extension: Geometries
    </div>
-   <div id="projectbrief">Extension with magnetic flux functions, grids and grid generators</div>
+   <div id="projectbrief">Magnetic flux functions, parallel derivatives and new grids and grid generators in &quot;dg/geometries/geometries.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -96,59 +96,90 @@ $(document).ready(function(){initNavTree('namespacemembers_func.html','');});
 </div>
 
 <div class="contents">
-&#160;<ul>
+&#160;
+
+<h3><a id="index_c"></a>- c -</h3><ul>
+<li>createAlignmentTensor()
+: <a class="el" href="group__fluxfunctions.html#ga4f00a11946c5ae76c6b52876292c60ca">dg::geo</a>
+</li>
+<li>createBHat()
+: <a class="el" href="group__magnetic.html#ga6182dc55424bffffb0d9876b9f90222d">dg::geo</a>
+</li>
 <li>createCircularField()
-: <a class="el" href="group__geom.html#gaa6d78afe4f306e34d509934f8f79421a">dg::geo</a>
+: <a class="el" href="group__geom.html#ga16471692288263e2076b897dae16799f">dg::geo</a>
+</li>
+<li>createCurvatureKappa()
+: <a class="el" href="group__magnetic.html#ga15544e369079fa9ab1350fe49433bbf2">dg::geo</a>
+</li>
+<li>createCurvatureNablaB()
+: <a class="el" href="group__magnetic.html#ga891fbece075e21a1cdd1f15422251e7d">dg::geo</a>
+</li>
+<li>createEPhi()
+: <a class="el" href="group__magnetic.html#ga3ab10e21b3c879843b6bb26a49beb918">dg::geo</a>
 </li>
 <li>createGuentherField()
-: <a class="el" href="group__geom.html#gad54aa312242b5245cbbf9cd4b5dfe06d">dg::geo</a>
+: <a class="el" href="group__geom.html#ga70edeb1a555a6a2b05ac0485329fdcac">dg::geo</a>
 </li>
 <li>createIpol()
-: <a class="el" href="group__circular.html#ga1c88edf8b4078b3571ba6d404296d48d">dg::geo::circular</a>
-, <a class="el" href="group__guenther.html#gab485e0d1f70ab41dde2060da9f409be3">dg::geo::guenther</a>
-, <a class="el" href="group__solovev.html#gac26e8e0eb7617b304f61bb1038b22ef8">dg::geo::solovev</a>
-, <a class="el" href="group__taylor.html#gaf585a6dde7802ef9d3b119a50b1318d2">dg::geo::taylor</a>
-, <a class="el" href="group__toroidal.html#ga4406fe56ddb226b9752d51df87c04db9">dg::geo::toroidal</a>
+: <a class="el" href="group__circular.html#gab40e4b929ab5912634cd25ca472fe356">dg::geo::circular</a>
+, <a class="el" href="group__guenther.html#ga1c418d39f07e69144f44223117ea6b93">dg::geo::guenther</a>
+, <a class="el" href="group__solovev.html#ga6808a16f5d40c82d590048388bc7361a">dg::geo::solovev</a>
+, <a class="el" href="group__taylor.html#gab3f3b82303a3e64031d92ce7bb5ac49b">dg::geo::taylor</a>
+, <a class="el" href="group__toroidal.html#ga4ea9852e07a0fcbf473cafa8625d691b">dg::geo::toroidal</a>
 </li>
 <li>createMagField()
-: <a class="el" href="group__guenther.html#gaec0f20e402dcb50145ccf8745ff22ca5">dg::geo::guenther</a>
-, <a class="el" href="group__solovev.html#ga48a224d8779049a93e97a2fd348ad481">dg::geo::solovev</a>
-, <a class="el" href="group__taylor.html#gaaf85a7ecbfa540aedd2a48a5a2f24fa2">dg::geo::taylor</a>
-, <a class="el" href="group__toroidal.html#ga1b467a106a28fe8b8ff77a374518c829">dg::geo::toroidal</a>
+: <a class="el" href="group__guenther.html#ga4a82083bf29cb70373b84720eba60d83">dg::geo::guenther</a>
+, <a class="el" href="group__solovev.html#gad3675f715472ee97a6c3133905bb3697">dg::geo::solovev</a>
+, <a class="el" href="group__taylor.html#ga3f430483239ba136340bf0f0a7828e26">dg::geo::taylor</a>
+, <a class="el" href="group__toroidal.html#ga1d02ad623c716a9b80b270c3ceeea70f">dg::geo::toroidal</a>
+</li>
+<li>createProjectionTensor()
+: <a class="el" href="group__fluxfunctions.html#ga0e6fb50126a1c44892b51db10d93fb65">dg::geo</a>
 </li>
 <li>createPsip()
-: <a class="el" href="group__circular.html#gac643478ea14f273108a7190300f9b1a0">dg::geo::circular</a>
-, <a class="el" href="group__guenther.html#ga99f433f328033896ebc3f92bfdea7766">dg::geo::guenther</a>
-, <a class="el" href="group__solovev.html#gabf3dc35f257d294b5df5236e85a42fb2">dg::geo::solovev</a>
-, <a class="el" href="group__taylor.html#ga4bb35f27443e897af4a1050cae9b8e5d">dg::geo::taylor</a>
-, <a class="el" href="group__toroidal.html#gacd371ac3baef2588c08c97cad964fa04">dg::geo::toroidal</a>
+: <a class="el" href="group__circular.html#ga6a9d6f6463a3b4ccd3a9659c07671cfa">dg::geo::circular</a>
+, <a class="el" href="group__guenther.html#ga285fcbae9a9d44cbe5586a7b28148b99">dg::geo::guenther</a>
+, <a class="el" href="group__solovev.html#gafeb61fe925c670850a85b4c3ee9cb390">dg::geo::solovev</a>
+, <a class="el" href="group__taylor.html#gaf803ceb487fe15a20509185cf645c2f6">dg::geo::taylor</a>
+, <a class="el" href="group__toroidal.html#ga62d4a526e2170227a53e19f40716a061">dg::geo::toroidal</a>
 </li>
 <li>createSolovevField()
-: <a class="el" href="group__geom.html#gae3f70e88fd15dd404643f4c5941401c7">dg::geo</a>
+: <a class="el" href="group__geom.html#gaadcb5ef7126a3bc41beed60c431f9368">dg::geo</a>
 </li>
 <li>createTaylorField()
-: <a class="el" href="group__geom.html#ga7d6cc4a15d5430ff5d4aad81fb7098d9">dg::geo</a>
+: <a class="el" href="group__geom.html#ga27e5bae45b284ee051039ca97d7c0edb">dg::geo</a>
 </li>
 <li>createToroidalField()
-: <a class="el" href="group__geom.html#ga24c4268469ccbabde18f7eb7ab124ac6">dg::geo</a>
+: <a class="el" href="group__geom.html#ga2d9ca2e61302113e806b1d05d6b3db7e">dg::geo</a>
 </li>
+<li>createTrueCurvatureKappa()
+: <a class="el" href="group__magnetic.html#ga4e605e8fb727d3ffe0c2de721d7cad67">dg::geo</a>
+</li>
+<li>createTrueCurvatureNablaB()
+: <a class="el" href="group__magnetic.html#ga4278b6ca1435aa29063fd152f427c9c5">dg::geo</a>
+</li>
+</ul>
+
+
+<h3><a id="index_f"></a>- f -</h3><ul>
 <li>findXpoint()
-: <a class="el" href="group__misc__geo.html#gafcee60ecf901ef09ae3fbf87bd146fbd">dg::geo</a>
+: <a class="el" href="group__misc__geo.html#gafdf85449bb250bc67ab57989fcb768cb">dg::geo</a>
 </li>
-<li>make_aBinaryFunctor()
-: <a class="el" href="group__fluxfunctions.html#ga669b9f0f0ae437c262b2400930feef7d">dg::geo</a>
-</li>
+</ul>
+
+
+<h3><a id="index_m"></a>- m -</h3><ul>
 <li>make_LiseikinCollective()
-: <a class="el" href="group__profiles.html#ga56d2d722a2734d1685263ee8a95e7555">dg::geo</a>
+: <a class="el" href="group__profiles.html#gae0cb11f189e743a3291e23e2bc361bb2">dg::geo</a>
 </li>
 <li>make_NablaPsiInvCollective()
-: <a class="el" href="group__profiles.html#gaf583c457b3907ec4e9a94d4c17427d55">dg::geo</a>
+: <a class="el" href="group__profiles.html#ga32a9569879bd13c719c77be10f0d399d">dg::geo</a>
 </li>
 <li>make_Xbump_monitor()
-: <a class="el" href="namespacedg_1_1geo.html#a1ee422753ae1d392e40577c69a06001c">dg::geo</a>
+: <a class="el" href="namespacedg_1_1geo.html#a351c29fa5591614e847a4c4d884a230a">dg::geo</a>
 </li>
 <li>make_Xconst_monitor()
-: <a class="el" href="namespacedg_1_1geo.html#a766ef7c89b58748f1eb44a7e2e5fa89e">dg::geo</a>
+: <a class="el" href="namespacedg_1_1geo.html#a2fad31517c86179b341a67e10ff0fda4">dg::geo</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -156,7 +187,7 @@ $(document).ready(function(){initNavTree('namespacemembers_func.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Aug 28 2018 23:03:04 for Geometries by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:57 for Extension: Geometries by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -121,15 +121,17 @@ Inheritance diagram for dg::ThrustVectorTag:</div>
 <div class="textblock"><p>Indicate thrust/std - like behaviour. </p>
 <p>There must be the typedefs</p><ul>
 <li><code>iterator</code> </li>
-<li><code>const_iterator</code> An instance can be constructed by<ul>
+<li><code>const_iterator</code> </li>
+<li><code>pointer</code> </li>
+<li><code>const_pointer</code> An instance can be constructed by<ul>
 <li>iterators <code></code>(begin, end) The member functions contan at least</li>
 <li><code>resize()</code> resize the vector</li>
 <li><code>size()</code> returns the number of elements</li>
-<li><code>data()</code> pointer to the underlying array</li>
-<li><code>begin()</code> returns an iterator to the beginning</li>
-<li><code>cbegin()</code> returns a const_iterator to the beginning</li>
-<li><code>end()</code> return an iterator to the end</li>
-<li><code>cend()</code> returns a const_iterator to the end <dl class="section note"><dt>Note</dt><dd><code>thrust::host_vector</code> and <code>thrust::device_vector</code> meet these requirements </dd></dl>
+<li><code>data()</code> returns <code>pointer</code> to the underlying array</li>
+<li><code>begin()</code> returns <code>iterator</code> to the beginning</li>
+<li><code>cbegin()</code> returns <code>const_iterator</code> to the beginning</li>
+<li><code>end()</code> return an <code>iterator</code> to the end</li>
+<li><code>cend()</code> returns a <code>const_iterator</code> to the end <dl class="section note"><dt>Note</dt><dd><code>thrust::host_vector</code> and <code>thrust::device_vector</code> meet these requirements </dd></dl>
 </li>
 </ul>
 </li>
@@ -143,7 +145,7 @@ Inheritance diagram for dg::ThrustVectorTag:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_thrust_vector_tag.html">ThrustVectorTag</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:50 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

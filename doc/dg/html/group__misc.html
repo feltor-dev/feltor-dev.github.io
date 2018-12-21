@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -139,30 +139,39 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_multi_matrix.html">dg::MultiMatrix&lt; MatrixType, ContainerType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct that applies given matrices one after the other.  <a href="structdg_1_1_multi_matrix.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_sparse_element.html">dg::SparseElement&lt; T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a sparse Tensor with only one element i.e. a Form.  <a href="structdg_1_1_sparse_element.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_sparse_tensor.html">dg::SparseTensor&lt; T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for 2x2 and 3x3 matrices sharing or implicitly assuming elements.  <a href="structdg_1_1_sparse_tensor.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_cholesky_tensor.html">dg::CholeskyTensor&lt; ContainerType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">data structure to hold the LDL^T decomposition of a symmetric positive definite matrix  <a href="structdg_1_1_cholesky_tensor.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga057746b047d7696a603d27bdaff24f29"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__misc.html#ga057746b047d7696a603d27bdaff24f29">dg::mpi_init2d</a> (<a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcx, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcy, MPI_Comm &amp;comm, std::istream &amp;is=std::cin, bool verbose=true)</td></tr>
+<tr class="memdesc:ga057746b047d7696a603d27bdaff24f29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read in number of processses and create Cartesian MPI communicator.  <a href="group__misc.html#ga057746b047d7696a603d27bdaff24f29">More...</a><br /></td></tr>
+<tr class="separator:ga057746b047d7696a603d27bdaff24f29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga632d3e4c7753d9988a16be5cb0ba3e05"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__misc.html#ga632d3e4c7753d9988a16be5cb0ba3e05">dg::mpi_init2d</a> (unsigned &amp;n, unsigned &amp;Nx, unsigned &amp;Ny, MPI_Comm comm, std::istream &amp;is=std::cin, bool verbose=true)</td></tr>
+<tr class="memdesc:ga632d3e4c7753d9988a16be5cb0ba3e05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read in number of processes and broadcast to process group.  <a href="group__misc.html#ga632d3e4c7753d9988a16be5cb0ba3e05">More...</a><br /></td></tr>
+<tr class="separator:ga632d3e4c7753d9988a16be5cb0ba3e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga89f67b920ce6f3958eea9e94d00a72fa"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__misc.html#ga89f67b920ce6f3958eea9e94d00a72fa">dg::mpi_init2d</a> (<a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcx, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcy, unsigned &amp;n, unsigned &amp;Nx, unsigned &amp;Ny, MPI_Comm &amp;comm, std::istream &amp;is=std::cin, bool verbose=true)</td></tr>
+<tr class="memdesc:ga89f67b920ce6f3958eea9e94d00a72fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read in number of processses and grid size and create Cartesian MPI communicator.  <a href="group__misc.html#ga89f67b920ce6f3958eea9e94d00a72fa">More...</a><br /></td></tr>
+<tr class="separator:ga89f67b920ce6f3958eea9e94d00a72fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2ba128f78f1497a9d85fb97402f90791"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__misc.html#ga2ba128f78f1497a9d85fb97402f90791">dg::mpi_init3d</a> (<a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcx, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcy, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcz, MPI_Comm &amp;comm, std::istream &amp;is=std::cin, bool verbose=true)</td></tr>
+<tr class="memdesc:ga2ba128f78f1497a9d85fb97402f90791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read in number of processses and create Cartesian MPI communicator.  <a href="group__misc.html#ga2ba128f78f1497a9d85fb97402f90791">More...</a><br /></td></tr>
+<tr class="separator:ga2ba128f78f1497a9d85fb97402f90791"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5af0e700d39ee4672deecff4c8bbee92"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__misc.html#ga5af0e700d39ee4672deecff4c8bbee92">dg::mpi_init3d</a> (unsigned &amp;n, unsigned &amp;Nx, unsigned &amp;Ny, unsigned &amp;Nz, MPI_Comm comm, std::istream &amp;is=std::cin, bool verbose=true)</td></tr>
+<tr class="memdesc:ga5af0e700d39ee4672deecff4c8bbee92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read in number of processes and broadcast to process group.  <a href="group__misc.html#ga5af0e700d39ee4672deecff4c8bbee92">More...</a><br /></td></tr>
+<tr class="separator:ga5af0e700d39ee4672deecff4c8bbee92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga08fc202782d026a385be5ac44f549c90"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__misc.html#ga08fc202782d026a385be5ac44f549c90">dg::mpi_init3d</a> (<a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcx, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcy, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcz, unsigned &amp;n, unsigned &amp;Nx, unsigned &amp;Ny, unsigned &amp;Nz, MPI_Comm &amp;comm, std::istream &amp;is=std::cin, bool verbose=true)</td></tr>
+<tr class="memdesc:ga08fc202782d026a385be5ac44f549c90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read in number of processses and grid size and create Cartesian MPI communicator.  <a href="group__misc.html#ga08fc202782d026a385be5ac44f549c90">More...</a><br /></td></tr>
+<tr class="separator:ga08fc202782d026a385be5ac44f549c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf590d88107541b2b65dbb4cc70163067"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
 <tr class="memitem:gaf590d88107541b2b65dbb4cc70163067"><td class="memTemplItemLeft" align="right" valign="top">thrust::host_vector&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__misc.html#gaf590d88107541b2b65dbb4cc70163067">dg::create::forward_transform</a> (const thrust::host_vector&lt; real_type &gt; &amp;in, const <a class="el" href="structdg_1_1a_real_topology2d.html">aRealTopology2d</a>&lt; real_type &gt; &amp;g)</td></tr>
 <tr class="memdesc:gaf590d88107541b2b65dbb4cc70163067"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform a vector from XSPACE to LSPACE.  <a href="group__misc.html#gaf590d88107541b2b65dbb4cc70163067">More...</a><br /></td></tr>
 <tr class="separator:gaf590d88107541b2b65dbb4cc70163067"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac2978c014dfeacf26bd2f01d5573a2c8"><td class="memTemplParams" colspan="2">template&lt;class From , class To &gt; </td></tr>
-<tr class="memitem:gac2978c014dfeacf26bd2f01d5573a2c8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__misc.html#gac2978c014dfeacf26bd2f01d5573a2c8">dg::transfer</a> (From &amp;&amp;arg1, To &amp;&amp;arg2)</td></tr>
-<tr class="memdesc:gac2978c014dfeacf26bd2f01d5573a2c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">High level alias for <code><a class="el" href="group__blas1.html#gae882fddb3f617cec92641812788168b5" title="y=x; Generic way to copy an object of from_ContainerType type to an object of different to_ContainerT...">dg::blas1::transfer(const from_ContainerType&amp;,to_ContainerType&amp;)</a></code>  <a href="group__misc.html#gac2978c014dfeacf26bd2f01d5573a2c8">More...</a><br /></td></tr>
-<tr class="separator:gac2978c014dfeacf26bd2f01d5573a2c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga244bc00e5a4d8412553121f873e608c2"><td class="memTemplParams" colspan="2">template&lt;class To , class From &gt; </td></tr>
-<tr class="memitem:ga244bc00e5a4d8412553121f873e608c2"><td class="memTemplItemLeft" align="right" valign="top">To&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__misc.html#ga244bc00e5a4d8412553121f873e608c2">dg::transfer</a> (From &amp;&amp;arg)</td></tr>
-<tr class="memdesc:ga244bc00e5a4d8412553121f873e608c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">High level alias for <code><a class="el" href="group__blas1.html#gae0aacd4fe731c16a9483140026c4dcc6" title="y=x; Generic way to copy-construct/assign-to an object of to_ContainerType type from a different from...">dg::blas1::transfer(const from_ContainerType&amp;)</a></code>  <a href="group__misc.html#ga244bc00e5a4d8412553121f873e608c2">More...</a><br /></td></tr>
-<tr class="separator:ga244bc00e5a4d8412553121f873e608c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga008408676aea2583d10dc001e9b8b9f1"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:ga008408676aea2583d10dc001e9b8b9f1"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__misc.html#ga008408676aea2583d10dc001e9b8b9f1">dg::gcd</a> (T a, T b)</td></tr>
+<tr class="memdesc:ga008408676aea2583d10dc001e9b8b9f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Greatest common divisor.  <a href="group__misc.html#ga008408676aea2583d10dc001e9b8b9f1">More...</a><br /></td></tr>
+<tr class="separator:ga008408676aea2583d10dc001e9b8b9f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae521421a2db99cf793bb0f2cd5a16126"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:gae521421a2db99cf793bb0f2cd5a16126"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__misc.html#gae521421a2db99cf793bb0f2cd5a16126">dg::lcm</a> (T a, T b)</td></tr>
+<tr class="memdesc:gae521421a2db99cf793bb0f2cd5a16126"><td class="mdescLeft">&#160;</td><td class="mdescRight">Least common multiple.  <a href="group__misc.html#gae521421a2db99cf793bb0f2cd5a16126">More...</a><br /></td></tr>
+<tr class="separator:gae521421a2db99cf793bb0f2cd5a16126"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
@@ -206,25 +215,25 @@ template&lt;class real_type &gt; </div>
 
 </div>
 </div>
-<a id="gac2978c014dfeacf26bd2f01d5573a2c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac2978c014dfeacf26bd2f01d5573a2c8">&#9670;&nbsp;</a></span>transfer() <span class="overload">[1/2]</span></h2>
+<a id="ga008408676aea2583d10dc001e9b8b9f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga008408676aea2583d10dc001e9b8b9f1">&#9670;&nbsp;</a></span>gcd()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class From , class To &gt; </div>
+template&lt;class T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void dg::transfer </td>
+          <td class="memname">T dg::gcd </td>
           <td>(</td>
-          <td class="paramtype">From &amp;&amp;&#160;</td>
-          <td class="paramname"><em>arg1</em>, </td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">To &amp;&amp;&#160;</td>
-          <td class="paramname"><em>arg2</em>&#160;</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -234,57 +243,535 @@ template&lt;class From , class To &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>High level alias for <code><a class="el" href="group__blas1.html#gae882fddb3f617cec92641812788168b5" title="y=x; Generic way to copy an object of from_ContainerType type to an object of different to_ContainerT...">dg::blas1::transfer(const from_ContainerType&amp;,to_ContainerType&amp;)</a></code> </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">From</td><td>source type </td></tr>
-    <tr><td class="paramname">To</td><td>target type </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Greatest common divisor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">arg1</td><td>source object </td></tr>
-    <tr><td class="paramname">arg2</td><td>target object </td></tr>
+    <tr><td class="paramname">a</td><td>First number </td></tr>
+    <tr><td class="paramname">b</td><td>Second number</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>greatest common divisor </dd></dl>
 
 </div>
 </div>
-<a id="ga244bc00e5a4d8412553121f873e608c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga244bc00e5a4d8412553121f873e608c2">&#9670;&nbsp;</a></span>transfer() <span class="overload">[2/2]</span></h2>
+<a id="gae521421a2db99cf793bb0f2cd5a16126"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae521421a2db99cf793bb0f2cd5a16126">&#9670;&nbsp;</a></span>lcm()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class To , class From &gt; </div>
+template&lt;class T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">To dg::transfer </td>
+          <td class="memname">T dg::lcm </td>
           <td>(</td>
-          <td class="paramtype">From &amp;&amp;&#160;</td>
-          <td class="paramname"><em>arg</em></td><td>)</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>High level alias for <code><a class="el" href="group__blas1.html#gae0aacd4fe731c16a9483140026c4dcc6" title="y=x; Generic way to copy-construct/assign-to an object of to_ContainerType type from a different from...">dg::blas1::transfer(const from_ContainerType&amp;)</a></code> </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">To</td><td>target type </td></tr>
-    <tr><td class="paramname">From</td><td>source type </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Least common multiple. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">arg</td><td>source object </td></tr>
+    <tr><td class="paramname">a</td><td>Fist number </td></tr>
+    <tr><td class="paramname">b</td><td>Second number</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>target object </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Least common multiple </dd></dl>
+
+</div>
+</div>
+<a id="ga057746b047d7696a603d27bdaff24f29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga057746b047d7696a603d27bdaff24f29">&#9670;&nbsp;</a></span>mpi_init2d() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void dg::mpi_init2d </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a>&#160;</td>
+          <td class="paramname"><em>bcx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a>&#160;</td>
+          <td class="paramname"><em>bcy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MPI_Comm &amp;&#160;</td>
+          <td class="paramname"><em>comm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::istream &amp;&#160;</td>
+          <td class="paramname"><em>is</em> = <code>std::cin</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>verbose</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read in number of processses and create Cartesian MPI communicator. </p>
+<p>Also sets the GPU a process should use via <code>rank%</code> num_devices_per_node if <code>THRUST_DEVICE_SYSTEM==THRUST_DEVICE_SYSTEM_CUDA</code> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bcx</td><td>if <code>bcx==<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3" title="periodic boundaries ">dg::PER</a></code> then the communicator is periodic in x </td></tr>
+    <tr><td class="paramname">bcy</td><td>if <code>bcy==<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3" title="periodic boundaries ">dg::PER</a></code> then the communicator is periodic in y </td></tr>
+    <tr><td class="paramname">comm</td><td>(write only) <code>MPI_COMM_WORLD</code> as a 2d Cartesian MPI communicator </td></tr>
+    <tr><td class="paramname">is</td><td>Input stream rank 0 reads parameters (<code>npx</code>, <code>npy</code>) </td></tr>
+    <tr><td class="paramname">verbose</td><td>If true, rank 0 prints queries and information on <code>std::cout</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga632d3e4c7753d9988a16be5cb0ba3e05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga632d3e4c7753d9988a16be5cb0ba3e05">&#9670;&nbsp;</a></span>mpi_init2d() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void dg::mpi_init2d </td>
+          <td>(</td>
+          <td class="paramtype">unsigned &amp;&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned &amp;&#160;</td>
+          <td class="paramname"><em>Nx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned &amp;&#160;</td>
+          <td class="paramname"><em>Ny</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MPI_Comm&#160;</td>
+          <td class="paramname"><em>comm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::istream &amp;&#160;</td>
+          <td class="paramname"><em>is</em> = <code>std::cin</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>verbose</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read in number of processes and broadcast to process group. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>rank 0 reads in from <code>is</code> and broadcasts to all processes in <code>comm</code> </td></tr>
+    <tr><td class="paramname">Nx</td><td>rank 0 reads in from <code>is</code> and broadcasts to all processes in <code>comm</code> </td></tr>
+    <tr><td class="paramname">Ny</td><td>rank 0 reads in from <code>is</code> and broadcasts to all processes in <code>comm</code> </td></tr>
+    <tr><td class="paramname">comm</td><td>(read only) a 2d Cartesian MPI communicator </td></tr>
+    <tr><td class="paramname">is</td><td>Input stream rank 0 reads parameters (<code>n</code>, <code>Nx</code>, <code>Ny</code>) </td></tr>
+    <tr><td class="paramname">verbose</td><td>If true, rank 0 prints queries and information on <code>std::cout</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga89f67b920ce6f3958eea9e94d00a72fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga89f67b920ce6f3958eea9e94d00a72fa">&#9670;&nbsp;</a></span>mpi_init2d() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void dg::mpi_init2d </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a>&#160;</td>
+          <td class="paramname"><em>bcx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a>&#160;</td>
+          <td class="paramname"><em>bcy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned &amp;&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned &amp;&#160;</td>
+          <td class="paramname"><em>Nx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned &amp;&#160;</td>
+          <td class="paramname"><em>Ny</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MPI_Comm &amp;&#160;</td>
+          <td class="paramname"><em>comm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::istream &amp;&#160;</td>
+          <td class="paramname"><em>is</em> = <code>std::cin</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>verbose</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read in number of processses and grid size and create Cartesian MPI communicator. </p>
+<p>Also sets the GPU a process should use via <code>rank%</code> num_devices_per_node if <code>THRUST_DEVICE_SYSTEM==THRUST_DEVICE_SYSTEM_CUDA</code> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bcx</td><td>if <code>bcx==<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3" title="periodic boundaries ">dg::PER</a></code> then the communicator is periodic in x </td></tr>
+    <tr><td class="paramname">bcy</td><td>if <code>bcy==<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3" title="periodic boundaries ">dg::PER</a></code> then the communicator is periodic in y </td></tr>
+    <tr><td class="paramname">n</td><td>rank 0 reads in from <code>is</code> and broadcasts to all processes in <code>MPI_COMM_WORLD</code> </td></tr>
+    <tr><td class="paramname">Nx</td><td>rank 0 reads in from <code>is</code> and broadcasts to all processes in <code>MPI_COMM_WORLD</code> </td></tr>
+    <tr><td class="paramname">Ny</td><td>rank 0 reads in from <code>is</code> and broadcasts to all processes in <code>MPI_COMM_WORLD</code> </td></tr>
+    <tr><td class="paramname">comm</td><td>(write only) <code>MPI_COMM_WORLD</code> as a 2d Cartesian MPI communicator </td></tr>
+    <tr><td class="paramname">is</td><td>Input stream rank 0 reads parameters (<code>npx</code>, <code>npy</code>, <code>n</code>, <code>Nx</code>, <code>Ny</code>) </td></tr>
+    <tr><td class="paramname">verbose</td><td>If true, rank 0 prints queries and information on <code>std::cout</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga2ba128f78f1497a9d85fb97402f90791"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2ba128f78f1497a9d85fb97402f90791">&#9670;&nbsp;</a></span>mpi_init3d() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void dg::mpi_init3d </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a>&#160;</td>
+          <td class="paramname"><em>bcx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a>&#160;</td>
+          <td class="paramname"><em>bcy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a>&#160;</td>
+          <td class="paramname"><em>bcz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MPI_Comm &amp;&#160;</td>
+          <td class="paramname"><em>comm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::istream &amp;&#160;</td>
+          <td class="paramname"><em>is</em> = <code>std::cin</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>verbose</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read in number of processses and create Cartesian MPI communicator. </p>
+<p>Also sets the GPU a process should use via <code>rank%</code> num_devices_per_node if <code>THRUST_DEVICE_SYSTEM==THRUST_DEVICE_SYSTEM_CUDA</code> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bcx</td><td>if <code>bcx==<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3" title="periodic boundaries ">dg::PER</a></code> then the communicator is periodic in x </td></tr>
+    <tr><td class="paramname">bcy</td><td>if <code>bcy==<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3" title="periodic boundaries ">dg::PER</a></code> then the communicator is periodic in y </td></tr>
+    <tr><td class="paramname">bcz</td><td>if <code>bcz==<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3" title="periodic boundaries ">dg::PER</a></code> then the communicator is periodic in z </td></tr>
+    <tr><td class="paramname">comm</td><td>(write only) <code>MPI_COMM_WORLD</code> as a 3d Cartesian MPI communicator </td></tr>
+    <tr><td class="paramname">is</td><td>Input stream rank 0 reads parameters (<code>npx</code>, <code>npy</code>, <code>npz</code>) </td></tr>
+    <tr><td class="paramname">verbose</td><td>If true, rank 0 prints queries and information on <code>std::cout</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga5af0e700d39ee4672deecff4c8bbee92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5af0e700d39ee4672deecff4c8bbee92">&#9670;&nbsp;</a></span>mpi_init3d() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void dg::mpi_init3d </td>
+          <td>(</td>
+          <td class="paramtype">unsigned &amp;&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned &amp;&#160;</td>
+          <td class="paramname"><em>Nx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned &amp;&#160;</td>
+          <td class="paramname"><em>Ny</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned &amp;&#160;</td>
+          <td class="paramname"><em>Nz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MPI_Comm&#160;</td>
+          <td class="paramname"><em>comm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::istream &amp;&#160;</td>
+          <td class="paramname"><em>is</em> = <code>std::cin</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>verbose</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read in number of processes and broadcast to process group. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>rank 0 reads in from <code>is</code> and broadcasts to all processes in <code>comm</code> </td></tr>
+    <tr><td class="paramname">Nx</td><td>rank 0 reads in from <code>is</code> and broadcasts to all processes in <code>comm</code> </td></tr>
+    <tr><td class="paramname">Ny</td><td>rank 0 reads in from <code>is</code> and broadcasts to all processes in <code>comm</code> </td></tr>
+    <tr><td class="paramname">Nz</td><td>rank 0 reads in from <code>is</code> and broadcasts to all processes in <code>comm</code> </td></tr>
+    <tr><td class="paramname">comm</td><td>(read only) a 3d Cartesian MPI communicator </td></tr>
+    <tr><td class="paramname">is</td><td>Input stream rank 0 reads parameters (<code>n</code>, <code>Nx</code>, <code>Ny</code>, <code>Nz</code> ) </td></tr>
+    <tr><td class="paramname">verbose</td><td>If true, rank 0 prints queries and information on <code>std::cout</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga08fc202782d026a385be5ac44f549c90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga08fc202782d026a385be5ac44f549c90">&#9670;&nbsp;</a></span>mpi_init3d() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void dg::mpi_init3d </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a>&#160;</td>
+          <td class="paramname"><em>bcx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a>&#160;</td>
+          <td class="paramname"><em>bcy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a>&#160;</td>
+          <td class="paramname"><em>bcz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned &amp;&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned &amp;&#160;</td>
+          <td class="paramname"><em>Nx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned &amp;&#160;</td>
+          <td class="paramname"><em>Ny</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned &amp;&#160;</td>
+          <td class="paramname"><em>Nz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MPI_Comm &amp;&#160;</td>
+          <td class="paramname"><em>comm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::istream &amp;&#160;</td>
+          <td class="paramname"><em>is</em> = <code>std::cin</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>verbose</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read in number of processses and grid size and create Cartesian MPI communicator. </p>
+<p>Also sets the GPU via <code>rank%</code> num_devices_per_node a process should use if <code>THRUST_DEVICE_SYSTEM==THRUST_DEVICE_SYSTEM_CUDA</code> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bcx</td><td>if <code>bcx==<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3" title="periodic boundaries ">dg::PER</a></code> then the communicator is periodic in x </td></tr>
+    <tr><td class="paramname">bcy</td><td>if <code>bcy==<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3" title="periodic boundaries ">dg::PER</a></code> then the communicator is periodic in y </td></tr>
+    <tr><td class="paramname">bcz</td><td>if <code>bcz==<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3" title="periodic boundaries ">dg::PER</a></code> then the communicator is periodic in z </td></tr>
+    <tr><td class="paramname">n</td><td>rank 0 reads in from <code>is</code> and broadcasts to all processes in <code>MPI_COMM_WORLD</code> </td></tr>
+    <tr><td class="paramname">Nx</td><td>rank 0 reads in from <code>is</code> and broadcasts to all processes in <code>MPI_COMM_WORLD</code> </td></tr>
+    <tr><td class="paramname">Ny</td><td>rank 0 reads in from <code>is</code> and broadcasts to all processes in <code>MPI_COMM_WORLD</code> </td></tr>
+    <tr><td class="paramname">Nz</td><td>rank 0 reads in from <code>is</code> and broadcasts to all processes in <code>MPI_COMM_WORLD</code> </td></tr>
+    <tr><td class="paramname">comm</td><td>(write only) <code>MPI_COMM_WORLD</code> as a 3d Cartesian MPI communicator </td></tr>
+    <tr><td class="paramname">is</td><td>Input stream rank 0 reads parameters (<code>npx</code>, <code>npy</code>, <code>npz</code>, <code>n</code>, <code>Nx</code>, <code>Ny</code>, <code>Nz</code>) </td></tr>
+    <tr><td class="paramname">verbose</td><td>If true, rank 0 prints queries and information on <code>std::cout</code> </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -293,7 +780,7 @@ template&lt;class To , class From &gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

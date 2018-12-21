@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -124,17 +124,11 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacedg_1_1geo"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/geometries.tag:../../geometries/html/" href="../../geometries/html/namespacedg_1_1geo.html">geo</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacedg_1_1tensor"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg_1_1tensor.html">tensor</a></td></tr>
-<tr class="memdesc:namespacedg_1_1tensor"><td class="mdescLeft">&#160;</td><td class="mdescRight">functions used in connection with the <a class="el" href="structdg_1_1_sparse_element.html" title="This is a sparse Tensor with only one element i.e. a Form. ">SparseElement</a> and <a class="el" href="structdg_1_1_sparse_tensor.html" title="Class for 2x2 and 3x3 matrices sharing or implicitly assuming elements. ">SparseTensor</a> classes <br /></td></tr>
+<tr class="memdesc:namespacedg_1_1tensor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility functions used in connection with the <a class="el" href="structdg_1_1_sparse_tensor.html" title="Class for 2x2 and 3x3 matrices sharing elements. ">SparseTensor</a> class. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_a_b.html">AB</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for Adams-Bashforth explicit multistep time-integration </p><p class="formulaDsp">
-\[ u^{n+1} = u^n + \Delta t\sum_{j=0}^k b_j f\left(u^{n-j}\right) \]
-</p>
-<p>.  <a href="structdg_1_1_a_b.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_a_b_s.html">ABS</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">absolute value </p><p class="formulaDsp">
 \[ f(x) = |x|\]
@@ -142,19 +136,28 @@ Classes</h2></td></tr>
   <a href="structdg_1_1_a_b_s.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_abs_max.html">AbsMax</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor for the absolute maximum </p><p class="formulaDsp">
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Absolute maximum </p><p class="formulaDsp">
 \[ f(x,y) = \max(|x|,|y|)\]
 </p>
 <p>.  <a href="structdg_1_1_abs_max.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_abs_min.html">AbsMin</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor for the absolute maximum </p><p class="formulaDsp">
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Absolute minimum </p><p class="formulaDsp">
 \[ f(x,y) = \min(|x|,|y|)\]
 </p>
 <p>.  <a href="structdg_1_1_abs_min.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_communicator.html">aCommunicator</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct that performs collective scatter and gather operations across processes on distributed vectors using MPI.  <a href="structdg_1_1a_communicator.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_adams_bashforth.html">AdamsBashforth</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for Adams-Bashforth explicit multistep time-integration </p><p class="formulaDsp">
+\[ u^{n+1} = u^n + \Delta t\sum_{j=0}^{s-1} b_j f\left(t^n - j \Delta t, u^{n-j}\right) \]
+</p>
+<p>.  <a href="structdg_1_1_adams_bashforth.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_adaptive.html">Adaptive</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Driver class for adaptive timestep integration.  <a href="structdg_1_1_adaptive.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_any_matrix_tag.html">AnyMatrixTag</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,11 +221,14 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_real_topology_x3d.html">aRealTopologyX3d</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 3D grid class with X-point topology.  <a href="structdg_1_1a_real_topology_x3d.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_a_r_k_step.html">ARKStep</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for Additive Runge Kutta (semi-implicit) time-step with error estimate following <a href="http://runge.math.smu.edu/arkode_dev/doc/guide/build/html/Mathematics.html#arkstep-additive-runge-kutta-methods">The ARKode library</a>  <a href="structdg_1_1_a_r_k_step.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_array_vector_tag.html">ArrayVectorTag</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>std::array</code> of containers  <a href="structdg_1_1_array_vector_tag.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_average.html">Average</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for average computations over a given direction or plane.  <a href="structdg_1_1_average.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for average computations in a Cartesian topology.  <a href="structdg_1_1_average.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_average_3_01_m_p_i___vector_3_01container_01_4_01_4.html">Average&lt; MPI_Vector&lt; container &gt; &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI specialized class for average computations.  <a href="structdg_1_1_average_3_01_m_p_i___vector_3_01container_01_4_01_4.html#details">More...</a><br /></td></tr>
@@ -231,10 +237,13 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes a random bath in the RZ plane.  <a href="structdg_1_1_bath_r_z.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_bijective_comm.html">BijectiveComm</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct that performs bijective collective scatter and gather operations across processes on distributed vectors using mpi.  <a href="structdg_1_1_bijective_comm.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform bijective gather and its transpose (scatter) operation across processes on distributed vectors using mpi.  <a href="structdg_1_1_bijective_comm.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_buffer.html">Buffer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">a manager class that invokes the copy constructor on the managed ptr when copied (deep copy)  <a href="structdg_1_1_buffer.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_butcher_tableau.html">ButcherTableau</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manage coefficients of a (extended) Butcher tableau.  <a href="structdg_1_1_butcher_tableau.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_cauchy.html">Cauchy</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A blob that drops to zero </p><p class="formulaDsp">
@@ -248,11 +257,8 @@ Classes</h2></td></tr>
 </p>
 <p>.  <a href="classdg_1_1_c_g.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_cholesky_tensor.html">CholeskyTensor</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">data structure to hold the LDL^T decomposition of a symmetric positive definite matrix  <a href="structdg_1_1_cholesky_tensor.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_clone_ptr.html">ClonePtr</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">a manager class that invokes the <code>clone()</code> method on the managed ptr when copied  <a href="structdg_1_1_clone_ptr.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manager class that invokes the <code>clone()</code> method on the managed ptr when copied.  <a href="structdg_1_1_clone_ptr.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_composite.html">Composite</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -262,6 +268,9 @@ Classes</h2></td></tr>
 </p>
 <p>.  <a href="structdg_1_1_c_o_n_s_t_a_n_t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_converts_to_butcher_tableau.html">ConvertsToButcherTableau</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert identifiers to their corresponding <code><a class="el" href="structdg_1_1_butcher_tableau.html" title="Manage coefficients of a (extended) Butcher tableau. ">dg::ButcherTableau</a></code>.  <a href="structdg_1_1_converts_to_butcher_tableau.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html">CooSparseBlockMat</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coo Sparse Block Matrix format.  <a href="structdg_1_1_coo_sparse_block_mat.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -269,13 +278,13 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coo Sparse Block Matrix format device version.  <a href="structdg_1_1_coo_sparse_block_mat_device.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_cos_x_cos_y.html">CosXCosY</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor for a cos prof in x and y-direction </p><p class="formulaDsp">
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A cos prof in x and y-direction </p><p class="formulaDsp">
 \[ f(x,y) =B+ A \cos(k_x x) \cos(k_y y) \]
 </p>
 <p>.  <a href="structdg_1_1_cos_x_cos_y.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_cos_y.html">CosY</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor for a sin prof in x-direction </p><p class="formulaDsp">
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A sin prof in x-direction </p><p class="formulaDsp">
 \[ f(x,y) =B+ A \cos(k_y y) \]
 </p>
 <p>.  <a href="structdg_1_1_cos_y.html#details">More...</a><br /></td></tr>
@@ -289,6 +298,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_cusp_vector_tag.html">CuspVectorTag</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">special tag for cusp arrays  <a href="structdg_1_1_cusp_vector_tag.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_default_solver.html">DefaultSolver</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default Solver class for solving </p><p class="formulaDsp">
+\[ (y+\alpha\hat I(t,y)) = \rho\]
+</p>
+<p>.  <a href="structdg_1_1_default_solver.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1divides__equals.html">divides_equals</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( x/=y\)  <a href="structdg_1_1divides__equals.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -296,7 +311,10 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct holding coefficients for Discrete Legendre Transformation (<a class="el" href="classdg_1_1_d_l_t.html" title="Struct holding coefficients for Discrete Legendre Transformation (DLT) related operations. ">DLT</a>) related operations.  <a href="classdg_1_1_d_l_t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_elliptic.html">Elliptic</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operator that acts as a 2d negative elliptic differential operator  <a href="classdg_1_1_elliptic.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 2d negative elliptic differential operator.  <a href="classdg_1_1_elliptic.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_elliptic3d.html">Elliptic3d</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 3d negative elliptic differential operator.  <a href="classdg_1_1_elliptic3d.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_ell_sparse_block_mat.html">EllSparseBlockMat</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ell Sparse Block Matrix format.  <a href="structdg_1_1_ell_sparse_block_mat.html#details">More...</a><br /></td></tr>
@@ -304,8 +322,20 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html">EllSparseBlockMatDevice</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ell Sparse Block Matrix format device version.  <a href="structdg_1_1_ell_sparse_block_mat_device.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_embedded_pair_sum.html">EmbeddedPairSum</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ y = \sum_i a_i x_i,\quad \tilde y = \sum_i \tilde a_i x_i \]
+</p>
+  <a href="structdg_1_1_embedded_pair_sum.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1equals.html">equals</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( x=y\)  <a href="structdg_1_1equals.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_e_r_k_step.html">ERKStep</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for Embedded Runge Kutta explicit time-step with error estimate </p><p class="formulaDsp">
+\[ \begin{align} k_i = f\left( t^n + c_i \Delta t, u^n + \Delta t \sum_{j=1}^{s-1} a_{ij} k_j\right) \\ u^{n+1} = u^{n} + \Delta t\sum_{j=1}^s b_j k_j \\ \tilde u^{n+1} = u^{n} + \Delta t\sum_{j=1}^s \tilde b_j k_j \end{align} \]
+</p>
+<p>.  <a href="structdg_1_1_e_r_k_step.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_error.html">Error</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">class intended for the use in throw statements  <a href="classdg_1_1_error.html#details">More...</a><br /></td></tr>
@@ -317,13 +347,13 @@ Classes</h2></td></tr>
 <p>.  <a href="structdg_1_1_e_x_p.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_exp_prof_x.html">ExpProfX</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor for a exp prof in x-direction </p><p class="formulaDsp">
-\[ f(x,y) = B + A\exp(-x/L_n) \]
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exp prof in x-direction </p><p class="formulaDsp">
+\[ f(x) = f(x,y) = f(x,y,z) = B + A\exp(-x/L_n) \]
 </p>
 <p>.  <a href="structdg_1_1_exp_prof_x.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_extrapolation.html">Extrapolation</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that stores up to three solutions of iterative methods and can be used to get initial guesses based on past solutions.  <a href="structdg_1_1_extrapolation.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extrapolate based on up to three past solutions.  <a href="structdg_1_1_extrapolation.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_fail.html">Fail</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class you might want to throw in case of a non convergence.  <a href="structdg_1_1_fail.html#details">More...</a><br /></td></tr>
@@ -340,38 +370,47 @@ Classes</h2></td></tr>
 </p>
 <p>.  <a href="structdg_1_1_gaussian3d.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_gaussian_damping.html">GaussianDamping</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">One up to <code>psimax</code>, then a <a class="el" href="structdg_1_1_gaussian.html" title="Functor returning a gaussian . ">Gaussian</a> down to zero </p><p class="formulaDsp">
+\[ \begin{cases} 1 \text{ if } \psi &lt; \psi_{\max}\\ 0 \text{ if } \psi &gt; (\psi_{\max} + 4\alpha) \\ \exp\left( - \frac{(\psi - \psi_{\max})^2}{2\alpha^2}\right), \text{ else} \end{cases} \]
+</p>
+<p>.  <a href="structdg_1_1_gaussian_damping.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_gaussian_x.html">GaussianX</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor returning a gaussian in x-direction </p><p class="formulaDsp">
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="structdg_1_1_gaussian.html" title="Functor returning a gaussian . ">Gaussian</a> in x-direction </p><p class="formulaDsp">
 \[ f(x,y) = Ae^{-\frac{(x-x_0)^2}{2\sigma_x^2} } \]
 </p>
 <p>.  <a href="structdg_1_1_gaussian_x.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_gaussian_y.html">GaussianY</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor returning a gaussian in y-direction </p><p class="formulaDsp">
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="structdg_1_1_gaussian.html" title="Functor returning a gaussian . ">Gaussian</a> in y-direction </p><p class="formulaDsp">
 \[ f(x,y) = Ae^{-\frac{(y-y_0)^2}{2\sigma_y^2}} \]
 </p>
 <p>.  <a href="structdg_1_1_gaussian_y.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_gaussian_z.html">GaussianZ</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor returning a gaussian in z-direction </p><p class="formulaDsp">
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="structdg_1_1_gaussian.html" title="Functor returning a gaussian . ">Gaussian</a> in z-direction </p><p class="formulaDsp">
 \[ f(x,y,z) = Ae^{-\frac{(z-z_0)^2}{2\sigma_z^2}} \]
 </p>
 <p>.  <a href="structdg_1_1_gaussian_z.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_general_comm.html">GeneralComm</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct that performs general collective scatter and gather operations across processes on distributed vectors using mpi.  <a href="structdg_1_1_general_comm.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform general gather and its transpose (scatter) operation across processes on distributed vectors using mpi.  <a href="structdg_1_1_general_comm.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_general_elliptic.html">GeneralElliptic</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operator that acts as a 3d negative elliptic differential operator  <a href="structdg_1_1_general_elliptic.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_general_elliptic_sym.html">GeneralEllipticSym</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operator that acts as a 3d negative elliptic differential operator. Is the symmetric of the <a class="el" href="structdg_1_1_general_elliptic.html" title="Operator that acts as a 3d negative elliptic differential operator ">GeneralElliptic</a> with 0.5(D_+ + D_-) or vice versa  <a href="structdg_1_1_general_elliptic_sym.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_heaviside.html">Heaviside</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zero up to psimax, then one </p><p class="formulaDsp">
+\[ \begin{cases} 1 \text{ if } \psi &gt; \psi_{\max} \\ 0 \text{ else} \end{cases}\]
+</p>
+<p>.  <a href="structdg_1_1_heaviside.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz.html">Helmholtz</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix class that represents a Helmholtz-type operator.  <a href="structdg_1_1_helmholtz.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html">Helmholtz2</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix class that represents a more general Helmholtz-type operator.  <a href="structdg_1_1_helmholtz2.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">DEPRECATED, Matrix class that represents a more general Helmholtz-type operator.  <a href="structdg_1_1_helmholtz2.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz3d.html">Helmholtz3d</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix class that represents a 3d Helmholtz-type operator.  <a href="structdg_1_1_helmholtz3d.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_histogram.html">Histogram</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute a histogram on a 1D grid.  <a href="structdg_1_1_histogram.html#details">More...</a><br /></td></tr>
@@ -380,8 +419,8 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute a histogram on a 2D grid.  <a href="structdg_1_1_histogram2_d.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_inv_cosh_xsq.html">InvCoshXsq</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor for a sin prof in x and y-direction </p><p class="formulaDsp">
-\[ f(x,y) =B+ A \sin(k_x x) \sin(k_y y) \]
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inverse cosh profile </p><p class="formulaDsp">
+\[ f(x,y) =A/\cosh^2(k_x x) \]
 </p>
 <p>.  <a href="structdg_1_1_inv_cosh_xsq.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -392,13 +431,19 @@ Classes</h2></td></tr>
   <a href="structdg_1_1_i_n_v_e_r_t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_invert.html">Invert</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper around <a class="el" href="classdg_1_1_c_g.html" title="Functor class for the preconditioned conjugate gradient method to solve . ">CG</a> and <a class="el" href="structdg_1_1_extrapolation.html" title="Class that stores up to three solutions of iterative methods and can be used to get initial guesses b...">Extrapolation</a> to solve the Equation </p><p class="formulaDsp">
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper around <a class="el" href="classdg_1_1_c_g.html" title="Functor class for the preconditioned conjugate gradient method to solve . ">CG</a> and <a class="el" href="structdg_1_1_extrapolation.html" title="Extrapolate based on up to three past solutions. ">Extrapolation</a> to solve the Equation </p><p class="formulaDsp">
 \[ Ax = W b \]
 </p>
 <p>.  <a href="structdg_1_1_invert.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_iris.html">Iris</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zero outside psimax and inside psimin, otherwise 1 </p><p class="formulaDsp">
+\[ \begin{cases} 1 \text{ if } \psi_{\min} &lt; \psi &lt; \psi_{\max}\\ 0 \text{ else} \end{cases}\]
+</p>
+<p>.  <a href="structdg_1_1_iris.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_island_x_y.html">IslandXY</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor for Island </p><p class="formulaDsp">
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Island function </p><p class="formulaDsp">
 \[ f(x,y) = \lambda \ln{(\cosh{(x/\lambda) } +\epsilon \cos(y/\lambda)) } \]
 </p>
 <p>.  <a href="structdg_1_1_island_x_y.html#details">More...</a><br /></td></tr>
@@ -416,19 +461,19 @@ Classes</h2></td></tr>
 <p>.  <a href="structdg_1_1_lamb.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_linear_x.html">LinearX</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor for a linear polynomial in x-direction </p><p class="formulaDsp">
-\[ f(x,y) = ax+b \]
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A linear function in x-direction </p><p class="formulaDsp">
+\[ f(x) = f(x,y) = f(x,y,z) = ax+b \]
 </p>
 <p>.  <a href="structdg_1_1_linear_x.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_linear_y.html">LinearY</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor for a linear polynomial in y-direction </p><p class="formulaDsp">
-\[ f(x,y) = ay+b \]
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A linear polynomial in y-direction </p><p class="formulaDsp">
+\[ f(x,y) = f(x,y,z) = ay+b \]
 </p>
 <p>.  <a href="structdg_1_1_linear_y.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_linear_z.html">LinearZ</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor for a linear polynomial in z-direction </p><p class="formulaDsp">
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A linear function in z-direction </p><p class="formulaDsp">
 \[ f(x,y,z) = az+b \]
 </p>
 <p>.  <a href="structdg_1_1_linear_z.html#details">More...</a><br /></td></tr>
@@ -474,7 +519,7 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_multigrid_c_g2d.html">MultigridCG2d</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves the Equation </p><p class="formulaDsp">
-\[ \hat O \phi = W \cdot \rho \]
+\[ \frac{1}{W} \hat O \phi = \rho \]
 </p>
 <p>.  <a href="structdg_1_1_multigrid_c_g2d.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -502,6 +547,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_operator.html">Operator</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper class mainly for the assembly of Matrices.  <a href="classdg_1_1_operator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_pair_sum.html">PairSum</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ \sum_i \alpha_i x_i \]
+</p>
+  <a href="structdg_1_1_pair_sum.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_p_l_u_s.html">PLUS</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a constant value </p><p class="formulaDsp">
 \[ f(x) = x + c\]
@@ -519,6 +570,18 @@ Classes</h2></td></tr>
 \[ f(x) = \begin{cases} x \text{ for } x&gt;0 \\ 0 \text{ else} \end{cases} \]
 </p>
   <a href="structdg_1_1_p_o_s_v_a_l_u_e.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_psi_pupil.html">PsiPupil</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Psi inside psimax and psimax outside psimax </p><p class="formulaDsp">
+\[ \begin{cases} \psi_{\max} \text{ if } \psi &gt; \psi_{\max} \\ \psi \text{ else} \end{cases}\]
+</p>
+<p>.  <a href="structdg_1_1_psi_pupil.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_pupil.html">Pupil</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zero outside psimax, otherwise 1 </p><p class="formulaDsp">
+\[ \begin{cases} 0 \text{ if } \psi &gt; \psi_{\max} \\ 1 \text{ else} \end{cases}\]
+</p>
+<p>.  <a href="structdg_1_1_pupil.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_real_cartesian_grid2d.html">RealCartesianGrid2d</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">two-dimensional Grid with Cartesian metric  <a href="structdg_1_1_real_cartesian_grid2d.html#details">More...</a><br /></td></tr>
@@ -605,28 +668,16 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This tag indicates composition/recursion.  <a href="structdg_1_1_recursive_vector_tag.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_refined_elliptic.html">RefinedElliptic</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The refined version of <code><a class="el" href="classdg_1_1_elliptic.html" title="Operator that acts as a 2d negative elliptic differential operator ">Elliptic</a></code>.  <a href="classdg_1_1_refined_elliptic.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_r_k.html">RK</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for Runge-Kutta explicit time-integration, classic formulation </p><p class="formulaDsp">
-\[ \begin{align} u^{n+1} = u^{n} + \Delta t\sum_{j=1}^s b_j k_j \\ k_j = f\left( u^n + \Delta t \sum_{l=1}^j a_{jl} k_l\right) \end{align} \]
-</p>
-<p>.  <a href="structdg_1_1_r_k.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1rk__classic.html">rk_classic</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">coefficients for explicit <a class="el" href="structdg_1_1_r_k.html" title="Struct for Runge-Kutta explicit time-integration, classic formulation . ">RK</a> methods  <a href="structdg_1_1rk__classic.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1rk__coeff.html">rk_coeff</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">coefficients for explicit <a class="el" href="structdg_1_1_r_k.html" title="Struct for Runge-Kutta explicit time-integration, classic formulation . ">RK</a> methods  <a href="structdg_1_1rk__coeff.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_r_k__opt.html">RK_opt</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for Runge-Kutta explicit time-integration optimized for few vector additions </p><p class="formulaDsp">
-\[ \begin{align} u^{n+1} = u^{n} + \Delta t\sum_{j=1}^s b_j k_j \\ k_j = f\left( u^n + \Delta t \sum_{l=1}^j a_{jl} k_l\right) \end{align} \]
-</p>
-<p>.  <a href="structdg_1_1_r_k__opt.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The refined version of <code><a class="el" href="classdg_1_1_elliptic.html" title="A 2d negative elliptic differential operator. ">Elliptic</a></code>.  <a href="classdg_1_1_refined_elliptic.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_row_col_dist_mat.html">RowColDistMat</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Distributed memory matrix class, asynchronous communication.  <a href="structdg_1_1_row_col_dist_mat.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_runge_kutta.html">RungeKutta</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for Runge-Kutta fixed-step explicit time-integration </p><p class="formulaDsp">
+\[ \begin{align} k_i = f\left( t^n + c_i \Delta t, u^n + \Delta t \sum_{j=1}^{s-1} a_{ij} k_j\right) \\ u^{n+1} = u^{n} + \Delta t\sum_{j=1}^s b_j k_j \end{align} \]
+</p>
+<p>.  <a href="structdg_1_1_runge_kutta.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_scalar_tag.html">ScalarTag</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -643,46 +694,40 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate a contiguous chunk of shared memory.  <a href="structdg_1_1_shared_vector_tag.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_sin_prof_x.html">SinProfX</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor for a sin prof in x-direction </p><p class="formulaDsp">
-\[ f(x,y) = B + A(1-\sin(k_xx )) \]
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sin prof in x-direction </p><p class="formulaDsp">
+\[ f(x) = f(x,y) = f(x,y,z) = B + A(1 - \sin(k_xx )) \]
 </p>
 <p>.  <a href="structdg_1_1_sin_prof_x.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_sin_x.html">SinX</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor for a sin prof in x-direction </p><p class="formulaDsp">
-\[ f(x,y) =B+ A \sin(k_x x) \]
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A sin prof in x-direction </p><p class="formulaDsp">
+\[ f(x) = f(x,y) = f(x,y,z) =B+ A \sin(k_x x) \]
 </p>
 <p>.  <a href="structdg_1_1_sin_x.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_sin_x_cos_y.html">SinXCosY</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor for a sin prof in x- and and cos prof in y-direction </p><p class="formulaDsp">
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A sin prof in x- and cos prof in y-direction </p><p class="formulaDsp">
 \[ f(x,y) =B+ A \sin(k_x x) \cos(k_y y) \]
 </p>
 <p>.  <a href="structdg_1_1_sin_x_cos_y.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_sin_x_sin_y.html">SinXSinY</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor for a sin prof in x and y-direction </p><p class="formulaDsp">
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A sin prof in x and y-direction </p><p class="formulaDsp">
 \[ f(x,y) =B+ A \sin(k_x x) \sin(k_y y) \]
 </p>
 <p>.  <a href="structdg_1_1_sin_x_sin_y.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_sin_y.html">SinY</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor for a sin prof in y-direction </p><p class="formulaDsp">
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A sin prof in y-direction </p><p class="formulaDsp">
 \[ f(x,y) =B+ A \sin(k_y y) \]
 </p>
 <p>.  <a href="structdg_1_1_sin_y.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_s_i_r_k.html">SIRK</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Semi implicit Runge Kutta method after Yoh and Zhong (AIAA 42, 2004)  <a href="structdg_1_1_s_i_r_k.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_sparse_block_matrix_tag.html">SparseBlockMatrixTag</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">indicate one of our mpi matrices  <a href="structdg_1_1_sparse_block_matrix_tag.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_sparse_element.html">SparseElement</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a sparse Tensor with only one element i.e. a Form.  <a href="structdg_1_1_sparse_element.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for 2x2 and 3x3 matrices sharing or implicitly assuming elements.  <a href="structdg_1_1_sparse_tensor.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for 2x2 and 3x3 matrices sharing elements.  <a href="structdg_1_1_sparse_tensor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_s_q_r_t.html">SQRT</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Square root </p><p class="formulaDsp">
@@ -693,17 +738,20 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_std_array_tag.html">StdArrayTag</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code> std::array&lt; primitive_type, N&gt; </code>  <a href="structdg_1_1_std_array_tag.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_sum.html">Sum</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ \sum_i x_i \]
+</p>
+  <a href="structdg_1_1_sum.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_surjective_comm.html">SurjectiveComm</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct that performs surjective collective scatter and gather operations across processes on distributed vectors using mpi.  <a href="structdg_1_1_surjective_comm.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform surjective gather and its transpose (scatter) operation across processes on distributed vectors using mpi.  <a href="structdg_1_1_surjective_comm.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_tanh_prof_x.html">TanhProfX</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor for a step function using tanh </p><p class="formulaDsp">
-\[ f(x,y) = 0.5 profamp(1+ sign \tanh((x-x_b)/width ) )+bgampg \]
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Step function using tanh </p><p class="formulaDsp">
+\[ f(x) = B + 0.5 A(1+ \text{sign} \tanh((x-x_b)/\alpha ) ) \]
 </p>
 <p>.  <a href="structdg_1_1_tanh_prof_x.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_tensor_elliptic.html">TensorElliptic</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operator that acts as a 2d negative elliptic differential operator  <a href="structdg_1_1_tensor_elliptic.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_tensor_traits.html">TensorTraits</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The vector traits.  <a href="structdg_1_1_tensor_traits.html#details">More...</a><br /></td></tr>
@@ -711,10 +759,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_tensor_traits_3_01_coo_sparse_block_mat_3_01_t_01_4_01_4.html">TensorTraits&lt; CooSparseBlockMat&lt; T &gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_tensor_traits_3_01_coo_sparse_block_mat_device_3_01_t_01_4_01_4.html">TensorTraits&lt; CooSparseBlockMatDevice&lt; T &gt; &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_tensor_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1device__memory_01_4_00_01typef234173bb38c3d6e32284ba27107e7fb.html">TensorTraits&lt; cusp::array1d&lt; T, cusp::device_memory &gt;, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_tensor_traits_3_01cusp_1_1array1d_3_01_t_00_01cusp_1_1host__memory_01_4_00_01typenaf725bd90d6a127276d664beda2adcced.html">TensorTraits&lt; cusp::array1d&lt; T, cusp::host_memory &gt;, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_tensor_traits_3_01cusp_1_1coo__matrix_3_01_i_00_01_v_00_01_m_01_4_01_4.html">TensorTraits&lt; cusp::coo_matrix&lt; I, V, M &gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -752,6 +796,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_tensor_traits_3_01thrust_1_1host__vector_3_01_t_01_4_01_4.html">TensorTraits&lt; thrust::host_vector&lt; T &gt; &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">prototypical Shared Vector with Serial Tag  <a href="structdg_1_1_tensor_traits_3_01thrust_1_1host__vector_3_01_t_01_4_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_tensor_traits_3_01_view_3_01_thrust_vector_01_4_01_4.html">TensorTraits&lt; View&lt; ThrustVector &gt; &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="structdg_1_1_view.html" title="A vector view class, usable in dg::blas1 functions. ">View</a> has identical value_type and execution_policy as the underlying container.  <a href="structdg_1_1_tensor_traits_3_01_view_3_01_thrust_vector_01_4_01_4.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_three_dimensional_tag.html">ThreeDimensionalTag</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">3d  <a href="structdg_1_1_three_dimensional_tag.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -765,8 +812,17 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_topology_traits.html">TopologyTraits</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_triplet_sum.html">TripletSum</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ \sum_i \alpha_i x_i y_i \]
+</p>
+  <a href="structdg_1_1_triplet_sum.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_two_dimensional_tag.html">TwoDimensionalTag</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">2d  <a href="structdg_1_1_two_dimensional_tag.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_view.html">View</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A vector view class, usable in <code><a class="el" href="namespacedg_1_1blas1.html" title="BLAS Level 1 routines. ">dg::blas1</a></code> functions.  <a href="structdg_1_1_view.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_vortex.html">Vortex</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a 2d vortex function </p><p class="formulaDsp">
@@ -825,24 +881,24 @@ Typedefs</h2></td></tr>
 <tr class="memitem:gaaf5a0cd11a882f188d77db14120433ad"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gaaf5a0cd11a882f188d77db14120433ad">fMDVec</a> = <a class="el" href="structdg_1_1_m_p_i___vector.html">dg::MPI_Vector</a>&lt; <a class="el" href="group__typedefs.html#ga78b0309b2b460fb21919b29701c8dbb4">dg::fDVec</a> &gt;</td></tr>
 <tr class="memdesc:gaaf5a0cd11a882f188d77db14120433ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI Device Vector s.a. <a class="el" href="group__typedefs.html#ga78b0309b2b460fb21919b29701c8dbb4" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::fDVec</a>.  <a href="group__typedefs.html#gaaf5a0cd11a882f188d77db14120433ad">More...</a><br /></td></tr>
 <tr class="separator:gaaf5a0cd11a882f188d77db14120433ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga93e65948d51a0d9f05bf04c99272c118"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
-<tr class="memitem:ga93e65948d51a0d9f05bf04c99272c118"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga93e65948d51a0d9f05bf04c99272c118">NNCH</a> = <a class="el" href="structdg_1_1_nearest_neighbor_comm.html">dg::NearestNeighborComm</a>&lt; <a class="el" href="group__typedefs.html#ga6dcaf6113666c77a4bd46bf93a16ce4d">dg::iHVec</a>, thrust::host_vector&lt; real_type &gt; &gt;</td></tr>
-<tr class="memdesc:ga93e65948d51a0d9f05bf04c99272c118"><td class="mdescLeft">&#160;</td><td class="mdescRight">host Communicator for the use in an mpi matrix for derivatives  <a href="group__typedefs.html#ga93e65948d51a0d9f05bf04c99272c118">More...</a><br /></td></tr>
-<tr class="separator:ga93e65948d51a0d9f05bf04c99272c118"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5ad903c7e171878d6c402a20370ec5d4"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
-<tr class="memitem:ga5ad903c7e171878d6c402a20370ec5d4"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga5ad903c7e171878d6c402a20370ec5d4">NNCD</a> = <a class="el" href="structdg_1_1_nearest_neighbor_comm.html">dg::NearestNeighborComm</a>&lt; <a class="el" href="group__typedefs.html#ga47171b298736a17b3e4ff54ec561f028">dg::iDVec</a>, thrust::device_vector&lt; real_type &gt; &gt;</td></tr>
-<tr class="memdesc:ga5ad903c7e171878d6c402a20370ec5d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">host Communicator for the use in an mpi matrix for derivatives  <a href="group__typedefs.html#ga5ad903c7e171878d6c402a20370ec5d4">More...</a><br /></td></tr>
-<tr class="separator:ga5ad903c7e171878d6c402a20370ec5d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8e6c8b7e3091e961b10fbf646065b670"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga8e6c8b7e3091e961b10fbf646065b670">dNNCH</a> = <a class="el" href="group__typedefs.html#ga93e65948d51a0d9f05bf04c99272c118">dg::NNCH</a>&lt; double &gt;</td></tr>
+<tr class="memitem:gab32a9018dc40257974c1da36be740d05"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:gab32a9018dc40257974c1da36be740d05"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gab32a9018dc40257974c1da36be740d05">NNCH</a> = <a class="el" href="structdg_1_1_nearest_neighbor_comm.html">dg::NearestNeighborComm</a>&lt; <a class="el" href="group__typedefs.html#ga6dcaf6113666c77a4bd46bf93a16ce4d">dg::iHVec</a>, thrust::host_vector&lt; const real_type * &gt;, thrust::host_vector&lt; real_type &gt; &gt;</td></tr>
+<tr class="memdesc:gab32a9018dc40257974c1da36be740d05"><td class="mdescLeft">&#160;</td><td class="mdescRight">host Communicator for the use in an mpi matrix for derivatives  <a href="group__typedefs.html#gab32a9018dc40257974c1da36be740d05">More...</a><br /></td></tr>
+<tr class="separator:gab32a9018dc40257974c1da36be740d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5e198b15d0b8913c34c5767225ba0d92"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga5e198b15d0b8913c34c5767225ba0d92"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga5e198b15d0b8913c34c5767225ba0d92">NNCD</a> = <a class="el" href="structdg_1_1_nearest_neighbor_comm.html">dg::NearestNeighborComm</a>&lt; <a class="el" href="group__typedefs.html#ga47171b298736a17b3e4ff54ec561f028">dg::iDVec</a>, thrust::device_vector&lt; const real_type * &gt;, thrust::device_vector&lt; real_type &gt; &gt;</td></tr>
+<tr class="memdesc:ga5e198b15d0b8913c34c5767225ba0d92"><td class="mdescLeft">&#160;</td><td class="mdescRight">host Communicator for the use in an mpi matrix for derivatives  <a href="group__typedefs.html#ga5e198b15d0b8913c34c5767225ba0d92">More...</a><br /></td></tr>
+<tr class="separator:ga5e198b15d0b8913c34c5767225ba0d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8e6c8b7e3091e961b10fbf646065b670"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga8e6c8b7e3091e961b10fbf646065b670">dNNCH</a> = <a class="el" href="group__typedefs.html#gab32a9018dc40257974c1da36be740d05">dg::NNCH</a>&lt; double &gt;</td></tr>
 <tr class="memdesc:ga8e6c8b7e3091e961b10fbf646065b670"><td class="mdescLeft">&#160;</td><td class="mdescRight">host Communicator for the use in an mpi matrix for derivatives  <a href="group__typedefs.html#ga8e6c8b7e3091e961b10fbf646065b670">More...</a><br /></td></tr>
 <tr class="separator:ga8e6c8b7e3091e961b10fbf646065b670"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf58692e972aa256e5034c76cd8c676d0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gaf58692e972aa256e5034c76cd8c676d0">fNNCH</a> = <a class="el" href="group__typedefs.html#ga93e65948d51a0d9f05bf04c99272c118">dg::NNCH</a>&lt; float &gt;</td></tr>
+<tr class="memitem:gaf58692e972aa256e5034c76cd8c676d0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gaf58692e972aa256e5034c76cd8c676d0">fNNCH</a> = <a class="el" href="group__typedefs.html#gab32a9018dc40257974c1da36be740d05">dg::NNCH</a>&lt; float &gt;</td></tr>
 <tr class="memdesc:gaf58692e972aa256e5034c76cd8c676d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">host Communicator for the use in an mpi matrix for derivatives  <a href="group__typedefs.html#gaf58692e972aa256e5034c76cd8c676d0">More...</a><br /></td></tr>
 <tr class="separator:gaf58692e972aa256e5034c76cd8c676d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga89a3930157f77be79532f3d51c7b3db0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga89a3930157f77be79532f3d51c7b3db0">dNNCD</a> = <a class="el" href="group__typedefs.html#ga5ad903c7e171878d6c402a20370ec5d4">dg::NNCD</a>&lt; double &gt;</td></tr>
+<tr class="memitem:ga89a3930157f77be79532f3d51c7b3db0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga89a3930157f77be79532f3d51c7b3db0">dNNCD</a> = <a class="el" href="group__typedefs.html#ga5e198b15d0b8913c34c5767225ba0d92">dg::NNCD</a>&lt; double &gt;</td></tr>
 <tr class="memdesc:ga89a3930157f77be79532f3d51c7b3db0"><td class="mdescLeft">&#160;</td><td class="mdescRight">device Communicator for the use in an mpi matrix for derivatives  <a href="group__typedefs.html#ga89a3930157f77be79532f3d51c7b3db0">More...</a><br /></td></tr>
 <tr class="separator:ga89a3930157f77be79532f3d51c7b3db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad6239a57d8e92a0a068dff591891dee1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gad6239a57d8e92a0a068dff591891dee1">fNNCD</a> = <a class="el" href="group__typedefs.html#ga5ad903c7e171878d6c402a20370ec5d4">dg::NNCD</a>&lt; float &gt;</td></tr>
+<tr class="memitem:gad6239a57d8e92a0a068dff591891dee1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gad6239a57d8e92a0a068dff591891dee1">fNNCD</a> = <a class="el" href="group__typedefs.html#ga5e198b15d0b8913c34c5767225ba0d92">dg::NNCD</a>&lt; float &gt;</td></tr>
 <tr class="memdesc:gad6239a57d8e92a0a068dff591891dee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">device Communicator for the use in an mpi matrix for derivatives  <a href="group__typedefs.html#gad6239a57d8e92a0a068dff591891dee1">More...</a><br /></td></tr>
 <tr class="separator:gad6239a57d8e92a0a068dff591891dee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga00c1e29dbf19330c5e34986229f480a1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga00c1e29dbf19330c5e34986229f480a1">CooMat</a> = <a class="el" href="structdg_1_1_coo_sparse_block_mat.html">dg::CooSparseBlockMat</a>&lt; double &gt;</td></tr>
@@ -980,6 +1036,14 @@ Typedefs</h2></td></tr>
 <tr class="separator:ga36bab6ae6eb7da83bcf744b97758fb05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3e02ec4002805e3ba330748bdd1168f9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gridtypes.html#ga3e02ec4002805e3ba330748bdd1168f9">CartesianRefinedGridX3d</a> = <a class="el" href="structdg_1_1_real_cartesian_refined_grid_x3d.html">dg::RealCartesianRefinedGridX3d</a>&lt; double &gt;</td></tr>
 <tr class="separator:ga3e02ec4002805e3ba330748bdd1168f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae40a319b095c51491395216d59fd8645"><td class="memTemplParams" colspan="2">template&lt;class Geometry , class Matrix , class Container &gt; </td></tr>
+<tr class="memitem:gae40a319b095c51491395216d59fd8645"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__matrixoperators.html#gae40a319b095c51491395216d59fd8645">Elliptic2d</a> = <a class="el" href="classdg_1_1_elliptic.html">Elliptic</a>&lt; Geometry, Matrix, Container &gt;</td></tr>
+<tr class="memdesc:gae40a319b095c51491395216d59fd8645"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 2d negative elliptic differential operator.  <a href="group__matrixoperators.html#gae40a319b095c51491395216d59fd8645">More...</a><br /></td></tr>
+<tr class="separator:gae40a319b095c51491395216d59fd8645"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97e96ca43b1ba76d3f820afc72b1d753"><td class="memTemplParams" colspan="2">template&lt;class Geometry , class Matrix , class Container &gt; </td></tr>
+<tr class="memitem:ga97e96ca43b1ba76d3f820afc72b1d753"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__matrixoperators.html#ga97e96ca43b1ba76d3f820afc72b1d753">Helmholtz2d</a> = <a class="el" href="structdg_1_1_helmholtz.html">Helmholtz</a>&lt; Geometry, Matrix, Container &gt;</td></tr>
+<tr class="memdesc:ga97e96ca43b1ba76d3f820afc72b1d753"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix class that represents a Helmholtz-type operator.  <a href="group__matrixoperators.html#ga97e96ca43b1ba76d3f820afc72b1d753">More...</a><br /></td></tr>
+<tr class="separator:ga97e96ca43b1ba76d3f820afc72b1d753"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -1027,20 +1091,80 @@ Enumerations</h2></td></tr>
  }<tr class="memdesc:ga4de4a3d7cd219a55affa992871e8598f"><td class="mdescLeft">&#160;</td><td class="mdescRight">3d contra- and covariant coordinates  <a href="group__creation.html#ga4de4a3d7cd219a55affa992871e8598f">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:ga4de4a3d7cd219a55affa992871e8598f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga80d4d81df02e5311bb20b3f74ea45992"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__time.html#ga80d4d81df02e5311bb20b3f74ea45992">tableau_identifier</a> { <br />
+&#160;&#160;<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a5679da92a2aeff58e4d1d8dd0950bfb5">EXPLICIT_EULER_1_1</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a53589c3f492267933d52411a91abe87f">MIDPOINT_2_2</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992ae9e2f280b69980d9f3a31b1af3e0f1c5">KUTTA_3_3</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a9563ea198fa964124c2e1797882452ca">CLASSIC_4_4</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a969e565c5774496edc78deb801ab2ca8">HEUN_EULER_2_1_2</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992ab5342d81c85674726787aa3b494f63b9">BOGACKI_SHAMPINE_4_2_3</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992ad6386c96898e925be6781c3c68310c4f">ARK324L2SA_ERK_4_2_3</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992ad40588a67499cabb21074dfdae448041">ZONNEVELD_5_3_4</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a617285cf8cc8b5c0b7c0c99a0eed7b77">ARK436L2SA_ERK_6_3_4</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a4f13e6b1d5695276f8f99e07d86f5667">SAYFY_ABURUB_6_3_4</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a896ad5875cfc107eb383d4880fbe5184">CASH_KARP_6_4_5</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992ae40966a5ad092b052a51188a05c6ea47">FEHLBERG_6_4_5</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a5e964b2560e1c1b03d280c766fc5a129">DORMAND_PRINCE_7_4_5</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992ae3f4bc121a421ca3501bfae79943a134">ARK548L2SA_ERK_8_4_5</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992aa29646a0456ce45916235f7991a7226e">VERNER_8_5_6</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a728a76f092f543a1ab3de59110857d0c">FEHLBERG_13_7_8</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a8d9f6fc38535d5c30a2ca1d2133a9b75">FEAGIN_17_8_10</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a5d4c148035a981dfce0fe5b0f481a1fa">IMPLICIT_EULER_1_1</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a72bd02f1580c5bb96958efa4f511f8aa">SDIRK_2_1_2</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a5ffadf91baa3b323a4e1407cf2f42926">BILLINGTON_3_3_2</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992aea4ea0cbea708f0db5605fb2b3444834">TRBDF2_3_3_2</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a4237a65080e211e5eedc4d9998bb1e54">KVAERNO_4_2_3</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a6fc7f6581d7f900694db6c8e91a17281">ARK324L2SA_DIRK_4_2_3</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a2199f11f4b226c6803b65a1a7168b87a">CASH_5_2_4</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a534549bf28e481c52c64871dcd48d8c6">CASH_5_3_4</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992ababbb34a98a801e7cc89920a1daa4d9d">SDIRK_5_3_4</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a7e0890fc92aaf7c8867b364d22c8ac22">KVAERNO_5_3_4</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992ab4f90835b6871a2dc7a7e2151ee8ab34">ARK436L2SA_DIRK_6_3_4</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992abbedd7f8ef68aea027dc79e60df79b4f">KVAERNO_7_4_5</a>, 
+<a class="el" href="group__time.html#gga80d4d81df02e5311bb20b3f74ea45992ad17ee32bcc10dbb681d704e9dc3d0425">ARK548L2SA_DIRK_8_4_5</a>
+<br />
+ }<tr class="memdesc:ga80d4d81df02e5311bb20b3f74ea45992"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identify the Butcher Tableaus provided by this library.  <a href="group__time.html#ga80d4d81df02e5311bb20b3f74ea45992">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:ga80d4d81df02e5311bb20b3f74ea45992"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga057746b047d7696a603d27bdaff24f29"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__misc.html#ga057746b047d7696a603d27bdaff24f29">mpi_init2d</a> (<a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcx, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcy, MPI_Comm &amp;comm, std::istream &amp;is=std::cin, bool verbose=true)</td></tr>
+<tr class="memdesc:ga057746b047d7696a603d27bdaff24f29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read in number of processses and create Cartesian MPI communicator.  <a href="group__misc.html#ga057746b047d7696a603d27bdaff24f29">More...</a><br /></td></tr>
+<tr class="separator:ga057746b047d7696a603d27bdaff24f29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga632d3e4c7753d9988a16be5cb0ba3e05"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__misc.html#ga632d3e4c7753d9988a16be5cb0ba3e05">mpi_init2d</a> (unsigned &amp;n, unsigned &amp;Nx, unsigned &amp;Ny, MPI_Comm comm, std::istream &amp;is=std::cin, bool verbose=true)</td></tr>
+<tr class="memdesc:ga632d3e4c7753d9988a16be5cb0ba3e05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read in number of processes and broadcast to process group.  <a href="group__misc.html#ga632d3e4c7753d9988a16be5cb0ba3e05">More...</a><br /></td></tr>
+<tr class="separator:ga632d3e4c7753d9988a16be5cb0ba3e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga89f67b920ce6f3958eea9e94d00a72fa"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__misc.html#ga89f67b920ce6f3958eea9e94d00a72fa">mpi_init2d</a> (<a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcx, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcy, unsigned &amp;n, unsigned &amp;Nx, unsigned &amp;Ny, MPI_Comm &amp;comm, std::istream &amp;is=std::cin, bool verbose=true)</td></tr>
+<tr class="memdesc:ga89f67b920ce6f3958eea9e94d00a72fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read in number of processses and grid size and create Cartesian MPI communicator.  <a href="group__misc.html#ga89f67b920ce6f3958eea9e94d00a72fa">More...</a><br /></td></tr>
+<tr class="separator:ga89f67b920ce6f3958eea9e94d00a72fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2ba128f78f1497a9d85fb97402f90791"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__misc.html#ga2ba128f78f1497a9d85fb97402f90791">mpi_init3d</a> (<a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcx, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcy, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcz, MPI_Comm &amp;comm, std::istream &amp;is=std::cin, bool verbose=true)</td></tr>
+<tr class="memdesc:ga2ba128f78f1497a9d85fb97402f90791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read in number of processses and create Cartesian MPI communicator.  <a href="group__misc.html#ga2ba128f78f1497a9d85fb97402f90791">More...</a><br /></td></tr>
+<tr class="separator:ga2ba128f78f1497a9d85fb97402f90791"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5af0e700d39ee4672deecff4c8bbee92"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__misc.html#ga5af0e700d39ee4672deecff4c8bbee92">mpi_init3d</a> (unsigned &amp;n, unsigned &amp;Nx, unsigned &amp;Ny, unsigned &amp;Nz, MPI_Comm comm, std::istream &amp;is=std::cin, bool verbose=true)</td></tr>
+<tr class="memdesc:ga5af0e700d39ee4672deecff4c8bbee92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read in number of processes and broadcast to process group.  <a href="group__misc.html#ga5af0e700d39ee4672deecff4c8bbee92">More...</a><br /></td></tr>
+<tr class="separator:ga5af0e700d39ee4672deecff4c8bbee92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga08fc202782d026a385be5ac44f549c90"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__misc.html#ga08fc202782d026a385be5ac44f549c90">mpi_init3d</a> (<a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcx, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcy, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcz, unsigned &amp;n, unsigned &amp;Nx, unsigned &amp;Ny, unsigned &amp;Nz, MPI_Comm &amp;comm, std::istream &amp;is=std::cin, bool verbose=true)</td></tr>
+<tr class="memdesc:ga08fc202782d026a385be5ac44f549c90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read in number of processses and grid size and create Cartesian MPI communicator.  <a href="group__misc.html#ga08fc202782d026a385be5ac44f549c90">More...</a><br /></td></tr>
+<tr class="separator:ga08fc202782d026a385be5ac44f549c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaccb5652aaa2d450d97996d4eee6de546"><td class="memTemplParams" colspan="2">template&lt;class Matrix &gt; </td></tr>
 <tr class="memitem:gaccb5652aaa2d450d97996d4eee6de546"><td class="memTemplItemLeft" align="right" valign="top">Matrix&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#gaccb5652aaa2d450d97996d4eee6de546">transpose</a> (const Matrix &amp;src)</td></tr>
 <tr class="memdesc:gaccb5652aaa2d450d97996d4eee6de546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic matrix transpose method.  <a href="group__lowlevel.html#gaccb5652aaa2d450d97996d4eee6de546">More...</a><br /></td></tr>
 <tr class="separator:gaccb5652aaa2d450d97996d4eee6de546"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga17d53d4c95becdd93597cb5b69a5525c"><td class="memTemplParams" colspan="2">template&lt;class Functor , class real_type &gt; </td></tr>
 <tr class="memitem:ga17d53d4c95becdd93597cb5b69a5525c"><td class="memTemplItemLeft" align="right" valign="top">thrust::host_vector&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__pullback.html#ga17d53d4c95becdd93597cb5b69a5525c">pullback</a> (const Functor &amp;f, const <a class="el" href="structdg_1_1a_real_geometry_x2d.html">aRealGeometryX2d</a>&lt; real_type &gt; &amp;g)</td></tr>
-<tr class="memdesc:ga17d53d4c95becdd93597cb5b69a5525c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function pulls back a function defined in some basic coordinates to the curvilinear coordinate system.  <a href="group__pullback.html#ga17d53d4c95becdd93597cb5b69a5525c">More...</a><br /></td></tr>
+<tr class="memdesc:ga17d53d4c95becdd93597cb5b69a5525c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pull back a function defined in physical coordinates to the curvilinear (computational) coordinate system.  <a href="group__pullback.html#ga17d53d4c95becdd93597cb5b69a5525c">More...</a><br /></td></tr>
 <tr class="separator:ga17d53d4c95becdd93597cb5b69a5525c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga45daa901c64e2dd3dea4ecaca7ef7921"><td class="memTemplParams" colspan="2">template&lt;class Functor , class real_type &gt; </td></tr>
 <tr class="memitem:ga45daa901c64e2dd3dea4ecaca7ef7921"><td class="memTemplItemLeft" align="right" valign="top">thrust::host_vector&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__pullback.html#ga45daa901c64e2dd3dea4ecaca7ef7921">pullback</a> (const Functor &amp;f, const <a class="el" href="structdg_1_1a_real_geometry_x3d.html">aRealGeometryX3d</a>&lt; real_type &gt; &amp;g)</td></tr>
-<tr class="memdesc:ga45daa901c64e2dd3dea4ecaca7ef7921"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function pulls back a function defined in some basic coordinates to the curvilinear coordinate system.  <a href="group__pullback.html#ga45daa901c64e2dd3dea4ecaca7ef7921">More...</a><br /></td></tr>
+<tr class="memdesc:ga45daa901c64e2dd3dea4ecaca7ef7921"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pull back a function defined in physical coordinates to the curvilinear (computational) coordinate system.  <a href="group__pullback.html#ga45daa901c64e2dd3dea4ecaca7ef7921">More...</a><br /></td></tr>
 <tr class="separator:ga45daa901c64e2dd3dea4ecaca7ef7921"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaee60d8f4c31af0180d3a4aea0e301ea9"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:gaee60d8f4c31af0180d3a4aea0e301ea9"><td class="memTemplItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, T, cusp::host_memory &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#gaee60d8f4c31af0180d3a4aea0e301ea9">dgtensor</a> (unsigned n, const cusp::coo_matrix&lt; int, T, cusp::host_memory &gt; &amp;lhs, const cusp::coo_matrix&lt; int, T, cusp::host_memory &gt; &amp;rhs)</td></tr>
@@ -1048,28 +1172,136 @@ Functions</h2></td></tr>
 <tr class="separator:gaee60d8f4c31af0180d3a4aea0e301ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0d2da37399e38acb2b243f568d5e7443"><td class="memTemplParams" colspan="2">template&lt;class UnaryOp , class real_type &gt; </td></tr>
 <tr class="memitem:ga0d2da37399e38acb2b243f568d5e7443"><td class="memTemplItemLeft" align="right" valign="top">thrust::host_vector&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">evaluate</a> (UnaryOp f, const <a class="el" href="structdg_1_1_real_grid1d.html">RealGrid1d</a>&lt; real_type &gt; &amp;g)</td></tr>
-<tr class="memdesc:ga0d2da37399e38acb2b243f568d5e7443"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a function on gaussian abscissas.  <a href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">More...</a><br /></td></tr>
+<tr class="memdesc:ga0d2da37399e38acb2b243f568d5e7443"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a 1d function on grid coordinates.  <a href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">More...</a><br /></td></tr>
 <tr class="separator:ga0d2da37399e38acb2b243f568d5e7443"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga619eb1504db9c29b1a7f2ebf1a13e93f"><td class="memTemplParams" colspan="2">template&lt;class BinaryOp , class real_type &gt; </td></tr>
 <tr class="memitem:ga619eb1504db9c29b1a7f2ebf1a13e93f"><td class="memTemplItemLeft" align="right" valign="top">thrust::host_vector&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__evaluation.html#ga619eb1504db9c29b1a7f2ebf1a13e93f">evaluate</a> (const BinaryOp &amp;f, const <a class="el" href="structdg_1_1a_real_topology2d.html">aRealTopology2d</a>&lt; real_type &gt; &amp;g)</td></tr>
-<tr class="memdesc:ga619eb1504db9c29b1a7f2ebf1a13e93f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a function on gaussian abscissas.  <a href="group__evaluation.html#ga619eb1504db9c29b1a7f2ebf1a13e93f">More...</a><br /></td></tr>
+<tr class="memdesc:ga619eb1504db9c29b1a7f2ebf1a13e93f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a 2d function on grid coordinates.  <a href="group__evaluation.html#ga619eb1504db9c29b1a7f2ebf1a13e93f">More...</a><br /></td></tr>
 <tr class="separator:ga619eb1504db9c29b1a7f2ebf1a13e93f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga001bb58dc67e68e4c86affabea23908c"><td class="memTemplParams" colspan="2">template&lt;class TernaryOp , class real_type &gt; </td></tr>
 <tr class="memitem:ga001bb58dc67e68e4c86affabea23908c"><td class="memTemplItemLeft" align="right" valign="top">thrust::host_vector&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__evaluation.html#ga001bb58dc67e68e4c86affabea23908c">evaluate</a> (const TernaryOp &amp;f, const <a class="el" href="structdg_1_1a_real_topology3d.html">aRealTopology3d</a>&lt; real_type &gt; &amp;g)</td></tr>
-<tr class="memdesc:ga001bb58dc67e68e4c86affabea23908c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a function on gaussian abscissas.  <a href="group__evaluation.html#ga001bb58dc67e68e4c86affabea23908c">More...</a><br /></td></tr>
+<tr class="memdesc:ga001bb58dc67e68e4c86affabea23908c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a 3d function on grid coordinates.  <a href="group__evaluation.html#ga001bb58dc67e68e4c86affabea23908c">More...</a><br /></td></tr>
 <tr class="separator:ga001bb58dc67e68e4c86affabea23908c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabe69c7f3d4f90f0792902fe817ed81e5"><td class="memTemplParams" colspan="2">template&lt;class UnaryOp , class real_type &gt; </td></tr>
 <tr class="memitem:gabe69c7f3d4f90f0792902fe817ed81e5"><td class="memTemplItemLeft" align="right" valign="top">thrust::host_vector&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__evaluation.html#gabe69c7f3d4f90f0792902fe817ed81e5">evaluate</a> (UnaryOp f, const <a class="el" href="structdg_1_1_real_grid_x1d.html">RealGridX1d</a>&lt; real_type &gt; &amp;g)</td></tr>
-<tr class="memdesc:gabe69c7f3d4f90f0792902fe817ed81e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a function on gaussian abscissas.  <a href="group__evaluation.html#gabe69c7f3d4f90f0792902fe817ed81e5">More...</a><br /></td></tr>
+<tr class="memdesc:gabe69c7f3d4f90f0792902fe817ed81e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a 1d function on grid coordinates.  <a href="group__evaluation.html#gabe69c7f3d4f90f0792902fe817ed81e5">More...</a><br /></td></tr>
 <tr class="separator:gabe69c7f3d4f90f0792902fe817ed81e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab60cad2b1e49591135255b8f51f6e772"><td class="memTemplParams" colspan="2">template&lt;class BinaryOp , class real_type &gt; </td></tr>
 <tr class="memitem:gab60cad2b1e49591135255b8f51f6e772"><td class="memTemplItemLeft" align="right" valign="top">thrust::host_vector&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__evaluation.html#gab60cad2b1e49591135255b8f51f6e772">evaluate</a> (const BinaryOp &amp;f, const <a class="el" href="structdg_1_1a_real_topology_x2d.html">aRealTopologyX2d</a>&lt; real_type &gt; &amp;g)</td></tr>
-<tr class="memdesc:gab60cad2b1e49591135255b8f51f6e772"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a function on gaussian abscissas.  <a href="group__evaluation.html#gab60cad2b1e49591135255b8f51f6e772">More...</a><br /></td></tr>
+<tr class="memdesc:gab60cad2b1e49591135255b8f51f6e772"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a 2d function on grid coordinates.  <a href="group__evaluation.html#gab60cad2b1e49591135255b8f51f6e772">More...</a><br /></td></tr>
 <tr class="separator:gab60cad2b1e49591135255b8f51f6e772"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac222de3553c5442c440cf48e1df64fbe"><td class="memTemplParams" colspan="2">template&lt;class TernaryOp , class real_type &gt; </td></tr>
 <tr class="memitem:gac222de3553c5442c440cf48e1df64fbe"><td class="memTemplItemLeft" align="right" valign="top">thrust::host_vector&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__evaluation.html#gac222de3553c5442c440cf48e1df64fbe">evaluate</a> (const TernaryOp &amp;f, const <a class="el" href="structdg_1_1a_real_topology_x3d.html">aRealTopologyX3d</a>&lt; real_type &gt; &amp;g)</td></tr>
-<tr class="memdesc:gac222de3553c5442c440cf48e1df64fbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a function on gaussian abscissas.  <a href="group__evaluation.html#gac222de3553c5442c440cf48e1df64fbe">More...</a><br /></td></tr>
+<tr class="memdesc:gac222de3553c5442c440cf48e1df64fbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a 3d function on grid coordinates.  <a href="group__evaluation.html#gac222de3553c5442c440cf48e1df64fbe">More...</a><br /></td></tr>
 <tr class="separator:gac222de3553c5442c440cf48e1df64fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabab1bdc50508bd0f04f3cd0b45dd72e3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#gabab1bdc50508bd0f04f3cd0b45dd72e3">one</a> (double x)</td></tr>
+<tr class="memdesc:gabab1bdc50508bd0f04f3cd0b45dd72e3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x) = 1\]
+</p>
+  <a href="group__functions.html#gabab1bdc50508bd0f04f3cd0b45dd72e3">More...</a><br /></td></tr>
+<tr class="separator:gabab1bdc50508bd0f04f3cd0b45dd72e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gada629959f5298f4221d35fd8cb880a0d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#gada629959f5298f4221d35fd8cb880a0d">one</a> (double x, double y)</td></tr>
+<tr class="memdesc:gada629959f5298f4221d35fd8cb880a0d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y) = 1\]
+</p>
+  <a href="group__functions.html#gada629959f5298f4221d35fd8cb880a0d">More...</a><br /></td></tr>
+<tr class="separator:gada629959f5298f4221d35fd8cb880a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae7ba1400d58619bc271c6611acf5994b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#gae7ba1400d58619bc271c6611acf5994b">one</a> (double x, double y, double z)</td></tr>
+<tr class="memdesc:gae7ba1400d58619bc271c6611acf5994b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y,z) = 1\]
+</p>
+  <a href="group__functions.html#gae7ba1400d58619bc271c6611acf5994b">More...</a><br /></td></tr>
+<tr class="separator:gae7ba1400d58619bc271c6611acf5994b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad1e45796f68232b124d0f5baea6fceca"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#gad1e45796f68232b124d0f5baea6fceca">zero</a> (double x)</td></tr>
+<tr class="memdesc:gad1e45796f68232b124d0f5baea6fceca"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x) = 0\]
+</p>
+  <a href="group__functions.html#gad1e45796f68232b124d0f5baea6fceca">More...</a><br /></td></tr>
+<tr class="separator:gad1e45796f68232b124d0f5baea6fceca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad0bd961c4529039c4e651fc9e3901f60"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#gad0bd961c4529039c4e651fc9e3901f60">zero</a> (double x, double y)</td></tr>
+<tr class="memdesc:gad0bd961c4529039c4e651fc9e3901f60"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y) = 0\]
+</p>
+  <a href="group__functions.html#gad0bd961c4529039c4e651fc9e3901f60">More...</a><br /></td></tr>
+<tr class="separator:gad0bd961c4529039c4e651fc9e3901f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6d27b092dcd9613c1c5eeaa1cf208e83"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga6d27b092dcd9613c1c5eeaa1cf208e83">zero</a> (double x, double y, double z)</td></tr>
+<tr class="memdesc:ga6d27b092dcd9613c1c5eeaa1cf208e83"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y,z) = 0\]
+</p>
+  <a href="group__functions.html#ga6d27b092dcd9613c1c5eeaa1cf208e83">More...</a><br /></td></tr>
+<tr class="separator:ga6d27b092dcd9613c1c5eeaa1cf208e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga21055512458a88c314621a912fb1417f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga21055512458a88c314621a912fb1417f">cooX1d</a> (double x)</td></tr>
+<tr class="memdesc:ga21055512458a88c314621a912fb1417f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x) = x\]
+</p>
+  <a href="group__functions.html#ga21055512458a88c314621a912fb1417f">More...</a><br /></td></tr>
+<tr class="separator:ga21055512458a88c314621a912fb1417f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadb49e10685e2bcdd8a27ef88f2857151"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#gadb49e10685e2bcdd8a27ef88f2857151">cooX2d</a> (double x, double y)</td></tr>
+<tr class="memdesc:gadb49e10685e2bcdd8a27ef88f2857151"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y) = x\]
+</p>
+  <a href="group__functions.html#gadb49e10685e2bcdd8a27ef88f2857151">More...</a><br /></td></tr>
+<tr class="separator:gadb49e10685e2bcdd8a27ef88f2857151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd9ae95517a739c80452afc7fc9c36ae"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#gadd9ae95517a739c80452afc7fc9c36ae">cooX3d</a> (double x, double y, double z)</td></tr>
+<tr class="memdesc:gadd9ae95517a739c80452afc7fc9c36ae"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y,z) = x\]
+</p>
+  <a href="group__functions.html#gadd9ae95517a739c80452afc7fc9c36ae">More...</a><br /></td></tr>
+<tr class="separator:gadd9ae95517a739c80452afc7fc9c36ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5aa995cf5e888c9ee1026b78f6f78cc5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga5aa995cf5e888c9ee1026b78f6f78cc5">cooY2d</a> (double x, double y)</td></tr>
+<tr class="memdesc:ga5aa995cf5e888c9ee1026b78f6f78cc5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y) = y\]
+</p>
+  <a href="group__functions.html#ga5aa995cf5e888c9ee1026b78f6f78cc5">More...</a><br /></td></tr>
+<tr class="separator:ga5aa995cf5e888c9ee1026b78f6f78cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaafbff988d4cff4a0643e819b3f6962cc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#gaafbff988d4cff4a0643e819b3f6962cc">cooY3d</a> (double x, double y, double z)</td></tr>
+<tr class="memdesc:gaafbff988d4cff4a0643e819b3f6962cc"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y,z) = y\]
+</p>
+  <a href="group__functions.html#gaafbff988d4cff4a0643e819b3f6962cc">More...</a><br /></td></tr>
+<tr class="separator:gaafbff988d4cff4a0643e819b3f6962cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga89a354d8268ca0f86486a93683fda7d4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga89a354d8268ca0f86486a93683fda7d4">cooZ3d</a> (double x, double y, double z)</td></tr>
+<tr class="memdesc:ga89a354d8268ca0f86486a93683fda7d4"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y,z) = z\]
+</p>
+  <a href="group__functions.html#ga89a354d8268ca0f86486a93683fda7d4">More...</a><br /></td></tr>
+<tr class="separator:ga89a354d8268ca0f86486a93683fda7d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6157ca9bd4d2ffec4b6bd7c22ed073fe"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga6157ca9bd4d2ffec4b6bd7c22ed073fe">one</a> (float x)</td></tr>
+<tr class="memdesc:ga6157ca9bd4d2ffec4b6bd7c22ed073fe"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x) = 1\]
+</p>
+  <a href="group__functions.html#ga6157ca9bd4d2ffec4b6bd7c22ed073fe">More...</a><br /></td></tr>
+<tr class="separator:ga6157ca9bd4d2ffec4b6bd7c22ed073fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga99d493917c25c36d4e82248fcebd7550"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga99d493917c25c36d4e82248fcebd7550">one</a> (float x, float y)</td></tr>
+<tr class="memdesc:ga99d493917c25c36d4e82248fcebd7550"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y) = 1\]
+</p>
+  <a href="group__functions.html#ga99d493917c25c36d4e82248fcebd7550">More...</a><br /></td></tr>
+<tr class="separator:ga99d493917c25c36d4e82248fcebd7550"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabadfb8fdc2962f824d2b1fe1c0e73cd5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#gabadfb8fdc2962f824d2b1fe1c0e73cd5">one</a> (float x, float y, float z)</td></tr>
+<tr class="memdesc:gabadfb8fdc2962f824d2b1fe1c0e73cd5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y,z) = 1\]
+</p>
+  <a href="group__functions.html#gabadfb8fdc2962f824d2b1fe1c0e73cd5">More...</a><br /></td></tr>
+<tr class="separator:gabadfb8fdc2962f824d2b1fe1c0e73cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga44292f31f77c0cad8a3d8e0a88c7840b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga44292f31f77c0cad8a3d8e0a88c7840b">zero</a> (float x)</td></tr>
+<tr class="memdesc:ga44292f31f77c0cad8a3d8e0a88c7840b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x) = 0\]
+</p>
+  <a href="group__functions.html#ga44292f31f77c0cad8a3d8e0a88c7840b">More...</a><br /></td></tr>
+<tr class="separator:ga44292f31f77c0cad8a3d8e0a88c7840b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b38e6d17d96de78beedafc4c9e4437e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga0b38e6d17d96de78beedafc4c9e4437e">zero</a> (float x, float y)</td></tr>
+<tr class="memdesc:ga0b38e6d17d96de78beedafc4c9e4437e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y) = 0\]
+</p>
+  <a href="group__functions.html#ga0b38e6d17d96de78beedafc4c9e4437e">More...</a><br /></td></tr>
+<tr class="separator:ga0b38e6d17d96de78beedafc4c9e4437e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga43b7fe30d4e22f1cf3dace0dd474c7d9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga43b7fe30d4e22f1cf3dace0dd474c7d9">zero</a> (float x, float y, float z)</td></tr>
+<tr class="memdesc:ga43b7fe30d4e22f1cf3dace0dd474c7d9"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ f(x,y,z) = 0\]
+</p>
+  <a href="group__functions.html#ga43b7fe30d4e22f1cf3dace0dd474c7d9">More...</a><br /></td></tr>
+<tr class="separator:ga43b7fe30d4e22f1cf3dace0dd474c7d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3b64dbb139c1f3cf64bdf63eb84c20e0"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
 <tr class="memitem:ga3b64dbb139c1f3cf64bdf63eb84c20e0"><td class="memTemplItemLeft" align="right" valign="top">real_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__interpolation.html#ga3b64dbb139c1f3cf64bdf63eb84c20e0">interpolate</a> (real_type x, real_type y, const thrust::host_vector&lt; real_type &gt; &amp;v, const <a class="el" href="structdg_1_1a_real_topology2d.html">aRealTopology2d</a>&lt; real_type &gt; &amp;g)</td></tr>
 <tr class="memdesc:ga3b64dbb139c1f3cf64bdf63eb84c20e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolate a single point.  <a href="group__interpolation.html#ga3b64dbb139c1f3cf64bdf63eb84c20e0">More...</a><br /></td></tr>
@@ -1080,11 +1312,11 @@ Functions</h2></td></tr>
 <tr class="separator:a9e848863390f76fbb67e06d12ddd1dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6fe75b724d63814d9b236c9908e6b523"><td class="memTemplParams" colspan="2">template&lt;class BinaryOp , class real_type &gt; </td></tr>
 <tr class="memitem:ga6fe75b724d63814d9b236c9908e6b523"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt; thrust::host_vector&lt; real_type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__evaluation.html#ga6fe75b724d63814d9b236c9908e6b523">evaluate</a> (const BinaryOp &amp;f, const <a class="el" href="structdg_1_1a_real_m_p_i_topology2d.html">aRealMPITopology2d</a>&lt; real_type &gt; &amp;g)</td></tr>
-<tr class="memdesc:ga6fe75b724d63814d9b236c9908e6b523"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a function on gaussian abscissas.  <a href="group__evaluation.html#ga6fe75b724d63814d9b236c9908e6b523">More...</a><br /></td></tr>
+<tr class="memdesc:ga6fe75b724d63814d9b236c9908e6b523"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a 2d function on mpi distributed grid coordinates.  <a href="group__evaluation.html#ga6fe75b724d63814d9b236c9908e6b523">More...</a><br /></td></tr>
 <tr class="separator:ga6fe75b724d63814d9b236c9908e6b523"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3035e2b20e6178bcfc7341388e4d63a4"><td class="memTemplParams" colspan="2">template&lt;class TernaryOp , class real_type &gt; </td></tr>
 <tr class="memitem:ga3035e2b20e6178bcfc7341388e4d63a4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt; thrust::host_vector&lt; real_type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__evaluation.html#ga3035e2b20e6178bcfc7341388e4d63a4">evaluate</a> (const TernaryOp &amp;f, const <a class="el" href="structdg_1_1a_real_m_p_i_topology3d.html">aRealMPITopology3d</a>&lt; real_type &gt; &amp;g)</td></tr>
-<tr class="memdesc:ga3035e2b20e6178bcfc7341388e4d63a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a function on gaussian abscissas.  <a href="group__evaluation.html#ga3035e2b20e6178bcfc7341388e4d63a4">More...</a><br /></td></tr>
+<tr class="memdesc:ga3035e2b20e6178bcfc7341388e4d63a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a 3d function on mpi distributed grid coordinates.  <a href="group__evaluation.html#ga3035e2b20e6178bcfc7341388e4d63a4">More...</a><br /></td></tr>
 <tr class="separator:ga3035e2b20e6178bcfc7341388e4d63a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6711d5c7c7424db41d1e25b53ee335f9"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
 <tr class="memitem:ga6711d5c7c7424db41d1e25b53ee335f9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt; thrust::host_vector&lt; real_type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__scatter.html#ga6711d5c7c7424db41d1e25b53ee335f9">global2local</a> (const thrust::host_vector&lt; real_type &gt; &amp;global, const <a class="el" href="structdg_1_1a_real_m_p_i_topology3d.html">aRealMPITopology3d</a>&lt; real_type &gt; &amp;g)</td></tr>
@@ -1110,21 +1342,29 @@ Functions</h2></td></tr>
 <tr class="memitem:ga3422398aa1ab280d5eb2267dc50233ee"><td class="memTemplItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, T, cusp::host_memory &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#ga3422398aa1ab280d5eb2267dc50233ee">sandwich</a> (const <a class="el" href="classdg_1_1_operator.html">Operator</a>&lt; T &gt; &amp;left, const cusp::coo_matrix&lt; int, T, cusp::host_memory &gt; &amp;m, const <a class="el" href="classdg_1_1_operator.html">Operator</a>&lt; T &gt; &amp;right)</td></tr>
 <tr class="memdesc:ga3422398aa1ab280d5eb2267dc50233ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply 1d matrices by diagonal block batrices from left and right.  <a href="group__lowlevel.html#ga3422398aa1ab280d5eb2267dc50233ee">More...</a><br /></td></tr>
 <tr class="separator:ga3422398aa1ab280d5eb2267dc50233ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga008408676aea2583d10dc001e9b8b9f1"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:ga008408676aea2583d10dc001e9b8b9f1"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__misc.html#ga008408676aea2583d10dc001e9b8b9f1">gcd</a> (T a, T b)</td></tr>
+<tr class="memdesc:ga008408676aea2583d10dc001e9b8b9f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Greatest common divisor.  <a href="group__misc.html#ga008408676aea2583d10dc001e9b8b9f1">More...</a><br /></td></tr>
+<tr class="separator:ga008408676aea2583d10dc001e9b8b9f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae521421a2db99cf793bb0f2cd5a16126"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:gae521421a2db99cf793bb0f2cd5a16126"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__misc.html#gae521421a2db99cf793bb0f2cd5a16126">lcm</a> (T a, T b)</td></tr>
+<tr class="memdesc:gae521421a2db99cf793bb0f2cd5a16126"><td class="mdescLeft">&#160;</td><td class="mdescRight">Least common multiple.  <a href="group__misc.html#gae521421a2db99cf793bb0f2cd5a16126">More...</a><br /></td></tr>
+<tr class="separator:gae521421a2db99cf793bb0f2cd5a16126"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga389d22ba68460599babde906e5cce6fd"><td class="memTemplParams" colspan="2">template&lt;class Functor , class real_type &gt; </td></tr>
 <tr class="memitem:ga389d22ba68460599babde906e5cce6fd"><td class="memTemplItemLeft" align="right" valign="top">thrust::host_vector&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__pullback.html#ga389d22ba68460599babde906e5cce6fd">pullback</a> (const Functor &amp;f, const <a class="el" href="structdg_1_1a_real_geometry2d.html">aRealGeometry2d</a>&lt; real_type &gt; &amp;g)</td></tr>
-<tr class="memdesc:ga389d22ba68460599babde906e5cce6fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function pulls back a function defined in some basic coordinates to the curvilinear coordinate system.  <a href="group__pullback.html#ga389d22ba68460599babde906e5cce6fd">More...</a><br /></td></tr>
+<tr class="memdesc:ga389d22ba68460599babde906e5cce6fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pull back a function defined in physical coordinates to the curvilinear (computational) coordinate system.  <a href="group__pullback.html#ga389d22ba68460599babde906e5cce6fd">More...</a><br /></td></tr>
 <tr class="separator:ga389d22ba68460599babde906e5cce6fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5214d5d24f42bce5d5204861979b3599"><td class="memTemplParams" colspan="2">template&lt;class Functor , class real_type &gt; </td></tr>
 <tr class="memitem:ga5214d5d24f42bce5d5204861979b3599"><td class="memTemplItemLeft" align="right" valign="top">thrust::host_vector&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__pullback.html#ga5214d5d24f42bce5d5204861979b3599">pullback</a> (const Functor &amp;f, const <a class="el" href="structdg_1_1a_real_geometry3d.html">aRealGeometry3d</a>&lt; real_type &gt; &amp;g)</td></tr>
-<tr class="memdesc:ga5214d5d24f42bce5d5204861979b3599"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function pulls back a function defined in some basic coordinates to the curvilinear coordinate system.  <a href="group__pullback.html#ga5214d5d24f42bce5d5204861979b3599">More...</a><br /></td></tr>
+<tr class="memdesc:ga5214d5d24f42bce5d5204861979b3599"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pull back a function defined in physical coordinates to the curvilinear (computational) coordinate system.  <a href="group__pullback.html#ga5214d5d24f42bce5d5204861979b3599">More...</a><br /></td></tr>
 <tr class="separator:ga5214d5d24f42bce5d5204861979b3599"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2d71aff5166fbff905d8d8194b674ade"><td class="memTemplParams" colspan="2">template&lt;class Functor , class real_type &gt; </td></tr>
 <tr class="memitem:ga2d71aff5166fbff905d8d8194b674ade"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt; thrust::host_vector&lt; real_type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__pullback.html#ga2d71aff5166fbff905d8d8194b674ade">pullback</a> (const Functor &amp;f, const <a class="el" href="structdg_1_1a_real_m_p_i_geometry2d.html">aRealMPIGeometry2d</a>&lt; real_type &gt; &amp;g)</td></tr>
-<tr class="memdesc:ga2d71aff5166fbff905d8d8194b674ade"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function pulls back a function defined in some basic coordinates to the curvilinear coordinate system.  <a href="group__pullback.html#ga2d71aff5166fbff905d8d8194b674ade">More...</a><br /></td></tr>
+<tr class="memdesc:ga2d71aff5166fbff905d8d8194b674ade"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pull back a function defined in physical coordinates to the curvilinear (computational) coordinate system.  <a href="group__pullback.html#ga2d71aff5166fbff905d8d8194b674ade">More...</a><br /></td></tr>
 <tr class="separator:ga2d71aff5166fbff905d8d8194b674ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga920bccad6d4428f91519f26182011df1"><td class="memTemplParams" colspan="2">template&lt;class Functor , class real_type &gt; </td></tr>
 <tr class="memitem:ga920bccad6d4428f91519f26182011df1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt; thrust::host_vector&lt; real_type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__pullback.html#ga920bccad6d4428f91519f26182011df1">pullback</a> (const Functor &amp;f, const <a class="el" href="structdg_1_1a_real_m_p_i_geometry3d.html">aRealMPIGeometry3d</a>&lt; real_type &gt; &amp;g)</td></tr>
-<tr class="memdesc:ga920bccad6d4428f91519f26182011df1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function pulls back a function defined in some basic coordinates to the curvilinear coordinate system.  <a href="group__pullback.html#ga920bccad6d4428f91519f26182011df1">More...</a><br /></td></tr>
+<tr class="memdesc:ga920bccad6d4428f91519f26182011df1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pull back a function defined in physical coordinates to the curvilinear (computational) coordinate system.  <a href="group__pullback.html#ga920bccad6d4428f91519f26182011df1">More...</a><br /></td></tr>
 <tr class="separator:ga920bccad6d4428f91519f26182011df1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab8b4c0a46bf70e59e456df9bf8a68e0d"><td class="memTemplParams" colspan="2">template&lt;class Functor1 , class Functor2 , class container , class Geometry &gt; </td></tr>
 <tr class="memitem:gab8b4c0a46bf70e59e456df9bf8a68e0d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__pullback.html#gab8b4c0a46bf70e59e456df9bf8a68e0d">pushForwardPerp</a> (const Functor1 &amp;vR, const Functor2 &amp;vZ, container &amp;vx, container &amp;vy, const Geometry &amp;g)</td></tr>
@@ -1134,51 +1374,108 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf1b8e5426e47a83f079b723dcad325e5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__pullback.html#gaf1b8e5426e47a83f079b723dcad325e5">pushForward</a> (const Functor1 &amp;vR, const Functor2 &amp;vZ, const Functor3 &amp;vPhi, container &amp;vx, container &amp;vy, container &amp;vz, const Geometry &amp;g)</td></tr>
 <tr class="memdesc:gaf1b8e5426e47a83f079b723dcad325e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push forward a vector from cylindrical or Cartesian to a new coordinate system.  <a href="group__pullback.html#gaf1b8e5426e47a83f079b723dcad325e5">More...</a><br /></td></tr>
 <tr class="separator:gaf1b8e5426e47a83f079b723dcad325e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae217bca44c066edc7bfb66a1786d7265"><td class="memTemplParams" colspan="2">template&lt;class FunctorRR , class FunctorRZ , class FunctorZZ , class container , class Geometry &gt; </td></tr>
-<tr class="memitem:gae217bca44c066edc7bfb66a1786d7265"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__pullback.html#gae217bca44c066edc7bfb66a1786d7265">pushForwardPerp</a> (const FunctorRR &amp;chiRR, const FunctorRZ &amp;chiRZ, const FunctorZZ &amp;chiZZ, container &amp;chixx, container &amp;chixy, container &amp;chiyy, const Geometry &amp;g)</td></tr>
-<tr class="memdesc:gae217bca44c066edc7bfb66a1786d7265"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push forward a symmetric 2d tensor from cylindrical or Cartesian to a new coordinate system.  <a href="group__pullback.html#gae217bca44c066edc7bfb66a1786d7265">More...</a><br /></td></tr>
-<tr class="separator:gae217bca44c066edc7bfb66a1786d7265"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac2978c014dfeacf26bd2f01d5573a2c8"><td class="memTemplParams" colspan="2">template&lt;class From , class To &gt; </td></tr>
-<tr class="memitem:gac2978c014dfeacf26bd2f01d5573a2c8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__misc.html#gac2978c014dfeacf26bd2f01d5573a2c8">transfer</a> (From &amp;&amp;arg1, To &amp;&amp;arg2)</td></tr>
-<tr class="memdesc:gac2978c014dfeacf26bd2f01d5573a2c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">High level alias for <code><a class="el" href="group__blas1.html#gae882fddb3f617cec92641812788168b5" title="y=x; Generic way to copy an object of from_ContainerType type to an object of different to_ContainerT...">dg::blas1::transfer(const from_ContainerType&amp;,to_ContainerType&amp;)</a></code>  <a href="group__misc.html#gac2978c014dfeacf26bd2f01d5573a2c8">More...</a><br /></td></tr>
-<tr class="separator:gac2978c014dfeacf26bd2f01d5573a2c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga244bc00e5a4d8412553121f873e608c2"><td class="memTemplParams" colspan="2">template&lt;class To , class From &gt; </td></tr>
-<tr class="memitem:ga244bc00e5a4d8412553121f873e608c2"><td class="memTemplItemLeft" align="right" valign="top">To&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__misc.html#ga244bc00e5a4d8412553121f873e608c2">transfer</a> (From &amp;&amp;arg)</td></tr>
-<tr class="memdesc:ga244bc00e5a4d8412553121f873e608c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">High level alias for <code><a class="el" href="group__blas1.html#gae0aacd4fe731c16a9483140026c4dcc6" title="y=x; Generic way to copy-construct/assign-to an object of to_ContainerType type from a different from...">dg::blas1::transfer(const from_ContainerType&amp;)</a></code>  <a href="group__misc.html#ga244bc00e5a4d8412553121f873e608c2">More...</a><br /></td></tr>
-<tr class="separator:ga244bc00e5a4d8412553121f873e608c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0184e8f7d99dcfde909c850ff4f85c0b"><td class="memTemplParams" colspan="2">template&lt;class FunctorRR , class FunctorRZ , class FunctorZZ , class container , class Geometry &gt; </td></tr>
+<tr class="memitem:ga0184e8f7d99dcfde909c850ff4f85c0b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__pullback.html#ga0184e8f7d99dcfde909c850ff4f85c0b">pushForwardPerp</a> (const FunctorRR &amp;chiRR, const FunctorRZ &amp;chiRZ, const FunctorZZ &amp;chiZZ, <a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; container &gt; &amp;chi, const Geometry &amp;g)</td></tr>
+<tr class="memdesc:ga0184e8f7d99dcfde909c850ff4f85c0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push forward a symmetric 2d tensor from cylindrical or Cartesian to a new coordinate system.  <a href="group__pullback.html#ga0184e8f7d99dcfde909c850ff4f85c0b">More...</a><br /></td></tr>
+<tr class="separator:ga0184e8f7d99dcfde909c850ff4f85c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6dc9be16f5de1b06f0be3e23cd87436d"><td class="memTemplParams" colspan="2">template&lt;class ContainerType &gt; </td></tr>
+<tr class="memitem:ga6dc9be16f5de1b06f0be3e23cd87436d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__time.html#ga6dc9be16f5de1b06f0be3e23cd87436d">l2norm</a> (const ContainerType &amp;x)</td></tr>
+<tr class="memdesc:ga6dc9be16f5de1b06f0be3e23cd87436d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute </p><p class="formulaDsp">
+\[ \sqrt{\sum_i x_i^2}\]
+</p>
+<p> using <code><a class="el" href="group__blas1.html#ga7b2aa636a0fe0c7d3298b9f869658919" title=" Binary reproducible Euclidean dot product between two vectors ">dg::blas1::dot</a></code>.  <a href="group__time.html#ga6dc9be16f5de1b06f0be3e23cd87436d">More...</a><br /></td></tr>
+<tr class="separator:ga6dc9be16f5de1b06f0be3e23cd87436d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab60fda586e101a8aeb69efa31c46805c"><td class="memTemplParams" colspan="2">template&lt;class value_type &gt; </td></tr>
+<tr class="memitem:gab60fda586e101a8aeb69efa31c46805c"><td class="memTemplItemLeft" align="right" valign="top">value_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__time.html#gab60fda586e101a8aeb69efa31c46805c">pid_control</a> (value_type dt_old, value_type eps_0, value_type eps_1, value_type eps_2, unsigned embedded_order, unsigned order)</td></tr>
+<tr class="memdesc:gab60fda586e101a8aeb69efa31c46805c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ h&#39;= h \epsilon_n^{-0.58/p}\epsilon_{n-1}^{0.21/p}\epsilon_{n-2}^{-0.1/p}\]
+</p>
+  <a href="group__time.html#gab60fda586e101a8aeb69efa31c46805c">More...</a><br /></td></tr>
+<tr class="separator:gab60fda586e101a8aeb69efa31c46805c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9ae3e9b854050898f3bf5128b07c2875"><td class="memTemplParams" colspan="2">template&lt;class value_type &gt; </td></tr>
+<tr class="memitem:ga9ae3e9b854050898f3bf5128b07c2875"><td class="memTemplItemLeft" align="right" valign="top">value_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__time.html#ga9ae3e9b854050898f3bf5128b07c2875">pi_control</a> (value_type dt_old, value_type eps_0, value_type eps_1, value_type eps_2, unsigned embedded_order, unsigned order)</td></tr>
+<tr class="memdesc:ga9ae3e9b854050898f3bf5128b07c2875"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ h&#39;= h \epsilon_n^{-0.8/p}\epsilon_{n-1}^{0.31/p}\]
+</p>
+  <a href="group__time.html#ga9ae3e9b854050898f3bf5128b07c2875">More...</a><br /></td></tr>
+<tr class="separator:ga9ae3e9b854050898f3bf5128b07c2875"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac7e4186fd8d1d853624ea7446f05283e"><td class="memTemplParams" colspan="2">template&lt;class value_type &gt; </td></tr>
+<tr class="memitem:gac7e4186fd8d1d853624ea7446f05283e"><td class="memTemplItemLeft" align="right" valign="top">value_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__time.html#gac7e4186fd8d1d853624ea7446f05283e">i_control</a> (value_type dt_old, value_type eps_0, value_type eps_1, value_type eps_2, unsigned embedded_order, unsigned order)</td></tr>
+<tr class="memdesc:gac7e4186fd8d1d853624ea7446f05283e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ h&#39;= h \epsilon_n^{-1/p}\]
+</p>
+  <a href="group__time.html#gac7e4186fd8d1d853624ea7446f05283e">More...</a><br /></td></tr>
+<tr class="separator:gac7e4186fd8d1d853624ea7446f05283e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8ddda07de4b014ed14f7f8f40be08cf9"><td class="memTemplParams" colspan="2">template&lt;class Adaptive , class RHS , class ContainerType , class ErrorNorm  = get_value_type&lt;ContainerType&gt;( const ContainerType&amp;), class ControlFunction  = get_value_type&lt;ContainerType&gt; (get_value_type&lt;ContainerType&gt;, get_value_type&lt;ContainerType&gt;, get_value_type&lt;ContainerType&gt;, get_value_type&lt;ContainerType&gt;, unsigned, unsigned)&gt; </td></tr>
+<tr class="memitem:ga8ddda07de4b014ed14f7f8f40be08cf9"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__time.html#ga8ddda07de4b014ed14f7f8f40be08cf9">integrateAdaptive</a> (<a class="el" href="structdg_1_1_adaptive.html">Adaptive</a> &amp;adaptive, RHS &amp;rhs, <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt; t0, const ContainerType &amp;u0, <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt; t1, ContainerType &amp;u1, <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt; dt, ControlFunction control, ErrorNorm <a class="el" href="group__creation.html#ga9945b71a335bc97f78dc7425911c7287">norm</a>, <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt; rtol, <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt; atol=1e-10)</td></tr>
+<tr class="memdesc:ga8ddda07de4b014ed14f7f8f40be08cf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrates a differential equation using a one-step explicit Timestepper, with adaptive stepsize-control and monitoring the sanity of integration.  <a href="group__time.html#ga8ddda07de4b014ed14f7f8f40be08cf9">More...</a><br /></td></tr>
+<tr class="separator:ga8ddda07de4b014ed14f7f8f40be08cf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9548e190f99b7f0a577b3fe58ff10d86"><td class="memTemplParams" colspan="2">template&lt;class RHS , class ContainerType , class ErrorNorm  = get_value_type&lt;ContainerType&gt;( const ContainerType&amp;), class ControlFunction  = get_value_type&lt;ContainerType&gt; (get_value_type&lt;ContainerType&gt;, get_value_type&lt;ContainerType&gt;, get_value_type&lt;ContainerType&gt;, get_value_type&lt;ContainerType&gt;, unsigned, unsigned)&gt; </td></tr>
+<tr class="memitem:ga9548e190f99b7f0a577b3fe58ff10d86"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__time.html#ga9548e190f99b7f0a577b3fe58ff10d86">integrateERK</a> (std::string name, RHS &amp;rhs, <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt; t0, const ContainerType &amp;u0, <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt; t1, ContainerType &amp;u1, <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt; dt, ControlFunction control, ErrorNorm <a class="el" href="group__creation.html#ga9945b71a335bc97f78dc7425911c7287">norm</a>, <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt; rtol, <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt; atol=1e-10)</td></tr>
+<tr class="memdesc:ga9548e190f99b7f0a577b3fe58ff10d86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shortcut for <code><a class="el" href="group__time.html#ga8ddda07de4b014ed14f7f8f40be08cf9" title="Integrates a differential equation using a one-step explicit Timestepper, with adaptive stepsize-cont...">dg::integrateAdaptive</a></code> with an embedded ERK class as timestepper </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> rhs(<span class="keywordtype">double</span> t, <span class="keyword">const</span> std::array&lt;double,2&gt;&amp; y, std::array&lt;double,2&gt;&amp; yp, <span class="keywordtype">double</span> damping, <span class="keywordtype">double</span> omega_0, <span class="keywordtype">double</span> omega_drive){</div><div class="line">    <span class="comment">//damped driven harmonic oscillator</span></div><div class="line">    <span class="comment">// x -&gt; y[0] , v -&gt; y[1]</span></div><div class="line">    yp[0] = y[1];</div><div class="line">    yp[1] = -2.*damping*omega_0*y[1] - omega_0*omega_0*y[0] + sin(omega_drive*t);</div><div class="line">}</div></div><!-- fragment --><div class="fragment"><div class="line">    <span class="comment">//... in main</span></div><div class="line">    <span class="comment">//set start and end time</span></div><div class="line">    <span class="keyword">const</span> <span class="keywordtype">double</span> t_start = 0., t_end = 1.;</div><div class="line">    <span class="comment">//set physical parameters and initial condition</span></div><div class="line">    <span class="keyword">const</span> <span class="keywordtype">double</span> damping = 0.2, omega_0 = 1.0, omega_drive = 0.9;</div><div class="line">    std::array&lt;double,2&gt; u_start = solution(t_start, damping, omega_0, omega_drive), u_end(u_start);</div><div class="line">    <span class="comment">//construct a functor with the right interface</span></div><div class="line">    <span class="keyword">using namespace </span>std::placeholders; <span class="comment">//for _1, _2, _3</span></div><div class="line">    <span class="keyword">auto</span> functor = std::bind( rhs, _1, _2, _3, damping, omega_0, omega_drive);</div><div class="line">    <span class="keywordtype">double</span> dt= 0;</div><div class="line">    <span class="comment">//integration</span></div><div class="line">    <span class="keywordtype">int</span> counter = <a class="code" href="group__time.html#ga9548e190f99b7f0a577b3fe58ff10d86">dg::integrateERK</a>( <span class="stringliteral">&quot;Dormand-Prince-7-4-5&quot;</span>, functor, t_start, u_start, t_end, u_end, dt, <a class="code" href="group__time.html#gab60fda586e101a8aeb69efa31c46805c">dg::pid_control</a>, <a class="code" href="group__time.html#ga6dc9be16f5de1b06f0be3e23cd87436d">dg::l2norm</a>, 1e-6);</div><div class="line">    <span class="comment">//now compute error</span></div><div class="line">    <a class="code" href="group__blas1.html#ga5c7ddbf70dd74867e45c9d4f40b36cf7">dg::blas1::axpby</a>( 1., solution(t_end, damping, omega_0, omega_drive), -1., u_end);</div><div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;With &quot;</span>&lt;&lt;counter&lt;&lt;<span class="stringliteral">&quot;\t Dormand Prince steps norm of error is &quot;</span>&lt;&lt;sqrt(<a class="code" href="group__blas1.html#ga7b2aa636a0fe0c7d3298b9f869658919">dg::blas1::dot</a>( u_end, u_end))&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;</div></div><!-- fragment --> <a href="group__time.html#ga9548e190f99b7f0a577b3fe58ff10d86">More...</a><br /></td></tr>
+<tr class="separator:ga9548e190f99b7f0a577b3fe58ff10d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab0ca1b8d3f70004e25ddc2010f7e9e0d"><td class="memTemplParams" colspan="2">template&lt;class from_ContainerType , class ContainerType , class ... Params&gt; </td></tr>
+<tr class="memitem:gab0ca1b8d3f70004e25ddc2010f7e9e0d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__backend.html#gab0ca1b8d3f70004e25ddc2010f7e9e0d">assign</a> (const from_ContainerType &amp;from, ContainerType &amp;to, Params &amp;&amp;... ps)</td></tr>
+<tr class="memdesc:gab0ca1b8d3f70004e25ddc2010f7e9e0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic way to assign the contents of a <code>from_ContainerType</code> object to a <code>ContainerType</code> object optionally given additional parameters.  <a href="group__backend.html#gab0ca1b8d3f70004e25ddc2010f7e9e0d">More...</a><br /></td></tr>
+<tr class="separator:gab0ca1b8d3f70004e25ddc2010f7e9e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5dbfc632d4d66d2d926dd525ed7fcea8"><td class="memTemplParams" colspan="2">template&lt;class ContainerType , class from_ContainerType , class ... Params&gt; </td></tr>
+<tr class="memitem:ga5dbfc632d4d66d2d926dd525ed7fcea8"><td class="memTemplItemLeft" align="right" valign="top">ContainerType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__backend.html#ga5dbfc632d4d66d2d926dd525ed7fcea8">construct</a> (const from_ContainerType &amp;from, Params &amp;&amp;... ps)</td></tr>
+<tr class="memdesc:ga5dbfc632d4d66d2d926dd525ed7fcea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic way to construct an object of <code>ContainerType</code> given a <code>from_ContainerType</code> object and optional additional parameters.  <a href="group__backend.html#ga5dbfc632d4d66d2d926dd525ed7fcea8">More...</a><br /></td></tr>
+<tr class="separator:ga5dbfc632d4d66d2d926dd525ed7fcea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaddc055ad4bead1c127e85c0242e64d4"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__creation.html#gaaddc055ad4bead1c127e85c0242e64d4">bc2str</a> (<a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> bcx)</td></tr>
+<tr class="memdesc:gaaddc055ad4bead1c127e85c0242e64d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">write a string describing boundary condition to an output stream  <a href="group__creation.html#gaaddc055ad4bead1c127e85c0242e64d4">More...</a><br /></td></tr>
+<tr class="separator:gaaddc055ad4bead1c127e85c0242e64d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga92d83820c2595e12cdff8edb406838f1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__creation.html#ga92d83820c2595e12cdff8edb406838f1">str2bc</a> (std::string s)</td></tr>
+<tr class="memdesc:ga92d83820c2595e12cdff8edb406838f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert a string to a bc  <a href="group__creation.html#ga92d83820c2595e12cdff8edb406838f1">More...</a><br /></td></tr>
+<tr class="separator:ga92d83820c2595e12cdff8edb406838f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6331aa115bfceea681fa5ba85fa05a25"><td class="memTemplParams" colspan="2">template&lt;typename UnaryOp &gt; </td></tr>
 <tr class="memitem:ga6331aa115bfceea681fa5ba85fa05a25"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__root.html#ga6331aa115bfceea681fa5ba85fa05a25">bisection1d</a> (UnaryOp &amp;op, double &amp;x_min, double &amp;x_max, const double eps)</td></tr>
 <tr class="memdesc:ga6331aa115bfceea681fa5ba85fa05a25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a root of a 1d function in given boundaries using bisection.  <a href="group__root.html#ga6331aa115bfceea681fa5ba85fa05a25">More...</a><br /></td></tr>
 <tr class="separator:ga6331aa115bfceea681fa5ba85fa05a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga15213ce3b66c2d24d60d064a2871917d"><td class="memTemplParams" colspan="2">template&lt;unsigned s, class RHS , class ContainerType &gt; </td></tr>
-<tr class="memitem:ga15213ce3b66c2d24d60d064a2871917d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__time.html#ga15213ce3b66c2d24d60d064a2871917d">stepperRK</a> (RHS &amp;rhs, <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt; t_begin, const ContainerType &amp;begin, <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt; t_end, ContainerType &amp;end, unsigned N)</td></tr>
-<tr class="memdesc:ga15213ce3b66c2d24d60d064a2871917d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrate differential equation with a stage s Runge-Kutta scheme and a fixed number of steps.  <a href="group__time.html#ga15213ce3b66c2d24d60d064a2871917d">More...</a><br /></td></tr>
-<tr class="separator:ga15213ce3b66c2d24d60d064a2871917d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad6229d5ae4b046d09c402cdab727d207"><td class="memTemplParams" colspan="2">template&lt;unsigned s, class RHS , class ContainerType &gt; </td></tr>
-<tr class="memitem:gad6229d5ae4b046d09c402cdab727d207"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__time.html#gad6229d5ae4b046d09c402cdab727d207">integrateRK</a> (RHS &amp;rhs, <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt; t_begin, const ContainerType &amp;begin, <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt; t_end, ContainerType &amp;end, <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt; eps_abs, unsigned NT_init=2)</td></tr>
-<tr class="memdesc:gad6229d5ae4b046d09c402cdab727d207"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrates the differential equation using a stage s Runge-Kutta scheme, a rudimentary stepsize-control and monitoring the sanity of integration.  <a href="group__time.html#gad6229d5ae4b046d09c402cdab727d207">More...</a><br /></td></tr>
-<tr class="separator:gad6229d5ae4b046d09c402cdab727d207"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:gad248d03c048ec1f0514d4da553779cf5"><td class="memTemplParams" colspan="2">template&lt;class thrust_vector1 , class thrust_vector2 &gt; </td></tr>
-<tr class="memitem:gad248d03c048ec1f0514d4da553779cf5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__scatter.html#gad248d03c048ec1f0514d4da553779cf5">split</a> (const thrust_vector1 &amp;in, std::vector&lt; thrust_vector2 &gt; &amp;out, const <a class="el" href="group__gridtypes.html#ga534001144a75391bd6311a94f1dc6320">aTopology3d</a> &amp;grid)</td></tr>
-<tr class="memdesc:gad248d03c048ec1f0514d4da553779cf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Split a vector into planes.  <a href="group__scatter.html#gad248d03c048ec1f0514d4da553779cf5">More...</a><br /></td></tr>
-<tr class="separator:gad248d03c048ec1f0514d4da553779cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac424c8a0b8a098cb56380424cdf4b345"><td class="memTemplParams" colspan="2">template&lt;class thrust_vector1 , class thrust_vector2 &gt; </td></tr>
-<tr class="memitem:gac424c8a0b8a098cb56380424cdf4b345"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__scatter.html#gac424c8a0b8a098cb56380424cdf4b345">split</a> (const <a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt; thrust_vector1 &gt; &amp;in, std::vector&lt; <a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt; thrust_vector2 &gt; &gt; &amp;out, const <a class="el" href="group__gridtypes.html#gab52aaf1578631594a9423e604b2e1232">aMPITopology3d</a> &amp;grid)</td></tr>
-<tr class="memdesc:gac424c8a0b8a098cb56380424cdf4b345"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI Version of split.  <a href="group__scatter.html#gac424c8a0b8a098cb56380424cdf4b345">More...</a><br /></td></tr>
-<tr class="separator:gac424c8a0b8a098cb56380424cdf4b345"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga152f3e19ab6de8779795ebbac5264d22"><td class="memTemplParams" colspan="2">template&lt;class thrust_vector1 , class thrust_vector2 &gt; </td></tr>
-<tr class="memitem:ga152f3e19ab6de8779795ebbac5264d22"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__scatter.html#ga152f3e19ab6de8779795ebbac5264d22">join</a> (const std::vector&lt; thrust_vector1 &gt; &amp;in, thrust_vector2 &amp;out, const <a class="el" href="group__gridtypes.html#ga534001144a75391bd6311a94f1dc6320">aTopology3d</a> &amp;grid)</td></tr>
-<tr class="memdesc:ga152f3e19ab6de8779795ebbac5264d22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Revert split operation.  <a href="group__scatter.html#ga152f3e19ab6de8779795ebbac5264d22">More...</a><br /></td></tr>
-<tr class="separator:ga152f3e19ab6de8779795ebbac5264d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga218937241fac17d1c7a8bcff2030e525"><td class="memTemplParams" colspan="2">template&lt;class thrust_vector1 , class thrust_vector2 &gt; </td></tr>
-<tr class="memitem:ga218937241fac17d1c7a8bcff2030e525"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__scatter.html#ga218937241fac17d1c7a8bcff2030e525">join</a> (const std::vector&lt; <a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt; thrust_vector1 &gt; &gt; &amp;in, <a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt; thrust_vector2 &gt; &amp;out, const <a class="el" href="group__gridtypes.html#gab52aaf1578631594a9423e604b2e1232">aMPITopology3d</a> &amp;grid)</td></tr>
-<tr class="memdesc:ga218937241fac17d1c7a8bcff2030e525"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI Version of join.  <a href="group__scatter.html#ga218937241fac17d1c7a8bcff2030e525">More...</a><br /></td></tr>
-<tr class="separator:ga218937241fac17d1c7a8bcff2030e525"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1b3aa83f9b7e90dbbd3cdac88654e04b"><td class="memTemplParams" colspan="2">template&lt;class RHS , class ContainerType &gt; </td></tr>
+<tr class="memitem:ga1b3aa83f9b7e90dbbd3cdac88654e04b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__time.html#ga1b3aa83f9b7e90dbbd3cdac88654e04b">stepperRK</a> (<a class="el" href="structdg_1_1_converts_to_butcher_tableau.html">ConvertsToButcherTableau</a>&lt; <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt;&gt; tableau, RHS &amp;rhs, <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt; t_begin, const ContainerType &amp;begin, <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; ContainerType &gt; t_end, ContainerType &amp;end, unsigned N)</td></tr>
+<tr class="memdesc:ga1b3aa83f9b7e90dbbd3cdac88654e04b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrate differential equation with an explicit Runge-Kutta scheme and a fixed number of steps.  <a href="group__time.html#ga1b3aa83f9b7e90dbbd3cdac88654e04b">More...</a><br /></td></tr>
+<tr class="separator:ga1b3aa83f9b7e90dbbd3cdac88654e04b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb7a5e956e97daec026c30a79ab6d5d8"><td class="memTemplParams" colspan="2">template&lt;class MPIContainer &gt; </td></tr>
+<tr class="memitem:acb7a5e956e97daec026c30a79ab6d5d8"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedg.html#acb7a5e956e97daec026c30a79ab6d5d8">get_mpi_view_type</a> = typename std::conditional&lt; std::is_const&lt; MPIContainer &gt;::value, <a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt; <a class="el" href="structdg_1_1_view.html">View</a>&lt; const typename MPIContainer::container_type &gt; &gt;, <a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt; <a class="el" href="structdg_1_1_view.html">View</a>&lt; typename MPIContainer::container_type &gt; &gt; &gt;::type</td></tr>
+<tr class="separator:acb7a5e956e97daec026c30a79ab6d5d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4275df839eb577fb71d48017170d0e67"><td class="memTemplParams" colspan="2">template&lt;class SharedContainer &gt; </td></tr>
+<tr class="memitem:ga4275df839eb577fb71d48017170d0e67"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__scatter.html#ga4275df839eb577fb71d48017170d0e67">split</a> (SharedContainer &amp;in, std::vector&lt; <a class="el" href="structdg_1_1_view.html">View</a>&lt; SharedContainer &gt;&gt; &amp;out, const <a class="el" href="group__gridtypes.html#ga534001144a75391bd6311a94f1dc6320">aTopology3d</a> &amp;grid)</td></tr>
+<tr class="memdesc:ga4275df839eb577fb71d48017170d0e67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Split a vector into planes along the last dimension (fast version)  <a href="group__scatter.html#ga4275df839eb577fb71d48017170d0e67">More...</a><br /></td></tr>
+<tr class="separator:ga4275df839eb577fb71d48017170d0e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08316df93eaabd70bd006ca6ad4a13f0"><td class="memTemplParams" colspan="2">template&lt;class SharedContainer &gt; </td></tr>
+<tr class="memitem:a08316df93eaabd70bd006ca6ad4a13f0"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structdg_1_1_view.html">View</a>&lt; SharedContainer &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedg.html#a08316df93eaabd70bd006ca6ad4a13f0">split</a> (SharedContainer &amp;in, const <a class="el" href="group__gridtypes.html#ga534001144a75391bd6311a94f1dc6320">aTopology3d</a> &amp;grid)</td></tr>
+<tr class="memdesc:a08316df93eaabd70bd006ca6ad4a13f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Split a vector into planes along the last dimension (construct version)  <a href="#a08316df93eaabd70bd006ca6ad4a13f0">More...</a><br /></td></tr>
+<tr class="separator:a08316df93eaabd70bd006ca6ad4a13f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16d3fd96a974a4e2aa921b60e04263fc"><td class="memTemplParams" colspan="2">template&lt;class MPIContainer &gt; </td></tr>
+<tr class="memitem:a16d3fd96a974a4e2aa921b60e04263fc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedg.html#a16d3fd96a974a4e2aa921b60e04263fc">split</a> (MPIContainer &amp;in, std::vector&lt; <a class="el" href="namespacedg.html#acb7a5e956e97daec026c30a79ab6d5d8">get_mpi_view_type</a>&lt; MPIContainer &gt; &gt; &amp;out, const <a class="el" href="group__gridtypes.html#gab52aaf1578631594a9423e604b2e1232">aMPITopology3d</a> &amp;grid)</td></tr>
+<tr class="memdesc:a16d3fd96a974a4e2aa921b60e04263fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI Version of split (fast version)  <a href="#a16d3fd96a974a4e2aa921b60e04263fc">More...</a><br /></td></tr>
+<tr class="separator:a16d3fd96a974a4e2aa921b60e04263fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67700f4f3546f7b2db7748106d89ba4b"><td class="memTemplParams" colspan="2">template&lt;class MPIContainer &gt; </td></tr>
+<tr class="memitem:a67700f4f3546f7b2db7748106d89ba4b"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacedg.html#acb7a5e956e97daec026c30a79ab6d5d8">get_mpi_view_type</a>&lt; MPIContainer &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedg.html#a67700f4f3546f7b2db7748106d89ba4b">split</a> (MPIContainer &amp;in, const <a class="el" href="group__gridtypes.html#gab52aaf1578631594a9423e604b2e1232">aMPITopology3d</a> &amp;grid)</td></tr>
+<tr class="memdesc:a67700f4f3546f7b2db7748106d89ba4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI Version of split (construct version)  <a href="#a67700f4f3546f7b2db7748106d89ba4b">More...</a><br /></td></tr>
+<tr class="separator:a67700f4f3546f7b2db7748106d89ba4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This is the namespace for all functions and classes defined and used by the discontinuous Galerkin solvers. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="acb7a5e956e97daec026c30a79ab6d5d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb7a5e956e97daec026c30a79ab6d5d8">&#9670;&nbsp;</a></span>get_mpi_view_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MPIContainer &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacedg.html#acb7a5e956e97daec026c30a79ab6d5d8">dg::get_mpi_view_type</a> = typedef typename std::conditional&lt; std::is_const&lt;MPIContainer&gt;::value, <a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt;<a class="el" href="structdg_1_1_view.html">View</a>&lt;const typename MPIContainer::container_type&gt; &gt;, <a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt;<a class="el" href="structdg_1_1_view.html">View</a>&lt;typename MPIContainer::container_type&gt; &gt; &gt;::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="a9e848863390f76fbb67e06d12ddd1dd8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9e848863390f76fbb67e06d12ddd1dd8">&#9670;&nbsp;</a></span>interpolate()</h2>
 
@@ -1233,13 +1530,162 @@ template&lt;class real_type &gt; </div>
 
 </div>
 </div>
+<a id="a08316df93eaabd70bd006ca6ad4a13f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08316df93eaabd70bd006ca6ad4a13f0">&#9670;&nbsp;</a></span>split() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class SharedContainer &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="structdg_1_1_view.html">View</a>&lt;SharedContainer&gt; &gt; dg::split </td>
+          <td>(</td>
+          <td class="paramtype">SharedContainer &amp;&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__gridtypes.html#ga534001144a75391bd6311a94f1dc6320">aTopology3d</a> &amp;&#160;</td>
+          <td class="paramname"><em>grid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Split a vector into planes along the last dimension (construct version) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">in</td><td>contiguous 3d vector (must be of size <code>grid.size()</code>) </td></tr>
+    <tr><td class="paramname">grid</td><td>provide dimensions in 3rd and first two dimensions </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>out</code> contains <code>grid.Nz()</code> 2d vector views of 2d size on output </dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">SharedContainer</td><td><code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> exists for this class and the <code>tensor_category</code> derives from <code><a class="el" href="structdg_1_1_shared_vector_tag.html" title="Indicate a contiguous chunk of shared memory. ">SharedVectorTag</a></code> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a16d3fd96a974a4e2aa921b60e04263fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16d3fd96a974a4e2aa921b60e04263fc">&#9670;&nbsp;</a></span>split() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MPIContainer &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void dg::split </td>
+          <td>(</td>
+          <td class="paramtype">MPIContainer &amp;&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespacedg.html#acb7a5e956e97daec026c30a79ab6d5d8">get_mpi_view_type</a>&lt; MPIContainer &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__gridtypes.html#gab52aaf1578631594a9423e604b2e1232">aMPITopology3d</a> &amp;&#160;</td>
+          <td class="paramname"><em>grid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MPI Version of split (fast version) </p>
+<dl class="section note"><dt>Note</dt><dd>every plane in <code>out</code> must hold a 2d Cartesian MPI_Communicator congruent (same process group) or ident (same process group, same context) with the communicator in <code>grid</code> </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>This version will NOT adapt the communicators in <code>out</code> </dd>
+<dd>
+out will NOT be resized </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">in</td><td>contiguous 3d vector (must be of size <code>grid.size()</code>) </td></tr>
+    <tr><td class="paramname">out</td><td>contains <code>grid.Nz()</code> 2d vector views of 2d size on output </td></tr>
+    <tr><td class="paramname">grid</td><td>provide dimensions in 3rd and first two dimensions </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">MPIContainer</td><td>An <a class="el" href="structdg_1_1_m_p_i___vector.html" title="mpi Vector class ">MPI_Vector</a> of a <code>SharedContainer</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a67700f4f3546f7b2db7748106d89ba4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67700f4f3546f7b2db7748106d89ba4b">&#9670;&nbsp;</a></span>split() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class MPIContainer &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="namespacedg.html#acb7a5e956e97daec026c30a79ab6d5d8">get_mpi_view_type</a>&lt;MPIContainer&gt; &gt; dg::split </td>
+          <td>(</td>
+          <td class="paramtype">MPIContainer &amp;&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__gridtypes.html#gab52aaf1578631594a9423e604b2e1232">aMPITopology3d</a> &amp;&#160;</td>
+          <td class="paramname"><em>grid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MPI Version of split (construct version) </p>
+<p>may take longer due to the many calls to MPI group creation functions </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">in</td><td>contiguous 3d vector (must be of size <code>grid.size()</code>) </td></tr>
+    <tr><td class="paramname">grid</td><td>provide dimensions in 3rd and first two dimensions </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>out</code> contains <code>grid.Nz()</code> 2d vector views of 2d size on output </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>two seperately split vectors have congruent (not identical) MPI_Communicators Note here the MPI concept of congruent (same process group, different contexts) vs. identical (same process group, same context) communicators. </dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">MPIContainer</td><td>An <a class="el" href="structdg_1_1_m_p_i___vector.html" title="mpi Vector class ">MPI_Vector</a> of a <code>SharedContainer</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

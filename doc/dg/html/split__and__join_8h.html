@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
-<title>Discontinuous Galerkin Library: geometry/split_and_join.h File Reference</title>
+<title>Discontinuous Galerkin Library: topology/split_and_join.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -105,41 +105,10 @@ $(document).ready(function(){initNavTree('split__and__join_8h.html','');});
 <div class="textblock"><code>#include &lt;thrust/host_vector.h&gt;</code><br />
 <code>#include &lt;thrust/device_vector.h&gt;</code><br />
 <code>#include &quot;dg/backend/blas1_dispatch_shared.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="view_8h_source.html">dg/backend/view.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="grid_8h_source.html">grid.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mpi__vector_8h_source.html">dg/backend/mpi_vector.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mpi__grid_8h_source.html">mpi_grid.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for split_and_join.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="split__and__join_8h__incl.png" border="0" usemap="#geometry_2split__and__join_8h" alt=""/></div>
-<map name="geometry_2split__and__join_8h" id="geometry_2split__and__join_8h">
-<area shape="rect" id="node5" href="grid_8h.html" title="base topology classes " alt="" coords="1171,184,1226,211"/>
-<area shape="rect" id="node19" href="mpi__vector_8h.html" title="dg/backend/mpi_vector.h" alt="" coords="712,184,880,211"/>
-<area shape="rect" id="node35" href="mpi__grid_8h.html" title="MPI Grid objects. " alt="" coords="1157,102,1240,129"/>
-<area shape="rect" id="node8" href="topological__traits_8h.html" title="topological_traits.h" alt="" coords="1247,259,1377,285"/>
-<area shape="rect" id="node9" href="dlt_8h.html" title="contains the discrete legendre trafo class " alt="" coords="1175,259,1222,285"/>
-<area shape="rect" id="node17" href="enums_8h.html" title="enums " alt="" coords="1402,259,1486,285"/>
-<area shape="rect" id="node14" href="exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="1327,333,1494,360"/>
-<area shape="rect" id="node21" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/mpi__accumulate_8h.html" title="exblas/mpi_accumulate.h" alt="" coords="299,259,469,285"/>
-<area shape="rect" id="node24" href="tensor__traits_8h.html" title="tensor_traits.h" alt="" coords="494,259,599,285"/>
-<area shape="rect" id="node32" href="mpi__communicator_8h.html" title="mpi_communicator.h" alt="" coords="814,259,957,285"/>
-<area shape="rect" id="node34" href="memory_8h.html" title="memory.h" alt="" coords="981,259,1061,285"/>
-<area shape="rect" id="node22" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/accumulate_8h.html" title="accumulate.h" alt="" coords="67,333,167,360"/>
-<area shape="rect" id="node23" doxygen="/home/matthias/Projekte/feltor/doc/exblas.tag:../../exblas/html/" href="../../exblas/html/config_8h.html" title="config.h" alt="" coords="83,408,151,435"/>
-<area shape="rect" id="node27" href="scalar__categories_8h.html" title="scalar_categories.h" alt="" coords="191,333,326,360"/>
-<area shape="rect" id="node28" href="vector__categories_8h.html" title="vector_categories.h" alt="" coords="644,408,780,435"/>
-<area shape="rect" id="node29" href="matrix__categories_8h.html" title="matrix_categories.h" alt="" coords="696,483,832,509"/>
-<area shape="rect" id="node30" href="execution__policy_8h.html" title="execution_policy.h" alt="" coords="351,333,481,360"/>
-</map>
-</div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="split__and__join_8h__dep__incl.png" border="0" usemap="#geometry_2split__and__join_8hdep" alt=""/></div>
-<map name="geometry_2split__and__join_8hdep" id="geometry_2split__and__join_8hdep">
-<area shape="rect" id="node2" href="algorithm_8h.html" title="algorithm.h" alt="" coords="28,95,115,121"/>
-</map>
-</div>
 </div>
 <p><a href="split__and__join_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -148,34 +117,33 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacedg"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg.html">dg</a></td></tr>
 <tr class="memdesc:namespacedg"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the namespace for all functions and classes defined and used by the discontinuous Galerkin solvers. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:gad248d03c048ec1f0514d4da553779cf5"><td class="memTemplParams" colspan="2">template&lt;class thrust_vector1 , class thrust_vector2 &gt; </td></tr>
-<tr class="memitem:gad248d03c048ec1f0514d4da553779cf5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__scatter.html#gad248d03c048ec1f0514d4da553779cf5">dg::split</a> (const thrust_vector1 &amp;in, std::vector&lt; thrust_vector2 &gt; &amp;out, const aTopology3d &amp;grid)</td></tr>
-<tr class="memdesc:gad248d03c048ec1f0514d4da553779cf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Split a vector into planes.  <a href="group__scatter.html#gad248d03c048ec1f0514d4da553779cf5">More...</a><br /></td></tr>
-<tr class="separator:gad248d03c048ec1f0514d4da553779cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac424c8a0b8a098cb56380424cdf4b345"><td class="memTemplParams" colspan="2">template&lt;class thrust_vector1 , class thrust_vector2 &gt; </td></tr>
-<tr class="memitem:gac424c8a0b8a098cb56380424cdf4b345"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__scatter.html#gac424c8a0b8a098cb56380424cdf4b345">dg::split</a> (const MPI_Vector&lt; thrust_vector1 &gt; &amp;in, std::vector&lt; MPI_Vector&lt; thrust_vector2 &gt; &gt; &amp;out, const aMPITopology3d &amp;grid)</td></tr>
-<tr class="memdesc:gac424c8a0b8a098cb56380424cdf4b345"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI Version of split.  <a href="group__scatter.html#gac424c8a0b8a098cb56380424cdf4b345">More...</a><br /></td></tr>
-<tr class="separator:gac424c8a0b8a098cb56380424cdf4b345"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga152f3e19ab6de8779795ebbac5264d22"><td class="memTemplParams" colspan="2">template&lt;class thrust_vector1 , class thrust_vector2 &gt; </td></tr>
-<tr class="memitem:ga152f3e19ab6de8779795ebbac5264d22"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__scatter.html#ga152f3e19ab6de8779795ebbac5264d22">dg::join</a> (const std::vector&lt; thrust_vector1 &gt; &amp;in, thrust_vector2 &amp;out, const aTopology3d &amp;grid)</td></tr>
-<tr class="memdesc:ga152f3e19ab6de8779795ebbac5264d22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Revert split operation.  <a href="group__scatter.html#ga152f3e19ab6de8779795ebbac5264d22">More...</a><br /></td></tr>
-<tr class="separator:ga152f3e19ab6de8779795ebbac5264d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga218937241fac17d1c7a8bcff2030e525"><td class="memTemplParams" colspan="2">template&lt;class thrust_vector1 , class thrust_vector2 &gt; </td></tr>
-<tr class="memitem:ga218937241fac17d1c7a8bcff2030e525"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__scatter.html#ga218937241fac17d1c7a8bcff2030e525">dg::join</a> (const std::vector&lt; MPI_Vector&lt; thrust_vector1 &gt; &gt; &amp;in, MPI_Vector&lt; thrust_vector2 &gt; &amp;out, const aMPITopology3d &amp;grid)</td></tr>
-<tr class="memdesc:ga218937241fac17d1c7a8bcff2030e525"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI Version of join.  <a href="group__scatter.html#ga218937241fac17d1c7a8bcff2030e525">More...</a><br /></td></tr>
-<tr class="separator:ga218937241fac17d1c7a8bcff2030e525"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb7a5e956e97daec026c30a79ab6d5d8"><td class="memTemplParams" colspan="2">template&lt;class MPIContainer &gt; </td></tr>
+<tr class="memitem:acb7a5e956e97daec026c30a79ab6d5d8"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedg.html#acb7a5e956e97daec026c30a79ab6d5d8">dg::get_mpi_view_type</a> = typename std::conditional&lt; std::is_const&lt; MPIContainer &gt;::value, MPI_Vector&lt; View&lt; const typename MPIContainer::container_type &gt; &gt;, MPI_Vector&lt; View&lt; typename MPIContainer::container_type &gt; &gt; &gt;::type</td></tr>
+<tr class="separator:acb7a5e956e97daec026c30a79ab6d5d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4275df839eb577fb71d48017170d0e67"><td class="memTemplParams" colspan="2">template&lt;class SharedContainer &gt; </td></tr>
+<tr class="memitem:ga4275df839eb577fb71d48017170d0e67"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__scatter.html#ga4275df839eb577fb71d48017170d0e67">dg::split</a> (SharedContainer &amp;in, std::vector&lt; View&lt; SharedContainer &gt;&gt; &amp;out, const aTopology3d &amp;grid)</td></tr>
+<tr class="memdesc:ga4275df839eb577fb71d48017170d0e67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Split a vector into planes along the last dimension (fast version)  <a href="group__scatter.html#ga4275df839eb577fb71d48017170d0e67">More...</a><br /></td></tr>
+<tr class="separator:ga4275df839eb577fb71d48017170d0e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08316df93eaabd70bd006ca6ad4a13f0"><td class="memTemplParams" colspan="2">template&lt;class SharedContainer &gt; </td></tr>
+<tr class="memitem:a08316df93eaabd70bd006ca6ad4a13f0"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; View&lt; SharedContainer &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedg.html#a08316df93eaabd70bd006ca6ad4a13f0">dg::split</a> (SharedContainer &amp;in, const aTopology3d &amp;grid)</td></tr>
+<tr class="memdesc:a08316df93eaabd70bd006ca6ad4a13f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Split a vector into planes along the last dimension (construct version)  <a href="namespacedg.html#a08316df93eaabd70bd006ca6ad4a13f0">More...</a><br /></td></tr>
+<tr class="separator:a08316df93eaabd70bd006ca6ad4a13f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16d3fd96a974a4e2aa921b60e04263fc"><td class="memTemplParams" colspan="2">template&lt;class MPIContainer &gt; </td></tr>
+<tr class="memitem:a16d3fd96a974a4e2aa921b60e04263fc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedg.html#a16d3fd96a974a4e2aa921b60e04263fc">dg::split</a> (MPIContainer &amp;in, std::vector&lt; get_mpi_view_type&lt; MPIContainer &gt; &gt; &amp;out, const aMPITopology3d &amp;grid)</td></tr>
+<tr class="memdesc:a16d3fd96a974a4e2aa921b60e04263fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI Version of split (fast version)  <a href="namespacedg.html#a16d3fd96a974a4e2aa921b60e04263fc">More...</a><br /></td></tr>
+<tr class="separator:a16d3fd96a974a4e2aa921b60e04263fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67700f4f3546f7b2db7748106d89ba4b"><td class="memTemplParams" colspan="2">template&lt;class MPIContainer &gt; </td></tr>
+<tr class="memitem:a67700f4f3546f7b2db7748106d89ba4b"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; get_mpi_view_type&lt; MPIContainer &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedg.html#a67700f4f3546f7b2db7748106d89ba4b">dg::split</a> (MPIContainer &amp;in, const aMPITopology3d &amp;grid)</td></tr>
+<tr class="memdesc:a67700f4f3546f7b2db7748106d89ba4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI Version of split (construct version)  <a href="namespacedg.html#a67700f4f3546f7b2db7748106d89ba4b">More...</a><br /></td></tr>
+<tr class="separator:a67700f4f3546f7b2db7748106d89ba4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_e3380d2178455503f266746fb14246a5.html">geometry</a></li><li class="navelem"><a class="el" href="split__and__join_8h.html">split_and_join.h</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
+    <li class="navelem"><a class="el" href="dir_84497794bb37d283dbd68163bed8ef05.html">topology</a></li><li class="navelem"><a class="el" href="split__and__join_8h.html">split_and_join.h</a></li>
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

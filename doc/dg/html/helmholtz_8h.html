@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -98,7 +98,8 @@ $(document).ready(function(){initNavTree('helmholtz_8h.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">helmholtz.h File Reference</div>  </div>
 </div><!--header-->
@@ -109,62 +110,19 @@ $(document).ready(function(){initNavTree('helmholtz_8h.html','');});
 <div class="textblock"><code>#include &lt;cassert&gt;</code><br />
 <code>#include &quot;<a class="el" href="blas_8h_source.html">blas.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="elliptic_8h_source.html">elliptic.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for helmholtz.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="helmholtz_8h__incl.png" border="0" usemap="#helmholtz_8h" alt=""/></div>
-<map name="helmholtz_8h" id="helmholtz_8h">
-<area shape="rect" id="node3" href="blas_8h.html" title="blas.h" alt="" coords="3017,229,3074,256"/>
-<area shape="rect" id="node36" href="elliptic_8h.html" title="General negative elliptic operators. " alt="" coords="3744,80,3814,107"/>
-<area shape="rect" id="node4" href="blas1_8h.html" title="blas1.h" alt="" coords="2463,379,2527,405"/>
-<area shape="rect" id="node22" href="blas2_8h.html" title="blas2.h" alt="" coords="971,379,1035,405"/>
-<area shape="rect" id="node30" href="typedefs_8h.html" title="Useful typedefs of commonly used types. " alt="" coords="3258,304,3394,331"/>
-<area shape="rect" id="node6" href="tensor__traits_8h.html" title="backend/tensor_traits.h" alt="" coords="1660,543,1818,569"/>
-<area shape="rect" id="node7" href="tensor__traits__scalar_8h.html" title="backend/tensor_traits\l_scalar.h" alt="" coords="1614,453,1760,495"/>
-<area shape="rect" id="node8" href="tensor__traits__thrust_8h.html" title="backend/tensor_traits\l_thrust.h" alt="" coords="1784,453,1931,495"/>
-<area shape="rect" id="node11" href="tensor__traits__cusp_8h.html" title="backend/tensor_traits\l_cusp.h" alt="" coords="2006,453,2152,495"/>
-<area shape="rect" id="node12" href="tensor__traits__std_8h.html" title="backend/tensor_traits\l_std.h" alt="" coords="1392,453,1539,495"/>
-<area shape="rect" id="node15" href="mpi__vector_8h.html" title="backend/mpi_vector.h" alt="" coords="3564,461,3714,487"/>
-<area shape="rect" id="node19" href="subroutines_8h.html" title="subroutines.h" alt="" coords="3289,461,3389,487"/>
-<area shape="rect" id="node16" href="memory_8h.html" title="memory.h" alt="" coords="3156,543,3236,569"/>
-<area shape="rect" id="node20" href="functions_8h.html" title="contains some utility functions for the evaluation() routines " alt="" coords="3260,543,3423,569"/>
-<area shape="rect" id="node31" href="sparseblockmat_8h.html" title="sparseblockmat.h" alt="" coords="3414,461,3539,487"/>
-<area shape="rect" id="node34" href="sparseblockmat_8cuh.html" title="sparseblockmat.cuh" alt="" coords="3150,379,3288,405"/>
-<area shape="rect" id="node35" href="mpi__matrix_8h.html" title="MPI matrix classes. " alt="" coords="3364,379,3461,405"/>
-<area shape="rect" id="node33" href="exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="3812,617,3908,644"/>
-<area shape="rect" id="node37" href="enums_8h.html" title="enums " alt="" coords="4266,543,4338,569"/>
-<area shape="rect" id="node39" href="evaluation_8h.html" title="Function discretization routines. " alt="" coords="3892,379,4042,405"/>
-<area shape="rect" id="node41" href="derivatives_8h.html" title="Convenience functions to create 2D derivatives. " alt="" coords="4247,229,4402,256"/>
-<area shape="rect" id="node44" href="mpi__derivatives_8h.html" title="geometry/mpi_derivatives.h" alt="" coords="3366,155,3549,181"/>
-<area shape="rect" id="node46" href="mpi__evaluation_8h.html" title="Function discretization routines for mpi vectors. " alt="" coords="3726,304,3904,331"/>
-<area shape="rect" id="node47" href="geometry_8h.html" title="geometry/geometry.h" alt="" coords="4010,229,4156,256"/>
-<area shape="rect" id="node40" href="grid_8h.html" title="base topology classes " alt="" coords="4196,461,4250,487"/>
-<area shape="rect" id="node42" href="dx_8h.html" title="Simple 1d derivatives. " alt="" coords="4366,304,4413,331"/>
-<area shape="rect" id="node43" href="weights_8h.html" title="contains creation functions for integration weights and their inverse " alt="" coords="4193,379,4272,405"/>
-<area shape="rect" id="node45" href="mpi__grid_8h.html" title="MPI Grid objects. " alt="" coords="4067,379,4150,405"/>
-<area shape="rect" id="node48" href="mpi__weights_8h.html" title="contains MPI weights " alt="" coords="4030,304,4136,331"/>
-<area shape="rect" id="node49" href="base__geometry_8h.html" title="base_geometry.h" alt="" coords="4438,304,4560,331"/>
-<area shape="rect" id="node50" href="base__geometry_x_8h.html" title="base_geometryX.h" alt="" coords="4160,304,4291,331"/>
-</map>
-</div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="helmholtz_8h__dep__incl.png" border="0" usemap="#helmholtz_8hdep" alt=""/></div>
-<map name="helmholtz_8hdep" id="helmholtz_8hdep">
-<area shape="rect" id="node2" href="algorithm_8h.html" title="algorithm.h" alt="" coords="7,80,93,107"/>
-</map>
-</div>
 </div>
 <p><a href="helmholtz_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz.html">dg::Helmholtz&lt; Geometry, Matrix, container &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz.html">dg::Helmholtz&lt; Geometry, Matrix, Container &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix class that represents a Helmholtz-type operator.  <a href="structdg_1_1_helmholtz.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html">dg::Helmholtz2&lt; Geometry, Matrix, container &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix class that represents a more general Helmholtz-type operator.  <a href="structdg_1_1_helmholtz2.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz3d.html">dg::Helmholtz3d&lt; Geometry, Matrix, Container &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix class that represents a 3d Helmholtz-type operator.  <a href="structdg_1_1_helmholtz3d.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html">dg::Helmholtz2&lt; Geometry, Matrix, Container &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">DEPRECATED, Matrix class that represents a more general Helmholtz-type operator.  <a href="structdg_1_1_helmholtz2.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -172,6 +130,13 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacedg"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg.html">dg</a></td></tr>
 <tr class="memdesc:namespacedg"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the namespace for all functions and classes defined and used by the discontinuous Galerkin solvers. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga97e96ca43b1ba76d3f820afc72b1d753"><td class="memTemplParams" colspan="2">template&lt;class Geometry , class Matrix , class Container &gt; </td></tr>
+<tr class="memitem:ga97e96ca43b1ba76d3f820afc72b1d753"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__matrixoperators.html#ga97e96ca43b1ba76d3f820afc72b1d753">dg::Helmholtz2d</a> = Helmholtz&lt; Geometry, Matrix, Container &gt;</td></tr>
+<tr class="memdesc:ga97e96ca43b1ba76d3f820afc72b1d753"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix class that represents a Helmholtz-type operator.  <a href="group__matrixoperators.html#ga97e96ca43b1ba76d3f820afc72b1d753">More...</a><br /></td></tr>
+<tr class="separator:ga97e96ca43b1ba76d3f820afc72b1d753"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>contains Helmholtz and Maxwell operators </p>
@@ -181,7 +146,7 @@ Namespaces</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="helmholtz_8h.html">helmholtz.h</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

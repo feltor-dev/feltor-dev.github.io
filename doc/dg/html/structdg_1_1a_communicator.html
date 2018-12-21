@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -113,27 +113,33 @@ $(document).ready(function(){initNavTree('structdg_1_1a_communicator.html','');}
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:acf1b0599056bd3f22b374dcde9b1f213"><td class="memItemLeft" align="right" valign="top">typedef LocalContainer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_communicator.html#acf1b0599056bd3f22b374dcde9b1f213">container_type</a></td></tr>
-<tr class="memdesc:acf1b0599056bd3f22b374dcde9b1f213"><td class="mdescLeft">&#160;</td><td class="mdescRight">reveal local container type  <a href="#acf1b0599056bd3f22b374dcde9b1f213">More...</a><br /></td></tr>
-<tr class="separator:acf1b0599056bd3f22b374dcde9b1f213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b3761c8938941ad409b0e5ae8f396ba"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_communicator.html#a6b3761c8938941ad409b0e5ae8f396ba">value_type</a> = <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; LocalContainer &gt;</td></tr>
+<tr class="memdesc:a6b3761c8938941ad409b0e5ae8f396ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">reveal value type  <a href="#a6b3761c8938941ad409b0e5ae8f396ba">More...</a><br /></td></tr>
+<tr class="separator:a6b3761c8938941ad409b0e5ae8f396ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5edbb00e9845d00160d9aa75c9bd80da"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_communicator.html#a5edbb00e9845d00160d9aa75c9bd80da">container_type</a> = LocalContainer</td></tr>
+<tr class="memdesc:a5edbb00e9845d00160d9aa75c9bd80da"><td class="mdescLeft">&#160;</td><td class="mdescRight">reveal local container type  <a href="#a5edbb00e9845d00160d9aa75c9bd80da">More...</a><br /></td></tr>
+<tr class="separator:a5edbb00e9845d00160d9aa75c9bd80da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9a29bf560157c2d0a81d4ce96b1a0634"><td class="memItemLeft" align="right" valign="top">LocalContainer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_communicator.html#a9a29bf560157c2d0a81d4ce96b1a0634">allocate_buffer</a> () const</td></tr>
-<tr class="memdesc:a9a29bf560157c2d0a81d4ce96b1a0634"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a buffer object of size <code><a class="el" href="structdg_1_1a_communicator.html#a0553786aac2eb96308ec386e22ff6f3a" title="The size of the local buffer vector w = local map size. ">size()</a></code>  <a href="#a9a29bf560157c2d0a81d4ce96b1a0634">More...</a><br /></td></tr>
+<tr class="memdesc:a9a29bf560157c2d0a81d4ce96b1a0634"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a buffer object of size <code><a class="el" href="structdg_1_1a_communicator.html#a7c0b8733751b2b82449a54676e4f0397" title="The local size of the buffer vector w = local map size. ">buffer_size()</a></code>  <a href="#a9a29bf560157c2d0a81d4ce96b1a0634">More...</a><br /></td></tr>
 <tr class="separator:a9a29bf560157c2d0a81d4ce96b1a0634"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab47cff828dccf9cca061ea32fe40189e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_communicator.html#ab47cff828dccf9cca061ea32fe40189e">global_gather</a> (const LocalContainer &amp;values, LocalContainer &amp;buffer) const</td></tr>
-<tr class="memdesc:ab47cff828dccf9cca061ea32fe40189e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Globally (across processes) gather data into a buffer.  <a href="#ab47cff828dccf9cca061ea32fe40189e">More...</a><br /></td></tr>
-<tr class="separator:ab47cff828dccf9cca061ea32fe40189e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a791dc0d9309f38350d8cfefbed86bee9"><td class="memItemLeft" align="right" valign="top">LocalContainer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_communicator.html#a791dc0d9309f38350d8cfefbed86bee9">global_gather</a> (const LocalContainer &amp;values) const</td></tr>
-<tr class="memdesc:a791dc0d9309f38350d8cfefbed86bee9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Globally (across processes) gather data into a buffer (memory allocating version)  <a href="#a791dc0d9309f38350d8cfefbed86bee9">More...</a><br /></td></tr>
-<tr class="separator:a791dc0d9309f38350d8cfefbed86bee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add6fe775b638b9ad86a7a6e692473434"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_communicator.html#add6fe775b638b9ad86a7a6e692473434">global_scatter_reduce</a> (const LocalContainer &amp;toScatter, LocalContainer &amp;values) const</td></tr>
-<tr class="memdesc:add6fe775b638b9ad86a7a6e692473434"><td class="mdescLeft">&#160;</td><td class="mdescRight">Globally (across processes) scatter data accross processes and reduce on multiple indices.  <a href="#add6fe775b638b9ad86a7a6e692473434">More...</a><br /></td></tr>
-<tr class="separator:add6fe775b638b9ad86a7a6e692473434"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0553786aac2eb96308ec386e22ff6f3a"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_communicator.html#a0553786aac2eb96308ec386e22ff6f3a">size</a> () const</td></tr>
-<tr class="memdesc:a0553786aac2eb96308ec386e22ff6f3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of the local buffer vector w = local map size.  <a href="#a0553786aac2eb96308ec386e22ff6f3a">More...</a><br /></td></tr>
-<tr class="separator:a0553786aac2eb96308ec386e22ff6f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d4afb767c3d62c1908eed2c4eb156a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_communicator.html#a0d4afb767c3d62c1908eed2c4eb156a7">global_gather</a> (const <a class="el" href="structdg_1_1a_communicator.html#a6b3761c8938941ad409b0e5ae8f396ba">value_type</a> *values, LocalContainer &amp;buffer) const</td></tr>
+<tr class="memdesc:a0d4afb767c3d62c1908eed2c4eb156a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( w = G v\). Globally (across processes) gather data into a buffer  <a href="#a0d4afb767c3d62c1908eed2c4eb156a7">More...</a><br /></td></tr>
+<tr class="separator:a0d4afb767c3d62c1908eed2c4eb156a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a977b6a58f608dc19041bb2a1f310ba3a"><td class="memItemLeft" align="right" valign="top">LocalContainer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_communicator.html#a977b6a58f608dc19041bb2a1f310ba3a">global_gather</a> (const <a class="el" href="structdg_1_1a_communicator.html#a6b3761c8938941ad409b0e5ae8f396ba">value_type</a> *values) const</td></tr>
+<tr class="memdesc:a977b6a58f608dc19041bb2a1f310ba3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( w = G v\). Globally (across processes) gather data into a buffer (memory allocating version)  <a href="#a977b6a58f608dc19041bb2a1f310ba3a">More...</a><br /></td></tr>
+<tr class="separator:a977b6a58f608dc19041bb2a1f310ba3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a342c5ad30f218eb1e2588369aae72fd2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_communicator.html#a342c5ad30f218eb1e2588369aae72fd2">global_scatter_reduce</a> (const LocalContainer &amp;toScatter, <a class="el" href="structdg_1_1a_communicator.html#a6b3761c8938941ad409b0e5ae8f396ba">value_type</a> *values) const</td></tr>
+<tr class="memdesc:a342c5ad30f218eb1e2588369aae72fd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( v = G^\mathrm{T} w\). Globally (across processes) scatter data accross processes and reduce on multiple indices  <a href="#a342c5ad30f218eb1e2588369aae72fd2">More...</a><br /></td></tr>
+<tr class="separator:a342c5ad30f218eb1e2588369aae72fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c0b8733751b2b82449a54676e4f0397"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_communicator.html#a7c0b8733751b2b82449a54676e4f0397">buffer_size</a> () const</td></tr>
+<tr class="memdesc:a7c0b8733751b2b82449a54676e4f0397"><td class="mdescLeft">&#160;</td><td class="mdescRight">The local size of the buffer vector w = local map size.  <a href="#a7c0b8733751b2b82449a54676e4f0397">More...</a><br /></td></tr>
+<tr class="separator:a7c0b8733751b2b82449a54676e4f0397"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a190bc7d049ea3aaea0d1f50ff9f86f4b"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_communicator.html#a190bc7d049ea3aaea0d1f50ff9f86f4b">local_size</a> () const</td></tr>
+<tr class="memdesc:a190bc7d049ea3aaea0d1f50ff9f86f4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The local size of the source vector v = local size of the <code><a class="el" href="structdg_1_1_m_p_i___vector.html" title="mpi Vector class ">dg::MPI_Vector</a></code>.  <a href="#a190bc7d049ea3aaea0d1f50ff9f86f4b">More...</a><br /></td></tr>
+<tr class="separator:a190bc7d049ea3aaea0d1f50ff9f86f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6da46a52184be235645f0194f22cdd2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_communicator.html#ab6da46a52184be235645f0194f22cdd2">isCommunicating</a> () const</td></tr>
 <tr class="memdesc:ab6da46a52184be235645f0194f22cdd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the gather/scatter operation involves actual MPI communication.  <a href="#ab6da46a52184be235645f0194f22cdd2">More...</a><br /></td></tr>
 <tr class="separator:ab6da46a52184be235645f0194f22cdd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,15 +155,18 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a8036365511d408756d78e6aebeb3fe06"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_communicator.html#a8036365511d408756d78e6aebeb3fe06">aCommunicator</a> ()</td></tr>
-<tr class="memdesc:a8036365511d408756d78e6aebeb3fe06"><td class="mdescLeft">&#160;</td><td class="mdescRight">only derived classes can construct  <a href="#a8036365511d408756d78e6aebeb3fe06">More...</a><br /></td></tr>
-<tr class="separator:a8036365511d408756d78e6aebeb3fe06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7d649518836cb8d29e7abbeb530abc9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_communicator.html#af7d649518836cb8d29e7abbeb530abc9">aCommunicator</a> (unsigned <a class="el" href="structdg_1_1a_communicator.html#a190bc7d049ea3aaea0d1f50ff9f86f4b">local_size</a>=0)</td></tr>
+<tr class="memdesc:af7d649518836cb8d29e7abbeb530abc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">only derived classes can construct  <a href="#af7d649518836cb8d29e7abbeb530abc9">More...</a><br /></td></tr>
+<tr class="separator:af7d649518836cb8d29e7abbeb530abc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2861411ab00b8988436cf0259edbbc1b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_communicator.html#a2861411ab00b8988436cf0259edbbc1b">aCommunicator</a> (const <a class="el" href="structdg_1_1a_communicator.html">aCommunicator</a> &amp;src)</td></tr>
 <tr class="memdesc:a2861411ab00b8988436cf0259edbbc1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">only derived classes can copy  <a href="#a2861411ab00b8988436cf0259edbbc1b">More...</a><br /></td></tr>
 <tr class="separator:a2861411ab00b8988436cf0259edbbc1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3c1f30816b849bd1ee455ab174e1e3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1a_communicator.html">aCommunicator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_communicator.html#ac3c1f30816b849bd1ee455ab174e1e3a">operator=</a> (const <a class="el" href="structdg_1_1a_communicator.html">aCommunicator</a> &amp;src)</td></tr>
 <tr class="memdesc:ac3c1f30816b849bd1ee455ab174e1e3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">only derived classes can assign  <a href="#ac3c1f30816b849bd1ee455ab174e1e3a">More...</a><br /></td></tr>
 <tr class="separator:ac3c1f30816b849bd1ee455ab174e1e3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bcacc78e5bdce668b052adf1a9e1169"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_communicator.html#a8bcacc78e5bdce668b052adf1a9e1169">set_local_size</a> (unsigned new_size)</td></tr>
+<tr class="memdesc:a8bcacc78e5bdce668b052adf1a9e1169"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the local size of the source vector v.  <a href="#a8bcacc78e5bdce668b052adf1a9e1169">More...</a><br /></td></tr>
+<tr class="separator:a8bcacc78e5bdce668b052adf1a9e1169"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class LocalContainer&gt;<br />
@@ -167,15 +176,17 @@ struct dg::aCommunicator&lt; LocalContainer &gt;</h3>
 <p>In order to understand what this class does you should first really(!) understand what gather and scatter operations are, so grab pen and paper:</p>
 <p>First, we note that gather and scatter are most often used in the context of memory buffers. The buffer needs to be filled wih values (gather) or these values need to be written back into the original place (scatter).</p>
 <p><b>Gather:</b> imagine a buffer vector w and a map that gives to every element in this vector w an index into a source vector v where the value of this element should be taken from i.e. \( w[i] = v[\text{idx}[i]] \) Note that an index into the source vector v can appear several times or not at all. This is why the source vector v can have any size and even be smaller than w.</p>
-<p><b>Scatter:</b> imagine a buffer vector w and a map that gives to every element in the buffer w an index into a target vector v where this element should go to. Note again that an index into v can appear several times or never at all. If the index appears more than once, we perform a reduction operation (we sum up all elements) on these indices initializing the sum with 0. Note that \( v[\text{idx}[i]] = w[i] \) is NOT the correct definition of this, because it does not show the reduction.</p>
-<p>It is more accurate to represent the gather and scatter operation by a matrix. The gather matrix is just a (permutation) matrix of 1's and 0's with exactly one "1" in each line. In a "coo" formatted sparse matrix format the values array would consist only of "1"s, row array is just the index and column array is the gather map. We uniquely define the corresponding <b> scatter matrix </b> as the <b> transpose of the gather matrix</b>. The scatter matrix can have zero, one or more "1"s in each line. </p><p class="formulaDsp">
-\[ w_1 = G v_1 \\ v_2 = S w_2 = G^\mathrm{T} w_2 \]
+<p><b>Scatter:</b> imagine a buffer vector w and a map that gives to every element in the buffer w an index into a target vector v where this element should go to. Note again that an index into v can appear several times or never at all. If the index appears more than once, we perform a reduction operation (we sum up all elements) on these indices initializing the sum with 0. Note that \( v[\text{idx}[i]] = w[i] \) is INCORRECT definition of this, because it does not show the reduction.</p>
+<p>It is more accurate to represent the gather and scatter operation by a matrix. The gather matrix \( G\) is just a (permutation) matrix of 1's and 0's with exactly one "1" in each line. In a "coo" formatted sparse matrix format the values array would consist only of "1"s, row array is just the index and column array is the gather map. We uniquely define the corresponding <b> scatter matrix as the transpose of the gather matrix</b> </p><p class="formulaDsp">
+\[ S\equiv G^\mathrm{T}\]
 </p>
-<p> where \( v_1\) and \( v_2\) are data vectors and \( w_1\) and \( w_2\) are buffer vectors.</p>
+<p>. This means that a simple consistency test is given by \( (Gv)\cdot (Gv) = S(Gv)\cdot v\).</p>
+<p>The scatter matrix can thus have zero, one or more "1"s in each line. We distinguish between</p>
+<p><b>bijective:</b> If the gather map idx[i] is bijective, each element of the source vector v maps to exactly one location in the buffer vector w. In this case the scatter matrix S is the inverse of G and v and w have the same size.</p>
+<p><b>surjective:</b> If the gather map idx[i] is surjective, each element of the source vector v maps to at least one location in the buffer vector w. This means that the scatter matrix S can have more than one 1's in each line and w has at least the size of v.</p>
+<p><b>general:</b> In general the gather map idx[i] might or might not map an element of the source vector v. This means that the scatter matrix S can have one or more empty lines and w may be smaller than v.</p>
 <p>This class performs these operations for the case that v and w are distributed across processes. We always assume that the source vector v is distributed equally among processes, i.e. each process holds a chunk of v of equal size. On the other hand the local size of w may vary among processes depending on the gather/scatter map.</p>
-<dl class="section note"><dt>Note</dt><dd>The scatter matrix S is the actual inverse of G if and only if the gather map is bijective. In this case the buffer and the vector can swap their roles.</dd>
-<dd>
-Finally note that when v is filled with its indices, i.e. \( v[i] = i \), then the gather operation will reproduce the index map in the buffer w \( w[i] = \text{idx}[i]\) .</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If v is filled with its indices, i.e. \( v[i] = i \), then the gather operation will reproduce the index map in the buffer w \( w[i] = \text{idx}[i]\) .</dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">LocalContainer</td><td>a container on a shared memory system (must be default constructible) </td></tr>
@@ -183,8 +194,8 @@ Finally note that when v is filled with its indices, i.e. \( v[i] = i \), then t
   </dd>
 </dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="acf1b0599056bd3f22b374dcde9b1f213"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf1b0599056bd3f22b374dcde9b1f213">&#9670;&nbsp;</a></span>container_type</h2>
+<a id="a5edbb00e9845d00160d9aa75c9bd80da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5edbb00e9845d00160d9aa75c9bd80da">&#9670;&nbsp;</a></span>container_type</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -192,12 +203,30 @@ Finally note that when v is filled with its indices, i.e. \( v[i] = i \), then t
 template&lt;class LocalContainer&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef LocalContainer <a class="el" href="structdg_1_1a_communicator.html">dg::aCommunicator</a>&lt; LocalContainer &gt;::<a class="el" href="structdg_1_1a_communicator.html#acf1b0599056bd3f22b374dcde9b1f213">container_type</a></td>
+          <td class="memname">using <a class="el" href="structdg_1_1a_communicator.html">dg::aCommunicator</a>&lt; LocalContainer &gt;::<a class="el" href="structdg_1_1a_communicator.html#a5edbb00e9845d00160d9aa75c9bd80da">container_type</a> =  LocalContainer</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>reveal local container type </p>
+
+</div>
+</div>
+<a id="a6b3761c8938941ad409b0e5ae8f396ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b3761c8938941ad409b0e5ae8f396ba">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class LocalContainer&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structdg_1_1a_communicator.html">dg::aCommunicator</a>&lt; LocalContainer &gt;::<a class="el" href="structdg_1_1a_communicator.html#a6b3761c8938941ad409b0e5ae8f396ba">value_type</a> =  <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt;LocalContainer&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>reveal value type </p>
 
 </div>
 </div>
@@ -231,8 +260,8 @@ template&lt;class LocalContainer&gt; </div>
 
 </div>
 </div>
-<a id="a8036365511d408756d78e6aebeb3fe06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8036365511d408756d78e6aebeb3fe06">&#9670;&nbsp;</a></span>aCommunicator() <span class="overload">[1/2]</span></h2>
+<a id="af7d649518836cb8d29e7abbeb530abc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7d649518836cb8d29e7abbeb530abc9">&#9670;&nbsp;</a></span>aCommunicator() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -245,7 +274,8 @@ template&lt;class LocalContainer&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="structdg_1_1a_communicator.html">dg::aCommunicator</a>&lt; LocalContainer &gt;::<a class="el" href="structdg_1_1a_communicator.html">aCommunicator</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>local_size</em> = <code>0</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -257,6 +287,12 @@ template&lt;class LocalContainer&gt; </div>
 </div><div class="memdoc">
 
 <p>only derived classes can construct </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">local_size</td><td>the local size of the source vector v </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -322,9 +358,41 @@ template&lt;class LocalContainer&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Allocate a buffer object of size <code><a class="el" href="structdg_1_1a_communicator.html#a0553786aac2eb96308ec386e22ff6f3a" title="The size of the local buffer vector w = local map size. ">size()</a></code> </p>
+<p>Allocate a buffer object of size <code><a class="el" href="structdg_1_1a_communicator.html#a7c0b8733751b2b82449a54676e4f0397" title="The local size of the buffer vector w = local map size. ">buffer_size()</a></code> </p>
 <dl class="section return"><dt>Returns</dt><dd>a buffer object on the stack </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>if <code><a class="el" href="structdg_1_1a_communicator.html#a0553786aac2eb96308ec386e22ff6f3a" title="The size of the local buffer vector w = local map size. ">size()</a>==0</code> the default constructor of <code>LocalContainer</code> is called </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>if <code><a class="el" href="structdg_1_1a_communicator.html#a7c0b8733751b2b82449a54676e4f0397" title="The local size of the buffer vector w = local map size. ">buffer_size()</a>==0</code> the default constructor of <code>LocalContainer</code> is called </dd></dl>
+
+</div>
+</div>
+<a id="a7c0b8733751b2b82449a54676e4f0397"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c0b8733751b2b82449a54676e4f0397">&#9670;&nbsp;</a></span>buffer_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class LocalContainer&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned <a class="el" href="structdg_1_1a_communicator.html">dg::aCommunicator</a>&lt; LocalContainer &gt;::buffer_size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The local size of the buffer vector w = local map size. </p>
+<p>Consider that both the source vector v and the buffer w are distributed across processes. In Feltor the vector v is distributed equally among processes and the local size of v is the same for all processes. However, the buffer size might be different for each process. </p><dl class="section return"><dt>Returns</dt><dd>buffer size (may be different for each process) </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>may return 0 to indicate that no MPI communication is needed </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="structdg_1_1a_communicator.html#a190bc7d049ea3aaea0d1f50ff9f86f4b" title="The local size of the source vector v = local size of the dg::MPI_Vector. ">local_size()</a> <a class="el" href="structdg_1_1a_communicator.html#ab6da46a52184be235645f0194f22cdd2" title="True if the gather/scatter operation involves actual MPI communication. ">isCommunicating()</a> </dd></dl>
 
 </div>
 </div>
@@ -356,7 +424,7 @@ template&lt;class LocalContainer&gt; </div>
 <p>Generic copy method. </p>
 <dl class="section return"><dt>Returns</dt><dd>pointer to allocated object </dd></dl>
 
-<p>Implemented in <a class="el" href="structdg_1_1_general_comm.html#a4936832cf4eae4f09c85e15c4301e050">dg::GeneralComm&lt; Index, Vector &gt;</a>, <a class="el" href="structdg_1_1_surjective_comm.html#a40da180c2b7d5d3a2355f19f1381885a">dg::SurjectiveComm&lt; Index, Vector &gt;</a>, and <a class="el" href="structdg_1_1_bijective_comm.html#ad9a309629c010ef6c629f09d50a8d4d6">dg::BijectiveComm&lt; Index, Vector &gt;</a>.</p>
+<p>Implemented in <a class="el" href="structdg_1_1_general_comm.html#a54756d7f20d5c5e4aacb4bd0f5f060df">dg::GeneralComm&lt; Index, Vector &gt;</a>, <a class="el" href="structdg_1_1_surjective_comm.html#ab81cbf7211aafe2fd0cb3d9db3b7ea0a">dg::SurjectiveComm&lt; Index, Vector &gt;</a>, and <a class="el" href="structdg_1_1_bijective_comm.html#aba5ee2b71fcc57f5e4412e5cb01bc859">dg::BijectiveComm&lt; Index, Vector &gt;</a>.</p>
 
 </div>
 </div>
@@ -390,8 +458,8 @@ template&lt;class LocalContainer&gt; </div>
 
 </div>
 </div>
-<a id="ab47cff828dccf9cca061ea32fe40189e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab47cff828dccf9cca061ea32fe40189e">&#9670;&nbsp;</a></span>global_gather() <span class="overload">[1/2]</span></h2>
+<a id="a0d4afb767c3d62c1908eed2c4eb156a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d4afb767c3d62c1908eed2c4eb156a7">&#9670;&nbsp;</a></span>global_gather() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -404,7 +472,7 @@ template&lt;class LocalContainer&gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="structdg_1_1a_communicator.html">dg::aCommunicator</a>&lt; LocalContainer &gt;::global_gather </td>
           <td>(</td>
-          <td class="paramtype">const LocalContainer &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1a_communicator.html#a6b3761c8938941ad409b0e5ae8f396ba">value_type</a> *&#160;</td>
           <td class="paramname"><em>values</em>, </td>
         </tr>
         <tr>
@@ -426,20 +494,20 @@ template&lt;class LocalContainer&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Globally (across processes) gather data into a buffer. </p>
-<p>This is the transpose operation of <a class="el" href="structdg_1_1a_communicator.html#add6fe775b638b9ad86a7a6e692473434" title="Globally (across processes) scatter data accross processes and reduce on multiple indices...">global_scatter_reduce()</a> </p><dl class="params"><dt>Parameters</dt><dd>
+<p>\( w = G v\). Globally (across processes) gather data into a buffer </p>
+<p>The transpose operation is <code><a class="el" href="structdg_1_1a_communicator.html#a342c5ad30f218eb1e2588369aae72fd2" title=". Globally (across processes) scatter data accross processes and reduce on multiple indices ...">global_scatter_reduce()</a></code> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">values</td><td>data; other processes collect data from this vector </td></tr>
-    <tr><td class="paramname">buffer</td><td>on output holds the gathered data ( must be of size <code><a class="el" href="structdg_1_1a_communicator.html#a0553786aac2eb96308ec386e22ff6f3a" title="The size of the local buffer vector w = local map size. ">size()</a></code>) </td></tr>
+    <tr><td class="paramname">values</td><td>source vector v; data is collected from this vector </td></tr>
+    <tr><td class="paramname">buffer</td><td>on output holds the gathered data ( must be of size <code><a class="el" href="structdg_1_1a_communicator.html#a7c0b8733751b2b82449a54676e4f0397" title="The local size of the buffer vector w = local map size. ">buffer_size()</a></code>) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>if <code><a class="el" href="structdg_1_1a_communicator.html#a0553786aac2eb96308ec386e22ff6f3a" title="The size of the local buffer vector w = local map size. ">size()</a>==0</code> nothing happens </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>if <code><a class="el" href="structdg_1_1a_communicator.html#a7c0b8733751b2b82449a54676e4f0397" title="The local size of the buffer vector w = local map size. ">buffer_size()</a>==0</code> nothing happens </dd></dl>
 
 </div>
 </div>
-<a id="a791dc0d9309f38350d8cfefbed86bee9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a791dc0d9309f38350d8cfefbed86bee9">&#9670;&nbsp;</a></span>global_gather() <span class="overload">[2/2]</span></h2>
+<a id="a977b6a58f608dc19041bb2a1f310ba3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a977b6a58f608dc19041bb2a1f310ba3a">&#9670;&nbsp;</a></span>global_gather() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -452,7 +520,7 @@ template&lt;class LocalContainer&gt; </div>
         <tr>
           <td class="memname">LocalContainer <a class="el" href="structdg_1_1a_communicator.html">dg::aCommunicator</a>&lt; LocalContainer &gt;::global_gather </td>
           <td>(</td>
-          <td class="paramtype">const LocalContainer &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1a_communicator.html#a6b3761c8938941ad409b0e5ae8f396ba">value_type</a> *&#160;</td>
           <td class="paramname"><em>values</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -464,20 +532,20 @@ template&lt;class LocalContainer&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Globally (across processes) gather data into a buffer (memory allocating version) </p>
-<p>This is the transpose operation of <a class="el" href="structdg_1_1a_communicator.html#add6fe775b638b9ad86a7a6e692473434" title="Globally (across processes) scatter data accross processes and reduce on multiple indices...">global_scatter_reduce()</a> </p><dl class="params"><dt>Parameters</dt><dd>
+<p>\( w = G v\). Globally (across processes) gather data into a buffer (memory allocating version) </p>
+<p>The transpose operation is <code><a class="el" href="structdg_1_1a_communicator.html#a342c5ad30f218eb1e2588369aae72fd2" title=". Globally (across processes) scatter data accross processes and reduce on multiple indices ...">global_scatter_reduce()</a></code> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">values</td><td>data; other processes collect data from this vector </td></tr>
+    <tr><td class="paramname">values</td><td>source vector v; data is collected from this vector (must have <code><a class="el" href="structdg_1_1a_communicator.html#a190bc7d049ea3aaea0d1f50ff9f86f4b" title="The local size of the source vector v = local size of the dg::MPI_Vector. ">local_size()</a></code> elements) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>object that holds the gathered data </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>if <code><a class="el" href="structdg_1_1a_communicator.html#a0553786aac2eb96308ec386e22ff6f3a" title="The size of the local buffer vector w = local map size. ">size()</a>==0</code> the default constructor of <code>LocalContainer</code> is called </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>object of size <code><a class="el" href="structdg_1_1a_communicator.html#a7c0b8733751b2b82449a54676e4f0397" title="The local size of the buffer vector w = local map size. ">buffer_size()</a></code> that holds the gathered data </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>if <code><a class="el" href="structdg_1_1a_communicator.html#a7c0b8733751b2b82449a54676e4f0397" title="The local size of the buffer vector w = local map size. ">buffer_size()</a>==0</code> the default constructor of <code>LocalContainer</code> is called </dd></dl>
 
 </div>
 </div>
-<a id="add6fe775b638b9ad86a7a6e692473434"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add6fe775b638b9ad86a7a6e692473434">&#9670;&nbsp;</a></span>global_scatter_reduce()</h2>
+<a id="a342c5ad30f218eb1e2588369aae72fd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a342c5ad30f218eb1e2588369aae72fd2">&#9670;&nbsp;</a></span>global_scatter_reduce()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -496,7 +564,7 @@ template&lt;class LocalContainer&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">LocalContainer &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structdg_1_1a_communicator.html#a6b3761c8938941ad409b0e5ae8f396ba">value_type</a> *&#160;</td>
           <td class="paramname"><em>values</em>&#160;</td>
         </tr>
         <tr>
@@ -512,15 +580,15 @@ template&lt;class LocalContainer&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Globally (across processes) scatter data accross processes and reduce on multiple indices. </p>
-<p>This is the transpose operation of <a class="el" href="structdg_1_1a_communicator.html#ab47cff828dccf9cca061ea32fe40189e" title="Globally (across processes) gather data into a buffer. ">global_gather()</a> </p><dl class="params"><dt>Parameters</dt><dd>
+<p>\( v = G^\mathrm{T} w\). Globally (across processes) scatter data accross processes and reduce on multiple indices </p>
+<p>This is the transpose operation of <code><a class="el" href="structdg_1_1a_communicator.html#a0d4afb767c3d62c1908eed2c4eb156a7" title=". Globally (across processes) gather data into a buffer ">global_gather()</a></code> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">toScatter</td><td>buffer vector; (has to be of size given by <a class="el" href="structdg_1_1a_communicator.html#a0553786aac2eb96308ec386e22ff6f3a" title="The size of the local buffer vector w = local map size. ">size()</a>) </td></tr>
-    <tr><td class="paramname">values</td><td>on output contains values from other processes sent back to the origin </td></tr>
+    <tr><td class="paramname">toScatter</td><td>buffer vector w; (has to be of size given by <code><a class="el" href="structdg_1_1a_communicator.html#a7c0b8733751b2b82449a54676e4f0397" title="The local size of the buffer vector w = local map size. ">buffer_size()</a></code>) </td></tr>
+    <tr><td class="paramname">values</td><td>target vector v; on output contains values from other processes sent back to the origin (must have <code><a class="el" href="structdg_1_1a_communicator.html#a190bc7d049ea3aaea0d1f50ff9f86f4b" title="The local size of the source vector v = local size of the dg::MPI_Vector. ">local_size()</a></code> elements) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>if <code><a class="el" href="structdg_1_1a_communicator.html#a0553786aac2eb96308ec386e22ff6f3a" title="The size of the local buffer vector w = local map size. ">size()</a>==0</code> nothing happens </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>if <code><a class="el" href="structdg_1_1a_communicator.html#a7c0b8733751b2b82449a54676e4f0397" title="The local size of the buffer vector w = local map size. ">buffer_size()</a>==0</code> nothing happens </dd></dl>
 
 </div>
 </div>
@@ -551,6 +619,39 @@ template&lt;class LocalContainer&gt; </div>
 
 <p>True if the gather/scatter operation involves actual MPI communication. </p>
 <p>This test can be used to avoid the gather operation alltogether in e.g. the construction of a MPI distributed matrix. </p><dl class="section return"><dt>Returns</dt><dd>False, if the global gather can be done without MPI communication (i.e. the indices are all local to each calling process). True else. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="structdg_1_1a_communicator.html#a7c0b8733751b2b82449a54676e4f0397" title="The local size of the buffer vector w = local map size. ">buffer_size()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a190bc7d049ea3aaea0d1f50ff9f86f4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a190bc7d049ea3aaea0d1f50ff9f86f4b">&#9670;&nbsp;</a></span>local_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class LocalContainer&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned <a class="el" href="structdg_1_1a_communicator.html">dg::aCommunicator</a>&lt; LocalContainer &gt;::local_size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The local size of the source vector v = local size of the <code><a class="el" href="structdg_1_1_m_p_i___vector.html" title="mpi Vector class ">dg::MPI_Vector</a></code>. </p>
+<p>Consider that both the source vector v and the buffer w are distributed across processes. In Feltor the vector v is distributed equally among processes and the local size of v is the same for all processes. </p><dl class="section return"><dt>Returns</dt><dd>local size of v (same for all processes) </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Important only for general scatter operations where some elements of v might have to be set to zero </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="structdg_1_1a_communicator.html#a7c0b8733751b2b82449a54676e4f0397" title="The local size of the buffer vector w = local map size. ">buffer_size()</a> </dd></dl>
 
 </div>
 </div>
@@ -591,8 +692,8 @@ template&lt;class LocalContainer&gt; </div>
 
 </div>
 </div>
-<a id="a0553786aac2eb96308ec386e22ff6f3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0553786aac2eb96308ec386e22ff6f3a">&#9670;&nbsp;</a></span>size()</h2>
+<a id="a8bcacc78e5bdce668b052adf1a9e1169"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bcacc78e5bdce668b052adf1a9e1169">&#9670;&nbsp;</a></span>set_local_size()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -603,24 +704,27 @@ template&lt;class LocalContainer&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned <a class="el" href="structdg_1_1a_communicator.html">dg::aCommunicator</a>&lt; LocalContainer &gt;::size </td>
+          <td class="memname">void <a class="el" href="structdg_1_1a_communicator.html">dg::aCommunicator</a>&lt; LocalContainer &gt;::set_local_size </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>new_size</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>The size of the local buffer vector w = local map size. </p>
-<p>Consider that both the source vector v and the buffer w are distributed across processes. In Feltor the vector v is distributed equally among processes and the local size of v is the same for all processes. However the buffer size might be different for each process. </p><dl class="section return"><dt>Returns</dt><dd>buffer size </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>may return 0 to indicate that no MPI communication is needed </dd>
-<dd>
-we assume that, contrary to <code><a class="el" href="structdg_1_1a_communicator.html#a0553786aac2eb96308ec386e22ff6f3a" title="The size of the local buffer vector w = local map size. ">size()</a></code>, the vector size is always the local size of a <code><a class="el" href="structdg_1_1_m_p_i___vector.html" title="mpi Vector class ">dg::MPI_Vector</a></code> </dd></dl>
+<p>Set the local size of the source vector v. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">new_size</td><td>the new local size for the source vector v </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -633,7 +737,7 @@ we assume that, contrary to <code><a class="el" href="structdg_1_1a_communicator
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1a_communicator.html">aCommunicator</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

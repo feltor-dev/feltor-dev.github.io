@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -97,6 +97,7 @@ $(document).ready(function(){initNavTree('structdg_1_1_row_col_dist_mat.html',''
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="structdg_1_1_row_col_dist_mat-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -109,6 +110,11 @@ $(document).ready(function(){initNavTree('structdg_1_1_row_col_dist_mat.html',''
 
 <p><code>#include &lt;<a class="el" href="mpi__matrix_8h_source.html">mpi_matrix.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a403442a8360abb63eef362d6ff33fb90"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_row_col_dist_mat.html#a403442a8360abb63eef362d6ff33fb90">value_type</a> = <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; LocalMatrixInner &gt;</td></tr>
+<tr class="separator:a403442a8360abb63eef362d6ff33fb90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aaa4284e5e09774695761bd1f79642445"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_row_col_dist_mat.html#aaa4284e5e09774695761bd1f79642445">RowColDistMat</a> ()</td></tr>
@@ -130,10 +136,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab70ee973dfe83d2ada2133f24a851c83"><td class="memItemLeft" align="right" valign="top">const Collective &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_row_col_dist_mat.html#ab70ee973dfe83d2ada2133f24a851c83">collective</a> () const</td></tr>
 <tr class="memdesc:ab70ee973dfe83d2ada2133f24a851c83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read access to the communication object.  <a href="#ab70ee973dfe83d2ada2133f24a851c83">More...</a><br /></td></tr>
 <tr class="separator:ab70ee973dfe83d2ada2133f24a851c83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf80080d7a53a28ab1b1c4cca5e1b0fa"><td class="memTemplParams" colspan="2">template&lt;class ContainerType1 , class ContainerType2 &gt; </td></tr>
-<tr class="memitem:aaf80080d7a53a28ab1b1c4cca5e1b0fa"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_row_col_dist_mat.html#aaf80080d7a53a28ab1b1c4cca5e1b0fa">symv</a> (double alpha, const ContainerType1 &amp;<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>, double beta, ContainerType2 &amp;<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>) const</td></tr>
-<tr class="memdesc:aaf80080d7a53a28ab1b1c4cca5e1b0fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix Vector product.  <a href="#aaf80080d7a53a28ab1b1c4cca5e1b0fa">More...</a><br /></td></tr>
-<tr class="separator:aaf80080d7a53a28ab1b1c4cca5e1b0fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41a5a4b65cb34798c693322f7679d13f"><td class="memTemplParams" colspan="2">template&lt;class ContainerType1 , class ContainerType2 &gt; </td></tr>
+<tr class="memitem:a41a5a4b65cb34798c693322f7679d13f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_row_col_dist_mat.html#a41a5a4b65cb34798c693322f7679d13f">symv</a> (<a class="el" href="structdg_1_1_row_col_dist_mat.html#a403442a8360abb63eef362d6ff33fb90">value_type</a> alpha, const ContainerType1 &amp;<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>, <a class="el" href="structdg_1_1_row_col_dist_mat.html#a403442a8360abb63eef362d6ff33fb90">value_type</a> beta, ContainerType2 &amp;<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>) const</td></tr>
+<tr class="memdesc:a41a5a4b65cb34798c693322f7679d13f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix Vector product.  <a href="#a41a5a4b65cb34798c693322f7679d13f">More...</a><br /></td></tr>
+<tr class="separator:a41a5a4b65cb34798c693322f7679d13f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfafc42df2ab3bfbbb01ebeac6088b43"><td class="memTemplParams" colspan="2">template&lt;class ContainerType1 , class ContainerType2 &gt; </td></tr>
 <tr class="memitem:abfafc42df2ab3bfbbb01ebeac6088b43"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_row_col_dist_mat.html#abfafc42df2ab3bfbbb01ebeac6088b43">symv</a> (const ContainerType1 &amp;<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>, ContainerType2 &amp;<a class="el" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>) const</td></tr>
 <tr class="memdesc:abfafc42df2ab3bfbbb01ebeac6088b43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix Vector product.  <a href="#abfafc42df2ab3bfbbb01ebeac6088b43">More...</a><br /></td></tr>
@@ -151,12 +157,29 @@ struct dg::RowColDistMat&lt; LocalMatrixInner, LocalMatrixOuter, Collective &gt;
   <table class="tparams">
     <tr><td class="paramname">LocalMatrixInner</td><td>The class of the matrix for local computations of the inner points. symv(m,x,y) needs to be callable on the container class of the <a class="el" href="structdg_1_1_m_p_i___vector.html" title="mpi Vector class ">MPI_Vector</a> </td></tr>
     <tr><td class="paramname">LocalMatrixOuter</td><td>The class of the matrix for local computations of the outer points. symv(1,m,x,1,y) needs to be callable on the container class of the <a class="el" href="structdg_1_1_m_p_i___vector.html" title="mpi Vector class ">MPI_Vector</a> </td></tr>
-    <tr><td class="paramname">Collective</td><td>must be a <code><a class="el" href="structdg_1_1_nearest_neighbor_comm.html" title="Communicator for asynchronous nearest neighbor communication. ">NearestNeighborComm</a></code> The Communication class needs to gather values across processes. The <code>global_gather_init()</code>, <code>global_gather_wait()</code> and <code>size()</code> member functions are called. Gather points from other processes that are necessary for the outer computations. If <code>size()==0</code> the global_gather() function won't be called and only the inner matrix is applied. </td></tr>
+    <tr><td class="paramname">Collective</td><td>must be a <code><a class="el" href="structdg_1_1_nearest_neighbor_comm.html" title="Communicator for asynchronous nearest neighbor communication. ">NearestNeighborComm</a></code> The Communication class needs to gather values across processes. The <code>global_gather_init()</code>, <code>global_gather_wait()</code>, <code>allocate_buffer()</code> and <code>isCommunicating()</code> member functions are called. Gather points from other processes that are necessary for the outer computations. If <code>!isCommunicating</code>() the global_gather() function won't be called and only the inner matrix is applied. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>This class overlaps communication with computation of the inner matrix </dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a403442a8360abb63eef362d6ff33fb90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a403442a8360abb63eef362d6ff33fb90">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class LocalMatrixInner, class LocalMatrixOuter, class Collective&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structdg_1_1_row_col_dist_mat.html">dg::RowColDistMat</a>&lt; LocalMatrixInner, LocalMatrixOuter, Collective &gt;::<a class="el" href="structdg_1_1_row_col_dist_mat.html#a403442a8360abb63eef362d6ff33fb90">value_type</a> =  <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt;LocalMatrixInner&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aaa4284e5e09774695761bd1f79642445"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaa4284e5e09774695761bd1f79642445">&#9670;&nbsp;</a></span>RowColDistMat() <span class="overload">[1/3]</span></h2>
 
@@ -378,8 +401,8 @@ template&lt;class LocalMatrixInner, class LocalMatrixOuter, class Collective&gt;
 
 </div>
 </div>
-<a id="aaf80080d7a53a28ab1b1c4cca5e1b0fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf80080d7a53a28ab1b1c4cca5e1b0fa">&#9670;&nbsp;</a></span>symv() <span class="overload">[1/2]</span></h2>
+<a id="a41a5a4b65cb34798c693322f7679d13f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41a5a4b65cb34798c693322f7679d13f">&#9670;&nbsp;</a></span>symv() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -394,7 +417,7 @@ template&lt;class ContainerType1 , class ContainerType2 &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="structdg_1_1_row_col_dist_mat.html">dg::RowColDistMat</a>&lt; LocalMatrixInner, LocalMatrixOuter, Collective &gt;::symv </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype"><a class="el" href="structdg_1_1_row_col_dist_mat.html#a403442a8360abb63eef362d6ff33fb90">value_type</a>&#160;</td>
           <td class="paramname"><em>alpha</em>, </td>
         </tr>
         <tr>
@@ -406,7 +429,7 @@ template&lt;class ContainerType1 , class ContainerType2 &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype"><a class="el" href="structdg_1_1_row_col_dist_mat.html#a403442a8360abb63eef362d6ff33fb90">value_type</a>&#160;</td>
           <td class="paramname"><em>beta</em>, </td>
         </tr>
         <tr>
@@ -511,7 +534,7 @@ template&lt;class ContainerType1 , class ContainerType2 &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_row_col_dist_mat.html">RowColDistMat</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:50 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

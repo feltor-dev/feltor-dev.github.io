@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
-<title>Geometries: curvilinearX.h File Reference</title>
+<title>Extension: Geometries: curvilinearX.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -44,9 +44,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Geometries
+   <div id="projectname">Extension: Geometries
    </div>
-   <div id="projectbrief">Extension with magnetic flux functions, grids and grid generators</div>
+   <div id="projectbrief">Magnetic flux functions, parallel derivatives and new grids and grid generators in &quot;dg/geometries/geometries.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -98,74 +98,29 @@ $(document).ready(function(){initNavTree('curvilinear_x_8h.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">curvilinearX.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/grid_x_8h.html">dg/geometry/gridX.h</a>&quot;</code><br />
-<code>#include &quot;<a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/evaluation_x_8h.html">dg/geometry/evaluationX.h</a>&quot;</code><br />
-<code>#include &quot;<a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/functions_8h.html">dg/geometry/functions.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/grid_x_8h.html">dg/topology/gridX.h</a>&quot;</code><br />
+<code>#include &quot;<a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/evaluation_x_8h.html">dg/topology/evaluationX.h</a>&quot;</code><br />
+<code>#include &quot;<a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/functions_8h.html">dg/topology/functions.h</a>&quot;</code><br />
 <code>#include &quot;<a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/blas1_8h.html">dg/blas1.h</a>&quot;</code><br />
-<code>#include &quot;<a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/base__geometry_x_8h.html">dg/geometry/base_geometryX.h</a>&quot;</code><br />
+<code>#include &quot;<a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/base__geometry_x_8h.html">dg/topology/base_geometryX.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="generator_x_8h_source.html">generatorX.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="curvilinear_8h_source.html">curvilinear.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for curvilinearX.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="curvilinear_x_8h__incl.png" border="0" usemap="#curvilinear_x_8h" alt=""/></div>
-<map name="curvilinear_x_8h" id="curvilinear_x_8h">
-<area shape="rect" id="node2" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/grid_x_8h.html" title="dg/geometry/gridX.h" alt="" coords="5,379,144,405"/>
-<area shape="rect" id="node8" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/evaluation_x_8h.html" title="dg/geometry/evaluationX.h" alt="" coords="225,229,402,256"/>
-<area shape="rect" id="node10" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/functions_8h.html" title="dg/geometry/functions.h" alt="" coords="1304,543,1467,569"/>
-<area shape="rect" id="node11" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/blas1_8h.html" title="dg/blas1.h" alt="" coords="661,379,744,405"/>
-<area shape="rect" id="node25" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/base__geometry_x_8h.html" title="dg/geometry/base_geometryX.h" alt="" coords="185,155,391,181"/>
-<area shape="rect" id="node29" href="generator_x_8h.html" title="generatorX.h" alt="" coords="1473,80,1569,107"/>
-<area shape="rect" id="node30" href="curvilinear_8h.html" title="curvilinear.h" alt="" coords="739,80,831,107"/>
-<area shape="rect" id="node3" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/dlt_8h.html" title="dlt.h" alt="" coords="142,543,189,569"/>
-<area shape="rect" id="node5" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/grid_8h.html" title="grid.h" alt="" coords="209,461,263,487"/>
-<area shape="rect" id="node7" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/enums_8h.html" title="../enums.h" alt="" coords="34,543,118,569"/>
-<area shape="rect" id="node4" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/exceptions_8h.html" title="dg/backend/exceptions.h" alt="" coords="38,617,205,644"/>
-<area shape="rect" id="node6" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/topological__traits_8h.html" title="topological_traits.h" alt="" coords="213,543,344,569"/>
-<area shape="rect" id="node9" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/evaluation_8h.html" title="evaluation.h" alt="" coords="285,379,377,405"/>
-<area shape="rect" id="node12" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/tensor__traits_8h.html" title="backend/tensor_traits.h" alt="" coords="709,543,867,569"/>
-<area shape="rect" id="node17" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/tensor__traits__scalar_8h.html" title="backend/tensor_traits\l_scalar.h" alt="" coords="629,453,776,495"/>
-<area shape="rect" id="node18" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/tensor__traits__thrust_8h.html" title="backend/tensor_traits\l_thrust.h" alt="" coords="459,453,605,495"/>
-<area shape="rect" id="node19" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/tensor__traits__cusp_8h.html" title="backend/tensor_traits\l_cusp.h" alt="" coords="288,453,435,495"/>
-<area shape="rect" id="node20" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/tensor__traits__std_8h.html" title="backend/tensor_traits\l_std.h" alt="" coords="851,453,997,495"/>
-<area shape="rect" id="node21" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/mpi__vector_8h.html" title="backend/mpi_vector.h" alt="" coords="1022,461,1173,487"/>
-<area shape="rect" id="node24" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/subroutines_8h.html" title="subroutines.h" alt="" coords="1197,461,1297,487"/>
-<area shape="rect" id="node13" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/scalar__categories_8h.html" title="scalar_categories.h" alt="" coords="546,617,681,644"/>
-<area shape="rect" id="node14" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/vector__categories_8h.html" title="vector_categories.h" alt="" coords="545,692,681,719"/>
-<area shape="rect" id="node15" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/matrix__categories_8h.html" title="matrix_categories.h" alt="" coords="545,767,681,793"/>
-<area shape="rect" id="node16" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/execution__policy_8h.html" title="execution_policy.h" alt="" coords="756,617,887,644"/>
-<area shape="rect" id="node22" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/mpi__communicator_8h.html" title="mpi_communicator.h" alt="" coords="1026,543,1169,569"/>
-<area shape="rect" id="node23" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/memory_8h.html" title="memory.h" alt="" coords="1197,543,1277,569"/>
-<area shape="rect" id="node26" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/tensor_8h.html" title="tensor.h" alt="" coords="429,229,499,256"/>
-<area shape="rect" id="node27" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/operator_8h.html" title="operator.h" alt="" coords="213,304,293,331"/>
-<area shape="rect" id="node28" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/functors_8h.html" title="dg/functors.h" alt="" coords="415,304,513,331"/>
-<area shape="rect" id="node31" doxygen="/home/matthias/Projekte/feltor/doc/dg.tag:../../dg/html/" href="../../dg/html/base__geometry_8h.html" title="dg/geometry/base_geometry.h" alt="" coords="466,155,665,181"/>
-<area shape="rect" id="node32" href="generator_8h.html" title="generator.h" alt="" coords="790,155,877,181"/>
-</map>
-</div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="curvilinear_x_8h__dep__incl.png" border="0" usemap="#curvilinear_x_8hdep" alt=""/></div>
-<map name="curvilinear_x_8hdep" id="curvilinear_x_8hdep">
-<area shape="rect" id="node2" href="geometries_8h.html" title="geometries.h" alt="" coords="7,80,105,107"/>
-</map>
-</div>
 </div>
 <p><a href="curvilinear_x_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_curvilinear_product_grid_x3d.html">dg::geo::CurvilinearProductGridX3d</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A three-dimensional grid based on curvilinear coordinates.  <a href="structdg_1_1geo_1_1_curvilinear_product_grid_x3d.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_real_curvilinear_product_grid_x3d.html">dg::geo::RealCurvilinearProductGridX3d&lt; real_type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A three-dimensional grid based on curvilinear coordinates.  <a href="structdg_1_1geo_1_1_real_curvilinear_product_grid_x3d.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_curvilinear_grid_x2d.html">dg::geo::CurvilinearGridX2d</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A two-dimensional grid based on curvilinear coordinates.  <a href="structdg_1_1geo_1_1_curvilinear_grid_x2d.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_real_curvilinear_grid_x2d.html">dg::geo::RealCurvilinearGridX2d&lt; real_type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A two-dimensional grid based on curvilinear coordinates.  <a href="structdg_1_1geo_1_1_real_curvilinear_grid_x2d.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -174,6 +129,13 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacedg_1_1geo"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg_1_1geo.html">dg::geo</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga39f185f0e62a845133105bddbbb92624"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__grids.html#ga39f185f0e62a845133105bddbbb92624">dg::geo::CurvilinearGridX2d</a> = <a class="el" href="structdg_1_1geo_1_1_real_curvilinear_grid_x2d.html">dg::geo::RealCurvilinearGridX2d</a>&lt; double &gt;</td></tr>
+<tr class="separator:ga39f185f0e62a845133105bddbbb92624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2d21aa9b959174ee7cf8cca4af63f6f0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__grids.html#ga2d21aa9b959174ee7cf8cca4af63f6f0">dg::geo::CurvilinearProductGridX3d</a> = <a class="el" href="structdg_1_1geo_1_1_real_curvilinear_product_grid_x3d.html">dg::geo::RealCurvilinearProductGridX3d</a>&lt; double &gt;</td></tr>
+<tr class="separator:ga2d21aa9b959174ee7cf8cca4af63f6f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -181,7 +143,7 @@ Namespaces</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="curvilinear_x_8h.html">curvilinearX.h</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:03:04 for Geometries by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:57 for Extension: Geometries by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

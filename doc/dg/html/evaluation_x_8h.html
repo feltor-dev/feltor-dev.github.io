@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
-<title>Discontinuous Galerkin Library: geometry/evaluationX.h File Reference</title>
+<title>Discontinuous Galerkin Library: topology/evaluationX.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -108,36 +108,6 @@ $(document).ready(function(){initNavTree('evaluation_x_8h.html','');});
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="grid_x_8h_source.html">gridX.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="evaluation_8h_source.html">evaluation.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for evaluationX.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="evaluation_x_8h__incl.png" border="0" usemap="#geometry_2evaluation_x_8h" alt=""/></div>
-<map name="geometry_2evaluation_x_8h" id="geometry_2evaluation_x_8h">
-<area shape="rect" id="node2" href="grid_x_8h.html" title="base X&#45;point topology classes " alt="" coords="446,80,509,107"/>
-<area shape="rect" id="node18" href="evaluation_8h.html" title="Function discretization routines. " alt="" coords="605,80,697,107"/>
-<area shape="rect" id="node5" href="dlt_8h.html" title="contains the discrete legendre trafo class " alt="" coords="257,229,303,256"/>
-<area shape="rect" id="node13" href="grid_8h.html" title="base topology classes " alt="" coords="482,155,537,181"/>
-<area shape="rect" id="node16" href="enums_8h.html" title="enums " alt="" coords="351,229,435,256"/>
-<area shape="rect" id="node10" href="exceptions_8h.html" title="Error classes or the dg library. " alt="" coords="334,304,501,331"/>
-<area shape="rect" id="node15" href="topological__traits_8h.html" title="topological_traits.h" alt="" coords="549,229,680,256"/>
-</map>
-</div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="evaluation_x_8h__dep__incl.png" border="0" usemap="#geometry_2evaluation_x_8hdep" alt=""/></div>
-<map name="geometry_2evaluation_x_8hdep" id="geometry_2evaluation_x_8hdep">
-<area shape="rect" id="node2" href="base__geometry_x_8h.html" title="geometry/base_geometryX.h" alt="" coords="48,80,237,107"/>
-<area shape="rect" id="node4" href="algorithm_8h.html" title="algorithm.h" alt="" coords="33,453,119,480"/>
-<area shape="rect" id="node10" href="refined__grid_x_8h.html" title="geometry/refined_gridX.h" alt="" coords="150,155,317,181"/>
-<area shape="rect" id="node3" href="geometry_8h.html" title="geometry/geometry.h" alt="" coords="69,229,214,256"/>
-<area shape="rect" id="node5" href="elliptic_8h.html" title="General negative elliptic operators. " alt="" coords="35,304,106,331"/>
-<area shape="rect" id="node8" href="arakawa_8h.html" title="object for computation of Poisson bracket " alt="" coords="131,304,213,331"/>
-<area shape="rect" id="node9" href="poisson_8h.html" title="poisson.h" alt="" coords="238,304,317,331"/>
-<area shape="rect" id="node6" href="helmholtz_8h.html" title="contains Helmholtz and Maxwell operators " alt="" coords="31,379,121,405"/>
-<area shape="rect" id="node7" href="refined__elliptic_8h.html" title="contains an elliptic method on a refined grid " alt="" coords="145,379,261,405"/>
-</map>
-</div>
 </div>
 <p><a href="evaluation_x_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -151,15 +121,15 @@ Namespaces</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:gabe69c7f3d4f90f0792902fe817ed81e5"><td class="memTemplParams" colspan="2">template&lt;class UnaryOp , class real_type &gt; </td></tr>
 <tr class="memitem:gabe69c7f3d4f90f0792902fe817ed81e5"><td class="memTemplItemLeft" align="right" valign="top">thrust::host_vector&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__evaluation.html#gabe69c7f3d4f90f0792902fe817ed81e5">dg::evaluate</a> (UnaryOp f, const RealGridX1d&lt; real_type &gt; &amp;g)</td></tr>
-<tr class="memdesc:gabe69c7f3d4f90f0792902fe817ed81e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a function on gaussian abscissas.  <a href="group__evaluation.html#gabe69c7f3d4f90f0792902fe817ed81e5">More...</a><br /></td></tr>
+<tr class="memdesc:gabe69c7f3d4f90f0792902fe817ed81e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a 1d function on grid coordinates.  <a href="group__evaluation.html#gabe69c7f3d4f90f0792902fe817ed81e5">More...</a><br /></td></tr>
 <tr class="separator:gabe69c7f3d4f90f0792902fe817ed81e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab60cad2b1e49591135255b8f51f6e772"><td class="memTemplParams" colspan="2">template&lt;class BinaryOp , class real_type &gt; </td></tr>
 <tr class="memitem:gab60cad2b1e49591135255b8f51f6e772"><td class="memTemplItemLeft" align="right" valign="top">thrust::host_vector&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__evaluation.html#gab60cad2b1e49591135255b8f51f6e772">dg::evaluate</a> (const BinaryOp &amp;f, const aRealTopologyX2d&lt; real_type &gt; &amp;g)</td></tr>
-<tr class="memdesc:gab60cad2b1e49591135255b8f51f6e772"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a function on gaussian abscissas.  <a href="group__evaluation.html#gab60cad2b1e49591135255b8f51f6e772">More...</a><br /></td></tr>
+<tr class="memdesc:gab60cad2b1e49591135255b8f51f6e772"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a 2d function on grid coordinates.  <a href="group__evaluation.html#gab60cad2b1e49591135255b8f51f6e772">More...</a><br /></td></tr>
 <tr class="separator:gab60cad2b1e49591135255b8f51f6e772"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac222de3553c5442c440cf48e1df64fbe"><td class="memTemplParams" colspan="2">template&lt;class TernaryOp , class real_type &gt; </td></tr>
 <tr class="memitem:gac222de3553c5442c440cf48e1df64fbe"><td class="memTemplItemLeft" align="right" valign="top">thrust::host_vector&lt; real_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__evaluation.html#gac222de3553c5442c440cf48e1df64fbe">dg::evaluate</a> (const TernaryOp &amp;f, const aRealTopologyX3d&lt; real_type &gt; &amp;g)</td></tr>
-<tr class="memdesc:gac222de3553c5442c440cf48e1df64fbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a function on gaussian abscissas.  <a href="group__evaluation.html#gac222de3553c5442c440cf48e1df64fbe">More...</a><br /></td></tr>
+<tr class="memdesc:gac222de3553c5442c440cf48e1df64fbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a 3d function on grid coordinates.  <a href="group__evaluation.html#gac222de3553c5442c440cf48e1df64fbe">More...</a><br /></td></tr>
 <tr class="separator:gac222de3553c5442c440cf48e1df64fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -169,8 +139,8 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_e3380d2178455503f266746fb14246a5.html">geometry</a></li><li class="navelem"><a class="el" href="evaluation_x_8h.html">evaluationX.h</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:49 for Discontinuous Galerkin Library by
+    <li class="navelem"><a class="el" href="dir_84497794bb37d283dbd68163bed8ef05.html">topology</a></li><li class="navelem"><a class="el" href="evaluation_x_8h.html">evaluationX.h</a></li>
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

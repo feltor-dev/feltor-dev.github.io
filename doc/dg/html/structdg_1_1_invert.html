@@ -46,7 +46,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
    </div>
-   <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
+   <div id="projectbrief">Container free algorithms and discontinuous Galerkin numerical methods in &quot;dg/algorithm.h&quot;</div>
   </td>
  </tr>
  </tbody>
@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('structdg_1_1_invert.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>Wrapper around <a class="el" href="classdg_1_1_c_g.html" title="Functor class for the preconditioned conjugate gradient method to solve . ">CG</a> and <a class="el" href="structdg_1_1_extrapolation.html" title="Class that stores up to three solutions of iterative methods and can be used to get initial guesses b...">Extrapolation</a> to solve the Equation </p><p class="formulaDsp">
+<p>Wrapper around <a class="el" href="classdg_1_1_c_g.html" title="Functor class for the preconditioned conjugate gradient method to solve . ">CG</a> and <a class="el" href="structdg_1_1_extrapolation.html" title="Extrapolate based on up to three past solutions. ">Extrapolation</a> to solve the Equation </p><p class="formulaDsp">
 \[ Ax = W b \]
 </p>
 <p>.  
@@ -123,10 +123,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad421714f956db8e011509d72c015d77b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_invert.html#ad421714f956db8e011509d72c015d77b">Invert</a> ()</td></tr>
 <tr class="memdesc:ad421714f956db8e011509d72c015d77b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate nothing.  <a href="#ad421714f956db8e011509d72c015d77b">More...</a><br /></td></tr>
 <tr class="separator:ad421714f956db8e011509d72c015d77b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4678dabff963cafcbcd683d3cb5f8116"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_invert.html#a4678dabff963cafcbcd683d3cb5f8116">Invert</a> (const ContainerType &amp;copyable, unsigned max_iter, <a class="el" href="structdg_1_1_invert.html#a60703c940d54cd6da959829ce4187d80">value_type</a> eps, int extrapolationType=2, bool multiplyWeights=true, <a class="el" href="structdg_1_1_invert.html#a60703c940d54cd6da959829ce4187d80">value_type</a> nrmb_correction=1)</td></tr>
+<tr class="memitem:a4678dabff963cafcbcd683d3cb5f8116"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_invert.html#a4678dabff963cafcbcd683d3cb5f8116">Invert</a> (const ContainerType &amp;<a class="el" href="structdg_1_1_invert.html#a6b54d781f5543ffc3233f5e875308ca4">copyable</a>, unsigned max_iter, <a class="el" href="structdg_1_1_invert.html#a60703c940d54cd6da959829ce4187d80">value_type</a> eps, int extrapolationType=2, bool multiplyWeights=true, <a class="el" href="structdg_1_1_invert.html#a60703c940d54cd6da959829ce4187d80">value_type</a> nrmb_correction=1)</td></tr>
 <tr class="memdesc:a4678dabff963cafcbcd683d3cb5f8116"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate memory.  <a href="#a4678dabff963cafcbcd683d3cb5f8116">More...</a><br /></td></tr>
 <tr class="separator:a4678dabff963cafcbcd683d3cb5f8116"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf69eecf9a6e93105dc0488dac5cb6cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_invert.html#aaf69eecf9a6e93105dc0488dac5cb6cd">construct</a> (const ContainerType &amp;copyable, unsigned max_iter, <a class="el" href="structdg_1_1_invert.html#a60703c940d54cd6da959829ce4187d80">value_type</a> eps, int extrapolationType=2, bool multiplyWeights=true, <a class="el" href="structdg_1_1_invert.html#a60703c940d54cd6da959829ce4187d80">value_type</a> nrmb_correction=1.)</td></tr>
+<tr class="memitem:a6b54d781f5543ffc3233f5e875308ca4"><td class="memItemLeft" align="right" valign="top">const ContainerType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_invert.html#a6b54d781f5543ffc3233f5e875308ca4">copyable</a> () const</td></tr>
+<tr class="memdesc:a6b54d781f5543ffc3233f5e875308ca4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an object of same size as the object used for construction.  <a href="#a6b54d781f5543ffc3233f5e875308ca4">More...</a><br /></td></tr>
+<tr class="separator:a6b54d781f5543ffc3233f5e875308ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf69eecf9a6e93105dc0488dac5cb6cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_invert.html#aaf69eecf9a6e93105dc0488dac5cb6cd">construct</a> (const ContainerType &amp;<a class="el" href="structdg_1_1_invert.html#a6b54d781f5543ffc3233f5e875308ca4">copyable</a>, unsigned max_iter, <a class="el" href="structdg_1_1_invert.html#a60703c940d54cd6da959829ce4187d80">value_type</a> eps, int extrapolationType=2, bool multiplyWeights=true, <a class="el" href="structdg_1_1_invert.html#a60703c940d54cd6da959829ce4187d80">value_type</a> nrmb_correction=1.)</td></tr>
 <tr class="memdesc:aaf69eecf9a6e93105dc0488dac5cb6cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate memory.  <a href="#aaf69eecf9a6e93105dc0488dac5cb6cd">More...</a><br /></td></tr>
 <tr class="separator:aaf69eecf9a6e93105dc0488dac5cb6cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a711efcfad8cc1092ce2e95059ff7e0e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_invert.html#a711efcfad8cc1092ce2e95059ff7e0e7">set_size</a> (const ContainerType &amp;assignable, unsigned max_iterations)</td></tr>
@@ -147,27 +150,27 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a08ce1534c88f180371d31dd54442aaa9"><td class="memItemLeft" align="right" valign="top">const ContainerType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_invert.html#a08ce1534c88f180371d31dd54442aaa9">get_last</a> () const</td></tr>
 <tr class="memdesc:a08ce1534c88f180371d31dd54442aaa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return last solution.  <a href="#a08ce1534c88f180371d31dd54442aaa9">More...</a><br /></td></tr>
 <tr class="separator:a08ce1534c88f180371d31dd54442aaa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39eebbdecf9e41cff2c5ab4a17a536d1"><td class="memTemplParams" colspan="2">template&lt;class SymmetricOp &gt; </td></tr>
-<tr class="memitem:a39eebbdecf9e41cff2c5ab4a17a536d1"><td class="memTemplItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_invert.html#a39eebbdecf9e41cff2c5ab4a17a536d1">operator()</a> (SymmetricOp &amp;op, ContainerType &amp;phi, const ContainerType &amp;rho)</td></tr>
-<tr class="memdesc:a39eebbdecf9e41cff2c5ab4a17a536d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solve linear problem.  <a href="#a39eebbdecf9e41cff2c5ab4a17a536d1">More...</a><br /></td></tr>
-<tr class="separator:a39eebbdecf9e41cff2c5ab4a17a536d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a263d59eea0a31cd7cb87f5eac1abe6"><td class="memTemplParams" colspan="2">template&lt;class Matrix , class SquareNorm , class Preconditioner &gt; </td></tr>
-<tr class="memitem:a8a263d59eea0a31cd7cb87f5eac1abe6"><td class="memTemplItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_invert.html#a8a263d59eea0a31cd7cb87f5eac1abe6">operator()</a> (Matrix &amp;op, ContainerType &amp;phi, const ContainerType &amp;rho, const SquareNorm &amp;weights, const SquareNorm &amp;inv_weights, Preconditioner &amp;p)</td></tr>
-<tr class="memdesc:a8a263d59eea0a31cd7cb87f5eac1abe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solve linear problem.  <a href="#a8a263d59eea0a31cd7cb87f5eac1abe6">More...</a><br /></td></tr>
-<tr class="separator:a8a263d59eea0a31cd7cb87f5eac1abe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41e28631d625a654de18278118029b74"><td class="memTemplParams" colspan="2">template&lt;class SymmetricOp , class ContainerType0 , class ContainerType1 &gt; </td></tr>
+<tr class="memitem:a41e28631d625a654de18278118029b74"><td class="memTemplItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_invert.html#a41e28631d625a654de18278118029b74">operator()</a> (SymmetricOp &amp;op, ContainerType0 &amp;phi, const ContainerType1 &amp;rho)</td></tr>
+<tr class="memdesc:a41e28631d625a654de18278118029b74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solve linear problem.  <a href="#a41e28631d625a654de18278118029b74">More...</a><br /></td></tr>
+<tr class="separator:a41e28631d625a654de18278118029b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac20a389295c81afe7906747938456fd8"><td class="memTemplParams" colspan="2">template&lt;class MatrixType , class ContainerType0 , class ContainerType1 , class SquareNorm0 , class SquareNorm1 , class Preconditioner &gt; </td></tr>
+<tr class="memitem:ac20a389295c81afe7906747938456fd8"><td class="memTemplItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_invert.html#ac20a389295c81afe7906747938456fd8">operator()</a> (MatrixType &amp;op, ContainerType0 &amp;phi, const ContainerType1 &amp;rho, const SquareNorm0 &amp;weights, const SquareNorm1 &amp;inv_weights, Preconditioner &amp;p)</td></tr>
+<tr class="memdesc:ac20a389295c81afe7906747938456fd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solve linear problem.  <a href="#ac20a389295c81afe7906747938456fd8">More...</a><br /></td></tr>
+<tr class="separator:ac20a389295c81afe7906747938456fd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class ContainerType&gt;<br />
 struct dg::Invert&lt; ContainerType &gt;</h3>
 
-<p>Wrapper around <a class="el" href="classdg_1_1_c_g.html" title="Functor class for the preconditioned conjugate gradient method to solve . ">CG</a> and <a class="el" href="structdg_1_1_extrapolation.html" title="Class that stores up to three solutions of iterative methods and can be used to get initial guesses b...">Extrapolation</a> to solve the Equation </p><p class="formulaDsp">
+<p>Wrapper around <a class="el" href="classdg_1_1_c_g.html" title="Functor class for the preconditioned conjugate gradient method to solve . ">CG</a> and <a class="el" href="structdg_1_1_extrapolation.html" title="Extrapolate based on up to three past solutions. ">Extrapolation</a> to solve the Equation </p><p class="formulaDsp">
 \[ Ax = W b \]
 </p>
 <p>. </p>
 <p>where \(A\) was made symmetric by appropriate weights \(W\) (s. comment below). Uses solutions from the last calls to extrapolate a solution for the current call.</p>
-<div class="fragment"><div class="line">    <span class="comment">//create an Elliptic object without volume form (not normed)</span></div><div class="line">    <a class="code" href="classdg_1_1_elliptic.html">dg::Elliptic&lt;dg::CartesianGrid2d, dg::DMatrix, dg::DVec&gt;</a> pol_forward( grid, <a class="code" href="group__creation.html#gga9945b71a335bc97f78dc7425911c7287a07217e3dd9be28b4da85d46fef38f066">dg::not_normed</a>, <a class="code" href="group__creation.html#ggabf9ea3df33484cbb5886e257c3899e48a6281b4fc609cb723a615662b5adac9df">dg::centered</a>, jfactor);</div><div class="line"></div><div class="line">    <span class="comment">//Set the chi function (chi is a dg::DVec of size grid.size())</span></div><div class="line">    pol_forward.set_chi( chi);</div><div class="line"></div><div class="line">    <span class="comment">//construct an invert object</span></div><div class="line">    <a class="code" href="structdg_1_1_invert.html">dg::Invert&lt;dg::DVec &gt;</a> invert_fw( x, n*n*Nx*Ny, eps);</div><div class="line"></div><div class="line">    <span class="comment">//invert the elliptic equation</span></div><div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot; &quot;</span>&lt;&lt; invert_fw( pol_forward, x, b, w2d, v2d, chi_inv);</div><div class="line"></div><div class="line">    <span class="comment">//compute the error (solution contains analytic solution</span></div><div class="line">    <a class="code" href="group__blas1.html#ga5c7ddbf70dd74867e45c9d4f40b36cf7">dg::blas1::axpby</a>( 1.,x,-1., solution, error);</div><div class="line"></div><div class="line">    <span class="comment">//compute the L2 norm of the error</span></div><div class="line">    <span class="keywordtype">double</span> err = <a class="code" href="group__blas2.html#gaaafba91956e948b0ea53f30889a3c20d">dg::blas2::dot</a>( w2d, error);</div><div class="line"></div><div class="line">    <span class="comment">//output the relative error</span></div><div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot; &quot;</span>&lt;&lt;<a class="code" href="group__geometry.html#gad6e077288a8dac522ac3d69e18ff4731">sqrt</a>( err/norm) &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div></div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>A note on weights, inverse weights and preconditioning. A normalized DG-discretized derivative or operator is normally not symmetric. The diagonal coefficient matrix that is used to make the operator symmetric is called weights W, i.e. \( \hat O = W\cdot O\) is symmetric. Now, to compute the correct scalar product of the right hand side the inverse weights have to be used i.e. \( W\rho\cdot W \rho /W\). Independent from this, a preconditioner should be used to solve the symmetric matrix equation. The inverse of \(W\) is a good general purpose preconditioner. </dd></dl>
+<div class="fragment"><div class="line">    <span class="comment">//create an Elliptic object without volume form (not normed)</span></div><div class="line">    <a class="code" href="classdg_1_1_elliptic.html">dg::Elliptic&lt;dg::CartesianGrid2d, dg::DMatrix, dg::DVec&gt;</a> pol_forward( grid, <a class="code" href="group__creation.html#gga9945b71a335bc97f78dc7425911c7287a07217e3dd9be28b4da85d46fef38f066">dg::not_normed</a>, <a class="code" href="group__creation.html#ggabf9ea3df33484cbb5886e257c3899e48a6281b4fc609cb723a615662b5adac9df">dg::centered</a>, jfactor);</div><div class="line"></div><div class="line">    <span class="comment">//Set the chi function (chi is a dg::DVec of size grid.size())</span></div><div class="line">    pol_forward.set_chi( chi);</div><div class="line"></div><div class="line">    <span class="comment">//construct an invert object</span></div><div class="line">    <a class="code" href="structdg_1_1_invert.html">dg::Invert&lt;dg::DVec &gt;</a> invert_fw( x, n*n*Nx*Ny, eps);</div><div class="line"></div><div class="line">    <span class="comment">//invert the elliptic equation</span></div><div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot; &quot;</span>&lt;&lt; invert_fw( pol_forward, x, b, w2d, v2d, chi_inv);</div><div class="line"></div><div class="line">    <span class="comment">//compute the error (solution contains analytic solution</span></div><div class="line">    <a class="code" href="group__blas1.html#ga5c7ddbf70dd74867e45c9d4f40b36cf7">dg::blas1::axpby</a>( 1.,x,-1., solution, error);</div><div class="line"></div><div class="line">    <span class="comment">//compute the L2 norm of the error</span></div><div class="line">    <span class="keywordtype">double</span> err = <a class="code" href="group__blas2.html#gaaafba91956e948b0ea53f30889a3c20d">dg::blas2::dot</a>( w2d, error);</div><div class="line"></div><div class="line">    <span class="comment">//output the relative error</span></div><div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot; &quot;</span>&lt;&lt;sqrt( err/norm) &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div></div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>A note on weights, inverse weights and preconditioning. A normalized DG-discretized derivative or operator is normally not symmetric. The diagonal coefficient matrix that is used to make the operator symmetric is called weights W, i.e. \( \hat O = W\cdot O\) is symmetric. Now, to compute the correct scalar product of the right hand side the inverse weights have to be used i.e. \( W\rho\cdot W \rho /W\). Independent from this, a preconditioner should be used to solve the symmetric matrix equation. The inverse of \(W\) is a good general purpose preconditioner. </dd></dl>
 <dl class="section attention"><dt>Attention</dt><dd>beware the sign: a negative definite matrix does <b>not</b> work in Conjugate gradient </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="structdg_1_1_extrapolation.html" title="Class that stores up to three solutions of iterative methods and can be used to get initial guesses b...">Extrapolation</a> <a class="el" href="structdg_1_1_multigrid_c_g2d.html" title="Solves the Equation . ">MultigridCG2d</a></dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="structdg_1_1_extrapolation.html" title="Extrapolate based on up to three past solutions. ">Extrapolation</a> <a class="el" href="structdg_1_1_multigrid_c_g2d.html" title="Solves the Equation . ">MultigridCG2d</a></dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">ContainerType</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept. ">AnyVectorTag</a></code> and <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class. ">AnyPolicyTag</a></code>. Among others<ul>
@@ -378,6 +381,36 @@ template&lt;class ContainerType&gt; </div>
 
 </div>
 </div>
+<a id="a6b54d781f5543ffc3233f5e875308ca4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b54d781f5543ffc3233f5e875308ca4">&#9670;&nbsp;</a></span>copyable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ContainerType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const ContainerType&amp; <a class="el" href="structdg_1_1_invert.html">dg::Invert</a>&lt; ContainerType &gt;::copyable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return an object of same size as the object used for construction. </p>
+<dl class="section return"><dt>Returns</dt><dd>A copyable object; what it contains is undefined, its size is important </dd></dl>
+
+</div>
+</div>
 <a id="a08ce1534c88f180371d31dd54442aaa9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a08ce1534c88f180371d31dd54442aaa9">&#9670;&nbsp;</a></span>get_last()</h2>
 
@@ -437,15 +470,15 @@ template&lt;class ContainerType&gt; </div>
 
 </div>
 </div>
-<a id="a39eebbdecf9e41cff2c5ab4a17a536d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39eebbdecf9e41cff2c5ab4a17a536d1">&#9670;&nbsp;</a></span>operator()() <span class="overload">[1/2]</span></h2>
+<a id="a41e28631d625a654de18278118029b74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41e28631d625a654de18278118029b74">&#9670;&nbsp;</a></span>operator()() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class ContainerType&gt; </div>
 <div class="memtemplate">
-template&lt;class SymmetricOp &gt; </div>
+template&lt;class SymmetricOp , class ContainerType0 , class ContainerType1 &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -459,13 +492,13 @@ template&lt;class SymmetricOp &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ContainerType &amp;&#160;</td>
+          <td class="paramtype">ContainerType0 &amp;&#160;</td>
           <td class="paramname"><em>phi</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const ContainerType &amp;&#160;</td>
+          <td class="paramtype">const ContainerType1 &amp;&#160;</td>
           <td class="paramname"><em>rho</em>&#160;</td>
         </tr>
         <tr>
@@ -488,11 +521,11 @@ template&lt;class SymmetricOp &gt; </div>
 <p> using a preconditioned conjugate gradient method. The initial guess comes from an extrapolation of the last solutions</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">SymmetricOp</td><td>A class for which the <code>blas2::symv(Matrix&amp;, Vector1&amp;, Vector2&amp;)</code> function is callable with the <code>container</code> type as argument. Also, The functions <code>inv_weights</code>() and <code>precond</code>() need to be callable and return inverse weights and the preconditioner for the conjugate gradient method. <code>SymmetricOp</code> is assumed to be linear, symmetric and positive definite! </td></tr>
+    <tr><td class="paramname">SymmetricOp</td><td>A class for which the <code>blas2::symv(Matrix&amp;, Vector1&amp;, Vector2&amp;)</code> function is callable with the <code>Container</code> type as argument. Also, The functions <code>inv_weights</code>() and <code>precond</code>() need to be callable and return inverse weights and the preconditioner for the conjugate gradient method. <code>SymmetricOp</code> is assumed to be linear, symmetric and positive definite! </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>you can make your own <code>SymmetricOp</code> by providing the member function <code>void</code> <code>symv(const container&amp;, container&amp;)</code>; and specializing <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> with the <code><a class="el" href="structdg_1_1_self_made_matrix_tag.html" title="Indicates that the type has a member function with the same name and interface (up to the matrix itse...">SelfMadeMatrixTag</a></code> as the <code>tensor_category</code> </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>you can make your own <code>SymmetricOp</code> by providing the member function <code>void</code> <code>symv(const Container&amp;, Container&amp;)</code>; and specializing <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> with the <code><a class="el" href="structdg_1_1_self_made_matrix_tag.html" title="Indicates that the type has a member function with the same name and interface (up to the matrix itse...">SelfMadeMatrixTag</a></code> as the <code>tensor_category</code> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">op</td><td>selfmade symmetric Matrix operator class </td></tr>
@@ -503,20 +536,20 @@ template&lt;class SymmetricOp &gt; </div>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>computes inverse weights from the weights </dd>
 <dd>
-If the Macro DG_BENCHMARK is defined this function will write timings to std::cout</dd></dl>
+If the Macro <code>DG_BENCHMARK</code> is defined this function will write timings to <code>std::cout</code> </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>number of iterations used </dd></dl>
 
 </div>
 </div>
-<a id="a8a263d59eea0a31cd7cb87f5eac1abe6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a263d59eea0a31cd7cb87f5eac1abe6">&#9670;&nbsp;</a></span>operator()() <span class="overload">[2/2]</span></h2>
+<a id="ac20a389295c81afe7906747938456fd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac20a389295c81afe7906747938456fd8">&#9670;&nbsp;</a></span>operator()() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class ContainerType&gt; </div>
 <div class="memtemplate">
-template&lt;class Matrix , class SquareNorm , class Preconditioner &gt; </div>
+template&lt;class MatrixType , class ContainerType0 , class ContainerType1 , class SquareNorm0 , class SquareNorm1 , class Preconditioner &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -524,31 +557,31 @@ template&lt;class Matrix , class SquareNorm , class Preconditioner &gt; </div>
         <tr>
           <td class="memname">unsigned <a class="el" href="structdg_1_1_invert.html">dg::Invert</a>&lt; ContainerType &gt;::operator() </td>
           <td>(</td>
-          <td class="paramtype">Matrix &amp;&#160;</td>
+          <td class="paramtype">MatrixType &amp;&#160;</td>
           <td class="paramname"><em>op</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ContainerType &amp;&#160;</td>
+          <td class="paramtype">ContainerType0 &amp;&#160;</td>
           <td class="paramname"><em>phi</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const ContainerType &amp;&#160;</td>
+          <td class="paramtype">const ContainerType1 &amp;&#160;</td>
           <td class="paramname"><em>rho</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const SquareNorm &amp;&#160;</td>
+          <td class="paramtype">const SquareNorm0 &amp;&#160;</td>
           <td class="paramname"><em>weights</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const SquareNorm &amp;&#160;</td>
+          <td class="paramtype">const SquareNorm1 &amp;&#160;</td>
           <td class="paramname"><em>inv_weights</em>, </td>
         </tr>
         <tr>
@@ -578,14 +611,15 @@ template&lt;class Matrix , class SquareNorm , class Preconditioner &gt; </div>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">MatrixType</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits. ">TensorTraits</a></code> exists and which fullfills the requirements of the there defined Matrix tags derived from <code><a class="el" href="structdg_1_1_any_matrix_tag.html">AnyMatrixTag</a></code>. The <code>MatrixType</code> can for example be one of:<ul>
-<li><code>scalar</code> or <code>container:</code> Scalars and containers act as diagonal matrices.</li>
+<li><code>scalar</code> or <code>Container:</code> Scalars and containers act as diagonal matrices.</li>
 <li><code><a class="el" href="group__typedefs.html#gac2134505608b45616787fdb2f6eedc87" title="Host Matrix for derivatives. ">dg::HMatrix</a></code> and <code><a class="el" href="group__typedefs.html#ga188bea19979cfa0701387bfc5272be79">dg::IHMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193" title="Host Vector. ">dg::HVec</a></code> or <code>std::vector&lt;dg::HVec&gt;</code> </li>
 <li><code><a class="el" href="group__typedefs.html#gafdf2ecb95cbc87a1544136d28d535f16" title="Device Matrix for derivatives. ">dg::DMatrix</a></code> and <code><a class="el" href="group__typedefs.html#gaab6ed0cbb6bf7ea723c10da88cd4529f">dg::IDMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code> or <code>std::vector&lt;dg::DVec&gt;</code> </li>
 <li><code><a class="el" href="group__typedefs.html#gaff79c734c7916054c7dc24e6bc437161" title="MPI Host Matrix for derivatives. ">dg::MHMatrix</a></code> with <code><a class="el" href="group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0" title="MPI Host Vector s.a. dg::HVec. ">dg::MHVec</a></code> or <code>std::vector&lt;dg::MHVec&gt;</code> </li>
 <li><code><a class="el" href="group__typedefs.html#gaad32454aa2aca3cbb93448d7b5daf005" title="MPI Device Matrix for derivatives. ">dg::MDMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55" title="MPI Device Vector s.a. dg::DVec. ">dg::MDVec</a></code> or <code>std::vector&lt;dg::MDVec&gt;</code> </li>
-<li>In case of <code><a class="el" href="structdg_1_1_self_made_matrix_tag.html" title="Indicates that the type has a member function with the same name and interface (up to the matrix itse...">SelfMadeMatrixTag</a></code> only those <code><a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a></code> functions that have a corresponding member function in the Matrix class (e.g. <code>symv( const container&amp;, container&amp;)</code>; ) can be called.</li>
+<li>In case of <code><a class="el" href="structdg_1_1_self_made_matrix_tag.html" title="Indicates that the type has a member function with the same name and interface (up to the matrix itse...">SelfMadeMatrixTag</a></code> only those <code><a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines. ">blas2</a></code> functions that have a corresponding member function in the Matrix class (e.g. <code>symv( const ContainerType0&amp;, ContainerType1&amp;)</code>; ) can be called.</li>
 </ul>
-If a <code>container</code> has the <code><a class="el" href="structdg_1_1_recursive_vector_tag.html" title="This tag indicates composition/recursion. ">RecursiveVectorTag</a></code>, then the <code>Matrix</code> is applied to each of the elements. </td></tr>
+If a <code>Container</code> has the <code><a class="el" href="structdg_1_1_recursive_vector_tag.html" title="This tag indicates composition/recursion. ">RecursiveVectorTag</a></code>, then the <code>Matrix</code> is applied to each of the elements. </td></tr>
+    <tr><td class="paramname">ContainerTypes</td><td>must be usable with <code>ContainerType</code> in <a class="el" href="index.html#dispatch">The Level 1 dispatch system</a> </td></tr>
     <tr><td class="paramname">SquareNorm</td><td>A type for which the blas2::dot( const Matrix&amp;, const Vector&amp;) function is callable. This can e.g. be one of the container types. </td></tr>
     <tr><td class="paramname">Preconditioner</td><td>A type for which the <code> blas2::symv(Matrix&amp;, Vector1&amp;, Vector2&amp;) </code> function is callable. </td></tr>
   </table>
@@ -602,7 +636,7 @@ If a <code>container</code> has the <code><a class="el" href="structdg_1_1_recur
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>(15+N)memops per iteration where N is the memops contained in <code>op</code>. If the Macro DG_BENCHMARK is defined this function will write timings to std::cout</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>(15+N)memops per iteration where N is the memops contained in <code>op</code>. If the Macro <code>DG_BENCHMARK</code> is defined this function will write timings to <code>std::cout</code> </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>number of iterations used </dd></dl>
 
 </div>
@@ -782,7 +816,7 @@ template&lt;class ContainerType&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_invert.html">Invert</a></li>
-    <li class="footer">Generated on Tue Aug 28 2018 23:02:50 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Dec 21 2018 10:50:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
