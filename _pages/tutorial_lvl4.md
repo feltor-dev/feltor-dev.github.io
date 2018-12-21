@@ -25,7 +25,7 @@ const double lx = 2.*M_PI;
 const double ly = 2.*M_PI;
 
 double fct(double x, double y){
-  return sin(y)  * sin(x);
+  return sin(y) * sin(x);
 }
 double laplace_fct( double x, double y) {
   return 2 * sin(y) * sin(x);
@@ -37,10 +37,11 @@ double initial( double x, double y) {
 int main()
 {
   unsigned n, Nx, Ny;
-  std::cout << "Type n, Nx and Ny! \n";
+  // The numbers in parentheses are our suggestions ...
+  std::cout << "Type n (3), Nx (20) and Ny (20)! \n";
   std::cin >> n >> Nx >> Ny;
   std::cout << "Computing on the Grid " <<n<<" x "<<Nx<<" x "<<Ny <<std::endl;
-  dg::CartesianGrid2d grid( 0, lx, 0, ly,n, Nx, Ny, dg::DIR, dg::PER);
+  dg::CartesianGrid2d grid( 0, lx, 0, ly, n, Nx, Ny, dg::DIR, dg::PER);
   std::cout<<"Evaluate initial guess for iterative scheme\n";
   dg::HVec x = dg::evaluate( initial, grid);
   const dg::HVec& copyable_vector = x;
@@ -76,16 +77,16 @@ int main()
   dg::blas2::symv(  laplaceM, x, lap_x);
   dg::blas1::axpby( 1., lap_x, -1., residuum);
 
-  //global relative error in L2 norm is O(h^P)
-  double res;
-  res = sqrt(dg::blas2::dot( x, vol2d, x));
-  std::cout << "L2 Norm of x is               " << res << std::endl;
-  res = sqrt(dg::blas2::dot(solution, vol2d , solution));
-  std::cout << "L2 Norm of Solution is        " << res << std::endl;
-  res = sqrt(dg::blas2::dot(error, vol2d , error));
-  std::cout << "L2 Norm of Error is           " << res << std::endl;
-  res = sqrt(dg::blas2::dot( residuum, vol2d, residuum));
-  std::cout << "L2 Norm of Residuum is        " << res << std::endl;
+  //global relative error in L2 norm is O(h^n)
+  double result;
+  result = sqrt(dg::blas2::dot( x, vol2d, x));
+  std::cout << "L2 Norm of x is               " << result << std::endl;
+  result = sqrt(dg::blas2::dot(solution, vol2d , solution));
+  std::cout << "L2 Norm of Solution is        " << result << std::endl;
+  result = sqrt(dg::blas2::dot(error, vol2d , error));
+  std::cout << "L2 Norm of Error is           " << result << std::endl;
+  result = sqrt(dg::blas2::dot( residuum, vol2d, residuum));
+  std::cout << "L2 Norm of Residuum is        " << result << std::endl;
 
   return 0;
 }

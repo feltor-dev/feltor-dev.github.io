@@ -134,7 +134,7 @@ int main(int argc, char* argv[])
  thrust::device_vector<double> x_local( 1e8/np, 2), y_local(1e8/np, 4);
  //combine the local vectors to a global MPI vector
  dg::MPI_Vector<thrust::device_vector<double>> x(x_local, comm);
- dg::MPI_Vector<thrust::device_vector<double>> y(x_local, comm);
+ dg::MPI_Vector<thrust::device_vector<double>> y(y_local, comm);
 
  //now repeat the operations from before...
  double a = 0.5, b = 0.25;
@@ -159,7 +159,7 @@ One remaining thing is that we quickly get tired
 especially `dg::MPI_Vector<thrust::device_vector<double>>`.
  So we invented convenient typedefs:
 {% highlight C++ %}
-dg::DVec x_local( 1e9/np, 2), y_local(1e9/np, 4)
+dg::DVec x_local( 1e8/np, 2), y_local(1e8/np, 4)
 dg::MDVec x(x_local, comm), y(y_local, comm);
 {% endhighlight %}
 
@@ -167,13 +167,13 @@ dg::MDVec x(x_local, comm), y(y_local, comm);
 
 A remaining question is of course: what if we do not want to add vectors
 but multiply them instead? Or take the exponential of each element?
-In fact, there are is a selection of predefined `dg::blas1` operations
-you can choose from. There even is a function taking a custom Functor
-as an argument and an arbitrary number of vectors,
+In fact, there is a selection of predefined `dg::blas1` operations
+you can choose from. There even is a function `dg::blas1::subroutine`
+that takes a custom Functor as an argument and an arbitrary number of vectors,
 so that you can create your very own blas1 function. Check out the
 [documentation](https://feltor-dev.github.io/doc/dg/html/group__blas1.html).
 
-The remarkable thing to take home here, is that we now have an abstract way
+The remarkable thing to take home here is that we now have an abstract way
 to perform vector operations on many different types and with
 different parallelization. This means that you can write code that makes
 best use of the hardware you have available. Furthermore, imagine that we now

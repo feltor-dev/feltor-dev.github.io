@@ -26,25 +26,30 @@ struct Oscillator{
   Oscillator(double damping, double omega_0, double omega_drive):
     m_damping(damping), m_omega_0(omega_0), m_omega_drive(omega_drive){}
   //The Time stepper wants to call the functor as f(t,y,yp)
-  void operator()(double t, const std::array<double,2>& y, std::array<double,2>& yp){
+  void operator()(double t, const std::array<double,2>& y,
+                                  std::array<double,2>& yp) const
+  {
     //implement the equations here with position x and velocity v
     // x -> y[0] , v -> y[1]
     //dx/dt = v
     yp[0] = y[1];
     //dv/dt = -2*g*w_0*v - w_0^2 x + F(t)
-    yp[1] = -2.* m_damping*m_omega_0*y[1] - m_omega_0*m_omega_0*y[0] + sin(m_omega_drive*t);
+    yp[1] = -2.* m_damping*m_omega_0*y[1] - m_omega_0*m_omega_0*y[0]
+            + sin(m_omega_drive*t);
   }
   private:
   double m_damping, m_omega_0, m_omega_drive;
 };
 
 //The analytic solution is a bit lengthy ...
-std::array<double, 2> solution( double t, double damping, double omega_0, double omega_drive)
+std::array<double, 2> solution( double t, double damping, double omega_0,
+                                double omega_drive)
 {
   double tmp1 = (2.* omega_0*damping);
   double tmp2 = (omega_0*omega_0 - omega_drive*omega_drive)/omega_drive;
   double amp = 1./sqrt( tmp1*tmp1 + tmp2*tmp2);
-  double phi = atan( 2.* omega_drive*omega_0*damping/(omega_drive*omega_drive-omega_0*omega_0));
+  double phi = atan( 2. * omega_drive*omega_0*damping
+                    / (omega_drive*omega_drive-omega_0*omega_0) );
 
   double x = amp*sin(omega_drive*t+phi)/omega_drive;
   double v = amp*cos(omega_drive*t+phi);
@@ -92,6 +97,6 @@ parameter in the `dg::RungeKutta` class must be the same. The final parameter is
 a reference to a vector where we store the computed result in.
 
 There is an extensive collection of time steppers that we have currently
-implemented including multistep algorithms, explicit-implicit and adaptive time
+implemented including multistep, explicit-implicit and adaptive time
 steppers, see the
 [documentation](https://feltor-dev.github.io/doc/dg/html/group__time.html).
