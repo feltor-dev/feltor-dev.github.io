@@ -47,13 +47,13 @@ and `dg::blas1::dot`. They perform very basic operations, namely adding vectors
  and computing scalar products respectively. (You can look up their formal documentation [here](https://feltor-dev.github.io/doc/dg/html/group__blas1.html)).
 The remarkable thing about these two functions is that they are templates.
 This means you can call them for many different vector classes. We could
-for example replace line 8 with
+for example replace line 9 with
 {% highlight C++ %}
 std::vector<double> x(2,2), y(2,4);
 {% endhighlight %}
 or
 {% highlight C++ %}
-thrust::vector<double> x(2,2), y(2,4);
+thrust::host_vector<double> x(2,2), y(2,4);
 {% endhighlight %}
 All will have the same result. Also note that all of these examples
 execute on a single CPU thread, that is the compiler chooses the same

@@ -6,42 +6,49 @@ classes: wide
 author_profile: false
 comments: false
 toc: true
-toc_label: "Table of Contents"
-toc_icon: "cog"
+#toc_label: "Table of Contents"
+#toc_icon: "cog"
 
 ---
 
 FELTOR is a scientific code project that consists of both a numerical library
 and a collection of physical simulation codes built on top of it.
+Our specialties are "discontinuous Galerkin methods on structured grids" and their application to (gyro)-fluid equations in two and three dimensions.
+## Noteable features
 
-Please check out our [Wiki](wiki.md)
-for some general overview over the code and our design goals and
-troubleshooting.
+**Code readability**
+Numerical algorithms can be formulated clearly and concisesly. Specific parallelization strategies or optimization (vectorization) details are absent in application codes.
 
-Our [Tutorial](tutorial_lvl1.md) helps you get started with programming
-with our library.
+**Speed**
+Feltor provides specialized versions of performance critical functions for various target hardware architectures including for example GPUs and Intel Xeon Phis.
 
-In the [Documentation](http://feltor-dev.github.io/doc/dg/html/modules.html)
-you will find the technical documentation of the library.
-There, we also provide pdf files
-with background information on the numerical methods employed, in particular
-the discontinuous Galerkin methods, which might look deterrent for beginners.
+**Ease of use**
+We try to make our interfaces as intuitive and simple as possible (KISS principle). You don't have to be specialist in C++ to write useful, fast and reliable code with Feltor.
 
-In the [Showroom](showroom.md) we present some example simulation results.
+**Platform independent**
+Code runs unchanged on a large variety of hardware. The compiler chooses the correct implementation of functions at compile time.
 
-In [Publications](publications.md) we feature publications that were
-achieved with the help of our libary.
+**Fast development**
+As a user it should be easy for you to get a working simulation of your brand new model equations in a minimum amount of time.
 
 ## Who we are
 
-**Matthias Wiesenberger** started the development of FELTOR early 2012
+### **Matthias Wiesenberger**
+<img src="/images/matthias.jpg" alt="Matthias Wiesenberger" width="220" align="left" hspace="20" />
+Matthias started the development of FELTOR early 2012
 as part of his PhD project in the group of Alexander Kendl at
 Innsbruck University, Austria.
-Since summer 2017 Matthias has worked with the plasma physics and
-fusion energy group at the Technical University of Denmark (DTU).
+Since summer 2017 Matthias has worked as a postdoctoral researcher in the Plasma Physics and
+Fusion Energy group at the Technical University of Denmark (DTU).
+<br clear="all" />
+### **Markus Held**
+<img src="/images/markus.jpg" alt="Markus Held" width="220" align="left" hspace="20"/>
+Markus, a fellow PhD student in Innsbruck, joined
+the development of FELTOR in 2014. Markus currently works as a postdoctoral researcher at the
+department of Space, Earth and Environment, Astronomy and Plasma Physics at
+Chalmers University of Technology in Gothenburg, Sweden.
+<br clear="all" />
 
-**Markus Held**, a fellow PhD student in Innsbruck, joined
-the development of FELTOR in 2014.
 
 ## Acknowledgements
 We gratefully acknowledge fruitful discussions and code contribution from

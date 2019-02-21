@@ -20,9 +20,10 @@ Numerical algorithms can be formulated clearly and concisesly. Specific parallel
 Feltor provides specialized versions of performance critical functions for various target hardware architectures including for example GPUs and Intel Xeon Phis. 
 ### Ease of use
 We try to make our interfaces as intuitive and simple as possible (KISS principle). You don't have to be specialist in C++ to write useful, fast and reliable code with Feltor. 
-### Flexibility
+### Platform independent
 Code runs unchanged on a large variety of hardware. The compiler chooses the correct implementation of functions at compile time. 
-Extensibility The library is open for extensions to future hardware, new numerical algorithms and physical model equations.
+### Extensibility
+The library is open for extensions to future hardware, new numerical algorithms and physical model equations.
 ### Fast development
 As a user it should be easy for you to get a working simulation of your brand new model equations in a minimum amount of time.  
 ### Adhere to good practice
