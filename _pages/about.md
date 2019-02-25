@@ -16,25 +16,24 @@ and a collection of physical simulation codes built on top of it.
 Our specialties are "discontinuous Galerkin methods on structured grids" and their application to (gyro)-fluid equations in two and three dimensions.
 ## Noteable features
 
-**Code readability**
-Numerical algorithms can be formulated clearly and concisesly. Specific parallelization strategies or optimization (vectorization) details are absent in application codes.
-
-**Speed**
-Feltor provides specialized versions of performance critical functions for various target hardware architectures including for example GPUs and Intel Xeon Phis.
-
-**Ease of use**
-We try to make our interfaces as intuitive and simple as possible (KISS principle). You don't have to be specialist in C++ to write useful, fast and reliable code with Feltor.
-
 **Platform independent**
 Code runs unchanged on a large variety of hardware. The compiler chooses the correct implementation of functions at compile time.
 
-**Fast development**
-As a user it should be easy for you to get a working simulation of your brand new model equations in a minimum amount of time.
+**Fast**
+Feltor provides specialized versions of performance critical functions for various target hardware architectures including for example GPUs and Intel Xeon Phis.
+
+**Readable**
+Numerical algorithms can be formulated clearly and concisely. Specific parallelization strategies or optimization (vectorization) details are absent in application codes.
+
+**Easy to use**
+We try to make our interfaces as intuitive and simple as possible and
+you don't have to be specialist in C++ to write useful, fast and reliable code with Feltor.
+You get a working simulation of your brand new model equations in a minimum amount of time.
 
 ## Who we are
 
 ### **Matthias Wiesenberger**
-<img src="/images/matthias.jpg" alt="Matthias Wiesenberger" width="220" align="left" hspace="20" />
+<img src="/images/matthias.jpg" alt="Matthias Wiesenberger" width="150" align="left" hspace="10" />
 Matthias started the development of FELTOR early 2012
 as part of his PhD project in the group of Alexander Kendl at
 Innsbruck University, Austria.
@@ -42,7 +41,7 @@ Since summer 2017 Matthias has worked as a postdoctoral researcher in the Plasma
 Fusion Energy group at the Technical University of Denmark (DTU).
 <br clear="all" />
 ### **Markus Held**
-<img src="/images/markus.jpg" alt="Markus Held" width="220" align="left" hspace="20"/>
+<img src="/images/markus.jpg" alt="Markus Held" width="150" align="left" hspace="10"/>
 Markus, a fellow PhD student in Innsbruck, joined
 the development of FELTOR in 2014. Markus currently works as a postdoctoral researcher at the
 department of Space, Earth and Environment, Astronomy and Plasma Physics at
@@ -83,6 +82,8 @@ grant agreement No 633053.
 MW has received funding from the European Union’s Horizon 2020
 research and innovation programme under the Marie
 Sklodowska-Curie grant agreement no. 713683 (COFUNDfellowsDTU).
+We gratefully acknowledge the support of NVIDIA Corporation
+with the donation of a Titan Xp GPU used for our research.
 
 
 ## Terms of use
