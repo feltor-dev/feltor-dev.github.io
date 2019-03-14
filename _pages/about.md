@@ -16,25 +16,27 @@ and a collection of physical simulation codes built on top of it.
 Our specialties are "discontinuous Galerkin methods on structured grids" and their application to (gyro)-fluid equations in two and three dimensions.
 ## Noteable features
 
-**Platform independent**
-Code runs unchanged on a large variety of hardware. The compiler chooses the correct implementation of functions at compile time.
-
 **Fast**
-Feltor provides specialized versions of performance critical functions for various target hardware architectures including for example GPUs and Intel Xeon Phis.
+Writing parallel code is the default in Feltor.
 
-**Readable**
-Numerical algorithms can be formulated clearly and concisely. Specific parallelization strategies or optimization (vectorization) details are absent in application codes.
+**Platform independent**
+Applications run unchanged on a
+variety of hardware ranging from consumer grade CPUs and GPUs
+to mid-sized high-performance compute clusters.
 
 **Easy to use**
-We try to make our interfaces as intuitive and simple as possible and
-you don't have to be specialist in C++ to write useful, fast and reliable code with Feltor.
-You get a working simulation of your brand new model equations in a minimum amount of time.
+We design our interfaces as intuitive and simple as possible. See the [tutorial](tutorial_lvl1.md) to get started.
+
+**Flexible**
+Feltor's functions
+and classes are building blocks that can be customized and freely combined
+to implement new numerical algorithms and physical model equations.
 
 ## Who we are
 
 ### **Matthias Wiesenberger**
 <img src="/images/matthias.jpg" alt="Matthias Wiesenberger" width="150" align="left" hspace="10" />
-Matthias started the development of FELTOR early 2012
+Matthias started the development of Feltor early 2012
 as part of his PhD project in the group of Alexander Kendl at
 Innsbruck University, Austria.
 Since summer 2017 Matthias has worked as a postdoctoral researcher in the Plasma Physics and
@@ -43,7 +45,7 @@ Fusion Energy group at the Technical University of Denmark (DTU).
 ### **Markus Held**
 <img src="/images/markus.jpg" alt="Markus Held" width="150" align="left" hspace="10"/>
 Markus, a fellow PhD student in Innsbruck, joined
-the development of FELTOR in 2014. Markus currently works as a postdoctoral researcher at the
+the development of Feltor in 2014. Markus currently works as a postdoctoral researcher at the
 department of Space, Earth and Environment, Astronomy and Plasma Physics at
 Chalmers University of Technology in Gothenburg, Sweden.
 <br clear="all" />
@@ -87,18 +89,17 @@ with the donation of a Titan Xp GPU used for our research.
 
 
 ## Terms of use
-FELTOR is [fair](https://www.force11.org/fairprinciples) software and
+Feltor is [fair](https://www.force11.org/fairprinciples) software and
 licensed under the very permissive [MIT license](https://en.wikipedia.org/wiki/MIT_License). The MIT
 License grants you great freedom in what you do with the code as long as
 you name us (Matthias Wiesenberger and Markus Held) as creators, in
-particular in publications that use FELTOR to produce results. In this
-case we suggest to take a snapshot of the used code and create and cite
+particular in publications that use Feltor to produce results. In this
+case we would be happy if you could
+cite one of [our papers](publications.md).
+We also suggest to take a snapshot of the used code and create and cite
 a DOI via e.g. [Zenodo](http://www.zenodo.org) or to cite one of the
 [existing DOIs](https://doi.org/10.5281/zenodo.596442)
- if you did not alter the contained code in any way. We are
-happy if you cite [our papers](publications.md), but you don't have to just because you
-used our code and we certainly do not demand to be coauthors when we do
-not contribute directly to your results.
+ if you did not alter the contained code in any way.
 
 ## Releases
 Our latest code release has a shiny DOI badge from zenodo

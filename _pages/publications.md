@@ -4,12 +4,18 @@ layout: single
 permalink: /publications/
 classes: wide
 ---
-Publications that were achieved with the help of our libary.
+
+2019
+----
+
+* J. Gath, M. Wiesenberger [Consistency in drift-ordered fluid equations]( https://doi.org/10.1063/1.5081777) Physics of Plasmas 26, 032304 (2019)
+* M. Wiesenberger, L. Einkemmer, M. Held, A. Gutierrez-Milla, X. Sáez, R. Iakymchuk  [Reproducibility, accuracy and performance of the Feltor code and library on parallel computer architectures](https://doi.org/10.1016/j.cpc.2018.12.006) Computer Physics Communications 238, 145-156 (2019) *
+* M. Held, M. Wiesenberger, A. Kendl [The collisional drift wave instability in steep density gradient regimes](https://doi.org/10.1088/1741-4326/aaf6cc) Nuclear Fusion 59, 026015 (2019)
+
+\* Cite this paper if you need a code citation.
 
 2018
 ----
-* M. Wiesenberger, L. Einkemmer, M. Held, A. Gutierrez-Milla, X. Sáez, R. Iakymchuk  [Reproducibility, accuracy and performance of the Feltor code and library on parallel computer architectures](https://doi.org/10.1016/j.cpc.2018.12.006) Computer Physics Communications, accepted for publication (2018)
-* M. Held, M. Wiesenberger, A. Kendl [The collisional drift wave instability in steep density gradient regimes](https://doi.org/10.1088/1741-4326/aaf6cc) Nuclear Fusion, accepted for publication (2018)
 * M. Held, M. Wiesenberger, R. Kube, A. Kendl   [Non-Oberbeck–Boussinesq zonal flow generation](https://doi.org/10.1088/1741-4326/aad28e)  Nuclear Fusion 58, 104001 (2018)
 * M. Wiesenberger, M. Held, L. Einkemmer, A. Kendl [Streamline integration as a method for structured grid generation in X-point geometry](https://doi.org/10.1016/j.jcp.2018.07.007)  Journal of Computational Physics 373, 370-384 (2018)
 

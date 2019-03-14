@@ -10,9 +10,12 @@ sidebar:
 ---
 
 This tutorial explains how to use Feltor in your programs.
+Its level structure follows the basic structure of the library as described
+[here](wiki.md).
 If you haven't done so yet, please read the
 [Quick Start Guide](https://github.com/feltor-dev/feltor) first, which
-explains how to install the library and compile programs.
+explains how to install the library and compile programs (you do not
+need jsoncpp, glfw3 or netcdf to complete the tutorial).
 Here, we dive right into the first example codes.
 
 ## Level 1 - Vector juggling
