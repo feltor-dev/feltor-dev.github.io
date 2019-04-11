@@ -12,7 +12,7 @@ sidebar:
 
 
 
-Reliability and Credibility are two important concepts for a scientific
+Reliability and credibility are two important concepts for a scientific
 software package such as FELTOR. In order to be as correct as possible we 
 write at least one test program to every class and function we
 write and publish (unit testing). These test programs are designed to

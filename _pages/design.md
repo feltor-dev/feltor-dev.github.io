@@ -18,6 +18,15 @@ We try to realize the following design goals:
 Numerical algorithms can be formulated clearly and concisesly. Specific parallelization strategies or optimization (vectorization) details are absent in application codes.
 ### Speed
 Feltor provides specialized versions of performance critical functions for various target hardware architectures including for example GPUs and Intel Xeon Phis. Writing parallel code is the default in Feltor.
+### Reliable
+As users of our own library we know how important it is that functions
+and classes perform tasks the way it is documented.
+Only thus can we rely on the correctness of results that we possibly
+want to publish in a scientific journal.
+Therefore, we test every class and function we
+write and publish from as many different angles as we can think of
+(unit testing, see [error handling](errorhandling.md) for more details).
+
 ### Ease of use
 We try to make our interfaces as intuitive and simple as possible. You don't have to be specialist in C++ to write useful, fast and reliable code with Feltor. This feature is enhanced by an exhaustive [documentation](https://feltor-dev.github.io/doc/dg/html/modules.html) and [tutorials](tutorial_lvl1.md).
 ### Platform independent
