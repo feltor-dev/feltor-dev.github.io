@@ -52,18 +52,16 @@ Chalmers University of Technology in Gothenburg, Sweden.
 
 
 ## Acknowledgements
-We gratefully acknowledge fruitful discussions and code contribution from
+We thank
 
-* Ralph Kube
-* Eduard Reiter
-* Lukas Einkemmer
-* Jakob Gath
+* Aslak Poulsen
 
+for his valuable insights and contributions to implicit time steppers and nonlinear solvers.
 We are grateful to
 
 * Roman Iakymchuk,
 
-who provided the exblas library for binary reproducible scalar products and advice
+who courteuously provided the exblas library for binary reproducible scalar products and advice
 on how to use and adapt it.
 We further acknowledge support on the Knights landing architecture from
 the High Level Support Team from
@@ -74,6 +72,13 @@ the High Level Support Team from
 and from Intel Barcelona
 
 * Harald Servat
+
+Furthermore, we gratefully acknowledge fruitful discussions and code contribution from
+
+* Ralph Kube
+* Eduard Reiter
+* Lukas Einkemmer
+* Jakob Gath
 
 We received funding from the Austrian Science Fund (FWF) within
 project W1227 and Y398 under project leader Alexander Kendl at
