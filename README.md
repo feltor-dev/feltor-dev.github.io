@@ -4,6 +4,7 @@
 Install [jekyll](https://jekyllrb.com/) to locally view the homepage:
 
 ```sh
+gem install bundler jekyll
 bundle exec jekyll serve
 # => Now browse to http://localhost:4000
 ```

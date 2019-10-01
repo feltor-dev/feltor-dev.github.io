@@ -9,6 +9,16 @@ sidebar:
   nav: "wiki"
 ---
 
+### I get a compile error: identifier "__thrust_compiler_fence" is undefined
+
+This is an error of the unmaintained cusp that does not like the newly
+updated thrust version on github. Currently, you will have to go back to
+version 1.9.3 in thrust:
+```sh
+cd path/to/thrust
+git checkout 1.9.3
+```
+
 ### How to install jsoncpp?
 
 Go to the place where you want to download the library and
@@ -22,7 +32,7 @@ cd ~/include/
 ln -s path/to/jsoncpp/include/json # this last step makes feltor work in the default configuration
 ```
 
-#### I get an error:  'class Json::Value::CZString' is private?
+### I get an error:  'class Json::Value::CZString' is private?
 This was a bug when you compile with nvcc and use an old version of jsoncpp.
 The error goes away by updating the library.
 ```sh
@@ -35,11 +45,11 @@ git pull
 (The problem is that in our applications we usually write netcdf files
 and the conventions only specify how to store a rectangular, product
 space grid; and not how to provide the coordinate map of a structured
-grid) 
+grid)
 
-- open the netCDF file using "NetCDF generic and CF conventions" 
+- open the netCDF file using "NetCDF generic and CF conventions"
 - apply a "CleanToGrid" Filter
-- create a Programmable Filter and insert/adapt the following Script, 
+- create a Programmable Filter and insert/adapt the following Script,
 
 
 ```python
@@ -51,7 +61,7 @@ executive = self.GetExecutive()
 outInfo = executive.GetOutputInformation(0)
 in_mesh=inputs[0]
 exts = [executive.UPDATE_EXTENT().Get(outInfo, i) for i in xrange(6)]
-output.SetExtent(exts) 
+output.SetExtent(exts)
 X = in_mesh.PointData['x_XYP']
 Y = in_mesh.PointData['y_XYP']
 output.Points = algs.make_vector(X,Y)
