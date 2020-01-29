@@ -4,6 +4,7 @@ google_analytics:
 show_downloads: true
 remote_theme: mmistakes/minimal-mistakes
 url: https://feltor-dev.github.io/
+logo: /images/logo_small.jpg
 plugins:
   - jekyll-mentions
   - jekyll-include-cache
