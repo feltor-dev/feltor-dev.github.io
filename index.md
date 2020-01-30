@@ -5,13 +5,14 @@ permalink: /
 classes: wide
 <!-- toc: true -->
 author_profile: false
+excerpt: "Numerical methods for two- and three-dimensional (gyro-)fluid simulations of magnetized plasmas<br /> <br /> <br /> "
 comments: false
-excerpt: "Numerical methods for two- and three-dimensional (gyro-) fluid simulations of magnetized plasmas"
 header:
     overlay_image: /images/title_pic.jpg
     caption: "Photo credit: [**Matthias Wiesenberger**](https://github.com/feltor-dev/feltor/blob/master/3dpic.jpg)"
-    cta_label: "github"
-    cta_url: "https://github.com/feltor-dev/feltor.git"
+    actions:
+        - label: "Find us on github"
+          url: "https://github.com/feltor-dev/feltor.git"
 
 ---
 
