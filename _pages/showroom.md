@@ -7,34 +7,46 @@ author_profile: false
 comments: false
 
 gallery3d:
-  - url: /images/nvidia_ue.jpg
-    image_path: /images/nvidia_ue.jpg
+  - url: /images/nvidia_ue_red_green.jpg
+    image_path: /images/nvidia_ue_red_green.jpg
     title: "Parallel electron velocity. Nvidia Index volume rendering"
-  - url: /images/nvidia_ions.jpg
-    image_path: /images/nvidia_ions.jpg
-    title: "Ion density. Nvidia Index volume rendering"
-  - url: /images/raytracing_current.jpg
-    image_path: /images/raytracing_current.jpg
-    title: "Parallel current. Positive iso-volume with density coloring and simulation box."
+  - url: /images/nvidia_ue_red_blue.jpg
+    image_path: /images/nvidia_ue_red_blue.jpg
+    title: "Parallel electron velocity. Nvidia Index volume rendering"
   - url: /images/raytracing_mag.jpg
     image_path: /images/raytracing_mag.jpg
     title: "Magnetic field. Streamline integrated with two flux-surfaces."
-  - url: /images/logo_small.jpg
-    image_path: /images/logo_small.jpg
+  - url: /images/tokamak.jpg
+    image_path: /images/tokamak.jpg
+    title: "Flux surfaces of a tokamak."
+  - url: /images/nvidia_ions_red_black.jpg
+    image_path: /images/nvidia_ions_red_black.jpg
+    title: "Ion density. Nvidia Index volume rendering"
+  - url: /images/nvidia_ions_red.jpg
+    image_path: /images/nvidia_ions_red.jpg
+    title: "Ion density. Nvidia Index volume rendering"
+  - url: /images/raytracing_current_green.jpg
+    image_path: /images/raytracing_current_green.jpg
+    title: "Parallel current. Positive iso-volume with density coloring and simulation box."
+  - url: /images/nvidia_potential_gold.jpg
+    image_path: /images/nvidia_potential_gold.jpg
     title: "Electric potential viewed from the top"
   - url: /images/surface_ui.jpg
     image_path: /images/surface_ui.jpg
     title: "Parallel ion velocity"
 gallery2d:
-  - url: /images/lperpinv.jpg
-    image_path: /images/lperpinv.jpg
+  - url: /images/lperpinv_green.jpg
+    image_path: /images/lperpinv_green.jpg
     title: "Perpendicular inverse gradient length scale"
-  - url: /images/lparallelinv.jpg
-    image_path: /images/lparallelinv.jpg
+  - url: /images/lparallelinv_blue.jpg
+    image_path: /images/lparallelinv_blue.jpg
+    title: "Parallel inverse gradient length scale"
+  - url: /images/lparallelinv_red.jpg
+    image_path: /images/lparallelinv_red.jpg
     title: "Parallel inverse gradient length scale"
 ---
-## Visualisations
-Click on a picture to see larger version.
+## Gallery
+Impressions of a 3d simulation. Click to enlarge
 {% include gallery id="gallery3d" layout="third" class="half" caption="" %}
 {% include gallery id="gallery2d" layout="third" class="half" caption="" %}
 
