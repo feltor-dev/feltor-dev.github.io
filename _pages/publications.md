@@ -5,9 +5,15 @@ permalink: /publications/
 classes: wide
 ---
 
+2020
+----
+* M. Wiesenberger, M. Held [Angular momentum and rotational energy of mean flows in toroidal magnetic fields](https://arxiv.org/abs/2003.02707) Submitted to Nuclear Fusion (2020)
+* M. Held, M. Wiesenberger, A. Kendl [Padé-based arbitrary wavelength polarization closures for full-F gyrokinetic
+and -fluid models](https://doi.org/10.1088/1741-4326/ab7a68) Nuclear Fusion in press (2020)
+* A. Poulsen, J. Juul Rasmussen, M. Wiesenberger, V. Naulin [Collisional Multispecies Drift Fluid Model](https://doi.org/10.1063/1.5140522) Physics of Plasmas 27 (2020)
+
 2019
 ----
-
 * J. Gath, M. Wiesenberger [Consistency in drift-ordered fluid equations]( https://doi.org/10.1063/1.5081777) Physics of Plasmas 26, 032304 (2019)
 * M. Wiesenberger, L. Einkemmer, M. Held, A. Gutierrez-Milla, X. Sáez, R. Iakymchuk  [Reproducibility, accuracy and performance of the Feltor code and library on parallel computer architectures](https://doi.org/10.1016/j.cpc.2018.12.006) Computer Physics Communications 238, 145-156 (2019) *
 * M. Held, M. Wiesenberger, A. Kendl [The collisional drift wave instability in steep density gradient regimes](https://doi.org/10.1088/1741-4326/aaf6cc) Nuclear Fusion 59, 026015 (2019)
