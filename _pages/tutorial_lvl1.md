@@ -10,8 +10,10 @@ sidebar:
 ---
 
 This tutorial explains how to use Feltor in your programs.
-Its level structure follows the basic structure of the library as described
-[here](wiki.md).
+Its level structure follows the basic structure of the library as described in the
+[Wiki](wiki.md). If you want, you can also follow a
+[lecture by Matthias Wiesenberger](https://events.prace-ri.eu/event/989/sessions/3081/attachments/1199/2017/Wiesenberger_PRACE_high.mp4) held at the PRACE winter school on
+GPU programming in Innsbruck.
 If you haven't done so yet, please read the
 [Quick Start Guide](https://github.com/feltor-dev/feltor) first, which
 explains how to install the library and compile programs (you do not
