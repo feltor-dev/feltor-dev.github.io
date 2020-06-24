@@ -46,7 +46,7 @@ gallery2d:
     title: "Parallel inverse gradient length scale"
 ---
 ## Gallery
-Impressions of a 3d simulation. Click to enlarge
+Impressions from a 3d simulation on the EUROfusion High-Performance Computer (Marconi-Fusion). Click to enlarge
 {% include gallery id="gallery3d" layout="third" class="half" caption="" %}
 {% include gallery id="gallery2d" layout="third" class="half" caption="" %}
 
