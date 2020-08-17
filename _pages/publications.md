@@ -10,7 +10,7 @@ classes: wide
 * M. Wiesenberger, M. Held [Angular momentum and rotational energy of mean flows in toroidal magnetic fields](https://dx.doi.org/10.1088/1741-4326/ab9fa8)  Nuclear Fusion 60, 096018 (2020)
 * M. Held, M. Wiesenberger, A. Kendl [Padé-based arbitrary wavelength polarization closures for full-F gyrokinetic
 and -fluid models](https://doi.org/10.1088/1741-4326/ab7a68) Nuclear Fusion 60, 066014 (2020)
-* A. Poulsen, J. Juul Rasmussen, M. Wiesenberger, V. Naulin [Collisional Multispecies Drift Fluid Model](https://doi.org/10.1063/1.5140522) Physics of Plasmas 27 (2020)
+* A. Poulsen, J. Juul Rasmussen, M. Wiesenberger, V. Naulin [Collisional Multispecies Drift Fluid Model](https://doi.org/10.1063/1.5140522) Physics of Plasmas 27, 032305 (2020)
 
 2019
 ----
