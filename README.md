@@ -21,6 +21,17 @@ unnecessary files in feltor/doc before doing this step)
 4. rm -r homepage/doc/related_pages (doxygen saves copies of the necessary pdfs so we do not need this folder)
 5. git add homepage/doc
 
+#### How to update gems with bundler
+
+Sometimes there are security vulnerabilities in some outdated dependencies.
+Then it is time to run
+
+```sh
+bundle update
+```
+
+which will update every gem in the Gemfile to the latest versions
+
 #### Authors and contributions
 
 The Feltor homepage is mainly maintained by Markus Held and Matthias Wiesenberger. Contributions and/or comments are welcome.
