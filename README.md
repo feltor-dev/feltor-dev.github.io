@@ -8,6 +8,13 @@ gem install bundler jekyll
 bundle exec jekyll serve
 # => Now browse to http://localhost:4000
 ```
+If you run into trouble with missing write permissions do not run with sudo, use
+the `gem install bundler --user-install jekyll` option and add `~/.gem/ruby/<ruby version>/bin` to your `PATH` variable.
+You might need to run
+```sh
+bundle install
+```
+before running the serve command.
 
 #### How to update (doxygen) documentation
 
@@ -34,7 +41,7 @@ which will update every gem in the Gemfile to the latest versions
 
 #### Authors and contributions
 
-The Feltor homepage is mainly maintained by Markus Held and Matthias Wiesenberger. Contributions and/or comments are welcome.
+The Feltor homepage is maintained by Markus Held and Matthias Wiesenberger. Contributions and/or comments are welcome.
 
 #### License
 
