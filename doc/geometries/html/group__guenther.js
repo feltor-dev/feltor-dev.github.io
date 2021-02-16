@@ -36,7 +36,7 @@ var group__guenther =
       [ "IpolZ", "structdg_1_1geo_1_1guenther_1_1_ipol_z.html#a34513f1d4866b5dc8a8ca4c9a8fd62af", null ],
       [ "do_compute", "structdg_1_1geo_1_1guenther_1_1_ipol_z.html#a3b485a80089cb1a52409851b5ff2e228", null ]
     ] ],
+    [ "createGuentherField", "group__guenther.html#ga70edeb1a555a6a2b05ac0485329fdcac", null ],
     [ "createIpol", "group__guenther.html#ga1c418d39f07e69144f44223117ea6b93", null ],
-    [ "createMagField", "group__guenther.html#ga4a82083bf29cb70373b84720eba60d83", null ],
     [ "createPsip", "group__guenther.html#ga285fcbae9a9d44cbe5586a7b28148b99", null ]
 ];

@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['level_201_3a_20vectors_2c_20matrices_20and_20basic_20operations',['Level 1: Vectors, Matrices and basic operations',['../../../dg/html/group__backend.html',1,'']]],
-  ['level_203_3a_20topology_20and_20geometry',['Level 3: Topology and Geometry',['../../../dg/html/group__geo.html',1,'']]],
-  ['lowlevel_20helper_20functions_20and_20classes',['Lowlevel helper functions and classes',['../../../dg/html/group__lowlevel.html',1,'']]],
-  ['level_200_3a_20miscellaneous_20additions',['Level 0: Miscellaneous additions',['../../../dg/html/group__misc.html',1,'']]],
-  ['level_202_3a_20basic_20numerical_20algorithms',['Level 2: Basic numerical algorithms',['../../../dg/html/group__numerical0.html',1,'']]],
-  ['level_204_3a_20advanced_20numerical_20schemes',['Level 4: Advanced numerical schemes',['../../../dg/html/group__numerical1.html',1,'']]]
+  ['matrix_20operators_2891',['Matrix operators',['../../../dg/html/group__matrixoperators.html',1,'']]],
+  ['modification_20of_20any_20expansion_2892',['Modification of any expansion',['../group__mod.html',1,'']]],
+  ['mpi_20backend_2893',['MPI backend',['../../../dg/html/group__mpi__structures.html',1,'']]],
+  ['multigrid_20matrix_20inversion_2894',['Multigrid matrix inversion',['../../../dg/html/group__multigrid.html',1,'']]]
 ];

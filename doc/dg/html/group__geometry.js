@@ -38,7 +38,7 @@ var group__geometry =
       [ "global_geometry", "structdg_1_1_real_cartesian_m_p_i_grid2d.html#a5dbe8cd6ca63d5749148695c7df5022e", null ]
     ] ],
     [ "RealCartesianMPIGrid3d", "structdg_1_1_real_cartesian_m_p_i_grid3d.html", [
-      [ "perpendicular_grid", "structdg_1_1_real_cartesian_m_p_i_grid3d.html#a388c0bb88206baa24bf7d5c0a50f7535", null ],
+      [ "perpendicular_grid", "structdg_1_1_real_cartesian_m_p_i_grid3d.html#a39489d7c4abd5a7527883cea781a2b31", null ],
       [ "RealCartesianMPIGrid3d", "structdg_1_1_real_cartesian_m_p_i_grid3d.html#a18bbd3a3ae364f4917eaabcff9ab67b4", null ],
       [ "RealCartesianMPIGrid3d", "structdg_1_1_real_cartesian_m_p_i_grid3d.html#a84f2d0cf256adccf1a462a77d1967683", null ],
       [ "RealCartesianMPIGrid3d", "structdg_1_1_real_cartesian_m_p_i_grid3d.html#acfbaddfa7561bd283b452b7bbaa6f012", null ],
@@ -46,7 +46,7 @@ var group__geometry =
       [ "global_geometry", "structdg_1_1_real_cartesian_m_p_i_grid3d.html#adac7f33f87549853ddb2628f7c08ac2e", null ]
     ] ],
     [ "RealCylindricalMPIGrid3d", "structdg_1_1_real_cylindrical_m_p_i_grid3d.html", [
-      [ "perpendicular_grid", "structdg_1_1_real_cylindrical_m_p_i_grid3d.html#a0b64ea8180eac9ea3d30824b68baf958", null ],
+      [ "perpendicular_grid", "structdg_1_1_real_cylindrical_m_p_i_grid3d.html#a64b27f3a9c1afed1d0a52e4f9c883ef2", null ],
       [ "RealCylindricalMPIGrid3d", "structdg_1_1_real_cylindrical_m_p_i_grid3d.html#a9abead75be109b711a523bd062038f94", null ],
       [ "RealCylindricalMPIGrid3d", "structdg_1_1_real_cylindrical_m_p_i_grid3d.html#ada3c8bca230adf94e1fa3b39632b8212", null ],
       [ "clone", "structdg_1_1_real_cylindrical_m_p_i_grid3d.html#a4fb32be5de6e6f273325078ea9f406e8", null ],

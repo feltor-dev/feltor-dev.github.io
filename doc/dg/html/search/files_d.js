@@ -1,10 +1,9 @@
 var searchData=
 [
-  ['refined_5fcurvilinearx_2eh',['refined_curvilinearX.h',['../../../geometries/html/refined__curvilinear_x_8h.html',1,'']]],
-  ['refined_5felliptic_2eh',['refined_elliptic.h',['../refined__elliptic_8h.html',1,'']]],
-  ['refined_5fgrid_2eh',['refined_grid.h',['../refined__grid_8h.html',1,'']]],
-  ['refined_5fgridx_2eh',['refined_gridX.h',['../refined__grid_x_8h.html',1,'']]],
-  ['ribeiro_2eh',['ribeiro.h',['../../../geometries/html/ribeiro_8h.html',1,'']]],
-  ['ribeirox_2eh',['ribeiroX.h',['../../../geometries/html/ribeiro_x_8h.html',1,'']]],
-  ['runge_5fkutta_2eh',['runge_kutta.h',['../runge__kutta_8h.html',1,'']]]
+  ['poisson_2eh_1847',['poisson.h',['../poisson_8h.html',1,'']]],
+  ['polar_2eh_1848',['polar.h',['../../../geometries/html/polar_8h.html.html',1,'']]],
+  ['polynomial_2eh_1849',['polynomial.h',['../../../geometries/html/polynomial_8h.html.html',1,'']]],
+  ['polynomial_5fparameters_2eh_1850',['polynomial_parameters.h',['../../../geometries/html/polynomial__parameters_8h.html.html',1,'']]],
+  ['projection_2eh_1851',['projection.h',['../projection_8h.html',1,'']]],
+  ['projectionx_2eh_1852',['projectionX.h',['../projection_x_8h.html',1,'']]]
 ];

@@ -31,9 +31,6 @@ var hierarchy =
     [ "dg::geo::aCylindricalFunctor< BZ >", "structdg_1_1geo_1_1a_cylindrical_functor.html", [
       [ "dg::geo::BZ", "structdg_1_1geo_1_1_b_z.html", null ]
     ] ],
-    [ "dg::geo::aCylindricalFunctor< Compose< UnaryFunctor > >", "structdg_1_1geo_1_1a_cylindrical_functor.html", [
-      [ "dg::geo::Compose< UnaryFunctor >", "structdg_1_1geo_1_1_compose.html", null ]
-    ] ],
     [ "dg::geo::aCylindricalFunctor< Constant >", "structdg_1_1geo_1_1a_cylindrical_functor.html", [
       [ "dg::geo::Constant", "structdg_1_1geo_1_1_constant.html", null ]
     ] ],
@@ -76,6 +73,9 @@ var hierarchy =
     [ "dg::geo::aCylindricalFunctor< GradLnB >", "structdg_1_1geo_1_1a_cylindrical_functor.html", [
       [ "dg::geo::GradLnB", "structdg_1_1geo_1_1_grad_ln_b.html", null ]
     ] ],
+    [ "dg::geo::aCylindricalFunctor< Hoo >", "structdg_1_1geo_1_1a_cylindrical_functor.html", [
+      [ "dg::geo::Hoo", "structdg_1_1geo_1_1_hoo.html", null ]
+    ] ],
     [ "dg::geo::aCylindricalFunctor< InvB >", "structdg_1_1geo_1_1a_cylindrical_functor.html", [
       [ "dg::geo::InvB", "structdg_1_1geo_1_1_inv_b.html", null ]
     ] ],
@@ -115,38 +115,71 @@ var hierarchy =
     [ "dg::geo::aCylindricalFunctor< NablaPsiInvY >", "structdg_1_1geo_1_1a_cylindrical_functor.html", [
       [ "dg::geo::NablaPsiInvY", "structdg_1_1geo_1_1_nabla_psi_inv_y.html", null ]
     ] ],
+    [ "dg::geo::aCylindricalFunctor< Periodify >", "structdg_1_1geo_1_1a_cylindrical_functor.html", [
+      [ "dg::geo::Periodify", "structdg_1_1geo_1_1_periodify.html", null ]
+    ] ],
     [ "dg::geo::aCylindricalFunctor< Psip >", "structdg_1_1geo_1_1a_cylindrical_functor.html", [
       [ "dg::geo::circular::Psip", "structdg_1_1geo_1_1circular_1_1_psip.html", null ],
       [ "dg::geo::guenther::Psip", "structdg_1_1geo_1_1guenther_1_1_psip.html", null ],
+      [ "dg::geo::mod::Psip", "structdg_1_1geo_1_1mod_1_1_psip.html", null ],
+      [ "dg::geo::polynomial::Psip", "structdg_1_1geo_1_1polynomial_1_1_psip.html", null ],
       [ "dg::geo::solovev::Psip", "structdg_1_1geo_1_1solovev_1_1_psip.html", null ],
       [ "dg::geo::taylor::Psip", "structdg_1_1geo_1_1taylor_1_1_psip.html", null ]
     ] ],
     [ "dg::geo::aCylindricalFunctor< PsipR >", "structdg_1_1geo_1_1a_cylindrical_functor.html", [
       [ "dg::geo::circular::PsipR", "structdg_1_1geo_1_1circular_1_1_psip_r.html", null ],
       [ "dg::geo::guenther::PsipR", "structdg_1_1geo_1_1guenther_1_1_psip_r.html", null ],
+      [ "dg::geo::mod::PsipR", "structdg_1_1geo_1_1mod_1_1_psip_r.html", null ],
+      [ "dg::geo::polynomial::PsipR", "structdg_1_1geo_1_1polynomial_1_1_psip_r.html", null ],
       [ "dg::geo::solovev::PsipR", "structdg_1_1geo_1_1solovev_1_1_psip_r.html", null ],
       [ "dg::geo::taylor::PsipR", "structdg_1_1geo_1_1taylor_1_1_psip_r.html", null ]
     ] ],
     [ "dg::geo::aCylindricalFunctor< PsipRR >", "structdg_1_1geo_1_1a_cylindrical_functor.html", [
       [ "dg::geo::guenther::PsipRR", "structdg_1_1geo_1_1guenther_1_1_psip_r_r.html", null ],
+      [ "dg::geo::mod::PsipRR", "structdg_1_1geo_1_1mod_1_1_psip_r_r.html", null ],
+      [ "dg::geo::polynomial::PsipRR", "structdg_1_1geo_1_1polynomial_1_1_psip_r_r.html", null ],
       [ "dg::geo::solovev::PsipRR", "structdg_1_1geo_1_1solovev_1_1_psip_r_r.html", null ],
       [ "dg::geo::taylor::PsipRR", "structdg_1_1geo_1_1taylor_1_1_psip_r_r.html", null ]
     ] ],
     [ "dg::geo::aCylindricalFunctor< PsipRZ >", "structdg_1_1geo_1_1a_cylindrical_functor.html", [
       [ "dg::geo::guenther::PsipRZ", "structdg_1_1geo_1_1guenther_1_1_psip_r_z.html", null ],
+      [ "dg::geo::mod::PsipRZ", "structdg_1_1geo_1_1mod_1_1_psip_r_z.html", null ],
+      [ "dg::geo::polynomial::PsipRZ", "structdg_1_1geo_1_1polynomial_1_1_psip_r_z.html", null ],
       [ "dg::geo::solovev::PsipRZ", "structdg_1_1geo_1_1solovev_1_1_psip_r_z.html", null ],
       [ "dg::geo::taylor::PsipRZ", "structdg_1_1geo_1_1taylor_1_1_psip_r_z.html", null ]
     ] ],
     [ "dg::geo::aCylindricalFunctor< PsipZ >", "structdg_1_1geo_1_1a_cylindrical_functor.html", [
       [ "dg::geo::circular::PsipZ", "structdg_1_1geo_1_1circular_1_1_psip_z.html", null ],
       [ "dg::geo::guenther::PsipZ", "structdg_1_1geo_1_1guenther_1_1_psip_z.html", null ],
+      [ "dg::geo::mod::PsipZ", "structdg_1_1geo_1_1mod_1_1_psip_z.html", null ],
+      [ "dg::geo::polynomial::PsipZ", "structdg_1_1geo_1_1polynomial_1_1_psip_z.html", null ],
       [ "dg::geo::solovev::PsipZ", "structdg_1_1geo_1_1solovev_1_1_psip_z.html", null ],
       [ "dg::geo::taylor::PsipZ", "structdg_1_1geo_1_1taylor_1_1_psip_z.html", null ]
     ] ],
     [ "dg::geo::aCylindricalFunctor< PsipZZ >", "structdg_1_1geo_1_1a_cylindrical_functor.html", [
       [ "dg::geo::guenther::PsipZZ", "structdg_1_1geo_1_1guenther_1_1_psip_z_z.html", null ],
+      [ "dg::geo::mod::PsipZZ", "structdg_1_1geo_1_1mod_1_1_psip_z_z.html", null ],
+      [ "dg::geo::polynomial::PsipZZ", "structdg_1_1geo_1_1polynomial_1_1_psip_z_z.html", null ],
       [ "dg::geo::solovev::PsipZZ", "structdg_1_1geo_1_1solovev_1_1_psip_z_z.html", null ],
       [ "dg::geo::taylor::PsipZZ", "structdg_1_1geo_1_1taylor_1_1_psip_z_z.html", null ]
+    ] ],
+    [ "dg::geo::aCylindricalFunctor< RhoP >", "structdg_1_1geo_1_1a_cylindrical_functor.html", [
+      [ "dg::geo::RhoP", "structdg_1_1geo_1_1_rho_p.html", null ]
+    ] ],
+    [ "dg::geo::aCylindricalFunctor< ScalarProduct >", "structdg_1_1geo_1_1a_cylindrical_functor.html", [
+      [ "dg::geo::ScalarProduct", "structdg_1_1geo_1_1_scalar_product.html", null ]
+    ] ],
+    [ "dg::geo::aCylindricalFunctor< SetIntersection >", "structdg_1_1geo_1_1a_cylindrical_functor.html", [
+      [ "dg::geo::mod::SetIntersection", "structdg_1_1geo_1_1mod_1_1_set_intersection.html", null ]
+    ] ],
+    [ "dg::geo::aCylindricalFunctor< SetNot >", "structdg_1_1geo_1_1a_cylindrical_functor.html", [
+      [ "dg::geo::mod::SetNot", "structdg_1_1geo_1_1mod_1_1_set_not.html", null ]
+    ] ],
+    [ "dg::geo::aCylindricalFunctor< SetUnion >", "structdg_1_1geo_1_1a_cylindrical_functor.html", [
+      [ "dg::geo::mod::SetUnion", "structdg_1_1geo_1_1mod_1_1_set_union.html", null ]
+    ] ],
+    [ "dg::geo::aCylindricalFunctor< SquareNorm >", "structdg_1_1geo_1_1a_cylindrical_functor.html", [
+      [ "dg::geo::SquareNorm", "structdg_1_1geo_1_1_square_norm.html", null ]
     ] ],
     [ "dg::geo::aCylindricalFunctor< TrueCurvatureKappaP >", "structdg_1_1geo_1_1a_cylindrical_functor.html", [
       [ "dg::geo::TrueCurvatureKappaP", "structdg_1_1geo_1_1_true_curvature_kappa_p.html", null ]
@@ -172,10 +205,12 @@ var hierarchy =
     [ "dg::geo::aCylindricalFunctor< TrueDivCurvatureNablaB >", "structdg_1_1geo_1_1a_cylindrical_functor.html", [
       [ "dg::geo::TrueDivCurvatureNablaB", "structdg_1_1geo_1_1_true_div_curvature_nabla_b.html", null ]
     ] ],
+    [ "dg::geo::aCylindricalFunctor< WallDirection >", "structdg_1_1geo_1_1a_cylindrical_functor.html", [
+      [ "dg::geo::WallDirection", "structdg_1_1geo_1_1_wall_direction.html", null ]
+    ] ],
     [ "dg::geo::aCylindricalFunctor< ZCutter >", "structdg_1_1geo_1_1a_cylindrical_functor.html", [
       [ "dg::geo::ZCutter", "structdg_1_1geo_1_1_z_cutter.html", null ]
     ] ],
-    [ "dg::geo::Alpha", "structdg_1_1geo_1_1_alpha.html", null ],
     [ "dg::geo::aRealGenerator2d< real_type >", "structdg_1_1geo_1_1a_real_generator2d.html", [
       [ "dg::geo::FluxGenerator", "structdg_1_1geo_1_1_flux_generator.html", null ],
       [ "dg::geo::Hector< IMatrix, Matrix, container >", "structdg_1_1geo_1_1_hector.html", null ],
@@ -187,22 +222,21 @@ var hierarchy =
     ] ],
     [ "dg::geo::aRealGeneratorX2d< real_type >", "structdg_1_1geo_1_1a_real_generator_x2d.html", [
       [ "dg::geo::RibeiroX", "structdg_1_1geo_1_1_ribeiro_x.html", null ],
-      [ "dg::geo::SeparatrixOrthogonal", "structdg_1_1geo_1_1_separatrix_orthogonal.html", null ],
-      [ "dg::geo::SimpleOrthogonalX", "structdg_1_1geo_1_1_simple_orthogonal_x.html", null ]
+      [ "dg::geo::SeparatrixOrthogonal", "structdg_1_1geo_1_1_separatrix_orthogonal.html", null ]
     ] ],
-    [ "dg::aRealMPITopology2d< real_type >", "../../dg/html/structdg_1_1a_real_m_p_i_topology2d.html", [
+    [ "dg::aRealMPITopology2d< class >", "../../dg/html/structdg_1_1a_real_m_p_i_topology2d.html", [
       [ "dg::aRealMPIGeometry2d< real_type >", "../../dg/html/structdg_1_1a_real_m_p_i_geometry2d.html", [
         [ "dg::geo::RealCurvilinearMPIGrid2d< real_type >", "structdg_1_1geo_1_1_real_curvilinear_m_p_i_grid2d.html", null ]
       ] ]
     ] ],
-    [ "dg::aRealMPITopology3d< real_type >", "../../dg/html/structdg_1_1a_real_m_p_i_topology3d.html", [
-      [ "dg::aRealMPIGeometry3d< real_type >", "../../dg/html/structdg_1_1a_real_m_p_i_geometry3d.html", [
+    [ "dg::aRealMPITopology3d< class >", "../../dg/html/structdg_1_1a_real_m_p_i_topology3d.html", [
+      [ "dg::aRealMPIGeometry3d< class >", "../../dg/html/structdg_1_1a_real_m_p_i_geometry3d.html", [
         [ "dg::aRealProductMPIGeometry3d< real_type >", "../../dg/html/structdg_1_1a_real_product_m_p_i_geometry3d.html", [
           [ "dg::geo::RealCurvilinearProductMPIGrid3d< real_type >", "structdg_1_1geo_1_1_real_curvilinear_product_m_p_i_grid3d.html", null ]
         ] ]
       ] ]
     ] ],
-    [ "dg::aRealTopology2d< real_type >", "../../dg/html/structdg_1_1a_real_topology2d.html", [
+    [ "dg::aRealTopology2d< class >", "../../dg/html/structdg_1_1a_real_topology2d.html", [
       [ "dg::aRealGeometry2d< double >", "../../dg/html/structdg_1_1a_real_geometry2d.html", [
         [ "dg::geo::RealCurvilinearGrid2d< double >", "structdg_1_1geo_1_1_real_curvilinear_grid2d.html", null ]
       ] ],
@@ -210,20 +244,20 @@ var hierarchy =
         [ "dg::geo::RealCurvilinearGrid2d< real_type >", "structdg_1_1geo_1_1_real_curvilinear_grid2d.html", null ]
       ] ]
     ] ],
-    [ "dg::aRealTopology3d< real_type >", "../../dg/html/structdg_1_1a_real_topology3d.html", [
-      [ "dg::aRealGeometry3d< real_type >", "../../dg/html/structdg_1_1a_real_geometry3d.html", [
+    [ "dg::aRealTopology3d< class >", "../../dg/html/structdg_1_1a_real_topology3d.html", [
+      [ "dg::aRealGeometry3d< class >", "../../dg/html/structdg_1_1a_real_geometry3d.html", [
         [ "dg::aRealProductGeometry3d< real_type >", "../../dg/html/structdg_1_1a_real_product_geometry3d.html", [
           [ "dg::geo::RealCurvilinearProductGrid3d< real_type >", "structdg_1_1geo_1_1_real_curvilinear_product_grid3d.html", null ]
         ] ]
       ] ]
     ] ],
-    [ "dg::aRealTopologyX2d< real_type >", "../../dg/html/structdg_1_1a_real_topology_x2d.html", [
+    [ "dg::aRealTopologyX2d< class >", "../../dg/html/structdg_1_1a_real_topology_x2d.html", [
       [ "dg::aRealGeometryX2d< real_type >", "../../dg/html/structdg_1_1a_real_geometry_x2d.html", [
         [ "dg::geo::RealCurvilinearGridX2d< real_type >", "structdg_1_1geo_1_1_real_curvilinear_grid_x2d.html", null ],
         [ "dg::geo::RealCurvilinearRefinedGridX2d< real_type >", "structdg_1_1geo_1_1_real_curvilinear_refined_grid_x2d.html", null ]
       ] ]
     ] ],
-    [ "dg::aRealTopologyX3d< real_type >", "../../dg/html/structdg_1_1a_real_topology_x3d.html", [
+    [ "dg::aRealTopologyX3d< class >", "../../dg/html/structdg_1_1a_real_topology_x3d.html", [
       [ "dg::aRealGeometryX3d< real_type >", "../../dg/html/structdg_1_1a_real_geometry_x3d.html", [
         [ "dg::geo::RealCurvilinearProductGridX3d< real_type >", "structdg_1_1geo_1_1_real_curvilinear_product_grid_x3d.html", null ],
         [ "dg::geo::RealCurvilinearRefinedProductGridX3d< real_type >", "structdg_1_1geo_1_1_real_curvilinear_refined_product_grid_x3d.html", null ]
@@ -233,14 +267,18 @@ var hierarchy =
     [ "dg::geo::CylindricalFunctorsLvl2", "structdg_1_1geo_1_1_cylindrical_functors_lvl2.html", null ],
     [ "dg::geo::CylindricalSymmTensorLvl1", "structdg_1_1geo_1_1_cylindrical_symm_tensor_lvl1.html", null ],
     [ "dg::geo::CylindricalVectorLvl0", "structdg_1_1geo_1_1_cylindrical_vector_lvl0.html", null ],
-    [ "dg::geo::DeltaFunction", "structdg_1_1geo_1_1_delta_function.html", null ],
     [ "dg::geo::DS< ProductGeometry, IMatrix, Matrix, container >", "structdg_1_1geo_1_1_d_s.html", null ],
     [ "dg::geo::Fieldaligned< ProductGeometry, IMatrix, container >", "structdg_1_1geo_1_1_fieldaligned.html", null ],
     [ "dg::geo::FluxSurfaceAverage< container >", "structdg_1_1geo_1_1_flux_surface_average.html", null ],
+    [ "dg::geo::FluxSurfaceIntegral< container >", "structdg_1_1geo_1_1_flux_surface_integral.html", null ],
+    [ "dg::geo::FluxSurfaceIntegral< thrust::host_vector< double > >", "structdg_1_1geo_1_1_flux_surface_integral.html", null ],
+    [ "dg::geo::FluxVolumeIntegral< container >", "structdg_1_1geo_1_1_flux_volume_integral.html", null ],
+    [ "dg::geo::MagneticFieldParameters", "structdg_1_1geo_1_1_magnetic_field_parameters.html", null ],
+    [ "dg::geo::polynomial::Parameters", "structdg_1_1geo_1_1polynomial_1_1_parameters.html", null ],
     [ "dg::geo::solovev::Parameters", "structdg_1_1geo_1_1solovev_1_1_parameters.html", null ],
-    [ "dg::geo::guenther::Parameters", "structdg_1_1geo_1_1guenther_1_1_parameters.html", null ],
     [ "dg::geo::RealCylindricalFunctor< real_type >", "structdg_1_1geo_1_1_real_cylindrical_functor.html", null ],
     [ "dg::geo::RealCylindricalFunctor< double >", "structdg_1_1geo_1_1_real_cylindrical_functor.html", null ],
     [ "dg::geo::SafetyFactor", "structdg_1_1geo_1_1_safety_factor.html", null ],
+    [ "dg::geo::SafetyFactorAverage", "structdg_1_1geo_1_1_safety_factor_average.html", null ],
     [ "dg::geo::TokamakMagneticField", "structdg_1_1geo_1_1_tokamak_magnetic_field.html", null ]
 ];

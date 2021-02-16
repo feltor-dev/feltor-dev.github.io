@@ -1,18 +1,13 @@
 var searchData=
 [
-  ['tableau_2eh',['tableau.h',['../../../dg/html/tableau_8h.html',1,'']]],
-  ['taylor_2eh',['taylor.h',['../taylor_8h.html',1,'']]],
-  ['tensor_2eh',['tensor.h',['../../../dg/html/tensor_8h.html',1,'']]],
-  ['tensor_5ftraits_2eh',['tensor_traits.h',['../../../dg/html/tensor__traits_8h.html',1,'']]],
-  ['tensor_5ftraits_5fcusp_2eh',['tensor_traits_cusp.h',['../../../dg/html/tensor__traits__cusp_8h.html',1,'']]],
-  ['tensor_5ftraits_5fscalar_2eh',['tensor_traits_scalar.h',['../../../dg/html/tensor__traits__scalar_8h.html',1,'']]],
-  ['tensor_5ftraits_5fstd_2eh',['tensor_traits_std.h',['../../../dg/html/tensor__traits__std_8h.html',1,'']]],
-  ['tensor_5ftraits_5fthrust_2eh',['tensor_traits_thrust.h',['../../../dg/html/tensor__traits__thrust_8h.html',1,'']]],
-  ['testfunctors_2eh',['testfunctors.h',['../testfunctors_8h.html',1,'']]],
-  ['timer_2eh',['timer.h',['../../../dg/html/timer_8h.html',1,'']]],
-  ['topological_5ftraits_2eh',['topological_traits.h',['../../../dg/html/topological__traits_8h.html',1,'']]],
-  ['toroidal_2eh',['toroidal.h',['../toroidal_8h.html',1,'']]],
-  ['transform_2eh',['transform.h',['../../../dg/html/transform_8h.html',1,'']]],
-  ['transpose_2eh',['transpose.h',['../../../dg/html/transpose_8h.html',1,'']]],
-  ['typedefs_2eh',['typedefs.h',['../../../dg/html/typedefs_8h.html',1,'']]]
+  ['scalar_5fcategories_2eh_1861',['scalar_categories.h',['../../../dg/html/scalar__categories_8h.html.html',1,'']]],
+  ['separatrix_5forthogonal_2eh_1862',['separatrix_orthogonal.h',['../separatrix__orthogonal_8h.html',1,'']]],
+  ['simple_5forthogonal_2eh_1863',['simple_orthogonal.h',['../simple__orthogonal_8h.html',1,'']]],
+  ['simpsons_2eh_1864',['simpsons.h',['../../../dg/html/simpsons_8h.html.html',1,'']]],
+  ['solovev_2eh_1865',['solovev.h',['../solovev_8h.html',1,'']]],
+  ['solovev_5fparameters_2eh_1866',['solovev_parameters.h',['../solovev__parameters_8h.html',1,'']]],
+  ['sparseblockmat_2ecuh_1867',['sparseblockmat.cuh',['../../../dg/html/sparseblockmat_8cuh.html.html',1,'']]],
+  ['sparseblockmat_2eh_1868',['sparseblockmat.h',['../../../dg/html/sparseblockmat_8h.html.html',1,'']]],
+  ['split_5fand_5fjoin_2eh_1869',['split_and_join.h',['../../../dg/html/split__and__join_8h.html.html',1,'']]],
+  ['subroutines_2eh_1870',['subroutines.h',['../../../dg/html/subroutines_8h.html.html',1,'']]]
 ];

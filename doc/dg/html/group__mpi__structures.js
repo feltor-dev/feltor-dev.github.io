@@ -38,8 +38,8 @@ var group__mpi__structures =
       [ "buffer_size", "structdg_1_1a_communicator.html#a7c0b8733751b2b82449a54676e4f0397", null ],
       [ "clone", "structdg_1_1a_communicator.html#a08f287b55eb703e29f9f17fc128205ef", null ],
       [ "communicator", "structdg_1_1a_communicator.html#acc738661d96a4d926541c14fd28723c6", null ],
-      [ "global_gather", "structdg_1_1a_communicator.html#a0d4afb767c3d62c1908eed2c4eb156a7", null ],
       [ "global_gather", "structdg_1_1a_communicator.html#a977b6a58f608dc19041bb2a1f310ba3a", null ],
+      [ "global_gather", "structdg_1_1a_communicator.html#a0d4afb767c3d62c1908eed2c4eb156a7", null ],
       [ "global_scatter_reduce", "structdg_1_1a_communicator.html#a342c5ad30f218eb1e2588369aae72fd2", null ],
       [ "isCommunicating", "structdg_1_1a_communicator.html#ab6da46a52184be235645f0194f22cdd2", null ],
       [ "local_size", "structdg_1_1a_communicator.html#a190bc7d049ea3aaea0d1f50ff9f86f4b", null ],
@@ -54,8 +54,8 @@ var group__mpi__structures =
       [ "collective", "structdg_1_1_row_col_dist_mat.html#ab70ee973dfe83d2ada2133f24a851c83", null ],
       [ "inner_matrix", "structdg_1_1_row_col_dist_mat.html#afdcfb2d5cac13f8964427d480341b5f4", null ],
       [ "outer_matrix", "structdg_1_1_row_col_dist_mat.html#a263c6c683aae00ecf28565184870faab", null ],
-      [ "symv", "structdg_1_1_row_col_dist_mat.html#a41a5a4b65cb34798c693322f7679d13f", null ],
-      [ "symv", "structdg_1_1_row_col_dist_mat.html#abfafc42df2ab3bfbbb01ebeac6088b43", null ]
+      [ "symv", "structdg_1_1_row_col_dist_mat.html#abfafc42df2ab3bfbbb01ebeac6088b43", null ],
+      [ "symv", "structdg_1_1_row_col_dist_mat.html#a41a5a4b65cb34798c693322f7679d13f", null ]
     ] ],
     [ "MPIDistMat", "structdg_1_1_m_p_i_dist_mat.html", [
       [ "value_type", "structdg_1_1_m_p_i_dist_mat.html#a382a85c9d413581afaccfcef642cf46b", null ],
@@ -66,8 +66,8 @@ var group__mpi__structures =
       [ "get_dist", "structdg_1_1_m_p_i_dist_mat.html#a96ffa4df1bbe7b1a512791c5ff2a9ab7", null ],
       [ "matrix", "structdg_1_1_m_p_i_dist_mat.html#a2d3376ce5e0862a0e5486b6c4bda9480", null ],
       [ "set_dist", "structdg_1_1_m_p_i_dist_mat.html#aa6693e91cfc73a2de97da0cd7a3b7f3d", null ],
-      [ "symv", "structdg_1_1_m_p_i_dist_mat.html#aae29f0618e252aabcca5bc1bb493e459", null ],
-      [ "symv", "structdg_1_1_m_p_i_dist_mat.html#a8bf1107b0a4333f3f9e4fa02041b42b6", null ]
+      [ "symv", "structdg_1_1_m_p_i_dist_mat.html#a8bf1107b0a4333f3f9e4fa02041b42b6", null ],
+      [ "symv", "structdg_1_1_m_p_i_dist_mat.html#aae29f0618e252aabcca5bc1bb493e459", null ]
     ] ],
     [ "MPI_Vector", "structdg_1_1_m_p_i___vector.html", [
       [ "container_type", "structdg_1_1_m_p_i___vector.html#ad42ce5571b198915c6b5c2eb9033ceb3", null ],
@@ -77,8 +77,8 @@ var group__mpi__structures =
       [ "communicator", "structdg_1_1_m_p_i___vector.html#aab440e329ae64ae5261a5c7fd313ab19", null ],
       [ "communicator_mod", "structdg_1_1_m_p_i___vector.html#a888b92389a999dbbe0f6151fa657d3b9", null ],
       [ "communicator_mod_reduce", "structdg_1_1_m_p_i___vector.html#ab0d4fab5307f188d3ac9256e45e54646", null ],
-      [ "data", "structdg_1_1_m_p_i___vector.html#a0148f868581043d706b690f5a22cd236", null ],
       [ "data", "structdg_1_1_m_p_i___vector.html#a2102f399a256c19e86f6d599d561e7fb", null ],
+      [ "data", "structdg_1_1_m_p_i___vector.html#a0148f868581043d706b690f5a22cd236", null ],
       [ "set_communicator", "structdg_1_1_m_p_i___vector.html#ac2442299b7209bebfc668cedb7ecce42", null ],
       [ "size", "structdg_1_1_m_p_i___vector.html#adec1137c3cdb2954fb55dfc180cb3ccd", null ],
       [ "swap", "structdg_1_1_m_p_i___vector.html#ae86c14f9d503831fbe96ced377a37013", null ]

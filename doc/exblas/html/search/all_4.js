@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['reduce_5fmpi_5fcpu',['reduce_mpi_cpu',['../namespaceexblas.html#ab4c1247c02e14edcae026d41b3f5c6fb',1,'exblas']]],
-  ['round',['Round',['../namespaceexblas_1_1gpu.html#acac8b5b8de3efcbb2af28ea75c7aaaf4',1,'exblas::gpu::Round()'],['../namespaceexblas_1_1cpu.html#ac16158f26c0ea9b96fea9cfacf870f53',1,'exblas::cpu::Round()']]]
+  ['mpi_5faccumulate_2eh_14',['mpi_accumulate.h',['../mpi__accumulate_8h.html',1,'']]],
+  ['mpi_5freduce_5fcommunicator_15',['mpi_reduce_communicator',['../namespacedg_1_1exblas.html#a69e81c6d1be55e0ad3f58c791f711315',1,'dg::exblas']]]
 ];

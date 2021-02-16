@@ -10,5 +10,7 @@ var structdg_1_1_a_r_k_step =
     [ "embedded_order", "structdg_1_1_a_r_k_step.html#a9c3d30399557b2d7fab289841022f83a", null ],
     [ "num_stages", "structdg_1_1_a_r_k_step.html#a0a1c5ba23f06988fc370505361243cfb", null ],
     [ "order", "structdg_1_1_a_r_k_step.html#a00ddc9888a7e8fd78df554024b59935b", null ],
+    [ "solver", "structdg_1_1_a_r_k_step.html#a70d6594e6d6292f033bb607aeb71b667", null ],
+    [ "solver", "structdg_1_1_a_r_k_step.html#a0f9f492f56b6b9565dc9bc5f01b18667", null ],
     [ "step", "structdg_1_1_a_r_k_step.html#a85d365734ef2d46556c933faf68c61f3", null ]
 ];

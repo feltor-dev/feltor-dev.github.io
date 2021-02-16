@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['sayfy_5faburub_5f6_5f3_5f4',['SAYFY_ABURUB_6_3_4',['../group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a4f13e6b1d5695276f8f99e07d86f5667',1,'dg']]],
-  ['sdirk_5f2_5f1_5f2',['SDIRK_2_1_2',['../group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a72bd02f1580c5bb96958efa4f511f8aa',1,'dg']]],
-  ['sdirk_5f5_5f3_5f4',['SDIRK_5_3_4',['../group__time.html#gga80d4d81df02e5311bb20b3f74ea45992ababbb34a98a801e7cc89920a1daa4d9d',1,'dg']]]
+  ['per_2815',['PER',['../group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3',1,'dg']]],
+  ['polynomial_2816',['polynomial',['../../../geometries/html/group__magnetic.html#gab39148d38eed4929633564c02238214da89693d3333328e76f4fdeed379e8f9ea',1,'polynomial()(Global Namespace)'],['../../../geometries/html/group__magnetic.html#gab39148d38eed4929633564c02238214da89693d3333328e76f4fdeed379e8f9ea',1,'dg::geo::polynomial()'],['../../../geometries/html/group__magnetic.html#gab39148d38eed4929633564c02238214da89693d3333328e76f4fdeed379e8f9ea',1,'polynomial()(Global Namespace)']]]
 ];

@@ -2,8 +2,8 @@ var structdg_1_1_butcher_tableau =
 [
     [ "value_type", "structdg_1_1_butcher_tableau.html#af9f9544ca1cf3c9aba9232d94257579d", null ],
     [ "ButcherTableau", "structdg_1_1_butcher_tableau.html#a0a946832a128b637ef521187f18c5fcc", null ],
-    [ "ButcherTableau", "structdg_1_1_butcher_tableau.html#a0b1d11b1fbfe2d3f7193b5c92a233ce8", null ],
-    [ "ButcherTableau", "structdg_1_1_butcher_tableau.html#a72fa34bde9a17f925a56b5b5e8f44881", null ],
+    [ "ButcherTableau", "structdg_1_1_butcher_tableau.html#a6658556818b9057b9a35bd697912064c", null ],
+    [ "ButcherTableau", "structdg_1_1_butcher_tableau.html#af0e3d9eb26f1ba560579be09c71bd1fc", null ],
     [ "ButcherTableau", "structdg_1_1_butcher_tableau.html#afbee96f8e8f2b2ccbd9e94c8a8f9d72d", null ],
     [ "a", "structdg_1_1_butcher_tableau.html#a6493b23b11f5fc66933320ab2a1b5d3e", null ],
     [ "b", "structdg_1_1_butcher_tableau.html#abc9151ce94f584eee65d4fedecffe9ad", null ],

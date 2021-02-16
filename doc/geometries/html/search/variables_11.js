@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['verner_5f8_5f5_5f6',['VERNER_8_5_6',['../../../dg/html/group__time.html#gga80d4d81df02e5311bb20b3f74ea45992aa29646a0456ce45916235f7991a7226e',1,'dg::VERNER_8_5_6()'],['../../../dg/html/group__time.html#gga80d4d81df02e5311bb20b3f74ea45992aa29646a0456ce45916235f7991a7226e',1,'VERNER_8_5_6()(Global Namespace)']]]
+  ['xspace_2682',['xspace',['../../../dg/html/group__creation.html#gga720a6f709941a075d5c8f60ef07c619fa235752009881e59ab3ad8de2b904cb85',1,'dg::xspace()'],['../../../dg/html/group__creation.html#gga720a6f709941a075d5c8f60ef07c619fa235752009881e59ab3ad8de2b904cb85',1,'xspace()(Global Namespace)']]]
 ];

@@ -1,5 +1,9 @@
 var searchData=
 [
-  ['mpi_5faccumulate_2eh',['mpi_accumulate.h',['../mpi__accumulate_8h.html',1,'']]],
-  ['mpi_5freduce_5fcommunicator',['mpi_reduce_communicator',['../namespaceexblas.html#a0b5cd15f02ce8ac7c0a18d7a0691c2e8',1,'exblas']]]
+  ['exdot_5fcpu_7',['exdot_cpu',['../namespacedg_1_1exblas.html#a020aba11430835ed502b897fe94eab6d',1,'dg::exblas::exdot_cpu(unsigned size, PointerOrValue1 x1_ptr, PointerOrValue2 x2_ptr, int64_t *h_superacc, int *status)'],['../namespacedg_1_1exblas.html#a5511b744a196e5830b9094b371832bbe',1,'dg::exblas::exdot_cpu(unsigned size, PointerOrValue1 x1_ptr, PointerOrValue2 x2_ptr, PointerOrValue3 x3_ptr, int64_t *h_superacc, int *status)']]],
+  ['exdot_5fcuda_2ecuh_8',['exdot_cuda.cuh',['../exdot__cuda_8cuh.html',1,'']]],
+  ['exdot_5fgpu_9',['exdot_gpu',['../namespacedg_1_1exblas.html#a48b3fa9c609028c5a26e0280b35fbaa6',1,'dg::exblas::exdot_gpu(unsigned size, PointerOrValue1 x1_ptr, PointerOrValue2 x2_ptr, int64_t *d_superacc, int *status)'],['../namespacedg_1_1exblas.html#a95d1caab696c6453b99cdf9ab52daec8',1,'dg::exblas::exdot_gpu(unsigned size, PointerOrValue1 x1_ptr, PointerOrValue2 x2_ptr, PointerOrValue3 x3_ptr, int64_t *d_superacc, int *status)']]],
+  ['exdot_5fomp_10',['exdot_omp',['../namespacedg_1_1exblas.html#a77b3aef855b6280b5a2fae8e89216e09',1,'dg::exblas::exdot_omp(unsigned size, PointerOrValue1 x1_ptr, PointerOrValue2 x2_ptr, int64_t *h_superacc, int *status)'],['../namespacedg_1_1exblas.html#aa6a5971251a01870e26f2c769fef613d',1,'dg::exblas::exdot_omp(unsigned size, PointerOrValue1 x1_ptr, PointerOrValue2 x2_ptr, PointerOrValue3 x3_ptr, int64_t *h_superacc, int *status)']]],
+  ['exdot_5fomp_2eh_11',['exdot_omp.h',['../exdot__omp_8h.html',1,'']]],
+  ['exdot_5fserial_2eh_12',['exdot_serial.h',['../exdot__serial_8h.html',1,'']]]
 ];

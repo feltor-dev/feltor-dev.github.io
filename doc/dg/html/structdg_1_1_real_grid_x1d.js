@@ -1,8 +1,8 @@
 var structdg_1_1_real_grid_x1d =
 [
-    [ "dimensionality", "structdg_1_1_real_grid_x1d.html#aa535542165c06678f95013e79d28c719", null ],
-    [ "memory_category", "structdg_1_1_real_grid_x1d.html#a785dfc413eced0eff09d1e6932b4c3f2", null ],
-    [ "value_type", "structdg_1_1_real_grid_x1d.html#a25dc0e737c59bbb26d14b5bdd94131b8", null ],
+    [ "host_grid", "structdg_1_1_real_grid_x1d.html#aa2e0eb9873451885d66e97df1a535b96", null ],
+    [ "host_vector", "structdg_1_1_real_grid_x1d.html#ac45708ed2eb1eaae622aa35e6ebe30c9", null ],
+    [ "value_type", "structdg_1_1_real_grid_x1d.html#a57a105d7214d9bc2b2173ec155059ce0", null ],
     [ "RealGridX1d", "structdg_1_1_real_grid_x1d.html#a0e7f34fe6c88dda18f6cc1c71c1392db", null ],
     [ "bcx", "structdg_1_1_real_grid_x1d.html#a3fd5e18bbbe420ba5a98fd11311d825c", null ],
     [ "contains", "structdg_1_1_real_grid_x1d.html#a3ea0d54654b61e5cbc354cefea6b6035", null ],

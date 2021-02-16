@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['tableau_5fidentifier',['tableau_identifier',['../group__time.html#ga80d4d81df02e5311bb20b3f74ea45992',1,'dg']]]
+  ['modifier_2738',['modifier',['../../../geometries/html/group__magnetic.html#ga097616a5ebbfd85265a3759b05e1bf76',1,'dg::geo::modifier()'],['../../../geometries/html/group__magnetic.html#ga097616a5ebbfd85265a3759b05e1bf76',1,'modifier()(Global Namespace)']]],
+  ['multistep_5fidentifier_2739',['multistep_identifier',['../group__time__utils.html#gaac3c0875ffdfb49fd06757312d1a599a',1,'dg']]]
 ];

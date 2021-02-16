@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['poisson_2eh',['poisson.h',['../../../dg/html/poisson_8h.html',1,'']]],
-  ['polar_2eh',['polar.h',['../polar_8h.html',1,'']]],
-  ['projection_2eh',['projection.h',['../../../dg/html/projection_8h.html',1,'']]],
-  ['projectionx_2eh',['projectionX.h',['../../../dg/html/projection_x_8h.html',1,'']]]
+  ['operator_2eh_1846',['operator.h',['../../../dg/html/operator_8h.html.html',1,'']]],
+  ['operator_5ftensor_2eh_1847',['operator_tensor.h',['../../../dg/html/operator__tensor_8h.html.html',1,'']]]
 ];

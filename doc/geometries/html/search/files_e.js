@@ -1,12 +1,10 @@
 var searchData=
 [
-  ['scalar_5fcategories_2eh',['scalar_categories.h',['../../../dg/html/scalar__categories_8h.html',1,'']]],
-  ['separatrix_5forthogonal_2eh',['separatrix_orthogonal.h',['../separatrix__orthogonal_8h.html',1,'']]],
-  ['simple_5forthogonal_2eh',['simple_orthogonal.h',['../simple__orthogonal_8h.html',1,'']]],
-  ['solovev_2eh',['solovev.h',['../solovev_8h.html',1,'']]],
-  ['solovev_5fparameters_2eh',['solovev_parameters.h',['../solovev__parameters_8h.html',1,'']]],
-  ['sparseblockmat_2ecuh',['sparseblockmat.cuh',['../../../dg/html/sparseblockmat_8cuh.html',1,'']]],
-  ['sparseblockmat_2eh',['sparseblockmat.h',['../../../dg/html/sparseblockmat_8h.html',1,'']]],
-  ['split_5fand_5fjoin_2eh',['split_and_join.h',['../../../dg/html/split__and__join_8h.html',1,'']]],
-  ['subroutines_2eh',['subroutines.h',['../../../dg/html/subroutines_8h.html',1,'']]]
+  ['refined_5fcurvilinearx_2eh_1854',['refined_curvilinearX.h',['../refined__curvilinear_x_8h.html',1,'']]],
+  ['refined_5felliptic_2eh_1855',['refined_elliptic.h',['../../../dg/html/refined__elliptic_8h.html.html',1,'']]],
+  ['refined_5fgrid_2eh_1856',['refined_grid.h',['../../../dg/html/refined__grid_8h.html.html',1,'']]],
+  ['refined_5fgridx_2eh_1857',['refined_gridX.h',['../../../dg/html/refined__grid_x_8h.html.html',1,'']]],
+  ['ribeiro_2eh_1858',['ribeiro.h',['../ribeiro_8h.html',1,'']]],
+  ['ribeirox_2eh_1859',['ribeiroX.h',['../ribeiro_x_8h.html',1,'']]],
+  ['runge_5fkutta_2eh_1860',['runge_kutta.h',['../../../dg/html/runge__kutta_8h.html.html',1,'']]]
 ];

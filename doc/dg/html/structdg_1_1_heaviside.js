@@ -1,5 +1,5 @@
 var structdg_1_1_heaviside =
 [
-    [ "Heaviside", "structdg_1_1_heaviside.html#aeb2f9b60796260a17c1d7dc3fa4281bc", null ],
-    [ "operator()", "structdg_1_1_heaviside.html#ad45990076119f479851bdef8bb8dbc7c", null ]
+    [ "Heaviside", "structdg_1_1_heaviside.html#ac80d9db0d5eb276128c66d9e5c72e610", null ],
+    [ "operator()", "structdg_1_1_heaviside.html#a0f0986d4d4620349d43fb86cc3680e31", null ]
 ];

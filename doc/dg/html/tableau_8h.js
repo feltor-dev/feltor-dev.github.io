@@ -1,5 +1,7 @@
 var tableau_8h =
 [
+    [ "ButcherTableau", "structdg_1_1_butcher_tableau.html", "structdg_1_1_butcher_tableau" ],
+    [ "ShuOsherTableau", "structdg_1_1_shu_osher_tableau.html", "structdg_1_1_shu_osher_tableau" ],
     [ "tableau_identifier", "tableau_8h.html#ga80d4d81df02e5311bb20b3f74ea45992", [
       [ "EXPLICIT_EULER_1_1", "tableau_8h.html#gga80d4d81df02e5311bb20b3f74ea45992a5679da92a2aeff58e4d1d8dd0950bfb5", null ],
       [ "MIDPOINT_2_2", "tableau_8h.html#gga80d4d81df02e5311bb20b3f74ea45992a53589c3f492267933d52411a91abe87f", null ],
@@ -14,11 +16,15 @@ var tableau_8h =
       [ "CASH_KARP_6_4_5", "tableau_8h.html#gga80d4d81df02e5311bb20b3f74ea45992a896ad5875cfc107eb383d4880fbe5184", null ],
       [ "FEHLBERG_6_4_5", "tableau_8h.html#gga80d4d81df02e5311bb20b3f74ea45992ae40966a5ad092b052a51188a05c6ea47", null ],
       [ "DORMAND_PRINCE_7_4_5", "tableau_8h.html#gga80d4d81df02e5311bb20b3f74ea45992a5e964b2560e1c1b03d280c766fc5a129", null ],
+      [ "TSITOURAS09_7_4_5", "tableau_8h.html#gga80d4d81df02e5311bb20b3f74ea45992ac51ce9d53bf2dce19d9b88e3212281df", null ],
+      [ "TSITOURAS11_7_4_5", "tableau_8h.html#gga80d4d81df02e5311bb20b3f74ea45992a3c68b6845f08dc4a80e22b45599f3493", null ],
       [ "ARK548L2SA_ERK_8_4_5", "tableau_8h.html#gga80d4d81df02e5311bb20b3f74ea45992ae3f4bc121a421ca3501bfae79943a134", null ],
       [ "VERNER_8_5_6", "tableau_8h.html#gga80d4d81df02e5311bb20b3f74ea45992aa29646a0456ce45916235f7991a7226e", null ],
       [ "FEHLBERG_13_7_8", "tableau_8h.html#gga80d4d81df02e5311bb20b3f74ea45992a728a76f092f543a1ab3de59110857d0c", null ],
       [ "FEAGIN_17_8_10", "tableau_8h.html#gga80d4d81df02e5311bb20b3f74ea45992a8d9f6fc38535d5c30a2ca1d2133a9b75", null ],
       [ "IMPLICIT_EULER_1_1", "tableau_8h.html#gga80d4d81df02e5311bb20b3f74ea45992a5d4c148035a981dfce0fe5b0f481a1fa", null ],
+      [ "IMPLICIT_MIDPOINT_1_2", "tableau_8h.html#gga80d4d81df02e5311bb20b3f74ea45992ab353c6e09d40ddc610382f44fccc5c75", null ],
+      [ "TRAPEZOIDAL_2_2", "tableau_8h.html#gga80d4d81df02e5311bb20b3f74ea45992aee900e737927e97c9c60394acbff1afa", null ],
       [ "SDIRK_2_1_2", "tableau_8h.html#gga80d4d81df02e5311bb20b3f74ea45992a72bd02f1580c5bb96958efa4f511f8aa", null ],
       [ "BILLINGTON_3_3_2", "tableau_8h.html#gga80d4d81df02e5311bb20b3f74ea45992a5ffadf91baa3b323a4e1407cf2f42926", null ],
       [ "TRBDF2_3_3_2", "tableau_8h.html#gga80d4d81df02e5311bb20b3f74ea45992aea4ea0cbea708f0db5605fb2b3444834", null ],
@@ -30,6 +36,11 @@ var tableau_8h =
       [ "KVAERNO_5_3_4", "tableau_8h.html#gga80d4d81df02e5311bb20b3f74ea45992a7e0890fc92aaf7c8867b364d22c8ac22", null ],
       [ "ARK436L2SA_DIRK_6_3_4", "tableau_8h.html#gga80d4d81df02e5311bb20b3f74ea45992ab4f90835b6871a2dc7a7e2151ee8ab34", null ],
       [ "KVAERNO_7_4_5", "tableau_8h.html#gga80d4d81df02e5311bb20b3f74ea45992abbedd7f8ef68aea027dc79e60df79b4f", null ],
-      [ "ARK548L2SA_DIRK_8_4_5", "tableau_8h.html#gga80d4d81df02e5311bb20b3f74ea45992ad17ee32bcc10dbb681d704e9dc3d0425", null ]
+      [ "ARK548L2SA_DIRK_8_4_5", "tableau_8h.html#gga80d4d81df02e5311bb20b3f74ea45992ad17ee32bcc10dbb681d704e9dc3d0425", null ],
+      [ "SSPRK_2_2", "tableau_8h.html#gga80d4d81df02e5311bb20b3f74ea45992a0adf7035ccb1108b9cab4539a505ca1b", null ],
+      [ "SSPRK_3_2", "tableau_8h.html#gga80d4d81df02e5311bb20b3f74ea45992a6ec030e91579ee35ac9c2d1f4fd00c7a", null ],
+      [ "SSPRK_3_3", "tableau_8h.html#gga80d4d81df02e5311bb20b3f74ea45992a0eb5270409e6b03447ee549379e2f78a", null ],
+      [ "SSPRK_5_3", "tableau_8h.html#gga80d4d81df02e5311bb20b3f74ea45992a2a46be9d458c9586fd219956c016c3fe", null ],
+      [ "SSPRK_5_4", "tableau_8h.html#gga80d4d81df02e5311bb20b3f74ea45992a55f0423ae9d22f05d48f8cfd0ee10278", null ]
     ] ]
 ];

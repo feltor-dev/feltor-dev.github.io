@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['y',['y',['../group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d',1,'dg::y()'],['../group__creation.html#gga4de4a3d7cd219a55affa992871e8598fa415290769594460e2e485922904f345d',1,'dg::y()']]],
-  ['yz',['yz',['../group__creation.html#gga4de4a3d7cd219a55affa992871e8598fa2151a2bc77807b81113febbf50c4bc95',1,'dg']]]
+  ['verner_5f8_5f5_5f6_2849',['VERNER_8_5_6',['../group__time__utils.html#gga80d4d81df02e5311bb20b3f74ea45992aa29646a0456ce45916235f7991a7226e',1,'dg']]]
 ];

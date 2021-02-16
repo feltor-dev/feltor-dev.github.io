@@ -1,8 +1,8 @@
 var structdg_1_1a_real_topology_x2d =
 [
-    [ "dimensionality", "structdg_1_1a_real_topology_x2d.html#a58bfc0897606f8f4c9acd96bfebdb6e8", null ],
-    [ "memory_category", "structdg_1_1a_real_topology_x2d.html#af60c5325a03d78424d5672521004d776", null ],
-    [ "value_type", "structdg_1_1a_real_topology_x2d.html#a373617d957d9ea3bcd071a0398e1d369", null ],
+    [ "host_grid", "structdg_1_1a_real_topology_x2d.html#a8b7a0d56157f5da402c1e21cc35ecf4e", null ],
+    [ "host_vector", "structdg_1_1a_real_topology_x2d.html#a0aebb3dfba922fa58ec7a733788ed8ab", null ],
+    [ "value_type", "structdg_1_1a_real_topology_x2d.html#aef562fc8bcb98def02ef8fa9da41308b", null ],
     [ "~aRealTopologyX2d", "structdg_1_1a_real_topology_x2d.html#ae7e1de8dfb21c4c66a9b52bc22d3406a", null ],
     [ "aRealTopologyX2d", "structdg_1_1a_real_topology_x2d.html#a7f557032f5a24ebb3b641dc7d06bcff5", null ],
     [ "aRealTopologyX2d", "structdg_1_1a_real_topology_x2d.html#adda955cb2882ad513639f3cafce760b8", null ],

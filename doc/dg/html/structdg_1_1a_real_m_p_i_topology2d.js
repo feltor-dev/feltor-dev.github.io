@@ -1,8 +1,8 @@
 var structdg_1_1a_real_m_p_i_topology2d =
 [
-    [ "dimensionality", "structdg_1_1a_real_m_p_i_topology2d.html#af0d376be4594d9d93fc4e8436676b767", null ],
-    [ "memory_category", "structdg_1_1a_real_m_p_i_topology2d.html#af7489ea3debda06c3902331da6024e9a", null ],
-    [ "value_type", "structdg_1_1a_real_m_p_i_topology2d.html#ac7ed4700e661ef7aadd42c2282817603", null ],
+    [ "host_grid", "structdg_1_1a_real_m_p_i_topology2d.html#abd4365c999bccb2fcea7077060485a8e", null ],
+    [ "host_vector", "structdg_1_1a_real_m_p_i_topology2d.html#a0c70f2f02442d4a57a79faa76128308a", null ],
+    [ "value_type", "structdg_1_1a_real_m_p_i_topology2d.html#a945a2e45be2825e47135df7118c914e8", null ],
     [ "~aRealMPITopology2d", "structdg_1_1a_real_m_p_i_topology2d.html#ab546ca41aea0b84c3bd420ac9c934f37", null ],
     [ "aRealMPITopology2d", "structdg_1_1a_real_m_p_i_topology2d.html#a6a42cdd80d1325dc74143471f65b6d0a", null ],
     [ "aRealMPITopology2d", "structdg_1_1a_real_m_p_i_topology2d.html#ab6397846e9f393e3ca90ea9caaf16e47", null ],

@@ -1,13 +1,46 @@
 var group__functions =
 [
-    [ "AbsMax", "structdg_1_1_abs_max.html", [
-      [ "operator()", "structdg_1_1_abs_max.html#a838aa03ebc9d155f0b9cb8caa35157d3", null ]
+    [ "Iris", "structdg_1_1_iris.html", [
+      [ "Iris", "structdg_1_1_iris.html#a09896aad3771228af5307fc699aeee16", null ],
+      [ "operator()", "structdg_1_1_iris.html#a007f4e06a67a96476c802e7fbc83624c", null ]
     ] ],
-    [ "AbsMin", "structdg_1_1_abs_min.html", [
-      [ "operator()", "structdg_1_1_abs_min.html#aa1abd700121746ac95007c0acf0ce34b", null ]
+    [ "Pupil", "structdg_1_1_pupil.html", [
+      [ "Pupil", "structdg_1_1_pupil.html#a479e782efe8f97f50d4ed30f27b05ef3", null ],
+      [ "operator()", "structdg_1_1_pupil.html#a68347a056c290c5a05da9e5e3ccba631", null ]
+    ] ],
+    [ "PsiPupil", "structdg_1_1_psi_pupil.html", [
+      [ "PsiPupil", "structdg_1_1_psi_pupil.html#a62a3822519d49540e9faee24607df3f1", null ],
+      [ "operator()", "structdg_1_1_psi_pupil.html#a9ff61d040aa5a11858337a5540144a5a", null ]
+    ] ],
+    [ "Heaviside", "structdg_1_1_heaviside.html", [
+      [ "Heaviside", "structdg_1_1_heaviside.html#ac80d9db0d5eb276128c66d9e5c72e610", null ],
+      [ "operator()", "structdg_1_1_heaviside.html#a0f0986d4d4620349d43fb86cc3680e31", null ]
+    ] ],
+    [ "Distance", "structdg_1_1_distance.html", [
+      [ "Distance", "structdg_1_1_distance.html#a1ac8a105f6249ef980eef7a0e970ad35", null ],
+      [ "operator()", "structdg_1_1_distance.html#a80e37b2d4f125d1021cb8330fcb204c3", null ]
+    ] ],
+    [ "Line", "structdg_1_1_line.html", [
+      [ "Line", "structdg_1_1_line.html#ac9a8e20ea48c2e4620fdeb5903e33830", null ],
+      [ "operator()", "structdg_1_1_line.html#ac339f32489d905591eb73a71bbc7571d", null ]
+    ] ],
+    [ "LinearX", "structdg_1_1_linear_x.html", [
+      [ "LinearX", "structdg_1_1_linear_x.html#a2721b98ac435a39e4864b42657e7c07c", null ],
+      [ "operator()", "structdg_1_1_linear_x.html#a082d05ac51dd757bf78c3cb0c026ede0", null ],
+      [ "operator()", "structdg_1_1_linear_x.html#a8d76a05ee99409fe9a11023950ccefe8", null ],
+      [ "operator()", "structdg_1_1_linear_x.html#a7e4ac41e7807bf4a75a4d37921488dae", null ]
+    ] ],
+    [ "LinearY", "structdg_1_1_linear_y.html", [
+      [ "LinearY", "structdg_1_1_linear_y.html#a141df376a562eb957ae6c05ce76c78d8", null ],
+      [ "operator()", "structdg_1_1_linear_y.html#a5e9d7bba0fae34b2bf471993d7a68cbd", null ],
+      [ "operator()", "structdg_1_1_linear_y.html#a4ae75a5bed6b449dd1bd38ebe3c448d0", null ]
+    ] ],
+    [ "LinearZ", "structdg_1_1_linear_z.html", [
+      [ "LinearZ", "structdg_1_1_linear_z.html#aafebe34c10d894f6f0122264ac96a1a0", null ],
+      [ "operator()", "structdg_1_1_linear_z.html#abd2f7b2a00fbeca594b5b60ef89a1a95", null ]
     ] ],
     [ "Gaussian", "structdg_1_1_gaussian.html", [
-      [ "Gaussian", "structdg_1_1_gaussian.html#aba2df3bbc671faf0a429ab001db27055", null ],
+      [ "Gaussian", "structdg_1_1_gaussian.html#a7762f34326cedeae7f563e414d9c40c3", null ],
       [ "operator()", "structdg_1_1_gaussian.html#a6c4064423964f591ea37246a89132173", null ],
       [ "operator()", "structdg_1_1_gaussian.html#ae6400bcb1049236049001e02530a2d85", null ]
     ] ],
@@ -38,8 +71,8 @@ var group__functions =
     ] ],
     [ "GaussianZ", "structdg_1_1_gaussian_z.html", [
       [ "GaussianZ", "structdg_1_1_gaussian_z.html#aa1915517625deebecb730e2b37a3e888", null ],
-      [ "operator()", "structdg_1_1_gaussian_z.html#a6a4659e6beeb3d33351518675b2fb3bc", null ],
-      [ "operator()", "structdg_1_1_gaussian_z.html#ab4a33a4709a5645b0a57c5b83933fb52", null ]
+      [ "operator()", "structdg_1_1_gaussian_z.html#ab4a33a4709a5645b0a57c5b83933fb52", null ],
+      [ "operator()", "structdg_1_1_gaussian_z.html#a6a4659e6beeb3d33351518675b2fb3bc", null ]
     ] ],
     [ "IslandXY", "structdg_1_1_island_x_y.html", [
       [ "IslandXY", "structdg_1_1_island_x_y.html#aea020c0f8bbfff76caa5dad2692bf266", null ],
@@ -89,40 +122,9 @@ var group__functions =
       [ "operator()", "structdg_1_1_exp_prof_x.html#a0e1417ec498b8315227acee451400110", null ],
       [ "operator()", "structdg_1_1_exp_prof_x.html#a0dce6eb6c3b11850932c4bea287f6cf9", null ]
     ] ],
-    [ "LinearX", "structdg_1_1_linear_x.html", [
-      [ "LinearX", "structdg_1_1_linear_x.html#a2721b98ac435a39e4864b42657e7c07c", null ],
-      [ "operator()", "structdg_1_1_linear_x.html#a082d05ac51dd757bf78c3cb0c026ede0", null ],
-      [ "operator()", "structdg_1_1_linear_x.html#a8d76a05ee99409fe9a11023950ccefe8", null ],
-      [ "operator()", "structdg_1_1_linear_x.html#a7e4ac41e7807bf4a75a4d37921488dae", null ]
-    ] ],
-    [ "LinearY", "structdg_1_1_linear_y.html", [
-      [ "LinearY", "structdg_1_1_linear_y.html#a141df376a562eb957ae6c05ce76c78d8", null ],
-      [ "operator()", "structdg_1_1_linear_y.html#a4ae75a5bed6b449dd1bd38ebe3c448d0", null ],
-      [ "operator()", "structdg_1_1_linear_y.html#a5e9d7bba0fae34b2bf471993d7a68cbd", null ]
-    ] ],
-    [ "LinearZ", "structdg_1_1_linear_z.html", [
-      [ "LinearZ", "structdg_1_1_linear_z.html#aafebe34c10d894f6f0122264ac96a1a0", null ],
-      [ "operator()", "structdg_1_1_linear_z.html#abd2f7b2a00fbeca594b5b60ef89a1a95", null ]
-    ] ],
-    [ "Iris", "structdg_1_1_iris.html", [
-      [ "Iris", "structdg_1_1_iris.html#a09896aad3771228af5307fc699aeee16", null ],
-      [ "operator()", "structdg_1_1_iris.html#afd89f1159ddacc146aec47305893a516", null ]
-    ] ],
-    [ "Pupil", "structdg_1_1_pupil.html", [
-      [ "Pupil", "structdg_1_1_pupil.html#a479e782efe8f97f50d4ed30f27b05ef3", null ],
-      [ "operator()", "structdg_1_1_pupil.html#a015cdcd708d4519f11c9c3293cb71142", null ]
-    ] ],
-    [ "PsiPupil", "structdg_1_1_psi_pupil.html", [
-      [ "PsiPupil", "structdg_1_1_psi_pupil.html#a62a3822519d49540e9faee24607df3f1", null ],
-      [ "operator()", "structdg_1_1_psi_pupil.html#ab34522531c531d5323e4a0895b4e43af", null ]
-    ] ],
-    [ "Heaviside", "structdg_1_1_heaviside.html", [
-      [ "Heaviside", "structdg_1_1_heaviside.html#aeb2f9b60796260a17c1d7dc3fa4281bc", null ],
-      [ "operator()", "structdg_1_1_heaviside.html#ad45990076119f479851bdef8bb8dbc7c", null ]
-    ] ],
     [ "GaussianDamping", "structdg_1_1_gaussian_damping.html", [
       [ "GaussianDamping", "structdg_1_1_gaussian_damping.html#a7f046248fa21ca4637cd2e4a6416ac24", null ],
-      [ "operator()", "structdg_1_1_gaussian_damping.html#a2a3cbf8c4fbb3d1af15b35c61d99a0af", null ]
+      [ "operator()", "structdg_1_1_gaussian_damping.html#a517b3e5102b1569a3e6f4f5b7ba53f40", null ]
     ] ],
     [ "TanhProfX", "structdg_1_1_tanh_prof_x.html", [
       [ "TanhProfX", "structdg_1_1_tanh_prof_x.html#af43b20abf216b2802ef1538f847915a8", null ],
@@ -130,51 +132,25 @@ var group__functions =
       [ "operator()", "structdg_1_1_tanh_prof_x.html#a6f64fff5c52838cf05c242528eb41740", null ],
       [ "operator()", "structdg_1_1_tanh_prof_x.html#a6aca5e22ad75bbb03745ef87aa7619b7", null ]
     ] ],
-    [ "EXP", "structdg_1_1_e_x_p.html", [
-      [ "EXP", "structdg_1_1_e_x_p.html#a3794ca4d364489927eac4e8654b06e9d", null ],
-      [ "operator()", "structdg_1_1_e_x_p.html#a742a51ce093ad043ae954eff696c63b1", null ]
+    [ "PolynomialHeaviside", "structdg_1_1_polynomial_heaviside.html", [
+      [ "PolynomialHeaviside", "structdg_1_1_polynomial_heaviside.html#ad08cf2a8fc63430b7dbc5c3ae40cd7b3", null ],
+      [ "operator()", "structdg_1_1_polynomial_heaviside.html#a55ead336198a70f3e8b12d410ae9d018", null ]
     ] ],
-    [ "LN", "structdg_1_1_l_n.html", [
-      [ "operator()", "structdg_1_1_l_n.html#a96dd7f6b61baad75332f7f3b06d4caf0", null ]
+    [ "PolynomialRectangle", "structdg_1_1_polynomial_rectangle.html", [
+      [ "PolynomialRectangle", "structdg_1_1_polynomial_rectangle.html#ae0cea1b98299a72a64ca9c7acc0a37bc", null ],
+      [ "operator()", "structdg_1_1_polynomial_rectangle.html#adf23a3c1728c0a9dd511e594f84662c6", null ]
     ] ],
-    [ "SQRT", "structdg_1_1_s_q_r_t.html", [
-      [ "operator()", "structdg_1_1_s_q_r_t.html#aff0a630beb7a03098397e1694e384e6c", null ]
+    [ "IPolynomialHeaviside", "structdg_1_1_i_polynomial_heaviside.html", [
+      [ "IPolynomialHeaviside", "structdg_1_1_i_polynomial_heaviside.html#a621cdc2875788cfc2872ab78145d20e6", null ],
+      [ "operator()", "structdg_1_1_i_polynomial_heaviside.html#ac3e34ab2ed5657443b6901e204ff9832", null ]
     ] ],
-    [ "MinMod", "structdg_1_1_min_mod.html", [
-      [ "operator()", "structdg_1_1_min_mod.html#a261d5b7c0f06bf6aacc7bafabdc688be", null ]
+    [ "DPolynomialHeaviside", "structdg_1_1_d_polynomial_heaviside.html", [
+      [ "DPolynomialHeaviside", "structdg_1_1_d_polynomial_heaviside.html#af06e118873bf4c6f773471068de53aa4", null ],
+      [ "operator()", "structdg_1_1_d_polynomial_heaviside.html#a36e78a8810bfb543fcc5b378ce0efead", null ]
     ] ],
-    [ "PLUS", "structdg_1_1_p_l_u_s.html", [
-      [ "PLUS", "structdg_1_1_p_l_u_s.html#a6046659f109429be9e83c4a344c14064", null ],
-      [ "operator()", "structdg_1_1_p_l_u_s.html#aa11a1e9dd44eff890f79a84e69886ece", null ]
-    ] ],
-    [ "INVERT", "structdg_1_1_i_n_v_e_r_t.html", [
-      [ "operator()", "structdg_1_1_i_n_v_e_r_t.html#ae59a5f20252066e6c10f8d92c9c9fc29", null ]
-    ] ],
-    [ "MOD", "structdg_1_1_m_o_d.html", [
-      [ "MOD", "structdg_1_1_m_o_d.html#a1661e093118805e4334b61089134bf6f", null ],
-      [ "operator()", "structdg_1_1_m_o_d.html#a391838c2e9904a47e3755a99449c5898", null ]
-    ] ],
-    [ "ABS", "structdg_1_1_a_b_s.html", [
-      [ "operator()", "structdg_1_1_a_b_s.html#a8bb07d882f3f7614d24f5f9aa3d03d64", null ]
-    ] ],
-    [ "POSVALUE", "structdg_1_1_p_o_s_v_a_l_u_e.html", [
-      [ "operator()", "structdg_1_1_p_o_s_v_a_l_u_e.html#ae30b9233ddd94a619806b9a8dbf02818", null ]
-    ] ],
-    [ "CONSTANT", "structdg_1_1_c_o_n_s_t_a_n_t.html", [
-      [ "CONSTANT", "structdg_1_1_c_o_n_s_t_a_n_t.html#ae8096ed918793f4de9c56cb7d39baa98", null ],
-      [ "operator()", "structdg_1_1_c_o_n_s_t_a_n_t.html#a2f1c8c3d3f4f83d8c3d9c1b6958f6c4b", null ],
-      [ "operator()", "structdg_1_1_c_o_n_s_t_a_n_t.html#a0460bbc303c9117d4a6d33a9b7e1b90f", null ],
-      [ "operator()", "structdg_1_1_c_o_n_s_t_a_n_t.html#a1be7f48c7baca05c8ee0c5fc3b28ba61", null ]
-    ] ],
-    [ "ONE", "structdg_1_1_o_n_e.html", [
-      [ "operator()", "structdg_1_1_o_n_e.html#a12a3ae48e2e4118af510e261cf5ee3d1", null ],
-      [ "operator()", "structdg_1_1_o_n_e.html#a09ee16efc03aafae90aa75feb2640015", null ],
-      [ "operator()", "structdg_1_1_o_n_e.html#af7bb98cd1b1035692b83769a17de8f97", null ]
-    ] ],
-    [ "ZERO", "structdg_1_1_z_e_r_o.html", [
-      [ "operator()", "structdg_1_1_z_e_r_o.html#a117d414fd6d9b543ac3fdf30cfbb44bc", null ],
-      [ "operator()", "structdg_1_1_z_e_r_o.html#a049c8d998d51fac9aea99f2c2a87b882", null ],
-      [ "operator()", "structdg_1_1_z_e_r_o.html#af1eab37cbfb06765881c904967d5e590", null ]
+    [ "ExponentialFilter", "structdg_1_1_exponential_filter.html", [
+      [ "ExponentialFilter", "structdg_1_1_exponential_filter.html#a7b5f1e5f36411f3c2f3cdbcf18c6dd89", null ],
+      [ "operator()", "structdg_1_1_exponential_filter.html#a9a7c3817e8d1a23ffda5ee798e039ac2", null ]
     ] ],
     [ "Lamb", "structdg_1_1_lamb.html", [
       [ "Lamb", "structdg_1_1_lamb.html#a8bbe13dcd12f398e0426f1c92388ecdd", null ],
@@ -192,6 +168,11 @@ var group__functions =
       [ "operator()", "structdg_1_1_bath_r_z.html#a7c954690f2256c913663f902312781d2", null ],
       [ "operator()", "structdg_1_1_bath_r_z.html#a5949df5c0583260eef668b33c8937634", null ]
     ] ],
+    [ "Horner2d", "structdg_1_1_horner2d.html", [
+      [ "Horner2d", "structdg_1_1_horner2d.html#a276e8d3e32cee6700c338c802752b146", null ],
+      [ "Horner2d", "structdg_1_1_horner2d.html#a7e9aae24b492318eacac5692e9ba0944", null ],
+      [ "operator()", "structdg_1_1_horner2d.html#a3b67a6bf3417763448888d8a600cacb6", null ]
+    ] ],
     [ "Histogram", "structdg_1_1_histogram.html", [
       [ "Histogram", "structdg_1_1_histogram.html#a0759e95df4ac5885f8f436ea47334fe9", null ],
       [ "binwidth", "structdg_1_1_histogram.html#a41da837ab831cd709ccb49390163b407", null ],
@@ -201,49 +182,8 @@ var group__functions =
       [ "Histogram2D", "structdg_1_1_histogram2_d.html#a5b8734d23299e56a4755fe91a3b005f3", null ],
       [ "operator()", "structdg_1_1_histogram2_d.html#ab3b3619e6fbe0e9083c0890146330a43", null ]
     ] ],
-    [ "equals", "structdg_1_1equals.html", [
-      [ "operator()", "structdg_1_1equals.html#a7e26ab1d9bf67fc1727955a4f83376d7", null ]
-    ] ],
-    [ "plus_equals", "structdg_1_1plus__equals.html", [
-      [ "operator()", "structdg_1_1plus__equals.html#a67a4374e48e8a2b78e38c31e14f3787f", null ]
-    ] ],
-    [ "minus_equals", "structdg_1_1minus__equals.html", [
-      [ "operator()", "structdg_1_1minus__equals.html#af7ebf0877fc3cfb85d0c0136d4efabdc", null ]
-    ] ],
-    [ "times_equals", "structdg_1_1times__equals.html", [
-      [ "operator()", "structdg_1_1times__equals.html#aa903c19e83040089612b25778950597c", null ]
-    ] ],
-    [ "divides_equals", "structdg_1_1divides__equals.html", [
-      [ "operator()", "structdg_1_1divides__equals.html#ab8dc753b0827006b723838e28c0a36ac", null ]
-    ] ],
-    [ "Sum", "structdg_1_1_sum.html", [
-      [ "operator()", "structdg_1_1_sum.html#ae4317583a3bb4d477f8bfca06829c8d0", null ]
-    ] ],
-    [ "PairSum", "structdg_1_1_pair_sum.html", [
-      [ "operator()", "structdg_1_1_pair_sum.html#ac6066507a57ab2d70176d744f9c8b77e", null ]
-    ] ],
-    [ "EmbeddedPairSum", "structdg_1_1_embedded_pair_sum.html", [
-      [ "operator()", "structdg_1_1_embedded_pair_sum.html#a18384fc803b00c68d25029152ac0ef6a", null ]
-    ] ],
-    [ "TripletSum", "structdg_1_1_triplet_sum.html", [
-      [ "operator()", "structdg_1_1_triplet_sum.html#ae08c84844308c8c9c4183a3e0d8f7f8f", null ]
-    ] ],
-    [ "cooX1d", "group__functions.html#ga21055512458a88c314621a912fb1417f", null ],
-    [ "cooX2d", "group__functions.html#gadb49e10685e2bcdd8a27ef88f2857151", null ],
-    [ "cooX3d", "group__functions.html#gadd9ae95517a739c80452afc7fc9c36ae", null ],
-    [ "cooY2d", "group__functions.html#ga5aa995cf5e888c9ee1026b78f6f78cc5", null ],
-    [ "cooY3d", "group__functions.html#gaafbff988d4cff4a0643e819b3f6962cc", null ],
-    [ "cooZ3d", "group__functions.html#ga89a354d8268ca0f86486a93683fda7d4", null ],
-    [ "one", "group__functions.html#gabab1bdc50508bd0f04f3cd0b45dd72e3", null ],
-    [ "one", "group__functions.html#gada629959f5298f4221d35fd8cb880a0d", null ],
-    [ "one", "group__functions.html#gae7ba1400d58619bc271c6611acf5994b", null ],
-    [ "one", "group__functions.html#ga6157ca9bd4d2ffec4b6bd7c22ed073fe", null ],
-    [ "one", "group__functions.html#ga99d493917c25c36d4e82248fcebd7550", null ],
-    [ "one", "group__functions.html#gabadfb8fdc2962f824d2b1fe1c0e73cd5", null ],
-    [ "zero", "group__functions.html#gad1e45796f68232b124d0f5baea6fceca", null ],
-    [ "zero", "group__functions.html#gad0bd961c4529039c4e651fc9e3901f60", null ],
-    [ "zero", "group__functions.html#ga6d27b092dcd9613c1c5eeaa1cf208e83", null ],
-    [ "zero", "group__functions.html#ga44292f31f77c0cad8a3d8e0a88c7840b", null ],
-    [ "zero", "group__functions.html#ga0b38e6d17d96de78beedafc4c9e4437e", null ],
-    [ "zero", "group__functions.html#ga43b7fe30d4e22f1cf3dace0dd474c7d9", null ]
+    [ "WallDistance", "structdg_1_1_wall_distance.html", [
+      [ "WallDistance", "structdg_1_1_wall_distance.html#a4b28821101928d2250225b2e30546ef2", null ],
+      [ "operator()", "structdg_1_1_wall_distance.html#acc2be0b903a70fa253a7ddfa815fd743", null ]
+    ] ]
 ];

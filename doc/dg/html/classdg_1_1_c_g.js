@@ -7,7 +7,7 @@ var classdg_1_1_c_g =
     [ "construct", "classdg_1_1_c_g.html#aaf8569c62fab3c585b9e3f94fc12f5cc", null ],
     [ "copyable", "classdg_1_1_c_g.html#ae76842e598679c9632aeefe05f8052df", null ],
     [ "get_max", "classdg_1_1_c_g.html#a7d88fca3305063dfe3466f47482c1abd", null ],
+    [ "operator()", "classdg_1_1_c_g.html#a73f0ee471d85d83cdc9e2d522f8e4804", null ],
     [ "operator()", "classdg_1_1_c_g.html#aff284ac528386b529d0a7b04ffe54196", null ],
-    [ "operator()", "classdg_1_1_c_g.html#abe2ed59a86ec7abb2d0a8486a23ac526", null ],
     [ "set_max", "classdg_1_1_c_g.html#a083fe42115bbe0b70ae1a12439c4669a", null ]
 ];

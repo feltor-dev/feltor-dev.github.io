@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['3_2e_20new_20functors_20based_20on_20the_20magnetic_20field_20geometry',['3. New functors based on the magnetic field geometry',['../group__fluxfunctions.html',1,'']]],
-  ['3_2e1_20new_20flux_20functions_20and_20derivatives',['3.1 New flux functions and derivatives',['../group__geom.html',1,'']]],
-  ['3_2e2_20magnetic_20field_20and_20associated_20functors',['3.2 Magnetic field and associated functors',['../group__magnetic.html',1,'']]],
-  ['3_2e3_20profile_20functors_20based_20on_20flux_20functions',['3.3 Profile functors based on flux functions',['../group__profiles.html',1,'']]]
+  ['3_2e4_2e_20utility_20functor_20functionality_2858',['3.4. Utility functor functionality',['../group__fluxfunctions.html',1,'']]],
+  ['3_2e1_20creating_20a_20flux_20function_2859',['3.1 Creating a flux function',['../group__geom.html',1,'']]],
+  ['3_2e_20new_20functors_20surrounding_20the_20magnetic_20field_20geometry_2860',['3. New functors surrounding the magnetic field geometry',['../group__geom__functors.html',1,'']]],
+  ['3_2e2_20magnetic_20field_2c_20curvatures_20and_20associated_20functors_2861',['3.2 Magnetic field, curvatures and associated functors',['../group__magnetic.html',1,'']]],
+  ['3_2e3_20penalization_2c_20weight_20and_20monitor_20metric_20functors_2862',['3.3 Penalization, weight and monitor metric functors',['../group__profiles.html',1,'']]]
 ];

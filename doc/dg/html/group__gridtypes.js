@@ -1,5 +1,6 @@
 var group__gridtypes =
 [
+    [ "x", "namespacedg_1_1x.html", null ],
     [ "aGeometry2d", "group__gridtypes.html#ga0194a345f358474eacd0d8fd668ddeb5", null ],
     [ "aGeometry3d", "group__gridtypes.html#ga98e551dd078cf173433853670e84d61a", null ],
     [ "aGeometryX2d", "group__gridtypes.html#ga1614909b8085b3521f6eb6a8a7ee2185", null ],

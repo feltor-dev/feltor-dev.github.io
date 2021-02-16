@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['norm',['norm',['../group__creation.html#ga9945b71a335bc97f78dc7425911c7287',1,'dg']]]
+  ['equilibrium_2737',['equilibrium',['../../../geometries/html/group__magnetic.html#gab39148d38eed4929633564c02238214d',1,'dg::geo::equilibrium()'],['../../../geometries/html/group__magnetic.html#gab39148d38eed4929633564c02238214d',1,'equilibrium()(Global Namespace)']]]
 ];

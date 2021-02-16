@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['operator_2eh',['operator.h',['../../../dg/html/operator_8h.html',1,'']]],
-  ['operator_5ftensor_2eh',['operator_tensor.h',['../../../dg/html/operator__tensor_8h.html',1,'']]]
+  ['nullstelle_2eh_1845',['nullstelle.h',['../../../dg/html/nullstelle_8h.html.html',1,'']]]
 ];

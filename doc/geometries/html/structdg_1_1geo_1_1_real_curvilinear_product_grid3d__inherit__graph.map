@@ -1,5 +1,6 @@
 <map id="dg::geo::RealCurvilinearProductGrid3d&lt; real_type &gt;" name="dg::geo::RealCurvilinearProductGrid3d&lt; real_type &gt;">
-<area shape="rect" id="node2" href="/home/matthias/Projekte/feltor/doc/dg.tag$structdg_1_1a_real_product_geometry3d.html" title="dg::aRealProductGeometry3d\l\&lt; real_type \&gt;" alt="" coords="5,184,200,225"/>
-<area shape="rect" id="node3" href="/home/matthias/Projekte/feltor/doc/dg.tag$structdg_1_1a_real_geometry3d.html" title="dg::aRealGeometry3d\l\&lt; real_type \&gt;" alt="" coords="28,95,177,136"/>
-<area shape="rect" id="node4" href="/home/matthias/Projekte/feltor/doc/dg.tag$structdg_1_1a_real_topology3d.html" title="dg::aRealTopology3d\l\&lt; real_type \&gt;" alt="" coords="30,5,175,47"/>
+<area shape="rect" id="node1" title="A 2x1 curvilinear product space grid." alt="" coords="9,273,215,315"/>
+<area shape="rect" id="node2" href="/home/matthias/Projekte/feltor/doc/dg.tag$structdg_1_1a_real_product_geometry3d.html" title=" " alt="" coords="5,184,219,225"/>
+<area shape="rect" id="node3" href="/home/matthias/Projekte/feltor/doc/dg.tag$structdg_1_1a_real_geometry3d.html" title=" " alt="" coords="30,95,194,136"/>
+<area shape="rect" id="node4" href="/home/matthias/Projekte/feltor/doc/dg.tag$structdg_1_1a_real_topology3d.html" title=" " alt="" coords="33,5,191,47"/>
 </map>

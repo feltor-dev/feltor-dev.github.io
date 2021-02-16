@@ -3,7 +3,7 @@
   <compound kind="file">
     <name>adaption.h</name>
     <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
-    <filename>adaption_8h</filename>
+    <filename>adaption_8h.html</filename>
     <includes id="fluxfunctions_8h" name="fluxfunctions.h" local="yes" imported="no">fluxfunctions.h</includes>
     <class kind="struct">dg::geo::NablaPsiInv</class>
     <class kind="struct">dg::geo::NablaPsiInvX</class>
@@ -33,11 +33,13 @@
   <compound kind="file">
     <name>average.h</name>
     <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
-    <filename>average_8h</filename>
+    <filename>average_8h.html</filename>
     <includes id="magnetic__field_8h" name="magnetic_field.h" local="yes" imported="no">magnetic_field.h</includes>
-    <class kind="struct">dg::geo::DeltaFunction</class>
-    <class kind="struct">dg::geo::Alpha</class>
+    <includes id="flux_8h" name="flux.h" local="yes" imported="no">flux.h</includes>
+    <class kind="struct">dg::geo::FluxSurfaceIntegral</class>
+    <class kind="struct">dg::geo::FluxVolumeIntegral</class>
     <class kind="struct">dg::geo::FluxSurfaceAverage</class>
+    <class kind="struct">dg::geo::SafetyFactorAverage</class>
     <class kind="struct">dg::geo::SafetyFactor</class>
     <namespace>dg</namespace>
     <namespace>dg::geo</namespace>
@@ -45,12 +47,13 @@
   <compound kind="file">
     <name>curvilinear.h</name>
     <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
-    <filename>curvilinear_8h</filename>
+    <filename>curvilinear_8h.html</filename>
     <includes id="generator_8h" name="generator.h" local="yes" imported="no">generator.h</includes>
     <class kind="struct">dg::geo::RealCurvilinearGrid2d</class>
     <class kind="struct">dg::geo::RealCurvilinearProductGrid3d</class>
     <namespace>dg</namespace>
     <namespace>dg::geo</namespace>
+    <namespace>dg::geo::x</namespace>
     <member kind="typedef">
       <type>dg::geo::RealCurvilinearGrid2d&lt; double &gt;</type>
       <name>CurvilinearGrid2d</name>
@@ -65,11 +68,25 @@
       <anchor>gab7dae14094bc5bad939d892c4d36128b</anchor>
       <arglist></arglist>
     </member>
+    <member kind="typedef">
+      <type>CurvilinearGrid2d</type>
+      <name>CurvilinearGrid2d</name>
+      <anchorfile>namespacedg_1_1geo_1_1x.html</anchorfile>
+      <anchor>a814fb7d9b0cc3e13b6478de8e0bcad7d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>CurvilinearProductGrid3d</type>
+      <name>CurvilinearProductGrid3d</name>
+      <anchorfile>namespacedg_1_1geo_1_1x.html</anchorfile>
+      <anchor>aa6084d21ad60b6eb08559c29a59ae85a</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>curvilinearX.h</name>
     <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
-    <filename>curvilinear_x_8h</filename>
+    <filename>curvilinear_x_8h.html</filename>
     <includes id="generator_x_8h" name="generatorX.h" local="yes" imported="no">generatorX.h</includes>
     <includes id="curvilinear_8h" name="curvilinear.h" local="yes" imported="no">curvilinear.h</includes>
     <class kind="struct">dg::geo::RealCurvilinearProductGridX3d</class>
@@ -94,17 +111,59 @@
   <compound kind="file">
     <name>ds.h</name>
     <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
-    <filename>ds_8h</filename>
+    <filename>ds_8h.html</filename>
     <includes id="fieldaligned_8h" name="fieldaligned.h" local="yes" imported="no">fieldaligned.h</includes>
     <includes id="magnetic__field_8h" name="magnetic_field.h" local="yes" imported="no">magnetic_field.h</includes>
     <class kind="struct">dg::geo::DS</class>
     <namespace>dg</namespace>
     <namespace>dg::geo</namespace>
+    <member kind="function">
+      <type>void</type>
+      <name>ds_forward</name>
+      <anchorfile>group__fieldaligned.html</anchorfile>
+      <anchor>gac8f31458f9eac9d48146217a2a80ec5a</anchor>
+      <arglist>(const FieldAligned &amp;fa, double alpha, const container &amp;f, const container &amp;fp, double beta, container &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ds_backward</name>
+      <anchorfile>group__fieldaligned.html</anchorfile>
+      <anchor>ga6396aaf776bf66cf08e20b83bb800a54</anchor>
+      <arglist>(const FieldAligned &amp;fa, double alpha, const container &amp;fm, const container &amp;f, double beta, container &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ds_centered</name>
+      <anchorfile>group__fieldaligned.html</anchorfile>
+      <anchor>ga164ef6225163d61b4793cb5cacb4ac03</anchor>
+      <arglist>(const FieldAligned &amp;fa, double alpha, const container &amp;fm, const container &amp;f, const container &amp;fp, double beta, container &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>dss_centered</name>
+      <anchorfile>group__fieldaligned.html</anchorfile>
+      <anchor>ga9d0308bf8d169f14efc488419bfa33b6</anchor>
+      <arglist>(const FieldAligned &amp;fa, double alpha, const container &amp;fm, const container &amp;f, const container &amp;fp, double beta, container &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ds_centered_bc_along_field</name>
+      <anchorfile>group__fieldaligned.html</anchorfile>
+      <anchor>gaf6f623b88605b8e9bf64585237143dd3</anchor>
+      <arglist>(const FieldAligned &amp;fa, double alpha, const container &amp;fm, const container &amp;f, const container &amp;fp, double beta, container &amp;g, dg::bc bound, std::array&lt; double, 2 &gt; boundary_value={0, 0})</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>dss_centered_bc_along_field</name>
+      <anchorfile>group__fieldaligned.html</anchorfile>
+      <anchor>gacae20572a49b691bae3ea84a44665190</anchor>
+      <arglist>(const FieldAligned &amp;fa, double alpha, const container &amp;fm, const container &amp;f, const container &amp;fp, double beta, container &amp;g, dg::bc bound, std::array&lt; double, 2 &gt; boundary_value={0, 0})</arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>fieldaligned.h</name>
     <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
-    <filename>fieldaligned_8h</filename>
+    <filename>fieldaligned_8h.html</filename>
     <includes id="magnetic__field_8h" name="magnetic_field.h" local="yes" imported="no">magnetic_field.h</includes>
     <includes id="fluxfunctions_8h" name="fluxfunctions.h" local="yes" imported="no">fluxfunctions.h</includes>
     <includes id="curvilinear_8h" name="curvilinear.h" local="yes" imported="no">curvilinear.h</includes>
@@ -160,7 +219,7 @@
   <compound kind="file">
     <name>flux.h</name>
     <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
-    <filename>flux_8h</filename>
+    <filename>flux_8h.html</filename>
     <includes id="fluxfunctions_8h" name="fluxfunctions.h" local="yes" imported="no">fluxfunctions.h</includes>
     <includes id="ribeiro_8h" name="ribeiro.h" local="yes" imported="no">ribeiro.h</includes>
     <class kind="struct">dg::geo::FluxGenerator</class>
@@ -171,14 +230,18 @@
   <compound kind="file">
     <name>fluxfunctions.h</name>
     <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
-    <filename>fluxfunctions_8h</filename>
+    <filename>fluxfunctions_8h.html</filename>
     <class kind="struct">dg::geo::RealCylindricalFunctor</class>
     <class kind="struct">dg::geo::aCylindricalFunctor</class>
     <class kind="struct">dg::geo::Constant</class>
+    <class kind="struct">dg::geo::ZCutter</class>
+    <class kind="struct">dg::geo::Periodify</class>
     <class kind="struct">dg::geo::CylindricalFunctorsLvl1</class>
     <class kind="struct">dg::geo::CylindricalFunctorsLvl2</class>
     <class kind="struct">dg::geo::CylindricalSymmTensorLvl1</class>
     <class kind="struct">dg::geo::CylindricalVectorLvl0</class>
+    <class kind="struct">dg::geo::ScalarProduct</class>
+    <class kind="struct">dg::geo::SquareNorm</class>
     <namespace>dg</namespace>
     <namespace>dg::geo</namespace>
     <member kind="typedef">
@@ -187,6 +250,27 @@
       <anchorfile>group__fluxfunctions.html</anchorfile>
       <anchor>gacb84a8d3b8c253f1100c1530035da1de</anchor>
       <arglist></arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static int</type>
+      <name>findCriticalPoint</name>
+      <anchorfile>group__misc__geo.html</anchorfile>
+      <anchor>gab1c5fbd87545da375c365ccdee880b6e</anchor>
+      <arglist>(const CylindricalFunctorsLvl2 &amp;psi, double &amp;RC, double &amp;ZC)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static int</type>
+      <name>findOpoint</name>
+      <anchorfile>group__misc__geo.html</anchorfile>
+      <anchor>gae747bb165873861b6abe9aeb17bc3f8a</anchor>
+      <arglist>(const CylindricalFunctorsLvl2 &amp;psi, double &amp;RC, double &amp;ZC)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>findXpoint</name>
+      <anchorfile>group__misc__geo.html</anchorfile>
+      <anchor>ga6ce698318cc3270a9e1fb07f9ce9dcb0</anchor>
+      <arglist>(const CylindricalFunctorsLvl2 &amp;psi, double &amp;RC, double &amp;ZC)</arglist>
     </member>
     <member kind="function">
       <type>dg::SparseTensor&lt; dg::get_host_vector&lt; Geometry3d &gt; &gt;</type>
@@ -206,7 +290,7 @@
   <compound kind="file">
     <name>generator.h</name>
     <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
-    <filename>generator_8h</filename>
+    <filename>generator_8h.html</filename>
     <class kind="struct">dg::geo::aRealGenerator2d</class>
     <namespace>dg</namespace>
     <namespace>dg::geo</namespace>
@@ -221,7 +305,7 @@
   <compound kind="file">
     <name>generatorX.h</name>
     <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
-    <filename>generator_x_8h</filename>
+    <filename>generator_x_8h.html</filename>
     <class kind="struct">dg::geo::aRealGeneratorX2d</class>
     <namespace>dg</namespace>
     <namespace>dg::geo</namespace>
@@ -236,7 +320,7 @@
   <compound kind="file">
     <name>geometries.h</name>
     <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
-    <filename>geometries_8h</filename>
+    <filename>geometries_8h.html</filename>
     <includes id="simple__orthogonal_8h" name="simple_orthogonal.h" local="yes" imported="no">simple_orthogonal.h</includes>
     <includes id="separatrix__orthogonal_8h" name="separatrix_orthogonal.h" local="yes" imported="no">separatrix_orthogonal.h</includes>
     <includes id="ribeiro_8h" name="ribeiro.h" local="yes" imported="no">ribeiro.h</includes>
@@ -250,7 +334,8 @@
     <includes id="solovev_8h" name="solovev.h" local="yes" imported="no">solovev.h</includes>
     <includes id="guenther_8h" name="guenther.h" local="yes" imported="no">guenther.h</includes>
     <includes id="toroidal_8h" name="toroidal.h" local="yes" imported="no">toroidal.h</includes>
-    <includes id="init_8h" name="init.h" local="yes" imported="no">init.h</includes>
+    <includes id="polynomial_8h" name="polynomial.h" local="yes" imported="no">polynomial.h</includes>
+    <includes id="make__field_8h" name="make_field.h" local="yes" imported="no">make_field.h</includes>
     <includes id="fluxfunctions_8h" name="fluxfunctions.h" local="yes" imported="no">fluxfunctions.h</includes>
     <includes id="magnetic__field_8h" name="magnetic_field.h" local="yes" imported="no">magnetic_field.h</includes>
     <includes id="adaption_8h" name="adaption.h" local="yes" imported="no">adaption.h</includes>
@@ -260,13 +345,12 @@
   <compound kind="file">
     <name>geometries_doc.h</name>
     <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
-    <filename>geometries__doc_8h</filename>
+    <filename>geometries__doc_8h.html</filename>
   </compound>
   <compound kind="file">
     <name>guenther.h</name>
     <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
-    <filename>guenther_8h</filename>
-    <includes id="guenther__parameters_8h" name="guenther_parameters.h" local="yes" imported="no">guenther_parameters.h</includes>
+    <filename>guenther_8h.html</filename>
     <includes id="magnetic__field_8h" name="magnetic_field.h" local="yes" imported="no">magnetic_field.h</includes>
     <class kind="struct">dg::geo::guenther::Psip</class>
     <class kind="struct">dg::geo::guenther::PsipR</class>
@@ -295,33 +379,17 @@
       <arglist>(double I_0)</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static TokamakMagneticField</type>
-      <name>createMagField</name>
-      <anchorfile>group__guenther.html</anchorfile>
-      <anchor>ga4a82083bf29cb70373b84720eba60d83</anchor>
-      <arglist>(double R_0, double I_0)</arglist>
-    </member>
-    <member kind="function" static="yes">
       <type>static dg::geo::TokamakMagneticField</type>
       <name>createGuentherField</name>
-      <anchorfile>group__geom.html</anchorfile>
+      <anchorfile>group__guenther.html</anchorfile>
       <anchor>ga70edeb1a555a6a2b05ac0485329fdcac</anchor>
       <arglist>(double R_0, double I_0)</arglist>
     </member>
   </compound>
   <compound kind="file">
-    <name>guenther_parameters.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
-    <filename>guenther__parameters_8h</filename>
-    <class kind="struct">dg::geo::guenther::Parameters</class>
-    <namespace>dg</namespace>
-    <namespace>dg::geo</namespace>
-    <namespace>dg::geo::guenther</namespace>
-  </compound>
-  <compound kind="file">
     <name>hector.h</name>
     <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
-    <filename>hector_8h</filename>
+    <filename>hector_8h.html</filename>
     <includes id="fluxfunctions_8h" name="fluxfunctions.h" local="yes" imported="no">fluxfunctions.h</includes>
     <includes id="curvilinear_8h" name="curvilinear.h" local="yes" imported="no">curvilinear.h</includes>
     <includes id="flux_8h" name="flux.h" local="yes" imported="no">flux.h</includes>
@@ -331,77 +399,11 @@
     <namespace>dg::geo</namespace>
   </compound>
   <compound kind="file">
-    <name>init.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
-    <filename>init_8h</filename>
-    <includes id="fluxfunctions_8h" name="fluxfunctions.h" local="yes" imported="no">fluxfunctions.h</includes>
-    <includes id="solovev__parameters_8h" name="solovev_parameters.h" local="yes" imported="no">solovev_parameters.h</includes>
-    <class kind="struct">dg::geo::Compose</class>
-    <class kind="struct">dg::geo::ZCutter</class>
-    <namespace>dg</namespace>
-    <namespace>dg::geo</namespace>
-    <member kind="typedef">
-      <type>Compose&lt; dg::Iris &gt;</type>
-      <name>Iris</name>
-      <anchorfile>group__profiles.html</anchorfile>
-      <anchor>gad64d512d641d71865056b1f1b83da902</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>Compose&lt; dg::Pupil &gt;</type>
-      <name>Pupil</name>
-      <anchorfile>group__profiles.html</anchorfile>
-      <anchor>gab429cc7c00f5d55def9fcaa5cda8fafd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>Compose&lt; dg::PsiPupil &gt;</type>
-      <name>PsiPupil</name>
-      <anchorfile>group__profiles.html</anchorfile>
-      <anchor>ga4e7e76bd77ae1317ed999238b4ce4e17</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>dg::geo::Compose&lt; dg::Heaviside &gt;</type>
-      <name>PsiLimiter</name>
-      <anchorfile>group__profiles.html</anchorfile>
-      <anchor>ga82eca5b06b94a709b4f1cbfa4b42d59f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>dg::geo::Compose&lt; dg::GaussianDamping &gt;</type>
-      <name>GaussianDamping</name>
-      <anchorfile>group__profiles.html</anchorfile>
-      <anchor>ga158a9af6aef70087e95b8fd8e7dacc60</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>dg::geo::Compose&lt; dg::TanhProfX &gt;</type>
-      <name>TanhDamping</name>
-      <anchorfile>group__profiles.html</anchorfile>
-      <anchor>ga446bce2c783bba5c7b0260853259f1e1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>dg::geo::Compose&lt; dg::LinearX &gt;</type>
-      <name>Nprofile</name>
-      <anchorfile>group__profiles.html</anchorfile>
-      <anchor>gac6e56352ad1a753f9c5c7cecb0f12ee0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>dg::geo::Compose&lt; dg::SinX &gt;</type>
-      <name>ZonalFlow</name>
-      <anchorfile>group__profiles.html</anchorfile>
-      <anchor>ga19191644f490a26ec20c3f6dac24765c</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="file">
     <name>magnetic_field.h</name>
     <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
-    <filename>magnetic__field_8h</filename>
+    <filename>magnetic__field_8h.html</filename>
     <includes id="fluxfunctions_8h" name="fluxfunctions.h" local="yes" imported="no">fluxfunctions.h</includes>
+    <class kind="struct">dg::geo::MagneticFieldParameters</class>
     <class kind="struct">dg::geo::TokamakMagneticField</class>
     <class kind="struct">dg::geo::Bmodule</class>
     <class kind="struct">dg::geo::InvB</class>
@@ -434,8 +436,54 @@
     <class kind="struct">dg::geo::GradBHatR</class>
     <class kind="struct">dg::geo::GradBHatZ</class>
     <class kind="struct">dg::geo::GradBHatP</class>
+    <class kind="struct">dg::geo::RhoP</class>
+    <class kind="struct">dg::geo::Hoo</class>
+    <class kind="struct">dg::geo::WallDirection</class>
     <namespace>dg</namespace>
     <namespace>dg::geo</namespace>
+    <member kind="enumeration">
+      <type></type>
+      <name>equilibrium</name>
+      <anchorfile>group__magnetic.html</anchorfile>
+      <anchor>gab39148d38eed4929633564c02238214d</anchor>
+      <arglist></arglist>
+      <enumvalue file="group__magnetic.html" anchor="ggab39148d38eed4929633564c02238214da5296197ebee15d72c4b588b03b686b1e">solovev</enumvalue>
+      <enumvalue file="group__magnetic.html" anchor="ggab39148d38eed4929633564c02238214da7d8bc5f1a8d3787d06ef11c97d4655df">taylor</enumvalue>
+      <enumvalue file="group__magnetic.html" anchor="ggab39148d38eed4929633564c02238214da89693d3333328e76f4fdeed379e8f9ea">polynomial</enumvalue>
+      <enumvalue file="group__magnetic.html" anchor="ggab39148d38eed4929633564c02238214da1040a4c9b3f604d78fcd61a821477a1b">guenther</enumvalue>
+      <enumvalue file="group__magnetic.html" anchor="ggab39148d38eed4929633564c02238214daad1f99f6c1ae39655fa14de6385805b7">toroidal</enumvalue>
+      <enumvalue file="group__magnetic.html" anchor="ggab39148d38eed4929633564c02238214dad5a124c9445ae5eeadb48b050b9cff72">circular</enumvalue>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>modifier</name>
+      <anchorfile>group__magnetic.html</anchorfile>
+      <anchor>ga097616a5ebbfd85265a3759b05e1bf76</anchor>
+      <arglist></arglist>
+      <enumvalue file="group__magnetic.html" anchor="gga097616a5ebbfd85265a3759b05e1bf76a334c4a4c42fdb79d7ebc3e73b517e6f8">none</enumvalue>
+      <enumvalue file="group__magnetic.html" anchor="gga097616a5ebbfd85265a3759b05e1bf76ace7d986dcd77d160362fe9db55045a05">heaviside</enumvalue>
+      <enumvalue file="group__magnetic.html" anchor="gga097616a5ebbfd85265a3759b05e1bf76a33f783a59264ff5568567da44b904708">sol_pfr</enumvalue>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>description</name>
+      <anchorfile>group__magnetic.html</anchorfile>
+      <anchor>gac077a0f92059114ad4973984de444db4</anchor>
+      <arglist></arglist>
+      <enumvalue file="group__magnetic.html" anchor="ggac077a0f92059114ad4973984de444db4a6fedcb1966fb6bcfde36170c034e3bc4">standardO</enumvalue>
+      <enumvalue file="group__magnetic.html" anchor="ggac077a0f92059114ad4973984de444db4acb2dc64595318cfbaba3458934dfb522">standardX</enumvalue>
+      <enumvalue file="group__magnetic.html" anchor="ggac077a0f92059114ad4973984de444db4a8a23252f42f7cd8fbad818c214400496">doubleX</enumvalue>
+      <enumvalue file="group__magnetic.html" anchor="ggac077a0f92059114ad4973984de444db4a334c4a4c42fdb79d7ebc3e73b517e6f8">none</enumvalue>
+      <enumvalue file="group__magnetic.html" anchor="ggac077a0f92059114ad4973984de444db4a2fc01ec765ec0cb3dcc559126de20b30">square</enumvalue>
+      <enumvalue file="group__magnetic.html" anchor="ggac077a0f92059114ad4973984de444db4ac13fbf432e95b34cbc0be0be28243557">centeredX</enumvalue>
+    </member>
+    <member kind="function" static="yes">
+      <type>static TokamakMagneticField</type>
+      <name>periodify</name>
+      <anchorfile>group__magnetic.html</anchorfile>
+      <anchor>gaa70967b21574c4667079735fe84c4d74</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag, double R0, double R1, double Z0, double Z1, dg::bc bcx, dg::bc bcy)</arglist>
+    </member>
     <member kind="function">
       <type>CylindricalVectorLvl0</type>
       <name>createBHat</name>
@@ -447,22 +495,22 @@
       <type>CylindricalVectorLvl0</type>
       <name>createEPhi</name>
       <anchorfile>group__magnetic.html</anchorfile>
-      <anchor>ga3ab10e21b3c879843b6bb26a49beb918</anchor>
-      <arglist>()</arglist>
+      <anchor>gad28362e8973a9856212d64ca308a8642</anchor>
+      <arglist>(int sign)</arglist>
     </member>
     <member kind="function">
       <type>CylindricalVectorLvl0</type>
       <name>createCurvatureNablaB</name>
       <anchorfile>group__magnetic.html</anchorfile>
-      <anchor>ga891fbece075e21a1cdd1f15422251e7d</anchor>
-      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+      <anchor>ga0d4c31a2bef290120b75d8a1045c59bd</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag, int sign)</arglist>
     </member>
     <member kind="function">
       <type>CylindricalVectorLvl0</type>
       <name>createCurvatureKappa</name>
       <anchorfile>group__magnetic.html</anchorfile>
-      <anchor>ga15544e369079fa9ab1350fe49433bbf2</anchor>
-      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+      <anchor>ga7489105c742a06681010d7bc9a3140cd</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag, int sign)</arglist>
     </member>
     <member kind="function">
       <type>CylindricalVectorLvl0</type>
@@ -478,17 +526,90 @@
       <anchor>ga4278b6ca1435aa29063fd152f427c9c5</anchor>
       <arglist>(const TokamakMagneticField &amp;mag)</arglist>
     </member>
+    <member kind="function">
+      <type>CylindricalVectorLvl0</type>
+      <name>createGradPsip</name>
+      <anchorfile>group__magnetic.html</anchorfile>
+      <anchor>ga3d3f825cfdacaf0b128fc7544f04f872</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>make_field.h</name>
+    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <filename>make__field_8h.html</filename>
+    <includes id="magnetic__field_8h" name="magnetic_field.h" local="yes" imported="no">magnetic_field.h</includes>
+    <includes id="solovev_8h" name="solovev.h" local="yes" imported="no">solovev.h</includes>
+    <includes id="guenther_8h" name="guenther.h" local="yes" imported="no">guenther.h</includes>
+    <includes id="polynomial_8h" name="polynomial.h" local="yes" imported="no">polynomial.h</includes>
+    <includes id="toroidal_8h" name="toroidal.h" local="yes" imported="no">toroidal.h</includes>
+    <namespace>dg</namespace>
+    <namespace>dg::geo</namespace>
+    <member kind="function" static="yes">
+      <type>static TokamakMagneticField</type>
+      <name>createMagneticField</name>
+      <anchorfile>namespacedg_1_1geo.html</anchorfile>
+      <anchor>ae5f907d22b28c53565d15dc425d69286</anchor>
+      <arglist>(Json::Value gs, dg::file::error mode)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static TokamakMagneticField</type>
+      <name>createModifiedField</name>
+      <anchorfile>group__wall.html</anchorfile>
+      <anchor>gac7552ec5eb636a7d5fe4558be68efc67</anchor>
+      <arglist>(Json::Value gs, Json::Value jsmod, dg::file::error mode, CylindricalFunctor &amp;wall, CylindricalFunctor &amp;transition)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static CylindricalFunctor</type>
+      <name>createWallRegion</name>
+      <anchorfile>group__wall.html</anchorfile>
+      <anchor>ga41b2db19d70fb7294cc7dc7d6b7e3012</anchor>
+      <arglist>(Json::Value gs, Json::Value jsmod, dg::file::error mode)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>createSheathRegion</name>
+      <anchorfile>group__wall.html</anchorfile>
+      <anchor>ga3c2d6a36f3b65b7a4639921984fd1e23</anchor>
+      <arglist>(Json::Value jsmod, dg::file::error mode, TokamakMagneticField mag, CylindricalFunctor wall, double R0, double R1, double Z0, double Z1, CylindricalFunctor &amp;sheath, CylindricalFunctor &amp;direction)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>modified.h</name>
+    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <filename>modified_8h.html</filename>
+    <includes id="magnetic__field_8h" name="magnetic_field.h" local="yes" imported="no">magnetic_field.h</includes>
+    <class kind="struct">dg::geo::mod::Psip</class>
+    <class kind="struct">dg::geo::mod::PsipR</class>
+    <class kind="struct">dg::geo::mod::PsipZ</class>
+    <class kind="struct">dg::geo::mod::PsipZZ</class>
+    <class kind="struct">dg::geo::mod::PsipRR</class>
+    <class kind="struct">dg::geo::mod::PsipRZ</class>
+    <class kind="struct">dg::geo::mod::SetUnion</class>
+    <class kind="struct">dg::geo::mod::SetIntersection</class>
+    <class kind="struct">dg::geo::mod::SetNot</class>
+    <namespace>dg</namespace>
+    <namespace>dg::geo</namespace>
+    <namespace>dg::geo::mod</namespace>
+    <member kind="function" static="yes">
+      <type>static dg::geo::CylindricalFunctorsLvl2</type>
+      <name>createPsip</name>
+      <anchorfile>group__mod.html</anchorfile>
+      <anchor>gaf61e6ba0f08749e4e1bd3b8c1ca6330c</anchor>
+      <arglist>(const std::function&lt; bool(double, double)&gt; predicate, const CylindricalFunctorsLvl2 &amp;psip, double psi0, double alpha, double sign=-1)</arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>mpi_curvilinear.h</name>
     <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
-    <filename>mpi__curvilinear_8h</filename>
+    <filename>mpi__curvilinear_8h.html</filename>
     <includes id="curvilinear_8h" name="curvilinear.h" local="yes" imported="no">curvilinear.h</includes>
     <includes id="generator_8h" name="generator.h" local="yes" imported="no">generator.h</includes>
     <class kind="struct">dg::geo::RealCurvilinearMPIGrid2d</class>
     <class kind="struct">dg::geo::RealCurvilinearProductMPIGrid3d</class>
     <namespace>dg</namespace>
     <namespace>dg::geo</namespace>
+    <namespace>dg::geo::x</namespace>
     <member kind="typedef">
       <type>dg::geo::RealCurvilinearMPIGrid2d&lt; double &gt;</type>
       <name>CurvilinearMPIGrid2d</name>
@@ -507,7 +628,7 @@
   <compound kind="file">
     <name>mpi_fieldaligned.h</name>
     <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
-    <filename>mpi__fieldaligned_8h</filename>
+    <filename>mpi__fieldaligned_8h.html</filename>
     <includes id="fieldaligned_8h" name="fieldaligned.h" local="yes" imported="no">fieldaligned.h</includes>
     <namespace>dg</namespace>
     <namespace>dg::geo</namespace>
@@ -515,7 +636,7 @@
   <compound kind="file">
     <name>polar.h</name>
     <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
-    <filename>polar_8h</filename>
+    <filename>polar_8h.html</filename>
     <includes id="generator_8h" name="generator.h" local="yes" imported="no">generator.h</includes>
     <class kind="struct">dg::geo::PolarGenerator</class>
     <class kind="struct">dg::geo::LogPolarGenerator</class>
@@ -523,9 +644,56 @@
     <namespace>dg::geo</namespace>
   </compound>
   <compound kind="file">
+    <name>polynomial.h</name>
+    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <filename>polynomial_8h.html</filename>
+    <includes id="modified_8h" name="modified.h" local="yes" imported="no">modified.h</includes>
+    <includes id="polynomial__parameters_8h" name="polynomial_parameters.h" local="yes" imported="no">polynomial_parameters.h</includes>
+    <includes id="magnetic__field_8h" name="magnetic_field.h" local="yes" imported="no">magnetic_field.h</includes>
+    <class kind="struct">dg::geo::polynomial::Psip</class>
+    <class kind="struct">dg::geo::polynomial::PsipR</class>
+    <class kind="struct">dg::geo::polynomial::PsipRR</class>
+    <class kind="struct">dg::geo::polynomial::PsipZ</class>
+    <class kind="struct">dg::geo::polynomial::PsipZZ</class>
+    <class kind="struct">dg::geo::polynomial::PsipRZ</class>
+    <namespace>dg</namespace>
+    <namespace>dg::geo</namespace>
+    <namespace>dg::geo::polynomial</namespace>
+    <member kind="function" static="yes">
+      <type>static dg::geo::CylindricalFunctorsLvl2</type>
+      <name>createPsip</name>
+      <anchorfile>group__polynomial.html</anchorfile>
+      <anchor>ga23fa6c99b300bbc4794b78808cd71a9d</anchor>
+      <arglist>(Parameters gp)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static dg::geo::CylindricalFunctorsLvl1</type>
+      <name>createIpol</name>
+      <anchorfile>group__polynomial.html</anchorfile>
+      <anchor>ga4008f0bd2ca1604e33a252514bab517f</anchor>
+      <arglist>(Parameters gp)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static dg::geo::TokamakMagneticField</type>
+      <name>createPolynomialField</name>
+      <anchorfile>group__polynomial.html</anchorfile>
+      <anchor>gaf46a294c1a5f059d7a6bc98f39874cf6</anchor>
+      <arglist>(dg::geo::polynomial::Parameters gp)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>polynomial_parameters.h</name>
+    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <filename>polynomial__parameters_8h.html</filename>
+    <class kind="struct">dg::geo::polynomial::Parameters</class>
+    <namespace>dg</namespace>
+    <namespace>dg::geo</namespace>
+    <namespace>dg::geo::polynomial</namespace>
+  </compound>
+  <compound kind="file">
     <name>refined_curvilinearX.h</name>
     <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
-    <filename>refined__curvilinear_x_8h</filename>
+    <filename>refined__curvilinear_x_8h.html</filename>
     <includes id="generator_x_8h" name="generatorX.h" local="yes" imported="no">generatorX.h</includes>
     <includes id="curvilinear_8h" name="curvilinear.h" local="yes" imported="no">curvilinear.h</includes>
     <class kind="struct">dg::geo::RealCurvilinearRefinedProductGridX3d</class>
@@ -550,7 +718,7 @@
   <compound kind="file">
     <name>ribeiro.h</name>
     <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
-    <filename>ribeiro_8h</filename>
+    <filename>ribeiro_8h.html</filename>
     <includes id="generator_8h" name="generator.h" local="yes" imported="no">generator.h</includes>
     <includes id="utilities_8h" name="utilities.h" local="yes" imported="no">utilities.h</includes>
     <class kind="struct">dg::geo::Ribeiro</class>
@@ -560,7 +728,7 @@
   <compound kind="file">
     <name>ribeiroX.h</name>
     <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
-    <filename>ribeiro_x_8h</filename>
+    <filename>ribeiro_x_8h.html</filename>
     <includes id="generator_x_8h" name="generatorX.h" local="yes" imported="no">generatorX.h</includes>
     <includes id="utilities_x_8h" name="utilitiesX.h" local="yes" imported="no">utilitiesX.h</includes>
     <includes id="ribeiro_8h" name="ribeiro.h" local="yes" imported="no">ribeiro.h</includes>
@@ -571,11 +739,10 @@
   <compound kind="file">
     <name>separatrix_orthogonal.h</name>
     <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
-    <filename>separatrix__orthogonal_8h</filename>
+    <filename>separatrix__orthogonal_8h.html</filename>
     <includes id="generator_x_8h" name="generatorX.h" local="yes" imported="no">generatorX.h</includes>
     <includes id="utilities_x_8h" name="utilitiesX.h" local="yes" imported="no">utilitiesX.h</includes>
     <includes id="simple__orthogonal_8h" name="simple_orthogonal.h" local="yes" imported="no">simple_orthogonal.h</includes>
-    <class kind="struct">dg::geo::SimpleOrthogonalX</class>
     <class kind="struct">dg::geo::SeparatrixOrthogonal</class>
     <namespace>dg</namespace>
     <namespace>dg::geo</namespace>
@@ -583,7 +750,7 @@
   <compound kind="file">
     <name>simple_orthogonal.h</name>
     <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
-    <filename>simple__orthogonal_8h</filename>
+    <filename>simple__orthogonal_8h.html</filename>
     <includes id="generator_8h" name="generator.h" local="yes" imported="no">generator.h</includes>
     <includes id="utilities_8h" name="utilities.h" local="yes" imported="no">utilities.h</includes>
     <includes id="adaption_8h" name="adaption.h" local="yes" imported="no">adaption.h</includes>
@@ -594,9 +761,10 @@
   <compound kind="file">
     <name>solovev.h</name>
     <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
-    <filename>solovev_8h</filename>
+    <filename>solovev_8h.html</filename>
     <includes id="solovev__parameters_8h" name="solovev_parameters.h" local="yes" imported="no">solovev_parameters.h</includes>
     <includes id="magnetic__field_8h" name="magnetic_field.h" local="yes" imported="no">magnetic_field.h</includes>
+    <includes id="modified_8h" name="modified.h" local="yes" imported="no">modified.h</includes>
     <class kind="struct">dg::geo::solovev::Psip</class>
     <class kind="struct">dg::geo::solovev::PsipR</class>
     <class kind="struct">dg::geo::solovev::PsipRR</class>
@@ -613,35 +781,35 @@
       <type>static dg::geo::CylindricalFunctorsLvl2</type>
       <name>createPsip</name>
       <anchorfile>group__solovev.html</anchorfile>
-      <anchor>gafeb61fe925c670850a85b4c3ee9cb390</anchor>
-      <arglist>(Parameters gp)</arglist>
+      <anchor>gac1b9c47e1ffa071b3d2dc017bcaeab23</anchor>
+      <arglist>(const Parameters &amp;gp)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static dg::geo::CylindricalFunctorsLvl1</type>
       <name>createIpol</name>
       <anchorfile>group__solovev.html</anchorfile>
-      <anchor>ga6808a16f5d40c82d590048388bc7361a</anchor>
-      <arglist>(Parameters gp)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static dg::geo::TokamakMagneticField</type>
-      <name>createMagField</name>
-      <anchorfile>group__solovev.html</anchorfile>
-      <anchor>gad3675f715472ee97a6c3133905bb3697</anchor>
-      <arglist>(Parameters gp)</arglist>
+      <anchor>ga84c1267adc4caabd6956e6a63931df02</anchor>
+      <arglist>(const Parameters &amp;gp, const CylindricalFunctorsLvl1 &amp;psip)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static dg::geo::TokamakMagneticField</type>
       <name>createSolovevField</name>
-      <anchorfile>group__geom.html</anchorfile>
+      <anchorfile>group__solovev.html</anchorfile>
       <anchor>gaadcb5ef7126a3bc41beed60c431f9368</anchor>
       <arglist>(dg::geo::solovev::Parameters gp)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static dg::geo::TokamakMagneticField</type>
+      <name>createModifiedSolovevField</name>
+      <anchorfile>group__solovev.html</anchorfile>
+      <anchor>ga87922250dd045b82917b9984bfdb861f</anchor>
+      <arglist>(dg::geo::solovev::Parameters gp, double psi0, double alpha, double sign=-1)</arglist>
     </member>
   </compound>
   <compound kind="file">
     <name>solovev_parameters.h</name>
     <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
-    <filename>solovev__parameters_8h</filename>
+    <filename>solovev__parameters_8h.html</filename>
     <class kind="struct">dg::geo::solovev::Parameters</class>
     <namespace>dg</namespace>
     <namespace>dg::geo</namespace>
@@ -650,7 +818,7 @@
   <compound kind="file">
     <name>taylor.h</name>
     <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
-    <filename>taylor_8h</filename>
+    <filename>taylor_8h.html</filename>
     <includes id="solovev__parameters_8h" name="solovev_parameters.h" local="yes" imported="no">solovev_parameters.h</includes>
     <includes id="magnetic__field_8h" name="magnetic_field.h" local="yes" imported="no">magnetic_field.h</includes>
     <class kind="struct">dg::geo::taylor::Psip</class>
@@ -688,15 +856,8 @@
     </member>
     <member kind="function" static="yes">
       <type>static dg::geo::TokamakMagneticField</type>
-      <name>createMagField</name>
-      <anchorfile>group__taylor.html</anchorfile>
-      <anchor>ga3f430483239ba136340bf0f0a7828e26</anchor>
-      <arglist>(solovev::Parameters gp)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static dg::geo::TokamakMagneticField</type>
       <name>createTaylorField</name>
-      <anchorfile>group__geom.html</anchorfile>
+      <anchorfile>group__taylor.html</anchorfile>
       <anchor>ga27e5bae45b284ee051039ca97d7c0edb</anchor>
       <arglist>(dg::geo::solovev::Parameters gp)</arglist>
     </member>
@@ -704,7 +865,7 @@
   <compound kind="file">
     <name>testfunctors.h</name>
     <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
-    <filename>testfunctors_8h</filename>
+    <filename>testfunctors_8h.html</filename>
     <includes id="magnetic__field_8h" name="magnetic_field.h" local="yes" imported="no">magnetic_field.h</includes>
     <namespace>dg</namespace>
     <namespace>dg::geo</namespace>
@@ -712,7 +873,7 @@
   <compound kind="file">
     <name>toroidal.h</name>
     <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
-    <filename>toroidal_8h</filename>
+    <filename>toroidal_8h.html</filename>
     <includes id="magnetic__field_8h" name="magnetic_field.h" local="yes" imported="no">magnetic_field.h</includes>
     <class kind="struct">dg::geo::circular::Psip</class>
     <class kind="struct">dg::geo::circular::PsipR</class>
@@ -736,13 +897,6 @@
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static TokamakMagneticField</type>
-      <name>createMagField</name>
-      <anchorfile>group__toroidal.html</anchorfile>
-      <anchor>ga1d02ad623c716a9b80b270c3ceeea70f</anchor>
-      <arglist>(double R0)</arglist>
-    </member>
-    <member kind="function" static="yes">
       <type>static CylindricalFunctorsLvl2</type>
       <name>createPsip</name>
       <anchorfile>group__circular.html</anchorfile>
@@ -759,14 +913,14 @@
     <member kind="function" static="yes">
       <type>static dg::geo::TokamakMagneticField</type>
       <name>createToroidalField</name>
-      <anchorfile>group__geom.html</anchorfile>
+      <anchorfile>group__toroidal.html</anchorfile>
       <anchor>ga2d9ca2e61302113e806b1d05d6b3db7e</anchor>
       <arglist>(double R0)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static dg::geo::TokamakMagneticField</type>
       <name>createCircularField</name>
-      <anchorfile>group__geom.html</anchorfile>
+      <anchorfile>group__toroidal.html</anchorfile>
       <anchor>ga16471692288263e2076b897dae16799f</anchor>
       <arglist>(double R0, double I0)</arglist>
     </member>
@@ -774,23 +928,16 @@
   <compound kind="file">
     <name>utilities.h</name>
     <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
-    <filename>utilities_8h</filename>
+    <filename>utilities_8h.html</filename>
     <includes id="fluxfunctions_8h" name="fluxfunctions.h" local="yes" imported="no">fluxfunctions.h</includes>
   </compound>
   <compound kind="file">
     <name>utilitiesX.h</name>
     <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
-    <filename>utilities_x_8h</filename>
+    <filename>utilities_x_8h.html</filename>
     <includes id="utilities_8h" name="utilities.h" local="yes" imported="no">utilities.h</includes>
     <namespace>dg</namespace>
     <namespace>dg::geo</namespace>
-    <member kind="function" static="yes">
-      <type>static void</type>
-      <name>findXpoint</name>
-      <anchorfile>group__misc__geo.html</anchorfile>
-      <anchor>gafdf85449bb250bc67ab57989fcb768cb</anchor>
-      <arglist>(const CylindricalFunctorsLvl2 &amp;psi, double &amp;R_X, double &amp;Z_X)</arglist>
-    </member>
     <member kind="function" static="yes">
       <type>static CylindricalSymmTensorLvl1</type>
       <name>make_Xbump_monitor</name>
@@ -809,7 +956,7 @@
   <compound kind="struct">
     <name>dg::geo::aCylindricalFunctor</name>
     <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
-    <templarg>Derived</templarg>
+    <templarg></templarg>
     <member kind="function">
       <type>double</type>
       <name>operator()</name>
@@ -989,24 +1136,6 @@
   </compound>
   <compound kind="class">
     <name>aCylindricalFunctor&lt; BZ &gt;</name>
-    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
-    <member kind="function">
-      <type>double</type>
-      <name>operator()</name>
-      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
-      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
-      <arglist>(double R, double Z) const</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>operator()</name>
-      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
-      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
-      <arglist>(double R, double Z, double phi) const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>aCylindricalFunctor&lt; Compose&lt; UnaryFunctor &gt; &gt;</name>
     <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
     <member kind="function">
       <type>double</type>
@@ -1276,6 +1405,24 @@
     </member>
   </compound>
   <compound kind="class">
+    <name>aCylindricalFunctor&lt; Hoo &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
     <name>aCylindricalFunctor&lt; InvB &gt;</name>
     <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
     <member kind="function">
@@ -1474,6 +1621,24 @@
     </member>
   </compound>
   <compound kind="class">
+    <name>aCylindricalFunctor&lt; Periodify &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
     <name>aCylindricalFunctor&lt; Psip &gt;</name>
     <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
     <member kind="function">
@@ -1565,6 +1730,114 @@
   </compound>
   <compound kind="class">
     <name>aCylindricalFunctor&lt; PsipZZ &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; RhoP &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; ScalarProduct &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; SetIntersection &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; SetNot &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; SetUnion &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>aCylindricalFunctor&lt; SquareNorm &gt;</name>
     <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
     <member kind="function">
       <type>double</type>
@@ -1726,6 +1999,24 @@
     </member>
   </compound>
   <compound kind="class">
+    <name>aCylindricalFunctor&lt; WallDirection &gt;</name>
+    <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a4adf8a1371a7737dee13741a049c7ed6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1a_cylindrical_functor.html</anchorfile>
+      <anchor>a65225c18d7d04b51d328e4b6348645ed</anchor>
+      <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
     <name>aCylindricalFunctor&lt; ZCutter &gt;</name>
     <filename>structdg_1_1geo_1_1a_cylindrical_functor.html</filename>
     <member kind="function">
@@ -1744,34 +2035,9 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>dg::geo::Alpha</name>
-    <filename>structdg_1_1geo_1_1_alpha.html</filename>
-    <member kind="function">
-      <type></type>
-      <name>Alpha</name>
-      <anchorfile>structdg_1_1geo_1_1_alpha.html</anchorfile>
-      <anchor>a2d978d9787fd7fe29a6e552be959123e</anchor>
-      <arglist>(const TokamakMagneticField &amp;c)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>operator()</name>
-      <anchorfile>structdg_1_1geo_1_1_alpha.html</anchorfile>
-      <anchor>af9910383078022eaa434e0c0c0735663</anchor>
-      <arglist>(double R, double Z) const</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>operator()</name>
-      <anchorfile>structdg_1_1geo_1_1_alpha.html</anchorfile>
-      <anchor>ad2a35c82a1539f36b4d44bc4d74b47ea</anchor>
-      <arglist>(double R, double Z, double phi) const</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
     <name>dg::geo::aRealGenerator2d</name>
     <filename>structdg_1_1geo_1_1a_real_generator2d.html</filename>
-    <templarg>real_type</templarg>
+    <templarg></templarg>
     <member kind="function">
       <type>real_type</type>
       <name>width</name>
@@ -1839,7 +2105,7 @@
   <compound kind="struct">
     <name>dg::geo::aRealGeneratorX2d</name>
     <filename>structdg_1_1geo_1_1a_real_generator_x2d.html</filename>
-    <templarg>real_type</templarg>
+    <templarg></templarg>
     <member kind="function">
       <type>real_type</type>
       <name>zeta0</name>
@@ -2109,26 +2375,6 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>dg::geo::Compose</name>
-    <filename>structdg_1_1geo_1_1_compose.html</filename>
-    <templarg></templarg>
-    <base>aCylindricalFunctor&lt; Compose&lt; UnaryFunctor &gt; &gt;</base>
-    <member kind="function">
-      <type></type>
-      <name>Compose</name>
-      <anchorfile>structdg_1_1geo_1_1_compose.html</anchorfile>
-      <anchor>addeb93c185cb79e7b9926a30d6b5c6b8</anchor>
-      <arglist>(CylindricalFunctor psi, FunctorParams &amp;&amp;... ps)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>do_compute</name>
-      <anchorfile>structdg_1_1geo_1_1_compose.html</anchorfile>
-      <anchor>abd6fc13d46ef09def9bd60b4b11a5fa6</anchor>
-      <arglist>(double R, double Z) const</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
     <name>dg::geo::Constant</name>
     <filename>structdg_1_1geo_1_1_constant.html</filename>
     <base>aCylindricalFunctor&lt; Constant &gt;</base>
@@ -2162,8 +2408,8 @@
       <type></type>
       <name>CurvatureKappaR</name>
       <anchorfile>structdg_1_1geo_1_1_curvature_kappa_r.html</anchorfile>
-      <anchor>a3e2523319ad30d683a7d9598b03049cd</anchor>
-      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+      <anchor>a14d5bc30d1d7b98c1dda2d03a40fced7</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag, int sign=+1)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
@@ -2181,8 +2427,8 @@
       <type></type>
       <name>CurvatureKappaZ</name>
       <anchorfile>structdg_1_1geo_1_1_curvature_kappa_z.html</anchorfile>
-      <anchor>a93ba48d2bff43d2249ffec2da333f5e9</anchor>
-      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+      <anchor>afb9eb17dd9df7c431fc6934233434b1e</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag, int sign)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
@@ -2200,8 +2446,8 @@
       <type></type>
       <name>CurvatureNablaBR</name>
       <anchorfile>structdg_1_1geo_1_1_curvature_nabla_b_r.html</anchorfile>
-      <anchor>a4df80c8bef9691e4a04acc738d539b85</anchor>
-      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+      <anchor>a7f4f877686dc22348c0c19e05a52fd2d</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag, int sign)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
@@ -2219,8 +2465,8 @@
       <type></type>
       <name>CurvatureNablaBZ</name>
       <anchorfile>structdg_1_1geo_1_1_curvature_nabla_b_z.html</anchorfile>
-      <anchor>ad7c59d9f2027bcc6d734b048aa075d06</anchor>
-      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+      <anchor>aaca021d5c96c46a21c69a3f77f0b72fb</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag, int sign)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
@@ -2457,45 +2703,6 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>dg::geo::DeltaFunction</name>
-    <filename>structdg_1_1geo_1_1_delta_function.html</filename>
-    <member kind="function">
-      <type></type>
-      <name>DeltaFunction</name>
-      <anchorfile>structdg_1_1geo_1_1_delta_function.html</anchorfile>
-      <anchor>a739c2e363145a2ef88dd36963fa52693</anchor>
-      <arglist>(const TokamakMagneticField &amp;c, double epsilon, double psivalue)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setepsilon</name>
-      <anchorfile>structdg_1_1geo_1_1_delta_function.html</anchorfile>
-      <anchor>a73a98699d02760ae074420f0e8003948</anchor>
-      <arglist>(double eps)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setpsi</name>
-      <anchorfile>structdg_1_1geo_1_1_delta_function.html</anchorfile>
-      <anchor>a3f38d7f89a967bfa1ac2861c6956d6be</anchor>
-      <arglist>(double psi_0)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>operator()</name>
-      <anchorfile>structdg_1_1geo_1_1_delta_function.html</anchorfile>
-      <anchor>af4b5f10a95ae86754f3078c50bb9ff52</anchor>
-      <arglist>(double R, double Z) const</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>operator()</name>
-      <anchorfile>structdg_1_1geo_1_1_delta_function.html</anchorfile>
-      <anchor>a480c24032407defe02dd3167cb390c4f</anchor>
-      <arglist>(double R, double Z, double phi) const</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
     <name>dg::geo::Divb</name>
     <filename>structdg_1_1geo_1_1_divb.html</filename>
     <base>aCylindricalFunctor&lt; Divb &gt;</base>
@@ -2522,8 +2729,8 @@
       <type></type>
       <name>DivCurvatureKappa</name>
       <anchorfile>structdg_1_1geo_1_1_div_curvature_kappa.html</anchorfile>
-      <anchor>abf47c06ca114bb79e86bd76bf1d48034</anchor>
-      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+      <anchor>a2f5dbc86c811a32f91bc820b000087f9</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag, int sign)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
@@ -2541,8 +2748,8 @@
       <type></type>
       <name>DivCurvatureNablaB</name>
       <anchorfile>structdg_1_1geo_1_1_div_curvature_nabla_b.html</anchorfile>
-      <anchor>aacc879d38cd1acdd0839ea347a3106fb</anchor>
-      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+      <anchor>a97f351fa22a38627471813ec9fab298d</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag, int sign)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
@@ -2853,9 +3060,9 @@
   <compound kind="struct">
     <name>dg::geo::Fieldaligned</name>
     <filename>structdg_1_1geo_1_1_fieldaligned.html</filename>
-    <templarg>ProductGeometry</templarg>
-    <templarg>IMatrix</templarg>
-    <templarg>container</templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
     <member kind="function">
       <type></type>
       <name>Fieldaligned</name>
@@ -2942,23 +3149,51 @@
     </member>
     <member kind="function">
       <type>const container &amp;</type>
-      <name>hm_inv</name>
+      <name>hm</name>
       <anchorfile>structdg_1_1geo_1_1_fieldaligned.html</anchorfile>
-      <anchor>a755fd10c422855aef0b5ee9d130a677e</anchor>
+      <anchor>acefaf3034860acb21ebaa77149c9d0c6</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const container &amp;</type>
-      <name>hp_inv</name>
+      <name>hp</name>
       <anchorfile>structdg_1_1geo_1_1_fieldaligned.html</anchorfile>
-      <anchor>afab29f51e7d5ac5e9fdd061f7ee6ba0e</anchor>
+      <anchor>a7c514c4151fe6af2dafc2008650d83cb</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>const container &amp;</type>
-      <name>h0_inv</name>
+      <name>hbm</name>
       <anchorfile>structdg_1_1geo_1_1_fieldaligned.html</anchorfile>
-      <anchor>aefcebb5858d82881a2c93e5ac2a49646</anchor>
+      <anchor>a014379a30eab603dee201a2e4c941b0f</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>const container &amp;</type>
+      <name>hbp</name>
+      <anchorfile>structdg_1_1geo_1_1_fieldaligned.html</anchorfile>
+      <anchor>a87836d0e5bf2b423e4ced47705daa638</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>const container &amp;</type>
+      <name>bbm</name>
+      <anchorfile>structdg_1_1geo_1_1_fieldaligned.html</anchorfile>
+      <anchor>a8af7b8a602e464b67bbad36c44309ae7</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>const container &amp;</type>
+      <name>bbo</name>
+      <anchorfile>structdg_1_1geo_1_1_fieldaligned.html</anchorfile>
+      <anchor>ad460db16fe3bb41ee781d93519d26a8b</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>const container &amp;</type>
+      <name>bbp</name>
+      <anchorfile>structdg_1_1geo_1_1_fieldaligned.html</anchorfile>
+      <anchor>a43fb87ff16f87c087712133de7ac7a4d</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
@@ -2967,6 +3202,20 @@
       <anchorfile>structdg_1_1geo_1_1_fieldaligned.html</anchorfile>
       <anchor>a3cde4145fa3be34c4edf9dc2bb15524f</anchor>
       <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>container</type>
+      <name>interpolate_from_coarse_grid</name>
+      <anchorfile>structdg_1_1geo_1_1_fieldaligned.html</anchorfile>
+      <anchor>a41494a71690b278c03c5c55f9fe8ece9</anchor>
+      <arglist>(const ProductGeometry &amp;grid_coarse, const container &amp;coarse)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>integrate_between_coarse_grid</name>
+      <anchorfile>structdg_1_1geo_1_1_fieldaligned.html</anchorfile>
+      <anchor>a4d031e50eb1b9f152e658378e04bf401</anchor>
+      <arglist>(const ProductGeometry &amp;grid_coarse, const container &amp;coarse, container &amp;out)</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -2996,14 +3245,140 @@
       <type></type>
       <name>FluxSurfaceAverage</name>
       <anchorfile>structdg_1_1geo_1_1_flux_surface_average.html</anchorfile>
-      <anchor>a9c6f7fd4e2a5c013f2f0285af256794d</anchor>
-      <arglist>(const dg::Grid2d &amp;g2d, const TokamakMagneticField &amp;c, const container &amp;f)</arglist>
+      <anchor>ae2966273e0ba8103ddc54a5dd86815c8</anchor>
+      <arglist>(const dg::Grid2d &amp;g2d, const TokamakMagneticField &amp;mag, const container &amp;f, container weights, double width_factor=1.)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_deltapsi</name>
+      <anchorfile>structdg_1_1geo_1_1_flux_surface_average.html</anchorfile>
+      <anchor>ad5494b9f682788757a5f181695df9524</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_container</name>
+      <anchorfile>structdg_1_1geo_1_1_flux_surface_average.html</anchorfile>
+      <anchor>a131f8e64639edad7f2210ff476cd1861</anchor>
+      <arglist>(const container &amp;f)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structdg_1_1geo_1_1_flux_surface_average.html</anchorfile>
       <anchor>ad5b310759a3be85b39ecc7d86518cb32</anchor>
+      <arglist>(double psip0)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::FluxSurfaceIntegral</name>
+    <filename>structdg_1_1geo_1_1_flux_surface_integral.html</filename>
+    <templarg></templarg>
+    <member kind="function">
+      <type></type>
+      <name>FluxSurfaceIntegral</name>
+      <anchorfile>structdg_1_1geo_1_1_flux_surface_integral.html</anchorfile>
+      <anchor>a17cc4596aad6b3e94b4414b3670d025d</anchor>
+      <arglist>(const dg::Grid2d &amp;g2d, const TokamakMagneticField &amp;mag, double width_factor=1.)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_deltapsi</name>
+      <anchorfile>structdg_1_1geo_1_1_flux_surface_integral.html</anchorfile>
+      <anchor>aee83c32334b0aa5e16e165cdbdcbc03d</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_left</name>
+      <anchorfile>structdg_1_1geo_1_1_flux_surface_integral.html</anchorfile>
+      <anchor>a45fdf6bd5ef89adc8e8e5bbba69a2294</anchor>
+      <arglist>(const container &amp;f)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_right</name>
+      <anchorfile>structdg_1_1geo_1_1_flux_surface_integral.html</anchorfile>
+      <anchor>a13c8c18ca1daecc8ca39a996e3e235f5</anchor>
+      <arglist>(const container &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1_flux_surface_integral.html</anchorfile>
+      <anchor>a3d5fba7a3d53df57c1e4a174df9be5b8</anchor>
+      <arglist>(double psip0)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>FluxSurfaceIntegral&lt; thrust::host_vector&lt; double &gt; &gt;</name>
+    <filename>structdg_1_1geo_1_1_flux_surface_integral.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>FluxSurfaceIntegral</name>
+      <anchorfile>structdg_1_1geo_1_1_flux_surface_integral.html</anchorfile>
+      <anchor>a17cc4596aad6b3e94b4414b3670d025d</anchor>
+      <arglist>(const dg::Grid2d &amp;g2d, const TokamakMagneticField &amp;mag, double width_factor=1.)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>get_deltapsi</name>
+      <anchorfile>structdg_1_1geo_1_1_flux_surface_integral.html</anchorfile>
+      <anchor>aee83c32334b0aa5e16e165cdbdcbc03d</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_left</name>
+      <anchorfile>structdg_1_1geo_1_1_flux_surface_integral.html</anchorfile>
+      <anchor>a45fdf6bd5ef89adc8e8e5bbba69a2294</anchor>
+      <arglist>(const thrust::host_vector&lt; double &gt; &amp;f)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_right</name>
+      <anchorfile>structdg_1_1geo_1_1_flux_surface_integral.html</anchorfile>
+      <anchor>a13c8c18ca1daecc8ca39a996e3e235f5</anchor>
+      <arglist>(const thrust::host_vector&lt; double &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1_flux_surface_integral.html</anchorfile>
+      <anchor>a3d5fba7a3d53df57c1e4a174df9be5b8</anchor>
+      <arglist>(double psip0)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::FluxVolumeIntegral</name>
+    <filename>structdg_1_1geo_1_1_flux_volume_integral.html</filename>
+    <templarg></templarg>
+    <member kind="function">
+      <type></type>
+      <name>FluxVolumeIntegral</name>
+      <anchorfile>structdg_1_1geo_1_1_flux_volume_integral.html</anchorfile>
+      <anchor>a255e911a571f66d2de86439b0d14b448</anchor>
+      <arglist>(const Geometry2d &amp;g2d, const TokamakMagneticField &amp;mag)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_left</name>
+      <anchorfile>structdg_1_1geo_1_1_flux_volume_integral.html</anchorfile>
+      <anchor>a79126ba1415022c1e3e0137bed7d0fe1</anchor>
+      <arglist>(const container &amp;f)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_right</name>
+      <anchorfile>structdg_1_1geo_1_1_flux_volume_integral.html</anchorfile>
+      <anchor>a35d21df3d83c7d7f6099cbb6893baa71</anchor>
+      <arglist>(const container &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1_flux_volume_integral.html</anchorfile>
+      <anchor>ab75a0cb5130e9f52db1f9ffe2e6808ff</anchor>
       <arglist>(double psip0)</arglist>
     </member>
   </compound>
@@ -3134,6 +3509,25 @@
     </member>
   </compound>
   <compound kind="struct">
+    <name>dg::geo::Hoo</name>
+    <filename>structdg_1_1geo_1_1_hoo.html</filename>
+    <base>aCylindricalFunctor&lt; Hoo &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>Hoo</name>
+      <anchorfile>structdg_1_1geo_1_1_hoo.html</anchorfile>
+      <anchor>a196fcbc18970884e9b5ccc523d55c4aa</anchor>
+      <arglist>(dg::geo::TokamakMagneticField mag)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_hoo.html</anchorfile>
+      <anchor>a1b602016f452c15a2c632ed906e73858</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
     <name>dg::geo::InvB</name>
     <filename>structdg_1_1geo_1_1_inv_b.html</filename>
     <base>aCylindricalFunctor&lt; InvB &gt;</base>
@@ -3179,8 +3573,8 @@
       <type></type>
       <name>Ipol</name>
       <anchorfile>structdg_1_1geo_1_1solovev_1_1_ipol.html</anchorfile>
-      <anchor>ae70a8c7d7fab2a38fcbe36b32f9b055f</anchor>
-      <arglist>(Parameters gp)</arglist>
+      <anchor>a157850389cc4088c44a967baf13916a7</anchor>
+      <arglist>(Parameters gp, std::function&lt; double(double, double)&gt; psip)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
@@ -3236,8 +3630,8 @@
       <type></type>
       <name>IpolR</name>
       <anchorfile>structdg_1_1geo_1_1solovev_1_1_ipol_r.html</anchorfile>
-      <anchor>ae32d0be0e080ab3a81ed082b5c5a26bd</anchor>
-      <arglist>(Parameters gp)</arglist>
+      <anchor>a98aba3123812cda269318884e6cbf0af</anchor>
+      <arglist>(Parameters gp, std::function&lt; double(double, double)&gt; psip, std::function&lt; double(double, double)&gt; psipR)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
@@ -3293,8 +3687,8 @@
       <type></type>
       <name>IpolZ</name>
       <anchorfile>structdg_1_1geo_1_1solovev_1_1_ipol_z.html</anchorfile>
-      <anchor>ae3fd27816ee07e54be13c8256fd53373</anchor>
-      <arglist>(Parameters gp)</arglist>
+      <anchor>a4a8b9abd02309a67d740eacf29da5aa3</anchor>
+      <arglist>(Parameters gp, std::function&lt; double(double, double)&gt; psip, std::function&lt; double(double, double)&gt; psipZ)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
@@ -3419,6 +3813,66 @@
     </member>
   </compound>
   <compound kind="struct">
+    <name>dg::geo::MagneticFieldParameters</name>
+    <filename>structdg_1_1geo_1_1_magnetic_field_parameters.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>MagneticFieldParameters</name>
+      <anchorfile>structdg_1_1geo_1_1_magnetic_field_parameters.html</anchorfile>
+      <anchor>aa0187bc9708ac04695554070c178d9cf</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>MagneticFieldParameters</name>
+      <anchorfile>structdg_1_1geo_1_1_magnetic_field_parameters.html</anchorfile>
+      <anchor>a61a9c6683532a31cda10ee64bd388366</anchor>
+      <arglist>(double a, double elongation, double triangularity, equilibrium equ, modifier mod, description des)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>a</name>
+      <anchorfile>structdg_1_1geo_1_1_magnetic_field_parameters.html</anchorfile>
+      <anchor>a3131b3670ec24ff82d364f9f07a8cada</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>elongation</name>
+      <anchorfile>structdg_1_1geo_1_1_magnetic_field_parameters.html</anchorfile>
+      <anchor>a76d8f6045b60ccbeaa35239cf79d4200</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>triangularity</name>
+      <anchorfile>structdg_1_1geo_1_1_magnetic_field_parameters.html</anchorfile>
+      <anchor>a7e4ff44b4e047a4a19b3593922a17992</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>equilibrium</type>
+      <name>getEquilibrium</name>
+      <anchorfile>structdg_1_1geo_1_1_magnetic_field_parameters.html</anchorfile>
+      <anchor>a9d88460a15f5a280cf65281da83305b6</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>modifier</type>
+      <name>getModifier</name>
+      <anchorfile>structdg_1_1geo_1_1_magnetic_field_parameters.html</anchorfile>
+      <anchor>a4bdf1da87634f451f5d583714c3a48cc</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>description</type>
+      <name>getDescription</name>
+      <anchorfile>structdg_1_1geo_1_1_magnetic_field_parameters.html</anchorfile>
+      <anchor>a6471cf28a7396c3fbf59ba89aa3f346e</anchor>
+      <arglist>() const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
     <name>dg::geo::NablaPsiInv</name>
     <filename>structdg_1_1geo_1_1_nabla_psi_inv.html</filename>
     <base>aCylindricalFunctor&lt; NablaPsiInv &gt;</base>
@@ -3476,97 +3930,104 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>dg::geo::guenther::Parameters</name>
-    <filename>structdg_1_1geo_1_1guenther_1_1_parameters.html</filename>
+    <name>dg::geo::polynomial::Parameters</name>
+    <filename>structdg_1_1geo_1_1polynomial_1_1_parameters.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>Parameters</name>
+      <anchorfile>structdg_1_1geo_1_1polynomial_1_1_parameters.html</anchorfile>
+      <anchor>abe17795220f2b40e6ce993c253a50853</anchor>
+      <arglist>(const Json::Value &amp;js, dg::file::error mode=dg::file::error::is_silent)</arglist>
+    </member>
+    <member kind="function">
+      <type>Json::Value</type>
+      <name>dump</name>
+      <anchorfile>structdg_1_1geo_1_1polynomial_1_1_parameters.html</anchorfile>
+      <anchor>adee1dc41513291e10b17f9bffcced10e</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isToroidal</name>
+      <anchorfile>structdg_1_1geo_1_1polynomial_1_1_parameters.html</anchorfile>
+      <anchor>a628efdec211ae203247a8847303059cb</anchor>
+      <arglist>() const</arglist>
+    </member>
     <member kind="function">
       <type>void</type>
       <name>display</name>
-      <anchorfile>structdg_1_1geo_1_1guenther_1_1_parameters.html</anchorfile>
-      <anchor>afe26a01fda1653e194ebc7cb017139f5</anchor>
+      <anchorfile>structdg_1_1geo_1_1polynomial_1_1_parameters.html</anchorfile>
+      <anchor>a1a82e4f41c055fab4f5eb5cbb775eca0</anchor>
       <arglist>(std::ostream &amp;os=std::cout) const</arglist>
     </member>
     <member kind="variable">
       <type>double</type>
-      <name>I_0</name>
-      <anchorfile>structdg_1_1geo_1_1guenther_1_1_parameters.html</anchorfile>
-      <anchor>ab6c8f90fed93e3071fd5dc1cda09da55</anchor>
+      <name>R_0</name>
+      <anchorfile>structdg_1_1geo_1_1polynomial_1_1_parameters.html</anchorfile>
+      <anchor>a73686678eb97734ea9138b393ea05977</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>double</type>
-      <name>R_0</name>
-      <anchorfile>structdg_1_1geo_1_1guenther_1_1_parameters.html</anchorfile>
-      <anchor>ab962a08a6be5b352961d14cb0dc2f289</anchor>
+      <name>pp</name>
+      <anchorfile>structdg_1_1geo_1_1polynomial_1_1_parameters.html</anchorfile>
+      <anchor>a55d382eca63396fcfdb31971d3cd062a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>double</type>
+      <name>pi</name>
+      <anchorfile>structdg_1_1geo_1_1polynomial_1_1_parameters.html</anchorfile>
+      <anchor>afd2fd06ecd53d2251884eefce55a9196</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>double</type>
       <name>a</name>
-      <anchorfile>structdg_1_1geo_1_1guenther_1_1_parameters.html</anchorfile>
-      <anchor>a664699a44e8c1eb8198987a84e5711ed</anchor>
+      <anchorfile>structdg_1_1geo_1_1polynomial_1_1_parameters.html</anchorfile>
+      <anchor>a784d1a566bcc047ab14458771c304328</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>double</type>
       <name>elongation</name>
-      <anchorfile>structdg_1_1geo_1_1guenther_1_1_parameters.html</anchorfile>
-      <anchor>a55429011a0123a6d37aab26a0ec90e51</anchor>
+      <anchorfile>structdg_1_1geo_1_1polynomial_1_1_parameters.html</anchorfile>
+      <anchor>abb6e5e5e1ec4022063c90ed177cf414b</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>double</type>
       <name>triangularity</name>
-      <anchorfile>structdg_1_1geo_1_1guenther_1_1_parameters.html</anchorfile>
-      <anchor>a11a546030144b036405db8a00b392630</anchor>
+      <anchorfile>structdg_1_1geo_1_1polynomial_1_1_parameters.html</anchorfile>
+      <anchor>a3cfcf5b2b8fe22de9c5b688f17012699</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>double</type>
-      <name>alpha</name>
-      <anchorfile>structdg_1_1geo_1_1guenther_1_1_parameters.html</anchorfile>
-      <anchor>a884f948aa5339811bfaf2bb36f61c038</anchor>
+      <type>unsigned</type>
+      <name>M</name>
+      <anchorfile>structdg_1_1geo_1_1polynomial_1_1_parameters.html</anchorfile>
+      <anchor>abb7c6c6262112a9eeedb8b8dfd93b630</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>double</type>
-      <name>rk4eps</name>
-      <anchorfile>structdg_1_1geo_1_1guenther_1_1_parameters.html</anchorfile>
-      <anchor>ad457d26dd09ac5773071f69c624826a2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>double</type>
-      <name>psipmin</name>
-      <anchorfile>structdg_1_1geo_1_1guenther_1_1_parameters.html</anchorfile>
-      <anchor>aa1f03dc9076937119f19e7fe4974375d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>double</type>
-      <name>psipmax</name>
-      <anchorfile>structdg_1_1geo_1_1guenther_1_1_parameters.html</anchorfile>
-      <anchor>af4662cf88733d884d8896ab10739501e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>double</type>
-      <name>psipmaxcut</name>
-      <anchorfile>structdg_1_1geo_1_1guenther_1_1_parameters.html</anchorfile>
-      <anchor>a88b8084817a56b02e67aff32eb56366c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>double</type>
-      <name>psipmaxlim</name>
-      <anchorfile>structdg_1_1geo_1_1guenther_1_1_parameters.html</anchorfile>
-      <anchor>afcbf1738c0dfb6bf1b9a4573d0440468</anchor>
+      <type>unsigned</type>
+      <name>N</name>
+      <anchorfile>structdg_1_1geo_1_1polynomial_1_1_parameters.html</anchorfile>
+      <anchor>aa60757fb04e4e4bd99cacf0f45536607</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>std::vector&lt; double &gt;</type>
       <name>c</name>
-      <anchorfile>structdg_1_1geo_1_1guenther_1_1_parameters.html</anchorfile>
-      <anchor>a9b4679b57e66f26c134f1b6bb3eddd54</anchor>
+      <anchorfile>structdg_1_1geo_1_1polynomial_1_1_parameters.html</anchorfile>
+      <anchor>a66b5a517f4edbfc6c11cf95795a40c07</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>std::string</type>
+      <name>description</name>
+      <anchorfile>structdg_1_1geo_1_1polynomial_1_1_parameters.html</anchorfile>
+      <anchor>a1608a4328903e576b460ad393beca011</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -3574,10 +4035,31 @@
     <name>dg::geo::solovev::Parameters</name>
     <filename>structdg_1_1geo_1_1solovev_1_1_parameters.html</filename>
     <member kind="function">
+      <type></type>
+      <name>Parameters</name>
+      <anchorfile>structdg_1_1geo_1_1solovev_1_1_parameters.html</anchorfile>
+      <anchor>af2a682e4d80aa11c5dd11d58da3f126b</anchor>
+      <arglist>(const Json::Value &amp;js, dg::file::error mode=dg::file::error::is_silent)</arglist>
+    </member>
+    <member kind="function">
+      <type>Json::Value</type>
+      <name>dump</name>
+      <anchorfile>structdg_1_1geo_1_1solovev_1_1_parameters.html</anchorfile>
+      <anchor>abce9582ab1a5e6254721fc90c45e761d</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
       <type>bool</type>
       <name>hasXpoint</name>
       <anchorfile>structdg_1_1geo_1_1solovev_1_1_parameters.html</anchorfile>
       <anchor>ab77a9350c78104f2879b2dbf6b3f9bda</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isToroidal</name>
+      <anchorfile>structdg_1_1geo_1_1solovev_1_1_parameters.html</anchorfile>
+      <anchor>a56085f1207852caebb05964923597989</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
@@ -3603,6 +4085,20 @@
     </member>
     <member kind="variable">
       <type>double</type>
+      <name>pp</name>
+      <anchorfile>structdg_1_1geo_1_1solovev_1_1_parameters.html</anchorfile>
+      <anchor>a0302e0f4d352f2d08168f4ec785e9748</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>double</type>
+      <name>pi</name>
+      <anchorfile>structdg_1_1geo_1_1solovev_1_1_parameters.html</anchorfile>
+      <anchor>a98338d26eff56e52951f6b8c3d79fe12</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>double</type>
       <name>a</name>
       <anchorfile>structdg_1_1geo_1_1solovev_1_1_parameters.html</anchorfile>
       <anchor>a245bcf30102133b8faa508dcf4a88481</anchor>
@@ -3623,55 +4119,6 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>double</type>
-      <name>alpha</name>
-      <anchorfile>structdg_1_1geo_1_1solovev_1_1_parameters.html</anchorfile>
-      <anchor>a88671d55077cc955eea851bc5187d567</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>double</type>
-      <name>rk4eps</name>
-      <anchorfile>structdg_1_1geo_1_1solovev_1_1_parameters.html</anchorfile>
-      <anchor>a48a2b3f947a46c6ed98c70f9384b93c6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>double</type>
-      <name>psipmin</name>
-      <anchorfile>structdg_1_1geo_1_1solovev_1_1_parameters.html</anchorfile>
-      <anchor>a62a25e8097050d25ee6a631c35740ac7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>double</type>
-      <name>psipmax</name>
-      <anchorfile>structdg_1_1geo_1_1solovev_1_1_parameters.html</anchorfile>
-      <anchor>a3b736b4e0adf76dd178e3c3d15b2623b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>double</type>
-      <name>psipmaxcut</name>
-      <anchorfile>structdg_1_1geo_1_1solovev_1_1_parameters.html</anchorfile>
-      <anchor>a618be8aa154476d822968f179fd52983</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>double</type>
-      <name>psipmaxlim</name>
-      <anchorfile>structdg_1_1geo_1_1solovev_1_1_parameters.html</anchorfile>
-      <anchor>a6cd01dee63118f4d12aaf13d8e541c6f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>double</type>
-      <name>qampl</name>
-      <anchorfile>structdg_1_1geo_1_1solovev_1_1_parameters.html</anchorfile>
-      <anchor>a44e40c3bda2c339c707cb3190637a07c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
       <type>std::vector&lt; double &gt;</type>
       <name>c</name>
       <anchorfile>structdg_1_1geo_1_1solovev_1_1_parameters.html</anchorfile>
@@ -3680,10 +4127,36 @@
     </member>
     <member kind="variable">
       <type>std::string</type>
-      <name>equilibrium</name>
+      <name>description</name>
       <anchorfile>structdg_1_1geo_1_1solovev_1_1_parameters.html</anchorfile>
-      <anchor>a5343983d3e56a58fa650e984d9d39b4a</anchor>
+      <anchor>a76b813844525b0f9650f3928c37dea18</anchor>
       <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::Periodify</name>
+    <filename>structdg_1_1geo_1_1_periodify.html</filename>
+    <base>aCylindricalFunctor&lt; Periodify &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>Periodify</name>
+      <anchorfile>structdg_1_1geo_1_1_periodify.html</anchorfile>
+      <anchor>a826996012165ae05e9e245422066930c</anchor>
+      <arglist>(CylindricalFunctor functor, dg::Grid2d g)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Periodify</name>
+      <anchorfile>structdg_1_1geo_1_1_periodify.html</anchorfile>
+      <anchor>aab320e0d32872d99d3b63f30c73f543a</anchor>
+      <arglist>(CylindricalFunctor functor, double R0, double R1, double Z0, double Z1, dg::bc bcx, dg::bc bcy)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_periodify.html</anchorfile>
+      <anchor>ac7110d797f4fe721002a15f2948b9b0d</anchor>
+      <arglist>(double R, double Z) const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -3706,40 +4179,21 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>dg::geo::solovev::Psip</name>
-    <filename>structdg_1_1geo_1_1solovev_1_1_psip.html</filename>
+    <name>dg::geo::mod::Psip</name>
+    <filename>structdg_1_1geo_1_1mod_1_1_psip.html</filename>
     <base>aCylindricalFunctor&lt; Psip &gt;</base>
     <member kind="function">
       <type></type>
       <name>Psip</name>
-      <anchorfile>structdg_1_1geo_1_1solovev_1_1_psip.html</anchorfile>
-      <anchor>ac03bbd27cfa3c3bb9915be065727ec8a</anchor>
-      <arglist>(Parameters gp)</arglist>
+      <anchorfile>structdg_1_1geo_1_1mod_1_1_psip.html</anchorfile>
+      <anchor>af3377c028b0d22d4cd5c45cb432a85ab</anchor>
+      <arglist>(std::function&lt; bool(double, double)&gt; predicate, std::function&lt; double(double, double)&gt; psip, double psi0, double alpha, double sign=-1)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>do_compute</name>
-      <anchorfile>structdg_1_1geo_1_1solovev_1_1_psip.html</anchorfile>
-      <anchor>a50c4db13db386880180faf8587d2daf8</anchor>
-      <arglist>(double R, double Z) const</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>dg::geo::circular::Psip</name>
-    <filename>structdg_1_1geo_1_1circular_1_1_psip.html</filename>
-    <base>aCylindricalFunctor&lt; Psip &gt;</base>
-    <member kind="function">
-      <type></type>
-      <name>Psip</name>
-      <anchorfile>structdg_1_1geo_1_1circular_1_1_psip.html</anchorfile>
-      <anchor>ae959371d510a5f7358a6b0143da3e3e2</anchor>
-      <arglist>(double R0)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>do_compute</name>
-      <anchorfile>structdg_1_1geo_1_1circular_1_1_psip.html</anchorfile>
-      <anchor>a5476a62ac8f65807d2e0ff36f522c6c0</anchor>
+      <anchorfile>structdg_1_1geo_1_1mod_1_1_psip.html</anchorfile>
+      <anchor>a30989b83724765f2734fe08294f0b181</anchor>
       <arglist>(double R, double Z) const</arglist>
     </member>
   </compound>
@@ -3782,6 +4236,63 @@
     </member>
   </compound>
   <compound kind="struct">
+    <name>dg::geo::polynomial::Psip</name>
+    <filename>structdg_1_1geo_1_1polynomial_1_1_psip.html</filename>
+    <base>aCylindricalFunctor&lt; Psip &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>Psip</name>
+      <anchorfile>structdg_1_1geo_1_1polynomial_1_1_psip.html</anchorfile>
+      <anchor>a9eb0417f7ec5dc7acd428c0453e3a424</anchor>
+      <arglist>(Parameters gp)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1polynomial_1_1_psip.html</anchorfile>
+      <anchor>aeab00049d97fbdfd238e07bf2b267b6c</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::solovev::Psip</name>
+    <filename>structdg_1_1geo_1_1solovev_1_1_psip.html</filename>
+    <base>aCylindricalFunctor&lt; Psip &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>Psip</name>
+      <anchorfile>structdg_1_1geo_1_1solovev_1_1_psip.html</anchorfile>
+      <anchor>ac03bbd27cfa3c3bb9915be065727ec8a</anchor>
+      <arglist>(Parameters gp)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1solovev_1_1_psip.html</anchorfile>
+      <anchor>a50c4db13db386880180faf8587d2daf8</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::circular::Psip</name>
+    <filename>structdg_1_1geo_1_1circular_1_1_psip.html</filename>
+    <base>aCylindricalFunctor&lt; Psip &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>Psip</name>
+      <anchorfile>structdg_1_1geo_1_1circular_1_1_psip.html</anchorfile>
+      <anchor>ae959371d510a5f7358a6b0143da3e3e2</anchor>
+      <arglist>(double R0)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1circular_1_1_psip.html</anchorfile>
+      <anchor>a5476a62ac8f65807d2e0ff36f522c6c0</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
     <name>dg::geo::solovev::PsipR</name>
     <filename>structdg_1_1geo_1_1solovev_1_1_psip_r.html</filename>
     <base>aCylindricalFunctor&lt; PsipR &gt;</base>
@@ -3797,6 +4308,63 @@
       <name>do_compute</name>
       <anchorfile>structdg_1_1geo_1_1solovev_1_1_psip_r.html</anchorfile>
       <anchor>a396bea0cce001970f97781ab8f098529</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::polynomial::PsipR</name>
+    <filename>structdg_1_1geo_1_1polynomial_1_1_psip_r.html</filename>
+    <base>aCylindricalFunctor&lt; PsipR &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>PsipR</name>
+      <anchorfile>structdg_1_1geo_1_1polynomial_1_1_psip_r.html</anchorfile>
+      <anchor>a6069dcb7672dec53355ce6ef35294b19</anchor>
+      <arglist>(Parameters gp)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1polynomial_1_1_psip_r.html</anchorfile>
+      <anchor>af353a1b621444970eb47f70cfc996131</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::guenther::PsipR</name>
+    <filename>structdg_1_1geo_1_1guenther_1_1_psip_r.html</filename>
+    <base>aCylindricalFunctor&lt; PsipR &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>PsipR</name>
+      <anchorfile>structdg_1_1geo_1_1guenther_1_1_psip_r.html</anchorfile>
+      <anchor>ad220d935c23098e4cf9a7e2cd77bd5d3</anchor>
+      <arglist>(double R_0)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1guenther_1_1_psip_r.html</anchorfile>
+      <anchor>a7d9b0723e3c174bb3c0ca17d6bf035b9</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::mod::PsipR</name>
+    <filename>structdg_1_1geo_1_1mod_1_1_psip_r.html</filename>
+    <base>aCylindricalFunctor&lt; PsipR &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>PsipR</name>
+      <anchorfile>structdg_1_1geo_1_1mod_1_1_psip_r.html</anchorfile>
+      <anchor>a33a1bcbf78da2d2e32c37fa14de7aa4a</anchor>
+      <arglist>(std::function&lt; bool(double, double)&gt; predicate, std::function&lt; double(double, double)&gt; psip, std::function&lt; double(double, double)&gt; psipR, double psi0, double alpha, double sign=-1)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1mod_1_1_psip_r.html</anchorfile>
+      <anchor>aaafae59c9394a7d1bae5f6fb5e5fda22</anchor>
       <arglist>(double R, double Z) const</arglist>
     </member>
   </compound>
@@ -3839,21 +4407,21 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>dg::geo::guenther::PsipR</name>
-    <filename>structdg_1_1geo_1_1guenther_1_1_psip_r.html</filename>
-    <base>aCylindricalFunctor&lt; PsipR &gt;</base>
+    <name>dg::geo::solovev::PsipRR</name>
+    <filename>structdg_1_1geo_1_1solovev_1_1_psip_r_r.html</filename>
+    <base>aCylindricalFunctor&lt; PsipRR &gt;</base>
     <member kind="function">
       <type></type>
-      <name>PsipR</name>
-      <anchorfile>structdg_1_1geo_1_1guenther_1_1_psip_r.html</anchorfile>
-      <anchor>ad220d935c23098e4cf9a7e2cd77bd5d3</anchor>
-      <arglist>(double R_0)</arglist>
+      <name>PsipRR</name>
+      <anchorfile>structdg_1_1geo_1_1solovev_1_1_psip_r_r.html</anchorfile>
+      <anchor>ad46e72e774f3068ca07290e8fc521308</anchor>
+      <arglist>(Parameters gp)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>do_compute</name>
-      <anchorfile>structdg_1_1geo_1_1guenther_1_1_psip_r.html</anchorfile>
-      <anchor>a7d9b0723e3c174bb3c0ca17d6bf035b9</anchor>
+      <anchorfile>structdg_1_1geo_1_1solovev_1_1_psip_r_r.html</anchorfile>
+      <anchor>ac7ce47105a1bd3d30a5cfc4a26993108</anchor>
       <arglist>(double R, double Z) const</arglist>
     </member>
   </compound>
@@ -3896,40 +4464,97 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>dg::geo::solovev::PsipRR</name>
-    <filename>structdg_1_1geo_1_1solovev_1_1_psip_r_r.html</filename>
+    <name>dg::geo::polynomial::PsipRR</name>
+    <filename>structdg_1_1geo_1_1polynomial_1_1_psip_r_r.html</filename>
     <base>aCylindricalFunctor&lt; PsipRR &gt;</base>
     <member kind="function">
       <type></type>
       <name>PsipRR</name>
-      <anchorfile>structdg_1_1geo_1_1solovev_1_1_psip_r_r.html</anchorfile>
-      <anchor>ad46e72e774f3068ca07290e8fc521308</anchor>
+      <anchorfile>structdg_1_1geo_1_1polynomial_1_1_psip_r_r.html</anchorfile>
+      <anchor>a77bce8b709e148ce5d623b96245a69e8</anchor>
       <arglist>(Parameters gp)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>do_compute</name>
-      <anchorfile>structdg_1_1geo_1_1solovev_1_1_psip_r_r.html</anchorfile>
-      <anchor>ac7ce47105a1bd3d30a5cfc4a26993108</anchor>
+      <anchorfile>structdg_1_1geo_1_1polynomial_1_1_psip_r_r.html</anchorfile>
+      <anchor>ac6fd30564f5c98f2ed344c56fdc2e6fd</anchor>
       <arglist>(double R, double Z) const</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>dg::geo::taylor::PsipRZ</name>
-    <filename>structdg_1_1geo_1_1taylor_1_1_psip_r_z.html</filename>
-    <base>aCylindricalFunctor&lt; PsipRZ &gt;</base>
+    <name>dg::geo::mod::PsipRR</name>
+    <filename>structdg_1_1geo_1_1mod_1_1_psip_r_r.html</filename>
+    <base>aCylindricalFunctor&lt; PsipRR &gt;</base>
     <member kind="function">
       <type></type>
-      <name>PsipRZ</name>
-      <anchorfile>structdg_1_1geo_1_1taylor_1_1_psip_r_z.html</anchorfile>
-      <anchor>a7d60529fe9b5027df36d396c806f782f</anchor>
-      <arglist>(solovev::Parameters gp)</arglist>
+      <name>PsipRR</name>
+      <anchorfile>structdg_1_1geo_1_1mod_1_1_psip_r_r.html</anchorfile>
+      <anchor>a504583416be8df46c0741a8b95163d9d</anchor>
+      <arglist>(std::function&lt; bool(double, double)&gt; predicate, std::function&lt; double(double, double)&gt; psip, std::function&lt; double(double, double)&gt; psipR, std::function&lt; double(double, double)&gt; psipRR, double psi0, double alpha, double sign=-1)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>do_compute</name>
-      <anchorfile>structdg_1_1geo_1_1taylor_1_1_psip_r_z.html</anchorfile>
-      <anchor>a5065f9aa7892404b709c975d61f3ec8c</anchor>
+      <anchorfile>structdg_1_1geo_1_1mod_1_1_psip_r_r.html</anchorfile>
+      <anchor>afd126f2c825878513b29364c0ccc0c4e</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::guenther::PsipRZ</name>
+    <filename>structdg_1_1geo_1_1guenther_1_1_psip_r_z.html</filename>
+    <base>aCylindricalFunctor&lt; PsipRZ &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>PsipRZ</name>
+      <anchorfile>structdg_1_1geo_1_1guenther_1_1_psip_r_z.html</anchorfile>
+      <anchor>a4d6299b83846e8a5df0c926740476602</anchor>
+      <arglist>(double R_0)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1guenther_1_1_psip_r_z.html</anchorfile>
+      <anchor>a3494d73dacd40e0035ceedc074311168</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::mod::PsipRZ</name>
+    <filename>structdg_1_1geo_1_1mod_1_1_psip_r_z.html</filename>
+    <base>aCylindricalFunctor&lt; PsipRZ &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>PsipRZ</name>
+      <anchorfile>structdg_1_1geo_1_1mod_1_1_psip_r_z.html</anchorfile>
+      <anchor>ab7d57b00716189380a94538f6951aad8</anchor>
+      <arglist>(std::function&lt; bool(double, double)&gt; predicate, std::function&lt; double(double, double)&gt; psip, std::function&lt; double(double, double)&gt; psipR, std::function&lt; double(double, double)&gt; psipZ, std::function&lt; double(double, double)&gt; psipRZ, double psi0, double alpha, double sign=-1)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1mod_1_1_psip_r_z.html</anchorfile>
+      <anchor>aa2889ba986cfc1de11556751a8e00e4a</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::polynomial::PsipRZ</name>
+    <filename>structdg_1_1geo_1_1polynomial_1_1_psip_r_z.html</filename>
+    <base>aCylindricalFunctor&lt; PsipRZ &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>PsipRZ</name>
+      <anchorfile>structdg_1_1geo_1_1polynomial_1_1_psip_r_z.html</anchorfile>
+      <anchor>a285a31d091c03426e3c0013e3169234b</anchor>
+      <arglist>(Parameters gp)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1polynomial_1_1_psip_r_z.html</anchorfile>
+      <anchor>a4fa3243a0cad8444f6e76fc84b211d70</anchor>
       <arglist>(double R, double Z) const</arglist>
     </member>
   </compound>
@@ -3953,21 +4578,90 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>dg::geo::guenther::PsipRZ</name>
-    <filename>structdg_1_1geo_1_1guenther_1_1_psip_r_z.html</filename>
+    <name>dg::geo::taylor::PsipRZ</name>
+    <filename>structdg_1_1geo_1_1taylor_1_1_psip_r_z.html</filename>
     <base>aCylindricalFunctor&lt; PsipRZ &gt;</base>
     <member kind="function">
       <type></type>
       <name>PsipRZ</name>
-      <anchorfile>structdg_1_1geo_1_1guenther_1_1_psip_r_z.html</anchorfile>
-      <anchor>a4d6299b83846e8a5df0c926740476602</anchor>
+      <anchorfile>structdg_1_1geo_1_1taylor_1_1_psip_r_z.html</anchorfile>
+      <anchor>a7d60529fe9b5027df36d396c806f782f</anchor>
+      <arglist>(solovev::Parameters gp)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1taylor_1_1_psip_r_z.html</anchorfile>
+      <anchor>a5065f9aa7892404b709c975d61f3ec8c</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::circular::PsipZ</name>
+    <filename>structdg_1_1geo_1_1circular_1_1_psip_z.html</filename>
+    <base>aCylindricalFunctor&lt; PsipZ &gt;</base>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1circular_1_1_psip_z.html</anchorfile>
+      <anchor>ad44eb87d832769e8aeba66534a1a29c8</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::guenther::PsipZ</name>
+    <filename>structdg_1_1geo_1_1guenther_1_1_psip_z.html</filename>
+    <base>aCylindricalFunctor&lt; PsipZ &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>PsipZ</name>
+      <anchorfile>structdg_1_1geo_1_1guenther_1_1_psip_z.html</anchorfile>
+      <anchor>a46c18861500af9fdded5a4db65b3101c</anchor>
       <arglist>(double R_0)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>do_compute</name>
-      <anchorfile>structdg_1_1geo_1_1guenther_1_1_psip_r_z.html</anchorfile>
-      <anchor>a3494d73dacd40e0035ceedc074311168</anchor>
+      <anchorfile>structdg_1_1geo_1_1guenther_1_1_psip_z.html</anchorfile>
+      <anchor>abf9e71c5da96c2cc6b920382484d6167</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::mod::PsipZ</name>
+    <filename>structdg_1_1geo_1_1mod_1_1_psip_z.html</filename>
+    <base>aCylindricalFunctor&lt; PsipZ &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>PsipZ</name>
+      <anchorfile>structdg_1_1geo_1_1mod_1_1_psip_z.html</anchorfile>
+      <anchor>a5a7464f480ed6619d27a1982e4fce08c</anchor>
+      <arglist>(std::function&lt; bool(double, double)&gt; predicate, std::function&lt; double(double, double)&gt; psip, std::function&lt; double(double, double)&gt; psipZ, double psi0, double alpha, double sign=-1)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1mod_1_1_psip_z.html</anchorfile>
+      <anchor>ab44fb37490a291da06b4e87dd7a5acb0</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::polynomial::PsipZ</name>
+    <filename>structdg_1_1geo_1_1polynomial_1_1_psip_z.html</filename>
+    <base>aCylindricalFunctor&lt; PsipZ &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>PsipZ</name>
+      <anchorfile>structdg_1_1geo_1_1polynomial_1_1_psip_z.html</anchorfile>
+      <anchor>a0a57f026e0323139d561dd27638f35dd</anchor>
+      <arglist>(Parameters gp)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1polynomial_1_1_psip_z.html</anchorfile>
+      <anchor>aa23ffb7f53b4c8f4b0ab0b39681944f3</anchor>
       <arglist>(double R, double Z) const</arglist>
     </member>
   </compound>
@@ -4010,37 +4704,6 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>dg::geo::guenther::PsipZ</name>
-    <filename>structdg_1_1geo_1_1guenther_1_1_psip_z.html</filename>
-    <base>aCylindricalFunctor&lt; PsipZ &gt;</base>
-    <member kind="function">
-      <type></type>
-      <name>PsipZ</name>
-      <anchorfile>structdg_1_1geo_1_1guenther_1_1_psip_z.html</anchorfile>
-      <anchor>a46c18861500af9fdded5a4db65b3101c</anchor>
-      <arglist>(double R_0)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>do_compute</name>
-      <anchorfile>structdg_1_1geo_1_1guenther_1_1_psip_z.html</anchorfile>
-      <anchor>abf9e71c5da96c2cc6b920382484d6167</anchor>
-      <arglist>(double R, double Z) const</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>dg::geo::circular::PsipZ</name>
-    <filename>structdg_1_1geo_1_1circular_1_1_psip_z.html</filename>
-    <base>aCylindricalFunctor&lt; PsipZ &gt;</base>
-    <member kind="function">
-      <type>double</type>
-      <name>do_compute</name>
-      <anchorfile>structdg_1_1geo_1_1circular_1_1_psip_z.html</anchorfile>
-      <anchor>ad44eb87d832769e8aeba66534a1a29c8</anchor>
-      <arglist>(double R, double Z) const</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
     <name>dg::geo::guenther::PsipZZ</name>
     <filename>structdg_1_1geo_1_1guenther_1_1_psip_z_z.html</filename>
     <base>aCylindricalFunctor&lt; PsipZZ &gt;</base>
@@ -4056,6 +4719,44 @@
       <name>do_compute</name>
       <anchorfile>structdg_1_1geo_1_1guenther_1_1_psip_z_z.html</anchorfile>
       <anchor>a2beb74814851035152da8d65550b67d0</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::mod::PsipZZ</name>
+    <filename>structdg_1_1geo_1_1mod_1_1_psip_z_z.html</filename>
+    <base>aCylindricalFunctor&lt; PsipZZ &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>PsipZZ</name>
+      <anchorfile>structdg_1_1geo_1_1mod_1_1_psip_z_z.html</anchorfile>
+      <anchor>ac8af1762efac5dc880286c300307f4a6</anchor>
+      <arglist>(std::function&lt; bool(double, double)&gt; predicate, std::function&lt; double(double, double)&gt; psip, std::function&lt; double(double, double)&gt; psipZ, std::function&lt; double(double, double)&gt; psipZZ, double psi0, double alpha, double sign=-1)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1mod_1_1_psip_z_z.html</anchorfile>
+      <anchor>a8ebd5dc3a77f30a9d2566b0327c1ad5f</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::polynomial::PsipZZ</name>
+    <filename>structdg_1_1geo_1_1polynomial_1_1_psip_z_z.html</filename>
+    <base>aCylindricalFunctor&lt; PsipZZ &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>PsipZZ</name>
+      <anchorfile>structdg_1_1geo_1_1polynomial_1_1_psip_z_z.html</anchorfile>
+      <anchor>ac80ec8fb8db33ec0827633f96637bcf8</anchor>
+      <arglist>(Parameters gp)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1polynomial_1_1_psip_z_z.html</anchorfile>
+      <anchor>a160296aa804324bbad0788b7c58192cc</anchor>
       <arglist>(double R, double Z) const</arglist>
     </member>
   </compound>
@@ -4100,7 +4801,7 @@
   <compound kind="struct">
     <name>dg::geo::RealCurvilinearGrid2d</name>
     <filename>structdg_1_1geo_1_1_real_curvilinear_grid2d.html</filename>
-    <templarg>real_type</templarg>
+    <templarg></templarg>
     <member kind="function">
       <type></type>
       <name>RealCurvilinearGrid2d</name>
@@ -4191,7 +4892,7 @@
   <compound kind="struct">
     <name>dg::geo::RealCurvilinearMPIGrid2d</name>
     <filename>structdg_1_1geo_1_1_real_curvilinear_m_p_i_grid2d.html</filename>
-    <templarg>real_type</templarg>
+    <templarg></templarg>
     <member kind="function">
       <type></type>
       <name>RealCurvilinearMPIGrid2d</name>
@@ -4231,12 +4932,12 @@
   <compound kind="struct">
     <name>dg::geo::RealCurvilinearProductGrid3d</name>
     <filename>structdg_1_1geo_1_1_real_curvilinear_product_grid3d.html</filename>
-    <templarg>real_type</templarg>
+    <templarg></templarg>
     <member kind="typedef">
       <type>RealCurvilinearGrid2d&lt; real_type &gt;</type>
       <name>perpendicular_grid</name>
       <anchorfile>structdg_1_1geo_1_1_real_curvilinear_product_grid3d.html</anchorfile>
-      <anchor>ad17ecec1614eb1c35050b82421cc14e1</anchor>
+      <anchor>a8667c92d75c5f25ed0ee0ff0ede3bed4</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -4264,7 +4965,7 @@
   <compound kind="struct">
     <name>dg::geo::RealCurvilinearProductGridX3d</name>
     <filename>structdg_1_1geo_1_1_real_curvilinear_product_grid_x3d.html</filename>
-    <templarg>real_type</templarg>
+    <templarg></templarg>
     <member kind="function">
       <type></type>
       <name>RealCurvilinearProductGridX3d</name>
@@ -4290,7 +4991,7 @@
   <compound kind="struct">
     <name>dg::geo::RealCurvilinearProductMPIGrid3d</name>
     <filename>structdg_1_1geo_1_1_real_curvilinear_product_m_p_i_grid3d.html</filename>
-    <templarg>real_type</templarg>
+    <templarg></templarg>
     <member kind="typedef">
       <type>dg::geo::RealCurvilinearMPIGrid2d&lt; real_type &gt;</type>
       <name>perpendicular_grid</name>
@@ -4356,7 +5057,7 @@
   <compound kind="struct">
     <name>dg::geo::RealCurvilinearRefinedProductGridX3d</name>
     <filename>structdg_1_1geo_1_1_real_curvilinear_refined_product_grid_x3d.html</filename>
-    <templarg>real_type</templarg>
+    <templarg></templarg>
     <member kind="function">
       <type></type>
       <name>RealCurvilinearRefinedProductGridX3d</name>
@@ -4382,7 +5083,7 @@
   <compound kind="struct">
     <name>dg::geo::RealCylindricalFunctor</name>
     <filename>structdg_1_1geo_1_1_real_cylindrical_functor.html</filename>
-    <templarg>real_type</templarg>
+    <templarg></templarg>
     <member kind="function">
       <type></type>
       <name>RealCylindricalFunctor</name>
@@ -4442,6 +5143,25 @@
       <anchorfile>structdg_1_1geo_1_1_real_cylindrical_functor.html</anchorfile>
       <anchor>a53ad871e635f0f024fca1390ebc71174</anchor>
       <arglist>(double R, double Z, double phi) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::RhoP</name>
+    <filename>structdg_1_1geo_1_1_rho_p.html</filename>
+    <base>aCylindricalFunctor&lt; RhoP &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>RhoP</name>
+      <anchorfile>structdg_1_1geo_1_1_rho_p.html</anchorfile>
+      <anchor>aadc424f3ba6f7b26f9795ebb323ad0a8</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_rho_p.html</anchorfile>
+      <anchor>a8dedf495f1560d8d0ed282147bfc27e0</anchor>
+      <arglist>(double R, double Z) const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -4508,8 +5228,8 @@
       <type></type>
       <name>SafetyFactor</name>
       <anchorfile>structdg_1_1geo_1_1_safety_factor.html</anchorfile>
-      <anchor>a23a4c486a07227e5764c4e1d96b52fc7</anchor>
-      <arglist>(const dg::Grid2d &amp;g2d, const TokamakMagneticField &amp;c)</arglist>
+      <anchor>a17c86df28ba5ed44db843bcdefed904b</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
@@ -4517,6 +5237,50 @@
       <anchorfile>structdg_1_1geo_1_1_safety_factor.html</anchorfile>
       <anchor>ab62f6edca1f75965d6de82a39d2e34af</anchor>
       <arglist>(double psip0)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::SafetyFactorAverage</name>
+    <filename>structdg_1_1geo_1_1_safety_factor_average.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>SafetyFactorAverage</name>
+      <anchorfile>structdg_1_1geo_1_1_safety_factor_average.html</anchorfile>
+      <anchor>ae15a8d10036e6dbb0ffc539d9a623434</anchor>
+      <arglist>(const dg::Grid2d &amp;g2d, const TokamakMagneticField &amp;mag, double width_factor=1.)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_weights</name>
+      <anchorfile>structdg_1_1geo_1_1_safety_factor_average.html</anchorfile>
+      <anchor>a2abf6a538f0da0bfe1a87d73e52cf3b2</anchor>
+      <arglist>(const thrust::host_vector&lt; double &gt; &amp;weights)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1geo_1_1_safety_factor_average.html</anchorfile>
+      <anchor>ae7c3aafce0f955f6f5ccd5ec2566ac42</anchor>
+      <arglist>(double psip0)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::ScalarProduct</name>
+    <filename>structdg_1_1geo_1_1_scalar_product.html</filename>
+    <base>aCylindricalFunctor&lt; ScalarProduct &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>ScalarProduct</name>
+      <anchorfile>structdg_1_1geo_1_1_scalar_product.html</anchorfile>
+      <anchor>a9126e920a2d8c454c0a642fa4d2d0940</anchor>
+      <arglist>(CylindricalVectorLvl0 v, CylindricalVectorLvl0 w)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_scalar_product.html</anchorfile>
+      <anchor>a20a0d0e5c68fdb6cbcd130fc6230b1e3</anchor>
+      <arglist>(double R, double Z) const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -4536,6 +5300,63 @@
       <anchorfile>structdg_1_1geo_1_1_separatrix_orthogonal.html</anchorfile>
       <anchor>a2d62c9d7327548bc92ab92863c383233</anchor>
       <arglist>() const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::mod::SetIntersection</name>
+    <filename>structdg_1_1geo_1_1mod_1_1_set_intersection.html</filename>
+    <base>aCylindricalFunctor&lt; SetIntersection &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>SetIntersection</name>
+      <anchorfile>structdg_1_1geo_1_1mod_1_1_set_intersection.html</anchorfile>
+      <anchor>a1d3c8d8d24897eb9feb9724e61ab8b92</anchor>
+      <arglist>(std::function&lt; double(double, double)&gt; fct1, std::function&lt; double(double, double)&gt; fct2)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1mod_1_1_set_intersection.html</anchorfile>
+      <anchor>a400d389c7d26e99bbc1b5395d1001c4a</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::mod::SetNot</name>
+    <filename>structdg_1_1geo_1_1mod_1_1_set_not.html</filename>
+    <base>aCylindricalFunctor&lt; SetNot &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>SetNot</name>
+      <anchorfile>structdg_1_1geo_1_1mod_1_1_set_not.html</anchorfile>
+      <anchor>ac2aab77fa30f1d14142e0972cd0430e7</anchor>
+      <arglist>(std::function&lt; double(double, double)&gt; fct)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1mod_1_1_set_not.html</anchorfile>
+      <anchor>a22e5d5296c6621568332320783fa12f2</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::geo::mod::SetUnion</name>
+    <filename>structdg_1_1geo_1_1mod_1_1_set_union.html</filename>
+    <base>aCylindricalFunctor&lt; SetUnion &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>SetUnion</name>
+      <anchorfile>structdg_1_1geo_1_1mod_1_1_set_union.html</anchorfile>
+      <anchor>acf5d624bbae1337f919bfed33fa6a390</anchor>
+      <arglist>(std::function&lt; double(double, double)&gt; fct1, std::function&lt; double(double, double)&gt; fct2)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1mod_1_1_set_union.html</anchorfile>
+      <anchor>a47c519e79576e4cc7e70d52d6cc16548</anchor>
+      <arglist>(double R, double Z) const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -4572,29 +5393,22 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>dg::geo::SimpleOrthogonalX</name>
-    <filename>structdg_1_1geo_1_1_simple_orthogonal_x.html</filename>
-    <base>dg::geo::aRealGeneratorX2d</base>
+    <name>dg::geo::SquareNorm</name>
+    <filename>structdg_1_1geo_1_1_square_norm.html</filename>
+    <base>aCylindricalFunctor&lt; SquareNorm &gt;</base>
     <member kind="function">
       <type></type>
-      <name>SimpleOrthogonalX</name>
-      <anchorfile>structdg_1_1geo_1_1_simple_orthogonal_x.html</anchorfile>
-      <anchor>aedfdd38c13c75bda7b50fd8151157a30</anchor>
-      <arglist>()</arglist>
+      <name>SquareNorm</name>
+      <anchorfile>structdg_1_1geo_1_1_square_norm.html</anchorfile>
+      <anchor>a2033e4182869d2cdfed961ed58a52daa</anchor>
+      <arglist>(CylindricalVectorLvl0 v, CylindricalVectorLvl0 w)</arglist>
     </member>
     <member kind="function">
-      <type></type>
-      <name>SimpleOrthogonalX</name>
-      <anchorfile>structdg_1_1geo_1_1_simple_orthogonal_x.html</anchorfile>
-      <anchor>a89710b2ccec147728d19942897bbca5c</anchor>
-      <arglist>(const CylindricalFunctorsLvl2 &amp;psi, double psi_0, double xX, double yX, double x0, double y0, int firstline=0)</arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual SimpleOrthogonalX *</type>
-      <name>clone</name>
-      <anchorfile>structdg_1_1geo_1_1_simple_orthogonal_x.html</anchorfile>
-      <anchor>a2b1d10f3c2aee3a728d34a439e5e5440</anchor>
-      <arglist>() const override final</arglist>
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_square_norm.html</anchorfile>
+      <anchor>a6a7a66861d5ce6ae369e8d9f26911320</anchor>
+      <arglist>(double R, double Z) const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -4611,15 +5425,15 @@
       <type></type>
       <name>TokamakMagneticField</name>
       <anchorfile>structdg_1_1geo_1_1_tokamak_magnetic_field.html</anchorfile>
-      <anchor>a83ed6160c9125deac370e58f6e42954d</anchor>
-      <arglist>(double R0, const CylindricalFunctorsLvl2 &amp;psip, const CylindricalFunctorsLvl1 &amp;ipol)</arglist>
+      <anchor>af3baba46c4149205a7dd3b97786b026e</anchor>
+      <arglist>(double R0, const CylindricalFunctorsLvl2 &amp;psip, const CylindricalFunctorsLvl1 &amp;ipol, MagneticFieldParameters gp)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>set</name>
       <anchorfile>structdg_1_1geo_1_1_tokamak_magnetic_field.html</anchorfile>
-      <anchor>adc749e70a6f8e9d297a7bc32063ae9d9</anchor>
-      <arglist>(double R0, const CylindricalFunctorsLvl2 &amp;psip, const CylindricalFunctorsLvl1 &amp;ipol)</arglist>
+      <anchor>ae7880fd1c467e81f1dd10e53eeea3f01</anchor>
+      <arglist>(double R0, const CylindricalFunctorsLvl2 &amp;psip, const CylindricalFunctorsLvl1 &amp;ipol, MagneticFieldParameters gp)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
@@ -4703,6 +5517,13 @@
       <name>get_ipol</name>
       <anchorfile>structdg_1_1geo_1_1_tokamak_magnetic_field.html</anchorfile>
       <anchor>a8cac5f2580c55eeee4b3b4da8b76a371</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>const MagneticFieldParameters &amp;</type>
+      <name>params</name>
+      <anchorfile>structdg_1_1geo_1_1_tokamak_magnetic_field.html</anchorfile>
+      <anchor>a62ff9078f1efdd760a93e4ef8036fdb9</anchor>
       <arglist>() const</arglist>
     </member>
   </compound>
@@ -4859,6 +5680,25 @@
     </member>
   </compound>
   <compound kind="struct">
+    <name>dg::geo::WallDirection</name>
+    <filename>structdg_1_1geo_1_1_wall_direction.html</filename>
+    <base>aCylindricalFunctor&lt; WallDirection &gt;</base>
+    <member kind="function">
+      <type></type>
+      <name>WallDirection</name>
+      <anchorfile>structdg_1_1geo_1_1_wall_direction.html</anchorfile>
+      <anchor>a19b7dd3e978f1cb73eabdfb7c113ccdb</anchor>
+      <arglist>(dg::geo::TokamakMagneticField mag, std::vector&lt; double &gt; vertical, std::vector&lt; double &gt; horizontal)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>do_compute</name>
+      <anchorfile>structdg_1_1geo_1_1_wall_direction.html</anchorfile>
+      <anchor>ae6054fee3af9485c96c3273b29f9d3a6</anchor>
+      <arglist>(double R, double Z) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
     <name>dg::geo::ZCutter</name>
     <filename>structdg_1_1geo_1_1_z_cutter.html</filename>
     <base>aCylindricalFunctor&lt; ZCutter &gt;</base>
@@ -4887,11 +5727,13 @@
     <filename>namespacedg_1_1geo.html</filename>
     <namespace>dg::geo::circular</namespace>
     <namespace>dg::geo::guenther</namespace>
+    <namespace>dg::geo::mod</namespace>
+    <namespace>dg::geo::polynomial</namespace>
     <namespace>dg::geo::solovev</namespace>
     <namespace>dg::geo::taylor</namespace>
     <namespace>dg::geo::toroidal</namespace>
+    <namespace>dg::geo::x</namespace>
     <class kind="struct">dg::geo::aCylindricalFunctor</class>
-    <class kind="struct">dg::geo::Alpha</class>
     <class kind="struct">dg::geo::aRealGenerator2d</class>
     <class kind="struct">dg::geo::aRealGeneratorX2d</class>
     <class kind="struct">dg::geo::BFieldP</class>
@@ -4904,7 +5746,6 @@
     <class kind="struct">dg::geo::Bmodule</class>
     <class kind="struct">dg::geo::BR</class>
     <class kind="struct">dg::geo::BZ</class>
-    <class kind="struct">dg::geo::Compose</class>
     <class kind="struct">dg::geo::Constant</class>
     <class kind="struct">dg::geo::CurvatureKappaR</class>
     <class kind="struct">dg::geo::CurvatureKappaZ</class>
@@ -4914,7 +5755,6 @@
     <class kind="struct">dg::geo::CylindricalFunctorsLvl2</class>
     <class kind="struct">dg::geo::CylindricalSymmTensorLvl1</class>
     <class kind="struct">dg::geo::CylindricalVectorLvl0</class>
-    <class kind="struct">dg::geo::DeltaFunction</class>
     <class kind="struct">dg::geo::Divb</class>
     <class kind="struct">dg::geo::DivCurvatureKappa</class>
     <class kind="struct">dg::geo::DivCurvatureNablaB</class>
@@ -4924,20 +5764,25 @@
     <class kind="struct">dg::geo::Fieldaligned</class>
     <class kind="struct">dg::geo::FluxGenerator</class>
     <class kind="struct">dg::geo::FluxSurfaceAverage</class>
+    <class kind="struct">dg::geo::FluxSurfaceIntegral</class>
+    <class kind="struct">dg::geo::FluxVolumeIntegral</class>
     <class kind="struct">dg::geo::GradBHatP</class>
     <class kind="struct">dg::geo::GradBHatR</class>
     <class kind="struct">dg::geo::GradBHatZ</class>
     <class kind="struct">dg::geo::GradLnB</class>
     <class kind="struct">dg::geo::Hector</class>
+    <class kind="struct">dg::geo::Hoo</class>
     <class kind="struct">dg::geo::InvB</class>
     <class kind="struct">dg::geo::Liseikin_XX</class>
     <class kind="struct">dg::geo::Liseikin_XY</class>
     <class kind="struct">dg::geo::Liseikin_YY</class>
     <class kind="struct">dg::geo::LnB</class>
     <class kind="struct">dg::geo::LogPolarGenerator</class>
+    <class kind="struct">dg::geo::MagneticFieldParameters</class>
     <class kind="struct">dg::geo::NablaPsiInv</class>
     <class kind="struct">dg::geo::NablaPsiInvX</class>
     <class kind="struct">dg::geo::NablaPsiInvY</class>
+    <class kind="struct">dg::geo::Periodify</class>
     <class kind="struct">dg::geo::PolarGenerator</class>
     <class kind="struct">dg::geo::RealCurvilinearGrid2d</class>
     <class kind="struct">dg::geo::RealCurvilinearGridX2d</class>
@@ -4948,13 +5793,16 @@
     <class kind="struct">dg::geo::RealCurvilinearRefinedGridX2d</class>
     <class kind="struct">dg::geo::RealCurvilinearRefinedProductGridX3d</class>
     <class kind="struct">dg::geo::RealCylindricalFunctor</class>
+    <class kind="struct">dg::geo::RhoP</class>
     <class kind="struct">dg::geo::Ribeiro</class>
     <class kind="struct">dg::geo::RibeiroFluxGenerator</class>
     <class kind="struct">dg::geo::RibeiroX</class>
     <class kind="struct">dg::geo::SafetyFactor</class>
+    <class kind="struct">dg::geo::SafetyFactorAverage</class>
+    <class kind="struct">dg::geo::ScalarProduct</class>
     <class kind="struct">dg::geo::SeparatrixOrthogonal</class>
     <class kind="struct">dg::geo::SimpleOrthogonal</class>
-    <class kind="struct">dg::geo::SimpleOrthogonalX</class>
+    <class kind="struct">dg::geo::SquareNorm</class>
     <class kind="struct">dg::geo::TokamakMagneticField</class>
     <class kind="struct">dg::geo::TrueCurvatureKappaP</class>
     <class kind="struct">dg::geo::TrueCurvatureKappaR</class>
@@ -4964,6 +5812,7 @@
     <class kind="struct">dg::geo::TrueCurvatureNablaBZ</class>
     <class kind="struct">dg::geo::TrueDivCurvatureKappa</class>
     <class kind="struct">dg::geo::TrueDivCurvatureNablaB</class>
+    <class kind="struct">dg::geo::WallDirection</class>
     <class kind="struct">dg::geo::ZCutter</class>
     <member kind="typedef">
       <type>dg::geo::RealCurvilinearGrid2d&lt; double &gt;</type>
@@ -5029,62 +5878,6 @@
       <arglist></arglist>
     </member>
     <member kind="typedef">
-      <type>Compose&lt; dg::Iris &gt;</type>
-      <name>Iris</name>
-      <anchorfile>group__profiles.html</anchorfile>
-      <anchor>gad64d512d641d71865056b1f1b83da902</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>Compose&lt; dg::Pupil &gt;</type>
-      <name>Pupil</name>
-      <anchorfile>group__profiles.html</anchorfile>
-      <anchor>gab429cc7c00f5d55def9fcaa5cda8fafd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>Compose&lt; dg::PsiPupil &gt;</type>
-      <name>PsiPupil</name>
-      <anchorfile>group__profiles.html</anchorfile>
-      <anchor>ga4e7e76bd77ae1317ed999238b4ce4e17</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>dg::geo::Compose&lt; dg::Heaviside &gt;</type>
-      <name>PsiLimiter</name>
-      <anchorfile>group__profiles.html</anchorfile>
-      <anchor>ga82eca5b06b94a709b4f1cbfa4b42d59f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>dg::geo::Compose&lt; dg::GaussianDamping &gt;</type>
-      <name>GaussianDamping</name>
-      <anchorfile>group__profiles.html</anchorfile>
-      <anchor>ga158a9af6aef70087e95b8fd8e7dacc60</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>dg::geo::Compose&lt; dg::TanhProfX &gt;</type>
-      <name>TanhDamping</name>
-      <anchorfile>group__profiles.html</anchorfile>
-      <anchor>ga446bce2c783bba5c7b0260853259f1e1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>dg::geo::Compose&lt; dg::LinearX &gt;</type>
-      <name>Nprofile</name>
-      <anchorfile>group__profiles.html</anchorfile>
-      <anchor>gac6e56352ad1a753f9c5c7cecb0f12ee0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>dg::geo::Compose&lt; dg::SinX &gt;</type>
-      <name>ZonalFlow</name>
-      <anchorfile>group__profiles.html</anchorfile>
-      <anchor>ga19191644f490a26ec20c3f6dac24765c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
       <type>dg::geo::RealCurvilinearMPIGrid2d&lt; double &gt;</type>
       <name>CurvilinearMPIGrid2d</name>
       <anchorfile>group__grids.html</anchorfile>
@@ -5143,6 +5936,42 @@
       <anchor>gga10e4ac4f15fe73a4ff10569985224101af101993895ad46716e7324439d6bd226</anchor>
       <arglist></arglist>
     </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>equilibrium</name>
+      <anchorfile>group__magnetic.html</anchorfile>
+      <anchor>gab39148d38eed4929633564c02238214d</anchor>
+      <arglist></arglist>
+      <enumvalue file="group__magnetic.html" anchor="ggab39148d38eed4929633564c02238214da5296197ebee15d72c4b588b03b686b1e">solovev</enumvalue>
+      <enumvalue file="group__magnetic.html" anchor="ggab39148d38eed4929633564c02238214da7d8bc5f1a8d3787d06ef11c97d4655df">taylor</enumvalue>
+      <enumvalue file="group__magnetic.html" anchor="ggab39148d38eed4929633564c02238214da89693d3333328e76f4fdeed379e8f9ea">polynomial</enumvalue>
+      <enumvalue file="group__magnetic.html" anchor="ggab39148d38eed4929633564c02238214da1040a4c9b3f604d78fcd61a821477a1b">guenther</enumvalue>
+      <enumvalue file="group__magnetic.html" anchor="ggab39148d38eed4929633564c02238214daad1f99f6c1ae39655fa14de6385805b7">toroidal</enumvalue>
+      <enumvalue file="group__magnetic.html" anchor="ggab39148d38eed4929633564c02238214dad5a124c9445ae5eeadb48b050b9cff72">circular</enumvalue>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>modifier</name>
+      <anchorfile>group__magnetic.html</anchorfile>
+      <anchor>ga097616a5ebbfd85265a3759b05e1bf76</anchor>
+      <arglist></arglist>
+      <enumvalue file="group__magnetic.html" anchor="gga097616a5ebbfd85265a3759b05e1bf76a334c4a4c42fdb79d7ebc3e73b517e6f8">none</enumvalue>
+      <enumvalue file="group__magnetic.html" anchor="gga097616a5ebbfd85265a3759b05e1bf76ace7d986dcd77d160362fe9db55045a05">heaviside</enumvalue>
+      <enumvalue file="group__magnetic.html" anchor="gga097616a5ebbfd85265a3759b05e1bf76a33f783a59264ff5568567da44b904708">sol_pfr</enumvalue>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>description</name>
+      <anchorfile>group__magnetic.html</anchorfile>
+      <anchor>gac077a0f92059114ad4973984de444db4</anchor>
+      <arglist></arglist>
+      <enumvalue file="group__magnetic.html" anchor="ggac077a0f92059114ad4973984de444db4a6fedcb1966fb6bcfde36170c034e3bc4">standardO</enumvalue>
+      <enumvalue file="group__magnetic.html" anchor="ggac077a0f92059114ad4973984de444db4acb2dc64595318cfbaba3458934dfb522">standardX</enumvalue>
+      <enumvalue file="group__magnetic.html" anchor="ggac077a0f92059114ad4973984de444db4a8a23252f42f7cd8fbad818c214400496">doubleX</enumvalue>
+      <enumvalue file="group__magnetic.html" anchor="ggac077a0f92059114ad4973984de444db4a334c4a4c42fdb79d7ebc3e73b517e6f8">none</enumvalue>
+      <enumvalue file="group__magnetic.html" anchor="ggac077a0f92059114ad4973984de444db4a2fc01ec765ec0cb3dcc559126de20b30">square</enumvalue>
+      <enumvalue file="group__magnetic.html" anchor="ggac077a0f92059114ad4973984de444db4ac13fbf432e95b34cbc0be0be28243557">centeredX</enumvalue>
+    </member>
     <member kind="function" static="yes">
       <type>static CylindricalFunctorsLvl1</type>
       <name>make_NablaPsiInvCollective</name>
@@ -5156,6 +5985,69 @@
       <anchorfile>group__profiles.html</anchorfile>
       <anchor>gae0cb11f189e743a3291e23e2bc361bb2</anchor>
       <arglist>(const CylindricalFunctorsLvl2 &amp;psi, double k, double eps)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ds_forward</name>
+      <anchorfile>group__fieldaligned.html</anchorfile>
+      <anchor>gac8f31458f9eac9d48146217a2a80ec5a</anchor>
+      <arglist>(const FieldAligned &amp;fa, double alpha, const container &amp;f, const container &amp;fp, double beta, container &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ds_backward</name>
+      <anchorfile>group__fieldaligned.html</anchorfile>
+      <anchor>ga6396aaf776bf66cf08e20b83bb800a54</anchor>
+      <arglist>(const FieldAligned &amp;fa, double alpha, const container &amp;fm, const container &amp;f, double beta, container &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ds_centered</name>
+      <anchorfile>group__fieldaligned.html</anchorfile>
+      <anchor>ga164ef6225163d61b4793cb5cacb4ac03</anchor>
+      <arglist>(const FieldAligned &amp;fa, double alpha, const container &amp;fm, const container &amp;f, const container &amp;fp, double beta, container &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>dss_centered</name>
+      <anchorfile>group__fieldaligned.html</anchorfile>
+      <anchor>ga9d0308bf8d169f14efc488419bfa33b6</anchor>
+      <arglist>(const FieldAligned &amp;fa, double alpha, const container &amp;fm, const container &amp;f, const container &amp;fp, double beta, container &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ds_centered_bc_along_field</name>
+      <anchorfile>group__fieldaligned.html</anchorfile>
+      <anchor>gaf6f623b88605b8e9bf64585237143dd3</anchor>
+      <arglist>(const FieldAligned &amp;fa, double alpha, const container &amp;fm, const container &amp;f, const container &amp;fp, double beta, container &amp;g, dg::bc bound, std::array&lt; double, 2 &gt; boundary_value={0, 0})</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>dss_centered_bc_along_field</name>
+      <anchorfile>group__fieldaligned.html</anchorfile>
+      <anchor>gacae20572a49b691bae3ea84a44665190</anchor>
+      <arglist>(const FieldAligned &amp;fa, double alpha, const container &amp;fm, const container &amp;f, const container &amp;fp, double beta, container &amp;g, dg::bc bound, std::array&lt; double, 2 &gt; boundary_value={0, 0})</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static int</type>
+      <name>findCriticalPoint</name>
+      <anchorfile>group__misc__geo.html</anchorfile>
+      <anchor>gab1c5fbd87545da375c365ccdee880b6e</anchor>
+      <arglist>(const CylindricalFunctorsLvl2 &amp;psi, double &amp;RC, double &amp;ZC)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static int</type>
+      <name>findOpoint</name>
+      <anchorfile>group__misc__geo.html</anchorfile>
+      <anchor>gae747bb165873861b6abe9aeb17bc3f8a</anchor>
+      <arglist>(const CylindricalFunctorsLvl2 &amp;psi, double &amp;RC, double &amp;ZC)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>findXpoint</name>
+      <anchorfile>group__misc__geo.html</anchorfile>
+      <anchor>ga6ce698318cc3270a9e1fb07f9ce9dcb0</anchor>
+      <arglist>(const CylindricalFunctorsLvl2 &amp;psi, double &amp;RC, double &amp;ZC)</arglist>
     </member>
     <member kind="function">
       <type>dg::SparseTensor&lt; dg::get_host_vector&lt; Geometry3d &gt; &gt;</type>
@@ -5174,9 +6066,16 @@
     <member kind="function" static="yes">
       <type>static dg::geo::TokamakMagneticField</type>
       <name>createGuentherField</name>
-      <anchorfile>group__geom.html</anchorfile>
+      <anchorfile>group__guenther.html</anchorfile>
       <anchor>ga70edeb1a555a6a2b05ac0485329fdcac</anchor>
       <arglist>(double R_0, double I_0)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static TokamakMagneticField</type>
+      <name>periodify</name>
+      <anchorfile>group__magnetic.html</anchorfile>
+      <anchor>gaa70967b21574c4667079735fe84c4d74</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag, double R0, double R1, double Z0, double Z1, dg::bc bcx, dg::bc bcy)</arglist>
     </member>
     <member kind="function">
       <type>CylindricalVectorLvl0</type>
@@ -5189,22 +6088,22 @@
       <type>CylindricalVectorLvl0</type>
       <name>createEPhi</name>
       <anchorfile>group__magnetic.html</anchorfile>
-      <anchor>ga3ab10e21b3c879843b6bb26a49beb918</anchor>
-      <arglist>()</arglist>
+      <anchor>gad28362e8973a9856212d64ca308a8642</anchor>
+      <arglist>(int sign)</arglist>
     </member>
     <member kind="function">
       <type>CylindricalVectorLvl0</type>
       <name>createCurvatureNablaB</name>
       <anchorfile>group__magnetic.html</anchorfile>
-      <anchor>ga891fbece075e21a1cdd1f15422251e7d</anchor>
-      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+      <anchor>ga0d4c31a2bef290120b75d8a1045c59bd</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag, int sign)</arglist>
     </member>
     <member kind="function">
       <type>CylindricalVectorLvl0</type>
       <name>createCurvatureKappa</name>
       <anchorfile>group__magnetic.html</anchorfile>
-      <anchor>ga15544e369079fa9ab1350fe49433bbf2</anchor>
-      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+      <anchor>ga7489105c742a06681010d7bc9a3140cd</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag, int sign)</arglist>
     </member>
     <member kind="function">
       <type>CylindricalVectorLvl0</type>
@@ -5220,40 +6119,82 @@
       <anchor>ga4278b6ca1435aa29063fd152f427c9c5</anchor>
       <arglist>(const TokamakMagneticField &amp;mag)</arglist>
     </member>
+    <member kind="function">
+      <type>CylindricalVectorLvl0</type>
+      <name>createGradPsip</name>
+      <anchorfile>group__magnetic.html</anchorfile>
+      <anchor>ga3d3f825cfdacaf0b128fc7544f04f872</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static TokamakMagneticField</type>
+      <name>createMagneticField</name>
+      <anchorfile>namespacedg_1_1geo.html</anchorfile>
+      <anchor>ae5f907d22b28c53565d15dc425d69286</anchor>
+      <arglist>(Json::Value gs, dg::file::error mode)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static TokamakMagneticField</type>
+      <name>createModifiedField</name>
+      <anchorfile>group__wall.html</anchorfile>
+      <anchor>gac7552ec5eb636a7d5fe4558be68efc67</anchor>
+      <arglist>(Json::Value gs, Json::Value jsmod, dg::file::error mode, CylindricalFunctor &amp;wall, CylindricalFunctor &amp;transition)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static CylindricalFunctor</type>
+      <name>createWallRegion</name>
+      <anchorfile>group__wall.html</anchorfile>
+      <anchor>ga41b2db19d70fb7294cc7dc7d6b7e3012</anchor>
+      <arglist>(Json::Value gs, Json::Value jsmod, dg::file::error mode)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>createSheathRegion</name>
+      <anchorfile>group__wall.html</anchorfile>
+      <anchor>ga3c2d6a36f3b65b7a4639921984fd1e23</anchor>
+      <arglist>(Json::Value jsmod, dg::file::error mode, TokamakMagneticField mag, CylindricalFunctor wall, double R0, double R1, double Z0, double Z1, CylindricalFunctor &amp;sheath, CylindricalFunctor &amp;direction)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static dg::geo::TokamakMagneticField</type>
+      <name>createPolynomialField</name>
+      <anchorfile>group__polynomial.html</anchorfile>
+      <anchor>gaf46a294c1a5f059d7a6bc98f39874cf6</anchor>
+      <arglist>(dg::geo::polynomial::Parameters gp)</arglist>
+    </member>
     <member kind="function" static="yes">
       <type>static dg::geo::TokamakMagneticField</type>
       <name>createSolovevField</name>
-      <anchorfile>group__geom.html</anchorfile>
+      <anchorfile>group__solovev.html</anchorfile>
       <anchor>gaadcb5ef7126a3bc41beed60c431f9368</anchor>
       <arglist>(dg::geo::solovev::Parameters gp)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static dg::geo::TokamakMagneticField</type>
+      <name>createModifiedSolovevField</name>
+      <anchorfile>group__solovev.html</anchorfile>
+      <anchor>ga87922250dd045b82917b9984bfdb861f</anchor>
+      <arglist>(dg::geo::solovev::Parameters gp, double psi0, double alpha, double sign=-1)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static dg::geo::TokamakMagneticField</type>
       <name>createTaylorField</name>
-      <anchorfile>group__geom.html</anchorfile>
+      <anchorfile>group__taylor.html</anchorfile>
       <anchor>ga27e5bae45b284ee051039ca97d7c0edb</anchor>
       <arglist>(dg::geo::solovev::Parameters gp)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static dg::geo::TokamakMagneticField</type>
       <name>createToroidalField</name>
-      <anchorfile>group__geom.html</anchorfile>
+      <anchorfile>group__toroidal.html</anchorfile>
       <anchor>ga2d9ca2e61302113e806b1d05d6b3db7e</anchor>
       <arglist>(double R0)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static dg::geo::TokamakMagneticField</type>
       <name>createCircularField</name>
-      <anchorfile>group__geom.html</anchorfile>
+      <anchorfile>group__toroidal.html</anchorfile>
       <anchor>ga16471692288263e2076b897dae16799f</anchor>
       <arglist>(double R0, double I0)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static void</type>
-      <name>findXpoint</name>
-      <anchorfile>group__misc__geo.html</anchorfile>
-      <anchor>gafdf85449bb250bc67ab57989fcb768cb</anchor>
-      <arglist>(const CylindricalFunctorsLvl2 &amp;psi, double &amp;R_X, double &amp;Z_X)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static CylindricalSymmTensorLvl1</type>
@@ -5297,7 +6238,6 @@
     <class kind="struct">dg::geo::guenther::Ipol</class>
     <class kind="struct">dg::geo::guenther::IpolR</class>
     <class kind="struct">dg::geo::guenther::IpolZ</class>
-    <class kind="struct">dg::geo::guenther::Parameters</class>
     <class kind="struct">dg::geo::guenther::Psip</class>
     <class kind="struct">dg::geo::guenther::PsipR</class>
     <class kind="struct">dg::geo::guenther::PsipRR</class>
@@ -5318,12 +6258,50 @@
       <anchor>ga1c418d39f07e69144f44223117ea6b93</anchor>
       <arglist>(double I_0)</arglist>
     </member>
+  </compound>
+  <compound kind="namespace">
+    <name>dg::geo::mod</name>
+    <filename>namespacedg_1_1geo_1_1mod.html</filename>
+    <class kind="struct">dg::geo::mod::Psip</class>
+    <class kind="struct">dg::geo::mod::PsipR</class>
+    <class kind="struct">dg::geo::mod::PsipRR</class>
+    <class kind="struct">dg::geo::mod::PsipRZ</class>
+    <class kind="struct">dg::geo::mod::PsipZ</class>
+    <class kind="struct">dg::geo::mod::PsipZZ</class>
+    <class kind="struct">dg::geo::mod::SetIntersection</class>
+    <class kind="struct">dg::geo::mod::SetNot</class>
+    <class kind="struct">dg::geo::mod::SetUnion</class>
     <member kind="function" static="yes">
-      <type>static TokamakMagneticField</type>
-      <name>createMagField</name>
-      <anchorfile>group__guenther.html</anchorfile>
-      <anchor>ga4a82083bf29cb70373b84720eba60d83</anchor>
-      <arglist>(double R_0, double I_0)</arglist>
+      <type>static dg::geo::CylindricalFunctorsLvl2</type>
+      <name>createPsip</name>
+      <anchorfile>group__mod.html</anchorfile>
+      <anchor>gaf61e6ba0f08749e4e1bd3b8c1ca6330c</anchor>
+      <arglist>(const std::function&lt; bool(double, double)&gt; predicate, const CylindricalFunctorsLvl2 &amp;psip, double psi0, double alpha, double sign=-1)</arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>dg::geo::polynomial</name>
+    <filename>namespacedg_1_1geo_1_1polynomial.html</filename>
+    <class kind="struct">dg::geo::polynomial::Parameters</class>
+    <class kind="struct">dg::geo::polynomial::Psip</class>
+    <class kind="struct">dg::geo::polynomial::PsipR</class>
+    <class kind="struct">dg::geo::polynomial::PsipRR</class>
+    <class kind="struct">dg::geo::polynomial::PsipRZ</class>
+    <class kind="struct">dg::geo::polynomial::PsipZ</class>
+    <class kind="struct">dg::geo::polynomial::PsipZZ</class>
+    <member kind="function" static="yes">
+      <type>static dg::geo::CylindricalFunctorsLvl2</type>
+      <name>createPsip</name>
+      <anchorfile>group__polynomial.html</anchorfile>
+      <anchor>ga23fa6c99b300bbc4794b78808cd71a9d</anchor>
+      <arglist>(Parameters gp)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static dg::geo::CylindricalFunctorsLvl1</type>
+      <name>createIpol</name>
+      <anchorfile>group__polynomial.html</anchorfile>
+      <anchor>ga4008f0bd2ca1604e33a252514bab517f</anchor>
+      <arglist>(Parameters gp)</arglist>
     </member>
   </compound>
   <compound kind="namespace">
@@ -5343,22 +6321,15 @@
       <type>static dg::geo::CylindricalFunctorsLvl2</type>
       <name>createPsip</name>
       <anchorfile>group__solovev.html</anchorfile>
-      <anchor>gafeb61fe925c670850a85b4c3ee9cb390</anchor>
-      <arglist>(Parameters gp)</arglist>
+      <anchor>gac1b9c47e1ffa071b3d2dc017bcaeab23</anchor>
+      <arglist>(const Parameters &amp;gp)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static dg::geo::CylindricalFunctorsLvl1</type>
       <name>createIpol</name>
       <anchorfile>group__solovev.html</anchorfile>
-      <anchor>ga6808a16f5d40c82d590048388bc7361a</anchor>
-      <arglist>(Parameters gp)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static dg::geo::TokamakMagneticField</type>
-      <name>createMagField</name>
-      <anchorfile>group__solovev.html</anchorfile>
-      <anchor>gad3675f715472ee97a6c3133905bb3697</anchor>
-      <arglist>(Parameters gp)</arglist>
+      <anchor>ga84c1267adc4caabd6956e6a63931df02</anchor>
+      <arglist>(const Parameters &amp;gp, const CylindricalFunctorsLvl1 &amp;psip)</arglist>
     </member>
   </compound>
   <compound kind="namespace">
@@ -5394,13 +6365,6 @@
       <anchor>gab3f3b82303a3e64031d92ce7bb5ac49b</anchor>
       <arglist>(solovev::Parameters gp)</arglist>
     </member>
-    <member kind="function" static="yes">
-      <type>static dg::geo::TokamakMagneticField</type>
-      <name>createMagField</name>
-      <anchorfile>group__taylor.html</anchorfile>
-      <anchor>ga3f430483239ba136340bf0f0a7828e26</anchor>
-      <arglist>(solovev::Parameters gp)</arglist>
-    </member>
   </compound>
   <compound kind="namespace">
     <name>dg::geo::toroidal</name>
@@ -5419,12 +6383,23 @@
       <anchor>ga4ea9852e07a0fcbf473cafa8625d691b</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="function" static="yes">
-      <type>static TokamakMagneticField</type>
-      <name>createMagField</name>
-      <anchorfile>group__toroidal.html</anchorfile>
-      <anchor>ga1d02ad623c716a9b80b270c3ceeea70f</anchor>
-      <arglist>(double R0)</arglist>
+  </compound>
+  <compound kind="namespace">
+    <name>dg::geo::x</name>
+    <filename>namespacedg_1_1geo_1_1x.html</filename>
+    <member kind="typedef">
+      <type>CurvilinearGrid2d</type>
+      <name>CurvilinearGrid2d</name>
+      <anchorfile>namespacedg_1_1geo_1_1x.html</anchorfile>
+      <anchor>a814fb7d9b0cc3e13b6478de8e0bcad7d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>CurvilinearProductGrid3d</type>
+      <name>CurvilinearProductGrid3d</name>
+      <anchorfile>namespacedg_1_1geo_1_1x.html</anchorfile>
+      <anchor>aa6084d21ad60b6eb08559c29a59ae85a</anchor>
+      <arglist></arglist>
     </member>
   </compound>
   <compound kind="group">
@@ -5440,7 +6415,6 @@
     <class kind="struct">dg::geo::LogPolarGenerator</class>
     <class kind="struct">dg::geo::Ribeiro</class>
     <class kind="struct">dg::geo::RibeiroX</class>
-    <class kind="struct">dg::geo::SimpleOrthogonalX</class>
     <class kind="struct">dg::geo::SeparatrixOrthogonal</class>
     <class kind="struct">dg::geo::SimpleOrthogonal</class>
   </compound>
@@ -5448,6 +6422,7 @@
     <name>grids</name>
     <title>2. New geometric grids</title>
     <filename>group__grids.html</filename>
+    <namespace>dg::geo::x</namespace>
     <class kind="struct">dg::geo::RealCurvilinearGrid2d</class>
     <class kind="struct">dg::geo::RealCurvilinearProductGrid3d</class>
     <class kind="struct">dg::geo::RealCurvilinearProductGridX3d</class>
@@ -5514,91 +6489,30 @@
     </member>
   </compound>
   <compound kind="group">
-    <name>fluxfunctions</name>
-    <title>3. New functors based on the magnetic field geometry</title>
-    <filename>group__fluxfunctions.html</filename>
+    <name>geom_functors</name>
+    <title>3. New functors surrounding the magnetic field geometry</title>
+    <filename>group__geom__functors.html</filename>
     <subgroup>geom</subgroup>
     <subgroup>magnetic</subgroup>
     <subgroup>profiles</subgroup>
-    <class kind="struct">dg::geo::RealCylindricalFunctor</class>
-    <class kind="struct">dg::geo::aCylindricalFunctor</class>
-    <class kind="struct">dg::geo::Constant</class>
-    <class kind="struct">dg::geo::CylindricalFunctorsLvl1</class>
-    <class kind="struct">dg::geo::CylindricalFunctorsLvl2</class>
-    <class kind="struct">dg::geo::CylindricalSymmTensorLvl1</class>
-    <class kind="struct">dg::geo::CylindricalVectorLvl0</class>
-    <member kind="typedef">
-      <type>RealCylindricalFunctor&lt; double &gt;</type>
-      <name>CylindricalFunctor</name>
-      <anchorfile>group__fluxfunctions.html</anchorfile>
-      <anchor>gacb84a8d3b8c253f1100c1530035da1de</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="function">
-      <type>dg::SparseTensor&lt; dg::get_host_vector&lt; Geometry3d &gt; &gt;</type>
-      <name>createAlignmentTensor</name>
-      <anchorfile>group__fluxfunctions.html</anchorfile>
-      <anchor>ga4f00a11946c5ae76c6b52876292c60ca</anchor>
-      <arglist>(const dg::geo::CylindricalVectorLvl0 &amp;bhat, const Geometry3d &amp;g)</arglist>
-    </member>
-    <member kind="function">
-      <type>dg::SparseTensor&lt; dg::get_host_vector&lt; Geometry3d &gt; &gt;</type>
-      <name>createProjectionTensor</name>
-      <anchorfile>group__fluxfunctions.html</anchorfile>
-      <anchor>ga0e6fb50126a1c44892b51db10d93fb65</anchor>
-      <arglist>(const dg::geo::CylindricalVectorLvl0 &amp;bhat, const Geometry3d &amp;g)</arglist>
-    </member>
+    <subgroup>fluxfunctions</subgroup>
   </compound>
   <compound kind="group">
     <name>geom</name>
-    <title>3.1 New flux functions and derivatives</title>
+    <title>3.1 Creating a flux function</title>
     <filename>group__geom.html</filename>
     <subgroup>solovev</subgroup>
+    <subgroup>polynomial</subgroup>
     <subgroup>taylor</subgroup>
     <subgroup>guenther</subgroup>
     <subgroup>toroidal</subgroup>
     <subgroup>circular</subgroup>
-    <class kind="struct">dg::geo::guenther::Parameters</class>
-    <class kind="struct">dg::geo::solovev::Parameters</class>
-    <member kind="function" static="yes">
-      <type>static dg::geo::TokamakMagneticField</type>
-      <name>createGuentherField</name>
-      <anchorfile>group__geom.html</anchorfile>
-      <anchor>ga70edeb1a555a6a2b05ac0485329fdcac</anchor>
-      <arglist>(double R_0, double I_0)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static dg::geo::TokamakMagneticField</type>
-      <name>createSolovevField</name>
-      <anchorfile>group__geom.html</anchorfile>
-      <anchor>gaadcb5ef7126a3bc41beed60c431f9368</anchor>
-      <arglist>(dg::geo::solovev::Parameters gp)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static dg::geo::TokamakMagneticField</type>
-      <name>createTaylorField</name>
-      <anchorfile>group__geom.html</anchorfile>
-      <anchor>ga27e5bae45b284ee051039ca97d7c0edb</anchor>
-      <arglist>(dg::geo::solovev::Parameters gp)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static dg::geo::TokamakMagneticField</type>
-      <name>createToroidalField</name>
-      <anchorfile>group__geom.html</anchorfile>
-      <anchor>ga2d9ca2e61302113e806b1d05d6b3db7e</anchor>
-      <arglist>(double R0)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static dg::geo::TokamakMagneticField</type>
-      <name>createCircularField</name>
-      <anchorfile>group__geom.html</anchorfile>
-      <anchor>ga16471692288263e2076b897dae16799f</anchor>
-      <arglist>(double R0, double I0)</arglist>
-    </member>
+    <subgroup>mod</subgroup>
+    <subgroup>wall</subgroup>
   </compound>
   <compound kind="group">
     <name>solovev</name>
-    <title>The solovev magnetic field</title>
+    <title>The solovev expansion</title>
     <filename>group__solovev.html</filename>
     <class kind="struct">dg::geo::solovev::Psip</class>
     <class kind="struct">dg::geo::solovev::PsipR</class>
@@ -5609,31 +6523,72 @@
     <class kind="struct">dg::geo::solovev::Ipol</class>
     <class kind="struct">dg::geo::solovev::IpolR</class>
     <class kind="struct">dg::geo::solovev::IpolZ</class>
+    <class kind="struct">dg::geo::solovev::Parameters</class>
     <member kind="function" static="yes">
       <type>static dg::geo::CylindricalFunctorsLvl2</type>
       <name>createPsip</name>
       <anchorfile>group__solovev.html</anchorfile>
-      <anchor>gafeb61fe925c670850a85b4c3ee9cb390</anchor>
-      <arglist>(Parameters gp)</arglist>
+      <anchor>gac1b9c47e1ffa071b3d2dc017bcaeab23</anchor>
+      <arglist>(const Parameters &amp;gp)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static dg::geo::CylindricalFunctorsLvl1</type>
       <name>createIpol</name>
       <anchorfile>group__solovev.html</anchorfile>
-      <anchor>ga6808a16f5d40c82d590048388bc7361a</anchor>
+      <anchor>ga84c1267adc4caabd6956e6a63931df02</anchor>
+      <arglist>(const Parameters &amp;gp, const CylindricalFunctorsLvl1 &amp;psip)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static dg::geo::TokamakMagneticField</type>
+      <name>createSolovevField</name>
+      <anchorfile>group__solovev.html</anchorfile>
+      <anchor>gaadcb5ef7126a3bc41beed60c431f9368</anchor>
+      <arglist>(dg::geo::solovev::Parameters gp)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static dg::geo::TokamakMagneticField</type>
+      <name>createModifiedSolovevField</name>
+      <anchorfile>group__solovev.html</anchorfile>
+      <anchor>ga87922250dd045b82917b9984bfdb861f</anchor>
+      <arglist>(dg::geo::solovev::Parameters gp, double psi0, double alpha, double sign=-1)</arglist>
+    </member>
+  </compound>
+  <compound kind="group">
+    <name>polynomial</name>
+    <title>The polynomial expansion</title>
+    <filename>group__polynomial.html</filename>
+    <class kind="struct">dg::geo::polynomial::Psip</class>
+    <class kind="struct">dg::geo::polynomial::PsipR</class>
+    <class kind="struct">dg::geo::polynomial::PsipRR</class>
+    <class kind="struct">dg::geo::polynomial::PsipZ</class>
+    <class kind="struct">dg::geo::polynomial::PsipZZ</class>
+    <class kind="struct">dg::geo::polynomial::PsipRZ</class>
+    <class kind="struct">dg::geo::polynomial::Parameters</class>
+    <member kind="function" static="yes">
+      <type>static dg::geo::CylindricalFunctorsLvl2</type>
+      <name>createPsip</name>
+      <anchorfile>group__polynomial.html</anchorfile>
+      <anchor>ga23fa6c99b300bbc4794b78808cd71a9d</anchor>
+      <arglist>(Parameters gp)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static dg::geo::CylindricalFunctorsLvl1</type>
+      <name>createIpol</name>
+      <anchorfile>group__polynomial.html</anchorfile>
+      <anchor>ga4008f0bd2ca1604e33a252514bab517f</anchor>
       <arglist>(Parameters gp)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static dg::geo::TokamakMagneticField</type>
-      <name>createMagField</name>
-      <anchorfile>group__solovev.html</anchorfile>
-      <anchor>gad3675f715472ee97a6c3133905bb3697</anchor>
-      <arglist>(Parameters gp)</arglist>
+      <name>createPolynomialField</name>
+      <anchorfile>group__polynomial.html</anchorfile>
+      <anchor>gaf46a294c1a5f059d7a6bc98f39874cf6</anchor>
+      <arglist>(dg::geo::polynomial::Parameters gp)</arglist>
     </member>
   </compound>
   <compound kind="group">
     <name>taylor</name>
-    <title>The Taylor state magnetic field</title>
+    <title>The Taylor state expansion</title>
     <filename>group__taylor.html</filename>
     <class kind="struct">dg::geo::taylor::Psip</class>
     <class kind="struct">dg::geo::taylor::PsipR</class>
@@ -5667,15 +6622,15 @@
     </member>
     <member kind="function" static="yes">
       <type>static dg::geo::TokamakMagneticField</type>
-      <name>createMagField</name>
+      <name>createTaylorField</name>
       <anchorfile>group__taylor.html</anchorfile>
-      <anchor>ga3f430483239ba136340bf0f0a7828e26</anchor>
-      <arglist>(solovev::Parameters gp)</arglist>
+      <anchor>ga27e5bae45b284ee051039ca97d7c0edb</anchor>
+      <arglist>(dg::geo::solovev::Parameters gp)</arglist>
     </member>
   </compound>
   <compound kind="group">
     <name>guenther</name>
-    <title>The Guenther magnetic field</title>
+    <title>The Guenther expansion</title>
     <filename>group__guenther.html</filename>
     <class kind="struct">dg::geo::guenther::Psip</class>
     <class kind="struct">dg::geo::guenther::PsipR</class>
@@ -5701,16 +6656,16 @@
       <arglist>(double I_0)</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static TokamakMagneticField</type>
-      <name>createMagField</name>
+      <type>static dg::geo::TokamakMagneticField</type>
+      <name>createGuentherField</name>
       <anchorfile>group__guenther.html</anchorfile>
-      <anchor>ga4a82083bf29cb70373b84720eba60d83</anchor>
+      <anchor>ga70edeb1a555a6a2b05ac0485329fdcac</anchor>
       <arglist>(double R_0, double I_0)</arglist>
     </member>
   </compound>
   <compound kind="group">
     <name>toroidal</name>
-    <title>The Purely Toroidal magnetic field</title>
+    <title>The Purely Toroidal expansion</title>
     <filename>group__toroidal.html</filename>
     <member kind="function" static="yes">
       <type>static CylindricalFunctorsLvl2</type>
@@ -5727,16 +6682,23 @@
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static TokamakMagneticField</type>
-      <name>createMagField</name>
+      <type>static dg::geo::TokamakMagneticField</type>
+      <name>createToroidalField</name>
       <anchorfile>group__toroidal.html</anchorfile>
-      <anchor>ga1d02ad623c716a9b80b270c3ceeea70f</anchor>
+      <anchor>ga2d9ca2e61302113e806b1d05d6b3db7e</anchor>
       <arglist>(double R0)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static dg::geo::TokamakMagneticField</type>
+      <name>createCircularField</name>
+      <anchorfile>group__toroidal.html</anchorfile>
+      <anchor>ga16471692288263e2076b897dae16799f</anchor>
+      <arglist>(double R0, double I0)</arglist>
     </member>
   </compound>
   <compound kind="group">
     <name>circular</name>
-    <title>The Circular magnetic field</title>
+    <title>The Circular expansion</title>
     <filename>group__circular.html</filename>
     <class kind="struct">dg::geo::circular::Psip</class>
     <class kind="struct">dg::geo::circular::PsipR</class>
@@ -5757,9 +6719,54 @@
     </member>
   </compound>
   <compound kind="group">
+    <name>mod</name>
+    <title>Modification of any expansion</title>
+    <filename>group__mod.html</filename>
+    <class kind="struct">dg::geo::mod::Psip</class>
+    <class kind="struct">dg::geo::mod::PsipR</class>
+    <class kind="struct">dg::geo::mod::PsipZ</class>
+    <class kind="struct">dg::geo::mod::PsipZZ</class>
+    <class kind="struct">dg::geo::mod::PsipRR</class>
+    <class kind="struct">dg::geo::mod::PsipRZ</class>
+    <member kind="function" static="yes">
+      <type>static dg::geo::CylindricalFunctorsLvl2</type>
+      <name>createPsip</name>
+      <anchorfile>group__mod.html</anchorfile>
+      <anchor>gaf61e6ba0f08749e4e1bd3b8c1ca6330c</anchor>
+      <arglist>(const std::function&lt; bool(double, double)&gt; predicate, const CylindricalFunctorsLvl2 &amp;psip, double psi0, double alpha, double sign=-1)</arglist>
+    </member>
+  </compound>
+  <compound kind="group">
+    <name>wall</name>
+    <title>Wall and Sheath</title>
+    <filename>group__wall.html</filename>
+    <member kind="function" static="yes">
+      <type>static TokamakMagneticField</type>
+      <name>createModifiedField</name>
+      <anchorfile>group__wall.html</anchorfile>
+      <anchor>gac7552ec5eb636a7d5fe4558be68efc67</anchor>
+      <arglist>(Json::Value gs, Json::Value jsmod, dg::file::error mode, CylindricalFunctor &amp;wall, CylindricalFunctor &amp;transition)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static CylindricalFunctor</type>
+      <name>createWallRegion</name>
+      <anchorfile>group__wall.html</anchorfile>
+      <anchor>ga41b2db19d70fb7294cc7dc7d6b7e3012</anchor>
+      <arglist>(Json::Value gs, Json::Value jsmod, dg::file::error mode)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>createSheathRegion</name>
+      <anchorfile>group__wall.html</anchorfile>
+      <anchor>ga3c2d6a36f3b65b7a4639921984fd1e23</anchor>
+      <arglist>(Json::Value jsmod, dg::file::error mode, TokamakMagneticField mag, CylindricalFunctor wall, double R0, double R1, double Z0, double Z1, CylindricalFunctor &amp;sheath, CylindricalFunctor &amp;direction)</arglist>
+    </member>
+  </compound>
+  <compound kind="group">
     <name>magnetic</name>
-    <title>3.2 Magnetic field and associated functors</title>
+    <title>3.2 Magnetic field, curvatures and associated functors</title>
     <filename>group__magnetic.html</filename>
+    <class kind="struct">dg::geo::MagneticFieldParameters</class>
     <class kind="struct">dg::geo::TokamakMagneticField</class>
     <class kind="struct">dg::geo::Bmodule</class>
     <class kind="struct">dg::geo::InvB</class>
@@ -5792,6 +6799,52 @@
     <class kind="struct">dg::geo::GradBHatR</class>
     <class kind="struct">dg::geo::GradBHatZ</class>
     <class kind="struct">dg::geo::GradBHatP</class>
+    <class kind="struct">dg::geo::RhoP</class>
+    <class kind="struct">dg::geo::Hoo</class>
+    <class kind="struct">dg::geo::WallDirection</class>
+    <member kind="enumeration">
+      <type></type>
+      <name>equilibrium</name>
+      <anchorfile>group__magnetic.html</anchorfile>
+      <anchor>gab39148d38eed4929633564c02238214d</anchor>
+      <arglist></arglist>
+      <enumvalue file="group__magnetic.html" anchor="ggab39148d38eed4929633564c02238214da5296197ebee15d72c4b588b03b686b1e">solovev</enumvalue>
+      <enumvalue file="group__magnetic.html" anchor="ggab39148d38eed4929633564c02238214da7d8bc5f1a8d3787d06ef11c97d4655df">taylor</enumvalue>
+      <enumvalue file="group__magnetic.html" anchor="ggab39148d38eed4929633564c02238214da89693d3333328e76f4fdeed379e8f9ea">polynomial</enumvalue>
+      <enumvalue file="group__magnetic.html" anchor="ggab39148d38eed4929633564c02238214da1040a4c9b3f604d78fcd61a821477a1b">guenther</enumvalue>
+      <enumvalue file="group__magnetic.html" anchor="ggab39148d38eed4929633564c02238214daad1f99f6c1ae39655fa14de6385805b7">toroidal</enumvalue>
+      <enumvalue file="group__magnetic.html" anchor="ggab39148d38eed4929633564c02238214dad5a124c9445ae5eeadb48b050b9cff72">circular</enumvalue>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>modifier</name>
+      <anchorfile>group__magnetic.html</anchorfile>
+      <anchor>ga097616a5ebbfd85265a3759b05e1bf76</anchor>
+      <arglist></arglist>
+      <enumvalue file="group__magnetic.html" anchor="gga097616a5ebbfd85265a3759b05e1bf76a334c4a4c42fdb79d7ebc3e73b517e6f8">none</enumvalue>
+      <enumvalue file="group__magnetic.html" anchor="gga097616a5ebbfd85265a3759b05e1bf76ace7d986dcd77d160362fe9db55045a05">heaviside</enumvalue>
+      <enumvalue file="group__magnetic.html" anchor="gga097616a5ebbfd85265a3759b05e1bf76a33f783a59264ff5568567da44b904708">sol_pfr</enumvalue>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>description</name>
+      <anchorfile>group__magnetic.html</anchorfile>
+      <anchor>gac077a0f92059114ad4973984de444db4</anchor>
+      <arglist></arglist>
+      <enumvalue file="group__magnetic.html" anchor="ggac077a0f92059114ad4973984de444db4a6fedcb1966fb6bcfde36170c034e3bc4">standardO</enumvalue>
+      <enumvalue file="group__magnetic.html" anchor="ggac077a0f92059114ad4973984de444db4acb2dc64595318cfbaba3458934dfb522">standardX</enumvalue>
+      <enumvalue file="group__magnetic.html" anchor="ggac077a0f92059114ad4973984de444db4a8a23252f42f7cd8fbad818c214400496">doubleX</enumvalue>
+      <enumvalue file="group__magnetic.html" anchor="ggac077a0f92059114ad4973984de444db4a334c4a4c42fdb79d7ebc3e73b517e6f8">none</enumvalue>
+      <enumvalue file="group__magnetic.html" anchor="ggac077a0f92059114ad4973984de444db4a2fc01ec765ec0cb3dcc559126de20b30">square</enumvalue>
+      <enumvalue file="group__magnetic.html" anchor="ggac077a0f92059114ad4973984de444db4ac13fbf432e95b34cbc0be0be28243557">centeredX</enumvalue>
+    </member>
+    <member kind="function" static="yes">
+      <type>static TokamakMagneticField</type>
+      <name>periodify</name>
+      <anchorfile>group__magnetic.html</anchorfile>
+      <anchor>gaa70967b21574c4667079735fe84c4d74</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag, double R0, double R1, double Z0, double Z1, dg::bc bcx, dg::bc bcy)</arglist>
+    </member>
     <member kind="function">
       <type>CylindricalVectorLvl0</type>
       <name>createBHat</name>
@@ -5803,22 +6856,22 @@
       <type>CylindricalVectorLvl0</type>
       <name>createEPhi</name>
       <anchorfile>group__magnetic.html</anchorfile>
-      <anchor>ga3ab10e21b3c879843b6bb26a49beb918</anchor>
-      <arglist>()</arglist>
+      <anchor>gad28362e8973a9856212d64ca308a8642</anchor>
+      <arglist>(int sign)</arglist>
     </member>
     <member kind="function">
       <type>CylindricalVectorLvl0</type>
       <name>createCurvatureNablaB</name>
       <anchorfile>group__magnetic.html</anchorfile>
-      <anchor>ga891fbece075e21a1cdd1f15422251e7d</anchor>
-      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+      <anchor>ga0d4c31a2bef290120b75d8a1045c59bd</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag, int sign)</arglist>
     </member>
     <member kind="function">
       <type>CylindricalVectorLvl0</type>
       <name>createCurvatureKappa</name>
       <anchorfile>group__magnetic.html</anchorfile>
-      <anchor>ga15544e369079fa9ab1350fe49433bbf2</anchor>
-      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+      <anchor>ga7489105c742a06681010d7bc9a3140cd</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag, int sign)</arglist>
     </member>
     <member kind="function">
       <type>CylindricalVectorLvl0</type>
@@ -5834,10 +6887,17 @@
       <anchor>ga4278b6ca1435aa29063fd152f427c9c5</anchor>
       <arglist>(const TokamakMagneticField &amp;mag)</arglist>
     </member>
+    <member kind="function">
+      <type>CylindricalVectorLvl0</type>
+      <name>createGradPsip</name>
+      <anchorfile>group__magnetic.html</anchorfile>
+      <anchor>ga3d3f825cfdacaf0b128fc7544f04f872</anchor>
+      <arglist>(const TokamakMagneticField &amp;mag)</arglist>
+    </member>
   </compound>
   <compound kind="group">
     <name>profiles</name>
-    <title>3.3 Profile functors based on flux functions</title>
+    <title>3.3 Penalization, weight and monitor metric functors</title>
     <filename>group__profiles.html</filename>
     <class kind="struct">dg::geo::NablaPsiInv</class>
     <class kind="struct">dg::geo::NablaPsiInvX</class>
@@ -5847,66 +6907,9 @@
     <class kind="struct">dg::geo::Liseikin_YY</class>
     <class kind="struct">dg::geo::DivLiseikinX</class>
     <class kind="struct">dg::geo::DivLiseikinY</class>
-    <class kind="struct">dg::geo::DeltaFunction</class>
-    <class kind="struct">dg::geo::Alpha</class>
-    <class kind="struct">dg::geo::Compose</class>
-    <class kind="struct">dg::geo::ZCutter</class>
-    <member kind="typedef">
-      <type>Compose&lt; dg::Iris &gt;</type>
-      <name>Iris</name>
-      <anchorfile>group__profiles.html</anchorfile>
-      <anchor>gad64d512d641d71865056b1f1b83da902</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>Compose&lt; dg::Pupil &gt;</type>
-      <name>Pupil</name>
-      <anchorfile>group__profiles.html</anchorfile>
-      <anchor>gab429cc7c00f5d55def9fcaa5cda8fafd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>Compose&lt; dg::PsiPupil &gt;</type>
-      <name>PsiPupil</name>
-      <anchorfile>group__profiles.html</anchorfile>
-      <anchor>ga4e7e76bd77ae1317ed999238b4ce4e17</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>dg::geo::Compose&lt; dg::Heaviside &gt;</type>
-      <name>PsiLimiter</name>
-      <anchorfile>group__profiles.html</anchorfile>
-      <anchor>ga82eca5b06b94a709b4f1cbfa4b42d59f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>dg::geo::Compose&lt; dg::GaussianDamping &gt;</type>
-      <name>GaussianDamping</name>
-      <anchorfile>group__profiles.html</anchorfile>
-      <anchor>ga158a9af6aef70087e95b8fd8e7dacc60</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>dg::geo::Compose&lt; dg::TanhProfX &gt;</type>
-      <name>TanhDamping</name>
-      <anchorfile>group__profiles.html</anchorfile>
-      <anchor>ga446bce2c783bba5c7b0260853259f1e1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>dg::geo::Compose&lt; dg::LinearX &gt;</type>
-      <name>Nprofile</name>
-      <anchorfile>group__profiles.html</anchorfile>
-      <anchor>gac6e56352ad1a753f9c5c7cecb0f12ee0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>dg::geo::Compose&lt; dg::SinX &gt;</type>
-      <name>ZonalFlow</name>
-      <anchorfile>group__profiles.html</anchorfile>
-      <anchor>ga19191644f490a26ec20c3f6dac24765c</anchor>
-      <arglist></arglist>
-    </member>
+    <class kind="struct">dg::geo::mod::SetUnion</class>
+    <class kind="struct">dg::geo::mod::SetIntersection</class>
+    <class kind="struct">dg::geo::mod::SetNot</class>
     <member kind="function" static="yes">
       <type>static CylindricalFunctorsLvl1</type>
       <name>make_NablaPsiInvCollective</name>
@@ -5920,6 +6923,43 @@
       <anchorfile>group__profiles.html</anchorfile>
       <anchor>gae0cb11f189e743a3291e23e2bc361bb2</anchor>
       <arglist>(const CylindricalFunctorsLvl2 &amp;psi, double k, double eps)</arglist>
+    </member>
+  </compound>
+  <compound kind="group">
+    <name>fluxfunctions</name>
+    <title>3.4. Utility functor functionality</title>
+    <filename>group__fluxfunctions.html</filename>
+    <class kind="struct">dg::geo::RealCylindricalFunctor</class>
+    <class kind="struct">dg::geo::aCylindricalFunctor</class>
+    <class kind="struct">dg::geo::Constant</class>
+    <class kind="struct">dg::geo::ZCutter</class>
+    <class kind="struct">dg::geo::Periodify</class>
+    <class kind="struct">dg::geo::CylindricalFunctorsLvl1</class>
+    <class kind="struct">dg::geo::CylindricalFunctorsLvl2</class>
+    <class kind="struct">dg::geo::CylindricalSymmTensorLvl1</class>
+    <class kind="struct">dg::geo::CylindricalVectorLvl0</class>
+    <class kind="struct">dg::geo::ScalarProduct</class>
+    <class kind="struct">dg::geo::SquareNorm</class>
+    <member kind="typedef">
+      <type>RealCylindricalFunctor&lt; double &gt;</type>
+      <name>CylindricalFunctor</name>
+      <anchorfile>group__fluxfunctions.html</anchorfile>
+      <anchor>gacb84a8d3b8c253f1100c1530035da1de</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type>dg::SparseTensor&lt; dg::get_host_vector&lt; Geometry3d &gt; &gt;</type>
+      <name>createAlignmentTensor</name>
+      <anchorfile>group__fluxfunctions.html</anchorfile>
+      <anchor>ga4f00a11946c5ae76c6b52876292c60ca</anchor>
+      <arglist>(const dg::geo::CylindricalVectorLvl0 &amp;bhat, const Geometry3d &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>dg::SparseTensor&lt; dg::get_host_vector&lt; Geometry3d &gt; &gt;</type>
+      <name>createProjectionTensor</name>
+      <anchorfile>group__fluxfunctions.html</anchorfile>
+      <anchor>ga0e6fb50126a1c44892b51db10d93fb65</anchor>
+      <arglist>(const dg::geo::CylindricalVectorLvl0 &amp;bhat, const Geometry3d &amp;g)</arglist>
     </member>
   </compound>
   <compound kind="group">
@@ -5973,19 +7013,78 @@
       <anchor>gga10e4ac4f15fe73a4ff10569985224101af101993895ad46716e7324439d6bd226</anchor>
       <arglist></arglist>
     </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ds_forward</name>
+      <anchorfile>group__fieldaligned.html</anchorfile>
+      <anchor>gac8f31458f9eac9d48146217a2a80ec5a</anchor>
+      <arglist>(const FieldAligned &amp;fa, double alpha, const container &amp;f, const container &amp;fp, double beta, container &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ds_backward</name>
+      <anchorfile>group__fieldaligned.html</anchorfile>
+      <anchor>ga6396aaf776bf66cf08e20b83bb800a54</anchor>
+      <arglist>(const FieldAligned &amp;fa, double alpha, const container &amp;fm, const container &amp;f, double beta, container &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ds_centered</name>
+      <anchorfile>group__fieldaligned.html</anchorfile>
+      <anchor>ga164ef6225163d61b4793cb5cacb4ac03</anchor>
+      <arglist>(const FieldAligned &amp;fa, double alpha, const container &amp;fm, const container &amp;f, const container &amp;fp, double beta, container &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>dss_centered</name>
+      <anchorfile>group__fieldaligned.html</anchorfile>
+      <anchor>ga9d0308bf8d169f14efc488419bfa33b6</anchor>
+      <arglist>(const FieldAligned &amp;fa, double alpha, const container &amp;fm, const container &amp;f, const container &amp;fp, double beta, container &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ds_centered_bc_along_field</name>
+      <anchorfile>group__fieldaligned.html</anchorfile>
+      <anchor>gaf6f623b88605b8e9bf64585237143dd3</anchor>
+      <arglist>(const FieldAligned &amp;fa, double alpha, const container &amp;fm, const container &amp;f, const container &amp;fp, double beta, container &amp;g, dg::bc bound, std::array&lt; double, 2 &gt; boundary_value={0, 0})</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>dss_centered_bc_along_field</name>
+      <anchorfile>group__fieldaligned.html</anchorfile>
+      <anchor>gacae20572a49b691bae3ea84a44665190</anchor>
+      <arglist>(const FieldAligned &amp;fa, double alpha, const container &amp;fm, const container &amp;f, const container &amp;fp, double beta, container &amp;g, dg::bc bound, std::array&lt; double, 2 &gt; boundary_value={0, 0})</arglist>
+    </member>
   </compound>
   <compound kind="group">
     <name>misc_geo</name>
     <title>5. Miscellaneous additions</title>
     <filename>group__misc__geo.html</filename>
+    <class kind="struct">dg::geo::FluxSurfaceIntegral</class>
+    <class kind="struct">dg::geo::FluxVolumeIntegral</class>
     <class kind="struct">dg::geo::FluxSurfaceAverage</class>
+    <class kind="struct">dg::geo::SafetyFactorAverage</class>
     <class kind="struct">dg::geo::SafetyFactor</class>
+    <member kind="function" static="yes">
+      <type>static int</type>
+      <name>findCriticalPoint</name>
+      <anchorfile>group__misc__geo.html</anchorfile>
+      <anchor>gab1c5fbd87545da375c365ccdee880b6e</anchor>
+      <arglist>(const CylindricalFunctorsLvl2 &amp;psi, double &amp;RC, double &amp;ZC)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static int</type>
+      <name>findOpoint</name>
+      <anchorfile>group__misc__geo.html</anchorfile>
+      <anchor>gae747bb165873861b6abe9aeb17bc3f8a</anchor>
+      <arglist>(const CylindricalFunctorsLvl2 &amp;psi, double &amp;RC, double &amp;ZC)</arglist>
+    </member>
     <member kind="function" static="yes">
       <type>static void</type>
       <name>findXpoint</name>
       <anchorfile>group__misc__geo.html</anchorfile>
-      <anchor>gafdf85449bb250bc67ab57989fcb768cb</anchor>
-      <arglist>(const CylindricalFunctorsLvl2 &amp;psi, double &amp;R_X, double &amp;Z_X)</arglist>
+      <anchor>ga6ce698318cc3270a9e1fb07f9ce9dcb0</anchor>
+      <arglist>(const CylindricalFunctorsLvl2 &amp;psi, double &amp;RC, double &amp;ZC)</arglist>
     </member>
   </compound>
   <compound kind="page">

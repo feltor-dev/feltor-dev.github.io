@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['implicit_5feuler_5f1_5f1',['IMPLICIT_EULER_1_1',['../group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a5d4c148035a981dfce0fe5b0f481a1fa',1,'dg']]]
+  ['heaviside_2788',['heaviside',['../../../geometries/html/group__magnetic.html#ga097616a5ebbfd85265a3759b05e1bf76ace7d986dcd77d160362fe9db55045a05',1,'heaviside()(Global Namespace)'],['../../../geometries/html/group__magnetic.html#ga097616a5ebbfd85265a3759b05e1bf76ace7d986dcd77d160362fe9db55045a05',1,'dg::geo::heaviside()'],['../../../geometries/html/group__magnetic.html#ga097616a5ebbfd85265a3759b05e1bf76ace7d986dcd77d160362fe9db55045a05',1,'heaviside()(Global Namespace)']]],
+  ['heun_5feuler_5f2_5f1_5f2_2789',['HEUN_EULER_2_1_2',['../group__time__utils.html#gga80d4d81df02e5311bb20b3f74ea45992a969e565c5774496edc78deb801ab2ca8',1,'dg']]]
 ];

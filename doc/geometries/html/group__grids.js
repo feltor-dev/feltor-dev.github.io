@@ -1,5 +1,6 @@
 var group__grids =
 [
+    [ "x", "namespacedg_1_1geo_1_1x.html", null ],
     [ "RealCurvilinearGrid2d", "structdg_1_1geo_1_1_real_curvilinear_grid2d.html", [
       [ "RealCurvilinearGrid2d", "structdg_1_1geo_1_1_real_curvilinear_grid2d.html#a4ad08f1ca6a34966ce295df294a2779f", null ],
       [ "RealCurvilinearGrid2d", "structdg_1_1geo_1_1_real_curvilinear_grid2d.html#ac29a6426e03e6cde827823e8f5653e8b", null ],
@@ -7,7 +8,7 @@ var group__grids =
       [ "generator", "structdg_1_1geo_1_1_real_curvilinear_grid2d.html#ac33589d19e4f77265cf07eeb337b2a24", null ]
     ] ],
     [ "RealCurvilinearProductGrid3d", "structdg_1_1geo_1_1_real_curvilinear_product_grid3d.html", [
-      [ "perpendicular_grid", "structdg_1_1geo_1_1_real_curvilinear_product_grid3d.html#ad17ecec1614eb1c35050b82421cc14e1", null ],
+      [ "perpendicular_grid", "structdg_1_1geo_1_1_real_curvilinear_product_grid3d.html#a8667c92d75c5f25ed0ee0ff0ede3bed4", null ],
       [ "RealCurvilinearProductGrid3d", "structdg_1_1geo_1_1_real_curvilinear_product_grid3d.html#a0df7ec9734a5b0fcf57b193902b7e1a6", null ],
       [ "clone", "structdg_1_1geo_1_1_real_curvilinear_product_grid3d.html#abe38a68ef764db4da46b20d005f4b70b", null ],
       [ "generator", "structdg_1_1geo_1_1_real_curvilinear_product_grid3d.html#ad6590dc059b84d07ddbf49e99d0c1e8a", null ]

@@ -1,7 +1,8 @@
 <map id="Geometric grids and tensor operations" name="Geometric grids and tensor operations">
-<area shape="rect" id="node2" href="$group__pullback.html" title="pullback and pushforward" alt="" coords="391,5,561,32"/>
-<area shape="rect" id="node3" href="$group__generators.html" title="Grid Generator classes" alt="" coords="398,56,554,83"/>
-<area shape="rect" id="node4" href="$group__basicgeometry.html" title="Geometry base classes" alt="" coords="396,107,556,133"/>
-<area shape="rect" id="node6" href="$group__metric.html" title="create volume" alt="" coords="424,157,528,184"/>
-<area shape="rect" id="node5" href="$group__geo.html" title="Level 3: Topology and\l Geometry" alt="" coords="5,74,156,115"/>
+<area shape="rect" id="node1" title=" " alt="" coords="216,73,371,113"/>
+<area shape="rect" id="node2" href="$group__pullback.html" title=" " alt="" coords="419,5,609,31"/>
+<area shape="rect" id="node3" href="$group__generators.html" title=" " alt="" coords="429,55,599,80"/>
+<area shape="rect" id="node4" href="$group__basicgeometry.html" title=" " alt="" coords="427,104,601,129"/>
+<area shape="rect" id="node6" href="$group__metric.html" title=" " alt="" coords="456,153,572,179"/>
+<area shape="rect" id="node5" href="$group__geo.html" title=" " alt="" coords="5,73,168,113"/>
 </map>

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['zcutter',['ZCutter',['../../../geometries/html/structdg_1_1geo_1_1_z_cutter.html',1,'dg::geo']]],
-  ['zero',['ZERO',['../structdg_1_1_z_e_r_o.html',1,'dg']]]
+  ['view_1734',['View',['../structdg_1_1_view.html',1,'dg']]],
+  ['vortex_1735',['Vortex',['../structdg_1_1_vortex.html',1,'dg']]]
 ];

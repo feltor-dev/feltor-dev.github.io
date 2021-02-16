@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['heun_5feuler_5f2_5f1_5f2',['HEUN_EULER_2_1_2',['../group__time.html#gga80d4d81df02e5311bb20b3f74ea45992a969e565c5774496edc78deb801ab2ca8',1,'dg']]]
+  ['guenther_2787',['guenther',['../../../geometries/html/group__magnetic.html#gab39148d38eed4929633564c02238214da1040a4c9b3f604d78fcd61a821477a1b',1,'guenther()(Global Namespace)'],['../../../geometries/html/group__magnetic.html#gab39148d38eed4929633564c02238214da1040a4c9b3f604d78fcd61a821477a1b',1,'dg::geo::guenther()'],['../../../geometries/html/group__magnetic.html#gab39148d38eed4929633564c02238214da1040a4c9b3f604d78fcd61a821477a1b',1,'guenther()(Global Namespace)']]]
 ];

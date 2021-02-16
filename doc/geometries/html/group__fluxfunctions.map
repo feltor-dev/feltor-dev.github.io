@@ -1,5 +1,4 @@
-<map id="3. New functors based on the magnetic field geometry" name="3. New functors based on the magnetic field geometry">
-<area shape="rect" id="node1" href="$group__profiles.html" title="3.3 Profile functors\l based on flux functions" alt="" coords="210,5,371,47"/>
-<area shape="rect" id="node2" href="$group__magnetic.html" title="3.2 Magnetic field\l and associated functors" alt="" coords="208,71,373,112"/>
-<area shape="rect" id="node4" href="$group__geom.html" title="3.1 New flux functions\l and derivatives" alt="" coords="214,136,367,177"/>
+<map id="3.4. Utility functor functionality" name="3.4. Utility functor functionality">
+<area shape="rect" id="node1" title=" " alt="" coords="264,5,404,45"/>
+<area shape="rect" id="node2" href="$group__geom__functors.html" title=" " alt="" coords="5,5,216,45"/>
 </map>

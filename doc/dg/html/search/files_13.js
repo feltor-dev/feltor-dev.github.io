@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['xspacelib_2eh',['xspacelib.h',['../xspacelib_8h.html',1,'']]]
+  ['weights_2eh_1889',['weights.h',['../weights_8h.html',1,'']]],
+  ['weightsx_2eh_1890',['weightsX.h',['../weights_x_8h.html',1,'']]]
 ];

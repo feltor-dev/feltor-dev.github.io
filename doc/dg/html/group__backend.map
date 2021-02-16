@@ -1,8 +1,9 @@
 <map id="Level 1: Vectors, Matrices and basic operations" name="Level 1: Vectors, Matrices and basic operations">
-<area shape="rect" id="node1" href="$group__mpi__structures.html" title="MPI backend" alt="" coords="272,5,371,32"/>
-<area shape="rect" id="node2" href="$group__view.html" title="Vector view" alt="" coords="276,56,367,83"/>
-<area shape="rect" id="node3" href="$group__typedefs.html" title="Useful Typedefs" alt="" coords="262,107,381,133"/>
-<area shape="rect" id="node4" href="$group__dispatch.html" title="The tag dispatch system" alt="" coords="238,157,405,184"/>
-<area shape="rect" id="node5" href="$group__sparsematrix.html" title="Sparse matrix formats" alt="" coords="246,208,397,235"/>
-<area shape="rect" id="node7" href="$group__blas.html" title="Basic container independent\l subroutines" alt="" coords="228,259,415,301"/>
+<area shape="rect" id="node1" href="$group__mpi__structures.html" title=" " alt="" coords="294,5,398,31"/>
+<area shape="rect" id="node2" href="$group__view.html" title=" " alt="" coords="297,55,395,80"/>
+<area shape="rect" id="node3" href="$group__typedefs.html" title=" " alt="" coords="283,104,409,129"/>
+<area shape="rect" id="node4" href="$group__dispatch.html" title="Implementation details of The Level 1 dispatch system." alt="" coords="255,153,437,179"/>
+<area shape="rect" id="node5" href="$group__sparsematrix.html" title=" " alt="" coords="262,203,430,228"/>
+<area shape="rect" id="node6" title=" " alt="" coords="5,122,195,162"/>
+<area shape="rect" id="node7" href="$group__blas.html" title=" " alt="" coords="243,253,449,293"/>
 </map>

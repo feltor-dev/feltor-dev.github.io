@@ -12,6 +12,5 @@ var structdg_1_1_poisson =
     [ "dylhs", "structdg_1_1_poisson.html#ae7793a50dc7e35c924a1f9cd533f6c42", null ],
     [ "dyrhs", "structdg_1_1_poisson.html#a10a73a1ff294880e1c7a1d2c2ed6d89a", null ],
     [ "operator()", "structdg_1_1_poisson.html#ad60e506911c9c3a5c5b4fb26ed7e13ba", null ],
-    [ "set_chi", "structdg_1_1_poisson.html#a9aae656b490b396feceec683b95ac454", null ],
-    [ "variationRHS", "structdg_1_1_poisson.html#a310867ef3ebd010038605dc9ca9e96e4", null ]
+    [ "set_chi", "structdg_1_1_poisson.html#a9aae656b490b396feceec683b95ac454", null ]
 ];

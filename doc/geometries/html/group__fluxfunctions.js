@@ -1,8 +1,5 @@
 var group__fluxfunctions =
 [
-    [ "3.1 New flux functions and derivatives", "group__geom.html", "group__geom" ],
-    [ "3.2 Magnetic field and associated functors", "group__magnetic.html", "group__magnetic" ],
-    [ "3.3 Profile functors based on flux functions", "group__profiles.html", "group__profiles" ],
     [ "RealCylindricalFunctor", "structdg_1_1geo_1_1_real_cylindrical_functor.html", [
       [ "RealCylindricalFunctor", "structdg_1_1geo_1_1_real_cylindrical_functor.html#a1dfd74dc92197485f88278842e274533", null ],
       [ "RealCylindricalFunctor", "structdg_1_1geo_1_1_real_cylindrical_functor.html#af43959f3b10924996f27fd8cab57e7e2", null ],
@@ -16,6 +13,15 @@ var group__fluxfunctions =
     [ "Constant", "structdg_1_1geo_1_1_constant.html", [
       [ "Constant", "structdg_1_1geo_1_1_constant.html#a1e71243ed68c71184b636137d56f9a73", null ],
       [ "do_compute", "structdg_1_1geo_1_1_constant.html#a06f6859b451f18c44a954aa2588629ac", null ]
+    ] ],
+    [ "ZCutter", "structdg_1_1geo_1_1_z_cutter.html", [
+      [ "ZCutter", "structdg_1_1geo_1_1_z_cutter.html#a9be47e3b05988d867bdfa4d5470babc3", null ],
+      [ "do_compute", "structdg_1_1geo_1_1_z_cutter.html#a97cc268e23623d01ea166d0a5c95bc4e", null ]
+    ] ],
+    [ "Periodify", "structdg_1_1geo_1_1_periodify.html", [
+      [ "Periodify", "structdg_1_1geo_1_1_periodify.html#a826996012165ae05e9e245422066930c", null ],
+      [ "Periodify", "structdg_1_1geo_1_1_periodify.html#aab320e0d32872d99d3b63f30c73f543a", null ],
+      [ "do_compute", "structdg_1_1geo_1_1_periodify.html#ac7110d797f4fe721002a15f2948b9b0d", null ]
     ] ],
     [ "CylindricalFunctorsLvl1", "structdg_1_1geo_1_1_cylindrical_functors_lvl1.html", [
       [ "CylindricalFunctorsLvl1", "structdg_1_1geo_1_1_cylindrical_functors_lvl1.html#a6610120434ae389cc352175092bd2ca3", null ],
@@ -54,6 +60,14 @@ var group__fluxfunctions =
       [ "x", "structdg_1_1geo_1_1_cylindrical_vector_lvl0.html#a6ef49a79e3d3d7a947d3df80a1845476", null ],
       [ "y", "structdg_1_1geo_1_1_cylindrical_vector_lvl0.html#a7391641c609d632d654600dfda67c8b9", null ],
       [ "z", "structdg_1_1geo_1_1_cylindrical_vector_lvl0.html#a3fc79ba422fdbcc08b9054f2c9f64ca3", null ]
+    ] ],
+    [ "ScalarProduct", "structdg_1_1geo_1_1_scalar_product.html", [
+      [ "ScalarProduct", "structdg_1_1geo_1_1_scalar_product.html#a9126e920a2d8c454c0a642fa4d2d0940", null ],
+      [ "do_compute", "structdg_1_1geo_1_1_scalar_product.html#a20a0d0e5c68fdb6cbcd130fc6230b1e3", null ]
+    ] ],
+    [ "SquareNorm", "structdg_1_1geo_1_1_square_norm.html", [
+      [ "SquareNorm", "structdg_1_1geo_1_1_square_norm.html#a2033e4182869d2cdfed961ed58a52daa", null ],
+      [ "do_compute", "structdg_1_1geo_1_1_square_norm.html#a6a7a66861d5ce6ae369e8d9f26911320", null ]
     ] ],
     [ "CylindricalFunctor", "group__fluxfunctions.html#gacb84a8d3b8c253f1100c1530035da1de", null ],
     [ "createAlignmentTensor", "group__fluxfunctions.html#ga4f00a11946c5ae76c6b52876292c60ca", null ],

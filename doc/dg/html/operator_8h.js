@@ -4,6 +4,7 @@ var operator_8h =
     [ "invert", "operator_8h.html#ga0d52ece57f7a0df168c2b83086414879", null ],
     [ "lilj", "operator_8h.html#ga8dd69a5fabd86ed5e81c31c13edb3e90", null ],
     [ "lirj", "operator_8h.html#gade9ed4034602c6bfb369542fca331df2", null ],
+    [ "ninj", "operator_8h.html#gafc4ec886ddd1a194ecc9801f2d66b808", null ],
     [ "pidxpj", "operator_8h.html#gacc1da860b633bbff33bc05b327247b7c", null ],
     [ "pipj", "operator_8h.html#ga9db6166537975a7c6055563800df780a", null ],
     [ "pipj_inv", "operator_8h.html#gae2a0449474ef9fdba4e84ed5c440daf8", null ],

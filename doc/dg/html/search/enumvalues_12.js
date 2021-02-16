@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['z',['z',['../group__creation.html#gga4de4a3d7cd219a55affa992871e8598fafbade9e36a3f36d3d676c1b808451dd7',1,'dg']]],
-  ['zonneveld_5f5_5f3_5f4',['ZONNEVELD_5_3_4',['../group__time.html#gga80d4d81df02e5311bb20b3f74ea45992ad40588a67499cabb21074dfdae448041',1,'dg']]]
+  ['x_2850',['x',['../group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6',1,'dg::x()'],['../group__creation.html#gga4de4a3d7cd219a55affa992871e8598fa9dd4e461268c8034f5c8564e155c67a6',1,'dg::x()']]],
+  ['xspace_2851',['xspace',['../group__creation.html#gga720a6f709941a075d5c8f60ef07c619fa235752009881e59ab3ad8de2b904cb85',1,'dg']]],
+  ['xy_2852',['xy',['../group__creation.html#gga4de4a3d7cd219a55affa992871e8598fa3e44107170a520582ade522fa73c1d15',1,'dg']]],
+  ['xz_2853',['xz',['../group__creation.html#gga4de4a3d7cd219a55affa992871e8598fadbd69ee9ae289a85ea34dbef8435d7c1',1,'dg']]]
 ];

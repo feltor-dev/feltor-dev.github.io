@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['matrix_20inversion',['Matrix inversion',['../../../dg/html/group__invert.html',1,'']]],
-  ['mpi_20backend',['MPI backend',['../../../dg/html/group__mpi__structures.html',1,'']]]
+  ['pullback_20and_20pushforward_2895',['pullback and pushforward',['../../../dg/html/group__pullback.html',1,'']]]
 ];

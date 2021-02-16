@@ -56,11 +56,6 @@ var group__generators__geo =
       [ "RibeiroX", "structdg_1_1geo_1_1_ribeiro_x.html#aae0e71f22e46aa26a72955df5fdd52cf", null ],
       [ "clone", "structdg_1_1geo_1_1_ribeiro_x.html#a2544d18ee39646520b9b4097a4a760eb", null ]
     ] ],
-    [ "SimpleOrthogonalX", "structdg_1_1geo_1_1_simple_orthogonal_x.html", [
-      [ "SimpleOrthogonalX", "structdg_1_1geo_1_1_simple_orthogonal_x.html#aedfdd38c13c75bda7b50fd8151157a30", null ],
-      [ "SimpleOrthogonalX", "structdg_1_1geo_1_1_simple_orthogonal_x.html#a89710b2ccec147728d19942897bbca5c", null ],
-      [ "clone", "structdg_1_1geo_1_1_simple_orthogonal_x.html#a2b1d10f3c2aee3a728d34a439e5e5440", null ]
-    ] ],
     [ "SeparatrixOrthogonal", "structdg_1_1geo_1_1_separatrix_orthogonal.html", [
       [ "SeparatrixOrthogonal", "structdg_1_1geo_1_1_separatrix_orthogonal.html#a40d326a33d5d11a19360c8151eb19c0b", null ],
       [ "clone", "structdg_1_1geo_1_1_separatrix_orthogonal.html#a2d62c9d7327548bc92ab92863c383233", null ]

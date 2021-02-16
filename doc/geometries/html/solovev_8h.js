@@ -1,7 +1,7 @@
 var solovev_8h =
 [
-    [ "createIpol", "solovev_8h.html#ga6808a16f5d40c82d590048388bc7361a", null ],
-    [ "createMagField", "solovev_8h.html#gad3675f715472ee97a6c3133905bb3697", null ],
-    [ "createPsip", "solovev_8h.html#gafeb61fe925c670850a85b4c3ee9cb390", null ],
+    [ "createIpol", "solovev_8h.html#ga84c1267adc4caabd6956e6a63931df02", null ],
+    [ "createModifiedSolovevField", "solovev_8h.html#ga87922250dd045b82917b9984bfdb861f", null ],
+    [ "createPsip", "solovev_8h.html#gac1b9c47e1ffa071b3d2dc017bcaeab23", null ],
     [ "createSolovevField", "solovev_8h.html#gaadcb5ef7126a3bc41beed60c431f9368", null ]
 ];

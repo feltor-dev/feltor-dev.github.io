@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['y',['y',['../../../dg/html/group__creation.html#gace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d',1,'y()(Global Namespace)'],['../../../dg/html/group__creation.html#ga4de4a3d7cd219a55affa992871e8598fa415290769594460e2e485922904f345d',1,'y()(Global Namespace)'],['../../../dg/html/group__creation.html#gace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d',1,'dg::y()'],['../../../dg/html/group__creation.html#ga4de4a3d7cd219a55affa992871e8598fa415290769594460e2e485922904f345d',1,'dg::y()'],['../../../dg/html/group__creation.html#gace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d',1,'y()(Global Namespace)'],['../../../dg/html/group__creation.html#ga4de4a3d7cd219a55affa992871e8598fa415290769594460e2e485922904f345d',1,'y()(Global Namespace)']]],
-  ['yz',['yz',['../../../dg/html/group__creation.html#ga4de4a3d7cd219a55affa992871e8598fa2151a2bc77807b81113febbf50c4bc95',1,'yz()(Global Namespace)'],['../../../dg/html/group__creation.html#ga4de4a3d7cd219a55affa992871e8598fa2151a2bc77807b81113febbf50c4bc95',1,'dg::yz()'],['../../../dg/html/group__creation.html#ga4de4a3d7cd219a55affa992871e8598fa2151a2bc77807b81113febbf50c4bc95',1,'yz()(Global Namespace)']]]
+  ['einsminus_2829',['einsMinus',['../group__fieldaligned.html#gga10e4ac4f15fe73a4ff10569985224101ac4342c25611d86ddd01f4f48a2054f86',1,'dg::geo']]],
+  ['einsminust_2830',['einsMinusT',['../group__fieldaligned.html#gga10e4ac4f15fe73a4ff10569985224101af101993895ad46716e7324439d6bd226',1,'dg::geo']]],
+  ['einsplus_2831',['einsPlus',['../group__fieldaligned.html#gga10e4ac4f15fe73a4ff10569985224101a3051e3e0498abaac57b76c94c1b94e25',1,'dg::geo']]],
+  ['einsplust_2832',['einsPlusT',['../group__fieldaligned.html#gga10e4ac4f15fe73a4ff10569985224101a123cc46161ad1c9729aa385716751918',1,'dg::geo']]]
 ];

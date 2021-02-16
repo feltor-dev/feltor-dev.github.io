@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['discretization_20of_20poisson_20bracket',['Discretization of Poisson bracket',['../../../dg/html/group__arakawa.html',1,'']]]
+  ['evaluate_2878',['evaluate',['../../../dg/html/group__evaluation.html',1,'']]]
 ];

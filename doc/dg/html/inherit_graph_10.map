@@ -1,6 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structdg_1_1a_real_m_p_i_topology2d.html" title="2D MPI abstract grid class " alt="" coords="5,39,175,80"/>
-<area shape="rect" id="node2" href="$structdg_1_1a_real_m_p_i_geometry2d.html" title="This is the abstract interface class for a two&#45;dimensional Geometry. " alt="" coords="223,5,396,47"/>
-<area shape="rect" id="node4" href="$structdg_1_1_real_m_p_i_grid2d.html" title="The simplest implementation of aRealMPITopology2d. " alt="" coords="239,71,380,112"/>
-<area shape="rect" id="node3" href="$structdg_1_1_real_cartesian_m_p_i_grid2d.html" title="The mpi version of RealCartesianGrid2d. " alt="" coords="444,5,633,47"/>
+<area shape="rect" id="node1" href="$structdg_1_1_any_policy_tag.html" title="Execution Policy base class." alt="" coords="5,56,137,83"/>
+<area shape="rect" id="node2" href="$structdg_1_1_cuda_tag.html" title=" " alt="" coords="187,5,289,32"/>
+<area shape="rect" id="node3" href="$structdg_1_1_omp_tag.html" title=" " alt="" coords="189,56,287,83"/>
+<area shape="rect" id="node4" href="$structdg_1_1_serial_tag.html" title="Indicate sequential execution." alt="" coords="185,107,291,133"/>
 </map>

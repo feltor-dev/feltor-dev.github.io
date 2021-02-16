@@ -32,34 +32,18 @@ var group__profiles =
       [ "DivLiseikinY", "structdg_1_1geo_1_1_div_liseikin_y.html#a27a32ff50033699bbb41faaed347fd4e", null ],
       [ "do_compute", "structdg_1_1geo_1_1_div_liseikin_y.html#a925701056ac0361d057137d68e845848", null ]
     ] ],
-    [ "DeltaFunction", "structdg_1_1geo_1_1_delta_function.html", [
-      [ "DeltaFunction", "structdg_1_1geo_1_1_delta_function.html#a739c2e363145a2ef88dd36963fa52693", null ],
-      [ "operator()", "structdg_1_1geo_1_1_delta_function.html#af4b5f10a95ae86754f3078c50bb9ff52", null ],
-      [ "operator()", "structdg_1_1geo_1_1_delta_function.html#a480c24032407defe02dd3167cb390c4f", null ],
-      [ "setepsilon", "structdg_1_1geo_1_1_delta_function.html#a73a98699d02760ae074420f0e8003948", null ],
-      [ "setpsi", "structdg_1_1geo_1_1_delta_function.html#a3f38d7f89a967bfa1ac2861c6956d6be", null ]
+    [ "SetUnion", "structdg_1_1geo_1_1mod_1_1_set_union.html", [
+      [ "SetUnion", "structdg_1_1geo_1_1mod_1_1_set_union.html#acf5d624bbae1337f919bfed33fa6a390", null ],
+      [ "do_compute", "structdg_1_1geo_1_1mod_1_1_set_union.html#a47c519e79576e4cc7e70d52d6cc16548", null ]
     ] ],
-    [ "Alpha", "structdg_1_1geo_1_1_alpha.html", [
-      [ "Alpha", "structdg_1_1geo_1_1_alpha.html#a2d978d9787fd7fe29a6e552be959123e", null ],
-      [ "operator()", "structdg_1_1geo_1_1_alpha.html#af9910383078022eaa434e0c0c0735663", null ],
-      [ "operator()", "structdg_1_1geo_1_1_alpha.html#ad2a35c82a1539f36b4d44bc4d74b47ea", null ]
+    [ "SetIntersection", "structdg_1_1geo_1_1mod_1_1_set_intersection.html", [
+      [ "SetIntersection", "structdg_1_1geo_1_1mod_1_1_set_intersection.html#a1d3c8d8d24897eb9feb9724e61ab8b92", null ],
+      [ "do_compute", "structdg_1_1geo_1_1mod_1_1_set_intersection.html#a400d389c7d26e99bbc1b5395d1001c4a", null ]
     ] ],
-    [ "Compose", "structdg_1_1geo_1_1_compose.html", [
-      [ "Compose", "structdg_1_1geo_1_1_compose.html#addeb93c185cb79e7b9926a30d6b5c6b8", null ],
-      [ "do_compute", "structdg_1_1geo_1_1_compose.html#abd6fc13d46ef09def9bd60b4b11a5fa6", null ]
+    [ "SetNot", "structdg_1_1geo_1_1mod_1_1_set_not.html", [
+      [ "SetNot", "structdg_1_1geo_1_1mod_1_1_set_not.html#ac2aab77fa30f1d14142e0972cd0430e7", null ],
+      [ "do_compute", "structdg_1_1geo_1_1mod_1_1_set_not.html#a22e5d5296c6621568332320783fa12f2", null ]
     ] ],
-    [ "ZCutter", "structdg_1_1geo_1_1_z_cutter.html", [
-      [ "ZCutter", "structdg_1_1geo_1_1_z_cutter.html#a9be47e3b05988d867bdfa4d5470babc3", null ],
-      [ "do_compute", "structdg_1_1geo_1_1_z_cutter.html#a97cc268e23623d01ea166d0a5c95bc4e", null ]
-    ] ],
-    [ "GaussianDamping", "group__profiles.html#ga158a9af6aef70087e95b8fd8e7dacc60", null ],
-    [ "Iris", "group__profiles.html#gad64d512d641d71865056b1f1b83da902", null ],
-    [ "Nprofile", "group__profiles.html#gac6e56352ad1a753f9c5c7cecb0f12ee0", null ],
-    [ "PsiLimiter", "group__profiles.html#ga82eca5b06b94a709b4f1cbfa4b42d59f", null ],
-    [ "PsiPupil", "group__profiles.html#ga4e7e76bd77ae1317ed999238b4ce4e17", null ],
-    [ "Pupil", "group__profiles.html#gab429cc7c00f5d55def9fcaa5cda8fafd", null ],
-    [ "TanhDamping", "group__profiles.html#ga446bce2c783bba5c7b0260853259f1e1", null ],
-    [ "ZonalFlow", "group__profiles.html#ga19191644f490a26ec20c3f6dac24765c", null ],
     [ "make_LiseikinCollective", "group__profiles.html#gae0cb11f189e743a3291e23e2bc361bb2", null ],
     [ "make_NablaPsiInvCollective", "group__profiles.html#ga32a9569879bd13c719c77be10f0d399d", null ]
 ];

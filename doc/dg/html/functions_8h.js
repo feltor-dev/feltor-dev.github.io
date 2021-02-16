@@ -1,6 +1,9 @@
 var functions_8h =
 [
     [ "DG_DEVICE", "functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05", null ],
+    [ "cooRZP2X", "functions_8h.html#ga26a17efec5c3e1e916ebc05914f185b9", null ],
+    [ "cooRZP2Y", "functions_8h.html#ga801437c88f9b783bdadd96d81c110a8a", null ],
+    [ "cooRZP2Z", "functions_8h.html#gab6859f8360cdc1ab30404589070ca4e5", null ],
     [ "cooX1d", "functions_8h.html#ga21055512458a88c314621a912fb1417f", null ],
     [ "cooX2d", "functions_8h.html#gadb49e10685e2bcdd8a27ef88f2857151", null ],
     [ "cooX3d", "functions_8h.html#gadd9ae95517a739c80452afc7fc9c36ae", null ],

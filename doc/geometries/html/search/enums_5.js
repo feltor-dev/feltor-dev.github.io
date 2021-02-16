@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['whichmatrix',['whichMatrix',['../group__fieldaligned.html#ga10e4ac4f15fe73a4ff10569985224101',1,'dg::geo']]]
+  ['norm_2822',['norm',['../../../dg/html/group__creation.html#ga9945b71a335bc97f78dc7425911c7287',1,'dg::norm()'],['../../../dg/html/group__creation.html#ga9945b71a335bc97f78dc7425911c7287',1,'norm()(Global Namespace)']]]
 ];

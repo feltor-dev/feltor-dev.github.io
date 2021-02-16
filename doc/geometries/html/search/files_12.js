@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['weights_2eh',['weights.h',['../../../dg/html/weights_8h.html',1,'']]],
-  ['weightsx_2eh',['weightsX.h',['../../../dg/html/weights_x_8h.html',1,'']]]
+  ['vector_5fcategories_2eh_1888',['vector_categories.h',['../../../dg/html/vector__categories_8h.html.html',1,'']]],
+  ['view_2eh_1889',['view.h',['../../../dg/html/view_8h.html.html',1,'']]]
 ];

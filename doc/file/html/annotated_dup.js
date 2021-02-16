@@ -1,4 +1,6 @@
 var annotated_dup =
 [
-    [ "file", "namespacefile.html", "namespacefile" ]
+    [ "dg", null, [
+      [ "file", "namespacedg_1_1file.html", "namespacedg_1_1file" ]
+    ] ]
 ];

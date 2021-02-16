@@ -1,8 +1,8 @@
 var structdg_1_1a_real_topology2d =
 [
-    [ "dimensionality", "structdg_1_1a_real_topology2d.html#a9d938e7a9ed5cb0f4706b156736960bf", null ],
-    [ "memory_category", "structdg_1_1a_real_topology2d.html#afca88b2b146b9b540720efe949f7e930", null ],
-    [ "value_type", "structdg_1_1a_real_topology2d.html#af74426b14531eb59433f626e62aabd66", null ],
+    [ "host_grid", "structdg_1_1a_real_topology2d.html#ad798cb5295c023f8a6a08bb839afda7f", null ],
+    [ "host_vector", "structdg_1_1a_real_topology2d.html#a11f52c0e6cd72875fb37d1f6924fdca0", null ],
+    [ "value_type", "structdg_1_1a_real_topology2d.html#a6520f5dd27bb8b8beeaede2dc66d3931", null ],
     [ "~aRealTopology2d", "structdg_1_1a_real_topology2d.html#a2942c101ccfc9643e62d5951720af7b1", null ],
     [ "aRealTopology2d", "structdg_1_1a_real_topology2d.html#ad1edba19469c2ba8937128e143f24eab", null ],
     [ "aRealTopology2d", "structdg_1_1a_real_topology2d.html#aae3ad2357dd96d1278f044b31e803550", null ],
@@ -23,8 +23,8 @@ var structdg_1_1a_real_topology2d =
     [ "Ny", "structdg_1_1a_real_topology2d.html#afe490daa9a97ce9fe0e6bba14267309e", null ],
     [ "operator=", "structdg_1_1a_real_topology2d.html#ac5714df844ad0f03405e6f8aa82e804b", null ],
     [ "set", "structdg_1_1a_real_topology2d.html#a486277fa092c222b28b16dbb45415109", null ],
-    [ "shift_topologic", "structdg_1_1a_real_topology2d.html#ab374d53611ea473afa5ea27b34f11b19", null ],
-    [ "shift_topologic", "structdg_1_1a_real_topology2d.html#a7537c960361cf1aa99762ec0fb595ce9", null ],
+    [ "shift", "structdg_1_1a_real_topology2d.html#a22b0bea747760712e7ef51c8b97f7e0b", null ],
+    [ "shift", "structdg_1_1a_real_topology2d.html#a1e4104a6e8696c7d0bb7d094b0870370", null ],
     [ "size", "structdg_1_1a_real_topology2d.html#a9c845ed70b611a51f85436e6d4fd5874", null ],
     [ "x0", "structdg_1_1a_real_topology2d.html#a304d4f80327d051852c3c963a6e04c81", null ],
     [ "x1", "structdg_1_1a_real_topology2d.html#ad28b1b826e97472b0e6276db5dc9d276", null ],

@@ -7,6 +7,8 @@ var structdg_1_1_e_r_k_step =
     [ "construct", "structdg_1_1_e_r_k_step.html#ace314e006d67d8b2bab053b4d37e5cd7", null ],
     [ "copyable", "structdg_1_1_e_r_k_step.html#a8d691967766ff8b86c662bfb7c83b30a", null ],
     [ "embedded_order", "structdg_1_1_e_r_k_step.html#a9be86632721f583531fff430d50a7d27", null ],
+    [ "enable_fsal", "structdg_1_1_e_r_k_step.html#a208459dda0d8224c3d1ad55fc70b3ffc", null ],
+    [ "ignore_fsal", "structdg_1_1_e_r_k_step.html#a568810ea4b1bf9b99215b3d05353f20d", null ],
     [ "num_stages", "structdg_1_1_e_r_k_step.html#a095012ea4608f08685f861855ef3059f", null ],
     [ "order", "structdg_1_1_e_r_k_step.html#ada7824a8c5643fddde70c5c7876b4367", null ],
     [ "step", "structdg_1_1_e_r_k_step.html#a426757a67529f5e763ac783e882b9c09", null ]

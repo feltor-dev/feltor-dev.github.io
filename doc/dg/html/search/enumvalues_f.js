@@ -1,4 +1,22 @@
 var searchData=
 [
-  ['verner_5f8_5f5_5f6',['VERNER_8_5_6',['../group__time.html#gga80d4d81df02e5311bb20b3f74ea45992aa29646a0456ce45916235f7991a7226e',1,'dg']]]
+  ['sayfy_5faburub_5f6_5f3_5f4_2818',['SAYFY_ABURUB_6_3_4',['../group__time__utils.html#gga80d4d81df02e5311bb20b3f74ea45992a4f13e6b1d5695276f8f99e07d86f5667',1,'dg']]],
+  ['sdirk_5f2_5f1_5f2_2819',['SDIRK_2_1_2',['../group__time__utils.html#gga80d4d81df02e5311bb20b3f74ea45992a72bd02f1580c5bb96958efa4f511f8aa',1,'dg']]],
+  ['sdirk_5f5_5f3_5f4_2820',['SDIRK_5_3_4',['../group__time__utils.html#gga80d4d81df02e5311bb20b3f74ea45992ababbb34a98a801e7cc89920a1daa4d9d',1,'dg']]],
+  ['sol_5fpfr_2821',['sol_pfr',['../../../geometries/html/group__magnetic.html#ga097616a5ebbfd85265a3759b05e1bf76a33f783a59264ff5568567da44b904708',1,'sol_pfr()(Global Namespace)'],['../../../geometries/html/group__magnetic.html#ga097616a5ebbfd85265a3759b05e1bf76a33f783a59264ff5568567da44b904708',1,'dg::geo::sol_pfr()'],['../../../geometries/html/group__magnetic.html#ga097616a5ebbfd85265a3759b05e1bf76a33f783a59264ff5568567da44b904708',1,'sol_pfr()(Global Namespace)']]],
+  ['solovev_2822',['solovev',['../../../geometries/html/group__magnetic.html#gab39148d38eed4929633564c02238214da5296197ebee15d72c4b588b03b686b1e',1,'solovev()(Global Namespace)'],['../../../geometries/html/group__magnetic.html#gab39148d38eed4929633564c02238214da5296197ebee15d72c4b588b03b686b1e',1,'dg::geo::solovev()'],['../../../geometries/html/group__magnetic.html#gab39148d38eed4929633564c02238214da5296197ebee15d72c4b588b03b686b1e',1,'solovev()(Global Namespace)']]],
+  ['square_2823',['square',['../../../geometries/html/group__magnetic.html#gac077a0f92059114ad4973984de444db4a2fc01ec765ec0cb3dcc559126de20b30',1,'square()(Global Namespace)'],['../../../geometries/html/group__magnetic.html#gac077a0f92059114ad4973984de444db4a2fc01ec765ec0cb3dcc559126de20b30',1,'dg::geo::square()'],['../../../geometries/html/group__magnetic.html#gac077a0f92059114ad4973984de444db4a2fc01ec765ec0cb3dcc559126de20b30',1,'square()(Global Namespace)']]],
+  ['ssp_5f1_5f1_2824',['SSP_1_1',['../group__time__utils.html#ggaac3c0875ffdfb49fd06757312d1a599aa7d7e3674e686fca44fbcd6d36180b97a',1,'dg']]],
+  ['ssp_5f2_5f2_2825',['SSP_2_2',['../group__time__utils.html#ggaac3c0875ffdfb49fd06757312d1a599aa1caadeb75a2d464e5fdd55eef44ff054',1,'dg']]],
+  ['ssp_5f3_5f2_2826',['SSP_3_2',['../group__time__utils.html#ggaac3c0875ffdfb49fd06757312d1a599aa21b18996d8e102a9cc885dcd8640c176',1,'dg']]],
+  ['ssp_5f4_5f2_2827',['SSP_4_2',['../group__time__utils.html#ggaac3c0875ffdfb49fd06757312d1a599aa36daa3f359c34a46063a9a6a81c3ed8b',1,'dg']]],
+  ['ssp_5f5_5f3_2828',['SSP_5_3',['../group__time__utils.html#ggaac3c0875ffdfb49fd06757312d1a599aad04a42fb019d1a03a754fd5a112ebcd5',1,'dg']]],
+  ['ssp_5f6_5f3_2829',['SSP_6_3',['../group__time__utils.html#ggaac3c0875ffdfb49fd06757312d1a599aad8ecff70e32e9791e9acbfbdfa16f32c',1,'dg']]],
+  ['ssprk_5f2_5f2_2830',['SSPRK_2_2',['../group__time__utils.html#gga80d4d81df02e5311bb20b3f74ea45992a0adf7035ccb1108b9cab4539a505ca1b',1,'dg']]],
+  ['ssprk_5f3_5f2_2831',['SSPRK_3_2',['../group__time__utils.html#gga80d4d81df02e5311bb20b3f74ea45992a6ec030e91579ee35ac9c2d1f4fd00c7a',1,'dg']]],
+  ['ssprk_5f3_5f3_2832',['SSPRK_3_3',['../group__time__utils.html#gga80d4d81df02e5311bb20b3f74ea45992a0eb5270409e6b03447ee549379e2f78a',1,'dg']]],
+  ['ssprk_5f5_5f3_2833',['SSPRK_5_3',['../group__time__utils.html#gga80d4d81df02e5311bb20b3f74ea45992a2a46be9d458c9586fd219956c016c3fe',1,'dg']]],
+  ['ssprk_5f5_5f4_2834',['SSPRK_5_4',['../group__time__utils.html#gga80d4d81df02e5311bb20b3f74ea45992a55f0423ae9d22f05d48f8cfd0ee10278',1,'dg']]],
+  ['standardo_2835',['standardO',['../../../geometries/html/group__magnetic.html#gac077a0f92059114ad4973984de444db4a6fedcb1966fb6bcfde36170c034e3bc4',1,'standardO()(Global Namespace)'],['../../../geometries/html/group__magnetic.html#gac077a0f92059114ad4973984de444db4a6fedcb1966fb6bcfde36170c034e3bc4',1,'dg::geo::standardO()'],['../../../geometries/html/group__magnetic.html#gac077a0f92059114ad4973984de444db4a6fedcb1966fb6bcfde36170c034e3bc4',1,'standardO()(Global Namespace)']]],
+  ['standardx_2836',['standardX',['../../../geometries/html/group__magnetic.html#gac077a0f92059114ad4973984de444db4acb2dc64595318cfbaba3458934dfb522',1,'standardX()(Global Namespace)'],['../../../geometries/html/group__magnetic.html#gac077a0f92059114ad4973984de444db4acb2dc64595318cfbaba3458934dfb522',1,'dg::geo::standardX()'],['../../../geometries/html/group__magnetic.html#gac077a0f92059114ad4973984de444db4acb2dc64595318cfbaba3458934dfb522',1,'standardX()(Global Namespace)']]]
 ];

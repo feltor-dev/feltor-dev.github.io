@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['useful_20typedefs',['Useful Typedefs',['../../../dg/html/group__gridtypes.html',1,'']]],
-  ['useful_20typedefs',['Useful Typedefs',['../../../dg/html/group__typedefs.html',1,'']]]
+  ['wall_20and_20sheath_2915',['Wall and Sheath',['../group__wall.html',1,'']]]
 ];

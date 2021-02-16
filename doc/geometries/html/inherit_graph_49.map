@@ -1,4 +1,8 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structdg_1_1geo_1_1a_cylindrical_functor.html" title="dg::geo::aCylindricalFunctor\l\&lt; TrueCurvatureKappaP \&gt;" alt="" coords="5,5,191,47"/>
-<area shape="rect" id="node2" href="$structdg_1_1geo_1_1_true_curvature_kappa_p.html" title="True . " alt="" coords="239,13,441,39"/>
+<area shape="rect" id="node1" href="$structdg_1_1geo_1_1a_cylindrical_functor.html" title=" " alt="" coords="5,123,208,164"/>
+<area shape="rect" id="node2" href="$structdg_1_1geo_1_1guenther_1_1_psip_z_z.html" title=" " alt="" coords="275,5,419,47"/>
+<area shape="rect" id="node3" href="$structdg_1_1geo_1_1mod_1_1_psip_z_z.html" title=" " alt="" coords="267,71,427,98"/>
+<area shape="rect" id="node4" href="$structdg_1_1geo_1_1polynomial_1_1_psip_z_z.html" title=" " alt="" coords="271,123,422,164"/>
+<area shape="rect" id="node5" href="$structdg_1_1geo_1_1solovev_1_1_psip_z_z.html" title=" " alt="" coords="256,189,437,215"/>
+<area shape="rect" id="node6" href="$structdg_1_1geo_1_1taylor_1_1_psip_z_z.html" title=" " alt="" coords="262,239,431,266"/>
 </map>

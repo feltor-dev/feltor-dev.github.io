@@ -1,5 +1,6 @@
 var dir_8c739bbef76d64b22d6b0911c526dd76 =
 [
+    [ "average_dispatch.h", "average__dispatch_8h.html", "average__dispatch_8h" ],
     [ "exceptions.h", "exceptions_8h.html", "exceptions_8h" ],
     [ "execution_policy.h", "execution__policy_8h.html", [
       [ "SerialTag", "structdg_1_1_serial_tag.html", null ],
