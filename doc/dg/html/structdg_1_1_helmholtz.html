@@ -121,7 +121,7 @@ Public Types</h2></td></tr>
 <tr class="separator:a15ffedf466809e87e7bef7f34aa7e352"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9991534c71b96e4a3caf94214523b661"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz.html#a9991534c71b96e4a3caf94214523b661">container_type</a> = Container</td></tr>
 <tr class="separator:a9991534c71b96e4a3caf94214523b661"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bcfe47ff38699953ffe2f8fb1d898ec"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz.html#a7bcfe47ff38699953ffe2f8fb1d898ec">value_type</a> = <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; Container &gt;</td></tr>
+<tr class="memitem:a7bcfe47ff38699953ffe2f8fb1d898ec"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz.html#a7bcfe47ff38699953ffe2f8fb1d898ec">value_type</a> = <a class="el" href="group__dispatch.html#ga6cca187a5557469a96917dc4687a22d3">get_value_type</a>&lt; Container &gt;</td></tr>
 <tr class="separator:a7bcfe47ff38699953ffe2f8fb1d898ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -269,7 +269,7 @@ template&lt;class Geometry , class Matrix , class Container &gt; </div>
 template&lt;class Geometry , class Matrix , class Container &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="structdg_1_1_helmholtz.html">dg::Helmholtz</a>&lt; Geometry, Matrix, Container &gt;::<a class="el" href="structdg_1_1_helmholtz.html#a7bcfe47ff38699953ffe2f8fb1d898ec">value_type</a> =  <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt;Container&gt;</td>
+          <td class="memname">using <a class="el" href="structdg_1_1_helmholtz.html">dg::Helmholtz</a>&lt; Geometry, Matrix, Container &gt;::<a class="el" href="structdg_1_1_helmholtz.html#a7bcfe47ff38699953ffe2f8fb1d898ec">value_type</a> =  <a class="el" href="group__dispatch.html#ga6cca187a5557469a96917dc4687a22d3">get_value_type</a>&lt;Container&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -853,18 +853,18 @@ template&lt;class Geometry , class Matrix , class Container &gt; </div>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="agroup__blas1_html_ga5c7ddbf70dd74867e45c9d4f40b36cf7"><div class="ttname"><a href="group__blas1.html#ga5c7ddbf70dd74867e45c9d4f40b36cf7">dg::blas1::axpby</a></div><div class="ttdeci">void axpby(get_value_type&lt; ContainerType &gt; alpha, const ContainerType1 &amp;x, get_value_type&lt; ContainerType &gt; beta, ContainerType &amp;y)</div><div class="ttdef"><b>Definition:</b> blas1.h:195</div></div>
+<div class="ttc" id="agroup__blas1_html_ga5c7ddbf70dd74867e45c9d4f40b36cf7"><div class="ttname"><a href="group__blas1.html#ga5c7ddbf70dd74867e45c9d4f40b36cf7">dg::blas1::axpby</a></div><div class="ttdeci">void axpby(get_value_type&lt; ContainerType &gt; alpha, const ContainerType1 &amp;x, get_value_type&lt; ContainerType &gt; beta, ContainerType &amp;y)</div><div class="ttdef"><b>Definition:</b> blas1.h:210</div></div>
 <div class="ttc" id="astructdg_1_1_invert_html"><div class="ttname"><a href="structdg_1_1_invert.html">dg::Invert</a></div><div class="ttdoc">Wrapper around CG and Extrapolation to solve the Equation.</div><div class="ttdef"><b>Definition:</b> cg.h:489</div></div>
 <div class="ttc" id="astructdg_1_1_helmholtz_html"><div class="ttname"><a href="structdg_1_1_helmholtz.html">dg::Helmholtz</a></div><div class="ttdoc">Matrix class that represents a Helmholtz-type operator .</div><div class="ttdef"><b>Definition:</b> helmholtz.h:28</div></div>
 <div class="ttc" id="agroup__creation_html_ggabf9ea3df33484cbb5886e257c3899e48a6281b4fc609cb723a615662b5adac9df"><div class="ttname"><a href="group__creation.html#ggabf9ea3df33484cbb5886e257c3899e48a6281b4fc609cb723a615662b5adac9df">dg::centered</a></div><div class="ttdeci">@ centered</div><div class="ttdoc">centered derivative (cell to the left and right and current cell)</div><div class="ttdef"><b>Definition:</b> enums.h:106</div></div>
 <div class="ttc" id="astructdg_1_1_helmholtz_html_a3fed0183ddba0121a3838181479ab2d1"><div class="ttname"><a href="structdg_1_1_helmholtz.html#a3fed0183ddba0121a3838181479ab2d1">dg::Helmholtz::chi</a></div><div class="ttdeci">const Container &amp; chi() const</div><div class="ttdoc">Access chi.</div><div class="ttdef"><b>Definition:</b> helmholtz.h:147</div></div>
 <div class="ttc" id="astructdg_1_1_helmholtz_html_aecaabc0dc1c50ca35399d89dfb262faf"><div class="ttname"><a href="structdg_1_1_helmholtz.html#aecaabc0dc1c50ca35399d89dfb262faf">dg::Helmholtz::alpha</a></div><div class="ttdeci">value_type &amp; alpha()</div><div class="ttdoc">Change alpha.</div><div class="ttdef"><b>Definition:</b> helmholtz.h:126</div></div>
-<div class="ttc" id="agroup__blas1_html_gad2dcd7cffe760b7bacfdd7647d86e602"><div class="ttname"><a href="group__blas1.html#gad2dcd7cffe760b7bacfdd7647d86e602">dg::blas1::pointwiseDot</a></div><div class="ttdeci">void pointwiseDot(get_value_type&lt; ContainerType &gt; alpha, const ContainerType1 &amp;x1, const ContainerType2 &amp;x2, get_value_type&lt; ContainerType &gt; beta, ContainerType &amp;y)</div><div class="ttdef"><b>Definition:</b> blas1.h:297</div></div>
+<div class="ttc" id="agroup__blas1_html_gad2dcd7cffe760b7bacfdd7647d86e602"><div class="ttname"><a href="group__blas1.html#gad2dcd7cffe760b7bacfdd7647d86e602">dg::blas1::pointwiseDot</a></div><div class="ttdeci">void pointwiseDot(get_value_type&lt; ContainerType &gt; alpha, const ContainerType1 &amp;x1, const ContainerType2 &amp;x2, get_value_type&lt; ContainerType &gt; beta, ContainerType &amp;y)</div><div class="ttdef"><b>Definition:</b> blas1.h:315</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_helmholtz.html">Helmholtz</a></li>
-    <li class="footer">Generated on Tue Feb 16 2021 01:15:31 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Tue Feb 23 2021 15:27:09 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

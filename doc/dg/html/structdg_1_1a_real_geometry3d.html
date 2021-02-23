@@ -118,7 +118,7 @@ Inheritance diagram for dg::aRealGeometry3d&lt; real_type &gt;:</div>
 <div class="center"><img src="structdg_1_1a_real_geometry3d__inherit__graph.png" border="0" usemap="#dg_1_1a_real_geometry3d_3_01real__type_01_4_inherit__map" alt="Inheritance graph"/></div>
 <map name="dg_1_1a_real_geometry3d_3_01real__type_01_4_inherit__map" id="dg_1_1a_real_geometry3d_3_01real__type_01_4_inherit__map">
 <area shape="rect" title="This is the abstract interface class for a three&#45;dimensional Geometry." alt="" coords="211,71,375,112"/>
-<area shape="rect" href="structdg_1_1a_real_product_geometry3d.html" title="a 3d product space Geometry" alt="" coords="423,37,636,79"/>
+<area shape="rect" href="structdg_1_1a_real_product_geometry3d.html" title="A 3d product space Geometry ." alt="" coords="423,37,636,79"/>
 <area shape="rect" href="structdg_1_1_real_cartesian_refined_grid3d.html" title="Refined RealCartesian grid." alt="" coords="436,103,623,144"/>
 <area shape="rect" href="structdg_1_1a_real_topology3d.html" title="An abstract base class for three&#45;dimensional grids." alt="" coords="5,71,163,112"/>
 <area shape="rect" href="structdg_1_1_real_cartesian_grid3d.html" title="three&#45;dimensional Grid with Cartesian metric" alt="" coords="687,5,867,47"/>
@@ -132,7 +132,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a811e7e17b120676932f871d54e809cf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Jacobian of the coordinate transformation from physical to computational space.  <a href="structdg_1_1a_real_geometry3d.html#a811e7e17b120676932f871d54e809cf1">More...</a><br /></td></tr>
 <tr class="separator:a811e7e17b120676932f871d54e809cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58c85c6f7ede81c985eb7c7dc8083508"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; thrust::host_vector&lt; real_type &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_real_geometry3d.html#a58c85c6f7ede81c985eb7c7dc8083508">metric</a> () const</td></tr>
-<tr class="memdesc:a58c85c6f7ede81c985eb7c7dc8083508"><td class="mdescLeft">&#160;</td><td class="mdescRight">The (contravariant) metric tensor of the coordinate system.  <a href="structdg_1_1a_real_geometry3d.html#a58c85c6f7ede81c985eb7c7dc8083508">More...</a><br /></td></tr>
+<tr class="memdesc:a58c85c6f7ede81c985eb7c7dc8083508"><td class="mdescLeft">&#160;</td><td class="mdescRight">The (inverse) metric tensor of the coordinate system.  <a href="structdg_1_1a_real_geometry3d.html#a58c85c6f7ede81c985eb7c7dc8083508">More...</a><br /></td></tr>
 <tr class="separator:a58c85c6f7ede81c985eb7c7dc8083508"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a808a691b5ac6983e73316951eac76e7e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; thrust::host_vector&lt; real_type &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_real_geometry3d.html#a808a691b5ac6983e73316951eac76e7e">map</a> () const</td></tr>
 <tr class="memdesc:a808a691b5ac6983e73316951eac76e7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The coordinate map from computational to physical space.  <a href="structdg_1_1a_real_geometry3d.html#a808a691b5ac6983e73316951eac76e7e">More...</a><br /></td></tr>
@@ -456,12 +456,12 @@ template&lt;class real_type &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>The (contravariant) metric tensor of the coordinate system. </p>
-<p>The elements are the contravariant elements (if x,y,z are the coordinates) </p><p class="formulaDsp">
-\[ g = \begin{pmatrix} g^{xx}(x,y,z) &amp; g^{xy}(x,y,z) &amp; g^{zz}(x,y,z)\\ &amp; g^{yy}(x,y,z) &amp; g^{yz}(x,y,z) \\ &amp; &amp; g^{zz}(x,y,z)\end{pmatrix} \]
+<p>The (inverse) metric tensor of the coordinate system. </p>
+<p>The elements of the inverse metric tensor are the contravariant elements of the metric \(g\). If x,y,z are the coordinates, then </p><p class="formulaDsp">
+\[ g^{-1} = \begin{pmatrix} g^{xx}(x,y,z) &amp; g^{xy}(x,y,z) &amp; g^{zz}(x,y,z)\\ &amp; g^{yy}(x,y,z) &amp; g^{yz}(x,y,z) \\ &amp; &amp; g^{zz}(x,y,z)\end{pmatrix} \]
 </p>
  <dl class="section return"><dt>Returns</dt><dd>symmetric tensor </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>use the <a class="el" href="namespacedg_1_1tensor.html" title="Utility functions used in connection with the SparseTensor class.">dg::tensor</a> functions to compute the volume element from here </dd>
+<dl class="section note"><dt>Note</dt><dd>use the <code><a class="el" href="group__tensor.html#ga7356ee29303d9600291cd7489085492d">dg::tensor::volume</a></code> function to compute the volume element from here </dd>
 <dd>
 per default this will be the identity tensor </dd></dl>
 
@@ -512,7 +512,7 @@ template&lt;class real_type &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1a_real_geometry3d.html">aRealGeometry3d</a></li>
-    <li class="footer">Generated on Tue Feb 16 2021 01:15:31 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Tue Feb 23 2021 15:27:09 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

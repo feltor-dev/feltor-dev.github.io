@@ -60,7 +60,7 @@ var NAVTREE =
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", null ],
-        [ "Typedefs", "functions_type.html", "functions_type" ],
+        [ "Typedefs", "functions_type.html", null ],
         [ "Related Functions", "functions_rela.html", null ]
       ] ]
     ] ],
@@ -77,18 +77,17 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "adaptive_8h.html",
-"classdg_1_1_operator.html#aa0c12018483764a7d5bbbe9715ceeedb",
-"functions_type_h.html",
-"group__gridtypes.html#ga669637061097e77d4bfede9e74182b06",
-"group__time__utils.html#ggaac3c0875ffdfb49fd06757312d1a599aa840e7133e47fb2d1d7c166807905f451",
-"multistep__tableau_8h.html#ggaac3c0875ffdfb49fd06757312d1a599aa11ebe6949bb01634a2f4b3402c2c15ce",
-"structdg_1_1_arakawa_x.html#acf289da0211749ce91439c11f42fad3b",
-"structdg_1_1_ell_sparse_block_mat_device.html#ac451ad2a5a789a51fb1d5299ae2e3fac",
-"structdg_1_1_island_x_y.html#a8339aaf1084886de392c5526123f15e2",
-"structdg_1_1_real_cylindrical_m_p_i_grid3d.html#ada3c8bca230adf94e1fa3b39632b8212",
-"structdg_1_1_tensor_traits_3_01cusp_1_1dia__matrix_3_01_i_00_01_v_00_01_m_01_4_01_4.html#ac3c7c573c7471cf568fd8938a3cd3139",
-"structdg_1_1a_real_topology2d.html#a6520f5dd27bb8b8beeaede2dc66d3931",
-"typedefs_8h.html#gadc35dcb99c013f7eb16e2754c603c6b3"
+"derivatives_8h.html",
+"group__basics.html#ga21055512458a88c314621a912fb1417f",
+"group__interpolation.html#ga458385383d455bdeaf5903bfdc2f6298",
+"group__typedefs.html#gad7412ba17b1dc358ecc70361ced85f6b",
+"namespacemembers_func_c.html",
+"structdg_1_1_butcher_tableau.html#abc9151ce94f584eee65d4fedecffe9ad",
+"structdg_1_1_filtered_explicit_multistep.html#ae4ac4e18ad68f1900324e2db0ad62ec8",
+"structdg_1_1_m_p_i_dist_mat.html#a23864630bd3610bb94c0f58ffe1ef6f9",
+"structdg_1_1_real_grid_x1d.html#ab1da6ef2467e3c625aac4fbdc55a9c99",
+"structdg_1_1_wall_distance.html#acc2be0b903a70fa253a7ddfa815fd743",
+"structdg_1_1a_real_topology_x2d.html#a2769851497b7b713f1f43c5a2ddb2ec4"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

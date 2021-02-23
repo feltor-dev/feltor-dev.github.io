@@ -107,6 +107,9 @@ $(document).ready(function(){initNavTree('group__fluxfunctions.html',''); initRe
 <div class="title">3.4. Utility functor functionality<div class="ingroups"><a class="el" href="group__geom__functors.html">3. New functors surrounding the magnetic field geometry</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>\( h^{ij}\)  
+<a href="#details">More...</a></p>
 <div class="dynheader">
 Collaboration diagram for 3.4. Utility functor functionality:</div>
 <div class="dyncontent">
@@ -161,12 +164,15 @@ Typedefs</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:ga4f00a11946c5ae76c6b52876292c60ca"><td class="memTemplParams" colspan="2">template&lt;class Geometry3d &gt; </td></tr>
 <tr class="memitem:ga4f00a11946c5ae76c6b52876292c60ca"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" href="../../dg/html/structdg_1_1_sparse_tensor.html">dg::SparseTensor</a>&lt; dg::get_host_vector&lt; Geometry3d &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__fluxfunctions.html#ga4f00a11946c5ae76c6b52876292c60ca">dg::geo::createAlignmentTensor</a> (const <a class="el" href="structdg_1_1geo_1_1_cylindrical_vector_lvl0.html">dg::geo::CylindricalVectorLvl0</a> &amp;bhat, const Geometry3d &amp;g)</td></tr>
+<tr class="memdesc:ga4f00a11946c5ae76c6b52876292c60ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \chi^{ij} = b^ib^j\)  <a href="group__fluxfunctions.html#ga4f00a11946c5ae76c6b52876292c60ca">More...</a><br /></td></tr>
 <tr class="separator:ga4f00a11946c5ae76c6b52876292c60ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0e6fb50126a1c44892b51db10d93fb65"><td class="memTemplParams" colspan="2">template&lt;class Geometry3d &gt; </td></tr>
 <tr class="memitem:ga0e6fb50126a1c44892b51db10d93fb65"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" href="../../dg/html/structdg_1_1_sparse_tensor.html">dg::SparseTensor</a>&lt; dg::get_host_vector&lt; Geometry3d &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__fluxfunctions.html#ga0e6fb50126a1c44892b51db10d93fb65">dg::geo::createProjectionTensor</a> (const <a class="el" href="structdg_1_1geo_1_1_cylindrical_vector_lvl0.html">dg::geo::CylindricalVectorLvl0</a> &amp;bhat, const Geometry3d &amp;g)</td></tr>
+<tr class="memdesc:ga0e6fb50126a1c44892b51db10d93fb65"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( h^{ij} = g^{ij} - b^ib^j\)  <a href="group__fluxfunctions.html#ga0e6fb50126a1c44892b51db10d93fb65">More...</a><br /></td></tr>
 <tr class="separator:ga0e6fb50126a1c44892b51db10d93fb65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>\( h^{ij}\) </p>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="gacb84a8d3b8c253f1100c1530035da1de"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gacb84a8d3b8c253f1100c1530035da1de">&#9670;&nbsp;</a></span>CylindricalFunctor</h2>
@@ -212,9 +218,8 @@ template&lt;class Geometry3d &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p class="formulaDsp">
-\[ \chi^{ij} = b^ib^j\]
-</p>
+
+<p>\( \chi^{ij} = b^ib^j\) </p>
 <p>Creates the two times contravariant tensor that, when applied to a covariant vector, creates a vector aligned to <code>b</code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -260,9 +265,8 @@ template&lt;class Geometry3d &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p class="formulaDsp">
-\[ \chi^{ij} = g^{ij} - b^ib^j\]
-</p>
+
+<p>\( h^{ij} = g^{ij} - b^ib^j\) </p>
 <p>Creates the two times contravariant tensor that, when applied to a covariant vector, creates a vector perpendicular to <code>b</code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -271,7 +275,7 @@ template&lt;class Geometry3d &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The tensor <code>chi</code> living on the coordinate system given by <code>g</code> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The tensor <code>h</code> living on the coordinate system given by <code>g</code> </dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">Geometry3d</td><td>A three-dimensional geometry </td></tr>
@@ -286,7 +290,7 @@ template&lt;class Geometry3d &gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Feb 16 2021 01:15:39 for Extension: Geometries by
+    <li class="footer">Generated on Tue Feb 23 2021 15:27:19 for Extension: Geometries by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

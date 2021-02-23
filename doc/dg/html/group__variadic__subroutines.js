@@ -12,12 +12,6 @@ var group__variadic__subroutines =
     [ "InverseTensorMultiply3d", "structdg_1_1_inverse_tensor_multiply3d.html", [
       [ "operator()", "structdg_1_1_inverse_tensor_multiply3d.html#a4f103c71b990895047c23e0960b91bb3", null ]
     ] ],
-    [ "TensorDot2d", "structdg_1_1_tensor_dot2d.html", [
-      [ "operator()", "structdg_1_1_tensor_dot2d.html#aadbf4aad129c59960f2091b8ca595856", null ]
-    ] ],
-    [ "TensorDot3d", "structdg_1_1_tensor_dot3d.html", [
-      [ "operator()", "structdg_1_1_tensor_dot3d.html#a58203c33467ac5369985cb1b98439745", null ]
-    ] ],
     [ "EmbeddedPairSum", "structdg_1_1_embedded_pair_sum.html", [
       [ "operator()", "structdg_1_1_embedded_pair_sum.html#a18384fc803b00c68d25029152ac0ef6a", null ]
     ] ],

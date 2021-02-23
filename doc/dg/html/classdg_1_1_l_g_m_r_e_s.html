@@ -117,7 +117,7 @@ $(document).ready(function(){initNavTree('classdg_1_1_l_g_m_r_e_s.html',''); ini
 Public Types</h2></td></tr>
 <tr class="memitem:abe9634581fa6f2eb54117ba8a63652fd"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_l_g_m_r_e_s.html#abe9634581fa6f2eb54117ba8a63652fd">container_type</a> = ContainerType</td></tr>
 <tr class="separator:abe9634581fa6f2eb54117ba8a63652fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae87427bca8c5886677ede137b4fc3573"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_l_g_m_r_e_s.html#ae87427bca8c5886677ede137b4fc3573">value_type</a> = <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">dg::get_value_type</a>&lt; ContainerType &gt;</td></tr>
+<tr class="memitem:ae87427bca8c5886677ede137b4fc3573"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_l_g_m_r_e_s.html#ae87427bca8c5886677ede137b4fc3573">value_type</a> = <a class="el" href="group__dispatch.html#ga6cca187a5557469a96917dc4687a22d3">dg::get_value_type</a>&lt; ContainerType &gt;</td></tr>
 <tr class="separator:ae87427bca8c5886677ede137b4fc3573"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -177,7 +177,7 @@ template&lt;class ContainerType &gt; </div>
 template&lt;class ContainerType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classdg_1_1_l_g_m_r_e_s.html">dg::LGMRES</a>&lt; ContainerType &gt;::<a class="el" href="classdg_1_1_l_g_m_r_e_s.html#ae87427bca8c5886677ede137b4fc3573">value_type</a> =  <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">dg::get_value_type</a>&lt;ContainerType&gt;</td>
+          <td class="memname">using <a class="el" href="classdg_1_1_l_g_m_r_e_s.html">dg::LGMRES</a>&lt; ContainerType &gt;::<a class="el" href="classdg_1_1_l_g_m_r_e_s.html#ae87427bca8c5886677ede137b4fc3573">value_type</a> =  <a class="el" href="group__dispatch.html#ga6cca187a5557469a96917dc4687a22d3">dg::get_value_type</a>&lt;ContainerType&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -482,8 +482,8 @@ template&lt;class MatrixType , class ContainerType0 , class ContainerType1 , cla
   <table class="tparams">
     <tr><td class="paramname">MatrixType</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits.">TensorTraits</a></code> exists and which fullfills the requirements of the there defined Matrix tags derived from <code><a class="el" href="structdg_1_1_any_matrix_tag.html">AnyMatrixTag</a></code>. The <code>MatrixType</code> can for example be one of:<ul>
 <li><code>scalar</code> or <code>Container:</code> Scalars and containers act as diagonal matrices.</li>
-<li><code><a class="el" href="group__typedefs.html#gac2134505608b45616787fdb2f6eedc87" title="Host Matrix for derivatives.">dg::HMatrix</a></code> and <code><a class="el" href="group__typedefs.html#ga188bea19979cfa0701387bfc5272be79">dg::IHMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193" title="Host Vector.">dg::HVec</a></code> or <code>std::vector&lt;dg::HVec&gt;</code> </li>
-<li><code><a class="el" href="group__typedefs.html#gafdf2ecb95cbc87a1544136d28d535f16" title="Device Matrix for derivatives.">dg::DMatrix</a></code> and <code><a class="el" href="group__typedefs.html#gaab6ed0cbb6bf7ea723c10da88cd4529f">dg::IDMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code> or <code>std::vector&lt;dg::DVec&gt;</code> </li>
+<li><code><a class="el" href="group__typedefs.html#gac2134505608b45616787fdb2f6eedc87" title="Host Matrix for derivatives.">dg::HMatrix</a></code> and <code><a class="el" href="group__typedefs.html#ga3d74638bbcf620f19e3728a07ef1706d">dg::IHMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193" title="Host Vector.">dg::HVec</a></code> or <code>std::vector&lt;dg::HVec&gt;</code> </li>
+<li><code><a class="el" href="group__typedefs.html#gafdf2ecb95cbc87a1544136d28d535f16" title="Device Matrix for derivatives.">dg::DMatrix</a></code> and <code><a class="el" href="group__typedefs.html#gaec4df2a8ab65260aed0efeb6f5d115e4">dg::IDMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code> or <code>std::vector&lt;dg::DVec&gt;</code> </li>
 <li><code><a class="el" href="group__typedefs.html#gaff79c734c7916054c7dc24e6bc437161" title="MPI Host Matrix for derivatives.">dg::MHMatrix</a></code> with <code><a class="el" href="group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0" title="MPI Host Vector s.a. dg::HVec.">dg::MHVec</a></code> or <code>std::vector&lt;dg::MHVec&gt;</code> </li>
 <li><code><a class="el" href="group__typedefs.html#gaad32454aa2aca3cbb93448d7b5daf005" title="MPI Device Matrix for derivatives.">dg::MDMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55" title="MPI Device Vector s.a. dg::DVec.">dg::MDVec</a></code> or <code>std::vector&lt;dg::MDVec&gt;</code> </li>
 <li>In case of <code><a class="el" href="structdg_1_1_self_made_matrix_tag.html" title="Indicates that the type has a member function with the same name and interface (up to the matrix itse...">SelfMadeMatrixTag</a></code> only those <code><a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines.">blas2</a></code> functions that have a corresponding member function in the Matrix class (e.g. <code>symv( const ContainerType0&amp;, ContainerType1&amp;)</code>; ) can be called.</li>
@@ -507,7 +507,7 @@ If a <code>Container</code> has the <code><a class="el" href="structdg_1_1_recur
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="classdg_1_1_l_g_m_r_e_s.html">LGMRES</a></li>
-    <li class="footer">Generated on Tue Feb 16 2021 01:15:31 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Tue Feb 23 2021 15:27:09 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

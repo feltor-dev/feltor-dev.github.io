@@ -444,7 +444,7 @@ $(document).ready(function(){initNavTree('ds_8h_source.html',''); initResizable(
 <div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160; </div>
 <div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160; </div>
 <div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> Geometry, <span class="keyword">class</span> I, <span class="keyword">class</span> M, <span class="keyword">class</span> container&gt;</div>
-<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;<a class="code" href="structdg_1_1geo_1_1_d_s.html#aea274cabb48d6b0b2808951fcd845e99">DS&lt;Geometry, I, M,container&gt;::DS</a>( Fieldaligned&lt;Geometry, I, container&gt; fa, <a class="codeRef" href="../../dg/html/group__creation.html#gabf9ea3df33484cbb5886e257c3899e48">dg::direction</a> dir): m_fa(fa)</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;<a class="code" href="structdg_1_1geo_1_1_d_s.html#aea274cabb48d6b0b2808951fcd845e99">DS&lt;Geometry, I, M,container&gt;::DS</a>( Fieldaligned&lt;Geometry, I, container&gt; fa, <a class="codeRef" href="../../dg/html/group__creation.html#gabf9ea3df33484cbb5886e257c3899e48">dg::direction</a> dir): m_fa(fa), m_dir(dir)</div>
 <div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;{</div>
 <div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;    <a class="codeRef" href="../../dg/html/group__backend.html#gab0ca1b8d3f70004e25ddc2010f7e9e0d">dg::assign</a>( <a class="codeRef" href="../../dg/html/group__metric.html#ga3c86995e21edbffbde353246289b503a">dg::create::volume</a>(     fa.grid()), m_vol3d);</div>
 <div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;    <a class="codeRef" href="../../dg/html/group__backend.html#gab0ca1b8d3f70004e25ddc2010f7e9e0d">dg::assign</a>( <a class="codeRef" href="../../dg/html/group__highlevel.html#ga771996962c7762bc7ee00b522a17259f">dg::create::weights</a>(    fa.grid()), m_weights_wo_vol);</div>
@@ -704,7 +704,7 @@ $(document).ready(function(){initNavTree('ds_8h_source.html',''); initResizable(
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="ds_8h.html">ds.h</a></li>
-    <li class="footer">Generated on Tue Feb 16 2021 01:15:39 for Extension: Geometries by
+    <li class="footer">Generated on Tue Feb 23 2021 15:27:18 for Extension: Geometries by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

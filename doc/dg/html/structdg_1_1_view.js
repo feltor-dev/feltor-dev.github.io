@@ -2,8 +2,8 @@ var structdg_1_1_view =
 [
     [ "const_iterator", "structdg_1_1_view.html#a603eadfac959a4b0f66da90094fd1d74", null ],
     [ "const_pointer", "structdg_1_1_view.html#ac833e3989049b120016d7f0f85aa66a1", null ],
-    [ "iterator", "structdg_1_1_view.html#ad0703c5aa12136c70b910b5d69cc08e8", null ],
-    [ "pointer", "structdg_1_1_view.html#a65aafb83cf73a342868d8c2e1b40f2fa", null ],
+    [ "iterator", "structdg_1_1_view.html#a92742a0486e9ac4f8e7ffccd8b7be936", null ],
+    [ "pointer", "structdg_1_1_view.html#aae94a476472852f88195d01fe6a0c431", null ],
     [ "View", "structdg_1_1_view.html#a705f3dc64a44fe89672d5321eff587a9", null ],
     [ "View", "structdg_1_1_view.html#a1cb733130affe1ec9990b7d822237d5c", null ],
     [ "View", "structdg_1_1_view.html#ab75889c58a13d500104f4b88a47a980f", null ],

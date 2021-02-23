@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
-<title>Discontinuous Galerkin Library: blas1::evaluate variadic subroutines</title>
+<title>Discontinuous Galerkin Library: blas1::evaluate variadic functors</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -102,14 +102,14 @@ $(document).ready(function(){initNavTree('group__variadic__evaluates.html',''); 
   <div class="summary">
 <a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
-<div class="title">blas1::evaluate variadic subroutines<div class="ingroups"><a class="el" href="group__misc.html">Level 0: Miscellaneous additions</a> &raquo; <a class="el" href="group__blas1__helpers.html">Functions and functors for subroutine and evaluate</a></div></div>  </div>
+<div class="title">blas1::evaluate variadic functors<div class="ingroups"><a class="el" href="group__misc.html">Level 0: Miscellaneous additions</a> &raquo; <a class="el" href="group__blas1__helpers.html">Functions and functors for subroutine and evaluate</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p>Functors to use in the <a class="el" href="group__blas1.html#gaad7b58d466d813898b68189b44619210">dg::blas1::evaluate</a> function.  
 <a href="#details">More...</a></p>
 <div class="dynheader">
-Collaboration diagram for blas1::evaluate variadic subroutines:</div>
+Collaboration diagram for blas1::evaluate variadic functors:</div>
 <div class="dyncontent">
 <div class="center"><img src="group__variadic__evaluates.png" border="0" usemap="#group____variadic____evaluates" alt=""/></div>
 <map name="group____variadic____evaluates" id="group____variadic____evaluates">
@@ -120,11 +120,20 @@ Collaboration diagram for blas1::evaluate variadic subroutines:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_tensor_dot2d.html">dg::TensorDot2d&lt; value_type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( y = \lambda\mu v_i T_{ij} w_j \)  <a href="structdg_1_1_tensor_dot2d.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_tensor_dot3d.html">dg::TensorDot3d&lt; value_type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( y = \lambda \mu v_i T_{ij} w_j \)  <a href="structdg_1_1_tensor_dot3d.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_tensor_determinant2d.html">dg::TensorDeterminant2d&lt; value_type &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( y = t_{00} t_{11} - t_{10}t_{01} \)  <a href="structdg_1_1_tensor_determinant2d.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_tensor_determinant3d.html">dg::TensorDeterminant3d&lt; value_type &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( y = t_{00} t_{11}t_{22} + t_{01}t_{12}t_{20} + t_{02}t_{10}t_{21} - t_{02}t_{11}t_{20} - t_{01}t_{10}t_{22} - t_{00}t_{12}t_{21} \)  <a href="structdg_1_1_tensor_determinant3d.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1divides.html">dg::divides</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( y = x_1/x_2 \)  <a href="structdg_1_1divides.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_sum.html">dg::Sum</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( y = \sum_i x_i \)  <a href="structdg_1_1_sum.html#details">More...</a><br /></td></tr>
@@ -143,7 +152,7 @@ Classes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Feb 16 2021 01:15:31 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Tue Feb 23 2021 15:27:09 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -138,8 +138,6 @@ $(document).ready(function(){initNavTree('functions_v.html',''); initResizable()
 , <a class="el" href="structdg_1_1_filtered_explicit_multistep.html#ab1c48a976c84a808f95f8fe1abfa8d40">dg::FilteredExplicitMultistep&lt; ContainerType &gt;</a>
 , <a class="el" href="structdg_1_1_filtered_implicit_multistep.html#a8f536995d987eb72ab11b405e3debc26">dg::FilteredImplicitMultistep&lt; ContainerType, SolverType &gt;</a>
 , <a class="el" href="structdg_1_1_fixed_point_solver.html#aa71454e4e4286d62210032975304c692">dg::FixedPointSolver&lt; ContainerType &gt;</a>
-, <a class="el" href="classdg_1_1_gradient3d.html#aa0b40184ef94ae0c6815f5ad7f0bf144">dg::Gradient3d&lt; Geometry, Matrix, Container &gt;</a>
-, <a class="el" href="classdg_1_1_gradient.html#a1a4583f822fbb3270a9c1defd9622ab4">dg::Gradient&lt; Geometry, Matrix, Container &gt;</a>
 , <a class="el" href="structdg_1_1_helmholtz2.html#a03cc55c501f30ded3618456effc9c43c">dg::Helmholtz2&lt; Geometry, Matrix, Container &gt;</a>
 , <a class="el" href="structdg_1_1_helmholtz3d.html#afb9a7231555aa9c7e6065d41579af0c6">dg::Helmholtz3d&lt; Geometry, Matrix, Container &gt;</a>
 , <a class="el" href="structdg_1_1_helmholtz.html#a7bcfe47ff38699953ffe2f8fb1d898ec">dg::Helmholtz&lt; Geometry, Matrix, Container &gt;</a>
@@ -178,7 +176,7 @@ $(document).ready(function(){initNavTree('functions_v.html',''); initResizable()
 , <a class="el" href="structdg_1_1_tensor_traits_3_01_row_col_dist_mat_3_01_l_i_00_01_l_o_00_01_c_01_4_01_4.html#ad08dd42403cc37fa22fb336164cf87e4">dg::TensorTraits&lt; RowColDistMat&lt; LI, LO, C &gt; &gt;</a>
 , <a class="el" href="structdg_1_1_tensor_traits_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html#a6de707c36671061b5d415393eb57bae4">dg::TensorTraits&lt; std::array&lt; T, N &gt; &gt;</a>
 , <a class="el" href="structdg_1_1_tensor_traits_3_01std_1_1vector_3_01_t_01_4_01_4.html#aeeedd2cd76ea007bb08088c751af8931">dg::TensorTraits&lt; std::vector&lt; T &gt; &gt;</a>
-, <a class="el" href="structdg_1_1_tensor_traits_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__arithmetic_3_382e8af1d8cb4a11a63fc6b26ba4b4b9.html#a05ea7d9d8da0527660a797720cd3cdf2">dg::TensorTraits&lt; T, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a>
+, <a class="el" href="structdg_1_1_tensor_traits_3_01_t_00_01std_1_1enable__if__t_3_01std_1_1is__arithmetic_3_01_t_01_4_1_1value_01_4_01_4.html#a4268c0bad6a61cff65c2dfc5bd87931d">dg::TensorTraits&lt; T, std::enable_if_t&lt; std::is_arithmetic&lt; T &gt;::value &gt; &gt;</a>
 , <a class="el" href="structdg_1_1_tensor_traits_3_01thrust_1_1device__vector_3_01_t_01_4_01_4.html#a425cfae9bd3c3828079304a95561f560">dg::TensorTraits&lt; thrust::device_vector&lt; T &gt; &gt;</a>
 , <a class="el" href="structdg_1_1_tensor_traits_3_01thrust_1_1host__vector_3_01_t_01_4_01_4.html#adfc7f9d1bb360b0406a43d0ed05dbf61">dg::TensorTraits&lt; thrust::host_vector&lt; T &gt; &gt;</a>
 , <a class="el" href="structdg_1_1_tensor_traits_3_01_view_3_01_thrust_vector_01_4_01_4.html#ad9057534c90d0dba4909417bd45aa2dc">dg::TensorTraits&lt; View&lt; ThrustVector &gt; &gt;</a>
@@ -188,8 +186,8 @@ $(document).ready(function(){initNavTree('functions_v.html',''); initResizable()
 : <a class="el" href="structdg_1_1_sparse_tensor.html#aa25dd4c34381d6ad8a89df93bffde44e">dg::SparseTensor&lt; container &gt;</a>
 </li>
 <li>variation()
-: <a class="el" href="classdg_1_1_gradient3d.html#ade926d5b62d8648cbaf2dda126562245">dg::Gradient3d&lt; Geometry, Matrix, Container &gt;</a>
-, <a class="el" href="classdg_1_1_gradient.html#a5f140e435b5174d711d7a931230de3d3">dg::Gradient&lt; Geometry, Matrix, Container &gt;</a>
+: <a class="el" href="classdg_1_1_elliptic3d.html#a5e802ddf7a20fcb63929093334876248">dg::Elliptic3d&lt; Geometry, Matrix, Container &gt;</a>
+, <a class="el" href="classdg_1_1_elliptic.html#a64475765b0c4bc4c8303c45a281b9551">dg::Elliptic&lt; Geometry, Matrix, Container &gt;</a>
 </li>
 <li>View()
 : <a class="el" href="structdg_1_1_view.html#a705f3dc64a44fe89672d5321eff587a9">dg::View&lt; ThrustVector &gt;</a>
@@ -203,7 +201,7 @@ $(document).ready(function(){initNavTree('functions_v.html',''); initResizable()
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Feb 16 2021 01:15:31 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Tue Feb 23 2021 15:27:10 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

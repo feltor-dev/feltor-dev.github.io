@@ -146,7 +146,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ab0d4fab5307f188d3ac9256e45e54646"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a communicator consisting of all processes with rank 0 in <code><a class="el" href="structdg_1_1_m_p_i___vector.html#a888b92389a999dbbe0f6151fa657d3b9" title="Returns a communicator of fixed size 128.">communicator_mod()</a></code>  <a href="structdg_1_1_m_p_i___vector.html#ab0d4fab5307f188d3ac9256e45e54646">More...</a><br /></td></tr>
 <tr class="separator:ab0d4fab5307f188d3ac9256e45e54646"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2442299b7209bebfc668cedb7ecce42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_m_p_i___vector.html#ac2442299b7209bebfc668cedb7ecce42">set_communicator</a> (MPI_Comm comm, MPI_Comm comm_mod, MPI_Comm comm_mod_reduce)</td></tr>
-<tr class="memdesc:ac2442299b7209bebfc668cedb7ecce42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the communicators with <code><a class="elRef" href="../../exblas/html/namespacedg_1_1exblas.html#a69e81c6d1be55e0ad3f58c791f711315">exblas::mpi_reduce_communicator</a></code>.  <a href="structdg_1_1_m_p_i___vector.html#ac2442299b7209bebfc668cedb7ecce42">More...</a><br /></td></tr>
+<tr class="memdesc:ac2442299b7209bebfc668cedb7ecce42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the communicators with <code><a class="elRef" href="../../exblas/html/namespacedg_1_1exblas.html#a69e81c6d1be55e0ad3f58c791f711315">dg::exblas::mpi_reduce_communicator</a></code>.  <a href="structdg_1_1_m_p_i___vector.html#ac2442299b7209bebfc668cedb7ecce42">More...</a><br /></td></tr>
 <tr class="separator:ac2442299b7209bebfc668cedb7ecce42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adec1137c3cdb2954fb55dfc180cb3ccd"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_m_p_i___vector.html#adec1137c3cdb2954fb55dfc180cb3ccd">size</a> () const</td></tr>
 <tr class="memdesc:adec1137c3cdb2954fb55dfc180cb3ccd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the size of the data object.  <a href="structdg_1_1_m_p_i___vector.html#adec1137c3cdb2954fb55dfc180cb3ccd">More...</a><br /></td></tr>
@@ -251,7 +251,7 @@ template&lt;class container &gt; </div>
 </div><div class="memdoc">
 
 <p>construct a vector </p>
-<p>calls <code><a class="elRef" href="../../exblas/html/namespacedg_1_1exblas.html#a69e81c6d1be55e0ad3f58c791f711315">exblas::mpi_reduce_communicator()</a></code> (collective call) </p><dl class="params"><dt>Parameters</dt><dd>
+<p>calls <code><a class="elRef" href="../../exblas/html/namespacedg_1_1exblas.html#a69e81c6d1be55e0ad3f58c791f711315">dg::exblas::mpi_reduce_communicator()</a></code> (collective call) </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>internal data copy </td></tr>
     <tr><td class="paramname">comm</td><td>MPI communicator (may not be <code>MPI_COMM_NULL</code>) </td></tr>
@@ -497,8 +497,11 @@ template&lt;class container &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Set the communicators with <code><a class="elRef" href="../../exblas/html/namespacedg_1_1exblas.html#a69e81c6d1be55e0ad3f58c791f711315">exblas::mpi_reduce_communicator</a></code>. </p>
-
+<p>Set the communicators with <code><a class="elRef" href="../../exblas/html/namespacedg_1_1exblas.html#a69e81c6d1be55e0ad3f58c791f711315">dg::exblas::mpi_reduce_communicator</a></code>. </p>
+<p>The reason why you can't just set the comm and need three parameters is that generating communicators involves communication, which you might want to avoid when you do it many times. So you have to call the function as </p><div class="fragment"><div class="line">MPI_Comm comm = MPI_COMM_WORLD, comm_mod, comm_mod_reduce;</div>
+<div class="line"><a class="codeRef" href="../../exblas/html/namespacedg_1_1exblas.html#a69e81c6d1be55e0ad3f58c791f711315">dg::exblas::mpi_reduce_communicator</a>( comm, &amp;comm_mod, &amp;comm_mod_reduce);</div>
+<div class="line">mpi_vector.set_communicator( comm, comm_mod, comm_mod_reduce);</div>
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="adec1137c3cdb2954fb55dfc180cb3ccd"></a>
@@ -572,11 +575,12 @@ template&lt;class container &gt; </div>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="anamespacedg_1_1exblas_html_a69e81c6d1be55e0ad3f58c791f711315"><div class="ttname"><a href="../../exblas/html/namespacedg_1_1exblas.html#a69e81c6d1be55e0ad3f58c791f711315">dg::exblas::mpi_reduce_communicator</a></div><div class="ttdeci">static void mpi_reduce_communicator(MPI_Comm comm, MPI_Comm *comm_mod, MPI_Comm *comm_mod_reduce)</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a></li>
-    <li class="footer">Generated on Tue Feb 16 2021 01:15:31 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Tue Feb 23 2021 15:27:09 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -12,7 +12,6 @@ var structdg_1_1a_real_m_p_i_topology2d =
     [ "display", "structdg_1_1a_real_m_p_i_topology2d.html#acf70744ff43dc2ffd25e30efe12404a7", null ],
     [ "dlt", "structdg_1_1a_real_m_p_i_topology2d.html#adb8b98dc3329d492dacd8a9ee69187f2", null ],
     [ "do_set", "structdg_1_1a_real_m_p_i_topology2d.html#ac9f3afd231b721b0e9cfc2c8ed38677e", null ],
-    [ "get_poloidal_comm", "structdg_1_1a_real_m_p_i_topology2d.html#a469964b569d5fdbc5916443793c6669c", null ],
     [ "global", "structdg_1_1a_real_m_p_i_topology2d.html#a1a390fc2ccb28c92b6de92a85ade42f8", null ],
     [ "global2localIdx", "structdg_1_1a_real_m_p_i_topology2d.html#a138e23ee39301d639555947518f62aa2", null ],
     [ "hx", "structdg_1_1a_real_m_p_i_topology2d.html#a4fa75dbe415f7040be4194a53d5ffeec", null ],

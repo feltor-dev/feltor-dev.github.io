@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
-<title>Discontinuous Galerkin Library: Class Members - Typedefs</title>
+<title>Discontinuous Galerkin Library: dg::divides Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -80,7 +80,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('functions_type_g.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('structdg_1_1divides.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -98,31 +98,77 @@ $(document).ready(function(){initNavTree('functions_type_g.html',''); initResiza
 </iframe>
 </div>
 
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="structdg_1_1divides-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">dg::divides Struct Reference<div class="ingroups"><a class="el" href="group__misc.html">Level 0: Miscellaneous additions</a> &raquo; <a class="el" href="group__blas1__helpers.html">Functions and functors for subroutine and evaluate</a> &raquo; <a class="el" href="group__variadic__evaluates.html">blas1::evaluate variadic functors</a></div></div>  </div>
+</div><!--header-->
 <div class="contents">
-&#160;
 
-<h3><a id="index_g"></a>- g -</h3><ul>
-<li>geometry_type
-: <a class="el" href="structdg_1_1_advection.html#af2f80ec6757ece00d4ff0d0da0011d9e">dg::Advection&lt; Geometry, Matrix, Container &gt;</a>
-, <a class="el" href="structdg_1_1_arakawa_x.html#abfa9569c00d0351a21b5560508775088">dg::ArakawaX&lt; Geometry, Matrix, Container &gt;</a>
-, <a class="el" href="classdg_1_1_elliptic3d.html#aebe3ab313fd2b27ca536cf8723382266">dg::Elliptic3d&lt; Geometry, Matrix, Container &gt;</a>
-, <a class="el" href="classdg_1_1_elliptic.html#a3f46a595035cc2ea721a290f69162211">dg::Elliptic&lt; Geometry, Matrix, Container &gt;</a>
-, <a class="el" href="classdg_1_1_gradient3d.html#a9c1222e4d338216544d279572b053da0">dg::Gradient3d&lt; Geometry, Matrix, Container &gt;</a>
-, <a class="el" href="classdg_1_1_gradient.html#aece2c12aef11165ad92021b5d896ba7d">dg::Gradient&lt; Geometry, Matrix, Container &gt;</a>
-, <a class="el" href="structdg_1_1_helmholtz2.html#a4a01cf2bcab924d334bc56b05232fff4">dg::Helmholtz2&lt; Geometry, Matrix, Container &gt;</a>
-, <a class="el" href="structdg_1_1_helmholtz3d.html#ab233563b3747661806dfe9cac10495a4">dg::Helmholtz3d&lt; Geometry, Matrix, Container &gt;</a>
-, <a class="el" href="structdg_1_1_helmholtz.html#aedf326be82d4f3a8fa1424820a6eadf6">dg::Helmholtz&lt; Geometry, Matrix, Container &gt;</a>
-, <a class="el" href="structdg_1_1_multigrid_c_g2d.html#a9f15aac16dcdb67f310e0af621b538c7">dg::MultigridCG2d&lt; Geometry, Matrix, Container &gt;</a>
-, <a class="el" href="structdg_1_1_poisson.html#a6f46f4565f5e67e358130e038c498e16">dg::Poisson&lt; Geometry, Matrix, Container &gt;</a>
-, <a class="el" href="classdg_1_1_refined_elliptic.html#a48c7728016f89a88e3d7ddbb3b15b0fb">dg::RefinedElliptic&lt; Geometry, IMatrix, Matrix, Container &gt;</a>
-</li>
+<p>\( y = x_1/x_2 \)  
+ <a href="structdg_1_1divides.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="subroutines_8h_source.html">subroutines.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ad574e67da0a20c2f411ec3c3029d6b48"><td class="memTemplParams" colspan="2">template&lt;class T1 , class T2 &gt; </td></tr>
+<tr class="memitem:ad574e67da0a20c2f411ec3c3029d6b48"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> T1&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1divides.html#ad574e67da0a20c2f411ec3c3029d6b48">operator()</a> (T1 x1, T2 x2) const</td></tr>
+<tr class="separator:ad574e67da0a20c2f411ec3c3029d6b48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>\( y = x_1/x_2 \) </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad574e67da0a20c2f411ec3c3029d6b48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad574e67da0a20c2f411ec3c3029d6b48">&#9670;&nbsp;</a></span>operator()()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T1 , class T2 &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05">DG_DEVICE</a> T1 dg::divides::operator() </td>
+          <td>(</td>
+          <td class="paramtype">T1&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T2&#160;</td>
+          <td class="paramname"><em>x2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="subroutines_8h_source.html">subroutines.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Feb 16 2021 01:15:31 for Discontinuous Galerkin Library by
+    <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1divides.html">divides</a></li>
+    <li class="footer">Generated on Tue Feb 23 2021 15:27:09 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -224,26 +224,26 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga56efb28b1175fb5a065dcbe81d678e54"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga56efb28b1175fb5a065dcbe81d678e54">dg::fMDMatrix</a> = <a class="el" href="structdg_1_1_row_col_dist_mat.html">dg::RowColDistMat</a>&lt; <a class="el" href="group__typedefs.html#gacab47883a25bf01af58765f606f88a22">dg::fDMatrix</a>, <a class="el" href="group__typedefs.html#ga4e62541a4ca94e1eac9c067a781c13cf">dg::fDCooMat</a>, <a class="el" href="group__typedefs.html#gad6239a57d8e92a0a068dff591891dee1">dg::fNNCD</a> &gt;</td></tr>
 <tr class="memdesc:ga56efb28b1175fb5a065dcbe81d678e54"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI Device Matrix for derivatives.  <a href="group__typedefs.html#ga56efb28b1175fb5a065dcbe81d678e54">More...</a><br /></td></tr>
 <tr class="separator:ga56efb28b1175fb5a065dcbe81d678e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga961227397d311ef3cb8153e95404d7f6"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
-<tr class="memitem:ga961227397d311ef3cb8153e95404d7f6"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga961227397d311ef3cb8153e95404d7f6">dg::tIHMatrix</a> = cusp::csr_matrix&lt; int, real_type, cusp::host_memory &gt;</td></tr>
-<tr class="separator:ga961227397d311ef3cb8153e95404d7f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacf18ef99d7d838d6de70bb3769427832"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
-<tr class="memitem:gacf18ef99d7d838d6de70bb3769427832"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gacf18ef99d7d838d6de70bb3769427832">dg::tIDMatrix</a> = cusp::csr_matrix&lt; int, real_type, cusp::device_memory &gt;</td></tr>
-<tr class="separator:gacf18ef99d7d838d6de70bb3769427832"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga188bea19979cfa0701387bfc5272be79"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga188bea19979cfa0701387bfc5272be79">dg::IHMatrix</a> = <a class="el" href="group__typedefs.html#ga961227397d311ef3cb8153e95404d7f6">tIHMatrix</a>&lt; double &gt;</td></tr>
-<tr class="separator:ga188bea19979cfa0701387bfc5272be79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaab6ed0cbb6bf7ea723c10da88cd4529f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gaab6ed0cbb6bf7ea723c10da88cd4529f">dg::IDMatrix</a> = <a class="el" href="group__typedefs.html#gacf18ef99d7d838d6de70bb3769427832">tIDMatrix</a>&lt; double &gt;</td></tr>
-<tr class="separator:gaab6ed0cbb6bf7ea723c10da88cd4529f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac256ed27ac25d8bc36b9f59c5a447c2a"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
-<tr class="memitem:gac256ed27ac25d8bc36b9f59c5a447c2a"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gac256ed27ac25d8bc36b9f59c5a447c2a">dg::tMIHMatrix</a> = <a class="el" href="structdg_1_1_m_p_i_dist_mat.html">MPIDistMat</a>&lt; <a class="el" href="group__typedefs.html#ga961227397d311ef3cb8153e95404d7f6">tIHMatrix</a>&lt; real_type &gt;, <a class="el" href="structdg_1_1_general_comm.html">GeneralComm</a>&lt; <a class="el" href="group__typedefs.html#ga6dcaf6113666c77a4bd46bf93a16ce4d">dg::iHVec</a>, thrust::host_vector&lt; real_type &gt; &gt; &gt;</td></tr>
-<tr class="separator:gac256ed27ac25d8bc36b9f59c5a447c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaad329dd7002fc14c75c853fbb5c6f8e9"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
-<tr class="memitem:gaad329dd7002fc14c75c853fbb5c6f8e9"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gaad329dd7002fc14c75c853fbb5c6f8e9">dg::tMIDMatrix</a> = <a class="el" href="structdg_1_1_m_p_i_dist_mat.html">MPIDistMat</a>&lt; <a class="el" href="group__typedefs.html#gacf18ef99d7d838d6de70bb3769427832">tIDMatrix</a>&lt; real_type &gt;, <a class="el" href="structdg_1_1_general_comm.html">GeneralComm</a>&lt; <a class="el" href="group__typedefs.html#ga47171b298736a17b3e4ff54ec561f028">dg::iDVec</a>, thrust::device_vector&lt; real_type &gt; &gt; &gt;</td></tr>
-<tr class="separator:gaad329dd7002fc14c75c853fbb5c6f8e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaaf14c451a536c94f30a0ac6b7150c2e2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gaaf14c451a536c94f30a0ac6b7150c2e2">dg::MIHMatrix</a> = <a class="el" href="group__typedefs.html#gac256ed27ac25d8bc36b9f59c5a447c2a">tMIHMatrix</a>&lt; double &gt;</td></tr>
-<tr class="separator:gaaf14c451a536c94f30a0ac6b7150c2e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga741f7ee9c9dd42c856046d37adc0f85c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga741f7ee9c9dd42c856046d37adc0f85c">dg::MIDMatrix</a> = <a class="el" href="group__typedefs.html#gaad329dd7002fc14c75c853fbb5c6f8e9">tMIDMatrix</a>&lt; double &gt;</td></tr>
-<tr class="separator:ga741f7ee9c9dd42c856046d37adc0f85c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga405d290c77c92765dcddb324522d8409"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga405d290c77c92765dcddb324522d8409"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga405d290c77c92765dcddb324522d8409">dg::IHMatrix_t</a> = cusp::csr_matrix&lt; int, real_type, cusp::host_memory &gt;</td></tr>
+<tr class="separator:ga405d290c77c92765dcddb324522d8409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3dac512c32a3798cd984737a170e91a1"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga3dac512c32a3798cd984737a170e91a1"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga3dac512c32a3798cd984737a170e91a1">dg::IDMatrix_t</a> = cusp::csr_matrix&lt; int, real_type, cusp::device_memory &gt;</td></tr>
+<tr class="separator:ga3dac512c32a3798cd984737a170e91a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3d74638bbcf620f19e3728a07ef1706d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga3d74638bbcf620f19e3728a07ef1706d">dg::IHMatrix</a> = <a class="el" href="group__typedefs.html#ga405d290c77c92765dcddb324522d8409">IHMatrix_t</a>&lt; double &gt;</td></tr>
+<tr class="separator:ga3d74638bbcf620f19e3728a07ef1706d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaec4df2a8ab65260aed0efeb6f5d115e4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gaec4df2a8ab65260aed0efeb6f5d115e4">dg::IDMatrix</a> = <a class="el" href="group__typedefs.html#ga3dac512c32a3798cd984737a170e91a1">IDMatrix_t</a>&lt; double &gt;</td></tr>
+<tr class="separator:gaec4df2a8ab65260aed0efeb6f5d115e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga383790a28074c1998e9abef496429b99"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga383790a28074c1998e9abef496429b99"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga383790a28074c1998e9abef496429b99">dg::MIHMatrix_t</a> = <a class="el" href="structdg_1_1_m_p_i_dist_mat.html">MPIDistMat</a>&lt; <a class="el" href="group__typedefs.html#ga405d290c77c92765dcddb324522d8409">IHMatrix_t</a>&lt; real_type &gt;, <a class="el" href="structdg_1_1_general_comm.html">GeneralComm</a>&lt; <a class="el" href="group__typedefs.html#ga6dcaf6113666c77a4bd46bf93a16ce4d">dg::iHVec</a>, thrust::host_vector&lt; real_type &gt; &gt; &gt;</td></tr>
+<tr class="separator:ga383790a28074c1998e9abef496429b99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4368b8e147b1e6b3b90080c3bd813530"><td class="memTemplParams" colspan="2">template&lt;class real_type &gt; </td></tr>
+<tr class="memitem:ga4368b8e147b1e6b3b90080c3bd813530"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga4368b8e147b1e6b3b90080c3bd813530">dg::MIDMatrix_t</a> = <a class="el" href="structdg_1_1_m_p_i_dist_mat.html">MPIDistMat</a>&lt; <a class="el" href="group__typedefs.html#ga3dac512c32a3798cd984737a170e91a1">IDMatrix_t</a>&lt; real_type &gt;, <a class="el" href="structdg_1_1_general_comm.html">GeneralComm</a>&lt; <a class="el" href="group__typedefs.html#ga47171b298736a17b3e4ff54ec561f028">dg::iDVec</a>, thrust::device_vector&lt; real_type &gt; &gt; &gt;</td></tr>
+<tr class="separator:ga4368b8e147b1e6b3b90080c3bd813530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6f954391920cbd9b9ec4c7b68fdb7682"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga6f954391920cbd9b9ec4c7b68fdb7682">dg::MIHMatrix</a> = <a class="el" href="group__typedefs.html#ga383790a28074c1998e9abef496429b99">MIHMatrix_t</a>&lt; double &gt;</td></tr>
+<tr class="separator:ga6f954391920cbd9b9ec4c7b68fdb7682"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabed94dc9f33454571b7a124fb3851091"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gabed94dc9f33454571b7a124fb3851091">dg::MIDMatrix</a> = <a class="el" href="group__typedefs.html#ga4368b8e147b1e6b3b90080c3bd813530">MIDMatrix_t</a>&lt; double &gt;</td></tr>
+<tr class="separator:gabed94dc9f33454571b7a124fb3851091"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Typedef Documentation</h2>
@@ -609,14 +609,30 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="gaab6ed0cbb6bf7ea723c10da88cd4529f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaab6ed0cbb6bf7ea723c10da88cd4529f">&#9670;&nbsp;</a></span>IDMatrix</h2>
+<a id="gaec4df2a8ab65260aed0efeb6f5d115e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaec4df2a8ab65260aed0efeb6f5d115e4">&#9670;&nbsp;</a></span>IDMatrix</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group__typedefs.html#gaab6ed0cbb6bf7ea723c10da88cd4529f">dg::IDMatrix</a> = typedef <a class="el" href="group__typedefs.html#gacf18ef99d7d838d6de70bb3769427832">tIDMatrix</a>&lt;double&gt;</td>
+          <td class="memname">using <a class="el" href="group__typedefs.html#gaec4df2a8ab65260aed0efeb6f5d115e4">dg::IDMatrix</a> = typedef <a class="el" href="group__typedefs.html#ga3dac512c32a3798cd984737a170e91a1">IDMatrix_t</a>&lt;double&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga3dac512c32a3798cd984737a170e91a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3dac512c32a3798cd984737a170e91a1">&#9670;&nbsp;</a></span>IDMatrix_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class real_type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__typedefs.html#ga3dac512c32a3798cd984737a170e91a1">dg::IDMatrix_t</a> = typedef cusp::csr_matrix&lt;int, real_type, cusp::device_memory&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -639,14 +655,30 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="ga188bea19979cfa0701387bfc5272be79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga188bea19979cfa0701387bfc5272be79">&#9670;&nbsp;</a></span>IHMatrix</h2>
+<a id="ga3d74638bbcf620f19e3728a07ef1706d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3d74638bbcf620f19e3728a07ef1706d">&#9670;&nbsp;</a></span>IHMatrix</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group__typedefs.html#ga188bea19979cfa0701387bfc5272be79">dg::IHMatrix</a> = typedef <a class="el" href="group__typedefs.html#ga961227397d311ef3cb8153e95404d7f6">tIHMatrix</a>&lt;double&gt;</td>
+          <td class="memname">using <a class="el" href="group__typedefs.html#ga3d74638bbcf620f19e3728a07ef1706d">dg::IHMatrix</a> = typedef <a class="el" href="group__typedefs.html#ga405d290c77c92765dcddb324522d8409">IHMatrix_t</a>&lt;double&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga405d290c77c92765dcddb324522d8409"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga405d290c77c92765dcddb324522d8409">&#9670;&nbsp;</a></span>IHMatrix_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class real_type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__typedefs.html#ga405d290c77c92765dcddb324522d8409">dg::IHMatrix_t</a> = typedef cusp::csr_matrix&lt;int, real_type, cusp::host_memory&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -769,28 +801,60 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="ga741f7ee9c9dd42c856046d37adc0f85c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga741f7ee9c9dd42c856046d37adc0f85c">&#9670;&nbsp;</a></span>MIDMatrix</h2>
+<a id="gabed94dc9f33454571b7a124fb3851091"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabed94dc9f33454571b7a124fb3851091">&#9670;&nbsp;</a></span>MIDMatrix</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group__typedefs.html#ga741f7ee9c9dd42c856046d37adc0f85c">dg::MIDMatrix</a> = typedef <a class="el" href="group__typedefs.html#gaad329dd7002fc14c75c853fbb5c6f8e9">tMIDMatrix</a>&lt;double&gt;</td>
+          <td class="memname">using <a class="el" href="group__typedefs.html#gabed94dc9f33454571b7a124fb3851091">dg::MIDMatrix</a> = typedef <a class="el" href="group__typedefs.html#ga4368b8e147b1e6b3b90080c3bd813530">MIDMatrix_t</a>&lt;double&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="gaaf14c451a536c94f30a0ac6b7150c2e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaaf14c451a536c94f30a0ac6b7150c2e2">&#9670;&nbsp;</a></span>MIHMatrix</h2>
+<a id="ga4368b8e147b1e6b3b90080c3bd813530"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4368b8e147b1e6b3b90080c3bd813530">&#9670;&nbsp;</a></span>MIDMatrix_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class real_type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__typedefs.html#ga4368b8e147b1e6b3b90080c3bd813530">dg::MIDMatrix_t</a> = typedef <a class="el" href="structdg_1_1_m_p_i_dist_mat.html">MPIDistMat</a>&lt; <a class="el" href="group__typedefs.html#ga3dac512c32a3798cd984737a170e91a1">IDMatrix_t</a>&lt;real_type&gt;, <a class="el" href="structdg_1_1_general_comm.html">GeneralComm</a>&lt; <a class="el" href="group__typedefs.html#ga47171b298736a17b3e4ff54ec561f028">dg::iDVec</a>, thrust::device_vector&lt;real_type&gt; &gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga6f954391920cbd9b9ec4c7b68fdb7682"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6f954391920cbd9b9ec4c7b68fdb7682">&#9670;&nbsp;</a></span>MIHMatrix</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group__typedefs.html#gaaf14c451a536c94f30a0ac6b7150c2e2">dg::MIHMatrix</a> = typedef <a class="el" href="group__typedefs.html#gac256ed27ac25d8bc36b9f59c5a447c2a">tMIHMatrix</a>&lt;double&gt;</td>
+          <td class="memname">using <a class="el" href="group__typedefs.html#ga6f954391920cbd9b9ec4c7b68fdb7682">dg::MIHMatrix</a> = typedef <a class="el" href="group__typedefs.html#ga383790a28074c1998e9abef496429b99">MIHMatrix_t</a>&lt;double&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga383790a28074c1998e9abef496429b99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga383790a28074c1998e9abef496429b99">&#9670;&nbsp;</a></span>MIHMatrix_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class real_type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__typedefs.html#ga383790a28074c1998e9abef496429b99">dg::MIHMatrix_t</a> = typedef <a class="el" href="structdg_1_1_m_p_i_dist_mat.html">MPIDistMat</a>&lt; <a class="el" href="group__typedefs.html#ga405d290c77c92765dcddb324522d8409">IHMatrix_t</a>&lt;real_type&gt;, <a class="el" href="structdg_1_1_general_comm.html">GeneralComm</a>&lt; <a class="el" href="group__typedefs.html#ga6dcaf6113666c77a4bd46bf93a16ce4d">dg::iHVec</a>, thrust::host_vector&lt;real_type&gt; &gt; &gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -833,76 +897,12 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="gacf18ef99d7d838d6de70bb3769427832"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacf18ef99d7d838d6de70bb3769427832">&#9670;&nbsp;</a></span>tIDMatrix</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class real_type &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="group__typedefs.html#gacf18ef99d7d838d6de70bb3769427832">dg::tIDMatrix</a> = typedef cusp::csr_matrix&lt;int, real_type, cusp::device_memory&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga961227397d311ef3cb8153e95404d7f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga961227397d311ef3cb8153e95404d7f6">&#9670;&nbsp;</a></span>tIHMatrix</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class real_type &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="group__typedefs.html#ga961227397d311ef3cb8153e95404d7f6">dg::tIHMatrix</a> = typedef cusp::csr_matrix&lt;int, real_type, cusp::host_memory&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gaad329dd7002fc14c75c853fbb5c6f8e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaad329dd7002fc14c75c853fbb5c6f8e9">&#9670;&nbsp;</a></span>tMIDMatrix</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class real_type &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="group__typedefs.html#gaad329dd7002fc14c75c853fbb5c6f8e9">dg::tMIDMatrix</a> = typedef <a class="el" href="structdg_1_1_m_p_i_dist_mat.html">MPIDistMat</a>&lt; <a class="el" href="group__typedefs.html#gacf18ef99d7d838d6de70bb3769427832">tIDMatrix</a>&lt;real_type&gt;, <a class="el" href="structdg_1_1_general_comm.html">GeneralComm</a>&lt; <a class="el" href="group__typedefs.html#ga47171b298736a17b3e4ff54ec561f028">dg::iDVec</a>, thrust::device_vector&lt;real_type&gt; &gt; &gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gac256ed27ac25d8bc36b9f59c5a447c2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac256ed27ac25d8bc36b9f59c5a447c2a">&#9670;&nbsp;</a></span>tMIHMatrix</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class real_type &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="group__typedefs.html#gac256ed27ac25d8bc36b9f59c5a447c2a">dg::tMIHMatrix</a> = typedef <a class="el" href="structdg_1_1_m_p_i_dist_mat.html">MPIDistMat</a>&lt; <a class="el" href="group__typedefs.html#ga961227397d311ef3cb8153e95404d7f6">tIHMatrix</a>&lt;real_type&gt;, <a class="el" href="structdg_1_1_general_comm.html">GeneralComm</a>&lt; <a class="el" href="group__typedefs.html#ga6dcaf6113666c77a4bd46bf93a16ce4d">dg::iHVec</a>, thrust::host_vector&lt;real_type&gt; &gt; &gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Feb 16 2021 01:15:31 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Tue Feb 23 2021 15:27:09 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -106,5 +106,5 @@ var group__mpi__structures =
       [ "row_dist", "group__mpi__structures.html#gga521b6d6524a6d391c746ddc9a1ad5571a99ba8c51e9d19b4535a343c4b471a562", null ],
       [ "col_dist", "group__mpi__structures.html#gga521b6d6524a6d391c746ddc9a1ad5571a4bdc977f2b0fcd3ad828d30c7fd3fb90", null ]
     ] ],
-    [ "convert", "group__mpi__structures.html#gaf94a6a2fb51d6f795e0e9c81ae03fcdb", null ]
+    [ "convert", "group__mpi__structures.html#ga953862ae795bd62f785d6cdcd669d6c9", null ]
 ];

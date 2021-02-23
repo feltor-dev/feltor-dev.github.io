@@ -175,8 +175,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aae6c74dc4b243d6506cceaeb9151085f inherit pub_methods_structdg_1_1a_real_m_p_i_topology2d"><td class="memItemLeft" align="right" valign="top">MPI_Comm&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_real_m_p_i_topology2d.html#aae6c74dc4b243d6506cceaeb9151085f">communicator</a> () const</td></tr>
 <tr class="memdesc:aae6c74dc4b243d6506cceaeb9151085f inherit pub_methods_structdg_1_1a_real_m_p_i_topology2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return mpi cartesian communicator that is used in this grid.  <a href="structdg_1_1a_real_m_p_i_topology2d.html#aae6c74dc4b243d6506cceaeb9151085f">More...</a><br /></td></tr>
 <tr class="separator:aae6c74dc4b243d6506cceaeb9151085f inherit pub_methods_structdg_1_1a_real_m_p_i_topology2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a469964b569d5fdbc5916443793c6669c inherit pub_methods_structdg_1_1a_real_m_p_i_topology2d"><td class="memItemLeft" align="right" valign="top">MPI_Comm&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_real_m_p_i_topology2d.html#a469964b569d5fdbc5916443793c6669c">get_poloidal_comm</a> () const</td></tr>
-<tr class="separator:a469964b569d5fdbc5916443793c6669c inherit pub_methods_structdg_1_1a_real_m_p_i_topology2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb8b98dc3329d492dacd8a9ee69187f2 inherit pub_methods_structdg_1_1a_real_m_p_i_topology2d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdg_1_1_d_l_t.html">DLT</a>&lt; real_type &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_real_m_p_i_topology2d.html#adb8b98dc3329d492dacd8a9ee69187f2">dlt</a> () const</td></tr>
 <tr class="memdesc:adb8b98dc3329d492dacd8a9ee69187f2 inherit pub_methods_structdg_1_1a_real_m_p_i_topology2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Discrete Legendre Transformation.  <a href="structdg_1_1a_real_m_p_i_topology2d.html#adb8b98dc3329d492dacd8a9ee69187f2">More...</a><br /></td></tr>
 <tr class="separator:adb8b98dc3329d492dacd8a9ee69187f2 inherit pub_methods_structdg_1_1a_real_m_p_i_topology2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -493,7 +491,7 @@ template&lt;class real_type &gt; </div>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astructdg_1_1_real_m_p_i_grid2d_html"><div class="ttname"><a href="structdg_1_1_real_m_p_i_grid2d.html">dg::RealMPIGrid2d</a></div><div class="ttdoc">The simplest implementation of aRealMPITopology2d.</div><div class="ttdef"><b>Definition:</b> mpi_grid.h:683</div></div>
+<div class="ttc" id="astructdg_1_1_real_m_p_i_grid2d_html"><div class="ttname"><a href="structdg_1_1_real_m_p_i_grid2d.html">dg::RealMPIGrid2d</a></div><div class="ttdoc">The simplest implementation of aRealMPITopology2d.</div><div class="ttdef"><b>Definition:</b> mpi_grid.h:677</div></div>
 <div class="ttc" id="agroup__creation_html_ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6"><div class="ttname"><a href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">dg::coo2d::x</a></div><div class="ttdeci">@ x</div><div class="ttdoc">x direction</div></div>
 <div class="ttc" id="agroup__blas2_html_gaaafba91956e948b0ea53f30889a3c20d"><div class="ttname"><a href="group__blas2.html#gaaafba91956e948b0ea53f30889a3c20d">dg::blas2::dot</a></div><div class="ttdeci">get_value_type&lt; MatrixType &gt; dot(const ContainerType1 &amp;x, const MatrixType &amp;m, const ContainerType2 &amp;y)</div><div class="ttdoc">; Binary reproducible general dot product</div><div class="ttdef"><b>Definition:</b> blas2.h:84</div></div>
 <div class="ttc" id="agroup__evaluation_html_ga0d2da37399e38acb2b243f568d5e7443"><div class="ttname"><a href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">dg::evaluate</a></div><div class="ttdeci">thrust::host_vector&lt; real_type &gt; evaluate(UnaryOp f, const RealGrid1d&lt; real_type &gt; &amp;g)</div><div class="ttdoc">Evaluate a 1d function on grid coordinates.</div><div class="ttdef"><b>Definition:</b> evaluation.h:67</div></div>
@@ -505,7 +503,7 @@ template&lt;class real_type &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_real_m_p_i_grid2d.html">RealMPIGrid2d</a></li>
-    <li class="footer">Generated on Tue Feb 16 2021 01:15:31 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Tue Feb 23 2021 15:27:09 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -1,9 +1,9 @@
 var interpolation_8h =
 [
-    [ "IDMatrix", "interpolation_8h.html#gaab6ed0cbb6bf7ea723c10da88cd4529f", null ],
-    [ "IHMatrix", "interpolation_8h.html#ga188bea19979cfa0701387bfc5272be79", null ],
-    [ "tIDMatrix", "interpolation_8h.html#gacf18ef99d7d838d6de70bb3769427832", null ],
-    [ "tIHMatrix", "interpolation_8h.html#ga961227397d311ef3cb8153e95404d7f6", null ],
+    [ "IDMatrix", "interpolation_8h.html#gaec4df2a8ab65260aed0efeb6f5d115e4", null ],
+    [ "IDMatrix_t", "interpolation_8h.html#ga3dac512c32a3798cd984737a170e91a1", null ],
+    [ "IHMatrix", "interpolation_8h.html#ga3d74638bbcf620f19e3728a07ef1706d", null ],
+    [ "IHMatrix_t", "interpolation_8h.html#ga405d290c77c92765dcddb324522d8409", null ],
     [ "forward_transform", "interpolation_8h.html#ga14dec9882994e915b8e43fce95b2bee6", null ],
     [ "interpolate", "interpolation_8h.html#gad1467be84fa682c8b300cd39db0492d9", null ],
     [ "interpolate", "interpolation_8h.html#gaa9fc6abad143444993021781bbed9b48", null ],

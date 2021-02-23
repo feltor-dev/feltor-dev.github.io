@@ -149,7 +149,7 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:a2fb3ddccae442119174aba175b37ffd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">has the same size as cols_idx and contains indices into the data array, i.e. the block number  <a href="structdg_1_1_ell_sparse_block_mat.html#a2fb3ddccae442119174aba175b37ffd2">More...</a><br /></td></tr>
 <tr class="separator:a2fb3ddccae442119174aba175b37ffd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad68d6b276dba3d835c812de1590f198"><td class="memItemLeft" align="right" valign="top">thrust::host_vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_ell_sparse_block_mat.html#aad68d6b276dba3d835c812de1590f198">right_range</a></td></tr>
-<tr class="memdesc:aad68d6b276dba3d835c812de1590f198"><td class="mdescLeft">&#160;</td><td class="mdescRight">range  <a href="structdg_1_1_ell_sparse_block_mat.html#aad68d6b276dba3d835c812de1590f198">More...</a><br /></td></tr>
+<tr class="memdesc:aad68d6b276dba3d835c812de1590f198"><td class="mdescLeft">&#160;</td><td class="mdescRight">range, [0,right_size] per default (can be used to apply the matrix to only part of the right rows  <a href="structdg_1_1_ell_sparse_block_mat.html#aad68d6b276dba3d835c812de1590f198">More...</a><br /></td></tr>
 <tr class="separator:aad68d6b276dba3d835c812de1590f198"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bf43725ff2db10da6ddda7508ff7b27"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_ell_sparse_block_mat.html#a4bf43725ff2db10da6ddda7508ff7b27">num_rows</a></td></tr>
 <tr class="memdesc:a4bf43725ff2db10da6ddda7508ff7b27"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of block rows, each row contains blocks  <a href="structdg_1_1_ell_sparse_block_mat.html#a4bf43725ff2db10da6ddda7508ff7b27">More...</a><br /></td></tr>
@@ -176,7 +176,10 @@ struct dg::EllSparseBlockMat&lt; value_type &gt;</h3>
 
 <p>Ell Sparse Block Matrix format. </p>
 <p>The basis of this format is the ell sparse matrix format, i.e. a format where the number of entries per line is fixed. The clue is that instead of a values array we use an index array with indices into a data array that contains the actual blocks. This safes storage if the number of nonrecurrent blocks is small. The indices and blocks are those of a one-dimensional problem. When we want to apply the matrix to a multidimensional vector we can multiply it by Kronecker deltas of the form </p><p class="formulaDsp">
-\[ 1\otimes M \otimes 1\]
+\[ M = \begin{pmatrix} B &amp; C &amp; &amp; &amp; &amp; \\ A &amp; B &amp; C &amp; &amp; &amp; \\ &amp; A &amp; B &amp; C &amp; &amp; \\ &amp; &amp; A &amp; B &amp; C &amp; \\ &amp; &amp; &amp;...&amp; &amp; \end{pmatrix}\rightarrow \text{data} = ( A, B, C, 0)\quad \text{cols_idx} = ( 0,0,1,0,1,2,1,2,3,2,3,4,...) \quad \text{data_idx} = ( 3,1,2,0,1,2,0,1,2,0,1,2,...)\]
+</p>
+<p> where \(A,\ B,\ C,\ 0\) are \(n\times n\) block matrices. The 0 is used for padding in order to keep the number of elements per line constant as 3 (in this example <code>blocks_per_line=3</code>, <code>num_different_blocks=4</code>). The matrix M has <code>num_rows</code> rows and <code>num_cols</code> columns of blocks. </p><p class="formulaDsp">
+\[ 1_\mathrm{left}\otimes M \otimes 1_\mathrm{right}\]
 </p>
 <p> where \( 1\) are diagonal matrices of variable size and \( M\) is our one-dimensional matrix. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -631,7 +634,7 @@ template&lt;class value_type &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>range </p>
+<p>range, [0,right_size] per default (can be used to apply the matrix to only part of the right rows </p>
 
 </div>
 </div>
@@ -662,7 +665,7 @@ template&lt;class value_type &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_ell_sparse_block_mat.html">EllSparseBlockMat</a></li>
-    <li class="footer">Generated on Tue Feb 16 2021 01:15:31 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Tue Feb 23 2021 15:27:09 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

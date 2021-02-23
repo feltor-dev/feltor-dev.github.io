@@ -53,10 +53,10 @@ var group__dispatch =
       [ "tensor_category", "structdg_1_1_tensor_traits_3_01cusp_1_1hyb__matrix_3_01_i_00_01_v_00_01_m_01_4_01_4.html#ab9899994cfd3bc2d7ef9efa964a603bc", null ],
       [ "value_type", "structdg_1_1_tensor_traits_3_01cusp_1_1hyb__matrix_3_01_i_00_01_v_00_01_m_01_4_01_4.html#a7078c5fc82682c003a5a2d337a34caf6", null ]
     ] ],
-    [ "TensorTraits< T, typename std::enable_if< std::is_arithmetic< T >::value >::type >", "structdg_1_1_tensor_traits_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__arithmetic_3_382e8af1d8cb4a11a63fc6b26ba4b4b9.html", [
-      [ "execution_policy", "structdg_1_1_tensor_traits_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__arithmetic_3_382e8af1d8cb4a11a63fc6b26ba4b4b9.html#aaf3351a23bd1673600f4ba2518cdb744", null ],
-      [ "tensor_category", "structdg_1_1_tensor_traits_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__arithmetic_3_382e8af1d8cb4a11a63fc6b26ba4b4b9.html#a05cb07242a6b2ce41f3a30d3fd1a59be", null ],
-      [ "value_type", "structdg_1_1_tensor_traits_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__arithmetic_3_382e8af1d8cb4a11a63fc6b26ba4b4b9.html#a05ea7d9d8da0527660a797720cd3cdf2", null ]
+    [ "TensorTraits< T, std::enable_if_t< std::is_arithmetic< T >::value > >", "structdg_1_1_tensor_traits_3_01_t_00_01std_1_1enable__if__t_3_01std_1_1is__arithmetic_3_01_t_01_4_1_1value_01_4_01_4.html", [
+      [ "execution_policy", "structdg_1_1_tensor_traits_3_01_t_00_01std_1_1enable__if__t_3_01std_1_1is__arithmetic_3_01_t_01_4_1_1value_01_4_01_4.html#a30abaf4d396a2a06d9f2fb51361a722f", null ],
+      [ "tensor_category", "structdg_1_1_tensor_traits_3_01_t_00_01std_1_1enable__if__t_3_01std_1_1is__arithmetic_3_01_t_01_4_1_1value_01_4_01_4.html#adb02ad40a2d16d2308416fb2c669ec15", null ],
+      [ "value_type", "structdg_1_1_tensor_traits_3_01_t_00_01std_1_1enable__if__t_3_01std_1_1is__arithmetic_3_01_t_01_4_1_1value_01_4_01_4.html#a4268c0bad6a61cff65c2dfc5bd87931d", null ]
     ] ],
     [ "TensorTraits< std::vector< T > >", "structdg_1_1_tensor_traits_3_01std_1_1vector_3_01_t_01_4_01_4.html", [
       [ "execution_policy", "structdg_1_1_tensor_traits_3_01std_1_1vector_3_01_t_01_4_01_4.html#a27a7a704c81e960724333395525942bc", null ],
@@ -84,7 +84,7 @@ var group__dispatch =
       [ "tensor_category", "structdg_1_1_tensor_traits_3_01_view_3_01_thrust_vector_01_4_01_4.html#adf395c874ce97a7fa7645ccc2ee3f85b", null ],
       [ "value_type", "structdg_1_1_tensor_traits_3_01_view_3_01_thrust_vector_01_4_01_4.html#ad9057534c90d0dba4909417bd45aa2dc", null ]
     ] ],
-    [ "get_execution_policy", "group__dispatch.html#ga44c50a61470b8e2014f808eb34b5ebfa", null ],
-    [ "get_tensor_category", "group__dispatch.html#ga4595015c82eb33ba426921de5d2f1be8", null ],
-    [ "get_value_type", "group__dispatch.html#gaed462ca0faf1fc38350080acc788f533", null ]
+    [ "get_execution_policy", "group__dispatch.html#gae65edcfb79d3321ac1e294fb29f3ae23", null ],
+    [ "get_tensor_category", "group__dispatch.html#ga1cb60b9e327ece9ee05084fe3c75f051", null ],
+    [ "get_value_type", "group__dispatch.html#ga6cca187a5557469a96917dc4687a22d3", null ]
 ];

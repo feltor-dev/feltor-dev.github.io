@@ -173,8 +173,12 @@ Public Attributes</h2></td></tr>
 struct dg::CooSparseBlockMat&lt; value_type &gt;</h3>
 
 <p>Coo Sparse Block Matrix format. </p>
-<p>The basis of this format is the well-known coordinate sparse matrix format. The clue is that instead of a values array we use an index array with indices into a data array that contains the actual blocks. This safes storage if the number of nonrecurrent blocks is small. The indices and blocks are those of a one-dimensional problem. When we want to apply the matrix to a multidimensional vector we can multiply it by Kronecker deltas of the form </p><p class="formulaDsp">
-\[ 1\otimes M \otimes 1\]
+<p>The basis of this format is the well-known coordinate sparse matrix format. The clue is that instead of a values array we use an index array with indices into a data array that contains the actual blocks. This safes storage if the number of nonrecurrent blocks is small. </p><p class="formulaDsp">
+\[ M = \begin{pmatrix} A &amp; &amp; B&amp; &amp; &amp; \\ &amp; C &amp; &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp; \\ &amp; A &amp; &amp; &amp; B &amp; C \end{pmatrix} \rightarrow \text{data}=(A,B,C)\quad \text{rows_idx} = ( 0,0,1,3,3,3) \quad\text{cols_idx} = (0,2,1,1,4,5) \]
+</p>
+<p> where \(A,\ B,\ C,\ 0\) are \(n\times n\) block matrices. The matrix M in this example has <code>num_rows=4</code>, <code>num_cols=6</code>, <code>num_entries=6</code>.</p>
+<p>The indices and blocks are those of a one-dimensional problem. When we want to apply the matrix to a multidimensional vector we can multiply it by Kronecker deltas of the form </p><p class="formulaDsp">
+\[ 1_\mathrm{left}\otimes M \otimes 1_\mathrm{right}\]
 </p>
 <p> where \( 1\) are diagonal matrices of variable size and \( M\) is our one-dimensional matrix. </p><dl class="section note"><dt>Note</dt><dd>This matrix type is used for the computation of boundary points in an mpi - distributed <code><a class="el" href="structdg_1_1_ell_sparse_block_mat.html" title="Ell Sparse Block Matrix format.">EllSparseBlockMat</a></code> </dd></dl>
 <dl class="section attention"><dt>Attention</dt><dd>We assume that the input vector in <code>symv</code> has the layout that is given by the <a class="el" href="structdg_1_1_buffer.html" title="a manager class that invokes the copy constructor on the managed ptr when copied (deep copy)">Buffer</a> vectors in <code><a class="el" href="structdg_1_1_nearest_neighbor_comm.html" title="Communicator for asynchronous nearest neighbor communication.">dg::NearestNeighborComm</a></code> </dd></dl>
@@ -681,7 +685,7 @@ template&lt;class value_type &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html">CooSparseBlockMat</a></li>
-    <li class="footer">Generated on Tue Feb 16 2021 01:15:31 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Tue Feb 23 2021 15:27:09 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

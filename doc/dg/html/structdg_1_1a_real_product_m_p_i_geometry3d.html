@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('structdg_1_1a_real_product_m_p_i_geome
 </div><!--header-->
 <div class="contents">
 
-<p>a 3d product space MPI Geometry  
+<p>A 3d product space Geometry \( g_{2d} \otimes g_{1d}\).  
  <a href="structdg_1_1a_real_product_m_p_i_geometry3d.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="mpi__base_8h_source.html">mpi_base.h</a>&gt;</code></p>
@@ -117,7 +117,7 @@ Inheritance diagram for dg::aRealProductMPIGeometry3d&lt; real_type &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="structdg_1_1a_real_product_m_p_i_geometry3d__inherit__graph.png" border="0" usemap="#dg_1_1a_real_product_m_p_i_geometry3d_3_01real__type_01_4_inherit__map" alt="Inheritance graph"/></div>
 <map name="dg_1_1a_real_product_m_p_i_geometry3d_3_01real__type_01_4_inherit__map" id="dg_1_1a_real_product_m_p_i_geometry3d_3_01real__type_01_4_inherit__map">
-<area shape="rect" title="a 3d product space MPI Geometry" alt="" coords="105,184,342,225"/>
+<area shape="rect" title="A 3d product space Geometry ." alt="" coords="105,184,342,225"/>
 <area shape="rect" href="structdg_1_1_real_cartesian_m_p_i_grid3d.html" title="The mpi version of RealCartesianGrid3d." alt="" coords="5,273,209,315"/>
 <area shape="rect" href="structdg_1_1_real_cylindrical_m_p_i_grid3d.html" title="the mpi version of RealCylindricalGrid3d" alt="" coords="234,273,445,315"/>
 <area shape="rect" href="structdg_1_1a_real_m_p_i_geometry3d.html" title="This is the abstract interface class for a three&#45;dimensional MPIGeometry." alt="" coords="129,95,317,136"/>
@@ -141,7 +141,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ae7d5506a958da081c6f88b4a909488aa inherit pub_methods_structdg_1_1a_real_m_p_i_geometry3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Jacobian of the coordinate transformation from physical to computational space.  <a href="structdg_1_1a_real_m_p_i_geometry3d.html#ae7d5506a958da081c6f88b4a909488aa">More...</a><br /></td></tr>
 <tr class="separator:ae7d5506a958da081c6f88b4a909488aa inherit pub_methods_structdg_1_1a_real_m_p_i_geometry3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1955ecb721e2c7355ce5dc82473cf15 inherit pub_methods_structdg_1_1a_real_m_p_i_geometry3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; <a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt; thrust::host_vector&lt; real_type &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_real_m_p_i_geometry3d.html#aa1955ecb721e2c7355ce5dc82473cf15">metric</a> () const</td></tr>
-<tr class="memdesc:aa1955ecb721e2c7355ce5dc82473cf15 inherit pub_methods_structdg_1_1a_real_m_p_i_geometry3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The (contravariant) metric tensor of the coordinate system.  <a href="structdg_1_1a_real_m_p_i_geometry3d.html#aa1955ecb721e2c7355ce5dc82473cf15">More...</a><br /></td></tr>
+<tr class="memdesc:aa1955ecb721e2c7355ce5dc82473cf15 inherit pub_methods_structdg_1_1a_real_m_p_i_geometry3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The (inverse) metric tensor of the coordinate system.  <a href="structdg_1_1a_real_m_p_i_geometry3d.html#aa1955ecb721e2c7355ce5dc82473cf15">More...</a><br /></td></tr>
 <tr class="separator:aa1955ecb721e2c7355ce5dc82473cf15 inherit pub_methods_structdg_1_1a_real_m_p_i_geometry3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ccce226f291046a7263564fbce8f2af inherit pub_methods_structdg_1_1a_real_m_p_i_geometry3d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt; thrust::host_vector&lt; real_type &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_real_m_p_i_geometry3d.html#a1ccce226f291046a7263564fbce8f2af">map</a> () const</td></tr>
 <tr class="memdesc:a1ccce226f291046a7263564fbce8f2af inherit pub_methods_structdg_1_1a_real_m_p_i_geometry3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The coordinate map from computational to physical space.  <a href="structdg_1_1a_real_m_p_i_geometry3d.html#a1ccce226f291046a7263564fbce8f2af">More...</a><br /></td></tr>
@@ -290,7 +290,16 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><h3>template&lt;class real_type&gt;<br />
 struct dg::aRealProductMPIGeometry3d&lt; real_type &gt;</h3>
 
-<p>a 3d product space MPI Geometry </p>
+<p>A 3d product space Geometry \( g_{2d} \otimes g_{1d}\). </p>
+<p>This class represents a product space of a 2d grid (the "perp_grid") and a 1d grid (the "parallel_grid"). The special feature of the product space is that the metric is simply </p><p class="formulaDsp">
+\[ g = \begin{pmatrix} (g_{2d}(x,y)) &amp; 0 \\ 0 &amp; g_{1d}(x,y) \end{pmatrix} \]
+</p>
+<p> That is the metric elements do not depend on the third coordinate. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">real_type</td><td>The value type of the grid </td></tr>
+  </table>
+  </dd>
+</dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5fd7473388956168ab707b66b66b7051"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5fd7473388956168ab707b66b66b7051">&#9670;&nbsp;</a></span>~aRealProductMPIGeometry3d()</h2>
@@ -466,7 +475,7 @@ template&lt;class real_type &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1a_real_product_m_p_i_geometry3d.html">aRealProductMPIGeometry3d</a></li>
-    <li class="footer">Generated on Tue Feb 16 2021 01:15:31 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Tue Feb 23 2021 15:27:09 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

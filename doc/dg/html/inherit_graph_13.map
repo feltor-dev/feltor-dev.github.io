@@ -2,7 +2,7 @@
 <area shape="rect" id="node1" href="$structdg_1_1a_real_m_p_i_topology3d.html" title="3D MPI Grid class" alt="" coords="5,72,187,113"/>
 <area shape="rect" id="node2" href="$structdg_1_1a_real_m_p_i_geometry3d.html" title="This is the abstract interface class for a three&#45;dimensional MPIGeometry." alt="" coords="235,39,423,80"/>
 <area shape="rect" id="node6" href="$structdg_1_1_real_m_p_i_grid3d.html" title="The simplest implementation of aRealMPITopology3d." alt="" coords="252,104,405,145"/>
-<area shape="rect" id="node3" href="$structdg_1_1a_real_product_m_p_i_geometry3d.html" title="a 3d product space MPI Geometry" alt="" coords="471,39,708,80"/>
+<area shape="rect" id="node3" href="$structdg_1_1a_real_product_m_p_i_geometry3d.html" title="A 3d product space Geometry ." alt="" coords="471,39,708,80"/>
 <area shape="rect" id="node4" href="$structdg_1_1_real_cartesian_m_p_i_grid3d.html" title="The mpi version of RealCartesianGrid3d." alt="" coords="759,5,963,47"/>
 <area shape="rect" id="node5" href="$structdg_1_1_real_cylindrical_m_p_i_grid3d.html" title="the mpi version of RealCylindricalGrid3d" alt="" coords="756,71,967,112"/>
 </map>

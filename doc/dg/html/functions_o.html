@@ -138,6 +138,7 @@ $(document).ready(function(){initNavTree('functions_o.html',''); initResizable()
 , <a class="el" href="structdg_1_1_cos_x_cos_y.html#a7467eab4c9867948b447d544766b5752">dg::CosXCosY</a>
 , <a class="el" href="structdg_1_1_cos_y.html#a2804431f969b2f3e3af2820e0ea210c3">dg::CosY</a>
 , <a class="el" href="structdg_1_1_distance.html#a80e37b2d4f125d1021cb8330fcb204c3">dg::Distance</a>
+, <a class="el" href="structdg_1_1divides.html#ad574e67da0a20c2f411ec3c3029d6b48">dg::divides</a>
 , <a class="el" href="structdg_1_1divides__equals.html#a443fe8fe0bd1c0892d51f62a0ba187f1">dg::divides_equals</a>
 , <a class="el" href="structdg_1_1_d_polynomial_heaviside.html#a36e78a8810bfb543fcc5b378ce0efead">dg::DPolynomialHeaviside</a>
 , <a class="el" href="classdg_1_1_elliptic.html#a8fac01ba417f36c531b472b9fbf2903d">dg::Elliptic&lt; Geometry, Matrix, Container &gt;</a>
@@ -185,7 +186,7 @@ $(document).ready(function(){initNavTree('functions_o.html',''); initResizable()
 , <a class="el" href="structdg_1_1_p_l_u_s.html#aa11a1e9dd44eff890f79a84e69886ece">dg::PLUS&lt; T &gt;</a>
 , <a class="el" href="structdg_1_1plus__equals.html#a80a2d24a7e2147faeecf24601c8af310">dg::plus_equals</a>
 , <a class="el" href="structdg_1_1_pointwise_divide.html#a351be2cb94ff0daad54551c9f65cc26c">dg::PointwiseDivide&lt; T &gt;</a>
-, <a class="el" href="structdg_1_1_pointwise_dot.html#a79384fa96b63144ec7411afbba684752">dg::PointwiseDot&lt; T &gt;</a>
+, <a class="el" href="structdg_1_1_pointwise_dot.html#afdab2a115ba5e76ca07d4e1844315896">dg::PointwiseDot&lt; T &gt;</a>
 , <a class="el" href="structdg_1_1_poisson.html#ad60e506911c9c3a5c5b4fb26ed7e13ba">dg::Poisson&lt; Geometry, Matrix, Container &gt;</a>
 , <a class="el" href="structdg_1_1_polynomial_heaviside.html#a55ead336198a70f3e8b12d410ae9d018">dg::PolynomialHeaviside</a>
 , <a class="el" href="structdg_1_1_polynomial_rectangle.html#adf23a3c1728c0a9dd511e594f84662c6">dg::PolynomialRectangle</a>
@@ -217,7 +218,7 @@ $(document).ready(function(){initNavTree('functions_o.html',''); initResizable()
 </li>
 <li>operator*()
 : <a class="el" href="structdg_1_1_clone_ptr.html#ae3e3d9530ce254f9935f49fc53765c9d">dg::ClonePtr&lt; Cloneable &gt;</a>
-, <a class="el" href="classdg_1_1_operator.html#aa0c12018483764a7d5bbbe9715ceeedb">dg::Operator&lt; T &gt;</a>
+, <a class="el" href="classdg_1_1_operator.html#a21c2941115cda0ff80533f6da58895eb">dg::Operator&lt; T &gt;</a>
 </li>
 <li>operator*=()
 : <a class="el" href="classdg_1_1_operator.html#aa17b5845d02c2981174a77b1b8ca8dab">dg::Operator&lt; T &gt;</a>
@@ -228,17 +229,17 @@ $(document).ready(function(){initNavTree('functions_o.html',''); initResizable()
 <li>operator+=()
 : <a class="el" href="classdg_1_1_operator.html#a8762389e11fb76aff49a3221357caacf">dg::Operator&lt; T &gt;</a>
 </li>
-<li>operator-
-: <a class="el" href="classdg_1_1_operator.html#a18222a08be1b4ab3ff9acc121cd428d3">dg::Operator&lt; T &gt;</a>
+<li>operator-()
+: <a class="el" href="classdg_1_1_operator.html#a73556e06534d0076ae9eb69ef9009485">dg::Operator&lt; T &gt;</a>
 </li>
 <li>operator-=()
 : <a class="el" href="classdg_1_1_operator.html#aae1278088b73bd0ee1e27fcd0e7ff3c7">dg::Operator&lt; T &gt;</a>
 </li>
 <li>operator-&gt;()
-: <a class="el" href="structdg_1_1_clone_ptr.html#a6e80c01a0a3a4cee9b65a0fae5712700">dg::ClonePtr&lt; Cloneable &gt;</a>
+: <a class="el" href="structdg_1_1_clone_ptr.html#a1dd607b948d4baf247939a70f7442125">dg::ClonePtr&lt; Cloneable &gt;</a>
 </li>
-<li>operator&lt;&lt;
-: <a class="el" href="classdg_1_1_message.html#a614c98fe65726d2e34adfb8fffc52f5f">dg::Message</a>
+<li>operator&lt;&lt;()
+: <a class="el" href="classdg_1_1_message.html#a06601cca23e44b07fa3d799f806a8339">dg::Message</a>
 , <a class="el" href="classdg_1_1_operator.html#ab833a82581c61a865606131e274b11c7">dg::Operator&lt; T &gt;</a>
 </li>
 <li>operator=()
@@ -300,7 +301,7 @@ $(document).ready(function(){initNavTree('functions_o.html',''); initResizable()
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Feb 16 2021 01:15:31 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Tue Feb 23 2021 15:27:10 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

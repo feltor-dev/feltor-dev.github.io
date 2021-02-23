@@ -18,7 +18,5 @@ var blas1_8h =
     [ "reduce", "blas1_8h.html#gaf565d674580478f3375fb2296c3311d0", null ],
     [ "scal", "blas1_8h.html#gaa761a1672f82cf652ecb9382c9ebe525", null ],
     [ "subroutine", "blas1_8h.html#ga7386b5cb0144d5364b8ea8c8ce1482a5", null ],
-    [ "transfer", "blas1_8h.html#ga7015027c22263460fbe5270fe3ff1e3e", null ],
-    [ "transfer", "blas1_8h.html#gade1bcfb06cb5827db21be8f73535b159", null ],
     [ "transform", "blas1_8h.html#ga493c6b70c8c889beaec1c3a669e3809b", null ]
 ];

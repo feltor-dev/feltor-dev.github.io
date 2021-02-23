@@ -18,7 +18,6 @@ var files_dup =
     [ "enums.h", "enums_8h.html", "enums_8h" ],
     [ "eve.h", "eve_8h.html", null ],
     [ "functors.h", "functors_8h.html", "functors_8h" ],
-    [ "gradient.h", "gradient_8h.html", "gradient_8h" ],
     [ "helmholtz.h", "helmholtz_8h.html", "helmholtz_8h" ],
     [ "implicit.h", "implicit_8h.html", null ],
     [ "lgmres.h", "lgmres_8h.html", null ],

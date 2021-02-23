@@ -121,7 +121,7 @@ Public Types</h2></td></tr>
 <tr class="separator:aeb757d36ec9ffe31587b3d93796e6b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4241083bbf815e345cbbe751e4e6d44"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_multigrid_c_g2d.html#ae4241083bbf815e345cbbe751e4e6d44">container_type</a> = Container</td></tr>
 <tr class="separator:ae4241083bbf815e345cbbe751e4e6d44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31cc3f8e39468ef4b723d00e11b48601"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_multigrid_c_g2d.html#a31cc3f8e39468ef4b723d00e11b48601">value_type</a> = <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt; Container &gt;</td></tr>
+<tr class="memitem:a31cc3f8e39468ef4b723d00e11b48601"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_multigrid_c_g2d.html#a31cc3f8e39468ef4b723d00e11b48601">value_type</a> = <a class="el" href="group__dispatch.html#ga6cca187a5557469a96917dc4687a22d3">get_value_type</a>&lt; Container &gt;</td></tr>
 <tr class="separator:a31cc3f8e39468ef4b723d00e11b48601"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -208,6 +208,11 @@ struct dg::MultigridCG2d&lt; Geometry, Matrix, Container &gt;</h3>
 <div class="line">    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> u=0; u&lt;<a class="code" href="structdg_1_1_multigrid_c_g2d.html#a7659e4d18315604a75b8f92f4266aba1">stages</a>; u++)</div>
 <div class="line">    {</div>
 <div class="line">        multi_pol[u].construct( multigrid.grid(u), <a class="code" href="group__creation.html#gga9945b71a335bc97f78dc7425911c7287a07217e3dd9be28b4da85d46fef38f066">dg::not_normed</a>, <a class="code" href="group__creation.html#ggabf9ea3df33484cbb5886e257c3899e48a6281b4fc609cb723a615662b5adac9df">dg::centered</a>, jfactor);</div>
+<div class="line">        <span class="comment">//this tests if elliptic can recover from NaN in the preconditioner</span></div>
+<div class="line">        multi_pol[u].set_chi(0.);</div>
+<div class="line">        <span class="comment">// here we test if we can set the tensor part in elliptic</span></div>
+<div class="line">        multi_pol[u].set_chi( multigrid.grid(u).metric());</div>
+<div class="line">        <span class="comment">// now set the actual scalar part in chi</span></div>
 <div class="line">        multi_pol[u].set_chi( multi_chi[u]);</div>
 <div class="line">        multi_pol[u].set_jump_weighting(jump_weight);</div>
 <div class="line">    }</div>
@@ -303,7 +308,7 @@ template&lt;class Geometry , class Matrix , class Container &gt; </div>
 template&lt;class Geometry , class Matrix , class Container &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="structdg_1_1_multigrid_c_g2d.html">dg::MultigridCG2d</a>&lt; Geometry, Matrix, Container &gt;::<a class="el" href="structdg_1_1_multigrid_c_g2d.html#a31cc3f8e39468ef4b723d00e11b48601">value_type</a> =  <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">get_value_type</a>&lt;Container&gt;</td>
+          <td class="memname">using <a class="el" href="structdg_1_1_multigrid_c_g2d.html">dg::MultigridCG2d</a>&lt; Geometry, Matrix, Container &gt;::<a class="el" href="structdg_1_1_multigrid_c_g2d.html#a31cc3f8e39468ef4b723d00e11b48601">value_type</a> =  <a class="el" href="group__dispatch.html#ga6cca187a5557469a96917dc4687a22d3">get_value_type</a>&lt;Container&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1269,7 +1274,7 @@ template&lt;class Geometry , class Matrix , class Container &gt; </div>
 </div><!-- doc-content -->
 <div class="ttc" id="aclassdg_1_1_timer_html_ab3ff0dbe977c6151118227cfbd0aefb2"><div class="ttname"><a href="classdg_1_1_timer.html#ab3ff0dbe977c6151118227cfbd0aefb2">dg::Timer::tic</a></div><div class="ttdeci">void tic(MPI_Comm comm=MPI_COMM_WORLD)</div><div class="ttdef"><b>Definition:</b> timer.h:111</div></div>
 <div class="ttc" id="agroup__creation_html_ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6"><div class="ttname"><a href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">dg::coo2d::x</a></div><div class="ttdeci">@ x</div><div class="ttdoc">x direction</div></div>
-<div class="ttc" id="astructdg_1_1_real_cartesian_grid2d_html"><div class="ttname"><a href="structdg_1_1_real_cartesian_grid2d.html">dg::RealCartesianGrid2d</a></div><div class="ttdoc">two-dimensional Grid with Cartesian metric</div><div class="ttdef"><b>Definition:</b> base_geometry.h:199</div></div>
+<div class="ttc" id="astructdg_1_1_real_cartesian_grid2d_html"><div class="ttname"><a href="structdg_1_1_real_cartesian_grid2d.html">dg::RealCartesianGrid2d</a></div><div class="ttdoc">two-dimensional Grid with Cartesian metric</div><div class="ttdef"><b>Definition:</b> base_geometry.h:214</div></div>
 <div class="ttc" id="agroup__evaluation_html_ga0d2da37399e38acb2b243f568d5e7443"><div class="ttname"><a href="group__evaluation.html#ga0d2da37399e38acb2b243f568d5e7443">dg::evaluate</a></div><div class="ttdeci">thrust::host_vector&lt; real_type &gt; evaluate(UnaryOp f, const RealGrid1d&lt; real_type &gt; &amp;g)</div><div class="ttdoc">Evaluate a 1d function on grid coordinates.</div><div class="ttdef"><b>Definition:</b> evaluation.h:67</div></div>
 <div class="ttc" id="aclassdg_1_1_timer_html_a27a84dc8acb525e9617cd34d64aad4ed"><div class="ttname"><a href="classdg_1_1_timer.html#a27a84dc8acb525e9617cd34d64aad4ed">dg::Timer::diff</a></div><div class="ttdeci">double diff() const</div><div class="ttdef"><b>Definition:</b> timer.h:121</div></div>
 <div class="ttc" id="agroup__creation_html_gga9945b71a335bc97f78dc7425911c7287a07217e3dd9be28b4da85d46fef38f066"><div class="ttname"><a href="group__creation.html#gga9945b71a335bc97f78dc7425911c7287a07217e3dd9be28b4da85d46fef38f066">dg::not_normed</a></div><div class="ttdeci">@ not_normed</div><div class="ttdoc">indicates that normalisation weights (either T or V) are missing from output</div><div class="ttdef"><b>Definition:</b> enums.h:99</div></div>
@@ -1284,7 +1289,7 @@ template&lt;class Geometry , class Matrix , class Container &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_multigrid_c_g2d.html">MultigridCG2d</a></li>
-    <li class="footer">Generated on Tue Feb 16 2021 01:15:31 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Tue Feb 23 2021 15:27:09 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

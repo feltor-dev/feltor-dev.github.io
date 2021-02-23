@@ -157,8 +157,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_tensor_traits_3_01cusp_1_1hyb__matrix_3_01_i_00_01_v_00_01_m_01_4_01_4.html">dg::TensorTraits&lt; cusp::hyb_matrix&lt; I, V, M &gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_tensor_traits_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__arithmetic_3_382e8af1d8cb4a11a63fc6b26ba4b4b9.html">dg::TensorTraits&lt; T, typename std::enable_if&lt; std::is_arithmetic&lt; T &gt;::value &gt;::type &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recognize arithmetic types as scalars.  <a href="structdg_1_1_tensor_traits_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__arithmetic_3_382e8af1d8cb4a11a63fc6b26ba4b4b9.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_tensor_traits_3_01_t_00_01std_1_1enable__if__t_3_01std_1_1is__arithmetic_3_01_t_01_4_1_1value_01_4_01_4.html">dg::TensorTraits&lt; T, std::enable_if_t&lt; std::is_arithmetic&lt; T &gt;::value &gt; &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recognize arithmetic types as scalars.  <a href="structdg_1_1_tensor_traits_3_01_t_00_01std_1_1enable__if__t_3_01std_1_1is__arithmetic_3_01_t_01_4_1_1value_01_4_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_tensor_traits_3_01std_1_1vector_3_01_t_01_4_01_4.html">dg::TensorTraits&lt; std::vector&lt; T &gt; &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prototypical Recursive Vector.  <a href="structdg_1_1_tensor_traits_3_01std_1_1vector_3_01_t_01_4_01_4.html#details">More...</a><br /></td></tr>
@@ -176,26 +176,26 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector Tag base class, indicates the basic Vector/container concept.  <a href="structdg_1_1_any_vector_tag.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_tensor_traits_3_01_view_3_01_thrust_vector_01_4_01_4.html">dg::TensorTraits&lt; View&lt; ThrustVector &gt; &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="structdg_1_1_view.html" title="A vector view class, usable in dg::blas1 functions.">View</a> has identical value_type and execution_policy as the underlying container.  <a href="structdg_1_1_tensor_traits_3_01_view_3_01_thrust_vector_01_4_01_4.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="structdg_1_1_view.html" title="A vector view class, usable in dg functions.">View</a> has identical value_type and execution_policy as the underlying container.  <a href="structdg_1_1_tensor_traits_3_01_view_3_01_thrust_vector_01_4_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gaed462ca0faf1fc38350080acc788f533"><td class="memTemplParams" colspan="2">template&lt;class Vector &gt; </td></tr>
-<tr class="memitem:gaed462ca0faf1fc38350080acc788f533"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">dg::get_value_type</a> = typename <a class="el" href="structdg_1_1_tensor_traits.html">TensorTraits</a>&lt; typename std::decay&lt; Vector &gt;::type &gt;::value_type</td></tr>
-<tr class="separator:gaed462ca0faf1fc38350080acc788f533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4595015c82eb33ba426921de5d2f1be8"><td class="memTemplParams" colspan="2">template&lt;class Vector &gt; </td></tr>
-<tr class="memitem:ga4595015c82eb33ba426921de5d2f1be8"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__dispatch.html#ga4595015c82eb33ba426921de5d2f1be8">dg::get_tensor_category</a> = typename <a class="el" href="structdg_1_1_tensor_traits.html">TensorTraits</a>&lt; typename std::decay&lt; Vector &gt;::type &gt;::tensor_category</td></tr>
-<tr class="separator:ga4595015c82eb33ba426921de5d2f1be8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga44c50a61470b8e2014f808eb34b5ebfa"><td class="memTemplParams" colspan="2">template&lt;class Vector &gt; </td></tr>
-<tr class="memitem:ga44c50a61470b8e2014f808eb34b5ebfa"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__dispatch.html#ga44c50a61470b8e2014f808eb34b5ebfa">dg::get_execution_policy</a> = typename <a class="el" href="structdg_1_1_tensor_traits.html">TensorTraits</a>&lt; typename std::decay&lt; Vector &gt;::type &gt;::execution_policy</td></tr>
-<tr class="separator:ga44c50a61470b8e2014f808eb34b5ebfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6cca187a5557469a96917dc4687a22d3"><td class="memTemplParams" colspan="2">template&lt;class Vector &gt; </td></tr>
+<tr class="memitem:ga6cca187a5557469a96917dc4687a22d3"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__dispatch.html#ga6cca187a5557469a96917dc4687a22d3">dg::get_value_type</a> = typename <a class="el" href="structdg_1_1_tensor_traits.html">TensorTraits</a>&lt; std::decay_t&lt; Vector &gt; &gt;::value_type</td></tr>
+<tr class="separator:ga6cca187a5557469a96917dc4687a22d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1cb60b9e327ece9ee05084fe3c75f051"><td class="memTemplParams" colspan="2">template&lt;class Vector &gt; </td></tr>
+<tr class="memitem:ga1cb60b9e327ece9ee05084fe3c75f051"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__dispatch.html#ga1cb60b9e327ece9ee05084fe3c75f051">dg::get_tensor_category</a> = typename <a class="el" href="structdg_1_1_tensor_traits.html">TensorTraits</a>&lt; std::decay_t&lt; Vector &gt; &gt;::tensor_category</td></tr>
+<tr class="separator:ga1cb60b9e327ece9ee05084fe3c75f051"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae65edcfb79d3321ac1e294fb29f3ae23"><td class="memTemplParams" colspan="2">template&lt;class Vector &gt; </td></tr>
+<tr class="memitem:gae65edcfb79d3321ac1e294fb29f3ae23"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__dispatch.html#gae65edcfb79d3321ac1e294fb29f3ae23">dg::get_execution_policy</a> = typename <a class="el" href="structdg_1_1_tensor_traits.html">TensorTraits</a>&lt; std::decay_t&lt; Vector &gt; &gt;::execution_policy</td></tr>
+<tr class="separator:gae65edcfb79d3321ac1e294fb29f3ae23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Implementation details of <a class="el" href="index.html#dispatch">The Level 1 dispatch system</a>. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="ga44c50a61470b8e2014f808eb34b5ebfa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga44c50a61470b8e2014f808eb34b5ebfa">&#9670;&nbsp;</a></span>get_execution_policy</h2>
+<a id="gae65edcfb79d3321ac1e294fb29f3ae23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae65edcfb79d3321ac1e294fb29f3ae23">&#9670;&nbsp;</a></span>get_execution_policy</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -203,15 +203,15 @@ Typedefs</h2></td></tr>
 template&lt;class Vector &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group__dispatch.html#ga44c50a61470b8e2014f808eb34b5ebfa">dg::get_execution_policy</a> = typedef typename <a class="el" href="structdg_1_1_tensor_traits.html">TensorTraits</a>&lt;typename std::decay&lt;Vector&gt;::type&gt;::execution_policy</td>
+          <td class="memname">using <a class="el" href="group__dispatch.html#gae65edcfb79d3321ac1e294fb29f3ae23">dg::get_execution_policy</a> = typedef typename <a class="el" href="structdg_1_1_tensor_traits.html">TensorTraits</a>&lt;std::decay_t&lt;Vector&gt; &gt;::execution_policy</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ga4595015c82eb33ba426921de5d2f1be8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4595015c82eb33ba426921de5d2f1be8">&#9670;&nbsp;</a></span>get_tensor_category</h2>
+<a id="ga1cb60b9e327ece9ee05084fe3c75f051"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1cb60b9e327ece9ee05084fe3c75f051">&#9670;&nbsp;</a></span>get_tensor_category</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -219,15 +219,15 @@ template&lt;class Vector &gt; </div>
 template&lt;class Vector &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group__dispatch.html#ga4595015c82eb33ba426921de5d2f1be8">dg::get_tensor_category</a> = typedef typename <a class="el" href="structdg_1_1_tensor_traits.html">TensorTraits</a>&lt; typename std::decay&lt;Vector&gt;::type &gt;::tensor_category</td>
+          <td class="memname">using <a class="el" href="group__dispatch.html#ga1cb60b9e327ece9ee05084fe3c75f051">dg::get_tensor_category</a> = typedef typename <a class="el" href="structdg_1_1_tensor_traits.html">TensorTraits</a>&lt; std::decay_t&lt;Vector&gt; &gt;::tensor_category</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="gaed462ca0faf1fc38350080acc788f533"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaed462ca0faf1fc38350080acc788f533">&#9670;&nbsp;</a></span>get_value_type</h2>
+<a id="ga6cca187a5557469a96917dc4687a22d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6cca187a5557469a96917dc4687a22d3">&#9670;&nbsp;</a></span>get_value_type</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -235,7 +235,7 @@ template&lt;class Vector &gt; </div>
 template&lt;class Vector &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group__dispatch.html#gaed462ca0faf1fc38350080acc788f533">dg::get_value_type</a> = typedef typename <a class="el" href="structdg_1_1_tensor_traits.html">TensorTraits</a>&lt;typename std::decay&lt;Vector&gt;::type&gt;::value_type</td>
+          <td class="memname">using <a class="el" href="group__dispatch.html#ga6cca187a5557469a96917dc4687a22d3">dg::get_value_type</a> = typedef typename <a class="el" href="structdg_1_1_tensor_traits.html">TensorTraits</a>&lt;std::decay_t&lt;Vector&gt; &gt;::value_type</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -247,7 +247,7 @@ template&lt;class Vector &gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Feb 16 2021 01:15:31 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Tue Feb 23 2021 15:27:09 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

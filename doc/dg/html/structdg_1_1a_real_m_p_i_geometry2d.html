@@ -129,7 +129,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a003d6ad695073a30316d2ba4ff7191ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Jacobian of the coordinate transformation from physical to computational space.  <a href="structdg_1_1a_real_m_p_i_geometry2d.html#a003d6ad695073a30316d2ba4ff7191ba">More...</a><br /></td></tr>
 <tr class="separator:a003d6ad695073a30316d2ba4ff7191ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9089ba6738a99f92369ac2153f25e96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; <a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt; thrust::host_vector&lt; real_type &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_real_m_p_i_geometry2d.html#af9089ba6738a99f92369ac2153f25e96">metric</a> () const</td></tr>
-<tr class="memdesc:af9089ba6738a99f92369ac2153f25e96"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Metric tensor of the coordinate system.  <a href="structdg_1_1a_real_m_p_i_geometry2d.html#af9089ba6738a99f92369ac2153f25e96">More...</a><br /></td></tr>
+<tr class="memdesc:af9089ba6738a99f92369ac2153f25e96"><td class="mdescLeft">&#160;</td><td class="mdescRight">The (inverse) metric tensor of the coordinate system.  <a href="structdg_1_1a_real_m_p_i_geometry2d.html#af9089ba6738a99f92369ac2153f25e96">More...</a><br /></td></tr>
 <tr class="separator:af9089ba6738a99f92369ac2153f25e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0aa66e415a35808a7b6f1689bca167b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structdg_1_1_m_p_i___vector.html">MPI_Vector</a>&lt; thrust::host_vector&lt; real_type &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_real_m_p_i_geometry2d.html#ae0aa66e415a35808a7b6f1689bca167b">map</a> () const</td></tr>
 <tr class="memdesc:ae0aa66e415a35808a7b6f1689bca167b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The coordinate map from computational to physical space.  <a href="structdg_1_1a_real_m_p_i_geometry2d.html#ae0aa66e415a35808a7b6f1689bca167b">More...</a><br /></td></tr>
@@ -186,8 +186,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aae6c74dc4b243d6506cceaeb9151085f inherit pub_methods_structdg_1_1a_real_m_p_i_topology2d"><td class="memItemLeft" align="right" valign="top">MPI_Comm&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_real_m_p_i_topology2d.html#aae6c74dc4b243d6506cceaeb9151085f">communicator</a> () const</td></tr>
 <tr class="memdesc:aae6c74dc4b243d6506cceaeb9151085f inherit pub_methods_structdg_1_1a_real_m_p_i_topology2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return mpi cartesian communicator that is used in this grid.  <a href="structdg_1_1a_real_m_p_i_topology2d.html#aae6c74dc4b243d6506cceaeb9151085f">More...</a><br /></td></tr>
 <tr class="separator:aae6c74dc4b243d6506cceaeb9151085f inherit pub_methods_structdg_1_1a_real_m_p_i_topology2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a469964b569d5fdbc5916443793c6669c inherit pub_methods_structdg_1_1a_real_m_p_i_topology2d"><td class="memItemLeft" align="right" valign="top">MPI_Comm&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_real_m_p_i_topology2d.html#a469964b569d5fdbc5916443793c6669c">get_poloidal_comm</a> () const</td></tr>
-<tr class="separator:a469964b569d5fdbc5916443793c6669c inherit pub_methods_structdg_1_1a_real_m_p_i_topology2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb8b98dc3329d492dacd8a9ee69187f2 inherit pub_methods_structdg_1_1a_real_m_p_i_topology2d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdg_1_1_d_l_t.html">DLT</a>&lt; real_type &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_real_m_p_i_topology2d.html#adb8b98dc3329d492dacd8a9ee69187f2">dlt</a> () const</td></tr>
 <tr class="memdesc:adb8b98dc3329d492dacd8a9ee69187f2 inherit pub_methods_structdg_1_1a_real_m_p_i_topology2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Discrete Legendre Transformation.  <a href="structdg_1_1a_real_m_p_i_topology2d.html#adb8b98dc3329d492dacd8a9ee69187f2">More...</a><br /></td></tr>
 <tr class="separator:adb8b98dc3329d492dacd8a9ee69187f2 inherit pub_methods_structdg_1_1a_real_m_p_i_topology2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -479,12 +477,12 @@ template&lt;class real_type &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>The Metric tensor of the coordinate system. </p>
-<p>The elements are the contravariant elements (if x,y are the coordinates) </p><p class="formulaDsp">
-\[ g = \begin{pmatrix} g^{xx}(x,y) &amp; g^{xy}(x,y) \\ &amp; g^{yy}(x,y) \end{pmatrix} \]
+<p>The (inverse) metric tensor of the coordinate system. </p>
+<p>The elements of the inverse metric tensor are the contravariant elements of the metric \(g\). If x,y are the coordinates, then </p><p class="formulaDsp">
+\[ g^{-1} = \begin{pmatrix} g^{xx}(x,y) &amp; g^{xy}(x,y) \\ &amp; g^{yy}(x,y) \end{pmatrix} \]
 </p>
  <dl class="section return"><dt>Returns</dt><dd>symmetric tensor </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>use the <a class="el" href="namespacedg_1_1tensor.html" title="Utility functions used in connection with the SparseTensor class.">dg::tensor</a> functions to compute the volume element from here </dd>
+<dl class="section note"><dt>Note</dt><dd>use the <code><a class="el" href="group__tensor.html#gabca3e13e824c6cf0ec1606f035406c23">dg::tensor::volume2d</a></code> function to compute the volume element from here </dd>
 <dd>
 per default this will be the identity tensor </dd></dl>
 
@@ -529,7 +527,7 @@ template&lt;class real_type &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1a_real_m_p_i_geometry2d.html">aRealMPIGeometry2d</a></li>
-    <li class="footer">Generated on Tue Feb 16 2021 01:15:31 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Tue Feb 23 2021 15:27:09 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

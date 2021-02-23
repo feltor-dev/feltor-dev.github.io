@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('structdg_1_1a_real_product_geometry3d.
 </div><!--header-->
 <div class="contents">
 
-<p>a 3d product space Geometry  
+<p>A 3d product space Geometry \( g_{2d} \otimes g_{1d}\).  
  <a href="structdg_1_1a_real_product_geometry3d.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="base__geometry_8h_source.html">base_geometry.h</a>&gt;</code></p>
@@ -117,7 +117,7 @@ Inheritance diagram for dg::aRealProductGeometry3d&lt; real_type &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="structdg_1_1a_real_product_geometry3d__inherit__graph.png" border="0" usemap="#dg_1_1a_real_product_geometry3d_3_01real__type_01_4_inherit__map" alt="Inheritance graph"/></div>
 <map name="dg_1_1a_real_product_geometry3d_3_01real__type_01_4_inherit__map" id="dg_1_1a_real_product_geometry3d_3_01real__type_01_4_inherit__map">
-<area shape="rect" title="a 3d product space Geometry" alt="" coords="93,184,306,225"/>
+<area shape="rect" title="A 3d product space Geometry ." alt="" coords="93,184,306,225"/>
 <area shape="rect" href="structdg_1_1_real_cartesian_grid3d.html" title="three&#45;dimensional Grid with Cartesian metric" alt="" coords="5,273,185,315"/>
 <area shape="rect" href="structdg_1_1_real_cylindrical_grid3d.html" title="three&#45;dimensional Grid with Cylindrical metric" alt="" coords="210,273,397,315"/>
 <area shape="rect" href="structdg_1_1a_real_geometry3d.html" title="This is the abstract interface class for a three&#45;dimensional Geometry." alt="" coords="117,95,281,136"/>
@@ -141,7 +141,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a811e7e17b120676932f871d54e809cf1 inherit pub_methods_structdg_1_1a_real_geometry3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Jacobian of the coordinate transformation from physical to computational space.  <a href="structdg_1_1a_real_geometry3d.html#a811e7e17b120676932f871d54e809cf1">More...</a><br /></td></tr>
 <tr class="separator:a811e7e17b120676932f871d54e809cf1 inherit pub_methods_structdg_1_1a_real_geometry3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58c85c6f7ede81c985eb7c7dc8083508 inherit pub_methods_structdg_1_1a_real_geometry3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1_sparse_tensor.html">SparseTensor</a>&lt; thrust::host_vector&lt; real_type &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_real_geometry3d.html#a58c85c6f7ede81c985eb7c7dc8083508">metric</a> () const</td></tr>
-<tr class="memdesc:a58c85c6f7ede81c985eb7c7dc8083508 inherit pub_methods_structdg_1_1a_real_geometry3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The (contravariant) metric tensor of the coordinate system.  <a href="structdg_1_1a_real_geometry3d.html#a58c85c6f7ede81c985eb7c7dc8083508">More...</a><br /></td></tr>
+<tr class="memdesc:a58c85c6f7ede81c985eb7c7dc8083508 inherit pub_methods_structdg_1_1a_real_geometry3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The (inverse) metric tensor of the coordinate system.  <a href="structdg_1_1a_real_geometry3d.html#a58c85c6f7ede81c985eb7c7dc8083508">More...</a><br /></td></tr>
 <tr class="separator:a58c85c6f7ede81c985eb7c7dc8083508 inherit pub_methods_structdg_1_1a_real_geometry3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a808a691b5ac6983e73316951eac76e7e inherit pub_methods_structdg_1_1a_real_geometry3d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; thrust::host_vector&lt; real_type &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_real_geometry3d.html#a808a691b5ac6983e73316951eac76e7e">map</a> () const</td></tr>
 <tr class="memdesc:a808a691b5ac6983e73316951eac76e7e inherit pub_methods_structdg_1_1a_real_geometry3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The coordinate map from computational to physical space.  <a href="structdg_1_1a_real_geometry3d.html#a808a691b5ac6983e73316951eac76e7e">More...</a><br /></td></tr>
@@ -275,7 +275,16 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><h3>template&lt;class real_type&gt;<br />
 struct dg::aRealProductGeometry3d&lt; real_type &gt;</h3>
 
-<p>a 3d product space Geometry </p>
+<p>A 3d product space Geometry \( g_{2d} \otimes g_{1d}\). </p>
+<p>This class represents a product space of a 2d grid (the "perp_grid") and a 1d grid (the "parallel_grid"). The special feature of the product space is that the metric is simply </p><p class="formulaDsp">
+\[ g = \begin{pmatrix} (g_{2d}(x,y)) &amp; 0 \\ 0 &amp; g_{1d}(x,y) \end{pmatrix} \]
+</p>
+<p> That is the metric elements do not depend on the third coordinate. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">real_type</td><td>The value type of the grid </td></tr>
+  </table>
+  </dd>
+</dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac83413461aba2fedd57f3cdff6e9e8d9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac83413461aba2fedd57f3cdff6e9e8d9">&#9670;&nbsp;</a></span>~aRealProductGeometry3d()</h2>
@@ -451,7 +460,7 @@ template&lt;class real_type &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1a_real_product_geometry3d.html">aRealProductGeometry3d</a></li>
-    <li class="footer">Generated on Tue Feb 16 2021 01:15:31 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Tue Feb 23 2021 15:27:09 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

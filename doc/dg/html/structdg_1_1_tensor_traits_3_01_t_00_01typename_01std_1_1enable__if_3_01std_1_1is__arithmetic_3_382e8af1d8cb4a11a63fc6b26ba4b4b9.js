@@ -1,6 +1,0 @@
-var structdg_1_1_tensor_traits_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__arithmetic_3_382e8af1d8cb4a11a63fc6b26ba4b4b9 =
-[
-    [ "execution_policy", "structdg_1_1_tensor_traits_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__arithmetic_3_382e8af1d8cb4a11a63fc6b26ba4b4b9.html#aaf3351a23bd1673600f4ba2518cdb744", null ],
-    [ "tensor_category", "structdg_1_1_tensor_traits_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__arithmetic_3_382e8af1d8cb4a11a63fc6b26ba4b4b9.html#a05cb07242a6b2ce41f3a30d3fd1a59be", null ],
-    [ "value_type", "structdg_1_1_tensor_traits_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__arithmetic_3_382e8af1d8cb4a11a63fc6b26ba4b4b9.html#a05ea7d9d8da0527660a797720cd3cdf2", null ]
-];

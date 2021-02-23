@@ -12,7 +12,6 @@ var group__matrixoperators =
       [ "get_jfactor", "classdg_1_1_elliptic.html#a6cf2f8b0517fb474d5c66daa55f1fa1a", null ],
       [ "get_jump_weighting", "classdg_1_1_elliptic.html#a9e2f77d2083107c369127c66e9199ecd", null ],
       [ "inv_weights", "classdg_1_1_elliptic.html#a613ed76a58696ecdb18e4b24b0b6b352", null ],
-      [ "multiply_sigma", "classdg_1_1_elliptic.html#aabca7386d2d03b9a1efe07c88535d7ca", null ],
       [ "operator()", "classdg_1_1_elliptic.html#a8fac01ba417f36c531b472b9fbf2903d", null ],
       [ "precond", "classdg_1_1_elliptic.html#a848d56b38f75128943e8dec9a77c13b5", null ],
       [ "set_chi", "classdg_1_1_elliptic.html#a05c4848e84b2aafb86ccf0bbc3c3600f", null ],
@@ -22,6 +21,9 @@ var group__matrixoperators =
       [ "set_norm", "classdg_1_1_elliptic.html#ac1bd4b1b9f2524bc103a5229a871f822", null ],
       [ "symv", "classdg_1_1_elliptic.html#a032d42981006ff75891088a44fc9f7c0", null ],
       [ "symv", "classdg_1_1_elliptic.html#a625a186d3da8a48bf61f5635fdc22475", null ],
+      [ "variation", "classdg_1_1_elliptic.html#a64475765b0c4bc4c8303c45a281b9551", null ],
+      [ "variation", "classdg_1_1_elliptic.html#a77ffea0cbb08a74c552609729af79093", null ],
+      [ "variation", "classdg_1_1_elliptic.html#aa5cde6906d509e11ed697f5b1f117c96", null ],
       [ "weights", "classdg_1_1_elliptic.html#ab4148f491c864f360285a1b9504a9a1b", null ]
     ] ],
     [ "Elliptic3d", "classdg_1_1_elliptic3d.html", [
@@ -36,7 +38,6 @@ var group__matrixoperators =
       [ "get_jfactor", "classdg_1_1_elliptic3d.html#a793805c6e0d1f18e796123ec7772f039", null ],
       [ "get_jump_weighting", "classdg_1_1_elliptic3d.html#aef126bcd9edbf6b87c99bcae9a3af8b1", null ],
       [ "inv_weights", "classdg_1_1_elliptic3d.html#ad2cc23fe392c0adbd0f68e87214a1a88", null ],
-      [ "multiply_sigma", "classdg_1_1_elliptic3d.html#ace9353e24b81776689cb939defb150cb", null ],
       [ "precond", "classdg_1_1_elliptic3d.html#abb7628e55a62a1dc25eb361255c6990c", null ],
       [ "set_chi", "classdg_1_1_elliptic3d.html#a9481bbc52af9510ef09971e45cba4a97", null ],
       [ "set_chi", "classdg_1_1_elliptic3d.html#a6277136adab056add915118a8930f632", null ],
@@ -46,42 +47,10 @@ var group__matrixoperators =
       [ "set_norm", "classdg_1_1_elliptic3d.html#a61ca75243f11b7fe8b06b0a491d6ed9d", null ],
       [ "symv", "classdg_1_1_elliptic3d.html#ab39da51776c46b4d928cc5456d9c0d73", null ],
       [ "symv", "classdg_1_1_elliptic3d.html#a36aac0ecf0e650cd199a7a149cb7102d", null ],
+      [ "variation", "classdg_1_1_elliptic3d.html#a5e802ddf7a20fcb63929093334876248", null ],
+      [ "variation", "classdg_1_1_elliptic3d.html#a19fd97575b289947ddb5003c8ecc368d", null ],
+      [ "variation", "classdg_1_1_elliptic3d.html#a667cb085f8746695a2f06c7f5a22f197", null ],
       [ "weights", "classdg_1_1_elliptic3d.html#a6da8361eee9bf8c718ba7f2d1a4366b0", null ]
-    ] ],
-    [ "Gradient", "classdg_1_1_gradient.html", [
-      [ "container_type", "classdg_1_1_gradient.html#ac3a2ca9006e6649bf551aee80247a550", null ],
-      [ "geometry_type", "classdg_1_1_gradient.html#aece2c12aef11165ad92021b5d896ba7d", null ],
-      [ "matrix_type", "classdg_1_1_gradient.html#a639a8c0e6413ff75f216ab09ede82166", null ],
-      [ "value_type", "classdg_1_1_gradient.html#a1a4583f822fbb3270a9c1defd9622ab4", null ],
-      [ "Gradient", "classdg_1_1_gradient.html#ae64f8dd09c24c73f24c40aa9e0ce20bb", null ],
-      [ "Gradient", "classdg_1_1_gradient.html#a1209a419f75312d3521bf0c24fc0ab65", null ],
-      [ "Gradient", "classdg_1_1_gradient.html#a178c9900efc90a9e9e233866d58a9256", null ],
-      [ "chi", "classdg_1_1_gradient.html#a7527ecc275e64dad55bc1da44bdb8448", null ],
-      [ "chi", "classdg_1_1_gradient.html#a64365f560dc58c1292b606ee16f6aafc", null ],
-      [ "construct", "classdg_1_1_gradient.html#a5c452fa2b2b06d995fba3d6017ca0e2d", null ],
-      [ "gradient", "classdg_1_1_gradient.html#a7d461672d9089ef393fbec8757c7cc2e", null ],
-      [ "gradient", "classdg_1_1_gradient.html#a8e8d8d3d83b73d86722461f7bed7dca2", null ],
-      [ "variation", "classdg_1_1_gradient.html#a0e9b03db214bd09b7e438a31afe1e537", null ],
-      [ "variation", "classdg_1_1_gradient.html#a5f140e435b5174d711d7a931230de3d3", null ],
-      [ "variation", "classdg_1_1_gradient.html#a672d44e3780784426d1b7e061d18927f", null ]
-    ] ],
-    [ "Gradient3d", "classdg_1_1_gradient3d.html", [
-      [ "container_type", "classdg_1_1_gradient3d.html#a4f45145fe224a4de5bbca86182ef89ad", null ],
-      [ "geometry_type", "classdg_1_1_gradient3d.html#a9c1222e4d338216544d279572b053da0", null ],
-      [ "matrix_type", "classdg_1_1_gradient3d.html#a49bfe6543e37ee8d6e906ecdfd09e11c", null ],
-      [ "value_type", "classdg_1_1_gradient3d.html#aa0b40184ef94ae0c6815f5ad7f0bf144", null ],
-      [ "Gradient3d", "classdg_1_1_gradient3d.html#ae18a4f12b9eef47b7810f1ad5643688f", null ],
-      [ "Gradient3d", "classdg_1_1_gradient3d.html#a2bc2ece674dc416db33903a25c7dd978", null ],
-      [ "Gradient3d", "classdg_1_1_gradient3d.html#a040ebf5dfe530e46c4d58eeb02f9e076", null ],
-      [ "chi", "classdg_1_1_gradient3d.html#a84d382a7006fc6c0d9b0e91ee8d710a6", null ],
-      [ "chi", "classdg_1_1_gradient3d.html#a166b213e1f812dd5706b9f1f6f5973ca", null ],
-      [ "construct", "classdg_1_1_gradient3d.html#a713f988496182345e87b6c8106a26c88", null ],
-      [ "gradient", "classdg_1_1_gradient3d.html#a69fb87359526f7603159e1a306d04815", null ],
-      [ "gradient", "classdg_1_1_gradient3d.html#a584c4d8d7fbba05f710252f6b673bf78", null ],
-      [ "set_compute_in_2d", "classdg_1_1_gradient3d.html#a4fe39fb9c3fbd709ee52754eb6f9876c", null ],
-      [ "variation", "classdg_1_1_gradient3d.html#a6d3f9f19f5463b6334e6f87e409d6bd0", null ],
-      [ "variation", "classdg_1_1_gradient3d.html#ade926d5b62d8648cbaf2dda126562245", null ],
-      [ "variation", "classdg_1_1_gradient3d.html#a2b737b81a31f547413bb8deee211271c", null ]
     ] ],
     [ "Helmholtz", "structdg_1_1_helmholtz.html", [
       [ "container_type", "structdg_1_1_helmholtz.html#a9991534c71b96e4a3caf94214523b661", null ],
@@ -157,9 +126,5 @@ var group__matrixoperators =
       [ "weights", "classdg_1_1_refined_elliptic.html#adec28852a55205f4035e7a5eb668f05e", null ]
     ] ],
     [ "Elliptic2d", "group__matrixoperators.html#gae40a319b095c51491395216d59fd8645", null ],
-    [ "Gradient2d", "group__matrixoperators.html#ga2bfec765ddaa27750c6ddae6227e875c", null ],
-    [ "Helmholtz2d", "group__matrixoperators.html#ga97e96ca43b1ba76d3f820afc72b1d753", null ],
-    [ "Variation", "group__matrixoperators.html#gaa772c365c9f05b66898a005deff2f7d3", null ],
-    [ "Variation2d", "group__matrixoperators.html#ga3aac7f1906c500a682abb8b98a836807", null ],
-    [ "Variation3d", "group__matrixoperators.html#gafd7cf53900257e6b0ea15dfc26616816", null ]
+    [ "Helmholtz2d", "group__matrixoperators.html#ga97e96ca43b1ba76d3f820afc72b1d753", null ]
 ];

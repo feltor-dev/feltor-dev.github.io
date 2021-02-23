@@ -11,7 +11,6 @@ var classdg_1_1_elliptic =
     [ "get_jfactor", "classdg_1_1_elliptic.html#a6cf2f8b0517fb474d5c66daa55f1fa1a", null ],
     [ "get_jump_weighting", "classdg_1_1_elliptic.html#a9e2f77d2083107c369127c66e9199ecd", null ],
     [ "inv_weights", "classdg_1_1_elliptic.html#a613ed76a58696ecdb18e4b24b0b6b352", null ],
-    [ "multiply_sigma", "classdg_1_1_elliptic.html#aabca7386d2d03b9a1efe07c88535d7ca", null ],
     [ "operator()", "classdg_1_1_elliptic.html#a8fac01ba417f36c531b472b9fbf2903d", null ],
     [ "precond", "classdg_1_1_elliptic.html#a848d56b38f75128943e8dec9a77c13b5", null ],
     [ "set_chi", "classdg_1_1_elliptic.html#a05c4848e84b2aafb86ccf0bbc3c3600f", null ],
@@ -21,5 +20,8 @@ var classdg_1_1_elliptic =
     [ "set_norm", "classdg_1_1_elliptic.html#ac1bd4b1b9f2524bc103a5229a871f822", null ],
     [ "symv", "classdg_1_1_elliptic.html#a032d42981006ff75891088a44fc9f7c0", null ],
     [ "symv", "classdg_1_1_elliptic.html#a625a186d3da8a48bf61f5635fdc22475", null ],
+    [ "variation", "classdg_1_1_elliptic.html#a64475765b0c4bc4c8303c45a281b9551", null ],
+    [ "variation", "classdg_1_1_elliptic.html#a77ffea0cbb08a74c552609729af79093", null ],
+    [ "variation", "classdg_1_1_elliptic.html#aa5cde6906d509e11ed697f5b1f117c96", null ],
     [ "weights", "classdg_1_1_elliptic.html#ab4148f491c864f360285a1b9504a9a1b", null ]
 ];
