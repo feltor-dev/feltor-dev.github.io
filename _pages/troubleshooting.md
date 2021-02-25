@@ -12,11 +12,17 @@ sidebar:
 ### I get a compile error: identifier "__thrust_compiler_fence" is undefined
 
 This is an error of the unmaintained cusp that does not like the newly
-updated thrust version on github. Currently, you will have to go back to
+updated thrust version on github. Currently, you can either go back to
 version 1.9.3 in thrust:
+
 ```sh
 cd path/to/thrust
 git checkout 1.9.3
+```
+or alternatively there is a fix in cusp that can be accessed via
+```sh
+cd path/to/cusplibrary
+git checkout cuda10
 ```
 
 ### How to install jsoncpp?
