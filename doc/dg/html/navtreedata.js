@@ -1,52 +1,37 @@
 /*
-@licstart  The following is the entire license notice for the
-JavaScript code in this file.
+ @licstart  The following is the entire license notice for the JavaScript code in this file.
 
-Copyright (C) 1997-2019 by Dimitri van Heesch
+ The MIT License (MIT)
 
-This program is free software; you can redistribute it and/or modify
-it under the terms of version 2 of the GNU General Public License as published by
-the Free Software Foundation
+ Copyright (C) 1997-2020 by Dimitri van Heesch
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details.
+ Permission is hereby granted, free of charge, to any person obtaining a copy of this software
+ and associated documentation files (the "Software"), to deal in the Software without restriction,
+ including without limitation the rights to use, copy, modify, merge, publish, distribute,
+ sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
 
-You should have received a copy of the GNU General Public License along
-with this program; if not, write to the Free Software Foundation, Inc.,
-51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ The above copyright notice and this permission notice shall be included in all copies or
+ substantial portions of the Software.
 
-@licend  The above is the entire license notice
-for the JavaScript code in this file
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+ BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+ @licend  The above is the entire license notice for the JavaScript code in this file
 */
 var NAVTREE =
 [
   [ "Discontinuous Galerkin Library", "index.html", [
-    [ "Introduction", "index.html", [
-      [ "Introduction to discontinuous Galerkin methods", "index.html#pdf", null ],
-      [ "The Level 1 dispatch system", "index.html#dispatch", [
-        [ "The evaluate function", "index.html#dispatch_evaluate", null ],
-        [ "The dot function", "index.html#dispatch_dot", null ],
-        [ "The symv function", "index.html#dispatch_symv", null ]
-      ] ],
-      [ "The MPI interface", "index.html#mpi_backend", [
-        [ "MPI Vectors and the blas functions", "index.html#mpi_vector", null ],
-        [ "MPI Matrices and the symv function", "index.html#mpi_matrix", [
-          [ "Row distributed matrices", "index.html#mpi_row", null ],
-          [ "Column distributed matrices", "index.html#mpi_column", null ],
-          [ "Row and Column distributed", "index.html#mpi_row_col", null ],
-          [ "Transposition", "index.html#mpi_transpose", null ],
-          [ "Creation", "index.html#mpi_create", null ]
-        ] ]
-      ] ]
-    ] ],
     [ "Modules", "modules.html", "modules" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", "namespacemembers_dup" ],
         [ "Functions", "namespacemembers_func.html", "namespacemembers_func" ],
+        [ "Variables", "namespacemembers_vars.html", null ],
         [ "Typedefs", "namespacemembers_type.html", null ],
         [ "Enumerations", "namespacemembers_enum.html", null ],
         [ "Enumerator", "namespacemembers_eval.html", null ]
@@ -60,7 +45,7 @@ var NAVTREE =
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", null ],
-        [ "Typedefs", "functions_type.html", null ],
+        [ "Typedefs", "functions_type.html", "functions_type" ],
         [ "Related Functions", "functions_rela.html", null ]
       ] ]
     ] ],
@@ -77,17 +62,17 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "adaptive_8h.html",
-"derivatives_8h.html",
-"group__basics.html#ga21055512458a88c314621a912fb1417f",
-"group__interpolation.html#ga458385383d455bdeaf5903bfdc2f6298",
-"group__typedefs.html#gad7412ba17b1dc358ecc70361ced85f6b",
-"namespacemembers_func_c.html",
-"structdg_1_1_butcher_tableau.html#abc9151ce94f584eee65d4fedecffe9ad",
-"structdg_1_1_filtered_explicit_multistep.html#ae4ac4e18ad68f1900324e2db0ad62ec8",
-"structdg_1_1_m_p_i_dist_mat.html#a23864630bd3610bb94c0f58ffe1ef6f9",
-"structdg_1_1_real_grid_x1d.html#ab1da6ef2467e3c625aac4fbdc55a9c99",
-"structdg_1_1_wall_distance.html#acc2be0b903a70fa253a7ddfa815fd743",
-"structdg_1_1a_real_topology_x2d.html#a2769851497b7b713f1f43c5a2ddb2ec4"
+"functions_8h.html",
+"group__evaluation.html",
+"group__misc.html#ga00707a09c19ba5fdde979339ae959506",
+"interpolation_x_8h.html#a0deb811d33279b3f858db30a7777c1e2",
+"structdg_1_1_adaptive_timeloop.html#ad5ad1272c722d63824c0f36cfa329c89",
+"structdg_1_1_d_i_r_k_step.html#a6fc92a828f9ae56ff477939ad9fe4f43",
+"structdg_1_1_inv_cosh_xsq.html",
+"structdg_1_1_o_n_e.html#a09ee16efc03aafae90aa75feb2640015",
+"structdg_1_1_simpsons.html#a82fa60767462a5677bbc2f6403227b5f",
+"structdg_1_1a_real_geometry2d.html#a77371d7f0daaf01f1a67773278b174aa",
+"structdg_1_1a_real_topology_x2d.html#ad2f3208edb25304809cf72ad3bcc58d2"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

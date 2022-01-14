@@ -8,8 +8,8 @@ var structdg_1_1_arakawa_x =
     [ "ArakawaX", "structdg_1_1_arakawa_x.html#a243bd50339803a21d15b80b14d0c9e4c", null ],
     [ "ArakawaX", "structdg_1_1_arakawa_x.html#a3ffda1e5246eac36e4e285a0b8ea5881", null ],
     [ "construct", "structdg_1_1_arakawa_x.html#a2849d9e38bac58585bb29f29e960cff9", null ],
-    [ "dx", "structdg_1_1_arakawa_x.html#a4470ad0a89bb10d04e12b4800b644ac7", null ],
-    [ "dy", "structdg_1_1_arakawa_x.html#aae6828bf204fbcd35dfc586a0fb00b3b", null ],
+    [ "dx", "structdg_1_1_arakawa_x.html#a7307aeef3dab8fb774b90f41ca5ecb21", null ],
+    [ "dy", "structdg_1_1_arakawa_x.html#a4194eb748b960f7838272c1198c8e28d", null ],
     [ "operator()", "structdg_1_1_arakawa_x.html#a72e9783e7a27d2a27343dd3775ac3a1c", null ],
     [ "operator()", "structdg_1_1_arakawa_x.html#ab948439b6980b88ae47ba747277a0876", null ],
     [ "set_chi", "structdg_1_1_arakawa_x.html#a10061ac073c8ad9cefb1ed6252e326d8", null ]

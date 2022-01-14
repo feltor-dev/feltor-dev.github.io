@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['upwind_1724',['Upwind',['../structdg_1_1_upwind.html',1,'dg']]],
-  ['upwindproduct_1725',['UpwindProduct',['../structdg_1_1_upwind_product.html',1,'dg']]]
+  ['vanleer_0',['VanLeer',['../structdg_1_1_van_leer.html',1,'dg']]],
+  ['view_1',['View',['../structdg_1_1_view.html',1,'dg']]],
+  ['vortex_2',['Vortex',['../structdg_1_1_vortex.html',1,'dg']]]
 ];

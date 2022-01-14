@@ -7,8 +7,8 @@ var structdg_1_1_m_p_i___vector =
     [ "communicator", "structdg_1_1_m_p_i___vector.html#aab440e329ae64ae5261a5c7fd313ab19", null ],
     [ "communicator_mod", "structdg_1_1_m_p_i___vector.html#a888b92389a999dbbe0f6151fa657d3b9", null ],
     [ "communicator_mod_reduce", "structdg_1_1_m_p_i___vector.html#ab0d4fab5307f188d3ac9256e45e54646", null ],
-    [ "data", "structdg_1_1_m_p_i___vector.html#a2102f399a256c19e86f6d599d561e7fb", null ],
-    [ "data", "structdg_1_1_m_p_i___vector.html#a0148f868581043d706b690f5a22cd236", null ],
+    [ "data", "structdg_1_1_m_p_i___vector.html#aa4071a3bb0388035c786c03c25afc951", null ],
+    [ "data", "structdg_1_1_m_p_i___vector.html#a196cacee8ef212612f77078b518bbba5", null ],
     [ "set_communicator", "structdg_1_1_m_p_i___vector.html#ac2442299b7209bebfc668cedb7ecce42", null ],
     [ "size", "structdg_1_1_m_p_i___vector.html#adec1137c3cdb2954fb55dfc180cb3ccd", null ],
     [ "swap", "structdg_1_1_m_p_i___vector.html#ae86c14f9d503831fbe96ced377a37013", null ]

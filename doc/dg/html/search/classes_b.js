@@ -1,19 +1,11 @@
 var searchData=
 [
-  ['magneticfieldparameters_1554',['MagneticFieldParameters',['../../../geometries/html/structdg_1_1geo_1_1_magnetic_field_parameters.html',1,'dg::geo']]],
-  ['message_1555',['Message',['../classdg_1_1_message.html',1,'dg']]],
-  ['minmod_1556',['MinMod',['../structdg_1_1_min_mod.html',1,'dg']]],
-  ['minus_5fequals_1557',['minus_equals',['../structdg_1_1minus__equals.html',1,'dg']]],
-  ['mod_1558',['MOD',['../structdg_1_1_m_o_d.html',1,'dg']]],
-  ['modalfilter_1559',['ModalFilter',['../structdg_1_1_modal_filter.html',1,'dg']]],
-  ['modifiedchebyshevpreconditioner_1560',['ModifiedChebyshevPreconditioner',['../structdg_1_1_modified_chebyshev_preconditioner.html',1,'dg']]],
-  ['mpi_5fvector_1561',['MPI_Vector',['../structdg_1_1_m_p_i___vector.html',1,'dg']]],
-  ['mpidistmat_1562',['MPIDistMat',['../structdg_1_1_m_p_i_dist_mat.html',1,'dg']]],
-  ['mpimatrixtag_1563',['MPIMatrixTag',['../structdg_1_1_m_p_i_matrix_tag.html',1,'dg']]],
-  ['mpitag_1564',['MPITag',['../structdg_1_1_m_p_i_tag.html',1,'dg']]],
-  ['mpivectortag_1565',['MPIVectorTag',['../structdg_1_1_m_p_i_vector_tag.html',1,'dg']]],
-  ['multigridcg2d_1566',['MultigridCG2d',['../structdg_1_1_multigrid_c_g2d.html',1,'dg']]],
-  ['multimatrix_1567',['MultiMatrix',['../structdg_1_1_multi_matrix.html',1,'dg']]],
-  ['multisteptableau_1568',['MultistepTableau',['../structdg_1_1_multistep_tableau.html',1,'dg']]],
-  ['multisteptableau_3c_20value_5ftype_20_3e_1569',['MultistepTableau&lt; value_type &gt;',['../structdg_1_1_multistep_tableau.html',1,'dg']]]
+  ['nablapsiinv_0',['NablaPsiInv',['../../../geometries/html/structdg_1_1geo_1_1_nabla_psi_inv.html',1,'dg::geo']]],
+  ['nablapsiinvx_1',['NablaPsiInvX',['../../../geometries/html/structdg_1_1geo_1_1_nabla_psi_inv_x.html',1,'dg::geo']]],
+  ['nablapsiinvy_2',['NablaPsiInvY',['../../../geometries/html/structdg_1_1geo_1_1_nabla_psi_inv_y.html',1,'dg::geo']]],
+  ['nearestneighborcomm_3',['NearestNeighborComm',['../structdg_1_1_nearest_neighbor_comm.html',1,'dg']]],
+  ['nestedgrids_4',['NestedGrids',['../structdg_1_1_nested_grids.html',1,'dg']]],
+  ['nopolicytag_5',['NoPolicyTag',['../structdg_1_1_no_policy_tag.html',1,'dg']]],
+  ['noroot1d_6',['NoRoot1d',['../classdg_1_1_no_root1d.html',1,'dg']]],
+  ['notatensortag_7',['NotATensorTag',['../structdg_1_1_not_a_tensor_tag.html',1,'dg']]]
 ];

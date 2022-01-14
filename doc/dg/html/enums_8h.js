@@ -24,10 +24,6 @@ var enums_8h =
       [ "backward", "enums_8h.html#ggabf9ea3df33484cbb5886e257c3899e48a3e10d2598f5b58a930631b12774e05cb", null ],
       [ "centered", "enums_8h.html#ggabf9ea3df33484cbb5886e257c3899e48a6281b4fc609cb723a615662b5adac9df", null ]
     ] ],
-    [ "norm", "enums_8h.html#ga9945b71a335bc97f78dc7425911c7287", [
-      [ "normed", "enums_8h.html#gga9945b71a335bc97f78dc7425911c7287a3f222a3e51d054ebe21228c62569e123", null ],
-      [ "not_normed", "enums_8h.html#gga9945b71a335bc97f78dc7425911c7287a07217e3dd9be28b4da85d46fef38f066", null ]
-    ] ],
     [ "space", "enums_8h.html#ga720a6f709941a075d5c8f60ef07c619f", [
       [ "lspace", "enums_8h.html#gga720a6f709941a075d5c8f60ef07c619fadb68409ea987968e600f19adcb7b4538", null ],
       [ "xspace", "enums_8h.html#gga720a6f709941a075d5c8f60ef07c619fa235752009881e59ab3ad8de2b904cb85", null ]

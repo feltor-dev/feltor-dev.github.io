@@ -1,9 +1,13 @@
 var adaptive_8h =
 [
-    [ "i_control", "adaptive_8h.html#gac7e4186fd8d1d853624ea7446f05283e", null ],
-    [ "integrateAdaptive", "adaptive_8h.html#ga8ddda07de4b014ed14f7f8f40be08cf9", null ],
-    [ "integrateERK", "adaptive_8h.html#ga9548e190f99b7f0a577b3fe58ff10d86", null ],
-    [ "l2norm", "adaptive_8h.html#ga6dc9be16f5de1b06f0be3e23cd87436d", null ],
-    [ "pi_control", "adaptive_8h.html#ga9ae3e9b854050898f3bf5128b07c2875", null ],
-    [ "pid_control", "adaptive_8h.html#gab60fda586e101a8aeb69efa31c46805c", null ]
+    [ "integrate", "adaptive_8h.html#ga99d218bc1124774a3d98e6bdb0d8eb14", null ],
+    [ "integrateERK", "adaptive_8h.html#ga431f63d850976184cca25d5e832661ad", null ],
+    [ "ex_control", "adaptive_8h.html#ga32b696f59effe7da0f61b68275f6b180", null ],
+    [ "fast_l2norm", "adaptive_8h.html#gac821e1bd12a9e5c2917effafc86b16ad", null ],
+    [ "i_control", "adaptive_8h.html#gaabae9e3a1936ae25cb5ad3bac7f007e6", null ],
+    [ "im_control", "adaptive_8h.html#gacb1d6582ef865f0a098994190f13be15", null ],
+    [ "imex_control", "adaptive_8h.html#ga3d078141617f2e4fe33df24f289ac6af", null ],
+    [ "l2norm", "adaptive_8h.html#ga40758fa443b6728e1499c7ee16820c17", null ],
+    [ "pi_control", "adaptive_8h.html#gab9435b144161cda6434c7fe0416b4896", null ],
+    [ "pid_control", "adaptive_8h.html#ga3da5b4b68cceaf18e4c0dd80629d9bba", null ]
 ];

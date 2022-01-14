@@ -10,7 +10,7 @@ var structdg_1_1_nearest_neighbor_comm =
     [ "allocate_buffer", "structdg_1_1_nearest_neighbor_comm.html#a9938f3e7dfddbdeaf95a7563df70f56e", null ],
     [ "buffer_size", "structdg_1_1_nearest_neighbor_comm.html#a0304036df7739faf176f8dc62d633c7c", null ],
     [ "communicator", "structdg_1_1_nearest_neighbor_comm.html#a5a3cd554cb8023482bce926157ad74b0", null ],
-    [ "dims", "structdg_1_1_nearest_neighbor_comm.html#afcb96e1033b1ed7240735a2e73a435fe", null ],
+    [ "dims", "structdg_1_1_nearest_neighbor_comm.html#a0a2407e3b294e6788f0fa267353cd29d", null ],
     [ "direction", "structdg_1_1_nearest_neighbor_comm.html#ad11be4522a94a3905ffe74e8b08ed96c", null ],
     [ "global_gather_init", "structdg_1_1_nearest_neighbor_comm.html#ae2a26b474d61904090bf4be60506e64b", null ],
     [ "global_gather_wait", "structdg_1_1_nearest_neighbor_comm.html#a465366c4b1b50bf2e8e78f352ec11be0", null ],

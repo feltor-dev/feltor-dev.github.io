@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['functions_20and_20functors_20for_20subroutine_20and_20evaluate_2873',['Functions and functors for subroutine and evaluate',['../group__blas1__helpers.html',1,'']]]
+  ['evaluate_0',['evaluate',['../group__evaluation.html',1,'']]],
+  ['extrapolation_1',['Extrapolation',['../group__extrapolation.html',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['norm_2723',['norm',['../group__creation.html#ga9945b71a335bc97f78dc7425911c7287',1,'dg']]]
+  ['space_0',['space',['../group__creation.html#ga720a6f709941a075d5c8f60ef07c619f',1,'dg']]]
 ];

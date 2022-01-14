@@ -7,7 +7,7 @@ var group__grid =
     [ "Interpolation and projection", "group__interpolation.html", "group__interpolation" ],
     [ "Averaging", "group__utilities.html", "group__utilities" ],
     [ "Scatter and Gather", "group__scatter.html", "group__scatter" ],
-    [ "RealGrid1d", "structdg_1_1_real_grid1d.html", [
+    [ "dg::RealGrid1d< real_type >", "structdg_1_1_real_grid1d.html", [
       [ "host_grid", "structdg_1_1_real_grid1d.html#a5b316c83e94baa26955b68a7ab6c9f2e", null ],
       [ "host_vector", "structdg_1_1_real_grid1d.html#adcbba2e7de091a8d4ef99815196d9685", null ],
       [ "value_type", "structdg_1_1_real_grid1d.html#a88b3efe6b0dc8c53be1b182e043930ea", null ],
@@ -16,7 +16,7 @@ var group__grid =
       [ "bcx", "structdg_1_1_real_grid1d.html#a0e9b382200cb203ff232706210ca8d8c", null ],
       [ "contains", "structdg_1_1_real_grid1d.html#ad39b309f33dd338e6f5f4f3fc5f9d614", null ],
       [ "display", "structdg_1_1_real_grid1d.html#ac48d2455dcb73a58798baf8c04caabd9", null ],
-      [ "dlt", "structdg_1_1_real_grid1d.html#a6182eca65464367926bd611f1f514b2a", null ],
+      [ "dlt", "structdg_1_1_real_grid1d.html#a4d2b0f6065c27ffe4efe38944d6f2c57", null ],
       [ "h", "structdg_1_1_real_grid1d.html#a0bcaba1559271982149ee2c56563c0a8", null ],
       [ "lx", "structdg_1_1_real_grid1d.html#a47609d35f11ca87e8c824b96c28da072", null ],
       [ "N", "structdg_1_1_real_grid1d.html#aad2b1983fdc91626a165b05db68a83d1", null ],
@@ -30,17 +30,17 @@ var group__grid =
       [ "x0", "structdg_1_1_real_grid1d.html#ab59a01f31f70589c28a396f669d29337", null ],
       [ "x1", "structdg_1_1_real_grid1d.html#aa966d5f133b54b947fd6563a11ddedeb", null ]
     ] ],
-    [ "RealGrid2d", "structdg_1_1_real_grid2d.html", [
+    [ "dg::RealGrid2d< real_type >", "structdg_1_1_real_grid2d.html", [
       [ "RealGrid2d", "structdg_1_1_real_grid2d.html#ad0d8de5efa9757845b63dfd86de1334e", null ],
       [ "RealGrid2d", "structdg_1_1_real_grid2d.html#a051177b0c936b5297748e3595702b59b", null ],
       [ "RealGrid2d", "structdg_1_1_real_grid2d.html#a44b57fe6446caf0709e073f61fa3dc5a", null ]
     ] ],
-    [ "RealGrid3d", "structdg_1_1_real_grid3d.html", [
+    [ "dg::RealGrid3d< real_type >", "structdg_1_1_real_grid3d.html", [
       [ "RealGrid3d", "structdg_1_1_real_grid3d.html#a6c05091cda47b2b7fdf2f6e301d00f34", null ],
       [ "RealGrid3d", "structdg_1_1_real_grid3d.html#a435f583e0209ddf6db2d659faf552d34", null ],
       [ "RealGrid3d", "structdg_1_1_real_grid3d.html#a6abdc509e81103fe35933fc9aca4eccc", null ]
     ] ],
-    [ "RealGridX1d", "structdg_1_1_real_grid_x1d.html", [
+    [ "dg::RealGridX1d< real_type >", "structdg_1_1_real_grid_x1d.html", [
       [ "host_grid", "structdg_1_1_real_grid_x1d.html#aa2e0eb9873451885d66e97df1a535b96", null ],
       [ "host_vector", "structdg_1_1_real_grid_x1d.html#ac45708ed2eb1eaae622aa35e6ebe30c9", null ],
       [ "value_type", "structdg_1_1_real_grid_x1d.html#a57a105d7214d9bc2b2173ec155059ce0", null ],
@@ -48,9 +48,9 @@ var group__grid =
       [ "bcx", "structdg_1_1_real_grid_x1d.html#a3fd5e18bbbe420ba5a98fd11311d825c", null ],
       [ "contains", "structdg_1_1_real_grid_x1d.html#a3ea0d54654b61e5cbc354cefea6b6035", null ],
       [ "display", "structdg_1_1_real_grid_x1d.html#a9d6e3c0c071389ba14fe3b91468b97a1", null ],
-      [ "dlt", "structdg_1_1_real_grid_x1d.html#af02bfd8784c56f19f4b54b5f9408b6cb", null ],
+      [ "dlt", "structdg_1_1_real_grid_x1d.html#a34fb0f84b2c91cba13a0077f79339fef", null ],
       [ "f", "structdg_1_1_real_grid_x1d.html#ab2603ea643e937104408c0f26d6b50bb", null ],
-      [ "grid", "structdg_1_1_real_grid_x1d.html#a312b15ae2134257e04f7491df258b2c8", null ],
+      [ "grid", "structdg_1_1_real_grid_x1d.html#af23c08cb78b39fd94d82c9ac091a7ca9", null ],
       [ "h", "structdg_1_1_real_grid_x1d.html#ac622d210bdc58772bd0dce4692b8e478", null ],
       [ "inner_N", "structdg_1_1_real_grid_x1d.html#a26c44338cf80623a6aa9db0abba4beee", null ],
       [ "lx", "structdg_1_1_real_grid_x1d.html#ac554dc786efd701a8c4d662acdf69431", null ],
@@ -62,20 +62,20 @@ var group__grid =
       [ "x0", "structdg_1_1_real_grid_x1d.html#a9ed8df1f727d761c68272f302d30fd87", null ],
       [ "x1", "structdg_1_1_real_grid_x1d.html#ab1da6ef2467e3c625aac4fbdc55a9c99", null ]
     ] ],
-    [ "RealGridX2d", "structdg_1_1_real_grid_x2d.html", [
+    [ "dg::RealGridX2d< real_type >", "structdg_1_1_real_grid_x2d.html", [
       [ "RealGridX2d", "structdg_1_1_real_grid_x2d.html#ac2099b422ffd9b3ab6460ebaebf56f9b", null ],
       [ "RealGridX2d", "structdg_1_1_real_grid_x2d.html#a2872605b6e9c30d4baef184de4765674", null ]
     ] ],
-    [ "RealGridX3d", "structdg_1_1_real_grid_x3d.html", [
+    [ "dg::RealGridX3d< real_type >", "structdg_1_1_real_grid_x3d.html", [
       [ "RealGridX3d", "structdg_1_1_real_grid_x3d.html#a799e70292f837615f169be40a1925212", null ],
       [ "RealGridX3d", "structdg_1_1_real_grid_x3d.html#add6b6452d4475cbf46582253220061b7", null ]
     ] ],
-    [ "RealMPIGrid2d", "structdg_1_1_real_m_p_i_grid2d.html", [
+    [ "dg::RealMPIGrid2d< real_type >", "structdg_1_1_real_m_p_i_grid2d.html", [
       [ "RealMPIGrid2d", "structdg_1_1_real_m_p_i_grid2d.html#a6e1e1fb5597312e40859ca477dff2c02", null ],
       [ "RealMPIGrid2d", "structdg_1_1_real_m_p_i_grid2d.html#a95d23008f7d96289ec8eb864ac95ef24", null ],
       [ "RealMPIGrid2d", "structdg_1_1_real_m_p_i_grid2d.html#a72578b795d7a102ca7cb80d59a2a675f", null ]
     ] ],
-    [ "RealMPIGrid3d", "structdg_1_1_real_m_p_i_grid3d.html", [
+    [ "dg::RealMPIGrid3d< real_type >", "structdg_1_1_real_m_p_i_grid3d.html", [
       [ "RealMPIGrid3d", "structdg_1_1_real_m_p_i_grid3d.html#a36a2b586dca0be98c72d0cbb3ba99cf4", null ],
       [ "RealMPIGrid3d", "structdg_1_1_real_m_p_i_grid3d.html#a235f729aaa2970298f1879a42910ff0e", null ],
       [ "RealMPIGrid3d", "structdg_1_1_real_m_p_i_grid3d.html#ae7b7f5321b58c46b4e698ac2d5a995f0", null ]

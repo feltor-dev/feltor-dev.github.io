@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['m_2575',['M',['../../../geometries/html/structdg_1_1geo_1_1polynomial_1_1_parameters.html#abb7c6c6262112a9eeedb8b8dfd93b630',1,'dg::geo::polynomial::Parameters']]],
-  ['m1_2576',['m1',['../structdg_1_1_composite.html#a3fa35db6b3c0a2a6963c34752ebbc6f8',1,'dg::Composite']]],
-  ['m2_2577',['m2',['../structdg_1_1_composite.html#a80a6e0600198a5ce4763b66feadf0b5d',1,'dg::Composite']]]
+  ['l2norm_0',['l2norm',['../group__time__utils.html#ga40758fa443b6728e1499c7ee16820c17',1,'dg']]],
+  ['left_5fsize_1',['left_size',['../structdg_1_1_ell_sparse_block_mat.html#a794a041e52b3e4fd6297d0dec8f3fc8b',1,'dg::EllSparseBlockMat::left_size()'],['../structdg_1_1_coo_sparse_block_mat.html#a5879228f786f6a22e351e26edd00423b',1,'dg::CooSparseBlockMat::left_size()']]]
 ];

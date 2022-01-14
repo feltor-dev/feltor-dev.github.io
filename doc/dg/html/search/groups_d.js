@@ -1,7 +1,10 @@
 var searchData=
 [
-  ['matrix_20operators_2885',['Matrix operators',['../group__matrixoperators.html',1,'']]],
-  ['modification_20of_20any_20expansion_2886',['Modification of any expansion',['../../../geometries/html/group__mod.html',1,'']]],
-  ['mpi_20backend_2887',['MPI backend',['../group__mpi__structures.html',1,'']]],
-  ['multigrid_20matrix_20inversion_2888',['Multigrid matrix inversion',['../group__multigrid.html',1,'']]]
+  ['level_200_3a_20miscellaneous_20additions_0',['Level 0: Miscellaneous additions',['../group__misc.html',1,'']]],
+  ['level_201_3a_20vectors_2c_20matrices_20and_20basic_20operations_1',['Level 1: Vectors, Matrices and basic operations',['../group__backend.html',1,'']]],
+  ['level_202_3a_20basic_20numerical_20algorithms_2',['Level 2: Basic numerical algorithms',['../group__numerical0.html',1,'']]],
+  ['level_203_3a_20topology_20and_20geometry_3',['Level 3: Topology and Geometry',['../group__geo.html',1,'']]],
+  ['level_204_3a_20advanced_20numerical_20schemes_4',['Level 4: Advanced numerical schemes',['../group__numerical1.html',1,'']]],
+  ['linear_20and_20nonlinear_20solvers_5',['Linear and nonlinear solvers',['../group__invert.html',1,'']]],
+  ['lowlevel_20helper_20functions_20and_20classes_6',['Lowlevel helper functions and classes',['../group__lowlevel.html',1,'']]]
 ];

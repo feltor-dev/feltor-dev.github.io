@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['useful_20typedefs_2905',['Useful Typedefs',['../group__gridtypes.html',1,'']]],
-  ['utilities_20for_20time_20integration_2906',['Utilities for time integration',['../group__time__utils.html',1,'']]],
-  ['useful_20typedefs_2907',['Useful Typedefs',['../group__typedefs.html',1,'']]]
+  ['scatter_20and_20gather_0',['Scatter and Gather',['../group__scatter.html',1,'']]],
+  ['simple_1',['Simple',['../group__basics.html',1,'']]],
+  ['sparse_20matrix_20formats_2',['Sparse matrix formats',['../group__sparsematrix.html',1,'']]]
 ];

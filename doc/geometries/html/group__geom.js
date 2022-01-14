@@ -7,5 +7,6 @@ var group__geom =
     [ "The Purely Toroidal expansion", "group__toroidal.html", "group__toroidal" ],
     [ "The Circular expansion", "group__circular.html", "group__circular" ],
     [ "Modification of any expansion", "group__mod.html", "group__mod" ],
-    [ "Wall and Sheath", "group__wall.html", "group__wall" ]
+    [ "Wall and Sheath", "group__wall.html", "group__wall" ],
+    [ "dg::geo::createMagneticField", "group__geom.html#gaa0da1d1c2db65f1f4b28d77307ad238b", null ]
 ];

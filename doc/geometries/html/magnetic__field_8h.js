@@ -21,10 +21,10 @@ var magnetic__field_8h =
       [ "heaviside", "magnetic__field_8h.html#gga097616a5ebbfd85265a3759b05e1bf76ace7d986dcd77d160362fe9db55045a05", null ],
       [ "sol_pfr", "magnetic__field_8h.html#gga097616a5ebbfd85265a3759b05e1bf76a33f783a59264ff5568567da44b904708", null ]
     ] ],
-    [ "createBHat", "magnetic__field_8h.html#ga6182dc55424bffffb0d9876b9f90222d", null ],
+    [ "createBHat", "magnetic__field_8h.html#gac7f646da25a618a26e3f6ff9ba3ff09e", null ],
     [ "createCurvatureKappa", "magnetic__field_8h.html#ga7489105c742a06681010d7bc9a3140cd", null ],
     [ "createCurvatureNablaB", "magnetic__field_8h.html#ga0d4c31a2bef290120b75d8a1045c59bd", null ],
-    [ "createEPhi", "magnetic__field_8h.html#gad28362e8973a9856212d64ca308a8642", null ],
+    [ "createEPhi", "magnetic__field_8h.html#gacf809b2cc4104102e40015f6b524711b", null ],
     [ "createGradPsip", "magnetic__field_8h.html#ga3d3f825cfdacaf0b128fc7544f04f872", null ],
     [ "createTrueCurvatureKappa", "magnetic__field_8h.html#ga4e605e8fb727d3ffe0c2de721d7cad67", null ],
     [ "createTrueCurvatureNablaB", "magnetic__field_8h.html#ga4278b6ca1435aa29063fd152f427c9c5", null ],

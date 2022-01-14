@@ -4,6 +4,6 @@ var structdg_1_1_real_cartesian_m_p_i_grid3d =
     [ "RealCartesianMPIGrid3d", "structdg_1_1_real_cartesian_m_p_i_grid3d.html#a18bbd3a3ae364f4917eaabcff9ab67b4", null ],
     [ "RealCartesianMPIGrid3d", "structdg_1_1_real_cartesian_m_p_i_grid3d.html#a84f2d0cf256adccf1a462a77d1967683", null ],
     [ "RealCartesianMPIGrid3d", "structdg_1_1_real_cartesian_m_p_i_grid3d.html#acfbaddfa7561bd283b452b7bbaa6f012", null ],
-    [ "clone", "structdg_1_1_real_cartesian_m_p_i_grid3d.html#a80986c2995f4e6b06ca6c3731cc49099", null ],
-    [ "global_geometry", "structdg_1_1_real_cartesian_m_p_i_grid3d.html#adac7f33f87549853ddb2628f7c08ac2e", null ]
+    [ "clone", "structdg_1_1_real_cartesian_m_p_i_grid3d.html#a5a27e3dbe17abd119006178b1ece6ede", null ],
+    [ "global_geometry", "structdg_1_1_real_cartesian_m_p_i_grid3d.html#aae342110c1552f9dbc6f4b54eed36801", null ]
 ];

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['geometry_20base_20classes_2863',['Geometry base classes',['../../../dg/html/group__basicgeometry.html',1,'']]],
-  ['grid_20generator_20classes_2864',['Grid Generator classes',['../../../dg/html/group__generators.html',1,'']]],
-  ['geometric_20grids_20and_20tensor_20operations_2865',['Geometric grids and tensor operations',['../../../dg/html/group__geometry.html',1,'']]]
+  ['finite_20element_20method_0',['Finite Element Method',['../../../dg/html/group__fem.html',1,'']]],
+  ['functions_20and_20functors_20for_20subroutine_20and_20evaluate_1',['Functions and functors for subroutine and evaluate',['../../../dg/html/group__blas1__helpers.html',1,'']]]
 ];

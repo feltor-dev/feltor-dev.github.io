@@ -1,7 +1,7 @@
 <map id="3. New functors surrounding the magnetic field geometry" name="3. New functors surrounding the magnetic field geometry">
-<area shape="rect" id="node1" href="$group__profiles.html" title=" " alt="" coords="264,5,472,45"/>
-<area shape="rect" id="node2" href="$group__magnetic.html" title=" " alt="" coords="269,70,467,125"/>
-<area shape="rect" id="node3" href="$group__fluxfunctions.html" title=" " alt="" coords="298,149,438,189"/>
-<area shape="rect" id="node4" title=" " alt="" coords="5,113,216,153"/>
-<area shape="rect" id="node5" href="$group__geom.html" title="dg::geo::createMagneticField" alt="" coords="297,213,439,253"/>
+<area shape="rect" id="node1" href="$group__fluxfunctions.html" title=" " alt="" coords="269,5,396,45"/>
+<area shape="rect" id="node2" href="$group__geom.html" title="dg::geo::createMagneticField" alt="" coords="268,69,397,109"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,105,192,145"/>
+<area shape="rect" id="node4" href="$group__magnetic.html" title=" " alt="" coords="243,134,422,189"/>
+<area shape="rect" id="node5" href="$group__profiles.html" title=" " alt="" coords="240,213,425,253"/>
 </map>

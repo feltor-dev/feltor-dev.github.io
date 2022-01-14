@@ -1,6 +1,6 @@
 var structdg_1_1geo_1_1polynomial_1_1_parameters =
 [
-    [ "Parameters", "structdg_1_1geo_1_1polynomial_1_1_parameters.html#abe17795220f2b40e6ce993c253a50853", null ],
+    [ "Parameters", "structdg_1_1geo_1_1polynomial_1_1_parameters.html#a0abf7f41b44726b710b9f2f2eb352cdf", null ],
     [ "display", "structdg_1_1geo_1_1polynomial_1_1_parameters.html#a1a82e4f41c055fab4f5eb5cbb775eca0", null ],
     [ "dump", "structdg_1_1geo_1_1polynomial_1_1_parameters.html#adee1dc41513291e10b17f9bffcced10e", null ],
     [ "isToroidal", "structdg_1_1geo_1_1polynomial_1_1_parameters.html#a628efdec211ae203247a8847303059cb", null ],

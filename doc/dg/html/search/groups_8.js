@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['evaluate_2872',['evaluate',['../group__evaluation.html',1,'']]]
+  ['dense_20matrix_20formats_0',['Dense matrix formats',['../group__densematrix.html',1,'']]]
 ];

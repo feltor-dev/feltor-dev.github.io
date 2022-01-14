@@ -1,5 +1,6 @@
 var typedefs_8h =
 [
+    [ "DG_RANK0", "typedefs_8h.html#a9bd65eeee6a3f95f56935d1a3f7b2d76", null ],
     [ "CooMat", "typedefs_8h.html#ga00c1e29dbf19330c5e34986229f480a1", null ],
     [ "CooMat_t", "typedefs_8h.html#gadc35dcb99c013f7eb16e2754c603c6b3", null ],
     [ "DCooMat", "typedefs_8h.html#gad7412ba17b1dc358ecc70361ced85f6b", null ],

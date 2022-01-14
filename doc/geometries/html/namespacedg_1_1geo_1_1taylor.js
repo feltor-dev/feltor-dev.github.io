@@ -8,5 +8,8 @@ var namespacedg_1_1geo_1_1taylor =
     [ "PsipRR", "structdg_1_1geo_1_1taylor_1_1_psip_r_r.html", "structdg_1_1geo_1_1taylor_1_1_psip_r_r" ],
     [ "PsipRZ", "structdg_1_1geo_1_1taylor_1_1_psip_r_z.html", "structdg_1_1geo_1_1taylor_1_1_psip_r_z" ],
     [ "PsipZ", "structdg_1_1geo_1_1taylor_1_1_psip_z.html", "structdg_1_1geo_1_1taylor_1_1_psip_z" ],
-    [ "PsipZZ", "structdg_1_1geo_1_1taylor_1_1_psip_z_z.html", "structdg_1_1geo_1_1taylor_1_1_psip_z_z" ]
+    [ "PsipZZ", "structdg_1_1geo_1_1taylor_1_1_psip_z_z.html", "structdg_1_1geo_1_1taylor_1_1_psip_z_z" ],
+    [ "Parameters", "group__taylor.html#gae9e235fc51b6b03228d8eb38673af549", null ],
+    [ "createIpol", "group__taylor.html#gab3f3b82303a3e64031d92ce7bb5ac49b", null ],
+    [ "createPsip", "group__taylor.html#gaf803ceb487fe15a20509185cf645c2f6", null ]
 ];

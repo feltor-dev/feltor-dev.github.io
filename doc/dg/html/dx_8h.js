@@ -1,12 +1,12 @@
 var dx_8h =
 [
-    [ "dx", "dx_8h.html#gad895963086a37c3aad96607b0c582203", null ],
-    [ "dx", "dx_8h.html#ga742ccad6d8f214ee56f0856b9ae1ce9a", null ],
-    [ "dx_minus", "dx_8h.html#ga50dc7e8ec9f190c33505bdd3c4a4f942", null ],
-    [ "dx_normed", "dx_8h.html#ga947b659b06e63692caf5fd559c5eb1bd", null ],
-    [ "dx_plus", "dx_8h.html#gaa002496360460aaf9afe2b99e823e400", null ],
-    [ "dx_symm", "dx_8h.html#ga4919f35d7fd40a08f29a4b44134d49ed", null ],
-    [ "jump", "dx_8h.html#gabea26d94e858ede7d711aee24045813a", null ],
-    [ "jump", "dx_8h.html#ga7aca25fa0b4afe5a9c28d1cfb98701ba", null ],
-    [ "jump", "dx_8h.html#gac7bc3371319ce16626929586b340b75e", null ]
+    [ "dx", "dx_8h.html#gae3a4ca18ffe8583d86682b24a719abd7", null ],
+    [ "dx", "dx_8h.html#gab7fd80865c73611fc731bafa288683ed", null ],
+    [ "dx_minus", "dx_8h.html#gae4fb5a64296b4e1ab205ebbab96113fe", null ],
+    [ "dx_normed", "dx_8h.html#ga052a8bc5d6353c10a9a324c2b130662c", null ],
+    [ "dx_plus", "dx_8h.html#ga656c48eec6285e73ae253885ca9a8634", null ],
+    [ "dx_symm", "dx_8h.html#gabf3ebafa08e328b1a53e98f27cfae152", null ],
+    [ "jump", "dx_8h.html#ga4bf3442c74b1fc66e9e038f6b9c981df", null ],
+    [ "jump", "dx_8h.html#gac9863060690d75515f4e7e7b034366b9", null ],
+    [ "jump", "dx_8h.html#gad31885319d447aad09d97a6d5f3552df", null ]
 ];

@@ -1,15 +1,14 @@
 var structdg_1_1_d_i_r_k_step =
 [
-    [ "container_type", "structdg_1_1_d_i_r_k_step.html#a98341634bfdb8fe04c9e070f0e2f27f2", null ],
-    [ "value_type", "structdg_1_1_d_i_r_k_step.html#a3bb2291b84fb2d21aa768dcbf0ea1251", null ],
-    [ "DIRKStep", "structdg_1_1_d_i_r_k_step.html#a67cfce7f4cc710888a1964cb33d39f2a", null ],
-    [ "DIRKStep", "structdg_1_1_d_i_r_k_step.html#aa20c463b07dc5c101e45bdca018bcd4a", null ],
-    [ "construct", "structdg_1_1_d_i_r_k_step.html#aa40ae61e48b2ba0c19d1340ef941049b", null ],
-    [ "copyable", "structdg_1_1_d_i_r_k_step.html#a8fcdef709b53b5e066a0a60c7a0860fb", null ],
-    [ "embedded_order", "structdg_1_1_d_i_r_k_step.html#a257537ded3172f6b427a1bf6bfe65834", null ],
-    [ "num_stages", "structdg_1_1_d_i_r_k_step.html#a0bcf51d1a6af7481b813d537307c6f6e", null ],
-    [ "order", "structdg_1_1_d_i_r_k_step.html#a5553738ecbbb386c6034989bab531b27", null ],
-    [ "solver", "structdg_1_1_d_i_r_k_step.html#a9ee45afca16b7c1215b787c63e58f193", null ],
-    [ "solver", "structdg_1_1_d_i_r_k_step.html#a9f95b594b6194a4a2892f4f2a34e2ee3", null ],
-    [ "step", "structdg_1_1_d_i_r_k_step.html#a09e46597bda385581eb7c4cef4e56907", null ]
+    [ "container_type", "structdg_1_1_d_i_r_k_step.html#a80e55c4382bb70c78fd042994a85f832", null ],
+    [ "value_type", "structdg_1_1_d_i_r_k_step.html#a3e7d027675d7a9d029b92fa9a7461e0e", null ],
+    [ "DIRKStep", "structdg_1_1_d_i_r_k_step.html#ab5d2f21df20d7ac19f106290cf38107d", null ],
+    [ "DIRKStep", "structdg_1_1_d_i_r_k_step.html#a180b711817ba6832c2f8a2a211542837", null ],
+    [ "construct", "structdg_1_1_d_i_r_k_step.html#ae12636b7a27472b46e91cfbd924e4461", null ],
+    [ "copyable", "structdg_1_1_d_i_r_k_step.html#aeb381e28242f535ab405495a686e2c8f", null ],
+    [ "embedded_order", "structdg_1_1_d_i_r_k_step.html#a6fc92a828f9ae56ff477939ad9fe4f43", null ],
+    [ "num_stages", "structdg_1_1_d_i_r_k_step.html#ae56d9ab827e19eef1d45b3ddb9c66489", null ],
+    [ "order", "structdg_1_1_d_i_r_k_step.html#a1ed6fb8955665c362ce0906fd5d444c7", null ],
+    [ "step", "structdg_1_1_d_i_r_k_step.html#a8ca52cb86bb29f1c1b672669077a728a", null ],
+    [ "step", "structdg_1_1_d_i_r_k_step.html#a173f1b663fdec539d2515d6dd1eebb62", null ]
 ];

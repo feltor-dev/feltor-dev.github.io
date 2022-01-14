@@ -1,16 +1,14 @@
 var structdg_1_1_a_r_k_step =
 [
-    [ "container_type", "structdg_1_1_a_r_k_step.html#a2f8f1972d5cbb59f65adadb14163c48c", null ],
-    [ "value_type", "structdg_1_1_a_r_k_step.html#ab2ba292b836e088549efd5dbbb4de6e0", null ],
-    [ "ARKStep", "structdg_1_1_a_r_k_step.html#aa789cea909c59be38c096b62bb418dac", null ],
-    [ "ARKStep", "structdg_1_1_a_r_k_step.html#a87485e677d8d90e748244774aad407d5", null ],
-    [ "ARKStep", "structdg_1_1_a_r_k_step.html#a6f3e1bfa5c26f44a6381d829cd44d81d", null ],
-    [ "construct", "structdg_1_1_a_r_k_step.html#a1c5edac448897ec6b8b71cd496dfe717", null ],
-    [ "copyable", "structdg_1_1_a_r_k_step.html#a6788d11bafef3590a17688e0714d1dd7", null ],
-    [ "embedded_order", "structdg_1_1_a_r_k_step.html#a9c3d30399557b2d7fab289841022f83a", null ],
-    [ "num_stages", "structdg_1_1_a_r_k_step.html#a0a1c5ba23f06988fc370505361243cfb", null ],
-    [ "order", "structdg_1_1_a_r_k_step.html#a00ddc9888a7e8fd78df554024b59935b", null ],
-    [ "solver", "structdg_1_1_a_r_k_step.html#a70d6594e6d6292f033bb607aeb71b667", null ],
-    [ "solver", "structdg_1_1_a_r_k_step.html#a0f9f492f56b6b9565dc9bc5f01b18667", null ],
-    [ "step", "structdg_1_1_a_r_k_step.html#a85d365734ef2d46556c933faf68c61f3", null ]
+    [ "container_type", "structdg_1_1_a_r_k_step.html#a1f3040bed108d5aa235bd1d13ccab74f", null ],
+    [ "value_type", "structdg_1_1_a_r_k_step.html#a30f9c37b919df9afaea1fb2ba810bc0c", null ],
+    [ "ARKStep", "structdg_1_1_a_r_k_step.html#a35033bfe32e382cf899808cc87fc4e07", null ],
+    [ "ARKStep", "structdg_1_1_a_r_k_step.html#a75136f9d45229ab01b0c84f62ad44cc4", null ],
+    [ "ARKStep", "structdg_1_1_a_r_k_step.html#a50df104db40d511490ece143b789f212", null ],
+    [ "construct", "structdg_1_1_a_r_k_step.html#a68544d14ea6dbd19bf42dbe917ab77ff", null ],
+    [ "copyable", "structdg_1_1_a_r_k_step.html#a6860dec3c767ccbead99b5cad6617b62", null ],
+    [ "embedded_order", "structdg_1_1_a_r_k_step.html#a8da39ac0f6a40804385381875f0cb65c", null ],
+    [ "num_stages", "structdg_1_1_a_r_k_step.html#aea66a330b95370f7d9e726e06a0516fa", null ],
+    [ "order", "structdg_1_1_a_r_k_step.html#a470fe06e18d9ea0f4f09ce067370afe6", null ],
+    [ "step", "structdg_1_1_a_r_k_step.html#a20a30b0859f6e87b9d14f9325c28adde", null ]
 ];

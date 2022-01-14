@@ -1,6 +1,6 @@
 var structdg_1_1geo_1_1_real_curvilinear_product_grid_x3d =
 [
     [ "RealCurvilinearProductGridX3d", "structdg_1_1geo_1_1_real_curvilinear_product_grid_x3d.html#a005b59293ab4ac0e4330409fe39061c9", null ],
-    [ "clone", "structdg_1_1geo_1_1_real_curvilinear_product_grid_x3d.html#afc8ff19c9b2f7298451bc46d1dfd874e", null ],
-    [ "generator", "structdg_1_1geo_1_1_real_curvilinear_product_grid_x3d.html#aace9032b9c4ff4e15af11dd18a88b535", null ]
+    [ "clone", "structdg_1_1geo_1_1_real_curvilinear_product_grid_x3d.html#a8b4d4605ed53b18bc8028ad58935c482", null ],
+    [ "generator", "structdg_1_1geo_1_1_real_curvilinear_product_grid_x3d.html#abf8830460fbad82f37e4c47560ffa2d7", null ]
 ];

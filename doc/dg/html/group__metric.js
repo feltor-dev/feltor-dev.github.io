@@ -1,5 +1,5 @@
 var group__metric =
 [
-    [ "inv_volume", "group__metric.html#ga7d584bb41e0d20ee832296fd71d8cf3b", null ],
-    [ "volume", "group__metric.html#ga3c86995e21edbffbde353246289b503a", null ]
+    [ "dg::create::inv_volume", "group__metric.html#ga7b03efdfdf0c58b6a326ac2776319395", null ],
+    [ "dg::create::volume", "group__metric.html#ga4408e71f634fa4398fac88a257ffcc89", null ]
 ];

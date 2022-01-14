@@ -3,8 +3,10 @@ var structdg_1_1_anderson_acceleration =
     [ "container_type", "structdg_1_1_anderson_acceleration.html#afffe938176e76d9cf804dfb227b129ea", null ],
     [ "value_type", "structdg_1_1_anderson_acceleration.html#a9465ebba6cf44a11b5b9d60721c98af7", null ],
     [ "AndersonAcceleration", "structdg_1_1_anderson_acceleration.html#a1212805578b60f3e909ec57c888de688", null ],
+    [ "AndersonAcceleration", "structdg_1_1_anderson_acceleration.html#a4e9d623588bcc0031554aa825e64f959", null ],
     [ "AndersonAcceleration", "structdg_1_1_anderson_acceleration.html#a74d41837c605126bb546f4892b844bb1", null ],
-    [ "construct", "structdg_1_1_anderson_acceleration.html#abc8b6eb52644fcdd54bd9c2438942db4", null ],
-    [ "copyable", "structdg_1_1_anderson_acceleration.html#ad0b152adbdbed475d4b958fe159a23a9", null ],
-    [ "solve", "structdg_1_1_anderson_acceleration.html#a112a5101c300d12dce0d4ab57c1c7043", null ]
+    [ "construct", "structdg_1_1_anderson_acceleration.html#af7f0b45c58dc4ca6c151402c5e9d8c2c", null ],
+    [ "copyable", "structdg_1_1_anderson_acceleration.html#a256642f890c394e0766cc9be1e23bc46", null ],
+    [ "set_throw_on_fail", "structdg_1_1_anderson_acceleration.html#ae93383e761b947f511e025a53a6da521", null ],
+    [ "solve", "structdg_1_1_anderson_acceleration.html#ad91429c163a7014d3639c60d44a46c02", null ]
 ];

@@ -1,6 +1,6 @@
 var group__view =
 [
-    [ "View", "structdg_1_1_view.html", [
+    [ "dg::View< ThrustVector >", "structdg_1_1_view.html", [
       [ "const_iterator", "structdg_1_1_view.html#a603eadfac959a4b0f66da90094fd1d74", null ],
       [ "const_pointer", "structdg_1_1_view.html#ac833e3989049b120016d7f0f85aa66a1", null ],
       [ "iterator", "structdg_1_1_view.html#a92742a0486e9ac4f8e7ffccd8b7be936", null ],

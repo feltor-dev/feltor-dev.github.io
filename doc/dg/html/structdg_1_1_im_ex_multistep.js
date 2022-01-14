@@ -1,13 +1,11 @@
 var structdg_1_1_im_ex_multistep =
 [
-    [ "container_type", "structdg_1_1_im_ex_multistep.html#a5af2296141c2cd38b7a535405870ed02", null ],
-    [ "value_type", "structdg_1_1_im_ex_multistep.html#ad5be9d9dd7333da6012f5db9bac7937f", null ],
-    [ "ImExMultistep", "structdg_1_1_im_ex_multistep.html#a36b8363e4fea0ac33afd43d440b0ca26", null ],
-    [ "ImExMultistep", "structdg_1_1_im_ex_multistep.html#af1b3656c36e6f91fd71272633226ac02", null ],
-    [ "construct", "structdg_1_1_im_ex_multistep.html#a2946052092e3cad9daf2d0271436c380", null ],
-    [ "copyable", "structdg_1_1_im_ex_multistep.html#ab9a998d04c186653868ce8b4dbc09b3d", null ],
-    [ "init", "structdg_1_1_im_ex_multistep.html#a82439b884ca1d48b7eb71ffaf4263547", null ],
-    [ "solver", "structdg_1_1_im_ex_multistep.html#ac44c60d82ed9afc388c387b4840304b5", null ],
-    [ "solver", "structdg_1_1_im_ex_multistep.html#a61a4e10ae02a7fdcabc35bc652aa04e8", null ],
-    [ "step", "structdg_1_1_im_ex_multistep.html#a1a262a6c7ede7d62a501eaf9f0ce0302", null ]
+    [ "container_type", "structdg_1_1_im_ex_multistep.html#acde60a4404899b758d794681b15628cb", null ],
+    [ "value_type", "structdg_1_1_im_ex_multistep.html#a7a148de4470deb1e6c32c865502a2c26", null ],
+    [ "ImExMultistep", "structdg_1_1_im_ex_multistep.html#a97ee0b1e96e9892a8162a311a533012a", null ],
+    [ "ImExMultistep", "structdg_1_1_im_ex_multistep.html#a21c6a2bcd4c36bf11c38104dd1ba9e3e", null ],
+    [ "construct", "structdg_1_1_im_ex_multistep.html#a0a015811731b0508b93a7df83cf1129c", null ],
+    [ "copyable", "structdg_1_1_im_ex_multistep.html#a464191ef33dac014d5f4e355eeb8e034", null ],
+    [ "init", "structdg_1_1_im_ex_multistep.html#a29c33dd9d081414b9d5f8d384b112db0", null ],
+    [ "step", "structdg_1_1_im_ex_multistep.html#af0548115a5bcd41da34d6116af54d144", null ]
 ];

@@ -7,14 +7,13 @@ var structdg_1_1_helmholtz2 =
     [ "Helmholtz2", "structdg_1_1_helmholtz2.html#afe943ee4f86e282d3182fc2b0bea2224", null ],
     [ "Helmholtz2", "structdg_1_1_helmholtz2.html#acaa679abeff1bbb0d1283030d1ba0106", null ],
     [ "Helmholtz2", "structdg_1_1_helmholtz2.html#a31fe84b70ad5c3d3c396cfa2cb147bed", null ],
-    [ "alpha", "structdg_1_1_helmholtz2.html#a24d5acb0d363715cd6f7a7e9f1da7711", null ],
+    [ "alpha", "structdg_1_1_helmholtz2.html#af6b9605164f8ba19932a872c29bfb363", null ],
     [ "alpha", "structdg_1_1_helmholtz2.html#ad6b890fbad9fb61b3e87903cd8857c44", null ],
-    [ "chi", "structdg_1_1_helmholtz2.html#a835d1c25a476791395b21368b8dd315c", null ],
+    [ "chi", "structdg_1_1_helmholtz2.html#ac4cef6e37edc623dd75dc1caf6e441ea", null ],
     [ "construct", "structdg_1_1_helmholtz2.html#a34c0975f36c9ed183ff737ad128feb61", null ],
     [ "construct", "structdg_1_1_helmholtz2.html#a4a345a1b4a6029c87207c4613e5516ed", null ],
-    [ "inv_weights", "structdg_1_1_helmholtz2.html#a66dadf1b2ea023183a06e38b49312265", null ],
-    [ "precond", "structdg_1_1_helmholtz2.html#a93bc6a38997a470cec011923bdb8104b", null ],
+    [ "precond", "structdg_1_1_helmholtz2.html#a7dff6397d8a3eb1960c98a6019ab748a", null ],
     [ "set_chi", "structdg_1_1_helmholtz2.html#a3eb5c89121a7de7974725c4614808b7a", null ],
     [ "symv", "structdg_1_1_helmholtz2.html#abf758e9988a361d080e83626806ee955", null ],
-    [ "weights", "structdg_1_1_helmholtz2.html#a825bd67bc60d477e90dc716a81b241e6", null ]
+    [ "weights", "structdg_1_1_helmholtz2.html#ab25e36b0038832467599b50276738a12", null ]
 ];

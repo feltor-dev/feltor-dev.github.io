@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
-<tagfile>
+<tagfile doxygen_version="1.9.3">
   <compound kind="file">
     <name>accumulate.cuh</name>
     <path>/home/matthias/Projekte/feltor/inc/dg/backend/exblas/</path>
@@ -274,7 +274,7 @@
   </compound>
   <compound kind="page">
     <name>index</name>
-    <title></title>
-    <filename>index</filename>
+    <title>Extension: ExBLAS</title>
+    <filename>index.html</filename>
   </compound>
 </tagfile>

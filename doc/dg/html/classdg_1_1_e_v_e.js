@@ -6,7 +6,7 @@ var classdg_1_1_e_v_e =
     [ "EVE", "classdg_1_1_e_v_e.html#a0e04e52f25035676e6dc996053f8bd9c", null ],
     [ "construct", "classdg_1_1_e_v_e.html#a29dfd86b4d04eaecdbb40272c7216fd6", null ],
     [ "get_max", "classdg_1_1_e_v_e.html#abe532f5eec4407a54f242f8f182783ca", null ],
-    [ "operator()", "classdg_1_1_e_v_e.html#aaf6a5d585f50eea75110fe46e9293152", null ],
-    [ "operator()", "classdg_1_1_e_v_e.html#ae4ef24f99b98912aea14b768ac02dfb3", null ],
-    [ "set_max", "classdg_1_1_e_v_e.html#a1f995d2a16fb64afc75a8ed31acad204", null ]
+    [ "set_max", "classdg_1_1_e_v_e.html#a1f995d2a16fb64afc75a8ed31acad204", null ],
+    [ "set_throw_on_fail", "classdg_1_1_e_v_e.html#ae43a0ca2fb1ecae96f82aed288ac1e87", null ],
+    [ "solve", "classdg_1_1_e_v_e.html#ab91ca09ee8873b8c8c9def6d2b180546", null ]
 ];

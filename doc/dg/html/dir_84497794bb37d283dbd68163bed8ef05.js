@@ -4,18 +4,18 @@ var dir_84497794bb37d283dbd68163bed8ef05 =
     [ "average_mpi.h", "average__mpi_8h.html", null ],
     [ "base_geometry.h", "base__geometry_8h.html", "base__geometry_8h" ],
     [ "base_geometryX.h", "base__geometry_x_8h.html", "base__geometry_x_8h" ],
-    [ "creation.h", "creation_8h.html", null ],
     [ "derivatives.h", "derivatives_8h.html", "derivatives_8h" ],
     [ "derivativesX.h", "derivatives_x_8h.html", "derivatives_x_8h" ],
-    [ "dgtensor.h", "dgtensor_8h.html", "dgtensor_8h" ],
     [ "dlt.h", "dlt_8h.html", [
-      [ "DLT", "classdg_1_1_d_l_t.html", "classdg_1_1_d_l_t" ]
+      [ "dg::DLT< real_type >", "classdg_1_1_d_l_t.html", "classdg_1_1_d_l_t" ]
     ] ],
     [ "dx.h", "dx_8h.html", "dx_8h" ],
     [ "dxX.h", "dx_x_8h.html", "dx_x_8h" ],
     [ "evaluation.h", "evaluation_8h.html", "evaluation_8h" ],
     [ "evaluationX.h", "evaluation_x_8h.html", "evaluation_x_8h" ],
     [ "fast_interpolation.h", "fast__interpolation_8h.html", "fast__interpolation_8h" ],
+    [ "fem.h", "fem_8h.html", "fem_8h" ],
+    [ "fem_weights.h", "fem__weights_8h.html", "fem__weights_8h" ],
     [ "filter.h", "filter_8h.html", null ],
     [ "functions.h", "functions_8h.html", "functions_8h" ],
     [ "geometry.h", "geometry_8h.html", null ],
@@ -39,12 +39,12 @@ var dir_84497794bb37d283dbd68163bed8ef05 =
     [ "split_and_join.h", "split__and__join_8h.html", "split__and__join_8h" ],
     [ "tensor.h", "tensor_8h.html", null ],
     [ "topological_traits.h", "topological__traits_8h.html", [
-      [ "TopologyTraits", "structdg_1_1_topology_traits.html", "structdg_1_1_topology_traits" ],
-      [ "MPITag", "structdg_1_1_m_p_i_tag.html", null ],
-      [ "SharedTag", "structdg_1_1_shared_tag.html", null ],
-      [ "OneDimensionalTag", "structdg_1_1_one_dimensional_tag.html", null ],
-      [ "TwoDimensionalTag", "structdg_1_1_two_dimensional_tag.html", null ],
-      [ "ThreeDimensionalTag", "structdg_1_1_three_dimensional_tag.html", null ]
+      [ "dg::TopologyTraits< Topology >", "structdg_1_1_topology_traits.html", "structdg_1_1_topology_traits" ],
+      [ "dg::MPITag", "structdg_1_1_m_p_i_tag.html", null ],
+      [ "dg::SharedTag", "structdg_1_1_shared_tag.html", null ],
+      [ "dg::OneDimensionalTag", "structdg_1_1_one_dimensional_tag.html", null ],
+      [ "dg::TwoDimensionalTag", "structdg_1_1_two_dimensional_tag.html", null ],
+      [ "dg::ThreeDimensionalTag", "structdg_1_1_three_dimensional_tag.html", null ]
     ] ],
     [ "transform.h", "transform_8h.html", "transform_8h" ],
     [ "weights.h", "weights_8h.html", "weights_8h" ],

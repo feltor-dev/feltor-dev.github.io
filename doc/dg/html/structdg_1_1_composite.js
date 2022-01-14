@@ -5,7 +5,7 @@ var structdg_1_1_composite =
     [ "Composite", "structdg_1_1_composite.html#af913961fbb4b1cd76b473da03a273021", null ],
     [ "Composite", "structdg_1_1_composite.html#a5f0439e353e3571a36e2311420a6b8ef", null ],
     [ "display", "structdg_1_1_composite.html#ab92cef333eed43a46bce0f25d1850ec7", null ],
-    [ "operator=", "structdg_1_1_composite.html#afac33c60ce48942be09a7d19c33343dd", null ],
+    [ "operator=", "structdg_1_1_composite.html#a09476504ee4f45ddc54c25d8de5f0994", null ],
     [ "symv", "structdg_1_1_composite.html#a7b4ea7e97c476d4f937ee8f84cd6138a", null ],
     [ "symv", "structdg_1_1_composite.html#a3320f1dca365d8443451860d25c6d135", null ],
     [ "dual", "structdg_1_1_composite.html#a1cfcdd5b64963bc19a5fe8b5f194b964", null ],
