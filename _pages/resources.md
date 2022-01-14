@@ -94,7 +94,7 @@ feature_row_projects:
             <!--FELTOR-homepage clientId: 21ffcb718aa34dc793dfc7a08f9dca1b,-->
             divId: "adobe-dc-view"});
 		adobeDCView.previewFile({
-			content:{location: {url: "/_includes/FeltorNeutralHeader.pdf"}},
+			content:{location: {url: "/presentations/FeltorNeutralHeader.pdf"}},
 			metaData:{fileName: "GPU programming in practice"}
 		}, {embedMode: "SIZED_CONTAINER"});
 	});
@@ -113,7 +113,7 @@ feature_row_projects:
             <!--clientId: 21ffcb718aa34dc793dfc7a08f9dca1b,-->
             divId: "adobe-dc-view2"});
 		adobeDCView.previewFile({
-			content:{location: {url: "/_includes/Presentation__Intro_dG.pdf"}},
+			content:{location: {url: "/presentations/Presentation__Intro_dG.pdf"}},
 			metaData:{fileName: "Introduction to dG methods"}
 		}, {embedMode: "SIZED_CONTAINER"});
 	});
