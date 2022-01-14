@@ -3,45 +3,8 @@ main:
     url: /about/
   - title: "Showroom"
     url: /showroom/
+  - title: "Resources"
+    url: /resources/
   - title: "Publications"
     url: /publications/
-  - title: "Wiki"
-    url: /wiki/
-  - title: "Tutorial"
-    url: /tutorial/
-  - title: "Documentation"
-    url: /doc/dg/html/modules.html
 
-about:
-  - title: "About"
-    url: /about/
-
-wiki:
-  - title: "Wiki"
-    children:
-      - title: "What is FELTOR"
-        url: /wiki/
-      - title: "Contribute"
-        url: /contribute/
-      - title: "Design"
-        url: /design/
-      - title: "Error handling"
-        url: /errorhandling/
-      - title: "Troubleshooting"
-        url: /troubleshooting/
-
-tutorial:
-  - title: "Tutorial"
-    children:
-      - title: "Level 1: Vectors"
-        url: /tutorial/
-      - title: "Level 2: Time integration"
-        url: /tutorial_lvl2/
-      - title: "Level 3: Grids and derivatives"
-        url: /tutorial_lvl3/
-      - title: "Level 4: Elliptic equations"
-        url: /tutorial_lvl4/
-      - title: "Level 5: Applications"
-        url: /tutorial_lvl5/
-      - title: "The Geometries extension"
-        url: /tutorial_geometries/

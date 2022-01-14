@@ -7,33 +7,27 @@ author_profile: false
 comments: false
 
 gallery3d:
-  - url: /images/nvidia_ue_red_green.jpg
-    image_path: /images/nvidia_ue_red_green.jpg
-    title: "Parallel electron velocity. Nvidia Index volume rendering"
   - url: /images/nvidia_ue_red_blue.jpg
     image_path: /images/nvidia_ue_red_blue.jpg
     title: "Parallel electron velocity. Nvidia Index volume rendering"
   - url: /images/raytracing_mag.jpg
     image_path: /images/raytracing_mag.jpg
     title: "Magnetic field. Streamline integrated with two flux-surfaces."
-  - url: /images/tokamak.jpg
-    image_path: /images/tokamak.jpg
-    title: "Flux surfaces of a tokamak."
-  - url: /images/nvidia_ions_red_black.jpg
-    image_path: /images/nvidia_ions_red_black.jpg
-    title: "Ion density. Nvidia Index volume rendering"
-  - url: /images/nvidia_ions_red.jpg
-    image_path: /images/nvidia_ions_red.jpg
-    title: "Ion density. Nvidia Index volume rendering"
-  - url: /images/raytracing_current_green.jpg
-    image_path: /images/raytracing_current_green.jpg
-    title: "Parallel current. Positive iso-volume with density coloring and simulation box."
   - url: /images/nvidia_potential_gold.jpg
     image_path: /images/nvidia_potential_gold.jpg
     title: "Electric potential viewed from the top"
+  - url: /images/nvidia_ions_red.jpg
+    image_path: /images/nvidia_ions_red.jpg
+    title: "Ion density. Nvidia Index volume rendering"
   - url: /images/surface_ui.jpg
     image_path: /images/surface_ui.jpg
     title: "Parallel ion velocity"
+  - url: /images/raytracing_current_green.jpg
+    image_path: /images/raytracing_current_green.jpg
+    title: "Parallel current. Positive iso-volume with density coloring and simulation box."
+  - url: /images/tokamak.jpg
+    image_path: /images/tokamak.jpg
+    title: "Flux surfaces of a tokamak."
 gallery2d:
   - url: /images/lperpinv_green.jpg
     image_path: /images/lperpinv_green.jpg
