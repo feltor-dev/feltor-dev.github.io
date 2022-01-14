@@ -39,6 +39,16 @@ bundle update
 
 which will update every gem in the Gemfile to the latest versions
 
+#### How to view homepage over local wifi
+Use the [magic IP](https://en.wikipedia.org/wiki/0.0.0.0) `0.0.0.0` and
+find out the IP address of your system with `hostname -I`
+```sh
+hostname -I
+bundle exec jekyll serve --host 0.0.0.0
+# => Now browse to http://<your-IP-address>:4000
+# from any browser in your wifi (it is still "localhost" on your own machine)
+```
+
 #### Authors and contributions
 
 The Feltor homepage is maintained by Markus Held and Matthias Wiesenberger. Contributions and/or comments are welcome.
