@@ -25,8 +25,7 @@ Please make sure that you have the `doxygen`,
 2. git rm -r homepage/doc
 3. cp -r feltor/doc homepage/doc (make sure you do not accidentally have any
 unnecessary files in feltor/doc before doing this step)
-4. rm -r homepage/doc/related_pages (doxygen saves copies of the necessary pdfs so we do not need this folder)
-5. git add homepage/doc
+4. git add homepage/doc
 
 #### How to update gems with bundler
 
