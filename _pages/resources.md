@@ -89,12 +89,11 @@ feature_row_projects:
 	document.addEventListener("adobe_dc_view_sdk.ready", function(){
 		var adobeDCView = new AdobeDC.View({
             <!-- To make it work, open website as localhost:4000 -->
-            clientId: "4314d36b651b4884bc6ceea48b6610fa",
+            clientId: "21ffcb718aa34dc793dfc7a08f9dca1b",
             <!-- localhost clientId: "edc00577719e4c0ead044d48d3c3efc1", -->
-            <!--FELTOR-homepage clientId: 21ffcb718aa34dc793dfc7a08f9dca1b,-->
             divId: "adobe-dc-view"});
 		adobeDCView.previewFile({
-			content:{location: {url: "/presentations/FeltorNeutralHeader.pdf"}},
+			content:{location: {url: "/_includes/FeltorNeutralHeader.pdf"}},
 			metaData:{fileName: "GPU programming in practice"}
 		}, {embedMode: "SIZED_CONTAINER"});
 	});
@@ -108,12 +107,11 @@ feature_row_projects:
 	document.addEventListener("adobe_dc_view_sdk.ready", function(){
 		var adobeDCView = new AdobeDC.View({
             <!-- To make it work, open website as localhost:4000 -->
-            clientId: "4314d36b651b4884bc6ceea48b6610fa",
+            clientId: "21ffcb718aa34dc793dfc7a08f9dca1b",
             <!--clientId: "edc00577719e4c0ead044d48d3c3efc1",-->
-            <!--clientId: 21ffcb718aa34dc793dfc7a08f9dca1b,-->
             divId: "adobe-dc-view2"});
 		adobeDCView.previewFile({
-			content:{location: {url: "/presentations/Presentation__Intro_dG.pdf"}},
+			content:{location: {url: "/_includes/Presentation__Intro_dG.pdf"}},
 			metaData:{fileName: "Introduction to dG methods"}
 		}, {embedMode: "SIZED_CONTAINER"});
 	});
