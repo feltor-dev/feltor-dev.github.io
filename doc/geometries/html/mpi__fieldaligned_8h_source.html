@@ -713,7 +713,7 @@ $(document).ready(function(){initNavTree('mpi__fieldaligned_8h_source.html','');
 <div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>                    std::array&lt;double,3&gt;</div>
 <div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>                        coords0{yy0[0][i],yy0[1][i],yy0[2][i]}, coords1;</div>
 <div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>                    odeint.integrate_in_domain( phiM0, coords0, phiM1,</div>
-<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>                            coords1, deltaPhi, g2d-global(), eps);</div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>                            coords1, deltaPhi, g2d-&gt;global(), eps);</div>
 <div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>                    yy1[0][i] = coords1[0], yy1[1][i] = coords1[1], yy1[2][i] =</div>
 <div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>                        coords1[2];</div>
 <div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>                    tempM.data()[i] = binary( yy1[0][i], yy1[1][i]);</div>
@@ -722,7 +722,7 @@ $(document).ready(function(){initNavTree('mpi__fieldaligned_8h_source.html','');
 <div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>                    <span class="keywordtype">double</span> phiP1 = phiP0 - deltaPhi;</div>
 <div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>                    coords0 = std::array&lt;double,3&gt;{xx0[0][i],xx0[1][i],xx0[2][i]};</div>
 <div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>                    odeint.integrate_in_domain( phiP0, coords0, phiP1,</div>
-<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>                            coords1, -deltaPhi, g2d-global(), eps);</div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>                            coords1, -deltaPhi, g2d-&gt;global(), eps);</div>
 <div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>                    xx1[0][i] = coords1[0], xx1[1][i] = coords1[1], xx1[2][i] =</div>
 <div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>                        coords1[2];</div>
 <div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>                    tempP.<a class="code hl_functionRef" href="../../dg/html/structdg_1_1_m_p_i___vector.html#a196cacee8ef212612f77078b518bbba5">data</a>()[i] = binary( xx1[0][i], xx1[1][i]);</div>
@@ -880,7 +880,7 @@ $(document).ready(function(){initNavTree('mpi__fieldaligned_8h_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="mpi__fieldaligned_8h.html">mpi_fieldaligned.h</a></li>
-    <li class="footer">Generated on Fri Jan 14 2022 13:22:19 for Extension: Geometries by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
+    <li class="footer">Generated on Fri Jan 28 2022 17:46:32 for Extension: Geometries by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
   </ul>
 </div>
 </body>

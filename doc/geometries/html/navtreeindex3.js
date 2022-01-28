@@ -1,5 +1,10 @@
 var NAVTREEINDEX3 =
 {
+"namespacedg_1_1geo_1_1mod.html":[1,0,0,3,2],
+"namespacedg_1_1geo_1_1polynomial.html":[1,0,0,3,3],
+"namespacedg_1_1geo_1_1solovev.html":[1,0,0,3,4],
+"namespacedg_1_1geo_1_1taylor.html":[1,0,0,3,5],
+"namespacedg_1_1geo_1_1toroidal.html":[1,0,0,3,6],
 "namespacedg_1_1geo_1_1x.html":[0,1,0],
 "namespacedg_1_1geo_1_1x.html#a814fb7d9b0cc3e13b6478de8e0bcad7d":[1,0,0,3,7,0],
 "namespacedg_1_1geo_1_1x.html#aa6084d21ad60b6eb08559c29a59ae85a":[1,0,0,3,7,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX3 =
 "structdg_1_1geo_1_1_fieldaligned.html#adddf46de10d03df41e6914c21c7083f0":[0,3,1,3],
 "structdg_1_1geo_1_1_fieldaligned.html#ae1a928fd89bcde1864f78dc1a093d59f":[0,3,1,25],
 "structdg_1_1geo_1_1_fieldaligned.html#ae6bfa03ea2797271a10406d242708793":[0,3,1,10],
-"structdg_1_1geo_1_1_fieldaligned.html#af44d06d4f39a0aa51184c1a75cb3d899":[0,3,1,14],
-"structdg_1_1geo_1_1_fieldaligned.html#af507ab26311f23b41c47b66d0fa9be70":[0,3,1,2],
-"structdg_1_1geo_1_1_fieldaligned.html#afdbbe5f97222f049d0526ef6d6ff3279":[0,3,1,21],
-"structdg_1_1geo_1_1_flux_generator.html":[0,0,1],
-"structdg_1_1geo_1_1_flux_generator.html#aba1ff375234d11b24e22ddf7e6e41621":[0,0,1,1],
-"structdg_1_1geo_1_1_flux_generator.html#aef95b5a2b3ce9bf5c5044d8390308aaa":[0,0,1,0]
+"structdg_1_1geo_1_1_fieldaligned.html#af44d06d4f39a0aa51184c1a75cb3d899":[0,3,1,14]
 };

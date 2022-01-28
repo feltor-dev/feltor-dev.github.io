@@ -145,10 +145,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a77d18f6349314978fa73882338b8ef99"><td class="memItemLeft" align="right" valign="top">const ContainerType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_l_g_m_r_e_s.html#a77d18f6349314978fa73882338b8ef99">copyable</a> () const</td></tr>
 <tr class="memdesc:a77d18f6349314978fa73882338b8ef99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an object of same size as the object used for construction.  <a href="classdg_1_1_l_g_m_r_e_s.html#a77d18f6349314978fa73882338b8ef99">More...</a><br /></td></tr>
 <tr class="separator:a77d18f6349314978fa73882338b8ef99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ce26f3861a3f3bf7e076b6c42c65574"><td class="memTemplParams" colspan="2">template&lt;class MatrixType , class ContainerType0 , class ContainerType1 , class Preconditioner , class ContainerType2 &gt; </td></tr>
-<tr class="memitem:a6ce26f3861a3f3bf7e076b6c42c65574"><td class="memTemplItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdg_1_1_l_g_m_r_e_s.html#a6ce26f3861a3f3bf7e076b6c42c65574">solve</a> (MatrixType &amp;&amp;A, ContainerType0 &amp;x, const ContainerType1 &amp;b, Preconditioner &amp;&amp;P, const ContainerType2 &amp;W, <a class="el" href="classdg_1_1_l_g_m_r_e_s.html#ae87427bca8c5886677ede137b4fc3573">value_type</a> eps=1e-12, <a class="el" href="classdg_1_1_l_g_m_r_e_s.html#ae87427bca8c5886677ede137b4fc3573">value_type</a> nrmb_correction=1)</td></tr>
-<tr class="memdesc:a6ce26f3861a3f3bf7e076b6c42c65574"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solve \( Ax = b\) using a right preconditioned <a class="el" href="classdg_1_1_l_g_m_r_e_s.html" title="Functor class for the right preconditioned LGMRES method to solve.">LGMRES</a> method.  <a href="classdg_1_1_l_g_m_r_e_s.html#a6ce26f3861a3f3bf7e076b6c42c65574">More...</a><br /></td></tr>
-<tr class="separator:a6ce26f3861a3f3bf7e076b6c42c65574"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae463a256971f075735e03781e442fdda"><td class="memTemplParams" colspan="2">template&lt;class MatrixType0 , class ContainerType0 , class ContainerType1 , class MatrixType1 , class ContainerType2 &gt; </td></tr>
+<tr class="memitem:ae463a256971f075735e03781e442fdda"><td class="memTemplItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdg_1_1_l_g_m_r_e_s.html#ae463a256971f075735e03781e442fdda">solve</a> (MatrixType0 &amp;&amp;A, ContainerType0 &amp;x, const ContainerType1 &amp;b, MatrixType1 &amp;&amp;P, const ContainerType2 &amp;W, <a class="el" href="classdg_1_1_l_g_m_r_e_s.html#ae87427bca8c5886677ede137b4fc3573">value_type</a> eps=1e-12, <a class="el" href="classdg_1_1_l_g_m_r_e_s.html#ae87427bca8c5886677ede137b4fc3573">value_type</a> nrmb_correction=1)</td></tr>
+<tr class="memdesc:ae463a256971f075735e03781e442fdda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solve \( Ax = b\) using a right preconditioned <a class="el" href="classdg_1_1_l_g_m_r_e_s.html" title="Functor class for the right preconditioned LGMRES method to solve.">LGMRES</a> method.  <a href="classdg_1_1_l_g_m_r_e_s.html#ae463a256971f075735e03781e442fdda">More...</a><br /></td></tr>
+<tr class="separator:ae463a256971f075735e03781e442fdda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ccb8fa12fda2bbc83302f552936e836"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_l_g_m_r_e_s.html#a1ccb8fa12fda2bbc83302f552936e836">converged</a> () const</td></tr>
 <tr class="memdesc:a1ccb8fa12fda2bbc83302f552936e836"><td class="mdescLeft">&#160;</td><td class="mdescRight">If last call to solve converged or not.  <a href="classdg_1_1_l_g_m_r_e_s.html#a1ccb8fa12fda2bbc83302f552936e836">More...</a><br /></td></tr>
 <tr class="separator:a1ccb8fa12fda2bbc83302f552936e836"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -505,20 +505,20 @@ template&lt;class ContainerType &gt; </div>
 
 </div>
 </div>
-<a id="a6ce26f3861a3f3bf7e076b6c42c65574" name="a6ce26f3861a3f3bf7e076b6c42c65574"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ce26f3861a3f3bf7e076b6c42c65574">&#9670;&nbsp;</a></span>solve()</h2>
+<a id="ae463a256971f075735e03781e442fdda" name="ae463a256971f075735e03781e442fdda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae463a256971f075735e03781e442fdda">&#9670;&nbsp;</a></span>solve()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class ContainerType &gt; </div>
 <div class="memtemplate">
-template&lt;class MatrixType , class ContainerType0 , class ContainerType1 , class Preconditioner , class ContainerType2 &gt; </div>
+template&lt;class MatrixType0 , class ContainerType0 , class ContainerType1 , class MatrixType1 , class ContainerType2 &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">unsigned <a class="el" href="classdg_1_1_l_g_m_r_e_s.html">dg::LGMRES</a>&lt; ContainerType &gt;::solve </td>
           <td>(</td>
-          <td class="paramtype">MatrixType &amp;&amp;&#160;</td>
+          <td class="paramtype">MatrixType0 &amp;&amp;&#160;</td>
           <td class="paramname"><em>A</em>, </td>
         </tr>
         <tr>
@@ -536,7 +536,7 @@ template&lt;class MatrixType , class ContainerType0 , class ContainerType1 , cla
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Preconditioner &amp;&amp;&#160;</td>
+          <td class="paramtype">MatrixType1 &amp;&amp;&#160;</td>
           <td class="paramname"><em>P</em>, </td>
         </tr>
         <tr>
@@ -582,21 +582,25 @@ template&lt;class MatrixType , class ContainerType0 , class ContainerType1 , cla
 <dl class="section note"><dt>Note</dt><dd>The method will throw <code><a class="el" href="structdg_1_1_fail.html" title="Indicate failure to converge.">dg::Fail</a></code> if the desired accuracy is not reached within <code>max_restarts</code> You can unset this behaviour with the <code>set_throw_on_fail</code> member</dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">MatrixType</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits.">TensorTraits</a></code> exists and which fullfills the requirements of the there defined Matrix tags derived from <code><a class="el" href="structdg_1_1_any_matrix_tag.html">AnyMatrixTag</a></code>. Missing a specialization of <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits.">TensorTraits</a></code> the class is assumed a Functor. The <code>MatrixType</code> can for example be one of:<ul>
+    <tr><td class="paramname">MatrixType</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits.">TensorTraits</a></code> exists and defines a tensor_category derived from <code><a class="el" href="structdg_1_1_any_matrix_tag.html">AnyMatrixTag</a></code>. Furthermore, any functor/lambda type with signature <code> void operator()( const ContainerType0&amp;, ContainerType1&amp;) </code>. For example<ul>
 <li><code>scalar</code> or <code>Container:</code> Scalars and containers act as diagonal matrices.</li>
+<li><code> std::function&lt;void( const ContainerType0&amp;, ContainerType1&amp;)&gt; </code></li>
 <li><code><a class="el" href="group__typedefs.html#gac2134505608b45616787fdb2f6eedc87" title="Host Matrix for derivatives.">dg::HMatrix</a></code> and <code><a class="el" href="group__typedefs.html#ga3d74638bbcf620f19e3728a07ef1706d">dg::IHMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193" title="Host Vector.">dg::HVec</a></code> or <code>std::vector&lt;dg::HVec&gt;</code> </li>
 <li><code><a class="el" href="group__typedefs.html#gafdf2ecb95cbc87a1544136d28d535f16" title="Device Matrix for derivatives.">dg::DMatrix</a></code> and <code><a class="el" href="group__typedefs.html#gaec4df2a8ab65260aed0efeb6f5d115e4">dg::IDMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a></code> or <code>std::vector&lt;dg::DVec&gt;</code> </li>
 <li><code><a class="el" href="group__typedefs.html#gaff79c734c7916054c7dc24e6bc437161" title="MPI Host Matrix for derivatives.">dg::MHMatrix</a></code> with <code><a class="el" href="group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0" title="MPI Host Vector s.a. dg::HVec.">dg::MHVec</a></code> or <code>std::vector&lt;dg::MHVec&gt;</code> </li>
 <li><code><a class="el" href="group__typedefs.html#gaad32454aa2aca3cbb93448d7b5daf005" title="MPI Device Matrix for derivatives.">dg::MDMatrix</a></code> with <code><a class="el" href="group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55" title="MPI Device Vector s.a. dg::DVec.">dg::MDVec</a></code> or <code>std::vector&lt;dg::MDVec&gt;</code> </li>
-<li>If a specialization of <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits.">TensorTraits</a></code> does not exist then the compiler assumes a <b>functor</b> type, (e.g. will try to call <code> operator()( const ContainerType0&amp;, ContainerType1&amp;) </code>)</li>
-<li>In case of <code><a class="el" href="structdg_1_1_self_made_matrix_tag.html" title="Indicates that the type has a member function with the same name and interface (up to the matrix itse...">SelfMadeMatrixTag</a></code> only those <code><a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines.">blas2</a></code> functions that have a corresponding member function in the Matrix class (e.g. <code> symv( const ContainerType0&amp;, ContainerType1&amp;); </code> ) can be called.</li>
 </ul>
-If a <code>Container</code> has the <code><a class="el" href="structdg_1_1_recursive_vector_tag.html" title="This tag indicates composition/recursion.">RecursiveVectorTag</a></code>, then the <code>Matrix</code> is applied to each of the elements unless the type has the <code><a class="el" href="structdg_1_1_self_made_matrix_tag.html" title="Indicates that the type has a member function with the same name and interface (up to the matrix itse...">SelfMadeMatrixTag</a></code> or is a Functor. </td></tr>
-    <tr><td class="paramname">ContainerTypes</td><td>must be usable with <code>MatrixType</code> and <code>ContainerType</code> in <a class="el" href="group__blas.html#dispatch">The dg dispatch system</a> </td></tr>
-    <tr><td class="paramname">Preconditioner</td><td>A type for which the blas2::gemv(Preconditioner&amp;, ContainerType&amp;, ContainerType&amp;) function is callable. </td></tr>
+In case of <code><a class="el" href="structdg_1_1_self_made_matrix_tag.html" title="Indicates that the type has a member function with the same name and interface (up to the matrix itse...">SelfMadeMatrixTag</a></code> only those <code><a class="el" href="namespacedg_1_1blas2.html" title="BLAS Level 2 routines.">blas2</a></code> functions that have a corresponding member function in the Matrix class (e.g. <code> symv( const ContainerType0&amp;, ContainerType1&amp;); </code> ) can be called. If a <code>Container</code> has the <code><a class="el" href="structdg_1_1_recursive_vector_tag.html" title="This tag indicates composition/recursion.">RecursiveVectorTag</a></code>, then the matrix is applied to each of the elements unless the type has the <code><a class="el" href="structdg_1_1_self_made_matrix_tag.html" title="Indicates that the type has a member function with the same name and interface (up to the matrix itse...">SelfMadeMatrixTag</a></code> or is a Functor type.</td></tr>
+    <tr><td class="paramname">ContainerType</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits.">TensorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept.">AnyVectorTag</a></code> and <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class.">AnyPolicyTag</a></code>. Among others<ul>
+<li><code> <a class="el" href="group__typedefs.html#ga4fb8e78e7b043edfedb880523f0cd193" title="Host Vector.">dg::HVec</a> (serial), <a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a> (cuda / omp), <a class="el" href="group__typedefs.html#gac127f65b65c035ebe413aee5abffd6f0" title="MPI Host Vector s.a. dg::HVec.">dg::MHVec</a> (mpi + serial) or <a class="el" href="group__typedefs.html#ga1e23fb8b50d38d43beb4bf3689c20a55" title="MPI Device Vector s.a. dg::DVec.">dg::MDVec</a> (mpi + cuda / omp) </code></li>
+<li><code> std::vector&lt;dg::DVec&gt; </code> (vector of shared device vectors), <code> std::array&lt;double, 4&gt; </code> (array of 4 doubles) or <code> std::map &lt; std::string, <a class="el" href="group__typedefs.html#ga5bbe4ba51ef8ff8d506979d0beda25b8" title="Device Vector. The device can be an OpenMP parallelized cpu or a gpu. This depends on the value of th...">dg::DVec</a>&gt; </code> ( a map of named vectors)</li>
+<li><code> double (scalar)</code> and other primitive types ...</li>
+</ul>
+If there are several <code>ContainerTypes</code> in the argument list, then <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits.">TensorTraits</a></code> must exist for all of them </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>See also</dt><dd>See <a class="el" href="group__blas.html#dispatch">The dg dispatch system</a> for a detailed explanation of our type dispatch system </dd></dl>
 
 </div>
 </div>
@@ -610,7 +614,7 @@ If a <code>Container</code> has the <code><a class="el" href="structdg_1_1_recur
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="classdg_1_1_l_g_m_r_e_s.html">LGMRES</a></li>
-    <li class="footer">Generated on Fri Jan 14 2022 13:22:09 for Discontinuous Galerkin Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
+    <li class="footer">Generated on Fri Jan 28 2022 17:46:21 for Discontinuous Galerkin Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
   </ul>
 </div>
 </body>

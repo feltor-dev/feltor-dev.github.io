@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['centeredx_0',['centeredX',['../group__magnetic.html#ggac077a0f92059114ad4973984de444db4ac13fbf432e95b34cbc0be0be28243557',1,'dg::geo']]],
-  ['circular_1',['circular',['../group__magnetic.html#ggab39148d38eed4929633564c02238214dad5a124c9445ae5eeadb48b050b9cff72',1,'dg::geo']]]
+  ['at_5fleast_0',['at_least',['../../../dg/html/group__time__utils.html#ga6da92394b084f50fdbfe42b13506ba40aeb864176fc6fa04fb42eb3d755efa8d1',1,'at_least()(Global Namespace)'],['../../../dg/html/group__time__utils.html#ga6da92394b084f50fdbfe42b13506ba40aeb864176fc6fa04fb42eb3d755efa8d1',1,'dg::at_least()'],['../../../dg/html/group__time__utils.html#ga6da92394b084f50fdbfe42b13506ba40aeb864176fc6fa04fb42eb3d755efa8d1',1,'at_least()(Global Namespace)']]]
 ];

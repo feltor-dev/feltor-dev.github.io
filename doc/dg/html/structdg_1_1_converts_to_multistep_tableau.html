@@ -140,6 +140,11 @@ Public Member Functions</h2></td></tr>
 struct dg::ConvertsToMultistepTableau&lt; real_type &gt;</div><p >Convert identifiers to their corresponding <code><a class="el" href="structdg_1_1_multistep_tableau.html" title="Manage coefficients of Multistep methods.">dg::MultistepTableau</a></code>. </p>
 <p >This is a helper class to simplify the interfaces of our timestepper functions and classes. The sole purpose is to implicitly convert either a <a class="el" href="structdg_1_1_multistep_tableau.html" title="Manage coefficients of Multistep methods.">MultistepTableau</a> or one of the following identifiers to an instance of a <a class="el" href="structdg_1_1_multistep_tableau.html" title="Manage coefficients of Multistep methods.">MultistepTableau</a>.</p>
 <p >Explicit methods</p>
+<p >We follow the naming convention as <b>NAME-S-Q</b></p><ul>
+<li>NAME is the author or name of the method</li>
+<li>S is the number of steps in the method</li>
+<li>Q is the global order of the method</li>
+</ul>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Identifier   </th><th class="markdownTableHeadNone">Description    </th></tr>
@@ -169,6 +174,11 @@ These schemes are noteworthy because the coefficients b_i are all positive excep
 <dd>
 the CFL coefficient C is given relative to the forward Euler method: \( \Delta t &lt; C \Delta t_{FE}\). </dd></dl>
 <dl class="section attention"><dt>Attention</dt><dd>The coefficient C is the one that ensures the TVD property of the scheme and is <b>not</b> directly related to the stability region of the scheme Implicit methods</dd></dl>
+<p>We follow the naming convention as <b>NAME-S-Q</b></p><ul>
+<li>NAME is the author or name of the method</li>
+<li>S is the number of steps in the method</li>
+<li>Q is the global order of the method</li>
+</ul>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Identifier   </th><th class="markdownTableHeadNone">Description    </th></tr>
@@ -182,6 +192,11 @@ Methods with s&gt;6 are not zero-stable so they cannot be used   </dd></dl>
 </td></tr>
 </table>
 <p>Implicit-Explicit methods</p>
+<p >We follow the naming convention as <b>NAME-S-Q</b></p><ul>
+<li>NAME is the author or name of the method</li>
+<li>S is the number of steps in the method</li>
+<li>Q is the global order of the method</li>
+</ul>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Identifier   </th><th class="markdownTableHeadNone">Description    </th></tr>
@@ -327,6 +342,11 @@ template&lt;class real_type &gt; </div>
 
 <p>Create <a class="el" href="structdg_1_1_multistep_tableau.html" title="Manage coefficients of Multistep methods.">MultistepTableau</a> from its name (very useful) </p>
 <p >Explicit methods</p>
+<p >We follow the naming convention as <b>NAME-S-Q</b></p><ul>
+<li>NAME is the author or name of the method</li>
+<li>S is the number of steps in the method</li>
+<li>Q is the global order of the method</li>
+</ul>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Identifier   </th><th class="markdownTableHeadNone">Description    </th></tr>
@@ -356,6 +376,11 @@ These schemes are noteworthy because the coefficients b_i are all positive excep
 <dd>
 the CFL coefficient C is given relative to the forward Euler method: \( \Delta t &lt; C \Delta t_{FE}\). </dd></dl>
 <dl class="section attention"><dt>Attention</dt><dd>The coefficient C is the one that ensures the TVD property of the scheme and is <b>not</b> directly related to the stability region of the scheme Implicit methods</dd></dl>
+<p>We follow the naming convention as <b>NAME-S-Q</b></p><ul>
+<li>NAME is the author or name of the method</li>
+<li>S is the number of steps in the method</li>
+<li>Q is the global order of the method</li>
+</ul>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Identifier   </th><th class="markdownTableHeadNone">Description    </th></tr>
@@ -369,6 +394,11 @@ Methods with s&gt;6 are not zero-stable so they cannot be used   </dd></dl>
 </td></tr>
 </table>
 <p>Implicit-Explicit methods</p>
+<p >We follow the naming convention as <b>NAME-S-Q</b></p><ul>
+<li>NAME is the author or name of the method</li>
+<li>S is the number of steps in the method</li>
+<li>Q is the global order of the method</li>
+</ul>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Identifier   </th><th class="markdownTableHeadNone">Description    </th></tr>
@@ -434,6 +464,11 @@ template&lt;class real_type &gt; </div>
 
 <p>Create <a class="el" href="structdg_1_1_multistep_tableau.html" title="Manage coefficients of Multistep methods.">MultistepTableau</a> from its name (very useful) </p>
 <p >Explicit methods</p>
+<p >We follow the naming convention as <b>NAME-S-Q</b></p><ul>
+<li>NAME is the author or name of the method</li>
+<li>S is the number of steps in the method</li>
+<li>Q is the global order of the method</li>
+</ul>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Identifier   </th><th class="markdownTableHeadNone">Description    </th></tr>
@@ -463,6 +498,11 @@ These schemes are noteworthy because the coefficients b_i are all positive excep
 <dd>
 the CFL coefficient C is given relative to the forward Euler method: \( \Delta t &lt; C \Delta t_{FE}\). </dd></dl>
 <dl class="section attention"><dt>Attention</dt><dd>The coefficient C is the one that ensures the TVD property of the scheme and is <b>not</b> directly related to the stability region of the scheme Implicit methods</dd></dl>
+<p>We follow the naming convention as <b>NAME-S-Q</b></p><ul>
+<li>NAME is the author or name of the method</li>
+<li>S is the number of steps in the method</li>
+<li>Q is the global order of the method</li>
+</ul>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Identifier   </th><th class="markdownTableHeadNone">Description    </th></tr>
@@ -476,6 +516,11 @@ Methods with s&gt;6 are not zero-stable so they cannot be used   </dd></dl>
 </td></tr>
 </table>
 <p>Implicit-Explicit methods</p>
+<p >We follow the naming convention as <b>NAME-S-Q</b></p><ul>
+<li>NAME is the author or name of the method</li>
+<li>S is the number of steps in the method</li>
+<li>Q is the global order of the method</li>
+</ul>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Identifier   </th><th class="markdownTableHeadNone">Description    </th></tr>
@@ -553,7 +598,7 @@ template&lt;class real_type &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_converts_to_multistep_tableau.html">ConvertsToMultistepTableau</a></li>
-    <li class="footer">Generated on Fri Jan 14 2022 13:22:08 for Discontinuous Galerkin Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
+    <li class="footer">Generated on Fri Jan 28 2022 17:46:21 for Discontinuous Galerkin Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
   </ul>
 </div>
 </body>

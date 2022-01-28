@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('structdg_1_1file_1_1_wrapped_json_valu
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1084268ecd6c54066a5ba9e3ae819efc"><td class="memItemLeft" align="right" valign="top"><a id="a1084268ecd6c54066a5ba9e3ae819efc" name="a1084268ecd6c54066a5ba9e3ae819efc"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>WrappedJsonValue</b> ()</td></tr>
-<tr class="memdesc:a1084268ecd6c54066a5ba9e3ae819efc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
+<tr class="memdesc:a1084268ecd6c54066a5ba9e3ae819efc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor By default the error mode is <code><a class="el" href="group__json.html#ggaa175872f0039fffca9e16b101f605e8aadbecbb4abf9ff5c6c5f8b84ed0f68cc3" title="throw an error">error::is_throw</a></code>. <br /></td></tr>
 <tr class="separator:a1084268ecd6c54066a5ba9e3ae819efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86c02111d30f59ce7487549ffa24af8a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1file_1_1_wrapped_json_value.html#a86c02111d30f59ce7487549ffa24af8a">WrappedJsonValue</a> (<a class="el" href="group__json.html#gaa175872f0039fffca9e16b101f605e8a">error</a> mode)</td></tr>
 <tr class="memdesc:a86c02111d30f59ce7487549ffa24af8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct with error mode.  <a href="structdg_1_1file_1_1_wrapped_json_value.html#a86c02111d30f59ce7487549ffa24af8a">More...</a><br /></td></tr>
@@ -188,7 +188,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>asString</b> (
 <div class="line">    <span class="comment">//called &quot;array&quot;</span></div>
 <div class="line">    std::cerr &lt;&lt; e.what()&lt;&lt;std::endl;</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__json_html_ga16a1e4ad9fe50e417bf8032f1fed0536"><div class="ttname"><a href="group__json.html#ga16a1e4ad9fe50e417bf8032f1fed0536">dg::file::file2Json</a></div><div class="ttdeci">static void file2Json(std::string filename, Json::Value &amp;js, enum comments comm=file::comments::are_discarded, enum error err=file::error::is_throw)</div><div class="ttdoc">Convenience wrapper to open a file and parse it into a Json::Value.</div><div class="ttdef"><b>Definition:</b> json_utilities.h:310</div></div>
+<div class="ttc" id="agroup__json_html_ga16a1e4ad9fe50e417bf8032f1fed0536"><div class="ttname"><a href="group__json.html#ga16a1e4ad9fe50e417bf8032f1fed0536">dg::file::file2Json</a></div><div class="ttdeci">static void file2Json(std::string filename, Json::Value &amp;js, enum comments comm=file::comments::are_discarded, enum error err=file::error::is_throw)</div><div class="ttdoc">Convenience wrapper to open a file and parse it into a Json::Value.</div><div class="ttdef"><b>Definition:</b> json_utilities.h:237</div></div>
 <div class="ttc" id="agroup__json_html_ggaa175872f0039fffca9e16b101f605e8aadbecbb4abf9ff5c6c5f8b84ed0f68cc3"><div class="ttname"><a href="group__json.html#ggaa175872f0039fffca9e16b101f605e8aadbecbb4abf9ff5c6c5f8b84ed0f68cc3">dg::file::error::is_throw</a></div><div class="ttdeci">@ is_throw</div><div class="ttdoc">throw an error</div></div>
 <div class="ttc" id="astructdg_1_1file_1_1_wrapped_json_value_html"><div class="ttname"><a href="structdg_1_1file_1_1_wrapped_json_value.html">dg::file::WrappedJsonValue</a></div><div class="ttdoc">Wrapped Access to Json values with error handling.</div><div class="ttdef"><b>Definition:</b> json_utilities.h:90</div></div>
 </div><!-- fragment --><p> A feature of the class is that it keeps track of how a value is called. For example </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> some_function( <a class="code hl_struct" href="structdg_1_1file_1_1_wrapped_json_value.html">dg::file::WrappedJsonValue</a> ws)</div>
@@ -202,7 +202,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>asString</b> (
 <div class="line">} <span class="keywordflow">catch</span> ( std::exception&amp; e){ std::cerr &lt;&lt; e.what()&lt;&lt;std::endl; }</div>
 <div class="line"><span class="comment">//The what string knows that &quot;some_non_existent_key&quot; is expected to be</span></div>
 <div class="line"><span class="comment">//contained in the &quot;nested&quot; key.</span></div>
-<div class="ttc" id="astructdg_1_1file_1_1_wrapped_json_value_html_a5c3b3bd86afcb41868a5711eb474b894"><div class="ttname"><a href="structdg_1_1file_1_1_wrapped_json_value.html#a5c3b3bd86afcb41868a5711eb474b894">dg::file::WrappedJsonValue::asUInt</a></div><div class="ttdeci">unsigned asUInt(unsigned value=0) const</div><div class="ttdoc">Wrap the corresponding Json::Value function with error handling.</div><div class="ttdef"><b>Definition:</b> json_utilities.h:145</div></div>
+<div class="ttc" id="astructdg_1_1file_1_1_wrapped_json_value_html_a5c3b3bd86afcb41868a5711eb474b894"><div class="ttname"><a href="structdg_1_1file_1_1_wrapped_json_value.html#a5c3b3bd86afcb41868a5711eb474b894">dg::file::WrappedJsonValue::asUInt</a></div><div class="ttdeci">unsigned asUInt(unsigned value=0) const</div><div class="ttdoc">Wrap the corresponding Json::Value function with error handling.</div><div class="ttdef"><b>Definition:</b> json_utilities.h:146</div></div>
 </div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a86c02111d30f59ce7487549ffa24af8a" name="a86c02111d30f59ce7487549ffa24af8a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a86c02111d30f59ce7487549ffa24af8a">&#9670;&nbsp;</a></span>WrappedJsonValue() <span class="overload">[1/3]</span></h2>
@@ -378,7 +378,7 @@ Here is the call graph for this function:</div>
 <p>Change the error mode. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">mode</td><td>The new error mode </td></tr>
+    <tr><td class="paramname">new_mode</td><td>The new error mode </td></tr>
   </table>
   </dd>
 </dl>
@@ -395,7 +395,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>dg</b></li><li class="navelem"><a class="el" href="namespacedg_1_1file.html">file</a></li><li class="navelem"><a class="el" href="structdg_1_1file_1_1_wrapped_json_value.html">WrappedJsonValue</a></li>
-    <li class="footer">Generated on Fri Jan 14 2022 13:22:24 for Extension: Json and NetCDF utilities by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
+    <li class="footer">Generated on Fri Jan 28 2022 17:46:36 for Extension: Json and NetCDF utilities by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
   </ul>
 </div>
 </body>

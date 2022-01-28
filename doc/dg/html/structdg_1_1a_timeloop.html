@@ -133,9 +133,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a97075599065d0dbdadac0ada83ffc2b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_timeloop.html#a97075599065d0dbdadac0ada83ffc2b4">integrate</a> (<a class="el" href="structdg_1_1a_timeloop.html#aa97380970aecd889291b393b5a047581">value_type</a> t0, const ContainerType &amp;u0, <a class="el" href="structdg_1_1a_timeloop.html#aa97380970aecd889291b393b5a047581">value_type</a> t1, ContainerType &amp;u1)</td></tr>
 <tr class="memdesc:a97075599065d0dbdadac0ada83ffc2b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrate a differential equation between given bounds.  <a href="structdg_1_1a_timeloop.html#a97075599065d0dbdadac0ada83ffc2b4">More...</a><br /></td></tr>
 <tr class="separator:a97075599065d0dbdadac0ada83ffc2b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa62095bebe2bbf536abd7e36496f1bbc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_timeloop.html#aa62095bebe2bbf536abd7e36496f1bbc">integrate_at_least</a> (<a class="el" href="structdg_1_1a_timeloop.html#aa97380970aecd889291b393b5a047581">value_type</a> t0, const ContainerType &amp;u0, <a class="el" href="structdg_1_1a_timeloop.html#aa97380970aecd889291b393b5a047581">value_type</a> &amp;t1, ContainerType &amp;u1)</td></tr>
-<tr class="memdesc:aa62095bebe2bbf536abd7e36496f1bbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrate a differential equation at least between given bounds.  <a href="structdg_1_1a_timeloop.html#aa62095bebe2bbf536abd7e36496f1bbc">More...</a><br /></td></tr>
-<tr class="separator:aa62095bebe2bbf536abd7e36496f1bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9036a6f4dda222cc9a7e3ba16336b4ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_timeloop.html#a9036a6f4dda222cc9a7e3ba16336b4ac">integrate</a> (<a class="el" href="structdg_1_1a_timeloop.html#aa97380970aecd889291b393b5a047581">value_type</a> &amp;t0, const ContainerType &amp;u0, <a class="el" href="structdg_1_1a_timeloop.html#aa97380970aecd889291b393b5a047581">value_type</a> t1, ContainerType &amp;u1, enum <a class="el" href="group__time__utils.html#ga6da92394b084f50fdbfe42b13506ba40">to</a> mode)</td></tr>
+<tr class="memdesc:a9036a6f4dda222cc9a7e3ba16336b4ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build your own timeloop.  <a href="structdg_1_1a_timeloop.html#a9036a6f4dda222cc9a7e3ba16336b4ac">More...</a><br /></td></tr>
+<tr class="separator:a9036a6f4dda222cc9a7e3ba16336b4ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb375dbd5716f2981d3ffa772ea2b44e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1a_timeloop.html#aa97380970aecd889291b393b5a047581">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_timeloop.html#adb375dbd5716f2981d3ffa772ea2b44e">get_dt</a> () const</td></tr>
+<tr class="memdesc:adb375dbd5716f2981d3ffa772ea2b44e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current timestep.  <a href="structdg_1_1a_timeloop.html#adb375dbd5716f2981d3ffa772ea2b44e">More...</a><br /></td></tr>
+<tr class="separator:adb375dbd5716f2981d3ffa772ea2b44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0596bedcad6f76fce5fdbdf8227b3fff"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structdg_1_1a_timeloop.html">aTimeloop</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1a_timeloop.html#a0596bedcad6f76fce5fdbdf8227b3fff">clone</a> () const =0</td></tr>
 <tr class="memdesc:a0596bedcad6f76fce5fdbdf8227b3fff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract copy method that returns a copy of *this on the heap.  <a href="structdg_1_1a_timeloop.html#a0596bedcad6f76fce5fdbdf8227b3fff">More...</a><br /></td></tr>
 <tr class="separator:a0596bedcad6f76fce5fdbdf8227b3fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -324,8 +327,125 @@ template&lt;class ContainerType &gt; </div>
 
 </div>
 </div>
+<a id="adb375dbd5716f2981d3ffa772ea2b44e" name="adb375dbd5716f2981d3ffa772ea2b44e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb375dbd5716f2981d3ffa772ea2b44e">&#9670;&nbsp;</a></span>get_dt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ContainerType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdg_1_1a_timeloop.html#aa97380970aecd889291b393b5a047581">value_type</a> <a class="el" href="structdg_1_1a_timeloop.html">dg::aTimeloop</a>&lt; ContainerType &gt;::get_dt </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The current timestep. </p>
+<dl class="section return"><dt>Returns</dt><dd>The <code>dt</code> value at the end of the latest call to integrate. If integrate fails for some reason then return the timestep at which the failure happens. Undefined if <code>integrate</code> has not been called at least once. </dd></dl>
+
+</div>
+</div>
+<a id="a9036a6f4dda222cc9a7e3ba16336b4ac" name="a9036a6f4dda222cc9a7e3ba16336b4ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9036a6f4dda222cc9a7e3ba16336b4ac">&#9670;&nbsp;</a></span>integrate() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ContainerType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structdg_1_1a_timeloop.html">dg::aTimeloop</a>&lt; ContainerType &gt;::integrate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdg_1_1a_timeloop.html#aa97380970aecd889291b393b5a047581">value_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>t0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ContainerType &amp;&#160;</td>
+          <td class="paramname"><em>u0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structdg_1_1a_timeloop.html#aa97380970aecd889291b393b5a047581">value_type</a>&#160;</td>
+          <td class="paramname"><em>t1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ContainerType &amp;&#160;</td>
+          <td class="paramname"><em>u1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum <a class="el" href="group__time__utils.html#ga6da92394b084f50fdbfe42b13506ba40">to</a>&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Build your own timeloop. </p>
+<p >Integrate an ode from <code> t = t0 </code> until <code> t &gt;= t1 </code> using a set of discrete steps <b>with or without</b> forcing a certain timestep to match t1 exactly. For example, if <code>t0=0</code> and <code>t1=1</code> and the timestep is <code>dt=0.6</code> then the timestepper without forcing stops at <code>t1=1.2</code> This behaviour is useful especially for adaptive timesteppers because it allows to implement timeloops with minimal interference with the controller </p><div class="fragment"><div class="line"><span class="keywordtype">double</span> time = t_begin;</div>
+<div class="line"><span class="keywordtype">double</span> deltaT = (t_end - t_begin) / (<span class="keywordtype">double</span>)maxout;</div>
+<div class="line"><span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> u=1; u&lt;=maxout; u++)</div>
+<div class="line">{</div>
+<div class="line">    timeloop.integrate( time, u0, t_begin + u*deltaT, u0,</div>
+<div class="line">         u&lt;maxout ? <a class="code hl_enumvalue" href="group__time__utils.html#gga6da92394b084f50fdbfe42b13506ba40aeb864176fc6fa04fb42eb3d755efa8d1">dg::to::at_least</a> :  <a class="code hl_enumvalue" href="group__time__utils.html#gga6da92394b084f50fdbfe42b13506ba40a3b7efa09444a31c5d58596e5bbf87d47">dg::to::exact</a>);</div>
+<div class="line">    <span class="comment">// Takes as many steps as an uninterupted integrate</span></div>
+<div class="line">    <span class="comment">// from t_begin to t_end</span></div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Warning: the following version does not(!) finish at t_end:</span></div>
+<div class="line">    <span class="comment">//timeloop.integrate( time, u0, time+deltaT, u0,</span></div>
+<div class="line">    <span class="comment">//     u&lt;maxout ? dg::to::at_least :  dg::to::exact);</span></div>
+<div class="line"> }</div>
+<div class="ttc" id="agroup__time__utils_html_gga6da92394b084f50fdbfe42b13506ba40a3b7efa09444a31c5d58596e5bbf87d47"><div class="ttname"><a href="group__time__utils.html#gga6da92394b084f50fdbfe42b13506ba40a3b7efa09444a31c5d58596e5bbf87d47">dg::to::exact</a></div><div class="ttdeci">@ exact</div><div class="ttdoc">match the ending exactly</div></div>
+<div class="ttc" id="agroup__time__utils_html_gga6da92394b084f50fdbfe42b13506ba40aeb864176fc6fa04fb42eb3d755efa8d1"><div class="ttname"><a href="group__time__utils.html#gga6da92394b084f50fdbfe42b13506ba40aeb864176fc6fa04fb42eb3d755efa8d1">dg::to::at_least</a></div><div class="ttdeci">@ at_least</div><div class="ttdoc">integrate to the end or further</div></div>
+</div><!-- fragment --> <dl class="section note"><dt>Note</dt><dd>This function is re-entrant, i.e. if you integrate from t0 to t1 and then from t1 to t2 the timestepper does not need to re-initialize on the second call </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t0</td><td>(read-write) initial time on entry; on exit it is the value to where the ode is actually integrated, corresponding to <code>u1</code> </td></tr>
+    <tr><td class="paramname">u0</td><td>initial value at <code>t0</code> </td></tr>
+    <tr><td class="paramname">t1</td><td>(read-only) end time </td></tr>
+    <tr><td class="paramname">u1</td><td>(write only) contains the result corresponding to exactly or at least t1 on output (may alias u0) </td></tr>
+    <tr><td class="paramname">mode</td><td>either integrate exactly to <code>t1</code> or at least to <code>t1</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>Attention</dt><dd>Don't make the difference between t0 and t1 too small (on the order of the timestep dt) else it may happen that the integrator overshoots too much and has to integrate back (which it won't do) </dd>
+<dd>
+The function may throw <code><a class="el" href="classdg_1_1_error.html" title="class intended for the use in throw statements">dg::Error</a></code> (or anything derived from <code>std::exception</code>). </dd></dl>
+
+</div>
+</div>
 <a id="a97075599065d0dbdadac0ada83ffc2b4" name="a97075599065d0dbdadac0ada83ffc2b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97075599065d0dbdadac0ada83ffc2b4">&#9670;&nbsp;</a></span>integrate()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a97075599065d0dbdadac0ada83ffc2b4">&#9670;&nbsp;</a></span>integrate() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -384,68 +504,7 @@ template&lt;class ContainerType &gt; </div>
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>May not work for a multistep integrator if the interval does not evenly multiply the (fixed) timestep </dd></dl>
-
-</div>
-</div>
-<a id="aa62095bebe2bbf536abd7e36496f1bbc" name="aa62095bebe2bbf536abd7e36496f1bbc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa62095bebe2bbf536abd7e36496f1bbc">&#9670;&nbsp;</a></span>integrate_at_least()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ContainerType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="structdg_1_1a_timeloop.html">dg::aTimeloop</a>&lt; ContainerType &gt;::integrate_at_least </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structdg_1_1a_timeloop.html#aa97380970aecd889291b393b5a047581">value_type</a>&#160;</td>
-          <td class="paramname"><em>t0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const ContainerType &amp;&#160;</td>
-          <td class="paramname"><em>u0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structdg_1_1a_timeloop.html#aa97380970aecd889291b393b5a047581">value_type</a> &amp;&#160;</td>
-          <td class="paramname"><em>t1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ContainerType &amp;&#160;</td>
-          <td class="paramname"><em>u1</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Integrate a differential equation at least between given bounds. </p>
-<p >Integrate an ode from <code> t = t0 </code> until <code> t &gt;= t1 </code> using a set of discrete steps <b>without</b> forcing a certain timestep to match t1 exactly. For example, if <code>t0=0</code> and <code>t1=1</code> and the timestep is <code>dt=0.6</code> then the timestepper without forcing stops at <code>t1=1.2</code> This behaviour is useful especially for adaptive timesteppers because it allows to implement timeloops with minimal interference with the controller </p><dl class="section note"><dt>Note</dt><dd>This function is re-entrant, i.e. if you integrate from t0 to t1 and then from t1 to t2 the timestepper does not need to re-initialize on the second call </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">t0</td><td>initial time </td></tr>
-    <tr><td class="paramname">u0</td><td>initial value at <code>t0</code> </td></tr>
-    <tr><td class="paramname">t1</td><td>(read-write) on entry this is the value to which to integrate the ode on exit it is the value to where the ode is actually integrated </td></tr>
-    <tr><td class="paramname">u1</td><td>(write only) contains the result corresponding to t1 on output </td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="section attention"><dt>Attention</dt><dd>The function may throw <code><a class="el" href="classdg_1_1_error.html" title="class intended for the use in throw statements">dg::Error</a></code> (or anything derived from <code>std::exception</code>). </dd></dl>
 
 </div>
 </div>
@@ -489,7 +548,7 @@ template&lt;class ContainerType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1a_timeloop.html">aTimeloop</a></li>
-    <li class="footer">Generated on Fri Jan 14 2022 13:22:08 for Discontinuous Galerkin Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
+    <li class="footer">Generated on Fri Jan 28 2022 17:46:21 for Discontinuous Galerkin Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
   </ul>
 </div>
 </body>

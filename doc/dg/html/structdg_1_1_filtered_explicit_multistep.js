@@ -6,6 +6,6 @@ var structdg_1_1_filtered_explicit_multistep =
     [ "FilteredExplicitMultistep", "structdg_1_1_filtered_explicit_multistep.html#a64870b8b78b28f9a2b461d3603a4c227", null ],
     [ "construct", "structdg_1_1_filtered_explicit_multistep.html#a851d3064911e31cad0ed1f535f380c98", null ],
     [ "copyable", "structdg_1_1_filtered_explicit_multistep.html#a178d8e32f5400e81b0cf6716f4052164", null ],
-    [ "init", "structdg_1_1_filtered_explicit_multistep.html#af776a0a1610f58912fbc8fd8125b3264", null ],
-    [ "step", "structdg_1_1_filtered_explicit_multistep.html#a645a43f32c32e754895ac9cec77a9897", null ]
+    [ "init", "structdg_1_1_filtered_explicit_multistep.html#a5ce697ca583614c8fe7c4cce0ada15da", null ],
+    [ "step", "structdg_1_1_filtered_explicit_multistep.html#a903df8ce625b0c9b6616f846e017acc3", null ]
 ];

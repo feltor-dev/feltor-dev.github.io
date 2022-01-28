@@ -137,14 +137,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a464191ef33dac014d5f4e355eeb8e034"><td class="memItemLeft" align="right" valign="top">const ContainerType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_im_ex_multistep.html#a464191ef33dac014d5f4e355eeb8e034">copyable</a> () const</td></tr>
 <tr class="memdesc:a464191ef33dac014d5f4e355eeb8e034"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an object of same size as the object used for construction.  <a href="structdg_1_1_im_ex_multistep.html#a464191ef33dac014d5f4e355eeb8e034">More...</a><br /></td></tr>
 <tr class="separator:a464191ef33dac014d5f4e355eeb8e034"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29c33dd9d081414b9d5f8d384b112db0"><td class="memTemplParams" colspan="2">template&lt;class Explicit , class Implicit , class Solver &gt; </td></tr>
-<tr class="memitem:a29c33dd9d081414b9d5f8d384b112db0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_im_ex_multistep.html#a29c33dd9d081414b9d5f8d384b112db0">init</a> (const std::tuple&lt; Explicit, Implicit, Solver &gt; &amp;ode, <a class="el" href="structdg_1_1_im_ex_multistep.html#a7a148de4470deb1e6c32c865502a2c26">value_type</a> t0, const ContainerType &amp;u0, <a class="el" href="structdg_1_1_im_ex_multistep.html#a7a148de4470deb1e6c32c865502a2c26">value_type</a> dt)</td></tr>
-<tr class="memdesc:a29c33dd9d081414b9d5f8d384b112db0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize timestepper. Call before using the step function.  <a href="structdg_1_1_im_ex_multistep.html#a29c33dd9d081414b9d5f8d384b112db0">More...</a><br /></td></tr>
-<tr class="separator:a29c33dd9d081414b9d5f8d384b112db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0548115a5bcd41da34d6116af54d144"><td class="memTemplParams" colspan="2">template&lt;class Explicit , class Implicit , class Solver &gt; </td></tr>
-<tr class="memitem:af0548115a5bcd41da34d6116af54d144"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_im_ex_multistep.html#af0548115a5bcd41da34d6116af54d144">step</a> (const std::tuple&lt; Explicit, Implicit, Solver &gt; &amp;ode, <a class="el" href="structdg_1_1_im_ex_multistep.html#a7a148de4470deb1e6c32c865502a2c26">value_type</a> &amp;t, ContainerType &amp;u)</td></tr>
-<tr class="memdesc:af0548115a5bcd41da34d6116af54d144"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advance one timestep.  <a href="structdg_1_1_im_ex_multistep.html#af0548115a5bcd41da34d6116af54d144">More...</a><br /></td></tr>
-<tr class="separator:af0548115a5bcd41da34d6116af54d144"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86c68553f557d5f7283ca061282fddce"><td class="memTemplParams" colspan="2">template&lt;class ExplicitRHS , class ImplicitRHS , class Solver &gt; </td></tr>
+<tr class="memitem:a86c68553f557d5f7283ca061282fddce"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_im_ex_multistep.html#a86c68553f557d5f7283ca061282fddce">init</a> (const std::tuple&lt; ExplicitRHS, ImplicitRHS, Solver &gt; &amp;ode, <a class="el" href="structdg_1_1_im_ex_multistep.html#a7a148de4470deb1e6c32c865502a2c26">value_type</a> t0, const ContainerType &amp;u0, <a class="el" href="structdg_1_1_im_ex_multistep.html#a7a148de4470deb1e6c32c865502a2c26">value_type</a> dt)</td></tr>
+<tr class="memdesc:a86c68553f557d5f7283ca061282fddce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize timestepper. Call before using the step function.  <a href="structdg_1_1_im_ex_multistep.html#a86c68553f557d5f7283ca061282fddce">More...</a><br /></td></tr>
+<tr class="separator:a86c68553f557d5f7283ca061282fddce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a821c8abd8f8ddaa1c6836eeb56701693"><td class="memTemplParams" colspan="2">template&lt;class ExplicitRHS , class ImplicitRHS , class Solver &gt; </td></tr>
+<tr class="memitem:a821c8abd8f8ddaa1c6836eeb56701693"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_im_ex_multistep.html#a821c8abd8f8ddaa1c6836eeb56701693">step</a> (const std::tuple&lt; ExplicitRHS, ImplicitRHS, Solver &gt; &amp;ode, <a class="el" href="structdg_1_1_im_ex_multistep.html#a7a148de4470deb1e6c32c865502a2c26">value_type</a> &amp;t, ContainerType &amp;u)</td></tr>
+<tr class="memdesc:a821c8abd8f8ddaa1c6836eeb56701693"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advance one timestep.  <a href="structdg_1_1_im_ex_multistep.html#a821c8abd8f8ddaa1c6836eeb56701693">More...</a><br /></td></tr>
+<tr class="separator:a821c8abd8f8ddaa1c6836eeb56701693"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;class ContainerType&gt;<br />
@@ -159,6 +159,11 @@ struct dg::ImExMultistep&lt; ContainerType &gt;</div><p >Semi-implicit multistep
 \[ a_0 = \frac{18}{11}\ a_1 = -\frac{9}{11}\ a_2 = \frac{2}{11} \\ b_0 = \frac{18}{11}\ b_1 = -\frac{18}{11}\ b_2 = \frac{6}{11} \\ c_0 = \frac{6}{11}\quad c_1 = c_2 = c_3 = 0 \\ \]
 </p>
 <p> You can use your own coefficients defined as a <code><a class="el" href="structdg_1_1_multistep_tableau.html" title="Manage coefficients of Multistep methods.">dg::MultistepTableau</a></code> or use one of the predefined coefficients in</p>
+<p >We follow the naming convention as <b>NAME-S-Q</b></p><ul>
+<li>NAME is the author or name of the method</li>
+<li>S is the number of steps in the method</li>
+<li>Q is the global order of the method</li>
+</ul>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Identifier   </th><th class="markdownTableHeadNone">Description    </th></tr>
@@ -225,14 +230,14 @@ The implicit part is a normal BDF scheme <a href="https://en.wikipedia.org/wiki/
 <div class="ttc" id="agroup__creation_html_ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d"><div class="ttname"><a href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">dg::coo2d::y</a></div><div class="ttdeci">@ y</div><div class="ttdoc">y direction</div></div>
 </div><!-- fragment --><p> In the main function: </p><div class="fragment"><div class="line">        <span class="comment">//construct time stepper</span></div>
 <div class="line">        <a class="code hl_struct" href="structdg_1_1_im_ex_multistep.html">dg::ImExMultistep&lt; std::array&lt;double,2&gt;</a> &gt; imex( name, y0);</div>
-<div class="line">        time = 0., y0 = <a class="code hl_function" href="structdg_1_1_im_ex_multistep.html#a29c33dd9d081414b9d5f8d384b112db0">init</a>; <span class="comment">//y0 and init are of type std::array&lt;double,2&gt; and contain the initial condition</span></div>
+<div class="line">        time = 0., y0 = <a class="code hl_function" href="structdg_1_1_im_ex_multistep.html#a86c68553f557d5f7283ca061282fddce">init</a>; <span class="comment">//y0 and init are of type std::array&lt;double,2&gt; and contain the initial condition</span></div>
 <div class="line">        <span class="comment">//initialize the timestepper (ex and im are objects of type Explicit and Implicit defined above)</span></div>
 <div class="line">        imex.init( std::tie(ex, im, im), time, y0, dt);</div>
 <div class="line">        <span class="comment">//main time loop (NT = 20)</span></div>
 <div class="line">        <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> k=0; k&lt;NT; k++)</div>
 <div class="line">            imex.step( std::tie(ex, im, im), time, y0); <span class="comment">//inplace step</span></div>
 <div class="ttc" id="astructdg_1_1_im_ex_multistep_html"><div class="ttname"><a href="structdg_1_1_im_ex_multistep.html">dg::ImExMultistep</a></div><div class="ttdoc">Semi-implicit multistep time-integration.</div><div class="ttdef"><b>Definition:</b> multistep.h:155</div></div>
-<div class="ttc" id="astructdg_1_1_im_ex_multistep_html_a29c33dd9d081414b9d5f8d384b112db0"><div class="ttname"><a href="structdg_1_1_im_ex_multistep.html#a29c33dd9d081414b9d5f8d384b112db0">dg::ImExMultistep::init</a></div><div class="ttdeci">void init(const std::tuple&lt; Explicit, Implicit, Solver &gt; &amp;ode, value_type t0, const ContainerType &amp;u0, value_type dt)</div><div class="ttdoc">Initialize timestepper. Call before using the step function.</div></div>
+<div class="ttc" id="astructdg_1_1_im_ex_multistep_html_a86c68553f557d5f7283ca061282fddce"><div class="ttname"><a href="structdg_1_1_im_ex_multistep.html#a86c68553f557d5f7283ca061282fddce">dg::ImExMultistep::init</a></div><div class="ttdeci">void init(const std::tuple&lt; ExplicitRHS, ImplicitRHS, Solver &gt; &amp;ode, value_type t0, const ContainerType &amp;u0, value_type dt)</div><div class="ttdoc">Initialize timestepper. Call before using the step function.</div></div>
 </div><!-- fragment --> <dl class="section note"><dt>Note</dt><dd>In our experience the implicit treatment of diffusive or hyperdiffusive terms may significantly reduce the required number of time steps. This outweighs the increased computational cost of the additional matrix inversions. However, each PDE is different and general statements like this one should be treated with care.</dd>
 <dd>
 Uses only <code><a class="el" href="group__blas1.html#ga5c7ddbf70dd74867e45c9d4f40b36cf7">blas1::axpby</a></code> routines to integrate one step. </dd>
@@ -320,6 +325,12 @@ template&lt;class ContainerType &gt; </div>
 </p>
 <p >The method is defined by its (explicit) <a class="el" href="structdg_1_1_butcher_tableau.html" title="Manage coefficients of a (extended) Butcher tableau.">ButcherTableau</a>, given by the coefficients <code>a</code>, <code>b</code> and <code>c</code>, and <code>s</code> is the number of stages.</p>
 <p >You can provide your own coefficients or use one of our predefined methods:</p>
+<p >We follow the naming convention of the ARKode library <a href="http://runge.math.smu.edu/arkode_dev/doc/guide/build/html/Butcher.html">http://runge.math.smu.edu/arkode_dev/doc/guide/build/html/Butcher.html</a> (They also provide nice stability plots for their methods) as <b>NAME-S-P-Q</b> or <b>NAME-S-Q</b>, where</p><ul>
+<li>NAME is the author or name of the method</li>
+<li>S is the number of stages in the method</li>
+<li>P is the global order of the embedding</li>
+<li>Q is the global order of the method</li>
+</ul>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Identifier   </th><th class="markdownTableHeadNone">Description    </th></tr>
@@ -441,7 +452,7 @@ template&lt;class ContainerType &gt; </div>
 <div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Norm of error is &quot;</span>&lt;&lt;sqrt(<a class="code hl_function" href="group__blas1.html#gaf00778ded011a9f6e8b885924d9306ee">dg::blas1::dot</a>( u, u))&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="ttc" id="agroup__blas1_html_ga5c7ddbf70dd74867e45c9d4f40b36cf7"><div class="ttname"><a href="group__blas1.html#ga5c7ddbf70dd74867e45c9d4f40b36cf7">dg::blas1::axpby</a></div><div class="ttdeci">void axpby(get_value_type&lt; ContainerType &gt; alpha, const ContainerType1 &amp;x, get_value_type&lt; ContainerType &gt; beta, ContainerType &amp;y)</div><div class="ttdef"><b>Definition:</b> blas1.h:229</div></div>
 <div class="ttc" id="agroup__blas1_html_gaf00778ded011a9f6e8b885924d9306ee"><div class="ttname"><a href="group__blas1.html#gaf00778ded011a9f6e8b885924d9306ee">dg::blas1::dot</a></div><div class="ttdeci">get_value_type&lt; ContainerType1 &gt; dot(const ContainerType1 &amp;x, const ContainerType2 &amp;y)</div><div class="ttdoc">Binary reproducible Euclidean dot product between two vectors</div><div class="ttdef"><b>Definition:</b> blas1.h:87</div></div>
-<div class="ttc" id="astructdg_1_1_e_r_k_step_html"><div class="ttname"><a href="structdg_1_1_e_r_k_step.html">dg::ERKStep</a></div><div class="ttdoc">Embedded Runge Kutta explicit time-step with error estimate.</div><div class="ttdef"><b>Definition:</b> runge_kutta.h:171</div></div>
+<div class="ttc" id="astructdg_1_1_e_r_k_step_html"><div class="ttname"><a href="structdg_1_1_e_r_k_step.html">dg::ERKStep</a></div><div class="ttdoc">Embedded Runge Kutta explicit time-step with error estimate.</div><div class="ttdef"><b>Definition:</b> runge_kutta.h:163</div></div>
 </div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>Uses only <code><a class="el" href="namespacedg_1_1blas1.html" title="BLAS Level 1 routines.">dg::blas1</a></code> routines to integrate one step.</dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -580,20 +591,20 @@ template&lt;class ContainerType &gt; </div>
 
 </div>
 </div>
-<a id="a29c33dd9d081414b9d5f8d384b112db0" name="a29c33dd9d081414b9d5f8d384b112db0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29c33dd9d081414b9d5f8d384b112db0">&#9670;&nbsp;</a></span>init()</h2>
+<a id="a86c68553f557d5f7283ca061282fddce" name="a86c68553f557d5f7283ca061282fddce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86c68553f557d5f7283ca061282fddce">&#9670;&nbsp;</a></span>init()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class ContainerType &gt; </div>
 <div class="memtemplate">
-template&lt;class Explicit , class Implicit , class Solver &gt; </div>
+template&lt;class ExplicitRHS , class ImplicitRHS , class Solver &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="structdg_1_1_im_ex_multistep.html">dg::ImExMultistep</a>&lt; ContainerType &gt;::init </td>
           <td>(</td>
-          <td class="paramtype">const std::tuple&lt; Explicit, Implicit, Solver &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::tuple&lt; ExplicitRHS, ImplicitRHS, Solver &gt; &amp;&#160;</td>
           <td class="paramname"><em>ode</em>, </td>
         </tr>
         <tr>
@@ -626,39 +637,39 @@ template&lt;class Explicit , class Implicit , class Solver &gt; </div>
 <p >This routine has to be called before the first timestep is made.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Explicit</td><td>The explicit part of the right hand side is a functor type with no return value (subroutine) of signature <code> void operator()(value_type, const ContainerType&amp;, ContainerType&amp;)</code> The first argument is the time, the second is the input vector, which the functor may <b>not</b> override, and the third is the output, i.e. y' = f(t, y) translates to f(t, y, y'). The two ContainerType arguments never alias each other in calls to the functor. </td></tr>
-    <tr><td class="paramname">Implicit</td><td>The implicit part of the right hand side is a functor type with no return value (subroutine) of signature <code> void operator()(value_type, const ContainerType&amp;, ContainerType&amp;)</code> The first argument is the time, the second is the input vector, which the functor may <b>not</b> override, and the third is the output, i.e. y' = f(t, y) translates to f(t, y, y'). The two ContainerType arguments never alias each other in calls to the functor. </td></tr>
-    <tr><td class="paramname">Solver</td><td>A solver for the implicit part of the right hand side Must solve the equation \( y - \alpha I(y,t) = y^*\) is a functor type with no return value (subroutine) of signature <code> void operator()( value_type alpha, value_type t, ContainerType&amp; y, const ContainerType&amp; ys); </code> Here, alpha is always positive and non-zero. </td></tr>
+    <tr><td class="paramname">ExplicitRHS</td><td>The explicit (part of the) right hand side is a functor type with no return value (subroutine) of signature <code> void operator()(value_type, const ContainerType&amp;, ContainerType&amp;)</code> The first argument is the time, the second is the input vector, which the functor may <b>not</b> override, and the third is the output, i.e. y' = E(t, y) translates to E(t, y, y'). The two ContainerType arguments never alias each other in calls to the functor. The operator can throw to indicate failure. Exceptions should derive from <code>std::exception</code>.</td></tr>
+    <tr><td class="paramname">ImplicitRHS</td><td>The implicit (part of the) right hand side is a functor type with no return value (subroutine) of signature <code> void operator()(value_type, const ContainerType&amp;, ContainerType&amp;)</code> The first argument is the time, the second is the input vector, which the functor may <b>not</b> override, and the third is the output, i.e. y' = I(t, y) translates to I(t, y, y'). The two ContainerType arguments never alias each other in calls to the functor. The operator can throw to indicate failure. Exceptions should derive from <code>std::exception</code>.</td></tr>
+    <tr><td class="paramname">Solver</td><td>A functor type for the implicit right hand side. Must solve the equation \( y - \alpha I(y,t) = y^*\) for <code>y</code> for given <code>alpha</code>, <code>t</code> and <code>ys</code>. Alpha is always positive and non-zero. Signature <code> void operator()( value_type alpha, value_type t, ContainerType&amp; y, const ContainerType&amp; ys); </code> The operator can throw. Any Exception should derive from <code>std::exception</code>. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ode</td><td>&lt;explic, implicit, solver&gt; part. Typically <code>std::tie(ex,im,solver)</code> </td></tr>
+    <tr><td class="paramname">ode</td><td>the &lt;explicit rhs, implicit rhs, solver for the rhs&gt; functor. Typically <code>std::tie(explicit_rhs, implicit_rhs, solver)</code> </td></tr>
     <tr><td class="paramname">t0</td><td>The intital time corresponding to u0 </td></tr>
     <tr><td class="paramname">u0</td><td>The initial value of the integration </td></tr>
     <tr><td class="paramname">dt</td><td>The timestep saved for later use </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>the implementation is such that on return the last call is the explicit part <code>ex</code> at <code></code>(t0,u0). This is useful if <code>ex</code> holds state, which is then updated to that timestep and/or if <code>im</code> changes the state of <code>ex</code> through the friend construct. This might be interesting if the call to <code>ex</code> changes its state. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>the implementation is such that on return the last call is the explicit part <code>explicit_part</code> at <code></code>(t0,u0). This is useful if <code>explicit_part</code> holds state, which is then updated to that timestep and/or if <code>implicit_rhs</code> changes the state of <code>explicit_rhs</code> </dd></dl>
 
 </div>
 </div>
-<a id="af0548115a5bcd41da34d6116af54d144" name="af0548115a5bcd41da34d6116af54d144"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0548115a5bcd41da34d6116af54d144">&#9670;&nbsp;</a></span>step()</h2>
+<a id="a821c8abd8f8ddaa1c6836eeb56701693" name="a821c8abd8f8ddaa1c6836eeb56701693"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a821c8abd8f8ddaa1c6836eeb56701693">&#9670;&nbsp;</a></span>step()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class ContainerType &gt; </div>
 <div class="memtemplate">
-template&lt;class Explicit , class Implicit , class Solver &gt; </div>
+template&lt;class ExplicitRHS , class ImplicitRHS , class Solver &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="structdg_1_1_im_ex_multistep.html">dg::ImExMultistep</a>&lt; ContainerType &gt;::step </td>
           <td>(</td>
-          <td class="paramtype">const std::tuple&lt; Explicit, Implicit, Solver &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::tuple&lt; ExplicitRHS, ImplicitRHS, Solver &gt; &amp;&#160;</td>
           <td class="paramname"><em>ode</em>, </td>
         </tr>
         <tr>
@@ -684,24 +695,23 @@ template&lt;class Explicit , class Implicit , class Solver &gt; </div>
 <p>Advance one timestep. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Explicit</td><td>The explicit part of the right hand side is a functor type with no return value (subroutine) of signature <code> void operator()(value_type, const ContainerType&amp;, ContainerType&amp;)</code> The first argument is the time, the second is the input vector, which the functor may <b>not</b> override, and the third is the output, i.e. y' = f(t, y) translates to f(t, y, y'). The two ContainerType arguments never alias each other in calls to the functor. </td></tr>
-    <tr><td class="paramname">Implicit</td><td>The implicit part of the right hand side is a functor type with no return value (subroutine) of signature <code> void operator()(value_type, const ContainerType&amp;, ContainerType&amp;)</code> The first argument is the time, the second is the input vector, which the functor may <b>not</b> override, and the third is the output, i.e. y' = f(t, y) translates to f(t, y, y'). The two ContainerType arguments never alias each other in calls to the functor. </td></tr>
-    <tr><td class="paramname">Solver</td><td>A solver for the implicit part of the right hand side Must solve the equation \( y - \alpha I(y,t) = y^*\) is a functor type with no return value (subroutine) of signature <code> void operator()( value_type alpha, value_type t, ContainerType&amp; y, const ContainerType&amp; ys); </code> Here, alpha is always positive and non-zero. </td></tr>
+    <tr><td class="paramname">ExplicitRHS</td><td>The explicit (part of the) right hand side is a functor type with no return value (subroutine) of signature <code> void operator()(value_type, const ContainerType&amp;, ContainerType&amp;)</code> The first argument is the time, the second is the input vector, which the functor may <b>not</b> override, and the third is the output, i.e. y' = E(t, y) translates to E(t, y, y'). The two ContainerType arguments never alias each other in calls to the functor. The operator can throw to indicate failure. Exceptions should derive from <code>std::exception</code>.</td></tr>
+    <tr><td class="paramname">ImplicitRHS</td><td>The implicit (part of the) right hand side is a functor type with no return value (subroutine) of signature <code> void operator()(value_type, const ContainerType&amp;, ContainerType&amp;)</code> The first argument is the time, the second is the input vector, which the functor may <b>not</b> override, and the third is the output, i.e. y' = I(t, y) translates to I(t, y, y'). The two ContainerType arguments never alias each other in calls to the functor. The operator can throw to indicate failure. Exceptions should derive from <code>std::exception</code>.</td></tr>
+    <tr><td class="paramname">Solver</td><td>A functor type for the implicit right hand side. Must solve the equation \( y - \alpha I(y,t) = y^*\) for <code>y</code> for given <code>alpha</code>, <code>t</code> and <code>ys</code>. Alpha is always positive and non-zero. Signature <code> void operator()( value_type alpha, value_type t, ContainerType&amp; y, const ContainerType&amp; ys); </code> The operator can throw. Any Exception should derive from <code>std::exception</code>. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ode</td><td>&lt;explic, implicit, solver&gt; part. Typically <code>std::tie(ex,im,solver)</code> </td></tr>
+    <tr><td class="paramname">ode</td><td>the &lt;explicit rhs, implicit rhs, solver for the rhs&gt; functor. Typically <code>std::tie(explicit_rhs, implicit_rhs, solver)</code> </td></tr>
     <tr><td class="paramname">t</td><td>(write-only), contains timestep corresponding to <code>u</code> on return </td></tr>
     <tr><td class="paramname">u</td><td>(write-only), contains next step of time-integration on return </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>the implementation is such that on return the last call is the explicit part <code>ex</code> at the new <code></code>(t,u). This is useful if <code>ex</code> holds state, which is then updated to the new timestep and/or if <code>im</code> changes the state of <code>ex</code> through the friend construct. </dd>
-<dd>
-after a <code>solve</code>, we call both <code>im</code> (if the tableau necessitates it) and <code>ex</code> on the solution </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>After a <code>solve</code>, we call <code>explicit_rhs</code> at the new (t,u) which is the last call before return. This is useful if <code>explicit_rhs</code> holds state, which is then updated to the new timestep and/or if <code>solver</code> changes the state of <code>explicit_rhs</code> </dd></dl>
 <dl class="section attention"><dt>Attention</dt><dd>The first few steps after the call to the init function are performed with a semi-implicit Runge-Kutta method to initialize the multistepper </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The only time the <code>implicit_rhs</code> functor is called is during the initialization phase (the first few steps after the call to the init function) </dd></dl>
 
 </div>
 </div>
@@ -715,7 +725,7 @@ after a <code>solve</code>, we call both <code>im</code> (if the tableau necessi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_im_ex_multistep.html">ImExMultistep</a></li>
-    <li class="footer">Generated on Fri Jan 14 2022 13:22:08 for Discontinuous Galerkin Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
+    <li class="footer">Generated on Fri Jan 28 2022 17:46:21 for Discontinuous Galerkin Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
   </ul>
 </div>
 </body>

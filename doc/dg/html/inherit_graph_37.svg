@@ -11,10 +11,10 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="structdg_1_1_butcher_tableau.html" target="_top" xlink:title="Manage coefficients of a (extended) Butcher tableau.">
+<g id="a_node1"><a xlink:href="structdg_1_1_butcher_tableau.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="0,-0.5 0,-30.5 101,-30.5 101,-0.5 0,-0.5"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">dg::ButcherTableau</text>
-<text text-anchor="middle" x="50.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; real_type &gt;</text>
+<text text-anchor="middle" x="50.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; value_type &gt;</text>
 </a>
 </g>
 </g>

@@ -11,10 +11,10 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="classdg_1_1_elliptic.html" target="_top" xlink:title="A 2d negative elliptic differential operator .">
+<g id="a_node1"><a xlink:href="structdg_1_1_ell_sparse_block_mat.html" target="_top" xlink:title="Ell Sparse Block Matrix format.">
 <polygon fill="none" stroke="black" points="0,-0.5 0,-30.5 116,-30.5 116,-0.5 0,-0.5"/>
-<text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">dg::Elliptic&lt; Geometry,</text>
-<text text-anchor="middle" x="58" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Matrix, Container &gt;</text>
+<text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">dg::EllSparseBlockMat</text>
+<text text-anchor="middle" x="58" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; value_type &gt;</text>
 </a>
 </g>
 </g>

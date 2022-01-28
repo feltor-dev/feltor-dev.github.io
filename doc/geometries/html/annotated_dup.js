@@ -140,6 +140,7 @@ var annotated_dup =
         [ "SimpleOrthogonal", "structdg_1_1geo_1_1_simple_orthogonal.html", "structdg_1_1geo_1_1_simple_orthogonal" ],
         [ "SquareNorm", "structdg_1_1geo_1_1_square_norm.html", "structdg_1_1geo_1_1_square_norm" ],
         [ "TokamakMagneticField", "structdg_1_1geo_1_1_tokamak_magnetic_field.html", "structdg_1_1geo_1_1_tokamak_magnetic_field" ],
+        [ "Topology1d", "structdg_1_1geo_1_1_topology1d.html", "structdg_1_1geo_1_1_topology1d" ],
         [ "TrueCurvatureKappaP", "structdg_1_1geo_1_1_true_curvature_kappa_p.html", "structdg_1_1geo_1_1_true_curvature_kappa_p" ],
         [ "TrueCurvatureKappaR", "structdg_1_1geo_1_1_true_curvature_kappa_r.html", "structdg_1_1geo_1_1_true_curvature_kappa_r" ],
         [ "TrueCurvatureKappaZ", "structdg_1_1geo_1_1_true_curvature_kappa_z.html", "structdg_1_1geo_1_1_true_curvature_kappa_z" ],

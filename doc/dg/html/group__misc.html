@@ -162,6 +162,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga00707a09c19ba5fdde979339ae959506"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__misc.html#ga00707a09c19ba5fdde979339ae959506">dg::extend_column</a> (unsigned nx, unsigned ny, const ContainerType &amp;in, ContainerType &amp;out)</td></tr>
 <tr class="memdesc:ga00707a09c19ba5fdde979339ae959506"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy a line into columns of output vector.  <a href="group__misc.html#ga00707a09c19ba5fdde979339ae959506">More...</a><br /></td></tr>
 <tr class="separator:ga00707a09c19ba5fdde979339ae959506"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadbeead9ca462cac41598a062a0834e34"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__misc.html#gadbeead9ca462cac41598a062a0834e34">dg::abort_program</a> (int code=-1)</td></tr>
+<tr class="memdesc:gadbeead9ca462cac41598a062a0834e34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abort program (both MPI and non-MPI)  <a href="group__misc.html#gadbeead9ca462cac41598a062a0834e34">More...</a><br /></td></tr>
+<tr class="separator:gadbeead9ca462cac41598a062a0834e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac50f6a57627e38ea44e3666543a6c878"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__misc.html#gac50f6a57627e38ea44e3666543a6c878">dg::mpi_init</a> (int argc, char *argv[])</td></tr>
 <tr class="memdesc:gac50f6a57627e38ea44e3666543a6c878"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convencience shortcut: Calls MPI_Init or MPI_Init_thread.  <a href="group__misc.html#gac50f6a57627e38ea44e3666543a6c878">More...</a><br /></td></tr>
 <tr class="separator:gac50f6a57627e38ea44e3666543a6c878"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,6 +201,44 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="gadbeead9ca462cac41598a062a0834e34" name="gadbeead9ca462cac41598a062a0834e34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadbeead9ca462cac41598a062a0834e34">&#9670;&nbsp;</a></span>abort_program()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void dg::abort_program </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>code</em> = <code>-1</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Abort program (both MPI and non-MPI) </p>
+<div class="fragment"><div class="line">#ifdef MPI_VERSION</div>
+<div class="line">    MPI_Abort(MPI_COMM_WORLD, code);</div>
+<div class="line">#endif //WITH_MPI</div>
+<div class="line">    exit( code);</div>
+</div><!-- fragment --> <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">code</td><td>The abortion code that will be signalled to the caller (of the program) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ga00707a09c19ba5fdde979339ae959506" name="ga00707a09c19ba5fdde979339ae959506"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga00707a09c19ba5fdde979339ae959506">&#9670;&nbsp;</a></span>extend_column()</h2>
 
@@ -1053,7 +1094,7 @@ If there are several <code>ContainerTypes</code> in the argument list, then <cod
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jan 14 2022 13:22:08 for Discontinuous Galerkin Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
+    <li class="footer">Generated on Fri Jan 28 2022 17:46:20 for Discontinuous Galerkin Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
   </ul>
 </div>
 </body>

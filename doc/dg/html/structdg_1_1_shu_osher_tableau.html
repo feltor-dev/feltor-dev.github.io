@@ -147,6 +147,12 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><div class="compoundTemplParams">template&lt;class real_type&gt;<br />
 struct dg::ShuOsherTableau&lt; real_type &gt;</div><p >Manage coefficients in Shu-Osher form. </p>
 <p >Currently only explicit tables that are marked with "Shu-Osher-Form" are available in this form</p>
+<p >We follow the naming convention of the ARKode library <a href="http://runge.math.smu.edu/arkode_dev/doc/guide/build/html/Butcher.html">http://runge.math.smu.edu/arkode_dev/doc/guide/build/html/Butcher.html</a> (They also provide nice stability plots for their methods) as <b>NAME-S-P-Q</b> or <b>NAME-S-Q</b>, where</p><ul>
+<li>NAME is the author or name of the method</li>
+<li>S is the number of stages in the method</li>
+<li>P is the global order of the embedding</li>
+<li>Q is the global order of the method</li>
+</ul>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Identifier   </th><th class="markdownTableHeadNone">Description    </th></tr>
@@ -522,7 +528,7 @@ template&lt;class real_type &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_shu_osher_tableau.html">ShuOsherTableau</a></li>
-    <li class="footer">Generated on Fri Jan 14 2022 13:22:09 for Discontinuous Galerkin Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
+    <li class="footer">Generated on Fri Jan 28 2022 17:46:22 for Discontinuous Galerkin Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
   </ul>
 </div>
 </body>

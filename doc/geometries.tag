@@ -49,6 +49,7 @@
     <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
     <filename>curvilinear_8h.html</filename>
     <includes id="generator_8h" name="generator.h" local="yes" imported="no">generator.h</includes>
+    <class kind="struct">dg::geo::Topology1d</class>
     <class kind="struct">dg::geo::RealCurvilinearGrid2d</class>
     <class kind="struct">dg::geo::RealCurvilinearProductGrid3d</class>
     <namespace>dg</namespace>
@@ -4070,6 +4071,13 @@
       <type></type>
       <name>RealCurvilinearGrid2d</name>
       <anchorfile>structdg_1_1geo_1_1_real_curvilinear_grid2d.html</anchorfile>
+      <anchor>a711f6d567996369e94ac8e583292af0d</anchor>
+      <arglist>(const aRealGenerator2d&lt; real_type &gt; &amp;generator, Topology1d tx, Topology1d ty)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>RealCurvilinearGrid2d</name>
+      <anchorfile>structdg_1_1geo_1_1_real_curvilinear_grid2d.html</anchorfile>
       <anchor>ac29a6426e03e6cde827823e8f5653e8b</anchor>
       <arglist>(RealCurvilinearProductGrid3d&lt; real_type &gt; g)</arglist>
     </member>
@@ -4129,6 +4137,13 @@
       <type></type>
       <name>RealCurvilinearMPIGrid2d</name>
       <anchorfile>structdg_1_1geo_1_1_real_curvilinear_m_p_i_grid2d.html</anchorfile>
+      <anchor>a41acd6d30f1270a7a3a733baf41ab717</anchor>
+      <arglist>(const aRealGenerator2d&lt; real_type &gt; &amp;generator, Topology1d tx, Topology1d ty, MPI_Comm comm)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>RealCurvilinearMPIGrid2d</name>
+      <anchorfile>structdg_1_1geo_1_1_real_curvilinear_m_p_i_grid2d.html</anchorfile>
       <anchor>a11c19bb9b724720902a062d719d9bb60</anchor>
       <arglist>(const RealCurvilinearProductMPIGrid3d&lt; real_type &gt; &amp;g)</arglist>
     </member>
@@ -4171,6 +4186,13 @@
       <anchorfile>structdg_1_1geo_1_1_real_curvilinear_product_grid3d.html</anchorfile>
       <anchor>a0df7ec9734a5b0fcf57b193902b7e1a6</anchor>
       <arglist>(const aRealGenerator2d&lt; real_type &gt; &amp;generator, unsigned n, unsigned Nx, unsigned Ny, unsigned Nz, bc bcx=dg::DIR, bc bcy=dg::PER, bc bcz=dg::PER)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>RealCurvilinearProductGrid3d</name>
+      <anchorfile>structdg_1_1geo_1_1_real_curvilinear_product_grid3d.html</anchorfile>
+      <anchor>ad40f59c38e04fb254f1c331bb85436cc</anchor>
+      <arglist>(const aRealGenerator2d&lt; real_type &gt; &amp;generator, Topology1d tx, Topology1d ty, RealGrid1d&lt; real_type &gt; gz)</arglist>
     </member>
     <member kind="function">
       <type>const aRealGenerator2d&lt; real_type &gt; &amp;</type>
@@ -4230,6 +4252,13 @@
       <anchorfile>structdg_1_1geo_1_1_real_curvilinear_product_m_p_i_grid3d.html</anchorfile>
       <anchor>aa7b1fd917bbc01b9c9c0e1700c8292d5</anchor>
       <arglist>(const aRealGenerator2d&lt; real_type &gt; &amp;generator, unsigned n, unsigned Nx, unsigned Ny, unsigned Nz, bc bcx, bc bcy, bc bcz, MPI_Comm comm)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>RealCurvilinearProductMPIGrid3d</name>
+      <anchorfile>structdg_1_1geo_1_1_real_curvilinear_product_m_p_i_grid3d.html</anchorfile>
+      <anchor>a6089381d0c47f3c6a545a2a3b273392d</anchor>
+      <arglist>(const aRealGenerator2d&lt; real_type &gt; &amp;generator, Topology1d tx, Topology1d ty, RealGrid1d&lt; real_type &gt; gz, MPI_Comm comm)</arglist>
     </member>
     <member kind="function">
       <type>const aRealGenerator2d&lt; real_type &gt; &amp;</type>
@@ -4740,6 +4769,31 @@
     </member>
   </compound>
   <compound kind="struct">
+    <name>dg::geo::Topology1d</name>
+    <filename>structdg_1_1geo_1_1_topology1d.html</filename>
+    <member kind="variable">
+      <type>unsigned</type>
+      <name>n</name>
+      <anchorfile>structdg_1_1geo_1_1_topology1d.html</anchorfile>
+      <anchor>a826eb87535b83e70765b685910b81775</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>unsigned</type>
+      <name>N</name>
+      <anchorfile>structdg_1_1geo_1_1_topology1d.html</anchorfile>
+      <anchor>acb5f6c65af02114ca633acdccdf426de</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>bc</type>
+      <name>b</name>
+      <anchorfile>structdg_1_1geo_1_1_topology1d.html</anchorfile>
+      <anchor>ab2afc1c5d0b4ff1d5ee242c186c40621</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
     <name>dg::geo::TrueCurvatureKappaP</name>
     <filename>structdg_1_1geo_1_1_true_curvature_kappa_p.html</filename>
     <base>aCylindricalFunctor&lt; TrueCurvatureKappaP &gt;</base>
@@ -5068,6 +5122,7 @@
     <class kind="struct">dg::geo::SimpleOrthogonal</class>
     <class kind="struct">dg::geo::SquareNorm</class>
     <class kind="struct">dg::geo::TokamakMagneticField</class>
+    <class kind="struct">dg::geo::Topology1d</class>
     <class kind="struct">dg::geo::TrueCurvatureKappaP</class>
     <class kind="struct">dg::geo::TrueCurvatureKappaR</class>
     <class kind="struct">dg::geo::TrueCurvatureKappaZ</class>
@@ -5792,6 +5847,7 @@
     <title>2. New geometric grids</title>
     <filename>group__grids.html</filename>
     <namespace>dg::geo::x</namespace>
+    <class kind="struct">dg::geo::Topology1d</class>
     <class kind="struct">dg::geo::RealCurvilinearGrid2d</class>
     <class kind="struct">dg::geo::RealCurvilinearProductGrid3d</class>
     <class kind="struct">dg::geo::RealCurvilinearProductGridX3d</class>

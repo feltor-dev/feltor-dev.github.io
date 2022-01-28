@@ -8,5 +8,5 @@ var classdg_1_1_e_v_e =
     [ "get_max", "classdg_1_1_e_v_e.html#abe532f5eec4407a54f242f8f182783ca", null ],
     [ "set_max", "classdg_1_1_e_v_e.html#a1f995d2a16fb64afc75a8ed31acad204", null ],
     [ "set_throw_on_fail", "classdg_1_1_e_v_e.html#ae43a0ca2fb1ecae96f82aed288ac1e87", null ],
-    [ "solve", "classdg_1_1_e_v_e.html#ab91ca09ee8873b8c8c9def6d2b180546", null ]
+    [ "solve", "classdg_1_1_e_v_e.html#a5e1b238a63b47c828423ff0e9d3edbe0", null ]
 ];

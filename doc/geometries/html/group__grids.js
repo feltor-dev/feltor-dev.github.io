@@ -1,8 +1,14 @@
 var group__grids =
 [
     [ "dg::geo::x", "namespacedg_1_1geo_1_1x.html", null ],
+    [ "dg::geo::Topology1d", "structdg_1_1geo_1_1_topology1d.html", [
+      [ "b", "structdg_1_1geo_1_1_topology1d.html#ab2afc1c5d0b4ff1d5ee242c186c40621", null ],
+      [ "n", "structdg_1_1geo_1_1_topology1d.html#a826eb87535b83e70765b685910b81775", null ],
+      [ "N", "structdg_1_1geo_1_1_topology1d.html#acb5f6c65af02114ca633acdccdf426de", null ]
+    ] ],
     [ "dg::geo::RealCurvilinearGrid2d< real_type >", "structdg_1_1geo_1_1_real_curvilinear_grid2d.html", [
       [ "RealCurvilinearGrid2d", "structdg_1_1geo_1_1_real_curvilinear_grid2d.html#a4ad08f1ca6a34966ce295df294a2779f", null ],
+      [ "RealCurvilinearGrid2d", "structdg_1_1geo_1_1_real_curvilinear_grid2d.html#a711f6d567996369e94ac8e583292af0d", null ],
       [ "RealCurvilinearGrid2d", "structdg_1_1geo_1_1_real_curvilinear_grid2d.html#ac29a6426e03e6cde827823e8f5653e8b", null ],
       [ "clone", "structdg_1_1geo_1_1_real_curvilinear_grid2d.html#aa3fdf4b7b6af4bf471890926bc14ebb5", null ],
       [ "generator", "structdg_1_1geo_1_1_real_curvilinear_grid2d.html#a5a0f116df9581e8d031e263e254d2512", null ]
@@ -10,6 +16,7 @@ var group__grids =
     [ "dg::geo::RealCurvilinearProductGrid3d< real_type >", "structdg_1_1geo_1_1_real_curvilinear_product_grid3d.html", [
       [ "perpendicular_grid", "structdg_1_1geo_1_1_real_curvilinear_product_grid3d.html#a8667c92d75c5f25ed0ee0ff0ede3bed4", null ],
       [ "RealCurvilinearProductGrid3d", "structdg_1_1geo_1_1_real_curvilinear_product_grid3d.html#a0df7ec9734a5b0fcf57b193902b7e1a6", null ],
+      [ "RealCurvilinearProductGrid3d", "structdg_1_1geo_1_1_real_curvilinear_product_grid3d.html#ad40f59c38e04fb254f1c331bb85436cc", null ],
       [ "clone", "structdg_1_1geo_1_1_real_curvilinear_product_grid3d.html#a85e9ba7469f8e5bbd9bfdcae7d7cf74b", null ],
       [ "generator", "structdg_1_1geo_1_1_real_curvilinear_product_grid3d.html#a034cf6930b732bec2dbcaefcf9863292", null ]
     ] ],
@@ -25,6 +32,7 @@ var group__grids =
     ] ],
     [ "dg::geo::RealCurvilinearMPIGrid2d< real_type >", "structdg_1_1geo_1_1_real_curvilinear_m_p_i_grid2d.html", [
       [ "RealCurvilinearMPIGrid2d", "structdg_1_1geo_1_1_real_curvilinear_m_p_i_grid2d.html#ade4c978917093643105f35380ee9d11e", null ],
+      [ "RealCurvilinearMPIGrid2d", "structdg_1_1geo_1_1_real_curvilinear_m_p_i_grid2d.html#a41acd6d30f1270a7a3a733baf41ab717", null ],
       [ "RealCurvilinearMPIGrid2d", "structdg_1_1geo_1_1_real_curvilinear_m_p_i_grid2d.html#a11c19bb9b724720902a062d719d9bb60", null ],
       [ "clone", "structdg_1_1geo_1_1_real_curvilinear_m_p_i_grid2d.html#ac1a373cf9a999f8b9eadd1cebe84afb7", null ],
       [ "generator", "structdg_1_1geo_1_1_real_curvilinear_m_p_i_grid2d.html#af02337c15120b3378ee21a443ad70a9e", null ],
@@ -33,6 +41,7 @@ var group__grids =
     [ "dg::geo::RealCurvilinearProductMPIGrid3d< real_type >", "structdg_1_1geo_1_1_real_curvilinear_product_m_p_i_grid3d.html", [
       [ "perpendicular_grid", "structdg_1_1geo_1_1_real_curvilinear_product_m_p_i_grid3d.html#a8183e37c63decd2606bc9adc6d79a3b1", null ],
       [ "RealCurvilinearProductMPIGrid3d", "structdg_1_1geo_1_1_real_curvilinear_product_m_p_i_grid3d.html#aa7b1fd917bbc01b9c9c0e1700c8292d5", null ],
+      [ "RealCurvilinearProductMPIGrid3d", "structdg_1_1geo_1_1_real_curvilinear_product_m_p_i_grid3d.html#a6089381d0c47f3c6a545a2a3b273392d", null ],
       [ "clone", "structdg_1_1geo_1_1_real_curvilinear_product_m_p_i_grid3d.html#adaca43e33b76bbdf0099469f7d07d680", null ],
       [ "generator", "structdg_1_1geo_1_1_real_curvilinear_product_m_p_i_grid3d.html#a653d06c9667c67bad18784d22ea92547", null ],
       [ "global_geometry", "structdg_1_1geo_1_1_real_curvilinear_product_m_p_i_grid3d.html#a6d6c2f0b0ee7d4414f3a09e2581d7026", null ]

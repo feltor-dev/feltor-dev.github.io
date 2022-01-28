@@ -143,15 +143,15 @@ $(document).ready(function(){initNavTree('filter_8h_source.html',''); initResiza
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>MultiMatrix&lt; EllSparseBlockMat&lt;real_type&gt;, thrust::host_vector&lt;real_type&gt; &gt;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>modal_filter( UnaryOp op, <span class="keyword">const</span> aRealTopology2d&lt;real_type&gt;&amp; t)</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>{</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_struct" href="structdg_1_1_real_grid1d.html">dg::RealGrid1d&lt;real_type&gt;</a> gx(t.x0(), t.x1(), t.n(), t.Nx());</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <a class="code hl_struct" href="structdg_1_1_real_grid1d.html">dg::RealGrid1d&lt;real_type&gt;</a> gy(t.y0(), t.y1(), t.n(), t.Ny());</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_struct" href="structdg_1_1_real_grid1d.html">dg::RealGrid1d&lt;real_type&gt;</a> gx(t.x0(), t.x1(), t.nx(), t.Nx());</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <a class="code hl_struct" href="structdg_1_1_real_grid1d.html">dg::RealGrid1d&lt;real_type&gt;</a> gy(t.y0(), t.y1(), t.ny(), t.Ny());</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    MultiMatrix &lt; EllSparseBlockMat&lt;real_type&gt;, thrust::host_vector&lt;real_type&gt; &gt;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        filterX = dg::create::modal_filter( op, gx);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    filterX.get_matrices()[0].left_size = t.n()*t.Ny();</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    filterX.get_matrices()[0].left_size = t.ny()*t.Ny();</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    filterX.get_matrices()[0].set_default_range();</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    MultiMatrix &lt; EllSparseBlockMat&lt;real_type&gt;, thrust::host_vector&lt;real_type&gt; &gt;</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        filterY = dg::create::modal_filter( op, gy);</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    filterY.get_matrices()[0].right_size = t.n()*t.Nx();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    filterY.get_matrices()[0].right_size = t.nx()*t.Nx();</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    filterY.get_matrices()[0].set_default_range();</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    MultiMatrix &lt; EllSparseBlockMat&lt;real_type&gt;, thrust::host_vector&lt;real_type&gt; &gt; filter(2);</div>
@@ -165,16 +165,16 @@ $(document).ready(function(){initNavTree('filter_8h_source.html',''); initResiza
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>MultiMatrix&lt; EllSparseBlockMat&lt;real_type&gt;, thrust::host_vector&lt;real_type&gt; &gt;</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>modal_filter( UnaryOp op, <span class="keyword">const</span> aRealTopology3d&lt;real_type&gt;&amp; t)</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>{</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <a class="code hl_struct" href="structdg_1_1_real_grid1d.html">dg::RealGrid1d&lt;real_type&gt;</a> gx(t.x0(), t.x1(), t.n(), t.Nx());</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <a class="code hl_struct" href="structdg_1_1_real_grid1d.html">dg::RealGrid1d&lt;real_type&gt;</a> gy(t.y0(), t.y1(), t.n(), t.Ny());</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <a class="code hl_struct" href="structdg_1_1_real_grid1d.html">dg::RealGrid1d&lt;real_type&gt;</a> gx(t.x0(), t.x1(), t.nx(), t.Nx());</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <a class="code hl_struct" href="structdg_1_1_real_grid1d.html">dg::RealGrid1d&lt;real_type&gt;</a> gy(t.y0(), t.y1(), t.ny(), t.Ny());</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    MultiMatrix &lt; EllSparseBlockMat&lt;real_type&gt;, thrust::host_vector&lt;real_type&gt; &gt;</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        filterX = dg::create::modal_filter( op, gx);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    filterX.get_matrices()[0].left_size = t.n()*t.Ny()*t.Nz();</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    filterX.get_matrices()[0].left_size = t.ny()*t.Ny()*t.nz()*t.Nz();</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    filterX.get_matrices()[0].set_default_range();</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    MultiMatrix &lt; EllSparseBlockMat&lt;real_type&gt;, thrust::host_vector&lt;real_type&gt; &gt;</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        filterY = dg::create::modal_filter( op, gy);</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    filterY.get_matrices()[0].right_size = t.n()*t.Nx();</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    filterY.get_matrices()[0].left_size = t.Nz();</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    filterY.get_matrices()[0].right_size = t.nx()*t.Nx();</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    filterY.get_matrices()[0].left_size = t.nz()*t.Nz();</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    filterY.get_matrices()[0].set_default_range();</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    MultiMatrix &lt; EllSparseBlockMat&lt;real_type&gt;, thrust::host_vector&lt;real_type&gt; &gt; filter(2);</div>
@@ -269,7 +269,7 @@ $(document).ready(function(){initNavTree('filter_8h_source.html',''); initResiza
 <div class="ttc" id="astructdg_1_1_modal_filter_html_ac1c1d272fc9dd3ffac350969a440ae99"><div class="ttname"><a href="structdg_1_1_modal_filter.html#ac1c1d272fc9dd3ffac350969a440ae99">dg::ModalFilter::ModalFilter</a></div><div class="ttdeci">ModalFilter()</div><div class="ttdef"><b>Definition:</b> filter.h:136</div></div>
 <div class="ttc" id="astructdg_1_1_modal_filter_html_aefdc128cc85e54626dffa5dff1646ab5"><div class="ttname"><a href="structdg_1_1_modal_filter.html#aefdc128cc85e54626dffa5dff1646ab5">dg::ModalFilter::ModalFilter</a></div><div class="ttdeci">ModalFilter(UnaryOp sigma, const Topology &amp;t, Params &amp;&amp;...ps)</div><div class="ttdoc">Create arbitrary filter.</div><div class="ttdef"><b>Definition:</b> filter.h:147</div></div>
 <div class="ttc" id="astructdg_1_1_multi_matrix_html"><div class="ttname"><a href="structdg_1_1_multi_matrix.html">dg::MultiMatrix</a></div><div class="ttdoc">Struct that applies given matrices one after the other.</div><div class="ttdef"><b>Definition:</b> fast_interpolation.h:36</div></div>
-<div class="ttc" id="astructdg_1_1_real_grid1d_html"><div class="ttname"><a href="structdg_1_1_real_grid1d.html">dg::RealGrid1d</a></div><div class="ttdoc">1D grid</div><div class="ttdef"><b>Definition:</b> grid.h:82</div></div>
+<div class="ttc" id="astructdg_1_1_real_grid1d_html"><div class="ttname"><a href="structdg_1_1_real_grid1d.html">dg::RealGrid1d</a></div><div class="ttdoc">1D grid</div><div class="ttdef"><b>Definition:</b> grid.h:80</div></div>
 <div class="ttc" id="astructdg_1_1_tensor_traits_html_ae4b638a26e2cf4c7481e0dc916e81c22"><div class="ttname"><a href="structdg_1_1_tensor_traits.html#ae4b638a26e2cf4c7481e0dc916e81c22">dg::TensorTraits::tensor_category</a></div><div class="ttdeci">NotATensorTag tensor_category</div><div class="ttdef"><b>Definition:</b> tensor_traits.h:33</div></div>
 <div class="ttc" id="astructdg_1_1_tensor_traits_html_ae83e6821de9ca0a8c7602dc6143707b9"><div class="ttname"><a href="structdg_1_1_tensor_traits.html#ae83e6821de9ca0a8c7602dc6143707b9">dg::TensorTraits::value_type</a></div><div class="ttdeci">void value_type</div><div class="ttdef"><b>Definition:</b> tensor_traits.h:32</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -279,7 +279,7 @@ $(document).ready(function(){initNavTree('filter_8h_source.html',''); initResiza
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_84497794bb37d283dbd68163bed8ef05.html">topology</a></li><li class="navelem"><a class="el" href="filter_8h.html">filter.h</a></li>
-    <li class="footer">Generated on Fri Jan 14 2022 13:22:06 for Discontinuous Galerkin Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
+    <li class="footer">Generated on Fri Jan 28 2022 17:46:19 for Discontinuous Galerkin Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
   </ul>
 </div>
 </body>

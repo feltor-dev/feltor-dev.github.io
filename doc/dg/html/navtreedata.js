@@ -62,17 +62,17 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "adaptive_8h.html",
-"functions_8h.html",
-"group__evaluation.html",
+"functions_8h.html#aa181978ebbc17b8ea6d6c072e06c2d05",
+"group__evaluation.html#ga0cdefb87e015db3d39efcbefd67d5a31",
 "group__misc.html#ga00707a09c19ba5fdde979339ae959506",
-"interpolation_x_8h.html#a0deb811d33279b3f858db30a7777c1e2",
-"structdg_1_1_adaptive_timeloop.html#ad5ad1272c722d63824c0f36cfa329c89",
-"structdg_1_1_d_i_r_k_step.html#a6fc92a828f9ae56ff477939ad9fe4f43",
-"structdg_1_1_inv_cosh_xsq.html",
-"structdg_1_1_o_n_e.html#a09ee16efc03aafae90aa75feb2640015",
-"structdg_1_1_simpsons.html#a82fa60767462a5677bbc2f6403227b5f",
-"structdg_1_1a_real_geometry2d.html#a77371d7f0daaf01f1a67773278b174aa",
-"structdg_1_1a_real_topology_x2d.html#ad2f3208edb25304809cf72ad3bcc58d2"
+"helmholtz_8h.html",
+"structdg_1_1_advection.html",
+"structdg_1_1_default_solver.html#a15c83d4783bf23ab4aeed88cc6b6fe0b",
+"structdg_1_1_lamb.html#a1a4d0a6af4739c93de2d72fc0ad9931d",
+"structdg_1_1_real_cartesian_grid_x2d.html",
+"structdg_1_1_sparse_block_matrix_tag.html",
+"structdg_1_1a_real_m_p_i_topology2d.html#a3cdb7daf0ca2df1cd5dd0875dc7f47b6",
+"structdg_1_1a_real_topology_x3d.html#ab9260010767c1473b627f1b6c4f6b982"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

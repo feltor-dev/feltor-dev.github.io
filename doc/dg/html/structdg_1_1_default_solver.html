@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('structdg_1_1_default_solver.html','');
 </div><!--header-->
 <div class="contents">
 
-<p>Default Solver class for solving.  
+<p><a class="el" href="classdg_1_1_p_c_g.html" title="Preconditioned conjugate gradient method to solve.">PCG</a> Solver class for solving \( (y-\alpha\hat I(t,y)) = \rho\).  
  <a href="structdg_1_1_default_solver.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
@@ -126,25 +126,37 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a15c83d4783bf23ab4aeed88cc6b6fe0b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_default_solver.html#a15c83d4783bf23ab4aeed88cc6b6fe0b">DefaultSolver</a> ()</td></tr>
 <tr class="memdesc:a15c83d4783bf23ab4aeed88cc6b6fe0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">No memory allocation.  <a href="structdg_1_1_default_solver.html#a15c83d4783bf23ab4aeed88cc6b6fe0b">More...</a><br /></td></tr>
 <tr class="separator:a15c83d4783bf23ab4aeed88cc6b6fe0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6904af29802092b896f3a8efde1070a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_default_solver.html#a6904af29802092b896f3a8efde1070a3">DefaultSolver</a> (const ContainerType &amp;<a class="el" href="structdg_1_1_default_solver.html#aabc25400d2fd462b1defca4ef18d5c0f">copyable</a>, unsigned max_iter, <a class="el" href="structdg_1_1_default_solver.html#a97f8cab8aaa354a9f44baf19b33aefe5">value_type</a> eps)</td></tr>
-<tr class="separator:a6904af29802092b896f3a8efde1070a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabc25400d2fd462b1defca4ef18d5c0f"><td class="memItemLeft" align="right" valign="top">const ContainerType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_default_solver.html#aabc25400d2fd462b1defca4ef18d5c0f">copyable</a> () const</td></tr>
-<tr class="memdesc:aabc25400d2fd462b1defca4ef18d5c0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an object of same size as the object used for construction.  <a href="structdg_1_1_default_solver.html#aabc25400d2fd462b1defca4ef18d5c0f">More...</a><br /></td></tr>
-<tr class="separator:aabc25400d2fd462b1defca4ef18d5c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28d078f31f2773fbcfe93f55aa86f202"><td class="memTemplParams" colspan="2">template&lt;class Implicit &gt; </td></tr>
+<tr class="memitem:a28d078f31f2773fbcfe93f55aa86f202"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_default_solver.html#a28d078f31f2773fbcfe93f55aa86f202">DefaultSolver</a> (Implicit &amp;im, const ContainerType &amp;copyable, unsigned max_iter, <a class="el" href="structdg_1_1_default_solver.html#a97f8cab8aaa354a9f44baf19b33aefe5">value_type</a> eps)</td></tr>
+<tr class="separator:a28d078f31f2773fbcfe93f55aa86f202"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d3b23de56430da9ff00104e241c664f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_default_solver.html#a5d3b23de56430da9ff00104e241c664f">set_benchmark</a> (bool benchmark)</td></tr>
 <tr class="memdesc:a5d3b23de56430da9ff00104e241c664f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set or unset performance timings during iterations.  <a href="structdg_1_1_default_solver.html#a5d3b23de56430da9ff00104e241c664f">More...</a><br /></td></tr>
 <tr class="separator:a5d3b23de56430da9ff00104e241c664f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb8369d9d48de04b604acd636d1890f3"><td class="memTemplParams" colspan="2">template&lt;class Implicit &gt; </td></tr>
-<tr class="memitem:aeb8369d9d48de04b604acd636d1890f3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_default_solver.html#aeb8369d9d48de04b604acd636d1890f3">solve</a> (<a class="el" href="structdg_1_1_default_solver.html#a97f8cab8aaa354a9f44baf19b33aefe5">value_type</a> alpha, Implicit &amp;im, <a class="el" href="structdg_1_1_default_solver.html#a97f8cab8aaa354a9f44baf19b33aefe5">value_type</a> time, ContainerType &amp;y, const ContainerType &amp;rhs)</td></tr>
-<tr class="separator:aeb8369d9d48de04b604acd636d1890f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeb9fd5e0523e007283f31dff38a6cb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_default_solver.html#afeb9fd5e0523e007283f31dff38a6cb1">operator()</a> (<a class="el" href="structdg_1_1_default_solver.html#a97f8cab8aaa354a9f44baf19b33aefe5">value_type</a> alpha, <a class="el" href="structdg_1_1_default_solver.html#a97f8cab8aaa354a9f44baf19b33aefe5">value_type</a> time, ContainerType &amp;y, const ContainerType &amp;ys)</td></tr>
+<tr class="separator:afeb9fd5e0523e007283f31dff38a6cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;class ContainerType&gt;<br />
-struct dg::DefaultSolver&lt; ContainerType &gt;</div><p >Default Solver class for solving. </p>
-<p class="formulaDsp">
-\[ (y-\alpha\hat I(t,y)) = \rho\]
-</p>
-<p >for given t, alpha and rho. works only for linear positive definite operators as it uses a conjugate gradient solver to invert the equation</p>
+struct dg::DefaultSolver&lt; ContainerType &gt;</div><p ><a class="el" href="classdg_1_1_p_c_g.html" title="Preconditioned conjugate gradient method to solve.">PCG</a> Solver class for solving \( (y-\alpha\hat I(t,y)) = \rho\). </p>
+<p >for given t, alpha and rho. \( \hat I\) must be linear self-adjoint positive definite as it uses a conjugate gradient solver to invert the equation. </p><dl class="section note"><dt>Note</dt><dd>This struct is a simple wrapper. It exists because self-adjoint operators appear quite often in practice and is not actually the recommended default way of writing a solver for the implicit time part. It is better to start with the following code and adapt from there <div class="fragment"><div class="line"><span class="keyword">auto</span> solver = [&amp;eps = eps, &amp;im = im, pcg = <a class="code hl_class" href="classdg_1_1_p_c_g.html">dg::PCG&lt;ContainerType&gt;</a>( y0, 1000)]</div>
+<div class="line">    ( <a class="code hl_typedef" href="structdg_1_1_default_solver.html#a97f8cab8aaa354a9f44baf19b33aefe5">value_type</a> alpha, <a class="code hl_typedef" href="structdg_1_1_default_solver.html#a97f8cab8aaa354a9f44baf19b33aefe5">value_type</a> time, ContainerType&amp; <a class="code hl_enumvalue" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>, <span class="keyword">const</span></div>
+<div class="line">        ContainerType&amp; ys)</div>
+<div class="line">{</div>
+<div class="line">   <span class="keyword">auto</span> wrapper = [a = alpha, t = time, &amp;i = im]( <span class="keyword">const</span> <span class="keyword">auto</span>&amp; <a class="code hl_enumvalue" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">x</a>, <span class="keyword">auto</span>&amp; <a class="code hl_enumvalue" href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">y</a>){</div>
+<div class="line">       i( t, x, y);</div>
+<div class="line">       <a class="code hl_function" href="group__blas1.html#ga5c7ddbf70dd74867e45c9d4f40b36cf7">dg::blas1::axpby</a>( 1., x, -a, y);</div>
+<div class="line">   };</div>
+<div class="line">   <a class="code hl_function" href="group__blas1.html#ga0ed8d5b1a17d0e8882b2d253a0d3fbed">dg::blas1::copy</a>( ys, y); <span class="comment">// take rhs as initial guess</span></div>
+<div class="line">   pcg.solve( wrapper, y, ys, im.precond(), im.weights(), eps);</div>
+<div class="line">}</div>
+<div class="ttc" id="aclassdg_1_1_p_c_g_html"><div class="ttname"><a href="classdg_1_1_p_c_g.html">dg::PCG</a></div><div class="ttdoc">Preconditioned conjugate gradient method to solve.</div><div class="ttdef"><b>Definition:</b> pcg.h:48</div></div>
+<div class="ttc" id="agroup__blas1_html_ga0ed8d5b1a17d0e8882b2d253a0d3fbed"><div class="ttname"><a href="group__blas1.html#ga0ed8d5b1a17d0e8882b2d253a0d3fbed">dg::blas1::copy</a></div><div class="ttdeci">void copy(const ContainerTypeIn &amp;source, ContainerTypeOut &amp;target)</div><div class="ttdef"><b>Definition:</b> blas1.h:162</div></div>
+<div class="ttc" id="agroup__blas1_html_ga5c7ddbf70dd74867e45c9d4f40b36cf7"><div class="ttname"><a href="group__blas1.html#ga5c7ddbf70dd74867e45c9d4f40b36cf7">dg::blas1::axpby</a></div><div class="ttdeci">void axpby(get_value_type&lt; ContainerType &gt; alpha, const ContainerType1 &amp;x, get_value_type&lt; ContainerType &gt; beta, ContainerType &amp;y)</div><div class="ttdef"><b>Definition:</b> blas1.h:229</div></div>
+<div class="ttc" id="agroup__creation_html_ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d"><div class="ttname"><a href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a415290769594460e2e485922904f345d">dg::coo2d::y</a></div><div class="ttdeci">@ y</div><div class="ttdoc">y direction</div></div>
+<div class="ttc" id="agroup__creation_html_ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6"><div class="ttname"><a href="group__creation.html#ggace76090e6c95d39b59a1dee2db968d14a9dd4e461268c8034f5c8564e155c67a6">dg::coo2d::x</a></div><div class="ttdeci">@ x</div><div class="ttdoc">x direction</div></div>
+<div class="ttc" id="astructdg_1_1_default_solver_html_a97f8cab8aaa354a9f44baf19b33aefe5"><div class="ttname"><a href="structdg_1_1_default_solver.html#a97f8cab8aaa354a9f44baf19b33aefe5">dg::DefaultSolver::value_type</a></div><div class="ttdeci">get_value_type&lt; ContainerType &gt; value_type</div><div class="ttdef"><b>Definition:</b> implicit.h:62</div></div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>In general it is recommended <a class="el" href="group__time__utils.html#ga6da92394b084f50fdbfe42b13506ba40" title="Switch for the Timeloop integrate function.">to</a> write your own solver using a wrapper lambda like the above and <a class="el" href="group__basics.html#gabab1bdc50508bd0f04f3cd0b45dd72e3">one</a> of the existing solvers like <code><a class="el" href="classdg_1_1_p_c_g.html" title="Preconditioned conjugate gradient method to solve.">dg::PCG</a></code>, <code><a class="el" href="classdg_1_1_l_g_m_r_e_s.html" title="Functor class for the right preconditioned LGMRES method to solve.">dg::LGMRES</a></code> or <code><a class="el" href="structdg_1_1_anderson_acceleration.html" title="Anderson Acceleration of Fixed Point/Richardson Iteration for the nonlinear equation.">dg::AndersonAcceleration</a></code> </dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">ContainerType</td><td>Any class for which a specialization of <code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits.">TensorTraits</a></code> exists and which fulfills the requirements of the there defined data and execution policies derived from <code><a class="el" href="structdg_1_1_any_vector_tag.html" title="Vector Tag base class, indicates the basic Vector/container concept.">AnyVectorTag</a></code> and <code><a class="el" href="structdg_1_1_any_policy_tag.html" title="Execution Policy base class.">AnyPolicyTag</a></code>. Among others<ul>
@@ -223,13 +235,15 @@ template&lt;class ContainerType &gt; </div>
 
 </div>
 </div>
-<a id="a6904af29802092b896f3a8efde1070a3" name="a6904af29802092b896f3a8efde1070a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6904af29802092b896f3a8efde1070a3">&#9670;&nbsp;</a></span>DefaultSolver() <span class="overload">[2/2]</span></h2>
+<a id="a28d078f31f2773fbcfe93f55aa86f202" name="a28d078f31f2773fbcfe93f55aa86f202"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28d078f31f2773fbcfe93f55aa86f202">&#9670;&nbsp;</a></span>DefaultSolver() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class ContainerType &gt; </div>
+<div class="memtemplate">
+template&lt;class Implicit &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -237,6 +251,12 @@ template&lt;class ContainerType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="structdg_1_1_default_solver.html">dg::DefaultSolver</a>&lt; ContainerType &gt;::DefaultSolver </td>
           <td>(</td>
+          <td class="paramtype">Implicit &amp;&#160;</td>
+          <td class="paramname"><em>im</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const ContainerType &amp;&#160;</td>
           <td class="paramname"><em>copyable</em>, </td>
         </tr>
@@ -264,11 +284,24 @@ template&lt;class ContainerType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >it does not matter what values <code>copyable</code> contains, but its size is important; the <code>solve</code> method can only be called with vectors of the same size) </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Implicit</td><td>The self-adjoint, positive definite implicit part of the right hand side. Has signature <code> void operator()(value_type, const ContainerType&amp;, ContainerType&amp;)</code> The first argument is the time, the second is the input vector, which the functor may <b>not</b> override, and the third is the output, i.e. y' = I(t, y) translates to I(t, y, y'). The two ContainerType arguments never alias each other in calls to the functor. Also needs the <code>WeightType</code> <a class="el" href="group__highlevel.html#ga7b869566cb76ee5eb9eaaa95abc65fb0" title="Nodal weight coefficients.">weights()</a> and <code>PreconditionerType</code> <a class="el" href="group__lowlevel.html#ga8df4669ca0584fcf2b027a5485b0dc9f" title="Construct a diagonal operator with inverse weights.">precond()</a> member functions. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">copyable</td><td>vector of the size that is later used in <code>solve</code> ( it does not matter what values <code>copyable</code> contains, but its size is important; the <code>solve</code> method can only be called with vectors of the same size) </td></tr>
-    <tr><td class="paramname">max_iter</td><td>maimum iteration number in cg </td></tr>
-    <tr><td class="paramname">eps</td><td>accuracy parameter for cg </td></tr>
+    <tr><td class="paramname">im</td><td>The implicit part of the differential equation. Stored as a <code>std::function</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>Attention</dt><dd>make sure that im lives throughout the lifetime of this object, else we'll get a dangling reference </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">copyable</td><td>forwarded to constructor of <code><a class="el" href="classdg_1_1_p_c_g.html" title="Preconditioned conjugate gradient method to solve.">dg::PCG</a></code> </td></tr>
+    <tr><td class="paramname">max_iter</td><td>maximum iteration number in cg, forwarded to constructor of <code><a class="el" href="classdg_1_1_p_c_g.html" title="Preconditioned conjugate gradient method to solve.">dg::PCG</a></code> </td></tr>
+    <tr><td class="paramname">eps</td><td>relative and absolute accuracy parameter, used in the solve method of <code><a class="el" href="classdg_1_1_p_c_g.html" title="Preconditioned conjugate gradient method to solve.">dg::PCG</a></code> </td></tr>
   </table>
   </dd>
 </dl>
@@ -276,8 +309,8 @@ template&lt;class ContainerType &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aabc25400d2fd462b1defca4ef18d5c0f" name="aabc25400d2fd462b1defca4ef18d5c0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aabc25400d2fd462b1defca4ef18d5c0f">&#9670;&nbsp;</a></span>copyable()</h2>
+<a id="afeb9fd5e0523e007283f31dff38a6cb1" name="afeb9fd5e0523e007283f31dff38a6cb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afeb9fd5e0523e007283f31dff38a6cb1">&#9670;&nbsp;</a></span>operator()()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -288,10 +321,33 @@ template&lt;class ContainerType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const ContainerType &amp; <a class="el" href="structdg_1_1_default_solver.html">dg::DefaultSolver</a>&lt; ContainerType &gt;::copyable </td>
+          <td class="memname">void <a class="el" href="structdg_1_1_default_solver.html">dg::DefaultSolver</a>&lt; ContainerType &gt;::operator() </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype"><a class="el" href="structdg_1_1_default_solver.html#a97f8cab8aaa354a9f44baf19b33aefe5">value_type</a>&#160;</td>
+          <td class="paramname"><em>alpha</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structdg_1_1_default_solver.html#a97f8cab8aaa354a9f44baf19b33aefe5">value_type</a>&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ContainerType &amp;&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ContainerType &amp;&#160;</td>
+          <td class="paramname"><em>ys</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -300,9 +356,6 @@ template&lt;class ContainerType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Return an object of same size as the object used for construction. </p>
-<dl class="section return"><dt>Returns</dt><dd>A copyable object; what it contains is undefined, its size is important </dd></dl>
 
 </div>
 </div>
@@ -342,64 +395,6 @@ template&lt;class ContainerType &gt; </div>
 
 </div>
 </div>
-<a id="aeb8369d9d48de04b604acd636d1890f3" name="aeb8369d9d48de04b604acd636d1890f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb8369d9d48de04b604acd636d1890f3">&#9670;&nbsp;</a></span>solve()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ContainerType &gt; </div>
-<div class="memtemplate">
-template&lt;class Implicit &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="structdg_1_1_default_solver.html">dg::DefaultSolver</a>&lt; ContainerType &gt;::solve </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structdg_1_1_default_solver.html#a97f8cab8aaa354a9f44baf19b33aefe5">value_type</a>&#160;</td>
-          <td class="paramname"><em>alpha</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Implicit &amp;&#160;</td>
-          <td class="paramname"><em>im</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structdg_1_1_default_solver.html#a97f8cab8aaa354a9f44baf19b33aefe5">value_type</a>&#160;</td>
-          <td class="paramname"><em>time</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ContainerType &amp;&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const ContainerType &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="implicit_8h_source.html">implicit.h</a></li>
 </ul>
@@ -410,7 +405,7 @@ template&lt;class Implicit &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_default_solver.html">DefaultSolver</a></li>
-    <li class="footer">Generated on Fri Jan 14 2022 13:22:08 for Discontinuous Galerkin Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
+    <li class="footer">Generated on Fri Jan 28 2022 17:46:21 for Discontinuous Galerkin Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
   </ul>
 </div>
 </body>

@@ -30,9 +30,5 @@ var group__json =
       [ "dg::file::error::is_silent", "group__json.html#ggaa175872f0039fffca9e16b101f605e8aa860c46d6e55990284b48131ef9e0b282", null ]
     ] ],
     [ "dg::file::file2Json", "group__json.html#ga16a1e4ad9fe50e417bf8032f1fed0536", null ],
-    [ "dg::file::get", "group__json.html#ga6c90a817ad9aebcc2f98f06f668a2f2c", null ],
-    [ "dg::file::get", "group__json.html#ga31a31fe989be0bc06f5eabbedda3e94f", null ],
-    [ "dg::file::get_idx", "group__json.html#gab8ffc1310665828165056f30a7a64299", null ],
-    [ "dg::file::get_idx", "group__json.html#ga779424bc623b9dbda3a628c59a30a7b2", null ],
     [ "dg::file::string2Json", "group__json.html#ga0bfa189bef31223462f360b4346ba586", null ]
 ];

@@ -143,8 +143,8 @@
     <member kind="typedef">
       <type>AndersonAcceleration&lt; ContainerType &gt;</type>
       <name>FixedPointIteration</name>
-      <anchorfile>namespacedg.html</anchorfile>
-      <anchor>add1f6996ff3eaa80e3e6720b6898058b</anchor>
+      <anchorfile>group__invert.html</anchorfile>
+      <anchor>gadd1f6996ff3eaa80e3e6720b6898058b</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -230,6 +230,13 @@
       <anchorfile>exceptions_8h.html</anchorfile>
       <anchor>a6e389c07f185af0e74ef30554f181593</anchor>
       <arglist></arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>abort_program</name>
+      <anchorfile>group__misc.html</anchorfile>
+      <anchor>gadbeead9ca462cac41598a062a0834e34</anchor>
+      <arglist>(int code=-1)</arglist>
     </member>
   </compound>
   <compound kind="file">
@@ -515,8 +522,7 @@
     <filename>tensor__traits__thrust_8h.html</filename>
     <includes id="vector__categories_8h" name="vector_categories.h" local="yes" imported="no">vector_categories.h</includes>
     <includes id="tensor__traits_8h" name="tensor_traits.h" local="yes" imported="no">tensor_traits.h</includes>
-    <class kind="struct">dg::TensorTraits&lt; thrust::host_vector&lt; T &gt;, std::enable_if_t&lt; std::is_arithmetic&lt; T &gt;::value &gt; &gt;</class>
-    <class kind="struct">dg::TensorTraits&lt; thrust::host_vector&lt; T &gt;, std::enable_if_t&lt; !std::is_arithmetic&lt; T &gt;::value &gt; &gt;</class>
+    <class kind="struct">dg::TensorTraits&lt; thrust::host_vector&lt; T &gt; &gt;</class>
     <class kind="struct">dg::TensorTraits&lt; thrust::device_vector&lt; T &gt; &gt;</class>
     <namespace>dg</namespace>
   </compound>
@@ -1434,18 +1440,8 @@
     <path>/home/matthias/Projekte/feltor/inc/dg/</path>
     <filename>implicit_8h.html</filename>
     <includes id="pcg_8h" name="pcg.h" local="yes" imported="no">pcg.h</includes>
-    <includes id="andersonacc_8h" name="andersonacc.h" local="yes" imported="no">andersonacc.h</includes>
     <class kind="struct">dg::DefaultSolver</class>
-    <class kind="struct">dg::FixedPointSolver</class>
-    <class kind="struct">dg::AndersonSolver</class>
     <namespace>dg</namespace>
-    <member kind="function">
-      <type>auto</type>
-      <name>make_default_solver</name>
-      <anchorfile>namespacedg.html</anchorfile>
-      <anchor>a0315e003319d9a1194625a274c25afed</anchor>
-      <arglist>(Implicit &amp;im, const ContainerType &amp;copyable, unsigned max_iter, get_value_type&lt; ContainerType &gt; eps, bool benchmark=true)</arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>lgmres.h</name>
@@ -1477,75 +1473,29 @@
       <type>void</type>
       <name>nested_iterations</name>
       <anchorfile>group__multigrid.html</anchorfile>
-      <anchor>ga1aca7222c69b765e8d304791595c09cb</anchor>
-      <arglist>(NestedOperator &amp;&amp;op, ContainerType0 &amp;x, const ContainerType1 &amp;b, const std::vector&lt; std::function&lt; void(const ContainerType1 &amp;, ContainerType0 &amp;)&gt; &gt; &amp;inverse_op, Nested &amp;nested)</arglist>
+      <anchor>gaa72ab35001decd5c7c6bf39a68df46a8</anchor>
+      <arglist>(std::vector&lt; MatrixType0 &gt; &amp;ops, ContainerType0 &amp;x, const ContainerType1 &amp;b, std::vector&lt; MatrixType1 &gt; &amp;inverse_ops, NestedGrids &amp;nested_grids)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>multigrid_cycle</name>
       <anchorfile>group__multigrid.html</anchorfile>
-      <anchor>ga7350dc0405686518b82a740bd74b5584</anchor>
-      <arglist>(NestedOperator &amp;&amp;op, const std::vector&lt; std::function&lt; void(const ContainerType1 &amp;, ContainerType0 &amp;)&gt; &gt; &amp;inverse_op_down, const std::vector&lt; std::function&lt; void(const ContainerType1 &amp;, ContainerType0 &amp;)&gt; &gt; &amp;inverse_op_up, Nested &amp;nested, unsigned gamma, unsigned p)</arglist>
+      <anchor>ga0d7371ada9d93aa73588c315760fba9c</anchor>
+      <arglist>(std::vector&lt; MatrixType0 &gt; &amp;ops, std::vector&lt; MatrixType1 &gt; &amp;inverse_ops_down, std::vector&lt; MatrixType2 &gt; &amp;inverse_ops_up, NestedGrids &amp;nested_grids, unsigned gamma, unsigned p)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>full_multigrid</name>
       <anchorfile>group__multigrid.html</anchorfile>
-      <anchor>ga72b81008cfe6a0d945666c780fa51460</anchor>
-      <arglist>(NestedOperator &amp;&amp;op, ContainerType0 &amp;x, const ContainerType1 &amp;b, const std::vector&lt; std::function&lt; void(const ContainerType1 &amp;, ContainerType0 &amp;)&gt; &gt; &amp;inverse_op_down, const std::vector&lt; std::function&lt; void(const ContainerType1 &amp;, ContainerType0 &amp;)&gt; &gt; &amp;inverse_op_up, Nested &amp;nested, unsigned gamma, unsigned mu)</arglist>
+      <anchor>ga38b7db0cd864296c31cd5dd0e97bd3b5</anchor>
+      <arglist>(std::vector&lt; MatrixType0 &gt; &amp;ops, ContainerType0 &amp;x, const ContainerType1 &amp;b, std::vector&lt; MatrixType1 &gt; &amp;inverse_ops_down, std::vector&lt; MatrixType2 &gt; &amp;inverse_ops_up, NestedGrids &amp;nested_grids, unsigned gamma, unsigned mu)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>fmg_solve</name>
       <anchorfile>group__multigrid.html</anchorfile>
-      <anchor>ga45acbff86a36af9288623b670de0a882</anchor>
-      <arglist>(NestedOperator &amp;&amp;op, ContainerType0 &amp;x, const ContainerType1 &amp;b, const std::vector&lt; std::function&lt; void(const ContainerType1 &amp;, ContainerType0 &amp;)&gt; &gt; &amp;inverse_op_down, const std::vector&lt; std::function&lt; void(const ContainerType1 &amp;, ContainerType0 &amp;)&gt; &gt; &amp;inverse_op_up, Nested &amp;nested, const ContainerType2 &amp;weights, double eps, unsigned gamma)</arglist>
-    </member>
-  </compound>
-  <compound kind="file">
-    <name>multigrid_save.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/dg/</path>
-    <filename>multigrid__save_8h.html</filename>
-    <includes id="exceptions_8h" name="exceptions.h" local="yes" imported="no">backend/exceptions.h</includes>
-    <includes id="memory_8h" name="memory.h" local="yes" imported="no">backend/memory.h</includes>
-    <includes id="fast__interpolation_8h" name="fast_interpolation.h" local="yes" imported="no">topology/fast_interpolation.h</includes>
-    <includes id="interpolation_8h" name="interpolation.h" local="yes" imported="no">topology/interpolation.h</includes>
-    <includes id="blas_8h" name="blas.h" local="yes" imported="no">blas.h</includes>
-    <includes id="pcg_8h" name="pcg.h" local="yes" imported="no">pcg.h</includes>
-    <includes id="chebyshev_8h" name="chebyshev.h" local="yes" imported="no">chebyshev.h</includes>
-    <includes id="eve_8h" name="eve.h" local="yes" imported="no">eve.h</includes>
-    <includes id="timer_8h" name="timer.h" local="yes" imported="no">backend/timer.h</includes>
-    <includes id="mpi__projection_8h" name="mpi_projection.h" local="yes" imported="no">topology/mpi_projection.h</includes>
-    <class kind="struct">dg::NestedGrids</class>
-    <class kind="struct">dg::MultigridCG2d</class>
-    <namespace>dg</namespace>
-    <member kind="function">
-      <type>void</type>
-      <name>nested_iterations</name>
-      <anchorfile>namespacedg.html</anchorfile>
-      <anchor>a3883dd15865bab43a25b6d619af20814</anchor>
-      <arglist>(NestedOperator &amp;&amp;op, ContainerType0 &amp;x, const ContainerType1 &amp;b, std::vector&lt; std::function&lt; void(const ContainerType1 &amp;, ContainerType0 &amp;)&gt; &gt; inverse_op, Nested &amp;nested)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>multigrid_cycle</name>
-      <anchorfile>namespacedg.html</anchorfile>
-      <anchor>a04c0537d20379eb25a4846c9245b4fff</anchor>
-      <arglist>(NestedOperator &amp;&amp;op, std::vector&lt; std::function&lt; void(const ContainerType1 &amp;, ContainerType0 &amp;)&gt; &gt; inverse_op, Nested &amp;nested, unsigned gamma, unsigned p)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>full_multigrid</name>
-      <anchorfile>namespacedg.html</anchorfile>
-      <anchor>a7542fca8122badcbffe18f4f1b9ff373</anchor>
-      <arglist>(NestedOperator &amp;&amp;op, std::vector&lt; std::function&lt; void(const ContainerType1 &amp;, ContainerType0 &amp;)&gt; &gt; inverse_op, Nested &amp;nested, unsigned gamma, unsigned mu)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>fmg_solve</name>
-      <anchorfile>namespacedg.html</anchorfile>
-      <anchor>aaae9651882d213318293eeb1abea3542</anchor>
-      <arglist>(NestedOperator &amp;&amp;op, ContainerType0 &amp;x, const ContainerType1 &amp;b, std::vector&lt; std::function&lt; void(const ContainerType1 &amp;, ContainerType0 &amp;)&gt; &gt; inverse_op, Nested &amp;nested, const ContainerType2 &amp;weights, double eps, unsigned gamma)</arglist>
+      <anchor>ga1f879510ca5bb49491433f0fb4969363</anchor>
+      <arglist>(std::vector&lt; MatrixType0 &gt; &amp;ops, ContainerType0 &amp;x, const ContainerType1 &amp;b, std::vector&lt; MatrixType1 &gt; &amp;inverse_ops_down, std::vector&lt; MatrixType2 &gt; &amp;inverse_ops_up, NestedGrids &amp;nested_grids, const ContainerType2 &amp;weights, double eps, unsigned gamma)</arglist>
     </member>
   </compound>
   <compound kind="file">
@@ -1846,6 +1796,22 @@
     <includes id="tensor__traits_8h" name="tensor_traits.h" local="yes" imported="no">backend/tensor_traits.h</includes>
     <class kind="struct">dg::aTimeloop</class>
     <namespace>dg</namespace>
+    <member kind="enumeration">
+      <type></type>
+      <name>to</name>
+      <anchorfile>group__time__utils.html</anchorfile>
+      <anchor>ga6da92394b084f50fdbfe42b13506ba40</anchor>
+      <arglist></arglist>
+      <enumvalue file="group__time__utils.html" anchor="gga6da92394b084f50fdbfe42b13506ba40a3b7efa09444a31c5d58596e5bbf87d47">exact</enumvalue>
+      <enumvalue file="group__time__utils.html" anchor="gga6da92394b084f50fdbfe42b13506ba40aeb864176fc6fa04fb42eb3d755efa8d1">at_least</enumvalue>
+    </member>
+    <member kind="function" static="yes">
+      <type>static std::string</type>
+      <name>to2str</name>
+      <anchorfile>group__time__utils.html</anchorfile>
+      <anchor>gacd6befafa603fb90e42880f8f2b89430</anchor>
+      <arglist>(enum to mode)</arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>pcg.h</name>
@@ -1919,8 +1885,8 @@
       <type>void</type>
       <name>stepperRK</name>
       <anchorfile>group__time.html</anchorfile>
-      <anchor>ga95cb7ed53ca75810f7027cd6d9f3f904</anchor>
-      <arglist>(ConvertsToButcherTableau&lt; get_value_type&lt; ContainerType &gt; &gt; tableau, RHS &amp;rhs, get_value_type&lt; ContainerType &gt; t_begin, const ContainerType &amp;begin, get_value_type&lt; ContainerType &gt; t_end, ContainerType &amp;end, unsigned N)</arglist>
+      <anchor>ga7628d159d6f24f64444a78e59093d2b8</anchor>
+      <arglist>(ConvertsToButcherTableau&lt; get_value_type&lt; ContainerType &gt; &gt; tableau, ExplicitRHS &amp;rhs, get_value_type&lt; ContainerType &gt; t_begin, const ContainerType &amp;begin, get_value_type&lt; ContainerType &gt; t_end, ContainerType &amp;end, unsigned N)</arglist>
     </member>
   </compound>
   <compound kind="file">
@@ -2182,9 +2148,21 @@
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
+      <name>SANCHEZ_3_3</name>
+      <anchorfile>group__time__utils.html</anchorfile>
+      <anchor>gga80d4d81df02e5311bb20b3f74ea45992a5fb5b4655b1e9e1d40eb800e917511cd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
       <name>KVAERNO_4_2_3</name>
       <anchorfile>group__time__utils.html</anchorfile>
       <anchor>gga80d4d81df02e5311bb20b3f74ea45992a4237a65080e211e5eedc4d9998bb1e54</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SDIRK_4_2_3</name>
+      <anchorfile>group__time__utils.html</anchorfile>
+      <anchor>gga80d4d81df02e5311bb20b3f74ea45992af7a23d9cc4dbf0c00877b580e580a41f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
@@ -2197,6 +2175,12 @@
       <name>ARK324L2SA_DIRK_4_2_3</name>
       <anchorfile>group__time__utils.html</anchorfile>
       <anchor>gga80d4d81df02e5311bb20b3f74ea45992a6fc7f6581d7f900694db6c8e91a17281</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SANCHEZ_3_4</name>
+      <anchorfile>group__time__utils.html</anchorfile>
+      <anchor>gga80d4d81df02e5311bb20b3f74ea45992ae2ac5e5c2a0f79a1838d05654b5248fd</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
@@ -2236,9 +2220,21 @@
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
+      <name>SANCHEZ_6_5</name>
+      <anchorfile>group__time__utils.html</anchorfile>
+      <anchor>gga80d4d81df02e5311bb20b3f74ea45992a55ed8debaa20193fc5a24d0406b46849</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
       <name>ARK548L2SA_DIRK_8_4_5</name>
       <anchorfile>group__time__utils.html</anchorfile>
       <anchor>gga80d4d81df02e5311bb20b3f74ea45992ad17ee32bcc10dbb681d704e9dc3d0425</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SANCHEZ_7_6</name>
+      <anchorfile>group__time__utils.html</anchorfile>
+      <anchor>gga80d4d81df02e5311bb20b3f74ea45992a89b06991db22d4e2fc7d0e063b6c80ad</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
@@ -5378,62 +5374,8 @@
       <type>unsigned</type>
       <name>solve</name>
       <anchorfile>structdg_1_1_anderson_acceleration.html</anchorfile>
-      <anchor>ad91429c163a7014d3639c60d44a46c02</anchor>
-      <arglist>(BinarySubroutine &amp;&amp;f, ContainerType0 &amp;x, const ContainerType1 &amp;b, const ContainerType2 &amp;weights, value_type rtol, value_type atol, unsigned max_iter, value_type damping, unsigned restart, bool verbose)</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>dg::AndersonSolver</name>
-    <filename>structdg_1_1_anderson_solver.html</filename>
-    <templarg>class ContainerType</templarg>
-    <member kind="typedef">
-      <type>ContainerType</type>
-      <name>container_type</name>
-      <anchorfile>structdg_1_1_anderson_solver.html</anchorfile>
-      <anchor>ad9334dd09f6ff4ca1c4f4234de223de3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>get_value_type&lt; ContainerType &gt;</type>
-      <name>value_type</name>
-      <anchorfile>structdg_1_1_anderson_solver.html</anchorfile>
-      <anchor>a4428369e4a49d912618b73109e5fcfc5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>AndersonSolver</name>
-      <anchorfile>structdg_1_1_anderson_solver.html</anchorfile>
-      <anchor>a5eb7c56476a5bd54684fbcfc624acb54</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>AndersonSolver</name>
-      <anchorfile>structdg_1_1_anderson_solver.html</anchorfile>
-      <anchor>a1fd87d2f873f7d4cb66538c194460b7a</anchor>
-      <arglist>(const ContainerType &amp;copyable, unsigned mMax, value_type eps, unsigned max_iter, value_type damping, unsigned restart)</arglist>
-    </member>
-    <member kind="function">
-      <type>const ContainerType &amp;</type>
-      <name>copyable</name>
-      <anchorfile>structdg_1_1_anderson_solver.html</anchorfile>
-      <anchor>a26a33ba7cd5912b926449d57b61d69b2</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>set_benchmark</name>
-      <anchorfile>structdg_1_1_anderson_solver.html</anchorfile>
-      <anchor>abd5135fe97fac6526e95ba9cc971400a</anchor>
-      <arglist>(bool benchmark)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>solve</name>
-      <anchorfile>structdg_1_1_anderson_solver.html</anchorfile>
-      <anchor>afd97868a8007bae227e3ac47c8d0f8f4</anchor>
-      <arglist>(value_type alpha, Implicit &amp;im, value_type t, ContainerType &amp;y, const ContainerType &amp;rhs)</arglist>
+      <anchor>aa882b79ab54adb47fef188aae8b246c4</anchor>
+      <arglist>(MatrixType &amp;&amp;f, ContainerType0 &amp;x, const ContainerType1 &amp;b, const ContainerType2 &amp;weights, value_type rtol, value_type atol, unsigned max_iter, value_type damping, unsigned restart, bool verbose)</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -5986,6 +5928,20 @@
     </member>
     <member kind="function">
       <type>unsigned</type>
+      <name>nx</name>
+      <anchorfile>structdg_1_1a_real_m_p_i_topology2d.html</anchorfile>
+      <anchor>a46eb1df6a7fe12e1261eac77b3db1e34</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
+      <name>ny</name>
+      <anchorfile>structdg_1_1a_real_m_p_i_topology2d.html</anchorfile>
+      <anchor>a47f401ac8c6ea08b9843f4bf42f79117</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
       <name>Nx</name>
       <anchorfile>structdg_1_1a_real_m_p_i_topology2d.html</anchorfile>
       <anchor>a7f13033a2a2d49e03d774c7e2d621854</anchor>
@@ -6021,9 +5977,16 @@
     </member>
     <member kind="function">
       <type>const DLT&lt; real_type &gt; &amp;</type>
-      <name>dlt</name>
+      <name>dltx</name>
       <anchorfile>structdg_1_1a_real_m_p_i_topology2d.html</anchorfile>
-      <anchor>a3e85a2aeef8a344e2740b4a4a73d1f18</anchor>
+      <anchor>a1bc90950ce8b321df1043dce177a1a46</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>const DLT&lt; real_type &gt; &amp;</type>
+      <name>dlty</name>
+      <anchorfile>structdg_1_1a_real_m_p_i_topology2d.html</anchorfile>
+      <anchor>a9ef22e7628c3ba436259d9a21b6188e2</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
@@ -6069,6 +6032,13 @@
       <arglist>(unsigned new_n, unsigned new_Nx, unsigned new_Ny)</arglist>
     </member>
     <member kind="function">
+      <type>void</type>
+      <name>set</name>
+      <anchorfile>structdg_1_1a_real_m_p_i_topology2d.html</anchorfile>
+      <anchor>aeb407e16ed12af0b2988f6bbbac8bb28</anchor>
+      <arglist>(unsigned new_nx, unsigned new_Nx, unsigned new_ny, unsigned new_Ny)</arglist>
+    </member>
+    <member kind="function">
       <type>bool</type>
       <name>local2globalIdx</name>
       <anchorfile>structdg_1_1a_real_m_p_i_topology2d.html</anchorfile>
@@ -6107,8 +6077,8 @@
       <type></type>
       <name>aRealMPITopology2d</name>
       <anchorfile>structdg_1_1a_real_m_p_i_topology2d.html</anchorfile>
-      <anchor>a6a42cdd80d1325dc74143471f65b6d0a</anchor>
-      <arglist>(real_type x0, real_type x1, real_type y0, real_type y1, unsigned n, unsigned Nx, unsigned Ny, bc bcx, bc bcy, MPI_Comm comm)</arglist>
+      <anchor>ab12f02e35a9f8307b56297e00b56ddb1</anchor>
+      <arglist>(RealGrid1d&lt; real_type &gt; gx, RealGrid1d&lt; real_type &gt; gy, MPI_Comm comm)</arglist>
     </member>
     <member kind="function" protection="protected">
       <type></type>
@@ -6128,8 +6098,8 @@
       <type>virtual void</type>
       <name>do_set</name>
       <anchorfile>structdg_1_1a_real_m_p_i_topology2d.html</anchorfile>
-      <anchor>ac9f3afd231b721b0e9cfc2c8ed38677e</anchor>
-      <arglist>(unsigned new_n, unsigned new_Nx, unsigned new_Ny)=0</arglist>
+      <anchor>a9849363d96c37c0886f934699ecc4a77</anchor>
+      <arglist>(unsigned new_nx, unsigned new_Nx, unsigned new_ny, unsigned new_Ny)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -6250,6 +6220,27 @@
     </member>
     <member kind="function">
       <type>unsigned</type>
+      <name>nx</name>
+      <anchorfile>structdg_1_1a_real_m_p_i_topology3d.html</anchorfile>
+      <anchor>ac51d06411302fb2a33bd94acfa22cfab</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
+      <name>ny</name>
+      <anchorfile>structdg_1_1a_real_m_p_i_topology3d.html</anchorfile>
+      <anchor>a9fcaf6719fe80e6e254d73054660333c</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
+      <name>nz</name>
+      <anchorfile>structdg_1_1a_real_m_p_i_topology3d.html</anchorfile>
+      <anchor>a2c9fe1e6c7035208d89612e4c91dedf4</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
       <name>Nx</name>
       <anchorfile>structdg_1_1a_real_m_p_i_topology3d.html</anchorfile>
       <anchor>ab544cee7ead04aa76c1ba0609119b73e</anchor>
@@ -6312,6 +6303,27 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
+      <type>const DLT&lt; real_type &gt; &amp;</type>
+      <name>dltx</name>
+      <anchorfile>structdg_1_1a_real_m_p_i_topology3d.html</anchorfile>
+      <anchor>afb65ef4d64709b7a2e677824c65e3252</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>const DLT&lt; real_type &gt; &amp;</type>
+      <name>dlty</name>
+      <anchorfile>structdg_1_1a_real_m_p_i_topology3d.html</anchorfile>
+      <anchor>a80fbf1f45e67ea5cdab1f82edc850e3d</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>const DLT&lt; real_type &gt; &amp;</type>
+      <name>dltz</name>
+      <anchorfile>structdg_1_1a_real_m_p_i_topology3d.html</anchorfile>
+      <anchor>a59e31de49b8153f9b394b9b18885a663</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
       <type>unsigned</type>
       <name>size</name>
       <anchorfile>structdg_1_1a_real_m_p_i_topology3d.html</anchorfile>
@@ -6354,6 +6366,13 @@
       <arglist>(unsigned new_n, unsigned new_Nx, unsigned new_Ny, unsigned new_Nz)</arglist>
     </member>
     <member kind="function">
+      <type>void</type>
+      <name>set</name>
+      <anchorfile>structdg_1_1a_real_m_p_i_topology3d.html</anchorfile>
+      <anchor>a358e612d97ce2856c25f92cc8a22bb96</anchor>
+      <arglist>(unsigned new_nx, unsigned new_Nx, unsigned new_ny, unsigned new_Ny, unsigned new_nz, unsigned new_Nz)</arglist>
+    </member>
+    <member kind="function">
       <type>bool</type>
       <name>local2globalIdx</name>
       <anchorfile>structdg_1_1a_real_m_p_i_topology3d.html</anchorfile>
@@ -6392,8 +6411,8 @@
       <type></type>
       <name>aRealMPITopology3d</name>
       <anchorfile>structdg_1_1a_real_m_p_i_topology3d.html</anchorfile>
-      <anchor>a7b21968691a46bde02996884579e1ad5</anchor>
-      <arglist>(real_type x0, real_type x1, real_type y0, real_type y1, real_type z0, real_type z1, unsigned n, unsigned Nx, unsigned Ny, unsigned Nz, bc bcx, bc bcy, bc bcz, MPI_Comm comm)</arglist>
+      <anchor>a2ee9b8fb8e8fcd1edd34360bd2e7d6fb</anchor>
+      <arglist>(RealGrid1d&lt; real_type &gt; gx, RealGrid1d&lt; real_type &gt; gy, RealGrid1d&lt; real_type &gt; gz, MPI_Comm comm)</arglist>
     </member>
     <member kind="function" protection="protected">
       <type></type>
@@ -6413,8 +6432,8 @@
       <type>virtual void</type>
       <name>do_set</name>
       <anchorfile>structdg_1_1a_real_m_p_i_topology3d.html</anchorfile>
-      <anchor>a22ffd421f1338c52aacac4aea9198bf2</anchor>
-      <arglist>(unsigned new_n, unsigned new_Nx, unsigned new_Ny, unsigned new_Nz)=0</arglist>
+      <anchor>a9b756686272a68ab69cf7437198849b8</anchor>
+      <arglist>(unsigned new_nx, unsigned new_Nx, unsigned new_ny, unsigned new_Ny, unsigned new_nz, unsigned new_Nz)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -6718,6 +6737,20 @@
     </member>
     <member kind="function">
       <type>unsigned</type>
+      <name>nx</name>
+      <anchorfile>structdg_1_1a_real_topology2d.html</anchorfile>
+      <anchor>ae17a8efc9eaa7b3322b2a02628c7988b</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
+      <name>ny</name>
+      <anchorfile>structdg_1_1a_real_topology2d.html</anchorfile>
+      <anchor>a6831855194fcb2c4bb3ed02f22dcc6b6</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
       <name>Nx</name>
       <anchorfile>structdg_1_1a_real_topology2d.html</anchorfile>
       <anchor>ac961738714c0447be155ded45614b00c</anchor>
@@ -6746,9 +6779,30 @@
     </member>
     <member kind="function">
       <type>const DLT&lt; real_type &gt; &amp;</type>
-      <name>dlt</name>
+      <name>dltx</name>
       <anchorfile>structdg_1_1a_real_topology2d.html</anchorfile>
-      <anchor>ab765d366d1dbc40132b685cb2200daaf</anchor>
+      <anchor>a01c0f2205af46e3d984029e23f23be52</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>const DLT&lt; real_type &gt; &amp;</type>
+      <name>dlty</name>
+      <anchorfile>structdg_1_1a_real_topology2d.html</anchorfile>
+      <anchor>a3345fb8baf37e6f0e71f5d79a54997da</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>const RealGrid1d&lt; real_type &gt; &amp;</type>
+      <name>gx</name>
+      <anchorfile>structdg_1_1a_real_topology2d.html</anchorfile>
+      <anchor>ae0f78092377df4990b38ac6ec5fe1430</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>const RealGrid1d&lt; real_type &gt; &amp;</type>
+      <name>gy</name>
+      <anchorfile>structdg_1_1a_real_topology2d.html</anchorfile>
+      <anchor>a6433a585825be127780bbf9f62fe69b3</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
@@ -6764,6 +6818,13 @@
       <anchorfile>structdg_1_1a_real_topology2d.html</anchorfile>
       <anchor>a486277fa092c222b28b16dbb45415109</anchor>
       <arglist>(unsigned new_n, unsigned new_Nx, unsigned new_Ny)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set</name>
+      <anchorfile>structdg_1_1a_real_topology2d.html</anchorfile>
+      <anchor>ae9e0e7d497566f3023529313f24fb1d9</anchor>
+      <arglist>(unsigned new_nx, unsigned new_Nx, unsigned new_ny, unsigned new_Ny)</arglist>
     </member>
     <member kind="function">
       <type>unsigned</type>
@@ -6818,15 +6879,8 @@
       <type></type>
       <name>aRealTopology2d</name>
       <anchorfile>structdg_1_1a_real_topology2d.html</anchorfile>
-      <anchor>ad1edba19469c2ba8937128e143f24eab</anchor>
-      <arglist>(real_type x0, real_type x1, real_type y0, real_type y1, unsigned n, unsigned Nx, unsigned Ny, bc bcx, bc bcy)</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type></type>
-      <name>aRealTopology2d</name>
-      <anchorfile>structdg_1_1a_real_topology2d.html</anchorfile>
-      <anchor>aae3ad2357dd96d1278f044b31e803550</anchor>
-      <arglist>(const RealGrid1d&lt; real_type &gt; &amp;gx, const RealGrid1d&lt; real_type &gt; &amp;gy)</arglist>
+      <anchor>ab6a30df72e47ac2558ac52d422fe6afc</anchor>
+      <arglist>(RealGrid1d&lt; real_type &gt; gx, RealGrid1d&lt; real_type &gt; gy)</arglist>
     </member>
     <member kind="function" protection="protected">
       <type></type>
@@ -6846,8 +6900,8 @@
       <type>virtual void</type>
       <name>do_set</name>
       <anchorfile>structdg_1_1a_real_topology2d.html</anchorfile>
-      <anchor>add22af03d29abc7ab2e7434250468bf4</anchor>
-      <arglist>(unsigned new_n, unsigned new_Nx, unsigned new_Ny)=0</arglist>
+      <anchor>ae00c3c42c1ce4eb40999b4c847920012</anchor>
+      <arglist>(unsigned new_nx, unsigned new_Nx, unsigned new_ny, unsigned new_Ny)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -6968,6 +7022,27 @@
     </member>
     <member kind="function">
       <type>unsigned</type>
+      <name>nx</name>
+      <anchorfile>structdg_1_1a_real_topology3d.html</anchorfile>
+      <anchor>af300e576b822d144e24cf0bd01528208</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
+      <name>ny</name>
+      <anchorfile>structdg_1_1a_real_topology3d.html</anchorfile>
+      <anchor>a5cbfbacafdbeec4c4a668c23e994ab47</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
+      <name>nz</name>
+      <anchorfile>structdg_1_1a_real_topology3d.html</anchorfile>
+      <anchor>a3cff3b9d2bc36fef01028d51536d31d8</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
       <name>Nx</name>
       <anchorfile>structdg_1_1a_real_topology3d.html</anchorfile>
       <anchor>a5852a7a95874f021b0ed0bba903a8598</anchor>
@@ -7010,9 +7085,44 @@
     </member>
     <member kind="function">
       <type>const DLT&lt; real_type &gt; &amp;</type>
-      <name>dlt</name>
+      <name>dltx</name>
       <anchorfile>structdg_1_1a_real_topology3d.html</anchorfile>
-      <anchor>a101d75afbe462f856acc86d44a27002c</anchor>
+      <anchor>a1ce30bca13e9759dd7d4d551c23bf2fc</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>const DLT&lt; real_type &gt; &amp;</type>
+      <name>dlty</name>
+      <anchorfile>structdg_1_1a_real_topology3d.html</anchorfile>
+      <anchor>a6a03d142d029c010bfdaae74ddd96d70</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>const DLT&lt; real_type &gt; &amp;</type>
+      <name>dltz</name>
+      <anchorfile>structdg_1_1a_real_topology3d.html</anchorfile>
+      <anchor>a1c4a6c5b70645e79dd9f92e17f09eef3</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>const RealGrid1d&lt; real_type &gt; &amp;</type>
+      <name>gx</name>
+      <anchorfile>structdg_1_1a_real_topology3d.html</anchorfile>
+      <anchor>a664f97163824678b233784d8fadf2dc9</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>const RealGrid1d&lt; real_type &gt; &amp;</type>
+      <name>gy</name>
+      <anchorfile>structdg_1_1a_real_topology3d.html</anchorfile>
+      <anchor>a86e2c775af8edf6b3685fb064c997a74</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>const RealGrid1d&lt; real_type &gt; &amp;</type>
+      <name>gz</name>
+      <anchorfile>structdg_1_1a_real_topology3d.html</anchorfile>
+      <anchor>a1ca39ca32d3be26d7d0b39c141e3c6d2</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
@@ -7071,6 +7181,13 @@
       <anchor>aa016cb924a13881677207e349bf07774</anchor>
       <arglist>(unsigned new_n, unsigned new_Nx, unsigned new_Ny, unsigned new_Nz)</arglist>
     </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set</name>
+      <anchorfile>structdg_1_1a_real_topology3d.html</anchorfile>
+      <anchor>a743643e0fa6ebf0307c9e38f678f4ed4</anchor>
+      <arglist>(unsigned new_nx, unsigned new_Nx, unsigned new_ny, unsigned new_Ny, unsigned new_nz, unsigned new_Nz)</arglist>
+    </member>
     <member kind="function" protection="protected">
       <type></type>
       <name>~aRealTopology3d</name>
@@ -7082,15 +7199,8 @@
       <type></type>
       <name>aRealTopology3d</name>
       <anchorfile>structdg_1_1a_real_topology3d.html</anchorfile>
-      <anchor>aa34a2f91dcc179b0754bb582d3fe732e</anchor>
-      <arglist>(real_type x0, real_type x1, real_type y0, real_type y1, real_type z0, real_type z1, unsigned n, unsigned Nx, unsigned Ny, unsigned Nz, bc bcx, bc bcy, bc bcz)</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type></type>
-      <name>aRealTopology3d</name>
-      <anchorfile>structdg_1_1a_real_topology3d.html</anchorfile>
-      <anchor>abae8627102e80cae58bed3e810268d5e</anchor>
-      <arglist>(const RealGrid1d&lt; real_type &gt; &amp;gx, const RealGrid1d&lt; real_type &gt; &amp;gy, const RealGrid1d&lt; real_type &gt; &amp;gz)</arglist>
+      <anchor>a30d7213be3663935f8b83ada0474bc81</anchor>
+      <arglist>(RealGrid1d&lt; real_type &gt; gx, RealGrid1d&lt; real_type &gt; gy, RealGrid1d&lt; real_type &gt; gz)</arglist>
     </member>
     <member kind="function" protection="protected">
       <type></type>
@@ -7110,8 +7220,8 @@
       <type>virtual void</type>
       <name>do_set</name>
       <anchorfile>structdg_1_1a_real_topology3d.html</anchorfile>
-      <anchor>a070dd952345b72a78425bb3bd78cf280</anchor>
-      <arglist>(unsigned new_n, unsigned new_Nx, unsigned new_Ny, unsigned new_Nz)=0</arglist>
+      <anchor>a930175673d76ac4143484b98b140ca29</anchor>
+      <arglist>(unsigned new_nx, unsigned new_Nx, unsigned new_ny, unsigned new_Ny, unsigned new_nz, unsigned new_Nz)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -7664,8 +7774,8 @@
       <type>void</type>
       <name>step</name>
       <anchorfile>structdg_1_1_a_r_k_step.html</anchorfile>
-      <anchor>a20a30b0859f6e87b9d14f9325c28adde</anchor>
-      <arglist>(const std::tuple&lt; Explicit, Implicit, Solver &gt; &amp;ode, value_type t0, const ContainerType &amp;u0, value_type &amp;t1, ContainerType &amp;u1, value_type dt, ContainerType &amp;delta)</arglist>
+      <anchor>a2a2346ee594a6c80117cfb90909c51b6</anchor>
+      <arglist>(const std::tuple&lt; ExplicitRHS, ImplicitRHS, Solver &gt; &amp;ode, value_type t0, const ContainerType &amp;u0, value_type &amp;t1, ContainerType &amp;u1, value_type dt, ContainerType &amp;delta)</arglist>
     </member>
     <member kind="function">
       <type>unsigned</type>
@@ -7726,10 +7836,17 @@
     </member>
     <member kind="function">
       <type>void</type>
-      <name>integrate_at_least</name>
+      <name>integrate</name>
       <anchorfile>structdg_1_1a_timeloop.html</anchorfile>
-      <anchor>aa62095bebe2bbf536abd7e36496f1bbc</anchor>
-      <arglist>(value_type t0, const ContainerType &amp;u0, value_type &amp;t1, ContainerType &amp;u1)</arglist>
+      <anchor>a9036a6f4dda222cc9a7e3ba16336b4ac</anchor>
+      <arglist>(value_type &amp;t0, const ContainerType &amp;u0, value_type t1, ContainerType &amp;u1, enum to mode)</arglist>
+    </member>
+    <member kind="function">
+      <type>value_type</type>
+      <name>get_dt</name>
+      <anchorfile>structdg_1_1a_timeloop.html</anchorfile>
+      <anchor>adb375dbd5716f2981d3ffa772ea2b44e</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual aTimeloop *</type>
@@ -7986,8 +8103,8 @@
       <type>unsigned</type>
       <name>solve</name>
       <anchorfile>classdg_1_1_b_i_c_g_s_t_a_bl.html</anchorfile>
-      <anchor>ac33eb1be1da724c057de33f9a9f349fc</anchor>
-      <arglist>(MatrixType &amp;&amp;A, ContainerType0 &amp;x, const ContainerType1 &amp;b, Preconditioner &amp;&amp;P, const ContainerType2 &amp;W, value_type eps=1e-12, value_type nrmb_correction=1)</arglist>
+      <anchor>af38d7830569e49a92b9442d351142b0a</anchor>
+      <arglist>(MatrixType0 &amp;&amp;A, ContainerType0 &amp;x, const ContainerType1 &amp;b, MatrixType1 &amp;&amp;P, const ContainerType2 &amp;W, value_type eps=1e-12, value_type nrmb_correction=1)</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -8341,8 +8458,8 @@
       <type>void</type>
       <name>solve</name>
       <anchorfile>classdg_1_1_chebyshev_iteration.html</anchorfile>
-      <anchor>a3cf30de1a1e660a15c3548f401a374f5</anchor>
-      <arglist>(MatrixType &amp;&amp;A, ContainerType0 &amp;x, const ContainerType1 &amp;b, Preconditioner &amp;&amp;P, value_type min_ev, value_type max_ev, unsigned num_iter, bool x_is_zero=false)</arglist>
+      <anchor>a352c8dcad770b392d600bcd696594cca</anchor>
+      <arglist>(MatrixType0 &amp;&amp;A, ContainerType0 &amp;x, const ContainerType1 &amp;b, MatrixType1 &amp;&amp;P, value_type min_ev, value_type max_ev, unsigned num_iter, bool x_is_zero=false)</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -8969,15 +9086,8 @@
       <type></type>
       <name>DefaultSolver</name>
       <anchorfile>structdg_1_1_default_solver.html</anchorfile>
-      <anchor>a6904af29802092b896f3a8efde1070a3</anchor>
-      <arglist>(const ContainerType &amp;copyable, unsigned max_iter, value_type eps)</arglist>
-    </member>
-    <member kind="function">
-      <type>const ContainerType &amp;</type>
-      <name>copyable</name>
-      <anchorfile>structdg_1_1_default_solver.html</anchorfile>
-      <anchor>aabc25400d2fd462b1defca4ef18d5c0f</anchor>
-      <arglist>() const</arglist>
+      <anchor>a28d078f31f2773fbcfe93f55aa86f202</anchor>
+      <arglist>(Implicit &amp;im, const ContainerType &amp;copyable, unsigned max_iter, value_type eps)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -8988,10 +9098,10 @@
     </member>
     <member kind="function">
       <type>void</type>
-      <name>solve</name>
+      <name>operator()</name>
       <anchorfile>structdg_1_1_default_solver.html</anchorfile>
-      <anchor>aeb8369d9d48de04b604acd636d1890f3</anchor>
-      <arglist>(value_type alpha, Implicit &amp;im, value_type time, ContainerType &amp;y, const ContainerType &amp;rhs)</arglist>
+      <anchor>afeb9fd5e0523e007283f31dff38a6cb1</anchor>
+      <arglist>(value_type alpha, value_type time, ContainerType &amp;y, const ContainerType &amp;ys)</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -9049,15 +9159,15 @@
       <type>void</type>
       <name>step</name>
       <anchorfile>structdg_1_1_d_i_r_k_step.html</anchorfile>
-      <anchor>a173f1b663fdec539d2515d6dd1eebb62</anchor>
-      <arglist>(const std::tuple&lt; RHS, Solver &gt; &amp;ode, value_type t0, const ContainerType &amp;u0, value_type &amp;t1, ContainerType &amp;u1, value_type dt, ContainerType &amp;delta)</arglist>
+      <anchor>a25ad8060be834f26c6e9d0b0a2548ee0</anchor>
+      <arglist>(const std::tuple&lt; ImplicitRHS, Solver &gt; &amp;ode, value_type t0, const ContainerType &amp;u0, value_type &amp;t1, ContainerType &amp;u1, value_type dt, ContainerType &amp;delta)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>step</name>
       <anchorfile>structdg_1_1_d_i_r_k_step.html</anchorfile>
-      <anchor>a8ca52cb86bb29f1c1b672669077a728a</anchor>
-      <arglist>(const std::tuple&lt; RHS, Solver &gt; &amp;ode, value_type t0, const ContainerType &amp;u0, value_type &amp;t1, ContainerType &amp;u1, value_type dt)</arglist>
+      <anchor>aba93302d8ab284def25c560971192af4</anchor>
+      <arglist>(const std::tuple&lt; ImplicitRHS, Solver &gt; &amp;ode, value_type t0, const ContainerType &amp;u0, value_type &amp;t1, ContainerType &amp;u1, value_type dt)</arglist>
     </member>
     <member kind="function">
       <type>unsigned</type>
@@ -9729,15 +9839,15 @@
       <type>void</type>
       <name>step</name>
       <anchorfile>structdg_1_1_e_r_k_step.html</anchorfile>
-      <anchor>a426757a67529f5e763ac783e882b9c09</anchor>
-      <arglist>(RHS &amp;rhs, value_type t0, const ContainerType &amp;u0, value_type &amp;t1, ContainerType &amp;u1, value_type dt, ContainerType &amp;delta)</arglist>
+      <anchor>a16829698092e80184d99e69e05603579</anchor>
+      <arglist>(ExplicitRHS &amp;rhs, value_type t0, const ContainerType &amp;u0, value_type &amp;t1, ContainerType &amp;u1, value_type dt, ContainerType &amp;delta)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>step</name>
       <anchorfile>structdg_1_1_e_r_k_step.html</anchorfile>
-      <anchor>a7c23f7cc25a46c50fbe2007d2d32bb71</anchor>
-      <arglist>(RHS &amp;rhs, value_type t0, const ContainerType &amp;u0, value_type &amp;t1, ContainerType &amp;u1, value_type dt)</arglist>
+      <anchor>a853a93c9fc89e06146e54ea34b3978ae</anchor>
+      <arglist>(ExplicitRHS &amp;rhs, value_type t0, const ContainerType &amp;u0, value_type &amp;t1, ContainerType &amp;u1, value_type dt)</arglist>
     </member>
     <member kind="function">
       <type>unsigned</type>
@@ -9891,8 +10001,8 @@
       <type>unsigned</type>
       <name>solve</name>
       <anchorfile>classdg_1_1_e_v_e.html</anchorfile>
-      <anchor>ab91ca09ee8873b8c8c9def6d2b180546</anchor>
-      <arglist>(MatrixType &amp;&amp;A, ContainerType0 &amp;x, const ContainerType1 &amp;b, Preconditioner &amp;&amp;P, const ContainerType2 &amp;W, value_type &amp;ev_max, value_type eps_ev=1e-12)</arglist>
+      <anchor>a5e1b238a63b47c828423ff0e9d3edbe0</anchor>
+      <arglist>(MatrixType0 &amp;&amp;A, ContainerType0 &amp;x, const ContainerType1 &amp;b, MatrixType1 &amp;&amp;P, const ContainerType2 &amp;W, value_type &amp;ev_max, value_type eps_ev=1e-12)</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -9964,15 +10074,15 @@
       <type>void</type>
       <name>init</name>
       <anchorfile>structdg_1_1_explicit_multistep.html</anchorfile>
-      <anchor>aee0ee2e5dffac86391b19c1642d977fd</anchor>
-      <arglist>(RHS &amp;rhs, value_type t0, const ContainerType &amp;u0, value_type dt)</arglist>
+      <anchor>ab12eeb1d8d353eae1a036a290d63021c</anchor>
+      <arglist>(ExplicitRHS &amp;rhs, value_type t0, const ContainerType &amp;u0, value_type dt)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>step</name>
       <anchorfile>structdg_1_1_explicit_multistep.html</anchorfile>
-      <anchor>a8a3de7cbb653bf5c85e13cdc695db136</anchor>
-      <arglist>(RHS &amp;rhs, value_type &amp;t, ContainerType &amp;u)</arglist>
+      <anchor>a1953abc04642ffc6972a5b1aa5d32698</anchor>
+      <arglist>(ExplicitRHS &amp;rhs, value_type &amp;t, ContainerType &amp;u)</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -10225,69 +10335,15 @@
       <type>void</type>
       <name>init</name>
       <anchorfile>structdg_1_1_filtered_explicit_multistep.html</anchorfile>
-      <anchor>af776a0a1610f58912fbc8fd8125b3264</anchor>
-      <arglist>(const std::tuple&lt; RHS, Limiter &gt; &amp;ode, value_type t0, const ContainerType &amp;u0, value_type dt)</arglist>
+      <anchor>a5ce697ca583614c8fe7c4cce0ada15da</anchor>
+      <arglist>(const std::tuple&lt; ExplicitRHS, Limiter &gt; &amp;ode, value_type t0, const ContainerType &amp;u0, value_type dt)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>step</name>
       <anchorfile>structdg_1_1_filtered_explicit_multistep.html</anchorfile>
-      <anchor>a645a43f32c32e754895ac9cec77a9897</anchor>
-      <arglist>(const std::tuple&lt; RHS, Limiter &gt; &amp;ode, value_type &amp;t, ContainerType &amp;u)</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>dg::FixedPointSolver</name>
-    <filename>structdg_1_1_fixed_point_solver.html</filename>
-    <templarg>class ContainerType</templarg>
-    <member kind="typedef">
-      <type>ContainerType</type>
-      <name>container_type</name>
-      <anchorfile>structdg_1_1_fixed_point_solver.html</anchorfile>
-      <anchor>a4b3c3c9fda3c39d0653ad49dac450711</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>get_value_type&lt; ContainerType &gt;</type>
-      <name>value_type</name>
-      <anchorfile>structdg_1_1_fixed_point_solver.html</anchorfile>
-      <anchor>aa71454e4e4286d62210032975304c692</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>FixedPointSolver</name>
-      <anchorfile>structdg_1_1_fixed_point_solver.html</anchorfile>
-      <anchor>a060907f8f8723495c636e36e4fc2800d</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>FixedPointSolver</name>
-      <anchorfile>structdg_1_1_fixed_point_solver.html</anchorfile>
-      <anchor>a703f1da0566d52bebd137053b1e920e4</anchor>
-      <arglist>(const ContainerType &amp;copyable, unsigned max_iter, value_type eps)</arglist>
-    </member>
-    <member kind="function">
-      <type>const ContainerType &amp;</type>
-      <name>copyable</name>
-      <anchorfile>structdg_1_1_fixed_point_solver.html</anchorfile>
-      <anchor>ac0ec021400c128a13d2b48bc12fee407</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>set_benchmark</name>
-      <anchorfile>structdg_1_1_fixed_point_solver.html</anchorfile>
-      <anchor>a4384f39d6a44ecf3fe774d97ef9623d3</anchor>
-      <arglist>(bool benchmark)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>solve</name>
-      <anchorfile>structdg_1_1_fixed_point_solver.html</anchorfile>
-      <anchor>a70842f7de3921a7d396b36bd2cf97ce7</anchor>
-      <arglist>(value_type alpha, Implicit &amp;im, value_type t, ContainerType &amp;y, const ContainerType &amp;rhs)</arglist>
+      <anchor>a903df8ce625b0c9b6616f846e017acc3</anchor>
+      <arglist>(const std::tuple&lt; ExplicitRHS, Limiter &gt; &amp;ode, value_type &amp;t, ContainerType &amp;u)</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -11020,15 +11076,15 @@
       <type>void</type>
       <name>init</name>
       <anchorfile>structdg_1_1_im_ex_multistep.html</anchorfile>
-      <anchor>a29c33dd9d081414b9d5f8d384b112db0</anchor>
-      <arglist>(const std::tuple&lt; Explicit, Implicit, Solver &gt; &amp;ode, value_type t0, const ContainerType &amp;u0, value_type dt)</arglist>
+      <anchor>a86c68553f557d5f7283ca061282fddce</anchor>
+      <arglist>(const std::tuple&lt; ExplicitRHS, ImplicitRHS, Solver &gt; &amp;ode, value_type t0, const ContainerType &amp;u0, value_type dt)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>step</name>
       <anchorfile>structdg_1_1_im_ex_multistep.html</anchorfile>
-      <anchor>af0548115a5bcd41da34d6116af54d144</anchor>
-      <arglist>(const std::tuple&lt; Explicit, Implicit, Solver &gt; &amp;ode, value_type &amp;t, ContainerType &amp;u)</arglist>
+      <anchor>a821c8abd8f8ddaa1c6836eeb56701693</anchor>
+      <arglist>(const std::tuple&lt; ExplicitRHS, ImplicitRHS, Solver &gt; &amp;ode, value_type &amp;t, ContainerType &amp;u)</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -11081,15 +11137,15 @@
       <type>void</type>
       <name>init</name>
       <anchorfile>structdg_1_1_implicit_multistep.html</anchorfile>
-      <anchor>a33b44159c1ca7c5fa69070e0e4bbbbbe</anchor>
-      <arglist>(const std::tuple&lt; RHS, Solver &gt; &amp;ode, value_type t0, const ContainerType &amp;u0, value_type dt)</arglist>
+      <anchor>a8faf833b8f7719093e7470b5e4268b00</anchor>
+      <arglist>(const std::tuple&lt; ImplicitRHS, Solver &gt; &amp;ode, value_type t0, const ContainerType &amp;u0, value_type dt)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>step</name>
       <anchorfile>structdg_1_1_implicit_multistep.html</anchorfile>
-      <anchor>ad8b13b3f076b2d681ba8dcebb7ee115b</anchor>
-      <arglist>(const std::tuple&lt; RHS, Solver &gt; &amp;ode, value_type &amp;t, container_type &amp;u)</arglist>
+      <anchor>a4088bc69cd81f87a90a4921a1eef6142</anchor>
+      <arglist>(const std::tuple&lt; ImplicitRHS, Solver &gt; &amp;ode, value_type &amp;t, container_type &amp;u)</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -11464,8 +11520,8 @@
       <type>unsigned</type>
       <name>solve</name>
       <anchorfile>classdg_1_1_l_g_m_r_e_s.html</anchorfile>
-      <anchor>a6ce26f3861a3f3bf7e076b6c42c65574</anchor>
-      <arglist>(MatrixType &amp;&amp;A, ContainerType0 &amp;x, const ContainerType1 &amp;b, Preconditioner &amp;&amp;P, const ContainerType2 &amp;W, value_type eps=1e-12, value_type nrmb_correction=1)</arglist>
+      <anchor>ae463a256971f075735e03781e442fdda</anchor>
+      <arglist>(MatrixType0 &amp;&amp;A, ContainerType0 &amp;x, const ContainerType1 &amp;b, MatrixType1 &amp;&amp;P, const ContainerType2 &amp;W, value_type eps=1e-12, value_type nrmb_correction=1)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -11983,34 +12039,6 @@
       <anchor>a31cc3f8e39468ef4b723d00e11b48601</anchor>
       <arglist></arglist>
     </member>
-    <member kind="typedef">
-      <type>Geometry</type>
-      <name>geometry_type</name>
-      <anchorfile>structdg_1_1_multigrid_c_g2d.html</anchorfile>
-      <anchor>a9f15aac16dcdb67f310e0af621b538c7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>Matrix</type>
-      <name>matrix_type</name>
-      <anchorfile>structdg_1_1_multigrid_c_g2d.html</anchorfile>
-      <anchor>aeb757d36ec9ffe31587b3d93796e6b94</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>Container</type>
-      <name>container_type</name>
-      <anchorfile>structdg_1_1_multigrid_c_g2d.html</anchorfile>
-      <anchor>ae4241083bbf815e345cbbe751e4e6d44</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>get_value_type&lt; Container &gt;</type>
-      <name>value_type</name>
-      <anchorfile>structdg_1_1_multigrid_c_g2d.html</anchorfile>
-      <anchor>a31cc3f8e39468ef4b723d00e11b48601</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="function">
       <type></type>
       <name>MultigridCG2d</name>
@@ -12099,141 +12127,15 @@
       <type>std::vector&lt; unsigned &gt;</type>
       <name>direct_solve</name>
       <anchorfile>structdg_1_1_multigrid_c_g2d.html</anchorfile>
-      <anchor>a2943d0d55b8c447d122b1a0a5b13a5f5</anchor>
-      <arglist>(std::vector&lt; SymmetricOp &gt; &amp;op, ContainerType0 &amp;x, const ContainerType1 &amp;b, value_type eps)</arglist>
+      <anchor>a7e0b67402c5102aa03c36615b9c1c2f7</anchor>
+      <arglist>(std::vector&lt; MatrixType &gt; &amp;ops, ContainerType0 &amp;x, const ContainerType1 &amp;b, value_type eps)</arglist>
     </member>
     <member kind="function">
       <type>std::vector&lt; unsigned &gt;</type>
       <name>direct_solve</name>
       <anchorfile>structdg_1_1_multigrid_c_g2d.html</anchorfile>
-      <anchor>a19a14a3cfccc39b9c943478fdb211a26</anchor>
-      <arglist>(std::vector&lt; SymmetricOp &gt; &amp;op, ContainerType0 &amp;x, const ContainerType1 &amp;b, std::vector&lt; value_type &gt; eps)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>MultigridCG2d</name>
-      <anchorfile>structdg_1_1_multigrid_c_g2d.html</anchorfile>
-      <anchor>a502323c42d6f651ea5ef5ab6d6a69127</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>MultigridCG2d</name>
-      <anchorfile>structdg_1_1_multigrid_c_g2d.html</anchorfile>
-      <anchor>ae3d382d16337a5d055fa7ed675761870</anchor>
-      <arglist>(const Geometry &amp;grid, const unsigned stages, Params &amp;&amp;... ps)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>construct</name>
-      <anchorfile>structdg_1_1_multigrid_c_g2d.html</anchorfile>
-      <anchor>a8c55c73ccca5ff891a977000da9612e8</anchor>
-      <arglist>(Params &amp;&amp;...ps)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>project</name>
-      <anchorfile>structdg_1_1_multigrid_c_g2d.html</anchorfile>
-      <anchor>a84635b2d0487a62a6a8d3b2d79ee2775</anchor>
-      <arglist>(const ContainerType0 &amp;src, std::vector&lt; ContainerType0 &gt; &amp;out) const</arglist>
-    </member>
-    <member kind="function">
-      <type>std::vector&lt; ContainerType0 &gt;</type>
-      <name>project</name>
-      <anchorfile>structdg_1_1_multigrid_c_g2d.html</anchorfile>
-      <anchor>ad6664fcdea24d532ccbdd91577b3789a</anchor>
-      <arglist>(const ContainerType0 &amp;src) const</arglist>
-    </member>
-    <member kind="function">
-      <type>unsigned</type>
-      <name>stages</name>
-      <anchorfile>structdg_1_1_multigrid_c_g2d.html</anchorfile>
-      <anchor>a7659e4d18315604a75b8f92f4266aba1</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>unsigned</type>
-      <name>num_stages</name>
-      <anchorfile>structdg_1_1_multigrid_c_g2d.html</anchorfile>
-      <anchor>adec75fbb948aa597f8d7c227a395028f</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>const Geometry &amp;</type>
-      <name>grid</name>
-      <anchorfile>structdg_1_1_multigrid_c_g2d.html</anchorfile>
-      <anchor>a9ec06f651ee1bbbe873ee5828e508d42</anchor>
-      <arglist>(unsigned stage) const</arglist>
-    </member>
-    <member kind="function">
-      <type>unsigned</type>
-      <name>max_iter</name>
-      <anchorfile>structdg_1_1_multigrid_c_g2d.html</anchorfile>
-      <anchor>ab94f4c33e61798f03fc0241e76c54efa</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>set_max_iter</name>
-      <anchorfile>structdg_1_1_multigrid_c_g2d.html</anchorfile>
-      <anchor>aa7a9e3acbd2d7aa1373f48d9e69daaa4</anchor>
-      <arglist>(unsigned new_max)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>set_benchmark</name>
-      <anchorfile>structdg_1_1_multigrid_c_g2d.html</anchorfile>
-      <anchor>a2a172084292fc798b6bf17e1bb13ba4e</anchor>
-      <arglist>(bool benchmark)</arglist>
-    </member>
-    <member kind="function">
-      <type>const Container &amp;</type>
-      <name>copyable</name>
-      <anchorfile>structdg_1_1_multigrid_c_g2d.html</anchorfile>
-      <anchor>a772e344e89b5ba41aaef812b420358a2</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>std::vector&lt; unsigned &gt;</type>
-      <name>direct_solve</name>
-      <anchorfile>structdg_1_1_multigrid_c_g2d.html</anchorfile>
-      <anchor>a2943d0d55b8c447d122b1a0a5b13a5f5</anchor>
-      <arglist>(std::vector&lt; SymmetricOp &gt; &amp;op, ContainerType0 &amp;x, const ContainerType1 &amp;b, value_type eps)</arglist>
-    </member>
-    <member kind="function">
-      <type>std::vector&lt; unsigned &gt;</type>
-      <name>direct_solve</name>
-      <anchorfile>structdg_1_1_multigrid_c_g2d.html</anchorfile>
-      <anchor>a19a14a3cfccc39b9c943478fdb211a26</anchor>
-      <arglist>(std::vector&lt; SymmetricOp &gt; &amp;op, ContainerType0 &amp;x, const ContainerType1 &amp;b, std::vector&lt; value_type &gt; eps)</arglist>
-    </member>
-    <member kind="function">
-      <type>std::vector&lt; unsigned &gt;</type>
-      <name>direct_solve_with_chebyshev</name>
-      <anchorfile>structdg_1_1_multigrid_c_g2d.html</anchorfile>
-      <anchor>acecc7cb3fce15d6b8e04321d94deb90b</anchor>
-      <arglist>(std::vector&lt; SymmetricOp &gt; &amp;op, ContainerType0 &amp;x, const ContainerType1 &amp;b, value_type eps, unsigned num_cheby)</arglist>
-    </member>
-    <member kind="function">
-      <type>std::vector&lt; unsigned &gt;</type>
-      <name>direct_solve_with_chebyshev</name>
-      <anchorfile>structdg_1_1_multigrid_c_g2d.html</anchorfile>
-      <anchor>a0dcc51343f586b9a5d038a5e8da58497</anchor>
-      <arglist>(std::vector&lt; SymmetricOp &gt; &amp;op, ContainerType0 &amp;x, const ContainerType1 &amp;b, std::vector&lt; value_type &gt; eps, std::vector&lt; unsigned &gt; num_cheby)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>fmg_solve</name>
-      <anchorfile>structdg_1_1_multigrid_c_g2d.html</anchorfile>
-      <anchor>a2cbb59c01bddc244f83d12024b00b4df</anchor>
-      <arglist>(std::vector&lt; SymmetricOp &gt; &amp;op, ContainerType0 &amp;x, const ContainerType1 &amp;b, std::vector&lt; value_type &gt; ev, unsigned nu_pre, unsigned nu_post, unsigned gamma, value_type eps)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>pcg_solve</name>
-      <anchorfile>structdg_1_1_multigrid_c_g2d.html</anchorfile>
-      <anchor>aeeeb1224eebf10036ab940ec0edf396e</anchor>
-      <arglist>(std::vector&lt; SymmetricOp &gt; &amp;op, ContainerType0 &amp;x, const ContainerType1 &amp;b, std::vector&lt; value_type &gt; ev, unsigned nu_pre, unsigned nu_post, unsigned gamma, value_type eps)</arglist>
+      <anchor>a6f13e364f3e1fdc8063b9644c320a8e2</anchor>
+      <arglist>(std::vector&lt; MatrixType &gt; &amp;ops, ContainerType0 &amp;x, const ContainerType1 &amp;b, std::vector&lt; value_type &gt; eps)</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -12609,34 +12511,6 @@
       <anchor>afc1a3dff1ea3badf4375123140f38d97</anchor>
       <arglist></arglist>
     </member>
-    <member kind="typedef">
-      <type>Geometry</type>
-      <name>geometry_type</name>
-      <anchorfile>structdg_1_1_nested_grids.html</anchorfile>
-      <anchor>aa9d17ee09ff77e1acfd7756bcaf2c793</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>Matrix</type>
-      <name>matrix_type</name>
-      <anchorfile>structdg_1_1_nested_grids.html</anchorfile>
-      <anchor>afd2d97dad3c3b84a0c493226b226bfa6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>Container</type>
-      <name>container_type</name>
-      <anchorfile>structdg_1_1_nested_grids.html</anchorfile>
-      <anchor>a39b75732776538c71450aa6463e154a6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>get_value_type&lt; Container &gt;</type>
-      <name>value_type</name>
-      <anchorfile>structdg_1_1_nested_grids.html</anchorfile>
-      <anchor>afc1a3dff1ea3badf4375123140f38d97</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="function">
       <type></type>
       <name>NestedGrids</name>
@@ -12678,125 +12552,6 @@
       <anchorfile>structdg_1_1_nested_grids.html</anchorfile>
       <anchor>a1069a223c824e7d7726c7f7eed4a3343</anchor>
       <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>unsigned</type>
-      <name>stages</name>
-      <anchorfile>structdg_1_1_nested_grids.html</anchorfile>
-      <anchor>aa944aaf6c1c04c9615d0135a86466617</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>unsigned</type>
-      <name>num_stages</name>
-      <anchorfile>structdg_1_1_nested_grids.html</anchorfile>
-      <anchor>abecbc0cf857c4fff2ab8696c75068863</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>const Geometry &amp;</type>
-      <name>grid</name>
-      <anchorfile>structdg_1_1_nested_grids.html</anchorfile>
-      <anchor>aba725273db65bb6db6ce13f572d83638</anchor>
-      <arglist>(unsigned stage) const</arglist>
-    </member>
-    <member kind="function">
-      <type>const MultiMatrix&lt; Matrix, Container &gt; &amp;</type>
-      <name>interpolation</name>
-      <anchorfile>structdg_1_1_nested_grids.html</anchorfile>
-      <anchor>a2f94337067ac181aa4a2bb913b4e1f0a</anchor>
-      <arglist>(unsigned stage) const</arglist>
-    </member>
-    <member kind="function">
-      <type>const MultiMatrix&lt; Matrix, Container &gt; &amp;</type>
-      <name>projection</name>
-      <anchorfile>structdg_1_1_nested_grids.html</anchorfile>
-      <anchor>a4b813831474f8004235f67cffe06ed84</anchor>
-      <arglist>(unsigned stage) const</arglist>
-    </member>
-    <member kind="function">
-      <type>Container &amp;</type>
-      <name>x</name>
-      <anchorfile>structdg_1_1_nested_grids.html</anchorfile>
-      <anchor>adaa2ba9d8bb420a74f18962e4b4d1c2b</anchor>
-      <arglist>(unsigned stage)</arglist>
-    </member>
-    <member kind="function">
-      <type>const Container &amp;</type>
-      <name>x</name>
-      <anchorfile>structdg_1_1_nested_grids.html</anchorfile>
-      <anchor>aa41c7f44e61cbb2abc693a03d7cfa20c</anchor>
-      <arglist>(unsigned stage) const</arglist>
-    </member>
-    <member kind="function">
-      <type>Container &amp;</type>
-      <name>r</name>
-      <anchorfile>structdg_1_1_nested_grids.html</anchorfile>
-      <anchor>aa3cc6f9ccea63b2edc31419f5aec15f7</anchor>
-      <arglist>(unsigned stage)</arglist>
-    </member>
-    <member kind="function">
-      <type>const Container &amp;</type>
-      <name>r</name>
-      <anchorfile>structdg_1_1_nested_grids.html</anchorfile>
-      <anchor>aac28e4dd73a0ac5f6ed1e1e06c307349</anchor>
-      <arglist>(unsigned stage) const</arglist>
-    </member>
-    <member kind="function">
-      <type>Container &amp;</type>
-      <name>b</name>
-      <anchorfile>structdg_1_1_nested_grids.html</anchorfile>
-      <anchor>a1f03d5f69aa3148c1023d0b930cb0d64</anchor>
-      <arglist>(unsigned stage)</arglist>
-    </member>
-    <member kind="function">
-      <type>const Container &amp;</type>
-      <name>b</name>
-      <anchorfile>structdg_1_1_nested_grids.html</anchorfile>
-      <anchor>a2ebf031761474bb3e4e58731a003e0d4</anchor>
-      <arglist>(unsigned stage) const</arglist>
-    </member>
-    <member kind="function">
-      <type>Container &amp;</type>
-      <name>w</name>
-      <anchorfile>structdg_1_1_nested_grids.html</anchorfile>
-      <anchor>ab1606352751e16691b96eac7a012ba15</anchor>
-      <arglist>(unsigned stage)</arglist>
-    </member>
-    <member kind="function">
-      <type>const Container &amp;</type>
-      <name>w</name>
-      <anchorfile>structdg_1_1_nested_grids.html</anchorfile>
-      <anchor>a0dbc3d2f1f87ba428927c0c0e1576fa1</anchor>
-      <arglist>(unsigned stage) const</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>NestedGrids</name>
-      <anchorfile>structdg_1_1_nested_grids.html</anchorfile>
-      <anchor>a60f5dd0155b156d52ad32ff63b75ce8d</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>NestedGrids</name>
-      <anchorfile>structdg_1_1_nested_grids.html</anchorfile>
-      <anchor>a7f746a1ed00e2af547b44eb5f61fc569</anchor>
-      <arglist>(const Geometry &amp;grid, const unsigned stages, Params &amp;&amp;...ps)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>project</name>
-      <anchorfile>structdg_1_1_nested_grids.html</anchorfile>
-      <anchor>a3ccffb8c51b11398831af5201a7fd1b5</anchor>
-      <arglist>(const ContainerType0 &amp;src, std::vector&lt; ContainerType0 &gt; &amp;out) const</arglist>
-    </member>
-    <member kind="function">
-      <type>std::vector&lt; ContainerType0 &gt;</type>
-      <name>project</name>
-      <anchorfile>structdg_1_1_nested_grids.html</anchorfile>
-      <anchor>a57e8040ccee77b51e13adad9f0c521e9</anchor>
-      <arglist>(const ContainerType0 &amp;src) const</arglist>
     </member>
     <member kind="function">
       <type>unsigned</type>
@@ -13240,27 +12995,8 @@
       <type>unsigned</type>
       <name>solve</name>
       <anchorfile>classdg_1_1_p_c_g.html</anchorfile>
-      <anchor>abd0183d69b4936e9eeaddbbb94f2623a</anchor>
-      <arglist>(MatrixType &amp;&amp;A, ContainerType0 &amp;x, const ContainerType1 &amp;b, Preconditioner &amp;&amp;P, const ContainerType2 &amp;W, value_type eps=1e-12, value_type nrmb_correction=1, int test_frequency=1)</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>dg::PLUS</name>
-    <filename>structdg_1_1_p_l_u_s.html</filename>
-    <templarg>class T</templarg>
-    <member kind="function">
-      <type></type>
-      <name>PLUS</name>
-      <anchorfile>structdg_1_1_p_l_u_s.html</anchorfile>
-      <anchor>a6046659f109429be9e83c4a344c14064</anchor>
-      <arglist>(T value)</arglist>
-    </member>
-    <member kind="function">
-      <type>DG_DEVICE T</type>
-      <name>operator()</name>
-      <anchorfile>structdg_1_1_p_l_u_s.html</anchorfile>
-      <anchor>aa11a1e9dd44eff890f79a84e69886ece</anchor>
-      <arglist>(T x) const</arglist>
+      <anchor>ae4cc285c8cc7f04f98b4fcba1ecb2d4d</anchor>
+      <arglist>(MatrixType0 &amp;&amp;A, ContainerType0 &amp;x, const ContainerType1 &amp;b, MatrixType1 &amp;&amp;P, const ContainerType2 &amp;W, value_type eps=1e-12, value_type nrmb_correction=1, int test_frequency=1)</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -13280,6 +13016,25 @@
       <anchorfile>structdg_1_1_plus.html</anchorfile>
       <anchor>a6fbbd5df88b88493b954ad88ae3f1c6f</anchor>
       <arglist>(T &amp;y) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::PLUS</name>
+    <filename>structdg_1_1_p_l_u_s.html</filename>
+    <templarg>class T</templarg>
+    <member kind="function">
+      <type></type>
+      <name>PLUS</name>
+      <anchorfile>structdg_1_1_p_l_u_s.html</anchorfile>
+      <anchor>a6046659f109429be9e83c4a344c14064</anchor>
+      <arglist>(T value)</arglist>
+    </member>
+    <member kind="function">
+      <type>DG_DEVICE T</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1_p_l_u_s.html</anchorfile>
+      <anchor>aa11a1e9dd44eff890f79a84e69886ece</anchor>
+      <arglist>(T x) const</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -13550,6 +13305,13 @@
       <type></type>
       <name>RealCartesianGrid2d</name>
       <anchorfile>structdg_1_1_real_cartesian_grid2d.html</anchorfile>
+      <anchor>a5d1866734968f9f7bc1298f50ff2ee8a</anchor>
+      <arglist>(RealGrid1d&lt; real_type &gt; gx, RealGrid1d&lt; real_type &gt; gy)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>RealCartesianGrid2d</name>
+      <anchorfile>structdg_1_1_real_cartesian_grid2d.html</anchorfile>
       <anchor>ad7d0d8e4abe6acad8092de500e8c13d3</anchor>
       <arglist>(const dg::RealGrid2d&lt; real_type &gt; &amp;g)</arglist>
     </member>
@@ -13579,6 +13341,13 @@
       <anchorfile>structdg_1_1_real_cartesian_grid3d.html</anchorfile>
       <anchor>aeae4e0d7fcf43711849bd69506c5aa12</anchor>
       <arglist>(real_type x0, real_type x1, real_type y0, real_type y1, real_type z0, real_type z1, unsigned n, unsigned Nx, unsigned Ny, unsigned Nz, bc bcx=PER, bc bcy=PER, bc bcz=PER)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>RealCartesianGrid3d</name>
+      <anchorfile>structdg_1_1_real_cartesian_grid3d.html</anchorfile>
+      <anchor>a835f9efb2faf091496e1294b8f1acf09</anchor>
+      <arglist>(RealGrid1d&lt; real_type &gt; gx, RealGrid1d&lt; real_type &gt; gy, RealGrid1d&lt; real_type &gt; gz)</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -13672,6 +13441,13 @@
       <type></type>
       <name>RealCartesianMPIGrid2d</name>
       <anchorfile>structdg_1_1_real_cartesian_m_p_i_grid2d.html</anchorfile>
+      <anchor>ac403ec78e2ccf6df25230fac63279d12</anchor>
+      <arglist>(RealGrid1d&lt; real_type &gt; gx, RealGrid1d&lt; real_type &gt; gy, MPI_Comm comm)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>RealCartesianMPIGrid2d</name>
+      <anchorfile>structdg_1_1_real_cartesian_m_p_i_grid2d.html</anchorfile>
       <anchor>a9f084e27169fdc57fc55b8d85130b559</anchor>
       <arglist>(const dg::RealMPIGrid2d&lt; real_type &gt; &amp;g)</arglist>
     </member>
@@ -13729,6 +13505,13 @@
       <anchorfile>structdg_1_1_real_cartesian_m_p_i_grid3d.html</anchorfile>
       <anchor>a5a27e3dbe17abd119006178b1ece6ede</anchor>
       <arglist>() const override final</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>RealCartesianMPIGrid3d</name>
+      <anchorfile>structdg_1_1_real_cartesian_m_p_i_grid3d.html</anchorfile>
+      <anchor>aa04daffd82f03e486511fd2776f08de6</anchor>
+      <arglist>(RealGrid1d&lt; real_type &gt; gx, RealGrid1d&lt; real_type &gt; gy, RealGrid1d&lt; real_type &gt; gz, MPI_Comm comm)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual RealCartesianGrid3d&lt; real_type &gt; *</type>
@@ -13837,6 +13620,13 @@
       <anchor>aa10aebb2bb96d7792260905a32d73a56</anchor>
       <arglist>(real_type x0, real_type x1, real_type y0, real_type y1, real_type z0, real_type z1, unsigned n, unsigned Nx, unsigned Ny, unsigned Nz, bc bcx=PER, bc bcy=PER, bc bcz=PER)</arglist>
     </member>
+    <member kind="function">
+      <type></type>
+      <name>RealCylindricalGrid3d</name>
+      <anchorfile>structdg_1_1_real_cylindrical_grid3d.html</anchorfile>
+      <anchor>aad33ec8a5d46c6155346d8905b8b2a49</anchor>
+      <arglist>(RealGrid1d&lt; real_type &gt; gx, RealGrid1d&lt; real_type &gt; gy, RealGrid1d&lt; real_type &gt; gz)</arglist>
+    </member>
     <member kind="function" virtualness="virtual">
       <type>virtual RealCylindricalGrid3d *</type>
       <name>clone</name>
@@ -13870,6 +13660,13 @@
       <anchorfile>structdg_1_1_real_cylindrical_m_p_i_grid3d.html</anchorfile>
       <anchor>ada3c8bca230adf94e1fa3b39632b8212</anchor>
       <arglist>(real_type x0, real_type x1, real_type y0, real_type y1, real_type z0, real_type z1, unsigned n, unsigned Nx, unsigned Ny, unsigned Nz, bc bcx, bc bcy, MPI_Comm comm)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>RealCylindricalMPIGrid3d</name>
+      <anchorfile>structdg_1_1_real_cylindrical_m_p_i_grid3d.html</anchorfile>
+      <anchor>ab90853624c4212f4ef0a337c01e0fc8f</anchor>
+      <arglist>(RealGrid1d&lt; real_type &gt; gx, RealGrid1d&lt; real_type &gt; gy, RealGrid1d&lt; real_type &gt; gz, MPI_Comm comm)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual RealCylindricalMPIGrid3d&lt; real_type &gt; *</type>
@@ -14154,8 +13951,8 @@
       <type></type>
       <name>RealGrid2d</name>
       <anchorfile>structdg_1_1_real_grid2d.html</anchorfile>
-      <anchor>a051177b0c936b5297748e3595702b59b</anchor>
-      <arglist>(const RealGrid1d&lt; real_type &gt; &amp;gx, const RealGrid1d&lt; real_type &gt; &amp;gy)</arglist>
+      <anchor>ad81348f216390c48933d80f35ae74f14</anchor>
+      <arglist>(RealGrid1d&lt; real_type &gt; gx, RealGrid1d&lt; real_type &gt; gy)</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -14181,8 +13978,8 @@
       <type></type>
       <name>RealGrid3d</name>
       <anchorfile>structdg_1_1_real_grid3d.html</anchorfile>
-      <anchor>a435f583e0209ddf6db2d659faf552d34</anchor>
-      <arglist>(const RealGrid1d&lt; real_type &gt; &amp;gx, const RealGrid1d&lt; real_type &gt; &amp;gy, const RealGrid1d&lt; real_type &gt; &amp;gz)</arglist>
+      <anchor>ad3183178ceee02b06414d642a580b757</anchor>
+      <arglist>(RealGrid1d&lt; real_type &gt; gx, RealGrid1d&lt; real_type &gt; gy, RealGrid1d&lt; real_type &gt; gz)</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -14446,6 +14243,13 @@
       <type></type>
       <name>RealMPIGrid2d</name>
       <anchorfile>structdg_1_1_real_m_p_i_grid2d.html</anchorfile>
+      <anchor>a924f68279a80348733723227d98eeb60</anchor>
+      <arglist>(RealGrid1d&lt; real_type &gt; gx, RealGrid1d&lt; real_type &gt; gy, MPI_Comm comm)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>RealMPIGrid2d</name>
+      <anchorfile>structdg_1_1_real_m_p_i_grid2d.html</anchorfile>
       <anchor>a72578b795d7a102ca7cb80d59a2a675f</anchor>
       <arglist>(const aRealMPITopology2d&lt; real_type &gt; &amp;src)</arglist>
     </member>
@@ -14468,6 +14272,13 @@
       <anchorfile>structdg_1_1_real_m_p_i_grid3d.html</anchorfile>
       <anchor>a235f729aaa2970298f1879a42910ff0e</anchor>
       <arglist>(real_type x0, real_type x1, real_type y0, real_type y1, real_type z0, real_type z1, unsigned n, unsigned Nx, unsigned Ny, unsigned Nz, bc bcx, bc bcy, bc bcz, MPI_Comm comm)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>RealMPIGrid3d</name>
+      <anchorfile>structdg_1_1_real_m_p_i_grid3d.html</anchorfile>
+      <anchor>aba3bfc9d1a8c759a36746a8786ba1431</anchor>
+      <arglist>(RealGrid1d&lt; real_type &gt; gx, RealGrid1d&lt; real_type &gt; gy, RealGrid1d&lt; real_type &gt; gz, MPI_Comm comm)</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -14723,8 +14534,8 @@
       <type>void</type>
       <name>step</name>
       <anchorfile>structdg_1_1_shu_osher.html</anchorfile>
-      <anchor>af80b406fe2e9fa8e9f0ca843b5d6b1ec</anchor>
-      <arglist>(const std::tuple&lt; RHS, Limiter &gt; &amp;ode, value_type t0, const ContainerType &amp;u0, value_type &amp;t1, ContainerType &amp;u1, value_type dt)</arglist>
+      <anchor>a42cb765d60bc1fc4fa585081eb718a32</anchor>
+      <arglist>(const std::tuple&lt; ExplicitRHS, Limiter &gt; &amp;ode, value_type t0, const ContainerType &amp;u0, value_type &amp;t1, ContainerType &amp;u1, value_type dt)</arglist>
     </member>
     <member kind="function">
       <type>unsigned</type>
@@ -15846,54 +15657,28 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>dg::TensorTraits&lt; thrust::host_vector&lt; T &gt;, std::enable_if_t&lt; !std::is_arithmetic&lt; T &gt;::value &gt; &gt;</name>
-    <filename>structdg_1_1_tensor_traits_3_01thrust_1_1host__vector_3_01_t_01_4_00_01std_1_1enable__if__t_3_01390ab22b8cb1b61cb4f7cfd6526cf90d.html</filename>
-    <templarg>class T</templarg>
-    <member kind="typedef">
-      <type>get_value_type&lt; T &gt;</type>
-      <name>value_type</name>
-      <anchorfile>structdg_1_1_tensor_traits_3_01thrust_1_1host__vector_3_01_t_01_4_00_01std_1_1enable__if__t_3_01390ab22b8cb1b61cb4f7cfd6526cf90d.html</anchorfile>
-      <anchor>abbb401a32f600a769d39cee7238eb6f8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>RecursiveVectorTag</type>
-      <name>tensor_category</name>
-      <anchorfile>structdg_1_1_tensor_traits_3_01thrust_1_1host__vector_3_01_t_01_4_00_01std_1_1enable__if__t_3_01390ab22b8cb1b61cb4f7cfd6526cf90d.html</anchorfile>
-      <anchor>a8d11b54b327d99824d7042d66031502b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>get_execution_policy&lt; T &gt;</type>
-      <name>execution_policy</name>
-      <anchorfile>structdg_1_1_tensor_traits_3_01thrust_1_1host__vector_3_01_t_01_4_00_01std_1_1enable__if__t_3_01390ab22b8cb1b61cb4f7cfd6526cf90d.html</anchorfile>
-      <anchor>a24230a9aa64bf570ddb03d80a9090252</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>dg::TensorTraits&lt; thrust::host_vector&lt; T &gt;, std::enable_if_t&lt; std::is_arithmetic&lt; T &gt;::value &gt; &gt;</name>
-    <filename>structdg_1_1_tensor_traits_3_01thrust_1_1host__vector_3_01_t_01_4_00_01std_1_1enable__if__t_3_0108752795600727f598b915e08bbde1f6.html</filename>
+    <name>dg::TensorTraits&lt; thrust::host_vector&lt; T &gt; &gt;</name>
+    <filename>structdg_1_1_tensor_traits_3_01thrust_1_1host__vector_3_01_t_01_4_01_4.html</filename>
     <templarg>class T</templarg>
     <member kind="typedef">
       <type>T</type>
       <name>value_type</name>
-      <anchorfile>structdg_1_1_tensor_traits_3_01thrust_1_1host__vector_3_01_t_01_4_00_01std_1_1enable__if__t_3_0108752795600727f598b915e08bbde1f6.html</anchorfile>
-      <anchor>a645ea0db3eb62ff4e40cabc84ed6ebec</anchor>
+      <anchorfile>structdg_1_1_tensor_traits_3_01thrust_1_1host__vector_3_01_t_01_4_01_4.html</anchorfile>
+      <anchor>adfc7f9d1bb360b0406a43d0ed05dbf61</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>ThrustVectorTag</type>
       <name>tensor_category</name>
-      <anchorfile>structdg_1_1_tensor_traits_3_01thrust_1_1host__vector_3_01_t_01_4_00_01std_1_1enable__if__t_3_0108752795600727f598b915e08bbde1f6.html</anchorfile>
-      <anchor>a31660eef75fb34b516dc393edfb15a63</anchor>
+      <anchorfile>structdg_1_1_tensor_traits_3_01thrust_1_1host__vector_3_01_t_01_4_01_4.html</anchorfile>
+      <anchor>aa0391f106ccbf7c8037c280d29bdd89f</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>SerialTag</type>
       <name>execution_policy</name>
-      <anchorfile>structdg_1_1_tensor_traits_3_01thrust_1_1host__vector_3_01_t_01_4_00_01std_1_1enable__if__t_3_0108752795600727f598b915e08bbde1f6.html</anchorfile>
-      <anchor>a94236ec4257d8e31b6ce9f0cb9df3b92</anchor>
+      <anchorfile>structdg_1_1_tensor_traits_3_01thrust_1_1host__vector_3_01_t_01_4_01_4.html</anchorfile>
+      <anchor>afe9e19f9d39229bcd634f6ec44ef6dbb</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -16243,7 +16028,6 @@
     <class kind="struct">dg::AdaptiveTimeloop</class>
     <class kind="struct">dg::Advection</class>
     <class kind="struct">dg::AndersonAcceleration</class>
-    <class kind="struct">dg::AndersonSolver</class>
     <class kind="struct">dg::AnyMatrixTag</class>
     <class kind="struct">dg::AnyPolicyTag</class>
     <class kind="struct">dg::AnyScalarTag</class>
@@ -16319,7 +16103,6 @@
     <class kind="struct">dg::Extrapolation</class>
     <class kind="struct">dg::Fail</class>
     <class kind="struct">dg::FilteredExplicitMultistep</class>
-    <class kind="struct">dg::FixedPointSolver</class>
     <class kind="struct">dg::Gaussian</class>
     <class kind="struct">dg::Gaussian3d</class>
     <class kind="struct">dg::GaussianDamping</class>
@@ -16474,8 +16257,7 @@
     <class kind="struct">dg::TensorTraits&lt; std::vector&lt; T &gt;, std::enable_if_t&lt; std::is_arithmetic&lt; T &gt;::value &gt; &gt;</class>
     <class kind="struct">dg::TensorTraits&lt; T, std::enable_if_t&lt; std::is_arithmetic&lt; T &gt;::value &gt; &gt;</class>
     <class kind="struct">dg::TensorTraits&lt; thrust::device_vector&lt; T &gt; &gt;</class>
-    <class kind="struct">dg::TensorTraits&lt; thrust::host_vector&lt; T &gt;, std::enable_if_t&lt; !std::is_arithmetic&lt; T &gt;::value &gt; &gt;</class>
-    <class kind="struct">dg::TensorTraits&lt; thrust::host_vector&lt; T &gt;, std::enable_if_t&lt; std::is_arithmetic&lt; T &gt;::value &gt; &gt;</class>
+    <class kind="struct">dg::TensorTraits&lt; thrust::host_vector&lt; T &gt; &gt;</class>
     <class kind="struct">dg::TensorTraits&lt; View&lt; ThrustVector &gt; &gt;</class>
     <class kind="struct">dg::ThreeDimensionalTag</class>
     <class kind="struct">dg::ThrustVectorTag</class>
@@ -17131,8 +16913,8 @@
     <member kind="typedef">
       <type>AndersonAcceleration&lt; ContainerType &gt;</type>
       <name>FixedPointIteration</name>
-      <anchorfile>namespacedg.html</anchorfile>
-      <anchor>add1f6996ff3eaa80e3e6720b6898058b</anchor>
+      <anchorfile>group__invert.html</anchorfile>
+      <anchor>gadd1f6996ff3eaa80e3e6720b6898058b</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -17540,6 +17322,15 @@
     </member>
     <member kind="enumeration">
       <type></type>
+      <name>to</name>
+      <anchorfile>group__time__utils.html</anchorfile>
+      <anchor>ga6da92394b084f50fdbfe42b13506ba40</anchor>
+      <arglist></arglist>
+      <enumvalue file="group__time__utils.html" anchor="gga6da92394b084f50fdbfe42b13506ba40a3b7efa09444a31c5d58596e5bbf87d47">exact</enumvalue>
+      <enumvalue file="group__time__utils.html" anchor="gga6da92394b084f50fdbfe42b13506ba40aeb864176fc6fa04fb42eb3d755efa8d1">at_least</enumvalue>
+    </member>
+    <member kind="enumeration">
+      <type></type>
       <name>tableau_identifier</name>
       <anchorfile>group__time__utils.html</anchorfile>
       <anchor>ga80d4d81df02e5311bb20b3f74ea45992</anchor>
@@ -17738,9 +17529,21 @@
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
+      <name>SANCHEZ_3_3</name>
+      <anchorfile>group__time__utils.html</anchorfile>
+      <anchor>gga80d4d81df02e5311bb20b3f74ea45992a5fb5b4655b1e9e1d40eb800e917511cd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
       <name>KVAERNO_4_2_3</name>
       <anchorfile>group__time__utils.html</anchorfile>
       <anchor>gga80d4d81df02e5311bb20b3f74ea45992a4237a65080e211e5eedc4d9998bb1e54</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SDIRK_4_2_3</name>
+      <anchorfile>group__time__utils.html</anchorfile>
+      <anchor>gga80d4d81df02e5311bb20b3f74ea45992af7a23d9cc4dbf0c00877b580e580a41f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
@@ -17753,6 +17556,12 @@
       <name>ARK324L2SA_DIRK_4_2_3</name>
       <anchorfile>group__time__utils.html</anchorfile>
       <anchor>gga80d4d81df02e5311bb20b3f74ea45992a6fc7f6581d7f900694db6c8e91a17281</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SANCHEZ_3_4</name>
+      <anchorfile>group__time__utils.html</anchorfile>
+      <anchor>gga80d4d81df02e5311bb20b3f74ea45992ae2ac5e5c2a0f79a1838d05654b5248fd</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
@@ -17792,9 +17601,21 @@
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
+      <name>SANCHEZ_6_5</name>
+      <anchorfile>group__time__utils.html</anchorfile>
+      <anchor>gga80d4d81df02e5311bb20b3f74ea45992a55ed8debaa20193fc5a24d0406b46849</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
       <name>ARK548L2SA_DIRK_8_4_5</name>
       <anchorfile>group__time__utils.html</anchorfile>
       <anchor>gga80d4d81df02e5311bb20b3f74ea45992ad17ee32bcc10dbb681d704e9dc3d0425</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SANCHEZ_7_6</name>
+      <anchorfile>group__time__utils.html</anchorfile>
+      <anchor>gga80d4d81df02e5311bb20b3f74ea45992a89b06991db22d4e2fc7d0e063b6c80ad</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
@@ -17868,6 +17689,13 @@
       <anchorfile>group__densematrix.html</anchorfile>
       <anchor>ga353dc6b8616f337e9f02638ac60bf640</anchor>
       <arglist>(const std::vector&lt; ContainerType &gt; &amp;in)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>abort_program</name>
+      <anchorfile>group__misc.html</anchorfile>
+      <anchor>gadbeead9ca462cac41598a062a0834e34</anchor>
+      <arglist>(int code=-1)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static void</type>
@@ -18430,67 +18258,32 @@
       <arglist>(const std::vector&lt; ContainerType0 &gt; &amp;bs, const ContainerType1 &amp;b)</arglist>
     </member>
     <member kind="function">
-      <type>auto</type>
-      <name>make_default_solver</name>
-      <anchorfile>namespacedg.html</anchorfile>
-      <anchor>a0315e003319d9a1194625a274c25afed</anchor>
-      <arglist>(Implicit &amp;im, const ContainerType &amp;copyable, unsigned max_iter, get_value_type&lt; ContainerType &gt; eps, bool benchmark=true)</arglist>
-    </member>
-    <member kind="function">
       <type>void</type>
       <name>nested_iterations</name>
       <anchorfile>group__multigrid.html</anchorfile>
-      <anchor>ga1aca7222c69b765e8d304791595c09cb</anchor>
-      <arglist>(NestedOperator &amp;&amp;op, ContainerType0 &amp;x, const ContainerType1 &amp;b, const std::vector&lt; std::function&lt; void(const ContainerType1 &amp;, ContainerType0 &amp;)&gt; &gt; &amp;inverse_op, Nested &amp;nested)</arglist>
+      <anchor>gaa72ab35001decd5c7c6bf39a68df46a8</anchor>
+      <arglist>(std::vector&lt; MatrixType0 &gt; &amp;ops, ContainerType0 &amp;x, const ContainerType1 &amp;b, std::vector&lt; MatrixType1 &gt; &amp;inverse_ops, NestedGrids &amp;nested_grids)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>multigrid_cycle</name>
       <anchorfile>group__multigrid.html</anchorfile>
-      <anchor>ga7350dc0405686518b82a740bd74b5584</anchor>
-      <arglist>(NestedOperator &amp;&amp;op, const std::vector&lt; std::function&lt; void(const ContainerType1 &amp;, ContainerType0 &amp;)&gt; &gt; &amp;inverse_op_down, const std::vector&lt; std::function&lt; void(const ContainerType1 &amp;, ContainerType0 &amp;)&gt; &gt; &amp;inverse_op_up, Nested &amp;nested, unsigned gamma, unsigned p)</arglist>
+      <anchor>ga0d7371ada9d93aa73588c315760fba9c</anchor>
+      <arglist>(std::vector&lt; MatrixType0 &gt; &amp;ops, std::vector&lt; MatrixType1 &gt; &amp;inverse_ops_down, std::vector&lt; MatrixType2 &gt; &amp;inverse_ops_up, NestedGrids &amp;nested_grids, unsigned gamma, unsigned p)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>full_multigrid</name>
       <anchorfile>group__multigrid.html</anchorfile>
-      <anchor>ga72b81008cfe6a0d945666c780fa51460</anchor>
-      <arglist>(NestedOperator &amp;&amp;op, ContainerType0 &amp;x, const ContainerType1 &amp;b, const std::vector&lt; std::function&lt; void(const ContainerType1 &amp;, ContainerType0 &amp;)&gt; &gt; &amp;inverse_op_down, const std::vector&lt; std::function&lt; void(const ContainerType1 &amp;, ContainerType0 &amp;)&gt; &gt; &amp;inverse_op_up, Nested &amp;nested, unsigned gamma, unsigned mu)</arglist>
+      <anchor>ga38b7db0cd864296c31cd5dd0e97bd3b5</anchor>
+      <arglist>(std::vector&lt; MatrixType0 &gt; &amp;ops, ContainerType0 &amp;x, const ContainerType1 &amp;b, std::vector&lt; MatrixType1 &gt; &amp;inverse_ops_down, std::vector&lt; MatrixType2 &gt; &amp;inverse_ops_up, NestedGrids &amp;nested_grids, unsigned gamma, unsigned mu)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>fmg_solve</name>
       <anchorfile>group__multigrid.html</anchorfile>
-      <anchor>ga45acbff86a36af9288623b670de0a882</anchor>
-      <arglist>(NestedOperator &amp;&amp;op, ContainerType0 &amp;x, const ContainerType1 &amp;b, const std::vector&lt; std::function&lt; void(const ContainerType1 &amp;, ContainerType0 &amp;)&gt; &gt; &amp;inverse_op_down, const std::vector&lt; std::function&lt; void(const ContainerType1 &amp;, ContainerType0 &amp;)&gt; &gt; &amp;inverse_op_up, Nested &amp;nested, const ContainerType2 &amp;weights, double eps, unsigned gamma)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>nested_iterations</name>
-      <anchorfile>namespacedg.html</anchorfile>
-      <anchor>a3883dd15865bab43a25b6d619af20814</anchor>
-      <arglist>(NestedOperator &amp;&amp;op, ContainerType0 &amp;x, const ContainerType1 &amp;b, std::vector&lt; std::function&lt; void(const ContainerType1 &amp;, ContainerType0 &amp;)&gt; &gt; inverse_op, Nested &amp;nested)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>multigrid_cycle</name>
-      <anchorfile>namespacedg.html</anchorfile>
-      <anchor>a04c0537d20379eb25a4846c9245b4fff</anchor>
-      <arglist>(NestedOperator &amp;&amp;op, std::vector&lt; std::function&lt; void(const ContainerType1 &amp;, ContainerType0 &amp;)&gt; &gt; inverse_op, Nested &amp;nested, unsigned gamma, unsigned p)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>full_multigrid</name>
-      <anchorfile>namespacedg.html</anchorfile>
-      <anchor>a7542fca8122badcbffe18f4f1b9ff373</anchor>
-      <arglist>(NestedOperator &amp;&amp;op, std::vector&lt; std::function&lt; void(const ContainerType1 &amp;, ContainerType0 &amp;)&gt; &gt; inverse_op, Nested &amp;nested, unsigned gamma, unsigned mu)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>fmg_solve</name>
-      <anchorfile>namespacedg.html</anchorfile>
-      <anchor>aaae9651882d213318293eeb1abea3542</anchor>
-      <arglist>(NestedOperator &amp;&amp;op, ContainerType0 &amp;x, const ContainerType1 &amp;b, std::vector&lt; std::function&lt; void(const ContainerType1 &amp;, ContainerType0 &amp;)&gt; &gt; inverse_op, Nested &amp;nested, const ContainerType2 &amp;weights, double eps, unsigned gamma)</arglist>
+      <anchor>ga1f879510ca5bb49491433f0fb4969363</anchor>
+      <arglist>(std::vector&lt; MatrixType0 &gt; &amp;ops, ContainerType0 &amp;x, const ContainerType1 &amp;b, std::vector&lt; MatrixType1 &gt; &amp;inverse_ops_down, std::vector&lt; MatrixType2 &gt; &amp;inverse_ops_up, NestedGrids &amp;nested_grids, const ContainerType2 &amp;weights, double eps, unsigned gamma)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
@@ -18499,12 +18292,19 @@
       <anchor>ga6331aa115bfceea681fa5ba85fa05a25</anchor>
       <arglist>(UnaryOp &amp;op, double &amp;x_min, double &amp;x_max, const double eps)</arglist>
     </member>
+    <member kind="function" static="yes">
+      <type>static std::string</type>
+      <name>to2str</name>
+      <anchorfile>group__time__utils.html</anchorfile>
+      <anchor>gacd6befafa603fb90e42880f8f2b89430</anchor>
+      <arglist>(enum to mode)</arglist>
+    </member>
     <member kind="function">
       <type>void</type>
       <name>stepperRK</name>
       <anchorfile>group__time.html</anchorfile>
-      <anchor>ga95cb7ed53ca75810f7027cd6d9f3f904</anchor>
-      <arglist>(ConvertsToButcherTableau&lt; get_value_type&lt; ContainerType &gt; &gt; tableau, RHS &amp;rhs, get_value_type&lt; ContainerType &gt; t_begin, const ContainerType &amp;begin, get_value_type&lt; ContainerType &gt; t_end, ContainerType &amp;end, unsigned N)</arglist>
+      <anchor>ga7628d159d6f24f64444a78e59093d2b8</anchor>
+      <arglist>(ConvertsToButcherTableau&lt; get_value_type&lt; ContainerType &gt; &gt; tableau, ExplicitRHS &amp;rhs, get_value_type&lt; ContainerType &gt; t_begin, const ContainerType &amp;begin, get_value_type&lt; ContainerType &gt; t_end, ContainerType &amp;end, unsigned N)</arglist>
     </member>
     <member kind="function">
       <type>auto</type>
@@ -20963,8 +20763,7 @@
     <class kind="struct">dg::TensorTraits&lt; std::array&lt; T, N &gt;, std::enable_if_t&lt; !std::is_arithmetic&lt; T &gt;::value &gt; &gt;</class>
     <class kind="struct">dg::TensorTraits&lt; std::array&lt; T, N &gt;, std::enable_if_t&lt; std::is_arithmetic&lt; T &gt;::value &gt; &gt;</class>
     <class kind="struct">dg::TensorTraits&lt; std::map&lt; Key, T &gt; &gt;</class>
-    <class kind="struct">dg::TensorTraits&lt; thrust::host_vector&lt; T &gt;, std::enable_if_t&lt; std::is_arithmetic&lt; T &gt;::value &gt; &gt;</class>
-    <class kind="struct">dg::TensorTraits&lt; thrust::host_vector&lt; T &gt;, std::enable_if_t&lt; !std::is_arithmetic&lt; T &gt;::value &gt; &gt;</class>
+    <class kind="struct">dg::TensorTraits&lt; thrust::host_vector&lt; T &gt; &gt;</class>
     <class kind="struct">dg::TensorTraits&lt; thrust::device_vector&lt; T &gt; &gt;</class>
     <class kind="struct">dg::AnyVectorTag</class>
     <class kind="struct">dg::TensorTraits&lt; View&lt; ThrustVector &gt; &gt;</class>
@@ -21049,8 +20848,8 @@
       <type>void</type>
       <name>stepperRK</name>
       <anchorfile>group__time.html</anchorfile>
-      <anchor>ga95cb7ed53ca75810f7027cd6d9f3f904</anchor>
-      <arglist>(ConvertsToButcherTableau&lt; get_value_type&lt; ContainerType &gt; &gt; tableau, RHS &amp;rhs, get_value_type&lt; ContainerType &gt; t_begin, const ContainerType &amp;begin, get_value_type&lt; ContainerType &gt; t_end, ContainerType &amp;end, unsigned N)</arglist>
+      <anchor>ga7628d159d6f24f64444a78e59093d2b8</anchor>
+      <arglist>(ConvertsToButcherTableau&lt; get_value_type&lt; ContainerType &gt; &gt; tableau, ExplicitRHS &amp;rhs, get_value_type&lt; ContainerType &gt; t_begin, const ContainerType &amp;begin, get_value_type&lt; ContainerType &gt; t_end, ContainerType &amp;end, unsigned N)</arglist>
     </member>
   </compound>
   <compound kind="group">
@@ -21322,6 +21121,15 @@
     </member>
     <member kind="enumeration">
       <type></type>
+      <name>to</name>
+      <anchorfile>group__time__utils.html</anchorfile>
+      <anchor>ga6da92394b084f50fdbfe42b13506ba40</anchor>
+      <arglist></arglist>
+      <enumvalue file="group__time__utils.html" anchor="gga6da92394b084f50fdbfe42b13506ba40a3b7efa09444a31c5d58596e5bbf87d47">exact</enumvalue>
+      <enumvalue file="group__time__utils.html" anchor="gga6da92394b084f50fdbfe42b13506ba40aeb864176fc6fa04fb42eb3d755efa8d1">at_least</enumvalue>
+    </member>
+    <member kind="enumeration">
+      <type></type>
       <name>tableau_identifier</name>
       <anchorfile>group__time__utils.html</anchorfile>
       <anchor>ga80d4d81df02e5311bb20b3f74ea45992</anchor>
@@ -21520,9 +21328,21 @@
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
+      <name>SANCHEZ_3_3</name>
+      <anchorfile>group__time__utils.html</anchorfile>
+      <anchor>gga80d4d81df02e5311bb20b3f74ea45992a5fb5b4655b1e9e1d40eb800e917511cd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
       <name>KVAERNO_4_2_3</name>
       <anchorfile>group__time__utils.html</anchorfile>
       <anchor>gga80d4d81df02e5311bb20b3f74ea45992a4237a65080e211e5eedc4d9998bb1e54</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SDIRK_4_2_3</name>
+      <anchorfile>group__time__utils.html</anchorfile>
+      <anchor>gga80d4d81df02e5311bb20b3f74ea45992af7a23d9cc4dbf0c00877b580e580a41f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
@@ -21535,6 +21355,12 @@
       <name>ARK324L2SA_DIRK_4_2_3</name>
       <anchorfile>group__time__utils.html</anchorfile>
       <anchor>gga80d4d81df02e5311bb20b3f74ea45992a6fc7f6581d7f900694db6c8e91a17281</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SANCHEZ_3_4</name>
+      <anchorfile>group__time__utils.html</anchorfile>
+      <anchor>gga80d4d81df02e5311bb20b3f74ea45992ae2ac5e5c2a0f79a1838d05654b5248fd</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
@@ -21574,9 +21400,21 @@
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
+      <name>SANCHEZ_6_5</name>
+      <anchorfile>group__time__utils.html</anchorfile>
+      <anchor>gga80d4d81df02e5311bb20b3f74ea45992a55ed8debaa20193fc5a24d0406b46849</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
       <name>ARK548L2SA_DIRK_8_4_5</name>
       <anchorfile>group__time__utils.html</anchorfile>
       <anchor>gga80d4d81df02e5311bb20b3f74ea45992ad17ee32bcc10dbb681d704e9dc3d0425</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SANCHEZ_7_6</name>
+      <anchorfile>group__time__utils.html</anchorfile>
+      <anchor>gga80d4d81df02e5311bb20b3f74ea45992a89b06991db22d4e2fc7d0e063b6c80ad</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
@@ -21608,6 +21446,13 @@
       <anchorfile>group__time__utils.html</anchorfile>
       <anchor>gga80d4d81df02e5311bb20b3f74ea45992a55f0423ae9d22f05d48f8cfd0ee10278</anchor>
       <arglist></arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static std::string</type>
+      <name>to2str</name>
+      <anchorfile>group__time__utils.html</anchorfile>
+      <anchor>gacd6befafa603fb90e42880f8f2b89430</anchor>
+      <arglist>(enum to mode)</arglist>
     </member>
     <member kind="variable" static="yes">
       <type>static auto</type>
@@ -21698,10 +21543,15 @@
     <class kind="struct">dg::LeastSquaresPreconditioner</class>
     <class kind="class">dg::EVE</class>
     <class kind="struct">dg::DefaultSolver</class>
-    <class kind="struct">dg::FixedPointSolver</class>
-    <class kind="struct">dg::AndersonSolver</class>
     <class kind="class">dg::LGMRES</class>
     <class kind="class">dg::PCG</class>
+    <member kind="typedef">
+      <type>AndersonAcceleration&lt; ContainerType &gt;</type>
+      <name>FixedPointIteration</name>
+      <anchorfile>group__invert.html</anchorfile>
+      <anchor>gadd1f6996ff3eaa80e3e6720b6898058b</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="function">
       <type>int</type>
       <name>bisection1d</name>
@@ -23589,29 +23439,29 @@
       <type>void</type>
       <name>nested_iterations</name>
       <anchorfile>group__multigrid.html</anchorfile>
-      <anchor>ga1aca7222c69b765e8d304791595c09cb</anchor>
-      <arglist>(NestedOperator &amp;&amp;op, ContainerType0 &amp;x, const ContainerType1 &amp;b, const std::vector&lt; std::function&lt; void(const ContainerType1 &amp;, ContainerType0 &amp;)&gt; &gt; &amp;inverse_op, Nested &amp;nested)</arglist>
+      <anchor>gaa72ab35001decd5c7c6bf39a68df46a8</anchor>
+      <arglist>(std::vector&lt; MatrixType0 &gt; &amp;ops, ContainerType0 &amp;x, const ContainerType1 &amp;b, std::vector&lt; MatrixType1 &gt; &amp;inverse_ops, NestedGrids &amp;nested_grids)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>multigrid_cycle</name>
       <anchorfile>group__multigrid.html</anchorfile>
-      <anchor>ga7350dc0405686518b82a740bd74b5584</anchor>
-      <arglist>(NestedOperator &amp;&amp;op, const std::vector&lt; std::function&lt; void(const ContainerType1 &amp;, ContainerType0 &amp;)&gt; &gt; &amp;inverse_op_down, const std::vector&lt; std::function&lt; void(const ContainerType1 &amp;, ContainerType0 &amp;)&gt; &gt; &amp;inverse_op_up, Nested &amp;nested, unsigned gamma, unsigned p)</arglist>
+      <anchor>ga0d7371ada9d93aa73588c315760fba9c</anchor>
+      <arglist>(std::vector&lt; MatrixType0 &gt; &amp;ops, std::vector&lt; MatrixType1 &gt; &amp;inverse_ops_down, std::vector&lt; MatrixType2 &gt; &amp;inverse_ops_up, NestedGrids &amp;nested_grids, unsigned gamma, unsigned p)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>full_multigrid</name>
       <anchorfile>group__multigrid.html</anchorfile>
-      <anchor>ga72b81008cfe6a0d945666c780fa51460</anchor>
-      <arglist>(NestedOperator &amp;&amp;op, ContainerType0 &amp;x, const ContainerType1 &amp;b, const std::vector&lt; std::function&lt; void(const ContainerType1 &amp;, ContainerType0 &amp;)&gt; &gt; &amp;inverse_op_down, const std::vector&lt; std::function&lt; void(const ContainerType1 &amp;, ContainerType0 &amp;)&gt; &gt; &amp;inverse_op_up, Nested &amp;nested, unsigned gamma, unsigned mu)</arglist>
+      <anchor>ga38b7db0cd864296c31cd5dd0e97bd3b5</anchor>
+      <arglist>(std::vector&lt; MatrixType0 &gt; &amp;ops, ContainerType0 &amp;x, const ContainerType1 &amp;b, std::vector&lt; MatrixType1 &gt; &amp;inverse_ops_down, std::vector&lt; MatrixType2 &gt; &amp;inverse_ops_up, NestedGrids &amp;nested_grids, unsigned gamma, unsigned mu)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>fmg_solve</name>
       <anchorfile>group__multigrid.html</anchorfile>
-      <anchor>ga45acbff86a36af9288623b670de0a882</anchor>
-      <arglist>(NestedOperator &amp;&amp;op, ContainerType0 &amp;x, const ContainerType1 &amp;b, const std::vector&lt; std::function&lt; void(const ContainerType1 &amp;, ContainerType0 &amp;)&gt; &gt; &amp;inverse_op_down, const std::vector&lt; std::function&lt; void(const ContainerType1 &amp;, ContainerType0 &amp;)&gt; &gt; &amp;inverse_op_up, Nested &amp;nested, const ContainerType2 &amp;weights, double eps, unsigned gamma)</arglist>
+      <anchor>ga1f879510ca5bb49491433f0fb4969363</anchor>
+      <arglist>(std::vector&lt; MatrixType0 &gt; &amp;ops, ContainerType0 &amp;x, const ContainerType1 &amp;b, std::vector&lt; MatrixType1 &gt; &amp;inverse_ops_down, std::vector&lt; MatrixType2 &gt; &amp;inverse_ops_up, NestedGrids &amp;nested_grids, const ContainerType2 &amp;weights, double eps, unsigned gamma)</arglist>
     </member>
   </compound>
   <compound kind="group">
@@ -23647,6 +23497,13 @@
       <anchorfile>group__misc.html</anchorfile>
       <anchor>ga00707a09c19ba5fdde979339ae959506</anchor>
       <arglist>(unsigned nx, unsigned ny, const ContainerType &amp;in, ContainerType &amp;out)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>abort_program</name>
+      <anchorfile>group__misc.html</anchorfile>
+      <anchor>gadbeead9ca462cac41598a062a0834e34</anchor>
+      <arglist>(int code=-1)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static void</type>

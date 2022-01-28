@@ -32,12 +32,12 @@ var group__grid =
     ] ],
     [ "dg::RealGrid2d< real_type >", "structdg_1_1_real_grid2d.html", [
       [ "RealGrid2d", "structdg_1_1_real_grid2d.html#ad0d8de5efa9757845b63dfd86de1334e", null ],
-      [ "RealGrid2d", "structdg_1_1_real_grid2d.html#a051177b0c936b5297748e3595702b59b", null ],
+      [ "RealGrid2d", "structdg_1_1_real_grid2d.html#ad81348f216390c48933d80f35ae74f14", null ],
       [ "RealGrid2d", "structdg_1_1_real_grid2d.html#a44b57fe6446caf0709e073f61fa3dc5a", null ]
     ] ],
     [ "dg::RealGrid3d< real_type >", "structdg_1_1_real_grid3d.html", [
       [ "RealGrid3d", "structdg_1_1_real_grid3d.html#a6c05091cda47b2b7fdf2f6e301d00f34", null ],
-      [ "RealGrid3d", "structdg_1_1_real_grid3d.html#a435f583e0209ddf6db2d659faf552d34", null ],
+      [ "RealGrid3d", "structdg_1_1_real_grid3d.html#ad3183178ceee02b06414d642a580b757", null ],
       [ "RealGrid3d", "structdg_1_1_real_grid3d.html#a6abdc509e81103fe35933fc9aca4eccc", null ]
     ] ],
     [ "dg::RealGridX1d< real_type >", "structdg_1_1_real_grid_x1d.html", [
@@ -73,11 +73,13 @@ var group__grid =
     [ "dg::RealMPIGrid2d< real_type >", "structdg_1_1_real_m_p_i_grid2d.html", [
       [ "RealMPIGrid2d", "structdg_1_1_real_m_p_i_grid2d.html#a6e1e1fb5597312e40859ca477dff2c02", null ],
       [ "RealMPIGrid2d", "structdg_1_1_real_m_p_i_grid2d.html#a95d23008f7d96289ec8eb864ac95ef24", null ],
+      [ "RealMPIGrid2d", "structdg_1_1_real_m_p_i_grid2d.html#a924f68279a80348733723227d98eeb60", null ],
       [ "RealMPIGrid2d", "structdg_1_1_real_m_p_i_grid2d.html#a72578b795d7a102ca7cb80d59a2a675f", null ]
     ] ],
     [ "dg::RealMPIGrid3d< real_type >", "structdg_1_1_real_m_p_i_grid3d.html", [
       [ "RealMPIGrid3d", "structdg_1_1_real_m_p_i_grid3d.html#a36a2b586dca0be98c72d0cbb3ba99cf4", null ],
       [ "RealMPIGrid3d", "structdg_1_1_real_m_p_i_grid3d.html#a235f729aaa2970298f1879a42910ff0e", null ],
+      [ "RealMPIGrid3d", "structdg_1_1_real_m_p_i_grid3d.html#aba3bfc9d1a8c759a36746a8786ba1431", null ],
       [ "RealMPIGrid3d", "structdg_1_1_real_m_p_i_grid3d.html#ae7b7f5321b58c46b4e698ac2d5a995f0", null ]
     ] ]
 ];

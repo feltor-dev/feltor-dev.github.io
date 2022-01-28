@@ -19,8 +19,7 @@ var searchData=
   ['mpi_5fvector_2eh_16',['mpi_vector.h',['../../../dg/html/mpi__vector_8h.html',1,'']]],
   ['mpi_5fweights_2eh_17',['mpi_weights.h',['../../../dg/html/mpi__weights_8h.html',1,'']]],
   ['multigrid_2eh_18',['multigrid.h',['../../../dg/html/multigrid_8h.html',1,'']]],
-  ['multigrid_5fsave_2eh_19',['multigrid_save.h',['../../../dg/html/multigrid__save_8h.html',1,'']]],
-  ['multiply_2eh_20',['multiply.h',['../../../dg/html/multiply_8h.html',1,'']]],
-  ['multistep_2eh_21',['multistep.h',['../../../dg/html/multistep_8h.html',1,'']]],
-  ['multistep_5ftableau_2eh_22',['multistep_tableau.h',['../../../dg/html/multistep__tableau_8h.html',1,'']]]
+  ['multiply_2eh_19',['multiply.h',['../../../dg/html/multiply_8h.html',1,'']]],
+  ['multistep_2eh_20',['multistep.h',['../../../dg/html/multistep_8h.html',1,'']]],
+  ['multistep_5ftableau_2eh_21',['multistep_tableau.h',['../../../dg/html/multistep__tableau_8h.html',1,'']]]
 ];

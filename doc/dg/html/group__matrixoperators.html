@@ -176,7 +176,8 @@ template&lt;class Geometry , class Matrix , class Container &gt; </div>
 \[ -\frac{1}{\sqrt{g}}\left( \partial_x\left(\sqrt{g}\left(\chi^{xx}\partial_x + \chi^{xy}\partial_y \right)\right) + \partial_y\left(\sqrt{g} \left(\chi^{yx}\partial_x + \chi^{yy}\partial_y \right)\right) \right)\]
 </p>
 <p> is discretized. Per default, \( \chi = \sqrt{g} g^{-1}\) but you can set it to any tensor you like (in order for the operator to be invertible \(\chi\) should be symmetric and positive definite though).</p>
-<p >Note that the local discontinuous Galerkin discretization adds so-called jump terms </p><p class="formulaDsp">
+<dl class="section see"><dt>See also</dt><dd>Our theory guide <a href="https://www.overleaf.com/read/rpbjsqmmfzyj" target="_blank">Introduction to dg methods</a> on overleaf holds a detailed derivation</dd></dl>
+<p>Note that the local discontinuous Galerkin discretization adds so-called jump terms </p><p class="formulaDsp">
 \[ D^\dagger \chi D + \alpha \chi_{on/off} J \]
 </p>
 <p> where \(\alpha\) is a scale factor ( = jfactor), \( D \) contains the discretizations of the above derivatives, and \( J\) is a self-adjoint matrix. (The symmetric part of \(J\) is added <b>before</b> the volume element is divided). The adjoint of a matrix is defined with respect to the volume element including dG weights. Usually, the default \( \alpha=1 \) is a good choice. However, in some cases, e.g. when \( \chi \) exhibits very large variations \( \alpha=0.1\) or \( \alpha=0.01\) might be better values. In a time dependent problem the value of \(\alpha\) determines the numerical diffusion, i.e. for too low values numerical oscillations may appear. The \( \chi_{on/off} \) in the jump term serves to weight the jump term with \( \chi \). This can be switched either on or off with off being the default. Also note that a forward discretization has more diffusion than a centered discretization.</p>
@@ -200,7 +201,7 @@ template&lt;class Geometry , class Matrix , class Container &gt; </div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">//output the relative error</span></div>
 <div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot; &quot;</span>&lt;&lt;sqrt( err/norm) &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="ttc" id="aclassdg_1_1_elliptic_html"><div class="ttname"><a href="classdg_1_1_elliptic.html">dg::Elliptic</a></div><div class="ttdoc">A 2d negative elliptic differential operator .</div><div class="ttdef"><b>Definition:</b> elliptic.h:71</div></div>
+<div class="ttc" id="aclassdg_1_1_elliptic_html"><div class="ttname"><a href="classdg_1_1_elliptic.html">dg::Elliptic</a></div><div class="ttdoc">A 2d negative elliptic differential operator .</div><div class="ttdef"><b>Definition:</b> elliptic.h:73</div></div>
 <div class="ttc" id="aclassdg_1_1_p_c_g_html"><div class="ttname"><a href="classdg_1_1_p_c_g.html">dg::PCG</a></div><div class="ttdoc">Preconditioned conjugate gradient method to solve.</div><div class="ttdef"><b>Definition:</b> pcg.h:48</div></div>
 <div class="ttc" id="agroup__blas1_html_ga5c7ddbf70dd74867e45c9d4f40b36cf7"><div class="ttname"><a href="group__blas1.html#ga5c7ddbf70dd74867e45c9d4f40b36cf7">dg::blas1::axpby</a></div><div class="ttdeci">void axpby(get_value_type&lt; ContainerType &gt; alpha, const ContainerType1 &amp;x, get_value_type&lt; ContainerType &gt; beta, ContainerType &amp;y)</div><div class="ttdef"><b>Definition:</b> blas1.h:229</div></div>
 <div class="ttc" id="agroup__blas2_html_gaee53d6bf6aa0ca3059a49ea696d4d158"><div class="ttname"><a href="group__blas2.html#gaee53d6bf6aa0ca3059a49ea696d4d158">dg::blas2::dot</a></div><div class="ttdeci">get_value_type&lt; MatrixType &gt; dot(const ContainerType1 &amp;x, const MatrixType &amp;m, const ContainerType2 &amp;y)</div><div class="ttdoc">; Binary reproducible general dot product</div><div class="ttdef"><b>Definition:</b> blas2.h:85</div></div>
@@ -294,7 +295,7 @@ template&lt;class Geometry , class Matrix , class Container &gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jan 14 2022 13:22:07 for Discontinuous Galerkin Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
+    <li class="footer">Generated on Fri Jan 28 2022 17:46:20 for Discontinuous Galerkin Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
   </ul>
 </div>
 </body>

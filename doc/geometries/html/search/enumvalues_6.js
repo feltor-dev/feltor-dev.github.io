@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['polynomial_0',['polynomial',['../group__magnetic.html#ggab39148d38eed4929633564c02238214da89693d3333328e76f4fdeed379e8f9ea',1,'dg::geo']]]
+  ['none_0',['none',['../group__magnetic.html#gga097616a5ebbfd85265a3759b05e1bf76a334c4a4c42fdb79d7ebc3e73b517e6f8',1,'dg::geo::none()'],['../group__magnetic.html#ggac077a0f92059114ad4973984de444db4a334c4a4c42fdb79d7ebc3e73b517e6f8',1,'dg::geo::none()']]]
 ];

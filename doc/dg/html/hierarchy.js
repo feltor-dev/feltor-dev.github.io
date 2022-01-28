@@ -12,7 +12,6 @@ var hierarchy =
     [ "dg::Adaptive< Stepper >", "structdg_1_1_adaptive.html", null ],
     [ "dg::Advection< Geometry, Matrix, Container >", "structdg_1_1_advection.html", null ],
     [ "dg::AndersonAcceleration< ContainerType >", "structdg_1_1_anderson_acceleration.html", null ],
-    [ "dg::AndersonSolver< ContainerType >", "structdg_1_1_anderson_solver.html", null ],
     [ "dg::AnyMatrixTag", "structdg_1_1_any_matrix_tag.html", [
       [ "dg::AnyVectorTag", "structdg_1_1_any_vector_tag.html", [
         [ "dg::AnyScalarTag", "structdg_1_1_any_scalar_tag.html", [
@@ -169,7 +168,6 @@ var hierarchy =
     [ "dg::ExpProfX", "structdg_1_1_exp_prof_x.html", null ],
     [ "dg::Extrapolation< ContainerType >", "structdg_1_1_extrapolation.html", null ],
     [ "dg::FilteredExplicitMultistep< ContainerType >", "structdg_1_1_filtered_explicit_multistep.html", null ],
-    [ "dg::FixedPointSolver< ContainerType >", "structdg_1_1_fixed_point_solver.html", null ],
     [ "dg::Gaussian", "structdg_1_1_gaussian.html", null ],
     [ "dg::Gaussian3d", "structdg_1_1_gaussian3d.html", null ],
     [ "dg::GaussianDamping", "structdg_1_1_gaussian_damping.html", null ],
@@ -232,8 +230,8 @@ var hierarchy =
     [ "dg::Operator< value_type >", "classdg_1_1_operator.html", null ],
     [ "dg::PairSum", "structdg_1_1_pair_sum.html", null ],
     [ "dg::PCG< ContainerType >", "classdg_1_1_p_c_g.html", null ],
-    [ "dg::PLUS< T >", "structdg_1_1_p_l_u_s.html", null ],
     [ "dg::Plus< T >", "structdg_1_1_plus.html", null ],
+    [ "dg::PLUS< T >", "structdg_1_1_p_l_u_s.html", null ],
     [ "dg::plus_equals", "structdg_1_1plus__equals.html", null ],
     [ "dg::PointwiseDivide< T >", "structdg_1_1_pointwise_divide.html", null ],
     [ "dg::PointwiseDot< T >", "structdg_1_1_pointwise_dot.html", null ],
@@ -291,8 +289,7 @@ var hierarchy =
     [ "dg::TensorTraits< std::vector< T >, std::enable_if_t< std::is_arithmetic< T >::value > >", "structdg_1_1_tensor_traits_3_01std_1_1vector_3_01_t_01_4_00_01std_1_1enable__if__t_3_01std_1_1is43bac212692e7f0d40a1fa0316db4ace.html", null ],
     [ "dg::TensorTraits< T, std::enable_if_t< std::is_arithmetic< T >::value > >", "structdg_1_1_tensor_traits_3_01_t_00_01std_1_1enable__if__t_3_01std_1_1is__arithmetic_3_01_t_01_4_1_1value_01_4_01_4.html", null ],
     [ "dg::TensorTraits< thrust::device_vector< T > >", "structdg_1_1_tensor_traits_3_01thrust_1_1device__vector_3_01_t_01_4_01_4.html", null ],
-    [ "dg::TensorTraits< thrust::host_vector< T >, std::enable_if_t< !std::is_arithmetic< T >::value > >", "structdg_1_1_tensor_traits_3_01thrust_1_1host__vector_3_01_t_01_4_00_01std_1_1enable__if__t_3_01390ab22b8cb1b61cb4f7cfd6526cf90d.html", null ],
-    [ "dg::TensorTraits< thrust::host_vector< T >, std::enable_if_t< std::is_arithmetic< T >::value > >", "structdg_1_1_tensor_traits_3_01thrust_1_1host__vector_3_01_t_01_4_00_01std_1_1enable__if__t_3_0108752795600727f598b915e08bbde1f6.html", null ],
+    [ "dg::TensorTraits< thrust::host_vector< T > >", "structdg_1_1_tensor_traits_3_01thrust_1_1host__vector_3_01_t_01_4_01_4.html", null ],
     [ "dg::TensorTraits< View< ThrustVector > >", "structdg_1_1_tensor_traits_3_01_view_3_01_thrust_vector_01_4_01_4.html", null ],
     [ "dg::ThreeDimensionalTag", "structdg_1_1_three_dimensional_tag.html", null ],
     [ "dg::Timer", "structdg_1_1_timer.html", null ],

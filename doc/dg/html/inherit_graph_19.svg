@@ -11,9 +11,9 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="structdg_1_1a_real_topology_x2d.html" target="_top" xlink:title="A 2D grid class with X&#45;point topology.">
+<g id="a_node1"><a xlink:href="structdg_1_1a_real_topology_x3d.html" target="_top" xlink:title="A 3D grid class with X&#45;point topology.">
 <polygon fill="none" stroke="black" points="0,-48.5 0,-78.5 115,-78.5 115,-48.5 0,-48.5"/>
-<text text-anchor="start" x="8" y="-66.5" font-family="Helvetica,sans-Serif" font-size="10.00">dg::aRealTopologyX2d</text>
+<text text-anchor="start" x="8" y="-66.5" font-family="Helvetica,sans-Serif" font-size="10.00">dg::aRealTopologyX3d</text>
 <text text-anchor="middle" x="57.5" y="-55.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; real_type &gt;</text>
 </a>
 </g>
@@ -21,9 +21,9 @@
 <!-- Node1 -->
 <g id="node2" class="node">
 <title>Node1</title>
-<g id="a_node2"><a xlink:href="structdg_1_1_real_grid_x2d.html" target="_top" xlink:title="The simplest implementation of aRealTopologyX2d.">
+<g id="a_node2"><a xlink:href="structdg_1_1_real_grid_x3d.html" target="_top" xlink:title="The simplest implementation of aRealTopologyX3d.">
 <polygon fill="none" stroke="black" points="154,-73.5 154,-103.5 267,-103.5 267,-73.5 154,-73.5"/>
-<text text-anchor="start" x="162" y="-91.5" font-family="Helvetica,sans-Serif" font-size="10.00">dg::RealGridX2d&lt; real</text>
+<text text-anchor="start" x="162" y="-91.5" font-family="Helvetica,sans-Serif" font-size="10.00">dg::RealGridX3d&lt; real</text>
 <text text-anchor="middle" x="210.5" y="-80.5" font-family="Helvetica,sans-Serif" font-size="10.00">_type &gt;</text>
 </a>
 </g>
@@ -37,9 +37,9 @@
 <!-- Node2 -->
 <g id="node3" class="node">
 <title>Node2</title>
-<g id="a_node3"><a xlink:href="structdg_1_1a_real_geometry_x2d.html" target="_top" xlink:title="This is the abstract interface class for a two&#45;dimensional RealGeometryX.">
+<g id="a_node3"><a xlink:href="structdg_1_1a_real_geometry_x3d.html" target="_top" xlink:title="This is the abstract interface class for a three&#45;dimensional RealGeometryX.">
 <polygon fill="none" stroke="black" points="151,-24.5 151,-54.5 270,-54.5 270,-24.5 151,-24.5"/>
-<text text-anchor="start" x="159" y="-42.5" font-family="Helvetica,sans-Serif" font-size="10.00">dg::aRealGeometryX2d</text>
+<text text-anchor="start" x="159" y="-42.5" font-family="Helvetica,sans-Serif" font-size="10.00">dg::aRealGeometryX3d</text>
 <text text-anchor="middle" x="210.5" y="-31.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; real_type &gt;</text>
 </a>
 </g>
@@ -53,9 +53,9 @@
 <!-- Node3 -->
 <g id="node4" class="node">
 <title>Node3</title>
-<g id="a_node4"><a xlink:href="structdg_1_1_real_cartesian_grid_x2d.html" target="_top" xlink:title="two&#45;dimensional GridX with RealCartesian metric">
+<g id="a_node4"><a xlink:href="structdg_1_1_real_cartesian_grid_x3d.html" target="_top" xlink:title="three&#45;dimensional GridX with RealCartesian metric">
 <polygon fill="none" stroke="black" points="306,-49.5 306,-79.5 437,-79.5 437,-49.5 306,-49.5"/>
-<text text-anchor="start" x="314" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">dg::RealCartesianGridX2d</text>
+<text text-anchor="start" x="314" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">dg::RealCartesianGridX3d</text>
 <text text-anchor="middle" x="371.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; real_type &gt;</text>
 </a>
 </g>
@@ -69,10 +69,10 @@
 <!-- Node4 -->
 <g id="node5" class="node">
 <title>Node4</title>
-<g id="a_node5"><a xlink:href="structdg_1_1_real_cartesian_refined_grid_x2d.html" target="_top" xlink:title="Refined X&#45;point grid.">
+<g id="a_node5"><a xlink:href="structdg_1_1_real_cartesian_refined_grid_x3d.html" target="_top" xlink:title="Refined X&#45;point grid.">
 <polygon fill="none" stroke="black" points="307,-0.5 307,-30.5 436,-30.5 436,-0.5 307,-0.5"/>
 <text text-anchor="start" x="315" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">dg::RealCartesianRefined</text>
-<text text-anchor="middle" x="371.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridX2d&lt; real_type &gt;</text>
+<text text-anchor="middle" x="371.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridX3d&lt; real_type &gt;</text>
 </a>
 </g>
 </g>

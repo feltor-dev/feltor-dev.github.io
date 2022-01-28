@@ -140,10 +140,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6860dec3c767ccbead99b5cad6617b62"><td class="memItemLeft" align="right" valign="top">const ContainerType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_a_r_k_step.html#a6860dec3c767ccbead99b5cad6617b62">copyable</a> () const</td></tr>
 <tr class="memdesc:a6860dec3c767ccbead99b5cad6617b62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an object of same size as the object used for construction.  <a href="structdg_1_1_a_r_k_step.html#a6860dec3c767ccbead99b5cad6617b62">More...</a><br /></td></tr>
 <tr class="separator:a6860dec3c767ccbead99b5cad6617b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20a30b0859f6e87b9d14f9325c28adde"><td class="memTemplParams" colspan="2">template&lt;class Explicit , class Implicit , class Solver &gt; </td></tr>
-<tr class="memitem:a20a30b0859f6e87b9d14f9325c28adde"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_a_r_k_step.html#a20a30b0859f6e87b9d14f9325c28adde">step</a> (const std::tuple&lt; Explicit, Implicit, Solver &gt; &amp;ode, <a class="el" href="structdg_1_1_a_r_k_step.html#a30f9c37b919df9afaea1fb2ba810bc0c">value_type</a> t0, const ContainerType &amp;u0, <a class="el" href="structdg_1_1_a_r_k_step.html#a30f9c37b919df9afaea1fb2ba810bc0c">value_type</a> &amp;t1, ContainerType &amp;u1, <a class="el" href="structdg_1_1_a_r_k_step.html#a30f9c37b919df9afaea1fb2ba810bc0c">value_type</a> dt, ContainerType &amp;delta)</td></tr>
-<tr class="memdesc:a20a30b0859f6e87b9d14f9325c28adde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advance one step.  <a href="structdg_1_1_a_r_k_step.html#a20a30b0859f6e87b9d14f9325c28adde">More...</a><br /></td></tr>
-<tr class="separator:a20a30b0859f6e87b9d14f9325c28adde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a2346ee594a6c80117cfb90909c51b6"><td class="memTemplParams" colspan="2">template&lt;class ExplicitRHS , class ImplicitRHS , class Solver &gt; </td></tr>
+<tr class="memitem:a2a2346ee594a6c80117cfb90909c51b6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_a_r_k_step.html#a2a2346ee594a6c80117cfb90909c51b6">step</a> (const std::tuple&lt; ExplicitRHS, ImplicitRHS, Solver &gt; &amp;ode, <a class="el" href="structdg_1_1_a_r_k_step.html#a30f9c37b919df9afaea1fb2ba810bc0c">value_type</a> t0, const ContainerType &amp;u0, <a class="el" href="structdg_1_1_a_r_k_step.html#a30f9c37b919df9afaea1fb2ba810bc0c">value_type</a> &amp;t1, ContainerType &amp;u1, <a class="el" href="structdg_1_1_a_r_k_step.html#a30f9c37b919df9afaea1fb2ba810bc0c">value_type</a> dt, ContainerType &amp;delta)</td></tr>
+<tr class="memdesc:a2a2346ee594a6c80117cfb90909c51b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advance one step.  <a href="structdg_1_1_a_r_k_step.html#a2a2346ee594a6c80117cfb90909c51b6">More...</a><br /></td></tr>
+<tr class="separator:a2a2346ee594a6c80117cfb90909c51b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a470fe06e18d9ea0f4f09ce067370afe6"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_a_r_k_step.html#a470fe06e18d9ea0f4f09ce067370afe6">order</a> () const</td></tr>
 <tr class="memdesc:a470fe06e18d9ea0f4f09ce067370afe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">global order of the method given by the current Butcher Tableau  <a href="structdg_1_1_a_r_k_step.html#a470fe06e18d9ea0f4f09ce067370afe6">More...</a><br /></td></tr>
 <tr class="separator:a470fe06e18d9ea0f4f09ce067370afe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,9 +157,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;class ContainerType&gt;<br />
 struct dg::ARKStep&lt; ContainerType &gt;</div><p >Additive Runge Kutta (semi-implicit) time-step with error estimate following <a href="http://runge.math.smu.edu/arkode_dev/doc/guide/build/html/Mathematics.html#arkstep-additive-runge-kutta-methods">The ARKode library</a> </p>
-<p >Currently, the possible Butcher Tableaus for a fully implicit-explicit scheme are the "Cavaglieri-3-1-2", "Cavaglieri-4-2-3", "ARK-4-2-3", "ARK-6-3-4" and "ARK-8-4-5" combinations. A mass matrix <code>M</code> has to be manually included in the evaluation of the explicit and implicit parts. </p><dl class="section note"><dt>Note</dt><dd>A mass matrix in the implicit solve should be multiplied, else it entails a nested implicit equation where in every outer iteration the mass matrix has to be solved: Mu + a I = Mr instead of u + aM^{-1} I = r </dd>
-<dd>
-All currently possible schemes enjoy the FSAL qualitiy in the sense that only <code>s-1</code> implicit solves are needed per step; some methods additionally do require only <code>s-1</code> evaluations of the implicit part per step </dd></dl>
+<p >Currently, the possible Butcher Tableaus for a fully implicit-explicit scheme are the "Cavaglieri-3-1-2", "Cavaglieri-4-2-3", "ARK-4-2-3", "ARK-6-3-4" and "ARK-8-4-5" combinations. </p><dl class="section note"><dt>Note</dt><dd>All currently possible schemes enjoy the FSAL qualitiy in the sense that only <code>s-1</code> implicit solves and <code>1</code> evaluation of the implicit part are needed per step; the Cavaglieri methods do not require evaluations of the implicit part at all </dd></dl>
 <dl class="section attention"><dt>Attention</dt><dd>When you use the <a class="el" href="structdg_1_1_a_r_k_step.html" title="Additive Runge Kutta (semi-implicit) time-step with error estimate following The ARKode library">ARKStep</a> in combination with the <a class="el" href="structdg_1_1_adaptive.html" title="Driver class for adaptive timestep integration.">Adaptive</a> time step algorithm pay attention to solve the implicit part with sufficient accuracy. Else, the error propagates into the time controller, which will then choose the timestep as if the implicit part was explicit i.e. far too small. This might have to do with stiffness-leakage [Kennedy and Carpenter, Appl. num. Math., (2003)]: "An essential requirement for the viability of stiff/nonstiff IMEX schemes is that the stiffness remains
 truely separable. If this were not the case then stiffness would leak out of the stiff terms and stiffen the
 nonstiff terms. It would manifest itself as a loss in stability or a forced reduction in stepsize of the nonstiff
@@ -245,6 +243,12 @@ template&lt;class ContainerType &gt; </div>
 </p>
 <p >The method is defined by its (explicit) <a class="el" href="structdg_1_1_butcher_tableau.html" title="Manage coefficients of a (extended) Butcher tableau.">ButcherTableau</a>, given by the coefficients <code>a</code>, <code>b</code> and <code>c</code>, and <code>s</code> is the number of stages.</p>
 <p >You can provide your own coefficients or use one of our predefined methods:</p>
+<p >We follow the naming convention of the ARKode library <a href="http://runge.math.smu.edu/arkode_dev/doc/guide/build/html/Butcher.html">http://runge.math.smu.edu/arkode_dev/doc/guide/build/html/Butcher.html</a> (They also provide nice stability plots for their methods) as <b>NAME-S-P-Q</b> or <b>NAME-S-Q</b>, where</p><ul>
+<li>NAME is the author or name of the method</li>
+<li>S is the number of stages in the method</li>
+<li>P is the global order of the embedding</li>
+<li>Q is the global order of the method</li>
+</ul>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Identifier   </th><th class="markdownTableHeadNone">Description    </th></tr>
@@ -367,7 +371,7 @@ template&lt;class ContainerType &gt; </div>
 <div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Norm of error is &quot;</span>&lt;&lt;sqrt(<a class="code hl_function" href="group__blas1.html#gaf00778ded011a9f6e8b885924d9306ee">dg::blas1::dot</a>( u, u))&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="ttc" id="agroup__blas1_html_ga5c7ddbf70dd74867e45c9d4f40b36cf7"><div class="ttname"><a href="group__blas1.html#ga5c7ddbf70dd74867e45c9d4f40b36cf7">dg::blas1::axpby</a></div><div class="ttdeci">void axpby(get_value_type&lt; ContainerType &gt; alpha, const ContainerType1 &amp;x, get_value_type&lt; ContainerType &gt; beta, ContainerType &amp;y)</div><div class="ttdef"><b>Definition:</b> blas1.h:229</div></div>
 <div class="ttc" id="agroup__blas1_html_gaf00778ded011a9f6e8b885924d9306ee"><div class="ttname"><a href="group__blas1.html#gaf00778ded011a9f6e8b885924d9306ee">dg::blas1::dot</a></div><div class="ttdeci">get_value_type&lt; ContainerType1 &gt; dot(const ContainerType1 &amp;x, const ContainerType2 &amp;y)</div><div class="ttdoc">Binary reproducible Euclidean dot product between two vectors</div><div class="ttdef"><b>Definition:</b> blas1.h:87</div></div>
-<div class="ttc" id="astructdg_1_1_e_r_k_step_html"><div class="ttname"><a href="structdg_1_1_e_r_k_step.html">dg::ERKStep</a></div><div class="ttdoc">Embedded Runge Kutta explicit time-step with error estimate.</div><div class="ttdef"><b>Definition:</b> runge_kutta.h:171</div></div>
+<div class="ttc" id="astructdg_1_1_e_r_k_step_html"><div class="ttname"><a href="structdg_1_1_e_r_k_step.html">dg::ERKStep</a></div><div class="ttdoc">Embedded Runge Kutta explicit time-step with error estimate.</div><div class="ttdef"><b>Definition:</b> runge_kutta.h:163</div></div>
 </div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>Uses only <code><a class="el" href="namespacedg_1_1blas1.html" title="BLAS Level 1 routines.">dg::blas1</a></code> routines to integrate one step.</dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -648,20 +652,20 @@ template&lt;class ContainerType &gt; </div>
 
 </div>
 </div>
-<a id="a20a30b0859f6e87b9d14f9325c28adde" name="a20a30b0859f6e87b9d14f9325c28adde"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20a30b0859f6e87b9d14f9325c28adde">&#9670;&nbsp;</a></span>step()</h2>
+<a id="a2a2346ee594a6c80117cfb90909c51b6" name="a2a2346ee594a6c80117cfb90909c51b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a2346ee594a6c80117cfb90909c51b6">&#9670;&nbsp;</a></span>step()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class ContainerType &gt; </div>
 <div class="memtemplate">
-template&lt;class Explicit , class Implicit , class Solver &gt; </div>
+template&lt;class ExplicitRHS , class ImplicitRHS , class Solver &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="structdg_1_1_a_r_k_step.html">dg::ARKStep</a>&lt; ContainerType &gt;::step </td>
           <td>(</td>
-          <td class="paramtype">const std::tuple&lt; Explicit, Implicit, Solver &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::tuple&lt; ExplicitRHS, ImplicitRHS, Solver &gt; &amp;&#160;</td>
           <td class="paramname"><em>ode</em>, </td>
         </tr>
         <tr>
@@ -711,15 +715,15 @@ template&lt;class Explicit , class Implicit , class Solver &gt; </div>
 <p>Advance one step. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Explicit</td><td>The explicit part of the right hand side is a functor type with no return value (subroutine) of signature <code> void operator()(value_type, const ContainerType&amp;, ContainerType&amp;)</code> The first argument is the time, the second is the input vector, which the functor may <b>not</b> override, and the third is the output, i.e. y' = f(t, y) translates to f(t, y, y'). The two ContainerType arguments never alias each other in calls to the functor. </td></tr>
-    <tr><td class="paramname">Implicit</td><td>The implicit part of the right hand side is a functor type with no return value (subroutine) of signature <code> void operator()(value_type, const ContainerType&amp;, ContainerType&amp;)</code> The first argument is the time, the second is the input vector, which the functor may <b>not</b> override, and the third is the output, i.e. y' = f(t, y) translates to f(t, y, y'). The two ContainerType arguments never alias each other in calls to the functor. </td></tr>
-    <tr><td class="paramname">Solver</td><td>A solver for the implicit part of the right hand side Must solve the equation \( y - \alpha I(y,t) = y^*\) is a functor type with no return value (subroutine) of signature <code> void operator()( value_type alpha, value_type t, ContainerType&amp; y, const ContainerType&amp; ys); </code> Here, alpha is always positive and non-zero. </td></tr>
+    <tr><td class="paramname">ExplicitRHS</td><td>The explicit (part of the) right hand side is a functor type with no return value (subroutine) of signature <code> void operator()(value_type, const ContainerType&amp;, ContainerType&amp;)</code> The first argument is the time, the second is the input vector, which the functor may <b>not</b> override, and the third is the output, i.e. y' = E(t, y) translates to E(t, y, y'). The two ContainerType arguments never alias each other in calls to the functor. The operator can throw to indicate failure. Exceptions should derive from <code>std::exception</code>.</td></tr>
+    <tr><td class="paramname">ImplicitRHS</td><td>The implicit (part of the) right hand side is a functor type with no return value (subroutine) of signature <code> void operator()(value_type, const ContainerType&amp;, ContainerType&amp;)</code> The first argument is the time, the second is the input vector, which the functor may <b>not</b> override, and the third is the output, i.e. y' = I(t, y) translates to I(t, y, y'). The two ContainerType arguments never alias each other in calls to the functor. The operator can throw to indicate failure. Exceptions should derive from <code>std::exception</code>.</td></tr>
+    <tr><td class="paramname">Solver</td><td>A functor type for the implicit right hand side. Must solve the equation \( y - \alpha I(y,t) = y^*\) for <code>y</code> for given <code>alpha</code>, <code>t</code> and <code>ys</code>. Alpha is always positive and non-zero. Signature <code> void operator()( value_type alpha, value_type t, ContainerType&amp; y, const ContainerType&amp; ys); </code> The operator can throw. Any Exception should derive from <code>std::exception</code>. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ode</td><td>&lt;explic, implicit, solver&gt; part. Typically <code>std::tie(ex,im,solver)</code> </td></tr>
+    <tr><td class="paramname">ode</td><td>the &lt;explicit rhs, implicit rhs, solver for the rhs&gt; functor. Typically <code>std::tie(explicit_rhs, implicit_rhs, solver)</code> </td></tr>
     <tr><td class="paramname">t0</td><td>start time </td></tr>
     <tr><td class="paramname">u0</td><td>value at <code>t0</code> </td></tr>
     <tr><td class="paramname">t1</td><td>(write only) end time ( equals <code>t0+dt</code> on return, may alias <code>t0</code>) </td></tr>
@@ -729,7 +733,7 @@ template&lt;class Explicit , class Implicit , class Solver &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>the implementation is such that on return the last call is the explicit part <code>ex</code> at the new <code></code>(t1,u1). This is useful if <code>ex</code> holds state, which is then updated to the new timestep and/or if <code>im</code> changes the state of <code>ex</code> through the friend construct. </dd>
+<dl class="section note"><dt>Note</dt><dd>the implementation is such that on return the last call is the explicit part <code>ex</code> at the new (t1,u1). This is useful if <code>ex</code> holds state, which is then updated to the new timestep and/or if <code>im</code> changes the state of <code>ex</code> </dd>
 <dd>
 After a <code>solve</code> we immediately call <code>ex</code> on the solution </dd></dl>
 
@@ -745,7 +749,7 @@ After a <code>solve</code> we immediately call <code>ex</code> on the solution <
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_a_r_k_step.html">ARKStep</a></li>
-    <li class="footer">Generated on Fri Jan 14 2022 13:22:08 for Discontinuous Galerkin Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
+    <li class="footer">Generated on Fri Jan 28 2022 17:46:21 for Discontinuous Galerkin Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
   </ul>
 </div>
 </body>

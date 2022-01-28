@@ -157,6 +157,11 @@ struct dg::MultistepTableau&lt; real_type &gt;</div><p >Manage coefficients of M
 </p>
 <p> where E is the explicit and I is implicit part. A purely implicit method is one where all \( b_i\) are zero, while an explicit one is one where all \( c_i\) are zero. A tableau thus consists of the three arrays a, b and c the number of steps and the order of the method. Currently available methods are:</p>
 <p >ImEx methods</p>
+<p >We follow the naming convention as <b>NAME-S-Q</b></p><ul>
+<li>NAME is the author or name of the method</li>
+<li>S is the number of steps in the method</li>
+<li>Q is the global order of the method</li>
+</ul>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Identifier   </th><th class="markdownTableHeadNone">Description    </th></tr>
@@ -187,6 +192,11 @@ The implicit part is a normal BDF scheme <a href="https://en.wikipedia.org/wiki/
 <dl class="section attention"><dt>Attention</dt><dd>The coefficient C is the one that ensures the TVD property of the scheme and is <b>not</b> directly related to the stability region of the scheme </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>ImEx multistep tableaus can be used in <a class="el" href="structdg_1_1_explicit_multistep.html" title="General explicit linear multistep time-integration.">ExplicitMultistep</a>, <a class="el" href="structdg_1_1_implicit_multistep.html" title="Implicit multistep time-integration.">ImplicitMultistep</a> and <a class="el" href="structdg_1_1_im_ex_multistep.html" title="Semi-implicit multistep time-integration.">ImExMultistep</a></dd></dl>
 <p>Explicit methods</p>
+<p >We follow the naming convention as <b>NAME-S-Q</b></p><ul>
+<li>NAME is the author or name of the method</li>
+<li>S is the number of steps in the method</li>
+<li>Q is the global order of the method</li>
+</ul>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Name   </th><th class="markdownTableHeadNone">Identifier   </th><th class="markdownTableHeadNone">Description    </th></tr>
@@ -576,7 +586,7 @@ template&lt;class real_type &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_multistep_tableau.html">MultistepTableau</a></li>
-    <li class="footer">Generated on Fri Jan 14 2022 13:22:09 for Discontinuous Galerkin Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
+    <li class="footer">Generated on Fri Jan 28 2022 17:46:22 for Discontinuous Galerkin Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
   </ul>
 </div>
 </body>

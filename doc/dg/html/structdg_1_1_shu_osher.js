@@ -8,5 +8,5 @@ var structdg_1_1_shu_osher =
     [ "copyable", "structdg_1_1_shu_osher.html#a46b31db63911ea8e8754f152d2041ab2", null ],
     [ "num_stages", "structdg_1_1_shu_osher.html#ae83cb5e2d096d869498a8c8d258277dd", null ],
     [ "order", "structdg_1_1_shu_osher.html#a7d9a39c621cc0c3b92f3e7d95d8f6f76", null ],
-    [ "step", "structdg_1_1_shu_osher.html#af80b406fe2e9fa8e9f0ca843b5d6b1ec", null ]
+    [ "step", "structdg_1_1_shu_osher.html#a42cb765d60bc1fc4fa585081eb718a32", null ]
 ];

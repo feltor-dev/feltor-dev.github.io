@@ -306,5 +306,6 @@ var hierarchy =
     [ "dg::geo::RealCylindricalFunctor< double >", "structdg_1_1geo_1_1_real_cylindrical_functor.html", null ],
     [ "dg::geo::SafetyFactor", "structdg_1_1geo_1_1_safety_factor.html", null ],
     [ "dg::geo::SafetyFactorAverage", "structdg_1_1geo_1_1_safety_factor_average.html", null ],
-    [ "dg::geo::TokamakMagneticField", "structdg_1_1geo_1_1_tokamak_magnetic_field.html", null ]
+    [ "dg::geo::TokamakMagneticField", "structdg_1_1geo_1_1_tokamak_magnetic_field.html", null ],
+    [ "dg::geo::Topology1d", "structdg_1_1geo_1_1_topology1d.html", null ]
 ];

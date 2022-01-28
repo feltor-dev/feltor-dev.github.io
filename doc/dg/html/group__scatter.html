@@ -539,7 +539,7 @@ out will NOT be resized </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">in</td><td>contiguous 3d vector (must be of size <code>grid.size()</code>) </td></tr>
-    <tr><td class="paramname">out</td><td>contains <code>grid.Nz()</code> 2d vector views of 2d size on output </td></tr>
+    <tr><td class="paramname">out</td><td>contains <code>grid.nz()*grid</code>.Nz() 2d vector views of 2d size on output </td></tr>
     <tr><td class="paramname">grid</td><td>provide dimensions in 3rd and first two dimensions </td></tr>
   </table>
   </dd>
@@ -589,7 +589,7 @@ template&lt;class SharedContainer , class real_type &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>out</code> contains <code>grid.Nz()</code> 2d vector views of 2d size on output </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>out</code> contains <code>grid.nz()*grid</code>.Nz() 2d vector views of 2d size on output </dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">SharedContainer</td><td><code><a class="el" href="structdg_1_1_tensor_traits.html" title="The vector traits.">TensorTraits</a></code> exists for this class and the <code>tensor_category</code> derives from <code><a class="el" href="structdg_1_1_shared_vector_tag.html" title="Indicate a contiguous chunk of shared memory.">SharedVectorTag</a></code> </td></tr>
@@ -637,7 +637,7 @@ template&lt;class SharedContainer , class real_type &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">in</td><td>contiguous 3d vector (must be of size <code>grid.size()</code>) </td></tr>
-    <tr><td class="paramname">out</td><td>contains <code>grid.Nz()</code> 2d vector views of 2d size on output </td></tr>
+    <tr><td class="paramname">out</td><td>contains <code>grid.nz()*grid</code>.Nz() 2d vector views of 2d size on output </td></tr>
     <tr><td class="paramname">grid</td><td>provide dimensions in 3rd and first two dimensions </td></tr>
   </table>
   </dd>
@@ -658,7 +658,7 @@ template&lt;class SharedContainer , class real_type &gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jan 14 2022 13:22:07 for Discontinuous Galerkin Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
+    <li class="footer">Generated on Fri Jan 28 2022 17:46:20 for Discontinuous Galerkin Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
   </ul>
 </div>
 </body>

@@ -57,10 +57,10 @@ var NAVTREEINDEX =
 [
 "adaption_8h.html",
 "group__fem.html#ga2efe4e6894729acbcba212098aa4562a",
-"group__mpi__structures.html#gga521b6d6524a6d391c746ddc9a1ad5571a4bdc977f2b0fcd3ad828d30c7fd3fb90",
-"namespacedg_1_1geo_1_1x.html",
-"structdg_1_1geo_1_1_flux_surface_average.html",
-"structdg_1_1geo_1_1guenther_1_1_psip_r.html"
+"group__mpi__structures.html#ga521b6d6524a6d391c746ddc9a1ad5571",
+"namespacedg_1_1geo_1_1mod.html",
+"structdg_1_1geo_1_1_fieldaligned.html#af507ab26311f23b41c47b66d0fa9be70",
+"structdg_1_1geo_1_1circular_1_1_psip_z.html#ad44eb87d832769e8aeba66534a1a29c8"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -192,7 +192,15 @@ $(document).ready(function(){initNavTree('exceptions_8h_source.html',''); initRe
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <span class="keywordtype">double</span> eps;</div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>};</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>}<span class="comment">//namespace dg</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="group__misc.html#gadbeead9ca462cac41598a062a0834e34">  167</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="group__misc.html#gadbeead9ca462cac41598a062a0834e34">abort_program</a>(<span class="keywordtype">int</span> code = -1){</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="preprocessor">#ifdef MPI_VERSION</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    MPI_Abort(MPI_COMM_WORLD, code);</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="preprocessor">#endif </span><span class="comment">//WITH_MPI</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    exit( code);</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>}</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>}<span class="comment">//namespace dg</span></div>
 <div class="ttc" id="aclassdg_1_1_error_html"><div class="ttname"><a href="classdg_1_1_error.html">dg::Error</a></div><div class="ttdoc">class intended for the use in throw statements</div><div class="ttdef"><b>Definition:</b> exceptions.h:83</div></div>
 <div class="ttc" id="aclassdg_1_1_error_html_a3a53f1d422d8fe4d49b63e28028138cf"><div class="ttname"><a href="classdg_1_1_error.html#a3a53f1d422d8fe4d49b63e28028138cf">dg::Error::Error</a></div><div class="ttdeci">Error(const Message &amp;message)</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition:</b> exceptions.h:92</div></div>
 <div class="ttc" id="aclassdg_1_1_error_html_a68a69057a03958dd0762d00c8a39a6b0"><div class="ttname"><a href="classdg_1_1_error.html#a68a69057a03958dd0762d00c8a39a6b0">dg::Error::get_message</a></div><div class="ttdeci">std::string get_message() const</div><div class="ttdef"><b>Definition:</b> exceptions.h:96</div></div>
@@ -208,6 +216,7 @@ $(document).ready(function(){initNavTree('exceptions_8h_source.html',''); initRe
 <div class="ttc" id="aclassdg_1_1_message_html_ad24ff981230d490df4e076ab5d954732"><div class="ttname"><a href="classdg_1_1_message.html#ad24ff981230d490df4e076ab5d954732">dg::Message::operator&lt;&lt;</a></div><div class="ttdeci">Message &amp; operator&lt;&lt;(const T &amp;value)</div><div class="ttdoc">add values to the message stream</div><div class="ttdef"><b>Definition:</b> exceptions.h:55</div></div>
 <div class="ttc" id="aclassdg_1_1_message_html_aed304046de640c58433eacba67fca85a"><div class="ttname"><a href="classdg_1_1_message.html#aed304046de640c58433eacba67fca85a">dg::Message::Message</a></div><div class="ttdeci">Message(std::string m)</div><div class="ttdoc">Construct message with string.</div><div class="ttdef"><b>Definition:</b> exceptions.h:50</div></div>
 <div class="ttc" id="aclassdg_1_1_message_html_af882d452d44235589e47e1b5f769efc7"><div class="ttname"><a href="classdg_1_1_message.html#af882d452d44235589e47e1b5f769efc7">dg::Message::~Message</a></div><div class="ttdeci">~Message()</div><div class="ttdef"><b>Definition:</b> exceptions.h:51</div></div>
+<div class="ttc" id="agroup__misc_html_gadbeead9ca462cac41598a062a0834e34"><div class="ttname"><a href="group__misc.html#gadbeead9ca462cac41598a062a0834e34">dg::abort_program</a></div><div class="ttdeci">static void abort_program(int code=-1)</div><div class="ttdoc">Abort program (both MPI and non-MPI)</div><div class="ttdef"><b>Definition:</b> exceptions.h:167</div></div>
 <div class="ttc" id="anamespacedg_html"><div class="ttname"><a href="namespacedg.html">dg</a></div><div class="ttdoc">This is the namespace for all functions and classes defined and used by the discontinuous Galerkin li...</div></div>
 <div class="ttc" id="astructdg_1_1_fail_html"><div class="ttname"><a href="structdg_1_1_fail.html">dg::Fail</a></div><div class="ttdoc">Indicate failure to converge.</div><div class="ttdef"><b>Definition:</b> exceptions.h:126</div></div>
 <div class="ttc" id="astructdg_1_1_fail_html_a0515017f4edce80ab570dd2aed3ea79b"><div class="ttname"><a href="structdg_1_1_fail.html#a0515017f4edce80ab570dd2aed3ea79b">dg::Fail::Fail</a></div><div class="ttdeci">Fail(double eps, const Message &amp;m)</div><div class="ttdoc">Construct from error limit.</div><div class="ttdef"><b>Definition:</b> exceptions.h:141</div></div>
@@ -221,7 +230,7 @@ $(document).ready(function(){initNavTree('exceptions_8h_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_8c739bbef76d64b22d6b0911c526dd76.html">backend</a></li><li class="navelem"><a class="el" href="exceptions_8h.html">exceptions.h</a></li>
-    <li class="footer">Generated on Fri Jan 14 2022 13:22:06 for Discontinuous Galerkin Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
+    <li class="footer">Generated on Fri Jan 28 2022 17:46:19 for Discontinuous Galerkin Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
   </ul>
 </div>
 </body>

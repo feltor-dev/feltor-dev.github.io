@@ -9,6 +9,6 @@ var structdg_1_1_d_i_r_k_step =
     [ "embedded_order", "structdg_1_1_d_i_r_k_step.html#a6fc92a828f9ae56ff477939ad9fe4f43", null ],
     [ "num_stages", "structdg_1_1_d_i_r_k_step.html#ae56d9ab827e19eef1d45b3ddb9c66489", null ],
     [ "order", "structdg_1_1_d_i_r_k_step.html#a1ed6fb8955665c362ce0906fd5d444c7", null ],
-    [ "step", "structdg_1_1_d_i_r_k_step.html#a8ca52cb86bb29f1c1b672669077a728a", null ],
-    [ "step", "structdg_1_1_d_i_r_k_step.html#a173f1b663fdec539d2515d6dd1eebb62", null ]
+    [ "step", "structdg_1_1_d_i_r_k_step.html#aba93302d8ab284def25c560971192af4", null ],
+    [ "step", "structdg_1_1_d_i_r_k_step.html#a25ad8060be834f26c6e9d0b0a2548ee0", null ]
 ];

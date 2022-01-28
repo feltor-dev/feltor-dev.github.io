@@ -105,6 +105,7 @@ $(document).ready(function(){initNavTree('group__invert.html',''); initResizable
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Linear and nonlinear solvers<div class="ingroups"><a class="el" href="group__numerical0.html">Level 2: Basic numerical algorithms</a></div></div></div>
 </div><!--header-->
@@ -143,13 +144,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Eigen-Value-Estimator (<a class="el" href="classdg_1_1_e_v_e.html" title="The Eigen-Value-Estimator (EVE) finds largest Eigenvalue of.">EVE</a>) finds largest Eigenvalue of.  <a href="classdg_1_1_e_v_e.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_default_solver.html">dg::DefaultSolver&lt; ContainerType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default Solver class for solving.  <a href="structdg_1_1_default_solver.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_fixed_point_solver.html">dg::FixedPointSolver&lt; ContainerType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fixed point iterator for solving.  <a href="structdg_1_1_fixed_point_solver.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_anderson_solver.html">dg::AndersonSolver&lt; ContainerType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fixed Point iterator with Anderson Acceleration for solving.  <a href="structdg_1_1_anderson_solver.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classdg_1_1_p_c_g.html" title="Preconditioned conjugate gradient method to solve.">PCG</a> Solver class for solving \( (y-\alpha\hat I(t,y)) = \rho\).  <a href="structdg_1_1_default_solver.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_l_g_m_r_e_s.html">dg::LGMRES&lt; ContainerType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor class for the right preconditioned <a class="el" href="classdg_1_1_l_g_m_r_e_s.html" title="Functor class for the right preconditioned LGMRES method to solve.">LGMRES</a> method to solve.  <a href="classdg_1_1_l_g_m_r_e_s.html#details">More...</a><br /></td></tr>
@@ -157,6 +152,13 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdg_1_1_p_c_g.html">dg::PCG&lt; ContainerType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preconditioned conjugate gradient method to solve.  <a href="classdg_1_1_p_c_g.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gadd1f6996ff3eaa80e3e6720b6898058b"><td class="memTemplParams" colspan="2">template&lt;class ContainerType &gt; </td></tr>
+<tr class="memitem:gadd1f6996ff3eaa80e3e6720b6898058b"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__invert.html#gadd1f6996ff3eaa80e3e6720b6898058b">dg::FixedPointIteration</a> = <a class="el" href="structdg_1_1_anderson_acceleration.html">AndersonAcceleration</a>&lt; ContainerType &gt;</td></tr>
+<tr class="memdesc:gadd1f6996ff3eaa80e3e6720b6898058b"><td class="mdescLeft">&#160;</td><td class="mdescRight">If you are looking for fixed point iteration: it is a special case of Anderson Acceleration.  <a href="group__invert.html#gadd1f6996ff3eaa80e3e6720b6898058b">More...</a><br /></td></tr>
+<tr class="separator:gadd1f6996ff3eaa80e3e6720b6898058b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -167,6 +169,25 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p >Linear \( Ax = b\) and non-linear \( f(x) = b\). </p>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="gadd1f6996ff3eaa80e3e6720b6898058b" name="gadd1f6996ff3eaa80e3e6720b6898058b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadd1f6996ff3eaa80e3e6720b6898058b">&#9670;&nbsp;</a></span>FixedPointIteration</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ContainerType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__invert.html#gadd1f6996ff3eaa80e3e6720b6898058b">dg::FixedPointIteration</a> = typedef <a class="el" href="structdg_1_1_anderson_acceleration.html">AndersonAcceleration</a>&lt;ContainerType&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If you are looking for fixed point iteration: it is a special case of Anderson Acceleration. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga6331aa115bfceea681fa5ba85fa05a25" name="ga6331aa115bfceea681fa5ba85fa05a25"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga6331aa115bfceea681fa5ba85fa05a25">&#9670;&nbsp;</a></span>bisection1d()</h2>
@@ -244,7 +265,7 @@ template&lt;typename UnaryOp &gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jan 14 2022 13:22:07 for Discontinuous Galerkin Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
+    <li class="footer">Generated on Fri Jan 28 2022 17:46:20 for Discontinuous Galerkin Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
   </ul>
 </div>
 </body>

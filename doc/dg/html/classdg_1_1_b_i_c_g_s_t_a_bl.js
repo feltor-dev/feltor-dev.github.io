@@ -10,5 +10,5 @@ var classdg_1_1_b_i_c_g_s_t_a_bl =
     [ "set_max", "classdg_1_1_b_i_c_g_s_t_a_bl.html#a204fc913751ef9ef56c8d850f2c00076", null ],
     [ "set_throw_on_fail", "classdg_1_1_b_i_c_g_s_t_a_bl.html#a22f351b94f06e82b0ad6b7058fcfa567", null ],
     [ "set_verbose", "classdg_1_1_b_i_c_g_s_t_a_bl.html#a3e1242a02f5b4a667b512350520fc13e", null ],
-    [ "solve", "classdg_1_1_b_i_c_g_s_t_a_bl.html#ac33eb1be1da724c057de33f9a9f349fc", null ]
+    [ "solve", "classdg_1_1_b_i_c_g_s_t_a_bl.html#af38d7830569e49a92b9442d351142b0a", null ]
 ];

@@ -1,4 +1,0 @@
-<map id="dg::file::get_idx" name="dg::file::get_idx">
-<area shape="rect" id="node1" title="DEPRECATED Wrapper around Json::Value::get function that handles missing keys." alt="" coords="5,29,116,56"/>
-<area shape="rect" id="node2" href="$structdg_1_1file_1_1_wrapped_json_value.html#a227b56d30b5a787e3ebc660854e50dca" title="Wrap the corresponding Json::Value function with error handling." alt="" coords="164,29,371,56"/>
-</map>

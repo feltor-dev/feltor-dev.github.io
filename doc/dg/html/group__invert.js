@@ -9,7 +9,7 @@ var group__invert =
       [ "construct", "structdg_1_1_anderson_acceleration.html#af7f0b45c58dc4ca6c151402c5e9d8c2c", null ],
       [ "copyable", "structdg_1_1_anderson_acceleration.html#a256642f890c394e0766cc9be1e23bc46", null ],
       [ "set_throw_on_fail", "structdg_1_1_anderson_acceleration.html#ae93383e761b947f511e025a53a6da521", null ],
-      [ "solve", "structdg_1_1_anderson_acceleration.html#ad91429c163a7014d3639c60d44a46c02", null ]
+      [ "solve", "structdg_1_1_anderson_acceleration.html#aa882b79ab54adb47fef188aae8b246c4", null ]
     ] ],
     [ "dg::BICGSTABl< ContainerType >", "classdg_1_1_b_i_c_g_s_t_a_bl.html", [
       [ "container_type", "classdg_1_1_b_i_c_g_s_t_a_bl.html#aa24ea9f80f60a00bf90184f44c4d481d", null ],
@@ -22,7 +22,7 @@ var group__invert =
       [ "set_max", "classdg_1_1_b_i_c_g_s_t_a_bl.html#a204fc913751ef9ef56c8d850f2c00076", null ],
       [ "set_throw_on_fail", "classdg_1_1_b_i_c_g_s_t_a_bl.html#a22f351b94f06e82b0ad6b7058fcfa567", null ],
       [ "set_verbose", "classdg_1_1_b_i_c_g_s_t_a_bl.html#a3e1242a02f5b4a667b512350520fc13e", null ],
-      [ "solve", "classdg_1_1_b_i_c_g_s_t_a_bl.html#ac33eb1be1da724c057de33f9a9f349fc", null ]
+      [ "solve", "classdg_1_1_b_i_c_g_s_t_a_bl.html#af38d7830569e49a92b9442d351142b0a", null ]
     ] ],
     [ "dg::ChebyshevIteration< ContainerType >", "classdg_1_1_chebyshev_iteration.html", [
       [ "container_type", "classdg_1_1_chebyshev_iteration.html#a68874251472181ddd45de6fe606e6ecd", null ],
@@ -31,8 +31,8 @@ var group__invert =
       [ "ChebyshevIteration", "classdg_1_1_chebyshev_iteration.html#a3f63ba1c02ccbe5ebbd4272060ff6a59", null ],
       [ "construct", "classdg_1_1_chebyshev_iteration.html#ab5243b6ca2c31a7abcc16d666cf0c4b2", null ],
       [ "copyable", "classdg_1_1_chebyshev_iteration.html#a21fee5bfcdec59e513a3bdcc5091b79a", null ],
-      [ "solve", "classdg_1_1_chebyshev_iteration.html#a3cf30de1a1e660a15c3548f401a374f5", null ],
-      [ "solve", "classdg_1_1_chebyshev_iteration.html#afba9d745ad1b02c486316615804e706f", null ]
+      [ "solve", "classdg_1_1_chebyshev_iteration.html#afba9d745ad1b02c486316615804e706f", null ],
+      [ "solve", "classdg_1_1_chebyshev_iteration.html#a352c8dcad770b392d600bcd696594cca", null ]
     ] ],
     [ "dg::ChebyshevPreconditioner< Matrix, ContainerType >", "structdg_1_1_chebyshev_preconditioner.html", [
       [ "container_type", "structdg_1_1_chebyshev_preconditioner.html#a363ae901c7f7d252a52eedc46b4b75ef", null ],
@@ -62,34 +62,15 @@ var group__invert =
       [ "get_max", "classdg_1_1_e_v_e.html#abe532f5eec4407a54f242f8f182783ca", null ],
       [ "set_max", "classdg_1_1_e_v_e.html#a1f995d2a16fb64afc75a8ed31acad204", null ],
       [ "set_throw_on_fail", "classdg_1_1_e_v_e.html#ae43a0ca2fb1ecae96f82aed288ac1e87", null ],
-      [ "solve", "classdg_1_1_e_v_e.html#ab91ca09ee8873b8c8c9def6d2b180546", null ]
+      [ "solve", "classdg_1_1_e_v_e.html#a5e1b238a63b47c828423ff0e9d3edbe0", null ]
     ] ],
     [ "dg::DefaultSolver< ContainerType >", "structdg_1_1_default_solver.html", [
       [ "container_type", "structdg_1_1_default_solver.html#a198cee7128b283b9d1e270e8a36cf17e", null ],
       [ "value_type", "structdg_1_1_default_solver.html#a97f8cab8aaa354a9f44baf19b33aefe5", null ],
       [ "DefaultSolver", "structdg_1_1_default_solver.html#a15c83d4783bf23ab4aeed88cc6b6fe0b", null ],
-      [ "DefaultSolver", "structdg_1_1_default_solver.html#a6904af29802092b896f3a8efde1070a3", null ],
-      [ "copyable", "structdg_1_1_default_solver.html#aabc25400d2fd462b1defca4ef18d5c0f", null ],
-      [ "set_benchmark", "structdg_1_1_default_solver.html#a5d3b23de56430da9ff00104e241c664f", null ],
-      [ "solve", "structdg_1_1_default_solver.html#aeb8369d9d48de04b604acd636d1890f3", null ]
-    ] ],
-    [ "dg::FixedPointSolver< ContainerType >", "structdg_1_1_fixed_point_solver.html", [
-      [ "container_type", "structdg_1_1_fixed_point_solver.html#a4b3c3c9fda3c39d0653ad49dac450711", null ],
-      [ "value_type", "structdg_1_1_fixed_point_solver.html#aa71454e4e4286d62210032975304c692", null ],
-      [ "FixedPointSolver", "structdg_1_1_fixed_point_solver.html#a060907f8f8723495c636e36e4fc2800d", null ],
-      [ "FixedPointSolver", "structdg_1_1_fixed_point_solver.html#a703f1da0566d52bebd137053b1e920e4", null ],
-      [ "copyable", "structdg_1_1_fixed_point_solver.html#ac0ec021400c128a13d2b48bc12fee407", null ],
-      [ "set_benchmark", "structdg_1_1_fixed_point_solver.html#a4384f39d6a44ecf3fe774d97ef9623d3", null ],
-      [ "solve", "structdg_1_1_fixed_point_solver.html#a70842f7de3921a7d396b36bd2cf97ce7", null ]
-    ] ],
-    [ "dg::AndersonSolver< ContainerType >", "structdg_1_1_anderson_solver.html", [
-      [ "container_type", "structdg_1_1_anderson_solver.html#ad9334dd09f6ff4ca1c4f4234de223de3", null ],
-      [ "value_type", "structdg_1_1_anderson_solver.html#a4428369e4a49d912618b73109e5fcfc5", null ],
-      [ "AndersonSolver", "structdg_1_1_anderson_solver.html#a5eb7c56476a5bd54684fbcfc624acb54", null ],
-      [ "AndersonSolver", "structdg_1_1_anderson_solver.html#a1fd87d2f873f7d4cb66538c194460b7a", null ],
-      [ "copyable", "structdg_1_1_anderson_solver.html#a26a33ba7cd5912b926449d57b61d69b2", null ],
-      [ "set_benchmark", "structdg_1_1_anderson_solver.html#abd5135fe97fac6526e95ba9cc971400a", null ],
-      [ "solve", "structdg_1_1_anderson_solver.html#afd97868a8007bae227e3ac47c8d0f8f4", null ]
+      [ "DefaultSolver", "structdg_1_1_default_solver.html#a28d078f31f2773fbcfe93f55aa86f202", null ],
+      [ "operator()", "structdg_1_1_default_solver.html#afeb9fd5e0523e007283f31dff38a6cb1", null ],
+      [ "set_benchmark", "structdg_1_1_default_solver.html#a5d3b23de56430da9ff00104e241c664f", null ]
     ] ],
     [ "dg::LGMRES< ContainerType >", "classdg_1_1_l_g_m_r_e_s.html", [
       [ "container_type", "classdg_1_1_l_g_m_r_e_s.html#abe9634581fa6f2eb54117ba8a63652fd", null ],
@@ -102,7 +83,7 @@ var group__invert =
       [ "get_max", "classdg_1_1_l_g_m_r_e_s.html#aa1ee6dc7494b5b2715dafdaae7347811", null ],
       [ "set_max", "classdg_1_1_l_g_m_r_e_s.html#ab9d8dd701eca5415054420abfbd84d6a", null ],
       [ "set_throw_on_fail", "classdg_1_1_l_g_m_r_e_s.html#a306caffc59499f657b89cd2656ecb569", null ],
-      [ "solve", "classdg_1_1_l_g_m_r_e_s.html#a6ce26f3861a3f3bf7e076b6c42c65574", null ]
+      [ "solve", "classdg_1_1_l_g_m_r_e_s.html#ae463a256971f075735e03781e442fdda", null ]
     ] ],
     [ "dg::PCG< ContainerType >", "classdg_1_1_p_c_g.html", [
       [ "container_type", "classdg_1_1_p_c_g.html#abade4ea06ecf7bbfc6330468b9b229be", null ],
@@ -115,7 +96,8 @@ var group__invert =
       [ "set_max", "classdg_1_1_p_c_g.html#aa89bc5710f1a7cecc887e70e84557744", null ],
       [ "set_throw_on_fail", "classdg_1_1_p_c_g.html#a44344f2e4a30a0c8a03cf50211d38c2d", null ],
       [ "set_verbose", "classdg_1_1_p_c_g.html#a63ef33138778077af8d4c1713e6ba868", null ],
-      [ "solve", "classdg_1_1_p_c_g.html#abd0183d69b4936e9eeaddbbb94f2623a", null ]
+      [ "solve", "classdg_1_1_p_c_g.html#ae4cc285c8cc7f04f98b4fcba1ecb2d4d", null ]
     ] ],
+    [ "dg::FixedPointIteration", "group__invert.html#gadd1f6996ff3eaa80e3e6720b6898058b", null ],
     [ "dg::bisection1d", "group__invert.html#ga6331aa115bfceea681fa5ba85fa05a25", null ]
 ];

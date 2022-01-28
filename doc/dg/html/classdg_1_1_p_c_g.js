@@ -10,5 +10,5 @@ var classdg_1_1_p_c_g =
     [ "set_max", "classdg_1_1_p_c_g.html#aa89bc5710f1a7cecc887e70e84557744", null ],
     [ "set_throw_on_fail", "classdg_1_1_p_c_g.html#a44344f2e4a30a0c8a03cf50211d38c2d", null ],
     [ "set_verbose", "classdg_1_1_p_c_g.html#a63ef33138778077af8d4c1713e6ba868", null ],
-    [ "solve", "classdg_1_1_p_c_g.html#abd0183d69b4936e9eeaddbbb94f2623a", null ]
+    [ "solve", "classdg_1_1_p_c_g.html#ae4cc285c8cc7f04f98b4fcba1ecb2d4d", null ]
 ];

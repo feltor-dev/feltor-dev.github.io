@@ -8,5 +8,5 @@ var structdg_1_1_anderson_acceleration =
     [ "construct", "structdg_1_1_anderson_acceleration.html#af7f0b45c58dc4ca6c151402c5e9d8c2c", null ],
     [ "copyable", "structdg_1_1_anderson_acceleration.html#a256642f890c394e0766cc9be1e23bc46", null ],
     [ "set_throw_on_fail", "structdg_1_1_anderson_acceleration.html#ae93383e761b947f511e025a53a6da521", null ],
-    [ "solve", "structdg_1_1_anderson_acceleration.html#ad91429c163a7014d3639c60d44a46c02", null ]
+    [ "solve", "structdg_1_1_anderson_acceleration.html#aa882b79ab54adb47fef188aae8b246c4", null ]
 ];

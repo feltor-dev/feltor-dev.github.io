@@ -35,8 +35,8 @@ var group__time =
       [ "ExplicitMultistep", "structdg_1_1_explicit_multistep.html#a940450ac8bfda753b045aa4af206dd27", null ],
       [ "construct", "structdg_1_1_explicit_multistep.html#ab64ca9d75adb940b6b713e2174591323", null ],
       [ "copyable", "structdg_1_1_explicit_multistep.html#add0643a9575d1d1cf1886e2f37432d96", null ],
-      [ "init", "structdg_1_1_explicit_multistep.html#aee0ee2e5dffac86391b19c1642d977fd", null ],
-      [ "step", "structdg_1_1_explicit_multistep.html#a8a3de7cbb653bf5c85e13cdc695db136", null ]
+      [ "init", "structdg_1_1_explicit_multistep.html#ab12eeb1d8d353eae1a036a290d63021c", null ],
+      [ "step", "structdg_1_1_explicit_multistep.html#a1953abc04642ffc6972a5b1aa5d32698", null ]
     ] ],
     [ "dg::ImExMultistep< ContainerType >", "structdg_1_1_im_ex_multistep.html", [
       [ "container_type", "structdg_1_1_im_ex_multistep.html#acde60a4404899b758d794681b15628cb", null ],
@@ -45,8 +45,8 @@ var group__time =
       [ "ImExMultistep", "structdg_1_1_im_ex_multistep.html#a21c6a2bcd4c36bf11c38104dd1ba9e3e", null ],
       [ "construct", "structdg_1_1_im_ex_multistep.html#a0a015811731b0508b93a7df83cf1129c", null ],
       [ "copyable", "structdg_1_1_im_ex_multistep.html#a464191ef33dac014d5f4e355eeb8e034", null ],
-      [ "init", "structdg_1_1_im_ex_multistep.html#a29c33dd9d081414b9d5f8d384b112db0", null ],
-      [ "step", "structdg_1_1_im_ex_multistep.html#af0548115a5bcd41da34d6116af54d144", null ]
+      [ "init", "structdg_1_1_im_ex_multistep.html#a86c68553f557d5f7283ca061282fddce", null ],
+      [ "step", "structdg_1_1_im_ex_multistep.html#a821c8abd8f8ddaa1c6836eeb56701693", null ]
     ] ],
     [ "dg::ImplicitMultistep< ContainerType >", "structdg_1_1_implicit_multistep.html", [
       [ "container_type", "structdg_1_1_implicit_multistep.html#ae4f7d7c8af418e5c0da2aa07310a8636", null ],
@@ -55,8 +55,8 @@ var group__time =
       [ "ImplicitMultistep", "structdg_1_1_implicit_multistep.html#a523a8593ea431bb99e3288a28fea654b", null ],
       [ "construct", "structdg_1_1_implicit_multistep.html#a023fb9b0f4bd991980ec335e064ba736", null ],
       [ "copyable", "structdg_1_1_implicit_multistep.html#a2645c0b93bf546b1692af79453d5e54e", null ],
-      [ "init", "structdg_1_1_implicit_multistep.html#a33b44159c1ca7c5fa69070e0e4bbbbbe", null ],
-      [ "step", "structdg_1_1_implicit_multistep.html#ad8b13b3f076b2d681ba8dcebb7ee115b", null ]
+      [ "init", "structdg_1_1_implicit_multistep.html#a8faf833b8f7719093e7470b5e4268b00", null ],
+      [ "step", "structdg_1_1_implicit_multistep.html#a4088bc69cd81f87a90a4921a1eef6142", null ]
     ] ],
     [ "dg::FilteredExplicitMultistep< ContainerType >", "structdg_1_1_filtered_explicit_multistep.html", [
       [ "container_type", "structdg_1_1_filtered_explicit_multistep.html#a73c4f3ccddbe7a5479dec29049e2bf92", null ],
@@ -65,8 +65,8 @@ var group__time =
       [ "FilteredExplicitMultistep", "structdg_1_1_filtered_explicit_multistep.html#a64870b8b78b28f9a2b461d3603a4c227", null ],
       [ "construct", "structdg_1_1_filtered_explicit_multistep.html#a851d3064911e31cad0ed1f535f380c98", null ],
       [ "copyable", "structdg_1_1_filtered_explicit_multistep.html#a178d8e32f5400e81b0cf6716f4052164", null ],
-      [ "init", "structdg_1_1_filtered_explicit_multistep.html#af776a0a1610f58912fbc8fd8125b3264", null ],
-      [ "step", "structdg_1_1_filtered_explicit_multistep.html#a645a43f32c32e754895ac9cec77a9897", null ]
+      [ "init", "structdg_1_1_filtered_explicit_multistep.html#a5ce697ca583614c8fe7c4cce0ada15da", null ],
+      [ "step", "structdg_1_1_filtered_explicit_multistep.html#a903df8ce625b0c9b6616f846e017acc3", null ]
     ] ],
     [ "dg::MultistepTimeloop< ContainerType >", "structdg_1_1_multistep_timeloop.html", [
       [ "container_type", "structdg_1_1_multistep_timeloop.html#a008c4213d8f2454b8dbf8d449a98ccb7", null ],
@@ -84,8 +84,9 @@ var group__time =
       [ "aTimeloop", "structdg_1_1a_timeloop.html#a329650b38aa89ab76a2bafa56ebc5fc6", null ],
       [ "aTimeloop", "structdg_1_1a_timeloop.html#a524f4d93bc06e4898b708deb525ad40f", null ],
       [ "clone", "structdg_1_1a_timeloop.html#a0596bedcad6f76fce5fdbdf8227b3fff", null ],
+      [ "get_dt", "structdg_1_1a_timeloop.html#adb375dbd5716f2981d3ffa772ea2b44e", null ],
+      [ "integrate", "structdg_1_1a_timeloop.html#a9036a6f4dda222cc9a7e3ba16336b4ac", null ],
       [ "integrate", "structdg_1_1a_timeloop.html#a97075599065d0dbdadac0ada83ffc2b4", null ],
-      [ "integrate_at_least", "structdg_1_1a_timeloop.html#aa62095bebe2bbf536abd7e36496f1bbc", null ],
       [ "operator=", "structdg_1_1a_timeloop.html#ae23ccfbb0a5947ac520569e763042e23", null ]
     ] ],
     [ "dg::ERKStep< ContainerType >", "structdg_1_1_e_r_k_step.html", [
@@ -100,8 +101,8 @@ var group__time =
       [ "ignore_fsal", "structdg_1_1_e_r_k_step.html#a568810ea4b1bf9b99215b3d05353f20d", null ],
       [ "num_stages", "structdg_1_1_e_r_k_step.html#a095012ea4608f08685f861855ef3059f", null ],
       [ "order", "structdg_1_1_e_r_k_step.html#ada7824a8c5643fddde70c5c7876b4367", null ],
-      [ "step", "structdg_1_1_e_r_k_step.html#a7c23f7cc25a46c50fbe2007d2d32bb71", null ],
-      [ "step", "structdg_1_1_e_r_k_step.html#a426757a67529f5e763ac783e882b9c09", null ]
+      [ "step", "structdg_1_1_e_r_k_step.html#a853a93c9fc89e06146e54ea34b3978ae", null ],
+      [ "step", "structdg_1_1_e_r_k_step.html#a16829698092e80184d99e69e05603579", null ]
     ] ],
     [ "dg::ARKStep< ContainerType >", "structdg_1_1_a_r_k_step.html", [
       [ "container_type", "structdg_1_1_a_r_k_step.html#a1f3040bed108d5aa235bd1d13ccab74f", null ],
@@ -114,7 +115,7 @@ var group__time =
       [ "embedded_order", "structdg_1_1_a_r_k_step.html#a8da39ac0f6a40804385381875f0cb65c", null ],
       [ "num_stages", "structdg_1_1_a_r_k_step.html#aea66a330b95370f7d9e726e06a0516fa", null ],
       [ "order", "structdg_1_1_a_r_k_step.html#a470fe06e18d9ea0f4f09ce067370afe6", null ],
-      [ "step", "structdg_1_1_a_r_k_step.html#a20a30b0859f6e87b9d14f9325c28adde", null ]
+      [ "step", "structdg_1_1_a_r_k_step.html#a2a2346ee594a6c80117cfb90909c51b6", null ]
     ] ],
     [ "dg::DIRKStep< ContainerType >", "structdg_1_1_d_i_r_k_step.html", [
       [ "container_type", "structdg_1_1_d_i_r_k_step.html#a80e55c4382bb70c78fd042994a85f832", null ],
@@ -126,8 +127,8 @@ var group__time =
       [ "embedded_order", "structdg_1_1_d_i_r_k_step.html#a6fc92a828f9ae56ff477939ad9fe4f43", null ],
       [ "num_stages", "structdg_1_1_d_i_r_k_step.html#ae56d9ab827e19eef1d45b3ddb9c66489", null ],
       [ "order", "structdg_1_1_d_i_r_k_step.html#a1ed6fb8955665c362ce0906fd5d444c7", null ],
-      [ "step", "structdg_1_1_d_i_r_k_step.html#a8ca52cb86bb29f1c1b672669077a728a", null ],
-      [ "step", "structdg_1_1_d_i_r_k_step.html#a173f1b663fdec539d2515d6dd1eebb62", null ]
+      [ "step", "structdg_1_1_d_i_r_k_step.html#aba93302d8ab284def25c560971192af4", null ],
+      [ "step", "structdg_1_1_d_i_r_k_step.html#a25ad8060be834f26c6e9d0b0a2548ee0", null ]
     ] ],
     [ "dg::ShuOsher< ContainerType >", "structdg_1_1_shu_osher.html", [
       [ "container_type", "structdg_1_1_shu_osher.html#a2063cdc3752d5faef3aa613fa5596f52", null ],
@@ -138,7 +139,7 @@ var group__time =
       [ "copyable", "structdg_1_1_shu_osher.html#a46b31db63911ea8e8754f152d2041ab2", null ],
       [ "num_stages", "structdg_1_1_shu_osher.html#ae83cb5e2d096d869498a8c8d258277dd", null ],
       [ "order", "structdg_1_1_shu_osher.html#a7d9a39c621cc0c3b92f3e7d95d8f6f76", null ],
-      [ "step", "structdg_1_1_shu_osher.html#af80b406fe2e9fa8e9f0ca843b5d6b1ec", null ]
+      [ "step", "structdg_1_1_shu_osher.html#a42cb765d60bc1fc4fa585081eb718a32", null ]
     ] ],
     [ "dg::SinglestepTimeloop< ContainerType >", "structdg_1_1_singlestep_timeloop.html", [
       [ "container_type", "structdg_1_1_singlestep_timeloop.html#a8e6eadea77ba106c6ddf9f6da680e6cb", null ],
@@ -155,5 +156,5 @@ var group__time =
     [ "dg::RungeKutta", "group__time.html#ga1c36951320edd6d3b16e688acb3cdf28", null ],
     [ "dg::integrate", "group__time.html#ga99d218bc1124774a3d98e6bdb0d8eb14", null ],
     [ "dg::integrateERK", "group__time.html#ga431f63d850976184cca25d5e832661ad", null ],
-    [ "dg::stepperRK", "group__time.html#ga95cb7ed53ca75810f7027cd6d9f3f904", null ]
+    [ "dg::stepperRK", "group__time.html#ga7628d159d6f24f64444a78e59093d2b8", null ]
 ];

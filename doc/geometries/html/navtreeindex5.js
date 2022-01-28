@@ -1,5 +1,18 @@
 var NAVTREEINDEX5 =
 {
+"structdg_1_1geo_1_1circular_1_1_psip_z.html#ad44eb87d832769e8aeba66534a1a29c8":[0,2,0,5,2,0],
+"structdg_1_1geo_1_1guenther_1_1_ipol.html":[0,2,0,3,6],
+"structdg_1_1geo_1_1guenther_1_1_ipol.html#a744deeaf7ccf76078c6ae9259b85a7bb":[0,2,0,3,6,0],
+"structdg_1_1geo_1_1guenther_1_1_ipol.html#af196306dd348bda5b719de7670403323":[0,2,0,3,6,1],
+"structdg_1_1geo_1_1guenther_1_1_ipol_r.html":[0,2,0,3,7],
+"structdg_1_1geo_1_1guenther_1_1_ipol_r.html#a72bca8838e38e8c642e4ebed910c16bc":[0,2,0,3,7,0],
+"structdg_1_1geo_1_1guenther_1_1_ipol_r.html#a9a8b104deb3f77185bb9b6d5058b760b":[0,2,0,3,7,1],
+"structdg_1_1geo_1_1guenther_1_1_ipol_z.html":[0,2,0,3,8],
+"structdg_1_1geo_1_1guenther_1_1_ipol_z.html#a34513f1d4866b5dc8a8ca4c9a8fd62af":[0,2,0,3,8,0],
+"structdg_1_1geo_1_1guenther_1_1_ipol_z.html#a3b485a80089cb1a52409851b5ff2e228":[0,2,0,3,8,1],
+"structdg_1_1geo_1_1guenther_1_1_psip.html":[0,2,0,3,0],
+"structdg_1_1geo_1_1guenther_1_1_psip.html#a47d0b956b1fd79a4e5dca1f982492f79":[0,2,0,3,0,0],
+"structdg_1_1geo_1_1guenther_1_1_psip.html#afee35283c998558a6f2f2b016bb49551":[0,2,0,3,0,1],
 "structdg_1_1geo_1_1guenther_1_1_psip_r.html":[0,2,0,3,1],
 "structdg_1_1geo_1_1guenther_1_1_psip_r.html#a7d9b0723e3c174bb3c0ca17d6bf035b9":[0,2,0,3,1,1],
 "structdg_1_1geo_1_1guenther_1_1_psip_r.html#ad220d935c23098e4cf9a7e2cd77bd5d3":[0,2,0,3,1,0],

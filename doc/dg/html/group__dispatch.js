@@ -81,15 +81,10 @@ var group__dispatch =
       [ "tensor_category", "structdg_1_1_tensor_traits_3_01std_1_1map_3_01_key_00_01_t_01_4_01_4.html#a7a1d154d88e236d9fdf4756cc173cc84", null ],
       [ "value_type", "structdg_1_1_tensor_traits_3_01std_1_1map_3_01_key_00_01_t_01_4_01_4.html#a4954eec38c0763250514cf3e9c296100", null ]
     ] ],
-    [ "dg::TensorTraits< thrust::host_vector< T >, std::enable_if_t< std::is_arithmetic< T >::value > >", "structdg_1_1_tensor_traits_3_01thrust_1_1host__vector_3_01_t_01_4_00_01std_1_1enable__if__t_3_0108752795600727f598b915e08bbde1f6.html", [
-      [ "execution_policy", "structdg_1_1_tensor_traits_3_01thrust_1_1host__vector_3_01_t_01_4_00_01std_1_1enable__if__t_3_0108752795600727f598b915e08bbde1f6.html#a94236ec4257d8e31b6ce9f0cb9df3b92", null ],
-      [ "tensor_category", "structdg_1_1_tensor_traits_3_01thrust_1_1host__vector_3_01_t_01_4_00_01std_1_1enable__if__t_3_0108752795600727f598b915e08bbde1f6.html#a31660eef75fb34b516dc393edfb15a63", null ],
-      [ "value_type", "structdg_1_1_tensor_traits_3_01thrust_1_1host__vector_3_01_t_01_4_00_01std_1_1enable__if__t_3_0108752795600727f598b915e08bbde1f6.html#a645ea0db3eb62ff4e40cabc84ed6ebec", null ]
-    ] ],
-    [ "dg::TensorTraits< thrust::host_vector< T >, std::enable_if_t< !std::is_arithmetic< T >::value > >", "structdg_1_1_tensor_traits_3_01thrust_1_1host__vector_3_01_t_01_4_00_01std_1_1enable__if__t_3_01390ab22b8cb1b61cb4f7cfd6526cf90d.html", [
-      [ "execution_policy", "structdg_1_1_tensor_traits_3_01thrust_1_1host__vector_3_01_t_01_4_00_01std_1_1enable__if__t_3_01390ab22b8cb1b61cb4f7cfd6526cf90d.html#a24230a9aa64bf570ddb03d80a9090252", null ],
-      [ "tensor_category", "structdg_1_1_tensor_traits_3_01thrust_1_1host__vector_3_01_t_01_4_00_01std_1_1enable__if__t_3_01390ab22b8cb1b61cb4f7cfd6526cf90d.html#a8d11b54b327d99824d7042d66031502b", null ],
-      [ "value_type", "structdg_1_1_tensor_traits_3_01thrust_1_1host__vector_3_01_t_01_4_00_01std_1_1enable__if__t_3_01390ab22b8cb1b61cb4f7cfd6526cf90d.html#abbb401a32f600a769d39cee7238eb6f8", null ]
+    [ "dg::TensorTraits< thrust::host_vector< T > >", "structdg_1_1_tensor_traits_3_01thrust_1_1host__vector_3_01_t_01_4_01_4.html", [
+      [ "execution_policy", "structdg_1_1_tensor_traits_3_01thrust_1_1host__vector_3_01_t_01_4_01_4.html#afe9e19f9d39229bcd634f6ec44ef6dbb", null ],
+      [ "tensor_category", "structdg_1_1_tensor_traits_3_01thrust_1_1host__vector_3_01_t_01_4_01_4.html#aa0391f106ccbf7c8037c280d29bdd89f", null ],
+      [ "value_type", "structdg_1_1_tensor_traits_3_01thrust_1_1host__vector_3_01_t_01_4_01_4.html#adfc7f9d1bb360b0406a43d0ed05dbf61", null ]
     ] ],
     [ "dg::TensorTraits< thrust::device_vector< T > >", "structdg_1_1_tensor_traits_3_01thrust_1_1device__vector_3_01_t_01_4_01_4.html", [
       [ "execution_policy", "structdg_1_1_tensor_traits_3_01thrust_1_1device__vector_3_01_t_01_4_01_4.html#a26d37dd790a7eec86373fbf2a215c974", null ],
