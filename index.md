@@ -14,7 +14,7 @@ header:
         - label: "Quick start guide"
           url: "https://github.com/feltor-dev/feltor.git"
         - label: "Doxygen documentation"
-          url: doc/dg/html/modules.html
+          url: https://mwiesenberger.github.io/feltor/dg/html/modules.html
         - label: "User guide book"
           url: https://feltor-dev.github.io/user-guide
 comments: false

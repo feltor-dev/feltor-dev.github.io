@@ -13,7 +13,7 @@ feature_row:
     btn_label: "Quick start guide"
     btn_class: "btn--light-outline"
   - image_path: /images/doxygen-docu.png
-    url: doc/dg/html/modules.html
+    url: https://mwiesenberger.github.io/feltor/dg/html/modules.html
     title : ""
     btn_label: "Doxygen documentation"
     btn_class: "btn--light-outline"
