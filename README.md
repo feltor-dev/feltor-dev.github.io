@@ -18,15 +18,24 @@ before running the serve command.
 
 #### How to update (doxygen) documentation
 
-Please make sure that you have the `doxygen`,
-`libjs-mathjax` and `graphviz` packages and a LateX installation (including the hitec.cls package).
-
-1. do a make clean doc in feltor/doc
-2. git rm -r homepage/doc
-3. cp -r feltor/doc homepage/doc (make sure you do not accidentally have any
-unnecessary files in feltor/doc before doing this step)
-4. rm -r homepage/doc/related_pages (doxygen saves copies of the necessary pdfs so we do not need this folder)
-5. git add homepage/doc
+We host the doxygen documentation on the gh-pages branch of the feltor-dev/feltor
+repository.
+ To update we use ghp-import with the -o option, such that the gh-pages always
+ contains only a single commit (to save space; and the history of documentation
+ is contained in the main branch).
+```bash
+pip install ghp-import
+```
+Please also make sure that you have the `doxygen` `>=1.9.1`,
+`libjs-mathjax` and `graphviz` packages and a LateX installation (including the
+hitec.cls package) to create the documentation.
+```bash
+cd path/to/feltor-dev/doc
+make clean
+make doc
+cd ..
+ghp-import -n -f -p -o doc
+```
 
 #### How to update gems with bundler
 
@@ -38,6 +47,16 @@ bundle update
 ```
 
 which will update every gem in the Gemfile to the latest versions
+
+#### How to view homepage over local wifi
+Use the [magic IP](https://en.wikipedia.org/wiki/0.0.0.0) `0.0.0.0` and
+find out the IP address of your system with `hostname -I`
+```sh
+hostname -I
+bundle exec jekyll serve --host 0.0.0.0
+# => Now browse to http://<your-IP-address>:4000
+# from any browser in your wifi (it is still "localhost" on your own machine)
+```
 
 #### Authors and contributions
 

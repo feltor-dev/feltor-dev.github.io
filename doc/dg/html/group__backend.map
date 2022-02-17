@@ -1,9 +1,0 @@
-<map id="Level 1: Vectors, Matrices and basic operations" name="Level 1: Vectors, Matrices and basic operations">
-<area shape="rect" id="node1" href="$group__mpi__structures.html" title=" " alt="" coords="294,5,398,31"/>
-<area shape="rect" id="node2" href="$group__view.html" title=" " alt="" coords="297,55,395,80"/>
-<area shape="rect" id="node3" href="$group__typedefs.html" title=" " alt="" coords="283,104,409,129"/>
-<area shape="rect" id="node4" href="$group__dispatch.html" title="Implementation details of The Level 1 dispatch system." alt="" coords="255,153,437,179"/>
-<area shape="rect" id="node5" href="$group__sparsematrix.html" title=" " alt="" coords="262,203,430,228"/>
-<area shape="rect" id="node6" title=" " alt="" coords="5,122,195,162"/>
-<area shape="rect" id="node7" href="$group__blas.html" title=" " alt="" coords="243,253,449,293"/>
-</map>

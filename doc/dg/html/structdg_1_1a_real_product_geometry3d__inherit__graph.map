@@ -1,7 +1,0 @@
-<map id="dg::aRealProductGeometry3d&lt; real_type &gt;" name="dg::aRealProductGeometry3d&lt; real_type &gt;">
-<area shape="rect" id="node1" title="A 3d product space Geometry ." alt="" coords="93,184,306,225"/>
-<area shape="rect" id="node4" href="$structdg_1_1_real_cartesian_grid3d.html" title="three&#45;dimensional Grid with Cartesian metric" alt="" coords="5,273,185,315"/>
-<area shape="rect" id="node5" href="$structdg_1_1_real_cylindrical_grid3d.html" title="three&#45;dimensional Grid with Cylindrical metric" alt="" coords="210,273,397,315"/>
-<area shape="rect" id="node2" href="$structdg_1_1a_real_geometry3d.html" title="This is the abstract interface class for a three&#45;dimensional Geometry." alt="" coords="117,95,281,136"/>
-<area shape="rect" id="node3" href="$structdg_1_1a_real_topology3d.html" title="An abstract base class for three&#45;dimensional grids." alt="" coords="121,5,278,47"/>
-</map>

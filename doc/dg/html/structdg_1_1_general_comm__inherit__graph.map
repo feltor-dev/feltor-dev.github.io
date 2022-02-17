@@ -1,4 +1,0 @@
-<map id="dg::GeneralComm&lt; Index, Vector &gt;" name="dg::GeneralComm&lt; Index, Vector &gt;">
-<area shape="rect" id="node1" title="Perform general gather and its transpose (scatter) operation across processes on distributed vectors ..." alt="" coords="5,95,200,136"/>
-<area shape="rect" id="node2" href="$structdg_1_1a_communicator.html" title=" " alt="" coords="22,5,183,47"/>
-</map>

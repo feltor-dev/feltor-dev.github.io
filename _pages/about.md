@@ -5,32 +5,43 @@ permalink: /about/
 classes: wide
 author_profile: false
 comments: false
-toc: true
+toc: false
 #toc_label: "Table of Contents"
 #toc_icon: "cog"
 
 ---
 
-FELTOR is a scientific code project that consists of both a numerical library
+FELTOR is a modular scientific code project that consists of both a numerical library
 and a collection of physical simulation codes built on top of it.
-Our specialties are "discontinuous Galerkin methods on structured grids" and their application to (gyro)-fluid equations in two and three dimensions.
-## Noteable features
 
-**Fast**
-Writing parallel code is the default in Feltor.
+## Features
+Written in **C++-14** with a **header-only** template library
+
+**Fully parallelized**
+with cuda, OpenMP as well as MPI+X
 
 **Platform independent**
 Applications run unchanged on a
 variety of hardware ranging from consumer grade CPUs and GPUs
 to mid-sized high-performance compute clusters.
 
-**Easy to use**
-We design our interfaces as intuitive and simple as possible. See the [tutorial](tutorial_lvl1.md) to get started.
+## Includes
 
-**Flexible**
-Feltor's functions
-and classes are building blocks that can be customized and freely combined
-to implement new numerical algorithms and physical model equations.
+Basic algorithms including
+- **50+ different time integrators**, including explicit, implicit and imex single- and multi-step methods
+- Various **linear and non-linear solvers** like Conjugate gradient, LGMRES, Anderson Acceleration and more
+- **Modular** combinations of solvers into preconditioners or multigrid/full approximation scheme solvers
+
+Grid generators
+for **conformal, orthogonal and general curvilinear structured grid** generation
+
+**Discontinuous Galerkin methods**
+in various discretizations from simple derivatives to general elliptic operators, diffusive terms and general upwind schemes for the advection terms.
+
+**FCI approach**
+for the parallel derivative in three-dimensional magnetized plasma simulations
+
+Already written **fluid codes in various dimensions**
 
 ## Who we are
 
@@ -45,9 +56,10 @@ Fusion Energy group at the Technical University of Denmark (DTU).
 ### **Markus Held**
 <img src="/images/markus.jpg" alt="Markus Held" width="150" align="left" hspace="10"/>
 Markus, a fellow PhD student in Innsbruck, joined
-the development of Feltor in 2014. Markus currently works as a postdoctoral researcher at the
+the development of Feltor in 2014. After his PhD, Markus worked as a postdoctoral researcher at the
 department of Space, Earth and Environment, Astronomy and Plasma Physics at
 Chalmers University of Technology in Gothenburg, Sweden.
+Today, Markus is associate professor at UiT - The Arctic University of Norway.
 <br clear="all" />
 
 
@@ -79,6 +91,8 @@ Furthermore, we gratefully acknowledge fruitful discussions and code contributio
 * Eduard Reiter
 * Lukas Einkemmer
 * Jakob Gath
+
+## Funding
 
 We received funding from the Austrian Science Fund (FWF) within
 project W1227 and Y398 under project leader Alexander Kendl at

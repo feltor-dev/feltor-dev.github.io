@@ -1,4 +1,0 @@
-<map id="dg::geo::RibeiroFluxGenerator" name="dg::geo::RibeiroFluxGenerator">
-<area shape="rect" id="node1" title="Same as the Ribeiro class just but uses psi as a flux label directly." alt="" coords="5,80,223,107"/>
-<area shape="rect" id="node2" href="$structdg_1_1geo_1_1a_real_generator2d.html" title="The abstract generator base class." alt="" coords="59,5,169,32"/>
-</map>
