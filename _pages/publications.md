@@ -5,9 +5,15 @@ permalink: /publications/
 classes: wide
 ---
 
+2022
+----
+* R Gerru, M. Wiesenberger, M. Held, A. H. Nielsen, V. Naulin, J. J. Rasmussen, H. Järleblad [Conservation of currents in reduced full-F electromagnetic kinetic and fluid models](https://dx.doi.org/10.1088/1361-6587/ac55f6) Plasma Physics and Controlled Fusion 64, 054005 (2022)
+* D. Galassi, C. Theiler et al. [Validation of edge turbulence codes in a magnetic X-point scenario in TORPEX](https://dx.doi.org/10.1063/5.0064522) Physics of Plasmas 29, 012501 (2022)
+
 2020
 ----
 * M. Wiesenberger, M. Held [Angular momentum and rotational energy of mean flows in toroidal magnetic fields](https://dx.doi.org/10.1088/1741-4326/ab9fa8)  Nuclear Fusion 60, 096018 (2020)
+* R. Iakymchuk, M. Barreda, M. Wiesenberger, J. I. Aliaga, E. S. Quintana-Orti [Reproducibility strategies for parallel Preconditioned Conjugate Gradient](https://doi.org/10.1016/j.cam.2019.112697) Journal of Computational and Applied Mathematics 371, 112697 (2020)
 * M. Held, M. Wiesenberger, A. Kendl [Padé-based arbitrary wavelength polarization closures for full-F gyrokinetic
 and -fluid models](https://doi.org/10.1088/1741-4326/ab7a68) Nuclear Fusion 60, 066014 (2020)
 * A. Poulsen, J. Juul Rasmussen, M. Wiesenberger, V. Naulin [Collisional Multispecies Drift Fluid Model](https://doi.org/10.1063/1.5140522) Physics of Plasmas 27, 032305 (2020)
