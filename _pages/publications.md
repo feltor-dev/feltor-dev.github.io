@@ -7,6 +7,7 @@ classes: wide
 
 2023
 ----
+* E. Reiter, M. Wiesenberger, M. Held, G.W. Zarate-Segura and A. Kendl [Non-trace full-F gyro-fluid interchange impurity advection](https://doi.org/10.1017/S0022377822001283) Journal of Plasma Physics 89(1), 905890110 (2023)
 * M. Held and M. Wiesenberger [Beyond the Oberbeck-Boussinesq and long wavelength approximation](https://dx.doi.org/10.1088/1741-4326/aca9e0) Nuclear Fusion 63, 026008 (2023)
 
 2022
