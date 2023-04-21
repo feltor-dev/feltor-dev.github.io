@@ -18,19 +18,19 @@ before running the serve command.
 
 #### How to update (doxygen) documentation
 
-We host the doxygen documentation on the gh-pages branch of the feltor-dev/feltor
-repository.
+We host the doxygen documentation on the gh-pages branch of the https://github.com/mwiesenberger/feltor
+repository visible on https://mwiesenberger.github.io/feltor/dg/html/modules.html.
  To update we use ghp-import with the -o option, such that the gh-pages always
  contains only a single commit (to save space; and the history of documentation
  is contained in the main branch).
 ```bash
 pip install ghp-import
 ```
-Please also make sure that you have the `doxygen` `>=1.9.1`,
+Please also make sure that you have the `doxygen` `>=1.9.3`,
 `libjs-mathjax` and `graphviz` packages and a LateX installation (including the
 hitec.cls package) to create the documentation.
 ```bash
-cd path/to/feltor-dev/doc
+cd path/to/feltor/doc
 make clean
 make doc
 cd ..
