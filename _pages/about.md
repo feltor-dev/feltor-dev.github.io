@@ -11,15 +11,19 @@ toc: false
 
 ---
 
+
 FELTOR (Full-F ELectromagnetic code in TORoidal geometry) is a modular scientific code project. At its core lies a powerful numerical library (the dg-library) that can be used as a standalone library.
 On top of the dg-library lies a collection of physical simulation and analysis codes. The library as well as most application codes are written in **C++** while data-analysis scripts are written in **python**.
+{: .text-justify}
 
 <img src="/images/FELTOR_table.jpg" alt="FELTOR"/>
 
 Among the application codes is *the* FELTOR code, a simulation code for three-dimensional gyro-fluid plasma turbulence in toroidal geometry, which is the main driver, motivator and name-giver of the project.
+{: .text-justify}
 
 See [Showroom](/showroom/) for some visual impressions of the application codes, [Resources](/resources/)
 for documentation, a list of featured projects and presentations, and [Publications](/publications/) for a list of peer-reviewed journal articles that were created with FELTOR.
+{: .text-justify}
 
 ## dg-library features
 Written as a **C++-14 header-only** template library
@@ -31,6 +35,7 @@ with Cuda, OpenMP as well as MPI+X
 Applications run unchanged on a
 variety of hardware ranging from consumer grade CPUs and GPUs
 to mid-sized high-performance compute clusters.
+{: .text-justify}
 
 ### Includes
 
@@ -38,15 +43,19 @@ Basic algorithms including
 - **50+ different time integrators**, including explicit, implicit and imex single- and multi-step methods
 - Various **linear and non-linear solvers** like Conjugate gradient, LGMRES, Anderson Acceleration and more
 - **Modular** combinations of solvers into preconditioners or multigrid/full approximation scheme solvers
+{: .text-justify}
 
 **Grid generators**
 for conformal, orthogonal and general curvilinear structured grid generation
+{: .text-justify}
 
 **Discontinuous Galerkin methods**
 in various discretizations from simple derivatives to general elliptic operators, diffusive terms and general upwind schemes for the advection terms.
+{: .text-justify}
 
 **FCI approach**
 for the parallel derivative in three-dimensional magnetized plasma simulations
+{: .text-justify}
 
 ## Who we are
 
@@ -57,6 +66,7 @@ as part of his PhD project in the group of Alexander Kendl at
 Innsbruck University, Austria.
 Since summer 2017 Matthias has worked as a postdoctoral researcher in the Plasma Physics and
 Fusion Energy group at the Technical University of Denmark (DTU).
+{: .text-justify}
 <br clear="all" />
 ### **Markus Held**
 <img src="/images/markus.jpg" alt="Markus Held" width="150" align="left" hspace="10"/>
@@ -65,6 +75,7 @@ the development of Feltor in 2014. After his PhD, Markus worked as a postdoctora
 department of Space, Earth and Environment, Astronomy and Plasma Physics at
 Chalmers University of Technology in Gothenburg, Sweden.
 Today, Markus is associate professor at UiT - The Arctic University of Norway.
+{: .text-justify}
 <br clear="all" />
 
 
@@ -75,6 +86,7 @@ We thank
 
 for his valuable insights and contributions to implicit time steppers and nonlinear solvers.
 We are grateful to
+{: .text-justify}
 
 * Roman Iakymchuk,
 
@@ -82,6 +94,7 @@ who courteuously provided the exblas library for binary reproducible scalar prod
 on how to use and adapt it.
 We further acknowledge support on the Knights landing architecture from
 the High Level Support Team from
+{: .text-justify}
 
 * Albert Gutiérrez
 * Xavier Saez
@@ -91,11 +104,13 @@ and from Intel Barcelona
 * Harald Servat
 
 Furthermore, we gratefully acknowledge fruitful discussions and code contribution from
+{: .text-justify}
 
 * Ralph Kube
 * Eduard Reiter
 * Lukas Einkemmer
 * Jakob Gath
+
 
 ## Funding
 
@@ -110,6 +125,7 @@ research and innovation programme under the Marie
 Sklodowska-Curie grant agreement no. 713683 (COFUNDfellowsDTU).
 We gratefully acknowledge the support of NVIDIA Corporation
 with the donation of a Titan Xp GPU used for our research.
+{: .text-justify}
 
 
 ## Terms of use
@@ -124,6 +140,7 @@ We also suggest to take a snapshot of the used code and create and cite
 a DOI via e.g. [Zenodo](http://www.zenodo.org) or to cite one of the
 [existing DOIs](https://doi.org/10.5281/zenodo.596442)
  if you did not alter the contained code in any way.
+{: .text-justify}
 
 ## Releases
 Our latest code release has a shiny DOI badge from zenodo
