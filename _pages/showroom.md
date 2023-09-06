@@ -25,9 +25,6 @@ gallery3d:
   - url: /images/raytracing_current_green.jpg
     image_path: /images/raytracing_current_green.jpg
     title: "Parallel current. Positive iso-volume with density coloring and simulation box."
-  - url: /images/tokamak.jpg
-    image_path: /images/tokamak.jpg
-    title: "Flux surfaces of a tokamak."
 gallery2d:
   - url: /images/lperpinv_green.jpg
     image_path: /images/lperpinv_green.jpg

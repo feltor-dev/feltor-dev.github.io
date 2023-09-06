@@ -11,7 +11,7 @@ header:
     overlay_image: /images/title_pic.jpg
     caption: "Photo credit: [**Matthias Wiesenberger**]( /images/nvidia_ue_red_blue.jpg)"
     actions:
-        - label: "Quick start guide"
+        - label: "Quick start guide - GitHub"
           url: "https://github.com/feltor-dev/feltor.git"
         - label: "Doxygen documentation"
           url: https://mwiesenberger.github.io/feltor/dg/html/modules.html

@@ -11,37 +11,42 @@ toc: false
 
 ---
 
-FELTOR is a modular scientific code project that consists of both a numerical library
-and a collection of physical simulation codes built on top of it.
+FELTOR (Full-F ELectromagnetic code in TORoidal geometry) is a modular scientific code project. At its core lies a powerful numerical library (the dg-library) that can be used as a standalone library.
+On top of the dg-library lies a collection of physical simulation and analysis codes. The library as well as most application codes are written in **C++** while data-analysis scripts are written in **python**.
 
-## Features
-Written in **C++-14** with a **header-only** template library
+<img src="/images/FELTOR_table.jpg" alt="FELTOR"/>
+
+Among the application codes is *the* FELTOR code, a simulation code for three-dimensional gyro-fluid plasma turbulence in toroidal geometry, which is the main driver, motivator and name-giver of the project.
+
+See [Showroom](/showroom/) for some visual impressions of the application codes, [Resources](/resources/)
+for documentation, a list of featured projects and presentations, and [Publications](/publications/) for a list of peer-reviewed journal articles that were created with FELTOR.
+
+## dg-library features
+Written as a **C++-14 header-only** template library
 
 **Fully parallelized**
-with cuda, OpenMP as well as MPI+X
+with Cuda, OpenMP as well as MPI+X
 
 **Platform independent**
 Applications run unchanged on a
 variety of hardware ranging from consumer grade CPUs and GPUs
 to mid-sized high-performance compute clusters.
 
-## Includes
+### Includes
 
 Basic algorithms including
 - **50+ different time integrators**, including explicit, implicit and imex single- and multi-step methods
 - Various **linear and non-linear solvers** like Conjugate gradient, LGMRES, Anderson Acceleration and more
 - **Modular** combinations of solvers into preconditioners or multigrid/full approximation scheme solvers
 
-Grid generators
-for **conformal, orthogonal and general curvilinear structured grid** generation
+**Grid generators**
+for conformal, orthogonal and general curvilinear structured grid generation
 
 **Discontinuous Galerkin methods**
 in various discretizations from simple derivatives to general elliptic operators, diffusive terms and general upwind schemes for the advection terms.
 
 **FCI approach**
 for the parallel derivative in three-dimensional magnetized plasma simulations
-
-Already written **fluid codes in various dimensions**
 
 ## Who we are
 
