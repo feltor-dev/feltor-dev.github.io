@@ -7,13 +7,15 @@ classes: wide
 
 2023
 ----
+* M. Wiesenberger, R. Gerru, M. Held [Numerical evaluation of line, surface and toroidal integrals on level sets of toroidally symmetric functions](https://doi.org/10.1016/j.jcp.2023.112407) Journal of Computational Physics 491, 112407 (2023)
+* M. Wiesenberger, M. Held [A finite volume flux coordinate independent approach](https://doi.org/10.1016/j.cpc.2023.108838) Computer Physics Communications 291, 108838 (2023)
 * E. Reiter, M. Wiesenberger, M. Held, G.W. Zarate-Segura and A. Kendl [Non-trace full-F gyro-fluid interchange impurity advection](https://doi.org/10.1017/S0022377822001283) Journal of Plasma Physics 89(1), 905890110 (2023)
 * M. Held and M. Wiesenberger [Beyond the Oberbeck-Boussinesq and long wavelength approximation](https://dx.doi.org/10.1088/1741-4326/aca9e0) Nuclear Fusion 63, 026008 (2023)
 
 2022
 ----
 * M. Wiesenberger and M. Held [Long-wavelength closures for collisional and neutral interaction terms in gyro-fluid models](https://dx.doi.org/10.1088/1742-6596/2397/1/012015) Journal of Physics: Conference Series 2397, 012015 (2022)
-* R Gerru, M. Wiesenberger, M. Held, A. H. Nielsen, V. Naulin, J. J. Rasmussen, H. Järleblad [Conservation of currents in reduced full-F electromagnetic kinetic and fluid models](https://dx.doi.org/10.1088/1361-6587/ac55f6) Plasma Physics and Controlled Fusion 64, 054005 (2022)
+* R. Gerru, M. Wiesenberger, M. Held, A. H. Nielsen, V. Naulin, J. J. Rasmussen, H. Järleblad [Conservation of currents in reduced full-F electromagnetic kinetic and fluid models](https://dx.doi.org/10.1088/1361-6587/ac55f6) Plasma Physics and Controlled Fusion 64, 054005 (2022)
 * D. Galassi, C. Theiler et al. [Validation of edge turbulence codes in a magnetic X-point scenario in TORPEX](https://dx.doi.org/10.1063/5.0064522) Physics of Plasmas 29, 012501 (2022)
 
 2020
