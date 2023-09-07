@@ -43,9 +43,7 @@ Impressions from a 3d simulation on the EUROfusion High-Performance Computer (Ma
 
 ## 3D simulations
 
-{% include video id="aUe6BatOpWs" provider="youtube" %}
-{% include video id="l9z5M4aq1ko" provider="youtube" %}
-{% include video id="RXQFnDLSzJ0" provider="youtube" %}
+<img src="/videos/electrons.gif" width="1280" height="633" />
 
 ## 2D simulations
 
