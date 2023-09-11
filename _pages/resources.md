@@ -54,6 +54,12 @@ feature_row_projects:
     url: https://mwiesenberger.github.io/performance
     btn_label: "Performance"
     btn_class: "btn--light-outline"
+  - image_path: /images/matrix-free.png
+    title: "Matrix free methods"
+    url: https://mwiesenberger.github.io/solvers
+    btn_label: "Matrix-Free"
+    btn_class: "btn--light-outline"
+
 ---
 <!--
   - image_path: /images/doxygen-docu.png
