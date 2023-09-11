@@ -12,7 +12,7 @@ toc: false
 ---
 
 
-FELTOR (Full-F ELectromagnetic code in TORoidal geometry) is a modular scientific code project. At its core lies a powerful numerical library (the dg-library) that can be used as a standalone library.
+FELTOR (Full-F ELectromagnetic code in TORoidal geometry) is a modular scientific software project. At its core lies a powerful numerical library (the dg-library) that can be used as a standalone library.
 On top of the dg-library lies a collection of physical simulation and analysis codes. The library as well as most application codes are written in **C++** while data-analysis scripts are written in **python**.
 {: .text-justify}
 
