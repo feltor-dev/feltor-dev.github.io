@@ -12,20 +12,43 @@ toc: false
 ---
 
 
-FELTOR (Full-F ELectromagnetic code in TORoidal geometry) is a modular scientific software project. At its core lies a powerful numerical library (the dg-library) that can be used as a standalone library.
-On top of the dg-library lies a collection of physical simulation and analysis codes. The library as well as most application codes are written in **C++** while data-analysis scripts are written in **python**.
+FELTOR (Full-F ELectromagnetic code in TORoidal geometry) is a modular scientific software project used to
 {: .text-justify}
 
-<img src="/images/FELTOR_table.jpg" alt="FELTOR"/>
+ <img src="/images/raytracing_mag.jpg" width="128" align="left" hspace = 10 />
+  [PHYSICS] study fluid models for magnetised (fusion) plasmas in one, two and three dimensions
+{: .text-justify}
 
+ <img src="/images/elliptic.png" width="128" align="left" hspace = 10 vspace=10/>
+ [NUMERICS] develop and study numerical methods for these models in particular novel discontinuous Galerkin methods and structured grid generators
+{: .text-justify}
+
+ <img src="/images/performance.png" width="128" align="left" hspace = 10 vspace=10 />
+ [HIGH PERFORMANCE COMPUTING] investigate parallel peformance, binary reproducibility and accuracy of the above algorithms on modern hardware architectures.
+{: .text-justify}
+
+FELTOR applications run on a large variety of hardware from laptop CPUs to GPUs to high performance compute clusters.
+{: .text-justify}
+
+
+<img src="/videos/electrons.gif" width="320" height="160" align="right" hspace = 10 />
+FELTOR has been developped for more than 10 years and is still growing today with new application codes emerging from current research.
 Among the application codes is *the* FELTOR code, a simulation code for three-dimensional gyro-fluid plasma turbulence in toroidal geometry, which is the main driver, motivator and name-giver of the project.
 {: .text-justify}
 
-See [Showroom](/showroom/) for some visual impressions of the application codes, [Resources](/resources/)
-for documentation, a list of featured projects and presentations, and [Publications](/publications/) for a list of peer-reviewed journal articles that were created with FELTOR.
+See [Showroom](/showroom/) for some visual impressions of the application codes and [Publications](/publications/) for a list of peer-reviewed journal articles that were created with FELTOR.
 {: .text-justify}
 
-## dg-library features
+## Structure
+FELTOR has a modular structure in order to simplify the implementation of new models and algorithms and is thus esily extensible and highly usable.
+At FELTOR's core lies a powerful numerical library (the dg-library) that can be used as a standalone library independent of plasma physics.
+On top of the dg-library lies a collection of physical simulation and analysis codes.
+{: .text-justify}
+
+<img src="/images/FELTOR_table.jpg" alt="FELTOR"/>
+We provide ample documentation of all library functions, as well as user and theory guides on the [Resources](/resources/) page
+
+### The dg library
 Written as a **C++-14 header-only** template library
 
 **Fully parallelized**
@@ -37,7 +60,7 @@ variety of hardware ranging from consumer grade CPUs and GPUs
 to mid-sized high-performance compute clusters.
 {: .text-justify}
 
-### Includes
+#### Includes
 
 Basic algorithms including
 - **50+ different time integrators**, including explicit, implicit and imex single- and multi-step methods
