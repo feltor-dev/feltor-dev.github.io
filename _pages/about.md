@@ -8,23 +8,26 @@ comments: false
 toc: false
 #toc_label: "Table of Contents"
 #toc_icon: "cog"
-
+structure:
+  - url: /images/FeltorStructure.png
+    image_path: /images/FeltorStructure.png
+    title: "Structure of the FELTOR project"
 ---
 
 
-FELTOR (Full-F ELectromagnetic code in TORoidal geometry) is a modular scientific software project used to
+FELTOR (Full-F ELectromagnetic code in TORoidal geometry) is a modular scientific software project used for:
 {: .text-justify}
 
  <img src="/images/raytracing_mag.jpg" width="128" align="left" hspace = 10 />
-  [PHYSICS] study fluid models for magnetised (fusion) plasmas in one, two and three dimensions
+  **Physics**: study fluid models for magnetised (fusion) plasmas in one, two and three dimensions
 {: .text-justify}
 
  <img src="/images/elliptic.png" width="128" align="left" hspace = 10 vspace=10/>
- [NUMERICS] develop and study numerical methods for these models in particular novel discontinuous Galerkin methods and structured grid generators
+ **Numerics**: develop and study numerical methods for these models in particular novel discontinuous Galerkin methods and structured grid generators
 {: .text-justify}
 
  <img src="/images/performance.png" width="128" align="left" hspace = 10 vspace=10 />
- [HIGH PERFORMANCE COMPUTING] investigate parallel peformance, binary reproducibility and accuracy of the above algorithms on modern hardware architectures.
+ **High performance computing**: investigate parallel peformance, binary reproducibility and accuracy of the above algorithms on modern hardware architectures.
 {: .text-justify}
 
 FELTOR applications run on a large variety of hardware from laptop CPUs to GPUs to high performance compute clusters.
@@ -36,48 +39,65 @@ FELTOR has been developped for more than 10 years and is still growing today wit
 Among the application codes is *the* FELTOR code, a simulation code for three-dimensional gyro-fluid plasma turbulence in toroidal geometry, which is the main driver, motivator and name-giver of the project.
 {: .text-justify}
 
-See [Showroom](/showroom/) for some visual impressions of the application codes and [Publications](/publications/) for a list of peer-reviewed journal articles that were created with FELTOR.
+
+
 {: .text-justify}
 
 ## Structure
-FELTOR has a modular structure in order to simplify the implementation of new models and algorithms and is thus esily extensible and highly usable.
+The following Figure (click to enlarge) shows the structure of the FELTOR project.
+The modular structure simplifies the implementation of new models and algorithms and is thus easily extensible and highly usable.
 At FELTOR's core lies a powerful numerical library (the dg-library) that can be used as a standalone library independent of plasma physics.
-On top of the dg-library lies a collection of physical simulation and analysis codes.
+On top of the dg-library lies a collection of physical simulation and analysis application codes.
 {: .text-justify}
 
-<img src="/images/FELTOR_table.jpg" alt="FELTOR"/>
-We provide ample documentation of all library functions, as well as user and theory guides on the [Resources](/resources/) page
+{% include gallery id="structure" caption="" %}
 
-### The dg library
-Written as a **C++-14 header-only** template library
+Each module exposes an interface that can be used by applications or modules higher up in the stack.
+For a deeper explanation refer to the [User guide](https://feltor-dev.github.io/user-guide).
 
-**Fully parallelized**
-with Cuda, OpenMP as well as MPI+X
+The **dg library**
+ - derives its name from **discontinuous Galerkin** (dg) methods
+ - is written as a **C++-14 header-only** template library
+ - is **fully parallelized** with Cuda, OpenMP as well as MPI+X. In fact
+ the "Basic parallel operations" module has a design
+   similar to the [Kokkos](https://github.com/kokkos/kokkos) library with the extension of also allowing MPI parallelization.
+ - includes **50+ different ODE integrators**, including explicit, implicit and imex single- and multi-step methods.
+  This makes it similar in capabilities to the [SUNDIALS](https://sundials.readthedocs.io/en/latest/) libraries
+ - includes various **linear and non-linear solvers** like Conjugate gradient, LGMRES, Anderson Acceleration and more
+ - allows **modular combinations** of solvers into preconditioners or multigrid/full approximation scheme solvers
+ - includes various **structured grid generators** for conformal, orthogonal and general curvilinear structured grid generation
+ - includes the **FCI approach**
+ for the parallel derivative in three-dimensional magnetized plasma simulations
+ - provides various **dg discretizations** from simple derivatives to general elliptic operators, diffusive terms and general upwind schemes for the advection terms.
+ {: .text-justify}
 
-**Platform independent**
-Applications run unchanged on a
+**Applications** are
+ - **Platform independent** Applications run unchanged on a
 variety of hardware ranging from consumer grade CPUs and GPUs
 to mid-sized high-performance compute clusters.
 {: .text-justify}
+ - **interoperable** using jsoncpp and netcdf as input and output file formats
+ makes it easy to set up and analyse simulations entirely from python.
 
-#### Includes
 
-Basic algorithms including
-- **50+ different time integrators**, including explicit, implicit and imex single- and multi-step methods
-- Various **linear and non-linear solvers** like Conjugate gradient, LGMRES, Anderson Acceleration and more
-- **Modular** combinations of solvers into preconditioners or multigrid/full approximation scheme solvers
+## Getting started
+ <img src="/images/logo_small.jpg" width="128" align="left" hspace = 10 vspace=10 />
+Head over to our [GitHub page](https://github.com/feltor-dev/feltor.git)
+download the code and follow the Quick start guide to set everything up.
+After that you can either compile and run one of the existing codes or create
+your own following the [User guide](https://feltor-dev.github.io/user-guide).
+The dg-library is [documented with doxygen](https://mwiesenberger.github.io/feltor/dg/html/modules.html).
 {: .text-justify}
 
-**Grid generators**
-for conformal, orthogonal and general curvilinear structured grid generation
+FELTOR Simulations are typically setup and run using python. To this end we have
+developed a simple simulation database manager
+ [simplesimdb](https://github.com/mwiesenberger/simplesimdb). Check it out.
 {: .text-justify}
 
-**Discontinuous Galerkin methods**
-in various discretizations from simple derivatives to general elliptic operators, diffusive terms and general upwind schemes for the advection terms.
-{: .text-justify}
-
-**FCI approach**
-for the parallel derivative in three-dimensional magnetized plasma simulations
+For some inspiration explore the [Showroom](/showroom/) for some visual impressions of the application codes
+and [Publications](/publications/) for a list of peer-reviewed journal articles
+that were created with FELTOR. We list user and theory guides as well as
+featured projects and presentations on the [Resources](/resources/) page.
 {: .text-justify}
 
 ## Who we are
