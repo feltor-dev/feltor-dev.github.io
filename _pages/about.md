@@ -186,10 +186,7 @@ a DOI via e.g. [Zenodo](http://www.zenodo.org) or to cite one of the
 {: .text-justify}
 
 ## Releases
-Our latest code release has a shiny DOI badge from zenodo
-
+Our latest code release has a shiny DOI badge from zenodo,
+which makes us officially citable.
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.596442.svg)](https://doi.org/10.5281/zenodo.596442)
-
-
-which makes us officially citable.
