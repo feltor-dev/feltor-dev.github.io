@@ -59,6 +59,11 @@ feature_row_projects:
     url: https://mwiesenberger.github.io/solvers
     btn_label: "Matrix-Free"
     btn_class: "btn--light-outline"
+  - image_path: /images/impurities.png
+    title: "A study of blobs with impurities"
+    url: https://github.com/mwiesenberger/impurities
+    btn_label: "Impurities"
+    btn_class: "btn--light-outline"
 
 ---
 <!--
