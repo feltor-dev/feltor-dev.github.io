@@ -123,36 +123,23 @@ Today, Markus is associate professor at UiT - The Arctic University of Norway.
 
 
 ## Acknowledgements
-We thank
-
-* Aslak Poulsen
-
-for his valuable insights and contributions to implicit time steppers and nonlinear solvers.
+We thank *Aslak Poulsen* for his valuable insights and contributions to implicit time steppers and nonlinear solvers.
 We are grateful to
-{: .text-justify}
-
-* Roman Iakymchuk,
-
+*Roman Iakymchuk*,
 who courteuously provided the exblas library for binary reproducible scalar products and advice
 on how to use and adapt it.
 We further acknowledge support on the Knights landing architecture from
 the High Level Support Team from
-{: .text-justify}
-
-* Albert Gutiérrez
-* Xavier Saez
-
+*Albert Gutiérrez* and
+*Xavier Saez*
 and from Intel Barcelona
-
-* Harald Servat
-
-Furthermore, we gratefully acknowledge fruitful discussions and code contribution from
+*Harald Servat*.
+Furthermore, we gratefully acknowledge fruitful discussions and code contributions from
+*Ralph Kube*,
+*Eduard Reiter*,
+*Lukas Einkemmer* and
+*Jakob Gath*.
 {: .text-justify}
-
-* Ralph Kube
-* Eduard Reiter
-* Lukas Einkemmer
-* Jakob Gath
 
 
 ## Funding
