@@ -121,6 +121,19 @@ Today, Markus is associate professor at UiT - The Arctic University of Norway.
 {: .text-justify}
 <br clear="all" />
 
+## Terms of use
+Feltor is [fair](https://www.force11.org/fairprinciples) software and
+licensed under the very permissive [MIT license](https://en.wikipedia.org/wiki/MIT_License). The MIT
+License grants you great freedom in what you do with the code as long as
+you name us (Matthias Wiesenberger and Markus Held) as creators, in
+particular in publications that use Feltor to produce results. In this
+case we would be happy if you could
+cite one of [our papers](publications.md).
+We also suggest to take a snapshot of the used code and create and cite
+a DOI via e.g. [Zenodo](http://www.zenodo.org) or to cite one of the
+[existing DOIs](https://doi.org/10.5281/zenodo.596442)
+ if you did not alter the contained code in any way.
+{: .text-justify}
 
 ## Acknowledgements
 We thank *Aslak Poulsen* for his valuable insights and contributions to implicit time steppers and nonlinear solvers.
@@ -156,24 +169,3 @@ Sklodowska-Curie grant agreement no. 713683 (COFUNDfellowsDTU).
 We gratefully acknowledge the support of NVIDIA Corporation
 with the donation of a Titan Xp GPU used for our research.
 {: .text-justify}
-
-
-## Terms of use
-Feltor is [fair](https://www.force11.org/fairprinciples) software and
-licensed under the very permissive [MIT license](https://en.wikipedia.org/wiki/MIT_License). The MIT
-License grants you great freedom in what you do with the code as long as
-you name us (Matthias Wiesenberger and Markus Held) as creators, in
-particular in publications that use Feltor to produce results. In this
-case we would be happy if you could
-cite one of [our papers](publications.md).
-We also suggest to take a snapshot of the used code and create and cite
-a DOI via e.g. [Zenodo](http://www.zenodo.org) or to cite one of the
-[existing DOIs](https://doi.org/10.5281/zenodo.596442)
- if you did not alter the contained code in any way.
-{: .text-justify}
-
-## Releases
-Our latest code release has a shiny DOI badge from zenodo,
-which makes us officially citable.
-
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.596442.svg)](https://doi.org/10.5281/zenodo.596442)

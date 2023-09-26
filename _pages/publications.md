@@ -5,6 +5,10 @@ permalink: /publications/
 classes: wide
 ---
 
+Our latest code release is citable with a shiny DOI badge from zenodo:
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.596442.svg)](https://doi.org/10.5281/zenodo.596442)
+
 2023
 ----
 * M. Wiesenberger, R. Gerru, M. Held [Numerical evaluation of line, surface and toroidal integrals on level sets of toroidally symmetric functions](https://doi.org/10.1016/j.jcp.2023.112407) Journal of Computational Physics 491, 112407 (2023)
