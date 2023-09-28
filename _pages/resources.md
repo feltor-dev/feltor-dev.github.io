@@ -22,6 +22,27 @@ feature_row:
     title : ""
     btn_label: "User guide book"
     btn_class: "btn--light-outline"
+feature_row_python:
+- image_path: /images/logo_small_cut.jpg
+  title: "PyFeltor - the dg-library in Python"
+  url: https://github.com/feltor-dev/pyfeltor
+  btn_label: "PyFeltor"
+  btn_class: "btn--light-outline"
+- image_path: /images/simplesimdb1.png
+  title: "Simplesimdb - A lightweight simulation database manager"
+  url: https://github.com/mwiesenberger/simplesimdb
+  btn_label: "Simplesimdb"
+  btn_class: "btn--light-outline"
+- image_path: /images/raytracing_mag_cut.jpg
+  title: "Magneticfielddb - Magnetic field coefficients for Feltor"
+  url: https://github.com/feltor-dev/Magneticfielddb
+  btn_label: "Magneticfielddb"
+  btn_class: "btn--light-outline"
+- image_path: /images/xFeltor.png
+  title: "xFELTOR - Collect Feltor data into xarray"
+  url: https://github.com/feltor-dev/xarray
+  btn_label: "xFefltor"
+  btn_class: "btn--light-outline"
 feature_row_theory:
   - image_path: /images/discretization.png
     title: "Introduction to discontinuous Galerkin methods"
@@ -72,6 +93,10 @@ feature_row_projects:
 -->
 # Documentation
 {% include feature_row %}
+
+# Python tools
+
+{% include feature_row id="feature_row_python" %}
 
 # Theory guides
 
