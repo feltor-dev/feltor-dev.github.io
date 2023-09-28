@@ -41,7 +41,7 @@ feature_row_python:
 - image_path: /images/xFeltor.png
   title: "xFELTOR - Collect Feltor data into xarray"
   url: https://github.com/feltor-dev/xarray
-  btn_label: "xFefltor"
+  btn_label: "xFeltor"
   btn_class: "btn--light-outline"
 feature_row_theory:
   - image_path: /images/discretization.png
