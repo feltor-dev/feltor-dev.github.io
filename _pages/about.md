@@ -148,6 +148,7 @@ the High Level Support Team from
 and from Intel Barcelona
 *Harald Servat*.
 Furthermore, we gratefully acknowledge fruitful discussions and code contributions from
+*Raul Gerru*,
 *Ralph Kube*,
 *Eduard Reiter*,
 *Lukas Einkemmer* and
