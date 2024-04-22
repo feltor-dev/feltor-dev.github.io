@@ -9,9 +9,12 @@ Our latest code release is citable with a shiny DOI badge from zenodo:
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.596442.svg)](https://doi.org/10.5281/zenodo.596442)
 
+2024
+----
+* M. Wiesenberger and M. Held [Effects of plasma resistivity in FELTOR simulations of three-dimensional full-F gyro-fluid turbulence](https://doi.org/10.1088/1361-6587/ad3670) Plasma Physics and Controlled Fusion 66, 065003 (2024)
+
 2023
 ----
-* M. Wiesenberger and M. Held [Effects of plasma resistivity in FELTOR simulations of three-dimensional full-F gyro-fluid turbulence](https://arxiv.org/pdf/2309.10414.pdf) Plasma Physics and Controlled Fusion (submitted), (2023)
 * M. Wiesenberger, R. Gerru, M. Held [Numerical evaluation of line, surface and toroidal integrals on level sets of toroidally symmetric functions](https://doi.org/10.1016/j.jcp.2023.112407) Journal of Computational Physics 491, 112407 (2023)
 * M. Wiesenberger, M. Held [A finite volume flux coordinate independent approach](https://doi.org/10.1016/j.cpc.2023.108838) Computer Physics Communications 291, 108838 (2023)
 * E. Reiter, M. Wiesenberger, M. Held, G.W. Zarate-Segura and A. Kendl [Non-trace full-F gyro-fluid interchange impurity advection](https://doi.org/10.1017/S0022377822001283) Journal of Plasma Physics 89(1), 905890110 (2023)
