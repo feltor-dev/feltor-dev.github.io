@@ -11,7 +11,9 @@ Our latest code release is citable with a shiny DOI badge from zenodo:
 
 2024
 ----
-* M. Wiesenberger and M. Held [Effects of plasma resistivity in FELTOR simulations of three-dimensional full-F gyro-fluid turbulence](https://doi.org/10.1088/1361-6587/ad3670) Plasma Physics and Controlled Fusion 66, 065003 (2024)
+* M. Wiesenberger and M. Held [Effects of plasma resistivity in FELTOR simulations of three-dimensional full-F gyro-fluid turbulence](https://doi.org/10.1088/1361-6587/ad3670) Plasma Physics and Controlled Fusion 66, 065003 (2024) *
+
+\* Cite this paper if you need a code citation.
 
 2023
 ----
@@ -40,7 +42,7 @@ and -fluid models](https://doi.org/10.1088/1741-4326/ab7a68) Nuclear Fusion 60, 
 * M. Wiesenberger, L. Einkemmer, M. Held, A. Gutierrez-Milla, X. Sáez, R. Iakymchuk  [Reproducibility, accuracy and performance of the Feltor code and library on parallel computer architectures](https://doi.org/10.1016/j.cpc.2018.12.006) Computer Physics Communications 238, 145-156 (2019) *
 * M. Held, M. Wiesenberger, A. Kendl [The collisional drift wave instability in steep density gradient regimes](https://doi.org/10.1088/1741-4326/aaf6cc) Nuclear Fusion 59, 026015 (2019)
 
-\* Cite this paper if you need a code citation.
+\* Cite this paper if you need a library citation.
 
 2018
 ----
