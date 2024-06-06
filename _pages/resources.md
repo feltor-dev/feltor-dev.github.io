@@ -85,6 +85,12 @@ feature_row_projects:
     url: https://github.com/mwiesenberger/impurities
     btn_label: "Impurities"
     btn_class: "btn--light-outline"
+feature_row_podcasts:
+  - image_path: /images/podcast.png
+    url: https://open.spotify.com/episode/0L9vU8lfRM1Pcfe0JVJsuQ
+    title : ""
+    btn_label: "What is Fusion Energy with Matthias Wiesenberger"
+    btn_class: "btn--light-outline"
 
 ---
 <!--
@@ -107,6 +113,7 @@ feature_row_projects:
 {% include feature_row id="feature_row_projects" %}
 
 # Presentations
+{% include feature_row id="feature_row_podcasts" %}
 <!--Get the samples from https://www.adobe.com/go/pdfembedapi_samples -->
 
 <html>
