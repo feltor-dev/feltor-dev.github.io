@@ -3,8 +3,7 @@ description: "Numerical methods for two- and three-dimensional (gyro-) fluid sim
 google_analytics:
 show_downloads: true
 remote_theme: mmistakes/minimal-mistakes
-# MW don't forget to change when merging to feltor-dev!
-url: https://mwiesenberger.github.io/feltor-dev.github.io/
+url: https://feltor-dev.github.io/
 logo: /images/logo_small.jpg
 plugins:
   - jekyll-mentions
