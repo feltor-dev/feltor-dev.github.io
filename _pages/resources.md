@@ -13,7 +13,7 @@ feature_row:
     btn_label: "Quick start guide"
     btn_class: "btn--light-outline"
   - image_path: /images/doxygen-docu.png
-    url: https://mwiesenberger.github.io/feltor/dg/html/modules.html
+    url: https://mwiesenberger.github.io/feltor/dg/html/topics.html
     title : ""
     btn_label: "Doxygen documentation"
     btn_class: "btn--light-outline"
@@ -95,7 +95,7 @@ feature_row_podcasts:
 ---
 <!--
   - image_path: /images/doxygen-docu.png
-    url: /doc/dg/html/modules.html
+    url: /doc/dg/html/topics.html
 -->
 # Documentation
 {% include feature_row %}

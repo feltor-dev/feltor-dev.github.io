@@ -16,18 +16,24 @@ bundle install
 ```
 before running the serve command.
 
+If you get errors about the port already being in use just use another using
+```sh
+bundle exec jekyll serve --port 4001
+# => Now browse to http://localhost:4001
+```
+
 #### How to update (doxygen) documentation
 
 We host the doxygen documentation on the gh-pages branch of the https://github.com/mwiesenberger/feltor
-repository visible on https://mwiesenberger.github.io/feltor/dg/html/modules.html.
+repository visible on https://mwiesenberger.github.io/feltor/dg/html/topics.html.
  To update we use ghp-import with the -o option, such that the gh-pages always
  contains only a single commit (to save space; and the history of documentation
  is contained in the main branch).
 ```bash
 pip install ghp-import
 ```
-Please also make sure that you have the `doxygen` `>=1.9.3`,
-`libjs-mathjax` and `graphviz` packages and a LateX installation (including the
+Please also make sure that you have the `doxygen` `>=1.9.8`,
+`libjs-mathjax` `doxygen-awesome` and `graphviz` packages and a LateX installation (including the
 hitec.cls package) to create the documentation.
 ```bash
 cd path/to/feltor/doc

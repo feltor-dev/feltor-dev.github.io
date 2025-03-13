@@ -86,7 +86,7 @@ Head over to our [GitHub page](https://github.com/feltor-dev/feltor.git)
 download the code and follow the Quick start guide to set everything up.
 After that you can either compile and run one of the existing codes or create
 your own following the [User guide](https://feltor-dev.github.io/user-guide).
-The dg-library is [documented with doxygen](https://mwiesenberger.github.io/feltor/dg/html/modules.html).
+The dg-library is [documented with doxygen](https://mwiesenberger.github.io/feltor/dg/html/topics.html).
 {: .text-justify}
 
 FELTOR Simulations are typically setup and run using python. To this end we have

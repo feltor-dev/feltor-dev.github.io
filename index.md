@@ -14,7 +14,7 @@ header:
         - label: "Quick start guide - GitHub"
           url: "https://github.com/feltor-dev/feltor.git"
         - label: "Doxygen documentation"
-          url: https://mwiesenberger.github.io/feltor/dg/html/modules.html
+          url: https://mwiesenberger.github.io/feltor/dg/html/topics.html
         - label: "User guide book"
           url: https://feltor-dev.github.io/user-guide
 comments: false
@@ -29,7 +29,7 @@ feature_row:
     btn_label: "Quick start guide"
     btn_class: "btn--light-outline"
   -  image_path: /images/doxygen-docu.png
-    url: doc/dg/html/modules.html
+    url: doc/dg/html/topics.html
     title : ""
     btn_label: "Doxygen documentation"
     btn_class: "btn--light-outline"
